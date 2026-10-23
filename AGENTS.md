@@ -75,8 +75,12 @@ Postęp końca sesji2026-10-23:
 - Aktywny zakres: wyłącznie nauka, zgodnie zU-010. Następny krok: N7 — straty i nieszczelności, granica szczelna i pasywność.
 - Odtwarzanie: `python3 skrypty/odtworz_wszystko.py`; archiwum poprzedniego stanu, kontrole, wyniki, manifest na końcu.
 - Weryfikacja końcowa:54kontrole bazowe i kontrole rozszerzeń poprawne,9tabelCSV odtworzone identycznie; raport008. N7 pozostaje planem, z uwzględnieniem promieniowania przecieku.
-- Publikacja projektu została zlecona do `StrazPrzyszlosci/SUB_prototyp`;
-  zapis przez konto `KrzyZuch`, protokół HTTPS z uwierzytelnieniem `gh`.
+- Opublikowano cały projekt w `https://github.com/StrazPrzyszlosci/SUB_prototyp`
+  na gałęzi `main`: pierwszy commit `49a8873` (`first commit`), 181 plików.
+  Zapis przez konto `KrzyZuch`, HTTPS z uwierzytelnieniem `gh`; domyślny klucz
+  SSH nie miał dostępu. Ponowienie z HTTP/1.1 i buforem 50 MiB zakończyło się
+  powodzeniem po pierwszym HTTP408. Git zachowuje dokładne bajty danych
+  objętych SHA-256 zgodnie z `.gitattributes`.
 
 ## Decyzje otwarte
 
