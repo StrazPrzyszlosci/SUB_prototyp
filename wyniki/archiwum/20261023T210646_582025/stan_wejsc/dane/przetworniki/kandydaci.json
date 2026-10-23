@@ -1,0 +1,130 @@
+{
+  "version": "0.1",
+  "status": "WSTEPNA_RODZINA_POROWNAWCZA_NIE_REKOMENDACJA_ZAKUPU",
+  "access_date": "2026-10-23",
+  "note": "Odczyt oficjalnych źródeł przez browser-harness; 4 kandydatów dwóch producentów, niekompletny research cen i opinii. Zestaw pierwotny Fs,Qes,Qms,Vas,Sd,Re,Le; wartości pochodne liczone jawnie.",
+  "drivers": [
+    {
+      "source_id": "SRC01",
+      "url": "https://www.daytonaudio.com/product/121/rss315hf-4-12-reference-hf-subwoofer-4-ohm",
+      "evidence": "dane_producenta",
+      "xmax_definition": "Maximum Linear Excursion; przyjęcie jednostronnego peak do modelu, metoda kryterium liniowości do potwierdzenia",
+      "model": {
+        "name": "Dayton RSS315HF-4",
+        "fs_hz": 24.2,
+        "qes": 0.45,
+        "qms": 2.83,
+        "vas_l": 84.1,
+        "sd_cm2": 514.7,
+        "re_ohm": 3.1,
+        "le_mh": 0.96,
+        "xmax_mm": 14.3,
+        "nominal_ohm": 4.0,
+        "rated_w": 400.0
+      },
+      "catalog_extra": {
+        "qts": 0.39,
+        "mms_g": 188.0,
+        "cms_mm_n": 0.23,
+        "bl_tm": 13.99
+      },
+      "data_issue": "WWW BL=1Tm sprzeczne z resztą; PDF odczytany Firecrawl podaje13.99Tm. Model wyprowadza14.22Tm zFs/Qes/Vas/Sd/Re, zachowując katalogoweMms188g osobno.",
+      "price_pln": null,
+      "stock_eu": null,
+      "independent_distortion": null,
+      "pdf_url": "https://www.daytonaudio.com/images/resources/295-464-dayton-audio-rss315hf-4-specifications-46174.pdf",
+      "catalog_conflicts": {
+        "bl_www_tm": 1.0,
+        "bl_pdf_tm": 13.99,
+        "resolution": "Do kontroli katalogowej wybrano13.99 zPDF; model nadal wyprowadzaBL z parametrów pierwotnych."
+      }
+    },
+    {
+      "source_id": "SRC02",
+      "url": "https://www.daytonaudio.com/product/126/rss390hf-4-15-reference-hf-subwoofer-4-ohm",
+      "evidence": "dane_producenta",
+      "xmax_definition": "Maximum Linear Excursion; jednostronne peak jako założenie modelu, kryterium do potwierdzenia",
+      "model": {
+        "name": "Dayton RSS390HF-4",
+        "fs_hz": 19.5,
+        "qes": 0.5,
+        "qms": 3.02,
+        "vas_l": 212.0,
+        "sd_cm2": 829.6,
+        "re_ohm": 3.0,
+        "le_mh": 0.92,
+        "xmax_mm": 14.0,
+        "nominal_ohm": 4.0,
+        "rated_w": 500.0
+      },
+      "catalog_extra": {
+        "qts": 0.43,
+        "mms_g": 306.0,
+        "cms_mm_n": 0.22,
+        "bl_tm": 15.0
+      },
+      "data_issue": "Nie utożsamiać katalogowego Xmax i Pe z niskim THD oraz zdolnością cieplną w dowolnym sygnale.",
+      "price_pln": null,
+      "stock_eu": null,
+      "independent_distortion": null
+    },
+    {
+      "source_id": "SRC09",
+      "url": "https://www.daytonaudio.com/product/123/rss315hfa-8-12-reference-hf-subwoofer-8-ohm",
+      "evidence": "dane_producenta",
+      "xmax_definition": "Maximum Linear Excursion; jednostronne peak jako założenie modelu, kryterium do potwierdzenia",
+      "model": {
+        "name": "Dayton RSS315HFA-8",
+        "fs_hz": 22.2,
+        "qes": 0.54,
+        "qms": 2.5,
+        "vas_l": 97.2,
+        "sd_cm2": 506.7,
+        "re_ohm": 6.5,
+        "le_mh": 1.56,
+        "xmax_mm": 14.3,
+        "nominal_ohm": 8.0,
+        "rated_w": 400.0
+      },
+      "catalog_extra": {
+        "qts": 0.45,
+        "mms_g": 194.0,
+        "cms_mm_n": 0.27,
+        "bl_tm": 18.0
+      },
+      "data_issue": "Wariant 8 ohm nie jest RSS315HF-4; nie mieszać danych. Porównanie przy tym samym napięciu i przy tej samej mocy to różne eksperymenty.",
+      "price_pln": null,
+      "stock_eu": null,
+      "independent_distortion": null
+    },
+    {
+      "source_id": "SRC03",
+      "url": "https://sbacoustics.com/wp-content/uploads/2022/03/12in-SB34SWPL76-4.pdf",
+      "evidence": "dane_producenta_PDF_REV2_2022-02-17",
+      "xmax_definition": "Linear coil travel p-p 30mm, czyli amplituda jednostronna15mm. Definicja geometryczna, nie gwarancja THD ani BL(x).",
+      "model": {
+        "name": "SB Acoustics SB34SWPL76-4",
+        "fs_hz": 19.0,
+        "qes": 0.33,
+        "qms": 7.7,
+        "vas_l": 79.0,
+        "sd_cm2": 458.0,
+        "re_ohm": 3.5,
+        "le_mh": 5.3,
+        "xmax_mm": 15.0,
+        "nominal_ohm": 4.0,
+        "rated_w": 300.0
+      },
+      "catalog_extra": {
+        "qts": 0.32,
+        "mms_g": 264.0,
+        "cms_mm_n": 0.27,
+        "bl_tm": 18.3
+      },
+      "data_issue": "T/S po wygrzaniu według PDF. Pe wskazuje IEC268-5, bez analizy pełnego protokołu. Duże Le: stała indukcyjność to przybliżenie. Xmax w modelu przeliczone z podanego p-p.",
+      "price_pln": null,
+      "stock_eu": null,
+      "independent_distortion": null
+    }
+  ]
+}

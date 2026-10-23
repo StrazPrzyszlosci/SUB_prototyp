@@ -1,0 +1,9 @@
+# Zachowaj dokładne bajty źródeł i wyników objętych SHA-256.
+* -text
+
+# CSV z biblioteki csv używają CRLF, Markdown dopuszcza twarde łamanie spacjami.
+*.csv whitespace=cr-at-eol
+*.md whitespace=-blank-at-eol
+
+# Wykresy SVG są generowanymi artefaktami Matplotlib.
+*.svg whitespace=-blank-at-eol

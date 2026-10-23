@@ -1,0 +1,45 @@
+{
+  "status": "ODCZYT_OBRAZU_I_PRZELICZENIE_NIE_POMIAR",
+  "source_url": "https://www.diyaudio.com/community/threads/help-finalising-enclosure-design-dayton-rss315hf-4.360765/",
+  "source_date": "2020-09-27",
+  "access_date": "2026-10-23",
+  "box_ft3_read": 3.7,
+  "box_net_l_calculated": 104.77233239040001,
+  "fb_hz_read": 24.0,
+  "port_dimensions_in_read": [
+    15.75,
+    2.0,
+    35.03
+  ],
+  "port_area_cm2_calculated": 203.22539999999998,
+  "port_air_volume_l_calculated": 18.082223835479997,
+  "port_air_volume_l_handwritten": 18.066148125696,
+  "handwritten_net_ft3_calculated": 3.703900000000001,
+  "handwritten_net_l_calculated": 104.88276809210883,
+  "f3_visual_estimate_hz": [
+    21,
+    23
+  ],
+  "excursion_xmax_crossing_visual_estimate_hz": [
+    20,
+    22
+  ],
+  "xmax_reference_line_visual_mm": 14.3,
+  "missing": [
+    "Napięcie/moc wejściowa (zakładka Signal niewidoczna)",
+    "Pełny zestaw T/S z użytej bazy",
+    "Aktywne filtry i straty",
+    "Definicja jednostek velocity/excursion w tej konfiguracji WinISD"
+  ],
+  "images_sha256": {
+    "dane/zrodla/obrazy_diyaudio_360765/zalacznik_01.png": "9d7f0f6e0aaa44fd728856d0ac11bfd4bc538f20c6de8a83ce00a414c39b1622",
+    "dane/zrodla/obrazy_diyaudio_360765/zalacznik_02.png": "f37fc66600f31e6f4eae63b8a4b842c3f07763df68ed0afbc0ce5a74a6737e73",
+    "dane/zrodla/obrazy_diyaudio_360765/zalacznik_03.png": "f366b105440a12ea44c7382544af7fa5b320f04bec2a6832f79040d47b9580ab",
+    "dane/zrodla/obrazy_diyaudio_360765/zalacznik_04.png": "7224cb8a1a55d586c407d3e764b7f5f67e12f9b00f9eadd8e9a99cc4914a9f40",
+    "dane/zrodla/obrazy_diyaudio_360765/zalacznik_05.png": "9a965879aa570be7fb7079e036b6a5ee1b982af5f01d179146209952b43229fc",
+    "dane/zrodla/obrazy_diyaudio_360765/zalacznik_06.jpg": "d1a17e568909db2af12fa9f9343154d50e74fe635597e555d0d6ebeb0ed97da0",
+    "dane/zrodla/obrazy_diyaudio_360765/zalacznik_07.jpg": "0cb22bd39bea12b472345e18fe88ca9eaeffb31bfd33b2197095b8da275d41df",
+    "dane/zrodla/obrazy_diyaudio_360765/zalacznik_08.jpg": "fa111c4d50b926d81295312e0141203b60f17e88ec78db9311a52a5a38d2c2c1",
+    "dane/zrodla/obrazy_diyaudio_360765/zalacznik_09.jpg": "30985b53943053706806d64e29c24638cd87ee9c9062a8c26df95b3796d9b615"
+  }
+}

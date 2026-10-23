@@ -1,0 +1,117 @@
+{
+  "generated_at": "2026-10-23T20:07:55.320011+02:00",
+  "status": "SYMULACJA_LINIOWA_PRZED_BUDOWA",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "libraries": {
+    "numpy": "1.26.4",
+    "scipy": "1.17.1",
+    "matplotlib": "3.10.8"
+  },
+  "input_sha256": {
+    "brief_system_audio_DIY_v0.6.md": "3bd9f8d43a92b96256073e66cd0f4f105336e969a37c29fc42f17cda9d66736f",
+    "dane/przetworniki/kandydaci.json": "348571fd7c25ea0564cb98bd5af1854158c0c7d74589c7433fd5c049f2c6cb11",
+    "dane/konfiguracje/badania_wstepne.json": "69062e2c589d93c90c67677d831362cf5edc55856789867b5b37003b511b4466",
+    "skrypty/audyt_wykresow.py": "0104d9b8a6db6a8e91cc685fb90ba09fedfa43e8284880ba918820e98fb83b39",
+    "skrypty/model_subwoofera.py": "71164d7adf5933dc5ad25c18e9ef3efdb32730d793b7a8e8cdd1ec51a22469bc",
+    "skrypty/sprawdz_model.py": "2c1fdc256d84878f8c65f5a213948782d16c7057c8ef985c5e1065c63cbe7320",
+    "skrypty/uruchom_badania.py": "51f57cf6017d2b0b9c7752f1d3fc222d8d50dbab0a56abdfd5a79cc025c08719",
+    "dane/zrodla/SRC03_SB34SWPL76-4.pdf": "f85c16f4db2a0d8c304c321d0d80af092640c1b3cf59a02b7521235b462d61f8",
+    "dane/zrodla/obrazy_diyaudio_360765/indeks.json": "989c0fc1027141ec4c7799722ce78db9514a370dad3575ad707d1ebcd735064b",
+    "dane/zrodla/obrazy_diyaudio_360765/zalacznik_01.png": "9d7f0f6e0aaa44fd728856d0ac11bfd4bc538f20c6de8a83ce00a414c39b1622",
+    "dane/zrodla/obrazy_diyaudio_360765/zalacznik_02.png": "f37fc66600f31e6f4eae63b8a4b842c3f07763df68ed0afbc0ce5a74a6737e73",
+    "dane/zrodla/obrazy_diyaudio_360765/zalacznik_03.png": "f366b105440a12ea44c7382544af7fa5b320f04bec2a6832f79040d47b9580ab",
+    "dane/zrodla/obrazy_diyaudio_360765/zalacznik_04.png": "7224cb8a1a55d586c407d3e764b7f5f67e12f9b00f9eadd8e9a99cc4914a9f40",
+    "dane/zrodla/obrazy_diyaudio_360765/zalacznik_05.png": "9a965879aa570be7fb7079e036b6a5ee1b982af5f01d179146209952b43229fc",
+    "dane/zrodla/obrazy_diyaudio_360765/zalacznik_06.jpg": "d1a17e568909db2af12fa9f9343154d50e74fe635597e555d0d6ebeb0ed97da0",
+    "dane/zrodla/obrazy_diyaudio_360765/zalacznik_07.jpg": "0cb22bd39bea12b472345e18fe88ca9eaeffb31bfd33b2197095b8da275d41df",
+    "dane/zrodla/obrazy_diyaudio_360765/zalacznik_08.jpg": "fa111c4d50b926d81295312e0141203b60f17e88ec78db9311a52a5a38d2c2c1",
+    "dane/zrodla/obrazy_diyaudio_360765/zalacznik_09.jpg": "30985b53943053706806d64e29c24638cd87ee9c9062a8c26df95b3796d9b615"
+  },
+  "output_sha256": {
+    "wyniki/01_objetosc_i_granice_modelu.png": "df59d534374fe793981b9bf6f6c17d83264ad02a3b02de876c2b11307fdaca39",
+    "wyniki/01_objetosc_i_granice_modelu.svg": "8fd8b47eabb7ca03a63c4827d23f4c8f70fdb8e0c20d48519143ad9c574c61fe",
+    "wyniki/02_mody_osiowe.png": "d68e17df9150d7f24582ad4b0c7f9d5806bef0c8fbb01bf7ac026867d93b364d",
+    "wyniki/02_mody_osiowe.svg": "b2b81bfbc72fc8e4d39e858f65eab66583e5aee53358cbbad0de18dedf3e42f3",
+    "wyniki/03_przyklad_dsp.png": "d7dddcabcc96584cb028701ac418b9067eb48c2b9478a85ea1577c23c01257c9",
+    "wyniki/03_przyklad_dsp.svg": "d997201c31023189f7c7fe6d436b67c32ce875230722bf8c2c92ebbcb438b99d",
+    "wyniki/audyt_wykresow_diyaudio.json": "865de2446a9c331477016d5481299fc3591be8dfe979b6a71fc9ada40fef59a7",
+    "wyniki/geometria_wstepna.csv": "70098a71db45af10ce4cb17b4163bac25e35dedbe6ea7ec7f8c7da5befaaeb62",
+    "wyniki/mody_pokoju.csv": "5e38831e4c77643878766067a219e0e06a5d1fef452fee142a90df851546a503",
+    "wyniki/pasma_i_limity.csv": "364a1ccab641965a2f8107800d88e64030e7cb96870b06844f11a34847d3468b",
+    "wyniki/porownanie_obudow.csv": "3f71ccf491fa31d1d272c56582cee2106c36773b47a4e45e78412cd97a4a3879",
+    "wyniki/spojnosc_ts.csv": "202991722ee7cf937935eeadfd87128890db4ae9f17ad797bc4c57c1f5927e22",
+    "wyniki/wrazliwosc_ts.csv": "43f5acf57b07bd3b4ed58b0a9875a19dff32d1baed5623370525f3499a28cb6d"
+  },
+  "configuration": {
+    "status": "ZALOZENIA_OBLICZENIOWE_NIE_ZATWIERDZONA_SPECYFIKACJA",
+    "volumes_l": [
+      30,
+      45,
+      60,
+      80,
+      100,
+      120
+    ],
+    "comparison_volume_l": 60,
+    "reference_vrms": 2.83,
+    "amp_vrms": 40.0,
+    "amp_irms": 12.0,
+    "amp_note": "Hipotetyczne granice sinusoidalne, bez przypisania do produktu i zasilacza. Nie jest rekomendacją mocy.",
+    "distance_m": [
+      2.5,
+      3.0
+    ],
+    "room_dimensions_m": [
+      4.6,
+      3.7,
+      2.5
+    ],
+    "room_gain_20hz_db": [
+      0,
+      3,
+      6
+    ],
+    "room_gain_note": "Wyłącznie ilustracja czułości. Krzywa 0 dB przy 80Hz, deklarowany gain przy20Hz. Nie ma zidentyfikowanej transmitancji ani gwarantowanego room gain.",
+    "dsp_example": {
+      "target_hz": 25.0,
+      "target_q": 0.7071067811865475,
+      "hp_hz": 18.0,
+      "lp_hz": 80.0
+    },
+    "dsp_note": "Przykład analogowego LT+HP Butterworth2+LP LR4. Nie preset do wgrania, nie zatwierdzony cel ani pełna ochrona.",
+    "cabinet_geometry_examples": [
+      {
+        "name": "K1_pogladowy",
+        "inside_mm": [
+          400,
+          400,
+          450
+        ],
+        "wall_mm": 18,
+        "front_mm": 36,
+        "assumed_driver_l": 4.0,
+        "assumed_braces_l": 3.0
+      },
+      {
+        "name": "K2_pogladowy",
+        "inside_mm": [
+          460,
+          460,
+          640
+        ],
+        "wall_mm": 18,
+        "front_mm": 36,
+        "assumed_driver_l": 6.0,
+        "assumed_braces_l": 5.0
+      }
+    ],
+    "cabinet_note": "Wyporności orientacyjne. Geometria nie jest zoptymalizowana ani gotowa do CNC; wymaga rysunku wybranego głośnika, wręg, modułów i sprawdzenia masy."
+  },
+  "limitations": [
+    "Nie jest pomiarem ani gwarancją maksymalnego użytecznego SPL.",
+    "Nie modeluje THD, temperatury, kompresji, BL(x), Cms(x), Le(x), room transfer.",
+    "Granice dotyczą osobnych sinusów; nie wolno sumować ich jako dostępnego SPL muzyki.",
+    "Pe*Znom to orientacyjny limit napięcia, nie wyznaczona granica termiczna.",
+    "T/S producentów wymagają późniejszej walidacji egzemplarzy."
+  ]
+}

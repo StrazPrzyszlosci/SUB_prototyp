@@ -1,0 +1,5 @@
+# Wersje użyte w pierwszym przebiegu; Python 3.12.
+numpy==1.26.4
+scipy==1.17.1
+matplotlib==3.10.8
+sympy==1.12
