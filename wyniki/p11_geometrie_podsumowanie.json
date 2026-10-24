@@ -1,0 +1,24 @@
+{
+  "status": "WZORCOWE_MODELE_P11_NIE_GEOMETRIA_FINALNEGO_PROTOTYPU",
+  "drivers": 24,
+  "calibration_rows": 72,
+  "motor_rows": 10368,
+  "reference_rows": 1152,
+  "pilot_rows": 24,
+  "max_relative_motor_power_residual": 1.2908289782617261e-14,
+  "mass_pilot": {
+    "source_mms_g": 190.0,
+    "source_mmd_g": 162.4,
+    "source_difference_g": 27.599999999999994,
+    "two_face_static_piston_air_g": 28.127884837023508,
+    "implied_density_if_two_face_static_formula": 1.1815202502605302,
+    "internally_consistent_primitive_mms_g": 192.71744080087905,
+    "scope": "ZGODNOSC_RZEDU_WIELKOSCI_NIE_DOWOD_PROTOKOLU_POMIAROWEGO_PRODUCENTA"
+  },
+  "caveats": [
+    "Kształt czaszy i sfery nie jest płaskim koszem w skrzyniMDF.",
+    "Kalibracja wFs nie odtwarza całej impedancji i nie dowodzi rzeczywistegoMmd.",
+    "2π/4π normalizacji nie wolno utożsamiać z dokładną zmianą rzeczywistej odgrody.",
+    "Kontrola reference_faces=0 pokazuje podwójne liczenie powietrza; nie jest finalistą."
+  ]
+}

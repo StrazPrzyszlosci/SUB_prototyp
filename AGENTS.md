@@ -168,6 +168,13 @@ Postęp końca sesji2026-10-23:
   zidentyfikowane. Przy aktywnym ograniczeniu X zmiana podatności gazu
   nie tworzy dodatkowego Sd·X.
 - Poprzedni etap P06 opublikowano: commit3986530.
+- P11 w toku: kod promieniowania tłoka/całki Rayleigha, radialnej czaszy
+  na sferze i wewnętrznej komory, kalibracja mas/oporu w Fs, wzajemne
+  promieniowanie i obrazy podłogi/ściany. Pierwsze 6 częstotliwości oraz
+  kontrola mocy są wykonane; iterację zachowano w archiwum P11_szesc_punktow.
+  Trwa rozszerzenie reakcji pełnego modelu pokoju na gęstą siatkę przy modach.
+  OryginalnePDF COMSOL/Faital/Bellows2024 pobrano przez browser-harness;
+  źródło Southampton przekierowało na stronę główną i nie jest przeczytaną pracą.
 - **Następny krok: P11 — skończony tłok, promieniowanie i Mmd/Mms,
   z kontrolą podwójnego liczenia masy/strat.** Nie powtarzać
   wykonanego N7 ani wyszukiwań wszystkich 24 opinii

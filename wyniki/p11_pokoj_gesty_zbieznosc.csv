@@ -1,0 +1,4 @@
+metric,candidate_id,source_set,volume_l,modal_t60_s,zero_tau_s,source_count,coarse_value,refined_value,step_refined_hz,absolute_difference
+max_perturbation_norm,C07,B,100.0,0.8,0.02,2,0.22321063185507753,0.22321063185507753,0.05,0.0
+max_relative_velocity_change,C07,B,100.0,0.8,0.02,2,0.18824398953073265,0.18824398953073265,0.05,0.0
+max_abs_pressure_feedback_db,C07,B,60.0,0.8,0.02,2,1.710718719799854,1.7116576089990385,0.05,0.0009388891991846116

@@ -1,0 +1,10 @@
+{
+  "status": "PASS_SYMBOLICZNE_BILANS_I_DODATNIOSC_PORTOW",
+  "checks": [
+    "Dwa motory i modalny akustyczny port: siły/przepływy mają przeciwne moce sprzężenia",
+    "Część rzeczywista każdego niezerowego modu jest nieujemna dla wszystkichomega",
+    "Relaksujący mod jednorodny ma nieujemną część rzeczywistą"
+  ],
+  "scope": "Dowód dla zadanej rodziny modalnej i dodatnich parametrów. Pasywność nie identyfikuje fizycznego pokoju.",
+  "stability_note": "Przy dodatnim tłumieniu modów i motorów oraz dodatniej energii model ma rozpraszanie. Granica bez strat może mieć nierozpraszane mody; nie deklarować wówczas asymptotycznej stabilności."
+}
