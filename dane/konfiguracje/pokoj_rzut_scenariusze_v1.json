@@ -1,0 +1,30 @@
+{
+  "status": "UKLAD_I_PRZYBLIZONE_WYMIARY_POTWIERDZONE_BEZ_DOKLADNYCH_POZYCJI",
+  "source_date": "2026-10-24",
+  "source_image": "dane/zrodla/materialy_uzytkownika/rzut_pokoju_sSKtLurb.jpeg",
+  "source_image_sha256": "5057c9f85aec6fc13ca37d46f979afbacb2f13c6aad2f92cf2e6d6293973b2be",
+  "user_statement": "po lewej siedzi człowiek na kanapie a po prawej jest ściana rtv",
+  "confirmed_orientation": {
+    "front_y0": "prawa strona obrazu, ściana RTV",
+    "rear_y_length": "lewa strona obrazu, kanapa",
+    "x0": "górna strona obrazu, lewo osoby patrzącej na RTV",
+    "x_width": "dolna strona obrazu, prawo osoby patrzącej na RTV"
+  },
+  "dimension_source": "U-019: użytkownik potwierdził aktualny układ rzutu i przybliżone wymiary z briefu4.6x3.7x2.5m. Nie przeskalowano obrazu do pomiaru pokoju; tolerancja wymiarów i dokładne pozycje uszu/monitorów pozostają nieznane.",
+  "user_confirmation": "Tak, układ i wymiary z briefu są aktualne",
+  "room_dimensions_xyz_m_assumed": [3.7, 4.6, 2.5],
+  "visual_observations_not_survey": [
+    "Widoczna nieciągłość/przejście w górnej lewej części rzutu; stan otwarcia akustycznego nieustalony.",
+    "Na dole rzutu widoczna stolarka okienna/drzwiowa; jej impedancja akustyczna nieznana.",
+    "Strefa stołu zajmuje górną część rzutu; brak zweryfikowanych prześwitów dla obudów.",
+    "Sylwetka człowieka i przerywane linie nie wyznaczają zmierzonego położenia uszu ani osi monitorów.",
+    "Oznaczeń instalacji elektrycznej nie przyjęto jako specyfikacji ustawienia głośników."
+  ],
+  "listener_back_wall_clearance_scenarios_m": [0.4, 0.7, 1.0],
+  "listener_x_m_assumed": 1.85,
+  "listener_and_monitor_height_m_assumed": 1.1,
+  "monitor_lateral_offset_from_listener_m": [0.8, 1.0, 1.2],
+  "listening_distance_scenarios_m": [2.5, 2.75, 3.0],
+  "legacy_hypothetical_monitor_front_distance_m": 0.65,
+  "scope": "Warunkowa geometria odległości, bez predykcji SPL, optymalizacji położeń ani uznania rozkładu pikseli za pomiar."
+}

@@ -258,6 +258,36 @@
       "access_date": "2026-10-24",
       "scope": "Pobrano oryginalnyPDF przez browser-harness i obejrzano strony2–5, w tym wszystkie trzy rysunki. Odczytano asymptoty, równanie11 i przykładPhi=2.2563. Wykresy teoretycznegoBR nie są pomiarem sealed.",
       "raw_capture_sha256": "475694a9b3ef90c4cc592725d817ff5001151dfc40eb354d006dfa58587fd188"
+    },
+    {
+      "id": "SRC28",
+      "url": "https://www.comsol.com/model/download/1340691/models.aco.baffled_piston_radiation.pdf",
+      "title": "COMSOL6.3 Baffled Piston Radiation",
+      "access_date": "2026-10-24",
+      "method": "Firecrawl i browser-harness; ponowne utrwalenie lokalnie zachowanego oryginału",
+      "scope": "Oryginał PDF obejrzany na stronach2–8: równania1,2,4 i rysunki1–5. Amplituda źródła w benchmarku nie jest automatycznie RMS; w naszych modelach użyto RMS. Automatycznych punktów z wykresów nie przyjęto.",
+      "raw_capture_sha256": "133812d4985157661702b08ccedd2aa458d2524b8e8c685cb119794bb05bb757",
+      "original_pdf_sha256": "d0155c03deade48b22a2431265f91e06dbaa504ceda0afc227d76d51f70d00c2"
+    },
+    {
+      "id": "SRC29",
+      "url": "https://faitalpro.com/en/products/LF_Loudspeakers/product_details/datasheet.php?id=201060150",
+      "title": "FaitalPRO15XL1400,8ohm,karta producenta",
+      "access_date": "2026-10-24",
+      "method": "Firecrawl i browser-harness; ponowne utrwalenie lokalnie zachowanego oryginału",
+      "scope": "Oryginalna jednostronicowa karta obejrzana: Mms190.0g,Mmd162.4g,Cms0.09mm/N,BL26.7N/A,Rms4.4kg/s. Przeczytano tabelę, rysunek i krzywe; nie digitalizowano SPL.",
+      "raw_capture_sha256": "c4febda5efd8acdc0e455c4b9fc42c4eeae2a28884b58506780ca5c2b9949022",
+      "original_pdf_sha256": "338ff7160a13769557333cacd4d396d0ea397703d0cb632e48263c89b0bfc00d"
+    },
+    {
+      "id": "SRC30",
+      "url": "https://sambellows.github.io/assets/pdf/2024_spherical_cap.pdf",
+      "title": "S.D.Bellows2024,JASA155(5),3302–3305,DOI10.1121/10.0026023",
+      "access_date": "2026-10-24",
+      "method": "Firecrawl i browser-harness; ponowne utrwalenie lokalnie zachowanego oryginału",
+      "scope": "Oryginalny PDF: odczyt równań4/5/6 i oględziny stron3–5 z rysunkami1–3. Minimum0.6167 przy50.5deg dotyczy0<theta<=90deg i promienia rzutu czaszy, a nie koła równej powierzchni.",
+      "raw_capture_sha256": "4ea72d827fddf20b3d1cd129983965753cadc22ea610bd6f032c7092f7393c37",
+      "original_pdf_sha256": "0b454b8e00a3d0fab432aab46d757b4de934f0a546533d113fb9f060126931cf"
     }
   ]
 }

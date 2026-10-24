@@ -58,6 +58,17 @@ oraz dwie dodatkowe dyskusje. Samo znalezienie linku nie oznacza analizy źród�
   AFr≥5kPa*s/m² nie jest kompletem mikrostruktury ani oporem całej warstwy.
 - SRC27: [Venegas et al., ForumAcusticum2023](https://dael.euracoustics.org/confs/fa2023/data/articles/000280.pdf).
   OryginalnyPDF obejrzany na stronach2–5. Rysunki opisują modelBR; nie pomiar sealed.
+- SRC28: [COMSOL6.3 — Baffled Piston Radiation](https://www.comsol.com/model/download/1340691/models.aco.baffled_piston_radiation.pdf).
+  Oryginał: równania i rysunki na stronach2–8; uzgodnić amplitudę/RMS przy mocy.
+- SRC29: [FaitalPRO15XL1400,8Ω](https://faitalpro.com/en/products/LF_Loudspeakers/product_details/datasheet.php?id=201060150).
+  Obejrzano kartę: Mms190,0g/Mmd162,4g i osobny zestaw Cms/BL/Rms; protokół powietrza nieustalony.
+- SRC30: [Bellows2024, JASA155,3302–3305](https://sambellows.github.io/assets/pdf/2024_spherical_cap.pdf).
+  Równania4–6 i rysunki1–3 obejrzane w oryginale. Odtworzono drukowane minimum poprawki czaszy;
+  promień rzutu nie jest promieniem koła o powierzchniSd. DOI10.1121/10.0026023.
+
+P11: [fakty, hashe i ograniczenia odczytu](../dane/zrodla/P11_promieniowanie_i_konwencje_mas.json).
+Automatyczne tablice punktów z wykresów odrzucono. Link Southampton przekierował
+na stronę główną; nie jest przeczytaną pracą. Data dostępu SRC28–30:2026-10-24.
 
 Przekazane przez użytkownika oceny i program są zachowane w
 [materialach źródłowych](../dane/zrodla/materialy_uzytkownika/indeks.json).

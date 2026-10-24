@@ -1,0 +1,29 @@
+{
+  "candidate_id": "C15",
+  "manufacturer": "FaitalPRO",
+  "model": {
+    "name": "FaitalPRO 15XL1400 8ohm",
+    "fs_hz": 38,
+    "qes": 0.34,
+    "qms": 10.4,
+    "vas_l": 91.2,
+    "sd_cm2": 841,
+    "re_ohm": 5.4,
+    "le_mh": 1.6,
+    "xmax_mm": 12.92,
+    "nominal_ohm": 8,
+    "rated_w": 1400
+  },
+  "catalog_extra": {
+    "qts": 0.33,
+    "mms_g": 190,
+    "cms_mm_n": 0.09,
+    "bl_tm": 26.7
+  },
+  "url": "https://faitalpro.com/en/products/LF_Loudspeakers/product_details/datasheet.php?id=201060150",
+  "access_date": "2026-10-24",
+  "xmax_definition": "Xmax=(winding-depth-gap-depth)/2+gap-depth/3;31mm/15.5mm ->12.92mm.",
+  "data_issue": "Definicja rozszerzona o1/3szczeliny, a nie sam geometryczny overhang. Pe2hAES2;Xdamage28mm jest inną granicą. Nie używać danych wersji4Ωz innegoPDF.",
+  "source_extraction_sha256": "ccd693b1f4cdf89b6ed12ce4a6fb2a512f6aae8b73449a4b7976911893e404fd",
+  "scope": "Zweryfikowane tabele i jawne konwersje; nie użyto automatycznych odczytów punktów z wykresów."
+}

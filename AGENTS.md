@@ -99,6 +99,22 @@ Optymalizacja jednego sweet spotu 2,5–3 m; brak narzuconego budżetu i gabaryt
     zewnętrznym. Porowatość pozorna sorpcji może przekraczać1; geometryczna
     pozostaje≤1. Modele porów i Cp nie identyfikują konkretnego produktu.
     Przy dodawaniu promieniowania uzgodnić Mmd/Mms i uniknąć podwójnej masy.
+27. P11: kalibracja masy/oporu w Fs nie jest niezależnym Mmd ani dopasowaniem
+    całej krzywej T/S. Czasza radialna na sferze to geometria kontrolna,
+    nie płaski głośnik w docelowej skrzyni. Port Gaussa ma masę efektywną;
+    sigma nie jest promieniem membrany. Obrazy odgrody i pełny model pokoju
+    to odrębne eksperymenty, bez sumowania dwóch zysków. Ograniczenie Neumanna
+    dotyczy wektora prędkości przy danej częstotliwości, nie względnego
+    ciśnienia przy dołkach. Gęsta siatka i wybrane świadki zbieżności nie są
+    certyfikatem maksimum ciągłego pasma. W polu bliskim moc sprawdzać przez
+    Re(p*conj(v)), a nie samo |p|²/(rho*c).
+28. U-018: na rzucie sSKtLurb.jpeg kanapa/osoba są po lewej, RTV po prawej.
+    Front y=0 to prawa strona obrazu; +y ku kanapie, +x od góry ku dołowi.
+    To potwierdzenie orientacji, nie położenia uszu ani zmierzonych pozycji
+    głośników. Nie skalować rastra do założonych wymiarów i nie uznawać
+    dawnego S0 za potwierdzone. U-019 potwierdza aktualny układ i przybliżone
+    wymiary briefu4,6×3,7×2,5m. Rzut i scenariusze są w raporcie018;
+    uwzględnić przejście i stolarkę jako nierozpoznane warunki brzegowe.
 
 ## Stan i postępy
 
@@ -175,8 +191,32 @@ Postęp końca sesji2026-10-23:
   Trwa rozszerzenie reakcji pełnego modelu pokoju na gęstą siatkę przy modach.
   OryginalnePDF COMSOL/Faital/Bellows2024 pobrano przez browser-harness;
   źródło Southampton przekierowało na stronę główną i nie jest przeczytaną pracą.
-- **Następny krok: P11 — skończony tłok, promieniowanie i Mmd/Mms,
-  z kontrolą podwójnego liczenia masy/strat.** Nie powtarzać
+- P11 wykonano dla rodzin kontrolnych: 10 368 wierszy geometrii/napędu,
+  6912 odgrody/obrazów, 41 472 pokoju oraz 4 154 112 realizacji
+  częstotliwościowych na siatce 20–80 Hz co 0,1 Hz. Raport 017 i baza13.
+  Odtworzono opublikowane minimum Bellows2024; sprawdzono energię,
+  235 008 kombinacji V/I/X i odrębną zbieżność przestrzenną 44 punktów.
+  Maksymalna znaleziona poprawka SPL około 1,712 dB dotyczy warunkowego
+  C07 i hipotetycznego ustawienia B; nie jest prognozą dla klienta.
+  Rozpraszanie na finalnej skrzyni i identyfikacja rzeczywistego Mmd/strat
+  pozostają otwarte przy integracji P18/P21/P29. P11 włączono do pełnego
+  odtwarzania; końcowy PDF i pojedynczy wybór nadal oczekują reszty programu.
+- U-018: zachowano bez zmiany bajtów przekazany rzut (SHA-256 w konfiguracji)
+  i zapisano orientację kanapa–RTV. Wykonano 27 jawnych scenariuszy odległości;
+  raport018. Dawne S0 i monitory nie stają się pomiarem. Przykład uszu 0,7m
+  od tyłu przy rozstawie monitorów2,4m daje3,464m odsłuchu, jeśli zachować
+  fronty monitorów0,65m od RTV; trzeba wspólnie uzgodnić ustawienie i2,5–3m.
+  U-019 potwierdziło układ oraz przybliżone wymiary briefu. Dokładne pozycje,
+  prześwity, stan drzwi i impedancje otwarć pozostają nieznane.
+- Weryfikacja integracji P11: pełny przebieg zakończył się kodem0;
+  58 istniejących tabelCSV odtworzono identycznie bajtowo względem migawki
+  `wyniki/archiwum/20261024T205707_945167`. Po przeglądzie doprecyzowano
+  podpis wektora prędkości na wykresie19 i minimum mocy pojedynczego portu
+  (inicjalizacja minimum przez+∞ zamiast0); przeliczono powiązany etap.
+  Rachunek geometrii z rzutu wykonano osobno i włączono do odtwarzania.
+  Nie deklarować z tego fizycznej walidacji ani zamknięcia całego programu.
+- **Następny krok: P12/P13 — energetycznie zgodne nieliniowości napędu
+  i zawieszenia połączone z gazem, z jawnymi brakami krzywych produktu.** Nie powtarzać
   wykonanego N7 ani wyszukiwań wszystkich 24 opinii
   bez konkretnej nowej hipotezy lub źródła. Dokładne pozycje w pokoju pozostają
   pytaniem otwartym; rozdzielać je od jawnych scenariuszy w p26_scenariusze.json.

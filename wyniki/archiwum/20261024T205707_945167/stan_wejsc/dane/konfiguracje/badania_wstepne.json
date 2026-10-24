@@ -1,0 +1,20 @@
+{
+  "status": "ZALOZENIA_OBLICZENIOWE_NIE_ZATWIERDZONA_SPECYFIKACJA",
+  "volumes_l": [30, 45, 60, 80, 100, 120],
+  "comparison_volume_l": 60,
+  "reference_vrms": 2.83,
+  "amp_vrms": 40.0,
+  "amp_irms": 12.0,
+  "amp_note": "Hipotetyczne granice sinusoidalne, bez przypisania do produktu i zasilacza. Nie jest rekomendacją mocy.",
+  "distance_m": [2.5, 3.0],
+  "room_dimensions_m": [4.6, 3.7, 2.5],
+  "room_gain_20hz_db": [0, 3, 6],
+  "room_gain_note": "Wyłącznie ilustracja czułości. Krzywa 0 dB przy 80Hz, deklarowany gain przy20Hz. Nie ma zidentyfikowanej transmitancji ani gwarantowanego room gain.",
+  "dsp_example": {"target_hz": 25.0, "target_q": 0.7071067811865475, "hp_hz": 18.0, "lp_hz": 80.0},
+  "dsp_note": "Przykład analogowego LT+HP Butterworth2+LP LR4. Nie preset do wgrania, nie zatwierdzony cel ani pełna ochrona.",
+  "cabinet_geometry_examples": [
+    {"name": "K1_pogladowy", "inside_mm": [400, 400, 450], "wall_mm": 18, "front_mm": 36, "assumed_driver_l": 4.0, "assumed_braces_l": 3.0},
+    {"name": "K2_pogladowy", "inside_mm": [460, 460, 640], "wall_mm": 18, "front_mm": 36, "assumed_driver_l": 6.0, "assumed_braces_l": 5.0}
+  ],
+  "cabinet_note": "Wyporności orientacyjne. Geometria nie jest zoptymalizowana ani gotowa do CNC; wymaga rysunku wybranego głośnika, wręg, modułów i sprawdzenia masy."
+}

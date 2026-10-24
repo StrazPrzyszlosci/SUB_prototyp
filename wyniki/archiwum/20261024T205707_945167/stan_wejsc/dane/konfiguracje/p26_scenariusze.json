@@ -1,0 +1,26 @@
+{
+  "status": "SCENARIUSZE_NIE_POMIAR_POZYCJI_ANI_TLUMIENIA",
+  "coordinate_source": "pokoj_odsluchowy.json: x=szerokość, y=długość od frontu, z=wysokość",
+  "assumed_monitors_xyz_m": [[0.65, 0.65, 1.1], [3.05, 0.65, 1.1]],
+  "assumed_listener_xyz_m": [1.85, 3.1, 1.1],
+  "diagnostic_neighbor_offsets_xyz_m": [[0, 0, 0], [-0.15, 0, 0], [0.15, 0, 0], [0, -0.15, 0], [0, 0.15, 0], [0, 0, -0.1], [0, 0, 0.1]],
+  "source_sets": [
+    {"id": "A", "positions_xyz_m": [[0.65, 0.65, 0.3], [3.05, 0.65, 0.3]], "note": "symetrycznie przy założonych monitorach"},
+    {"id": "B", "positions_xyz_m": [[0.85, 0.35, 0.3], [2.85, 0.35, 0.3]], "note": "bliżej frontu i osi pokoju; wykonalność niepotwierdzona"},
+    {"id": "C", "positions_xyz_m": [[0.5, 1.0, 0.3], [3.2, 1.0, 0.3]], "note": "dalej od frontu; wykonalność niepotwierdzona"},
+    {"id": "D", "positions_xyz_m": [[0.65, 0.35, 0.3], [3.05, 1.0, 0.3]], "note": "niesymetryczna głębokość przy monitorach, bez tylnej ściany"}
+  ],
+  "modal_t60_s": [0.2, 0.4, 0.8],
+  "modal_t60_note": "Obwiednia wybranej rodziny oscylatorów; nie zmierzony RT60 całego pomieszczenia ani wynik Sabine'a",
+  "zero_relaxation_s": [0.02, 0.2, 2.0],
+  "zero_relaxation_note": "Niezidentyfikowana relaksacja przestrzennie jednorodnego ciśnienia, niezależna od modalnego T60",
+  "source_smoothing_sigma_m": 0.12,
+  "receiver_smoothing_sigma_m": 0.03,
+  "smoothing_note": "Regularizacja rozłożonego źródła i odbiornika przez heat-kernel Neumanna, nie geometria membrany",
+  "kmax_m_inv": 40.0,
+  "frequency_grid_hz": [10.0, 120.0, 0.25],
+  "relative_delays_ms": [0, 2, 5, 10, 20],
+  "source_model": "zadana objętościowa prędkość źródła, brak reakcji pokoju na ruch głośnika",
+  "position_geometry_note": "Punkty reprezentują okolice frontu promieniującego, nie środek bryły skrzyni. Wiązanie z konkretną geometrią jest otwartą bramką; część wariantów odpada dla sześciennej skrzyni.",
+  "no_optimization_claim": "Nie wybierać rzeczywistego ustawienia ani korekcji EQ na podstawie tych założeń"
+}

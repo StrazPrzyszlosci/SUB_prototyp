@@ -1,7 +1,7 @@
 {
-  "status": "DANE_BRIEFU_PRZYBLIZONE_POZYCJE_DO_USTALENIA",
+  "status": "DANE_BRIEFU_POTWIERDZONE_U019_POZYCJE_DO_USTALENIA",
   "confirmed_by_user_reminder": "2026-10-24",
-  "source": "brief_system_audio_DIY_v0.6.md, sekcja3 i późniejsze polecenie użytkownika",
+  "source": "brief_system_audio_DIY_v0.6.md, sekcja3, U-016 oraz potwierdzenie układu i wymiarów U-019",
   "length_y_m": 4.6,
   "width_x_m": 3.7,
   "height_z_m": 2.5,
@@ -30,10 +30,11 @@
     "dokładnypunktgłowy",
     "wysokośćuszu",
     "pozycjemonitorów",
-    "rzutmebliiprzejść",
+    "dokładneprześwityprzymeblachiprzejściachdlaskrzyń",
     "rzeczywistepochłanianieiczasyzaniku"
   ],
   "construction_gate": "Sprawdzić miejsce dla dwóch egzemplarzy z prześwitami i monitorami; duża objętośćzoptymalizacji20Hz niejestautomatycznie praktycznąrekomendacją.",
   "acoustic_gate": "Nieprzyjmowaćstałegoroomgain ani parytetuSPLzmodelem2π/1m bezmodelupokoju i późniejszejidentyfikacji.",
-  "position_data_status": "U-017, 2026-10-24: użytkownik nie ma obecnie danych pozycji głowy i monitorów; kontynuować scenariusze."
+  "position_data_status": "U-017: brak dokładnych pozycji; U-018/U-019: potwierdzono orientację kanapa po lewej/RTV po prawej na rzucie oraz aktualny układ i przybliżone wymiary. Piksele i sylwetka nie są pomiarem uszu.",
+  "current_layout_source": "dane/zrodla/materialy_uzytkownika/rzut_pokoju_sSKtLurb.jpeg; orientacja i status w pokoj_rzut_scenariusze_v1.json"
 }

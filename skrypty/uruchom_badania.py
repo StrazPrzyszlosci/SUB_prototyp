@@ -177,7 +177,8 @@ def main():
                 'configuration': cfg, 'limitations': [
                     'Nie jest pomiarem ani gwarancją maksymalnego użytecznego SPL.',
                     'Modele T/S nie wyznaczają THD, temperatury, kompresji ani BL(x), Cms(x), Le(x).',
-                    'P26/P27: warunkowe pole pokoju dla zadanej U; pozycje i straty nie są zidentyfikowane, brak reakcji na membranę.',
+                    'Pierwotne P26/P27 zakładają zadaną U; P11 dodaje reakcję modalnego pola na napęd. Pozycje i straty pozostają niezidentyfikowane.',
+                    'P11: geometrie kontrolne i port Gaussa nie rozwiązują rozpraszania na docelowej skrzyni; kalibracja w Fs nie jest pomiarem Mmd.',
                     'Granice dotyczą osobnych sinusów; nie wolno sumować ich jako dostępnego SPL muzyki.',
                     'Pe*Znom to orientacyjny limit napięcia, nie wyznaczona granica termiczna.',
                     'T/S producentów wymagają późniejszej walidacji egzemplarzy.']}

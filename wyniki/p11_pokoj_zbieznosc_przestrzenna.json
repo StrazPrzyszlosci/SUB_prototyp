@@ -1,0 +1,11 @@
+{
+  "status": "KONTROLA_WYBRANYCH_SWIADKOW_KMAX40_60",
+  "points": 44,
+  "max_relative_port_difference": 6.950639129628691e-12,
+  "max_relative_observer_difference": 1.096266435604808e-06,
+  "max_relative_coupled_pressure_difference": 1.096266709060274e-06,
+  "max_abs_coupled_SPL_difference_db": 5.335414428912646e-06,
+  "max_abs_feedback_difference_db": 9.402062461916216e-13,
+  "max_abs_perturbation_difference": 3.711198015565742e-13,
+  "scope": "Wybrane maksima i punkty sąsiednie; nie walidacja fizyczna ani globalny certyfikat błędu."
+}

@@ -1,0 +1,268 @@
+Analiza badań projektu SUB_prototyp
+Fundacja Straż Przyszłości · Stan repozytorium: 23 października 2026
+
+Przeanalizowałem dokumentację projektu SUB_prototyp, w tym plan naukowy, raporty obliczeniowe, opis modeli fizycznych i kontrole poprawności.
+
+Projekt jest już czymś więcej niż koncepcją subwoofera DIY. Powstała pierwsza odtwarzalna baza badań elektroakustycznych, obejmująca porównanie przetworników, wpływ objętości zamkniętej skrzyni, ograniczenia wychylenia i napędu, korekcję DSP oraz wybrane zjawiska nieliniowe.
+
+Najważniejsze jest jednak rozróżnienie: przeprowadzono badania teoretyczne i symulacyjne, ale nie wykonano jeszcze walidacji pomiarowej fizycznego subwoofera.
+4
+modele głośników
+
+
+24
+konfiguracje skrzyń
+
+
+216
+wariantów DSP
+
+
+72
+przypadki nieliniowości gazu
+
+
+72
+rekordy zmian Re
+
+
+54
+kontrole bazowego modelu
+
+
+
+
+To dobry fundament projektu badawczo-rozwojowego, ponieważ obliczenia mają określone założenia, zapisane dane wejściowe, skrypty Pythona oraz kontrole odtwarzalności. Można zatem sprawdzać i korygować wyniki, zamiast opierać projekt wyłącznie na symulacjach wykonywanych ręcznie.
+1. Jakie przetworniki są badane?
+Projekt porównuje cztery głośniki dwóch producentów: Dayton Audio oraz SB Acoustics.
+Przetwornik	Rozmiar	Fs	Xmax przyjęty w modelu	Vd
+Dayton RSS315HF-4	12″	24,2 Hz	14,3 mm	0,736 l
+Dayton RSS390HF-4	15″	19,5 Hz	14 mm	1,161 l
+Dayton RSS315HFA-8	12″	22,2 Hz	14,3 mm	0,725 l
+SB34SWPL76-4	12″	19 Hz	15 mm	0,687 l
+
+Vd = Sd × Xmax, czyli objętość powietrza przemieszczana przy przyjętej amplitudzie wychylenia.
+
+Wartości pochodzą z kart katalogowych i przeliczeń, a nie z pomiarów zakupionych egzemplarzy.
+
+Istotnym wynikiem jest wykrycie niespójności w danych RSS315HF-4. Wersja internetowa zawierała wartość BL = 1 Tm, natomiast karta PDF podaje 13,99 Tm. Niezależne wyprowadzenie BL z pozostałych parametrów modelu dało około 14,22 Tm.
+
+To pokazuje, że badania obejmują również kontrolę jakości danych wejściowych, a nie tylko ich przepisywanie.
+2. Co ustalono o pojemności zamkniętej skrzyni?
+Zbadano sześć objętości netto:
+
+30, 45, 60, 80, 100 i 120 litrów.
+
+To 24 konfiguracje głośnik–obudowa.
+
+Poniżej najważniejsze wyniki przy 60 litrach:
+Głośnik	Fc	Qtc	F3
+RSS315HF-4	37,50 Hz	0,602	45,18 Hz
+RSS390HF-4	41,52 Hz	0,913	34,15 Hz
+RSS315HFA-8	35,93 Hz	0,719	35,36 Hz
+SB34SWPL76-4	28,92 Hz	0,482	47,37 Hz
+
+Fc to częstotliwość rezonansowa układu głośnik–skrzynia, Qtc opisuje jego dobroć, a F3 jest dolną częstotliwością spadku o 3 dB względem asymptoty przyjętego modelu.
+
+Wynik jest interesujący: niższa częstotliwość rezonansowa nie musi oznaczać niższego F3. Widać to na przykładzie SB34SWPL76-4.
+
+Z kolei 15-calowy RSS390HF-4 ma przy 60 litrach stosunkowo wysoką dobroć Qtc = 0,913. Dlatego repozytorium rekomenduje dalszą analizę tego głośnika w zakresie 80–120 litrów.
+
+Co to oznacza dla regulowanej skrzyni?
+
+Regulowana objętość ma uzasadnienie jako narzędzie badawcze. Pozwala przy niezmienionym przetworniku analizować zmiany rezonansu, dobroci, wymaganej korekcji, wychylenia i nieliniowości gazu.
+
+Jednak zwiększenie objętości nie zwiększa fizycznego Sd × Xmax głośnika, więc nie tworzy automatycznie dodatkowej maksymalnej wydajności w zakresie bardzo niskich częstotliwości.
+
+Źródło: Raport 002 – obliczenia elektroakustyczne.
+3. Który głośnik daje największą wydajność?
+Scenariusz: 60 l netto, hipotetyczny napęd 40 Vrms / 12 Arms, granice modelu, bez EQ, idealna półprzestrzeń, 1 m.
+
+
+20 Hz
+
+40 Hz
+
+
+90 dB96,25 dB102,5 dB108,75 dB115 dBRSS315HF-4RSS390HF-4RSS315HFA-8SB34SWPL76-4
+
+
+
+
+
+
+
+
+
+Wyniki nie są pomiarami ani deklaracją rzeczywistego użytecznego SPL.
+
+
+
+
+
+W rozpatrywanym scenariuszu RSS390HF-4 uzyskuje przy 20 Hz około 4 dB przewagi nad RSS315HF-4. Odpowiada to w przybliżeniu stosunkowi ich objętości przemieszczenia wynoszącemu 1,58.
+
+To najmocniejszy argument obliczeniowy przemawiający za przetwornikiem 15″, szczególnie jeśli celem jest głęboki bas z zapasem dynamiki.
+
+Nie jest to jednak dowód, że 15″ będzie odtwarzać bas z mniejszymi zniekształceniami lub że będzie rozwiązaniem najbardziej ekonomicznym. Tych zagadnień dotychczasowy model nie rozstrzyga.
+4. Badania nieliniowości powietrza
+To jeden z bardziej naukowych fragmentów repozytorium.
+
+Powietrze zamknięte w obudowie pełni rolę sprężyny, ale jego siła nie jest idealnie proporcjonalna do przemieszczenia membrany przy dużych amplitudach.
+
+Do obliczeń zastosowano model przemiany adiabatycznej:
+\[
+pV^\gamma=\mathrm{const}
+\]
+
+Przeanalizowano 72 przypadki obejmujące różne pojemności i amplitudy ruchu.
+Przykład: harmoniczna H2 siły powietrza przy 60 l i katalogowym wychyleniu
+
+0%0,35%0,7%1,05%1,4%RSS315HF-4RSS390HF-4RSS315HFA-8SB34SWPL76-4
+
+
+
+
+
+
+
+
+
+H2/H1 siły gazu, nie THD promieniowanego dźwięku.
+
+
+
+
+
+
+Wniosek jest istotny: mniejsza objętość zwiększa względną zmianę ciśnienia przy tym samym przemieszczeniu powietrza i może zwiększać nieliniowość samej sprężyny gazowej.
+
+Co ważne, repozytorium poprawnie zaznacza, że są to harmoniczne siły gazu przy narzuconym ruchu membrany, nie rzeczywiste zniekształcenia THD subwoofera.
+
+Aby obliczyć pełne THD, trzeba uwzględnić m.in. nieliniowe BL(x), Cms(x), indukcyjność zależną od położenia i rzeczywiste równanie ruchu.
+5. Symulacje nagrzewania cewki
+Zbadano wpływ wzrostu rezystancji uzwojenia Re o 25% i 50%, przy niezmienionej mechanice i BL.
+
+Dla wzrostu Re o 50% przy 60 l i 10 Vrms otrzymano:
+Głośnik	Zmiana SPL przy 20 Hz	Przy 40 Hz
+RSS315HF-4	−1,93 dB	−0,61 dB
+RSS390HF-4	−2,72 dB	−0,61 dB
+RSS315HFA-8	−2,15 dB	−0,84 dB
+SB34SWPL76-4	−0,66 dB	−0,76 dB
+
+Pokazuje to, że wzrost Re może zmieniać skuteczność głośników w różnym stopniu, zależnie od częstotliwości i parametrów elektromechanicznych.
+
+Nie jest to jeszcze symulacja temperatury ani kompresji termicznej w czasie. Nie ustalono, kiedy konkretny głośnik osiągnie taki wzrost rezystancji ani czy warunki pracy do niego doprowadzą.
+
+Do tego potrzebny będzie model cieplny obejmujący pojemność i rezystancję termiczną oraz odpowiednią identyfikację jego parametrów.
+6. Badania DSP – ile kosztuje zejście do 20 Hz?
+Zrealizowano 216 wariantów korekcji. Badano różne objętości oraz cele Linkwitz Transform do 20, 25 i 30 Hz, z filtrami górnoprzepustowymi 12, 18 i 22 Hz.
+
+Przykładowe wyniki:
+Głośnik / objętość	Cel LT	SPL 20 Hz	SPL 40 Hz
+RSS315HF-4 / 60 l	20 Hz	97,87 dB	102,32 dB
+RSS315HF-4 / 60 l	30 Hz	97,66 dB	106,00 dB
+RSS390HF-4 / 100 l	20 Hz	101,83 dB	106,36 dB
+RSS390HF-4 / 100 l	30 Hz	101,62 dB	110,04 dB
+
+HP 18 Hz, LP 80 Hz, idealne warunki 2π/1 m. Wyniki ze wspólnym poziomem sinusów przed filtrami i sprawdzeniem limitów 10–200 Hz.Badanie pokazuje ważną zależność: mniej wymagający cel korekcji w najniższym basie może pozwolić uzyskać większy poziom w zakresie 40 Hz, bez przekraczania przyjętych limitów.
+
+Nie oznacza to zwiększenia mechanicznej wydajności głośnika. Jest to redystrybucja dostępnego zapasu pomiędzy częstotliwościami.
+
+Warto również zauważyć, że analiza obejmuje pojedyncze sinusoidy, a nie sygnał muzyczny zawierający wiele częstotliwości jednocześnie. Nie ma jeszcze dynamicznego limitera, pełnego modelu termicznego ani końcowego presetu DSP.
+
+Źródło: Raport 007 – nieliniowości i DSP.
+7. Badania wpływu pokoju
+Repozytorium uwzględnia również pomieszczenie 4,6 × 3,7 × 2,5 m.
+
+Dla idealnego prostopadłościanu pierwsze mody osiowe mają częstotliwości:
+37,28 Hz
+długość
+
+
+46,35 Hz
+szerokość
+
+
+68,60 Hz
+wysokość
+
+
+
+Te rezonanse mogą mieć duży wpływ na pomiar i odsłuch w docelowym miejscu siedzenia, oddalonym od subwoofera o około 2,5–3 m.
+
+Na razie model wyznacza jednak jedynie częstotliwości idealnych modów. Nie wyznacza ich amplitud, tłumienia, czasu zaniku ani rzeczywistej odpowiedzi w sweet spocie.
+
+To ważne, bo nawet doskonale zaprojektowany subwoofer może w konkretnym miejscu pomieszczenia mieć nierówną charakterystykę wskutek interferencji i rezonansów.
+
+8. Jakie są najważniejsze braki naukowe?
+Porównanie aktualnego zakresu z zagadnieniami potrzebnymi do prognozowania rzeczywistych osiągów:
+Obszar	Aktualny stan	Znaczenie
+Parametry T/S	Model oparty na katalogach	Zbadano wstępnie
+Objętość i rezonans	24 konfiguracje	Zbadano wstępnie
+DSP i limity liniowe	216 scenariuszy	Zbadano wstępnie
+Sprężyna gazowa	Częściowy model nieliniowy	Wymaga rozwoju
+Nieszczelność skrzyni	Model N7 zaplanowany	Do wykonania
+Termika w czasie	Brak Rth/Cth	Do wykonania
+BL(x), Cms(x), Le(x)	Brak charakterystyk nieliniowych	Do wykonania
+Drgania paneli	Wiedza i zalecenia konstrukcyjne	Do wykonania
+Rzeczywista akustyka pokoju	Model idealny	Bez pomiarów
+Weryfikacja na prototypie	Brak urządzenia pomiarowego	Etap późniejszy
+
+Repozytorium przechodzi poprawnie 54 kontrole bazowego modelu, a raport weryfikacyjny dokumentuje odtwarzalność wyników CSV oraz rejestrowanie wejść i rezultatów poprzez SHA-256.
+
+To mocny element warsztatu badawczego. Trzeba jednak rozróżnić testy poprawności implementacji od niezależnej walidacji fizyki modelu. Kod może przechodzić wszystkie własne kontrole, a mimo to niedokładnie przewidywać rzeczywisty przetwornik.
+9. Co powinno być badane teraz?
+Plan naukowy repozytorium wyraźnie wskazuje pakiet N7 jako następny etap. Uważam ten wybór za uzasadniony, szczególnie ze względu na regulowaną objętość skrzyni.
+
+N7 – Straty i nieszczelności obudowy
+
+Zbadać, jak przecieki przez wymienny front, uszczelki i przegrody zmieniają impedancję, wychylenie i promieniowanie akustyczne. Szczególnie istotne będzie fazowe znoszenie promieniowania przecieku i przedniej strony membrany przy niskich częstotliwościach.
+
+
+
+
+N8 – Model termiczny
+
+Określić, jakie dane są potrzebne do prognozowania temperatury, rezystancji i utraty wydajności przy długim obciążeniu. Bez parametrów cieplnych nie podawać nieuzasadnionych czasów bezpiecznej pracy.
+
+
+
+
+N9 – Nieliniowość przetwornika
+
+Zbadać dostępność charakterystyk BL(x), Cms(x) i Le(x), definicje Xmax oraz granice wnioskowania o zniekształceniach.
+
+
+
+
+N10 – Niezależna weryfikacja obliczeń
+
+Porównać reprezentatywne wyniki z innym kalkulatorem lub niezależnie zaimplementowanym modelem. To ważniejsze niż samo zwiększanie liczby konfiguracji testowanych tym samym kodem.
+
+
+
+
+N11 – Porównanie z ADAM Sub12 i Sub15
+
+Ustalić, co da się rzeczywiście porównać na podstawie katalogowych parametrów, a które twierdzenia o maksymalnym SPL, paśmie i zniekształceniach wymagają pomiarów w identycznych warunkach.
+
+
+
+Źródło: Bieżący plan badań naukowych.
+10. Moja ocena kierunku projektu
+Badania zmierzają we właściwym kierunku od strony metodologicznej: są określone modele, dokumentowane założenia, wyniki numeryczne i ograniczenia ich interpretacji.
+
+Najbardziej wartościowe jest to, że projekt nie próbuje wybrać głośnika na podstawie jednego parametru, takiego jak Fs, moc w watach czy Xmax. Analizuje powiązania między obudową, napędem, korekcją i ograniczeniami fizycznymi.
+
+Są jednak dwie kwestie, na które zwróciłbym szczególną uwagę.
+
+Pierwsza: zakres badań nieliniowych. Model sprężyny gazowej to dobry początek, lecz bez nieliniowości samego głośnika nie będzie można wiarygodnie przewidzieć THD ani rozstrzygnąć, który przetwornik zapewni najbardziej neutralny bas przy dużej amplitudzie.
+
+Druga: kryteria końcowego sukcesu. Przyjęto porównanie z ADAM Sub12 i Sub15, lecz nie określono jeszcze porównywalnych progów pasmowego SPL i zniekształceń. Bez tego można obliczać kolejne konfiguracje, ale nie wiadomo, przy jakim wyniku badanie konkretnego rozwiązania uznać za wystarczające.
+Konkluzja
+Na obecnym etapie repozytorium pozwala sformułować trzy istotne wnioski:
+- Przetwornik 15″ ma wyraźną przewagę objętościowego przemieszczenia i modelowanej wydajności w najniższym basie, ale jego ostateczna przewaga użytkowa nie została jeszcze udowodniona.
+- Regulowana pojemność skrzyni jest uzasadniona jako eksperymentalna platforma B+R, szczególnie do badania wpływu objętości na odpowiedź i nieliniowość układu.
+- Największe pozostałe niewiadome dotyczą nie kolejnych wartości Fc czy F3, lecz rzeczywistej liniowości przetworników, strat, zachowania cieplnego i zniekształceń.
+Rekomenduję kontynuację N7, a następnie N8–N10, bez przedwczesnego zamykania wyboru przetwornika i litrażu. Dla Fundacji Straż Przyszłości większą wartością B+R będzie udokumentowana metoda przewidywania i weryfikowania osiągów subwoofera niż samo wykonanie jednej dobrze grającej skrzyni. Takie podejście może ostatecznie dać otwartą, wielokrotnie wykorzystywaną platformę badawczą dla konstruktorów DIY.

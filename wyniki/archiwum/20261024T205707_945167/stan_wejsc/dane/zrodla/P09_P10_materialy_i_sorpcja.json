@@ -1,0 +1,58 @@
+{
+  "sources": [
+    {
+      "id": "SRC24",
+      "title": "COMSOL6.3: About the Poroacoustics Models",
+      "url": "https://doc.comsol.com/6.3/doc/com.comsol.help.aco/aco_ug_pressure.05.182.html",
+      "access_date": "2026-10-24",
+      "scope": "Odczyt tekstu i oryginalnych obrazów12,14,19,20,24,25,01. Sprawdzone wzory ZK, model wiotkiego szkieletu, dziedzina DB/Miki i ograniczenia modelu porowatego.",
+      "raw_capture_sha256": "0c23b04cbfa65e8c79b7382697e521afc9507ecf03d21d16de9980a37c98217e"
+    },
+    {
+      "id": "SRC25",
+      "title": "J.R.Wright, The Virtual Loudspeaker Cabinet, reprint/white paper KEF",
+      "url": "https://techtalk.parts-express.com/filedata/fetch?id=1163933&d=1422900645",
+      "access_date": "2026-10-24",
+      "scope": "Firecrawl: odczyt tekstu oACE. Przeglądarka:403. Nie zaakceptowano automatycznych tabel punktów wykresów ani nie zadeklarowano obejrzenia tego PDF. Jako źródło ilościowego przykładu wykorzystano odrębną publikacjęSRC27.",
+      "raw_capture_sha256": "4724545baab4083e9402517591f7a851a40950971bc015ada54c656bbcf65786"
+    },
+    {
+      "id": "SRC26",
+      "title": "ISOVER Aku-Płyta/Akuplat+: karta2022-06",
+      "url": "https://www.isover.pl/documents/karta-produktu-pds/kt-aku-plyta-aku-plat-202206.pdf",
+      "access_date": "2026-10-24",
+      "scope": "Odczyt tabeli producenta: AFr>=5kPa*s/m², EN29053; lambda_D0.037W/(mK) dotyczy materiału, nie przewodności gazu. Nie jest pełnym zestawem danych mikrostruktury.",
+      "raw_capture_sha256": "e370a44c39803cc664f0e471a6517116847844067aa7482102372335572a6b88"
+    },
+    {
+      "id": "SRC27",
+      "title": "Venegas et al., ForumAcusticum2023, DOI10.61782/fa.2023.0280",
+      "url": "https://dael.euracoustics.org/confs/fa2023/data/articles/000280.pdf",
+      "access_date": "2026-10-24",
+      "scope": "Pobrano oryginalnyPDF przez browser-harness i obejrzano strony2–5, w tym wszystkie trzy rysunki. Odczytano asymptoty, równanie11 i przykładPhi=2.2563. Wykresy teoretycznegoBR nie są pomiarem sealed.",
+      "raw_capture_sha256": "475694a9b3ef90c4cc592725d817ff5001151dfc40eb354d006dfa58587fd188"
+    }
+  ],
+  "original_sorptive_pdf_sha256": "ee20b246a8471da31eb61493ee9c0b30eb6fae45040a2388ff154aa0db2e1564",
+  "accepted_source_example": {
+    "doi": "10.61782/fa.2023.0280",
+    "apparent_porosity": 2.2563,
+    "conventional_porosity": 0.9,
+    "filling_fraction": 0.25,
+    "conditions": "TeoretycznyBR, Rg=0, r=1m, e_g=sqrt(8)V; konwencji RMS/peak nie uzupełniono domysłem."
+  },
+  "manufacturer_facts": {
+    "AFr_lower_bound_pa_s_m2": 5000,
+    "lambda_material_w_m_k": 0.037,
+    "not_identified": [
+      "porowatośćgeometryczna",
+      "tortuozja",
+      "rozkładpromieniporów",
+      "skończonaCp",
+      "sprzężeniecieplne",
+      "stanszkieletu",
+      "opórwarstwyprzyrzeczywistymupakowaniu"
+    ]
+  },
+  "rejected": "Automatyczne liczbowe tablice z wykresów Wrighta nie zostały zaakceptowane; brak oryginalnego obrazu. OsiągówBR zeźródła27 nie przeniesiono na nasz prototyp."
+}

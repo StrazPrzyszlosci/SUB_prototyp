@@ -29,7 +29,17 @@ Kod i dane są dostępne, a [raport 007](raporty/007_fizyka_nieliniowosci_i_DSP.
 rozwija nowe wyniki. Nie wyciągamy z nich rankinguTHD, jakości odsłuchowej
 lub gotowości produktu do komercjalizacji.
 
-## Następny pakiet domyślny: P11 — obciążenie promieniowaniem
+## Następny pakiet domyślny: P12/P13 — nieliniowy napęd i gaz
+
+P11 wykonano w kontrolnych geometriach i modelu modalnym:
+[raport 017](raporty/017_promieniowanie_i_sprzezenie_pokoju.md).
+Najbliższy eksperyment: wyprowadzić zgodny z energią model BL(x),
+siły zawieszenia i strumienia magnetycznego zależnego od x/i;
+rozdzielić źródłowe krzywe od umownych rodzin. Połączyć napęd z gazem,
+sprawdzić granicę liniową, brak strat, DC i zbieżność czasową.
+Nie utożsamiać harmonicznych wymuszonego gazu z THD całego urządzenia.
+
+Poniższy opis P11 zachowuje zależności wykonanej kampanii.
 
 P09/P10 wykonano dla jawnych rodzin gazu, porów i materiału o skończonej
 pojemności cieplnej: [raport 016](raporty/016_gaz_wypelnienie_i_granice.md).
@@ -127,7 +137,7 @@ z góry pożądany wynik. Nie przechodzić automatycznie do konstrukcji ani zaku
 Aktualizacja 2026-10-24: wykonano szeroką pulę 24 modeli / 11 producentów,
 globalne granice po Vb, identyfikowalność oraz scenariusze P26/P27 dla pokoju
 4,6 × 3,7 × 2,5 m. P06 wykonano w liniowych rodzinach (raport 015).
-Bieżący następny krok to P11 z
+Bieżący następny krok to P12/P13 z
 [programu 30 badań](PROGRAM_30_BADAN.md); poniższa lista N8–N11 pozostaje
 historycznym opisem zależności, nie kompletną aktualną kolejką.
 

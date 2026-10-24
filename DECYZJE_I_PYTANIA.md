@@ -21,6 +21,8 @@ Stan: 2026-10-23. Ten rejestr uzupełnia brief, bez zmieniania jego treści.
 | U-015 | Profesjonalny dobór pod brief | Polecenie użytkownika | Każdy kandydat ma ślad wymagań20–40Hz, liniowości, ochrony, napędu i architektury; braki wyraźnie oznaczone |
 | U-016 | Pamiętać o wymiarach pokoju | Przypomnienie użytkownika2026-10-24 |4.6×3.7×2.5m,17.02m²,42.55m³z przybliżonych wymiarów; sweetspot2.5–3m. Sprawdzić miejsce dla dwóchsubów przy monitorach; bez założenia dowolnej lokalizacji przód/tył |
 | U-017 | Dokładne pozycje głowy i monitorów nie są obecnie znane | Odpowiedź użytkownika 2026-10-24 | Kontynuować oznaczone scenariusze; nie ponawiać teraz tego pytania ani nie traktować współrzędnych P26 jako pomiaru |
+| U-018 | Na przekazanym rzucie osoba siedzi na kanapie po lewej, ściana RTV jest po prawej | Obraz sSKtLurb.jpeg i objaśnienie użytkownika 2026-10-24 | Prawa strona obrazu to front y=0; potwierdzono orientację, nie dokładne pozycje uszu/monitorów ani skalę rastra. Warunkowe rachunki odległości w raporcie 018 |
+| U-019 | Układ z rzutu i wymiary z briefu są aktualne | Odpowiedź użytkownika 2026-10-24: „Tak, układ i wymiary z briefu są aktualne” | Zachować około4,6×3,7×2,5m i orientację U-018. Plan mebli/przejść jest kontekstem oceny wykonalności; brak dokładnych pozycji, tolerancji wymiarów i akustycznego stanu otwarć nadal jawny |
 
 ## Decyzje, których nie podejmowano
 

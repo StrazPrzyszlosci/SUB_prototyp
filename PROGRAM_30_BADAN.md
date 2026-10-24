@@ -29,7 +29,7 @@ pakietu samym stworzeniem planu, testów ani listy bibliotek.
 | P08 | N7 — przecieki i straty | Częściowo wykonane | ModelCab||Ra,1728rekordów; granice, sumowanie fazorowe,72progi pomocnicze; brak identyfikacji fizycznegoRa |
 | P09 | Wypełnienie, lepkość i straty cieplne gazu | Wykonane rodziny kontrolne; identyfikacja materiału otwarta | 24 modele, 12 096 wierszy termiki/napędu, 17 280 modeli warstw/ZK/wiotkiego szkieletu/dwóch Cp/sorpcji; dodatnie widma relaksacji, niezależna dyfuzja FV i źródła. Brak pełnych parametrów konkretnego produktu; raport 016 |
 | P10 | Adiabatyczne/izotermiczne powietrze | Wykonane dla idealnego gazu z zadanym ruchem; integracja P13 otwarta | 56 rodzin bezwymiarowych, 15 552 wiersze dla przetworników i temperatur, 1440 offsetów, 384 modeli wyrównania DC, 42 bilanse nieliniowe; FFT/ODE/SymPy i niezamienne granice. Nie jest THD egzemplarzy |
-| P11 | Obciążenie promieniowaniem i granice przestrzeni | Częściowo | Dwie monopole diagnostyczne; brak pełnej reakcji i dyfrakcji obudowy |
+| P11 | Obciążenie promieniowaniem i granice przestrzeni | Wykonane rodziny kontrolne; geometria docelowa otwarta | Tłok/Rayleigh, czasza/sfera/komora, kalibracja Mmd/Mms, wzajemne promieniowanie, obrazy i sprzężony pokój; 4 154 112 realizacji częstotliwościowych, replikacja Bellows2024, bilans energii i odrębna zbieżność. Raport 017. Brak niezależnej identyfikacji Mmd/strat wszystkich egzemplarzy i rozpraszania na finalnej skrzyni |
 | P12 | BL(x),Cms(x),Le(x,i),Rms(v) | Częściowo — źródło | Obejrzano oryginalne krzyweKLIPPELScan32 i odczytano progi zeźródła; nie zdigitalizowano krzywych ani nie uruchomiono modelu nieliniowego |
 | P13 | Sprzężony ruch nieliniowy i gaz | Do wykonania | Dotychczas siła gazu przy narzuconym ruchu, nie pełne równanie nieliniowe |
 | P14 | THD i IMD | Do wykonania | Tylko po rozwiązaniu P12/P13, z kontrolą zbieżności i faz |
@@ -44,8 +44,8 @@ pakietu samym stworzeniem planu, testów ani listy bibliotek.
 | P23 | Cyfrowa korekcja, faza i opóźnienia | Częściowo |216wzorców analogowych; realizacja dyskretna i stabilność otwarte |
 | P24 | Dynamiczna ochrona | Do wykonania | Wychylenie, napięcie, prąd, cieplna pamięć i overshoot |
 | P25 | Sygnały wielotonowe i realistyczne | Do wykonania | Sinusy nie zastępują sumy widma; legalne źródła lub sygnały syntetyczne |
-| P26 | Zespolony model pokoju ze stratami | Częściowo | Rodzina modalna ze stratami i zerowym członem kompresji, 9 scenariuszy; niezależny Green 1D, pasywność i zbieżność; pozycje/straty rzeczywiste nadal nieznane, raport 013 |
-| P27 | Jeden/dwa subwoofery i ustawienie | Częściowo | 4 scenariusze przy monitorach, 15 876 wierszy S0, 1512 diagnostycznych, 120 przypadków fazy i 48 koniecznych testów gabarytu; rzeczywiste ustawienie otwarte |
+| P26 | Zespolony model pokoju ze stratami | Częściowo | Rodzina modalna, 4 ustawienia × 9 scenariuszy strat; Green 1D, pasywność i zbieżność, raport 013. P11 dodaje reakcję pola na napęd i gęstą siatkę, raport 017. Pozycje/straty i rozpraszanie na bryle rzeczywistej pozostają nieznane |
+| P27 | Jeden/dwa subwoofery i ustawienie | Częściowo | 4 scenariusze przy monitorach, 15 876 wierszy S0, 1512 diagnostycznych, 120 przypadków fazy i 48 koniecznych testów gabarytu. P11 dodaje wzajemne obciążenie i wspólne V/I/X. U-018/U-019 potwierdzają orientację, układ i przybliżone wymiary briefu; 27 warunkowych rachunków odległości w raporcie018. Dokładne pozycje i prześwity nadal otwarte |
 | P28 | Integracja monitorów i8wyjśćDSP | Do wykonania | Wyłącznie architektura i modele sekcji; zakup/model monitorów odłożony |
 | P29 | Odporna optymalizacja wielokryterialna | Do wykonania | Szeroka pula ma24modele i wspólne obliczenia; pełny front i pojedynczy wybór po integracjiTHD/termiki/DSP/konstrukcji |
 | P30 | Odtwarzalność i przyszły protokół | Częściowo | Kod, hashe i archiwa; pełny rejestr hipotez oraz eksperymentów rozróżniających do zamknięcia |
@@ -69,8 +69,9 @@ N7/P08 wykonano w modelu zredukowanym, szeroką pulę rozszerzono i policzono.
 W odpowiedzi na przypomnienie o wymiarach pokoju rozpoczęto niezależnie P26/P27
 (raport 013); nie zastępuje to pozostałych pakietów. P06 wykonano dla zadanych
 liniowych rodzin (raport 015). P09/P10 mają wykonane rodziny z raportu 016.
-Najbliższy krok to P11: skończony tłok, promieniowanie i konwencja Mmd/Mms,
-następnie modeleP12–P17,
+P11 wykonano dla jawnych geometrii kontrolnych i sprzężonego pokoju
+(raport 017). Najbliższy krok to P12/P13: nieliniowy napęd i gaz,
+następnie pozostałe modeleP14–P17,
 mechanikęP18–P21 z doborem kleju,
 czasoweDSP/napędP22–P25, pokójP26–P28 i integracjaP29/P30.
 Poszukiwanie danych materiałowych i nieliniowych może toczyć się równolegle

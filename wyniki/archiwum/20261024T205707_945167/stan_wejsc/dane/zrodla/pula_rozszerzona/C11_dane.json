@@ -1,0 +1,29 @@
+{
+  "candidate_id": "C11",
+  "manufacturer": "Dayton Audio",
+  "model": {
+    "name": "Dayton RSS390HE-22 seria",
+    "fs_hz": 29,
+    "qes": 0.58,
+    "qms": 4.59,
+    "vas_l": 71.3,
+    "sd_cm2": 804,
+    "re_ohm": 4.3,
+    "le_mh": 2.2,
+    "xmax_mm": 27,
+    "nominal_ohm": 4,
+    "rated_w": 800
+  },
+  "catalog_extra": {
+    "qts": 0.51,
+    "mms_g": 384,
+    "cms_mm_n": 0.08,
+    "bl_tm": 22.9
+  },
+  "url": "https://www.daytonaudio.com/images/resources/295-292--dayton-audio-rss390he-22-spec-sheet.pdf",
+  "access_date": "2026-10-24",
+  "xmax_definition": "Xmax27mm według nakładkigeometrycznej +1/3wysokości szczeliny; nie automatycznie kryteriumAES/KLIPPEL.",
+  "data_issue": "DVC2+2Ω: zestawRe4.3/BL22.9 jest zgodny z szeregowym modelemT/S; nominalnie4Ω. Oficjalna główna karta produktu404;PDF dostępny, bieżąca rewizja/status do potwierdzenia. OCR27mm2 oznacza problem zapisu przypisu, nie jednostkę powierzchni.",
+  "source_extraction_sha256": "ec92ecee2d3f09b142725de32bff060d18991f8e44f89dac11723f215c378492",
+  "scope": "Zweryfikowane tabele i jawne konwersje; nie użyto automatycznych odczytów punktów z wykresów."
+}

@@ -1,0 +1,14 @@
+{
+  "status": "IDENTYFIKOWALNOSC_MODELOWA_NIE_ZIDENTYFIKOWANY_MATERIAL",
+  "cases": 432,
+  "max_gauge_Rms_Rextra_relative_current_error": 2.9627724002150884e-16,
+  "min_rank_one_frequency": 2,
+  "max_rank_one_frequency": 2,
+  "full_rank_six_frequency_cases": 288,
+  "caveats": [
+    "Jeden punkt impedancji ma najwyżej2rzeczywiste obserwacje dla4niewiadomych.",
+    "Rządnumeryczny zależy od progu1e-8 i parametryzacji; nie jest dowodem globalnej identyfikowalności.",
+    "Rms i Rextra występują tylko jako suma, jeśli nie ma niezależnego pomiaru Rms.",
+    "Mały wpływ tau poza jego przejściem lub bardzo wolnego przecieku daje złe uwarunkowanie20–80Hz."
+  ]
+}

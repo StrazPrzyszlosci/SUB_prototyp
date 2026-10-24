@@ -159,7 +159,7 @@ def main():
         axes[0].plot([r['f_hz'] for r in sub],[r['delta_pressure_from_oneway_db'] for r in sub],'o-',label=cid)
         axes[1].plot([r['f_hz'] for r in sub],[100*r['relative_velocity_2norm_change'] for r in sub],'o-',label=cid)
     axes[0].set(xlabel='Hz',ylabel='Zmiana SPL od reakcji pokoju [dB]',title='Scenariusz A: dwa źródła, 100 l, T60=0,4s/τ0=0,2s')
-    axes[1].set(xlabel='Hz',ylabel='Zmiana normy prędkości [%]',title='Względem źródła bez reakcji pokoju')
+    axes[1].set(xlabel='Hz',ylabel='Względna zmiana wektora prędkości [%]',title='Względem źródła bez reakcji pokoju')
     for ax in axes:ax.grid(alpha=.25);ax.legend()
     save(fig,'19_reakcja_pokoju_na_naped')
     fig,axes=plt.subplots(1,2,figsize=(12,5))

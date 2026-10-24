@@ -1,0 +1,26 @@
+[
+  {
+    "file": "analiza_stanu_20261023.txt",
+    "sha256": "fc1c8e0853030f28941dce2144ff673996320d6cedb1b1f4b0c2b64aafeac9ab",
+    "type": "material_i_program_uzytkownika_nie_walidacja_pomiarowa",
+    "attachment_id": "092a3786-2a1b-474a-81a6-5efd1f240c88"
+  },
+  {
+    "file": "ocena_12_obszarow_20261023.txt",
+    "sha256": "023566007d005b70310c268f5468a335b6a0bf4c6530552fb100d3258afc5e00",
+    "type": "material_i_program_uzytkownika_nie_walidacja_pomiarowa",
+    "attachment_id": "966943ca-2371-45d2-8e93-f9891f50a20b"
+  },
+  {
+    "file": "program_30_pakietow_20261023.txt",
+    "sha256": "2e8200dfc2c0e03e120854a7649fa17ec9c4e47d05150675941174904a06075f",
+    "type": "material_i_program_uzytkownika_nie_walidacja_pomiarowa",
+    "attachment_id": "6c94a50c-9f19-4364-a775-ee77befd67cd"
+  },
+  {
+    "file": "ocena_puli_kandydatow_20261023.txt",
+    "sha256": "50a8cc7a9a00ca671fee4ac79ad88222c97e9e0b250b47d051730aae4159fce7",
+    "type": "material_i_zalecenia_uzytkownika_nie_niezalezny_pomiar",
+    "attachment_id": "da9afd91-61b1-4ef3-805d-330443ae818d"
+  }
+]

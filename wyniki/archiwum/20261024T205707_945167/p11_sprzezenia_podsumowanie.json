@@ -1,0 +1,24 @@
+{
+  "status": "ZWROTNE_SPRZEZENIE_MODELOWE_NIE_IDENTYFIKACJA_POKOJU",
+  "wall_rows": 6912,
+  "room_rows": 41472,
+  "sigma_sensitivity_rows": 432,
+  "max_relative_energy_residual": 1.2734415661479201e-14,
+  "max_perturbation_norm": 0.1531620957706928,
+  "all_sampled_neumann_bounds_available": true,
+  "max_relative_velocity_change": 0.14580557918654055,
+  "max_abs_S0_pressure_feedback_db": 0.8615871466246554,
+  "room_dimensions_xyz_m": [
+    3.7,
+    4.6,
+    2.5
+  ],
+  "room_volume_m3": 42.55,
+  "caveats": [
+    "Pozycje i straty są scenariuszami U-017, nie pomiarem.",
+    "Porty Gaussa mają efektywne masy, nie niezależnie zmierzone Mmd.",
+    "Odgroda/obrazy i pełny model modalny są odrębnymi geometriami.",
+    "Ograniczenie Neumanna jest sprawdzone w punktach częstotliwości, nie certyfikatem całego ciągłego pasma.",
+    "Zmiana ciśnienia przy dołku może być większa niż zmiana prędkości; należy czytać obie wielkości."
+  ]
+}

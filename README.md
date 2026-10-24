@@ -14,6 +14,10 @@ Pokój około **4,6 × 3,7 × 2,5 m** jest jawnym wejściem:
 P06 obejmuje globalną czułość i niepewność 24 modeli:
 [raport 015 — obwiednie i odporność kolejności](raporty/015_niepewnosc_globalna_i_odpornosc.md).
 P09/P10: [raport 016 — gaz, wypełnienie i granice szczelności](raporty/016_gaz_wypelnienie_i_granice.md).
+P11: [raport 017 — promieniowanie, konwencje masy i sprzężenie pokoju](raporty/017_promieniowanie_i_sprzezenie_pokoju.md).
+Obejmuje wzorcowe geometrie oraz 4 154 112 realizacji częstotliwościowych
+reakcji modalnego pokoju; nie jest wynikiem fizycznego prototypu.
+Rzut od użytkownika: [raport 018 — orientacja kanapa–RTV i odległość odsłuchu](raporty/018_rzut_pokoju_i_odleglosc_odsluchu.md).
 
 **Bieżący zakres: wyłącznie naukowe zagadnienia prototypu (U-010).**
 Najnowsze zlecenie: [program30badań](PROGRAM_30_BADAN.md), szeroka pula
@@ -71,6 +75,8 @@ Brak modelu THD, kompresji cieplnej i zidentyfikowanej odpowiedzi pokoju.
 14. [014 — weryfikacja etapu i odtwarzalność](raporty/014_weryfikacja_etapu_20261024.md).
 15. [015 — niepewność globalna, korelacje i kontrprzykłady dominacji](raporty/015_niepewnosc_globalna_i_odpornosc.md).
 16. [016 — cieplny gaz, lepkość, wypełnienie, harmoniczne i DC](raporty/016_gaz_wypelnienie_i_granice.md).
+17. [017 — promieniowanie, Mmd/Mms, dwa źródła i reakcja pokoju](raporty/017_promieniowanie_i_sprzezenie_pokoju.md).
+18. [018 — rzut pokoju i warunkowa geometria odsłuchu](raporty/018_rzut_pokoju_i_odleglosc_odsluchu.md).
 
 ## Odtworzenie obliczeń
 
@@ -102,5 +108,5 @@ F3 i granice ruchu/napędu. Nie potwierdzają osiągów fizycznego egzemplarza.
 Źródła z internetu: browser-harness oraz dopuszczony Firecrawl. Kosztorys,
 dostępność PL/UE i dobór handlowy pozostają odłożone. Przegląd opinii wszystkich
 24 kandydatów wykonano z jawnymi brakami; nie stanowi rankingu jakości.
-Najbliższy krok: P11 — skończony tłok, promieniowanie i uzgodnienie Mmd/Mms;
-następnie nieliniowości, termika, mechanika z klejem i integracja modeli.
+Najbliższy krok: P12/P13 — energetycznie zgodny nieliniowy napęd i gaz;
+następnie termika, mechanika z klejem i integracja modeli.

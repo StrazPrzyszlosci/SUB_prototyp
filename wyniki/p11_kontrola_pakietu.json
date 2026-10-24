@@ -1,0 +1,17 @@
+{
+  "status": "PASS_LIMITOW_I_TOZSAMOSCI_P11_NIE_WALIDACJA_URZADZENIA",
+  "sinusoidal_combinations_checked": 235008,
+  "counts": {
+    "p11_geometrie_i_naped.csv": 41472,
+    "p11_sciany_i_wzajemne.csv": 27648,
+    "p11_pokoj_sprzezenie_zwrotne.csv": 165888
+  },
+  "motion_limited_groups": 2433,
+  "max_motion_limited_group_spread_db": 2.842170943040401e-14,
+  "max_relative_closed_axis_motion_ceiling_error": 1.6653345369377348e-15,
+  "normalization_rows": 1152,
+  "max_normalization_difference_error_db": 1.509903313490213e-14,
+  "max_peak_mach_in_calibrated_scalar_cases": 0.01830594383922506,
+  "minimum_per_amp_input_power_1v_w": 0.006785620592586924,
+  "scope": "Ograniczenia liniowych sinusów V/I/X. Mach jest cechą modelu, nie gwarancją THD lub bezpiecznej mocy."
+}

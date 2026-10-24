@@ -1,0 +1,22 @@
+{
+  "status": "WERYFIKACJA_NUMERYCZNA_NIE_POMIAR",
+  "scenarios": 120,
+  "stable_state_models": 120,
+  "max_relative_energy_residual": 7.289628962981026e-16,
+  "max_relative_independent_displacement_error": 7.029206141798719e-16,
+  "max_relative_sealed_regression_error": 8.881784197001252e-16,
+  "controls": [
+    "Dayton RSS315HF-4: bilans, równania pierwotne, stabilność i realizacja stanu",
+    "Dayton RSS390HF-4: bilans, równania pierwotne, stabilność i realizacja stanu",
+    "Dayton RSS315HFA-8: bilans, równania pierwotne, stabilność i realizacja stanu",
+    "SB Acoustics SB34SWPL76-4: bilans, równania pierwotne, stabilność i realizacja stanu",
+    "DC zredukowane; przypadki szczelny/otwarty; brak sztucznego floor dla zera",
+    "Asymptoty omega³/omega² i otwarty dipol z rozdzielonymi źródłami",
+    "Moc diagnostyczna: niezależna kwadratura Gaussa i człon interferencyjny",
+    "Le=0: redukcja stanu, stabilność; formalne granice wysokoczęstotliwościowe",
+    "Rozwiązanie ODE Radau kontra ustalona odpowiedź fazorowa",
+    "F3 dla Q od1e-6 do1e6; eliminacja ograniczenia bracketu",
+    "Odrzucanie 14 błędnych wejść; NaN, inf, ujemne i zerowe wielkości"
+  ],
+  "missing": "Nie zidentyfikowano rzeczywistego Ra ani reakcji promieniowania powierzchni skończonych."
+}

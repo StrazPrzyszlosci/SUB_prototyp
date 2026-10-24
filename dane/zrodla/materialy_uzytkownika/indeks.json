@@ -22,5 +22,12 @@
     "sha256": "50a8cc7a9a00ca671fee4ac79ad88222c97e9e0b250b47d051730aae4159fce7",
     "type": "material_i_zalecenia_uzytkownika_nie_niezalezny_pomiar",
     "attachment_id": "da9afd91-61b1-4ef3-805d-330443ae818d"
+  },
+  {
+    "file": "rzut_pokoju_sSKtLurb.jpeg",
+    "sha256": "5057c9f85aec6fc13ca37d46f979afbacb2f13c6aad2f92cf2e6d6293973b2be",
+    "type": "rzut_od_uzytkownika_orientacja_potwierdzona_nie_pomiar_pokoju",
+    "access_date": "2026-10-24",
+    "user_statement": "po lewej siedzi człowiek na kanapie a po prawej jest ściana rtv"
   }
 ]

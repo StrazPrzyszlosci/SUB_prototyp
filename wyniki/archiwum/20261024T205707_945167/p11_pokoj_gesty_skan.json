@@ -1,0 +1,56 @@
+{
+  "status": "GESTY_SKAN_MODELOWY_NIE_CERTYFIKAT_CIAGLEGO_PASMA",
+  "cases": 6912,
+  "frequency_points": 601,
+  "total_frequency_realizations": 4154112,
+  "example_curve_rows": 3606,
+  "refinements": [
+    {
+      "metric": "max_perturbation_norm",
+      "candidate_id": "C07",
+      "source_set": "B",
+      "volume_l": 100.0,
+      "modal_t60_s": 0.8,
+      "zero_tau_s": 0.02,
+      "source_count": 2,
+      "coarse_value": 0.22321063185507753,
+      "refined_value": 0.22321063185507753,
+      "step_refined_hz": 0.05,
+      "absolute_difference": 0.0
+    },
+    {
+      "metric": "max_relative_velocity_change",
+      "candidate_id": "C07",
+      "source_set": "B",
+      "volume_l": 100.0,
+      "modal_t60_s": 0.8,
+      "zero_tau_s": 0.02,
+      "source_count": 2,
+      "coarse_value": 0.18824398953073265,
+      "refined_value": 0.18824398953073265,
+      "step_refined_hz": 0.05,
+      "absolute_difference": 0.0
+    },
+    {
+      "metric": "max_abs_pressure_feedback_db",
+      "candidate_id": "C07",
+      "source_set": "B",
+      "volume_l": 60.0,
+      "modal_t60_s": 0.8,
+      "zero_tau_s": 0.02,
+      "source_count": 2,
+      "coarse_value": 1.710718719799854,
+      "refined_value": 1.7116576089990385,
+      "step_refined_hz": 0.05,
+      "absolute_difference": 0.0009388891991846116
+    }
+  ],
+  "maxima": {
+    "max_perturbation_norm": 0.22321063185507753,
+    "max_relative_velocity_change": 0.18824398953073265,
+    "max_abs_pressure_feedback_db": 1.710718719799854
+  },
+  "all_sampled_neumann_bounds_available": true,
+  "max_relative_energy_residual": 1.0555955472857627e-14,
+  "scope": "Wszystkie24modele i36rodzin pokoju,4Vb,jeden/dwa źródła. Geometria i straty nie są pomiaremU-017."
+}

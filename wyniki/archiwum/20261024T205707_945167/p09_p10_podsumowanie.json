@@ -1,0 +1,31 @@
+{
+  "status": "RODZINY_P09_P10_BEZ_IDENTYFIKACJI_MATERIALU",
+  "drivers": 24,
+  "thermal_band_rows": 12096,
+  "projected_f3_cases": 2016,
+  "material_rows": 17280,
+  "nonlinear_dimensionless_cases": 56,
+  "nonlinear_driver_rows": 15552,
+  "static_offset_rows": 1440,
+  "dc_relaxation_rows": 384,
+  "energy_cycle_cases": 42,
+  "max_relative_linear_energy_residual": 9.154028038700886e-16,
+  "max_fft_harmonic_difference_pct": 2.5794267099316613e-13,
+  "medium": {
+    "p0_pa": 101325.0,
+    "temperature_k": 293.15,
+    "gamma": 1.4,
+    "gas_constant_j_kg_k": 287.05,
+    "viscosity_pa_s": 1.81e-05,
+    "thermal_conductivity_w_m_k": 0.0257,
+    "rho_kg_m3": 1.2041183163746156,
+    "c_m_s": 343.23197767690584
+  },
+  "limits": [
+    "Pełna nieliniowa dynamika silnika/zawieszenia pozostaje P12/P13.",
+    "Pory ZK i rezerwuar cieplny nie są zidentyfikowanym produktem.",
+    "Porowatość pozorna sorpcji nie jest geometryczną porowatością.",
+    "Masy powietrza w modelu1D wymagają uzgodnienia Mmd/Mms z P11.",
+    "Geometria portu1D nie potwierdza montażu głośnika ani miejsca w pokoju."
+  ]
+}

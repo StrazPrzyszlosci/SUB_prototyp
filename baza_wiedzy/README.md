@@ -23,6 +23,7 @@ a potwierdzonych ustaleń użytkownika w [rejestrze](../DECYZJE_I_PYTANIA.md).
 |10|[Niepewność globalna](10_niepewnosc_globalna.md)|Korelacje, Sobol/MC, obwiednie dziedzin, świadkowie i granice dominacji|
 |11|[Gaz i materiały porowate](11_gaz_cieplo_i_materialy_porowate.md)|Relaksacja, lepkość, pory, dwa Cp, sorpcja i dane producenta|
 |12|[Nieliniowa termodynamika i DC](12_nieliniowa_termodynamika_i_DC.md)|Energia, FFT/ODE, niezamienne granice i wyrównanie barometrii|
+|13|[Promieniowanie, masy i reakcja pokoju](13_promieniowanie_masy_i_reakcja_pokoju.md)|Tłok/Rayleigh, czasza/komora, Mmd/Mms, wzajemne obciążenia, moc i granice sprzężenia|
 |Źródła|[Rejestr z datami](ZRODLA.md)|Co przeczytano, co tylko znaleziono i jakie są braki|
 
 ## Od wiedzy do wykonania

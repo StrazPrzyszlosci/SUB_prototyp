@@ -1,0 +1,11 @@
+{
+  "status": "PASS_NAPED_I_NIEZALEZNY_LIMIT_RUCHU",
+  "sinusoidal_limits_checked": 48384,
+  "material_sinusoidal_limits_checked": 69120,
+  "motion_ceiling_identity_cases": 49675,
+  "max_relative_motion_ceiling_error": 3.4416913763379853e-15,
+  "nonlinear_cycles_checked": 42,
+  "max_relative_cycle_energy_error": 8.446602017417686e-08,
+  "max_relative_cycle_exergy_error": 9.413968425060279e-14,
+  "scope": "Graniczne tożsamości modelu, nie bezpieczna moc, pomiar THD ani tolerancje materiału."
+}

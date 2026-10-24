@@ -1,0 +1,12 @@
+{
+  "status": "PASS_ZGODNOSC_Z_OPUBLIKOWANA_DOKLADNOSCIA",
+  "doi": "10.1121/10.0026023",
+  "source_url": "https://sambellows.github.io/assets/pdf/2024_spherical_cap.pdf",
+  "computed_minimum": 0.6167072863241115,
+  "published_rounded_minimum": 0.6167,
+  "computed_half_angle_degrees": 50.530003289873,
+  "published_rounded_half_angle_degrees": 50.5,
+  "difference_to_published_minimum": 7.286324111510645e-06,
+  "scope": "Minimum dla0<theta<=90deg i promienia rzutu czaszy. Nie utożsamiać go z promieniem koła równej powierzchni.",
+  "caveat": "Odtworzenie teorii i opublikowanego minimum nie waliduje geometrii prostokątnej skrzyni."
+}

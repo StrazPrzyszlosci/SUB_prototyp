@@ -60,6 +60,16 @@ def main():
     from raportuj_gaz_i_wypelnienie import main as gas_report
     from sprawdz_pakiet_gazu import main as gas_tables
     from audyt_identyfikacji_wypelnienia import main as filling_identification
+    from sprawdz_promieniowanie import main as radiation_checks
+    from audyt_energii_promieniowania import main as radiation_energy
+    from analiza_promieniowania import main as radiation_analysis
+    from analiza_scian_i_sprzezen import main as radiation_coupling
+    from gesty_skan_sprzezenia_pokoju import main as radiation_dense
+    from replikacja_poprawki_czaszy import main as radiation_replication
+    from sprawdz_zbieznosc_pokoju_P11 import main as radiation_spatial
+    from sprawdz_pakiet_promieniowania import main as radiation_tables
+    from raportuj_promieniowanie import main as radiation_report
+    from analiza_geometrii_odsluchu import main as listening_geometry
     checks()
     images()
     physics()
@@ -87,6 +97,16 @@ def main():
     gas_tables()
     filling_identification()
     gas_report()
+    radiation_checks()
+    radiation_energy()
+    radiation_analysis()
+    radiation_coupling()
+    radiation_dense()
+    radiation_replication()
+    radiation_spatial()
+    radiation_tables()
+    radiation_report()
+    listening_geometry()
     baseline()  # Manifest powstaje po wszystkich obliczeniach.
 
 
