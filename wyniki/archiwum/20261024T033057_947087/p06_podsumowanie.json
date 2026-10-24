@@ -1,0 +1,60 @@
+{
+  "status": "P06_RODZINY_WARUNKOWE_NIE_FINALNY_WYBOR",
+  "drivers": 24,
+  "factors": 13,
+  "interval_rows": 576,
+  "sobol_rows": 4992,
+  "rank_rows": 1728,
+  "local_rows": 624,
+  "mc_rows": 96,
+  "dominance_rows": 6624,
+  "proven_two_criterion_dominance_pairs": 1069,
+  "x_fraction_c02_c11_crossover_at100l_40v": 0.8638933862241522,
+  "sobol_convergence_review_pass": true,
+  "sobol_convergence": [
+    {
+      "family": "D",
+      "comparison": "N4096_N16384_seed20261024",
+      "max_first_order_difference": 0.03268813176559193,
+      "max_total_order_difference": 0.002995257903289583
+    },
+    {
+      "family": "D",
+      "comparison": "N4096_N16384_seed20261025",
+      "max_first_order_difference": 0.030056394806027134,
+      "max_total_order_difference": 0.0038873086453636435
+    },
+    {
+      "family": "D",
+      "comparison": "scrambles_N16384",
+      "max_first_order_difference": 0.005372554518093375,
+      "max_total_order_difference": 0.009880151076235417
+    },
+    {
+      "family": "L",
+      "comparison": "N4096_N16384_seed20261024",
+      "max_first_order_difference": 0.009037710605826588,
+      "max_total_order_difference": 0.015758975941271625
+    },
+    {
+      "family": "L",
+      "comparison": "N4096_N16384_seed20261025",
+      "max_first_order_difference": 0.01729507380109463,
+      "max_total_order_difference": 0.0054374080547126
+    },
+    {
+      "family": "L",
+      "comparison": "scrambles_N16384",
+      "max_first_order_difference": 0.003134334437388333,
+      "max_total_order_difference": 0.0008317643334009306
+    }
+  ],
+  "max_mc_qmc_design_mean_difference_db": 0.009628590055370978,
+  "limitations": [
+    "Zakresy i miara wejściowa są umowne, nie populacyjne.",
+    "L: wspólnofazowy przepływ sumaryczny, geometria przecieku pozostaje nieznana.",
+    "Brak rzeczywistego THD, termiki i sprzężenia z pokojem.",
+    "Brak globalnego zwycięzcy całego briefu; obwiednie dotyczą zadanego modelu.",
+    "Brak separacji przedziałów nie dowodzi braku dominacji; obwiednia może być szeroka."
+  ]
+}

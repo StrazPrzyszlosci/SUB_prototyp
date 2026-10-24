@@ -1,0 +1,30 @@
+{
+  "access_date": "2026-10-23",
+  "method": "Firecrawl CLI1.26.22",
+  "sources": [
+    {
+      "id": "SRC13",
+      "url": "https://www.diyaudio.com/community/threads/sealed-ported-convertible-subwoofer.386102/page-2",
+      "thread_start": "2022-05-10",
+      "kind": "relacja_i_wskazowki",
+      "observations": [
+        "cspieker opisuje własną obudowę z zamykanymi portami i uszczelnianymi korkami; brak porównywalnego protokołu i pełnej identyfikacji napędu w odczytanym fragmencie.",
+        "Wzmianki o pomiarach RSS315HF JohnMarsh i HobbyHiFi są tylko tropami, nie odczytanymi testami.",
+        "Linkowany SB34SWPL76-3DVC nie jest SB34SWPL76-4 z naszego modelu."
+      ],
+      "accepted_quantitative_claims": []
+    },
+    {
+      "id": "SRC14",
+      "url": "https://www.audiosciencereview.com/forum/index.php?threads/help-with-my-faulty-12-subwoofer-design.28117/page-3",
+      "thread_start": "2021-11-15",
+      "kind": "dyskusja_techniczna",
+      "observations": [
+        "Strona wiąże temat z SB34SWPL76-4 i omawia wpływ geometrii pomiaru oraz litrażu na interpretację zniekształceń.",
+        "Porada70L BR nie jest wynikiem udokumentowanego porównania naszego prototypu; nie użyto jej jako danych.",
+        "Nie przeanalizowano całego wątku ani pierwotnych plików pomiarowych."
+      ],
+      "accepted_quantitative_claims": []
+    }
+  ]
+}

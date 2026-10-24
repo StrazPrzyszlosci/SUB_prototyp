@@ -24,7 +24,7 @@ pakietu samym stworzeniem planu, testów ani listy bibliotek.
 | P03 | T/S, Xmax, korelacje, identyfikowalność | Częściowo |24modele/11producentów, w tym4STX; dowód nieidentyfikowalności i syntetyczna identyfikacja z2Vb; zweryfikowane wzrokowo dane2próbekScan32; nieustalone tolerancje populacji |
 | P04 | Formalne równania i granice | Częściowo | Model bazowy i N7; bilans/pasywność/stabilność, odrębne granice geometrii |
 | P05 | Niezależna replikacja | Częściowo | N7: odrębny układ4równań, przestrzeń stanu i ODE; P07:algebra i odrębne oceny numeryczne; brak pełnej walidacji pomiarowej |
-| P06 | Niepewność globalna i odporność wyboru | Do wykonania | Wcześniejsza lokalna czułość nie jest analizą globalną ani uzasadnionym MonteCarlo |
+| P06 | Niepewność globalna i odporność wyboru | Wykonane dla liniowych rodzin D/L; integracja otwarta | 24 modele, 13 czynników, 6 pasm20–80Hz, lokalna/globalna czułość, Sobol N4096/16384, MC/QMC, 1728 obwiedni, 6624 relacje i jawne kontrprzykłady przy wspólnym napędzie; raport 015. Zakresy nie są tolerancją produkcji. Rozszerzenie na modele nieliniowe/termikę/konstrukcję pozostaje P29 |
 | P07 | Ciągła objętość | Częściowo |20–150l co1l oraz analityczne granice po wszystkichVb>0 dla pojedynczych sinusów, kontrolowane288przypadkami; optymalizacja całego pasma/DSP otwarta |
 | P08 | N7 — przecieki i straty | Częściowo wykonane | ModelCab||Ra,1728rekordów; granice, sumowanie fazorowe,72progi pomocnicze; brak identyfikacji fizycznegoRa |
 | P09 | Wypełnienie, lepkość i straty cieplne gazu | Do wykonania | Absorpcja nie jest utożsamiana z przeciekiem |
@@ -67,8 +67,9 @@ w świetle wykonanych badań, z jawnym uzasadnieniem ryzyka.
 
 N7/P08 wykonano w modelu zredukowanym, szeroką pulę rozszerzono i policzono.
 W odpowiedzi na przypomnienie o wymiarach pokoju rozpoczęto niezależnie P26/P27
-(raport 013); nie zastępuje to pozostałych pakietów. Kontynuować P06 jako
-najbliższy krok oraz dane nieliniowe, następnie modeleP09–P17,
+(raport 013); nie zastępuje to pozostałych pakietów. P06 wykonano dla zadanych
+liniowych rodzin (raport 015). Najbliższy krok to P09/P10: pasywna relaksacja
+cieplna gazu i wypełnienie, następnie modeleP12–P17,
 mechanikęP18–P21 z doborem kleju,
 czasoweDSP/napędP22–P25, pokójP26–P28 i integracjaP29/P30.
 Poszukiwanie danych materiałowych i nieliniowych może toczyć się równolegle

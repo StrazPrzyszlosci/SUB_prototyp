@@ -1,0 +1,29 @@
+{
+  "candidate_id": "C07",
+  "manufacturer": "STX",
+  "model": {
+    "name": "STX W.38.500.8.MC",
+    "fs_hz": 32,
+    "qes": 0.48,
+    "qms": 3.17,
+    "vas_l": 315,
+    "sd_cm2": 855,
+    "re_ohm": 5.1,
+    "le_mh": 0.74,
+    "xmax_mm": 5,
+    "nominal_ohm": 8,
+    "rated_w": 250
+  },
+  "catalog_extra": {
+    "qts": 0.41,
+    "mms_g": 80,
+    "cms_mm_n": 0.31,
+    "bl_tm": 12.8
+  },
+  "url": "https://stx.pl/w-38-500-8-mc.html",
+  "access_date": "2026-10-24",
+  "xmax_definition": "10mm p-p ->5mm jednostronnie.",
+  "data_issue": "Konflikt: nazwa strony.8MC iZn8Ω, ale jedna linia opisu mówi.4MC. Obliczenia warunkowe dla zestawuRe5.1/Zn8; przed finalnym wyborem wymagana kontrola. Strona wskazuje brak dostępności.",
+  "source_extraction_sha256": "d724c5e39ef1ef255376c012e566aefc9abc7977472251d3fbb219bd19ca6b4b",
+  "scope": "Zweryfikowane tabele i jawne konwersje; nie użyto automatycznych odczytów punktów z wykresów."
+}

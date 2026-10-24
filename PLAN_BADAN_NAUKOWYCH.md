@@ -29,6 +29,33 @@ Kod i dane są dostępne, a [raport 007](raporty/007_fizyka_nieliniowosci_i_DSP.
 rozwija nowe wyniki. Nie wyciągamy z nich rankinguTHD, jakości odsłuchowej
 lub gotowości produktu do komercjalizacji.
 
+## Następny pakiet domyślny: P09/P10 — relaksacja cieplna gazu
+
+Wejścia: aktualne 24 modele, N7/P08, dane otoczenia i jawne hipotetyczne
+czasy wymiany ciepła. Najpierw zbudować pasywny model relaksacji, a dopiero
+potem przypisywać parametry materiałom, jeśli istnieją dane źródłowe.
+Nie utożsamiać przecieku z absorpcją ani zmieniać jednocześnie geometrycznego Vb
+i podatności, aby podwójnie policzyć ten sam efekt.
+
+Kandydat modelowy do wyprowadzenia i sprawdzenia: mechaniczna sztywność
+komory `K(s)=K0+DeltaK*s*tau/(1+s*tau)`, z `Kinf=Sd²*rho*c²/Vb`,
+`K0=Kinf/gamma`, `DeltaK=Kinf-K0>=0`. To hipoteza modelu skupionego,
+nie zidentyfikowana charakterystyka włókniny. Możliwa realizacja stanu:
+
+```text
+Fbox = K0*y+DeltaK*(y-q)
+ydot = v-Fbox/(Sd²*Ra)
+qdot = (y-q)/tau
+Egas = 0.5*K0*y²+0.5*DeltaK*(y-q)²
+```
+
+Do wykonania: niezależne wyprowadzenie z bilansu gazu i wymiany ciepła,
+bilans energii z rozdzielonymi stratami przecieku i relaksacji, kontrola
+granic izotermicznej/adiabatycznej i szczelnej/otwartej, model czasowy
+i częstotliwościowy, wpływ na porównanie głośników oraz analiza identyfikowalności.
+Zweryfikować założenia wybranego modelu materiału i jego dziedzinę; nie
+ogłaszać uniwersalnego bonusu objętości dla dowolnego wypełnienia.
+
 ## Wykonany pakiet N7 — zachowane wyprowadzenie strat i nieszczelności
 
 **Pytanie:** jak wrażliwe są odpowiedź, impedancja i ochrona na skończoną
@@ -82,7 +109,8 @@ z góry pożądany wynik. Nie przechodzić automatycznie do konstrukcji ani zaku
 
 Aktualizacja 2026-10-24: wykonano szeroką pulę 24 modeli / 11 producentów,
 globalne granice po Vb, identyfikowalność oraz scenariusze P26/P27 dla pokoju
-4,6 × 3,7 × 2,5 m. Bieżący następny krok to P06 z
+4,6 × 3,7 × 2,5 m. P06 wykonano w liniowych rodzinach (raport 015).
+Bieżący następny krok to P09/P10 z
 [programu 30 badań](PROGRAM_30_BADAN.md); poniższa lista N8–N11 pozostaje
 historycznym opisem zależności, nie kompletną aktualną kolejką.
 

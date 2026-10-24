@@ -1,0 +1,18 @@
+[
+  {
+    "id": "SRC15",
+    "url": "https://aes.org/publications/elibrary/elibrary-page/?id=2022",
+    "method": "Firecrawl",
+    "access_date": "2026-10-23",
+    "scope": "Abstrakt i metadane Small1972, JAES20(10),798–808; pełnego artykułu nie pobrano.",
+    "accepted": "Zależność modelu sealed od rezonansu i tłumienia oraz ograniczeńVd; bez przenoszenia nieodczytanych szczegółów."
+  },
+  {
+    "id": "SRC16",
+    "url": "https://www.klippel.de/know-how/measurements/transducer-parameters/single-valued-nonlinear-parameters.html",
+    "method": "Firecrawl",
+    "access_date": "2026-10-23",
+    "scope": "Odczyt dokumentacji producenta aparatury o parametrach dużosygnałowych.",
+    "accepted": "Strona wiążeXmax z ograniczeniamiBL,Cms,Le i kryterium zniekształceń; geometrycznep-p nie jest tym samym kryterium. Nie odczytano pełnego standarduAES2."
+  }
+]

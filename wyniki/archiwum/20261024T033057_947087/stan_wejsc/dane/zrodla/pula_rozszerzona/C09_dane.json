@@ -1,0 +1,29 @@
+{
+  "candidate_id": "C09",
+  "manufacturer": "Scan-Speak",
+  "model": {
+    "name": "Scan-Speak 30W/4558T00",
+    "fs_hz": 17,
+    "qes": 0.34,
+    "qms": 5.01,
+    "vas_l": 197,
+    "sd_cm2": 466,
+    "re_ohm": 2.6,
+    "le_mh": 0.83,
+    "xmax_mm": 12.5,
+    "nominal_ohm": 4,
+    "rated_w": 150
+  },
+  "catalog_extra": {
+    "qts": 0.32,
+    "mms_g": 135,
+    "cms_mm_n": 0.65,
+    "bl_tm": 10.5
+  },
+  "url": "https://www.scan-speak.dk/datasheet/pdf/30w-4558t00.pdf",
+  "access_date": "2026-10-24",
+  "xmax_definition": "Linear excursion±12.5mm;±28mm jest mechaniczne.",
+  "data_issue": "Pe150W według100hRMS noise test,350W long-term to inny protokół. Nie traktować tego jako dopuszczalnej mocy sinusa20Hz. TranskrypcjaPDF do dalszej kontroli rysunku.",
+  "source_extraction_sha256": "21b74c778612255afd8be31e64519ed34ac20949dc768743a2085d1f690de0f4",
+  "scope": "Zweryfikowane tabele i jawne konwersje; nie użyto automatycznych odczytów punktów z wykresów."
+}

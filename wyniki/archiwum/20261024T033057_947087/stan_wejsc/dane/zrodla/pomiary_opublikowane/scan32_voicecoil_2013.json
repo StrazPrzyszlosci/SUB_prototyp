@@ -1,0 +1,78 @@
+{
+  "source_url": "https://www.scan-speak.dk/datasheet/reviews/32W-4878T00-VoiceCoil_2013-3.pdf",
+  "source_pdf_sha256": "e416329e8b3b2c05eef01df1b5b32fbd5f422f7a68c4fa3f5d579e59f008ad53",
+  "publication_month": "2013-03",
+  "access_date": "2026-10-24",
+  "read_pages": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "scope": "Skan publikacjiVoiceCoil hostowany przez producenta; analizaKLIPPEL przypisana w tekściePatrickTurnmire/RedRockAcoustics. Dwaegzemplarze, nie tolerancja populacji.",
+  "parameter_sets": [
+    {
+      "label": "TSL_S1",
+      "fs_hz": 18.3,
+      "re_ohm": 3.05,
+      "sd_cm2": 523,
+      "qms": 6.15,
+      "qes": 0.37,
+      "vas_l": 196.4,
+      "method": "TSL1V"
+    },
+    {
+      "label": "TSL_S2",
+      "fs_hz": 17.1,
+      "re_ohm": 3.06,
+      "sd_cm2": 523,
+      "qms": 5.67,
+      "qes": 0.33,
+      "vas_l": 223.5,
+      "method": "TSL1V"
+    },
+    {
+      "label": "LTD_S1",
+      "fs_hz": 17.6,
+      "re_ohm": 3.05,
+      "sd_cm2": 523,
+      "qms": 5.37,
+      "qes": 0.35,
+      "vas_l": 214.34,
+      "method": "LTD_model_dependent"
+    },
+    {
+      "label": "LTD_S2",
+      "fs_hz": 16.4,
+      "re_ohm": 3.06,
+      "sd_cm2": 523,
+      "qms": 5.25,
+      "qes": 0.33,
+      "vas_l": 244.8,
+      "method": "LTD_model_dependent"
+    },
+    {
+      "label": "FACTORY_2013",
+      "fs_hz": 18,
+      "re_ohm": 3.1,
+      "sd_cm2": 531,
+      "qms": 7,
+      "qes": 0.33,
+      "vas_l": 207.5,
+      "method": "factory_table2013"
+    }
+  ],
+  "nonlinear_text_results": {
+    "x_bl_at70pct_mm": 14.9,
+    "x_c_at50pct_compliance_mm": 12.3,
+    "source_distortion_criterion_pct": 20,
+    "geometric_xmax_mm": 14,
+    "le_peak_to_peak_change_over_motion_mh": 0.01
+  },
+  "do_not_accept": [
+    "Automatycznie wygenerowane tablice wartości z wykresówFirecrawl nie są pomiarami.",
+    "Nie przyjęto20HzTHD0.15% z transkrypcji.",
+    "Źródło podaje94dB/1m przy1.4V; bez wyjaśnienia pasma i kalibracji nie stosować jako porównywalnego poziomu20Hz.",
+    "WynikiLTDto nie kompletna realizacjaLEAP5 możliwa do odtworzenia z tej tabeli."
+  ]
+}

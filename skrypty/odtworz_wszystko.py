@@ -48,6 +48,12 @@ def main():
     from sprawdz_pokoj import main as room_checks
     from analiza_pokoju import main as room_analysis
     from raportuj_pokoj import main as room_report
+    from sprawdz_niepewnosc import main as uncertainty_checks
+    from analiza_niepewnosci import main as uncertainty_analysis
+    from analiza_adwersarialna import main as adversarial
+    from sprawdz_swiadkow_p06 import main as witness_checks
+    from raportuj_niepewnosc import main as uncertainty_report
+    from wizualizuj_sobol import main as sensitivity_plot
     checks()
     images()
     physics()
@@ -63,6 +69,12 @@ def main():
     room_checks()
     room_analysis()
     room_report()
+    uncertainty_checks()
+    uncertainty_analysis()
+    sensitivity_plot()
+    adversarial()
+    witness_checks()
+    uncertainty_report()
     baseline()  # Manifest powstaje po wszystkich obliczeniach.
 
 

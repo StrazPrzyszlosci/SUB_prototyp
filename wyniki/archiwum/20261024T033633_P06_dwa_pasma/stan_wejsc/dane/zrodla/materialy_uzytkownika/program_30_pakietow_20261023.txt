@@ -1,0 +1,425 @@
+# Kompletny program zaawansowanych badań naukowych SUB_prototyp – bez fizycznego sprzętu
+
+Rekomendacja dla Fundacji Straż Przyszłości · 23 października 2026
+
+Rekomenduję rozszerzenie repozytorium [SUB_prototyp](https://github.com/StrazPrzyszlosci/SUB_prototyp?utm_source=chatgpt.com) o 30 pakietów badawczych obejmujących elektroakustykę, fizykę nieliniową, termodynamikę, mechanikę konstrukcji, DSP, akustykę pomieszczeń i optymalizację matematyczną.
+
+Wszystkie można rozpocząć i prowadzić obliczeniowo, bez posiadania przetworników, wzmacniacza, skrzyni czy aparatury pomiarowej. Część da rozstrzygnięcia matematyczne, część – wyniki warunkowe zależne od nieznanych parametrów fizycznych.
+
+To rozwinięcie wcześniejszych 12 szerokich obszarów naukowych na konkretne zadania dla zespołu badawczego lub agentów AI.
+
+# 30
+
+pakietów badawczych
+
+# 7
+
+dziedzin badań
+
+# 0
+
+wymaganych zakupów
+
+Celem nie jest stworzenie najbardziej skomplikowanego możliwego modelu. Celem jest wyznaczenie najlepiej uzasadnionej konstrukcji prototypu i granic jej przewidywanych osiągów, zanim fundacja wyda pieniądze na wykonanie urządzenia.
+
+## Zasady programu
+
+Badania mają dotyczyć przede wszystkim zamkniętej skrzyni o regulowanej objętości, przetworników 12″ i 15″, zewnętrznego wzmacniacza klasy D oraz korekcji DSP. Uwzględniamy pomieszczenie 4,6 × 3,7 × 2,5 m, główny punkt odsłuchowy 2,5–3 m oraz przyszły system z dwoma subwooferami.
+
+W programie stosuję trzy poziomy priorytetu:
+
+Krytyczne
+
+Potrzebne przed zamknięciem projektu prototypu
+
+Ważne
+
+Mogą istotnie poprawić decyzję konstrukcyjną
+
+Rozszerzone
+
+Wykonywane, gdy prostsze modele okażą się niewystarczające
+
+Kryterium profesorskiego rygoru to nie sama liczba symulacji. Każda analiza powinna określać założenia, równania, zakres ważności, niepewność i sposób niezależnego sprawdzenia. Jest to zgodne z podejściem stosowanym w literaturze AES, metrologii JCGM i zaawansowanym modelowaniu przetworników.&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://aes.org\&sz=32)
+
+AES E-Library
+
++2
+
+
+
+## I. Fundament naukowy i matematyczny
+
+Pakiety 01–06 · Najwyższy priorytet metodologiczny
+
+| Nr | Badanie                            | Zakres i wymagany rezultat                                                                                                                                                                   |
+| -- | ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 01 | Systematyczny przegląd literatury  | Zebrać publikacje AES, IEC, opracowania Thiele'a-Smalla i KLIPPEL. Odróżnić znane prawa fizyczne od zagadnień nadal nierozstrzygniętych dla prototypu. Utworzyć rejestr twierdzeń i dowodów. |
+| 02 | Ścisła definicja wymagań i hipotez | Sformułować mierzalne cele dla 20, 25, 31,5, 40, 63 i 80 Hz: SPL, wychylenie, moc, zniekształcenia, hałas, czas pracy i zapas dynamiki. Nie zgadywać progów, których nie uzasadniają źródła. |
+| 03 | Audyt parametrów T/S               | Sprawdzić niezależność i spójność Fs, Qes, Qms, Vas, Sd, Re, Le, BL, Mms, Cms. Zbadać korelacje, definicje Xmax, niezgodności kart i identyfikowalność parametrów.                           |
+| 04 | Formalny audyt modelu fizycznego   | Wyprowadzić równania z praw zachowania energii i równań ruchu. Sprawdzić jednostki, znaki, fazy, wartości RMS/peak, pasywność oraz granice analityczne.                                      |
+| 05 | Niezależna replikacja obliczeń     | Stworzyć drugi model matematyczny niezależny od `model_subwoofera.py`. Porównać impedancję, Fc, Qtc, F3, SPL, prąd, wychylenie i bilans mocy. Zbadać zbieżność numeryczną.                   |
+| 06 | Pełna analiza niepewności          | Analiza lokalna, globalna (np. Sobol), Monte Carlo, przedziały parametrów, korelacje i odporność rankingu głośników. Oddzielić niepewność danych od niedoskonałości modelu.                  |
+
+W repozytorium istnieją już podstawy pakietów 01–06, więc chodzi o ich rozszerzenie i niezależną kontrolę, a nie wykonywanie od początku tego samego badania.
+
+### Co jest tu najważniejsze?
+
+Pakiet 06 powinien odpowiedzieć na pytanie:
+
+Czy RSS390HF-4 nadal ma przewagę w istotnych kryteriach, jeśli uwzględnimy możliwe błędy parametrów katalogowych, różne definicje Xmax i nieznane straty?
+
+Bez takiej analizy ranking może wyglądać bardzo precyzyjnie, a jednocześnie być niepewny.
+
+Wyniki probabilistyczne należy podawać jako przedziały ufności lub pokrycia tylko wtedy, gdy rozkłady wejściowe są rzeczywiście uzasadnione. W przeciwnym razie właściwe będą analizy scenariuszowe i przedziałowe. Metody propagacji rozkładów opisuje JCGM 101.&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://www.bipm.org\&sz=32)
+
+BIPM
+
+
+
+## II. Fizyka zamkniętej obudowy
+
+Pakiety 07–11 · Bezpośredni wpływ na pojemność, charakterystykę i szczelność
+
+| Nr | Badanie                                | Zakres i wymagany rezultat                                                                                                                                                                                       |
+| -- | -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 07 | Pełna analiza objętości Vb             | Zastąpić samą siatkę sześciu pojemności analizą ciągłą, np. 20–150 l. Obliczyć Fc, Qtc, F3, impedancję, wychylenie, SPL i czułość na zmiany Vb. Wyznaczyć przedziały pojemności dające istotnie różne rezultaty. |
+| 08 | N7 – straty i nieszczelności           | Zbudować model strat akustycznych i przecieków, uwzględniając fazową sumę promieniowania membrany i nieszczelności. Sprawdzić pasywność, granicę szczelną i zachowanie przy bardzo niskich częstotliwościach.    |
+| 09 | Tłumienie i materiały wypełniające     | Zbadać zmiany efektywnej podatności powietrza, strat lepkościowych i cieplnych przy różnych modelach wypełnienia. Oddzielić efekt tłumienia od pozornego zwiększenia objętości.                                  |
+| 10 | Termodynamika powietrza                | Porównać przemiany adiabatyczne, izotermiczne i modele pośrednie zależne od częstotliwości. Zbadać wpływ amplitudy, temperatury i objętości na ciśnienie oraz harmoniczne siły gazu.                             |
+| 11 | Impedancja promieniowania akustycznego | Rozszerzyć model idealnego monopola o obciążenie promieniowaniem, geometrię przedniej ścianki, bliskość podłogi i ścian oraz przejście między 4π, 2π i bardziej rzeczywistymi warunkami brzegowymi.              |
+
+### Szczególnie ważny pakiet 08
+
+Przy planowanej regulacji pojemności skrzyni nieszczelność może być jednym z najważniejszych niekontrolowanych parametrów eksperymentu.
+
+Model powinien uwzględniać podatność akustyczną komory i impedancję przecieku:
+
+\\[ C\_{ab}=\frac{V_b}{\rho c^2} \\]
+
+\\[ Z\_{\mathrm{box}}(\omega)= \frac{S_d^2}{1/R_a+j\omega C\_{ab}} \\]
+
+Następnie należy obliczyć zespolone ciśnienie promieniowane przez membranę i przeciek, zamiast dodawać same wartości SPL.
+
+Warto zbadać również trzy odmienne sytuacje: przeciek rozpraszający energię, bardzo wolne wyrównywanie ciśnienia statycznego i nieszczelność zdolną do generowania szumu przepływu. Ostatni przypadek wymaga osobnego, bardziej złożonego modelu.
+
+Oczekiwany wynik: ustalenie, jak bardzo szczelność i tłumienie mogą zmieniać przewidywaną charakterystykę oraz jak restrykcyjne muszą być przyszłe wymagania dla wymiennego frontu i modułów wypornościowych.
+
+## III. Zaawansowana fizyka nieliniowa i termika przetwornika
+
+Pakiety 12–17 · Największy brak obecnego modelu w przewidywaniu rzeczywistej jakości basu
+
+To szczególnie ważny obszar. Dzisiejszy model repozytorium zakłada zasadniczo liniową dynamikę przetwornika. Tymczasem przy dużym wychyleniu zmieniają się parametry układu magnetycznego, zawieszenia i cewki.
+
+Literatura dotycząca modelowania dużych sygnałów uwzględnia m.in. nieliniowe BL(x), Kms(x), L(x,i) oraz mechaniczne i cieplne mechanizmy strat.&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://www.klippel.de\&sz=32)
+
+klippel.de
+
++1
+
+
+
+| Nr | Badanie                                        | Zakres i wymagany rezultat                                                                                                                                                                            |
+| -- | ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 12 | Model nieliniowy przetwornika                  | Wprowadzić BL(x), Cms(x), Le(x,i) i ewentualnie Rms(v). Opracować matematycznie dopuszczalne rodziny charakterystyk i ustalić, jakie rzeczywiste dane można pozyskać z literatury.                    |
+| 13 | Sprzężony model ruchu membrany i powietrza     | Rozwiązać nieliniowe równania różniczkowe dla ruchu membrany, prądu cewki, ciśnienia wewnątrz obudowy i strat. Porównać wyniki z bazowym modelem liniowym.                                            |
+| 14 | Zniekształcenia harmoniczne i intermodulacyjne | Symulować H2, H3, wyższe harmoniczne, THD i IMD dla zadanych modeli nieliniowości. Badać 20–100 Hz oraz różne poziomy sygnału, z zachowaniem niepewności parametrów.                                  |
+| 15 | N8 – pełny model cieplny                       | Rozwiązać bilans temperatury cewki i otoczenia, z pojemnościami cieplnymi, drogami przepływu ciepła i zależnością Re(T). Wyznaczyć zachowanie warunkowe dla różnych obciążeń.                         |
+| 16 | Sprzężenie termiczno-elektromechaniczne        | Zbadać wzajemną zależność między temperaturą, impedancją, wychyleniem, przepływem powietrza i efektywnością chłodzenia. Rozszerzyć model o zmiany BL(T), jeśli dane to uzasadniają.                   |
+| 17 | Granice bezpiecznej i użytecznej pracy         | Połączyć mechaniczne, elektryczne, cieplne i nieliniowe ograniczenia. Wyznaczyć obszary, w których model przewiduje przekroczenie przyjętego ruchu, napięcia, prądu lub zadanego progu zniekształceń. |
+
+### Pakiet 13 – jeden z najważniejszych
+
+Obecnie można obliczyć liniowe wychylenie membrany i niezależnie harmoniczne siły gazu. Należałoby połączyć te mechanizmy w jeden dynamiczny model.
+
+Uproszczone równanie mechaniczne może przyjąć postać:
+
+\\[ M\_{ms}\ddot{x} +R\_{ms}\dot{x} +F_s(x) +F\_{\mathrm{air}}(x,\dot{x},t) =BL(x)i \\]
+
+Należy je sprzęgnąć z równaniem elektrycznym, uwzględniającym siłę przeciwelektromotoryczną i ewentualną zależność indukcyjności od położenia oraz prądu.
+
+Wtedy można sprawdzać, czy nieliniowa sprężyna gazowa i nieliniowości przetwornika wzmacniają się, czy częściowo kompensują w określonych scenariuszach.
+
+Nie wolno jednak przypisywać nieznanych charakterystyk BL(x) konkretnemu modelowi Dayton lub SB Acoustics. Bez wiarygodnych danych otrzymamy warunkową analizę wpływu różnych charakterystyk, a nie rzeczywiste THD konkretnego głośnika.
+
+### Pakiet 15 – termika
+
+Punktem wyjścia może być:
+
+\\[ C\_{th}\frac{dT}{dt} =P\_{\mathrm{cu}}(t) -\frac{T-T\_{\mathrm{amb}}}{R\_{th}} \\]
+
+Dalszy etap powinien uwzględniać kilka węzłów cieplnych i konwekcję zależną od ruchu powietrza.
+
+Takie podejście ma uzasadnienie w literaturze. Praca Wolfganga Klippela Nonlinear Modeling of the Heat Transfer in Loudspeakers, opublikowana w Journal of the Audio Engineering Society w 2004 roku, pokazuje znaczenie nieliniowych mechanizmów wymiany ciepła.&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://aes.org\&sz=32)
+
+AES E-Library
+
+
+
+Cel tych sześciu pakietów: ustalić, co rzeczywiście ogranicza subwoofer przy dużej głośności, a nie tylko przy jakiej wartości katalogowego Xmax model przestaje spełniać przyjęte założenie.
+
+## IV. Mechanika skrzyni, regulacja objętości i drgania
+
+Pakiety 18–21 · Bezpośrednio przydatne do przygotowania konstrukcji MDF i dokumentacji CNC
+
+| Nr | Badanie                                           | Zakres i wymagany rezultat                                                                                                                                                                |
+| -- | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 18 | Analiza drgań paneli MES/FEM                      | Wyznaczyć przemieszczenia, naprężenia, częstotliwości własne i postacie drgań ścian z MDF. Porównać grubości paneli, front i różne rozmieszczenie wzmocnień.                              |
+| 19 | Optymalizacja usztywnień i połączeń               | Porównać wręgi, łączniki ścian przeciwległych, połączenia klejone i skręcane oraz wymienny front. Sprawdzić wrażliwość na sztywność połączeń i tolerancje.                                |
+| 20 | Badanie mechanizmu regulacji pojemności           | Porównać sztywne moduły wypornościowe z ruchomą, uszczelnianą przegrodą. Zbadać błędy litrażu, drgania, sztywność, szczelność i możliwość powtarzalnego montażu.                          |
+| 21 | Wewnętrzne pole akustyczne i sprzężenie z obudową | Zbadać rezonanse komory, lokalne ciśnienia i oddziaływanie powietrza na panele. Jeśli prostszy model jest niewystarczający, zastosować sprzężoną analizę strukturalno-akustyczną FEM/BEM. |
+
+### Co warto konkretnie obliczyć?
+
+Repozytorium zawiera już dwa poglądowe warianty obudowy: K1 o około 65 l netto przed modułami i K2 o około 124 l.
+
+Dla każdego warto zbadać sztywność przy określonej masie materiału, wpływ rozmieszczenia wręg, reakcję na wewnętrzne ciśnienie oraz zmiany zachowania po wprowadzeniu elementów regulacji objętości.
+
+Przykładowe typy konstrukcji do porównania
+
+[STOP LOSING BASS! Subwoofer Box Window Brace -  How to Make](https://images.openai.com/static-rsc-4/q3uJW5jp5g1lG0srxUShm5NUuHPHlBKetFXfkliQObiIcmh4Z8dJIpgTlaXZypclRmc9KdelH1l8vDTJJuhcPCzYfyqZmjk8IpQuk8FWqUTsuCPlUIHG3fxhNCl2ukCGMgdUfv1yJw6mkI_hCDgzosrEvTYULPeB36tum7fOmcE?purpose=inline)
+
+Stałe wręgi i moduły wypornościowe
+
+Badanie sztywności, montażu i skutecznej objętości
+
+Regulowana przegroda wewnętrzna
+
+Badanie szczelności, ugięcia i powtarzalności regulacji
+
+Ilustracje poglądowe rozwiązań mechanicznych, a nie projekty zatwierdzone do wykonania.
+
+W literaturze istnieją badania wykorzystujące sprzężone modele elementów skończonych i modeli o parametrach skupionych dla głośników z podatnymi obudowami. Można zatem zastosować sprawdzoną klasę metod, a nie tworzyć całą teorię od początku.&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://www.sciencedirect.com\&sz=32)
+
+ScienceDirect
+
++1
+
+
+
+Najpierw jednak należy zbadać proste płyty i ramy z zadanymi własnościami materiału. Dopiero potem przechodzić do pełnego modelu skrzyni.
+
+Bez pomiaru właściwości konkretnego MDF, kleju i połączeń wyniki będą zależeć od zakresów przyjętych modułów sprężystości oraz tłumienia.
+
+Najważniejszy rezultat: wytypowanie konstrukcji regulowanej, która w modelowanych warunkach jest dostatecznie sztywna i możliwie powtarzalna, bez zbędnej masy, komplikacji oraz ryzyka nieszczelności.
+
+## V. Elektronika, DSP i ochrona przetwornika
+
+Pakiety 22–25 · Wspólny model subwoofera, wzmacniacza i sygnału
+
+| Nr | Badanie                                 | Zakres i wymagany rezultat                                                                                                                                                               |
+| -- | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 22 | Rzeczywiste ograniczenia napędu         | Model wzmacniacza klasy D z impedancją wyjściową, ograniczeniem prądu i napięcia, charakterystyką zasilania, clippingiem oraz możliwym wpływem filtru wyjściowego na obciążenie Z(f).    |
+| 23 | Optymalizacja korekcji cyfrowej         | Rozszerzyć dotychczasowe warianty Linkwitz Transform o filtry o różnych charakterystykach, stabilność dyskretną, opóźnienie, fazę, przesterowanie i wrażliwość na błędy parametrów.      |
+| 24 | Dynamiczne zabezpieczenie subwoofera    | Opracować symulacyjny limiter wychylenia, napięcia, prądu i długotrwałego obciążenia cieplnego. Zbadać czasy reakcji, opóźnienie ochrony i zachowanie po krótkich impulsach.             |
+| 25 | Symulacje realistycznych sygnałów audio | Użyć sinusów, wielotonów, sweepów, szumu, impulsów i reprezentatywnych sygnałów muzycznych z odpowiednimi prawami do wykorzystania. Badać peak/RMS, crest factor, obciążenie i dynamikę. |
+
+Obecne 216 wariantów DSP to dobry punkt wyjścia, ale dotyczą uproszczonego eksperymentu z osobnymi sinusami.
+
+Następny etap powinien badać przebieg w czasie.
+
+Przykładowo dwa sygnały o podobnej wartości RMS mogą powodować bardzo różne wartości szczytowe prądu, wychylenia i poziomu sygnału cyfrowego. Z tego powodu sama analiza pasmowa nie wystarczy do zaprojektowania niezawodnej ochrony.
+
+### Szczególnie ważne: porównywanie dwóch rodzajów ograniczeń
+
+Ograniczenia elektryczne
+
+Napięcie wzmacniacza, maksymalny prąd, zasilanie, clipping i straty w cewce.
+
+Ograniczenia mechaniczno-akustyczne
+
+Wychylenie membrany, ciśnienie w komorze, nieliniowość zawieszenia i dopuszczalny poziom zniekształceń.
+
+Mocniejszy wzmacniacz może zwiększyć osiągalny SPL tylko wtedy, gdy aktywnym ograniczeniem jest napęd elektryczny. Jeżeli ogranicza nas wychylenie lub liniowość przetwornika, większa moc nie rozwiązuje problemu.
+
+Wynikiem pakietów 22–25 powinien być warunkowy projekt strategii DSP i zabezpieczeń, który można później zaimplementować w wybranym urządzeniu.
+
+## VI. Akustyka pokoju i przyszły system dwóch subwooferów
+
+Pakiety 26–28 · Analiza położenia subwoofera, sweet spotu i integracji systemu
+
+| Nr | Badanie                           | Zakres i wymagany rezultat                                                                                                                                                         |
+| -- | --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 26 | Model modalny pokoju z tłumieniem | Rozszerzyć obecne obliczenia modów o amplitudy, odpowiedzi zespolone, przybliżone czasy zaniku, położenie źródła i odbiornika oraz zmienne warunki brzegowe.                       |
+| 27 | Jeden kontra dwa subwoofery       | Zbadać możliwe ustawienia, poziomy, fazy i opóźnienia dla jednego lub dwóch źródeł. Optymalizować przede wszystkim główny sweet spot, a sąsiednie punkty traktować diagnostycznie. |
+| 28 | Integracja z aktywnymi monitorami | Modelować zwrotnice, sumowanie fazowe, opóźnienia, filtry i docelowy routing co najmniej ośmiu kanałów DSP dla dwóch subwooferów i dwóch monitorów trójdrożnych.                   |
+
+Przy wymiarach obecnego pokoju szczególnie interesujące będą okolice częstotliwości 37,28, 46,35 i 68,60 Hz, ale nie należy ograniczać badania wyłącznie do tych trzech modów.
+
+Zalecam najpierw model zespolonej transmitancji pomieszczenia oparty na rozkładzie modalnym, z analizą kilku wiarygodnych scenariuszy tłumienia.
+
+Następnie można rozwiązać problem:
+
+\\[ \min\_{\mathbf p,\mathbf d,\mathbf g} J(H\_{\mathrm{room}}) \\]
+
+gdzie \\(\mathbf p\\) reprezentuje pozycje źródeł, \\(\mathbf d\\) ich opóźnienia, a \\(\mathbf g\\) nastawy wzmocnienia. Funkcja celu powinna uwzględniać nierównomierność odpowiedzi, ewentualnie zachowanie czasowe oraz wymagany headroom.
+
+Nie wolno zakładać, że idealne ustawienie z uproszczonej symulacji będzie optymalne w rzeczywistym pokoju. Można jednak wskazać lokalizacje szczególnie obiecujące i odporne na zmianę założeń.
+
+Istnieje ważna literatura na ten temat, np. Welti i Devantier, Low-Frequency Optimization Using Multiple Subwoofers, JAES 2006.&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://aes.org\&sz=32)
+
+AES E-Library
+
+
+
+## VII. Optymalizacja końcowa i przygotowanie dowodu naukowego
+
+Pakiety 29–30 · Integracja wyników wszystkich poprzednich badań
+
+| Nr | Badanie                                    | Zakres i wymagany rezultat                                                                                                                                                                                                                                                                        |
+| -- | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 29 | Wielokryterialna optymalizacja odporna     | Zintegrować wszystkie modele i porównać przetworniki, litraż, konstrukcje oraz DSP. Wyznaczyć front Pareto dla basu 20–40 Hz, zapasu dynamiki, zniekształceń warunkowych, wymagań napędu, gabarytów i niepewności. Porównać z ADAM Sub12/Sub15 wyłącznie w zakresie rzeczywiście zgodnych metryk. |
+| 30 | Protokół walidacyjny i pełna odtwarzalność | Zarejestrować hipotezy, równania, wersje modeli, parametry, kod, dane, wyniki negatywne i ograniczenia. Przygotować plan przyszłych pomiarów w pokoju, w tym eksperymenty rozróżniające konkurencyjne modele.                                                                                     |
+
+Przy pakiecie 29 nie rekomenduję jednego arbitralnego wskaźnika „jakości subwoofera”.
+
+Lepszym wynikiem jest front Pareto pokazujący, które rozwiązania oferują większy zapas dynamiki, lepszą odpowiedź niskoczęstotliwościową lub mniejsze wymagania mechaniczne i elektryczne, oraz jaki kompromis za to płacimy.
+
+W przypadku THD, bez zweryfikowanych charakterystyk nieliniowych przetwornika, trzeba przedstawiać wyłącznie wyniki scenariuszowe.
+
+Pakiet 30 ma być wykonany przed budową. Nie oznacza to wykonywania pomiarów teraz. Chodzi o to, aby przed eksperymentem było już ustalone, jakie wyniki potwierdzą hipotezę, jakie ją obalą i które pozostawią ją nierozstrzygniętą.
+
+## Które badania są najważniejsze przed budową?
+
+Nie wszystkie trzydzieści mają jednakowy wpływ na projekt. Moja rekomendowana kolejność:
+
+Etap A – Pewność modelu
+
+Pakiety 01–06.
+
+Audyt źródeł, niezależna replikacja równań, analiza niepewności i przygotowanie kryteriów oceny.
+
+Etap B – Pełniejsza fizyka subwoofera
+
+Pakiety 07–17.
+
+Objętość, szczelność, straty, nieliniowości, termika i warunkowe ograniczenia osiągów.
+
+Etap C – Konstrukcja prototypu
+
+Pakiety 18–21.
+
+Mechanika, moduły wypornościowe, wymienny front, wzmocnienia i rezonanse obudowy.
+
+Etap D – Elektronika, DSP i pomieszczenie
+
+Pakiety 22–28.
+
+Napęd, filtry, limitery, obciążenie muzyczne, room transfer i przyszłe dwa subwoofery.
+
+Etap E – Integracja i decyzja
+
+Pakiety 29–30.
+
+Optymalizacja odporna, wybór konfiguracji oraz dokumentacja umożliwiająca późniejszą walidację.
+
+Etapy nie muszą przebiegać całkowicie szeregowo. Badania mechaniczne można rozwijać równolegle z termicznymi, ale nie należy zamykać optymalizacji końcowej, zanim zbadane zostaną najważniejsze źródła niepewności.
+
+## Jak realizować ten program wyłącznie programowo?
+
+Dla obecnego repozytorium, w którym są już skrypty Python, najrozsądniej utrzymać otwarty stos obliczeniowy.
+
+| Metoda                         | Narzędzia                                                                  | Zastosowanie                                       |
+| ------------------------------ | -------------------------------------------------------------------------- | -------------------------------------------------- |
+| Algebra symboliczna            | SymPy                                                                      | Wyprowadzenia, granice, kontrola jednostek         |
+| Modele liniowe                 | NumPy, SciPy                                                               | T/S, impedancja, SPL, odpowiedź częstotliwościowa  |
+| Nieliniowe ODE                 | SciPy, solve_ivp                                                           | Ruch membrany, cewka, termika                      |
+| DSP                            | SciPy Signal                                                               | Filtry, odpowiedzi impulsowe, symulacje cyfrowe    |
+| Niepewność                     | NumPy, SALib                                                               | Monte Carlo, Sobol, globalna wrażliwość            |
+| Optymalizacja                  | SciPy, pymoo                                                               | Pareto, kompromisy, odporność projektu             |
+| Geometria i siatki             | [Gmsh](https://gmsh.info/?utm_source=chatgpt.com)                          | Parametryczna geometria mechaniczna i siatki MES   |
+| Statyka i dynamika konstrukcji | [CalculiX](https://calculix.de/?utm_source=chatgpt.com)                    | Panele MDF, wręgi, drgania i naprężenia            |
+| Zaawansowane MES               | [FEniCSx](https://fenicsproject.org/documentation/?utm_source=chatgpt.com) | Wybrane modele akustyczne i sprzężone równania PDE |
+
+Gmsh, CalculiX i FEniCSx mają dostępną publicznie dokumentację i mogą stanowić podstawę badań bez komercyjnego pakietu symulacyjnego.&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://www.gmsh.info\&sz=32)
+
+gmsh.info
+
++2
+
+
+
+Nie rozpoczynałbym jednak od pełnych trójwymiarowych symulacji FEM. Najpierw modele analityczne, następnie modele uproszczone 1D/2D, a dopiero dla zagadnień nierozstrzygniętych pełna geometria 3D.
+
+Pozwala to lepiej kontrolować błędy oraz ograniczać obciążenie obliczeniowe.
+
+## Jak powinien wyglądać rygor naukowy w każdym pakiecie?
+
+Każde badanie powinno przejść ten sam proces kontroli:
+
+1. Hipoteza: jedno konkretne, możliwe do obalenia twierdzenie.
+2. Podstawa teoretyczna: literatura, równania i założenia.
+3. Model: zdefiniowane parametry wejściowe, jednostki, granice i źródła.
+4. Eksperyment numeryczny: określona metoda, siatka i warianty.
+5. Kontrola niezależna: drugi sposób obliczenia lub analityczny przypadek odniesienia.
+6. Weryfikacja numeryczna: stabilność i zbieżność względem kroku, czasu oraz dokładności solvera.
+7. Analiza niepewności: wpływ nieznanych parametrów i ograniczeń modelu.
+8. Wniosek: co wynik rzeczywiście wykazuje, a czego nie rozstrzyga.
+9. Decyzja konstrukcyjna: czy wynik zmienia przetwornik, litraż, uszczelnienie, DSP lub napęd.
+
+Dodatkowo każdy pakiet powinien pozostawiać w repozytorium kod, dane wejściowe, wyniki CSV/JSON, wykresy, raport Markdown oraz kontrolę umożliwiającą odtworzenie rachunku.
+
+To umożliwi także pracę równoległą wielu agentów AI. Szczególnie przydatne byłoby rozdzielenie autora modelu, niezależnego weryfikatora i recenzenta interpretacji. Kilku agentów korzystających z tego samego kodu i tych samych założeń nie stanowi jednak niezależnej walidacji.
+
+## Co można rzeczywiście udowodnić bez fizycznego sprzętu?
+
+To ważna granica całego programu.
+
+| Możliwy wynik                                       | Status bez sprzętu                             |
+| --------------------------------------------------- | ---------------------------------------------- |
+| Poprawność algebraiczna wyprowadzeń                 | Można wykazać                                  |
+| Zbieżność i zgodność numeryczna                     | Można wykazać                                  |
+| Relacje między Vb, Fc, Qtc i F3 w danym modelu      | Można wykazać                                  |
+| Pasywność i stabilność określonego modelu           | Można wykazać                                  |
+| Wrażliwość na parametry i założenia                 | Można obliczyć                                 |
+| Optymalna geometria w zadanych scenariuszach        | Można obliczyć warunkowo                       |
+| Przewaga konkretnego głośnika w modelu              | Można wykazać warunkowo                        |
+| Rzeczywiste THD konkretnego egzemplarza             | Nie bez wiarygodnych danych eksperymentalnych  |
+| Faktyczna kompresja cieplna i bezpieczna moc ciągła | Nie bez odpowiednich danych i walidacji        |
+| Ostateczne osiągi w pokoju                          | Nie bez pomiarowej identyfikacji pomieszczenia |
+| Odtwarzalna jakość fizycznego prototypu             | Nie bez badań egzemplarzy                      |
+
+Należy również rozróżnić niepewność numeryczną od niepewności fizycznej. Bardzo dokładne rozwiązanie równania z nieznanym współczynnikiem nie daje dokładnej prognozy rzeczywistego urządzenia.
+
+## Co powinno zakończyć fazę badań przed budową?
+
+Wynikiem końcowym nie powinien być wyłącznie kolejny raport.
+
+Powinien powstać pakiet projektowo-naukowy, zawierający uzasadniony wybór lub krótką listę przetworników, rekomendowane zakresy objętości, konstrukcję regulacji, prognozę ograniczeń, strategię DSP i mapę pozostających niepewności.
+
+W szczególności powinien rozstrzygać, które zmienne rzeczywiście warto regulować w pierwszym prototypie, aby późniejsze doświadczenia dawały możliwie najwięcej informacji.
+
+### Literatura odniesienia
+
+Jako podstawę naukową rekomenduję następujące publikacje i standardy:
+
+- Richard H. Small, [Closed-Box Loudspeaker Systems – Part 1: Analysis](https://aes.org/publications/elibrary/elibrary-page/?id=2022\&utm_source=chatgpt.com) – podstawy analizy obudowy zamkniętej.
+- Wolfgang Klippel, [Nonlinear Modeling of the Heat Transfer in Loudspeakers](https://aes.org/publications/elibrary/elibrary-page/?id=12980\&utm_source=chatgpt.com) – sprzężenia cieplne.
+- [IEC 62458:2010](https://webstore.iec.ch/en/publication/7062?utm_source=chatgpt.com) – parametry dużosygnałowe przetworników.
+- [IEC 60268-21:2018](https://webstore.iec.ch/en/publication/28687?utm_source=chatgpt.com) i [IEC 60268-22:2020](https://webstore.iec.ch/en/publication/60560?utm_source=chatgpt.com) – metody pomiarowe, przydatne do opracowania przyszłego protokołu walidacyjnego.
+- [Przewodniki JCGM/GUM](https://www.bipm.org/en/web/guest/publications/guides?utm_source=chatgpt.com) – niepewność modeli i wyników.
+- [Low-Frequency Optimization Using Multiple Subwoofers](https://aes.org/publications/elibrary/elibrary-page/?id=13680\&utm_source=chatgpt.com) – wieloźródłowa reprodukcja niskich częstotliwości.
+
+## Ostateczna rekomendacja
+
+Rekomenduję uruchomienie programu wszystkich 30 pakietów, ale z rygorystyczną kontrolą ich przydatności do decyzji konstrukcyjnej.
+
+Największy nacisk położyłbym na pięć zagadnień: wiarygodność modelu i niepewności, straty zamkniętej regulowanej obudowy, nieliniowy ruch membrany, termikę oraz połączoną optymalizację DSP i napędu.
+
+Właśnie te obszary mogą zmienić wybór głośnika, pojemności i konstrukcji. Pozostałe powinny dostarczać uzasadnienia albo sprawdzać, czy uzyskany wynik jest odporny na zmianę założeń.
+
+Po takim programie Fundacja Straż Przyszłości będzie mogła przystąpić do budowy prototypu nie tylko z obliczonym litrażem, lecz także z udokumentowanym modelem naukowym, przewidywaniami ilościowymi, zakresem niepewności i gotowym planem ich eksperymentalnej falsyfikacji. To znacznie bardziej wartościowy rezultat badawczo-rozwojowy niż samo wytypowanie najlepiej rokującego głośnika.

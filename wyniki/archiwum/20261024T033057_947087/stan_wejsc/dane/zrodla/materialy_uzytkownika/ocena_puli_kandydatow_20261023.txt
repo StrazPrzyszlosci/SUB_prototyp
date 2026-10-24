@@ -1,0 +1,85 @@
+Te cztery głośniki zostały wybrane przede wszystkim jako reprezentatywne modele do pierwszych badań, a nie dlatego, że udowodniono ich przewagę nad wszystkimi konkurentami.
+
+Sprawdziłem pierwotny brief i raporty repozytorium [SUB_prototyp](https://github.com/StrazPrzyszlosci/SUB_prototyp?utm_source=chatgpt.com). Wybór ma konkretne uzasadnienie, ale dostrzegam też istotną słabość metodologiczną.
+
+## Dlaczego właśnie te cztery?
+
+[Dayton Audio RSS315HF-4 12" Reference HF Subwoofer 4 Ohm  | eBay UK](https://images.openai.com/static-rsc-4/yVUDfftirEZzFsHP6bWruU30NlEQPXU3TI9o0CNSFl_peSB4gkykz-sogLRT2NJszQ8rR_niQOfujEg5V6fRgqoBhvOXt-JRI_Mla0TrkUeMt94dJqHK6EjtPpapIZ2IJ4N_tVfMJkBdopMFHWgPF-exIfEeWy0FBGlo4g7a9X4?purpose=inline)
+
+1\. Dayton Audio RSS315HF-4 – punkt odniesienia
+
+Ten model został wskazany już w pierwotnym briefie jako kandydat do zbadania.
+
+Ma 12″, Fs 24,2 Hz, Xmax 14,3 mm i Vd 0,736 l. Stanowi podstawę porównania innych przetworników, objętości i korekcji DSP.
+
+Rola: podstawowy głośnik 12″, a nie zatwierdzony zwycięzca.
+
+[Dayton Audio Reference RSS390HF-4 Subwoofer - SoundImports](https://images.openai.com/static-rsc-4/Df2LmQOv_GqbibLM86KtL5lNDwNIUgZ-RxWmjxjWxqU2OVCqIQ-eiNHj5-5IcJKbBIqQIyV79_lomUW2UySjTuAoOwVTTMt8086l2u1as9SnXfICLYNza8WbHI_KMYsjD82NWyObHb_itYPe2lzk3bp7tfRa5QWUnafNmKUfJII?purpose=inline)
+
+2\. Dayton Audio RSS390HF-4 – wariant większej wydajności
+
+Dodany po to, aby zbadać, czy 15″ oferuje uzasadnioną przewagę nad 12″.
+
+Ma Fs 19,5 Hz, powierzchnię membrany 829,6 cm² i Vd 1,161 l, czyli około 58% więcej niż RSS315HF-4.
+
+Rola: sprawdzenie, ile realnie daje większa membrana i jakiej wymaga skrzyni.
+
+[Dayton Audio RSS315HFA-8 12" Reference HF Subwoofer 8 Ohm  | eBay Australia](https://images.openai.com/static-rsc-4/NLusaOstD1ZqT-zbI1nreIonkT1n05UkE6HMFgiaz_4vcLHDnDs-Na0M1rLocR2yu3QyjbMSey6J9PvcZmx1j-AQQcJkhNGvWe78PkMQvodicGEHHkKRP2-F68VxrAygt-Gmy-0Az454E0WJa4fBcTlL2cvNW0mwVyOfC12Yy-0?purpose=inline)
+
+3\. Dayton Audio RSS315HFA-8 – alternatywa 8 Ω
+
+Pozwala zbadać wpływ innej impedancji, napędu i parametrów elektromechanicznych.
+
+W porównaniu z RSS315HF-4 ma inną częstotliwość rezonansową, dobroć i BL. Przy 60 l model daje Qtc około 0,719 zamiast 0,602.
+
+Rola: porównanie różnych kompromisów konstrukcyjnych w klasie 12″.
+
+[SB Acoustics SB34SWPL76-4 Subwoofer kaufen - SoundImports](https://images.openai.com/static-rsc-4/fqUzgpdUhKCIkn8rO1F89J26WcjldWnJZER1nZ3sg6QZbwc-GFB9szkURimwEMhS3L1YHuDb_5W2wQMCa0X7jAAs8fP_noEyJxXM_UbhXTf5fGOMpP5GywDsjCfyEjdKe8R4LKQf83j0Uv42vh-GQAsEJEI_Q9dz6RgVQLGI8Js?purpose=inline)
+
+4\. SB Acoustics SB34SWPL76-4 – niezależny producent
+
+Dodany, ponieważ porównywanie tylko głośników Dayton nie dawałoby przekrojowej oceny rynku.
+
+Ma Fs 19 Hz, Qts 0,32 i katalogowo określone 30 mm liniowego ruchu cewki peak-to-peak. Dostępna jest szczegółowa karta techniczna.
+
+Rola: konkurencyjny 12″ o innych parametrach i konstrukcji.
+
+Źródło: [Raport 003 – referencje i kandydaci](https://github.com/StrazPrzyszlosci/SUB_prototyp/blob/main/raporty/003_referencje_i_rynek.md?utm_source=chatgpt.com).
+
+## Czy to rzeczywiście najlepsze głośniki do prototypu?
+
+Tego jeszcze nie wykazano.
+
+W repozytorium przeszukano ograniczoną grupę kandydatów: trzy przetworniki Dayton i jeden SB Acoustics. Dobór jest sensowny na potrzeby uruchomienia modelu i sprawdzenia hipotez, ale nie wystarcza do naukowego uzasadnienia najlepszego wyboru.
+
+Brakuje przede wszystkim:
+
+- szerszego porównania produktów innych producentów;
+- niezależnych pomiarów zniekształceń THD i intermodulacyjnych;
+- danych BL(x), Cms(x), Le(x), szczególnie przy dużych wychyleniach;
+- porównania kompresji termicznej i liniowości przy jednakowym SPL;
+- obiektywnego rankingu kosztu całej konstrukcji względem osiągów.
+
+Warto też zauważyć, że bardzo niska częstotliwość Fs i duża moc katalogowa nie gwarantują wysokiej jakości reprodukcji basu.
+
+Dla zastosowań zbliżonych do profesjonalnego studia masteringowego szczególnie ważne są liniowość, niski poziom zniekształceń, odpowiednia dynamika i możliwość integracji z monitorami.
+
+## Co rekomenduję zmienić?
+
+Rozszerzyłbym badania do około 12–16 przetworników, obejmujących także producentów takich jak Scan-Speak, SEAS, Peerless by Tymphany i Purifi.
+
+Nie oznacza to, że ich głośniki automatycznie będą lepsze. To kandydaci do sprawdzenia pod kątem dostępności modeli odpowiednich do zamkniętej obudowy, niskich częstotliwości i dużego wychylenia.
+
+Następnie proponuję porównanie w trzech etapach:
+
+1. Wstępna eliminacja – na podstawie parametrów T/S, objętości przemieszczenia, możliwości pracy w zamkniętej obudowie i jakości dostępnej dokumentacji.
+2. Zaawansowane symulacje – wspólne warunki obliczeniowe, porównanie litrażu, SPL, DSP, zapasu napięcia i wpływu niepewności.
+3. Ranking naukowy – oparty na osiągach przy ustalonym progu zniekształceń, a tam, gdzie brakuje danych, na jawnie oznaczonych scenariuszach zamiast pozornej precyzji.
+
+## Mój wniosek
+
+Spośród obecnych czterech modeli RSS390HF-4 jest najbardziej obiecujący pod względem zdolności do przemieszczania dużej objętości powietrza, co pomaga przy reprodukcji 20 Hz. Natomiast RSS315HF-4 jest rozsądnym punktem odniesienia dla mniejszej konstrukcji.
+
+Ale gdybym miał zlecić fundacji badanie prowadzone z rygorem akademickim, nie zatwierdziłbym jeszcze żadnego z tych czterech przetworników jako najlepszego.
+
+Najpierw rozszerzyłbym pulę kandydatów. To stosunkowo niewielki dodatkowy nakład pracy obliczeniowej, a może uchronić projekt przed bardzo starannym zoptymalizowaniem głośnika, który od początku nie był najlepszym wyborem.

@@ -34,5 +34,6 @@
     "rzeczywistepochłanianieiczasyzaniku"
   ],
   "construction_gate": "Sprawdzić miejsce dla dwóch egzemplarzy z prześwitami i monitorami; duża objętośćzoptymalizacji20Hz niejestautomatycznie praktycznąrekomendacją.",
-  "acoustic_gate": "Nieprzyjmowaćstałegoroomgain ani parytetuSPLzmodelem2π/1m bezmodelupokoju i późniejszejidentyfikacji."
+  "acoustic_gate": "Nieprzyjmowaćstałegoroomgain ani parytetuSPLzmodelem2π/1m bezmodelupokoju i późniejszejidentyfikacji.",
+  "position_data_status": "U-017, 2026-10-24: użytkownik nie ma obecnie danych pozycji głowy i monitorów; kontynuować scenariusze."
 }

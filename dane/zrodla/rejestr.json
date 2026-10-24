@@ -199,6 +199,33 @@
       "scope": "Funkcje i częstotliwości modów prostopadłościanu oraz ograniczenie idealnie sztywnych granic.",
       "limitations": "Nie korzystano z ich liczb jako częstotliwości naszego pokoju; idealny model bez strat nie daje tłumienia.",
       "raw_capture_sha256": "4bee571ec6fff6b4b3d7572b9c20bd930605b96b3c09d13f0ad33b74d771981f"
+    },
+    {
+      "id": "SRC21",
+      "title": "JCGM 101:2008, propagacja rozkładów metodą Monte Carlo",
+      "url": "https://www.bipm.org/documents/20126/2071204/JCGM_101_2008_E.pdf",
+      "access_date": "2026-10-24",
+      "method": "Firecrawl, selektywny odczyt metody i ograniczeń",
+      "scope": "Odczyt zakresu, warunków przypisania rozkładów, wspólnych PDF i ograniczeń linearyzacji; nie przepisano obcych wyników do projektu.",
+      "raw_capture_sha256": "6356ac095a75edcbda047207e89e88b13305374d0a0096d55105fba0af341f86"
+    },
+    {
+      "id": "SRC22",
+      "title": "SciPy: sobol_indices",
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.sobol_indices.html",
+      "access_date": "2026-10-24",
+      "method": "Firecrawl, selektywny odczyt metody i ograniczeń",
+      "scope": "Odczyt definicji, założenia niezależności, miary wejściowej i metody Saltelli2010; dokumentacja metody, nie przeczytany pełny artykuł Saltelliego.",
+      "raw_capture_sha256": "54dc0feea02a7411e60a7d60e635010d8ea2523edc1a39cb12491a59874cf40d"
+    },
+    {
+      "id": "SRC23",
+      "title": "mpmath: arbitrary-precision interval arithmetic",
+      "url": "https://mpmath.org/doc/current/contexts.html",
+      "access_date": "2026-10-24",
+      "method": "Firecrawl, selektywny odczyt metody i ograniczeń",
+      "scope": "Odczyt gwarancji zawierania, dokładnego znaczenia float vs str oraz ostrzeżenia o eksperymentalnej obsłudze IV. Stosowane są podstawowe działania i dodatni sqrt.",
+      "raw_capture_sha256": "200f806d05c3faf9d2fc6866fed7d995b54348e0ec3577a4b9fbb8d96aa77da4"
     }
   ]
 }

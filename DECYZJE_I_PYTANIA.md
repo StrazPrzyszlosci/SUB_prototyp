@@ -20,6 +20,7 @@ Stan: 2026-10-23. Ten rejestr uzupełnia brief, bez zmieniania jego treści.
 | U-014 | Szeroko rozszerzyć pulę, także STX i innych producentów; dane producentów, opinie i obliczenia dla każdego | Polecenia użytkownika | P03/P29 wymagają przekrojowej kwalifikacji, a nie uznania pierwszych4modeli za najlepsze |
 | U-015 | Profesjonalny dobór pod brief | Polecenie użytkownika | Każdy kandydat ma ślad wymagań20–40Hz, liniowości, ochrony, napędu i architektury; braki wyraźnie oznaczone |
 | U-016 | Pamiętać o wymiarach pokoju | Przypomnienie użytkownika2026-10-24 |4.6×3.7×2.5m,17.02m²,42.55m³z przybliżonych wymiarów; sweetspot2.5–3m. Sprawdzić miejsce dla dwóchsubów przy monitorach; bez założenia dowolnej lokalizacji przód/tył |
+| U-017 | Dokładne pozycje głowy i monitorów nie są obecnie znane | Odpowiedź użytkownika 2026-10-24 | Kontynuować oznaczone scenariusze; nie ponawiać teraz tego pytania ani nie traktować współrzędnych P26 jako pomiaru |
 
 ## Decyzje, których nie podejmowano
 

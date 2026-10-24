@@ -1,0 +1,29 @@
+{
+  "candidate_id": "C23",
+  "manufacturer": "Eminence",
+  "model": {
+    "name": "Eminence LAB12 6ohm",
+    "fs_hz": 22,
+    "qes": 0.39,
+    "qms": 13.32,
+    "vas_l": 125.2,
+    "sd_cm2": 506.7,
+    "re_ohm": 4.29,
+    "le_mh": 1.48,
+    "xmax_mm": 13,
+    "nominal_ohm": 6,
+    "rated_w": 400
+  },
+  "catalog_extra": {
+    "qts": 0.38,
+    "mms_g": 146,
+    "cms_mm_n": 0.35,
+    "bl_tm": 15
+  },
+  "url": "https://eminence.com/products/lab_12",
+  "access_date": "2026-10-24",
+  "xmax_definition": "Maximum linear excursion13mm;Xlim22mm to granica mechaniczna.",
+  "data_issue": "Nominalnie6Ω, nie4ani8. Nie mieszać z wersjąLAB12C. Karta dopuszcza sealed22.7–28.3L, co nie jest dowodem optimum pod nasz brief.",
+  "source_extraction_sha256": "70e57ce3ee5a36b7796c160f3a6ccb250dd5bbd3269beae6ee572f4d20248c7d",
+  "scope": "Zweryfikowane tabele i jawne konwersje; nie użyto automatycznych odczytów punktów z wykresów."
+}

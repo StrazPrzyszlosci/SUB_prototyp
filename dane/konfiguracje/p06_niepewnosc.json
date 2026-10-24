@@ -1,0 +1,125 @@
+{
+  "status": "UMOWNA_DZIEDZINA_STRESOWA_NIE_TOLERANCJE_PRODUCENTA_ANI_ROZKLAD_POPULACJI",
+  "hypothesis": "Czy przewaga nominalnej granicy 20 Hz C02 utrzymuje się przy niepewnych pierwotnych parametrach i kryterium ruchu?",
+  "factor_order": [
+    "mms",
+    "cms",
+    "bl",
+    "rms",
+    "re",
+    "le",
+    "sd",
+    "vb",
+    "vmax",
+    "imax",
+    "leak_ref_hz",
+    "extra_r_over_rms",
+    "x_fraction"
+  ],
+  "ranges": {
+    "mms": [
+      0.9,
+      1.1
+    ],
+    "cms": [
+      0.85,
+      1.15
+    ],
+    "bl": [
+      0.9,
+      1.1
+    ],
+    "rms": [
+      0.7,
+      1.3
+    ],
+    "re": [
+      0.95,
+      1.05
+    ],
+    "le": [
+      0.8,
+      1.2
+    ],
+    "sd": [
+      0.98,
+      1.02
+    ],
+    "vb": [
+      0.97,
+      1.03
+    ],
+    "vmax": [
+      0.9,
+      1.0
+    ],
+    "imax": [
+      0.8,
+      1.0
+    ],
+    "leak_ref_hz": [
+      0.0,
+      3.0
+    ],
+    "extra_r_over_rms": [
+      0.0,
+      1.0
+    ],
+    "x_fraction": [
+      0.5,
+      1.0
+    ]
+  },
+  "range_rationale": "Jawne zakresy stresowe wybrane do falsyfikacji odporności. Nie twierdzimy, że zawierają rzeczywiste parametry każdego wyrobu. X_fraction nie jest granicą gwarantowanego THD; realny próg może wypaść poza ten zakres.",
+  "families": {
+    "D": "Zmienność pierwotnych parametrów i budżetu napędu; x_fraction=1, leak_ref_hz=0, extra_r_over_rms=0",
+    "L": "Pełna zadana dziedzina z niepewnym ruchem, przeciekiem i dodatkowym dodatnim oporem mechanicznym"
+  },
+  "volumes_nominal_l": [
+    60.0,
+    100.0,
+    150.0
+  ],
+  "amplifier_scenarios": [
+    [
+      40.0,
+      12.0
+    ],
+    [
+      60.0,
+      20.0
+    ]
+  ],
+  "frequencies_hz": [
+    20.0,
+    25.0,
+    31.5,
+    40.0,
+    63.0,
+    80.0
+  ],
+  "leak_reference_volume_l": 100.0,
+  "radiation_metric": "SPL równoważnego wspólnofazowego przepływu Um+Ul w normalizacji 2pi/1m/RMS; przy przecieku nie jest przewidywanym SPL dowolnej geometrii otworu",
+  "sobol_powers": [
+    12,
+    14
+  ],
+  "sobol_seeds": [
+    20261024,
+    20261025
+  ],
+  "sobol_measure": "Niezależna jednostajna miara obliczeniowa mnożników; indeksy opisują tę miarę, nie rozrzut produktów",
+  "sobol_max_difference_review_threshold": 0.04,
+  "ranking_sample_power": 13,
+  "ranking_mc_seed": 260624,
+  "correlation_profiles_mms_cms_gaussian": [
+    0.0,
+    0.8,
+    -0.8
+  ],
+  "correlation_note": "Umowne kopule zachowują jednostajne marginesy mnożników Mms i Cms; nie są zmierzoną korelacją. Indeksy Sobola liczymy wyłącznie dla niezależnych czynników.",
+  "interval_leaf_budget": 24,
+  "interval_decimal_precision": 40,
+  "interval_note": "Przedziały odnoszą się do rzeczywistych działań na zamrożonych binarnych stałych modelu; nominalne M,C,B,R wynikają z T/S w podwójnej precyzji. Nie jest to certyfikat kart katalogowych.",
+  "room_context": "Pokój 4.6x3.7x2.5m, front3.7m, dwie skrzynie przy monitorach; Vb jest scenariuszem, nie wyborem finalnego gabarytu. Ocena miejsca w raporcie013 nie zastępuje projektu obudowy."
+}

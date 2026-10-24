@@ -44,6 +44,12 @@ oraz dwie dodatkowe dyskusje. Samo znalezienie linku nie oznacza analizy źród�
   Odczyt metod i ograniczeń; własny model diagonalny jest uproszczeniem ich teorii.
 - SRC20: [COMSOL — Eigenmodes of a Room](https://www.comsol.com/model/download/1166101/models.mph.eigenmodes_of_room.pdf).
   Odczyt analitycznej podstawy i granic modelu sztywnych ścian; nie uruchamiano CAD/COMSOL.
+- SRC21: [JCGM 101:2008](https://www.bipm.org/documents/20126/2071204/JCGM_101_2008_E.pdf).
+  Odczyt warunków przypisania rozkładów i wspólnych PDF dla zależnych wejść.
+- SRC22: [SciPy — sobol_indices](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.sobol_indices.html).
+  Definicje, metoda Saltelli2010 i niezależność; przyjęta miara nie jest rozkładem produktów.
+- SRC23: [mpmath — arytmetyka IV](https://mpmath.org/doc/current/contexts.html#arbitrary-precision-interval-arithmetic-iv).
+  Gwarancja zawierania i ostrzeżenie o eksperymentalnej obsłudze; zakres P06 opisano jawnie.
 
 Przekazane przez użytkownika oceny i program są zachowane w
 [materialach źródłowych](../dane/zrodla/materialy_uzytkownika/indeks.json).

@@ -3,3 +3,4 @@ numpy==1.26.4
 scipy==1.17.1
 matplotlib==3.10.8
 sympy==1.12
+mpmath==1.2.1

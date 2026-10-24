@@ -1,0 +1,11 @@
+{
+  "status": "PASS_MODELE_I_OBWIEDNIE_NIE_WALIDACJA_PRODUKCJI",
+  "independent_N7_comparisons": 144,
+  "max_independent_relative_or_db_difference": 2.930988785010413e-14,
+  "max_relative_energy_residual": 6.840995317389812e-16,
+  "tested_points_inside_root_enclosures": 49152,
+  "additive_sobol_max_error": 3.2689435938149103e-06,
+  "partition_leaf_count": 24,
+  "partition_volume": 1.0,
+  "scope": "Przedziały wynikają z działań IV, próbki są kontrolą implementacji. Dokładność fizyczna parametrów nie jest certyfikowana."
+}

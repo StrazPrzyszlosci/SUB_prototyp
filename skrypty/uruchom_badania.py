@@ -15,6 +15,8 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
 import scipy
+import sympy
+import mpmath
 from model_subwoofera import Driver, alignment, response, linear_envelope, dsp_shape, sealed_shape, room_modes
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -152,6 +154,7 @@ def main():
     table('geometria_wstepna.csv', geometry)
     # Manifest obejmuje kod i wyniki, nie tylko nazwy bibliotek.
     files = [ROOT / 'brief_system_audio_DIY_v0.6.md', ROOT / 'DECYZJE_I_PYTANIA.md',
+             ROOT / 'requirements.txt',
              ROOT / 'PLAN_BADAN_NAUKOWYCH.md', ROOT / 'PROGRAM_30_BADAN.md', data_path, cfg_path,
              *sorted((ROOT / 'dane/przetworniki').glob('*.json')),
              *sorted((ROOT / 'dane/konfiguracje').glob('*.json')),
@@ -167,7 +170,8 @@ def main():
                             for p in documents}
     manifest = {'generated_at': datetime.now(ZoneInfo('Europe/Warsaw')).isoformat(),
                 'status': 'BADANIA_MODELOWE_PRZED_BUDOWA_NIE_WALIDACJA_URZADZENIA', 'python': sys.version,
-                'libraries': {'numpy': np.__version__, 'scipy': scipy.__version__, 'matplotlib': matplotlib.__version__},
+                'libraries': {'numpy': np.__version__, 'scipy': scipy.__version__, 'matplotlib': matplotlib.__version__,
+                              'sympy': sympy.__version__, 'mpmath': mpmath.__version__},
                 'input_sha256': hashes, 'output_sha256': output_hashes,
                 'documentation_sha256': documentation_hashes,
                 'configuration': cfg, 'limitations': [

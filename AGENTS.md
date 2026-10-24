@@ -84,6 +84,15 @@ Optymalizacja jednego sweet spotu 2,5–3 m; brak narzuconego budżetu i gabaryt
     wynikSPL20Hz. Nie zakładać możliwego układu przód/tył. Konwencja osi
     jest w `dane/konfiguracje/pokoj_odsluchowy.json`; dotychczasowe mody
     zapisano w kolejności długość/szerokość/wysokość, nie x/y/z.
+24. U-017: użytkownik obecnie nie ma dokładnych pozycji głowy i monitorów.
+    Nie ponawiać tego pytania na tym etapie. Kontynuować jawne scenariusze;
+    ich współrzędne nie stają się wymaganiem ani pomiarem pomieszczenia.
+25. P06: zakresy w p06_niepewnosc.json są umownymi zakresami stresowymi,
+    nie tolerancją producenta. MC/QMC/Sobol opisują wskazaną miarę; liczniki
+    zwycięstw nie są prawdopodobieństwami przewagi produktu. Wspólne względne
+    zaburzenia kandydatów nie obejmują wszystkich niezależnych par. Odróżniać
+    brak separacji obwiedni od kontrprzykładu dominacji i świadek od globalnego
+    ekstremum. Rozszerzać analizę niepewności przy dodawaniu nowej fizyki.
 
 ## Stan i postępy
 
@@ -122,8 +131,23 @@ Postęp końca sesji2026-10-23:
   scenariuszami, nie pomiarami. Brak swobodnego układu przód/tył.
 - Nie ma końcowego PDF, fizycznych wyników THD/temperatury ani finalnego
   zwycięzcy. Klej, panele, termika, nieliniowości i ochrona nadal otwarte.
-- **Następny krok: P06 — globalna niepewność i odporność porównania szerokiej
-  puli.** Nie powtarzać wykonanego N7 ani wyszukiwań wszystkich 24 opinii
+- P06 wykonano dla liniowych rodzin D/L: 24 modele, 13 czynników, Sobol,
+  MC/QMC, 1728 globalnych obwiedni w 6 pasmach 20–80 Hz i kontrprzykłady dominacji C02/C11 przy
+  wspólnym napędzie 40 V/12 A. Raport 015 i baza 10. Zakresy są umownymi
+  zakresami stresowymi, nie tolerancją produkcji. Udział wygranych QMC nie
+  jest prawdopodobieństwem przewagi fizycznego głośnika. Świadków sprawdzono
+  niezależnym układem 3 równań; nie nazywać optymalizacji heurystycznej
+  certyfikatem globalnego ekstremum. Arytmetyka IV ma jawne ograniczenia.
+  Dwa pasma zachowano jako iterację w archiwum; bieżące wyniki obejmują
+  20/25/31,5/40/63/80 Hz: 14 976 wartości indeksów i 147 456 punktów
+  kontrolnych obwiedni. 1069 relacji dominacji 20/40 Hz przechodzi w 76
+  relacji dla wszystkich 6 częstotliwości — nie interpretować ich jako
+  dominacji całego briefu ani ciągłego pasma. Raport 015 podaje dziedzinę.
+  Wspólne wyniki etapu dwóch pasm odtworzyły się bez zmiany wartości.
+- Poprzedni etap opublikowano i potwierdzono na GitHub: commit 266252f.
+- **Następny krok: P09/P10 — pasywny model relaksacji cieplnej gazu i
+  wypełnienia, z oddzieleniem wycieku od strat cieplnych.** Nie powtarzać
+  wykonanego N7 ani wyszukiwań wszystkich 24 opinii
   bez konkretnej nowej hipotezy lub źródła. Dokładne pozycje w pokoju pozostają
   pytaniem otwartym; rozdzielać je od jawnych scenariuszy w p26_scenariusze.json.
 

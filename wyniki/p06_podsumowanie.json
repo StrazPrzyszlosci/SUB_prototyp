@@ -1,0 +1,70 @@
+{
+  "status": "P06_RODZINY_WARUNKOWE_NIE_FINALNY_WYBOR",
+  "drivers": 24,
+  "factors": 13,
+  "interval_rows": 1728,
+  "sobol_rows": 14976,
+  "rank_rows": 5184,
+  "local_rows": 1872,
+  "mc_rows": 288,
+  "dominance_rows": 6624,
+  "frequencies_hz": [
+    20.0,
+    25.0,
+    31.5,
+    40.0,
+    63.0,
+    80.0
+  ],
+  "sobol_vector_input_evaluations": 3686400,
+  "proven_two_criterion_dominance_pairs": 1069,
+  "conditional_all_six_frequency_dominance_pairs": 76,
+  "x_fraction_c02_c11_crossover_at100l_40v": 0.8638933862241522,
+  "sobol_convergence_review_pass": true,
+  "sobol_convergence": [
+    {
+      "family": "D",
+      "comparison": "N4096_N16384_seed20261024",
+      "max_first_order_difference": 0.03268813176559193,
+      "max_total_order_difference": 0.009134401428885663
+    },
+    {
+      "family": "D",
+      "comparison": "N4096_N16384_seed20261025",
+      "max_first_order_difference": 0.030056394806027134,
+      "max_total_order_difference": 0.007537262278730916
+    },
+    {
+      "family": "D",
+      "comparison": "scrambles_N16384",
+      "max_first_order_difference": 0.007926438126766668,
+      "max_total_order_difference": 0.009880151076235417
+    },
+    {
+      "family": "L",
+      "comparison": "N4096_N16384_seed20261024",
+      "max_first_order_difference": 0.018482835546729824,
+      "max_total_order_difference": 0.01623150330807116
+    },
+    {
+      "family": "L",
+      "comparison": "N4096_N16384_seed20261025",
+      "max_first_order_difference": 0.017770958977639868,
+      "max_total_order_difference": 0.0057636217311440585
+    },
+    {
+      "family": "L",
+      "comparison": "scrambles_N16384",
+      "max_first_order_difference": 0.003558452962774461,
+      "max_total_order_difference": 0.001628550353102609
+    }
+  ],
+  "max_mc_qmc_design_mean_difference_db": 0.01969535155112112,
+  "limitations": [
+    "Zakresy i miara wejściowa są umowne, nie populacyjne.",
+    "L: wspólnofazowy przepływ sumaryczny, geometria przecieku pozostaje nieznana.",
+    "Brak rzeczywistego THD, termiki i sprzężenia z pokojem.",
+    "Brak globalnego zwycięzcy całego briefu; obwiednie dotyczą zadanego modelu.",
+    "Brak separacji przedziałów nie dowodzi braku dominacji; obwiednia może być szeroka."
+  ]
+}

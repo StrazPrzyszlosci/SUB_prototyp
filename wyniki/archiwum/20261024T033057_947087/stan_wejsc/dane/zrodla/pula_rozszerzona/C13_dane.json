@@ -1,0 +1,29 @@
+{
+  "candidate_id": "C13",
+  "manufacturer": "BMS",
+  "model": {
+    "name": "BMS 12N630 8ohm",
+    "fs_hz": 28.6,
+    "qes": 0.35,
+    "qms": 6.24,
+    "vas_l": 85.5,
+    "sd_cm2": 498,
+    "re_ohm": 6,
+    "le_mh": 0.68,
+    "xmax_mm": 8,
+    "nominal_ohm": 8,
+    "rated_w": 600
+  },
+  "catalog_extra": {
+    "qts": 0.33,
+    "mms_g": 127,
+    "cms_mm_n": 0.24,
+    "bl_tm": 19.8
+  },
+  "url": "http://www.troelsgravesen.dk/Ellipticor-4/12N630.pdf",
+  "access_date": "2026-10-24",
+  "xmax_definition": "Xmax±8mm; kryterium nieokreślone w odczytanej tabeli.",
+  "data_issue": "Oryginalny dokumentBMS hostowany przez konstruktoraTroelsGravesen, nie niezależny pomiar. Zn4lub8 w opisie;Re6.00 dotyczy wariantu8Ω. PeAES600W.",
+  "source_extraction_sha256": "89f18cc17eb59703e28b706bca94f73849212c063cd60d09eb18b85d8280a270",
+  "scope": "Zweryfikowane tabele i jawne konwersje; nie użyto automatycznych odczytów punktów z wykresów."
+}

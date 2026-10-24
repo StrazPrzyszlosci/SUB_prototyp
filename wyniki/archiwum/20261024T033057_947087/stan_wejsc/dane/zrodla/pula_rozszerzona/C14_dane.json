@@ -1,0 +1,29 @@
+{
+  "candidate_id": "C14",
+  "manufacturer": "BMS",
+  "model": {
+    "name": "BMS 15S430v2",
+    "fs_hz": 39.8,
+    "qes": 0.27,
+    "qms": 6.6,
+    "vas_l": 135,
+    "sd_cm2": 897,
+    "re_ohm": 5,
+    "le_mh": 0.73,
+    "xmax_mm": 7.5,
+    "nominal_ohm": 8,
+    "rated_w": 1200
+  },
+  "catalog_extra": {
+    "qts": 0.26,
+    "mms_g": 132,
+    "cms_mm_n": 0.12,
+    "bl_tm": 24.96
+  },
+  "url": "https://bmsspeakers.com/product/15-ultra-low-distortion-woofer-15s430v2/",
+  "access_date": "2026-10-24",
+  "xmax_definition": "Xmax±7.5mm według tabeli; nie utożsamiać z progiem niskich zniekształceń.",
+  "data_issue": "Oficjalna strona opisujev2, plik rysunku nazwanyv3; geometria do wyjaśnienia przed projektem. HighFs iPe1200 nie dowodzą wydajności20Hz.",
+  "source_extraction_sha256": "ce7e25fce41f2e7f814b223b1cc758a2143176301c26fd1b78abaef29ac79737",
+  "scope": "Zweryfikowane tabele i jawne konwersje; nie użyto automatycznych odczytów punktów z wykresów."
+}
