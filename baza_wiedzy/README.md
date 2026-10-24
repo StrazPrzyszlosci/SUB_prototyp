@@ -24,6 +24,7 @@ a potwierdzonych ustaleń użytkownika w [rejestrze](../DECYZJE_I_PYTANIA.md).
 |11|[Gaz i materiały porowate](11_gaz_cieplo_i_materialy_porowate.md)|Relaksacja, lepkość, pory, dwa Cp, sorpcja i dane producenta|
 |12|[Nieliniowa termodynamika i DC](12_nieliniowa_termodynamika_i_DC.md)|Energia, FFT/ODE, niezamienne granice i wyrównanie barometrii|
 |13|[Promieniowanie, masy i reakcja pokoju](13_promieniowanie_masy_i_reakcja_pokoju.md)|Tłok/Rayleigh, czasza/komora, Mmd/Mms, wzajemne obciążenia, moc i granice sprzężenia|
+|14|[Nieliniowy napęd i gaz](14_nieliniowy_naped_i_gaz.md)|Kms sieczne/styczne, strumień/coenergia, bilans gazu, DC, kompensacja i granice identyfikacji|
 |Źródła|[Rejestr z datami](ZRODLA.md)|Co przeczytano, co tylko znaleziono i jakie są braki|
 
 ## Od wiedzy do wykonania

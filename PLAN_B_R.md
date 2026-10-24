@@ -203,7 +203,9 @@ porównano 24 modele / 11 producentów i rozpoczęto pole zespolone pokoju
 (raport 015). P09/P10 wykonano w jawnych rodzinach kontrolnych (raport 016).
 P11 wykonano dla geometrii kontrolnych i zwrotnego sprzężenia pokoju
 (raport 017); geometria docelowej skrzyni pozostaje otwarta.
-Najbliższy krok: P12/P13 — nieliniowy napęd, zawieszenie i sprzężony gaz.
+P12/P13 wykonano w rodzinach warunkowych (raport020).
+Najbliższy krok: P12C — pasywna pamięć Le(x,f), uzgodnienie źródłowych
+zestawów przed P14/IMD i promieniowaniem harmonicznych.
 Obowiązuje pełny [program 30 pakietów](PROGRAM_30_BADAN.md).
 Oferty i dobór handlowy odłożono w U-010. Nie wybierać jeszcze zwycięzcy
 na podstawie samej liniowej granicy ruchu.

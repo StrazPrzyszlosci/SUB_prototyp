@@ -70,6 +70,21 @@ P11: [fakty, hashe i ograniczenia odczytu](../dane/zrodla/P11_promieniowanie_i_k
 Automatyczne tablice punktów z wykresów odrzucono. Link Southampton przekierował
 na stronę główną; nie jest przeczytaną pracą. Data dostępu SRC28–30:2026-10-24.
 
+- SRC31: [Klippel — Loudspeaker Nonlinearities: Causes, Parameters, Symptoms](https://www.klippel.de/fileadmin/_migrated/content_uploads/Loudspeaker_Nonlinearities%E2%80%93Causes_Parameters_Symptoms_01.pdf).
+  Sekcja3; oryginał stron7/8/14 obejrzany, Kms jest sieczne. Nie przeczytano całego dokumentu.
+- SRC32: [KLIPPEL LSI3 — instrukcja identyfikacji](https://docs.klippel.de/db-lab/latest/transducer-parameter-identification/lsi3/lsi3.html).
+  Definicje, względna/absolutna identyfikacja i oryginalne cztery przykładowe krzywe;
+  przykładowy przetwornik nie jest kandydatem z naszej puli.
+- SRC33: [PurifiNAB-01 — karta0.95/June2024](https://purifi-audio.com/shop/ptt10-0x04-nab-01-ptt10-0x04-nab-01-2043/document/583).
+  Oryginalne tabele oraz BL/Kms i Le(x,f). Nie przyjęto automatycznych tablic Firecrawl.
+- SRC34: [Vance Dickason — niezależny test dokładnego PTT10.0X04-NAB-01](https://audioxpress.com/article/test-bench-purifi-audio-ptt10-0x04-nab-01-10-midbass-woofer).
+  Publikacja29.01.2025; Klippel/Redrock, oryginalneFig5/7/9 obejrzane,
+  progi sprawdzone w DOM. Nie przenosić warunków testu na20HzTHD sealed.
+
+P12/P13: [fakty, hashe, obrazy i luki](../dane/zrodla/P12_P13_nieliniowosci_i_luki.json),
+[stan źródeł24modeli](../dane/przetworniki/dostepnosc_nieliniowych_P12.json).
+Data dostępu SRC31–34:2026-10-24. Puste wyszukiwania STX nie dowodzą braku danych.
+
 Przekazane przez użytkownika oceny i program są zachowane w
 [materialach źródłowych](../dane/zrodla/materialy_uzytkownika/indeks.json).
 To wymagania i komentarze do badań, a nie niezależna walidacja osiągów.

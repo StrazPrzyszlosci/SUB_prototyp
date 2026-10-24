@@ -288,6 +288,45 @@
       "scope": "Oryginalny PDF: odczyt równań4/5/6 i oględziny stron3–5 z rysunkami1–3. Minimum0.6167 przy50.5deg dotyczy0<theta<=90deg i promienia rzutu czaszy, a nie koła równej powierzchni.",
       "raw_capture_sha256": "4ea72d827fddf20b3d1cd129983965753cadc22ea610bd6f032c7092f7393c37",
       "original_pdf_sha256": "0b454b8e00a3d0fab432aab46d757b4de934f0a546533d113fb9f060126931cf"
+    },
+    {
+      "id": "SRC31",
+      "title": "W. Klippel, Loudspeaker Nonlinearities – Causes, Parameters, Symptoms",
+      "url": "https://www.klippel.de/fileadmin/_migrated/content_uploads/Loudspeaker_Nonlinearities%E2%80%93Causes_Parameters_Symptoms_01.pdf",
+      "access_date": "2026-10-24",
+      "type": "zrodlo_pierwotne_teorii",
+      "raw_capture_sha256": "808811848ec93a0f38cff910f789104bc345ba8ac768fcee78bdf76aa4e042dd",
+      "original_pdf_sha256": "121287d7dd8f7762afc0741534b4790cebc4694e6c249f30946b9c0a125c1bc0",
+      "scope": "Tekst sekcji3; oryginalne strony7,8,14 obejrzane przez browser-harness. Kms jest sieczne, BL działa w sile i SEM, Le(x) wymaga obu sprzężeń. Nie przeczytano całego długiego dokumentu ani nie użyto automatycznych tablic z wykresów."
+    },
+    {
+      "id": "SRC32",
+      "title": "KLIPPEL LSI3 – Large Signal Identification, instrukcja",
+      "url": "https://docs.klippel.de/db-lab/latest/transducer-parameter-identification/lsi3/lsi3.html",
+      "access_date": "2026-10-24",
+      "type": "dokumentacja_metody_identyfikacji",
+      "raw_capture_sha256": "be00a64b931faee569ac0cd255308920eada7f246ffa4f0cb2c8cdb940a32588",
+      "original_image_bundle_sha256": "b51c5f353e7c2e884a8b151ef69e54792f44fc40e4c42daeeefd6931644fe8f5",
+      "scope": "Odczyt sekcji parametrów i identyfikacji; oryginalne4wykresyBl/Kms/Le(x)/Le(i) obejrzane. Przykładowy przetwornik instrukcji nie jest modelem z puli. Brak laserowego/absolutnego odniesienia daje tylko parametry względne; L2/R2 opisują prądy wirowe."
+    },
+    {
+      "id": "SRC33",
+      "title": "PURIFI PTT10.0X04-NAB-01, Data Sheet0.95 June2024",
+      "url": "https://purifi-audio.com/shop/ptt10-0x04-nab-01-ptt10-0x04-nab-01-2043/document/583",
+      "access_date": "2026-10-24",
+      "type": "dane_i_wykresy_producenta",
+      "raw_capture_sha256": "2d4643247815bd66ff87817733f4031352713dcf5db45968c864032d852d3b81",
+      "original_pdf_sha256": "c7e0cc1a1030792cffd71dde45dc59c795a56b2848eff7bd4ab9616f889c66ad",
+      "scope": "Oryginał PDF pobrano browser-harness; tabela stron1–2 i oryginalny rysunek3/4 na stronie3. Wykres indukcyjności ma ośL_gen[mH] i różne częstotliwości; nie utożsamiono jej z różniczkowymLd. Strona2 podajeLe0.62mH@1kHz. Automatyczne tablice Firecrawl odrzucono. StarszyPDF maPeTBD; nowsza strona pozostaje osobnym źródłem."
+    },
+    {
+      "id": "SRC34",
+      "title": "Vance Dickason, Test Bench: Purifi PTT10.0X04-NAB-01, 2025-01-29",
+      "url": "https://audioxpress.com/article/test-bench-purifi-audio-ptt10-0x04-nab-01-10-midbass-woofer",
+      "access_date": "2026-10-24",
+      "type": "niezalezny_test_techniczny",
+      "raw_capture_sha256": "94e6543ec82e2d76f9cdb277986069effc1acf257c986f529cacf76cbe3c3b8a",
+      "scope": "Tekst wartości progowych sprawdzony bezpośrednio w DOM; oryginalne JPEGFig5/7/9 pobrano przez browser-harness i obejrzano. Klippel DA2, PatrickTurnmire/Redrock. Nie przenosić naNAB-02 ani na20HzTHD w sealed."
     }
   ]
 }

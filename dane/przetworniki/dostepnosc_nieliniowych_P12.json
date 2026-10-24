@@ -1,0 +1,173 @@
+{
+  "access_date": "2026-10-24",
+  "records": [
+    {
+      "candidate_id": "C01",
+      "model": "Dayton RSS315HF-4",
+      "manufacturer_ts_source": "https://www.daytonaudio.com/product/121/rss315hf-4-12-reference-hf-subwoofer-4-ohm",
+      "large_signal_status_in_current_verified_base": "BRAK_ZWERYFIKOWANEGO_KOMPLETU_BL_KMS_LE_I_W_OBECNEJ_BAZIE",
+      "scope": "Stan naszej bazy; nie twierdzenie o nieistnieniu takich danych. Wspólne umowne kształty kampanii nie są pomiarami modelu."
+    },
+    {
+      "candidate_id": "C02",
+      "model": "Dayton RSS390HF-4",
+      "manufacturer_ts_source": "https://www.daytonaudio.com/product/126/rss390hf-4-15-reference-hf-subwoofer-4-ohm",
+      "large_signal_status_in_current_verified_base": "BRAK_ZWERYFIKOWANEGO_KOMPLETU_BL_KMS_LE_I_W_OBECNEJ_BAZIE",
+      "scope": "Stan naszej bazy; nie twierdzenie o nieistnieniu takich danych. Wspólne umowne kształty kampanii nie są pomiarami modelu."
+    },
+    {
+      "candidate_id": "C03",
+      "model": "Dayton RSS315HFA-8",
+      "manufacturer_ts_source": "https://www.daytonaudio.com/product/123/rss315hfa-8-12-reference-hf-subwoofer-8-ohm",
+      "large_signal_status_in_current_verified_base": "BRAK_ZWERYFIKOWANEGO_KOMPLETU_BL_KMS_LE_I_W_OBECNEJ_BAZIE",
+      "scope": "Stan naszej bazy; nie twierdzenie o nieistnieniu takich danych. Wspólne umowne kształty kampanii nie są pomiarami modelu."
+    },
+    {
+      "candidate_id": "C04",
+      "model": "SB Acoustics SB34SWPL76-4",
+      "manufacturer_ts_source": "https://sbacoustics.com/wp-content/uploads/2022/03/12in-SB34SWPL76-4.pdf",
+      "large_signal_status_in_current_verified_base": "BRAK_ZWERYFIKOWANEGO_KOMPLETU_BL_KMS_LE_I_W_OBECNEJ_BAZIE",
+      "scope": "Stan naszej bazy; nie twierdzenie o nieistnieniu takich danych. Wspólne umowne kształty kampanii nie są pomiarami modelu."
+    },
+    {
+      "candidate_id": "C05",
+      "model": "STX W.32.500.8.MC_v2",
+      "manufacturer_ts_source": "https://stx.pl/en/w-32-500-8-mc.html",
+      "large_signal_status_in_current_verified_base": "BRAK_ZWERYFIKOWANEGO_KOMPLETU_BL_KMS_LE_I_W_OBECNEJ_BAZIE",
+      "scope": "Stan naszej bazy; nie twierdzenie o nieistnieniu takich danych. Wspólne umowne kształty kampanii nie są pomiarami modelu."
+    },
+    {
+      "candidate_id": "C06",
+      "model": "STX W.32.800.8.FCX",
+      "manufacturer_ts_source": "https://stx.pl/pl/w-32-800-8-fcx.html",
+      "large_signal_status_in_current_verified_base": "BRAK_ZWERYFIKOWANEGO_KOMPLETU_BL_KMS_LE_I_W_OBECNEJ_BAZIE",
+      "scope": "Stan naszej bazy; nie twierdzenie o nieistnieniu takich danych. Wspólne umowne kształty kampanii nie są pomiarami modelu."
+    },
+    {
+      "candidate_id": "C07",
+      "model": "STX W.38.500.8.MC",
+      "manufacturer_ts_source": "https://stx.pl/w-38-500-8-mc.html",
+      "large_signal_status_in_current_verified_base": "BRAK_ZWERYFIKOWANEGO_KOMPLETU_BL_KMS_LE_I_W_OBECNEJ_BAZIE",
+      "scope": "Stan naszej bazy; nie twierdzenie o nieistnieniu takich danych. Wspólne umowne kształty kampanii nie są pomiarami modelu."
+    },
+    {
+      "candidate_id": "C08",
+      "model": "STX W.38.800.8.MC",
+      "manufacturer_ts_source": "https://stx.pl/w-38-800-8-mc.html",
+      "large_signal_status_in_current_verified_base": "BRAK_ZWERYFIKOWANEGO_KOMPLETU_BL_KMS_LE_I_W_OBECNEJ_BAZIE",
+      "scope": "Stan naszej bazy; nie twierdzenie o nieistnieniu takich danych. Wspólne umowne kształty kampanii nie są pomiarami modelu."
+    },
+    {
+      "candidate_id": "C09",
+      "model": "Scan-Speak 30W/4558T00",
+      "manufacturer_ts_source": "https://www.scan-speak.dk/datasheet/pdf/30w-4558t00.pdf",
+      "large_signal_status_in_current_verified_base": "BRAK_ZWERYFIKOWANEGO_KOMPLETU_BL_KMS_LE_I_W_OBECNEJ_BAZIE",
+      "scope": "Stan naszej bazy; nie twierdzenie o nieistnieniu takich danych. Wspólne umowne kształty kampanii nie są pomiarami modelu."
+    },
+    {
+      "candidate_id": "C10",
+      "model": "Scan-Speak 32W/4878T00",
+      "manufacturer_ts_source": "https://www.scan-speak.dk/datasheet/pdf/32w-4878t00.pdf",
+      "large_signal_status_in_current_verified_base": "PROGI_I_ORIGINALNE_WYKRESY_SCAN32_SRC18_BEZ_DIGITALIZACJI",
+      "scope": "Stan naszej bazy; nie twierdzenie o nieistnieniu takich danych. Wspólne umowne kształty kampanii nie są pomiarami modelu."
+    },
+    {
+      "candidate_id": "C11",
+      "model": "Dayton RSS390HE-22 seria",
+      "manufacturer_ts_source": "https://www.daytonaudio.com/images/resources/295-292--dayton-audio-rss390he-22-spec-sheet.pdf",
+      "large_signal_status_in_current_verified_base": "BRAK_ZWERYFIKOWANEGO_KOMPLETU_BL_KMS_LE_I_W_OBECNEJ_BAZIE",
+      "scope": "Stan naszej bazy; nie twierdzenie o nieistnieniu takich danych. Wspólne umowne kształty kampanii nie są pomiarami modelu."
+    },
+    {
+      "candidate_id": "C12",
+      "model": "SEAS L26RO4Y XM004-04",
+      "manufacturer_ts_source": "https://www.seas.no/images/stories/design/pdf_datasheet/L26RO4Y-XM004-04_Datasheet.pdf",
+      "large_signal_status_in_current_verified_base": "BRAK_ZWERYFIKOWANEGO_KOMPLETU_BL_KMS_LE_I_W_OBECNEJ_BAZIE",
+      "scope": "Stan naszej bazy; nie twierdzenie o nieistnieniu takich danych. Wspólne umowne kształty kampanii nie są pomiarami modelu."
+    },
+    {
+      "candidate_id": "C13",
+      "model": "BMS 12N630 8ohm",
+      "manufacturer_ts_source": "http://www.troelsgravesen.dk/Ellipticor-4/12N630.pdf",
+      "large_signal_status_in_current_verified_base": "BRAK_ZWERYFIKOWANEGO_KOMPLETU_BL_KMS_LE_I_W_OBECNEJ_BAZIE",
+      "scope": "Stan naszej bazy; nie twierdzenie o nieistnieniu takich danych. Wspólne umowne kształty kampanii nie są pomiarami modelu."
+    },
+    {
+      "candidate_id": "C14",
+      "model": "BMS 15S430v2",
+      "manufacturer_ts_source": "https://bmsspeakers.com/product/15-ultra-low-distortion-woofer-15s430v2/",
+      "large_signal_status_in_current_verified_base": "BRAK_ZWERYFIKOWANEGO_KOMPLETU_BL_KMS_LE_I_W_OBECNEJ_BAZIE",
+      "scope": "Stan naszej bazy; nie twierdzenie o nieistnieniu takich danych. Wspólne umowne kształty kampanii nie są pomiarami modelu."
+    },
+    {
+      "candidate_id": "C15",
+      "model": "FaitalPRO 15XL1400 8ohm",
+      "manufacturer_ts_source": "https://faitalpro.com/en/products/LF_Loudspeakers/product_details/datasheet.php?id=201060150",
+      "large_signal_status_in_current_verified_base": "BRAK_ZWERYFIKOWANEGO_KOMPLETU_BL_KMS_LE_I_W_OBECNEJ_BAZIE",
+      "scope": "Stan naszej bazy; nie twierdzenie o nieistnieniu takich danych. Wspólne umowne kształty kampanii nie są pomiarami modelu."
+    },
+    {
+      "candidate_id": "C16",
+      "model": "LaVoce WAF154.00",
+      "manufacturer_ts_source": "https://lavocespeakers.com/product/waf154-00/",
+      "large_signal_status_in_current_verified_base": "BRAK_ZWERYFIKOWANEGO_KOMPLETU_BL_KMS_LE_I_W_OBECNEJ_BAZIE",
+      "scope": "Stan naszej bazy; nie twierdzenie o nieistnieniu takich danych. Wspólne umowne kształty kampanii nie są pomiarami modelu."
+    },
+    {
+      "candidate_id": "C17",
+      "model": "Peerless XXLS 830844 4ohm",
+      "manufacturer_ts_source": "https://www.diyaudio.com/community/attachments/830844-pdf.731608/",
+      "large_signal_status_in_current_verified_base": "BRAK_ZWERYFIKOWANEGO_KOMPLETU_BL_KMS_LE_I_W_OBECNEJ_BAZIE",
+      "scope": "Stan naszej bazy; nie twierdzenie o nieistnieniu takich danych. Wspólne umowne kształty kampanii nie są pomiarami modelu."
+    },
+    {
+      "candidate_id": "C18",
+      "model": "PURIFI PTT10.0X04-NAB-01",
+      "manufacturer_ts_source": "https://purifi-audio.com/shop/ptt10-0x04-nab-01-ptt10-0x04-nab-01-2043",
+      "large_signal_status_in_current_verified_base": "KRZYWE_PRODUCENTA_I_NIEZALEZNE_SRC33_SRC34_BEZ_PELNEJ_IDENTYFIKACJI",
+      "scope": "Stan naszej bazy; nie twierdzenie o nieistnieniu takich danych. Wspólne umowne kształty kampanii nie są pomiarami modelu."
+    },
+    {
+      "candidate_id": "C19",
+      "model": "Dayton RSS390HO-4",
+      "manufacturer_ts_source": "https://www.daytonaudio.com/product/127/rss390ho-4-15-reference-ho-subwoofer-4-ohm",
+      "large_signal_status_in_current_verified_base": "BRAK_ZWERYFIKOWANEGO_KOMPLETU_BL_KMS_LE_I_W_OBECNEJ_BAZIE",
+      "scope": "Stan naszej bazy; nie twierdzenie o nieistnieniu takich danych. Wspólne umowne kształty kampanii nie są pomiarami modelu."
+    },
+    {
+      "candidate_id": "C20",
+      "model": "Dayton UMII12-22 seria",
+      "manufacturer_ts_source": "https://www.daytonaudio.com/product/2064/umii12-22-ultimax-ii-12-dvc-subwoofer-2-ohms-per-coil",
+      "large_signal_status_in_current_verified_base": "BRAK_ZWERYFIKOWANEGO_KOMPLETU_BL_KMS_LE_I_W_OBECNEJ_BAZIE",
+      "scope": "Stan naszej bazy; nie twierdzenie o nieistnieniu takich danych. Wspólne umowne kształty kampanii nie są pomiarami modelu."
+    },
+    {
+      "candidate_id": "C21",
+      "model": "Dayton UMII15-22 seria",
+      "manufacturer_ts_source": "https://www.daytonaudio.com/product/2065/umii15-22-ultimax-ii-15-dvc-subwoofer-2-ohms-per-coil",
+      "large_signal_status_in_current_verified_base": "BRAK_ZWERYFIKOWANEGO_KOMPLETU_BL_KMS_LE_I_W_OBECNEJ_BAZIE",
+      "scope": "Stan naszej bazy; nie twierdzenie o nieistnieniu takich danych. Wspólne umowne kształty kampanii nie są pomiarami modelu."
+    },
+    {
+      "candidate_id": "C22",
+      "model": "Dayton RSS315HO-4",
+      "manufacturer_ts_source": "https://www.daytonaudio.com/product/124/rss315ho-4-12-reference-ho-subwoofer-4-ohm",
+      "large_signal_status_in_current_verified_base": "BRAK_ZWERYFIKOWANEGO_KOMPLETU_BL_KMS_LE_I_W_OBECNEJ_BAZIE",
+      "scope": "Stan naszej bazy; nie twierdzenie o nieistnieniu takich danych. Wspólne umowne kształty kampanii nie są pomiarami modelu."
+    },
+    {
+      "candidate_id": "C23",
+      "model": "Eminence LAB12 6ohm",
+      "manufacturer_ts_source": "https://eminence.com/products/lab_12",
+      "large_signal_status_in_current_verified_base": "BRAK_ZWERYFIKOWANEGO_KOMPLETU_BL_KMS_LE_I_W_OBECNEJ_BAZIE",
+      "scope": "Stan naszej bazy; nie twierdzenie o nieistnieniu takich danych. Wspólne umowne kształty kampanii nie są pomiarami modelu."
+    },
+    {
+      "candidate_id": "C24",
+      "model": "Eminence LAB15 6ohm",
+      "manufacturer_ts_source": "https://eminence.com/products/lab_15",
+      "large_signal_status_in_current_verified_base": "BRAK_ZWERYFIKOWANEGO_KOMPLETU_BL_KMS_LE_I_W_OBECNEJ_BAZIE",
+      "scope": "Stan naszej bazy; nie twierdzenie o nieistnieniu takich danych. Wspólne umowne kształty kampanii nie są pomiarami modelu."
+    }
+  ]
+}

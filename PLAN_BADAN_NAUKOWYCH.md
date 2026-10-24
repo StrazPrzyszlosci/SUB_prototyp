@@ -29,7 +29,17 @@ Kod i dane są dostępne, a [raport 007](raporty/007_fizyka_nieliniowosci_i_DSP.
 rozwija nowe wyniki. Nie wyciągamy z nich rankinguTHD, jakości odsłuchowej
 lub gotowości produktu do komercjalizacji.
 
-## Następny pakiet domyślny: P12/P13 — nieliniowy napęd i gaz
+## Następny pakiet domyślny: P12C — pamięć indukcyjności i dane krzywych
+
+P12/P13 mają wykonane rodziny warunkowe:
+[raport020](raporty/020_nieliniowy_naped_i_sprzezony_gaz.md),12 096przypadków
+i72kompensacji. Następnie wyprowadzić pasywny model z dodatkowymi gałęziami
+prądów wirowych, sprawdzić granicę prostego strumienia i zidentyfikować,
+co naprawdę wynika z Le(x,f). Odczyty krzywych muszą zachować oryginały,
+osie, protokół i niepewność; nie mieszać absolutnego Kms i innego Cms.
+Rozwinąć opis identyfikowalności przed przypisaniem modelu produktowi.
+
+Poniższy opis P12/P13 zachowuje zależności wykonanej pierwszej kampanii.
 
 P11 wykonano w kontrolnych geometriach i modelu modalnym:
 [raport 017](raporty/017_promieniowanie_i_sprzezenie_pokoju.md).
@@ -137,7 +147,7 @@ z góry pożądany wynik. Nie przechodzić automatycznie do konstrukcji ani zaku
 Aktualizacja 2026-10-24: wykonano szeroką pulę 24 modeli / 11 producentów,
 globalne granice po Vb, identyfikowalność oraz scenariusze P26/P27 dla pokoju
 4,6 × 3,7 × 2,5 m. P06 wykonano w liniowych rodzinach (raport 015).
-Bieżący następny krok to P12/P13 z
+Bieżący następny krok to P12C (rozszerzenieP12/P13) z
 [programu 30 badań](PROGRAM_30_BADAN.md); poniższa lista N8–N11 pozostaje
 historycznym opisem zależności, nie kompletną aktualną kolejką.
 

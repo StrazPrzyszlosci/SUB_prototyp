@@ -1,0 +1,30 @@
+{
+  "status": "SPRAWDZENIE_WYBRANYCH_SLADÓW_KOMPENSACJI",
+  "checks": [
+    {
+      "candidate_id": "C06",
+      "volume_l": 100.0,
+      "f_hz": 40.0,
+      "target_linear_x_fraction": 0.2,
+      "original_h2_pct": 7.951966246099455e-08,
+      "refined_h2_pct": 7.95193595913364e-08,
+      "absolute_h2_percentage_point_difference": 3.028696581471948e-13,
+      "diagnostic_h2_over_solver_difference": 262553.07341711316,
+      "relative_fundamental_difference": 1.1102230246251565e-16,
+      "refined_energy_relative_residual": 2.9911138117174124e-15
+    },
+    {
+      "candidate_id": "C02",
+      "volume_l": 30.0,
+      "f_hz": 20.0,
+      "target_linear_x_fraction": 0.6,
+      "original_h2_pct": 0.003214711305996136,
+      "refined_h2_pct": 0.003214711304321836,
+      "absolute_h2_percentage_point_difference": 1.674300021542452e-12,
+      "diagnostic_h2_over_solver_difference": 1920033006.605517,
+      "relative_fundamental_difference": 2.886579864025407e-15,
+      "refined_energy_relative_residual": 5.877175880935242e-17
+    }
+  ],
+  "scope": "Różnica solverów nie jest certyfikowaną granicą błędu. Bardzo małego H2 nie interpretować poniżej numerycznej rozdzielczości; nie waliduje krzywych produktu."
+}

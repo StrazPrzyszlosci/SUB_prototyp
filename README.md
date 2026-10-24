@@ -18,6 +18,11 @@ P11: [raport 017 — promieniowanie, konwencje masy i sprzężenie pokoju](rapor
 Obejmuje wzorcowe geometrie oraz 4 154 112 realizacji częstotliwościowych
 reakcji modalnego pokoju; nie jest wynikiem fizycznego prototypu.
 Rzut od użytkownika: [raport 018 — orientacja kanapa–RTV i odległość odsłuchu](raporty/018_rzut_pokoju_i_odleglosc_odsluchu.md).
+**Aktualizacja U-020:** docelowo RTV po lewej i kanapa po prawej obrazu;
+[raport019](raporty/019_zamiana_kanapy_i_RTV.md) zastępuje wcześniejszą orientację.
+P12/P13: [raport020 — nieliniowy napęd i sprzężony gaz](raporty/020_nieliniowy_naped_i_sprzezony_gaz.md),
+12 096przypadków warunkowych i72przypadki kompensacji; nie jest rankingiem
+THD produktów. Kolejny krok: pasywna pamięć indukcyjności P12C.
 
 **Bieżący zakres: wyłącznie naukowe zagadnienia prototypu (U-010).**
 Najnowsze zlecenie: [program30badań](PROGRAM_30_BADAN.md), szeroka pula
@@ -77,6 +82,8 @@ Brak modelu THD, kompresji cieplnej i zidentyfikowanej odpowiedzi pokoju.
 16. [016 — cieplny gaz, lepkość, wypełnienie, harmoniczne i DC](raporty/016_gaz_wypelnienie_i_granice.md).
 17. [017 — promieniowanie, Mmd/Mms, dwa źródła i reakcja pokoju](raporty/017_promieniowanie_i_sprzezenie_pokoju.md).
 18. [018 — rzut pokoju i warunkowa geometria odsłuchu](raporty/018_rzut_pokoju_i_odleglosc_odsluchu.md).
+19. [019 — docelowa zamiana kanapy i RTV](raporty/019_zamiana_kanapy_i_RTV.md).
+20. [020 — nieliniowy napęd, współenergia, gaz i rozruch](raporty/020_nieliniowy_naped_i_sprzezony_gaz.md).
 
 ## Odtworzenie obliczeń
 
@@ -96,6 +103,9 @@ Pełny przebieg zachowuje poprzedni stan roboczy w `wyniki/archiwum/`,
 uruchamia wszystkie analizy i na końcu zapisuje manifest.
 Kontrole modelu obejmują bilans mocy, skalowanie, porównanie z analityką,
 F3 i granice ruchu/napędu. Nie potwierdzają osiągów fizycznego egzemplarza.
+KampaniaP12/P13 zapisuje dziennik z hashem kodu i wejść; zgodne przypadki
+wznawia. Użycie dziennika jest kontrolowanym odtworzeniem artefaktów,
+nie niezależną nową replikacją ODE. Procedura świeżego rachunku jest w raporcie020.
 
 ## Organizacja danych
 
@@ -108,5 +118,5 @@ F3 i granice ruchu/napędu. Nie potwierdzają osiągów fizycznego egzemplarza.
 Źródła z internetu: browser-harness oraz dopuszczony Firecrawl. Kosztorys,
 dostępność PL/UE i dobór handlowy pozostają odłożone. Przegląd opinii wszystkich
 24 kandydatów wykonano z jawnymi brakami; nie stanowi rankingu jakości.
-Najbliższy krok: P12/P13 — energetycznie zgodny nieliniowy napęd i gaz;
-następnie termika, mechanika z klejem i integracja modeli.
+Najbliższy krok: P12C — pamięć indukcyjności i źródłowe krzywe;
+następnie P14/IMD, termika, mechanika z klejem i integracja modeli.

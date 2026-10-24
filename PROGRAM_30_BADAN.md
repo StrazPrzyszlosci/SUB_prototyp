@@ -28,11 +28,11 @@ pakietu samym stworzeniem planu, testów ani listy bibliotek.
 | P07 | Ciągła objętość | Częściowo |20–150l co1l oraz analityczne granice po wszystkichVb>0 dla pojedynczych sinusów, kontrolowane288przypadkami; optymalizacja całego pasma/DSP otwarta |
 | P08 | N7 — przecieki i straty | Częściowo wykonane | ModelCab||Ra,1728rekordów; granice, sumowanie fazorowe,72progi pomocnicze; brak identyfikacji fizycznegoRa |
 | P09 | Wypełnienie, lepkość i straty cieplne gazu | Wykonane rodziny kontrolne; identyfikacja materiału otwarta | 24 modele, 12 096 wierszy termiki/napędu, 17 280 modeli warstw/ZK/wiotkiego szkieletu/dwóch Cp/sorpcji; dodatnie widma relaksacji, niezależna dyfuzja FV i źródła. Brak pełnych parametrów konkretnego produktu; raport 016 |
-| P10 | Adiabatyczne/izotermiczne powietrze | Wykonane dla idealnego gazu z zadanym ruchem; integracja P13 otwarta | 56 rodzin bezwymiarowych, 15 552 wiersze dla przetworników i temperatur, 1440 offsetów, 384 modeli wyrównania DC, 42 bilanse nieliniowe; FFT/ODE/SymPy i niezamienne granice. Nie jest THD egzemplarzy |
+| P10 | Adiabatyczne/izotermiczne powietrze | Wykonane rodziny gazu; integracja w rodzinach P13 wykonana | 56 rodzin bezwymiarowych, 15 552 wiersze dla przetworników i temperatur, 1440 offsetów, 384 modeli wyrównania DC, 42 bilanse nieliniowe. P13 dodaje sprzężony ruch, prąd i temperaturę; nadal model gazu idealnego, nie THD egzemplarzy |
 | P11 | Obciążenie promieniowaniem i granice przestrzeni | Wykonane rodziny kontrolne; geometria docelowa otwarta | Tłok/Rayleigh, czasza/sfera/komora, kalibracja Mmd/Mms, wzajemne promieniowanie, obrazy i sprzężony pokój; 4 154 112 realizacji częstotliwościowych, replikacja Bellows2024, bilans energii i odrębna zbieżność. Raport 017. Brak niezależnej identyfikacji Mmd/strat wszystkich egzemplarzy i rozpraszania na finalnej skrzyni |
-| P12 | BL(x),Cms(x),Le(x,i),Rms(v) | Częściowo — źródło | Obejrzano oryginalne krzyweKLIPPELScan32 i odczytano progi zeźródła; nie zdigitalizowano krzywych ani nie uruchomiono modelu nieliniowego |
-| P13 | Sprzężony ruch nieliniowy i gaz | Do wykonania | Dotychczas siła gazu przy narzuconym ruchu, nie pełne równanie nieliniowe |
-| P14 | THD i IMD | Do wykonania | Tylko po rozwiązaniu P12/P13, z kontrolą zbieżności i faz |
+| P12 | BL(x),Cms(x),Le(x,i),Rms(v) | Wykonane rodziny warunkowe; identyfikacja i pamięć otwarte | Współenergia, dodatni Ld, Kms sieczne/styczne, 9rodzin w12 096przypadkach i źródłaSRC31–34; oryginalne krzyweScan32 iPurifiNAB-01. Brak pełnej identyfikacji produktów; P12C następne. Raport020 |
+| P13 | Sprzężony ruch nieliniowy i gaz | Wykonane dla hermetycznego gazu i wybranych rodzin | PełneODE prądu/ruchu/temperatury;12 096punktów,4potwierdzone wyjścia z dziedziny rozruchu,1przypadek rozstrzygnięty po88cyklach,72przypadki kompensacji; energia i trzy solvery. Brak czasowej reakcji frontu, nieliniowego przecieku i wszystkich gałęzi/stabilności; raport020 |
+| P14 | THD i IMD | Częściowo | H2–H10 ekwiwalentnego monopola dla pojedynczych sinusów P13; numeryczny poziom resztkowy i wybrane zagęszczenia. IMD, fazy wielotonów, większa analiza amplitudy/gałęzi i realny operator promieniowania harmonicznych otwarte |
 | P15 | N8 — model cieplny w czasie | Do wykonania | Re×1,25/1,5 to czułość; brak identyfikacjiRth/Cth |
 | P16 | Sprzężenia cieplne i elektromechaniczne | Do wykonania | Potrzebne granice i scenariusze wymiany ciepła, bez fikcyjnych temperatur |
 | P17 | Łączne granice użytecznego zakresu | Częściowo | Granice liniowe; warunkoweTHD i termika do połączenia |
@@ -45,7 +45,7 @@ pakietu samym stworzeniem planu, testów ani listy bibliotek.
 | P24 | Dynamiczna ochrona | Do wykonania | Wychylenie, napięcie, prąd, cieplna pamięć i overshoot |
 | P25 | Sygnały wielotonowe i realistyczne | Do wykonania | Sinusy nie zastępują sumy widma; legalne źródła lub sygnały syntetyczne |
 | P26 | Zespolony model pokoju ze stratami | Częściowo | Rodzina modalna, 4 ustawienia × 9 scenariuszy strat; Green 1D, pasywność i zbieżność, raport 013. P11 dodaje reakcję pola na napęd i gęstą siatkę, raport 017. Pozycje/straty i rozpraszanie na bryle rzeczywistej pozostają nieznane |
-| P27 | Jeden/dwa subwoofery i ustawienie | Częściowo | 4 scenariusze przy monitorach, 15 876 wierszy S0, 1512 diagnostycznych, 120 przypadków fazy i 48 koniecznych testów gabarytu. P11 dodaje wzajemne obciążenie i wspólne V/I/X. U-018/U-019 potwierdzają orientację, układ i przybliżone wymiary briefu; 27 warunkowych rachunków odległości w raporcie018. Dokładne pozycje i prześwity nadal otwarte |
+| P27 | Jeden/dwa subwoofery i ustawienie | Częściowo | 4 scenariusze przy monitorach, 15 876 wierszy S0, 1512 diagnostycznych, 120 przypadków fazy i 48 koniecznych testów gabarytu. U-020 zmienia docelowo kanapę na prawą iRTV na lewą stronę rzutu; konfiguracjav2 i raport019. Wymiary U-019 aktualne; dawne S0 i pozycje nadal nie są pomiarem |
 | P28 | Integracja monitorów i8wyjśćDSP | Do wykonania | Wyłącznie architektura i modele sekcji; zakup/model monitorów odłożony |
 | P29 | Odporna optymalizacja wielokryterialna | Do wykonania | Szeroka pula ma24modele i wspólne obliczenia; pełny front i pojedynczy wybór po integracjiTHD/termiki/DSP/konstrukcji |
 | P30 | Odtwarzalność i przyszły protokół | Częściowo | Kod, hashe i archiwa; pełny rejestr hipotez oraz eksperymentów rozróżniających do zamknięcia |
@@ -70,8 +70,9 @@ W odpowiedzi na przypomnienie o wymiarach pokoju rozpoczęto niezależnie P26/P2
 (raport 013); nie zastępuje to pozostałych pakietów. P06 wykonano dla zadanych
 liniowych rodzin (raport 015). P09/P10 mają wykonane rodziny z raportu 016.
 P11 wykonano dla jawnych geometrii kontrolnych i sprzężonego pokoju
-(raport 017). Najbliższy krok to P12/P13: nieliniowy napęd i gaz,
-następnie pozostałe modeleP14–P17,
+(raport 017). P12/P13 mają wykonane rodziny warunkowe (raport020).
+Najbliższy krok to P12C: pasywna pamięć indukcyjności i identyfikacja krzywych,
+następnie pozostałe badaniaP14–P17,
 mechanikęP18–P21 z doborem kleju,
 czasoweDSP/napędP22–P25, pokójP26–P28 i integracjaP29/P30.
 Poszukiwanie danych materiałowych i nieliniowych może toczyć się równolegle

@@ -23,6 +23,7 @@ Stan: 2026-10-23. Ten rejestr uzupełnia brief, bez zmieniania jego treści.
 | U-017 | Dokładne pozycje głowy i monitorów nie są obecnie znane | Odpowiedź użytkownika 2026-10-24 | Kontynuować oznaczone scenariusze; nie ponawiać teraz tego pytania ani nie traktować współrzędnych P26 jako pomiaru |
 | U-018 | Na przekazanym rzucie osoba siedzi na kanapie po lewej, ściana RTV jest po prawej | Obraz sSKtLurb.jpeg i objaśnienie użytkownika 2026-10-24 | Prawa strona obrazu to front y=0; potwierdzono orientację, nie dokładne pozycje uszu/monitorów ani skalę rastra. Warunkowe rachunki odległości w raporcie 018 |
 | U-019 | Układ z rzutu i wymiary z briefu są aktualne | Odpowiedź użytkownika 2026-10-24: „Tak, układ i wymiary z briefu są aktualne” | Zachować około4,6×3,7×2,5m i orientację U-018. Plan mebli/przejść jest kontekstem oceny wykonalności; brak dokładnych pozycji, tolerancji wymiarów i akustycznego stanu otwarć nadal jawny |
+| U-020 | Klient planuje zamienić kanapę i RTV: docelowo kanapa po prawej, RTV po lewej stronie obrazu | Dwa doprecyzowania użytkownika 2026-10-24 | Zastępuje docelową orientację U-018; wymiary U-019 bez zmian. Nowy front po lewej; nie odbijać okien i przejścia razem z meblami. Konfiguracja v2 i raport019; dokładne pozycje nadal nieznane |
 
 ## Decyzje, których nie podejmowano
 

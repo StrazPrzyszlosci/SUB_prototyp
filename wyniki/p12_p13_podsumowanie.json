@@ -1,0 +1,31 @@
+{
+  "status": "WYKONANE_RODZINY_WARUNKOWE_NIE_RANKING_THD_PRODUKTOW",
+  "run_sha256": "9df439b5dd1cbd5bbb62b77470abfae642dda2aef0bb320041e5985c18207f7a",
+  "input_sha256": {
+    "dane/konfiguracje/p12_p13_naped_i_gaz.json": "56781e28e6674467a581d26788702735f3974ca821c77b6ba28f24a73e871fd7",
+    "dane/przetworniki/pula_rozszerzona.json": "36d96aa416cf4135ec890e899be7f7818e0cf85c907a9f8a8456917838352b4b",
+    "brief_system_audio_DIY_v0.6.md": "3bd9f8d43a92b96256073e66cd0f4f105336e969a37c29fc42f17cda9d66736f",
+    "skrypty/analiza_napedu_nieliniowego.py": "4e0dcaf133332ca606f85cfc59c23790a0f8332f6c3f51fd19e519e656da8341",
+    "skrypty/model_nieliniowy.py": "f1e72234395d688356d6a13f62db9e0f936f723534559d6607d27fdc4a6c2b36",
+    "skrypty/model_subwoofera.py": "bd7e6e250a5b9a605fbbb05343381b827ffa81047a90c692968fc8e34eedc2b8",
+    "skrypty/model_gazu.py": "ca8f63066f23eac9eb00610b428c173515f3088395501deaec740ea05a2c5115"
+  },
+  "journal": "wyniki/p12_p13_przebieg_9df439b5dd1cbd5b.jsonl",
+  "drivers": 24,
+  "rows": 12096,
+  "profiles": 9,
+  "status_counts": {
+    "MODEL_DOMAIN_EXCEEDED": 4,
+    "NOT_SETTLED": 1,
+    "PERIODIC_WITHIN_MODEL_TOLERANCE": 12091
+  },
+  "max_valid_relative_energy_residual": 1.8101649713166903e-06,
+  "max_linear_fundamental_relative_error": 1.9537429404303808e-06,
+  "max_linear_numerical_pressure_THD_pct": 0.004037369083785843,
+  "nonlinear_cases_exceed_catalog_x": 0,
+  "nonlinear_cases_exceed_reference_current": 0,
+  "max_absolute_dc_offset_mm": 1.977144566254635,
+  "max_hypothetical_pressure_THD_pct": 36.214164649683475,
+  "scope": "24 katalogowe bazy i umowne kształty. Nie zidentyfikowano BL/Kms/Le/Rms(v) tych egzemplarzy. Punktowy skan i start od zera nie badają wszystkich gałęzi ani stabilności Floqueta.",
+  "coupling_scope": "Brak dodatkowej reakcji frontu, przecieku i termiki cewki. Pole monopola jest normalizacją diagnostyczną, nie modelem faktycznej kierunkowości harmonicznych."
+}

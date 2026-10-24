@@ -1,5 +1,10 @@
 # Raport 018 — rzut pokoju i geometria odsłuchu
 
+**Aktualizacja U-020:** opis orientacji poniżej dotyczy wcześniejszego
+układu z oryginalnego rzutu. Docelowo RTV będzie po lewej, kanapa po prawej;
+obowiązuje [raport019](019_zamiana_kanapy_i_RTV.md) i konfiguracja v2.
+Rachunki odległości pozostają warunkową geometrią, nie pozycjami klienta.
+
 Stan: 2026-10-24. **Dane użytkownika:** osoba siedzi na kanapie po lewej
 stronie przesłanego rzutu; ściana RTV jest po prawej.
 

@@ -1,0 +1,10 @@
+{
+  "status": "WARUNKOWA_KOMPENSACJA_CZLONU_KWADRATOWEGO_NIE_KONSTRUKCJA_ZIDENTYFIKOWANA",
+  "quadratic_gas_force_coefficient": "Sd**3*gamma*p0*(gamma + 1)/(2*V**2)",
+  "k_asym_cancel_formula": "Cms*Sd**3*X0*gamma*p0*(gamma + 1)/(2*V**2)",
+  "rows": 72,
+  "min_H2_ratio_to_zero_asymmetry": 2.7004042178557455e-06,
+  "max_H2_ratio_to_zero_asymmetry": 0.0008769168687191537,
+  "scope": "Stałe napięcie w porównaniu, gaz adiabatyczny z entropią początkową, BL/Le liniowe. Skasowanie kwadratu siły nie usuwa wyższych rzędów, H3, pamięci cieplnej ani zależności częstotliwościowej.",
+  "shape_status": "Tylko hipotetyczna asymetria, nie krzywa zawieszenia C02/C06."
+}

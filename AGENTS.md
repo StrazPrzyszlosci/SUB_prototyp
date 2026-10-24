@@ -115,6 +115,23 @@ Optymalizacja jednego sweet spotu 2,5–3 m; brak narzuconego budżetu i gabaryt
     dawnego S0 za potwierdzone. U-019 potwierdza aktualny układ i przybliżone
     wymiary briefu4,6×3,7×2,5m. Rzut i scenariusze są w raporcie018;
     uwzględnić przejście i stolarkę jako nierozpoznane warunki brzegowe.
+29. U-020 zastępuje docelową orientację U-018: klient zamieni meble,
+    kanapa będzie po prawej, RTV po lewej stronie oryginalnego rzutu.
+    Front y=0 jest po lewej, +y w prawo, x=0 na dole obrazu, +x ku górze.
+    Okna/przejście nie zostały obrócone razem z meblami. Wymiary U-019
+    pozostają aktualne. Używać kontekstu v2 i raportu019, zachowując v1
+    oraz raport018 jako poprzedni kontekst. Nie przenosić dawnych S0/źródeł
+    jako potwierdzonych pozycji po zamianie.
+30. P12/P13: Kms źródła jest sieczne Fs/x, a do kontroli stabilności
+    potrzebne jest dFs/dx. Używać wzajemnego BL w sile i SEM oraz
+    strumienia/coenergii z Frel i dodatnim Ld. Parametry rodzin są umowne,
+    nie krzywe produktów. Dziennik z hashem wznawia zgodne przypadki;
+    odczyt dziennika nie jest świeżą niezależną replikacją. Mms/Rms w tym
+    etapie są efektywne, bez nowego frontowego promieniowania. H2–H10
+    ciśnienia monopola to diagnostyka przyspieszenia, nie fizyczne THD
+    konkretnej membrany/pokoju. Nie interpretować śladowych harmonicznych
+    poniżej precyzji danego przebiegu. Cztery wyjścia z dziedziny nastąpiły
+    w rozruchu; nie pomijać ich przy ocenie ochrony.
 
 ## Stan i postępy
 
@@ -215,11 +232,30 @@ Postęp końca sesji2026-10-23:
   (inicjalizacja minimum przez+∞ zamiast0); przeliczono powiązany etap.
   Rachunek geometrii z rzutu wykonano osobno i włączono do odtwarzania.
   Nie deklarować z tego fizycznej walidacji ani zamknięcia całego programu.
-- **Następny krok: P12/P13 — energetycznie zgodne nieliniowości napędu
-  i zawieszenia połączone z gazem, z jawnymi brakami krzywych produktu.** Nie powtarzać
+- **Następny krok: P12C — pasywna pamięć indukcyjności, Le(x,f) a strumień,
+  uzgodnienie zestawów źródłowych przed P14/IMD i promieniowaniem harmonicznych.** Nie powtarzać
   wykonanego N7 ani wyszukiwań wszystkich 24 opinii
   bez konkretnej nowej hipotezy lub źródła. Dokładne pozycje w pokoju pozostają
   pytaniem otwartym; rozdzielać je od jawnych scenariuszy w p26_scenariusze.json.
+- U-020: zapisano planowaną zamianę kanapy/RTV w konfiguracji v2 i raporcie019.
+  Docelowo RTV po lewej, kanapa po prawej obrazu. Zachowano oryginalny rzut
+  i poprzednią konfigurację. P12/P13 pozostają bieżącym krokiem naukowym.
+- P12/P13: wykonano12 096przypadków dla24baz,4Vb,7częstotliwości,
+  2poziomów i9rodzin. Raport020 i baza14. Symboliczna współenergia/gaz,
+  LSODA/Radau/DOP853, graniceLe=0/Vb→∞/tau0/∞/brakstrat.
+  Zapisano4wyjścia z dziedziny przy rozruchu (potwierdzoneDOP853) i1przypadek
+  po64cyklach, rozstrzygniętyRadau po88cyklach. Osobno72pełneODE
+  kompensacji gazu/zawieszenia. Nie jest to rankingTHDproduktów.
+  ŹródłaSRC31–34: oryginalne krzyweLSI3, karta i niezależny test dokładnego
+  PurifiNAB-01; STX bez nowego kompletnego zestawu w wynikach wyszukiwania,
+  co nie dowodzi nieistnienia danych. C18 pozostaje kontrolą10″.
+  Nowa bramka: Le(x,f) nie identyfikuje pojedynczego lambda(x,i), a Kms
+  źródłowych próbek nie łączyć automatycznie z inną baząCms. P12C następne.
+- Weryfikacja P12/P13: dziennik zawiera12 096unikalnych przypadków i zgodny
+  hash wejść; wznowienie miało0nowychODE i odtworzyło identycznyCSV.
+  OdrębneDOP853/Radau potwierdziły także słaby H2 w72przypadkach kompensacji
+  przez wybrane świadki. Trzy wykresy22–24 obejrzano. Globalnego testu
+  wszystkich gałęzi ani precyzji fizycznego produktu nie deklarować.
 
 ## Decyzje otwarte
 

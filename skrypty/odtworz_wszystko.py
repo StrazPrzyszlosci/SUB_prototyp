@@ -70,6 +70,12 @@ def main():
     from sprawdz_pakiet_promieniowania import main as radiation_tables
     from raportuj_promieniowanie import main as radiation_report
     from analiza_geometrii_odsluchu import main as listening_geometry
+    from sprawdz_naped_nieliniowy import main as nonlinear_checks
+    from analiza_napedu_nieliniowego import main as nonlinear_analysis
+    from analiza_kompensacji_gazu import main as nonlinear_compensation
+    from sprawdz_kompensacje_gazu import main as compensation_checks
+    from sprawdz_pakiet_nieliniowy import main as nonlinear_tables
+    from raportuj_naped_nieliniowy import main as nonlinear_report
     checks()
     images()
     physics()
@@ -107,6 +113,12 @@ def main():
     radiation_tables()
     radiation_report()
     listening_geometry()
+    nonlinear_checks()
+    nonlinear_analysis()  # Zgodny dziennik wznawia przypadki; nie jest nową niezależną replikacją.
+    nonlinear_compensation()
+    compensation_checks()
+    nonlinear_tables()
+    nonlinear_report()
     baseline()  # Manifest powstaje po wszystkich obliczeniach.
 
 

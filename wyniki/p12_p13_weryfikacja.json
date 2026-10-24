@@ -1,0 +1,66 @@
+{
+  "status": "PASS_MODELOWEJ_ENERGII_I_REDUKCJI_NIE_WALIDACJA_PRZETWORNIKA",
+  "symbolic_identities": [
+    "Współenergia: energia motoru z oboma członami sprzężenia",
+    "Pominięcie siły reluktancyjnej: dokładny defekt -Frel*v",
+    "Dostępność szczelnego gazu: praca i dodatnia strata cieplna",
+    "Kms sieczne: całka siły jest energią zawieszenia"
+  ],
+  "gradient_points": 12,
+  "max_relative_energy_gradient_error": 2.81727647528111e-09,
+  "max_scalar_vector_acceleration_difference": 5.684341886080801e-13,
+  "linear_reductions": [
+    {
+      "le_mh": 0.0,
+      "f_hz": 20.0,
+      "relative_x_error": 1.7653212225354764e-11,
+      "numerical_pressure_thd_pct": 4.020263573693525e-08
+    },
+    {
+      "le_mh": 0.0,
+      "f_hz": 80.0,
+      "relative_x_error": 1.741766730845029e-10,
+      "numerical_pressure_thd_pct": 5.655540940107247e-07
+    },
+    {
+      "le_mh": 0.92,
+      "f_hz": 20.0,
+      "relative_x_error": 1.3324857883745267e-09,
+      "numerical_pressure_thd_pct": 1.5015164512351162e-10
+    },
+    {
+      "le_mh": 0.92,
+      "f_hz": 80.0,
+      "relative_x_error": 1.0922358573139945e-09,
+      "numerical_pressure_thd_pct": 5.994454059474462e-07
+    }
+  ],
+  "independent_solvers": {
+    "LSODA": {
+      "relative_fundamental_error": 5.6914917223593875e-11,
+      "absolute_h2_pct_error": 2.351276640055744e-08,
+      "absolute_h3_pct_error": 1.13841126081482e-07
+    },
+    "Radau": {
+      "relative_fundamental_error": 0.0,
+      "absolute_h2_pct_error": 0.0,
+      "absolute_h3_pct_error": 0.0
+    },
+    "DOP853": {
+      "relative_fundamental_error": 1.844080443902385e-13,
+      "absolute_h2_pct_error": 6.871792024298884e-11,
+      "absolute_h3_pct_error": 7.483997865875835e-10
+    }
+  },
+  "sampling_thd_absolute_pct_difference": 2.5242874457376274e-10,
+  "lossless_max_relative_energy_drift": 2.6990409907057256e-11,
+  "omitted_reluctance_max_relative_energy_drift": 0.0005336471898726991,
+  "limits": [
+    "Le=0",
+    "Vb=inf",
+    "tau=0/inf",
+    "brak strat",
+    "odrzucona ujemna sztywność styczna"
+  ],
+  "scope": "Kształty hipotetyczne, efektywne Mms/Rms, brak nowej reakcji frontu i bez termiki cewki."
+}

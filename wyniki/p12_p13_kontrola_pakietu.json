@@ -1,0 +1,137 @@
+{
+  "status": "PASS_TABEL_I_WYBRANYCH_ZAGESZCZEN_NIE_CERTYFIKAT_CALEJ_DZIEDZINY",
+  "main_run_sha256": "9df439b5dd1cbd5bbb62b77470abfae642dda2aef0bb320041e5985c18207f7a",
+  "rows_checked": 12096,
+  "periodic_rows": 12091,
+  "refinements": [
+    {
+      "case_id": "007147",
+      "candidate_id": "C15",
+      "profile": "GAS_ONLY",
+      "volume_l": 30.0,
+      "f_hz": 80.0,
+      "metrics": [
+        "energy_relative_residual"
+      ],
+      "relative_fundamental_difference": 1.3532706999441757e-07,
+      "absolute_h2_percentage_point_difference": 8.947549240134745e-07,
+      "absolute_h3_percentage_point_difference": 3.477841326170075e-06,
+      "absolute_x_dc_difference_m": 2.2845034773845603e-11,
+      "refined_energy_relative_residual": 2.3052189394750744e-13
+    },
+    {
+      "case_id": "003076",
+      "candidate_id": "C07",
+      "profile": "FULL_ASYM_PLUS",
+      "volume_l": 30.0,
+      "f_hz": 31.5,
+      "metrics": [
+        "thd_pressure_h2_h10_pct"
+      ],
+      "relative_fundamental_difference": 3.4593674591576473e-09,
+      "absolute_h2_percentage_point_difference": 2.3300972067374914e-06,
+      "absolute_h3_percentage_point_difference": 1.7473286185065717e-05,
+      "absolute_x_dc_difference_m": 6.915990133013472e-12,
+      "refined_energy_relative_residual": 2.6038188374119865e-14
+    },
+    {
+      "case_id": "004499",
+      "candidate_id": "C09",
+      "profile": "FULL_ASYM_MINUS",
+      "volume_l": 150.0,
+      "f_hz": 63.0,
+      "metrics": [
+        "x_dc_m"
+      ],
+      "relative_fundamental_difference": 4.272817166750542e-08,
+      "absolute_h2_percentage_point_difference": 6.799798422107983e-06,
+      "absolute_h3_percentage_point_difference": 6.295229415753667e-06,
+      "absolute_x_dc_difference_m": 9.64649588507116e-10,
+      "refined_energy_relative_residual": 3.932305503212533e-14
+    },
+    {
+      "case_id": "000486",
+      "candidate_id": "C01",
+      "profile": "LINEAR_REF",
+      "volume_l": 150.0,
+      "f_hz": 100.0,
+      "metrics": [
+        "linear_numerical_harmonic_floor"
+      ],
+      "relative_fundamental_difference": 1.9527434436117375e-06,
+      "absolute_h2_percentage_point_difference": 0.0004089580755120729,
+      "absolute_h3_percentage_point_difference": 0.0006081538209629209,
+      "absolute_x_dc_difference_m": 5.623650588268219e-09,
+      "coarse_thd_pct": 0.004037369083785843,
+      "refined_thd_pct": 2.0800247177416982e-06,
+      "refined_energy_relative_residual": 2.4450509652601403e-13
+    }
+  ],
+  "domain_crossings": [
+    {
+      "case_id": "002477",
+      "candidate_id": "C05",
+      "profile": "BL_ONLY",
+      "coarse_stop_cycles": 0.5220017897164795,
+      "refined_stop_cycles": 0.5220017923425815,
+      "absolute_stop_cycle_difference": 2.626102002523112e-09
+    },
+    {
+      "case_id": "002483",
+      "candidate_id": "C05",
+      "profile": "FULL_ASYM_MINUS",
+      "coarse_stop_cycles": 0.5224100635431017,
+      "refined_stop_cycles": 0.5224100769363443,
+      "absolute_stop_cycle_difference": 1.3393242626058566e-08
+    },
+    {
+      "case_id": "008507",
+      "candidate_id": "C17",
+      "profile": "BL_ONLY",
+      "coarse_stop_cycles": 0.5054918287004343,
+      "refined_stop_cycles": 0.5054918275839878,
+      "absolute_stop_cycle_difference": 1.1164464908119953e-09
+    },
+    {
+      "case_id": "008513",
+      "candidate_id": "C17",
+      "profile": "FULL_ASYM_MINUS",
+      "coarse_stop_cycles": 0.5004139495704032,
+      "refined_stop_cycles": 0.5004139600316615,
+      "absolute_stop_cycle_difference": 1.0461258304061971e-08
+    }
+  ],
+  "unsettled_resolutions": [
+    {
+      "case_id": "008543",
+      "candidate_id": "C17",
+      "original_status": "NOT_SETTLED",
+      "original_closure_error": 2.50071020529985e-07,
+      "refined_method": "Radau_rtol1e-10_atol1e-12_1024samples_max128cycles",
+      "status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "end_cycles": 88,
+      "nfev": 423369,
+      "closure_error": 2.019563960509174e-09,
+      "x_peak_m": 0.00542200683933541,
+      "x_dc_m": 1.4068685056994532e-10,
+      "current_rms_a": 9.234990396904744,
+      "current_peak_a": 12.955010173565515,
+      "x_fundamental_peak_m": 0.005434582910645922,
+      "spl_fundamental_equivalent_4pi_1m_db": 106.72012302701135,
+      "h2_pressure_pct": 1.3014886727678094e-07,
+      "h3_pressure_pct": 2.1312551386016523,
+      "thd_pressure_h2_h10_pct": 2.1315619163981596,
+      "max_gas_temperature_k": 293.3336345205518,
+      "mean_gas_temperature_k": 293.150000000452,
+      "mean_input_w": 248.32722032225155,
+      "mean_copper_w": 238.79813336658393,
+      "mean_mechanical_loss_w": 8.03296861943262,
+      "mean_thermal_exergy_loss_w": 1.4961183612110018,
+      "energy_relative_residual": 1.9282947382244112e-13,
+      "volume_fraction_peak": 0.001684436791420201,
+      "pressure_phase_rad": -2.630163984759212
+    }
+  ],
+  "max_linear_numerical_pressure_thd_pct": 0.004037369083785843,
+  "limits": "Kontrola znalezionych świadków, nie dowód globalnego maksimum, tolerancji produktu ani wszystkich gałęzi stabilnych."
+}
