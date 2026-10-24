@@ -21,6 +21,8 @@ a potwierdzonych ustaleń użytkownika w [rejestrze](../DECYZJE_I_PYTANIA.md).
 |08|[Opinie iocena dowodów](08_opinie_i_ocena_dowodow.md)|Relacje właścicieli, korekty wątków i odczyt wykresów|
 |09|[Zespolony model pokoju](09_zespolony_model_pokoju.md)|Straty modalne, kompresja, dwa źródła, normalizacja i niezależny Green 1D|
 |10|[Niepewność globalna](10_niepewnosc_globalna.md)|Korelacje, Sobol/MC, obwiednie dziedzin, świadkowie i granice dominacji|
+|11|[Gaz i materiały porowate](11_gaz_cieplo_i_materialy_porowate.md)|Relaksacja, lepkość, pory, dwa Cp, sorpcja i dane producenta|
+|12|[Nieliniowa termodynamika i DC](12_nieliniowa_termodynamika_i_DC.md)|Energia, FFT/ODE, niezamienne granice i wyrównanie barometrii|
 |Źródła|[Rejestr z datami](ZRODLA.md)|Co przeczytano, co tylko znaleziono i jakie są braki|
 
 ## Od wiedzy do wykonania

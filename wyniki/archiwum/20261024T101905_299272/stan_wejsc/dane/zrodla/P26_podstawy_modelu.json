@@ -1,0 +1,27 @@
+{
+  "sources": [
+    {
+      "id": "SRC19",
+      "title": "Meissner i Wiśniewski (2020), Investigation of damping effects on low-frequency steady-state acoustical behaviour of coupled spaces",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7481690/",
+      "method": "Firecrawl, odczyt metod i ograniczeń",
+      "access_date": "2026-10-24",
+      "type": "pierwotny_artykul_naukowy",
+      "scope": "Równanie falowe, rozwinięcie modalne, sprzężenie modów przez absorpcję. Nie użyto liczb obcego pomieszczenia jako danych naszego pokoju.",
+      "limitations": "Nasz model diagonalnego tłumienia jest uproszczeniem; nie jest replikacją ich układu sprzężonych pomieszczeń.",
+      "raw_capture_sha256": "278f4977e040b7eaa8581987986a5bca4c09f91833c3cb13d7857d4a15f44ec8"
+    },
+    {
+      "id": "SRC20",
+      "title": "COMSOL Application Library: Eigenmodes of a Room",
+      "url": "https://www.comsol.com/model/download/1166101/models.mph.eigenmodes_of_room.pdf",
+      "method": "Firecrawl, odczyt modelu i porównania analitycznego",
+      "access_date": "2026-10-24",
+      "type": "dokumentacja_metody",
+      "scope": "Funkcje i częstotliwości modów prostopadłościanu oraz ograniczenie idealnie sztywnych granic.",
+      "limitations": "Nie korzystano z ich liczb jako częstotliwości naszego pokoju; idealny model bez strat nie daje tłumienia.",
+      "raw_capture_sha256": "4bee571ec6fff6b4b3d7572b9c20bd930605b96b3c09d13f0ad33b74d771981f"
+    }
+  ],
+  "own_model": "Sztywna baza cosinusów, niezależne straty modalne, osobna relaksacja zera i wygładzenie Neumanna; własne wyprowadzenie i kontrola 1D."
+}

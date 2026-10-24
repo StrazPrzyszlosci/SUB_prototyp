@@ -1,0 +1,29 @@
+{
+  "candidate_id": "C05",
+  "manufacturer": "STX",
+  "model": {
+    "name": "STX W.32.500.8.MC_v2",
+    "fs_hz": 24,
+    "qes": 0.3,
+    "qms": 2.48,
+    "vas_l": 199,
+    "sd_cm2": 491,
+    "re_ohm": 5.6,
+    "le_mh": 1.27,
+    "xmax_mm": 7.5,
+    "nominal_ohm": 8,
+    "rated_w": 300
+  },
+  "catalog_extra": {
+    "qts": 0.27,
+    "mms_g": 76,
+    "cms_mm_n": 0.59,
+    "bl_tm": 14.5
+  },
+  "url": "https://stx.pl/en/w-32-500-8-mc.html",
+  "access_date": "2026-10-24",
+  "xmax_definition": "15mm p-p ->7.5mm jednostronnie; metoda geometryczna, bez zweryfikowanego progu THD.",
+  "data_issue": "Wariantv2; nie przenosić bez kontroli danych starej wersji i opinii o innym Xmax. MocAES dotyczy25–3000Hz.",
+  "source_extraction_sha256": "af8e1eb44d302e820a17889a7a0593620eadd0aa379ab74ed1493a8a0a15a0ab",
+  "scope": "Zweryfikowane tabele i jawne konwersje; nie użyto automatycznych odczytów punktów z wykresów."
+}

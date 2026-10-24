@@ -13,6 +13,7 @@ Pokój około **4,6 × 3,7 × 2,5 m** jest jawnym wejściem:
 [raport 013 — pole zespolone, dwa źródła i ograniczenia gabarytów](raporty/013_pokoj_i_realne_gabaryty.md).
 P06 obejmuje globalną czułość i niepewność 24 modeli:
 [raport 015 — obwiednie i odporność kolejności](raporty/015_niepewnosc_globalna_i_odpornosc.md).
+P09/P10: [raport 016 — gaz, wypełnienie i granice szczelności](raporty/016_gaz_wypelnienie_i_granice.md).
 
 **Bieżący zakres: wyłącznie naukowe zagadnienia prototypu (U-010).**
 Najnowsze zlecenie: [program30badań](PROGRAM_30_BADAN.md), szeroka pula
@@ -69,6 +70,7 @@ Brak modelu THD, kompresji cieplnej i zidentyfikowanej odpowiedzi pokoju.
 13. [013 — pokój, dwa źródła i realne gabaryty](raporty/013_pokoj_i_realne_gabaryty.md).
 14. [014 — weryfikacja etapu i odtwarzalność](raporty/014_weryfikacja_etapu_20261024.md).
 15. [015 — niepewność globalna, korelacje i kontrprzykłady dominacji](raporty/015_niepewnosc_globalna_i_odpornosc.md).
+16. [016 — cieplny gaz, lepkość, wypełnienie, harmoniczne i DC](raporty/016_gaz_wypelnienie_i_granice.md).
 
 ## Odtworzenie obliczeń
 
@@ -100,5 +102,5 @@ F3 i granice ruchu/napędu. Nie potwierdzają osiągów fizycznego egzemplarza.
 Źródła z internetu: browser-harness oraz dopuszczony Firecrawl. Kosztorys,
 dostępność PL/UE i dobór handlowy pozostają odłożone. Przegląd opinii wszystkich
 24 kandydatów wykonano z jawnymi brakami; nie stanowi rankingu jakości.
-Najbliższy krok: P09/P10 — relaksacja cieplna gazu i wypełnienie, następnie
-nieliniowości, termika, mechanika z klejem i integracja modeli.
+Najbliższy krok: P11 — skończony tłok, promieniowanie i uzgodnienie Mmd/Mms;
+następnie nieliniowości, termika, mechanika z klejem i integracja modeli.

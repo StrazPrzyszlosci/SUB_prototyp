@@ -1,0 +1,16 @@
+{
+  "status": "PASS_TOZSAMOSCI_W_ZADANYCH_MODELACH",
+  "checks": [
+    "K(s) z bilansu gazu równe dodatniemu modelowi SLS",
+    "Gaz+Cs izolowany od otoczenia: dokładny modelSLS z K0>p0",
+    "Bilans liniowej energii z odrębnymi stratami Ra i cieplnymi",
+    "Nieliniowy bilans dostępności gazu i dodatnia dyssypacja H*(T-T0)^2/T",
+    "Transformacja nieliniowej temperatury do liniowego filtra okresowego Z",
+    "Pasywność umownej dodatkowej podatności sorpcyjnej"
+  ],
+  "noncommuting_bulk_limits": {
+    "first_zero_frequency_then_infinite_tau": "p0",
+    "first_infinite_tau_then_zero_frequency": "gamma*p0"
+  },
+  "limitations": "Tożsamości modeli idealnych. Brak identyfikacji H,Cs i izoterm sorpcji rzeczywistych materiałów."
+}

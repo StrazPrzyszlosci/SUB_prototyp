@@ -1,0 +1,29 @@
+{
+  "candidate_id": "C12",
+  "manufacturer": "SEAS",
+  "model": {
+    "name": "SEAS L26RO4Y XM004-04",
+    "fs_hz": 26,
+    "qes": 0.29,
+    "qms": 3.94,
+    "vas_l": 40,
+    "sd_cm2": 342,
+    "re_ohm": 3.5,
+    "le_mh": 2.33,
+    "xmax_mm": 15,
+    "nominal_ohm": 4,
+    "rated_w": 250
+  },
+  "catalog_extra": {
+    "qts": 0.27,
+    "mms_g": 160,
+    "cms_mm_n": 0.24,
+    "bl_tm": 17.7
+  },
+  "url": "https://www.seas.no/images/stories/design/pdf_datasheet/L26RO4Y-XM004-04_Datasheet.pdf",
+  "access_date": "2026-10-24",
+  "xmax_definition": "30mm p-p ->15mm jednostronnie.",
+  "data_issue": "Kontrola10calowa spoza głównego porównania12/15, jawnie oznaczona. MocIEC268-5. Wykres producenta28Lclosed2.83V0.5m normalizowanydo1m; nie maxSPL.",
+  "source_extraction_sha256": "136c0ec76dbcd55d3c429bf3bf7d7ff2e84e4079c18759daa9f54c931c14004d",
+  "scope": "Zweryfikowane tabele i jawne konwersje; nie użyto automatycznych odczytów punktów z wykresów."
+}

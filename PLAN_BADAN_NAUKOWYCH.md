@@ -29,7 +29,24 @@ Kod i dane są dostępne, a [raport 007](raporty/007_fizyka_nieliniowosci_i_DSP.
 rozwija nowe wyniki. Nie wyciągamy z nich rankinguTHD, jakości odsłuchowej
 lub gotowości produktu do komercjalizacji.
 
-## Następny pakiet domyślny: P09/P10 — relaksacja cieplna gazu
+## Następny pakiet domyślny: P11 — obciążenie promieniowaniem
+
+P09/P10 wykonano dla jawnych rodzin gazu, porów i materiału o skończonej
+pojemności cieplnej: [raport 016](raporty/016_gaz_wypelnienie_i_granice.md).
+Następnie uzgodnić masy i straty przed dodaniem reakcji promieniowania:
+Mmd to inna wielkość niż Mms, a katalogowe Rms może obejmować część strat
+promieniowania. Nie dodawać ponownie tej samej masy ani mocy.
+
+P11: wyprowadzić impedancję skończonego tłoka w sztywnej odgrodzie,
+porównać analitykę z niezależną całką promieniowania, sprawdzić małe/duże ka,
+dodatniość mocy i granice geometryczne. Oddzielić przypadek 2π od 4π
+oraz rzeczywistej skończonej obudowy. Uwzględnić wzajemne promieniowanie,
+wpływ podłogi/ścian i granice połączenia z pokojem. Przetestować, kiedy
+przybliżenie monopola i pominięcie sprzężenia zwrotnego zmienia wybór.
+Rysunki CAD i zakupy pozostają odłożone. Brak danych suchej masy ujawniać;
+nie uznawać samego przepisania katalogowego Mms za niezależną identyfikację.
+
+## Wykonane rodziny P09/P10 — zachowane założenia i wyprowadzenie
 
 Wejścia: aktualne 24 modele, N7/P08, dane otoczenia i jawne hipotetyczne
 czasy wymiany ciepła. Najpierw zbudować pasywny model relaksacji, a dopiero
@@ -110,7 +127,7 @@ z góry pożądany wynik. Nie przechodzić automatycznie do konstrukcji ani zaku
 Aktualizacja 2026-10-24: wykonano szeroką pulę 24 modeli / 11 producentów,
 globalne granice po Vb, identyfikowalność oraz scenariusze P26/P27 dla pokoju
 4,6 × 3,7 × 2,5 m. P06 wykonano w liniowych rodzinach (raport 015).
-Bieżący następny krok to P09/P10 z
+Bieżący następny krok to P11 z
 [programu 30 badań](PROGRAM_30_BADAN.md); poniższa lista N8–N11 pozostaje
 historycznym opisem zależności, nie kompletną aktualną kolejką.
 

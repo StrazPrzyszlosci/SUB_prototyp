@@ -1,0 +1,29 @@
+{
+  "candidate_id": "C22",
+  "manufacturer": "Dayton Audio",
+  "model": {
+    "name": "Dayton RSS315HO-4",
+    "fs_hz": 26.2,
+    "qes": 0.33,
+    "qms": 3.63,
+    "vas_l": 53.7,
+    "sd_cm2": 514.7,
+    "re_ohm": 3.2,
+    "le_mh": 1.75,
+    "xmax_mm": 12.3,
+    "nominal_ohm": 4,
+    "rated_w": 700
+  },
+  "catalog_extra": {
+    "qts": 0.31,
+    "mms_g": 251,
+    "cms_mm_n": 0.15,
+    "bl_tm": 20
+  },
+  "url": "https://www.daytonaudio.com/product/124/rss315ho-4-12-reference-ho-subwoofer-4-ohm",
+  "access_date": "2026-10-24",
+  "xmax_definition": "Maximum Linear Excursion12.3mm, nie Xmech.",
+  "data_issue": "PoprzedniURLzid122byłnieprawidłowy; właściwyproduktid124. Pe700W, brak rozdzielonego modelu termicznego.",
+  "source_extraction_sha256": "5716b067127b4733a5e31d8fd7319b716c95a73d1543b963fd5024a7ca59d3db",
+  "scope": "Zweryfikowane tabele i jawne konwersje; nie użyto automatycznych odczytów punktów z wykresów."
+}

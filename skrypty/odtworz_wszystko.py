@@ -54,6 +54,12 @@ def main():
     from sprawdz_swiadkow_p06 import main as witness_checks
     from raportuj_niepewnosc import main as uncertainty_report
     from wizualizuj_sobol import main as sensitivity_plot
+    from sprawdz_gaz_i_wypelnienie import main as gas_checks
+    from audyt_termodynamiki import main as thermodynamic_identities
+    from analiza_gazu_i_wypelnienia import main as gas_analysis
+    from raportuj_gaz_i_wypelnienie import main as gas_report
+    from sprawdz_pakiet_gazu import main as gas_tables
+    from audyt_identyfikacji_wypelnienia import main as filling_identification
     checks()
     images()
     physics()
@@ -75,6 +81,12 @@ def main():
     adversarial()
     witness_checks()
     uncertainty_report()
+    gas_checks()
+    thermodynamic_identities()
+    gas_analysis()
+    gas_tables()
+    filling_identification()
+    gas_report()
     baseline()  # Manifest powstaje po wszystkich obliczeniach.
 
 

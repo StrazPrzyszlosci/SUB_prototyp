@@ -1,0 +1,29 @@
+{
+  "candidate_id": "C17",
+  "manufacturer": "Peerless",
+  "model": {
+    "name": "Peerless XXLS 830844 4ohm",
+    "fs_hz": 17.7,
+    "qes": 0.2,
+    "qms": 8.21,
+    "vas_l": 156.5,
+    "sd_cm2": 466,
+    "re_ohm": 2.8,
+    "le_mh": 4.2,
+    "xmax_mm": 12.5,
+    "nominal_ohm": 4,
+    "rated_w": 175
+  },
+  "catalog_extra": {
+    "qts": 0.2,
+    "mms_g": 155.9,
+    "cms_mm_n": 0.52,
+    "bl_tm": 15.7
+  },
+  "url": "https://www.diyaudio.com/community/attachments/830844-pdf.731608/",
+  "access_date": "2026-10-24",
+  "xmax_definition": "Linear excursion±12.5mm w tabeli aktywnego830844.",
+  "data_issue": "Oryginalny arkuszPeerless/Tymphany2006 hostowany jako załącznikforum. PDF zawiera także dane membrany biernej425g/X24mm; NIE użyto tych tabel. Aktualna rewizja i dostępność niepotwierdzone.",
+  "source_extraction_sha256": "4617bd30f6dfdfb2dc5cfefee27a2b0e3bf104648bd2375e7d07ac7f5190943d",
+  "scope": "Zweryfikowane tabele i jawne konwersje; nie użyto automatycznych odczytów punktów z wykresów."
+}

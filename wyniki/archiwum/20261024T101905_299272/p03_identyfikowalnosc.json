@@ -1,0 +1,16 @@
+{
+  "status": "DOWOD_MODELOWY_I_EKSPERYMENT_SYNTETYCZNY_NIE_POMIAR",
+  "drivers": 24,
+  "symbolic_rank": 3,
+  "mechanical_unknowns": 4,
+  "scaling_null_vector": "[B/2,M,R,K]",
+  "max_relative_free_air_scaling_error": 1.3494263747957876e-16,
+  "max_relative_two_volume_mass_recovery_error": 4.773959005888173e-15,
+  "max_relative_unknown_Sd_closed_box_scaling_error": 1.3201752799558259e-16,
+  "published_parameter_projections": 30,
+  "limitations": [
+    "ZnaneRe,Le,Sd i idealne podatności; brak szumu w eksperymencie identyfikacji.",
+    "Dwie próbki nie określają rozkładu populacji.",
+    "TabeliLTD nie uznano za kompletny modelLEAP5."
+  ]
+}

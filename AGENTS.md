@@ -93,6 +93,12 @@ Optymalizacja jednego sweet spotu 2,5–3 m; brak narzuconego budżetu i gabaryt
     zaburzenia kandydatów nie obejmują wszystkich niezależnych par. Odróżniać
     brak separacji obwiedni od kontrprzykładu dominacji i świadek od globalnego
     ekstremum. Rozszerzać analizę niepewności przy dodawaniu nowej fizyki.
+26. P09/P10: nie utożsamiać stałego H z tym samym czasem tau przy różnych
+    V/T. Rozróżniać ogrzanie hermetycznej masy od różnych początkowych T0
+    przy ustalonym p0. Harmoniczne gazu przy zadanym ruchu nie są THD
+    zewnętrznym. Porowatość pozorna sorpcji może przekraczać1; geometryczna
+    pozostaje≤1. Modele porów i Cp nie identyfikują konkretnego produktu.
+    Przy dodawaniu promieniowania uzgodnić Mmd/Mms i uniknąć podwójnej masy.
 
 ## Stan i postępy
 
@@ -145,8 +151,25 @@ Postęp końca sesji2026-10-23:
   dominacji całego briefu ani ciągłego pasma. Raport 015 podaje dziedzinę.
   Wspólne wyniki etapu dwóch pasm odtworzyły się bez zmiany wartości.
 - Poprzedni etap opublikowano i potwierdzono na GitHub: commit 266252f.
-- **Następny krok: P09/P10 — pasywny model relaksacji cieplnej gazu i
-  wypełnienia, z oddzieleniem wycieku od strat cieplnych.** Nie powtarzać
+- P09/P10: 24 modele, 12 096 wierszy relaksacji/napędu, 17 280 wierszy
+  modeli wypełnienia, 15 552 przypadki harmonicznych gazu przy zadanym ruchu,
+  1440 offsetów i 384 wyrównania DC. Raport 016, baza11/12.
+  Zweryfikowano 2016 stabilnych stanów, bezpośrednie równania termodynamiki,
+  niezależną radialną dyfuzję FV, FFT/ODE i 7 tożsamości SymPy. F3 dla
+  modeli wielobiegunowych opisano jako projekcję Le=0, nie pojedynczy Qtc.
+  ŹródłaSRC24–27; obejrzano oryginalne wzory i wszystkie rysunki Venegas2023.
+  PDF Wrighta był niedostępny w przeglądarce403: odrzucono jego automatyczne
+  tablice wykresów, zachowano źródło tekstowe i odrębny oryginał Venegas.
+  Brak pełnej identyfikacji rzeczywistego materiału i nieliniowego napędu.
+  Audyt 432 konfiguracji wykazał uwarunkowanie 20–80 Hz oraz dokładną
+  swobodę Rms+Rextra bez niezależnej identyfikacji bazowego przetwornika.
+  Dodatkowo sprawdzono V/I/X dla 117 504 wariantów i 49 675 przypadków
+  niezależnej granicy samego ruchu. Pojemność/straty materiału nie są
+  zidentyfikowane. Przy aktywnym ograniczeniu X zmiana podatności gazu
+  nie tworzy dodatkowego Sd·X.
+- Poprzedni etap P06 opublikowano: commit3986530.
+- **Następny krok: P11 — skończony tłok, promieniowanie i Mmd/Mms,
+  z kontrolą podwójnego liczenia masy/strat.** Nie powtarzać
   wykonanego N7 ani wyszukiwań wszystkich 24 opinii
   bez konkretnej nowej hipotezy lub źródła. Dokładne pozycje w pokoju pozostają
   pytaniem otwartym; rozdzielać je od jawnych scenariuszy w p26_scenariusze.json.

@@ -1,0 +1,21 @@
+{
+  "status": "PASS_WERYFIKACJA_MODELI_NIE_POMIAR_MATERIALU",
+  "stable_state_models": 2016,
+  "max_relative_power_residual": 8.616229409823637e-16,
+  "max_relative_state_frequency_error": 8.771437127491553e-15,
+  "max_relative_primitive_thermodynamics_error": 2.409672326918097e-15,
+  "max_relative_legacy_N7_error": 5.58214093525239e-16,
+  "finite_volume_cases": 36,
+  "max_fv_error_at512": 1.3021469501135448e-05,
+  "nonlinear_ode_max_pressure_error_over_p0": 9.660633423800178e-12,
+  "nonlinear_ode_periodic_residual": 6.873390745454344e-13,
+  "nonlinear_fft_harmonics_difference_pct": 5.267424815552299e-13,
+  "nonlinear_cycle_energy": {
+    "work_mean_w": 287.26300092017016,
+    "heat_to_environment_mean_w": 287.26300091971837,
+    "exergy_dissipation_mean_w": 287.2630009201702,
+    "energy_residual_w": 4.517914931057021e-10,
+    "exergy_residual_w": -5.684341886080802e-14
+  },
+  "scope": "Dodatnie modele i jawne założenia; brak danych rzeczywistego wypełnienia i pełnych nieliniowości głośnika."
+}

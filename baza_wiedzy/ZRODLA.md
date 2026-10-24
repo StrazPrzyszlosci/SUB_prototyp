@@ -50,6 +50,14 @@ oraz dwie dodatkowe dyskusje. Samo znalezienie linku nie oznacza analizy źród�
   Definicje, metoda Saltelli2010 i niezależność; przyjęta miara nie jest rozkładem produktów.
 - SRC23: [mpmath — arytmetyka IV](https://mpmath.org/doc/current/contexts.html#arbitrary-precision-interval-arithmetic-iv).
   Gwarancja zawierania i ostrzeżenie o eksperymentalnej obsłudze; zakres P06 opisano jawnie.
+- SRC24: [COMSOL6.3 — modele porowate](https://doc.comsol.com/6.3/doc/com.comsol.help.aco/aco_ug_pressure.05.182.html).
+  Obejrzano oryginalne wzory obrazowe ZK, wiotkiego szkieletu i dziedziny DB.
+- SRC25: [Wright/KEF — ACE, reprint](https://techtalk.parts-express.com/filedata/fetch?id=1163933&d=1422900645).
+  Tekst przez Firecrawl; przeglądarka403. Automatycznych tablic z wykresów nie przyjęto.
+- SRC26: [ISOVER Aku-Płyta, karta2022](https://www.isover.pl/documents/karta-produktu-pds/kt-aku-plyta-aku-plat-202206.pdf).
+  AFr≥5kPa*s/m² nie jest kompletem mikrostruktury ani oporem całej warstwy.
+- SRC27: [Venegas et al., ForumAcusticum2023](https://dael.euracoustics.org/confs/fa2023/data/articles/000280.pdf).
+  OryginalnyPDF obejrzany na stronach2–5. Rysunki opisują modelBR; nie pomiar sealed.
 
 Przekazane przez użytkownika oceny i program są zachowane w
 [materialach źródłowych](../dane/zrodla/materialy_uzytkownika/indeks.json).

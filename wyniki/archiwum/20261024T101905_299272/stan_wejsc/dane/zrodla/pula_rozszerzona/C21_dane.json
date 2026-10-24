@@ -1,0 +1,29 @@
+{
+  "candidate_id": "C21",
+  "manufacturer": "Dayton Audio",
+  "model": {
+    "name": "Dayton UMII15-22 seria",
+    "fs_hz": 29,
+    "qes": 1.0,
+    "qms": 2.34,
+    "vas_l": 96,
+    "sd_cm2": 791,
+    "re_ohm": 4.2,
+    "le_mh": 0.7,
+    "xmax_mm": 24,
+    "nominal_ohm": 4,
+    "rated_w": 900
+  },
+  "catalog_extra": {
+    "qts": 0.7,
+    "mms_g": 279,
+    "cms_mm_n": 0.11,
+    "bl_tm": 14.6
+  },
+  "url": "https://www.daytonaudio.com/product/2065/umii15-22-ultimax-ii-15-dvc-subwoofer-2-ohms-per-coil",
+  "access_date": "2026-10-24",
+  "xmax_definition": "Deklarowane±24mm, metoda liniowości do potwierdzenia.",
+  "data_issue": "Jawny szereg2+2Ω ->4Ω. WysokieQes1.0/Qts0.70 są danymi tej wersji; nie zastępować liczbami staregoUM15-22.",
+  "source_extraction_sha256": "8d20cce79b7355c503f3da8473cfc8a0d5bd26c1b93afae6409bc126b2a8e0ad",
+  "scope": "Zweryfikowane tabele i jawne konwersje; nie użyto automatycznych odczytów punktów z wykresów."
+}

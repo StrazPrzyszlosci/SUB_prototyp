@@ -1,0 +1,29 @@
+{
+  "candidate_id": "C18",
+  "manufacturer": "PURIFI",
+  "model": {
+    "name": "PURIFI PTT10.0X04-NAB-01",
+    "fs_hz": 24,
+    "qes": 0.35,
+    "qms": 5.5,
+    "vas_l": 82,
+    "sd_cm2": 360,
+    "re_ohm": 3.9,
+    "le_mh": 0.62,
+    "xmax_mm": 14.75,
+    "nominal_ohm": 4,
+    "rated_w": 135
+  },
+  "catalog_extra": {
+    "qts": 0.33,
+    "mms_g": 98,
+    "cms_mm_n": 0.44,
+    "bl_tm": 12.8
+  },
+  "url": "https://purifi-audio.com/shop/ptt10-0x04-nab-01-ptt10-0x04-nab-01-2043",
+  "access_date": "2026-10-24",
+  "xmax_definition": "UżytoXlin±14.75mm. Producent oznaczaXmax±25mm jako MAXIMUM MECHANICAL, nie zakres liniowy.",
+  "data_issue": "Kontrola10calowa. Oficjalny sklep oznacza tę wersjęnot available for sale. Noise135W100h i long-term450W to różne protokoły. Nie mylićNAB-01zNAB-02.",
+  "source_extraction_sha256": "3e9c2d655826f8a70a327e800ffa1c876107c92535780777005a00c2bf259f16",
+  "scope": "Zweryfikowane tabele i jawne konwersje; nie użyto automatycznych odczytów punktów z wykresów."
+}

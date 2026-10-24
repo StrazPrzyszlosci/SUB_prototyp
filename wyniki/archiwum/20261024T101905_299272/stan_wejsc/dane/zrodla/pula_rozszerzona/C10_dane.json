@@ -1,0 +1,29 @@
+{
+  "candidate_id": "C10",
+  "manufacturer": "Scan-Speak",
+  "model": {
+    "name": "Scan-Speak 32W/4878T00",
+    "fs_hz": 18,
+    "qes": 0.33,
+    "qms": 7,
+    "vas_l": 203.9,
+    "sd_cm2": 526,
+    "re_ohm": 3.1,
+    "le_mh": 0.5,
+    "xmax_mm": 14,
+    "nominal_ohm": 4,
+    "rated_w": 200
+  },
+  "catalog_extra": {
+    "qts": 0.32,
+    "mms_g": 150,
+    "cms_mm_n": 0.52,
+    "bl_tm": 12.5
+  },
+  "url": "https://www.scan-speak.dk/datasheet/pdf/32w-4878t00.pdf",
+  "access_date": "2026-10-24",
+  "xmax_definition": "Linear excursion±14mm;±28mm jest mechaniczne.",
+  "data_issue": "Pe200W według100hnoise test,550W long-term to inny protokół. Wersja12.5calowa w klasie porównawczej12; brak porównywalnego THD.",
+  "source_extraction_sha256": "0804e00f83ca0db38db5adf7f3738fce34a606709832bb1bea941b21f2ec957e",
+  "scope": "Zweryfikowane tabele i jawne konwersje; nie użyto automatycznych odczytów punktów z wykresów."
+}

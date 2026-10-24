@@ -200,7 +200,8 @@ produktu jako masteringowy ani gotowy do sprzedaży na podstawie obecnej symulac
 Aktualizacja 2026-10-24: N7 wykonano w modelu zredukowanym (raport 009),
 porównano 24 modele / 11 producentów i rozpoczęto pole zespolone pokoju
 4,6 × 3,7 × 2,5 m (raport 013). P06 wykonano dla liniowych rodzin parametrów
-(raport 015). Najbliższy krok: P09/P10 — relaksacja cieplna gazu i wypełnienie.
+(raport 015). P09/P10 wykonano w jawnych rodzinach kontrolnych (raport 016).
+Najbliższy krok: P11 — skończony tłok, promieniowanie i konwencja Mmd/Mms.
 Obowiązuje pełny [program 30 pakietów](PROGRAM_30_BADAN.md).
 Oferty i dobór handlowy odłożono w U-010. Nie wybierać jeszcze zwycięzcy
 na podstawie samej liniowej granicy ruchu.

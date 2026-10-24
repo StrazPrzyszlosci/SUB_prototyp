@@ -1,0 +1,43 @@
+{
+  "status": "PASS_KONTRPRZYKLADY_W_ZADANYM_MODELU",
+  "independent_three_equation_max_error_db": 1.4210854715202004e-14,
+  "shared_amp_vrms": 40.0,
+  "shared_amp_irms": 12.0,
+  "individual_cases": 8,
+  "valid_pair_refutations": 4,
+  "pair_point_enclosures": [
+    {
+      "family": "D",
+      "a": "C02",
+      "b": "C11",
+      "upper_pressure_a_pa": 2.4356241581038307,
+      "lower_pressure_b_pa": 2.4587482949768,
+      "strict_iv_pressure_separation": true
+    },
+    {
+      "family": "D",
+      "a": "C11",
+      "b": "C02",
+      "upper_pressure_a_pa": 1.7933146527271953,
+      "lower_pressure_b_pa": 2.5350373889297786,
+      "strict_iv_pressure_separation": true
+    },
+    {
+      "family": "L",
+      "a": "C02",
+      "b": "C11",
+      "upper_pressure_a_pa": 1.203507220482213,
+      "lower_pressure_b_pa": 2.4587482949740456,
+      "strict_iv_pressure_separation": true
+    },
+    {
+      "family": "L",
+      "a": "C11",
+      "b": "C02",
+      "upper_pressure_a_pa": 1.617478759073834,
+      "lower_pressure_b_pa": 2.535037388662161,
+      "strict_iv_pressure_separation": true
+    }
+  ],
+  "limitation": "Świadek falsyfikuje uniwersalną dominację w zadanej rodzinie, nie wybiera lepszego produktu fizycznego."
+}
