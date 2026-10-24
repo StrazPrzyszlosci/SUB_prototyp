@@ -1,0 +1,3 @@
+name,inside_w_mm,inside_h_mm,inside_d_mm,outside_w_mm,outside_h_mm,outside_d_mm,gross_internal_l,assumed_driver_l,assumed_braces_l,net_before_modules_l,status
+K1_pogladowy,400,400,450,436,436,504,72.0,4.0,3.0,65.0,geometria_pogladowa_nie_projekt_CNC
+K2_pogladowy,460,460,640,496,496,694,135.424,6.0,5.0,124.424,geometria_pogladowa_nie_projekt_CNC

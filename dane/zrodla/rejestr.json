@@ -116,6 +116,89 @@
       "access_date": "2026-10-23",
       "method": "Firecrawl",
       "limitations": "Brak przyjętych ilościowych danych; patrz SRC13_14_notatki_firecrawl.json"
+    },
+    {
+      "id": "SRC15",
+      "url": "https://aes.org/publications/elibrary/elibrary-page/?id=2022",
+      "method": "Firecrawl",
+      "access_date": "2026-10-23",
+      "scope": "Abstrakt i metadane Small1972, JAES20(10),798–808; pełnego artykułu nie pobrano.",
+      "accepted": "Zależność modelu sealed od rezonansu i tłumienia oraz ograniczeńVd; bez przenoszenia nieodczytanych szczegółów."
+    },
+    {
+      "id": "SRC16",
+      "url": "https://www.klippel.de/know-how/measurements/transducer-parameters/single-valued-nonlinear-parameters.html",
+      "method": "Firecrawl",
+      "access_date": "2026-10-23",
+      "scope": "Odczyt dokumentacji producenta aparatury o parametrach dużosygnałowych.",
+      "accepted": "Strona wiążeXmax z ograniczeniamiBL,Cms,Le i kryterium zniekształceń; geometrycznep-p nie jest tym samym kryterium. Nie odczytano pełnego standarduAES2."
+    },
+    {
+      "id": "SRC17",
+      "url": "https://pim.kleiberit.com/Datenblaetter/303-0-00/technical/en/dbe3030_KSE.pdf",
+      "access_date": "2026-10-24",
+      "method": "Firecrawl, część tabeli procesu",
+      "source_hash": "3cfc3c16464bc0d1662482b5d9502ae006b236941ee6bb202152c2cb22c1d430",
+      "type": "dane_producenta_nie_kwalifikacja_spoiny_MDF",
+      "facts": {
+        "adhesive_family": "dyspersjaPVAc",
+        "moisture_class": "D3jednoskładnikowo,D4z utwardzaczem wedługTDS",
+        "recommended_process_c": [
+          18,
+          20
+        ],
+        "minimum_process_c": 10,
+        "open_time_at20c_min": [
+          6,
+          10
+        ],
+        "surface_application_g_m2": [
+          100,
+          130
+        ],
+        "solid_wood_application_g_m2": [
+          150,
+          200
+        ],
+        "joint_press_time_at20c_minimum_min": 15,
+        "final_D3_D4_bond_strength_after_days": 7
+      },
+      "unknown_design_inputs": [
+        "Dopuszczalne naprężenia spoinyMDF w ścinaniu/odrywaniu i zmęczeniu",
+        "Moduł i pełzanie przy rzeczywistej temperaturze/wilgotności",
+        "Czułość na szczelinę i grubość spoiny",
+        "Wartość nacisku w tej ekstrakcji wymaga oględzin oryginalnegoPDF"
+      ],
+      "decision": "Nie wybrano jeszcze kleju. Sama klasaD3/D4 nie zamyka obliczeńP19."
+    },
+    {
+      "id": "SRC18",
+      "url": "https://www.scan-speak.dk/datasheet/reviews/32W-4878T00-VoiceCoil_2013-3.pdf",
+      "access_date": "2026-10-24",
+      "scope": "Oryginalny skan obejrzany na stronach2–5; tabela2próbek i tekstKLIPPEL. Zobaczpomiary_opublikowane/scan32_voicecoil_2013.json",
+      "type": "opublikowany_test_przyrzadowy"
+    },
+    {
+      "id": "SRC19",
+      "title": "Meissner i Wiśniewski (2020), Investigation of damping effects on low-frequency steady-state acoustical behaviour of coupled spaces",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7481690/",
+      "method": "Firecrawl, odczyt metod i ograniczeń",
+      "access_date": "2026-10-24",
+      "type": "pierwotny_artykul_naukowy",
+      "scope": "Równanie falowe, rozwinięcie modalne, sprzężenie modów przez absorpcję. Nie użyto liczb obcego pomieszczenia jako danych naszego pokoju.",
+      "limitations": "Nasz model diagonalnego tłumienia jest uproszczeniem; nie jest replikacją ich układu sprzężonych pomieszczeń.",
+      "raw_capture_sha256": "278f4977e040b7eaa8581987986a5bca4c09f91833c3cb13d7857d4a15f44ec8"
+    },
+    {
+      "id": "SRC20",
+      "title": "COMSOL Application Library: Eigenmodes of a Room",
+      "url": "https://www.comsol.com/model/download/1166101/models.mph.eigenmodes_of_room.pdf",
+      "method": "Firecrawl, odczyt modelu i porównania analitycznego",
+      "access_date": "2026-10-24",
+      "type": "dokumentacja_metody",
+      "scope": "Funkcje i częstotliwości modów prostopadłościanu oraz ograniczenie idealnie sztywnych granic.",
+      "limitations": "Nie korzystano z ich liczb jako częstotliwości naszego pokoju; idealny model bez strat nie daje tłumienia.",
+      "raw_capture_sha256": "4bee571ec6fff6b4b3d7572b9c20bd930605b96b3c09d13f0ad33b74d771981f"
     }
   ]
 }

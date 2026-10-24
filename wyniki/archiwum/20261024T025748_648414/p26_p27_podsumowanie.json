@@ -1,0 +1,45 @@
+{
+  "status": "SCENARIUSZE_P26_P27_NIE_ODPOWIEDZ_ZMIERZONEGO_POKOJU",
+  "volume_m3": 42.55,
+  "dimensions_xyz_m": [
+    3.7,
+    4.6,
+    2.5
+  ],
+  "assumed_monitor_listener_distances_m": [
+    2.728094573140748,
+    2.728094573140748
+  ],
+  "main_curve_rows": 15876,
+  "diagnostic_rows": 1512,
+  "phase_cases": 120,
+  "geometry_rows": 48,
+  "convergence": [
+    {
+      "kmax_m_inv": 25.0,
+      "number_of_modes": 12185,
+      "max_complex_error_over_global_reference_max": 6.368501984873452e-05,
+      "max_level_difference_db": 0.08539948384942164
+    },
+    {
+      "kmax_m_inv": 40.0,
+      "number_of_modes": 48420,
+      "max_complex_error_over_global_reference_max": 2.533953175533947e-08,
+      "max_level_difference_db": 2.3291804445602082e-05
+    },
+    {
+      "kmax_m_inv": 55.0,
+      "number_of_modes": 124132,
+      "max_complex_error_over_global_reference_max": 0.0,
+      "max_level_difference_db": 0.0
+    }
+  ],
+  "uniform_room_to_100l_box_stiffness_ratio": 0.002350176263219742,
+  "limitations": [
+    "Pozycje i straty nie są zidentyfikowane.",
+    "Brak nielokalnych impedancji ścian, drzwi, mebli i nieprostopadłościennej geometrii.",
+    "Zadana U, brak reakcji pokoju na membranę; nie używać jako przewidywany SPL przetwornika.",
+    "Źródła i odbiorniki rozłożone przez regularizację, nie rysunek membrany.",
+    "Gabaryty tylko konieczne dla jednej sześciennej rodziny, bez potwierdzenia miejsca monitorów/przejść."
+  ]
+}

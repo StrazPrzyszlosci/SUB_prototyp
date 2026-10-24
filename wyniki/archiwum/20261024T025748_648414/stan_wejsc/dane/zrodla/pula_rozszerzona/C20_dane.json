@@ -1,0 +1,29 @@
+{
+  "candidate_id": "C20",
+  "manufacturer": "Dayton Audio",
+  "model": {
+    "name": "Dayton UMII12-22 seria",
+    "fs_hz": 31,
+    "qes": 0.71,
+    "qms": 2.75,
+    "vas_l": 53,
+    "sd_cm2": 528,
+    "re_ohm": 4.2,
+    "le_mh": 0.66,
+    "xmax_mm": 22,
+    "nominal_ohm": 4,
+    "rated_w": 800
+  },
+  "catalog_extra": {
+    "qts": 0.56,
+    "mms_g": 189,
+    "cms_mm_n": 0.133,
+    "bl_tm": 14.8
+  },
+  "url": "https://www.daytonaudio.com/product/2064/umii12-22-ultimax-ii-12-dvc-subwoofer-2-ohms-per-coil",
+  "access_date": "2026-10-24",
+  "xmax_definition": "Deklarowane±22mm, metoda liniowości do potwierdzenia.",
+  "data_issue": "Producent wyraźnie podaje parametry z cewkami szeregowymi:2+2Ω ->4Ω. UMII nie jestUM pierwszejgeneracji; nie używać ich opinii/pomiarów zamiennie.",
+  "source_extraction_sha256": "3c3945ff6d4b5006f567db19357b52f400642057b32dfb597d73c290189f224b",
+  "scope": "Zweryfikowane tabele i jawne konwersje; nie użyto automatycznych odczytów punktów z wykresów."
+}

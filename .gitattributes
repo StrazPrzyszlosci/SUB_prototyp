@@ -7,3 +7,6 @@
 
 # Wykresy SVG są generowanymi artefaktami Matplotlib.
 *.svg whitespace=-blank-at-eol
+
+# Materiały dostarczone przez użytkownika zachowujemy bez zmian bajtowych.
+dane/zrodla/materialy_uzytkownika/* whitespace=-blank-at-eol,-blank-at-eof

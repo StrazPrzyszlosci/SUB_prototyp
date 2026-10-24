@@ -1,0 +1,29 @@
+{
+  "candidate_id": "C24",
+  "manufacturer": "Eminence",
+  "model": {
+    "name": "Eminence LAB15 6ohm",
+    "fs_hz": 28,
+    "qes": 0.37,
+    "qms": 5.36,
+    "vas_l": 103.61,
+    "sd_cm2": 823.7,
+    "re_ohm": 4.9,
+    "le_mh": 3.23,
+    "xmax_mm": 11.8,
+    "nominal_ohm": 6,
+    "rated_w": 600
+  },
+  "catalog_extra": {
+    "qts": 0.35,
+    "mms_g": 308,
+    "cms_mm_n": 0.11,
+    "bl_tm": 26.7
+  },
+  "url": "https://eminence.com/products/lab_15",
+  "access_date": "2026-10-24",
+  "xmax_definition": "Maximum linear excursion11.8mm;Xlim22mm to granica mechaniczna.",
+  "data_issue": "Nominalnie6Ω. Karta zaleca sealed35–108L; moc600W i parametry nie są gwarancjąTHD przy20Hz.",
+  "source_extraction_sha256": "8a3231fcdef5681fcd5577c23e0fd3ac50c446b56111ab44a6e40aaf2458ae32",
+  "scope": "Zweryfikowane tabele i jawne konwersje; nie użyto automatycznych odczytów punktów z wykresów."
+}

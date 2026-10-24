@@ -1,0 +1,29 @@
+{
+  "candidate_id": "C06",
+  "manufacturer": "STX",
+  "model": {
+    "name": "STX W.32.800.8.FCX",
+    "fs_hz": 24,
+    "qes": 0.45,
+    "qms": 3.34,
+    "vas_l": 96,
+    "sd_cm2": 491,
+    "re_ohm": 5.4,
+    "le_mh": 1.68,
+    "xmax_mm": 15,
+    "nominal_ohm": 8,
+    "rated_w": 400
+  },
+  "catalog_extra": {
+    "qts": 0.39,
+    "mms_g": 160,
+    "cms_mm_n": 0.27,
+    "bl_tm": 17.2
+  },
+  "url": "https://stx.pl/pl/w-32-800-8-fcx.html",
+  "access_date": "2026-10-24",
+  "xmax_definition": "30mm p-p ->15mm jednostronnie;58mm p-p to granica bez uszkodzenia, nie Xmax.",
+  "data_issue": "Angielska wersja strony nie zawierała pełnychT/S; odczytano polską. Moc znamionowa25–500Hz; brak THD i termiki.",
+  "source_extraction_sha256": "345d25d9334897e72c2c4d0b6fa9aaf1ecaf18c64f8940fe202b570548df3848",
+  "scope": "Zweryfikowane tabele i jawne konwersje; nie użyto automatycznych odczytów punktów z wykresów."
+}

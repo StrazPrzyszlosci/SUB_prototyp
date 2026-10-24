@@ -1,5 +1,10 @@
 # Raport 007 — sprężyna powietrzna, Re i cele korekcji
 
+Aktualizacja po tym raporcie: N7 wykonano i udokumentowano w
+[raporcie009](009_N7_straty_nieszczelnosci.md). Użytkownik zlecił następnie
+[program30badań](../PROGRAM_30_BADAN.md) i rozszerzenie puli producentów;
+poniższe wyniki pozostają historycznym eksperymentem czterech modeli.
+
 Data 2026-10-23. Zakres naukowy zgodny zU-010. Wszystkie liczby poniżej
 są **obliczeniami lub scenariuszami**, bez pomiarów fizycznego prototypu.
 

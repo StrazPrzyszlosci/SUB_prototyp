@@ -60,6 +60,30 @@ Optymalizacja jednego sweet spotu 2,5–3 m; brak narzuconego budżetu i gabaryt
     danych oraz sprawdzenia granic fizycznych i numerycznych. Dla każdej
     granicy określać dziedzinę i oczekiwany wynik; nie deklarować sprawdzenia
     wszystkich możliwych zjawisk na podstawie skończonej siatki.
+19. Wykonywać [program30pakietów](PROGRAM_30_BADAN.md) przekazany przez
+    użytkownika. KońcowyPDF z wynikami, wykresami i rekomendacją powstaje
+    dopiero po wykonaniu programu badań możliwych bez fizycznego urządzenia.
+    Ostatecznie wskazać jeden głośnik i jedną konstrukcję regulowanej skrzyni.
+20. Rozszerzyć pulę szeroko, w tym oSTX i innych producentów. Dla każdego
+    kandydata pozyskać dane pierwotne, zbadać opinie i wykonać obliczenia
+    w porównywalnych warunkach. Zakwalifikowanie do puli nie oznacza
+    potwierdzonego spełnienia briefu. Rejestrować brakujące dane i odrzucenia.
+21. Dobór kleju włączyć doP19: obciążenia ciśnieniem/drganiami, ścinanie,
+    odrywanie, nośność MDF, geometria i grubość spoiny, pełzanie, temperatura,
+    wilgotność, zmęczenie i szczelność. D3/D4 nie jest samodzielnym dowodem
+    nośności. Front demontowalny badać osobno z uszczelką i mocowaniem.
+22. Automatyczne tablice liczbowych punktów „odczytanych z wykresów” przez
+    Firecrawl nie są surowymi pomiarami. Przed ilościowym użyciem sprawdzić
+    oryginalny obraz, osie, warunki i niepewność digitalizacji. W publikacji
+    Scan32 odrzucono takie tablice; zaakceptowano wyłącznie odczytane wzrokowo
+    tabele parametrów i liczby jawnie podane w tekście. Opinia z forum nie
+    przechodzi na inny model, generację, impedancję ani topologię obudowy.
+23. Pokój: przybliżone4.6×3.7×2.5m,17.02m²/42.55m³. Przednia ściana
+    ma3.7m. Sweetspot2.5–3m; dwa subwoofery w realnych miejscach przy
+    monitorach. Sprawdzać gabaryty i prześwity dwóch egzemplarzy, nie tylko
+    wynikSPL20Hz. Nie zakładać możliwego układu przód/tył. Konwencja osi
+    jest w `dane/konfiguracje/pokoj_odsluchowy.json`; dotychczasowe mody
+    zapisano w kolejności długość/szerokość/wysokość, nie x/y/z.
 
 ## Stan i postępy
 
@@ -81,6 +105,27 @@ Postęp końca sesji2026-10-23:
   SSH nie miał dostępu. Ponowienie z HTTP/1.1 i buforem 50 MiB zakończyło się
   powodzeniem po pierwszym HTTP408. Git zachowuje dokładne bajty danych
   objętych SHA-256 zgodnie z `.gitattributes`.
+
+## Postęp 2026-10-24
+
+- N7/P08: model przecieku z bilansami, stanem, ODE i granicami; raport 009.
+- Pula rozszerzona: 24 modele / 11 producentów, 4 STX, źródła producentów,
+  24 krytyczne oceny opinii, 12 576 porównywalnych scenariuszy; raport 010.
+- P07: analityczne granice po wszystkich dodatnich Vb dla pojedynczych sinusów,
+  288 przypadków z niezależną kontrolą numeryczną; raport 011.
+- P03: nieidentyfikowalność samej impedancji, identyfikacja syntetyczna z dwóch
+  Vb, wspólne opublikowane zestawy dwóch próbek Scan32; raport 012.
+- Przypomnienie wymiarów pokoju włączono do konfiguracji i kontroli osi.
+  P26/P27: 15 876 wierszy S0, 1512 diagnostycznych, 120 przypadków fazy,
+  48 koniecznych testów gabarytu; niezależny Green 1D, wzajemność, pasywność
+  i zbieżność ucięcia. Raport 013 i baza wiedzy 09. Pozycje i straty są
+  scenariuszami, nie pomiarami. Brak swobodnego układu przód/tył.
+- Nie ma końcowego PDF, fizycznych wyników THD/temperatury ani finalnego
+  zwycięzcy. Klej, panele, termika, nieliniowości i ochrona nadal otwarte.
+- **Następny krok: P06 — globalna niepewność i odporność porównania szerokiej
+  puli.** Nie powtarzać wykonanego N7 ani wyszukiwań wszystkich 24 opinii
+  bez konkretnej nowej hipotezy lub źródła. Dokładne pozycje w pokoju pozostają
+  pytaniem otwartym; rozdzielać je od jawnych scenariuszy w p26_scenariusze.json.
 
 ## Decyzje otwarte
 

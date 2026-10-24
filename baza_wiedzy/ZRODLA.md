@@ -1,5 +1,12 @@
 # Rejestr źródeł
 
+Rozszerzenie 2026-10-24: [24 modele z danymi producentów](../dane/przetworniki/pula_rozszerzona.json),
+[jawny przegląd źródeł opinii](../dane/zrodla/opinie_puli_przeglad.json) i
+[krytyczna ocena trafień](../dane/zrodla/opinie_puli_ocena.json).
+Tabele producenta są danymi katalogowymi, a opinie źródłami problemów i hipotez.
+Nie są automatycznie niezależnymi pomiarami. Źródła i konwersje jednostek
+przypisano indywidualnie do każdego kandydata.
+
 Data dostępu: **2026-10-23**, o ile nie zaznaczono inaczej. Strony i obrazy
 odczytywano przez browser-harness. Firecrawl odczytał również PDF RSS315HF-4
 oraz dwie dodatkowe dyskusje. Samo znalezienie linku nie oznacza analizy źródła.
@@ -20,6 +27,27 @@ oraz dwie dodatkowe dyskusje. Samo znalezienie linku nie oznacza analizy źród�
 | SRC12 | [Allegro, wykonawca17586111495](https://allegro.pl/oferta/elementy-obudowa-glosnika-mdf-na-zamowienie-subwoofer-cnc-na-wymiar-17586111495) | Pełny opis przekazał użytkownik; [wyciąg technologiczny](../WYKONAWCA_CNC.md) | Bez niezależnego audytu aktualnej oferty i wyceny |
 | SRC13 | [diyAudio386102, strona2](https://www.diyaudio.com/community/threads/sealed-ported-convertible-subwoofer.386102/page-2) | Firecrawl; relacja o obudowie przełączanej, wzmianki o testach | Mieszane modele; SB3DVC to inny przetwornik; wzmianki oTHD wymagają oryginalnych testów |
 | SRC14 | [ASR28117, strona3](https://www.audiosciencereview.com/forum/index.php?threads/help-with-my-faulty-12-subwoofer-design.28117/page-3) | Firecrawl; dyskusja o pomiarzeTHD i obudowieSB | Brak pełnego protokołu; nie przyjmować ogólnej porady o 70l jako dowodu optimum |
+
+## Nowe źródła teoretyczne i pomiarowe
+
+- SRC15: [Small, Closed-Box Loudspeaker Systems, 1972](https://aes.org/publications/elibrary/elibrary-page/?id=2022).
+  Odczytano abstrakt i metadane; nie zadeklarowano przeczytania pełnego artykułu.
+- SRC16: [KLIPPEL — single-valued nonlinear parameters](https://www.klippel.de/know-how/measurements/transducer-parameters/single-valued-nonlinear-parameters.html).
+  Odczyt definicji i kryteriów. Nie utożsamiać wszystkich katalogowych Xmax.
+- SRC17: [Kleiberit 303.0 — karta producenta](https://pim.kleiberit.com/Datenblaetter/303-0-00/technical/en/dbe3030_KSE.pdf).
+  [Zapis faktów procesu i braków obliczeniowych](../dane/zrodla/SRC17_klej_Kleiberit303_fakty.json).
+  Klasa D3/D4 nie zastępuje danych nośności połączenia MDF; kleju nie wybrano.
+- SRC18: [Voice Coil — Scan-Speak 32W/4878T00, materiał z 2013](https://www.scan-speak.dk/datasheet/reviews/32W-4878T00-VoiceCoil_2013-3.pdf).
+  Obejrzano strony 2–5; [zweryfikowane dane](../dane/zrodla/pomiary_opublikowane/scan32_voicecoil_2013.json).
+  Tabela dwóch próbek nie jest tolerancją populacji. Automatycznych tablic z krzywych nie przyjęto.
+- SRC19: [Meissner i Wiśniewski (2020), tłumienie i pole niskoczęstotliwościowe](https://pmc.ncbi.nlm.nih.gov/articles/PMC7481690/).
+  Odczyt metod i ograniczeń; własny model diagonalny jest uproszczeniem ich teorii.
+- SRC20: [COMSOL — Eigenmodes of a Room](https://www.comsol.com/model/download/1166101/models.mph.eigenmodes_of_room.pdf).
+  Odczyt analitycznej podstawy i granic modelu sztywnych ścian; nie uruchamiano CAD/COMSOL.
+
+Przekazane przez użytkownika oceny i program są zachowane w
+[materialach źródłowych](../dane/zrodla/materialy_uzytkownika/indeks.json).
+To wymagania i komentarze do badań, a nie niezależna walidacja osiągów.
 
 ## Pliki zachowane lokalnie
 

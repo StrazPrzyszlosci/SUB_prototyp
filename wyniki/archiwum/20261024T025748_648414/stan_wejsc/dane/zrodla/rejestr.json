@@ -1,0 +1,204 @@
+{
+  "records": [
+    {
+      "id": "SRC01",
+      "url": "https://www.daytonaudio.com/product/121/rss315hf-4-12-reference-hf-subwoofer-4-ohm",
+      "type": "dane_producenta",
+      "access_date": "2026-10-23",
+      "method": "browser-harness WWW; Firecrawl PDF",
+      "transcription_file": "dane/przetworniki/kandydaci.json",
+      "limitations": "WWW BL=1Tm sprzeczne z resztą; PDF odczytany Firecrawl podaje13.99Tm. Model wyprowadza14.22Tm zFs/Qes/Vas/Sd/Re, zachowując katalogoweMms188g osobno.",
+      "pdf_url": "https://www.daytonaudio.com/images/resources/295-464-dayton-audio-rss315hf-4-specifications-46174.pdf"
+    },
+    {
+      "id": "SRC02",
+      "url": "https://www.daytonaudio.com/product/126/rss390hf-4-15-reference-hf-subwoofer-4-ohm",
+      "type": "dane_producenta",
+      "access_date": "2026-10-23",
+      "method": "browser-harness",
+      "transcription_file": "dane/przetworniki/kandydaci.json",
+      "limitations": "Nie utożsamiać katalogowego Xmax i Pe z niskim THD oraz zdolnością cieplną w dowolnym sygnale."
+    },
+    {
+      "id": "SRC03",
+      "url": "https://sbacoustics.com/wp-content/uploads/2022/03/12in-SB34SWPL76-4.pdf",
+      "type": "dane_producenta",
+      "access_date": "2026-10-23",
+      "method": "browser-harness",
+      "transcription_file": "dane/przetworniki/kandydaci.json",
+      "limitations": "T/S po wygrzaniu według PDF. Pe wskazuje IEC268-5, bez analizy pełnego protokołu. Duże Le: stała indukcyjność to przybliżenie. Xmax w modelu przeliczone z podanego p-p."
+    },
+    {
+      "id": "SRC04",
+      "url": "https://www.adam-audio.com/en/subwoofers/sub12/",
+      "type": "dane_producenta",
+      "access_date": "2026-10-23",
+      "method": "browser-harness",
+      "limitations": "22-150Hz; max peak≥115dB@1m. Brak pełnego protokołu w odczycie."
+    },
+    {
+      "id": "SRC05",
+      "url": "https://www.adam-audio.com/en/subwoofers/sub15/",
+      "type": "dane_producenta",
+      "access_date": "2026-10-23",
+      "method": "browser-harness",
+      "limitations": "20-150Hz; maxSPL≥120dB@1m. Brak pasmowego kryterium limitu."
+    },
+    {
+      "id": "SRC06",
+      "url": "https://www.adam-audio.com/en/a-series/a8h/",
+      "type": "dane_producenta",
+      "access_date": "2026-10-23",
+      "method": "browser-harness",
+      "limitations": "Strona podaje peak105dB na sztukę@1m i31-45kHz@-6dB. Warunki wymagają raportu."
+    },
+    {
+      "id": "SRC07",
+      "url": "https://www.adam-audio.com/en/s-series/s3v/",
+      "type": "dane_producenta",
+      "access_date": "2026-10-23",
+      "method": "browser-harness",
+      "limitations": "Strona podaje≥124dB na parę@1m; brak normalizacji z A8H."
+    },
+    {
+      "id": "SRC08",
+      "url": "https://www.minidsp.com/products/minidsp-in-a-box/minidsp-flex-eight",
+      "type": "dane_producenta",
+      "access_date": "2026-10-23",
+      "method": "browser-harness",
+      "limitations": "8wyjśćRCA; aktualny opis z opcjonalnymDante i wejściami cyfrowymi. Instrukcja do analizy."
+    },
+    {
+      "id": "SRC09",
+      "url": "https://www.daytonaudio.com/product/123/rss315hfa-8-12-reference-hf-subwoofer-8-ohm",
+      "type": "dane_producenta",
+      "access_date": "2026-10-23",
+      "method": "browser-harness",
+      "transcription_file": "dane/przetworniki/kandydaci.json",
+      "limitations": "Wariant 8 ohm nie jest RSS315HF-4; nie mieszać danych. Porównanie przy tym samym napięciu i przy tej samej mocy to różne eksperymenty."
+    },
+    {
+      "id": "SRC10",
+      "url": "https://www.diyaudio.com/community/threads/diy-sub-with-dayton-rss315hf-4-in-progress-can-someone-check-my-math.72895/",
+      "type": "relacja_historyczna",
+      "access_date": "2026-10-23",
+      "method": "browser-harness",
+      "limitations": "Własne doświadczenia i korekta Vas; wpisy2006; nie aktualneT/S."
+    },
+    {
+      "id": "SRC11",
+      "url": "https://www.diyaudio.com/community/threads/help-finalising-enclosure-design-dayton-rss315hf-4.360765/",
+      "type": "forum_projekt_i_symulacja",
+      "access_date": "2026-10-23",
+      "method": "browser-harness",
+      "limitations": "Obejrzano9załączników; BR, nie pomiar sealed."
+    },
+    {
+      "id": "SRC12",
+      "url": "https://allegro.pl/oferta/elementy-obudowa-glosnika-mdf-na-zamowienie-subwoofer-cnc-na-wymiar-17586111495",
+      "type": "opis_przekazany_przez_uzytkownika",
+      "access_date": "2026-10-23",
+      "method": "opis użytkownika",
+      "limitations": "OgraniczeniaCNC i tolerancje jako deklaracja, bez niezależnego audytu oferty."
+    },
+    {
+      "id": "SRC13",
+      "url": "https://www.diyaudio.com/community/threads/sealed-ported-convertible-subwoofer.386102/page-2",
+      "type": "relacja_i_wskazowki",
+      "access_date": "2026-10-23",
+      "method": "Firecrawl",
+      "limitations": "Brak przyjętych ilościowych danych; patrz SRC13_14_notatki_firecrawl.json"
+    },
+    {
+      "id": "SRC14",
+      "url": "https://www.audiosciencereview.com/forum/index.php?threads/help-with-my-faulty-12-subwoofer-design.28117/page-3",
+      "type": "dyskusja_techniczna",
+      "access_date": "2026-10-23",
+      "method": "Firecrawl",
+      "limitations": "Brak przyjętych ilościowych danych; patrz SRC13_14_notatki_firecrawl.json"
+    },
+    {
+      "id": "SRC15",
+      "url": "https://aes.org/publications/elibrary/elibrary-page/?id=2022",
+      "method": "Firecrawl",
+      "access_date": "2026-10-23",
+      "scope": "Abstrakt i metadane Small1972, JAES20(10),798–808; pełnego artykułu nie pobrano.",
+      "accepted": "Zależność modelu sealed od rezonansu i tłumienia oraz ograniczeńVd; bez przenoszenia nieodczytanych szczegółów."
+    },
+    {
+      "id": "SRC16",
+      "url": "https://www.klippel.de/know-how/measurements/transducer-parameters/single-valued-nonlinear-parameters.html",
+      "method": "Firecrawl",
+      "access_date": "2026-10-23",
+      "scope": "Odczyt dokumentacji producenta aparatury o parametrach dużosygnałowych.",
+      "accepted": "Strona wiążeXmax z ograniczeniamiBL,Cms,Le i kryterium zniekształceń; geometrycznep-p nie jest tym samym kryterium. Nie odczytano pełnego standarduAES2."
+    },
+    {
+      "id": "SRC17",
+      "url": "https://pim.kleiberit.com/Datenblaetter/303-0-00/technical/en/dbe3030_KSE.pdf",
+      "access_date": "2026-10-24",
+      "method": "Firecrawl, część tabeli procesu",
+      "source_hash": "3cfc3c16464bc0d1662482b5d9502ae006b236941ee6bb202152c2cb22c1d430",
+      "type": "dane_producenta_nie_kwalifikacja_spoiny_MDF",
+      "facts": {
+        "adhesive_family": "dyspersjaPVAc",
+        "moisture_class": "D3jednoskładnikowo,D4z utwardzaczem wedługTDS",
+        "recommended_process_c": [
+          18,
+          20
+        ],
+        "minimum_process_c": 10,
+        "open_time_at20c_min": [
+          6,
+          10
+        ],
+        "surface_application_g_m2": [
+          100,
+          130
+        ],
+        "solid_wood_application_g_m2": [
+          150,
+          200
+        ],
+        "joint_press_time_at20c_minimum_min": 15,
+        "final_D3_D4_bond_strength_after_days": 7
+      },
+      "unknown_design_inputs": [
+        "Dopuszczalne naprężenia spoinyMDF w ścinaniu/odrywaniu i zmęczeniu",
+        "Moduł i pełzanie przy rzeczywistej temperaturze/wilgotności",
+        "Czułość na szczelinę i grubość spoiny",
+        "Wartość nacisku w tej ekstrakcji wymaga oględzin oryginalnegoPDF"
+      ],
+      "decision": "Nie wybrano jeszcze kleju. Sama klasaD3/D4 nie zamyka obliczeńP19."
+    },
+    {
+      "id": "SRC18",
+      "url": "https://www.scan-speak.dk/datasheet/reviews/32W-4878T00-VoiceCoil_2013-3.pdf",
+      "access_date": "2026-10-24",
+      "scope": "Oryginalny skan obejrzany na stronach2–5; tabela2próbek i tekstKLIPPEL. Zobaczpomiary_opublikowane/scan32_voicecoil_2013.json",
+      "type": "opublikowany_test_przyrzadowy"
+    },
+    {
+      "id": "SRC19",
+      "title": "Meissner i Wiśniewski (2020), Investigation of damping effects on low-frequency steady-state acoustical behaviour of coupled spaces",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7481690/",
+      "method": "Firecrawl, odczyt metod i ograniczeń",
+      "access_date": "2026-10-24",
+      "type": "pierwotny_artykul_naukowy",
+      "scope": "Równanie falowe, rozwinięcie modalne, sprzężenie modów przez absorpcję. Nie użyto liczb obcego pomieszczenia jako danych naszego pokoju.",
+      "limitations": "Nasz model diagonalnego tłumienia jest uproszczeniem; nie jest replikacją ich układu sprzężonych pomieszczeń.",
+      "raw_capture_sha256": "278f4977e040b7eaa8581987986a5bca4c09f91833c3cb13d7857d4a15f44ec8"
+    },
+    {
+      "id": "SRC20",
+      "title": "COMSOL Application Library: Eigenmodes of a Room",
+      "url": "https://www.comsol.com/model/download/1166101/models.mph.eigenmodes_of_room.pdf",
+      "method": "Firecrawl, odczyt modelu i porównania analitycznego",
+      "access_date": "2026-10-24",
+      "type": "dokumentacja_metody",
+      "scope": "Funkcje i częstotliwości modów prostopadłościanu oraz ograniczenie idealnie sztywnych granic.",
+      "limitations": "Nie korzystano z ich liczb jako częstotliwości naszego pokoju; idealny model bez strat nie daje tłumienia.",
+      "raw_capture_sha256": "4bee571ec6fff6b4b3d7572b9c20bd930605b96b3c09d13f0ad33b74d771981f"
+    }
+  ]
+}

@@ -20,11 +20,17 @@ Brief podaje orientacyjnie 4,6 × 3,7 × 2,5 m, betonowe ściany i krótszą śc
 Część sufitu ma panele perforowane z wełną; pułapki narożne są planowane, a tył zajmują regały.
 Stan istniejący i planowane zmiany trzeba rozdzielić w opisie konfiguracji; nie przypisywać ustrojom nieznanych parametrów.
 Wymiary pozostają wejściem roboczym, a nie inwentaryzacją wykonawczą; sprawdzenie wymiarów może zmienić model.
-Przyjmujemy oś x wzdłuż głębokości 4,6 m, y wzdłuż szerokości 3,7 m, z pionowo na wysokość 2,5 m.
+Aktualizacja 2026-10-24: przyjmujemy oś x wzdłuż szerokości 3,7 m,
+y wzdłuż głębokości 4,6 m, z pionowo na wysokość 2,5 m, zgodnie z
+[konfiguracją pokoju](../dane/konfiguracje/pokoj_odsluchowy.json).
+Wcześniejsza wersja rozdziału miała zamienione nazwy x/y; wartości wymiarów
+nie zmieniły się. Starszy CSV modów używa kolejności długość/szerokość/wysokość.
 Początek współrzędnych: narożnik przy ścianie przedniej i podłodze; na szkicu określić dodatnie kierunki osi.
 Dokładne punkty źródeł, głowy, drzwi, regałów i mebli trzeba dopiero wpisać do tego układu.
 Sam opis materiałów i wymiarów nie określa strat, szczelności pomieszczenia ani sprzężenia ze źródłem.
-Nie wyznaczamy amplitud modów, RT, czasów zaniku ani room gain; nie przyjmujemy stałego podbicia basu od pokoju.
+Nie znamy amplitud modów, RT ani room gain tego pokoju; nie przyjmujemy
+stałego podbicia basu. Aktualizacja: [raport 013](../raporty/013_pokoj_i_realne_gabaryty.md)
+bada jawne scenariusze zespolonego pola ze stratami; nie identyfikuje rzeczywistych parametrów.
 Adaptacja nie jest dowodem rozwiązania problemów niskotonowych; jej rzeczywisty wpływ pozostaje do późniejszego sprawdzenia.
 
 ## 3. Własne obliczenie: idealny model częstotliwości modów
@@ -37,8 +43,8 @@ Dla pierwszego modu osiowego na danej osi pozostałe indeksy są zerowe, więc `
 
 | Oś / indeks | Podstawienie w SI | Wynik własnego obliczenia | Status |
 | --- | --- | --- | --- |
-| x / (1,0,0) | `343/(2 × 4,6)` | około 37,28 Hz | Model idealny |
-| y / (0,1,0) | `343/(2 × 3,7)` | około 46,35 Hz | Model idealny |
+| y / (0,1,0) | `343/(2 × 4,6)` | około 37,28 Hz | Model idealny |
+| x / (1,0,0) | `343/(2 × 3,7)` | około 46,35 Hz | Model idealny |
 | z / (0,0,1) | `343/(2 × 2,5)` | około 68,60 Hz | Model idealny |
 
 Wartości policzono w Pythonie jako `343.0 / (2.0 * L)` dla L równego kolejno 4.6, 3.7 i 2.5.
@@ -108,6 +114,8 @@ Dla przyszłych sesji zachować pliki surowe, konfiguracje, preset DSP, czas odn
 Przerwać interpretację jako cechy urządzenia, gdy zmienia się pokój lub geometria bez porównywalnych danych; zawęzić wniosek do konfiguracji.
 Nie kończyć strojenia na jednej korzystnej krzywej: sprawdzić powtarzalność S0, sąsiedztwo oraz wpływ korekcji na wymagane poziomy.
 Jeśli ograniczenie toru lub niestabilny timing uniemożliwia odpowiedź, oznaczyć pytanie jako otwarte zamiast dopasowywać fazę do oczekiwań.
-Obecnym wynikiem jest mapa założeń i wykonalnych eksperymentów; nie mamy pomiaru odpowiedzi, RT, room gain ani maksymalnego SPL.
+Wynik pierwszej wersji to mapa założeń i wykonalnych eksperymentów.
+Wersję obliczeniową P26/P27 rozwijają [rozdział 09](09_zespolony_model_pokoju.md)
+i raport 013; nadal nie mamy pomiaru odpowiedzi, RT, room gain ani maksymalnego SPL.
 Pakiet do budowy powinien zachować możliwość przesunięcia skrzyni, odtworzenia konfiguracji i późniejszej kalibracji w innym pokoju.
 Dalszą walidację opisuje `06_metrologia_i_walidacja.md`; organizację dowodów i decyzji rozwija `07_niepewnosc_i_organizacja_badan.md`.

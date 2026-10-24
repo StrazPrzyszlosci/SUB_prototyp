@@ -1,0 +1,29 @@
+{
+  "candidate_id": "C08",
+  "manufacturer": "STX",
+  "model": {
+    "name": "STX W.38.800.8.MC",
+    "fs_hz": 28,
+    "qes": 0.27,
+    "qms": 3.71,
+    "vas_l": 247,
+    "sd_cm2": 850,
+    "re_ohm": 5.7,
+    "le_mh": 3.68,
+    "xmax_mm": 8,
+    "nominal_ohm": 8,
+    "rated_w": 500
+  },
+  "catalog_extra": {
+    "qts": 0.24,
+    "mms_g": 136,
+    "cms_mm_n": 0.24,
+    "bl_tm": 23
+  },
+  "url": "https://stx.pl/w-38-800-8-mc.html",
+  "access_date": "2026-10-24",
+  "xmax_definition": "16mm p-p ->8mm jednostronnie.",
+  "data_issue": "MocAES30–1000Hz, nie próg20Hz; dużeLe wymaga audytu częstotliwościowego. Czułość podano przy2.00V, nie2.83V.",
+  "source_extraction_sha256": "eef1bc4cfe8899cc8576760bef368e688fc9c7560c0a8fdd2eb0718a76dac304",
+  "scope": "Zweryfikowane tabele i jawne konwersje; nie użyto automatycznych odczytów punktów z wykresów."
+}

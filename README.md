@@ -2,7 +2,21 @@
 
 Badania naukowe i rozwój prototypu subwoofera zamkniętego.
 
+**Aktualizacja 2026-10-24:** pula obejmuje 24 modele od 11 producentów,
+w tym 4 STX. Wykonano 12 576 scenariuszy objętości/napędu, analizę N7,
+288 przypadków granic po dodatnich Vb oraz badanie identyfikowalności.
+To nadal badania przed prototypem, bez zatwierdzonego rankingu THD.
+Zacznij od [raportu 010](raporty/010_szeroka_pula_i_kwalifikacja.md),
+[011](raporty/011_granice_globalne_litrazu.md) i
+[012](raporty/012_identyfikowalnosc_i_dane_publikowane.md).
+Pokój około **4,6 × 3,7 × 2,5 m** jest jawnym wejściem:
+[raport 013 — pole zespolone, dwa źródła i ograniczenia gabarytów](raporty/013_pokoj_i_realne_gabaryty.md).
+
 **Bieżący zakres: wyłącznie naukowe zagadnienia prototypu (U-010).**
+Najnowsze zlecenie: [program30badań](PROGRAM_30_BADAN.md), szeroka pula
+producentów w tymSTX, obliczeniowy dobór kleju i końcowa rekomendacja
+jednego głośnika oraz jednej konstrukcji. KońcowyPDF po ukończeniu prac
+możliwych bez urządzenia. Wykonany N7: [raport009](raporty/009_N7_straty_nieszczelnosci.md).
 Zacznij od [planu naukowego](PLAN_BADAN_NAUKOWYCH.md) i
 [raportu fizyki/DSP](raporty/007_fizyka_nieliniowosci_i_DSP.md).
 Opisy wycen i doboru handlowego w starszym planie dotyczą odłożonych etapów.
@@ -46,6 +60,12 @@ Brak modelu THD, kompresji cieplnej i zidentyfikowanej odpowiedzi pokoju.
 6. [006 — narzędzia symulacji i rolaMCP](raporty/006_narzedzia_symulacyjne_i_MCP.md).
 7. [007 — sprężyna powietrzna, wzrostRe i216wariantówDSP](raporty/007_fizyka_nieliniowosci_i_DSP.md).
 8. [008 — kontrole i odtwarzalność pakietu](raporty/008_weryfikacja_pakietu.md).
+9. [009 — wykonane badanie strat i nieszczelnościN7](raporty/009_N7_straty_nieszczelnosci.md).
+10. [010 — szeroka pula i krytyczna kwalifikacja](raporty/010_szeroka_pula_i_kwalifikacja.md).
+11. [011 — analityczne granice po dodatnim litrażu](raporty/011_granice_globalne_litrazu.md).
+12. [012 — identyfikowalność i opublikowane parametry](raporty/012_identyfikowalnosc_i_dane_publikowane.md).
+13. [013 — pokój, dwa źródła i realne gabaryty](raporty/013_pokoj_i_realne_gabaryty.md).
+14. [014 — weryfikacja etapu i odtwarzalność](raporty/014_weryfikacja_etapu_20261024.md).
 
 ## Odtworzenie obliczeń
 
@@ -74,7 +94,8 @@ F3 i granice ruchu/napędu. Nie potwierdzają osiągów fizycznego egzemplarza.
 `skrypty/` — modele i kontrole. `wyniki/` — wygenerowane tabele,wykresy,manifest.
 `raporty/` — interpretacje i rekomendacje. `szablony/` — karty przyszłych prac.
 
-Źródła z internetu: browser-harness oraz dopuszczonyFirecrawl. Kosztorys,
-dostępnośćPL/UE, pełne opinie wszystkich kandydatów i finalny napęd pozostają
-otwarte i są obecnie odłożone. Najbliższy krok naukowy: model strat
-i nieszczelności N7, z kontrolą granicy szczelnej i dodatniej mocy strat.
+Źródła z internetu: browser-harness oraz dopuszczony Firecrawl. Kosztorys,
+dostępność PL/UE i dobór handlowy pozostają odłożone. Przegląd opinii wszystkich
+24 kandydatów wykonano z jawnymi brakami; nie stanowi rankingu jakości.
+Najbliższy krok: P06 — globalna niepewność i odporność porównania pod brief,
+następnie nieliniowości, termika, mechanika z klejem i integracja modeli.

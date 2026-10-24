@@ -42,6 +42,12 @@ def main():
     cfg_path = ROOT / 'dane/konfiguracje/badania_wstepne.json'
     data = json.loads(data_path.read_text())
     cfg = json.loads(cfg_path.read_text())
+    room_path = ROOT / 'dane/konfiguracje/pokoj_odsluchowy.json'
+    if room_path.exists():
+        room = json.loads(room_path.read_text())
+        expected = [room['length_y_m'], room['width_x_m'], room['height_z_m']]
+        if not np.allclose(cfg['room_dimensions_m'], expected, rtol=0, atol=1e-12):
+            raise ValueError('Niespójne wymiary pokoju lub zamieniona kolejność osi')
     drivers = [Driver(**row['model']) for row in data['drivers']]
     f = np.geomspace(10, 200, 1400)
     probe = np.array([20., 25., 31.5, 40., 63., 80.])
@@ -146,24 +152,33 @@ def main():
     table('geometria_wstepna.csv', geometry)
     # Manifest obejmuje kod i wyniki, nie tylko nazwy bibliotek.
     files = [ROOT / 'brief_system_audio_DIY_v0.6.md', ROOT / 'DECYZJE_I_PYTANIA.md',
-             ROOT / 'PLAN_BADAN_NAUKOWYCH.md', data_path, cfg_path,
+             ROOT / 'PLAN_BADAN_NAUKOWYCH.md', ROOT / 'PROGRAM_30_BADAN.md', data_path, cfg_path,
+             *sorted((ROOT / 'dane/przetworniki').glob('*.json')),
+             *sorted((ROOT / 'dane/konfiguracje').glob('*.json')),
              *sorted((ROOT / 'skrypty').glob('*.py')),
              *sorted(p for p in (ROOT / 'dane/zrodla').rglob('*') if p.is_file())]
     hashes = {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest() for p in files}
     output_hashes = {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest()
                      for p in sorted(OUT.iterdir()) if p.is_file() and p.name != 'manifest.json'}
+    documents = [*sorted(ROOT.glob('*.md')),
+                 *sorted((ROOT / 'baza_wiedzy').glob('*.md')),
+                 *sorted((ROOT / 'raporty').glob('*.md'))]
+    documentation_hashes = {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest()
+                            for p in documents}
     manifest = {'generated_at': datetime.now(ZoneInfo('Europe/Warsaw')).isoformat(),
-                'status': 'SYMULACJA_LINIOWA_PRZED_BUDOWA', 'python': sys.version,
+                'status': 'BADANIA_MODELOWE_PRZED_BUDOWA_NIE_WALIDACJA_URZADZENIA', 'python': sys.version,
                 'libraries': {'numpy': np.__version__, 'scipy': scipy.__version__, 'matplotlib': matplotlib.__version__},
                 'input_sha256': hashes, 'output_sha256': output_hashes,
+                'documentation_sha256': documentation_hashes,
                 'configuration': cfg, 'limitations': [
                     'Nie jest pomiarem ani gwarancją maksymalnego użytecznego SPL.',
-                    'Nie modeluje THD, temperatury, kompresji, BL(x), Cms(x), Le(x), room transfer.',
+                    'Modele T/S nie wyznaczają THD, temperatury, kompresji ani BL(x), Cms(x), Le(x).',
+                    'P26/P27: warunkowe pole pokoju dla zadanej U; pozycje i straty nie są zidentyfikowane, brak reakcji na membranę.',
                     'Granice dotyczą osobnych sinusów; nie wolno sumować ich jako dostępnego SPL muzyki.',
                     'Pe*Znom to orientacyjny limit napięcia, nie wyznaczona granica termiczna.',
                     'T/S producentów wymagają późniejszej walidacji egzemplarzy.']}
     (OUT / 'manifest.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2))
-    print(f'Wyniki: {len(drivers)} przetworniki, {len(summaries)} obudów, {len(band_rows)} rekordów pasmowych')
+    print(f'Historyczna baza porównawcza: {len(drivers)} przetworniki, {len(summaries)} obudów, {len(band_rows)} rekordów pasmowych; rozszerzenia w osobnych tabelach')
     for d in drivers:
         print(f'{d.name}: Qts={d.qts:.4f}, BL wyprowadzone={d.bl:.2f} Tm, Mms={d.mms*1000:.1f} g')
 

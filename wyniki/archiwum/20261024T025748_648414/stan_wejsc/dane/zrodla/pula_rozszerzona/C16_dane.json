@@ -1,0 +1,29 @@
+{
+  "candidate_id": "C16",
+  "manufacturer": "LaVoce",
+  "model": {
+    "name": "LaVoce WAF154.00",
+    "fs_hz": 38,
+    "qes": 0.31,
+    "qms": 5.74,
+    "vas_l": 109.68,
+    "sd_cm2": 855,
+    "re_ohm": 5.8,
+    "le_mh": 1.88,
+    "xmax_mm": 12.1,
+    "nominal_ohm": 8,
+    "rated_w": 1500
+  },
+  "catalog_extra": {
+    "qts": 0.29,
+    "mms_g": 167.3,
+    "cms_mm_n": 0.106,
+    "bl_tm": 27.35
+  },
+  "url": "https://lavocespeakers.com/product/waf154-00/",
+  "access_date": "2026-10-24",
+  "xmax_definition": "Xmax12.1mm;Xmech21.4mm to granica mechaniczna;42.8mm p-p opisu odnosi się doXmech.",
+  "data_issue": "Wcześniejsze poszukiwanieSAF154 doprowadziło do rzeczywistego modeluWAF154.00; nie mieszać nazw. Pe1500AES,3000program. Brak niezależnegoTHD w tej karcie.",
+  "source_extraction_sha256": "ee00006b7c791bfa8571bc1235d983e280a22b9f50bcd8a8eb917bd2414767bb",
+  "scope": "Zweryfikowane tabele i jawne konwersje; nie użyto automatycznych odczytów punktów z wykresów."
+}

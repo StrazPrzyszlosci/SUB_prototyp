@@ -1,0 +1,38 @@
+{
+  "id": "SRC17",
+  "url": "https://pim.kleiberit.com/Datenblaetter/303-0-00/technical/en/dbe3030_KSE.pdf",
+  "access_date": "2026-10-24",
+  "method": "Firecrawl, część tabeli procesu",
+  "source_hash": "3cfc3c16464bc0d1662482b5d9502ae006b236941ee6bb202152c2cb22c1d430",
+  "type": "dane_producenta_nie_kwalifikacja_spoiny_MDF",
+  "facts": {
+    "adhesive_family": "dyspersjaPVAc",
+    "moisture_class": "D3jednoskładnikowo,D4z utwardzaczem wedługTDS",
+    "recommended_process_c": [
+      18,
+      20
+    ],
+    "minimum_process_c": 10,
+    "open_time_at20c_min": [
+      6,
+      10
+    ],
+    "surface_application_g_m2": [
+      100,
+      130
+    ],
+    "solid_wood_application_g_m2": [
+      150,
+      200
+    ],
+    "joint_press_time_at20c_minimum_min": 15,
+    "final_D3_D4_bond_strength_after_days": 7
+  },
+  "unknown_design_inputs": [
+    "Dopuszczalne naprężenia spoinyMDF w ścinaniu/odrywaniu i zmęczeniu",
+    "Moduł i pełzanie przy rzeczywistej temperaturze/wilgotności",
+    "Czułość na szczelinę i grubość spoiny",
+    "Wartość nacisku w tej ekstrakcji wymaga oględzin oryginalnegoPDF"
+  ],
+  "decision": "Nie wybrano jeszcze kleju. Sama klasaD3/D4 nie zamyka obliczeńP19."
+}

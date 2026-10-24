@@ -1,5 +1,13 @@
 # Bieżący plan naukowy prototypu
 
+Aktualizacja: użytkownik zlecił [program30pakietów](PROGRAM_30_BADAN.md),
+szeroką pulę kandydatów obejmującąSTX i innych producentów, obliczeniowy
+dobór kleju oraz końcowy wybór jednego głośnika i jednej obudowy.
+KońcowyPDF dopiero po wykonaniu programu bez sprzętu. N7/P08 wykonano
+w modelu zredukowanym: [raport009](raporty/009_N7_straty_nieszczelnosci.md).
+Poniższy zapisN7 zachowuje wyprowadzenie i zakres, nie oznacza już zadania
+nierozpoczętego. Niezamknięte rozszerzenia są opisane w macierzy programu.
+
 Stan 2026-10-23. **Aktywny zakres: wyłącznie fizyka, źródła techniczne,
 obliczenia i symulacje potrzebne do budowy** — decyzjaU-010. Główny
 [planB+R](PLAN_B_R.md) zachowuje dalsze etapy jako kontekst, ale wyceny,
@@ -21,7 +29,7 @@ Kod i dane są dostępne, a [raport 007](raporty/007_fizyka_nieliniowosci_i_DSP.
 rozwija nowe wyniki. Nie wyciągamy z nich rankinguTHD, jakości odsłuchowej
 lub gotowości produktu do komercjalizacji.
 
-## Następny pakiet domyślny: N7 — straty i nieszczelność skrzyni
+## Wykonany pakiet N7 — zachowane wyprowadzenie strat i nieszczelności
 
 **Pytanie:** jak wrażliwe są odpowiedź, impedancja i ochrona na skończoną
 szczelność regulowanego frontu/przegrody oraz dodatkowe tłumienie?
@@ -71,6 +79,12 @@ o konkretnej skrzyni: brak pomiaru przecieku. Nie dobieraćRa tak, aby uzyskać
 z góry pożądany wynik. Nie przechodzić automatycznie do konstrukcji ani zakupów.
 
 ## Kolejne pakiety po N7
+
+Aktualizacja 2026-10-24: wykonano szeroką pulę 24 modeli / 11 producentów,
+globalne granice po Vb, identyfikowalność oraz scenariusze P26/P27 dla pokoju
+4,6 × 3,7 × 2,5 m. Bieżący następny krok to P06 z
+[programu 30 badań](PROGRAM_30_BADAN.md); poniższa lista N8–N11 pozostaje
+historycznym opisem zależności, nie kompletną aktualną kolejką.
 
 1. N8: zakres identyfikowalności modelu cieplnego. Wyprowadzić bilans
    `Cth dT/dt = Pcu − (T−Tamb)/Rth`; wskazać potrzebneRth/Cth, współczynnikRe(T),

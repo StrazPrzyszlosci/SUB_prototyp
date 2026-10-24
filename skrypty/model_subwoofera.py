@@ -5,7 +5,6 @@ Zestaw pierwotny: Fs, Qes, Qms, Vas, Sd, Re, Le. Pozostałe T/S są wyprowadzone
 """
 from dataclasses import dataclass
 import numpy as np
-from scipy.optimize import brentq
 
 RHO = 1.2041
 C = 343.0
@@ -27,8 +26,13 @@ class Driver:
     rated_w: float
 
     def __post_init__(self):
+        if not isinstance(self.name, str) or not self.name.strip():
+            raise ValueError('Nazwa przetwornika musi być niepusta')
         for key, value in vars(self).items():
-            if key != 'name' and (not np.isfinite(value) or value <= 0):
+            if key == 'le_mh':
+                if not np.isfinite(value) or value < 0:
+                    raise ValueError('Le musi być skończone i nieujemne')
+            elif key != 'name' and (not np.isfinite(value) or value <= 0):
                 raise ValueError(f'{self.name}: {key} musi być dodatnie i skończone')
 
     @property
@@ -62,8 +66,12 @@ def alignment(d, vb_l):
     scale = np.sqrt(1 + d.vas_l / vb_l)
     fc, qtc = d.fs_hz * scale, d.qts * scale
     # H(s)=s²/(s²+w0*s/Q+w0²); F3 względem asymptoty wysokoczęstotliwościowej.
-    f3 = brentq(lambda f: abs(sealed_shape(np.array([f]), fc, qtc)[0])**2 - .5,
-                fc * 1e-3, fc * 1e3)
+    # Dokładne dodatnie rozwiązanie y²+(2-1/Q²)y-1=0, y=(F3/Fc)².
+    # Unika arbitralnego przedziału szukania pierwiastka dla bardzo niskiego Q.
+    b = 2-1/qtc**2
+    discriminant = np.hypot(b, 2.)
+    y = 2/(b+discriminant) if b >= 0 else (-b+discriminant)/2
+    f3 = fc*np.sqrt(y)
     return fc, qtc, f3
 
 
@@ -81,7 +89,10 @@ def response(d, vb_l, f_hz, vrms=1., distance_m=1., solid_angle=2 * np.pi):
     """
     alignment(d, vb_l)
     f = np.asarray(f_hz, dtype=float)
-    if np.any(f <= 0) or distance_m <= 0 or solid_angle <= 0 or np.any(np.asarray(vrms) < 0):
+    if (not f.size or not np.all(np.isfinite(f)) or np.any(f <= 0)
+            or not np.isfinite(distance_m) or distance_m <= 0
+            or not np.isfinite(solid_angle) or solid_angle <= 0
+            or not np.all(np.isfinite(vrms)) or np.any(np.asarray(vrms) < 0)):
         raise ValueError('Niepoprawna częstotliwość, geometria lub napięcie')
     w = 2 * np.pi * f
     stiffness = 1 / d.cms + RHO * C**2 * d.sd**2 / (vb_l * 1e-3)
@@ -104,6 +115,8 @@ def linear_envelope(d, vb_l, f_hz, amp_vrms, amp_irms):
     rated_w i nominal_ohm dają tylko orientacyjny limit napięcia katalogowego.
     Moc katalogowa nie jest utożsamiana z dopuszczalnym grzaniem cewki.
     """
+    if not np.isfinite(amp_vrms) or not np.isfinite(amp_irms) or amp_vrms <= 0 or amp_irms <= 0:
+        raise ValueError('Limity wzmacniacza muszą być skończone i dodatnie')
     one = response(d, vb_l, f_hz)
     limits = np.array([
         (d.xmax_mm * 1e-3) / one['x_peak_m'],
@@ -130,8 +143,10 @@ def dsp_shape(f_hz, fc, qtc, target_hz=25., target_q=1 / np.sqrt(2), hp_hz=18., 
 def room_modes(dimensions_m, max_hz=200., c=C):
     """Częstotliwości własne sztywnego prostopadłościanu, bez amplitud i RT."""
     dims = np.asarray(dimensions_m, dtype=float)
-    if len(dims) != 3 or np.any(dims <= 0):
+    if dims.shape != (3,) or not np.all(np.isfinite(dims)) or np.any(dims <= 0):
         raise ValueError('Potrzebne trzy dodatnie wymiary')
+    if not np.isfinite(max_hz) or max_hz < 0 or not np.isfinite(c) or c <= 0:
+        raise ValueError('Niepoprawna częstotliwość maksymalna lub prędkość dźwięku')
     modes = []
     for nx in range(int(2 * max_hz * dims[0] / c) + 1):
         for ny in range(int(2 * max_hz * dims[1] / c) + 1):

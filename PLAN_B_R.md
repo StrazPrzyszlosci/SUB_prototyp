@@ -197,7 +197,9 @@ produktu jako masteringowy ani gotowy do sprzedaży na podstawie obecnej symulac
 
 ## 6. Najbliższy krok
 
-Aktualnie wykonać naukowy pakiet N7: model strat i nieszczelności z kontrolą
-granicy szczelnej, pasywności i wpływu na ruch oraz odpowiedź. Oferty i dobór
-handlowy odłożono w U-010. DefinicjeXmax i niezależne dane liniowości pozostają
-ważnymi otwartymi wejściami do późniejszego rozszerzenia modelu.
+Aktualizacja 2026-10-24: N7 wykonano w modelu zredukowanym (raport 009),
+porównano 24 modele / 11 producentów i rozpoczęto pole zespolone pokoju
+4,6 × 3,7 × 2,5 m (raport 013). Najbliższy krok: P06 — globalna niepewność
+i odporność porównania. Obowiązuje pełny [program 30 pakietów](PROGRAM_30_BADAN.md).
+Oferty i dobór handlowy odłożono w U-010. Nie wybierać jeszcze zwycięzcy
+na podstawie samej liniowej granicy ruchu.

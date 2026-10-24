@@ -6,8 +6,8 @@ O = otwarte. Akceptacja briefu nie oznacza akceptacji dowolnych liczb modelu.
 | ID | Wymaganie | Status | Dowód lub sposób weryfikacji | Etap |
 |---|---|---|---|---|
 | W01 | Pierwszy prototyp sealed, regulowany litraż | U | Bilans objętości i projekt modułów | R3/R5 |
-| W02 | Porównanie co najmniej 3 przetworników, 12″ i 15″ | U | Dane źródłowe + wspólny model; policzono 3 Dayton iSB | R1/R2 |
-| W03 | Rozszerzenie o konkurencyjnego producenta | Zrealizowane wstępnie | SB34SWPL76-4: obejrzanyPDF i model; opinie i rynek otwarte | R1 |
+| W02 | Szerokie porównanie 12″ i 15″, w tym STX | U | 24 modele / 11 producentów, 12 576 scenariuszy; raport 010, nie finalny ranking | R1/R2 |
+| W03 | Dane producentów i krytyczny przegląd opinii każdego kandydata | Częściowo | 24 zestawy modelowe, 24 audyty opinii; braki pomiarów i tożsamości wariantów jawne | R1 |
 | W04 | Sensowny kompromis 20 Hz/headroom 20–40 Hz | U, liczby O | Pasma SPL, Xpeak, napięcie, THD i kompresja po budowie | R2/P2 |
 | W05 | Neutralność i niski szum, również cicho | U, progi O | Gain staging i dokumentacja elektroniki; późniejsze pomiary | R4/P2 |
 | W06 | Referencje ADAM Audio średniej/wyższej półki | U-009: Sub12/Sub15 zatwierdzone | Progi liczbowe otwarte; referencje monitorów odłożone | R0 |
@@ -26,6 +26,10 @@ O = otwarte. Akceptacja briefu nie oznacza akceptacji dowolnych liczb modelu.
 | W19 | Tor pomiarowy wybrać po budowie | U-002 | Brak bieżącej listy zakupowej aparatury | P2 |
 | W20 | Pomiary wyłącznie w pokoju | U-003 | Wyniki oznaczone in-room; ograniczenia oddzielenia urządzenia | P2 |
 | W21 | Opinie właścicieli i konstruktorów | U-005 | [Rejestr doświadczeń](baza_wiedzy/08_opinie_i_ocena_dowodow.md) | R1 |
+| W22 | Pokój około 4,6 × 3,7 × 2,5 m; front 3,7 m | U-016 | [Konfiguracja i osie](dane/konfiguracje/pokoj_odsluchowy.json); geometria przybliżona | P26/P27 |
+| W23 | Dwa subwoofery w realnych miejscach przy monitorach | U | Sprawdzenie dwóch gabarytów, prześwitów i odległości 2,5–3 m; brak swobody przód/tył | P18–P21/P27 |
+| W24 | Jeden głośnik i jedna obudowa z obliczonym połączeniem klejowym | U | Wynik integracji całego programu, obecnie otwarte | P19/P29 |
+| W25 | Końcowy PDF po badaniach możliwych bez sprzętu | U | [Macierz 30 pakietów](PROGRAM_30_BADAN.md); nie zastępować braków wynikami fikcyjnymi | P30 |
 
 ## Specyfikacja odbiorowa do uzupełnienia
 

@@ -1,0 +1,46 @@
+{
+  "status": "POROWNANIE_WSTEPNE_NIE_FINALNY_WYBOR",
+  "data_sha256": "082c41b9c555e7298eee2953391161edbfe23a2d1da8e66e4c047a64eed3c6f8",
+  "driver_count": 21,
+  "manufacturer_count": 10,
+  "volume_grid_l": {
+    "from": 20,
+    "to": 150,
+    "step": 1
+  },
+  "scenarios": 11004,
+  "nominal_motion_leaders": [
+    {
+      "candidate_id": "C11",
+      "driver": "Dayton RSS390HE-22 seria",
+      "ceiling20_rms_db": 107.31954470983453
+    },
+    {
+      "candidate_id": "C21",
+      "driver": "Dayton UMII15-22 seria",
+      "ceiling20_rms_db": 106.15490295587142
+    },
+    {
+      "candidate_id": "C20",
+      "driver": "Dayton UMII12-22 seria",
+      "ceiling20_rms_db": 101.88828051880613
+    },
+    {
+      "candidate_id": "C02",
+      "driver": "Dayton RSS390HF-4",
+      "ceiling20_rms_db": 101.88708403287022
+    },
+    {
+      "candidate_id": "C15",
+      "driver": "FaitalPRO 15XL1400 8ohm",
+      "ceiling20_rms_db": 101.3083186408253
+    }
+  ],
+  "limitations": [
+    "Nie podano progówTHD ani zmierzonej kompresji.",
+    "Pe różnych protokołów nie potraktowano jako wspólnej granicy termicznej.",
+    "40/60Vrms i12/20Arms to scenariusze, nie wybrany wzmacniacz.",
+    "Zakres20–150l to obliczenia i analityczny warunekF3, nie gwarancja najlepszego litrażu.",
+    "0.7Xmax to scenariusz ruchu, nie gwarancja niskich zniekształceń."
+  ]
+}

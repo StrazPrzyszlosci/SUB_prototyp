@@ -14,6 +14,12 @@ Stan: 2026-10-23. Ten rejestr uzupełnia brief, bez zmieniania jego treści.
 | U-008 | Obecnie nie zajmować się narzędziami CAD | Doprecyzowanie w rozmowie 2026-10-23 | Ocena/instalacja integracji CAD i ich MCP odłożona; geometria i wymagania mechaniczne pozostają w planie |
 | U-009 | Na razie zatwierdzone wyłącznie ADAM Sub12 i Sub15 jako referencje | Odpowiedź użytkownika 2026-10-23 | Referencje subwooferów ustalone; A8H/S3V tylko materiał rozpoznawczy na później; progi liczbowe nadal otwarte |
 | U-010 | Teraz zajmować się wyłącznie naukowymi tematami budowy prototypu | Doprecyzowanie użytkownika 2026-10-23 | Aktywne: fizyka, źródła techniczne, obliczenia i symulacje. Dobór handlowy, wyceny, zakupy i narzędzia CAD odłożone; dotychczasowa dokumentacja pozostaje jako kontekst |
+| U-011 | Wykonać program30pakietów badań bez sprzętu; końcowyPDF dopiero po wyczerpaniu tego zakresu | Przekazane materiały i polecenia użytkownika | PROGRAM_30_BADAN.md jest macierzą pokrycia; nie kończyć zadania raportem wstępnym |
+| U-012 | Rodzaj kleju też ma wynikać z obliczeń | Polecenie użytkownika | P19 obejmuje nośność spoiny/MDF, geometrię, odrywanie, pełzanie, szczelność i warunki wykonania |
+| U-013 | Na końcu zarekomendować jeden głośnik i jedną konstrukcję obudowy | Polecenie użytkownika | Ostateczny wynik nie może być samą krótką listą lub frontemPareto; uzasadnić pojedynczy wybór |
+| U-014 | Szeroko rozszerzyć pulę, także STX i innych producentów; dane producentów, opinie i obliczenia dla każdego | Polecenia użytkownika | P03/P29 wymagają przekrojowej kwalifikacji, a nie uznania pierwszych4modeli za najlepsze |
+| U-015 | Profesjonalny dobór pod brief | Polecenie użytkownika | Każdy kandydat ma ślad wymagań20–40Hz, liniowości, ochrony, napędu i architektury; braki wyraźnie oznaczone |
+| U-016 | Pamiętać o wymiarach pokoju | Przypomnienie użytkownika2026-10-24 |4.6×3.7×2.5m,17.02m²,42.55m³z przybliżonych wymiarów; sweetspot2.5–3m. Sprawdzić miejsce dla dwóchsubów przy monitorach; bez założenia dowolnej lokalizacji przód/tył |
 
 ## Decyzje, których nie podejmowano
 

@@ -1,5 +1,10 @@
 # Baza wiedzy projektu
 
+Uzupełnienie 2026-10-24: wykonane N7 oraz rozszerzenie do 24 modeli,
+analiza globalnych granic litrażu i identyfikowalności opisano w
+[raportach 009–012](../README.md). [Program 30 badań](../PROGRAM_30_BADAN.md)
+pozostaje aktywny; końcowy PDF i pojedynczy wybór dopiero po integracji badań.
+
 Stan 2026-10-23. Rozdziały opisują metodę, wiedzę inżynierską i aktualne
 ograniczenia. Konkretnych prognoz szukaj w [raportach](../README.md),
 a potwierdzonych ustaleń użytkownika w [rejestrze](../DECYZJE_I_PYTANIA.md).
@@ -14,6 +19,7 @@ a potwierdzonych ustaleń użytkownika w [rejestrze](../DECYZJE_I_PYTANIA.md).
 |06|[Metrologia iwalidacja](06_metrologia_i_walidacja.md)|Plan po budowie; pomiary tylko w pokoju, bez bieżącego doboru toru|
 |07|[Niepewność iorganizacja badań](07_niepewnosc_i_organizacja_badan.md)|Tolerancje, czułość, Pareto, wersje i granice wniosków|
 |08|[Opinie iocena dowodów](08_opinie_i_ocena_dowodow.md)|Relacje właścicieli, korekty wątków i odczyt wykresów|
+|09|[Zespolony model pokoju](09_zespolony_model_pokoju.md)|Straty modalne, kompresja, dwa źródła, normalizacja i niezależny Green 1D|
 |Źródła|[Rejestr z datami](ZRODLA.md)|Co przeczytano, co tylko znaleziono i jakie są braki|
 
 ## Od wiedzy do wykonania

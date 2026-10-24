@@ -1,0 +1,4 @@
+kmax_m_inv,number_of_modes,max_complex_error_over_global_reference_max,max_level_difference_db
+25.0,12185,6.368501984873452e-05,0.08539948384942164
+40.0,48420,2.533953175533947e-08,2.3291804445602082e-05
+55.0,124132,0.0,0.0

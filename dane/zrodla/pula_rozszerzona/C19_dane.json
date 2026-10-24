@@ -1,0 +1,29 @@
+{
+  "candidate_id": "C19",
+  "manufacturer": "Dayton Audio",
+  "model": {
+    "name": "Dayton RSS390HO-4",
+    "fs_hz": 21.5,
+    "qes": 0.35,
+    "qms": 3.69,
+    "vas_l": 168,
+    "sd_cm2": 829.6,
+    "re_ohm": 3.2,
+    "le_mh": 1.79,
+    "xmax_mm": 12,
+    "nominal_ohm": 4,
+    "rated_w": 800
+  },
+  "catalog_extra": {
+    "qts": 0.32,
+    "mms_g": 319,
+    "cms_mm_n": 0.17,
+    "bl_tm": 19.8
+  },
+  "url": "https://www.daytonaudio.com/product/127/rss390ho-4-15-reference-ho-subwoofer-4-ohm",
+  "access_date": "2026-10-24",
+  "xmax_definition": "Maximum Linear Excursion12mm; brak potwierdzonego kryteriumTHD.",
+  "data_issue": "HO to inny zestaw niżHF; nie przenosićSDX innych modeli. Pe800W, bez pełnego modelu termicznego.",
+  "source_extraction_sha256": "3454ac1f04ede142bd3fab4629c24b599172a7633752131d0ea5313c4a0af102",
+  "scope": "Zweryfikowane tabele i jawne konwersje; nie użyto automatycznych odczytów punktów z wykresów."
+}
