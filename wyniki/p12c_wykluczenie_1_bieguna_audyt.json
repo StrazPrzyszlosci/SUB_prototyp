@@ -1,0 +1,213 @@
+{
+  "status": "PASS_SYMBOLICZNEJ_TOZSAMOSCI_I_DOKLADNYCH_NIEROWNOSCI",
+  "base": {
+    "excluded": true,
+    "required_fc2_lower_rational": "5768205790636925959000000/3044300307259774361",
+    "required_fc2_upper_rational": "5093843761632868809300/570770061666028261",
+    "required_fc2_lower_hz2": 1894755.8415578865,
+    "required_fc2_upper_hz2": 8924.51111882845,
+    "lower_triple": [
+      3,
+      4,
+      5
+    ],
+    "upper_triple": [
+      0,
+      1,
+      2
+    ],
+    "exact_positive_gap_rational": "3276811984695507302953300648591894560642700/1737595474104570194480199213909216221",
+    "formula": "|L|²=a+b/(1+(f/fc)²); ratio_differences=A*(fc²+fk²)/(fc²+fi²)",
+    "scope": "Wszystkie dodatniefc,Linstant,L1 tej rodziny dla zewnętrznie zaokrąglonych zapisanych przedziałów. Nie jest stwierdzeniem o nieznanej niepewności producenta."
+  },
+  "stress_boxes": [
+    {
+      "extra_relative_widening": "0",
+      "exclusion_proved_by_test": true,
+      "witness": {
+        "frequencies_hz": [
+          "30",
+          "100",
+          "300",
+          "1000",
+          "3000",
+          "10000"
+        ],
+        "proof": {
+          "excluded": true,
+          "required_fc2_lower_rational": "5768205790636925959000000/3044300307259774361",
+          "required_fc2_upper_rational": "5093843761632868809300/570770061666028261",
+          "required_fc2_lower_hz2": 1894755.8415578865,
+          "required_fc2_upper_hz2": 8924.51111882845,
+          "lower_triple": [
+            3,
+            4,
+            5
+          ],
+          "upper_triple": [
+            0,
+            1,
+            2
+          ],
+          "exact_positive_gap_rational": "3276811984695507302953300648591894560642700/1737595474104570194480199213909216221",
+          "formula": "|L|²=a+b/(1+(f/fc)²); ratio_differences=A*(fc²+fk²)/(fc²+fi²)",
+          "scope": "Wszystkie dodatniefc,Linstant,L1 tej rodziny dla zewnętrznie zaokrąglonych zapisanych przedziałów. Nie jest stwierdzeniem o nieznanej niepewności producenta."
+        }
+      },
+      "meaning_if_false": "Brak wykluczenia tym testem nie dowodzi istnienia dopasowania."
+    },
+    {
+      "extra_relative_widening": "0.01",
+      "exclusion_proved_by_test": true,
+      "witness": {
+        "frequencies_hz": [
+          "30",
+          "100",
+          "300",
+          "1000",
+          "3000",
+          "10000"
+        ],
+        "proof": {
+          "excluded": true,
+          "required_fc2_lower_rational": "3352265576451460000000/2183372373330881",
+          "required_fc2_upper_rational": "4286874449645128170000/417393965434994647",
+          "required_fc2_lower_hz2": 1535361.3599760605,
+          "required_fc2_upper_hz2": 10270.571222028773,
+          "lower_triple": [
+            3,
+            4,
+            5
+          ],
+          "upper_triple": [
+            0,
+            1,
+            2
+          ],
+          "exact_positive_gap_rational": "1389855578905009902712459278270602230000/911326452925791972339783794794007",
+          "formula": "|L|²=a+b/(1+(f/fc)²); ratio_differences=A*(fc²+fk²)/(fc²+fi²)",
+          "scope": "Wszystkie dodatniefc,Linstant,L1 tej rodziny dla zewnętrznie zaokrąglonych zapisanych przedziałów. Nie jest stwierdzeniem o nieznanej niepewności producenta."
+        }
+      },
+      "meaning_if_false": "Brak wykluczenia tym testem nie dowodzi istnienia dopasowania."
+    },
+    {
+      "extra_relative_widening": "0.02",
+      "exclusion_proved_by_test": true,
+      "witness": {
+        "frequencies_hz": [
+          "30",
+          "100",
+          "300",
+          "1000",
+          "3000",
+          "10000"
+        ],
+        "proof": {
+          "excluded": true,
+          "required_fc2_lower_rational": "8978849326679534000000/7410452351926069",
+          "required_fc2_upper_rational": "300537510652738716642000/25273199434780491211",
+          "required_fc2_lower_hz2": 1211646.5905547345,
+          "required_fc2_upper_hz2": 11891.54983832972,
+          "lower_triple": [
+            3,
+            4,
+            5
+          ],
+          "upper_triple": [
+            0,
+            1,
+            2
+          ],
+          "exact_positive_gap_rational": "224697130825357799133269297284651733702000/187285840192165688790857521776279559",
+          "formula": "|L|²=a+b/(1+(f/fc)²); ratio_differences=A*(fc²+fk²)/(fc²+fi²)",
+          "scope": "Wszystkie dodatniefc,Linstant,L1 tej rodziny dla zewnętrznie zaokrąglonych zapisanych przedziałów. Nie jest stwierdzeniem o nieznanej niepewności producenta."
+        }
+      },
+      "meaning_if_false": "Brak wykluczenia tym testem nie dowodzi istnienia dopasowania."
+    },
+    {
+      "extra_relative_widening": "0.05",
+      "exclusion_proved_by_test": true,
+      "witness": {
+        "frequencies_hz": [
+          "30",
+          "100",
+          "300",
+          "1000",
+          "3000",
+          "10000"
+        ],
+        "proof": {
+          "excluded": true,
+          "required_fc2_lower_rational": "149174795996006560713000000/337988275128212012089",
+          "required_fc2_upper_rational": "2018432585582484697221250/113579283987340860947",
+          "required_fc2_lower_hz2": 441360.86063760286,
+          "required_fc2_upper_hz2": 17771.133209533633,
+          "lower_triple": [
+            2,
+            4,
+            5
+          ],
+          "upper_triple": [
+            0,
+            1,
+            3
+          ],
+          "exact_positive_gap_rational": "16260959970120466363277474171283307765503308750/38388466285178687960136307011700431988283",
+          "formula": "|L|²=a+b/(1+(f/fc)²); ratio_differences=A*(fc²+fk²)/(fc²+fi²)",
+          "scope": "Wszystkie dodatniefc,Linstant,L1 tej rodziny dla zewnętrznie zaokrąglonych zapisanych przedziałów. Nie jest stwierdzeniem o nieznanej niepewności producenta."
+        }
+      },
+      "meaning_if_false": "Brak wykluczenia tym testem nie dowodzi istnienia dopasowania."
+    },
+    {
+      "extra_relative_widening": "0.10",
+      "exclusion_proved_by_test": true,
+      "witness": {
+        "frequencies_hz": [
+          "30",
+          "100",
+          "300",
+          "1000",
+          "3000",
+          "10000"
+        ],
+        "proof": {
+          "excluded": true,
+          "required_fc2_lower_rational": "889932152720825665497000000/9240362963105902564487",
+          "required_fc2_upper_rational": "477491558809926528720000/13281512530415158427",
+          "required_fc2_lower_hz2": 96309.22034925115,
+          "required_fc2_upper_hz2": 35951.59494947982,
+          "lower_triple": [
+            2,
+            4,
+            5
+          ],
+          "upper_triple": [
+            0,
+            2,
+            3
+          ],
+          "exact_positive_gap_rational": "7407449722358033467569985736295460835652360000/122725996480075187179865329065197688981949",
+          "formula": "|L|²=a+b/(1+(f/fc)²); ratio_differences=A*(fc²+fk²)/(fc²+fi²)",
+          "scope": "Wszystkie dodatniefc,Linstant,L1 tej rodziny dla zewnętrznie zaokrąglonych zapisanych przedziałów. Nie jest stwierdzeniem o nieznanej niepewności producenta."
+        }
+      },
+      "meaning_if_false": "Brak wykluczenia tym testem nie dowodzi istnienia dopasowania."
+    },
+    {
+      "extra_relative_widening": "0.15",
+      "exclusion_proved_by_test": false,
+      "witness": null,
+      "meaning_if_false": "Brak wykluczenia tym testem nie dowodzi istnienia dopasowania."
+    },
+    {
+      "extra_relative_widening": "0.20",
+      "exclusion_proved_by_test": false,
+      "witness": null,
+      "meaning_if_false": "Brak wykluczenia tym testem nie dowodzi istnienia dopasowania."
+    }
+  ],
+  "scope": "Wszystkie dodatnie bieguny jednej gałęzi, ale tylko zapisane/poszerzone przedziały wykresu. Nie są to deklarowane tolerancje producenta."
+}

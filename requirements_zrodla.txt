@@ -1,0 +1,2 @@
+# Opcjonalnie: odtworzenie digitalizacji oryginalnego PDF. Biblioteki modeli w requirements.txt.
+PyMuPDF==1.28.0

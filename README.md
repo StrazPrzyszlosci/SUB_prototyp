@@ -22,7 +22,10 @@ Rzut od użytkownika: [raport 018 — orientacja kanapa–RTV i odległość ods
 [raport019](raporty/019_zamiana_kanapy_i_RTV.md) zastępuje wcześniejszą orientację.
 P12/P13: [raport020 — nieliniowy napęd i sprzężony gaz](raporty/020_nieliniowy_naped_i_sprzezony_gaz.md),
 12 096przypadków warunkowych i72przypadki kompensacji; nie jest rankingiem
-THD produktów. Kolejny krok: pasywna pamięć indukcyjności P12C.
+THD produktów. Identyfikacja rzeczywistych krzywych pozostaje częściowa.
+P12C: [raport021 — pamięć cewki, L_gen i siła](raporty/021_pamiec_cewki_i_definicja_Lgen.md).
+Wykonano18 676wierszy liniowych,1728pełnychODE i odrębne sprawdzenie
+źródłowej definicji/siły. Najbliższy krok: P14/IMD i wielotony zmodelemFLUX.
 
 **Bieżący zakres: wyłącznie naukowe zagadnienia prototypu (U-010).**
 Najnowsze zlecenie: [program30badań](PROGRAM_30_BADAN.md), szeroka pula
@@ -84,6 +87,7 @@ Brak modelu THD, kompresji cieplnej i zidentyfikowanej odpowiedzi pokoju.
 18. [018 — rzut pokoju i warunkowa geometria odsłuchu](raporty/018_rzut_pokoju_i_odleglosc_odsluchu.md).
 19. [019 — docelowa zamiana kanapy i RTV](raporty/019_zamiana_kanapy_i_RTV.md).
 20. [020 — nieliniowy napęd, współenergia, gaz i rozruch](raporty/020_nieliniowy_naped_i_sprzezony_gaz.md).
+21. [021 — pamięć cewki, moduł/faza L_gen i właściwa siła](raporty/021_pamiec_cewki_i_definicja_Lgen.md).
 
 ## Odtworzenie obliczeń
 
@@ -106,6 +110,11 @@ F3 i granice ruchu/napędu. Nie potwierdzają osiągów fizycznego egzemplarza.
 KampaniaP12/P13 zapisuje dziennik z hashem kodu i wejść; zgodne przypadki
 wznawia. Użycie dziennika jest kontrolowanym odtworzeniem artefaktów,
 nie niezależną nową replikacją ODE. Procedura świeżego rachunku jest w raporcie020.
+P12C także wznawia zgodny dziennik. Odtworzenie samej digitalizacji jest
+osobnym etapem: [opcjonalne wymagania źródeł](requirements_zrodla.txt),
+oryginalnyPDF o wskazanymSHA i `python3 skrypty/digitalizuj_Lgen_Purifi.py`.
+Standardowe obliczenia korzystają z wersjonowanych odczytówCSV, bez pobierania
+materiałów i bez włączania prywatnych kopiiPDF do repozytorium.
 
 ## Organizacja danych
 
@@ -118,5 +127,5 @@ nie niezależną nową replikacją ODE. Procedura świeżego rachunku jest w rap
 Źródła z internetu: browser-harness oraz dopuszczony Firecrawl. Kosztorys,
 dostępność PL/UE i dobór handlowy pozostają odłożone. Przegląd opinii wszystkich
 24 kandydatów wykonano z jawnymi brakami; nie stanowi rankingu jakości.
-Najbliższy krok: P12C — pamięć indukcyjności i źródłowe krzywe;
-następnie P14/IMD, termika, mechanika z klejem i integracja modeli.
+Najbliższy krok: P14/IMD i wielotony z modelemFLUX;
+następnie promieniowanie harmonicznych, termika, mechanika z klejem i integracja.

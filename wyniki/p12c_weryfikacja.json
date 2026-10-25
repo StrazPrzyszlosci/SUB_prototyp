@@ -1,0 +1,28 @@
+{
+  "status": "PASS_ENERGII_STANU_I_GRANIC_NIE_WALIDACJA_PRODUKTU",
+  "symbolic_identities": [
+    "FLUX: moc/energia i dodatnia strata",
+    "NAIVE: pasywność mimo innej siły"
+  ],
+  "gradient_points": 8,
+  "max_energy_gradient_relative_error": 1.5270878754246759e-09,
+  "max_scalar_vector_acceleration_error": 5.684341886080802e-14,
+  "state_frequency_cases": 160,
+  "max_state_vs_frequency_relative_error": 8.772920835445791e-12,
+  "max_linear_eigenvalue_real": -82.3248192877054,
+  "mutual_energy_absolute_error": 5.204170427930421e-18,
+  "mutual_force_absolute_error": 8.326672684688674e-17,
+  "no_memory_reduction_relative_error": 0.0,
+  "tau_to_zero_frequency_error": 5.463639397547466e-09,
+  "formal_high_frequency_error": 4.774648292756861e-09,
+  "nonzero_frozen_memory_lossless_energy_drift": 9.05997499245359e-12,
+  "limits": [
+    "N=0",
+    "Linstant=0 z redukcją algebraiczną",
+    "tau->0",
+    "f=0,finfinity formalnie",
+    "tau->inf z zerową i niezerową pamięcią wejściową",
+    "Re(Zblocked)>=Re"
+  ],
+  "scope": "Współrzędne pamięci są pomocnicze. Pasywność nie identyfikuje fizycznej siły ani dowolnej realizacji głośnika."
+}

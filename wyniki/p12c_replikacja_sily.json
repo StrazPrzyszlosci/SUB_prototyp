@@ -1,0 +1,13 @@
+{
+  "status": "PASS_REPLIKACJI_WZORU18_I_ROZNICY_OD_KONTROLI",
+  "rows": 216,
+  "max_relative_H2_complex_error": 4.883924569397951e-16,
+  "max_relative_DC_error": 1.1102230246251565e-15,
+  "max_absolute_ODE_filter_error": 1.0325074129013956e-14,
+  "exact_H2_ratio": "sqrt(1+(omega*tau)^2)",
+  "exact_phase_difference": "atan(omega*tau)",
+  "exact_DC_ratio": 1.0,
+  "max_sampled_H2_ratio": 314.1608569043789,
+  "source_url": "https://purifi-audio.com/documents/content/WT1Pkt9-SxijAvNyifNN4Ao2a2",
+  "scope": "Replikacja teorii dla zablokowanej pozycji i narzuconego prądu. Nie jest pomiarem, pełną walidacją ruchu ani rekonstrukcją danychMagNet."
+}

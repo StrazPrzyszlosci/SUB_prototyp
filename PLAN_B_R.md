@@ -204,8 +204,8 @@ porównano 24 modele / 11 producentów i rozpoczęto pole zespolone pokoju
 P11 wykonano dla geometrii kontrolnych i zwrotnego sprzężenia pokoju
 (raport 017); geometria docelowej skrzyni pozostaje otwarta.
 P12/P13 wykonano w rodzinach warunkowych (raport020).
-Najbliższy krok: P12C — pasywna pamięć Le(x,f), uzgodnienie źródłowych
-zestawów przed P14/IMD i promieniowaniem harmonicznych.
+P12C wykonano w jawnych rodzinach pamięci (raport021).
+Najbliższy krok: P14 — IMD i wielotony, następnie promieniowanie harmonicznych.
 Obowiązuje pełny [program 30 pakietów](PROGRAM_30_BADAN.md).
 Oferty i dobór handlowy odłożono w U-010. Nie wybierać jeszcze zwycięzcy
 na podstawie samej liniowej granicy ruchu.

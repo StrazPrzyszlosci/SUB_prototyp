@@ -1,0 +1,118 @@
+{
+  "status": "DIGITALIZACJA_I_WARUNKOWE_DOPASOWANIA_NIE_IDENTYFIKACJA_PRODUKTU",
+  "source_points": 6,
+  "one_pole_exact_exclusion": {
+    "excluded": true,
+    "required_fc2_lower_rational": "5768205790636925959000000/3044300307259774361",
+    "required_fc2_upper_rational": "5093843761632868809300/570770061666028261",
+    "required_fc2_lower_hz2": 1894755.8415578865,
+    "required_fc2_upper_hz2": 8924.51111882845,
+    "lower_triple": [
+      3,
+      4,
+      5
+    ],
+    "upper_triple": [
+      0,
+      1,
+      2
+    ],
+    "exact_positive_gap_rational": "3276811984695507302953300648591894560642700/1737595474104570194480199213909216221",
+    "formula": "|L|²=a+b/(1+(f/fc)²); ratio_differences=A*(fc²+fk²)/(fc²+fi²)",
+    "scope": "Wszystkie dodatniefc,Linstant,L1 tej rodziny dla zewnętrznie zaokrąglonych zapisanych przedziałów. Nie jest stwierdzeniem o nieznanej niepewności producenta."
+  },
+  "fits": 76,
+  "within_digitization_box": 36,
+  "within_box_and_nominal_gate": 36,
+  "fits_by_order": {
+    "1": {
+      "attempts": 16,
+      "accepted": 0
+    },
+    "2": {
+      "attempts": 24,
+      "accepted": 0
+    },
+    "3": {
+      "attempts": 36,
+      "accepted": 36
+    }
+  },
+  "witnesses": [
+    {
+      "network_id": "N3_12",
+      "branches": 3,
+      "seed": 12,
+      "inside_digitization_box": true,
+      "nominal_ReZ156_gate": true,
+      "cost": 7.673669777107783e-22,
+      "max_scaled_residual": 1.7469910676473997e-11,
+      "real_Z20_ohm": 4.001388743485233,
+      "real_Z156_ohm": 4.5842928163035515,
+      "Lgen_phase20_deg": -19.39375187737198,
+      "Lgen_phase100_deg": -29.386094402844492,
+      "Lgen_phase1000_deg": -26.767238817640358,
+      "nfev": 49,
+      "local_jacobian_rank": 6,
+      "parameters": 7,
+      "instant_h": 0.00029358488857868405,
+      "branch_parameters": [
+        {
+          "inductance_h": 0.001354539617127537,
+          "tau_s": 0.007312092563261509
+        },
+        {
+          "inductance_h": 0.000985378466429315,
+          "tau_s": 0.0010631367643100373
+        },
+        {
+          "inductance_h": 0.00029580182733264434,
+          "tau_s": 7.096580716934046e-05
+        }
+      ]
+    },
+    {
+      "network_id": "N3_3",
+      "branches": 3,
+      "seed": 3,
+      "inside_digitization_box": true,
+      "nominal_ReZ156_gate": true,
+      "cost": 3.658585355521274e-15,
+      "max_scaled_residual": 3.378289069015543e-08,
+      "real_Z20_ohm": 3.9506316196911797,
+      "real_Z156_ohm": 4.557495748732718,
+      "Lgen_phase20_deg": -10.31260382147559,
+      "Lgen_phase100_deg": -30.963829913611313,
+      "Lgen_phase1000_deg": -29.518860971061496,
+      "nfev": 368,
+      "local_jacobian_rank": 6,
+      "parameters": 7,
+      "instant_h": 0.0002454481917162971,
+      "branch_parameters": [
+        {
+          "inductance_h": 0.0015423058219197318,
+          "tau_s": 0.0021765222447999158
+        },
+        {
+          "inductance_h": 0.0003596826978108921,
+          "tau_s": 0.00021877280247037623
+        },
+        {
+          "inductance_h": 0.00017450416969951973,
+          "tau_s": 2.5405658056290108e-05
+        }
+      ]
+    }
+  ],
+  "constant_magnitude_counterexample": {
+    "max_relative_magnitude_error": 2.220446049250313e-16,
+    "phase_range_deg": [
+      -35.72957795130823,
+      -24.270422048691767
+    ],
+    "force_kernel_abs_N_A2": 0.005,
+    "scope": "Jawna dodatnia rodzina Linstant,L1,tauconst. Stały|Lgen| przy100Hz, niezerowa pochodna fazy. To nie jest krzywa Purifi."
+  },
+  "fit_domain": "L w exp([-20,-1])H,tau w exp([-16,0])s; wyłącznie wielostartowy search, nie certyfikat globalnych ekstremów",
+  "warning": "Przedziały opisują digitalizację wykresu, nie pełną niepewność źródła. Kalibracja x=0 nie identyfikuje pochodnej zespolonej po x."
+}

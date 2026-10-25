@@ -1,0 +1,13 @@
+{
+  "source_pdf_sha256": "c7e0cc1a1030792cffd71dde45dc59c795a56b2848eff7bd4ab9616f889c66ad",
+  "derived_csv_sha256": "75383fd37c6ed980e0aca7afc24491ced06634627b93df73640c406f8b8743a0",
+  "rows": 30,
+  "pymupdf_version": "1.28.0",
+  "render_shape": [
+    1017,
+    838
+  ],
+  "definition": "|Lgen|, nieRe(Lgen) i nieLd. Oryginalne osie sprawdzono wzrokowo.",
+  "extraction": "Selekcja koloru, osobne odrzucenie cienkiej czarnej siatki; jawna kalibracja logarytmicznej osi.",
+  "uncertainty_scope": "Przedziały obejmują wyłącznie jawny model odczytu osi, grubości linii i kolumn. Nie są niepewnością pomiarową producenta, tolerancją populacji ani certyfikatem fizycznych parametrów."
+}

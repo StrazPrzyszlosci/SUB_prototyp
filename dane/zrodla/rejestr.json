@@ -327,6 +327,28 @@
       "type": "niezalezny_test_techniczny",
       "raw_capture_sha256": "94e6543ec82e2d76f9cdb277986069effc1acf257c986f529cacf76cbe3c3b8a",
       "scope": "Tekst wartości progowych sprawdzony bezpośrednio w DOM; oryginalne JPEGFig5/7/9 pobrano przez browser-harness i obejrzano. Klippel DA2, PatrickTurnmire/Redrock. Nie przenosić naNAB-02 ani na20HzTHD w sealed."
+    },
+    {
+      "id": "SRC35",
+      "title": "Risbo, Agerkvist, Tinggaard, Halvorsen, Putzeys: Force Factor Modulation in Electro Dynamic Loudspeakers, AES141,2016",
+      "url": "https://purifi-audio.com/documents/content/WT1Pkt9-SxijAvNyifNN4Ao2a2",
+      "publication_year": 2016,
+      "access_date": "2026-10-24",
+      "analysis_date": "2026-10-25",
+      "type": "pierwotna_publikacja_teoretyczna_i_eksperymentalna",
+      "raw_capture_sha256": "1df57c215b30a45f82c57461ebd5ebd97bfde1b2459aa708dbf2dec918d686cb",
+      "original_pdf_sha256": "4d4db2ca6c15fc7d10a3dfc2c84579a428486d0368743ca5a96a19ddf99e3d1b",
+      "scope": "Odczyt sekcji2–4 i oryginalnych stron2/4/7: Eq6,Eq18,Fig2/7/8. Lgen jestzespolone; Fig2pokazuje|Lgen|. Test źródłowy dotyczy4calowegoDUT i MagNet, nie naszych24produktów. Wzór na siłę nie wynika z bezwarunkowego przypisaniaL2 energii niezależnej cewki. Nie odtwarzano pomiarów ani całegoMagNet."
+    },
+    {
+      "id": "SRC36",
+      "title": "PURIFI Ushindi/PureDrive — opis producenta",
+      "url": "https://purifi-audio.com/ushindi",
+      "access_date": "2026-10-24",
+      "analysis_date": "2026-10-25",
+      "type": "opis_producenta_nie_pomiar",
+      "raw_capture_sha256": "3b888787290d4f1422ebb5c724609fe00e2ee12e89f149bffc73f077e1476aa0",
+      "scope": "Odczyt opisu Lgen i FFM. Nie przyjęto ilościowych deklaracji marketingowych10x ani twierdzeń odsłuchowych jako dowodu parametrów."
     }
   ]
 }

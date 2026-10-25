@@ -29,7 +29,18 @@ Kod i dane są dostępne, a [raport 007](raporty/007_fizyka_nieliniowosci_i_DSP.
 rozwija nowe wyniki. Nie wyciągamy z nich rankinguTHD, jakości odsłuchowej
 lub gotowości produktu do komercjalizacji.
 
-## Następny pakiet domyślny: P12C — pamięć indukcyjności i dane krzywych
+## Następny pakiet domyślny: P14 — IMD i wielotony
+
+P12C wykonano dla dodatnich rodzin pamięci, z odczytem oryginalnego
+wykresu|Lgen| i rozdzieleniem pasywności od prawidłowej siły:
+[raport021](raporty/021_pamiec_cewki_i_definicja_Lgen.md).
+Następny eksperyment: sygnały dwutonowe/wielotonowe z realizacjąFLUX,
+kontrola faz i koherentnego widma, porównanie z granicą liniową oraz
+operator emisji harmonicznych zP11. Nie utożsamiać pola monopola
+z rzeczywistą kierunkowością przy wyższych harmonicznych. Zbadać wpływ
+pamięci, amplitudy i gałęzi bez przypisywania nieznanych krzywych produktom.
+
+Poniższy opis P12C zachowuje zależności wykonanej kampanii.
 
 P12/P13 mają wykonane rodziny warunkowe:
 [raport020](raporty/020_nieliniowy_naped_i_sprzezony_gaz.md),12 096przypadków
@@ -147,7 +158,7 @@ z góry pożądany wynik. Nie przechodzić automatycznie do konstrukcji ani zaku
 Aktualizacja 2026-10-24: wykonano szeroką pulę 24 modeli / 11 producentów,
 globalne granice po Vb, identyfikowalność oraz scenariusze P26/P27 dla pokoju
 4,6 × 3,7 × 2,5 m. P06 wykonano w liniowych rodzinach (raport 015).
-Bieżący następny krok to P12C (rozszerzenieP12/P13) z
+Bieżący następny krok to P14 z
 [programu 30 badań](PROGRAM_30_BADAN.md); poniższa lista N8–N11 pozostaje
 historycznym opisem zależności, nie kompletną aktualną kolejką.
 

@@ -1,0 +1,43 @@
+{
+  "sources": [
+    {
+      "id": "SRC35",
+      "title": "Risbo, Agerkvist, Tinggaard, Halvorsen, Putzeys: Force Factor Modulation in Electro Dynamic Loudspeakers, AES141,2016",
+      "url": "https://purifi-audio.com/documents/content/WT1Pkt9-SxijAvNyifNN4Ao2a2",
+      "publication_year": 2016,
+      "access_date": "2026-10-24",
+      "analysis_date": "2026-10-25",
+      "type": "pierwotna_publikacja_teoretyczna_i_eksperymentalna",
+      "raw_capture_sha256": "1df57c215b30a45f82c57461ebd5ebd97bfde1b2459aa708dbf2dec918d686cb",
+      "original_pdf_sha256": "4d4db2ca6c15fc7d10a3dfc2c84579a428486d0368743ca5a96a19ddf99e3d1b",
+      "scope": "Odczyt sekcji2–4 i oryginalnych stron2/4/7: Eq6,Eq18,Fig2/7/8. Lgen jestzespolone; Fig2pokazuje|Lgen|. Test źródłowy dotyczy4calowegoDUT i MagNet, nie naszych24produktów. Wzór na siłę nie wynika z bezwarunkowego przypisaniaL2 energii niezależnej cewki. Nie odtwarzano pomiarów ani całegoMagNet."
+    },
+    {
+      "id": "SRC36",
+      "title": "PURIFI Ushindi/PureDrive — opis producenta",
+      "url": "https://purifi-audio.com/ushindi",
+      "access_date": "2026-10-24",
+      "analysis_date": "2026-10-25",
+      "type": "opis_producenta_nie_pomiar",
+      "raw_capture_sha256": "3b888787290d4f1422ebb5c724609fe00e2ee12e89f149bffc73f077e1476aa0",
+      "scope": "Odczyt opisu Lgen i FFM. Nie przyjęto ilościowych deklaracji marketingowych10x ani twierdzeń odsłuchowych jako dowodu parametrów."
+    }
+  ],
+  "manufacturer_graph_source_id": "SRC33",
+  "derived_data": "dane/zrodla/digitalizacja/Purifi_NAB01_Lgen_fig4.csv",
+  "derived_csv_sha256": "75383fd37c6ed980e0aca7afc24491ced06634627b93df73640c406f8b8743a0",
+  "digitization_configuration": "dane/konfiguracje/p12c_digitalizacja_Lgen.json",
+  "quantity_verified_in_original": "Na osi widnieje|Lgen|[mH]; nie utożsamiać z Re(Lgen),Im(Z)/omega aniLd.",
+  "measurement_type_status": "Dane producenta/TypicalPerformance; wykres nie identyfikuje jednoznacznie pomiaru/symulacji. Digitalizacja nie jest nowym pomiarem.",
+  "uncertainty_scope": "Wyłącznie zadany model osi/linii/kolumn; brak deklarowanej niepewności producenta.",
+  "not_redistributed": "Oryginalne PDF i obrazy robocze są prywatną pamięcią.firecrawl; w repo fakty, hashe, kod i odczyty.",
+  "source_C18_scalar_data": {
+    "Re_dc_ohm": 3.9,
+    "Zmin_ohm": 4.7,
+    "f_Zmin_hz": 156,
+    "Le_table_1khz_h": 0.00062,
+    "source": "SRC33,PDF0.95June2024,Table1"
+  },
+  "physical_realization_scope": "Własna dodatnia realizacja pamięci strumienia, stałetau po x, zgodność ze wzorem18 przy zablokowanej pozycji. Nie jest kompletną identyfikacją każdego ruchomego silnika ani modelem histerezy magnetycznej.",
+  "browser_note": "Pobrano oryginały browser-harness, nie włączono nagrywania. Zrzut ukrytej karty utknął; aktywacja naszej karty przywróciła renderowanie. Oryginalny wycinek producenta i strony pracy obejrzano także bezpośrednio."
+}

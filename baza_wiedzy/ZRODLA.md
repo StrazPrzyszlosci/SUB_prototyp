@@ -85,6 +85,19 @@ P12/P13: [fakty, hashe, obrazy i luki](../dane/zrodla/P12_P13_nieliniowosci_i_lu
 [stan źródeł24modeli](../dane/przetworniki/dostepnosc_nieliniowych_P12.json).
 Data dostępu SRC31–34:2026-10-24. Puste wyszukiwania STX nie dowodzą braku danych.
 
+- SRC35: [Risbo et al., Force Factor Modulation in Electro Dynamic Loudspeakers, AES141/2016](https://purifi-audio.com/documents/content/WT1Pkt9-SxijAvNyifNN4Ao2a2).
+  Oryginalne strony2/4/7 i sekcje2–4: równanie6 definiuje zespoloneLgen,
+  równanie18 określa siłę dla L2R2.4″DUT iMagNet nie są naszymi produktami.
+- SRC36: [PURIFI Ushindi/PureDrive](https://purifi-audio.com/ushindi).
+  Opis producenta; deklaracji marketingowych10x i ocen odsłuchowych
+  nie przyjęto jako dowodu ilościowego.
+
+P12C: [pochodzenie i definicje](../dane/zrodla/P12C_definicja_Lgen_i_sila.json).
+Źródła pobrano24.10.2026, analizę zakończono25.10.2026.
+Oryginalny wykres4SRC33 ma oś **|Lgen|**; [30odczytów](../dane/zrodla/digitalizacja/Purifi_NAB01_Lgen_fig4.csv)
+z kalibracją i modelem niepewności odczytu są digitalizacją danych producenta,
+nie surowym pomiarem ani tolerancją populacji.
+
 Przekazane przez użytkownika oceny i program są zachowane w
 [materialach źródłowych](../dane/zrodla/materialy_uzytkownika/indeks.json).
 To wymagania i komentarze do badań, a nie niezależna walidacja osiągów.

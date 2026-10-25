@@ -132,6 +132,16 @@ Optymalizacja jednego sweet spotu 2,5–3 m; brak narzuconego budżetu i gabaryt
     konkretnej membrany/pokoju. Nie interpretować śladowych harmonicznych
     poniżej precyzji danego przebiegu. Cztery wyjścia z dziedziny nastąpiły
     w rozruchu; nie pomijać ich przy ocenie ochrony.
+31. P12C: Lgen=(Zblocked-Re)/s jest zespolone, a oryginalny wykres C18 ma
+    oś|Lgen|. Odczyt z kalibracją i przedziałami jest digitalizacją,
+    nie surowym pomiarem. Dokładne wykluczenie jednej gałęzi dotyczy
+    zapisanych przedziałów, nie pełnej nieznanej niepewności producenta.
+    Brak znalezionego N=2 nie jest dowodem jego niemożliwości. Świadkowie
+    N=3 nie są globalnymi obwiedniami ani trzema fizycznymi elementami.
+    Do dalszego ruchu używaćFLUX. NAIVE ma poprawne Zblocked i jest pasywne,
+    ale błędnie przypisuje siłę pomocniczemu prądowi. Tau w realizacji jest
+    stałe po x; nie modelujemy histerezy magnetycznej. Deddy nie jest samo
+    w sobie grzaniem cewki; Rms_effective też nie identyfikuje strat materiału.
 
 ## Stan i postępy
 
@@ -232,8 +242,8 @@ Postęp końca sesji2026-10-23:
   (inicjalizacja minimum przez+∞ zamiast0); przeliczono powiązany etap.
   Rachunek geometrii z rzutu wykonano osobno i włączono do odtwarzania.
   Nie deklarować z tego fizycznej walidacji ani zamknięcia całego programu.
-- **Następny krok: P12C — pasywna pamięć indukcyjności, Le(x,f) a strumień,
-  uzgodnienie zestawów źródłowych przed P14/IMD i promieniowaniem harmonicznych.** Nie powtarzać
+- **Następny krok: P14 — IMD i sygnały wielotonowe z modelemFLUX,
+  następnie promieniowanie harmonicznych i dalsza analiza amplitud/gałęzi.** Nie powtarzać
   wykonanego N7 ani wyszukiwań wszystkich 24 opinii
   bez konkretnej nowej hipotezy lub źródła. Dokładne pozycje w pokoju pozostają
   pytaniem otwartym; rozdzielać je od jawnych scenariuszy w p26_scenariusze.json.
@@ -256,6 +266,34 @@ Postęp końca sesji2026-10-23:
   OdrębneDOP853/Radau potwierdziły także słaby H2 w72przypadkach kompensacji
   przez wybrane świadki. Trzy wykresy22–24 obejrzano. Globalnego testu
   wszystkich gałęzi ani precyzji fizycznego produktu nie deklarować.
+
+## Postęp 2026-10-25
+
+- P12C wykonano w dodatnich rodzinach pamięci:720kalibracji (643dodatnie,
+  77odrzuconych sieci),18 676wierszy liniowych i1728pełnychODE dla24baz.
+  17flag cyklu oraz3świadków przeliczonoRadau; końcowa tabela spełnia
+  zadane kryterium we wszystkich1728punktach. Raport021 i baza15.
+- Zdigitalizowano30punktów oryginalnego wykresu C18 z jawnymi osiami,
+  grubością linii i modelem błędu odczytu. Źródłowa oś to|Lgen|, nieLd.
+  Dokładne nierówności wykluczają jedną gałąź dla zapisanych przedziałów
+  i wszystkich dodatnich biegunów.76dopasowań dało36dopuszczonychN3;
+  nie dowiedziono niemożliwościN2 ani nie zidentyfikowano fizycznego motoru.
+- ŹródłoSRC35 wyjaśnia różnicę i*(G*i) vs(G*i)² w sile L2R2. Replikacja
+  obejmuje216przypadków i znormalizowany skok; to replikacja teorii,
+  nie pomiarów4″DUT/MagNet. Obie realizacje mogą być pasywne. W432parach
+  modeli różnica H2 sięga1,1918punktu procentowego, bez rankingu produktów.
+- Sprawdzono energię,160odrębnych porównań stanu/częstotliwości, redukcje
+  N=0/Linstant=0/tau0/∞ oraz niezerową zamrożoną pamięć w granicy bez strat.
+  Ciepła gałęzi nie przypisywać automatycznie do cewki. Digitalizację
+  odtwarzać osobno z oryginalnymPDF i requirements_zrodla.txt; obliczenia
+  zwykłe używają wersjonowanegoCSV. Dziennik wznawia zgodne przypadki.
+- Jeden najbliższy krok: P14 — IMD i wielotony zFLUX, potem emisja
+  harmonicznych. Pełny program, klej, pojedynczy wybór i końcowyPDF otwarte.
+- Odtworzono digitalizację z identycznymi bajtami30punktówCSV. Wznowienie
+  dziennika1728przypadków sprawdzono osobno; nie jest niezależnym świeżym
+  rachunkiemODE. Cztery wykresy25–28 obejrzano.5974liniowe porównania
+  z aktywnymX zachowują pułapSPL do7,72e-15dB; nie rozciągać tej tożsamości
+  na dowolne sygnały nieliniowe/wielotonowe.
 
 ## Decyzje otwarte
 

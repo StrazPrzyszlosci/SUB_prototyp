@@ -155,6 +155,7 @@ def main():
     # Manifest obejmuje kod i wyniki, nie tylko nazwy bibliotek.
     files = [ROOT / 'brief_system_audio_DIY_v0.6.md', ROOT / 'DECYZJE_I_PYTANIA.md',
              ROOT / 'requirements.txt',
+             *([ROOT/'requirements_zrodla.txt'] if (ROOT/'requirements_zrodla.txt').exists() else []),
              ROOT / 'PLAN_BADAN_NAUKOWYCH.md', ROOT / 'PROGRAM_30_BADAN.md', data_path, cfg_path,
              *sorted((ROOT / 'dane/przetworniki').glob('*.json')),
              *sorted((ROOT / 'dane/konfiguracje').glob('*.json')),

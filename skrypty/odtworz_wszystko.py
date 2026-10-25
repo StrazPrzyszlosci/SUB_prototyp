@@ -76,6 +76,13 @@ def main():
     from sprawdz_kompensacje_gazu import main as compensation_checks
     from sprawdz_pakiet_nieliniowy import main as nonlinear_tables
     from raportuj_naped_nieliniowy import main as nonlinear_report
+    from sprawdz_pamiec_cewki import main as coil_memory_checks
+    from analiza_cewki_z_pamiecia import main as coil_memory_analysis
+    from replikacja_sily_L2R2 import main as coil_force_replication
+    from analiza_ident_Le_i_dopasowania import main as coil_identification
+    from audyt_wykluczenia_1_bieguna import main as one_pole_audit
+    from sprawdz_pakiet_pamieci import main as memory_tables
+    from raportuj_pamiec_cewki import main as memory_report
     checks()
     images()
     physics()
@@ -119,6 +126,13 @@ def main():
     compensation_checks()
     nonlinear_tables()
     nonlinear_report()
+    coil_memory_checks()
+    coil_memory_analysis()
+    coil_force_replication()
+    coil_identification()
+    one_pole_audit()
+    memory_tables()
+    memory_report()
     baseline()  # Manifest powstaje po wszystkich obliczeniach.
 
 
