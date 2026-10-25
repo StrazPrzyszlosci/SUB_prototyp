@@ -1,209 +1,266 @@
-# SUB_prototyp
+# SUB_prototyp — przewodnik po badaniach subwoofera
 
-Badania naukowe i rozwój prototypu subwoofera zamkniętego.
+Projektujemy **prototyp subwoofera zamkniętego z regulowaną objętością**.
+Badania mają doprowadzić do wyboru **jednego przetwornika i jednej konstrukcji**:
+objętości, płyt, usztywnień, połączeń, kleju oraz wymagań napędu i ochrony.
+Ten README prowadzi od pytań projektowych przez najważniejsze wykresy do
+raportów, danych i odtwarzalnych obliczeń.
 
-**Ocena postępu 2026-10-25, po P18A/P19A/P21A:** orientacyjnie 55–65%
-programu przed budową, około 35–45% zakresu pozostaje.
-To szacunek planistyczny, nie wynik pomiaru ani procent gotowości urządzenia.
-[Raport 032 — wykonane prace, pozostałe bloki i kryterium zakończenia](raporty/032_postep_po_mechanice_i_zakres_do_konca.md).
+**Stan: 2026-10-25.** Porównujemy 24 modele od 11 producentów, w tym 4 STX.
+Najnowszy ukończony zakres to [czasowa analiza styku frontu — raport 034](raporty/034_czasowy_styk_i_pelny_MES.md).
+Trwa program badań przed budową; ostateczny wybór i końcowy PDF są przed nami.
+Przedstawione wyniki są obliczeniami i symulacjami, bez pomiarów fizycznego prototypu.
 
-**Aktualizacja 2026-10-24:** pula obejmuje 24 modele od 11 producentów,
-w tym 4 STX. Wykonano 12 576 scenariuszy objętości/napędu, analizę N7,
-288 przypadków granic po dodatnich Vb oraz badanie identyfikowalności.
-To nadal badania przed prototypem, bez zatwierdzonego rankingu THD.
-Zacznij od [raportu 010](raporty/010_szeroka_pula_i_kwalifikacja.md),
-[011](raporty/011_granice_globalne_litrazu.md) i
-[012](raporty/012_identyfikowalnosc_i_dane_publikowane.md).
-Pokój około **4,6 × 3,7 × 2,5 m** jest jawnym wejściem:
-[raport 013 — pole zespolone, dwa źródła i ograniczenia gabarytów](raporty/013_pokoj_i_realne_gabaryty.md).
-P06 obejmuje globalną czułość i niepewność 24 modeli:
-[raport 015 — obwiednie i odporność kolejności](raporty/015_niepewnosc_globalna_i_odpornosc.md).
-P09/P10: [raport 016 — gaz, wypełnienie i granice szczelności](raporty/016_gaz_wypelnienie_i_granice.md).
-P11: [raport 017 — promieniowanie, konwencje masy i sprzężenie pokoju](raporty/017_promieniowanie_i_sprzezenie_pokoju.md).
-Obejmuje wzorcowe geometrie oraz 4 154 112 realizacji częstotliwościowych
-reakcji modalnego pokoju; nie jest wynikiem fizycznego prototypu.
-Rzut od użytkownika: [raport 018 — orientacja kanapa–RTV i odległość odsłuchu](raporty/018_rzut_pokoju_i_odleglosc_odsluchu.md).
-**Aktualizacja U-020:** docelowo RTV po lewej i kanapa po prawej obrazu;
-[raport019](raporty/019_zamiana_kanapy_i_RTV.md) zastępuje wcześniejszą orientację.
-P12/P13: [raport020 — nieliniowy napęd i sprzężony gaz](raporty/020_nieliniowy_naped_i_sprzezony_gaz.md),
-12 096przypadków warunkowych i72przypadki kompensacji; nie jest rankingiem
-THD produktów. Identyfikacja rzeczywistych krzywych pozostaje częściowa.
-P12C: [raport021 — pamięć cewki, L_gen i siła](raporty/021_pamiec_cewki_i_definicja_Lgen.md).
-Wykonano18 676wierszy liniowych,1728pełnychODE i odrębne sprawdzenie
-źródłowej definicji/siły. Najbliższy krok: P14/IMD i wielotony zmodelemFLUX.
-Ocena stanu badań: [raport022 — postęp i pozostały zakres](raporty/022_stan_badan_i_zakres_pozostaly.md).
-Rozpoczęte P14A: [raport023 — wspólne limity i pilot dwutonowy](raporty/023_P14A_dwa_tony_i_wspolne_limity.md).
-Pilot nie zamyka P14/P25; dalsze kroki obejmują szersze sygnały i emisję harmonicznych.
-Historyczny etap częściowyP14B: [raport024 — fazory, emisja i15zamrożonych świadków](raporty/024_P14B_emisja_i_swiadkowie.md).
-Przypadek45+95Hz tworzy ruch5Hz; rozdzielono projekcje stałe i kontrolny
-ruchomy monopol. To nie zmierzone THD ani zamknięcie kampanii3312przypadków.
-Rozpoczęto termikę: [raport025 — P15A, topologie i granice](raporty/025_P15A_topologia_i_granice_termiki.md).
-4225sieci kontrolnych, ciągła niejednoznaczność chłodzenia i warunkowe
-wymaganiaRth; nie prognozy temperatur konkretnych produktów.
-**Wykonano zakres P14B:** [raport026 —3312przypadków, fazy, amplitudy i rozruch](raporty/026_P14B_pelna_kampania_dwutonowa.md).
-23flagi rozstrzygnięto osobno;16560projekcji pola i4niezależneRadau.
-**Wykonano rodzinę P15B:** [raport027 —2304przebiegiRe(T),grzania i ruchu](raporty/027_P15B_sprzezenie_grzania_i_napedu.md).
-Nie są to zidentyfikowane temperatury24produktów.
-**P17:** [raport028 — synteza napięcia,prądu,objętości i chłodzenia](raporty/028_P17_synteza_napedu_objetosci_i_ciepla.md).
-5184zestawy i31104punkty wymaganej pracy; analityczne przedziały Vb>0,
-bez udawania progów klienta ani SPL w pokoju. Następne wykonane podstawy
-mechaniki opisują poniższe raporty.
-**Wykonane podstawy mechaniki:** [raport029 —172warianty płyt i ściągów](raporty/029_P18A_plyty_sciagi_i_dynamika.md),
-[030 —656normalnych podmodeli spoiny,ścinanie i szczeliny](raporty/030_P19A_obliczenia_spoin_i_material_kleju.md),
-[031 —72sprzężone punkty reakcji powietrza](raporty/031_P21A_reakcja_powietrza_i_bilans.md).
-Nie są to pełna geometria frontu3D i kwalifikacja trwałości kleju.
-**Wykonano P18B/P19B:** [raport033 — front z otworem,koszem i jednostronny styk](raporty/033_front_otwor_kosz_i_styk_jednostronny.md).
-136wariantówfrontu,90punktówkomory,12stanówdocisku i72diagnostyki styku.
-20flagzmiany styku pozostaje jawną bramką;nie są przebiegiem po otwarciu.
-Najbliższy krok:P19C — czasowa odpowiedź konkretnego zmiennego styku;
-następnie pełna rama,regulacja i pole rzeczywistej skrzyni.
-
-**Bieżący zakres: wyłącznie naukowe zagadnienia prototypu (U-010).**
-Najnowsze zlecenie: [program30badań](PROGRAM_30_BADAN.md), szeroka pula
-producentów w tymSTX, obliczeniowy dobór kleju i końcowa rekomendacja
-jednego głośnika oraz jednej konstrukcji. KońcowyPDF po ukończeniu prac
-możliwych bez urządzenia. Wykonany N7: [raport009](raporty/009_N7_straty_nieszczelnosci.md).
-Zacznij od [planu naukowego](PLAN_BADAN_NAUKOWYCH.md) i
-[raportu fizyki/DSP](raporty/007_fizyka_nieliniowosci_i_DSP.md).
-Opisy wycen i doboru handlowego w starszym planie dotyczą odłożonych etapów.
-
-Projekt B+R na podstawie [briefu v0.6](brief_system_audio_DIY_v0.6.md).
-Stan 2026-10-23: utworzono plan, obszerną bazę wiedzy i pierwsze obliczenia.
-Obecny zakres to **badania do budowy prototypu**. Referencje: zatwierdzone
-ADAM Sub12 i Sub15. Dobór toru pomiarowego po budowie; później pomiary tylko
-w pokoju. Narzędzia CAD odłożone.
+| Ustalenie | Obowiązujący kontekst |
+|---|---|
+| Wymagania | [Brief v0.6](brief_system_audio_DIY_v0.6.md) i [późniejsze decyzje użytkownika](DECYZJE_I_PYTANIA.md) |
+| Referencje | ADAM Sub12 i Sub15; progi liczbowe pozostają otwarte |
+| Pokój | Około **4,6 × 3,7 × 2,5 m**, 42,55 m³; docelowo **RTV po lewej, kanapa po prawej** oryginalnego rzutu |
+| Docelowy system | Dwa subwoofery przy monitorach, jeden sweet spot 2,5–3 m; przyszła architektura co najmniej 8 wyjść DSP |
+| Obecny zakres | Nauka, źródła, obliczenia i symulacje do budowy. Zakupy, CAD i dobór aparatury pozostają odłożone |
 
 ## Od czego zacząć
 
-| Dokument | Zawartość |
+- **Chcę zrozumieć wnioski:** przejdź przez [wykresy i ich objaśnienia](#wykresy).
+- **Chcę sprawdzić konkretny temat:** wybierz go w [mapie raportów](#mapa).
+- **Chcę wiedzieć, co zostało:** zobacz [stan i następne decyzje](#dalsze-prace).
+- **Chcę zweryfikować rachunek:** przejdź do [danych i odtwarzania](#odtwarzanie).
+- **Szukam starszego dokumentu:** otwórz [pełny indeks raportów](raporty/README.md).
+
+<a id="mapa"></a>
+## Mapa badań — pytanie → raport → dane
+
+| Pytanie | Gdzie czytać | Gdzie sprawdzać wejścia lub wyniki |
+|---|---|---|
+| Jakie głośniki badamy i co wiadomo z opinii? | [010 — szeroka pula](raporty/010_szeroka_pula_i_kwalifikacja.md), [012 — identyfikowalność](raporty/012_identyfikowalnosc_i_dane_publikowane.md) | [24 kandydatów](dane/przetworniki/pula_rozszerzona.json), [krytyczna ocena opinii](dane/zrodla/opinie_puli_ocena.json) |
+| Jak dobrać litraż, wychylenie i napęd łącznie? | [011 — granice objętości](raporty/011_granice_globalne_litrazu.md), [028 — wspólne ograniczenia](raporty/028_P17_synteza_napedu_objetosci_i_ciepla.md) | [Wyniki P17](wyniki/p17_podsumowanie.json) |
+| Jak niepewność danych zmienia kolejność kandydatów? | [015 — czułość i odporność](raporty/015_niepewnosc_globalna_i_odpornosc.md) | [Baza wiedzy o niepewności](baza_wiedzy/10_niepewnosc_globalna.md) |
+| Co robią gaz, wypełnienie i nieszczelności? | [009 — przecieki](raporty/009_N7_straty_nieszczelnosci.md), [016 — gaz i materiały](raporty/016_gaz_wypelnienie_i_granice.md) | [Konfiguracje modeli](dane/konfiguracje/), [źródła](baza_wiedzy/ZRODLA.md) |
+| Skąd biorą się nieliniowości i IMD? | [020 — nieliniowy napęd](raporty/020_nieliniowy_naped_i_sprzezony_gaz.md), [021 — pamięć cewki](raporty/021_pamiec_cewki_i_definicja_Lgen.md), [026 — dwa tony](raporty/026_P14B_pelna_kampania_dwutonowa.md) | [Podsumowanie P14B](wyniki/p14b_podsumowanie.json) |
+| Jak prąd, temperatura i chłodzenie wpływają na pracę? | [025 — topologia termiki](raporty/025_P15A_topologia_i_granice_termiki.md), [027 — grzanie i napęd](raporty/027_P15B_sprzezenie_grzania_i_napedu.md) | [Podsumowanie P15B](wyniki/p15b_podsumowanie.json) |
+| Jak policzyć panele, usztywnienia i klej? | [029 — płyty](raporty/029_P18A_plyty_sciagi_i_dynamika.md), [030 — spoiny](raporty/030_P19A_obliczenia_spoin_i_material_kleju.md), [031 — reakcja powietrza](raporty/031_P21A_reakcja_powietrza_i_bilans.md) | [Materiał MDF i kleje](dane/materialy/), [wyniki mechaniki](wyniki/manifest_mechaniki_P18_P19_P21.json) |
+| Jak otwór, kosz i uszczelka zmieniają front? | [033 — front i docisk](raporty/033_front_otwor_kosz_i_styk_jednostronny.md), [034 — styk w czasie](raporty/034_czasowy_styk_i_pelny_MES.md) | [Geometria producentów](dane/zrodla/P18B_geometria_i_ograniczenia.json), [przebiegi P19C](wyniki/p19c_podsumowanie.json) |
+| Jak uwzględniamy pokój i dwie sztuki? | [013 — dwa źródła i gabaryty](raporty/013_pokoj_i_realne_gabaryty.md), [017 — sprzężenie pola](raporty/017_promieniowanie_i_sprzezenie_pokoju.md), [019 — aktualna orientacja](raporty/019_zamiana_kanapy_i_RTV.md) | [Konwencja pokoju](dane/konfiguracje/pokoj_odsluchowy.json), scenariusze opisane w raportach |
+
+Pełny zakres i otwarte bramki są w [programie 30 pakietów](PROGRAM_30_BADAN.md).
+Podstawy fizyczne wyjaśnia [baza wiedzy](baza_wiedzy/README.md), a ślad pracy
+zapisujemy w [AGENTS.md](AGENTS.md).
+
+<a id="wykresy"></a>
+## Najważniejsze wykresy i wnioski projektowe
+
+Czytaj warunki każdego wykresu: częstotliwość, sygnał, RMS/szczyt, odległość,
+geometrię oraz aktywny limit. Wykresy używają różnych eksperymentów — m.in.
+2π i 4π — więc ich liczb SPL nie porównuje się bezpośrednio.
+Zakresy stresowe opisują przyjęte hipotezy; nie są tolerancjami producentów.
+
+### 1. Punkt wyjścia: możliwości 24 kandydatów
+
+Porównanie przy wspólnych 100 l, 40 V RMS i 12 A RMS pokazuje, gdzie
+ogranicza ruch, a gdzie napęd. Prawy panel ilustruje sam iloczyn Sd·Xmax.
+**Wyższy słupek nie oznacza lepszego THD lub gotowego zwycięzcy** — definicje
+Xmax różnią się, a ten etap nie zawiera pełnej termiki.
+
+![24 kandydatów — porównanie liniowych ograniczeń i katalogowego Sd razy Xmax](wyniki/09_szeroka_pula.png)
+
+[Raport 010: modele, źródła, konflikty i opinie](raporty/010_szeroka_pula_i_kwalifikacja.md).
+
+### 2. Odporność wyboru: czy kolejność przetrwa niepewność?
+
+Obwiednie pokazują wpływ zadanych zakresów parametrów. Nakładanie się
+obwiedni i zmiana przyjętego użytecznego skoku mogą odwrócić kolejność.
+Nie utożsamiamy udziału wygranych w losowaniu z prawdopodobieństwem,
+że dany fizyczny głośnik będzie lepszy.
+
+![Niepewność parametrów i warunkowa zmiana kolejności kandydatów](wyniki/11_niepewnosc_i_kolejnosc.png)
+
+[Raport 015: dziedziny, obwiednie i kontrprzykłady](raporty/015_niepewnosc_globalna_i_odpornosc.md).
+
+### 3. Litraż: napięcie, prąd, ruch i chłodzenie muszą zgadzać się jednocześnie
+
+Przedziały objętości wynikają ze wspólnych warunków dla sześciu **osobnych**
+sinusów 20–80 Hz. Ilustracja używa 90 dB RMS, 4π/1 m, 40 V/12 A i testowych
+parametrów cieplnych. Są to warunki obliczenia, nie zatwierdzone wymagania
+klienta, muzyka ani wynik SPL w pokoju.
+
+![Wspólne przedziały objętości przy ograniczeniach napędu i założonym chłodzeniu](wyniki/42_P17_wspolna_objetosc_i_chlodzenie.png)
+
+[Raport 028: jak powstają granice i co je ogranicza](raporty/028_P17_synteza_napedu_objetosci_i_ciepla.md).
+
+### 4. Powietrze i wypełnienie: podatność zależy od częstotliwości
+
+Gaz przechodzi między odpowiedzią bliższą izotermicznej i adiabatycznej,
+a wymiana ciepła wprowadza straty. Wypełnienia nie zastępujemy jednym
+stałym „bonusem litrów”. Pokazane czasy relaksacji są rodzinami modeli,
+bez identyfikacji konkretnej włókniny.
+
+![Relaksacja cieplna gazu — sztywność, straty i wpływ na odpowiedź](wyniki/13_relaksacja_cieplna_gazu.png)
+
+[Raport 016: gaz, pory, materiały, nieliniowości i granice](raporty/016_gaz_wypelnienie_i_granice.md).
+
+### 5. Dwa tony: ruch może pojawić się również poniżej pasma wejścia
+
+W warunkowym przykładzie 45 + 95 Hz powstaje produkt przy 5 Hz.
+Znaczenie mechaniczne i emisja akustyczna są różne: w tym odniesieniu
+ciśnienie zależy od przyspieszenia. Filtr wejściowy nie usuwa produktu
+wytworzonego później przez model nieliniowy.
+
+![Przykład IMD — ruch przy 5 Hz i odrębna projekcja ciśnienia](wyniki/31_P14B_ruch_i_emisja_5Hz.png)
+
+[Opis przykładu i projekcji](raporty/024_P14B_emisja_i_swiadkowie.md)
+· [zakończony zadany zbiór 3312 przypadków](raporty/026_P14B_pelna_kampania_dwutonowa.md).
+Krzywe są hipotetyczne; nie przedstawiają zmierzonego IMD modelu handlowego.
+
+### 6. Termika: mniejszy prąd nie zawsze oznacza mniejsze grzanie
+
+Przy stałym napięciu wzrost Re zmniejsza prąd, lecz moc I²Re może
+początkowo rosnąć — decyduje również zespolona impedancja.
+Ochrona cieplna musi uwzględniać historię strat i warunki chłodzenia.
+Alpha = 0,004/K na wykresie jest założeniem tego eksperymentu.
+
+![Wpływ temperatury na prąd i moc grzania przy stałym napięciu](wyniki/37_P15B_prad_i_grzanie.png)
+
+[Raport 027: sprzężenie cieplne, obwiednie i ograniczenia danych](raporty/027_P15B_sprzezenie_grzania_i_napedu.md).
+
+### 7. Pokój: częstotliwość modu nie określa jeszcze jego amplitudy
+
+Idealny prostopadłościan o wymiarach z briefu ma pierwsze mody osiowe
+około 37,3 / 46,4 / 68,6 Hz. Ich poziomy i zaniki zależą od strat,
+otwarć oraz położenia źródeł i słuchacza. Dokładne pozycje pozostają
+nieznane; jawne scenariusze nie stają się pomiarem pokoju.
+
+![Mody osiowe idealnego pokoju — częstotliwości bez założonych amplitud](wyniki/02_mody_osiowe.png)
+
+[Raport 013: modele pokoju i dwie sztuki](raporty/013_pokoj_i_realne_gabaryty.md)
+· [raport 019: RTV po lewej, kanapa po prawej](raporty/019_zamiana_kanapy_i_RTV.md).
+
+### 8. Ścianki: usztywnienie może dać więcej niż sama grubość
+
+W referencyjnej parze ścian 460 × 640 × 22 mm przy 1 kPa statycznym
+jeden ściąg zmniejsza ugięcie z około 154,7 do 29,7 µm, a dwa do 12,7 µm
+w wariancie SSSS. Trzeba równocześnie sprawdzić masę, nakładki,
+połączenia i postacie, których ściąg nie usztywnia.
+
+![Grubość MDF i ściągi — częstotliwości własne oraz statyczne ugięcie](wyniki/43_P18A_grubosc_sciagi_i_ugiecie.png)
+
+[Raport 029: model MES, kontrole i granice wniosku](raporty/029_P18A_plyty_sciagi_i_dynamika.md).
+
+### 9. Klej i nakładki: średnie F/A nie wystarcza
+
+Rozmiar nakładki, jej grubość i podatność MDF zmieniają koncentrację
+naprężeń. Większe pole nie zapewnia proporcjonalnego spadku szczytu.
+Obliczone pole modelu spoiny nie jest rzeczywistym maksimum 3D;
+klasa D3/D4 nie zastępuje nośności, pełzania ani zmęczenia połączenia.
+
+![Rozprowadzanie siły przez nakładkę — koncentracja naprężeń w modelu](wyniki/47_P19A_nakladka_i_koncentracja_naprezen.png)
+
+[Raport 030: obliczenia spoin, referencja kleju i brakujące dane trwałości](raporty/030_P19A_obliczenia_spoin_i_material_kleju.md).
+
+### 10. Front: otwór i kosz zmieniają konstrukcję
+
+Siatka odwzorowuje otwór główny i skończone obszary przekazywania sił.
+Pokazane średnice pochodzą z rysunków producentów; nie jest to dokumentacja
+CNC. Luz, frez i lokalne otwory śrubowe wymagają osobnego dopracowania.
+
+![Siatki frontów z nominalnymi otworami C04 i C02 oraz modelowymi łatami mocowania](wyniki/49_P18B_siatka_frontu_z_otworem.png)
+
+Porównanie niżej izoluje wpływ geometrii przy **wspólnym umownym ładunku
+10 kg**. Nie przypisuje tej masy wszystkim głośnikom. Miękkie mocowanie
+może ograniczać korzyść z pogrubienia frontu, a pierwszy mod może być przechyłem kosza.
+
+![Wpływ grubości frontu i zamocowania na częstotliwość oraz ruch kosza](wyniki/50_P18B_grubosc_i_ruch_kosza.png)
+
+[Raport 033: front, masa, mocowania i niezależne odniesienia](raporty/033_front_otwor_kosz_i_styk_jednostronny.md).
+
+### 11. Docisk: uszczelka i śruby mają różne warunki pracy
+
+Uszczelka przenosi ściskanie, a śruby w modelowanej drodze siły —
+rozciąganie. Parametr T₀ oznacza zadane skrócenie sprężyny pomnożone
+przez jej sztywność; nie jest momentem dokręcania ani zachowaną siłą.
+W P19B 20 z 72 scenariuszy wskazało możliwą zmianę styku.
+
+![Docisk, zachowane siły śrub i flagi nieadekwatności zamrożonego styku](wyniki/52_P19B_docisk_i_bramki_styku.png)
+
+[Raport 033: jednostronny docisk i jawne flagi](raporty/033_front_otwor_kosz_i_styk_jednostronny.md).
+
+### 12. Styk w czasie: rozstrzygnięcie konkretnego przypadku przy 80 Hz
+
+Dla wskazanego C04 z hipotetyczną uszczelką obliczono okresowe otwieranie
+styku przy zadanym względnym ruchu stożka 1 mm RMS. Sprawdzono redukcję,
+energię, inny integrator i pełne 2959 współrzędnych MES. Jest to jeden
+warunkowy przypadek; nie potwierdzenie hałasu, przecieku lub THD produktu.
+
+![Czasowy przebieg ruchu, otwierania styku, bilansu energii i harmonicznych kontaktu](wyniki/53_P19C_przebieg_styku_i_energia.png)
+
+[Raport 034: wynik, zbieżność i ograniczenia](raporty/034_czasowy_styk_i_pelny_MES.md)
+· [dodatkowy wykres zbieżności](wyniki/54_P19C_zbieznosc_i_pelny_MES.png).
+
+<a id="dalsze-prace"></a>
+## Co wynika dla dalszego projektu
+
+Dotychczasowe badania uzasadniają wspólne dobieranie przetwornika,
+objętości i napędu, konstrukcję z kontrolowanymi usztywnieniami oraz
+osobne sprawdzenie frontu, docisku i ochrony dynamicznej.
+**Ostateczny głośnik i skrzynia nie zostały jeszcze wybrane.**
+
+| Pozostały blok | Decyzja, do której ma doprowadzić |
 |---|---|
-| [PLAN_B_R.md](PLAN_B_R.md) | Pakiety R0–R5, zależności, rezultaty i warunki zakończenia przed budową |
-| [AGENTS.md](AGENTS.md) | Instrukcje kolejnych sesji, postępy i najbliższy krok |
-| [WYMAGANIA.md](WYMAGANIA.md) | Wymagania, stan dowodów i otwarte progi |
-| [DECYZJE_I_PYTANIA.md](DECYZJE_I_PYTANIA.md) | Aktualne ustalenia użytkownika, nadrzędne wobec pierwotnych założeń |
-| [WYKONAWCA_CNC.md](WYKONAWCA_CNC.md) | Ograniczenia wskazanego wykonawcyMDF i checklista dokumentacji |
-| [Baza wiedzy](baza_wiedzy/README.md) | Fizyka → model → pokój → mechanika →DSP → późniejsza walidacja |
+| Pełna rama i połączenia, regulacja Vb, pole przestrzenne | Geometria prototypu, realne objętości netto, ścieżki sił, szczelność i wykonanie |
+| Napęd, cyfrowe DSP, clipping, ochrona i szersze sygnały | Wymagania napięcia/prądu, filtry i kontrola ruchu/temperatury w czasie |
+| Dwie sztuki w docelowym pokoju | Wykonalne miejsca, gabaryty, faza, opóźnienia i integracja |
+| Odporne porównanie finalistów i domknięcie programu | Jeden przetwornik, jedna regulowana obudowa i końcowy PDF z uzasadnieniem |
 
-## Wynik pierwszej iteracji
+Najbliższy krok po P19C: **pełna rama i połączenia obudowy**.
+Stan każdego pakietu sprawdzaj w [programie badań](PROGRAM_30_BADAN.md).
+[Raport 032](raporty/032_postep_po_mechanice_i_zakres_do_konca.md) opisuje
+orientacyjną ocenę postępu po wcześniejszym etapie; liczba symulacji
+nie jest procentem gotowości urządzenia.
 
-Policzono RSS315HF-4, RSS390HF-4, RSS315HFA-8 i SB34SWPL76-4 w 30/45/60/80/100/120 l
-netto: 24 konfiguracje i 144 wiersze pasmowe. Granice modelu zależą od hipotetycznego
-napędu i katalogowych danych; nie są zmierzonym maksymalnym użytecznym SPL.
-Brak modelu THD, kompresji cieplnej i zidentyfikowanej odpowiedzi pokoju.
+<a id="odtwarzanie"></a>
+## Dane, kod i odtwarzanie
 
-- [Raport obliczeń i wnioski](raporty/002_obliczenia_wstepne.md).
-- [Wykresy odpowiedzi i granic modelu](wyniki/01_objetosc_i_granice_modelu.png).
-- [Porównanie objętościCSV](wyniki/porownanie_obudow.csv), [pasma i limityCSV](wyniki/pasma_i_limity.csv).
-- [Źródła z datami](baza_wiedzy/ZRODLA.md), [dane wejściowe](dane/przetworniki/kandydaci.json), [manifestSHA-256](wyniki/manifest.json).
+| Katalog lub dokument | Zastosowanie |
+|---|---|
+| [dane/przetworniki](dane/przetworniki/) | Parametry katalogowe, modele, konflikty i luki |
+| [dane/konfiguracje](dane/konfiguracje/) | Jawne wejścia, jednostki i scenariusze |
+| [dane/zrodla](dane/zrodla/) i [rejestr źródeł](baza_wiedzy/ZRODLA.md) | Pochodzenie danych, oryginały/odczyty, daty i hashe |
+| [skrypty](skrypty/) | Modele Python, niezależne kontrole i generowanie wykresów |
+| [wyniki](wyniki/) | CSV, JSON, wykresy PNG/SVG i manifesty przebiegów |
+| [raporty](raporty/README.md) | Interpretacja, rekomendacje i ograniczenia wyników |
+| [baza_wiedzy](baza_wiedzy/README.md) | Wyjaśnienia fizyki i metod obliczeniowych |
+| [dane/pomiary](dane/pomiary/README.md) | Miejsce przyszłych pomiarów; obecnie bez wyników urządzenia |
 
-## Raporty
+Obliczenia używają Pythona 3.12, NumPy, SciPy, SymPy i Matplotlib.
+[Wymagania środowiska](requirements.txt); dokładne wersje i hashe są
+zapisywane w manifestach. Skrypty ustalają katalog projektu z własnej ścieżki.
 
-1. [001 — inicjalizacja i stan projektu](raporty/001_inicjalizacja.md).
-2. [002 — obliczenia wstępne](raporty/002_obliczenia_wstepne.md).
-3. [003 — referencje i rozpoznanie rynku](raporty/003_referencje_i_rynek.md).
-4. [004 — rekomendacje i ryzyka](raporty/004_rekomendacje_i_ryzyka.md).
-5. [005 — oględziny wszystkich9obrazów z diyAudio](raporty/005_analiza_obrazow_diyaudio.md).
-6. [006 — narzędzia symulacji i rolaMCP](raporty/006_narzedzia_symulacyjne_i_MCP.md).
-7. [007 — sprężyna powietrzna, wzrostRe i216wariantówDSP](raporty/007_fizyka_nieliniowosci_i_DSP.md).
-8. [008 — kontrole i odtwarzalność pakietu](raporty/008_weryfikacja_pakietu.md).
-9. [009 — wykonane badanie strat i nieszczelnościN7](raporty/009_N7_straty_nieszczelnosci.md).
-10. [010 — szeroka pula i krytyczna kwalifikacja](raporty/010_szeroka_pula_i_kwalifikacja.md).
-11. [011 — analityczne granice po dodatnim litrażu](raporty/011_granice_globalne_litrazu.md).
-12. [012 — identyfikowalność i opublikowane parametry](raporty/012_identyfikowalnosc_i_dane_publikowane.md).
-13. [013 — pokój, dwa źródła i realne gabaryty](raporty/013_pokoj_i_realne_gabaryty.md).
-14. [014 — weryfikacja etapu i odtwarzalność](raporty/014_weryfikacja_etapu_20261024.md).
-15. [015 — niepewność globalna, korelacje i kontrprzykłady dominacji](raporty/015_niepewnosc_globalna_i_odpornosc.md).
-16. [016 — cieplny gaz, lepkość, wypełnienie, harmoniczne i DC](raporty/016_gaz_wypelnienie_i_granice.md).
-17. [017 — promieniowanie, Mmd/Mms, dwa źródła i reakcja pokoju](raporty/017_promieniowanie_i_sprzezenie_pokoju.md).
-18. [018 — rzut pokoju i warunkowa geometria odsłuchu](raporty/018_rzut_pokoju_i_odleglosc_odsluchu.md).
-19. [019 — docelowa zamiana kanapy i RTV](raporty/019_zamiana_kanapy_i_RTV.md).
-20. [020 — nieliniowy napęd, współenergia, gaz i rozruch](raporty/020_nieliniowy_naped_i_sprzezony_gaz.md).
-21. [021 — pamięć cewki, moduł/faza L_gen i właściwa siła](raporty/021_pamiec_cewki_i_definicja_Lgen.md).
-22. [022 — orientacyjny stan badań i zakres pozostały](raporty/022_stan_badan_i_zakres_pozostaly.md).
-23. [023 — P14A, wspólne limity i pilot IMD](raporty/023_P14A_dwa_tony_i_wspolne_limity.md).
-24. [024 — P14B, fazory i emisja; raport częściowy](raporty/024_P14B_emisja_i_swiadkowie.md).
-25. [025 — P15A, topologia, identyfikowalność i granice termiki](raporty/025_P15A_topologia_i_granice_termiki.md).
-26. [026 — wykonany zakres dwutonowy P14B](raporty/026_P14B_pelna_kampania_dwutonowa.md).
-27. [027 — P15B, sprzężenie grzania i napędu](raporty/027_P15B_sprzezenie_grzania_i_napedu.md).
-28. [028 — P17, wspólne ograniczenia i objętość](raporty/028_P17_synteza_napedu_objetosci_i_ciepla.md).
-29. [029 — P18A, panele i ściągi](raporty/029_P18A_plyty_sciagi_i_dynamika.md).
-30. [030 — P19A, obliczenia spoin i materiał kleju](raporty/030_P19A_obliczenia_spoin_i_material_kleju.md).
-31. [031 — P21A, reakcja powietrza i bilans](raporty/031_P21A_reakcja_powietrza_i_bilans.md).
-32. [032 — aktualna ocena postępu po pierwszym etapie mechaniki](raporty/032_postep_po_mechanice_i_zakres_do_konca.md).
-33. [033 — P18B/P19B, front i mocowanie ze stykiem jednostronnym](raporty/033_front_otwor_kosz_i_styk_jednostronny.md).
-
-## Odtworzenie obliczeń
-
-Python 3.12; wersje bibliotek w[requirements.txt](requirements.txt).
-W obecnym środowisku potrzebne biblioteki są już dostępne.
+Pełne odtworzenie archiwizuje poprzedni stan wyników:
 
 ```bash
 python3 skrypty/odtworz_wszystko.py
 ```
 
-**Podczas aktywnej kampaniiP14B nie uruchamiać pełnego odtworzenia**,
-które archiwizuje bieżące pliki wyników. Samodzielne odtworzenie15świadków
-emisji iP15A, bez dotykania aktywnych baz:
+Można również uruchomić tylko interesujący etap:
 
 ```bash
-python3 skrypty/odtworz_etap_P14B_P15A.py
-```
-
-Zakres i hashe tej części są w `wyniki/manifest_etap_P14B_P15A.json`;
-nie jest to manifest zakończonego programu30badań.
-Wykonany późniejszy zakresP14B/P15B ma osobny
-[manifest z bazami, wejściami, kontrolami i dokumentacją](wyniki/manifest_P14B_P15B.json).
-Pełna procedura obejmuje już te etapy; nie oznacza to zamknięcia pozostałych
-pakietów. ArchiwumP15B odtwarza zgodne checkpointy,nie nowe2304ODE.
-P17ma [osobny manifest wejść, wyników i dokumentacji](wyniki/manifest_P17.json).
-Podstawy mechaniki mają[osobny manifest](wyniki/manifest_mechaniki_P18_P19_P21.json)
-i odtwarzanie bez powtarzania dawnych kampanii:
-
-```bash
+# Panele, spoiny i reakcja powietrza P18A/P19A/P21A
 python3 skrypty/odtworz_mechanike_P18_P19_P21.py
-```
 
-Przed analizą przywracane są zgodne,sprawdzaneSHAarchiwa172/656checkpointów.
-To odtworzenie artefaktów,nie nowy niezależny rachunek828wariantów.
-
-Front i styk mają [osobny manifest](wyniki/manifest_frontu_P18B_P19B.json).
-Świeże obliczenia tego etapu,bez powtarzania starszych kampanii:
-
-```bash
+# Front i docisk P18B/P19B
 OPENBLAS_NUM_THREADS=1 python3 skrypty/odtworz_front_i_styk_P18B_P19B.py
+
+# Czasowa odpowiedź styku P19C
+OPENBLAS_NUM_THREADS=1 python3 skrypty/odtworz_styk_czasowy_P19C.py
 ```
 
-P19B rozwiązuje nieliniowy docisk,a następnie bada warunki liniowania dynamiki.
-Nie jest czasową symulacją po utracie styku;ta bramka pozostaje P19C.
+Podczas aktywnej kampanii nie uruchamiaj pełnego przebiegu archiwizującego
+jej wyniki. Zgodne dzienniki i archiwa przywracają wcześniej policzone
+przypadki; ich odczyt nie jest nową niezależną replikacją. P19C jawnie
+korzysta z zachowanego zimnego pilota i przygotowanych stanów porównawczych.
 
-Skrypty ustalają katalog projektu na podstawie własnej ścieżki. Dla osobnego
-środowiska można utworzyć`.venv` i zainstalować`requirements.txt`. Nie trzeba
-zmieniać globalnej instalacji. Wykresy są zapisywane jakoPNG iSVG bez interfejsu
-graficznego, dane jakoCSV/JSON. Manifest zapisuje wersje, konfigurację i hashe.
-
-Pełny przebieg zachowuje poprzedni stan roboczy w `wyniki/archiwum/`,
-uruchamia wszystkie analizy i na końcu zapisuje manifest.
-Kontrole modelu obejmują bilans mocy, skalowanie, porównanie z analityką,
-F3 i granice ruchu/napędu. Nie potwierdzają osiągów fizycznego egzemplarza.
-KampaniaP12/P13 zapisuje dziennik z hashem kodu i wejść; zgodne przypadki
-wznawia. Użycie dziennika jest kontrolowanym odtworzeniem artefaktów,
-nie niezależną nową replikacją ODE. Procedura świeżego rachunku jest w raporcie020.
-P12C także wznawia zgodny dziennik. Odtworzenie samej digitalizacji jest
-osobnym etapem: [opcjonalne wymagania źródeł](requirements_zrodla.txt),
-oryginalnyPDF o wskazanymSHA i `python3 skrypty/digitalizuj_Lgen_Purifi.py`.
-Standardowe obliczenia korzystają z wersjonowanych odczytówCSV, bez pobierania
-materiałów i bez włączania prywatnych kopiiPDF do repozytorium.
-
-## Organizacja danych
-
-`dane/przetworniki/` — katalogowe wejścia z pochodzeniem i konfliktami.
-`dane/konfiguracje/` — jawne scenariusze. `dane/zrodla/` — wyciągi,PDF iobrazy.
-`dane/pomiary/` — miejsce na przyszłe pomiary, obecnie bez wyników urządzenia.
-`skrypty/` — modele i kontrole. `wyniki/` — wygenerowane tabele,wykresy,manifest.
-`raporty/` — interpretacje i rekomendacje. `szablony/` — karty przyszłych prac.
-
-Źródła z internetu: browser-harness oraz dopuszczony Firecrawl. Kosztorys,
-dostępność PL/UE i dobór handlowy pozostają odłożone. Przegląd opinii wszystkich
-24 kandydatów wykonano z jawnymi brakami; nie stanowi rankingu jakości.
-Najbliższy krok:P19C — czasowa odpowiedź zmiennego styku przy80Hz;
-potem pełna rama/połączenia/regulacja,pole3D,ochrona i integracja niepewności.
+Manifesty wykonanych etapów: [P14B/P15B](wyniki/manifest_P14B_P15B.json),
+[P17](wyniki/manifest_P17.json), [panele i spoiny](wyniki/manifest_mechaniki_P18_P19_P21.json),
+[front i docisk](wyniki/manifest_frontu_P18B_P19B.json),
+[styk w czasie](wyniki/manifest_styku_czasowego_P19C.json).
+Kontrole sprawdzają opisane modele i ich dziedziny; walidacja urządzenia
+nastąpi po budowie, zgodnie z [briefem](brief_system_audio_DIY_v0.6.md).

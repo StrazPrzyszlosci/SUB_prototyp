@@ -1,0 +1,27 @@
+{
+  "status": "WARUNKOWY_PRZYPADEK_Z_RAPORTU_033_NIE_IDENTYFIKACJA_URZADZENIA",
+  "candidate_id": "C04", "boundary": "SSSS_HARD",
+  "span_m": [0.46, 0.46], "hole_radius_m": 0.1526,
+  "thickness_m": 0.022, "E_pa": 2100000000, "nu": 0.3, "density_kg_m3": 730,
+  "mesh_angular_per_side": 20, "mesh_radial_layers": 12,
+  "net_mass_kg": 7.68, "gyration_radius_m": 0.1, "cg_depth_m": 0.08,
+  "bolt_circle_radius_m": 0.1621, "bolt_count": 8, "patch_radius_m": 0.004,
+  "bolt_stiffness_n_m": 1000000, "bolt_T0_n": 100,
+  "gasket_radii_m": [0.1536, 0.1721], "gasket_kn_pa_m": 1000000000,
+  "gasket_quadrature_radial": 4, "gasket_quadrature_angular": 128,
+  "frequency_hz": 80, "cone_relative_rms_m": 0.001,
+  "sd_m2": 0.0458, "moving_mass_reference_faces": 2,
+  "cavity_m3": 0.1, "p0_pa": 101325, "gamma": 1.4, "tau_s": 0.005,
+  "zeta_reference": 0.03, "ramp_cycles": 4, "maximum_cycles": 160,
+  "periodicity_relative_energy_norm": 0.000001, "required_consecutive_periods": 3,
+  "sample_points_per_cycle": 2048,
+  "rom_modal_counts": [8, 16, 32], "static_ring_harmonic_order": 4,
+  "rtol": 0.0000001, "atol_dimensionless": 0.00000000001,
+  "scope": [
+    "Liniowa plyta Mindlina; jednostronne sprezyny bez tarcia, histerezy i zniszczenia.",
+    "Caly glosnik w M; ruch stozka zadany wzgledem kosza, Mmoving z referencji P11, nie pomiar Mmd.",
+    "Gaz0D z dodatnia relaksacja; brak zewnetrznej radiacji i elektrycznego modelu silnika.",
+    "Mnet katalogowe C04; CG, J, uszczelka i mocowania sa hipotezami.",
+    "Nie jest to THD produktu, prognoza halasu ani identyfikacja kanalu przecieku."
+  ]
+}

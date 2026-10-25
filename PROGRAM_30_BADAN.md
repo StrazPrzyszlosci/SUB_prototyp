@@ -37,7 +37,7 @@ pakietu samym stworzeniem planu, testów ani listy bibliotek.
 | P16 | Sprzężenia cieplne i elektromechaniczne | Częściowo — Re(T),ruch i chłodzenie | P15B sprzęga prąd,Re(T),ruch i straty; twierdzenie napięciowe dla stałego biernego tła. Nie wykonano fizycznej identyfikacjiBL(T),pełnych dużych sygnałów, gradientów i wszystkich sprzężeń termicznych |
 | P17 | Łączne granice użytecznego zakresu | Częściowo — wspólneV/I/X/chłodzenie | Raport028:5184zestawy,31104punkty,analityczne przedziałyVb>0,26246niezależnych brzegów i3tożsamościSymPy. Stały poziom wyjściowy i warunkoweRth. Nie zintegrowano jeszcze rzeczywistegoTHD,ciągłego pasma,muzyki,konstrukcji i pokoju |
 | P18 | Płyty MDF: drgania, naprężenia, promieniowanie | Częściowo — wykonane P18A/P18B | Raport029:172warianty płyt. Raport033:136frontów z otworem,izoparametrycznyMITC,sztywny kosz i podatne mocowania,1088modów i90punktówkomory. Brakpełnejramy,frezu,otworówśrubowych3D i finalnejradiacji |
-| P19 | Usztywnienia, połączenia i klej | Częściowo — wykonane P19A/P19B | Raport030:656podmodelispoina/MDF. Raport033:12jednostronnych stanówdocisku,72diagnostyki,20flagzmiany styku;śrubytylkorozciągane,uszczelkatylkościskana. Czasowyzmiennystyk,trwałość,pełnezłącza3D i wręgi otwarte |
+| P19 | Usztywnienia, połączenia i klej | Częściowo — wykonane P19A/P19B/P19C | Raport030:656podmodelispoina/MDF. Raport033:12stanówdocisku,72diagnostyki,20flag. Raport034 rozstrzyga1przypadek80Hz wczasie:7odpowiedziROM zpilotem/tłumieniem i3pełneMES2959DOF. Pozostałeflagi,trwałość,pełnezłącza3D i ramaotwarte |
 | P20 | Regulacja objętości | Częściowo | Koncepcje i bilans brutto/netto; mechaniczna analiza porównawcza otwarta |
 | P21 | Wewnętrzne pole i sprzężenie paneli | Częściowo — wykonane odniesienie P21A | Raport031:72punktysprzężeniaRayleigh/MITC i gazu0D,masaDuffy,moc i wzajemność. Przestrzennepole3Dkomory,różneściany,front i podparcie nadal otwarte |
 | P22 | Napęd, impedancja wyjściowa i clipping | Częściowo | Dotychczas idealne ograniczeniaV/I; dynamika i obciążenie rzeczywiste otwarte |
@@ -76,8 +76,9 @@ P12C ma wykonane rodziny z raportu021. P14B wykonano w zadanej dziedzinie
 P17ma wykonaną syntezęV/I/X/chłodzenia i objętości (raport028).
 Wykonano podstawyP18A/P19A i odniesienieP21A (raporty029–031).
 P18B/P19B dodają front z otworem,koszem i jednostronny styk (raport033).
-Najbliższy krok:P19C — rozstrzygnąć czasowo konkretny przypadek zmiany
-styku80Hz,zbieżność redukcji i bilans;potem pełna rama,połączenia/regulacja i pole3D P19–P21,
+P19Crozstrzyga konkretny zmiennystyk80Hz wjawnejrodzinie (raport034),
+ze zbieżnościąredukcji i odrębną propagacjąpełnegoMES2959DOF.
+Najbliższykrok:pełna rama i połączenia obudowy;potem regulacja i pole3D P19–P21,
 czasoweDSP/napędP22–P25, pokójP26–P28 i integracjaP29/P30.
 Poszukiwanie danych materiałowych i nieliniowych może toczyć się równolegle
 z obliczeniami niewymagającymi tych danych. Nie wykonywać zakupów.

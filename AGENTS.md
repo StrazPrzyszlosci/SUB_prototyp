@@ -461,6 +461,27 @@ Postęp końca sesji2026-10-23:
   tarcie,pełzanie i naprężeniaotworów nie są zamknięte modelemnormalnym.
   P22–P30,pojedynczywybór i końcowyPDF pozostają otwarte.
 
+- P19C,2026-10-25:raport034/baza24. KonkretnyC04/SSSS/80Hz/1mmRMS/
+  T0=100/kn1e9 rozstrzygnięty wczasie. Pilot8DOFzimny78cykli;
+  modele16/27/43DOFprzygotowanerzutem,małysygnal1µm,BDF i alternatywa
+  tłumienia. Maks.polebezstyku26.33%,szczytkosza232.289µm;nieTHDproduktu.
+  Pełne2959DOF,BDF2,3okresy zhistoriiROM,dT256/512/1024:szczyt232.260µm
+  naostatniej,resztaenergii4.19e-6. Odległośćokresów6.47e-5niespełnia
+  ostrego1e-6ROM;nie nazywać pełnymzimnymustalonymrozruchem.
+- SymPybilanscałkowity/gazowy0,analitycznyJ i granicaliniowa;resztyROM
+  około7.5e-7. W1.26NumPybraktrapezoid:wpostprocessużytoSciPy,
+  pilotpowtórzonopoweryfikowanymzakończeniubłędnegoetapu. Finitestep
+  energii mawidoczneodejmowanieprawierównychliczb;gradient/symbolika
+  rozstrzygajątożsamość,nieobniżonokryteriumODE. Źródłowy pilotzhashem
+  i kodemjest zachowany;jegoodczytnie jest nowymzimnymprzebiegiem.
+- Szczelina:screeningkonduktancji1.53e-4|sCab|,ale objętośćma luźne
+  ograniczenie2.5%ruchuRMSstożka;nieudowodnionobłędup<1%anihałasu.
+  AlternatywneCbezbetaKjointtakżedajeotwieranie. **Najbliższykrok:
+  pełna rama i połączenia obudowy**,potemP20/P21,napęd/ochrona i synteza.
+- Na prośbęużytkownikaREADMEprzebudowanowprzewodnik:13wykresów zwarunkami,
+  mapatemat→raport→dane,aktualnyzakres i odtwarzanie. Pełnyindeks34raportów
+  jestwraporty/README.md. Wybraneobrazyobejrzano;niezmienianobriefu.
+
 ## Decyzje otwarte
 
 - Referencje subwooferów ADAM Sub12/Sub15: zatwierdzone; progi odbiorowe otwarte.
