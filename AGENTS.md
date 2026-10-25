@@ -242,8 +242,8 @@ Postęp końca sesji2026-10-23:
   (inicjalizacja minimum przez+∞ zamiast0); przeliczono powiązany etap.
   Rachunek geometrii z rzutu wykonano osobno i włączono do odtwarzania.
   Nie deklarować z tego fizycznej walidacji ani zamknięcia całego programu.
-- **Następny krok: P14 — IMD i sygnały wielotonowe z modelemFLUX,
-  następnie promieniowanie harmonicznych i dalsza analiza amplitud/gałęzi.** Nie powtarzać
+- **Następny krok: P14B — rozszerzyć pilot IMD na pulę/poziomy/sygnały,
+  zapisywać fazory i włączyć promieniowanie harmonicznych.** Nie powtarzać
   wykonanego N7 ani wyszukiwań wszystkich 24 opinii
   bez konkretnej nowej hipotezy lub źródła. Dokładne pozycje w pokoju pozostają
   pytaniem otwartym; rozdzielać je od jawnych scenariuszy w p26_scenariusze.json.
@@ -294,6 +294,16 @@ Postęp końca sesji2026-10-23:
   rachunkiemODE. Cztery wykresy25–28 obejrzano.5974liniowe porównania
   z aktywnymX zachowują pułapSPL do7,72e-15dB; nie rozciągać tej tożsamości
   na dowolne sygnały nieliniowe/wielotonowe.
+- Na prośbę o stan zapisano raport022: planistyczny szacunek40–50% badań
+  przed budową poP12C, nie statystyczny procent ani termin kalendarzowy.
+  Główne pozostałe obszary: IMD/sygnały, termika, mechanika zklejem,
+  DSP/ochrona, integracja pokoju/systemu oraz wybór i końcowyPDF.
+- Następnie rozpoczętoP14A:9216odniesień wspólnych ograniczeń dla24baz
+  i12pełnych pilotów dwutonowych C02/C06,100l,20+85Hz. Raport023.
+  Wspólna skala jest0,246–6,021dB niższa od niezależnej kontroli sinusów
+  w tej siatce; nie jest to porównanie liczby subwooferów. IM2/IM3 są
+  jawnie zdefiniowaną diagnostyką, nie normowym ani zmierzonymTHD.
+  Pilota nie utożsamiać z zamknięciem P14/P25. Dalszy krokP14B wskazano wyżej.
 
 ## Decyzje otwarte
 

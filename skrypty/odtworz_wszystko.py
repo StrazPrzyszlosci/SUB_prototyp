@@ -83,6 +83,9 @@ def main():
     from audyt_wykluczenia_1_bieguna import main as one_pole_audit
     from sprawdz_pakiet_pamieci import main as memory_tables
     from raportuj_pamiec_cewki import main as memory_report
+    from analiza_P14A_sygnaly import main as p14a_analysis
+    from sprawdz_P14A import main as p14a_checks
+    from raportuj_P14A import main as p14a_report
     checks()
     images()
     physics()
@@ -133,6 +136,9 @@ def main():
     one_pole_audit()
     memory_tables()
     memory_report()
+    p14a_analysis()
+    p14a_checks()
+    p14a_report()
     baseline()  # Manifest powstaje po wszystkich obliczeniach.
 
 

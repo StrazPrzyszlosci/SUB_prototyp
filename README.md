@@ -26,6 +26,9 @@ THD produktów. Identyfikacja rzeczywistych krzywych pozostaje częściowa.
 P12C: [raport021 — pamięć cewki, L_gen i siła](raporty/021_pamiec_cewki_i_definicja_Lgen.md).
 Wykonano18 676wierszy liniowych,1728pełnychODE i odrębne sprawdzenie
 źródłowej definicji/siły. Najbliższy krok: P14/IMD i wielotony zmodelemFLUX.
+Ocena stanu badań: [raport022 — postęp i pozostały zakres](raporty/022_stan_badan_i_zakres_pozostaly.md).
+Rozpoczęte P14A: [raport023 — wspólne limity i pilot dwutonowy](raporty/023_P14A_dwa_tony_i_wspolne_limity.md).
+Pilot nie zamyka P14/P25; dalsze kroki obejmują szersze sygnały i emisję harmonicznych.
 
 **Bieżący zakres: wyłącznie naukowe zagadnienia prototypu (U-010).**
 Najnowsze zlecenie: [program30badań](PROGRAM_30_BADAN.md), szeroka pula
@@ -88,6 +91,8 @@ Brak modelu THD, kompresji cieplnej i zidentyfikowanej odpowiedzi pokoju.
 19. [019 — docelowa zamiana kanapy i RTV](raporty/019_zamiana_kanapy_i_RTV.md).
 20. [020 — nieliniowy napęd, współenergia, gaz i rozruch](raporty/020_nieliniowy_naped_i_sprzezony_gaz.md).
 21. [021 — pamięć cewki, moduł/faza L_gen i właściwa siła](raporty/021_pamiec_cewki_i_definicja_Lgen.md).
+22. [022 — orientacyjny stan badań i zakres pozostały](raporty/022_stan_badan_i_zakres_pozostaly.md).
+23. [023 — P14A, wspólne limity i pilot IMD](raporty/023_P14A_dwa_tony_i_wspolne_limity.md).
 
 ## Odtworzenie obliczeń
 

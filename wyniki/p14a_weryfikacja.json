@@ -1,0 +1,19 @@
+{
+  "status": "PASS_PILOTU_I_ODNIESIENIA_NIE_ZAMKNIECIE_P14",
+  "input_sha256": {
+    "brief_system_audio_DIY_v0.6.md": "3bd9f8d43a92b96256073e66cd0f4f105336e969a37c29fc42f17cda9d66736f",
+    "dane/konfiguracje/p14a_sygnaly_i_pilot.json": "1110636e7aee44608cd484a084893a84201921ca98319612d46c81658d2c9f59",
+    "dane/przetworniki/pula_rozszerzona.json": "36d96aa416cf4135ec890e899be7f7818e0cf85c907a9f8a8456917838352b4b",
+    "skrypty/sygnaly_P14.py": "832e7a87538e63e199741b287bbee8cd8fbd82f3c6b175a39a10a3bc9aecc684",
+    "skrypty/analiza_P14A_sygnaly.py": "6356373ada6fe70706550828d4dbda0d2b6cb4b50461973e04841b28cf7d268d",
+    "skrypty/model_nieliniowy.py": "f1e72234395d688356d6a13f62db9e0f936f723534559d6607d27fdc4a6c2b36",
+    "skrypty/model_cewki_z_pamiecia.py": "32facb34e67ab18a9f11305e887a961e65783b0d9e139f1f56db158abda641f8"
+  },
+  "max_equivalent_phase_waveform_error": 6.428191312579656e-14,
+  "peak_enclosure_checks": 24,
+  "max_linear_oracle_relative_error": 4.1351466695260797e-10,
+  "independent_Radau_IM_difference_pp": 1.4569205397663154e-08,
+  "max_pilot_relative_energy_residual": 2.900681184035518e-10,
+  "linear_numerical_distortion_floor_pct": 4.461380995311234e-07,
+  "scope": "Osłona błędu próbkowania dotyczy ustalonych współczynników LTI, nie całej niepewności fizycznej. IMD to jawnie zdefiniowana diagnostyka, nie deklaracja zgodności z normą."
+}
