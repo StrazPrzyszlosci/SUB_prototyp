@@ -1,0 +1,18 @@
+{
+  "status":"DIAGNOSTYCZNE_SCENARIUSZE_NIE_ZATWIERDZONE_PROGI_BRIEFU",
+  "frequencies_hz":[20,25,31.5,40,63,80],
+  "target_sine_spl_rms_db":[85,90,95,100],
+  "amplifier_budgets":[{"voltage_rms_v":40,"current_rms_a":12},{"voltage_rms_v":60,"current_rms_a":20}],
+  "profiles":["SIMPLE","FLUX_ONE","FLUX_TWO"],
+  "temperature_rise_scenarios_k":[40,80,120],
+  "alpha_per_k":0.004,
+  "thermal_resistance_test_k_w":[0.3,0.6,1.2],
+  "eddy_heat_factor_worst_case":1.0,
+  "gas_tau_s":0.005,
+  "reference_volume_l":100,
+  "illustrative_volume_window_l":[30,150],
+  "distance_m":1,
+  "scope":"Osobny długotrwały sinus przy utrzymywanym wyjściowym pRMS; monopole4pi/1m,bez pokoju. Poziomy są osiami diagnostyki,nie progami zatwierdzonymi ani katalogowym maxSPLADAM. Objętość analizowana ciągle po wszystkichVb>0;30–150l to jedynie okno ilustracji. Nie sumować limitów sinusów jako muzyki.",
+  "thermal_scope":"Re(T) i utrzymywany ruch wymagają stałego prądu w zamrożonym liniowym napędzie. Rth_test jest założonym maksimum portu przy danej prędkości,nie pomiarem produktu. Współczynnik przenoszenia ciepła z metalu przyjęto w najgorszej granicy dodatniej sieci dwuwęzłowej. Brak znanychCv/Cm nie jest zastępowany fikcyjnym czasem grzania.",
+  "physical_gates":"Mms/Rms/BL/Cms efektywne i stałe; brak gwarancji THD/prądu/mechanicznej wytrzymałości przy katalogowymXmax. Nie kwalifikuje produktu do briefu bez danych i dalszych badań. Room4.6x3.7x2.5m,RTVpo lewej/kanapa po prawej; dwie skrzynie i realne miejsca wymagają dalszej oceny gabarytów."
+}

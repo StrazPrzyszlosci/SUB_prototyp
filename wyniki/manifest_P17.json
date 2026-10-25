@@ -1,0 +1,64 @@
+{
+  "status": "P17_WYKONANY_ZAKRES_WARUNKOWY_NIE_FINALNY_WYBOR",
+  "generated_at": "2026-10-25T10:16:42.075377+01:00",
+  "run_sha256": "6b080906d4f37976da6b5af0f8567c2691f9cc0f5ab6f5bdbfe36e05b7461fb8",
+  "libraries": {
+    "Python": "3.12.3",
+    "NumPy": "1.26.4",
+    "SciPy": "1.17.1",
+    "Matplotlib": "3.10.8",
+    "SymPy": "1.12"
+  },
+  "input_sha256": {
+    "brief_system_audio_DIY_v0.6.md": "3bd9f8d43a92b96256073e66cd0f4f105336e969a37c29fc42f17cda9d66736f",
+    "dane/konfiguracje/p12c_pamiec_cewki.json": "eae24d15e61dfc4362a822bc027f47482c551a99f430bdb6b22d51a44f0375f3",
+    "dane/konfiguracje/p17_synteza_V_I_X_cieplo.json": "5b51bca4738bfd7bac8fde24d03583114a0ba217ea23d06daa03306a60cd24e5",
+    "dane/konfiguracje/pokoj_odsluchowy.json": "65ee8679213e2a41f3aad384accf2801495a423d0d0b188eb74e916f1e2d3b0c",
+    "dane/konfiguracje/pokoj_rzut_scenariusze_v2.json": "812850531d5d22b7f68c4ea8fdb9e53c63a09712ab64c12110368690535d186c",
+    "dane/przetworniki/pula_rozszerzona.json": "36d96aa416cf4135ec890e899be7f7818e0cf85c907a9f8a8456917838352b4b",
+    "skrypty/analiza_cewki_z_pamiecia.py": "c304892aef493bf427fe5f02f4d4be40692deb66e4fc9b7c8ad5822aa8fa55fa",
+    "skrypty/analiza_syntezy_P17.py": "b5903002e82e30dd77fe6ca7cd5193cd091544c024ca1496b171dbe14d6e68f3",
+    "skrypty/manifest_P17.py": "3b90ebcd0ec7ae0e402fbf6d07169e122ec6cc49138a7aa77e71179f2f6d09d7",
+    "skrypty/model_cewki_z_pamiecia.py": "32facb34e67ab18a9f11305e887a961e65783b0d9e139f1f56db158abda641f8",
+    "skrypty/model_gazu.py": "ca8f63066f23eac9eb00610b428c173515f3088395501deaec740ea05a2c5115",
+    "skrypty/model_nieliniowy.py": "f1e72234395d688356d6a13f62db9e0f936f723534559d6607d27fdc4a6c2b36",
+    "skrypty/model_subwoofera.py": "bd7e6e250a5b9a605fbbb05343381b827ffa81047a90c692968fc8e34eedc2b8",
+    "skrypty/odtworz_wszystko.py": "255f0fed098dca40389d059c2255e1277ee3564a53eecaec2df393fd4600c79b",
+    "skrypty/raportuj_synteze_P17.py": "e1f3b80a9d0b0bb1b3bbe51dd6bdabd97ca9e29894bf6a6fbf2998848ef7d63b",
+    "skrypty/sprawdz_synteze_P17.py": "6612cd29dcd1f9b863c899f8e8fa3fd844e8b8dea623f8c596210d19dc9f5b6b",
+    "skrypty/synteza_granic_P17.py": "b5b93a5f435afa85517fabe990d269d90a578d7844c045a5abf8841d245cec4c"
+  },
+  "output_sha256": {
+    "wyniki/p17_interpretacja.json": "81541cec0934f0b6197a72b3541f13bfb6a7795d5154b5d793ba70f8f9122169",
+    "wyniki/p17_nominalna_granica_SdX.csv": "80e8d6684fc21d17a6ea06a0fb04cf59b627996505af1306fa6aea0d1d997361",
+    "wyniki/p17_podsumowanie.json": "6278f3b6d6e81c2a662ae3c66c1502acfd3f60437657b629fead1eca7d650973",
+    "wyniki/p17_przyklady_aktywnych_ograniczen.csv": "cbbb83b3311935ac120d9ea40a5487623301943464bbaf4724cddd00098dc482",
+    "wyniki/p17_punkty_i_wymagania.csv": "5190056913eb229af68e9be53164768f70fe3def7ec7c26b8c43f8b57a46abf9",
+    "wyniki/p17_weryfikacja.json": "886998d1109ceff8f91f04567ad2fad2f22595a7a78fa0dfee0bd081288c3033",
+    "wyniki/p17_wspolny_przedzial_Vb.csv": "e16f6a8fb5e464a98b6af64d5c832cd35e87434c15a7819aa0e4344153367fbc",
+    "wyniki/41_P17_nominalne_SdX.png": "d5240870af9b4db893fb4f22fc89046ae63f4a2e9990ae2e525189c54482ac9d",
+    "wyniki/41_P17_nominalne_SdX.svg": "eff72cba97a6cf677b8735bf2d489478fd172006089ee4aef568c849aae7c238",
+    "wyniki/42_P17_wspolna_objetosc_i_chlodzenie.png": "bbdb5239175905db54132ccf543d827a543c5cb4409908ecb1204663406c686f",
+    "wyniki/42_P17_wspolna_objetosc_i_chlodzenie.svg": "fc566dd2a50bd87e5357bb8c721dbeea04e811aad9b049afc80fc49a5e38f8f4"
+  },
+  "documentation_sha256": {
+    "AGENTS.md": "fd24f9eb41f3477116b9424aab77a589abe506037369ac012a1a636dd5a781a0",
+    "README.md": "db728a4991722e684b5b2d4dd984145839467111393525016c2fe5de282080bd",
+    "PROGRAM_30_BADAN.md": "03999b051ea6d4cfbd0e46644509114892cc6799ee9ce006fc3e162989687d95",
+    "baza_wiedzy/README.md": "3a454879643fac5e981e6ab0a3f0bb19484049256ca51938b2300df2106ebbd8",
+    "baza_wiedzy/19_staly_poziom_i_wspolne_ograniczenia.md": "6dd9fb3296c5760169a1b7656c0f240a2953e4e457d8a1eca33fcfcbe4b35f66",
+    "raporty/028_P17_synteza_napedu_objetosci_i_ciepla.md": "08dd9e2f9763a60ced60c21d0394e0345993589d71630f0231e064c483825ce4"
+  },
+  "coverage": {
+    "points": 31104,
+    "six_frequency_cases": 5184,
+    "direct_boundary_checks": 26246,
+    "analytic_identities": 3
+  },
+  "scope": [
+    "Wspólny zakres dla6częstotliwości nie certyfikuje całego ciągłego pasma ani sumy tonów.",
+    "Rth_test i limityT to scenariusze,nie pomiary. Xmax katalogowe nie gwarantujeTHD.",
+    "Nie przenosić na sweetspot2.5–3m,roomgain ani realny zysk dwóch subwooferów.",
+    "Przedział po wszystkichVb>0 nie oznacza możliwości ustawienia dwóch skrzyń w pokoju; geometria/masa/klej pozostają P18/P19."
+  ]
+}

@@ -376,6 +376,30 @@ Postęp końca sesji2026-10-23:
   BL(T),gradienty,ciepło powietrza skrzyni,realistyczne sygnały i ochrona
   mają bramki danych. Pojedynczy głośnik/skrzynia i końcowyPDF nadal otwarte.
 
+- EtapyP14B/P15B opublikowano i potwierdzono zdalnyHEAD:
+  fd8db3b789a4d9d9ffc7375bc299367830d9283f. Po odrzuceniu przez
+  automatyczną kontrolę wykonano odczytowy audyt158plików i fuser24baz:
+  brak otwartych uchwytów,każdy plik zmanifestu lub zweryfikowanej migawki.
+  Ponowiony commit zaakceptowano; transfer zakończył się0 i ref potwierdzono.
+- P17 wykonano dla zadanego modelu: raport028/baza19,5184zestawy sześciopasmowe,
+  31104punkty,analityczne przedziały po wszystkichVb>0,3tożsamościSymPy,
+  26246niezależnych brzegów i formalne granice zero/inf/bezstratność.
+  2424zestawy mają wspólną warunkowąV,2592odrzuca katalogowe odniesienieX,
+  168nie maV/I/chłodzenia w co najmniej jednymf. Nie znaleziono konfliktu
+  przecięcia przy osobno dopuszczonych wszystkich6f w tej siatce.
+  Dane nie są progami briefu,THD ani SPLw pokoju. Tau gazu stałe przyV
+  nie oznacza stałegoH; Rth_test i przyrostyT są scenariuszami.
+- P17 pokazuje aktywne ograniczenia: C02/95dB4pi1m/80K/Rth_test0.6
+  maVmin82,43l przy obu budżetach40/12 i60/20 (wiążeRth);
+  C11ma272,53l przy40/12 (wiążeV) i149,05l przy60/20 (wiążeRth).
+  Nie jest to litrażCNC ani ostateczny wybór. C11/C07 i10″kontrole
+  zachowują bramki danych. Wykresy41/42 obejrzano i dołączono do raportu.
+- **Jeden najbliższy krok:P18/P19 — mechanika paneli i usztywnień,
+  połączenia oraz obliczeniowy dobór kleju** dla sensownych geometrii
+  regulowanej skrzyni. Uwzględniać dwie sztuki w pokoju4.6×3.7×2.5m,
+  RTVpo lewej/kanapa po prawej. Nie wracać bez nowej hipotezy do
+  zakończonych3312dwutonów lub2304scenariuszycieplnych.
+
 ## Decyzje otwarte
 
 - Referencje subwooferów ADAM Sub12/Sub15: zatwierdzone; progi odbiorowe otwarte.

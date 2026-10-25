@@ -29,6 +29,7 @@ a potwierdzonych ustaleń użytkownika w [rejestrze](../DECYZJE_I_PYTANIA.md).
 |16|[IMD, fazy i emisja](16_IMD_fazy_i_emisja.md)|Produkty poniżej pasma wejściowego, zespolone AM/PM, normalizacja AN10 i kontrolny czas opóźniony|
 |17|[Topologia i identyfikowalność termiki](17_topologia_i_identyfikowalnosc_termiki.md)|Cauer/Foster, niejednoznaczność dodatkowego chłodzenia, podział strat i warunkowe granice|
 |18|[Sprzężenie termiczne i obwiednia](18_sprzezenie_termiczne_i_obwiednia.md)|Re(T),impedancja i grzanie, rozdzielenie skal czasu, pamięć cieplna i kontrola współczynników|
+|19|[Stały poziom i wspólne ograniczenia](19_staly_poziom_i_wspolne_ograniczenia.md)|CiągłeVb,prąd/napięcie/chłodzenie,SdX i aktywne ograniczenia|
 |Źródła|[Rejestr z datami](ZRODLA.md)|Co przeczytano, co tylko znaleziono i jakie są braki|
 
 ## Od wiedzy do wykonania

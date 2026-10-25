@@ -1,0 +1,27 @@
+{
+  "status": "ANALYTIC_INTERVALS_CHECKED_NOT_GLOBAL_PHYSICAL_CERTIFICATE",
+  "point_cases": 31104,
+  "grid_inequality_checks": 12472704,
+  "direct_complex_boundary_checks": 26246,
+  "maximum_pressure_relative_error": 1.0824872173964966e-15,
+  "maximum_current_relative_error": 1.313984647855259e-15,
+  "maximum_positive_budget_violation": 2.220446049250313e-15,
+  "maximum_positive_temperature_bound_violation": 3.1086244689504383e-15,
+  "symbolic_identities": {
+    "complex_quadratic": "0",
+    "constant_output_thermal_equilibrium": "0",
+    "positive_margin_at_thermal_current_limit": "0"
+  },
+  "boundary_controls": [
+    "slope=0,all/none",
+    "tangent_positive_u",
+    "u=0_only_infinite_volume",
+    "unlimited_amplifier",
+    "zero_pressure_zero_heat",
+    "zero_temperature_budget",
+    "insulated_Rth_infinity",
+    "ideal_Rth_zero",
+    "lossless_coil_zero_heating"
+  ],
+  "domain": "u=1/Vb>0,6wybranychf,zamrożonebierneparametry,staływyjściowySPL. Siatka nie jest dowodem całego pasma. Formułyanalityczne nie są certyfikacją arytmetyki zmiennoprzecinkowej."
+}

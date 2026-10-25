@@ -101,6 +101,9 @@ def main():
     from analiza_sprzezenia_Re_T_P15B import main as p15b_analysis
     from audyt_sprzezenia_Re_T_P15B import main as p15b_audit
     from raportuj_sprzezenie_Re_T_P15B import main as p15b_report
+    from analiza_syntezy_P17 import main as p17_analysis
+    from sprawdz_synteze_P17 import main as p17_checks
+    from raportuj_synteze_P17 import main as p17_report
     checks()
     images()
     physics()
@@ -169,6 +172,9 @@ def main():
     p15b_analysis()
     p15b_audit()
     p15b_report()
+    p17_analysis()
+    p17_checks()
+    p17_report()
     baseline()  # Manifest powstaje po wszystkich obliczeniach.
 
 

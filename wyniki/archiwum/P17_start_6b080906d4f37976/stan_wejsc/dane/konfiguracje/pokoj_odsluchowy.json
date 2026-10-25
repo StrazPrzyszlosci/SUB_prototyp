@@ -1,0 +1,41 @@
+{
+  "status": "DANE_BRIEFU_POTWIERDZONE_U019_POZYCJE_DO_USTALENIA",
+  "confirmed_by_user_reminder": "2026-10-24",
+  "source": "brief_system_audio_DIY_v0.6.md, sekcja3, U-016 oraz potwierdzenie układu i wymiarów U-019",
+  "length_y_m": 4.6,
+  "width_x_m": 3.7,
+  "height_z_m": 2.5,
+  "floor_area_calculated_m2": 17.02,
+  "volume_calculated_m3": 42.55,
+  "dimensions_are_approximate": true,
+  "front_wall": "krótszaściana, szerokość3.7m",
+  "coordinate_convention": "x=szerokość3.7m,y=odległośćodprzedniejścianywzdłuż4.6m,z=wysokość2.5m",
+  "legacy_room_modes_dimension_order": [
+    "length_y_m",
+    "width_x_m",
+    "height_z_m"
+  ],
+  "listener_distance_from_monitors_m": [
+    2.5,
+    3.0
+  ],
+  "priority_listening_area": "jeden główny sweet spot",
+  "neighbor_points": "tylko diagnostyka wrażliwości",
+  "subwoofer_placement_constraint": "realne miejsca przy monitorach, nie zakładać swobody przód/tył pomieszczenia",
+  "known_boundaries": [
+    "ścianybetonowe",
+    "częśćsufituperforowana z około10cmwełny"
+  ],
+  "unknown": [
+    "dokładnypunktgłowy",
+    "wysokośćuszu",
+    "pozycjemonitorów",
+    "dokładneprześwityprzymeblachiprzejściachdlaskrzyń",
+    "rzeczywistepochłanianieiczasyzaniku"
+  ],
+  "construction_gate": "Sprawdzić miejsce dla dwóch egzemplarzy z prześwitami i monitorami; duża objętośćzoptymalizacji20Hz niejestautomatycznie praktycznąrekomendacją.",
+  "acoustic_gate": "Nieprzyjmowaćstałegoroomgain ani parytetuSPLzmodelem2π/1m bezmodelupokoju i późniejszejidentyfikacji.",
+  "position_data_status": "Brak dokładnych pozycji. U-020 zmienia docelową orientację: RTV po lewej, kanapa po prawej; wymiaryU-019 bez zmian. Nie przenosić dawnych źródeł/S0 jako danych klienta.",
+  "current_layout_source": "Oryginalny rzut sSKtLurb.jpeg iU-018/U-019 opisują stan poprzedzający planowaną zamianęU-020; zachowano konfiguracjęv1",
+  "target_layout_source": "U-020: docelowo kanapa po prawej iRTV po lewej obrazu; pokoj_rzut_scenariusze_v2.json"
+}

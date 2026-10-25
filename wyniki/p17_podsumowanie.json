@@ -1,0 +1,43 @@
+{
+  "status": "P17_WARUNKOWA_SYNTEZA_ODDZIELNYCH_SINUSOW_NIE_FINALNY_WYBOR",
+  "point_cases": 31104,
+  "band_cases": 5184,
+  "band_status_counts": {
+    "COMMON_CONDITIONAL_VOLUME_INTERVAL": 2424,
+    "NO_COMMON_VOLUME": 168,
+    "X_REFERENCE_PRECLUDES_TARGET_AT_SOME_FREQUENCY": 2592
+  },
+  "input_sha256": {
+    "dane/konfiguracje/p17_synteza_V_I_X_cieplo.json": "5b51bca4738bfd7bac8fde24d03583114a0ba217ea23d06daa03306a60cd24e5",
+    "dane/przetworniki/pula_rozszerzona.json": "36d96aa416cf4135ec890e899be7f7818e0cf85c907a9f8a8456917838352b4b",
+    "dane/konfiguracje/p12c_pamiec_cewki.json": "eae24d15e61dfc4362a822bc027f47482c551a99f430bdb6b22d51a44f0375f3",
+    "skrypty/analiza_syntezy_P17.py": "b5903002e82e30dd77fe6ca7cd5193cd091544c024ca1496b171dbe14d6e68f3",
+    "skrypty/synteza_granic_P17.py": "b5b93a5f435afa85517fabe990d269d90a578d7844c045a5abf8841d245cec4c",
+    "skrypty/model_nieliniowy.py": "f1e72234395d688356d6a13f62db9e0f936f723534559d6607d27fdc4a6c2b36",
+    "skrypty/model_subwoofera.py": "bd7e6e250a5b9a605fbbb05343381b827ffa81047a90c692968fc8e34eedc2b8",
+    "skrypty/model_cewki_z_pamiecia.py": "32facb34e67ab18a9f11305e887a961e65783b0d9e139f1f56db158abda641f8",
+    "skrypty/model_gazu.py": "ca8f63066f23eac9eb00610b428c173515f3088395501deaec740ea05a2c5115",
+    "skrypty/analiza_cewki_z_pamiecia.py": "c304892aef493bf427fe5f02f4d4be40692deb66e4fc9b7c8ad5822aa8fa55fa",
+    "brief_system_audio_DIY_v0.6.md": "3bd9f8d43a92b96256073e66cd0f4f105336e969a37c29fc42f17cda9d66736f",
+    "dane/konfiguracje/pokoj_odsluchowy.json": "65ee8679213e2a41f3aad384accf2801495a423d0d0b188eb74e916f1e2d3b0c",
+    "dane/konfiguracje/pokoj_rzut_scenariusze_v2.json": "812850531d5d22b7f68c4ea8fdb9e53c63a09712ab64c12110368690535d186c"
+  },
+  "run_sha256": "6b080906d4f37976da6b5af0f8567c2691f9cc0f5ab6f5bdbfe36e05b7461fb8",
+  "room": {
+    "dimensions_m": [
+      4.6,
+      3.7,
+      2.5
+    ],
+    "front_width_m": 3.7,
+    "layout": "RTVleft_sofaright_U020",
+    "room_transfer_applied": false
+  },
+  "geometry": "Monopol4pi/1m/RMS,sinusdługotrwały;poziomy85/90/95/100dBto diagnostyka,nie progi klienta.",
+  "limitations": [
+    "Wspólny zakres dla6częstotliwości nie certyfikuje całego ciągłego pasma ani sumy tonów.",
+    "Rth_test i limityT to scenariusze,nie pomiary. Xmax katalogowe nie gwarantujeTHD.",
+    "Nie przenosić na sweetspot2.5–3m,roomgain ani realny zysk dwóch subwooferów.",
+    "Przedział po wszystkichVb>0 nie oznacza możliwości ustawienia dwóch skrzyń w pokoju; geometria/masa/klej pozostają P18/P19."
+  ]
+}

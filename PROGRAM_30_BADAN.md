@@ -35,7 +35,7 @@ pakietu samym stworzeniem planu, testów ani listy bibliotek.
 | P14 | THD i IMD | Wykonane rodziny P14B; identyfikacja fizyczna otwarta | Raport026:3312przypadków,23flagi rozstrzygnięteDOP853,4odrębneRadau,16560projekcji,39744fazory, faza/mały sygnał/preload. Zamknięty zadany zbiór modeli,nie THD produktów ani pełna emisja rzeczywistego tłoka |
 | P15 | N8 — model cieplny w czasie | Wykonane rodziny P15A/P15B; parametry produktów otwarte | Raport025:4225sieciCauer/Foster i granice. Raport027:2304przebiegiRe(T),ruchu,strat i przyjętej konwekcji,4pełneODEaudio,1152porównania obwiedni. Brak identyfikacjiR/C, lokalnych gradientów i powietrza skrzyni |
 | P16 | Sprzężenia cieplne i elektromechaniczne | Częściowo — Re(T),ruch i chłodzenie | P15B sprzęga prąd,Re(T),ruch i straty; twierdzenie napięciowe dla stałego biernego tła. Nie wykonano fizycznej identyfikacjiBL(T),pełnych dużych sygnałów, gradientów i wszystkich sprzężeń termicznych |
-| P17 | Łączne granice użytecznego zakresu | Częściowo | Granice liniowe; warunkoweTHD i termika do połączenia |
+| P17 | Łączne granice użytecznego zakresu | Częściowo — wspólneV/I/X/chłodzenie | Raport028:5184zestawy,31104punkty,analityczne przedziałyVb>0,26246niezależnych brzegów i3tożsamościSymPy. Stały poziom wyjściowy i warunkoweRth. Nie zintegrowano jeszcze rzeczywistegoTHD,ciągłego pasma,muzyki,konstrukcji i pokoju |
 | P18 | Płyty MDF: drgania, naprężenia, promieniowanie | Do wykonania | Najpierw płyty analityczne/2D, bez rozpoczynania pracy nad narzędziamiCAD |
 | P19 | Usztywnienia, połączenia i klej | Do wykonania | Obowiązkowy dobór kleju: nośność spoiny iMDF, odrywanie, pełzanie, wilgotność, szczelina, zmęczenie |
 | P20 | Regulacja objętości | Częściowo | Koncepcje i bilans brutto/netto; mechaniczna analiza porównawcza otwarta |
@@ -73,8 +73,8 @@ P11 wykonano dla jawnych geometrii kontrolnych i sprzężonego pokoju
 (raport 017). P12/P13 mają wykonane rodziny warunkowe (raport020).
 P12C ma wykonane rodziny z raportu021. P14B wykonano w zadanej dziedzinie
 (raport026), a P15A/P15B mają wykonane rodziny cieplne (raporty025/027).
-Najbliższy krok:P17 — synteza ograniczeńV/I/X i warunkowego chłodzenia;
-następnie mechanikaP18–P21 z doborem kleju,
+P17ma wykonaną syntezęV/I/X/chłodzenia i objętości (raport028).
+Najbliższy krok:mechanikaP18–P21 z doborem kleju,
 czasoweDSP/napędP22–P25, pokójP26–P28 i integracjaP29/P30.
 Poszukiwanie danych materiałowych i nieliniowych może toczyć się równolegle
 z obliczeniami niewymagającymi tych danych. Nie wykonywać zakupów.

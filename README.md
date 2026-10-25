@@ -38,8 +38,11 @@ wymaganiaRth; nie prognozy temperatur konkretnych produktów.
 **Wykonano zakres P14B:** [raport026 —3312przypadków, fazy, amplitudy i rozruch](raporty/026_P14B_pelna_kampania_dwutonowa.md).
 23flagi rozstrzygnięto osobno;16560projekcji pola i4niezależneRadau.
 **Wykonano rodzinę P15B:** [raport027 —2304przebiegiRe(T),grzania i ruchu](raporty/027_P15B_sprzezenie_grzania_i_napedu.md).
-Nie są to zidentyfikowane temperatury24produktów. Najbliższy krok:P17 —
-synteza ograniczeń, potem panele/usztywnienia/klejP18/P19.
+Nie są to zidentyfikowane temperatury24produktów.
+**P17:** [raport028 — synteza napięcia,prądu,objętości i chłodzenia](raporty/028_P17_synteza_napedu_objetosci_i_ciepla.md).
+5184zestawy i31104punkty wymaganej pracy; analityczne przedziały Vb>0,
+bez udawania progów klienta ani SPL w pokoju. Najbliższy krok:P18/P19 —
+panele,usztywnienia,połączenia i klej.
 
 **Bieżący zakres: wyłącznie naukowe zagadnienia prototypu (U-010).**
 Najnowsze zlecenie: [program30badań](PROGRAM_30_BADAN.md), szeroka pula
@@ -108,6 +111,7 @@ Brak modelu THD, kompresji cieplnej i zidentyfikowanej odpowiedzi pokoju.
 25. [025 — P15A, topologia, identyfikowalność i granice termiki](raporty/025_P15A_topologia_i_granice_termiki.md).
 26. [026 — wykonany zakres dwutonowy P14B](raporty/026_P14B_pelna_kampania_dwutonowa.md).
 27. [027 — P15B, sprzężenie grzania i napędu](raporty/027_P15B_sprzezenie_grzania_i_napedu.md).
+28. [028 — P17, wspólne ograniczenia i objętość](raporty/028_P17_synteza_napedu_objetosci_i_ciepla.md).
 
 ## Odtworzenie obliczeń
 
@@ -132,6 +136,7 @@ Wykonany późniejszy zakresP14B/P15B ma osobny
 [manifest z bazami, wejściami, kontrolami i dokumentacją](wyniki/manifest_P14B_P15B.json).
 Pełna procedura obejmuje już te etapy; nie oznacza to zamknięcia pozostałych
 pakietów. ArchiwumP15B odtwarza zgodne checkpointy,nie nowe2304ODE.
+P17ma [osobny manifest wejść, wyników i dokumentacji](wyniki/manifest_P17.json).
 
 Skrypty ustalają katalog projektu na podstawie własnej ścieżki. Dla osobnego
 środowiska można utworzyć`.venv` i zainstalować`requirements.txt`. Nie trzeba
@@ -162,5 +167,5 @@ materiałów i bez włączania prywatnych kopiiPDF do repozytorium.
 Źródła z internetu: browser-harness oraz dopuszczony Firecrawl. Kosztorys,
 dostępność PL/UE i dobór handlowy pozostają odłożone. Przegląd opinii wszystkich
 24 kandydatów wykonano z jawnymi brakami; nie stanowi rankingu jakości.
-Najbliższy krok:P17 — syntezaV/I/X i warunkowego chłodzenia;
-następnie mechanika z klejemP18/P19 i dalsza integracja.
+Najbliższy krok:P18/P19 — mechanika paneli,usztywnienia,połączenia i klej;
+następnie dalsza integracja z ochroną oraz niepewnością.
