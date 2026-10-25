@@ -1,0 +1,69 @@
+{
+  "status": "P18B_COMPARATIVE_GEOMETRY_NOT_FINAL_PRODUCT_RANKING",
+  "front_spans_m": [
+    [
+      0.46,
+      0.46
+    ],
+    [
+      0.5,
+      0.55
+    ]
+  ],
+  "thickness_m": [
+    0.018,
+    0.022,
+    0.025
+  ],
+  "boundaries": [
+    "CCCC",
+    "SSSS_HARD"
+  ],
+  "spring_each_n_m": [
+    100000.0,
+    1000000.0,
+    10000000.0
+  ],
+  "common_payload_kg": 10,
+  "payload_scope": "Wspólny umowny ładunek dla izolowania wpływu geometrii; nie masa każdego produktu.",
+  "gyration_radius_m": 0.1,
+  "cg_depth_m": 0.08,
+  "patch_radius_m": 0.004,
+  "mesh_angular_per_side": 20,
+  "mesh_radial_layers": 12,
+  "drivers": [
+    {
+      "candidate_id": "C02",
+      "hole_radius_m": 0.1779,
+      "bolt_circle_radius_m": 0.184,
+      "bolt_count": 8
+    },
+    {
+      "candidate_id": "C04",
+      "hole_radius_m": 0.1526,
+      "bolt_circle_radius_m": 0.1621,
+      "bolt_count": 8
+    },
+    {
+      "candidate_id": "C06",
+      "hole_radius_m": 0.144,
+      "bolt_circle_radius_m": 0.155,
+      "bolt_count": 8
+    }
+  ],
+  "pressure_control_pa": 1000,
+  "force_control_n": 100,
+  "moment_control_nm": 1,
+  "actual_net_mass_case": {
+    "candidate_id": "C04",
+    "mass_kg": 7.68
+  },
+  "gates": [
+    "Span jest odległością zadanych podpór,nie wymiarem formatkiCNC.",
+    "Brakfrezów i lokalnych otworów na śruby;zakładany montaż nawierzchniowy.",
+    "Mocowania są obustronnie liniowe;preload/odrywanie/kontakt nie zidentyfikowane.",
+    "Nie jest prognozą SPL/THD ani pełną skrzynią.",
+    "J=m*(rg²+zcg²) to umowna bezwładność normalnych obrotów.",
+    "Brak zewnętrznej reakcji powietrza w P18B;nie dodawać projekcji radiacyjnej jako bilansu."
+  ]
+}

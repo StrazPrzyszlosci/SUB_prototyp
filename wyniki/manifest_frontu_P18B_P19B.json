@@ -1,0 +1,66 @@
+{
+  "status": "SCOPED_P18B_P19B_NOT_FULL_CABINET_OR_CONTACT_TIME_SOLUTION",
+  "generated_at": "2026-10-25T17:04:52.501599+01:00",
+  "libraries": {
+    "Python": "3.12.3",
+    "NumPy": "1.26.4",
+    "SciPy": "1.17.1",
+    "Matplotlib": "3.10.8"
+  },
+  "input_sha256": {
+    "brief_system_audio_DIY_v0.6.md": "3bd9f8d43a92b96256073e66cd0f4f105336e969a37c29fc42f17cda9d66736f",
+    "dane/konfiguracje/p18b_front_z_otworem.json": "ea84bc227d46ace4924250d97c960ced9161d0e24f9aaeb376bfe9acc44d9448",
+    "dane/materialy/mdf_i_kleje_P18_P19.json": "9983ac3e82ef2b0f0470763fba45e5c908b4ac50041cac34f7405c72a340f7d5",
+    "dane/zrodla/P18B_geometria_i_ograniczenia.json": "d7c76459def5895df418cb5cccb05d8a7645d92eaaa2da3db78a3ceb44a4c8ae",
+    "skrypty/analiza_frontu_z_otworem_P18B.py": "690c12ff6a2193dc6bcc017e06e06993d9a16709de9177411b89bb5993f24e34",
+    "skrypty/analiza_styku_frontu_P19B.py": "0d39318290298a678a43c6f707b1ee11b0649c858004a4255c154f644f6700b5",
+    "skrypty/manifest_frontu_P18B_P19B.py": "c7983775a04bca9e92e35ee7805a1a1b57d452ed3dc13c71ebc84127a9fba22c",
+    "skrypty/model_frontu_z_otworem_P18B.py": "9dc138ae9be3ab7db91803c7441b377d064268ddfd41364d9598938aa4b9c953",
+    "skrypty/model_plyty_MITC_P18.py": "1e98a4553f5697344821a83d7d6afe823c2a801350f14dbdeb6d8ce681690775",
+    "skrypty/odtworz_front_i_styk_P18B_P19B.py": "30ea4122cb397e876d2a5380273985b36529b38cd9f3a8c3c76dd9f7a9261e3b",
+    "skrypty/odtworz_wszystko.py": "fe7293b8537be961b8d717b23f6a109cfcd42c8817dd00079ddc0338ca762382",
+    "skrypty/sprawdz_front_z_otworem_P18B.py": "d6875b609bcf2670dbf8e172038a1a8f28c77aec65985930dd6a370db56890b9",
+    "skrypty/wykresy_frontu_i_styku_P18B_P19B.py": "48c7721acdc6402020f163683271415cd676a5145be776ae94affde66b295297",
+    "wyniki/p11_kalibracje_masy.csv": "f5c4c7692273f36d58f796aac7a3276e1211c5eaa85054c3f90856c88dac04e8"
+  },
+  "output_sha256": {
+    "wyniki/49_P18B_siatka_frontu_z_otworem.png": "df724bbaee98eb4a24140de0756dde3f726b1e5b18887702a857d088a880e3b7",
+    "wyniki/49_P18B_siatka_frontu_z_otworem.svg": "adc474a9588cd4ae97c91744ee373ec02c38466ea2d8a9a9021dd890b51e2213",
+    "wyniki/50_P18B_grubosc_i_ruch_kosza.png": "f4d02646c1d8ef0bfb3cf77864832e793dfea0c340798b6f47fc4863bf0916e3",
+    "wyniki/50_P18B_grubosc_i_ruch_kosza.svg": "81fa65237b406a992e2647a729ddb3bbff69ab66e5a413ccd165f264be304f66",
+    "wyniki/51_P18B_stozek_i_komora_0D.png": "e972a026bb57342dde2a691e419fbbb4e1fe27c0b5019fa0751db0aa42a051b5",
+    "wyniki/51_P18B_stozek_i_komora_0D.svg": "220bb5a83920144a37f496d59dbe2e8da34430dac4c500679a93d19fe59916f9",
+    "wyniki/52_P19B_docisk_i_bramki_styku.png": "5a088693dd850f4c3f8c9cf48ada2af7f2af659d567bf1310572ac99713555d5",
+    "wyniki/52_P19B_docisk_i_bramki_styku.svg": "89090b6255277062fde547a86a30a54b414352dfba0294b451c89dcbae1ced3a",
+    "wyniki/archiwum/P19B_pierwsza_iteracja_bolty_dwustronne/analiza_styku_frontu_P19B.py": "5ecaf85a0d6ac48138abe90b89f6f691d8d84bf79cccc8c1e398614321616c31",
+    "wyniki/archiwum/P19B_pierwsza_iteracja_bolty_dwustronne/p19b_docisk_i_styk.csv": "3300be0ace3b57ce91cd4bcb0bdaaa189580298f02984750649c4325c47627d5",
+    "wyniki/archiwum/P19B_pierwsza_iteracja_bolty_dwustronne/p19b_dynamika_i_bramki_styku.csv": "ded391b213cf7f78759081c7542b44b0a482dbef02ba4303cab5501affdb8eda",
+    "wyniki/archiwum/P19B_pierwsza_iteracja_bolty_dwustronne/p19b_podsumowanie.json": "1d814a8483caae5be7fc2048122f8f5f6f6cd825470315e73f44df8f3dbb1838",
+    "wyniki/p18b_ciagly_sztywny_brzeg.csv": "d3e3f929e6653d2c83984ab901c03929788ef674788e1deae039e05cb8506104",
+    "wyniki/p18b_fronty_i_mocowania.csv": "0ec21b62f5d8b8accc49a4c345de5c7a62b76c3280454d6401755f45f85e60c1",
+    "wyniki/p18b_mody_i_udzialy.csv": "af0d24dbe403d3844bc1b5055d55fca9148444ca813ccd28611b1c7abea7af93",
+    "wyniki/p18b_podsumowanie.json": "ad9576528817ff86ffdada6a749f7458cab2da1ee8bcd2edf9280824aa09721c",
+    "wyniki/p18b_ruch_zadany_i_komora.csv": "1a70270878c07dd255dc8b45e04a1e8bf7981e10789f39d17178eea7d05a4bb8",
+    "wyniki/p18b_weryfikacja.json": "65ce02adfbe29c6bb27bf9ef9976c5980b68352bd363c4726b02b2569cb91688",
+    "wyniki/p19b_docisk_i_styk.csv": "962a00505650778a3891190ce85260468dd709bdaf992bd35ec2ae6bb207ae10",
+    "wyniki/p19b_dynamika_i_bramki_styku.csv": "98ced0f42e5c4dfca4b74abc93e42c78305df3225afeae5af90d8ef65a2596ab",
+    "wyniki/p19b_podsumowanie.json": "a274d1f3487a586508bb2ed61cdce377f284abd3084e9a9d545d1aac0a0d981b"
+  },
+  "documentation_sha256": {
+    "AGENTS.md": "2614d4e57dd97bdf463a405e608801b265f3ef00997c1cac664a111afc432cc8",
+    "README.md": "f4b18b29f14b160528707719801683edf0efd2eb319ca7e612ff533efd995f13",
+    "PROGRAM_30_BADAN.md": "a4a7bae1c14c3914250044e5ab793e42ff9398eae6dec2dee606a03b7de1fba6",
+    "baza_wiedzy/README.md": "9d35f7a70bc7d3cb7e296aedc8cdac7a01ca7ab2336fa66b70e37a9eb2e9cb3e",
+    "baza_wiedzy/ZRODLA.md": "f6471367af3f2f0401cb50921f0743773b08e1bbe135b182d69d25afb12abebe",
+    "baza_wiedzy/23_front_otwor_kosz_i_docisk.md": "2d9aaf8c8b99d9584f9b3556ba2fab5b5ad4bb03e7acad94b929ef7036373bd9",
+    "raporty/032_postep_po_mechanice_i_zakres_do_konca.md": "66994adda726e59051bd40bf6ca090217983fa92c8f93be557a1fdb836582e46",
+    "raporty/033_front_otwor_kosz_i_styk_jednostronny.md": "59fafa8ba322ba27150bab55d74e2a9a72d43f01c8197ebc8911ef037dc7f868"
+  },
+  "next": "P19C:czasowa odpowiedź zmiennego styku w konkretnym przypadku80Hz,zbieżność redukcji i energia.",
+  "limits": [
+    "MasyCG/mocowania i uszczelka są częściowo hipotetyczne;nie ranking3produktów.",
+    "20flag zmiany styku nie jest obliczonym przebiegiem po otwarciu.",
+    "Brak pełnej skrzyni,otworówśrubowych3D,ścinania,pełzania i zewnętrznej radiacji.",
+    "Surowe oryginały nowych źródeł pozostają prywatne;publikujemy własne wyniki,fakty i hashe."
+  ]
+}

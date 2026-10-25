@@ -1,0 +1,246 @@
+{
+  "status": "CONTROLS_WITHIN_SCOPED_LINEAR_MODEL_NOT_PHYSICAL_VALIDATION",
+  "rectangle_relative_error": 4.90197906762331e-16,
+  "rotation_relative_error": 5.182614324776789e-16,
+  "rigid_errors": [
+    5.929560465077292e-17,
+    1.2543684036595699e-17,
+    9.799135581093962e-18
+  ],
+  "constant_curvature_errors": [
+    5.551115123125783e-17,
+    5.551115123125783e-17,
+    5.551115123125783e-17
+  ],
+  "patch_quadrature_basket_relative_change": 7.64285128367348e-05,
+  "annulus": [
+    {
+      "boundary": "CCCC",
+      "angular_per_side": 8,
+      "radial": 4,
+      "pressure_pa": 1.0,
+      "cap_force_n": 0.07068583470577035,
+      "displacement_m": 1.9694860433187568e-05,
+      "kirchhoff_m": 2.0889297439476602e-05,
+      "relative_error": -0.05717937665207384
+    },
+    {
+      "boundary": "CCCC",
+      "angular_per_side": 8,
+      "radial": 4,
+      "pressure_pa": 0.0,
+      "cap_force_n": 1.0,
+      "displacement_m": 0.00017381481495225764,
+      "kirchhoff_m": 0.00018473226202239332,
+      "relative_error": -0.059098757036885385
+    },
+    {
+      "boundary": "CCCC",
+      "angular_per_side": 16,
+      "radial": 8,
+      "pressure_pa": 1.0,
+      "cap_force_n": 0.07068583470577035,
+      "displacement_m": 2.0600386741405413e-05,
+      "kirchhoff_m": 2.0889297439476602e-05,
+      "relative_error": -0.013830560788760882
+    },
+    {
+      "boundary": "CCCC",
+      "angular_per_side": 16,
+      "radial": 8,
+      "pressure_pa": 0.0,
+      "cap_force_n": 1.0,
+      "displacement_m": 0.00018208400930090214,
+      "kirchhoff_m": 0.00018473226202239332,
+      "relative_error": -0.014335626557586134
+    },
+    {
+      "boundary": "CCCC",
+      "angular_per_side": 32,
+      "radial": 16,
+      "pressure_pa": 1.0,
+      "cap_force_n": 0.07068583470577035,
+      "displacement_m": 2.082561508123755e-05,
+      "kirchhoff_m": 2.0889297439476602e-05,
+      "relative_error": -0.003048563908075952
+    },
+    {
+      "boundary": "CCCC",
+      "angular_per_side": 32,
+      "radial": 16,
+      "pressure_pa": 0.0,
+      "cap_force_n": 1.0,
+      "displacement_m": 0.0001841463286509501,
+      "kirchhoff_m": 0.00018473226202239332,
+      "relative_error": -0.0031717977413830978
+    },
+    {
+      "boundary": "SSSS_HARD",
+      "angular_per_side": 8,
+      "radial": 4,
+      "pressure_pa": 1.0,
+      "cap_force_n": 0.07068583470577035,
+      "displacement_m": 8.796532158637335e-05,
+      "kirchhoff_m": 8.993117728235564e-05,
+      "relative_error": -0.02185955700112896
+    },
+    {
+      "boundary": "SSSS_HARD",
+      "angular_per_side": 8,
+      "radial": 4,
+      "pressure_pa": 0.0,
+      "cap_force_n": 1.0,
+      "displacement_m": 0.0007038872101144938,
+      "kirchhoff_m": 0.000715745126815874,
+      "relative_error": -0.016567233582340135
+    },
+    {
+      "boundary": "SSSS_HARD",
+      "angular_per_side": 16,
+      "radial": 8,
+      "pressure_pa": 1.0,
+      "cap_force_n": 0.07068583470577035,
+      "displacement_m": 8.944873022257917e-05,
+      "kirchhoff_m": 8.993117728235564e-05,
+      "relative_error": -0.005364625198464146
+    },
+    {
+      "boundary": "SSSS_HARD",
+      "angular_per_side": 16,
+      "radial": 8,
+      "pressure_pa": 0.0,
+      "cap_force_n": 1.0,
+      "displacement_m": 0.0007128584470358502,
+      "kirchhoff_m": 0.000715745126815874,
+      "relative_error": -0.0040331113295395404
+    },
+    {
+      "boundary": "SSSS_HARD",
+      "angular_per_side": 32,
+      "radial": 16,
+      "pressure_pa": 1.0,
+      "cap_force_n": 0.07068583470577035,
+      "displacement_m": 8.981906775929624e-05,
+      "kirchhoff_m": 8.993117728235564e-05,
+      "relative_error": -0.0012466146496383779
+    },
+    {
+      "boundary": "SSSS_HARD",
+      "angular_per_side": 32,
+      "radial": 16,
+      "pressure_pa": 0.0,
+      "cap_force_n": 1.0,
+      "displacement_m": 0.000715099375776227,
+      "kirchhoff_m": 0.000715745126815874,
+      "relative_error": -0.0009022080842097102
+    }
+  ],
+  "small_inner_disk_error": -9.335224815387733e-10,
+  "real_geometry_mesh": [
+    {
+      "angular_per_side": 12,
+      "radial": 8,
+      "basket_m": 1.908257978497222e-05,
+      "maximum_joint_n": 29.432700350888375,
+      "first_hz": 187.14916009252292,
+      "independent_error": 2.0491228261516142e-13,
+      "hole_area_error": -0.0028533426503628556
+    },
+    {
+      "angular_per_side": 20,
+      "radial": 12,
+      "basket_m": 1.911680662261878e-05,
+      "maximum_joint_n": 29.3904375285804,
+      "first_hz": 186.93038190305074,
+      "independent_error": 2.1805303407965623e-13,
+      "hole_area_error": -0.0010277667514614341
+    },
+    {
+      "angular_per_side": 28,
+      "radial": 16,
+      "basket_m": 1.917495820331594e-05,
+      "maximum_joint_n": 29.37555524706742,
+      "first_hz": 186.5987735367249,
+      "independent_error": 6.418041700584911e-13,
+      "hole_area_error": -0.0005244500126934115
+    }
+  ],
+  "last_mesh_relative_changes": {
+    "basket_m": 0.003041908716509001,
+    "maximum_joint_n": 0.0005063647486875933,
+    "first_hz": 0.0017739672007829332
+  },
+  "reciprocity_error": 4.080459746167895e-14,
+  "coupled_energy": [
+    {
+      "f_hz": 20.0,
+      "pressure_pa_real": -51.63812344612865,
+      "pressure_pa_imag": -8.346940736327163,
+      "pressure_pa_rms": 52.308385682349055,
+      "source_power_w": 0.04808170308259595,
+      "structural_power_w": 3.4454079379100744e-07,
+      "gas_power_w": 0.048081358541802156,
+      "relative_power_residual": 0.0,
+      "force_required_n_real": -1.582154269468159,
+      "force_required_n_imag": 0.38262203589359833,
+      "cone_motion_rms_m": 0.001,
+      "moving_mass_proxy_kg": 0.25,
+      "scope": "PRESCRIBED_RELATIVE_MOTION_0D_NO_EXTERIOR_RADIATION_NO_ELECTRICAL_MOTOR"
+    },
+    {
+      "f_hz": 40.0,
+      "pressure_pa_real": -57.89456593877379,
+      "pressure_pa_imag": -9.047254567151713,
+      "pressure_pa_rms": 58.597214783996975,
+      "source_power_w": 0.10456781029732844,
+      "structural_power_w": 2.8002630366190596e-05,
+      "gas_power_w": 0.10453980766696222,
+      "relative_power_residual": 2.6543135537321306e-16,
+      "force_required_n_real": -13.153677892089013,
+      "force_required_n_imag": 0.41606209742788536,
+      "cone_motion_rms_m": 0.001,
+      "moving_mass_proxy_kg": 0.25,
+      "scope": "PRESCRIBED_RELATIVE_MOTION_0D_NO_EXTERIOR_RADIATION_NO_ELECTRICAL_MOTOR"
+    },
+    {
+      "f_hz": 80.0,
+      "pressure_pa_real": -63.375658345045174,
+      "pressure_pa_imag": -6.429897999481988,
+      "pressure_pa_rms": 63.701002024706305,
+      "source_power_w": 0.15671815546220427,
+      "structural_power_w": 0.005475081996097033,
+      "gas_power_w": 0.1512430734661074,
+      "relative_power_residual": 1.062630256224118e-15,
+      "force_required_n_real": -60.65346779279689,
+      "force_required_n_imag": 0.31178086392567406,
+      "cone_motion_rms_m": 0.001,
+      "moving_mass_proxy_kg": 0.25,
+      "scope": "PRESCRIBED_RELATIVE_MOTION_0D_NO_EXTERIOR_RADIATION_NO_ELECTRICAL_MOTOR"
+    },
+    {
+      "f_hz": 200.0,
+      "pressure_pa_real": -32.9294378496033,
+      "pressure_pa_imag": 12.982851970019544,
+      "pressure_pa_rms": 35.39636029828952,
+      "source_power_w": 44.43647106406074,
+      "structural_power_w": 44.38664485809761,
+      "gas_power_w": 0.049826205963324294,
+      "relative_power_residual": 4.401644340329444e-15,
+      "force_required_n_real": -313.03526237682195,
+      "force_required_n_imag": 35.361420117026206,
+      "cone_motion_rms_m": 0.001,
+      "moving_mass_proxy_kg": 0.25,
+      "scope": "PRESCRIBED_RELATIVE_MOTION_0D_NO_EXTERIOR_RADIATION_NO_ELECTRICAL_MOTOR"
+    }
+  ],
+  "limitations": [
+    "Kirchhoff reference is thin-limit only;1mm plate,not22mm validation against3D.",
+    "Finite patch is regularized;stress of screw holes/contact3D not provided.",
+    "Damping,gasket stiffness and payload inertias are hypotheses."
+  ],
+  "input_sha256": {
+    "skrypty/model_frontu_z_otworem_P18B.py": "9dc138ae9be3ab7db91803c7441b377d064268ddfd41364d9598938aa4b9c953",
+    "skrypty/model_plyty_MITC_P18.py": "1e98a4553f5697344821a83d7d6afe823c2a801350f14dbdeb6d8ce681690775",
+    "skrypty/sprawdz_front_z_otworem_P18B.py": "d6875b609bcf2670dbf8e172038a1a8f28c77aec65985930dd6a370db56890b9"
+  }
+}

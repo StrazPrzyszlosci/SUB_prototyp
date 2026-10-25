@@ -433,6 +433,34 @@ Postęp końca sesji2026-10-23:
   dwieobudowy w4.6×3.7×2.5m iukładRTVlewo/kanapaprawo. Nie zamykać
   końcowegowyboru/PDF przed programemP22–P30 i otwartymi bramkami.
 
+- Aktualizacja postępu 2026-10-25 po raportach026–031: orientacyjnie
+  55–65% programu przed budową, 35–45% pozostaje; ocena planistyczna,
+  nie pomiar ani uśrednienie statusów. Pythonowy odczyt macierzy:
+  8wykonanych rodzin w ograniczonej dziedzinie,19pakietów częściowych,
+  3do wykonania. Dowód i zakres do końca: raport032. Nie uruchamiano
+  ponownie symulacji. Najbliższy krok pozostaje P18B — front z otworem,
+  koszem i mocowaniem; następnie pełna mechanika,DSP/ochrona i synteza.
+
+- P18B/P19B,2026-10-25:raport033/baza23;136frontów,1088modów,
+  90punktówzadany-stożek/komora0D;12stanówdocisku i72diagnostyki.
+  KowariantnyMITC na ogólnychczworokątach,zbieżnywielokątotworu,
+  masakosza i8skończonychmocowań. ReferencjaannulusKirchhoff<0.4%,
+  ostatniasiatkaruch0.304%/siła0.051%/f0.177%,kwadraturałaty0.00764%.
+  ŹródłaSRC49/50/SRC03obejrzane;STX166+8=174mm,pusteMnet;
+  DaytonWeight30lbnieprzyjęte jakonet. Wspólne10kgtohipoteza,nie ranking.
+- Modeluszczelki jednostronny;wykryteujemnesiłyśrub z iteracji1
+  zachowanowarchiwum,śruby zmieniono na rozciąganetylko. Nieliniowy
+  docisk ma odrębną enumeracjęstanów i dodatniąenergię. 20/72flag
+  zmianystyku wyklucza traktowaniezamrożonej dynamiki jako realnej
+  trajektorii po otwarciu. T0=kdelta0niejest zachowanąsiłą/momentem.
+  Bilansmodelu do9.41e-13 nie jestfizycznąwalidacją. Wykresy49–52
+  obejrzano;manifest i odtwarzanie nowegoetapu niepowtarza24driverkampanii.
+- **Jeden najbliższy krok:P19C — czasowo rozstrzygnąć konkretny
+  przypadek zmiennegostyku80Hz,zbieżność redukcji i energia.** Potem
+  pełna rama/mocowanie3D,regulacjaP20 i poleP21. In-plane ciężar,
+  tarcie,pełzanie i naprężeniaotworów nie są zamknięte modelemnormalnym.
+  P22–P30,pojedynczywybór i końcowyPDF pozostają otwarte.
+
 ## Decyzje otwarte
 
 - Referencje subwooferów ADAM Sub12/Sub15: zatwierdzone; progi odbiorowe otwarte.

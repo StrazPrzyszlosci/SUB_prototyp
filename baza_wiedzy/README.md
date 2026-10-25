@@ -33,6 +33,7 @@ a potwierdzonych ustaleń użytkownika w [rejestrze](../DECYZJE_I_PYTANIA.md).
 |20|[MES paneli i ściągów](20_MES_paneli_i_sciagow.md)|Blokada ścinania,postacie,skończone łaty,masa i weryfikacja|
 |21|[Mechanika spoin](21_mechanika_spoin_i_kwalifikacja.md)|PodatnośćMDF/kleju,lokalne odrywanie,ścinanie,S–N i szczelność|
 |22|[Reakcja powietrza na panele](22_reakcja_powietrza_na_panele.md)|Rayleigh,masa powietrza,nieujemna moc i sprzężony bilans|
+|23|[Front,otwór,kosz i docisk](23_front_otwor_kosz_i_docisk.md)|KowariantnyMITC,masa i siły,portkomory,uszczelka i śruby jednostronne|
 |Źródła|[Rejestr z datami](ZRODLA.md)|Co przeczytano, co tylko znaleziono i jakie są braki|
 
 ## Od wiedzy do wykonania

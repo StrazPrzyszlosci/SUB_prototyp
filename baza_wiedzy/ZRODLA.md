@@ -157,6 +157,14 @@ Data dostępu2026-10-25. ReakcjaRayleigha rozwija źródłaP11 i własne kontrol
 
 ## Pliki zachowane lokalnie
 
+P18B/P19B,2026-10-25: **SRC49** — oryginalny rysunekDaytonRSS390HF-4
+z PDFproducenta; **SRC50** — oryginalny rysunekSTXW.32.800.8.FCX.
+Ponownie obejrzano SRC03/SB34REV2. Wymiary i ich płaszczyzny odniesienia,
+masy nieznane oraz hashe są w
+[rejestrzeP18B](../dane/zrodla/P18B_geometria_i_ograniczenia.json).
+DaytonWeight30lb nie stało się zweryfikowanymMnet,STXnetmass jest puste.
+Nie pobierano automatycznych tablic punktów wykresów.
+
 - [Wejścia katalogowe i konflikty](../dane/przetworniki/kandydaci.json).
 - [PDF SB Acoustics](../dane/zrodla/SRC03_SB34SWPL76-4.pdf).
 - [Transkrypcja PDF Dayton przez Firecrawl](../dane/zrodla/SRC01_PDF_transkrypcja_firecrawl.md).

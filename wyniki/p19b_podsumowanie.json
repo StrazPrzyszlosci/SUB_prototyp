@@ -1,0 +1,70 @@
+{
+  "status": "P19B_UNILATERAL_PRELOAD_AND_FROZEN_CONTACT_DIAGNOSTIC_NOT_CONTACT_TIME_ODE",
+  "static_cases": 12,
+  "dynamic_cases": 72,
+  "input_sha256": {
+    "skrypty/analiza_styku_frontu_P19B.py": "0d39318290298a678a43c6f707b1ee11b0649c858004a4255c154f644f6700b5",
+    "skrypty/model_frontu_z_otworem_P18B.py": "9dc138ae9be3ab7db91803c7441b377d064268ddfd41364d9598938aa4b9c953",
+    "skrypty/model_plyty_MITC_P18.py": "1e98a4553f5697344821a83d7d6afe823c2a801350f14dbdeb6d8ce681690775",
+    "dane/zrodla/P18B_geometria_i_ograniczenia.json": "d7c76459def5895df418cb5cccb05d8a7645d92eaaa2da3db78a3ceb44a4c8ae",
+    "dane/konfiguracje/p18b_front_z_otworem.json": "ea84bc227d46ace4924250d97c960ced9161d0e24f9aaeb376bfe9acc44d9448",
+    "wyniki/p11_kalibracje_masy.csv": "f5c4c7692273f36d58f796aac7a3276e1211c5eaa85054c3f90856c88dac04e8"
+  },
+  "reference_checks": {
+    "scalar": [
+      {
+        "force": -5.0,
+        "q": -2.5,
+        "exact": -2.5
+      },
+      {
+        "force": 1.0,
+        "q": 0.2,
+        "exact": 0.2
+      },
+      {
+        "force": 5.0,
+        "q": 1.0,
+        "exact": 1.0
+      }
+    ],
+    "independent_active_enumeration_errors": [
+      0.0,
+      1.1102230246251565e-16,
+      0.0
+    ],
+    "offset_hinge_enumeration_errors": [
+      5.551115123125783e-17,
+      0.0,
+      0.0
+    ]
+  },
+  "contact_quadrature_convergence": [
+    {
+      "radial_quadrature": 4,
+      "angular_quadrature": 128,
+      "basket_m": -1.0754362262565053e-05,
+      "strain_energy_work_j": 0.0010754362262565052,
+      "contact_area_fraction": 1.0
+    },
+    {
+      "radial_quadrature": 6,
+      "angular_quadrature": 256,
+      "basket_m": -1.0754439202773143e-05,
+      "strain_energy_work_j": 0.0010754439202773144,
+      "contact_area_fraction": 1.0
+    }
+  ],
+  "maximum_power_residual": 4.1586936606978337e-13,
+  "switching_flagged": 20,
+  "assumptions": [
+    "C04net7.68kg;CG80mm i J=m*(.1²+.08²) są hipotezami.",
+    "Uszczelka jako idealny pierścień153.6-172.1mm;kn1e8/1e9Pa/m umowne,nie konkretny produkt.",
+    "Grubość3mm tylko do diagnostyki odkształcenia,nie identyfikacja prawa materiału.",
+    "T0=k*delta0 jest parametrem skrócenia,nie końcową siłą/momentem dokręcania.",
+    "Śruby przenoszą tylko rozciąganie;ujemna siła z pierwszej iteracji wymusiła zmianę modelu.",
+    "Brak tarcia,in-plane shear,otworówśrubowych,pełzania i lokalnej nośności3D.",
+    "Flagi otwierania/zamykania unieważniają użycie zamrożonego styku jako prognozy przebiegu.",
+    "Brak zewnętrznej radiacji i pełnej skrzyni;kontrole są w punktachkwadratury,nie ciągłym styku."
+  ]
+}

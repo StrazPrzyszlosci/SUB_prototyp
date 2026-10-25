@@ -2,6 +2,11 @@
 
 Badania naukowe i rozwój prototypu subwoofera zamkniętego.
 
+**Ocena postępu 2026-10-25, po P18A/P19A/P21A:** orientacyjnie 55–65%
+programu przed budową, około 35–45% zakresu pozostaje.
+To szacunek planistyczny, nie wynik pomiaru ani procent gotowości urządzenia.
+[Raport 032 — wykonane prace, pozostałe bloki i kryterium zakończenia](raporty/032_postep_po_mechanice_i_zakres_do_konca.md).
+
 **Aktualizacja 2026-10-24:** pula obejmuje 24 modele od 11 producentów,
 w tym 4 STX. Wykonano 12 576 scenariuszy objętości/napędu, analizę N7,
 288 przypadków granic po dodatnich Vb oraz badanie identyfikowalności.
@@ -47,8 +52,11 @@ mechaniki opisują poniższe raporty.
 [030 —656normalnych podmodeli spoiny,ścinanie i szczeliny](raporty/030_P19A_obliczenia_spoin_i_material_kleju.md),
 [031 —72sprzężone punkty reakcji powietrza](raporty/031_P21A_reakcja_powietrza_i_bilans.md).
 Nie są to pełna geometria frontu3D i kwalifikacja trwałości kleju.
-Najbliższy krok:P18B — front z otworem,koszem i mocowaniem;
-następnie kompletne połączenia,regulacja i pole rzeczywistej skrzyni.
+**Wykonano P18B/P19B:** [raport033 — front z otworem,koszem i jednostronny styk](raporty/033_front_otwor_kosz_i_styk_jednostronny.md).
+136wariantówfrontu,90punktówkomory,12stanówdocisku i72diagnostyki styku.
+20flagzmiany styku pozostaje jawną bramką;nie są przebiegiem po otwarciu.
+Najbliższy krok:P19C — czasowa odpowiedź konkretnego zmiennego styku;
+następnie pełna rama,regulacja i pole rzeczywistej skrzyni.
 
 **Bieżący zakres: wyłącznie naukowe zagadnienia prototypu (U-010).**
 Najnowsze zlecenie: [program30badań](PROGRAM_30_BADAN.md), szeroka pula
@@ -121,6 +129,8 @@ Brak modelu THD, kompresji cieplnej i zidentyfikowanej odpowiedzi pokoju.
 29. [029 — P18A, panele i ściągi](raporty/029_P18A_plyty_sciagi_i_dynamika.md).
 30. [030 — P19A, obliczenia spoin i materiał kleju](raporty/030_P19A_obliczenia_spoin_i_material_kleju.md).
 31. [031 — P21A, reakcja powietrza i bilans](raporty/031_P21A_reakcja_powietrza_i_bilans.md).
+32. [032 — aktualna ocena postępu po pierwszym etapie mechaniki](raporty/032_postep_po_mechanice_i_zakres_do_konca.md).
+33. [033 — P18B/P19B, front i mocowanie ze stykiem jednostronnym](raporty/033_front_otwor_kosz_i_styk_jednostronny.md).
 
 ## Odtworzenie obliczeń
 
@@ -156,6 +166,16 @@ python3 skrypty/odtworz_mechanike_P18_P19_P21.py
 Przed analizą przywracane są zgodne,sprawdzaneSHAarchiwa172/656checkpointów.
 To odtworzenie artefaktów,nie nowy niezależny rachunek828wariantów.
 
+Front i styk mają [osobny manifest](wyniki/manifest_frontu_P18B_P19B.json).
+Świeże obliczenia tego etapu,bez powtarzania starszych kampanii:
+
+```bash
+OPENBLAS_NUM_THREADS=1 python3 skrypty/odtworz_front_i_styk_P18B_P19B.py
+```
+
+P19B rozwiązuje nieliniowy docisk,a następnie bada warunki liniowania dynamiki.
+Nie jest czasową symulacją po utracie styku;ta bramka pozostaje P19C.
+
 Skrypty ustalają katalog projektu na podstawie własnej ścieżki. Dla osobnego
 środowiska można utworzyć`.venv` i zainstalować`requirements.txt`. Nie trzeba
 zmieniać globalnej instalacji. Wykresy są zapisywane jakoPNG iSVG bez interfejsu
@@ -185,5 +205,5 @@ materiałów i bez włączania prywatnych kopiiPDF do repozytorium.
 Źródła z internetu: browser-harness oraz dopuszczony Firecrawl. Kosztorys,
 dostępność PL/UE i dobór handlowy pozostają odłożone. Przegląd opinii wszystkich
 24 kandydatów wykonano z jawnymi brakami; nie stanowi rankingu jakości.
-Najbliższy krok:P18B — front z otworem,koszem i mocowaniem;
-potem pełne połączenia/regulacja,pole3D,ochrona i integracja niepewności.
+Najbliższy krok:P19C — czasowa odpowiedź zmiennego styku przy80Hz;
+potem pełna rama/połączenia/regulacja,pole3D,ochrona i integracja niepewności.

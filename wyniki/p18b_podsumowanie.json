@@ -1,0 +1,28 @@
+{
+  "status": "P18B_EXECUTED_SCOPED_FRONT_MODELS_NOT_FINAL_CABINET",
+  "cases": 136,
+  "modal_rows": 1088,
+  "coupled_rows": 90,
+  "continuous_inner_controls": 2,
+  "input_sha256": {
+    "brief_system_audio_DIY_v0.6.md": "3bd9f8d43a92b96256073e66cd0f4f105336e969a37c29fc42f17cda9d66736f",
+    "dane/konfiguracje/p18b_front_z_otworem.json": "ea84bc227d46ace4924250d97c960ced9161d0e24f9aaeb376bfe9acc44d9448",
+    "dane/zrodla/P18B_geometria_i_ograniczenia.json": "d7c76459def5895df418cb5cccb05d8a7645d92eaaa2da3db78a3ceb44a4c8ae",
+    "dane/materialy/mdf_i_kleje_P18_P19.json": "9983ac3e82ef2b0f0470763fba45e5c908b4ac50041cac34f7405c72a340f7d5",
+    "skrypty/model_frontu_z_otworem_P18B.py": "9dc138ae9be3ab7db91803c7441b377d064268ddfd41364d9598938aa4b9c953",
+    "skrypty/model_plyty_MITC_P18.py": "1e98a4553f5697344821a83d7d6afe823c2a801350f14dbdeb6d8ce681690775",
+    "skrypty/analiza_frontu_z_otworem_P18B.py": "690c12ff6a2193dc6bcc017e06e06993d9a16709de9177411b89bb5993f24e34",
+    "wyniki/p11_kalibracje_masy.csv": "f5c4c7692273f36d58f796aac7a3276e1211c5eaa85054c3f90856c88dac04e8"
+  },
+  "worst_independent_static_relative_error": 2.4181601654955045e-12,
+  "maximum_coupled_power_residual": 9.404871219553704e-13,
+  "scope": [
+    "Span jest odległością zadanych podpór,nie wymiarem formatkiCNC.",
+    "Brakfrezów i lokalnych otworów na śruby;zakładany montaż nawierzchniowy.",
+    "Mocowania są obustronnie liniowe;preload/odrywanie/kontakt nie zidentyfikowane.",
+    "Nie jest prognozą SPL/THD ani pełną skrzynią.",
+    "J=m*(rg²+zcg²) to umowna bezwładność normalnych obrotów.",
+    "Brak zewnętrznej reakcji powietrza w P18B;nie dodawać projekcji radiacyjnej jako bilansu."
+  ],
+  "next": "Rzeczywiste połączenie front-rama,preload/uszczelka i integracja pełnej skrzyni P19-P21."
+}

@@ -1,0 +1,89 @@
+{
+  "date": "2026-10-25",
+  "status": "ORIGINAL_DRAWINGS_VISUALLY_INSPECTED_NOT_A_CNC_RELEASE",
+  "sources": [
+    {
+      "source_id": "SRC49",
+      "manufacturer": "Dayton Audio",
+      "model": "RSS390HF-4",
+      "page_url": "https://www.daytonaudio.com/product/126/rss390hf-4-15-reference-hf-subwoofer-4-ohm",
+      "pdf_url": "https://www.daytonaudio.com/images/resources/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf",
+      "original_file": ".firecrawl/p18b_RSS390HF_original.pdf",
+      "sha256": "a7927b0db3106a9604cd000d82567bfeb418fdd40167d4566df9b5e27d069199",
+      "viewed_pages": [
+        1
+      ],
+      "facts": {
+        "outside_diameter_mm": 388.4,
+        "nominal_cutout_mm": 355.8,
+        "bolt_circle_mm": 368,
+        "bolt_hole_mm": 6.5,
+        "bolt_count": 8,
+        "overall_depth_mm": 178,
+        "magnet_diameter_mm": 190
+      },
+      "weight_page_lb": 30,
+      "weight_gate": "WWW mówi Weight; PDF nie podaje masy netto. Nie traktować tej liczby jako zweryfikowanego Mnet do dynamiki.",
+      "graphs": "Obejrzano rysunek, tabelę, impedance/phase i frequencyresponse; nie digitalizowano krzywych. Warunki: 1/24oct,nearfield below450Hz; nie źródło naprężeń lub Mnet."
+    },
+    {
+      "source_id": "SRC03",
+      "manufacturer": "SB Acoustics",
+      "model": "SB34SWPL76-4",
+      "pdf_url": "https://sbacoustics.com/wp-content/uploads/2022/03/12in-SB34SWPL76-4.pdf",
+      "original_file": "dane/zrodla/SRC03_SB34SWPL76-4.pdf",
+      "sha256": "f85c16f4db2a0d8c304c321d0d80af092640c1b3cf59a02b7521235b462d61f8",
+      "revision": "REV2 17.02.2022",
+      "viewed_pages": [
+        1
+      ],
+      "facts": {
+        "outside_diameter_mm": 346.2,
+        "outside_tolerance_mm": 0.55,
+        "frame_body_diameter_mm": 305.2,
+        "bolt_circle_mm": 324.2,
+        "bolt_circle_tolerance_mm": 0.3,
+        "bolt_hole_mm": 5.5,
+        "bolt_count": 8,
+        "overall_depth_mm": 166.7,
+        "magnet_diameter_mm": 156,
+        "net_mass_kg": 7.68
+      },
+      "cutout_gate": "305.2mm jest średnicą na rysunku korpusu; w modelu otwór ma tę wartość nominalną. Luz montażowy należy dodać i zbadać przed CNC.",
+      "graphs": "Oryginalny rysunek i wszystkie osie odczytane wzrokowo. Wykres IECbaffle,31.6cm,SPL2.83V/1m,0/30/60deg,impedance. Nie digitalizowano punktów."
+    },
+    {
+      "source_id": "SRC50",
+      "manufacturer": "STX",
+      "model": "W.32.800.8.FCX",
+      "page_url": "https://stx.pl/pl/w-32-800-8-fcx.html",
+      "image_url": "https://stx.pl/uploads/images/Glosniki/niskotonowe/W_32_800_8_FCX/W.32.800.8.FCX%20wymiary.jpg?1783511265194",
+      "original_file": ".firecrawl/p18b_STX_FCX_wymiary.jpg",
+      "sha256": "013da659400744fa5cb3de243f2e4b78a0e9df046b0df8206153be40154fd8f9",
+      "viewed_images": [
+        1
+      ],
+      "facts": {
+        "outside_diameter_mm": 326,
+        "nominal_cutout_mm": 288,
+        "bolt_circle_mm": 310,
+        "bolt_hole_mm": 6,
+        "bolt_count": 8,
+        "rear_depth_from_flange_mm": 166,
+        "flange_thickness_mm": 8,
+        "overall_depth_page_mm": 174
+      },
+      "weight_gate": "Pole Waga netto - kg jest puste. Nie przypisano mu masy z innego produktu.",
+      "depth_resolution": "Rysunek166mm pluskołnierz8mm daje174mm zWWW; nie uznano166/174 za konflikt tej samej płaszczyzny."
+    }
+  ],
+  "method": "Firecrawl:ekstrakcja WWW;browser-harness BH_RECORD=0:pobranie oryginałów;PyMuPDF/view_image:oględziny;surowe kopie nowych materiałów prywatne.",
+  "unidentified": [
+    "Masa netto C02/C06",
+    "CG i momenty bezwładności każdego kosza",
+    "Sprężystość kosza",
+    "Sztywność/mocowanie/uszczelka i preload",
+    "Luz otworu, frez, tolerancje wykonania",
+    "Naprężenia3D w MDF i gwincie"
+  ]
+}

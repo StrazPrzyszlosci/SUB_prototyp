@@ -105,6 +105,7 @@ def main():
     from sprawdz_synteze_P17 import main as p17_checks
     from raportuj_synteze_P17 import main as p17_report
     from odtworz_mechanike_P18_P19_P21 import main as mechanical_stage
+    from odtworz_front_i_styk_P18B_P19B import main as front_contact_stage
     checks()
     images()
     physics()
@@ -177,6 +178,7 @@ def main():
     p17_checks()
     p17_report()
     mechanical_stage()
+    front_contact_stage()
     baseline()  # Manifest powstaje po wszystkich obliczeniach.
 
 
