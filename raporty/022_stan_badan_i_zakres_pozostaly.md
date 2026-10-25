@@ -79,3 +79,23 @@ użytkownika. Obecnie kontynuujemy P14.
 
 Podstawa: [macierz programu](../PROGRAM_30_BADAN.md),
 [postęp i decyzje](../AGENTS.md), [ostatni etap obliczeń](021_pamiec_cewki_i_definicja_Lgen.md).
+
+## Kontrola stanu — 2026-10-25, kampania P14B w toku
+
+Po ponownym sprawdzeniu macierzy, raportu023 i bieżących checkpointów
+podtrzymano orientacyjny przedział40–50% całego programu przed budową.
+Kampania P14B jest uruchomiona; w chwili odczytu zapisano1214z3312
+przypadków:1199spełniło zadane numeryczne kryterium okresowości,
+a15ma statusNOT_SETTLED i wymaga rozstrzygnięcia. Jest to migawka,
+nie wynik zakończonej kampanii. Zapis przypadku nie oznacza ukończenia
+jego weryfikacji, analizy emisji ani interpretacji. Nie przeliczono tej
+liczby na procent całego projektu. Po domknięciu P14 najbliższym nowym
+blokiem pozostaje termikaP15/P16, następnie mechanika z doborem kleju.
+
+Późniejsze uzupełnienie tego samego dnia: wykonano pierwszy etap termiki
+P15A ([raport025](025_P15A_topologia_i_granice_termiki.md)) i rozszerzono
+emisjęP14B ([raport024](024_P14B_emisja_i_swiadkowie.md)). P15zmieniło
+status na częściowy:6pakietów z zaawansowanymi rodzinami,17częściowych,
+7do wykonania. Nie oznacza to zamknięcia termiki ani istotnego skoku
+orientacyjnego procentu. Przedział40–50% pozostaje roboczą oceną całego
+programu, a nie arytmetyką statusów.

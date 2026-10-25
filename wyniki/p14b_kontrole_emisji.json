@@ -1,0 +1,27 @@
+{
+  "status": "ANALYTICAL_ORACLES_PASS_NOT_DEVICE_VALIDATION",
+  "checks": {
+    "Parseval_DC_Nyquist_error": 0.0,
+    "polynomial_complex_mixing_error": 3.503228051432038e-14,
+    "uniform_motion_retarded_time_error_s": 1.639226948624284e-14,
+    "fixed_source_pressure_relative_error": 1.3323498065206942e-08,
+    "moving_source_second_order_oracle": [
+      {
+        "A_peak_m": 0.0001,
+        "H2_complex_relative_error": 7.599146623645443e-08
+      },
+      {
+        "A_peak_m": 5e-05,
+        "H2_complex_relative_error": 7.80050113279981e-08
+      },
+      {
+        "A_peak_m": 1e-05,
+        "H2_complex_relative_error": 7.866479135411011e-08
+      }
+    ],
+    "moving_source_oversampling_relative_error": 1.9877726147585162e-10,
+    "Mach_domain_rejected": true,
+    "AM_PM_complex_sidebands": true
+  },
+  "scope": "Wzorce analityczne, mała amplituda, zbieżność dyskretyzacji. Nie potwierdzają realnego THD ani całego ruchomego tłoka."
+}

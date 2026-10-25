@@ -3,3 +3,4 @@ __pycache__/
 .venv/
 .mplconfig/
 .firecrawl/
+.p14b_locks/

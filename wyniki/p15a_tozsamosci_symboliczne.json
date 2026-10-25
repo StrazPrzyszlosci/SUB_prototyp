@@ -1,0 +1,16 @@
+{
+  "status": "EXACT_IDENTITIES_PASS",
+  "SymPy": "1.12",
+  "identities": {
+    "Cauer_port": "0",
+    "tau_sum": "0",
+    "tau_product": "0",
+    "current_feedback_threshold": "0",
+    "heat_partition_no_direct": "0",
+    "physical_total_heat_balance": "0",
+    "direct_cooling_continuous_nonidentifiability": "0"
+  },
+  "Cauer_port": "(Cm*Rm*Rv*z + Rm + Rv)/(Cm*Cv*Rm*Rv*z**2 + Cm*Rm*Rv*ga*z + Cm*Rm*z + Cv*Rm*z + Cv*Rv*z + Rm*ga + Rv*ga + 1)",
+  "current_feedback_critical_w_per_k": "(Rm*ga + Rv*ga + 1)/(Rm + Rv)",
+  "scope": "Tożsamości modeli skupionych przy dodatnich stałych parametrach; nie identyfikacja rzeczywistego chłodzenia."
+}

@@ -26,6 +26,8 @@ a potwierdzonych ustaleń użytkownika w [rejestrze](../DECYZJE_I_PYTANIA.md).
 |13|[Promieniowanie, masy i reakcja pokoju](13_promieniowanie_masy_i_reakcja_pokoju.md)|Tłok/Rayleigh, czasza/komora, Mmd/Mms, wzajemne obciążenia, moc i granice sprzężenia|
 |14|[Nieliniowy napęd i gaz](14_nieliniowy_naped_i_gaz.md)|Kms sieczne/styczne, strumień/coenergia, bilans gazu, DC, kompensacja i granice identyfikacji|
 |15|[Pamięć cewki i identyfikowalność](15_pamiec_cewki_i_identyfikowalnosc.md)|ZespoloneLgen, poprawka siłyL2R2, dodatnia realizacja, digitalizacja i dokładne wykluczenie jednej gałęzi|
+|16|[IMD, fazy i emisja](16_IMD_fazy_i_emisja.md)|Produkty poniżej pasma wejściowego, zespolone AM/PM, normalizacja AN10 i kontrolny czas opóźniony|
+|17|[Topologia i identyfikowalność termiki](17_topologia_i_identyfikowalnosc_termiki.md)|Cauer/Foster, niejednoznaczność dodatkowego chłodzenia, podział strat i warunkowe granice|
 |Źródła|[Rejestr z datami](ZRODLA.md)|Co przeczytano, co tylko znaleziono i jakie są braki|
 
 ## Od wiedzy do wykonania

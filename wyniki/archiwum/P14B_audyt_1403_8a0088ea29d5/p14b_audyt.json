@@ -1,0 +1,1982 @@
+{
+  "status": "PARTIAL_CHECKPOINT_AUDIT",
+  "dynamic_run_sha256": "8a0088ea29d52b03b63966e59b24f5ce516fa7efc4d4286edb1a3330feb1b3c2",
+  "cases_seen": 1403,
+  "spectrum_hashes_checked": 1403,
+  "linear_cases": 281,
+  "max_X_complex_relative_error": 3.1806641343519486e-09,
+  "max_I_complex_relative_error": 3.937849294456303e-09,
+  "max_mean_voltage_identity_error_v": 1.1669812168735469e-09,
+  "max_current_Parseval_relative_error": 7.60464262854441e-16,
+  "linear_details": [
+    {
+      "case_id": "000000",
+      "candidate_id": "C01",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 7.058414069419857e-10,
+      "max_I_complex_relative_error": 4.001927905210873e-10
+    },
+    {
+      "case_id": "000005",
+      "candidate_id": "C01",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 4.10793959491216e-10,
+      "max_I_complex_relative_error": 2.3088324784465824e-10
+    },
+    {
+      "case_id": "000010",
+      "candidate_id": "C01",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 3.8932017633829733e-10,
+      "max_I_complex_relative_error": 2.0893846421187742e-10
+    },
+    {
+      "case_id": "000015",
+      "candidate_id": "C01",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.607493284223705e-10,
+      "max_I_complex_relative_error": 3.376191258491181e-10
+    },
+    {
+      "case_id": "000020",
+      "candidate_id": "C01",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 3.4174677562665207e-10,
+      "max_I_complex_relative_error": 1.496213803854317e-10
+    },
+    {
+      "case_id": "000025",
+      "candidate_id": "C01",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 3.146280526292422e-10,
+      "max_I_complex_relative_error": 1.414979324602708e-10
+    },
+    {
+      "case_id": "000030",
+      "candidate_id": "C01",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 6.860701643442957e-10,
+      "max_I_complex_relative_error": 8.532265281776546e-10
+    },
+    {
+      "case_id": "000035",
+      "candidate_id": "C01",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.435457034164164e-10,
+      "max_I_complex_relative_error": 8.566406417640294e-10
+    },
+    {
+      "case_id": "000040",
+      "candidate_id": "C01",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 4.64195883459801e-10,
+      "max_I_complex_relative_error": 6.535738933542524e-10
+    },
+    {
+      "case_id": "000045",
+      "candidate_id": "C01",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 6.020840930436086e-10,
+      "max_I_complex_relative_error": 3.328086572500618e-10
+    },
+    {
+      "case_id": "000050",
+      "candidate_id": "C01",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.513295539822268e-10,
+      "max_I_complex_relative_error": 2.7911419337296707e-10
+    },
+    {
+      "case_id": "000055",
+      "candidate_id": "C01",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.301671952655891e-10,
+      "max_I_complex_relative_error": 4.007077653260511e-10
+    },
+    {
+      "case_id": "000060",
+      "candidate_id": "C01",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.135635853805308e-10,
+      "max_I_complex_relative_error": 5.550639385333773e-10
+    },
+    {
+      "case_id": "000065",
+      "candidate_id": "C01",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.699340803408316e-10,
+      "max_I_complex_relative_error": 7.311601010304494e-10
+    },
+    {
+      "case_id": "000070",
+      "candidate_id": "C01",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.864395327165592e-10,
+      "max_I_complex_relative_error": 7.455705736278365e-10
+    },
+    {
+      "case_id": "000075",
+      "candidate_id": "C01",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.354814146261715e-10,
+      "max_I_complex_relative_error": 4.4409380554690763e-10
+    },
+    {
+      "case_id": "000080",
+      "candidate_id": "C01",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.765769020375895e-10,
+      "max_I_complex_relative_error": 5.150733281657992e-10
+    },
+    {
+      "case_id": "000085",
+      "candidate_id": "C01",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 3.938892438827123e-10,
+      "max_I_complex_relative_error": 2.763479863964944e-10
+    },
+    {
+      "case_id": "000090",
+      "candidate_id": "C01",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 7.651336498892933e-10,
+      "max_I_complex_relative_error": 4.958676039478947e-10
+    },
+    {
+      "case_id": "000095",
+      "candidate_id": "C01",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.912847172645041e-10,
+      "max_I_complex_relative_error": 4.2360046211699905e-10
+    },
+    {
+      "case_id": "000100",
+      "candidate_id": "C01",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 4.81281235347416e-10,
+      "max_I_complex_relative_error": 3.267349676109084e-10
+    },
+    {
+      "case_id": "000105",
+      "candidate_id": "C01",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.57058535807559e-10,
+      "max_I_complex_relative_error": 8.799857320901874e-10
+    },
+    {
+      "case_id": "000110",
+      "candidate_id": "C01",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 6.535434853461671e-10,
+      "max_I_complex_relative_error": 9.67294634823285e-10
+    },
+    {
+      "case_id": "000115",
+      "candidate_id": "C01",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 4.884687736770179e-10,
+      "max_I_complex_relative_error": 8.448740841431253e-10
+    },
+    {
+      "case_id": "000120",
+      "candidate_id": "C01",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 4.1271055911746227e-10,
+      "max_I_complex_relative_error": 2.590907488756547e-10
+    },
+    {
+      "case_id": "000125",
+      "candidate_id": "C01",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.233194695577867e-10,
+      "max_I_complex_relative_error": 4.082601917125573e-10
+    },
+    {
+      "case_id": "000130",
+      "candidate_id": "C01",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 4.032893701432028e-10,
+      "max_I_complex_relative_error": 2.3268752802315128e-10
+    },
+    {
+      "case_id": "000135",
+      "candidate_id": "C02",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.82294439705923e-10,
+      "max_I_complex_relative_error": 3.119916403290582e-10
+    },
+    {
+      "case_id": "000140",
+      "candidate_id": "C02",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 4.1691064029022456e-10,
+      "max_I_complex_relative_error": 2.089445892989661e-10
+    },
+    {
+      "case_id": "000145",
+      "candidate_id": "C02",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 3.5865019148077563e-10,
+      "max_I_complex_relative_error": 1.7897149582191666e-10
+    },
+    {
+      "case_id": "000150",
+      "candidate_id": "C02",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 3.4705490344269336e-10,
+      "max_I_complex_relative_error": 1.32318184154491e-10
+    },
+    {
+      "case_id": "000155",
+      "candidate_id": "C02",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 3.16792503049621e-10,
+      "max_I_complex_relative_error": 1.1748685902168638e-10
+    },
+    {
+      "case_id": "000160",
+      "candidate_id": "C02",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.692826774036234e-10,
+      "max_I_complex_relative_error": 1.0429462363187422e-10
+    },
+    {
+      "case_id": "000165",
+      "candidate_id": "C02",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 4.1551052284869705e-10,
+      "max_I_complex_relative_error": 3.587609045189522e-10
+    },
+    {
+      "case_id": "000170",
+      "candidate_id": "C02",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 3.6868989096518776e-10,
+      "max_I_complex_relative_error": 3.373152629098523e-10
+    },
+    {
+      "case_id": "000175",
+      "candidate_id": "C02",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 3.7624520417020085e-10,
+      "max_I_complex_relative_error": 3.1591198537361975e-10
+    },
+    {
+      "case_id": "000180",
+      "candidate_id": "C02",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 4.793553346758951e-10,
+      "max_I_complex_relative_error": 1.653187232061045e-10
+    },
+    {
+      "case_id": "000185",
+      "candidate_id": "C02",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 4.3882421942131284e-10,
+      "max_I_complex_relative_error": 2.0965258642654367e-10
+    },
+    {
+      "case_id": "000190",
+      "candidate_id": "C02",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.005986049554556e-10,
+      "max_I_complex_relative_error": 1.8911361787897302e-10
+    },
+    {
+      "case_id": "000195",
+      "candidate_id": "C02",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 4.100257874960188e-10,
+      "max_I_complex_relative_error": 3.012101020850335e-10
+    },
+    {
+      "case_id": "000200",
+      "candidate_id": "C02",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 4.067935477915637e-10,
+      "max_I_complex_relative_error": 3.6200646113120384e-10
+    },
+    {
+      "case_id": "000205",
+      "candidate_id": "C02",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 3.80260014877322e-10,
+      "max_I_complex_relative_error": 3.906039744328796e-10
+    },
+    {
+      "case_id": "000210",
+      "candidate_id": "C02",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 4.674999410470839e-10,
+      "max_I_complex_relative_error": 2.1267625563922457e-10
+    },
+    {
+      "case_id": "000215",
+      "candidate_id": "C02",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 4.288246272286552e-10,
+      "max_I_complex_relative_error": 1.783166809551494e-10
+    },
+    {
+      "case_id": "000220",
+      "candidate_id": "C02",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 4.995322701010649e-10,
+      "max_I_complex_relative_error": 2.578562985946199e-10
+    },
+    {
+      "case_id": "000225",
+      "candidate_id": "C02",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 6.657908975331567e-10,
+      "max_I_complex_relative_error": 4.89050101030482e-10
+    },
+    {
+      "case_id": "000230",
+      "candidate_id": "C02",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 6.904387253259314e-10,
+      "max_I_complex_relative_error": 5.406423970538683e-10
+    },
+    {
+      "case_id": "000235",
+      "candidate_id": "C02",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 4.466282676955021e-10,
+      "max_I_complex_relative_error": 2.637008009584644e-10
+    },
+    {
+      "case_id": "000240",
+      "candidate_id": "C02",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.483853814681576e-10,
+      "max_I_complex_relative_error": 7.648536662520174e-10
+    },
+    {
+      "case_id": "000245",
+      "candidate_id": "C02",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 4.753851937673967e-10,
+      "max_I_complex_relative_error": 7.067251814567498e-10
+    },
+    {
+      "case_id": "000250",
+      "candidate_id": "C02",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 4.1832125439162667e-10,
+      "max_I_complex_relative_error": 5.745438279103886e-10
+    },
+    {
+      "case_id": "000255",
+      "candidate_id": "C02",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.027683456923113e-10,
+      "max_I_complex_relative_error": 2.9161055617880845e-10
+    },
+    {
+      "case_id": "000260",
+      "candidate_id": "C02",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.316631963478701e-10,
+      "max_I_complex_relative_error": 3.097502981760729e-10
+    },
+    {
+      "case_id": "000265",
+      "candidate_id": "C02",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 4.608940176575948e-10,
+      "max_I_complex_relative_error": 2.7456722691837144e-10
+    },
+    {
+      "case_id": "000270",
+      "candidate_id": "C03",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.0820599894009507e-09,
+      "max_I_complex_relative_error": 4.68562725573273e-10
+    },
+    {
+      "case_id": "000275",
+      "candidate_id": "C03",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 9.146370216501486e-10,
+      "max_I_complex_relative_error": 3.977755352787755e-10
+    },
+    {
+      "case_id": "000280",
+      "candidate_id": "C03",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 7.649870963584358e-10,
+      "max_I_complex_relative_error": 3.5577681970182686e-10
+    },
+    {
+      "case_id": "000285",
+      "candidate_id": "C03",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 8.704219833588789e-10,
+      "max_I_complex_relative_error": 3.194671634569359e-10
+    },
+    {
+      "case_id": "000290",
+      "candidate_id": "C03",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 7.686250260561704e-10,
+      "max_I_complex_relative_error": 2.829717604356944e-10
+    },
+    {
+      "case_id": "000295",
+      "candidate_id": "C03",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.960905814168106e-10,
+      "max_I_complex_relative_error": 2.2406407608477177e-10
+    },
+    {
+      "case_id": "000300",
+      "candidate_id": "C03",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.4042472853014236e-09,
+      "max_I_complex_relative_error": 1.0319274549764817e-09
+    },
+    {
+      "case_id": "000305",
+      "candidate_id": "C03",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 9.45253868292633e-10,
+      "max_I_complex_relative_error": 5.453373296725509e-10
+    },
+    {
+      "case_id": "000310",
+      "candidate_id": "C03",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 8.062865597225302e-10,
+      "max_I_complex_relative_error": 5.661527260274636e-10
+    },
+    {
+      "case_id": "000315",
+      "candidate_id": "C03",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.2745655955369207e-09,
+      "max_I_complex_relative_error": 3.663072090857493e-10
+    },
+    {
+      "case_id": "000320",
+      "candidate_id": "C03",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.1501707074280014e-09,
+      "max_I_complex_relative_error": 3.4202986728512524e-10
+    },
+    {
+      "case_id": "000325",
+      "candidate_id": "C03",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.0198903555089761e-09,
+      "max_I_complex_relative_error": 3.0789112106330256e-10
+    },
+    {
+      "case_id": "000330",
+      "candidate_id": "C03",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.3565152158457697e-09,
+      "max_I_complex_relative_error": 5.01216122436758e-10
+    },
+    {
+      "case_id": "000335",
+      "candidate_id": "C03",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 9.468901498560388e-10,
+      "max_I_complex_relative_error": 3.3151829403389855e-10
+    },
+    {
+      "case_id": "000340",
+      "candidate_id": "C03",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 9.31141327391456e-10,
+      "max_I_complex_relative_error": 3.4103929414385566e-10
+    },
+    {
+      "case_id": "000345",
+      "candidate_id": "C03",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.1029024956701524e-09,
+      "max_I_complex_relative_error": 3.156311435667561e-10
+    },
+    {
+      "case_id": "000350",
+      "candidate_id": "C03",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.1983014264432632e-09,
+      "max_I_complex_relative_error": 5.042056267552414e-10
+    },
+    {
+      "case_id": "000355",
+      "candidate_id": "C03",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 8.125616344703925e-10,
+      "max_I_complex_relative_error": 2.352306480305406e-10
+    },
+    {
+      "case_id": "000360",
+      "candidate_id": "C03",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.2390298579438466e-09,
+      "max_I_complex_relative_error": 3.4967547418806674e-10
+    },
+    {
+      "case_id": "000365",
+      "candidate_id": "C03",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.2456952176133938e-09,
+      "max_I_complex_relative_error": 3.4458402752811413e-10
+    },
+    {
+      "case_id": "000370",
+      "candidate_id": "C03",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.1150491399643176e-09,
+      "max_I_complex_relative_error": 3.2808052190204036e-10
+    },
+    {
+      "case_id": "000375",
+      "candidate_id": "C03",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.2864076989907303e-09,
+      "max_I_complex_relative_error": 5.464112828336111e-10
+    },
+    {
+      "case_id": "000380",
+      "candidate_id": "C03",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.2375782131514676e-09,
+      "max_I_complex_relative_error": 3.2645857943612763e-10
+    },
+    {
+      "case_id": "000385",
+      "candidate_id": "C03",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.0916025988727638e-09,
+      "max_I_complex_relative_error": 5.853473248903437e-10
+    },
+    {
+      "case_id": "000390",
+      "candidate_id": "C03",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.1762734726124689e-09,
+      "max_I_complex_relative_error": 3.1492860631682326e-10
+    },
+    {
+      "case_id": "000395",
+      "candidate_id": "C03",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 9.68672981106872e-10,
+      "max_I_complex_relative_error": 2.75731924771246e-10
+    },
+    {
+      "case_id": "000400",
+      "candidate_id": "C03",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 8.252804644670115e-10,
+      "max_I_complex_relative_error": 2.2547343674445706e-10
+    },
+    {
+      "case_id": "000405",
+      "candidate_id": "C04",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 3.1991847107937064e-10,
+      "max_I_complex_relative_error": 2.0001189520524515e-10
+    },
+    {
+      "case_id": "000410",
+      "candidate_id": "C04",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.536644076706564e-10,
+      "max_I_complex_relative_error": 1.5823503212704038e-10
+    },
+    {
+      "case_id": "000415",
+      "candidate_id": "C04",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 3.2072743303575783e-10,
+      "max_I_complex_relative_error": 2.012057758706484e-10
+    },
+    {
+      "case_id": "000420",
+      "candidate_id": "C04",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.6677575123236115e-10,
+      "max_I_complex_relative_error": 1.447165665811712e-10
+    },
+    {
+      "case_id": "000425",
+      "candidate_id": "C04",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.354268734000494e-10,
+      "max_I_complex_relative_error": 1.2481175354850112e-10
+    },
+    {
+      "case_id": "000430",
+      "candidate_id": "C04",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.535574128478498e-10,
+      "max_I_complex_relative_error": 1.3513380932263952e-10
+    },
+    {
+      "case_id": "000435",
+      "candidate_id": "C04",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.0420267631090969e-10,
+      "max_I_complex_relative_error": 1.0968272668331412e-10
+    },
+    {
+      "case_id": "000440",
+      "candidate_id": "C04",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.8197705407849164e-10,
+      "max_I_complex_relative_error": 1.5236908265715016e-10
+    },
+    {
+      "case_id": "000445",
+      "candidate_id": "C04",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.0311419782084516e-10,
+      "max_I_complex_relative_error": 1.10420598928774e-10
+    },
+    {
+      "case_id": "000450",
+      "candidate_id": "C04",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.4274505269954517e-10,
+      "max_I_complex_relative_error": 1.405780261383025e-10
+    },
+    {
+      "case_id": "000455",
+      "candidate_id": "C04",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.535586069001983e-10,
+      "max_I_complex_relative_error": 1.4450395198179065e-10
+    },
+    {
+      "case_id": "000460",
+      "candidate_id": "C04",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.439162866229346e-10,
+      "max_I_complex_relative_error": 1.396139902096167e-10
+    },
+    {
+      "case_id": "000465",
+      "candidate_id": "C04",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.4633596825143716e-10,
+      "max_I_complex_relative_error": 3.7839327804464693e-10
+    },
+    {
+      "case_id": "000470",
+      "candidate_id": "C04",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.253428715883661e-10,
+      "max_I_complex_relative_error": 1.1481860335354446e-10
+    },
+    {
+      "case_id": "000475",
+      "candidate_id": "C04",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.1294865418477683e-10,
+      "max_I_complex_relative_error": 1.2426275323946664e-10
+    },
+    {
+      "case_id": "000480",
+      "candidate_id": "C04",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.0437518139910723e-10,
+      "max_I_complex_relative_error": 1.0300807008958928e-10
+    },
+    {
+      "case_id": "000485",
+      "candidate_id": "C04",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.526857414175145e-10,
+      "max_I_complex_relative_error": 1.2976237062720733e-10
+    },
+    {
+      "case_id": "000490",
+      "candidate_id": "C04",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.659340759467328e-10,
+      "max_I_complex_relative_error": 1.363098663665269e-10
+    },
+    {
+      "case_id": "000495",
+      "candidate_id": "C04",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.506172485960412e-10,
+      "max_I_complex_relative_error": 1.4203040600687794e-10
+    },
+    {
+      "case_id": "000500",
+      "candidate_id": "C04",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.6385195610520625e-10,
+      "max_I_complex_relative_error": 2.61221618425878e-10
+    },
+    {
+      "case_id": "000505",
+      "candidate_id": "C04",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.861682368747202e-10,
+      "max_I_complex_relative_error": 1.0560377852244187e-10
+    },
+    {
+      "case_id": "000510",
+      "candidate_id": "C04",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.570726916775992e-10,
+      "max_I_complex_relative_error": 2.3575516355830654e-10
+    },
+    {
+      "case_id": "000515",
+      "candidate_id": "C04",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.4440662825456195e-10,
+      "max_I_complex_relative_error": 2.1472515154345574e-10
+    },
+    {
+      "case_id": "000520",
+      "candidate_id": "C04",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.5403528552629896e-10,
+      "max_I_complex_relative_error": 2.071930794467539e-10
+    },
+    {
+      "case_id": "000525",
+      "candidate_id": "C04",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 3.2925611049919574e-10,
+      "max_I_complex_relative_error": 1.6608762226865868e-10
+    },
+    {
+      "case_id": "000530",
+      "candidate_id": "C04",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.321088573007522e-10,
+      "max_I_complex_relative_error": 1.2259691000051152e-10
+    },
+    {
+      "case_id": "000535",
+      "candidate_id": "C04",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 3.5283825620962573e-10,
+      "max_I_complex_relative_error": 1.8330944822943168e-10
+    },
+    {
+      "case_id": "000540",
+      "candidate_id": "C05",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 9.42961371992197e-10,
+      "max_I_complex_relative_error": 1.4713458937845355e-09
+    },
+    {
+      "case_id": "000545",
+      "candidate_id": "C05",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 6.468752794497518e-10,
+      "max_I_complex_relative_error": 1.0218078048364468e-09
+    },
+    {
+      "case_id": "000550",
+      "candidate_id": "C05",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 6.800859717476716e-10,
+      "max_I_complex_relative_error": 1.030700141838735e-09
+    },
+    {
+      "case_id": "000555",
+      "candidate_id": "C05",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 9.295334772878107e-10,
+      "max_I_complex_relative_error": 9.176334791661302e-10
+    },
+    {
+      "case_id": "000560",
+      "candidate_id": "C05",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.928416850173607e-10,
+      "max_I_complex_relative_error": 5.987679528073573e-10
+    },
+    {
+      "case_id": "000565",
+      "candidate_id": "C05",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.279002059604808e-10,
+      "max_I_complex_relative_error": 5.085911026407816e-10
+    },
+    {
+      "case_id": "000570",
+      "candidate_id": "C05",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 7.641543841965237e-10,
+      "max_I_complex_relative_error": 8.163088535508377e-10
+    },
+    {
+      "case_id": "000575",
+      "candidate_id": "C05",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.851117279085764e-10,
+      "max_I_complex_relative_error": 6.070834760558573e-10
+    },
+    {
+      "case_id": "000580",
+      "candidate_id": "C05",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 6.513999321733997e-10,
+      "max_I_complex_relative_error": 7.123070816245296e-10
+    },
+    {
+      "case_id": "000585",
+      "candidate_id": "C05",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.0063392645400243e-09,
+      "max_I_complex_relative_error": 5.876685941419602e-10
+    },
+    {
+      "case_id": "000590",
+      "candidate_id": "C05",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 7.865822921465949e-10,
+      "max_I_complex_relative_error": 4.952093806616097e-10
+    },
+    {
+      "case_id": "000595",
+      "candidate_id": "C05",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 7.192961444481577e-10,
+      "max_I_complex_relative_error": 4.3485225186383024e-10
+    },
+    {
+      "case_id": "000600",
+      "candidate_id": "C05",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 9.080030840089527e-10,
+      "max_I_complex_relative_error": 5.030671452636958e-10
+    },
+    {
+      "case_id": "000605",
+      "candidate_id": "C05",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 7.405209218386818e-10,
+      "max_I_complex_relative_error": 5.056307420442331e-10
+    },
+    {
+      "case_id": "000610",
+      "candidate_id": "C05",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 7.585440936997816e-10,
+      "max_I_complex_relative_error": 5.202285235043359e-10
+    },
+    {
+      "case_id": "000615",
+      "candidate_id": "C05",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.4637273193922397e-09,
+      "max_I_complex_relative_error": 1.497465385170493e-09
+    },
+    {
+      "case_id": "000620",
+      "candidate_id": "C05",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.1062655299539762e-09,
+      "max_I_complex_relative_error": 1.4445649490285845e-09
+    },
+    {
+      "case_id": "000625",
+      "candidate_id": "C05",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.0299922631792259e-09,
+      "max_I_complex_relative_error": 1.3970327052696177e-09
+    },
+    {
+      "case_id": "000630",
+      "candidate_id": "C05",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.1502239508043068e-09,
+      "max_I_complex_relative_error": 5.640470011794878e-10
+    },
+    {
+      "case_id": "000635",
+      "candidate_id": "C05",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 9.034850871261288e-10,
+      "max_I_complex_relative_error": 4.73704556101405e-10
+    },
+    {
+      "case_id": "000640",
+      "candidate_id": "C05",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 8.019746647991135e-10,
+      "max_I_complex_relative_error": 4.26032278516856e-10
+    },
+    {
+      "case_id": "000645",
+      "candidate_id": "C05",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.0660702085102406e-09,
+      "max_I_complex_relative_error": 7.474348612538875e-10
+    },
+    {
+      "case_id": "000650",
+      "candidate_id": "C05",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 6.927484219699979e-10,
+      "max_I_complex_relative_error": 5.445511092666752e-10
+    },
+    {
+      "case_id": "000655",
+      "candidate_id": "C05",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 7.483265915536121e-10,
+      "max_I_complex_relative_error": 6.540459332575389e-10
+    },
+    {
+      "case_id": "000660",
+      "candidate_id": "C05",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.3226556880986183e-09,
+      "max_I_complex_relative_error": 1.1252847428461485e-09
+    },
+    {
+      "case_id": "000665",
+      "candidate_id": "C05",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 9.419438932933436e-10,
+      "max_I_complex_relative_error": 9.612330124645037e-10
+    },
+    {
+      "case_id": "000670",
+      "candidate_id": "C05",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.1128398680403813e-09,
+      "max_I_complex_relative_error": 1.326946017019161e-09
+    },
+    {
+      "case_id": "000675",
+      "candidate_id": "C06",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.343022636431234e-10,
+      "max_I_complex_relative_error": 3.1464521030799435e-10
+    },
+    {
+      "case_id": "000680",
+      "candidate_id": "C06",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 4.4741724887284476e-10,
+      "max_I_complex_relative_error": 2.534534475446942e-10
+    },
+    {
+      "case_id": "000685",
+      "candidate_id": "C06",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 4.240965942295093e-10,
+      "max_I_complex_relative_error": 2.3655545546898843e-10
+    },
+    {
+      "case_id": "000690",
+      "candidate_id": "C06",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.633565349206911e-10,
+      "max_I_complex_relative_error": 2.661924759234065e-10
+    },
+    {
+      "case_id": "000695",
+      "candidate_id": "C06",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 3.78104504073237e-10,
+      "max_I_complex_relative_error": 1.658141570570937e-10
+    },
+    {
+      "case_id": "000700",
+      "candidate_id": "C06",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 3.309248873099818e-10,
+      "max_I_complex_relative_error": 1.4804805359161214e-10
+    },
+    {
+      "case_id": "000705",
+      "candidate_id": "C06",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.824694147081273e-10,
+      "max_I_complex_relative_error": 7.33057583042738e-10
+    },
+    {
+      "case_id": "000710",
+      "candidate_id": "C06",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 6.68106411001982e-10,
+      "max_I_complex_relative_error": 1.1177996717368444e-09
+    },
+    {
+      "case_id": "000715",
+      "candidate_id": "C06",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 4.904889927457774e-10,
+      "max_I_complex_relative_error": 7.666488886694829e-10
+    },
+    {
+      "case_id": "000720",
+      "candidate_id": "C06",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.593731903919024e-10,
+      "max_I_complex_relative_error": 3.2504811170406194e-10
+    },
+    {
+      "case_id": "000725",
+      "candidate_id": "C06",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.532607806847546e-10,
+      "max_I_complex_relative_error": 4.3177224007968376e-10
+    },
+    {
+      "case_id": "000730",
+      "candidate_id": "C06",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 4.674848816136574e-10,
+      "max_I_complex_relative_error": 2.7742793167085797e-10
+    },
+    {
+      "case_id": "000735",
+      "candidate_id": "C06",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.617672329110649e-10,
+      "max_I_complex_relative_error": 6.682661871856857e-10
+    },
+    {
+      "case_id": "000740",
+      "candidate_id": "C06",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.251300820020222e-10,
+      "max_I_complex_relative_error": 6.492773241101676e-10
+    },
+    {
+      "case_id": "000745",
+      "candidate_id": "C06",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 4.998532866839284e-10,
+      "max_I_complex_relative_error": 7.036775990111996e-10
+    },
+    {
+      "case_id": "000750",
+      "candidate_id": "C06",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.129074983991149e-10,
+      "max_I_complex_relative_error": 4.488130131117215e-10
+    },
+    {
+      "case_id": "000755",
+      "candidate_id": "C06",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.229316286970972e-10,
+      "max_I_complex_relative_error": 4.90859345638752e-10
+    },
+    {
+      "case_id": "000760",
+      "candidate_id": "C06",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.295550036204498e-10,
+      "max_I_complex_relative_error": 4.443627571524193e-10
+    },
+    {
+      "case_id": "000765",
+      "candidate_id": "C06",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 7.76187801142062e-10,
+      "max_I_complex_relative_error": 5.677543213242667e-10
+    },
+    {
+      "case_id": "000770",
+      "candidate_id": "C06",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 6.195409636263189e-10,
+      "max_I_complex_relative_error": 5.148515371589245e-10
+    },
+    {
+      "case_id": "000775",
+      "candidate_id": "C06",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 4.596763954567588e-10,
+      "max_I_complex_relative_error": 3.1748098814860987e-10
+    },
+    {
+      "case_id": "000780",
+      "candidate_id": "C06",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.474963603958078e-10,
+      "max_I_complex_relative_error": 8.369949017524035e-10
+    },
+    {
+      "case_id": "000785",
+      "candidate_id": "C06",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.037000874832155e-10,
+      "max_I_complex_relative_error": 7.791175954177943e-10
+    },
+    {
+      "case_id": "000790",
+      "candidate_id": "C06",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.434186633621972e-10,
+      "max_I_complex_relative_error": 9.494074784012506e-10
+    },
+    {
+      "case_id": "000795",
+      "candidate_id": "C06",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 4.762574954063322e-10,
+      "max_I_complex_relative_error": 3.717858783394474e-10
+    },
+    {
+      "case_id": "000800",
+      "candidate_id": "C06",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.898526814510507e-10,
+      "max_I_complex_relative_error": 4.863012998040088e-10
+    },
+    {
+      "case_id": "000805",
+      "candidate_id": "C06",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 4.971775456650508e-10,
+      "max_I_complex_relative_error": 3.517685253939648e-10
+    },
+    {
+      "case_id": "000810",
+      "candidate_id": "C07",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.68483568311564e-09,
+      "max_I_complex_relative_error": 2.4994801830430615e-09
+    },
+    {
+      "case_id": "000815",
+      "candidate_id": "C07",
+      "dynamic_status": "NOT_SETTLED",
+      "max_X_complex_relative_error": 1.160596067685753e-09,
+      "max_I_complex_relative_error": 1.6863306379622816e-09
+    },
+    {
+      "case_id": "000820",
+      "candidate_id": "C07",
+      "dynamic_status": "NOT_SETTLED",
+      "max_X_complex_relative_error": 1.0984798564997595e-09,
+      "max_I_complex_relative_error": 1.6156347585324152e-09
+    },
+    {
+      "case_id": "000825",
+      "candidate_id": "C07",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.5031566056464639e-09,
+      "max_I_complex_relative_error": 3.4372230757392707e-09
+    },
+    {
+      "case_id": "000830",
+      "candidate_id": "C07",
+      "dynamic_status": "NOT_SETTLED",
+      "max_X_complex_relative_error": 1.2119788237235408e-09,
+      "max_I_complex_relative_error": 2.6037708607262626e-09
+    },
+    {
+      "case_id": "000835",
+      "candidate_id": "C07",
+      "dynamic_status": "NOT_SETTLED",
+      "max_X_complex_relative_error": 9.401913405477722e-10,
+      "max_I_complex_relative_error": 2.0424395403272565e-09
+    },
+    {
+      "case_id": "000840",
+      "candidate_id": "C07",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.8111392966331203e-09,
+      "max_I_complex_relative_error": 3.937849294456303e-09
+    },
+    {
+      "case_id": "000845",
+      "candidate_id": "C07",
+      "dynamic_status": "NOT_SETTLED",
+      "max_X_complex_relative_error": 1.336442916021639e-09,
+      "max_I_complex_relative_error": 2.8091947659332747e-09
+    },
+    {
+      "case_id": "000850",
+      "candidate_id": "C07",
+      "dynamic_status": "NOT_SETTLED",
+      "max_X_complex_relative_error": 1.2046005848469947e-09,
+      "max_I_complex_relative_error": 2.5961352403767e-09
+    },
+    {
+      "case_id": "000855",
+      "candidate_id": "C07",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.0740007450081803e-09,
+      "max_I_complex_relative_error": 1.546271038893858e-09
+    },
+    {
+      "case_id": "000860",
+      "candidate_id": "C07",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.0787091744666811e-09,
+      "max_I_complex_relative_error": 1.5349970222121915e-09
+    },
+    {
+      "case_id": "000865",
+      "candidate_id": "C07",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 7.524922493021284e-10,
+      "max_I_complex_relative_error": 1.1460914202218976e-09
+    },
+    {
+      "case_id": "000870",
+      "candidate_id": "C07",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.0472877600865243e-09,
+      "max_I_complex_relative_error": 9.400553924651615e-10
+    },
+    {
+      "case_id": "000875",
+      "candidate_id": "C07",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 8.483025410220597e-10,
+      "max_I_complex_relative_error": 8.052718109115972e-10
+    },
+    {
+      "case_id": "000880",
+      "candidate_id": "C07",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 7.760062066405965e-10,
+      "max_I_complex_relative_error": 7.558849492842799e-10
+    },
+    {
+      "case_id": "000885",
+      "candidate_id": "C07",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.3038068279073152e-09,
+      "max_I_complex_relative_error": 1.1162383764178214e-09
+    },
+    {
+      "case_id": "000890",
+      "candidate_id": "C07",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 9.736166590314664e-10,
+      "max_I_complex_relative_error": 8.939671724973837e-10
+    },
+    {
+      "case_id": "000895",
+      "candidate_id": "C07",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 8.938793431055367e-10,
+      "max_I_complex_relative_error": 8.101973638781548e-10
+    },
+    {
+      "case_id": "000900",
+      "candidate_id": "C07",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.1258014299004872e-09,
+      "max_I_complex_relative_error": 1.2171000546909124e-09
+    },
+    {
+      "case_id": "000905",
+      "candidate_id": "C07",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 7.966469036784783e-10,
+      "max_I_complex_relative_error": 8.376431716807661e-10
+    },
+    {
+      "case_id": "000910",
+      "candidate_id": "C07",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 7.436808058224294e-10,
+      "max_I_complex_relative_error": 8.198040886120155e-10
+    },
+    {
+      "case_id": "000915",
+      "candidate_id": "C07",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.1421385361170013e-09,
+      "max_I_complex_relative_error": 7.717290185048791e-10
+    },
+    {
+      "case_id": "000920",
+      "candidate_id": "C07",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 8.130354128920815e-10,
+      "max_I_complex_relative_error": 6.039664003686256e-10
+    },
+    {
+      "case_id": "000925",
+      "candidate_id": "C07",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 8.406041790740486e-10,
+      "max_I_complex_relative_error": 6.089331242203938e-10
+    },
+    {
+      "case_id": "000930",
+      "candidate_id": "C07",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.7952359531987422e-09,
+      "max_I_complex_relative_error": 1.309133003258577e-09
+    },
+    {
+      "case_id": "000935",
+      "candidate_id": "C07",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.3201208415742726e-09,
+      "max_I_complex_relative_error": 1.0347722566650202e-09
+    },
+    {
+      "case_id": "000940",
+      "candidate_id": "C07",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.3744599451737649e-09,
+      "max_I_complex_relative_error": 1.1241116280028774e-09
+    },
+    {
+      "case_id": "000945",
+      "candidate_id": "C08",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.3519902710101707e-10,
+      "max_I_complex_relative_error": 1.4530792137201454e-09
+    },
+    {
+      "case_id": "000950",
+      "candidate_id": "C08",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.40427701900709e-10,
+      "max_I_complex_relative_error": 8.516024088969105e-10
+    },
+    {
+      "case_id": "000955",
+      "candidate_id": "C08",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.2752585375729114e-10,
+      "max_I_complex_relative_error": 7.474532067451675e-10
+    },
+    {
+      "case_id": "000960",
+      "candidate_id": "C08",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.6602921427804506e-10,
+      "max_I_complex_relative_error": 9.359864831705895e-10
+    },
+    {
+      "case_id": "000965",
+      "candidate_id": "C08",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.2510530284189666e-10,
+      "max_I_complex_relative_error": 4.915586926839992e-10
+    },
+    {
+      "case_id": "000970",
+      "candidate_id": "C08",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.0505331200348755e-10,
+      "max_I_complex_relative_error": 3.6734844889420133e-10
+    },
+    {
+      "case_id": "000975",
+      "candidate_id": "C08",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 3.901653154434125e-10,
+      "max_I_complex_relative_error": 1.1346446109222677e-09
+    },
+    {
+      "case_id": "000980",
+      "candidate_id": "C08",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.026081115147694e-10,
+      "max_I_complex_relative_error": 5.96687644893821e-10
+    },
+    {
+      "case_id": "000985",
+      "candidate_id": "C08",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.3982021955624121e-10,
+      "max_I_complex_relative_error": 4.5453327315230877e-10
+    },
+    {
+      "case_id": "000990",
+      "candidate_id": "C08",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.6369085132702963e-10,
+      "max_I_complex_relative_error": 2.3251113238701218e-10
+    },
+    {
+      "case_id": "000995",
+      "candidate_id": "C08",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.1107423625523466e-10,
+      "max_I_complex_relative_error": 1.7987457768340628e-10
+    },
+    {
+      "case_id": "001000",
+      "candidate_id": "C08",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.2798506760725597e-10,
+      "max_I_complex_relative_error": 1.9080019829917334e-10
+    },
+    {
+      "case_id": "001005",
+      "candidate_id": "C08",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.6957502053229418e-10,
+      "max_I_complex_relative_error": 1.5511255498662904e-10
+    },
+    {
+      "case_id": "001010",
+      "candidate_id": "C08",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.9724823590703176e-10,
+      "max_I_complex_relative_error": 1.4753629879951805e-10
+    },
+    {
+      "case_id": "001015",
+      "candidate_id": "C08",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.5016196221685787e-10,
+      "max_I_complex_relative_error": 1.0847416222586983e-10
+    },
+    {
+      "case_id": "001020",
+      "candidate_id": "C08",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 3.319571417870917e-10,
+      "max_I_complex_relative_error": 5.930456953455732e-10
+    },
+    {
+      "case_id": "001025",
+      "candidate_id": "C08",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.2110295173803166e-10,
+      "max_I_complex_relative_error": 2.5441443977146197e-10
+    },
+    {
+      "case_id": "001030",
+      "candidate_id": "C08",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.1745675132865386e-10,
+      "max_I_complex_relative_error": 2.483260786086542e-10
+    },
+    {
+      "case_id": "001035",
+      "candidate_id": "C08",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.6448206907664477e-10,
+      "max_I_complex_relative_error": 2.203748151872008e-10
+    },
+    {
+      "case_id": "001040",
+      "candidate_id": "C08",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.074966042099142e-10,
+      "max_I_complex_relative_error": 1.6768305329126429e-10
+    },
+    {
+      "case_id": "001045",
+      "candidate_id": "C08",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.159921873125056e-10,
+      "max_I_complex_relative_error": 1.7289083625417058e-10
+    },
+    {
+      "case_id": "001050",
+      "candidate_id": "C08",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.2583008498862808e-10,
+      "max_I_complex_relative_error": 2.1891247074230944e-10
+    },
+    {
+      "case_id": "001055",
+      "candidate_id": "C08",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.8652904666689685e-10,
+      "max_I_complex_relative_error": 1.4134454650595102e-10
+    },
+    {
+      "case_id": "001060",
+      "candidate_id": "C08",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.964365216916716e-10,
+      "max_I_complex_relative_error": 1.7241868735966305e-10
+    },
+    {
+      "case_id": "001065",
+      "candidate_id": "C08",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 4.706571941169074e-10,
+      "max_I_complex_relative_error": 1.1926359210220465e-09
+    },
+    {
+      "case_id": "001070",
+      "candidate_id": "C08",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 3.404215399092405e-10,
+      "max_I_complex_relative_error": 8.252718007856256e-10
+    },
+    {
+      "case_id": "001075",
+      "candidate_id": "C08",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 4.1831016367599976e-10,
+      "max_I_complex_relative_error": 1.2849313041683174e-09
+    },
+    {
+      "case_id": "001080",
+      "candidate_id": "C09",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 6.950021861211145e-10,
+      "max_I_complex_relative_error": 3.7475138523519644e-10
+    },
+    {
+      "case_id": "001085",
+      "candidate_id": "C09",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 4.1443688087652905e-10,
+      "max_I_complex_relative_error": 2.2262297552448428e-10
+    },
+    {
+      "case_id": "001090",
+      "candidate_id": "C09",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 3.3965684517633723e-10,
+      "max_I_complex_relative_error": 1.630044874245063e-10
+    },
+    {
+      "case_id": "001095",
+      "candidate_id": "C09",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 3.503279297034654e-10,
+      "max_I_complex_relative_error": 1.537971949784458e-10
+    },
+    {
+      "case_id": "001100",
+      "candidate_id": "C09",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 3.7369008827633016e-10,
+      "max_I_complex_relative_error": 1.87226359812999e-10
+    },
+    {
+      "case_id": "001105",
+      "candidate_id": "C09",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.924217872148954e-10,
+      "max_I_complex_relative_error": 1.2382982662666646e-10
+    },
+    {
+      "case_id": "001110",
+      "candidate_id": "C09",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 7.045213207153807e-10,
+      "max_I_complex_relative_error": 1.5727361191344034e-09
+    },
+    {
+      "case_id": "001115",
+      "candidate_id": "C09",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.934956741460056e-10,
+      "max_I_complex_relative_error": 1.3418511619361096e-09
+    },
+    {
+      "case_id": "001120",
+      "candidate_id": "C09",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 6.630214866961333e-10,
+      "max_I_complex_relative_error": 1.508737969112862e-09
+    },
+    {
+      "case_id": "001125",
+      "candidate_id": "C09",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 6.117605529811632e-10,
+      "max_I_complex_relative_error": 5.944224509229962e-10
+    },
+    {
+      "case_id": "001130",
+      "candidate_id": "C09",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.059900457757481e-10,
+      "max_I_complex_relative_error": 5.015864324454352e-10
+    },
+    {
+      "case_id": "001135",
+      "candidate_id": "C09",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 4.5390894818880653e-10,
+      "max_I_complex_relative_error": 4.2649728132286803e-10
+    },
+    {
+      "case_id": "001140",
+      "candidate_id": "C09",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.058220643093333e-10,
+      "max_I_complex_relative_error": 8.897668652245708e-10
+    },
+    {
+      "case_id": "001145",
+      "candidate_id": "C09",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.780848516385203e-10,
+      "max_I_complex_relative_error": 1.2501608599635154e-09
+    },
+    {
+      "case_id": "001150",
+      "candidate_id": "C09",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.793632356186905e-10,
+      "max_I_complex_relative_error": 1.4241884962197519e-09
+    },
+    {
+      "case_id": "001155",
+      "candidate_id": "C09",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.44311527665739e-10,
+      "max_I_complex_relative_error": 4.1047926738577153e-10
+    },
+    {
+      "case_id": "001160",
+      "candidate_id": "C09",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 3.7405821154665315e-10,
+      "max_I_complex_relative_error": 2.3938657974963714e-10
+    },
+    {
+      "case_id": "001165",
+      "candidate_id": "C09",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 3.755839801779186e-10,
+      "max_I_complex_relative_error": 1.909849281746581e-10
+    },
+    {
+      "case_id": "001170",
+      "candidate_id": "C09",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 8.374744949531013e-10,
+      "max_I_complex_relative_error": 1.022293562301867e-09
+    },
+    {
+      "case_id": "001175",
+      "candidate_id": "C09",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 6.620014915814383e-10,
+      "max_I_complex_relative_error": 9.865494574044885e-10
+    },
+    {
+      "case_id": "001180",
+      "candidate_id": "C09",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 6.481937832696582e-10,
+      "max_I_complex_relative_error": 8.941773462111096e-10
+    },
+    {
+      "case_id": "001185",
+      "candidate_id": "C09",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.841382998342929e-10,
+      "max_I_complex_relative_error": 1.884708193764546e-09
+    },
+    {
+      "case_id": "001190",
+      "candidate_id": "C09",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 5.779534991065917e-10,
+      "max_I_complex_relative_error": 1.8821811704998167e-09
+    },
+    {
+      "case_id": "001195",
+      "candidate_id": "C09",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 4.575088775339997e-10,
+      "max_I_complex_relative_error": 1.406827554268758e-09
+    },
+    {
+      "case_id": "001200",
+      "candidate_id": "C09",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 3.3313728920289963e-10,
+      "max_I_complex_relative_error": 9.970987745911611e-11
+    },
+    {
+      "case_id": "001205",
+      "candidate_id": "C09",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 3.371156180166779e-10,
+      "max_I_complex_relative_error": 1.9231280632742172e-10
+    },
+    {
+      "case_id": "001210",
+      "candidate_id": "C09",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 4.551490507313342e-10,
+      "max_I_complex_relative_error": 3.215903642995565e-10
+    },
+    {
+      "case_id": "001215",
+      "candidate_id": "C10",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.396067319863326e-09,
+      "max_I_complex_relative_error": 8.673141516098199e-10
+    },
+    {
+      "case_id": "001220",
+      "candidate_id": "C10",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 9.446138512127126e-10,
+      "max_I_complex_relative_error": 6.239105437277961e-10
+    },
+    {
+      "case_id": "001225",
+      "candidate_id": "C10",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 9.136664155787948e-10,
+      "max_I_complex_relative_error": 5.944372005487975e-10
+    },
+    {
+      "case_id": "001230",
+      "candidate_id": "C10",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.3648530085190413e-09,
+      "max_I_complex_relative_error": 6.031066904340797e-10
+    },
+    {
+      "case_id": "001235",
+      "candidate_id": "C10",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 9.115949457100439e-10,
+      "max_I_complex_relative_error": 4.526698269744163e-10
+    },
+    {
+      "case_id": "001240",
+      "candidate_id": "C10",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 8.65917897236279e-10,
+      "max_I_complex_relative_error": 4.3277675307861644e-10
+    },
+    {
+      "case_id": "001245",
+      "candidate_id": "C10",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.688054188274626e-09,
+      "max_I_complex_relative_error": 1.9010354050311607e-09
+    },
+    {
+      "case_id": "001250",
+      "candidate_id": "C10",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.0368308069020924e-09,
+      "max_I_complex_relative_error": 2.0747822377222455e-09
+    },
+    {
+      "case_id": "001255",
+      "candidate_id": "C10",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.7365065064218834e-09,
+      "max_I_complex_relative_error": 1.6072997740698564e-09
+    },
+    {
+      "case_id": "001260",
+      "candidate_id": "C10",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.5224730701549397e-09,
+      "max_I_complex_relative_error": 9.934678502570414e-10
+    },
+    {
+      "case_id": "001265",
+      "candidate_id": "C10",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.39843945441824e-09,
+      "max_I_complex_relative_error": 1.0015034316470428e-09
+    },
+    {
+      "case_id": "001270",
+      "candidate_id": "C10",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.1236516646005087e-09,
+      "max_I_complex_relative_error": 8.905143452917516e-10
+    },
+    {
+      "case_id": "001275",
+      "candidate_id": "C10",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.8007986712422703e-09,
+      "max_I_complex_relative_error": 9.870616525958987e-10
+    },
+    {
+      "case_id": "001280",
+      "candidate_id": "C10",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.5833133372729868e-09,
+      "max_I_complex_relative_error": 9.205953804995084e-10
+    },
+    {
+      "case_id": "001285",
+      "candidate_id": "C10",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.0847086643572688e-09,
+      "max_I_complex_relative_error": 7.612516017582275e-10
+    },
+    {
+      "case_id": "001290",
+      "candidate_id": "C10",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.783404468606175e-09,
+      "max_I_complex_relative_error": 6.169880555986541e-10
+    },
+    {
+      "case_id": "001295",
+      "candidate_id": "C10",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.8445401775590838e-09,
+      "max_I_complex_relative_error": 6.131659278297479e-10
+    },
+    {
+      "case_id": "001300",
+      "candidate_id": "C10",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.7987242641165792e-09,
+      "max_I_complex_relative_error": 7.348553942872358e-10
+    },
+    {
+      "case_id": "001305",
+      "candidate_id": "C10",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 3.024377096929801e-09,
+      "max_I_complex_relative_error": 1.145006998410808e-09
+    },
+    {
+      "case_id": "001310",
+      "candidate_id": "C10",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.6774972258454566e-09,
+      "max_I_complex_relative_error": 1.0542909546620129e-09
+    },
+    {
+      "case_id": "001315",
+      "candidate_id": "C10",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.2574242437138074e-09,
+      "max_I_complex_relative_error": 8.787351611248315e-10
+    },
+    {
+      "case_id": "001320",
+      "candidate_id": "C10",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 3.1806641343519486e-09,
+      "max_I_complex_relative_error": 1.2864652301541644e-09
+    },
+    {
+      "case_id": "001325",
+      "candidate_id": "C10",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.798764247204629e-09,
+      "max_I_complex_relative_error": 1.6367555557739755e-09
+    },
+    {
+      "case_id": "001330",
+      "candidate_id": "C10",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.5651523936040864e-09,
+      "max_I_complex_relative_error": 8.879132640126606e-10
+    },
+    {
+      "case_id": "001335",
+      "candidate_id": "C10",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.4277471143908543e-09,
+      "max_I_complex_relative_error": 4.261940177524929e-10
+    },
+    {
+      "case_id": "001340",
+      "candidate_id": "C10",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.3630381730301028e-09,
+      "max_I_complex_relative_error": 5.439366918859192e-10
+    },
+    {
+      "case_id": "001345",
+      "candidate_id": "C10",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 1.3683254579053343e-09,
+      "max_I_complex_relative_error": 5.744172986275307e-10
+    },
+    {
+      "case_id": "001350",
+      "candidate_id": "C11",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 3.290796764360935e-10,
+      "max_I_complex_relative_error": 1.7907520344920774e-10
+    },
+    {
+      "case_id": "001355",
+      "candidate_id": "C11",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 3.063486933654656e-10,
+      "max_I_complex_relative_error": 1.7552313802165372e-10
+    },
+    {
+      "case_id": "001360",
+      "candidate_id": "C11",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.656639442078376e-10,
+      "max_I_complex_relative_error": 1.6019590517390465e-10
+    },
+    {
+      "case_id": "001365",
+      "candidate_id": "C11",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.8251621488471094e-10,
+      "max_I_complex_relative_error": 1.3978601809556395e-10
+    },
+    {
+      "case_id": "001370",
+      "candidate_id": "C11",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.339380569441565e-10,
+      "max_I_complex_relative_error": 1.1523444791388768e-10
+    },
+    {
+      "case_id": "001375",
+      "candidate_id": "C11",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 3.005620579389119e-10,
+      "max_I_complex_relative_error": 1.4444511042725234e-10
+    },
+    {
+      "case_id": "001380",
+      "candidate_id": "C11",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 4.407309039650915e-10,
+      "max_I_complex_relative_error": 4.328300405372017e-10
+    },
+    {
+      "case_id": "001385",
+      "candidate_id": "C11",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 3.547404339309662e-10,
+      "max_I_complex_relative_error": 2.8688150843447244e-10
+    },
+    {
+      "case_id": "001390",
+      "candidate_id": "C11",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 3.102781914622865e-10,
+      "max_I_complex_relative_error": 2.6547620884877864e-10
+    },
+    {
+      "case_id": "001395",
+      "candidate_id": "C11",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 3.6832866498620067e-10,
+      "max_I_complex_relative_error": 1.714699273764386e-10
+    },
+    {
+      "case_id": "001400",
+      "candidate_id": "C11",
+      "dynamic_status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "max_X_complex_relative_error": 2.9245625706617946e-10,
+      "max_I_complex_relative_error": 1.6170659443623772e-10
+    }
+  ],
+  "scope": "Fazor podstawowy kontra niezależna algebra LTI. To weryfikacja numeryczna warunkowego modelu, nie walidacja urządzenia.",
+  "audit_script_sha256": "3b3d887f25b895811b85295ba6abd573adcfb5e4df20c4ff15dd8c63776cc5a0"
+}

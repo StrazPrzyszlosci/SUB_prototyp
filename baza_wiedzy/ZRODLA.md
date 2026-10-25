@@ -102,6 +102,29 @@ Przekazane przez użytkownika oceny i program są zachowane w
 [materialach źródłowych](../dane/zrodla/materialy_uzytkownika/indeks.json).
 To wymagania i komentarze do badań, a nie niezależna walidacja osiągów.
 
+- SRC37: [KLIPPEL — Intermodulation Distortion](https://www.klippel.de/know-how/measurements/nonlinear-distortion/intermodulation-distortion.html).
+  Metoda i znaczenie faz; nie przyjęto ogólnych liczb jako wyników naszych modeli.
+- SRC38: [KLIPPEL AN10 — Loudspeaker FM and AM Distortion](https://www.klippel.de/fileadmin/klippel/Files/Know_How/Application_Notes/AN_10_Loudspeaker_FM_and_AM_Distortion.pdf).
+  Obejrzano oryginalne strony2/3/5/6 i wykresy. Warunki>8:1 oraz1:4
+  nie odpowiadają naszym parom. Wzór d_AMD ze s.3 ma czynnik sqrt(2)
+  względem naszej miary RMS obwiedni; nie deklarujemy ich tożsamości ani zgodności IEC.
+- SRC39: [Cotté — MF208, Aeroacoustics and Acoustic Propagation in Moving Media](https://perso.ensta.fr/~cotte/files/Poly_MF208_2023.pdf).
+  Oryginał stron30/32: punktowe źródło, funkcja Greena i czynnik1−Mr.
+  Nie jest to rozwiązanie ruchomej granicy finalnego subwoofera.
+
+P14B: [fakty, daty, oryginały i ograniczenia](../dane/zrodla/P14B_IMD_AM_FM_i_emisja.json).
+Data dostępu2026-10-25; kopiePDF i renderów pozostają prywatne w.firecrawl.
+
+- SRC40: [KLIPPEL AN18 — Thermal Parameter Measurement,rev1.5](https://www.klippel.de/fileadmin/klippel/Files/Know_How/Application_Notes/AN_18_Measurement_of_Linear_Thermal_Parameters.pdf).
+  Oryginalne strony2/3/6: topologia R||C, wzory i wykresy procedury.
+  Nie przenosić parametrów Foster bez transformacji na fizyczne węzły Cauer.
+- SRC41: [KLIPPEL — Thermal Analysis and Heat Transfer](https://www.klippel.de/know-how/measurements/power-handling-heat-dissipation/thermal-analysis-and-heat-transfer.html).
+  Obejrzano oryginalne heat_flow.jpg i bypass.jpg; własne pojemności
+  węzłów, konwekcja i ciepło prądów wirowych. Liczb przykładu nie przeniesiono.
+
+P15A: [fakty, obrazy i hashe](../dane/zrodla/P15A_topologie_i_cieplo.json).
+Data dostępu2026-10-25. Brak identyfikacjiRth/Cth naszych24produktów.
+
 ## Pliki zachowane lokalnie
 
 - [Wejścia katalogowe i konflikty](../dane/przetworniki/kandydaci.json).

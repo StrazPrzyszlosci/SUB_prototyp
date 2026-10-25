@@ -1,0 +1,46 @@
+{
+  "access_date": "2026-10-25",
+  "status": "FAKTY_ZRODLOWE_I_KONTROLA_ORIGINALOW_NIE_WYNIKI_NASZYCH_GLOSNIKOW",
+  "sources": [
+    {
+      "id": "SRC37",
+      "title": "KLIPPEL: Intermodulation Distortion",
+      "url": "https://www.klippel.de/know-how/measurements/nonlinear-distortion/intermodulation-distortion.html",
+      "acquisition": "Firecrawl oraz browser-harness; bez nagrywania",
+      "local_private_text": ".firecrawl/p14b-klippel-imd.md",
+      "text_sha256": "dea37f27c8f506a948cde8badab3d728c3a0e962d820ec468dd4ed4ab8450a8f",
+      "accepted": ["IMD tworzy linie sum i różnic; faza produktów jest istotna przy rozdzielaniu AM/PM."],
+      "not_transferred": "Ogólnych liczb, wyników przykładowych i ocen słyszalności nie przypisano naszym24kandydatom."
+    },
+    {
+      "id": "SRC38",
+      "title": "KLIPPEL AN10: Loudspeaker FM and AM Distortion",
+      "url": "https://www.klippel.de/fileadmin/klippel/Files/Know_How/Application_Notes/AN_10_Loudspeaker_FM_and_AM_Distortion.pdf",
+      "document_date": "08.01.16 (stopka oryginału)",
+      "local_private_original": ".firecrawl/p14b_KLIPPEL_AN10_original.pdf",
+      "original_sha256": "4d08a7fc8a7cb2862794186bee200b5560de5a3d83b5cfe30b0f524183e35d25",
+      "original_pages_visually_inspected": [2,3,5,6],
+      "protocol": {"voice_to_bass_voltage_ratio": "1:4", "voice_to_bass_frequency_ratio": ">8:1", "microphone": "1m na osi, pole swobodne/półprzestrzeń; alternatywnie pole bliskie według noty"},
+      "normalization_warning": "Na stronie3 wydrukowano d_AMD=100*sqrt((2/K)*sum((E-Emean)^2))/Emean. Nasze cluster_AMD_rms_pct=100*std(E)/mean(E) jest mniejsze o sqrt(2) dla tego samego E; nie jest bezpośrednio d_AMD z tej noty. Nie przenosić nazw bez wzoru.",
+      "notation_warning": "Opis tekstowy nazywa f1 tonem voice, f2 bass; wzory z przypisem zmieniają konwencję. W kodzie zawsze f_low/f_high i jawne kombinacje.",
+      "images": [
+        {"file": ".firecrawl/p14b_AN10_p5.png", "type": "Przebieg obwiedni, widmo i modulacja względem częstotliwości", "axes": "Czas[s]/IN1[V]; częstotliwość[Hz]/widmo; f_voice[Hz] log/miara modulacji[dB]", "conditions": "Przykład bass6Hz,voice1600Hz; krzywe modulacji z opisemU1=1V", "readout": "Wyłącznie jakościowo; nie digitalizowano punktów. Przykładowego DUT nie zidentyfikowano jako kandydata."},
+        {"file": ".firecrawl/p14b_AN10_p6.png", "type": "Ld2,Ld3,Ldm versus frequency", "axes": "f_voice[Hz] log; modulacja[dB]", "conditions": "U1=1V jak podpis oryginału; reszta według przykładu AN10", "readout": "Wyłącznie jakościowo; brak ilościowego odczytu i oceny słyszalności."}
+      ],
+      "applicability": "Pary20+85,25+95,45+95Hz oraz równe napięcia P14B NIE realizują protokołu AN10. Nie deklarujemy zgodności z IEC60268 ani jego konkretnego wydania."
+    },
+    {
+      "id": "SRC39",
+      "title": "Benjamin Cotté, MF208: Aeroacoustics and Acoustic Propagation in Moving Media, course notes2022–2023",
+      "url": "https://perso.ensta.fr/~cotte/files/Poly_MF208_2023.pdf",
+      "local_private_original": ".firecrawl/p14b_Cotte_MF208_original.pdf",
+      "original_sha256": "1f402b2f29b68fe66b85365cd5954c55b10cf8e0d47dfe27e74f109de9e5569e",
+      "original_pages_visually_inspected": [30,32],
+      "accepted": ["Równania2.49–2.52: punktowe ruchome źródło objętościowe i funkcja Greena.", "Równanie2.61: potencjał proporcjonalny do q(tau)/(R*(1-Mr)); w naszym kodziePsi=-Phi, dlatego p=+rho*dPsi/dt.", "Równania2.64–2.65: pochodna czasu źródłowego d_tau/d_t=1/(1-Mr)."],
+      "figure": {"file": ".firecrawl/p14b_Cotte_p30.png", "type": "Rysunek2.4: geometria ruchu źródła", "axes": "x1,x2 i położenie obserwatora; brak danych pomiarowych", "conditions": "Jednostajna translacja punktowego źródła w jednorodnym ośrodku"},
+      "model_extension": "Zastosowano całkę Greena do jawnie zadanego okresowego toru poddźwiękowego. To kontrolny model punktowego źródła; nie rozwiązanie ruchomej granicy płaskiego głośnika, dyfrakcji na skrzyni ani reakcji pola na napęd.",
+      "not_read": "Nie deklarujemy przeczytania całego73-stronicowego wykładu."
+    }
+  ],
+  "copyright_scope": "Prywatne kopie oryginałów i renderów w ignorowanym.firecrawl. W publicznym repo tylko odnośniki, fakty, hashe i własne obliczenia."
+}

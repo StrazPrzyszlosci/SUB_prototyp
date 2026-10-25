@@ -1,0 +1,12 @@
+{
+  "status":"SIEC_KONTROLNA_I_BEZWYMIAROWE_STRESY_NIE_PARAMETRY_PRODUKTOW",
+  "control":{"coil_capacity_j_k":1.0,"magnet_capacity_j_k":1.0,"coil_to_magnet_k_w":1.0,"magnet_to_air_k_w":1.0},
+  "control_heat_w":1.0,
+  "resistance_ratio_log10_range":[-3,3],
+  "capacity_ratio_log10_range":[-3,5],
+  "grid_size":65,
+  "direct_cooling_ratio_controls":[0.1,1,10],
+  "allowed_temperature_rise_scenarios_k":[40,80,120],
+  "temperature_scenario_scope":"Umowne osie wymagań Rth, nie dopuszczalne temperatury naszych głośników. Bez Re(T), BL(T), klipu i zmiennego chłodzenia; P15A nie daje fizycznych prognoz temperatur.",
+  "scope":"Cauer: dwa skupione węzły z własną pojemnością względem odniesienia; Foster: szeregowe dodatnie gałęzie R||C dopasowane wyłącznie na porcie cewki. Nie utożsamiać stanów wewnętrznych ani mas. Rth/Cth24produktów nieznane."
+}

@@ -1,0 +1,39 @@
+{
+  "access_date":"2026-10-25",
+  "status":"ORIGINALY_I_TOPOLOGIE_SPRAWDZONE_NIE_IDENTYFIKACJA24PRODUKTOW",
+  "sources":[
+    {
+      "id":"SRC40",
+      "title":"KLIPPEL AN18: Thermal Parameter Measurement, revision1.5",
+      "url":"https://www.klippel.de/fileadmin/klippel/Files/Know_How/Application_Notes/AN_18_Measurement_of_Linear_Thermal_Parameters.pdf",
+      "document_date":"2023-10-05 (stopka)",
+      "original_private_file":".firecrawl/p15_KLIPPEL_AN18_original.pdf",
+      "original_sha256":"7a0cd7434fa9d0294652dff33771de5be940c640ce4026f26457defdf6031390",
+      "original_pages_visually_inspected":[2,3,6],
+      "accepted_facts":[
+        "Na s.2 Ctv jest równolegle do Rtv pomiędzy Tv i TM; Ctm jest równolegle do Rtm między TM i otoczeniem. Jest to portowa topologia szeregowych gałęzi R||C (Foster), nie dwa własne C do otoczenia.",
+        "Dla narysowanego układu wzory tau_v=Rtv*Ctv i tau_m=Rtm*Ctm na s.3 są zgodne z topologią. Nie uznano ich za błąd publikacji ani nie przeniesiono bez transformacji na inną sieć.",
+        "Nota pomija w tym modelu konwekcję i bezpośrednie grzanie metalu przez prądy wirowe; P jest przybliżane mocą I²Re."
+      ],
+      "images":[
+        {"file":".firecrawl/p15_AN18_p2.png","type":"Schemat zastępczy dwóch szeregowych gałęzi R||C","axes":"Brak osi wykresu, węzły temperatur i moc","conditions":"Model liniowy bez konwekcji i bez dodatkowego źródła ciepła w metalu","readout":"Topologia sprawdzona wzrokowo; nie przypisano wartości komponentom naszych głośników."},
+        {"file":".firecrawl/p15_AN18_p6.png","type":"Przykładowe przebiegi chłodzenia i grzania","axes":"Czas[s],przyrost temperatury[K]","conditions":"Przykład procedury AN18; brak identyfikacji z którymkolwiek z naszych24produktów","readout":"Oględziny jakościowe. Nie digitalizowano liczb ani nie przyjęto temperatur jako dopuszczalnych."}
+      ],
+      "scope":"Zapoznano się z wybranymi stronami; nie uruchamiamy teraz procedury pomiarowej ani doboru aparatury."
+    },
+    {
+      "id":"SRC41",
+      "title":"KLIPPEL: Thermal Analysis and Heat Transfer",
+      "url":"https://www.klippel.de/know-how/measurements/power-handling-heat-dissipation/thermal-analysis-and-heat-transfer.html",
+      "text_private_file":".firecrawl/p15-thermal-analysis.md",
+      "text_sha256":"fa74cea21927edd7764506a00989620d462869c6ffb760e06d7aff65d74c3515",
+      "images":[
+        {"url":"https://www.klippel.de/fileadmin/_migrated/pics/heat_flow.jpg","file":".firecrawl/p15_KLIPPEL_heat_original.jpg","sha256":"c66a12814849babd724b3eb1c04420806fccb9383ff3f48ef3e11110c545160e","type":"Schemat cieplny z własnymi C przy węzłach, konwekcją i osobnym Peddy","conditions":"Przykład nieoznaczonego DUT, nie dane naszych kandydatów","readout":"Oryginał obejrzano: Ctv jest do odniesienia, inaczej niż w AN18. Nie przenoszono przykładowych mocy i temperatur."},
+        {"url":"https://www.klippel.de/fileadmin/_migrated/pics/bypass.jpg","file":".firecrawl/p15_KLIPPEL_bypass_original.jpg","sha256":"2876bebe053dd028e11827a2fa5623295e06c77dba05ef93d62ba3d0f99c9bce","type":"Przekrój przepływu i wykres bypass factor dla otwartego/zamkniętego kanału","axes":"f[Hz]log, gamma[%]","conditions":"Przykładowy głośnik o niepodanych tu pełnych warunkach","readout":"Tylko jakościowo: droga przepływu wpływa na chłodzenie. Nie digitalizowano liczb i nie rekomendowano zatykania kanału naszego przetwornika."}
+      ],
+      "accepted_facts":["Dodatkowe drogi konwekcji i źródło prądów wirowych wymagają rozróżnienia węzłów cieplnych.","Model zależny od prędkości jest dalszym rozszerzeniem; użyte w P15A stałe Rva są kontrolami, nie identyfikacją konwekcji."],
+      "not_transferred":"Deklarowanego zakresu bypass ani przykładowych temperatur nie przyjęto jako parametrów naszych produktów."
+    }
+  ],
+  "copyright_scope":"Prywatne oryginały i rendery w ignorowanym.firecrawl; publiczne wyłącznie fakty, hashe i własne rachunki."
+}

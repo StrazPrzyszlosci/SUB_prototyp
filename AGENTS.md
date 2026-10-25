@@ -305,6 +305,43 @@ Postęp końca sesji2026-10-23:
   jawnie zdefiniowaną diagnostyką, nie normowym ani zmierzonymTHD.
   Pilota nie utożsamiać z zamknięciem P14/P25. Dalszy krokP14B wskazano wyżej.
 
+- Kontrola postępu2026-10-25: ponownie sprawdzono macierz i raporty022/023;
+  szacunek całego programu przed budową pozostaje40–50%.
+  P14B jest w toku: migawka1214/3312zapisanych przypadków obejmuje
+  1199ze spełnionym kryterium okresowości i15NOT_SETTLED.
+  Nie jest to zamknięty wynik ani procent projektu; szczegóły w raporcie022.
+  Najbliższy krok: dokończyć i zweryfikować tę samą kampanięP14B,
+  potem przejść do termikiP15/P16. Nie uruchamiać drugiej kopii obliczeń.
+
+- P14B: uruchomiono3312przypadków z fazoramiX/I i atomowymi bazamiSQLite.
+  Proces11224 zakończył się kodem143; po sprawdzeniu24baz i12niezmienionych
+  wejść wznowiono1599punktów, bez ponownego liczenia ukończonych.
+  Bieżąca sesja środowiska:14449, log/tmp/sub-p14b-campaign-resume1.log;
+  sprawdzić uchwyt przed wznowieniem, nie sam plik blokady.
+  Hash przebiegu8a0088ea29d52b03b63966e59b24f5ce516fa7efc4d4286edb1a3330feb1b3c2.
+  Migawka kontrolna2108/3312:2086pierwotnych okresowych,22NOT_SETTLED;
+  wszystkie22mają osobne okresowe rozstrzygnięciaDOP853. Nie zmieniać
+  pierwotnychSQLite i nie ogłaszać zamknięcia całej kampanii.
+- Raport024/baza16:15zamrożonych świadków,6670projekcji z migawki1334,
+  fazory i trzy wykresy31–33.45+95Hz daje w przykładzie0,081921mmRMS
+  ruchu5Hz; nie ranking produktów. Monopol ruchomy to kontrolne źródło,
+  nie rozwiązanie rzeczywistej membrany. Oryginalne AN10 i Cotté obejrzano.
+  AN10 ma inną normalizację obwiedni oraz warunki>8:1/1:4; bez deklaracjiIEC.
+- P15A wykonano: raport025/baza17,4225sieciCauer/Foster,7tożsamościSymPy,
+  25kontroli czterech granic,45warunkowych wymagańRth i wykresy34/35.
+  OryginalnyAN18 ma Ctv pomiędzyTv iTM, a heat_flow ma własne pojemności:
+  nie mylić topologii ani nie uznawać tau=R*C za błąd AN18.
+  Wyprowadzono ciągłą rodzinę różnych sieciCauer z bezpośrednim chłodzeniem
+  o identycznym porcie cewki i różnych temperaturach wewnętrznych.
+  Nie przypisano Rth/Cth/temperatur produktom. Próg idealnego prądu
+  P0*alpha*Rth=1 nie jest progiem uszkodzenia ani wynikiem realnego wzmacniacza.
+- Odtworzenie opublikowanego etapu: `python3 skrypty/odtworz_etap_P14B_P15A.py`.
+  To15świadków iP15A, bez dotykania żywychSQLite i globalnego manifestu.
+  Nie uruchamiać teraz pełnego odtworzenia kopiującego aktywne bazy.
+  Najbliższy krok: domknąć tę samą kampanięP14B i jej studia, a następnie
+  P15B/P16 — czasowe Re(T),rozmieszczenie strat i chłodzenie zależne od ruchu.
+  Mechanika z klejem, wybór jednego głośnika/skrzyni i końcowyPDF nadal otwarte.
+
 ## Decyzje otwarte
 
 - Referencje subwooferów ADAM Sub12/Sub15: zatwierdzone; progi odbiorowe otwarte.

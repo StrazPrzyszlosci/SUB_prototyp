@@ -1,0 +1,168 @@
+{
+  "status": "P15A_KONTROLE_TOPOLOGII_NIE_ZAMKNIETY_MODEL_CIEPLNY",
+  "network_cases": 4225,
+  "max_complex_port_relative_error": 2.510897620433512e-13,
+  "max_steady_relative_error": 1.1005249325898694e-13,
+  "max_step_port_error_k": 2.6645352591003757e-15,
+  "independent_ODE_max_error_k": 1.5798473640415978e-13,
+  "control_Cauer_steady_k": [
+    2.0,
+    1.0
+  ],
+  "Foster_R_k_w": [
+    1.8944271909999155,
+    0.10557280900008408
+  ],
+  "Foster_tau_s": [
+    2.618033988749895,
+    0.38196601125010515
+  ],
+  "Foster_equivalent_C_j_k": [
+    1.3819660112501055,
+    3.6180339887498962
+  ],
+  "Foster_steady_internal_k": [
+    1.8944271909999155,
+    0.10557280900008408
+  ],
+  "current_feedback": [
+    {
+      "feedback_w_k": 0.0,
+      "dc_resistance_k_w": 2.0,
+      "smallest_decay_per_s": 0.38196601125010515,
+      "stable": true,
+      "normalized_feedback": 0.0
+    },
+    {
+      "feedback_w_k": 0.05,
+      "dc_resistance_k_w": 2.0,
+      "smallest_decay_per_s": 0.3455643001923482,
+      "stable": true,
+      "normalized_feedback": 0.1
+    },
+    {
+      "feedback_w_k": 0.45,
+      "dc_resistance_k_w": 2.0,
+      "smallest_decay_per_s": 0.03983806729643746,
+      "stable": true,
+      "normalized_feedback": 0.9
+    },
+    {
+      "feedback_w_k": 0.4995,
+      "dc_resistance_k_w": 2.0,
+      "smallest_decay_per_s": 0.00039998399807983365,
+      "stable": true,
+      "normalized_feedback": 0.999
+    },
+    {
+      "feedback_w_k": 0.5,
+      "dc_resistance_k_w": 2.0,
+      "smallest_decay_per_s": 0.0,
+      "stable": false,
+      "normalized_feedback": 1.0
+    },
+    {
+      "feedback_w_k": 0.5005,
+      "dc_resistance_k_w": 2.0,
+      "smallest_decay_per_s": -0.00040001599808009436,
+      "stable": false,
+      "normalized_feedback": 1.001
+    },
+    {
+      "feedback_w_k": 0.55,
+      "dc_resistance_k_w": 2.0,
+      "smallest_decay_per_s": -0.04015809288799954,
+      "stable": false,
+      "normalized_feedback": 1.1
+    },
+    {
+      "feedback_w_k": 1.0,
+      "dc_resistance_k_w": 2.0,
+      "smallest_decay_per_s": -0.4142135623730951,
+      "stable": false,
+      "normalized_feedback": 2.0
+    }
+  ],
+  "direct_cooling": [
+    {
+      "Rva_k_w": 0.1,
+      "Rth_port_k_w": 0.09523809523809525,
+      "port_relative_error": 5.43776123464791e-16
+    },
+    {
+      "Rva_k_w": 1,
+      "Rth_port_k_w": 0.6666666666666666,
+      "port_relative_error": 6.661344168260499e-16
+    },
+    {
+      "Rva_k_w": 10,
+      "Rth_port_k_w": 1.6666666666666667,
+      "port_relative_error": 5.340194406899283e-16
+    }
+  ],
+  "indistinguishable_Cauer_with_direct_cooling": [
+    {
+      "gvm_w_k": 0.6,
+      "Cm_j_k": 0.36,
+      "Rvm_k_w": 1.6666666666666667,
+      "Rma_k_w": 8.333333333333334,
+      "Rva_k_w": 0.7142857142857143,
+      "port_relative_error": 1.8306651840452714e-16,
+      "steady_coil_k": 0.6666666666666666,
+      "steady_magnet_k": 0.5555555555555555,
+      "coil_rise_for_1w_at_magnet_k": 0.5555555555555555
+    },
+    {
+      "gvm_w_k": 0.75,
+      "Cm_j_k": 0.5625,
+      "Rvm_k_w": 1.3333333333333333,
+      "Rma_k_w": 2.6666666666666665,
+      "Rva_k_w": 0.8,
+      "port_relative_error": 2.1433513551505482e-16,
+      "steady_coil_k": 0.6666666666666666,
+      "steady_magnet_k": 0.4444444444444444,
+      "coil_rise_for_1w_at_magnet_k": 0.4444444444444444
+    },
+    {
+      "gvm_w_k": 1.0,
+      "Cm_j_k": 1.0,
+      "Rvm_k_w": 1.0,
+      "Rma_k_w": 1.0,
+      "Rva_k_w": 1.0,
+      "port_relative_error": 0.0,
+      "steady_coil_k": 0.6666666666666666,
+      "steady_magnet_k": 0.3333333333333333,
+      "coil_rise_for_1w_at_magnet_k": 0.3333333333333333
+    },
+    {
+      "gvm_w_k": 1.5,
+      "Cm_j_k": 2.25,
+      "Rvm_k_w": 0.6666666666666666,
+      "Rma_k_w": 0.3333333333333333,
+      "Rva_k_w": 2.0,
+      "port_relative_error": 2.1433513551505482e-16,
+      "steady_coil_k": 0.6666666666666666,
+      "steady_magnet_k": 0.2222222222222222,
+      "coil_rise_for_1w_at_magnet_k": 0.2222222222222222
+    },
+    {
+      "gvm_w_k": 1.9,
+      "Cm_j_k": 3.61,
+      "Rvm_k_w": 0.5263157894736842,
+      "Rma_k_w": 0.18796992481203006,
+      "Rva_k_w": 9.999999999999991,
+      "port_relative_error": 1.9388749641488299e-16,
+      "steady_coil_k": 0.6666666666666666,
+      "steady_magnet_k": 0.17543859649122806,
+      "coil_rise_for_1w_at_magnet_k": 0.17543859649122803
+    }
+  ],
+  "conditional_Rth_requirements": 45,
+  "input_sha256": {
+    "dane/konfiguracje/p15a_topologia_termiczna.json": "cc6f2122df047366337575f87ecca8402e429de5f500951d4222274aeb3e4aed",
+    "skrypty/analiza_topologii_termicznej_P15A.py": "18d1d948a79a7ff295fbcc75eac9a2a63c4b3018b91e80e49c31f803be5975da",
+    "skrypty/model_termiczny_P15.py": "856f32fe3f080bce780bb0a095ac477abe2af38dc894a608a8ab65c17bc3a4ac",
+    "wyniki/p14b_swiadkowie_emisji.npz": "e80f8d2b33ddf7ab6d0fa107e22c5ea03359504d05e6526f8da186c1e1c86df3"
+  },
+  "scope": "Dodatnie sieci kontrolne, nie zidentyfikowane C/R24produktów. Progi Rth wynikają z narzuconych przyrostów i zamrożonego Pcu. Próg prądowy nie dotyczy automatycznie rzeczywistego wzmacniacza."
+}

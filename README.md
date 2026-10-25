@@ -29,6 +29,12 @@ Wykonano18 676wierszy liniowych,1728pełnychODE i odrębne sprawdzenie
 Ocena stanu badań: [raport022 — postęp i pozostały zakres](raporty/022_stan_badan_i_zakres_pozostaly.md).
 Rozpoczęte P14A: [raport023 — wspólne limity i pilot dwutonowy](raporty/023_P14A_dwa_tony_i_wspolne_limity.md).
 Pilot nie zamyka P14/P25; dalsze kroki obejmują szersze sygnały i emisję harmonicznych.
+P14B w toku: [raport024 — fazory, emisja i15zamrożonych świadków](raporty/024_P14B_emisja_i_swiadkowie.md).
+Przypadek45+95Hz tworzy ruch5Hz; rozdzielono projekcje stałe i kontrolny
+ruchomy monopol. To nie zmierzone THD ani zamknięcie kampanii3312przypadków.
+Rozpoczęto termikę: [raport025 — P15A, topologie i granice](raporty/025_P15A_topologia_i_granice_termiki.md).
+4225sieci kontrolnych, ciągła niejednoznaczność chłodzenia i warunkowe
+wymaganiaRth; nie prognozy temperatur konkretnych produktów.
 
 **Bieżący zakres: wyłącznie naukowe zagadnienia prototypu (U-010).**
 Najnowsze zlecenie: [program30badań](PROGRAM_30_BADAN.md), szeroka pula
@@ -93,6 +99,8 @@ Brak modelu THD, kompresji cieplnej i zidentyfikowanej odpowiedzi pokoju.
 21. [021 — pamięć cewki, moduł/faza L_gen i właściwa siła](raporty/021_pamiec_cewki_i_definicja_Lgen.md).
 22. [022 — orientacyjny stan badań i zakres pozostały](raporty/022_stan_badan_i_zakres_pozostaly.md).
 23. [023 — P14A, wspólne limity i pilot IMD](raporty/023_P14A_dwa_tony_i_wspolne_limity.md).
+24. [024 — P14B, fazory i emisja; raport częściowy](raporty/024_P14B_emisja_i_swiadkowie.md).
+25. [025 — P15A, topologia, identyfikowalność i granice termiki](raporty/025_P15A_topologia_i_granice_termiki.md).
 
 ## Odtworzenie obliczeń
 
@@ -102,6 +110,17 @@ W obecnym środowisku potrzebne biblioteki są już dostępne.
 ```bash
 python3 skrypty/odtworz_wszystko.py
 ```
+
+**Podczas aktywnej kampaniiP14B nie uruchamiać pełnego odtworzenia**,
+które archiwizuje bieżące pliki wyników. Samodzielne odtworzenie15świadków
+emisji iP15A, bez dotykania aktywnych baz:
+
+```bash
+python3 skrypty/odtworz_etap_P14B_P15A.py
+```
+
+Zakres i hashe tej części są w `wyniki/manifest_etap_P14B_P15A.json`;
+nie jest to manifest zakończonego programu30badań.
 
 Skrypty ustalają katalog projektu na podstawie własnej ścieżki. Dla osobnego
 środowiska można utworzyć`.venv` i zainstalować`requirements.txt`. Nie trzeba
