@@ -1,0 +1,95 @@
+{
+  "status": "NORMAL_JOINT_ANALYTIC_AND_MESH_CONTROLS",
+  "rigid_limit_controls": [
+    {
+      "defect": "NONE",
+      "rigid_reduced_matrix_relative_error": 2.907575694256197e-16,
+      "area_m2": 0.0063999999999999726,
+      "max_rigid_traction_per_n_pa": 214.843750000001
+    },
+    {
+      "defect": "EDGE_5MM",
+      "rigid_reduced_matrix_relative_error": 6.198777582476833e-16,
+      "area_m2": 0.005999999999999975,
+      "max_rigid_traction_per_n_pa": 200.0000000000008
+    },
+    {
+      "defect": "CENTER_30PCT",
+      "rigid_reduced_matrix_relative_error": 4.352351693634979e-15,
+      "area_m2": 0.004479999999999991,
+      "max_rigid_traction_per_n_pa": 287.6030219780235
+    }
+  ],
+  "mesh_convergence": [
+    {
+      "main_nx": 8,
+      "main_ny": 12,
+      "pad_n": 4,
+      "tie_force_per_pa_n": 0.09736086305666422,
+      "maximum_normal_traction_per_pa": 23.129651904864232,
+      "maximum_glue_opening_per_pa_m": 2.6926253672717385e-12,
+      "maximum_MDF_normal_deformation_per_pa_m": 1.4385108183256108e-09,
+      "mean_contact_stress_per_pa": 14.212634852604083,
+      "maximum_to_mean_normal_stress_factor": 1.627400699781318,
+      "independent_Sherman_Morrison_relative_error": 3.124620898774292e-14,
+      "force_balance_relative_error": 2.009809711488481e-14,
+      "moment_balance_relative_error": 9.507286354074085e-15,
+      "pad_peak_principal_stress_per_pa": 138.51318373223302,
+      "volume_compliance_m3_pa": 4.249735195535313e-09,
+      "rod_end_compliance_without_rod_m_n": 1.3727061678081952e-06
+    },
+    {
+      "main_nx": 16,
+      "main_ny": 24,
+      "pad_n": 8,
+      "tie_force_per_pa_n": 0.09541907890069788,
+      "maximum_normal_traction_per_pa": 26.865962283441064,
+      "maximum_glue_opening_per_pa_m": 3.127585830435514e-12,
+      "maximum_MDF_normal_deformation_per_pa_m": 1.670884522967258e-09,
+      "mean_contact_stress_per_pa": 13.909231078234097,
+      "maximum_to_mean_normal_stress_factor": 1.9315203070773874,
+      "independent_Sherman_Morrison_relative_error": 2.3735940529877978e-14,
+      "force_balance_relative_error": 4.3632116242466546e-16,
+      "moment_balance_relative_error": 6.753603930108347e-15,
+      "pad_peak_principal_stress_per_pa": 172.207955258431,
+      "volume_compliance_m3_pa": 4.6727862916162304e-09,
+      "rod_end_compliance_without_rod_m_n": 1.4502781811970337e-06
+    },
+    {
+      "main_nx": 24,
+      "main_ny": 36,
+      "pad_n": 12,
+      "tie_force_per_pa_n": 0.09508939990376447,
+      "maximum_normal_traction_per_pa": 27.064549042437022,
+      "maximum_glue_opening_per_pa_m": 3.150704195859956e-12,
+      "maximum_MDF_normal_deformation_per_pa_m": 1.6832353011962994e-09,
+      "mean_contact_stress_per_pa": 13.85771873496282,
+      "maximum_to_mean_normal_stress_factor": 1.953030622143713,
+      "independent_Sherman_Morrison_relative_error": 6.02967077960417e-14,
+      "force_balance_relative_error": 2.991865027522732e-14,
+      "moment_balance_relative_error": 8.073987891061489e-15,
+      "pad_peak_principal_stress_per_pa": 187.48664312798672,
+      "volume_compliance_m3_pa": 4.757483400004212e-09,
+      "rod_end_compliance_without_rod_m_n": 1.4622100875374445e-06
+    },
+    {
+      "main_nx": 32,
+      "main_ny": 48,
+      "pad_n": 16,
+      "tie_force_per_pa_n": 0.09498513913095774,
+      "maximum_normal_traction_per_pa": 26.881543783157667,
+      "maximum_glue_opening_per_pa_m": 3.129399741927552e-12,
+      "maximum_MDF_normal_deformation_per_pa_m": 1.6718535888226484e-09,
+      "mean_contact_stress_per_pa": 13.841427989208933,
+      "maximum_to_mean_normal_stress_factor": 1.9421076932318748,
+      "independent_Sherman_Morrison_relative_error": 4.1016619142803774e-14,
+      "force_balance_relative_error": 2.0995264377445877e-13,
+      "moment_balance_relative_error": 1.8819557967072182e-14,
+      "pad_peak_principal_stress_per_pa": 192.22248541759797,
+      "volume_compliance_m3_pa": 4.787526186075593e-09,
+      "rod_end_compliance_without_rod_m_n": 1.4652274740707123e-06
+    }
+  ],
+  "last_normal_peak_relative_change": 0.006761807078048965,
+  "scope": "Dokładna granica sztywnej nakładki oraz dyskretyzacja submodeluWinklera. Nie model pękania interfejsu3D,fatigue/creep ani dowódadhesji do MDFkonkretnejpartii."
+}

@@ -1,0 +1,18 @@
+{
+  "status": "IMMUTABLE_CHECKPOINT_ARCHIVE_NOT_INDEPENDENT_REPLICATION",
+  "stage": "p19a",
+  "cases": 656,
+  "archive_file": "p19a_checkpoint_c6468c952e827986.zip",
+  "archive_sha256": "a506d2c0be940189997d14fa6ee08edca0a6525508fcab50c6075c1eb01e2614",
+  "input_sha256": {
+    "dane/konfiguracje/p19a_normalne_polaczenia.json": "1aab4b8e55c6cce5f63555327323ecc2ebb591f2d3fdc60e0c0ca35ccfeee363",
+    "dane/materialy/kleje_P19_mechanika_v1.json": "1b494d4a56afacdb74debfc76b1977d13147a5566fbdd31bb586e201f4a8c8f4",
+    "dane/materialy/mdf_i_kleje_P18_P19.json": "9983ac3e82ef2b0f0470763fba45e5c908b4ac50041cac34f7405c72a340f7d5",
+    "skrypty/analiza_polaczen_normalnych_P19A.py": "7da3a40e8940bd65495419f4810ee38930653fbb6b9dcf7da328d7fee7d739b5",
+    "skrypty/model_normalnego_polaczenia_P19.py": "9f13edc114564447c55ca332d72da5ec845a7d179038bddf3fee409e11f26fad",
+    "skrypty/model_plyty_MITC_P18.py": "1e98a4553f5697344821a83d7d6afe823c2a801350f14dbdeb6d8ce681690775",
+    "skrypty/model_gazu.py": "ca8f63066f23eac9eb00610b428c173515f3088395501deaec740ea05a2c5115",
+    "brief_system_audio_DIY_v0.6.md": "3bd9f8d43a92b96256073e66cd0f4f105336e969a37c29fc42f17cda9d66736f"
+  },
+  "run_sha256": "c6468c952e8279866230d3304d28adb63dd5cf8cd11da98e81164250f8b716c9"
+}

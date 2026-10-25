@@ -1,0 +1,42 @@
+{
+  "status": "RELAXED_MODULUS_REQUIREMENTS_NOT_CREEP_LIFETIME_PREDICTION",
+  "targets": [
+    {
+      "boundary": "SSSS",
+      "gap_m": 0.0002,
+      "declared_compliance_increase_reference": 0.1,
+      "required_relaxed_E_pa": 523900.47476516967,
+      "compliance_ratio": 1.0999999999999959,
+      "linear_strain_demand_at1kpa": 0.029774219539060967,
+      "scope": "10%TO_KRYTERIUM_KONTROLNE_NIE_ZATWIERDZONE_WYMAGANIE_BRIEFU"
+    },
+    {
+      "boundary": "SSSS",
+      "gap_m": 0.0005,
+      "declared_compliance_increase_reference": 0.1,
+      "required_relaxed_E_pa": 1308974.9836734158,
+      "compliance_ratio": 1.0999999999998302,
+      "linear_strain_demand_at1kpa": 0.011915814257842137,
+      "scope": "10%TO_KRYTERIUM_KONTROLNE_NIE_ZATWIERDZONE_WYMAGANIE_BRIEFU"
+    },
+    {
+      "boundary": "CCCC",
+      "gap_m": 0.0002,
+      "declared_compliance_increase_reference": 0.1,
+      "required_relaxed_E_pa": 412155.18724808155,
+      "compliance_ratio": 1.1000000000016839,
+      "linear_strain_demand_at1kpa": 0.021011964938662815,
+      "scope": "10%TO_KRYTERIUM_KONTROLNE_NIE_ZATWIERDZONE_WYMAGANIE_BRIEFU"
+    },
+    {
+      "boundary": "CCCC",
+      "gap_m": 0.0005,
+      "declared_compliance_increase_reference": 0.1,
+      "required_relaxed_E_pa": 1029824.0650965672,
+      "compliance_ratio": 1.0999999999999877,
+      "linear_strain_demand_at1kpa": 0.00840846991251164,
+      "scope": "10%TO_KRYTERIUM_KONTROLNE_NIE_ZATWIERDZONE_WYMAGANIE_BRIEFU"
+    }
+  ],
+  "scope": "Wszystkie pozostałe elementy liniowo sprężyste. MDFteż może pełzać,a model nie identyfikuje tego procesu. Zbytduży nominalnystrain sygnalizuje wyjściepoza model liniowej spoiny."
+}

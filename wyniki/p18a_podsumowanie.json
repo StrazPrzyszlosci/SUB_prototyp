@@ -1,0 +1,19 @@
+{
+  "status": "P18A_PLYTY_I_SCIAGI_NIE_PELNA_SKRZYNIA",
+  "run_sha256": "9c48ac00bedf6a1ba6c7f648507e888653e7d8f664a7ddb1eb3ae88e2c8c2ce8",
+  "input_sha256": {
+    "dane/konfiguracje/p18a_plyty_i_sciagi.json": "e681b4f69dadb286d68b3c6a29304fc2191a880349d50f1e1ada6dc6181907a0",
+    "dane/materialy/mdf_i_kleje_P18_P19.json": "9983ac3e82ef2b0f0470763fba45e5c908b4ac50041cac34f7405c72a340f7d5",
+    "skrypty/analiza_plyt_i_sciagow_P18A.py": "177913071a4140216afaf752ca1cef521a65c71c15295966cf24eedb6ab9fc22",
+    "skrypty/model_plyty_MITC_P18.py": "1e98a4553f5697344821a83d7d6afe823c2a801350f14dbdeb6d8ce681690775",
+    "brief_system_audio_DIY_v0.6.md": "3bd9f8d43a92b96256073e66cd0f4f105336e969a37c29fc42f17cda9d66736f",
+    "dane/konfiguracje/badania_wstepne.json": "69062e2c589d93c90c67677d831362cf5edc55856789867b5b37003b511b4466"
+  },
+  "cases": 172,
+  "dynamic_rows": 1996,
+  "checkpoint_folder": "wyniki/p18a_checkpoint/9c48ac00bedf6a1b",
+  "max_dynamic_power_residual": 7.1539688887636e-13,
+  "dynamic_cases_outside_declared_small_deflection_reference": 1,
+  "scope": "Płyty prostokątne bez otworu. Brzegi majązadane w/rotacje,nie są globalnymi ograniczeniami dowolnej realnej skrzyni. Ściąg:pręt osiowy z podatnością oraz masą,podkładki80x80mmrozprowadzają siłę i dodają masę;nie doliczono ich lokalnego usztywnienia. RodEproxy=referencyjneEbending,nie zmierzony modułosiowy.",
+  "gates": "Front z otworem,koszem,śrubami i uszczelką,pełna skrzynia i pole przestrzenne pozostają do wykonania. CCCC/SSSSto wzorce mocowania,nieważne bezwarunkowo jako granice rzeczywistych połączeń. Brak dowodu trwałości spoinyD3/D4."
+}

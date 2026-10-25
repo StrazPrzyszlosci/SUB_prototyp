@@ -1,0 +1,49 @@
+{
+  "access_date":"2026-10-25",
+  "status":"ORYGINALY_SPRAWDZONE_REFERENCJE_NIE_IDENTYFIKACJA_DOSTAWY",
+  "sources":[
+    {
+      "id":"SRC45","title":"Kronospan Luxembourg,Kronogen+UM,Declaration of Performance1607101012",
+      "url":"https://kronospan.com/en_FR/ajax/express_services/download?args%5B0%5D=express-services&args%5B1%5D=downloads&args%5B2%5D=France&args%5B3%5D=certificates-and-datasheets&args%5B4%5D=en&args%5B5%5D=1607101012-do-p-mdf-k-um-en.pdf&show=1",
+      "document_date":"2016-08-01","private_original":".firecrawl/p18_Kronospan_MDF_original.pdf",
+      "sha256":"329d3006f5a5fc462b3a3798bc14301c242741f01614d0d5b02d7f68f15627fd",
+      "original_pages_visually_inspected":[1,2],
+      "accepted":"S.2:zakres>12–19mm:E2200MPa,MOR20MPa,IB0.55MPa;>19–30mm:E2100MPa,MOR18MPa,IB0.55MPa;>9–12mm:E2500MPa,MOR22MPa,IB0.60MPa.",
+      "density_scope":"730kg/m3jest średniąpodaną przy przenikalności/cieple na s.1. Nie jest tolerancją masy naszejpartii.",
+      "gates":"Referencja konkretnego produktu2016do suchych warunków,nie pomiar MDFwykonawcy. Brak dynamicznegoE,G,nu,tłumienia,E_z,reologii iS-N. NPDprzepuszczalnościpowietrza nie oznacza zera."
+    },
+    {
+      "id":"SRC46","title":"Ko,Lee,Bathe,A new MITC4+ shell element,Computers&Structures182(2017)404–418",
+      "url":"https://web.mit.edu/kjb/www/Principal_Publications/A_new_MITC4+_shell_element.pdf",
+      "private_original":".firecrawl/p18_MITC_original.pdf","sha256":"e0ca84684dc05eb909abfbe196547ab618c3f1f83594399d0eb7756bd5f0aeb8",
+      "original_pages_visually_inspected":[2,3],
+      "accepted":"PrzeglądMITC4w sekcji2,równanie6iFig2:przyjęta interpolacja poprzecznegościnania z czterech punktówna krawędziach.",
+      "figure":{"file":".firecrawl/p18_MITC_p2.png","type":"Schemat punktówwiążących ścinanie,bez danychpomiarowych","axes":"lokalne współrzędner,s∈[-1,1]","readout":"Pozycje i składowe zweryfikowano; nie digitalizowano krzywych."},
+      "implementation_scope":"Własny liniowy elementprostokątnej płyty3DOF/wez z tym wzorcemścinania. Nie implementacja pełnegoMITC4+,membran,shell3D ani wszystkich testówautora. Nie deklarujemy lektury całych15stron."
+    },
+    {
+      "id":"SRC47","title":"KLEIBERIT303.0,Technical Data Sheet",
+      "url":"https://pim.kleiberit.com/Datenblaetter/303-0-00/technical/en/dbe3030_KSE.pdf",
+      "version":"08:05:2026","private_original":".firecrawl/p19_Kleiberit3030_original.pdf",
+      "sha256":"b6a570999286a0a652ec66a73c83d55de408a2e9701bbf9e6616a4495fe40121",
+      "original_pages_visually_inspected":[1,2],
+      "accepted":"100–130g/m2surfacebonding;150–200g/m2solidwood;0.7–1N/mm2dla lameli/drewna klejonego;końcowa klasaD3/D4po7dniach.",
+      "gates":"Nie przeniesiono docisku lameli jako bezwarunkowego wymogu pełnego frontuMDF. D3nie określa modułu,naprężenia dopuszczalnego,MDFadhesji,peel,creep,S-N ani szczelności. BrakE/Gpozostaje jawną luką."
+    },
+    {
+      "id":"SRC48","title":"Henkel,LOCTITEEA9466,TDSMarch2025",
+      "url":"https://datasheets.tdx.henkel.com/LOCTITE-EA-9466-en_GL.pdf",
+      "private_original":".firecrawl/p19_Henkel9466_2025_original.pdf",
+      "sha256":"fbeb3878358447de8ba67f80a9b843ee96d03bf41e9bdacd3162e62cc8ab4920",
+      "original_pages_visually_inspected":[1,2],
+      "accepted":"Typowy modułrozciągania1718N/mm2,wolna folia1.2mm,7dni22C;32MPatensile,3%elongation,Tg62C. WoodFir11.3MPa lap-shear po5dniach22C nie jestMDF.",
+      "images":[
+        {"file":".firecrawl/p19_Henkel2025_p1.png","type":"Szybkośćutwardzania","axes":"czaslog,%pełnej lap-strengthna stali","conditions":"Stalpiaskowana,ISO4587,temperatury22/40/80–100C","readout":"Obejrzano jakościowo,nie odczytano tabelpunktów."},
+        {"file":".firecrawl/p19_Henkel2025_p2.png","type":"Hotstrength,heataging i środowiskowetabele","axes":"temperaturaC/%wytrzymałości;godziny/%początkowejwytrzymałości","conditions":"Próbki i warunki zTDS,nie MDFpołączenie prototypu","readout":"Nie przeniesiono krzywych do E(T),J(t) aniS-NMDF. Tygodnioweutwardzanie nie jest dowodemtrwałości zmęczeniowej."}
+      ],
+      "legacy_copy":{"url":"https://www.farnell.com/datasheets/2907892.pdf","private_file":".firecrawl/p19_Loctite9466_original.pdf","sha256":"04ac121fcc25485ff7b5b962d2ce7fdcab99a5f2a04cd05b53b16a4e165120e1","date":"September2014","scope":"Porównano i zachowano; do bieżących danych wybrano bezpośrednią rewizję2025,nie starą technologię procesu."},
+      "gates":"TypoweEfilmu użyto jako jawnego przybliżenia efektywnego normalnego modułuwarstwy. Skrępowaniepoprzeczne,nu iMDFinterfejs nie są zidentyfikowane. Gwyprowadzone z nu0.35jest założeniem,nie daną producenta. BrakSN/creepMDF."
+    }
+  ],
+  "copyright_scope":"PDFi rendery pozostają prywatne w ignorowanym.firecrawl. Publicznie są własne rachunki i wykresy,fakty,metadane oraz odnośniki."
+}

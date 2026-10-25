@@ -1,0 +1,132 @@
+{
+  "status": "INDEPENDENT_RITZ_AND_MITC_CONVERGENCE",
+  "Kirchhoff_ritz": [
+    {
+      "order": 2,
+      "first_mode_hz": 10.831983802668766,
+      "center_m_pa": 0.0005094481898454896,
+      "compliance_m3_pa": 4.266141783907905e-05
+    },
+    {
+      "order": 4,
+      "first_mode_hz": 10.82014572606708,
+      "center_m_pa": 0.00047760499660371976,
+      "compliance_m3_pa": 4.447193011417302e-05
+    },
+    {
+      "order": 6,
+      "first_mode_hz": 10.818802219104938,
+      "center_m_pa": 0.000478608027199228,
+      "compliance_m3_pa": 4.447805384723058e-05
+    },
+    {
+      "order": 8,
+      "first_mode_hz": 10.818677693719055,
+      "center_m_pa": 0.00047861950062979473,
+      "compliance_m3_pa": 4.447836597196653e-05
+    }
+  ],
+  "thin_MITC_convergence": [
+    {
+      "mesh": 8,
+      "frequency_hz": 11.290562705334347,
+      "compliance_m3_pa": 4.169714740280192e-05,
+      "relative_frequency_difference_from_Kirchhoff": 0.04361762361117871,
+      "relative_compliance_difference_from_Kirchhoff": -0.062529692995411
+    },
+    {
+      "mesh": 16,
+      "frequency_hz": 10.932255877318726,
+      "compliance_m3_pa": 4.377945027599666e-05,
+      "relative_frequency_difference_from_Kirchhoff": 0.010498342479100753,
+      "relative_compliance_difference_from_Kirchhoff": -0.015713609992111133
+    },
+    {
+      "mesh": 24,
+      "frequency_hz": 10.868567692172833,
+      "compliance_m3_pa": 4.416993629210508e-05,
+      "relative_frequency_difference_from_Kirchhoff": 0.00461146915234778,
+      "relative_compliance_difference_from_Kirchhoff": -0.0069343752433674855
+    },
+    {
+      "mesh": 32,
+      "frequency_hz": 10.846463702594155,
+      "compliance_m3_pa": 4.4306967623913096e-05,
+      "relative_frequency_difference_from_Kirchhoff": 0.0025683368764402026,
+      "relative_compliance_difference_from_Kirchhoff": -0.0038535216910050574
+    }
+  ],
+  "edge_stress_convergence": [
+    {
+      "boundary": "SSSS",
+      "mesh": 8,
+      "maximum_edge_moment_per_pa_n": 0.0034456412838613296,
+      "maximum_principal_stress_per_pa": 196.0819522555488,
+      "compliance_m3_pa": 1.8563363619326184e-08
+    },
+    {
+      "boundary": "SSSS",
+      "mesh": 16,
+      "maximum_edge_moment_per_pa_n": 0.0018828783073723127,
+      "maximum_principal_stress_per_pa": 196.63938332735088,
+      "compliance_m3_pa": 1.9110854431971945e-08
+    },
+    {
+      "boundary": "SSSS",
+      "mesh": 24,
+      "maximum_edge_moment_per_pa_n": 0.001295269123299178,
+      "maximum_principal_stress_per_pa": 196.74402310336455,
+      "compliance_m3_pa": 1.9213133057720528e-08
+    },
+    {
+      "boundary": "SSSS",
+      "mesh": 32,
+      "maximum_edge_moment_per_pa_n": 0.0009871114064362863,
+      "maximum_principal_stress_per_pa": 196.7806159100061,
+      "compliance_m3_pa": 1.924899670195449e-08
+    },
+    {
+      "boundary": "SSSS",
+      "mesh": 40,
+      "maximum_edge_moment_per_pa_n": 0.0007973753422484131,
+      "maximum_principal_stress_per_pa": 196.7975464649375,
+      "compliance_m3_pa": 1.926560807577731e-08
+    },
+    {
+      "boundary": "CCCC",
+      "mesh": 8,
+      "maximum_edge_moment_per_pa_n": 0.009937719940238331,
+      "maximum_principal_stress_per_pa": 123.19487529221072,
+      "compliance_m3_pa": 4.129038573512999e-09
+    },
+    {
+      "boundary": "CCCC",
+      "mesh": 16,
+      "maximum_edge_moment_per_pa_n": 0.012286115686203934,
+      "maximum_principal_stress_per_pa": 152.307219250462,
+      "compliance_m3_pa": 4.329887178004815e-09
+    },
+    {
+      "boundary": "CCCC",
+      "mesh": 24,
+      "maximum_edge_moment_per_pa_n": 0.01319741503290356,
+      "maximum_principal_stress_per_pa": 163.60431858971356,
+      "compliance_m3_pa": 4.367853220672439e-09
+    },
+    {
+      "boundary": "CCCC",
+      "mesh": 32,
+      "maximum_edge_moment_per_pa_n": 0.013680085362509786,
+      "maximum_principal_stress_per_pa": 169.58783507243535,
+      "compliance_m3_pa": 4.381243284755011e-09
+    },
+    {
+      "boundary": "CCCC",
+      "mesh": 40,
+      "maximum_edge_moment_per_pa_n": 0.013978565811392474,
+      "maximum_principal_stress_per_pa": 173.28800592635298,
+      "compliance_m3_pa": 4.387466267525202e-09
+    }
+  ],
+  "scope": "RitzKirchhoff i MITCMindlin są różnymi teoriami dla skończonej grubości. Porównanie wykonano w granicy cienkiej płyty. Brzegowy momentSSSS powinien dążyć dozera; jego reszta nie jest rzeczywistym odrywaniem spoiny."
+}

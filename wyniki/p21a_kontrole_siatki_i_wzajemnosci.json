@@ -1,0 +1,78 @@
+{
+  "status": "P21A_MESH_SELF_TERM_AND_RECIPROCITY_CONTROLS",
+  "mesh_rows": [
+    {
+      "nx": 12,
+      "ny": 18,
+      "f_hz": 20.0,
+      "compliance_real": 1.9517948367140736e-08,
+      "compliance_imag": -1.877766159137927e-10
+    },
+    {
+      "nx": 12,
+      "ny": 18,
+      "f_hz": 80.0,
+      "compliance_real": 3.157174417865023e-08,
+      "compliance_imag": -2.051732470636913e-09
+    },
+    {
+      "nx": 16,
+      "ny": 24,
+      "f_hz": 20.0,
+      "compliance_real": 1.9637670168273843e-08,
+      "compliance_imag": -1.8942183771680626e-10
+    },
+    {
+      "nx": 16,
+      "ny": 24,
+      "f_hz": 80.0,
+      "compliance_real": 3.187351361511582e-08,
+      "compliance_imag": -2.084723473397122e-09
+    },
+    {
+      "nx": 20,
+      "ny": 28,
+      "f_hz": 20.0,
+      "compliance_real": 1.969023791168574e-08,
+      "compliance_imag": -1.9014975854726521e-10
+    },
+    {
+      "nx": 20,
+      "ny": 28,
+      "f_hz": 80.0,
+      "compliance_real": 3.200730275410959e-08,
+      "compliance_imag": -2.099470507120531e-09
+    }
+  ],
+  "last_mesh_changes": [
+    {
+      "f_hz": 20.0,
+      "last_relative_change": 0.002677014992685698
+    },
+    {
+      "f_hz": 80.0,
+      "last_relative_change": 0.004213920510619317
+    }
+  ],
+  "self_term_sensitivity": [
+    {
+      "f_hz": 20.0,
+      "relative_compliance_change": 2.2298862705768277e-06
+    },
+    {
+      "f_hz": 80.0,
+      "relative_compliance_change": 5.8501758149269284e-05
+    }
+  ],
+  "reciprocity": [
+    {
+      "f_hz": 20.0,
+      "relative_error": 2.878206424236716e-14
+    },
+    {
+      "f_hz": 80.0,
+      "relative_error": 8.260473405882682e-14
+    }
+  ],
+  "scope": "20/80Hz i prostokątSSSS. Nie certyfikat całego widma. Czułość dwóch aproksymacji nie zastępuje niezależnej kontroli masyDuffy z głównego badania."
+}

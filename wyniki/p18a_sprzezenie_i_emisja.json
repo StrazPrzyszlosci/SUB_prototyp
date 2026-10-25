@@ -1,0 +1,9 @@
+{
+  "status": "P18A_P21_LUMPED_PAIR_AND_SEPARATE_EXTERIOR_PROJECTION",
+  "coupled_rows": 54,
+  "radiation_rows": 27,
+  "maximum_coupled_power_residual": 6.957371591853459e-16,
+  "max_power_methods_relative_difference": 3.9272114284613464e-15,
+  "rows_exceeding_10percent_dry_power_reference": 13,
+  "scope": "10%to bramka adekwatności projekcji,nie próg słyszalności ani przyjęte wymaganie. Jeśliudział promieniowania znaczący,trzeba dodać jego reakcję przed ilościową prognozą całej obudowy."
+}

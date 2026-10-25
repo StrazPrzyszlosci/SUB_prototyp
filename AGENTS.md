@@ -400,6 +400,39 @@ Postęp końca sesji2026-10-23:
   RTVpo lewej/kanapa po prawej. Nie wracać bez nowej hipotezy do
   zakończonych3312dwutonów lub2304scenariuszycieplnych.
 
+- P18A wykonano:172wariantyMITC/1996punktówdynamiki,raport029.
+  NavierMindlina i niezależnyRitzKirchhoffa,blokada zwykłegoQ4,
+  3mody sztywne,energia,siły i zbieżność. K2/22mm/SSSS:126.78Hz
+  bezściągu,255.51zjednym i377.91zdwoma; postacie zmieniają kolejność.
+  Antysymetryczny ruch niewydłużający pręta nie dostaje sztywności,
+  ale masa może obniżyćf. Nie nazywaćCCCC/SSSSgranicami każdejskrzyni.
+- P19A wykonano:656normalnychpodmodeli,podatne nakładki iMDFprzezgrubość,
+  57punktówdynamiki,obszary bezpołączenia,mimośrody,ścinanielaminatu,
+  wymaganiaG iErelaksacji,270szczelinStokesa,raport030.
+  F/A nie jest szczytem; maks/średnia1.05–10.13wmodelu. PoleWinklera
+  nie jest rzeczywistym singularpeak3D. Brak S–N/J(t) i adhezji partii
+  nie został zastąpiony D3/D4,IB lub danymistali. Ea9466folii1718MPa
+  jest referencjązTDSMar2025,nie gwarancjąmodułu/zdatnościMDF.
+- Szczelina:wyprowadzono dokładnyZStokesa i inertancjęniskof6/5slug;
+  114/270przypadkówpozakonserwatywnądziedziną. NieinterpretowaćDC319m/s
+  jako realnego przepływu. Grubośćciągłejspoiny/odkształcenie nie jest
+  pustąszczeliną. WyznaczoneprogiErelaxed nie są czasowym prawempełzania.
+- P21A wykonano:72sprzężonepunktyRayleigh/MITC/gaz0D,raport031.
+  W13/27wcześniejszych projekcjiWp>10%założonegoWdry;zatem dodano
+  reakcjępowietrza. Sprawdzono moc,wzajemność i masęprostokątaDuffy,
+  błądmasy0.714%na16x16,zmianęC20/80Hz0.268/0.422%. To odgroda
+  i paraścian,nie pełne3Dkomory/podparcia/otworu/pokoju.
+- ŹródłaSRC45–48:obejrzano oryginałyDoP2016,MDFCNCniezidentyfikowany,
+  przeglądMITC4wKo2017,KleiberitTDS2026,HenkelTDS2025. Krzywe/stal
+  nie przeniesione naMDFfatigue. Oryginałyprywatne.firecrawl;publiczne
+  własnedane,hashe,fakty iwykresy43–48. Archiwa172/656sprawdzająSHA;
+  odtwarzanie cache nie jest nowym niezależnymMES.
+- **Jeden najbliższy krok:P18B — rzeczywisty front z otworem,koszem
+  i mocowaniem**, następnie pełna rama/złącza,regulacjaP20 i pole3D P21.
+  Uwzględniać wymiennyfront z uszczelką,siły kosza bez podwójnegoMms/Mmd,
+  dwieobudowy w4.6×3.7×2.5m iukładRTVlewo/kanapaprawo. Nie zamykać
+  końcowegowyboru/PDF przed programemP22–P30 i otwartymi bramkami.
+
 ## Decyzje otwarte
 
 - Referencje subwooferów ADAM Sub12/Sub15: zatwierdzone; progi odbiorowe otwarte.

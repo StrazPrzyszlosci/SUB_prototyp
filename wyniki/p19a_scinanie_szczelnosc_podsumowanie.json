@@ -1,0 +1,22 @@
+{
+  "status": "P19A_SHEAR_LEAK_AND_PROCESS_REQUIREMENTS_NOT_LIFETIME_QUALIFICATION",
+  "symbolic_identities": [
+    "AxialSlipEnergyStationary=0",
+    "CompositeD=0",
+    "SlitStokesFlow=0",
+    "LowFrequencyInertance6over5"
+  ],
+  "composite_rows": 108,
+  "shear_cycle_rows": 16,
+  "open_slit_rows": 270,
+  "flow_rows_outside_declared_domain": 114,
+  "full_to_unbonded_two_layer_static_stiffness_factor": 4.0,
+  "full_to_unbonded_two_layer_frequency_factor": 2.0,
+  "full_unbonded_factor_scope": "Granica zerowej grubości spoiny dwóch jednakowych18mmwarstw,nie każda geometria frontu.",
+  "PVAc303_wet_layer_m_from100_130g_m2": [
+    9.090909090909092e-05,
+    0.00011818181818181818
+  ],
+  "maximum_open_slit_Poiseuille_speed_m_s": 319.72580315121763,
+  "scope": "Hipotezy modułuretencji nie są zmierzonym J(t). WytrzymałościMDFfatigue/pełzania nie uzupełniono domysłem. Otwartej szczeliny nie utożsamiać z rozciągniętą,ale ciągłą spoiną."
+}

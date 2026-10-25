@@ -1,0 +1,208 @@
+{
+  "status": "PLATE_AND_TIE_NUMERICAL_CONTROLS_NOT_MDF_BATCH_VALIDATION",
+  "element_rigid_modes": 3,
+  "rigid_residuals": [
+    3.895010835727588e-17,
+    1.757990073357138e-18,
+    3.4856573734232886e-18
+  ],
+  "navier_reference": {
+    "center_static_m_per_pa": 1.5502343440811404e-07,
+    "volume_compliance_m3_pa": 1.929515760807279e-08,
+    "first_mode_hz": 126.33238192278714
+  },
+  "mesh_convergence": [
+    {
+      "mesh_n": 4,
+      "first_mode_hz": 135.53227901441332,
+      "center_m_pa": 1.517994863049889e-07,
+      "compliance_m3_pa": 1.6453743971248304e-08,
+      "frequency_relative_error": 0.07282295284552665,
+      "center_relative_error": 0.02079652096106832,
+      "compliance_relative_error": 0.14726045231346963,
+      "force_relative_error": 2.1495486550147394e-14,
+      "energy_relative_error": 9.049156867866887e-15
+    },
+    {
+      "mesh_n": 8,
+      "first_mode_hz": 128.54159875863337,
+      "center_m_pa": 1.542334611734614e-07,
+      "compliance_m3_pa": 1.8563363619326184e-08,
+      "frequency_relative_error": 0.01748733620170695,
+      "center_relative_error": 0.005095831076564639,
+      "compliance_relative_error": 0.03792630273413433,
+      "force_relative_error": 8.503916170277609e-14,
+      "energy_relative_error": 1.9784571347359917e-14
+    },
+    {
+      "mesh_n": 12,
+      "first_mode_hz": 127.30709244732049,
+      "center_m_pa": 1.5467308481954327e-07,
+      "compliance_m3_pa": 1.8968133468322823e-08,
+      "frequency_relative_error": 0.007715444842392616,
+      "center_relative_error": 0.002259978240763516,
+      "compliance_relative_error": 0.016948508345593583,
+      "force_relative_error": 4.172764187322472e-13,
+      "energy_relative_error": 6.75066732512457e-14
+    },
+    {
+      "mesh_n": 20,
+      "first_mode_hz": 126.68197000403886,
+      "center_m_pa": 1.5489751852378682e-07,
+      "compliance_m3_pa": 1.9177099083735002e-08,
+      "frequency_relative_error": 0.0027672088179686583,
+      "center_relative_error": 0.0008122377420418658,
+      "compliance_relative_error": 0.006118557139351499,
+      "force_relative_error": 4.1388239454011866e-13,
+      "energy_relative_error": 3.1401385752308474e-14
+    },
+    {
+      "mesh_n": 28,
+      "first_mode_hz": 126.51056013071118,
+      "center_m_pa": 1.5495922304069085e-07,
+      "compliance_m3_pa": 1.923487717597264e-08,
+      "frequency_relative_error": 0.0014103922146655457,
+      "center_relative_error": 0.00041420426317062553,
+      "compliance_relative_error": 0.0031241222966185145,
+      "force_relative_error": 7.793056658926243e-13,
+      "energy_relative_error": 6.51943756727929e-14
+    }
+  ],
+  "shear_locking": [
+    {
+      "thickness_m": 0.04,
+      "MITC_compliance_ratio": 0.9764648991200319,
+      "Q4_FULL_compliance_ratio": 0.8008855841522383
+    },
+    {
+      "thickness_m": 0.02,
+      "MITC_compliance_ratio": 0.9762193718183898,
+      "Q4_FULL_compliance_ratio": 0.5135400158186456
+    },
+    {
+      "thickness_m": 0.005,
+      "MITC_compliance_ratio": 0.9761397451354386,
+      "Q4_FULL_compliance_ratio": 0.06284438744210637
+    },
+    {
+      "thickness_m": 0.001,
+      "MITC_compliance_ratio": 0.9761345998136257,
+      "Q4_FULL_compliance_ratio": 0.0026780481647523152
+    }
+  ],
+  "rotational_edge_compliance_sequence_m3_pa": [
+    1.8968133468322823e-08,
+    1.5279878872752013e-08,
+    7.663382530456901e-09,
+    4.706547036689061e-09,
+    4.2816605211680706e-09,
+    4.277233825980533e-09
+  ],
+  "pair_controls": [
+    {
+      "stiffness_n_m": 0.0,
+      "Sherman_Morrison_relative_error": 2.2171763759892178e-13,
+      "tie_force_per_pa_n": 0.0,
+      "analytic_tie_force_per_pa_n": 0.0
+    },
+    {
+      "stiffness_n_m": 1000.0,
+      "Sherman_Morrison_relative_error": 1.7320831719563609e-13,
+      "tie_force_per_pa_n": 0.00030174244422269376,
+      "analytic_tie_force_per_pa_n": 0.0003017424442226938
+    },
+    {
+      "stiffness_n_m": 100000.0,
+      "Sherman_Morrison_relative_error": 1.8246182938921143e-13,
+      "tie_force_per_pa_n": 0.023573401934892574,
+      "analytic_tie_force_per_pa_n": 0.02357340193489201
+    },
+    {
+      "stiffness_n_m": 10000000.0,
+      "Sherman_Morrison_relative_error": 2.0294585158131522e-13,
+      "tie_force_per_pa_n": 0.10304974135000795,
+      "analytic_tie_force_per_pa_n": 0.10304974135000512
+    },
+    {
+      "stiffness_n_m": 10000000000.0,
+      "Sherman_Morrison_relative_error": 1.9538178149744337e-13,
+      "tie_force_per_pa_n": 0.10667905972409746,
+      "analytic_tie_force_per_pa_n": 0.1066790597243298
+    }
+  ],
+  "bare_modes_hz": [
+    126.87925837140132,
+    257.2216008272425,
+    378.0023480077632,
+    479.11869760309435,
+    504.69585679140755,
+    720.3258960920743
+  ],
+  "antisymmetric_modes_hz": [
+    117.33427137916713,
+    257.22160082725077,
+    378.0023480077468,
+    448.60179235498396,
+    504.69585679140744,
+    720.3258960920732
+  ],
+  "dynamic_power_controls": [
+    {
+      "f_hz": 20.0,
+      "wall_volume_compliance_m3_pa_real": 1.9590830179341385e-08,
+      "wall_volume_compliance_m3_pa_imag": -1.8836277390284365e-10,
+      "maximum_node_peak_per_PaRMS_m": 2.2468090393933565e-07,
+      "principal_stress_peak_bound_per_PaRMS": 285.7949473636375,
+      "edge_moment_peak_per_PaRMS_n": 0.0027162061015489664,
+      "input_power_per_PaRMS_squared_w": 2.3670364268118753e-08,
+      "viscous_power_per_PaRMS_squared_w": 2.3670364268118763e-08,
+      "relative_power_residual": 4.1935000400503903e-16
+    },
+    {
+      "f_hz": 80.0,
+      "wall_volume_compliance_m3_pa_real": 3.1462792914105054e-08,
+      "wall_volume_compliance_m3_pa_imag": -1.9638294045768065e-09,
+      "maximum_node_peak_per_PaRMS_m": 3.6682560649321294e-07,
+      "principal_stress_peak_bound_per_PaRMS": 477.3773742221977,
+      "edge_moment_peak_per_PaRMS_n": 0.004039631655053094,
+      "input_power_per_PaRMS_squared_w": 9.87128324851538e-07,
+      "viscous_power_per_PaRMS_squared_w": 9.871283248516705e-07,
+      "relative_power_residual": 1.3428918298462852e-13
+    },
+    {
+      "f_hz": 126.87925837140132,
+      "wall_volume_compliance_m3_pa_real": 2.2608796833828276e-10,
+      "wall_volume_compliance_m3_pa_imag": -3.149566972319353e-07,
+      "maximum_node_peak_per_PaRMS_m": 3.7570750762409934e-06,
+      "principal_stress_peak_bound_per_PaRMS": 5071.439704293924,
+      "edge_moment_peak_per_PaRMS_n": 0.034898686488376185,
+      "input_power_per_PaRMS_squared_w": 0.0002510853347534444,
+      "viscous_power_per_PaRMS_squared_w": 0.00025108533475345885,
+      "relative_power_residual": 5.764613459760389e-14
+    },
+    {
+      "f_hz": 200.0,
+      "wall_volume_compliance_m3_pa_real": -1.2428173100566564e-08,
+      "wall_volume_compliance_m3_pa_imag": -8.133631464372925e-10,
+      "maximum_node_peak_per_PaRMS_m": 1.5920226818504662e-07,
+      "principal_stress_peak_bound_per_PaRMS": 234.76308527748222,
+      "edge_moment_peak_per_PaRMS_n": 0.0008214885675167768,
+      "input_power_per_PaRMS_squared_w": 1.0221022742192309e-06,
+      "viscous_power_per_PaRMS_squared_w": 1.0221022742191583e-06,
+      "relative_power_residual": 7.106243382790592e-14
+    },
+    {
+      "f_hz": 500.0,
+      "wall_volume_compliance_m3_pa_real": -2.4046777588211365e-09,
+      "wall_volume_compliance_m3_pa_imag": -7.499388298558331e-10,
+      "maximum_node_peak_per_PaRMS_m": 6.005709223892998e-08,
+      "principal_stress_peak_bound_per_PaRMS": 305.13709647866574,
+      "edge_moment_peak_per_PaRMS_n": 0.006232255523354403,
+      "input_power_per_PaRMS_squared_w": 2.356002318516811e-06,
+      "viscous_power_per_PaRMS_squared_w": 2.356002318517075e-06,
+      "relative_power_residual": 1.1217063644899635e-13
+    }
+  ],
+  "free_static_rejected": true,
+  "scope": "Prostokątne liniowe płyty,hardSSSS/CCCC/obrotowe sprężyny i skończona łata ściągu. Nie pełna skrzynia,otwórfrontu ani model pękania/pełzania kleju."
+}

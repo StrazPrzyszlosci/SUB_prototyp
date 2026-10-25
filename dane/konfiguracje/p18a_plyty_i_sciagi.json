@@ -1,0 +1,35 @@
+{
+  "status":"MODELE_KONTROLNE_PLYT_I_PARY_SCIAN_NIE_FINALNA_SKRZYNIA",
+  "geometries":[
+    {"id":"K1_side","a_m":0.4,"b_m":0.45,"tie_length_m":0.4,"source":"HistorycznaK1:wnętrze400x400x450mm,nie zoptymalizowana."},
+    {"id":"K2_side","a_m":0.46,"b_m":0.64,"tie_length_m":0.46,"source":"HistorycznaK2:wnętrze460x460x640mm,nie zoptymalizowana."},
+    {"id":"K3_side","a_m":0.55,"b_m":0.62,"tie_length_m":0.5,"source":"Nowa geometria kontrolna wnętrza500x550x620mm=170.5lbrutto,nie netto ani rekomendacjaCNC."}
+  ],
+  "thickness_mm":[18,22,25],
+  "materials":[
+    {"id":"REFERENCE","E_factor":1,"density_kg_m3":730,"nu":0.3},
+    {"id":"SOFT_STRESS","E_factor":0.65,"density_kg_m3":800,"nu":0.35},
+    {"id":"STIFF_STRESS","E_factor":1.5,"density_kg_m3":650,"nu":0.25}
+  ],
+  "boundaries":["SSSS","CCCC"],
+  "tie_counts":[0,1,2],
+  "tie_width_m":0.04,
+  "tie_thickness_m":0.022,
+  "pad_size_m":0.08,
+  "pad_thickness_m":0.018,
+  "mesh_short_n":16,
+  "frequency_base_hz":[5,1000],
+  "frequency_grid_points":61,
+  "dynamic_geometry":"K2_side",
+  "dynamic_thickness_mm":22,
+  "dynamic_zeta":[0.01,0.03,0.1],
+  "static_pressure_peak_pa":1000,
+  "dynamic_pressure_rms_pa":1000,
+  "rotational_edge_beta_controls":[0,1,10,100,10000],
+  "joint_stiffness_factors_to_rod":[0.1,1,10],
+  "linear_deflection_to_thickness_reference":0.2,
+  "workers":2,
+  "scope":"Płyty prostokątne bez otworu. Brzegi majązadane w/rotacje,nie są globalnymi ograniczeniami dowolnej realnej skrzyni. Ściąg:pręt osiowy z podatnością oraz masą,podkładki80x80mmrozprowadzają siłę i dodają masę;nie doliczono ich lokalnego usztywnienia. RodEproxy=referencyjneEbending,nie zmierzony modułosiowy.",
+  "load_scope":"Uniformp zadane osobno statycznie lub jako jeden sinus;1kPaRMS przy każdejf nie jest widmem realnego subwoofera. Nie sumować tych obciążeń. MasaMDF/nu/tłumienie/zakresyE są niepewne,profile nie są tolerancją producenta.",
+  "gates":"Front z otworem,koszem,śrubami i uszczelką,pełna skrzynia i pole przestrzenne pozostają do wykonania. CCCC/SSSSto wzorce mocowania,nieważne bezwarunkowo jako granice rzeczywistych połączeń. Brak dowodu trwałości spoinyD3/D4."
+}

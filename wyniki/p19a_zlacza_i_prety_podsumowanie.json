@@ -1,0 +1,7 @@
+{
+  "status": "P19A_JOINT_DEMANDS_AND_IDEAL_ROD_LIMITS",
+  "edge_rows": 216,
+  "rod_reference_rows": 236,
+  "fixture_rows_above_ideal_Euler_reference": 17,
+  "scope": "Przekroczenie odniesieniaEulera sygnalizuje brak kwalifikacji liniowego modelu przy zadanej sztucznej sile,nie potwierdzoną awarię realnego subwoofera. Średnie krawędziowe nie są dowodem maksymalnych naprężeń naroża."
+}

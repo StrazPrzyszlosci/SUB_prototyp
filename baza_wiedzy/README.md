@@ -30,6 +30,9 @@ a potwierdzonych ustaleń użytkownika w [rejestrze](../DECYZJE_I_PYTANIA.md).
 |17|[Topologia i identyfikowalność termiki](17_topologia_i_identyfikowalnosc_termiki.md)|Cauer/Foster, niejednoznaczność dodatkowego chłodzenia, podział strat i warunkowe granice|
 |18|[Sprzężenie termiczne i obwiednia](18_sprzezenie_termiczne_i_obwiednia.md)|Re(T),impedancja i grzanie, rozdzielenie skal czasu, pamięć cieplna i kontrola współczynników|
 |19|[Stały poziom i wspólne ograniczenia](19_staly_poziom_i_wspolne_ograniczenia.md)|CiągłeVb,prąd/napięcie/chłodzenie,SdX i aktywne ograniczenia|
+|20|[MES paneli i ściągów](20_MES_paneli_i_sciagow.md)|Blokada ścinania,postacie,skończone łaty,masa i weryfikacja|
+|21|[Mechanika spoin](21_mechanika_spoin_i_kwalifikacja.md)|PodatnośćMDF/kleju,lokalne odrywanie,ścinanie,S–N i szczelność|
+|22|[Reakcja powietrza na panele](22_reakcja_powietrza_na_panele.md)|Rayleigh,masa powietrza,nieujemna moc i sprzężony bilans|
 |Źródła|[Rejestr z datami](ZRODLA.md)|Co przeczytano, co tylko znaleziono i jakie są braki|
 
 ## Od wiedzy do wykonania

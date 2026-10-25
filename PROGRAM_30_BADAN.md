@@ -36,10 +36,10 @@ pakietu samym stworzeniem planu, testów ani listy bibliotek.
 | P15 | N8 — model cieplny w czasie | Wykonane rodziny P15A/P15B; parametry produktów otwarte | Raport025:4225sieciCauer/Foster i granice. Raport027:2304przebiegiRe(T),ruchu,strat i przyjętej konwekcji,4pełneODEaudio,1152porównania obwiedni. Brak identyfikacjiR/C, lokalnych gradientów i powietrza skrzyni |
 | P16 | Sprzężenia cieplne i elektromechaniczne | Częściowo — Re(T),ruch i chłodzenie | P15B sprzęga prąd,Re(T),ruch i straty; twierdzenie napięciowe dla stałego biernego tła. Nie wykonano fizycznej identyfikacjiBL(T),pełnych dużych sygnałów, gradientów i wszystkich sprzężeń termicznych |
 | P17 | Łączne granice użytecznego zakresu | Częściowo — wspólneV/I/X/chłodzenie | Raport028:5184zestawy,31104punkty,analityczne przedziałyVb>0,26246niezależnych brzegów i3tożsamościSymPy. Stały poziom wyjściowy i warunkoweRth. Nie zintegrowano jeszcze rzeczywistegoTHD,ciągłego pasma,muzyki,konstrukcji i pokoju |
-| P18 | Płyty MDF: drgania, naprężenia, promieniowanie | Do wykonania | Najpierw płyty analityczne/2D, bez rozpoczynania pracy nad narzędziamiCAD |
-| P19 | Usztywnienia, połączenia i klej | Do wykonania | Obowiązkowy dobór kleju: nośność spoiny iMDF, odrywanie, pełzanie, wilgotność, szczelina, zmęczenie |
+| P18 | Płyty MDF: drgania, naprężenia, promieniowanie | Częściowo — wykonane P18A | Raport029:172wariantyMITC,1996punktówdynamiki,Navier/Ritz,zbieżność i skończone ściągi. Front z otworem,koszem i pełna geometria nie są jeszcze wykonane; bez narzędziCAD |
+| P19 | Usztywnienia, połączenia i klej | Częściowo — wykonane P19A | Raport030:656normalnychpodmodeliMDF/klej/nakładka,57punktówdynamiki,ścinanielaminatu,progiErelaksacji,270szczelinStokesa i wymaganiaS–N. Nie zidentyfikowano trwałości,pełnychzłączy3D,wręg i frontu na uszczelce |
 | P20 | Regulacja objętości | Częściowo | Koncepcje i bilans brutto/netto; mechaniczna analiza porównawcza otwarta |
-| P21 | Wewnętrzne pole i sprzężenie paneli | Do wykonania | Mody komory, ciśnienia lokalne; sprzężenie gdy uproszczenie nie wystarcza |
+| P21 | Wewnętrzne pole i sprzężenie paneli | Częściowo — wykonane odniesienie P21A | Raport031:72punktysprzężeniaRayleigh/MITC i gazu0D,masaDuffy,moc i wzajemność. Przestrzennepole3Dkomory,różneściany,front i podparcie nadal otwarte |
 | P22 | Napęd, impedancja wyjściowa i clipping | Częściowo | Dotychczas idealne ograniczeniaV/I; dynamika i obciążenie rzeczywiste otwarte |
 | P23 | Cyfrowa korekcja, faza i opóźnienia | Częściowo |216wzorców analogowych; realizacja dyskretna i stabilność otwarte |
 | P24 | Dynamiczna ochrona | Do wykonania | Wychylenie, napięcie, prąd, cieplna pamięć i overshoot |
@@ -74,7 +74,9 @@ P11 wykonano dla jawnych geometrii kontrolnych i sprzężonego pokoju
 P12C ma wykonane rodziny z raportu021. P14B wykonano w zadanej dziedzinie
 (raport026), a P15A/P15B mają wykonane rodziny cieplne (raporty025/027).
 P17ma wykonaną syntezęV/I/X/chłodzenia i objętości (raport028).
-Najbliższy krok:mechanikaP18–P21 z doborem kleju,
+Wykonano podstawyP18A/P19A i odniesienieP21A (raporty029–031).
+Najbliższy krok:P18B — front z otworem,koszem i mocowaniem;
+potem pełne połączenia/regulacja i pole3D P19–P21,
 czasoweDSP/napędP22–P25, pokójP26–P28 i integracjaP29/P30.
 Poszukiwanie danych materiałowych i nieliniowych może toczyć się równolegle
 z obliczeniami niewymagającymi tych danych. Nie wykonywać zakupów.

@@ -1,0 +1,35 @@
+{
+  "status":"REFERENCJE_PRODUCENTOW_I_JAWNE_BRAKI_NIE_IDENTYFIKACJA_MATERIALU_WYKONAWCY",
+  "MDF_reference":{
+    "source_id":"SRC45",
+    "manufacturer":"Kronospan Luxembourg S.A.",
+    "product":"Kronogen+UM",
+    "document":"DoP1607101012,Sanem01/08/2016",
+    "conditions":"MDF do suchych warunków; dane referencyjne,nie zatwierdzenie materiału z ofertyCNC.",
+    "density_reference_kg_m3":730,
+    "density_scope":"Wartośćśrednia użyta w karcie dla właściwości cieplnych/przenikalności,nie tolerancja masy naszej partii.",
+    "thickness_classes":[
+      {"minimum_exclusive_mm":12,"maximum_inclusive_mm":19,"bending_modulus_pa":2200000000,"bending_strength_pa":20000000,"internal_bond_pa":550000},
+      {"minimum_exclusive_mm":19,"maximum_inclusive_mm":30,"bending_modulus_pa":2100000000,"bending_strength_pa":18000000,"internal_bond_pa":550000}
+    ],
+    "missing":["Poisson","moduły dynamiczne i ścinania","tłumienie","ortotropia/gradient gęstości","pełzanie","S-N","właściwości konkretnej partii"]
+  },
+  "PVAc_candidate":{
+    "source_id":"SRC47",
+    "product":"KLEIBERIT303.0,1K",
+    "version":"08:05:2026",
+    "density_wet_kg_m3":1100,
+    "water_class":"D3;D4z odpowiednim utwardzaczem,nie samo303.0",
+    "full_class_strength_after_days":7,
+    "surface_spread_g_m2":[100,130],
+    "solid_wood_spread_g_m2":[150,200],
+    "lamella_press_pressure_pa":[700000,1000000],
+    "pressure_scope":"Zakresdla lameli/drewna klejonego; nie przepisano automatycznie jako docisku całego frontuMDF.",
+    "missing":["E/Gutwardzonej spoiny","nośność połączeniaMDFedge/face","dopuszczalna szczelina","peel","pełzanie","S-N","szczelność po cyklach"]
+  },
+  "epoxy_candidate":{
+    "source_id":"SRC48",
+    "product":"LOCTITEEA9466",
+    "status":"OryginalnaTDSdo kontroli obrazu/rewizji; nie zaakceptowano jeszcze liczb z ekstrakcji jako wejścia produktu."
+  }
+}

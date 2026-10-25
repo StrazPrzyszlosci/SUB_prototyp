@@ -1,0 +1,33 @@
+{
+  "status": "P21A_COUPLED_REFERENCE_BAFFLE_AND_0D_CAVITY_NOT_REAL_BOX",
+  "rows": 72,
+  "added_mass_control": {
+    "reference_added_mass_kg": 0.09041754029571139,
+    "mesh_convergence": [
+      {
+        "mesh": 4,
+        "added_mass_kg": 0.08793568929896602,
+        "relative_error": 0.027448778064836254
+      },
+      {
+        "mesh": 8,
+        "added_mass_kg": 0.08914300757600857,
+        "relative_error": 0.014096078211533358
+      },
+      {
+        "mesh": 12,
+        "added_mass_kg": 0.08956041523745366,
+        "relative_error": 0.009479632551986028
+      },
+      {
+        "mesh": 16,
+        "added_mass_kg": 0.08977191456537077,
+        "relative_error": 0.007140492079624083
+      }
+    ]
+  },
+  "max_panel_power_residual": 5.724714963133143e-13,
+  "max_coupled_power_residual": 1.5781805935593607e-13,
+  "min_normalized_R_eigenvalue": -5.229651231783285e-16,
+  "scope": "Uwzględniono dodatnią radiacyjną rezystancję i przybliżoną reakcję masową z kontrolą siatki. Nie ma geometrii3D,kosza,otworów,pola przestrzennego komory i pokoju. Brak globalnego certyfikatu całego pasma/mocy."
+}

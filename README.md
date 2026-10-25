@@ -41,8 +41,14 @@ wymaganiaRth; nie prognozy temperatur konkretnych produktów.
 Nie są to zidentyfikowane temperatury24produktów.
 **P17:** [raport028 — synteza napięcia,prądu,objętości i chłodzenia](raporty/028_P17_synteza_napedu_objetosci_i_ciepla.md).
 5184zestawy i31104punkty wymaganej pracy; analityczne przedziały Vb>0,
-bez udawania progów klienta ani SPL w pokoju. Najbliższy krok:P18/P19 —
-panele,usztywnienia,połączenia i klej.
+bez udawania progów klienta ani SPL w pokoju. Następne wykonane podstawy
+mechaniki opisują poniższe raporty.
+**Wykonane podstawy mechaniki:** [raport029 —172warianty płyt i ściągów](raporty/029_P18A_plyty_sciagi_i_dynamika.md),
+[030 —656normalnych podmodeli spoiny,ścinanie i szczeliny](raporty/030_P19A_obliczenia_spoin_i_material_kleju.md),
+[031 —72sprzężone punkty reakcji powietrza](raporty/031_P21A_reakcja_powietrza_i_bilans.md).
+Nie są to pełna geometria frontu3D i kwalifikacja trwałości kleju.
+Najbliższy krok:P18B — front z otworem,koszem i mocowaniem;
+następnie kompletne połączenia,regulacja i pole rzeczywistej skrzyni.
 
 **Bieżący zakres: wyłącznie naukowe zagadnienia prototypu (U-010).**
 Najnowsze zlecenie: [program30badań](PROGRAM_30_BADAN.md), szeroka pula
@@ -112,6 +118,9 @@ Brak modelu THD, kompresji cieplnej i zidentyfikowanej odpowiedzi pokoju.
 26. [026 — wykonany zakres dwutonowy P14B](raporty/026_P14B_pelna_kampania_dwutonowa.md).
 27. [027 — P15B, sprzężenie grzania i napędu](raporty/027_P15B_sprzezenie_grzania_i_napedu.md).
 28. [028 — P17, wspólne ograniczenia i objętość](raporty/028_P17_synteza_napedu_objetosci_i_ciepla.md).
+29. [029 — P18A, panele i ściągi](raporty/029_P18A_plyty_sciagi_i_dynamika.md).
+30. [030 — P19A, obliczenia spoin i materiał kleju](raporty/030_P19A_obliczenia_spoin_i_material_kleju.md).
+31. [031 — P21A, reakcja powietrza i bilans](raporty/031_P21A_reakcja_powietrza_i_bilans.md).
 
 ## Odtworzenie obliczeń
 
@@ -137,6 +146,15 @@ Wykonany późniejszy zakresP14B/P15B ma osobny
 Pełna procedura obejmuje już te etapy; nie oznacza to zamknięcia pozostałych
 pakietów. ArchiwumP15B odtwarza zgodne checkpointy,nie nowe2304ODE.
 P17ma [osobny manifest wejść, wyników i dokumentacji](wyniki/manifest_P17.json).
+Podstawy mechaniki mają[osobny manifest](wyniki/manifest_mechaniki_P18_P19_P21.json)
+i odtwarzanie bez powtarzania dawnych kampanii:
+
+```bash
+python3 skrypty/odtworz_mechanike_P18_P19_P21.py
+```
+
+Przed analizą przywracane są zgodne,sprawdzaneSHAarchiwa172/656checkpointów.
+To odtworzenie artefaktów,nie nowy niezależny rachunek828wariantów.
 
 Skrypty ustalają katalog projektu na podstawie własnej ścieżki. Dla osobnego
 środowiska można utworzyć`.venv` i zainstalować`requirements.txt`. Nie trzeba
@@ -167,5 +185,5 @@ materiałów i bez włączania prywatnych kopiiPDF do repozytorium.
 Źródła z internetu: browser-harness oraz dopuszczony Firecrawl. Kosztorys,
 dostępność PL/UE i dobór handlowy pozostają odłożone. Przegląd opinii wszystkich
 24 kandydatów wykonano z jawnymi brakami; nie stanowi rankingu jakości.
-Najbliższy krok:P18/P19 — mechanika paneli,usztywnienia,połączenia i klej;
-następnie dalsza integracja z ochroną oraz niepewnością.
+Najbliższy krok:P18B — front z otworem,koszem i mocowaniem;
+potem pełne połączenia/regulacja,pole3D,ochrona i integracja niepewności.

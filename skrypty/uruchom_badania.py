@@ -159,6 +159,7 @@ def main():
              ROOT / 'PLAN_BADAN_NAUKOWYCH.md', ROOT / 'PROGRAM_30_BADAN.md', data_path, cfg_path,
              *sorted((ROOT / 'dane/przetworniki').glob('*.json')),
              *sorted((ROOT / 'dane/konfiguracje').glob('*.json')),
+             *sorted(p for p in (ROOT/'dane/materialy').glob('*.json') if p.is_file()),
              *sorted((ROOT / 'skrypty').glob('*.py')),
              *sorted(p for p in (ROOT / 'dane/zrodla').rglob('*') if p.is_file())]
     hashes = {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest() for p in files}

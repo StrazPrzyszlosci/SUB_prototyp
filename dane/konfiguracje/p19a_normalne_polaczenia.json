@@ -1,0 +1,27 @@
+{
+  "status":"NORMALNY_SUBMODEL_POLACZENIA_PLYTA_NAKLADKA_SCIAG_NIE_PELNE_ZLACZE_3D",
+  "panel_a_m":0.46,"panel_b_m":0.64,"panel_thickness_m":0.022,
+  "panel_E_pa":2100000000,"nu":0.3,"rho_kg_m3":730,
+  "panel_mesh":[16,24],"pad_mesh":8,
+  "boundaries":["SSSS","CCCC"],
+  "pad_size_m":[0.06,0.08,0.1,0.12],
+  "pad_thickness_m":[0.012,0.018,0.022],
+  "pad_E_lookup_pa":{"0.012":2500000000,"0.018":2200000000,"0.022":2100000000},
+  "glue_E_profiles":[
+    {"id":"GENERIC_10MPA","E_pa":10000000,"scope":"Umowna efektywna podatność,nie produkt ani prawopełzania."},
+    {"id":"GENERIC_100MPA","E_pa":100000000,"scope":"Umowna efektywna podatność,nie produkt ani prawopełzania."},
+    {"id":"EA9466_FILM_TYPICAL","E_pa":1718000000,"scope":"Typowy modułwolnej folii zTDSMar2025,nie gwarantowana sztywność spoinyMDF."}
+  ],
+  "glue_gap_m":[0.00005,0.0002,0.0005],
+  "Ez_to_bending_E":[0.05,0.15,0.4],
+  "eccentricity_controls_m":[0.005,0.01],
+  "defect_controls":["EDGE_5MM","CENTER_30PCT"],
+  "rod_E_pa":2100000000,"rod_area_m2":0.00088,"rod_length_m":0.46,
+  "static_pressure_peak_pa":1000,"IB_reference_pa":550000,
+  "stress_requirement_multiplier":3,
+  "dynamic_zeta":0.03,"dynamic_base_hz":[20,40,80,100,200,500],
+  "workers":2,
+  "scope":"Panele i nakładkiMindlinMITC,normalna podstawaWinklera z szeregowymi podatnościami kleju iMDF. Nakładka nie jest sztywna. Prętosiowy domyka paręidentycznych ścian poduniformp. Brak ortotropii3D,ścinania spoiny,spoiny rod-pad,kruchego pękania i wilgotnościowej/termicznej reologii.",
+  "strength_scope":"IB550kPato referencyjna tablicaMDF,nie dopuszczalna wytrzymałość tego połączenia. Mnożnik3to jawny scenariusz wymaganego marginesu,nie norma ani dowódtrwałości. Wymagania S-N/pełzania pozostają do identyfikacji.",
+  "defect_scope":"Zadane suche obszary bez połączenia,nie rozkład losowych wad i nie model nieszczelności. Tolerancji frezowania nie utożsamiać z równomierną szczeliną klejową."
+}

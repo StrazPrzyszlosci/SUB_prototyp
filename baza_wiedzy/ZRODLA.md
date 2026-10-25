@@ -139,6 +139,22 @@ Data dostępu2026-10-25. Brak identyfikacjiRth/Cth naszych24produktów.
 P15B: [pochodzenie, obrazy i konflikt liczbowy](../dane/zrodla/P15B_sprzezenie_i_konflikt_alpha.json).
 Data dostępu2026-10-25. Parametr0,004K^-1pozostaje założeniem scenariusza.
 
+- SRC45: [Kronospan Luxembourg — DoP1607101012,Kronogen+UM](https://kronospan.com/en_FR/ajax/express_services/download?args%5B0%5D=express-services&args%5B1%5D=downloads&args%5B2%5D=France&args%5B3%5D=certificates-and-datasheets&args%5B4%5D=en&args%5B5%5D=1607101012-do-p-mdf-k-um-en.pdf&show=1).
+  Obejrzano2oryginalne strony; E/MOR/IB zależne od grubości. Referencja2016,
+  nie identyfikacja materiału wykonawcy ani danych zmęczeniowych.
+- SRC46: [Ko,Lee,Bathe — A new MITC4+ shell element,2017](https://web.mit.edu/kjb/www/Principal_Publications/A_new_MITC4+_shell_element.pdf).
+  Oryginał stron2/3,sekcja2 iFig2. Użyto wzorca ścinaniaMITC4 w prostokątnej
+  płycie; nie implementowano całej powłoki lub membranMITC4+.
+- SRC47: [KLEIBERIT303.0 — TDS,wersja08:05:2026](https://pim.kleiberit.com/Datenblaetter/303-0-00/technical/en/dbe3030_KSE.pdf).
+  Oryginałs.2:proces,docisk lameli i utwardzanie. Brak modułów,J(t),S–N
+  oraz dopuszczalnej nośności połączeniaMDF.
+- SRC48: [Henkel — LOCTITEEA9466,TDSMarch2025](https://datasheets.tdx.henkel.com/LOCTITE-EA-9466-en_GL.pdf).
+  Obejrzano oryginalne strony1/2 i krzywe. Typowy modułfolii1718MPa
+  nie jest wytrzymałościąMDF; krzywych stali nie przeniesiono naMDF.
+
+P18A/P19A: [fakty,oryginały i granice](../dane/zrodla/P18_P19_materialy_i_metoda.json).
+Data dostępu2026-10-25. ReakcjaRayleigha rozwija źródłaP11 i własne kontrole.
+
 ## Pliki zachowane lokalnie
 
 - [Wejścia katalogowe i konflikty](../dane/przetworniki/kandydaci.json).

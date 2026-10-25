@@ -1,0 +1,5 @@
+area_name,area_m2,reference_press_pressure_pa,force_if_applied_n,scope
+front_control_500x500mm,0.25,700000.0,175000.0,TDS303dotyczyLamel/drewnaKlejonego_NIEprzepisCisnieniaNaFrontMDF
+front_control_500x500mm,0.25,1000000.0,250000.0,TDS303dotyczyLamel/drewnaKlejonego_NIEprzepisCisnieniaNaFrontMDF
+one_edge_500x22mm,0.011,700000.0,7700.0,TDS303dotyczyLamel/drewnaKlejonego_NIEprzepisCisnieniaNaFrontMDF
+one_edge_500x22mm,0.011,1000000.0,11000.0,TDS303dotyczyLamel/drewnaKlejonego_NIEprzepisCisnieniaNaFrontMDF

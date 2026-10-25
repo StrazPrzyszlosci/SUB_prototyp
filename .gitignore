@@ -6,3 +6,7 @@ __pycache__/
 .p14b_locks/
 .p15b_locks/
 wyniki/p15b_checkpoint/
+.p18_locks/
+wyniki/p18a_checkpoint/
+.p19_locks/
+wyniki/p19a_checkpoint/

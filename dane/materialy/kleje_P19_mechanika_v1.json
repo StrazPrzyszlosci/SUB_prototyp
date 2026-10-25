@@ -1,0 +1,18 @@
+{
+  "status":"DANE_TYPowe_I_JAWNE_BRAKI_NIE_DOPUSZCZALNE_NAPREZENIA_MDF",
+  "EA9466":{
+    "source_id":"SRC48","url":"https://datasheets.tdx.henkel.com/LOCTITE-EA-9466-en_GL.pdf",
+    "revision":"March2025","tensile_modulus_pa":1718000000,"tensile_strength_film_pa":32000000,
+    "conditions":"Film1.2mm,7dni22C,ISO527-3moduł;typowe dane producenta,nie dolna granica dla spoinyMDF.",
+    "wood_fir_lap_shear_pa":11300000,"wood_conditions":"5dni22C,tablicaISO4587;nie MDF i nie EN319/peel.",
+    "Tg_c":62,"mix_volume_resin_to_hardener":[2,1],"mix_weight":[100,50],
+    "missing":["MDFface/edgeadhesion","G/nuactualbond","pełzanieMDFjoint","S-N","pełneE(T)/E(RH)","szczelnośćpozmęczeniu"]
+  },
+  "PVAc3030":{
+    "source_id":"SRC47","revision":"08:05:2026","cured_E_pa":null,"cured_G_pa":null,
+    "scope":"D3i warunkitechnologiczne zweryfikowano; nie wyprowadzono mechanicznych modułów z klasyD3."
+  },
+  "normal_MDF_modulus_scope":"PrzyjmowaneE_z/E_bending0.05/0.15/0.4 są stresami,nie danymi producenta. ModelWinkleraprzyjmuje drogęod powierzchni do płaszczyzny środkowej obu płyt.",
+  "generic_E_profiles_pa":[10000000,100000000],
+  "generic_profile_scope":"Hipotezy efektywnej podatności/relaksacji,nie zidentyfikowana lepkość,pełzanieani wartości konkretnych klejów."
+}

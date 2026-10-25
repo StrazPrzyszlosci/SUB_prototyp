@@ -1,0 +1,16 @@
+{
+  "status": "IMMUTABLE_CHECKPOINT_ARCHIVE_NOT_INDEPENDENT_REPLICATION",
+  "stage": "p18a",
+  "cases": 172,
+  "archive_file": "p18a_checkpoint_9c48ac00bedf6a1b.zip",
+  "archive_sha256": "8fb7f76afb50aafa4d1959280db4cae4bb06fcb65c4af85c064332a601b9abfe",
+  "input_sha256": {
+    "dane/konfiguracje/p18a_plyty_i_sciagi.json": "e681b4f69dadb286d68b3c6a29304fc2191a880349d50f1e1ada6dc6181907a0",
+    "dane/materialy/mdf_i_kleje_P18_P19.json": "9983ac3e82ef2b0f0470763fba45e5c908b4ac50041cac34f7405c72a340f7d5",
+    "skrypty/analiza_plyt_i_sciagow_P18A.py": "177913071a4140216afaf752ca1cef521a65c71c15295966cf24eedb6ab9fc22",
+    "skrypty/model_plyty_MITC_P18.py": "1e98a4553f5697344821a83d7d6afe823c2a801350f14dbdeb6d8ce681690775",
+    "brief_system_audio_DIY_v0.6.md": "3bd9f8d43a92b96256073e66cd0f4f105336e969a37c29fc42f17cda9d66736f",
+    "dane/konfiguracje/badania_wstepne.json": "69062e2c589d93c90c67677d831362cf5edc55856789867b5b37003b511b4466"
+  },
+  "run_sha256": "9c48ac00bedf6a1ba6c7f648507e888653e7d8f664a7ddb1eb3ae88e2c8c2ce8"
+}
