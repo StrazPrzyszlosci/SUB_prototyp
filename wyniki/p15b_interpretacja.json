@@ -1,0 +1,22 @@
+{
+  "status": "FULL_CONDITIONAL_P15B_ANALYSIS_NOT_PRODUCT_TEMPERATURES",
+  "cases": 2304,
+  "distinct_cold_driver_frequency_cases": 96,
+  "distinct_positive_cold_Pcu_slopes": 58,
+  "envelope_pairs": 1152,
+  "max_equal_port_coil_spread_k": 2.5437429940211587e-12,
+  "pulse_minus_continuous_peak_range_k": [
+    -1.2021598759959602,
+    -0.000942496508163776
+  ],
+  "pulse_minus_continuous_residual_range_k": [
+    0.003236646053288387,
+    1.7333041512486922
+  ],
+  "max_sampled_coil_rise_in_assumed_family_k": 100.93012145382268,
+  "velocity_RSS_compression_range_db": [
+    -2.4671634704895413,
+    -0.0005243919885326972
+  ],
+  "scope": "Liczby dotyczą wskazanej rodziny, nie rozkładu populacji. RSSprędkości dla pary nie jest automatycznie SPL. Temperatury, alpha, R/C i chłodzenie są scenariuszami."
+}

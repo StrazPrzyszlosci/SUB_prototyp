@@ -1,0 +1,161 @@
+{
+  "status": "SYMBOLIC_AND_SELECTED_FULL_AUDIO_CONTROLS",
+  "identities": {
+    "identities": {
+      "Pcu_derivative": "0",
+      "heat_over_temperature_derivative": "0"
+    },
+    "negative_derivative": "-(R + a)*(2*A*R + 2*B)/((R - R0)*(b**2 + (R + a)**2)**2) + (-A*R0 - B)/((R - R0)**2*(b**2 + (R + a)**2))",
+    "domain": "R>R0>0,a>=0,b dowolne rzeczywiste,A>0,B>=0. Stałe chłodzenie. Tożsamość znaku nie jest twierdzeniem o pełnym nieliniowym DUT."
+  },
+  "derivative_controls": [
+    {
+      "frequencies_hz": [
+        20
+      ],
+      "rise_k": 0.0,
+      "Pcu_slope_absolute_error": 6.167840543858105e-12
+    },
+    {
+      "frequencies_hz": [
+        20
+      ],
+      "rise_k": 20.0,
+      "Pcu_slope_absolute_error": 2.9686635094616776e-12
+    },
+    {
+      "frequencies_hz": [
+        20
+      ],
+      "rise_k": 100.0,
+      "Pcu_slope_absolute_error": 1.6013041587159549e-12
+    },
+    {
+      "frequencies_hz": [
+        40
+      ],
+      "rise_k": 0.0,
+      "Pcu_slope_absolute_error": 2.2506302377323095e-12
+    },
+    {
+      "frequencies_hz": [
+        40
+      ],
+      "rise_k": 20.0,
+      "Pcu_slope_absolute_error": 1.4158188510471348e-12
+    },
+    {
+      "frequencies_hz": [
+        40
+      ],
+      "rise_k": 100.0,
+      "Pcu_slope_absolute_error": 6.756498138749123e-12
+    },
+    {
+      "frequencies_hz": [
+        80
+      ],
+      "rise_k": 0.0,
+      "Pcu_slope_absolute_error": 3.415112637128459e-11
+    },
+    {
+      "frequencies_hz": [
+        80
+      ],
+      "rise_k": 20.0,
+      "Pcu_slope_absolute_error": 5.4753368505799926e-11
+    },
+    {
+      "frequencies_hz": [
+        80
+      ],
+      "rise_k": 100.0,
+      "Pcu_slope_absolute_error": 4.996864033657289e-11
+    },
+    {
+      "frequencies_hz": [
+        20,
+        85
+      ],
+      "rise_k": 0.0,
+      "Pcu_slope_absolute_error": 5.428851812538937e-13
+    },
+    {
+      "frequencies_hz": [
+        20,
+        85
+      ],
+      "rise_k": 20.0,
+      "Pcu_slope_absolute_error": 3.965147654660939e-12
+    },
+    {
+      "frequencies_hz": [
+        20,
+        85
+      ],
+      "rise_k": 100.0,
+      "Pcu_slope_absolute_error": 4.767991557130813e-12
+    }
+  ],
+  "full_audio": [
+    {
+      "full_audio_nfev": 89912,
+      "seconds": 5.0,
+      "phase_rad": 0.0,
+      "mean_coil_rise_full_k": 6.072417988121092,
+      "mean_coil_rise_slow_k": 6.07443517956235,
+      "mean_coil_absolute_error_k": 0.002017191441257893,
+      "mean_coil_relative_error": 0.0003321891617480775,
+      "full_coil_ripple_in_last_period_k": 0.0061827669431488985,
+      "scope": "Liniowy ruch/gaz i pamięć; Re(T) i I²Re dynamiczne. Przygotowany zimny stan audio, kv=0. Nie identyfikuje parametrów produktu ani całej dziedziny uśredniania.",
+      "frequencies_hz": [
+        40
+      ]
+    },
+    {
+      "full_audio_nfev": 91329,
+      "seconds": 5.0,
+      "phase_rad": 1.5707963267948966,
+      "mean_coil_rise_full_k": 6.076012075066548,
+      "mean_coil_rise_slow_k": 6.07443517956235,
+      "mean_coil_absolute_error_k": 0.0015768955041979282,
+      "mean_coil_relative_error": 0.00025952803989130605,
+      "full_coil_ripple_in_last_period_k": 0.006183101695897086,
+      "scope": "Liniowy ruch/gaz i pamięć; Re(T) i I²Re dynamiczne. Przygotowany zimny stan audio, kv=0. Nie identyfikuje parametrów produktu ani całej dziedziny uśredniania.",
+      "frequencies_hz": [
+        40
+      ]
+    },
+    {
+      "full_audio_nfev": 136252,
+      "seconds": 5.0,
+      "phase_rad": 0.0,
+      "mean_coil_rise_full_k": 14.32144059978616,
+      "mean_coil_rise_slow_k": 14.322095855837885,
+      "mean_coil_absolute_error_k": 0.0006552560517256723,
+      "mean_coil_relative_error": 4.575350134367462e-05,
+      "full_coil_ripple_in_last_period_k": 0.03162584604728025,
+      "scope": "Liniowy ruch/gaz i pamięć; Re(T) i I²Re dynamiczne. Przygotowany zimny stan audio, kv=0. Nie identyfikuje parametrów produktu ani całej dziedziny uśredniania.",
+      "frequencies_hz": [
+        20,
+        85
+      ]
+    },
+    {
+      "full_audio_nfev": 136244,
+      "seconds": 5.0,
+      "phase_rad": 1.5707963267948966,
+      "mean_coil_rise_full_k": 14.314744160255323,
+      "mean_coil_rise_slow_k": 14.322095855837885,
+      "mean_coil_absolute_error_k": 0.007351695582562101,
+      "mean_coil_relative_error": 0.0005135750594113988,
+      "full_coil_ripple_in_last_period_k": 0.03166401650430828,
+      "scope": "Liniowy ruch/gaz i pamięć; Re(T) i I²Re dynamiczne. Przygotowany zimny stan audio, kv=0. Nie identyfikuje parametrów produktu ani całej dziedziny uśredniania.",
+      "frequencies_hz": [
+        20,
+        85
+      ]
+    }
+  ],
+  "scope": "12kontroli pochodnej i4wybrane pełne czasoweODE,40Hz/20+85Hz,dwie fazy. To kontrola zakresu przybliżenia, nie certyfikat wszystkich2304przebiegów."
+}

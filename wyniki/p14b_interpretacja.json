@@ -1,0 +1,23 @@
+{
+  "status": "P14B_STUDIES_REPORTED",
+  "max_preload_X_complex_relative_difference": 6.455260549539663e-10,
+  "max_preload_I_complex_relative_difference": 4.656774983556294e-10,
+  "nonresolved_scaling_fits": [
+    {
+      "candidate_id": "C06",
+      "profile": "GAS_ONLY",
+      "metric": "IM3_difference_pct",
+      "status": "BELOW_DECLARED_RESOLUTION_FLOOR",
+      "points": 1
+    }
+  ],
+  "IM2_slope_range": [
+    0.999833366175683,
+    1.0027024902332435
+  ],
+  "IM3_slope_range": [
+    1.998815063797485,
+    1.999678553808795
+  ],
+  "scope": "Wykonany zbiór rodzin, nie wszystkie możliwe fazy/atraktory, brak THD realnych produktów i dynamiki cieplnej wP14B."
+}

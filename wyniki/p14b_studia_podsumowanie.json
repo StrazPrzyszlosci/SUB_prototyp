@@ -1,0 +1,187 @@
+{
+  "status": "P14B_FULL_CONDITIONAL_FAMILY_NOT_DEVICE_THD",
+  "dynamic_run_sha256": "8a0088ea29d52b03b63966e59b24f5ce516fa7efc4d4286edb1a3330feb1b3c2",
+  "cases": 3312,
+  "raw_status_counts": {
+    "NOT_SETTLED": 23,
+    "PERIODIC_WITHIN_MODEL_TOLERANCE": 3289
+  },
+  "merged_status_counts": {
+    "PERIODIC_WITHIN_MODEL_TOLERANCE": 3312
+  },
+  "refinements": 23,
+  "phase_product_comparisons": 216,
+  "max_observed_phase_amplitude_change_db": 6.715370319269635e-06,
+  "max_observed_phase_difference_deg": 2.628851272099925e-05,
+  "preload_rows": 24,
+  "small_signal_fits": [
+    {
+      "candidate_id": "C02",
+      "profile": "GAS_ONLY",
+      "metric": "IM2_pct",
+      "status": "RESOLVED_LOG_SLOPE",
+      "points": 3,
+      "levels": [
+        0.025,
+        0.05,
+        0.1
+      ],
+      "slope": 0.9999994443390812,
+      "expected_small_signal_slope": 1
+    },
+    {
+      "candidate_id": "C02",
+      "profile": "GAS_ONLY",
+      "metric": "IM3_difference_pct",
+      "status": "RESOLVED_LOG_SLOPE",
+      "points": 2,
+      "levels": [
+        0.05,
+        0.1
+      ],
+      "slope": 1.998815063797485,
+      "expected_small_signal_slope": 2
+    },
+    {
+      "candidate_id": "C02",
+      "profile": "NL_SIMPLE",
+      "metric": "IM2_pct",
+      "status": "RESOLVED_LOG_SLOPE",
+      "points": 3,
+      "levels": [
+        0.025,
+        0.05,
+        0.1
+      ],
+      "slope": 1.0027024902332435,
+      "expected_small_signal_slope": 1
+    },
+    {
+      "candidate_id": "C02",
+      "profile": "NL_SIMPLE",
+      "metric": "IM3_difference_pct",
+      "status": "RESOLVED_LOG_SLOPE",
+      "points": 3,
+      "levels": [
+        0.025,
+        0.05,
+        0.1
+      ],
+      "slope": 1.999678553808795,
+      "expected_small_signal_slope": 2
+    },
+    {
+      "candidate_id": "C02",
+      "profile": "NL_FLUX_ONE",
+      "metric": "IM2_pct",
+      "status": "RESOLVED_LOG_SLOPE",
+      "points": 3,
+      "levels": [
+        0.025,
+        0.05,
+        0.1
+      ],
+      "slope": 0.999833366175683,
+      "expected_small_signal_slope": 1
+    },
+    {
+      "candidate_id": "C02",
+      "profile": "NL_FLUX_ONE",
+      "metric": "IM3_difference_pct",
+      "status": "RESOLVED_LOG_SLOPE",
+      "points": 3,
+      "levels": [
+        0.025,
+        0.05,
+        0.1
+      ],
+      "slope": 1.9996114268435323,
+      "expected_small_signal_slope": 2
+    },
+    {
+      "candidate_id": "C06",
+      "profile": "GAS_ONLY",
+      "metric": "IM2_pct",
+      "status": "RESOLVED_LOG_SLOPE",
+      "points": 3,
+      "levels": [
+        0.025,
+        0.05,
+        0.1
+      ],
+      "slope": 0.999999687835237,
+      "expected_small_signal_slope": 1
+    },
+    {
+      "candidate_id": "C06",
+      "profile": "GAS_ONLY",
+      "metric": "IM3_difference_pct",
+      "status": "BELOW_DECLARED_RESOLUTION_FLOOR",
+      "points": 1
+    },
+    {
+      "candidate_id": "C06",
+      "profile": "NL_SIMPLE",
+      "metric": "IM2_pct",
+      "status": "RESOLVED_LOG_SLOPE",
+      "points": 3,
+      "levels": [
+        0.025,
+        0.05,
+        0.1
+      ],
+      "slope": 1.002631941854996,
+      "expected_small_signal_slope": 1
+    },
+    {
+      "candidate_id": "C06",
+      "profile": "NL_SIMPLE",
+      "metric": "IM3_difference_pct",
+      "status": "RESOLVED_LOG_SLOPE",
+      "points": 3,
+      "levels": [
+        0.025,
+        0.05,
+        0.1
+      ],
+      "slope": 1.999533288256698,
+      "expected_small_signal_slope": 2
+    },
+    {
+      "candidate_id": "C06",
+      "profile": "NL_FLUX_ONE",
+      "metric": "IM2_pct",
+      "status": "RESOLVED_LOG_SLOPE",
+      "points": 3,
+      "levels": [
+        0.025,
+        0.05,
+        0.1
+      ],
+      "slope": 0.9999116060400517,
+      "expected_small_signal_slope": 1
+    },
+    {
+      "candidate_id": "C06",
+      "profile": "NL_FLUX_ONE",
+      "metric": "IM3_difference_pct",
+      "status": "RESOLVED_LOG_SLOPE",
+      "points": 3,
+      "levels": [
+        0.025,
+        0.05,
+        0.1
+      ],
+      "slope": 1.9994897991329923,
+      "expected_small_signal_slope": 2
+    }
+  ],
+  "max_periodic_energy_relative_residual": 3.9255009261269145e-09,
+  "max_periodic_mean_voltage_identity_error_v": 1.0416241820303408e-09,
+  "max_periodic_current_dc_a": 2.379248117967414e-10,
+  "max_periodic_startup_X_over_catalog": 1.2251377549309832,
+  "max_periodic_steady_X_over_catalog": 1.080318667064277,
+  "max_linear_stationary_noninput_pct": 1.2146321411261293e-06,
+  "max_periodic_X_tail_RMS_ratio": 5.58651968286038e-11,
+  "scope": "Wszystkie3312punktów w zadanych rodzinach. Domena/rozruch/faza i małosygnałowe potęgi mają jawne dziedziny. Nie dowód wszystkich gałęzi, globalnych ekstremów ani THD produktów. OgonX nie ogranicza ogona ciśnienia."
+}

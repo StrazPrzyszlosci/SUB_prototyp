@@ -1,0 +1,47 @@
+{
+  "access_date":"2026-10-25",
+  "status":"PIERWOTNE_TRESCI_I_ORYGINALY_SPRAWDZONE_KONFLIKT_LICZBY_ZABLOKOWANY",
+  "sources":[
+    {
+      "id":"SRC42",
+      "title":"Wolfgang Klippel, Nonlinear Modeling of the Heat Transfer in Loudspeakers",
+      "url":"https://pearl-hifi.com/06_Lit_Archive/15_Mfrs_Publications/24_Klippel/AES_ALMA_and_Other_Papers/2003_Nonlinear_Modeling_of_Heat_Transfer.pdf",
+      "provenance":"Autorski manuskrypt dostępny w archiwumPEARL; treść pierwotna, hosting zewnętrzny. Rok2003 pochodzi z nazwy pliku; daty i wersji publikacji recenzowanej nie potwierdzono. Stopka SUBMITTED MANUSCRIPT12.",
+      "private_original":".firecrawl/p15b_Klippel2003_original.pdf",
+      "original_sha256":"5e673f77585eeb3eeb3ec56dd445549663b4c28bd54a45e29dc8b79d445e8056",
+      "original_pages_visually_inspected":[6,7,38,42,43,44],
+      "accepted":["Re(T) sprzęga napięciowy napęd i grzanie; przykład kompresji na s.6/7 ma własne przybliżenia i nie jest naszą ogólną formułąSPL.","Fig25: dwuwęzłowa sieć cieplna z własnymiC, konwekcją i osobnym źródłem ciepła metalu.","Ruch i przepływ powietrza zmieniają chłodzenie; pełniejsze modele mają także drogę zależną od wychylenia i pojemność powietrza."],
+      "blocked_numeric_claim":"Na oryginalnej s.6 podano delta=0.0393K^-1 dla miedzi. Oryginał potwierdza zapis, więc nie jest to wyłącznie błąd ekstrakcjiFirecrawl. Nie przyjęto tej liczby do modelu; zachodzi około dziesięciokrotna rozbieżność względem danychNBS dla20°C. Nie poprawiamy po cichu dokumentu ani parametrów produktów.",
+      "notation_mapping":"W pracy delta jest współczynnikiem Re(T), a alpha dotyczy rozdziału ciepła. U nas alpha_per_k oznacza współczynnik Re(T), eta_eddy_to_coil rozdział strat.",
+      "images":[
+        {"file":".firecrawl/p15b_Klippel2003_p38.png","type":"Fig25:schemat; Fig26:cykliczne grzanie","axes":"Fig26:czas[s],DeltaTv[K],PRe[W]","conditions":"Przykładowy ton1kHz i nieoznaczony tu pełnym modelemDUT; nie kandydat z naszej puli","readout":"Schemat i przebiegi obejrzano; nie digitalizowano temperatur ani parametrów."},
+        {"file":".firecrawl/p15b_Klippel2003_p42.png","type":"Fig33/34:rezystancja cieplna versusf,przewidywanie/pomiar","axes":"f[Hz]log,Rtc+Rta[K/W]","conditions":"Przykładowy driverB z otwartym/zamkniętym kanałem","readout":"Wyłącznie jakościowo; nie przenosić na obudowę zamkniętą i nie zalecać blokowania kanału naszego głośnika."},
+        {"file":".firecrawl/p15b_Klippel2003_p43.png","type":"Fig35/36:dwie drogi oporu cieplnego","axes":"f[Hz]log,Rtc/Rta[K/W]","conditions":"DriverB autora,oryginalny i zmodyfikowany","readout":"Osobna zależność od prędkości i wychylenia; brak odczytu punktów."},
+        {"file":".firecrawl/p15b_Klippel2003_p44.png","type":"Fig37:bypassfactor","axes":"f[Hz]log,gamma[%]","conditions":"Dwa warianty kanału w driverze autora","readout":"Tylko jakościowo; procenty nie są danymi naszych24produktów."}
+      ],
+      "scope":"Przeczytano wybrane sekcje i obrazy; nie deklarujemy pełnej lektury44stron ani replikacji opublikowanych pomiarów."
+    },
+    {
+      "id":"SRC43",
+      "title":"KLIPPEL: Voice Coil Temperature",
+      "url":"https://www.klippel.de/know-how/measurements/power-handling-heat-dissipation/voice-coil-temperature.html",
+      "private_text_sha256":"35fe890a2c7721042b050463196a8828a53b6c9dc52034c1b32d74f04270277d",
+      "accepted":"Temperatura z rezystancji wymaga uwzględnienia materiału przewodnika i zimnego odniesienia. To nie identyfikacja materiału naszych cewek.",
+      "image":{"url":"https://www.klippel.de/fileadmin/_migrated/pics/tempearure_with_music.jpg","file":".firecrawl/p15b_KLIPPEL_temperature_music.jpg","sha256":"cc1511cdfa89ebdc3d63ea36fd992cdf9dd0d27cdbbe99cc7b6e9d180bf3f5b4","type":"Przebieg temperatury i mocy dla trzech klas sygnałów muzycznych","axes":"t[s],DeltaTv[K],PRe[W]","conditions":"PrzykładClasssic/Pop/Vocal,nieznanyDUT; nie nasze modele","readout":"Oryginał obejrzano. Nie odczytywano punktów ani nie przypisano temperatur kandydatom."}
+    },
+    {
+      "id":"SRC44",
+      "title":"J.H.Dellinger, The Temperature Coefficient of Resistance of Copper, Bulletin of the Bureau of Standards7(1),71–101",
+      "url":"https://nvlpubs.nist.gov/nistpubs/bulletin/07/nbsbulletinv7n1p71_A2b.pdf",
+      "date_scope":"Treść sygnowana Washington,July12,1910; nie wyprowadzamy daty wydania z nazwy serwera.",
+      "private_original":".firecrawl/p15b_NBS_Copper_original.pdf",
+      "original_sha256":"5101a1253fd78711f27a9d4b83dac295e17e364f017e1019f6be4cad5b5fe02e",
+      "original_pdf_pages_visually_inspected":[6,26],
+      "printed_pages":[76,96],
+      "accepted":"OryginalnaTableI podaje alpha20 względemR20. Wyniki dla próbek i odniesienia100%przewodności są rzędu0.0039K^-1; wynik zależy od próbki i temperatury odniesienia. Wartości nie są tolerancją współczesnych cewek ani dowodem ich materiału.",
+      "conflict_resolution":"Wartość0.0393K^-1 zSRC42 nie jest akceptowanym wejściem dla pokojowego prawaRe(T). Nasze0.004K^-1 pozostaje jawnym parametrem stresowym,nie identyfikacją materiału produktu.",
+      "readout_scope":"Tabela liczb i definicja osi/odniesienia odczytane z oryginału; nie digitalizowano krzywych. Nie deklarujemy lektury całych31stron."
+    }
+  ],
+  "copyright_scope":"OryginałyPDF i rendery pozostają prywatne w.firecrawl. Publicznie własne rachunki,fakty,metadane i odnośniki."
+}

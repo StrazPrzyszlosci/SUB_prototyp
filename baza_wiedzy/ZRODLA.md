@@ -125,6 +125,20 @@ Data dostępu2026-10-25; kopiePDF i renderów pozostają prywatne w.firecrawl.
 P15A: [fakty, obrazy i hashe](../dane/zrodla/P15A_topologie_i_cieplo.json).
 Data dostępu2026-10-25. Brak identyfikacjiRth/Cth naszych24produktów.
 
+- SRC42: [W.Klippel — Nonlinear Modeling of the Heat Transfer in Loudspeakers](https://pearl-hifi.com/06_Lit_Archive/15_Mfrs_Publications/24_Klippel/AES_ALMA_and_Other_Papers/2003_Nonlinear_Modeling_of_Heat_Transfer.pdf).
+  Oryginalny manuskrypt w archiwumPEARL,wybrane strony6/7/38/42–44
+  i wykresy obejrzane. Rok2003 wynika z nazwy pliku. Liczba0,0393K^-1
+  ze s.6 zablokowana jako wejście z powodu rozbieżności zSRC44.
+- SRC43: [KLIPPEL — Voice Coil Temperature](https://www.klippel.de/know-how/measurements/power-handling-heat-dissipation/voice-coil-temperature.html).
+  Rezystancyjne odniesienie zależy od materiału; obejrzano oryginalny
+  wykres temperatur/mocy przy muzyce. Bez transferu temperatur na kandydatów.
+- SRC44: [J.H.Dellinger/NBS — The Temperature Coefficient of Resistance of Copper](https://nvlpubs.nist.gov/nistpubs/bulletin/07/nbsbulletinv7n1p71_A2b.pdf).
+  OryginałTableI,s.76 i podsumowanie,s.96 (PDF6/26) obejrzane.
+  Alpha20 jest względemR20,liczby rzędu0,0039K^-1; nie tolerancja naszych cewek.
+
+P15B: [pochodzenie, obrazy i konflikt liczbowy](../dane/zrodla/P15B_sprzezenie_i_konflikt_alpha.json).
+Data dostępu2026-10-25. Parametr0,004K^-1pozostaje założeniem scenariusza.
+
 ## Pliki zachowane lokalnie
 
 - [Wejścia katalogowe i konflikty](../dane/przetworniki/kandydaci.json).

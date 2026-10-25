@@ -337,10 +337,44 @@ Postęp końca sesji2026-10-23:
   P0*alpha*Rth=1 nie jest progiem uszkodzenia ani wynikiem realnego wzmacniacza.
 - Odtworzenie opublikowanego etapu: `python3 skrypty/odtworz_etap_P14B_P15A.py`.
   To15świadków iP15A, bez dotykania żywychSQLite i globalnego manifestu.
-  Nie uruchamiać teraz pełnego odtworzenia kopiującego aktywne bazy.
+  Podczas ówczesnej aktywnej kampanii nie uruchamiać pełnego odtworzenia
+  kopiującego aktywne bazy. Późniejsze zamknięcie zapisano poniżej.
   Najbliższy krok: domknąć tę samą kampanięP14B i jej studia, a następnie
   P15B/P16 — czasowe Re(T),rozmieszczenie strat i chłodzenie zależne od ruchu.
   Mechanika z klejem, wybór jednego głośnika/skrzyni i końcowyPDF nadal otwarte.
+
+- Zamknięto zadany zakresP14B: raport026,3312przypadków,23oddzielne
+  rozstrzygnięciaDOP853,16560projekcji i39744fazory produktów.
+  Sesja14449 zakończyła się0; nie jest już aktywna. Wszystkie3312punkty
+  spełniają zadane kryterium okresowości po jawnych rozstrzygnięciach.
+  OryginalneSQLite zachowują3289okresowych i23NOT_SETTLED.
+  Sprawdzono648wzorcówLTI i4niezależneRadau z dużymi odpowiedziami,
+  rozruchem oraz5Hz; zagęszczenie emisji2/4/8. Wykresy39/40 obejrzano.
+  Nie jest to identyfikacjaTHDproduktów, globalnych gałęzi ani pełnej membrany.
+- P15B/P16: raport027/baza18,2304sprzężone wolne trajektorie dla24baz,
+  100l,20/40/80/20+85Hz,3równoważne zimne sieci,2przydziałyPeddy,
+  2konwekcjeproxy i2obwiednie po300s aktywności w600s.
+  Re(T) zmienia prąd,ruch i grzanie; R/C/alpha/chłodzenie są założeniami.
+  4pełneODEaudio40Hz/20+85Hz potwierdziły wybrane przybliżenia średniejT
+  do0,05136%,nie całą dziedzinę2304przypadków. Wykresy36–38 obejrzano.
+  Wyprowadzono pochodnąPcu i jednoznaczność dodatniego punktu napięciowego
+  dla stałych oporów i stałego biernego tła; nie przenosić na dowolneBL(T).
+- ŹródłaSRC42–44: oryginalny manuskrypt,rysunki i tabelaNBS obejrzane.
+  OryginałKlippela s.6 podaje0,0393K^-1,nie jest to sam błądFirecrawl.
+  Nie przyjęto tej liczby; NBSalpha20 ma rząd0,0039. Nasze0,004pozostaje
+  parametremstresowym,nie materiałem cewek. Daty publikacji nie wyprowadzać
+  z nazwy pliku2003. Zachowano URL/hashe i opis konfliktu.
+- CheckpointyP15B spakowano do wersjonowanegoZIP z2304hashami; lokalny
+  katalogcache ignorowany. `python3 skrypty/archiwum_P15B.py restore`
+  sprawdza wejścia i odtwarza zgodne rekordy,nie nowy niezależny rachunek.
+  Dodano nowe etapy do pełnego odtwarzania. Żadna kampania tej sesji
+  nie pozostaje aktywna; przed nowym wznowieniem sprawdzić realne uchwyty.
+- **Jeden najbliższy krok:P17 — połączyć ograniczeniaV/I/X i warunkowe
+  wymagania chłodzenia w porównanie pod brief; następnie P18/P19 —
+  panele,usztywnienia i obliczeniowy dobór kleju.** Nie wracać do kolejnego
+  zagęszczania zamkniętejP14B bez nowej hipotezy zmieniającej decyzję.
+  BL(T),gradienty,ciepło powietrza skrzyni,realistyczne sygnały i ochrona
+  mają bramki danych. Pojedynczy głośnik/skrzynia i końcowyPDF nadal otwarte.
 
 ## Decyzje otwarte
 

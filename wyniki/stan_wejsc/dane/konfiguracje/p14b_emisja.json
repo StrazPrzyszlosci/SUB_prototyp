@@ -1,0 +1,14 @@
+{
+  "status":"PROJEKCJA_TEGO_SAMEGO_RUCHU_NA_GEOMETRIE_KONTROLNE",
+  "geometry_ids":["MONOPOLE_4PI","BAFFLE_AXIS","BAFFLE_60DEG_FAR","SPHERE_CAP_AXIS","MOVING_MONOPOLE_AXIS"],
+  "distance_m":1.0,
+  "sphere_shell_offset_m":0.022,
+  "sphere_terms":512,
+  "moving_source_oversampling":2,
+  "moving_max_mach":0.2,
+  "retarded_time_tolerance_s":1e-12,
+  "retarded_time_max_iterations":20,
+  "moving_scope":"Oddzielny kontrolny monopol objętościowy Q=Sd*xdot poruszający się po torze x(t). Jest to zdefiniowany model źródła fali, NIE zmienna granica rzeczywistej membrany. Nie łączyć jego poprawki z pozostałymi geometriami jako dwóch zysków. Tor odtworzony z zapisanego pasma0–1000Hz; uwzględniono czynnik1-Mr i retardedtime. Bez zwrotnej siły naODE.",
+  "scope":"Operatory linioweP11 zastosowane do fazorów prędkości z rozwiązanego modelu. NIEdodano zwrotnego obciążenia nowej bryły doODE ani nie utożsamiono sfery z płaskim koszem w finalnej skrzyniMDF.22mmto parametrkontroli, nie rekomendowana grubość płyty. Bez pola pokoju i dodatkowego roomgain.",
+  "observer_scope":"Monopol i odgroda:r1m od płaszczyzny/centrum źródła, odgroda60degto przybliżenie dalekiego pola; sfera:r=Rbody+1m na osi,1m od frontu. FazoryRMS,exp(+jwt),ciśnienie20uPa,nie moc akustyczna z pola bliskiego."
+}

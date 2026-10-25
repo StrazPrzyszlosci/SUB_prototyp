@@ -47,3 +47,5 @@ ustalony; kod nie powinien udawać jego wyliczenia.
 nieznanego chłodzenia. Tabele wymagań Rth z zamrożonego Pcu są warunkami
 projektowymi, nie temperaturą produktu ani zatwierdzonym limitem kleju.
 Rzeczywiste hot spoty, identyfikacja R/C i testy po budowie pozostają otwarte.
+Rozwinięte sprzężenieRe(T),ruchu i grzania wykonano wP15B:
+[raport027](../raporty/027_P15B_sprzezenie_grzania_i_napedu.md).

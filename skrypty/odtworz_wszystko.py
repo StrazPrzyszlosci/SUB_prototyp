@@ -86,6 +86,21 @@ def main():
     from analiza_P14A_sygnaly import main as p14a_analysis
     from sprawdz_P14A import main as p14a_checks
     from raportuj_P14A import main as p14a_report
+    from analiza_P14B import main as p14b_analysis
+    from rozstrzygnij_P14B import main as p14b_refine
+    from audyt_dynamiki_P14B import main as p14b_linear_audit
+    from sprawdz_emisje_P14B import main as p14b_emission_checks
+    from podsumuj_studia_P14B import main as p14b_studies
+    from projekcja_P14B import main as p14b_projection
+    from sprawdz_kampanie_P14B import main as p14b_selected_audit
+    from raportuj_pelne_P14B import main as p14b_report
+    from analiza_topologii_termicznej_P15A import main as p15a_analysis
+    from audyt_symboliczny_P15A import main as p15a_symbolic
+    from sprawdz_granice_termiczne_P15A import main as p15a_limits
+    from archiwum_P15B import restore as p15b_restore
+    from analiza_sprzezenia_Re_T_P15B import main as p15b_analysis
+    from audyt_sprzezenia_Re_T_P15B import main as p15b_audit
+    from raportuj_sprzezenie_Re_T_P15B import main as p15b_report
     checks()
     images()
     physics()
@@ -139,6 +154,21 @@ def main():
     p14a_analysis()
     p14a_checks()
     p14a_report()
+    p14b_analysis()
+    p14b_refine()
+    p14b_linear_audit()
+    p14b_emission_checks()
+    p14b_studies()
+    p14b_projection()
+    p14b_selected_audit()
+    p14b_report()
+    p15a_analysis()
+    p15a_symbolic()
+    p15a_limits()
+    p15b_restore()
+    p15b_analysis()
+    p15b_audit()
+    p15b_report()
     baseline()  # Manifest powstaje po wszystkich obliczeniach.
 
 

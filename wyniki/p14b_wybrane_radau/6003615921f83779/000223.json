@@ -1,0 +1,96 @@
+{
+  "dynamic_run_sha256": "8a0088ea29d52b03b63966e59b24f5ce516fa7efc4d4286edb1a3330feb1b3c2",
+  "raw_spectrum_sha256": "65643c84245e3dc7fe24c7b4e970e70710591f9797b77873f0970f9ea07eda0d",
+  "verifier_sha256": "6003615921f83779434e11b13e5713c448c6114b38a472fca4788f5b62365548",
+  "array_file_sha256": "6982b59bd633ecb89b26ea1cf8bbc807c72401d5e3365c618938b7ae99547abf",
+  "comparison": {
+    "case_id": "000223",
+    "candidate_id": "C02",
+    "profile": "NL_FLUX_ONE",
+    "raw_spectrum_sha256": "65643c84245e3dc7fe24c7b4e970e70710591f9797b77873f0970f9ea07eda0d",
+    "X_band_complex_relative_error": 3.0417886181457765e-10,
+    "I_band_complex_relative_error": 1.6734613976541901e-10,
+    "max_IM_difference_percentage_points": 1.1406311895001409e-08,
+    "refined": {
+      "status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "end_cycles": 8,
+      "closure_error": 6.223466186838778e-11,
+      "nfev": 1093312,
+      "frequency_spacing_hz": 1.25,
+      "startup_x_observed_m": 0.006585662970948784,
+      "startup_current_peak_observed_a": 13.459455368404981,
+      "startup_velocity_observed_m_s": 2.226426747528669,
+      "x_peak_sampled_m": 0.006585607965607311,
+      "x_dc_m": 6.627562100057691e-05,
+      "current_peak_sampled_a": 12.637378271892281,
+      "current_rms_a": 6.471444230506091,
+      "current_dc_a": 2.3463869736062293e-14,
+      "voltage_dc_v": -2.55351295663786e-15,
+      "voltage_rms_v": 28.284271247461902,
+      "voltage_peak_sampled_v": 56.568542494923804,
+      "mean_input_w": 160.92656084443914,
+      "mean_copper_w": 125.63877128565173,
+      "mean_Rms_effective_loss_w": 16.819606040029388,
+      "mean_eddy_loss_w": 13.059690058885652,
+      "mean_gas_exergy_loss_w": 5.408493459871696,
+      "energy_relative_residual": 2.3709939240973684e-15,
+      "mean_voltage_identity_error_v": -6.527832031655978e-14,
+      "current_Parseval_relative_error": 2.7449156264479356e-16,
+      "x_tail_RMS_ratio": 4.244886882662296e-13,
+      "current_tail_RMS_ratio": 1.4378601726765258e-12,
+      "x_offgrid_RMS_ratio": 3.468972609433334e-13,
+      "temperature_gas_min_k": 292.6265496763634,
+      "temperature_gas_max_k": 293.6741589762029,
+      "volume_ratio_min_sampled": 0.9946149893996982,
+      "band_spectrum_shape": [
+        2,
+        801
+      ]
+    }
+  },
+  "convergence": {
+    "case_id": "000223",
+    "relative_pressure_difference_2to4": 2.2930495245350253e-08,
+    "relative_pressure_difference_4to8": 5.007930220808044e-09,
+    "max_IM_delta_2to4_pp": 2.0083010088267628e-08,
+    "max_IM_delta_4to8_pp": 1.1894970397552385e-08,
+    "diagnostics": [
+      {
+        "iterations": 5,
+        "max_observed_mach": 0.00643411630053089,
+        "max_retarded_residual_s": 1.1015494072452725e-16,
+        "min_distance_m": 0.9934143368834485,
+        "source_samples": 32768,
+        "source_window_s": 0.8,
+        "position_factor": 1.0,
+        "spline_velocity_bound_m_s": 2.208420124025958,
+        "spline_position_bound_m": 0.006639524472540359,
+        "scope": "Kontrolny model ruchomego monopola, nie całe ruchome obciążenie membrany."
+      },
+      {
+        "iterations": 5,
+        "max_observed_mach": 0.00643419083995023,
+        "max_retarded_residual_s": 1.1015494072452725e-16,
+        "min_distance_m": 0.9934143368833045,
+        "source_samples": 65536,
+        "source_window_s": 0.8,
+        "position_factor": 1.0,
+        "spline_velocity_bound_m_s": 2.2084201245562545,
+        "spline_position_bound_m": 0.006612621341438763,
+        "scope": "Kontrolny model ruchomego monopola, nie całe ruchome obciążenie membrany."
+      },
+      {
+        "iterations": 5,
+        "max_observed_mach": 0.0064341908400241034,
+        "max_retarded_residual_s": 1.1015494072452725e-16,
+        "min_distance_m": 0.9934143368833035,
+        "source_samples": 131072,
+        "source_window_s": 0.8,
+        "position_factor": 1.0,
+        "spline_velocity_bound_m_s": 2.2084201246018806,
+        "spline_position_bound_m": 0.006599142214702247,
+        "scope": "Kontrolny model ruchomego monopola, nie całe ruchome obciążenie membrany."
+      }
+    ]
+  }
+}

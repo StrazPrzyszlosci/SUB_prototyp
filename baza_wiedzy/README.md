@@ -28,6 +28,7 @@ a potwierdzonych ustaleń użytkownika w [rejestrze](../DECYZJE_I_PYTANIA.md).
 |15|[Pamięć cewki i identyfikowalność](15_pamiec_cewki_i_identyfikowalnosc.md)|ZespoloneLgen, poprawka siłyL2R2, dodatnia realizacja, digitalizacja i dokładne wykluczenie jednej gałęzi|
 |16|[IMD, fazy i emisja](16_IMD_fazy_i_emisja.md)|Produkty poniżej pasma wejściowego, zespolone AM/PM, normalizacja AN10 i kontrolny czas opóźniony|
 |17|[Topologia i identyfikowalność termiki](17_topologia_i_identyfikowalnosc_termiki.md)|Cauer/Foster, niejednoznaczność dodatkowego chłodzenia, podział strat i warunkowe granice|
+|18|[Sprzężenie termiczne i obwiednia](18_sprzezenie_termiczne_i_obwiednia.md)|Re(T),impedancja i grzanie, rozdzielenie skal czasu, pamięć cieplna i kontrola współczynników|
 |Źródła|[Rejestr z datami](ZRODLA.md)|Co przeczytano, co tylko znaleziono i jakie są braki|
 
 ## Od wiedzy do wykonania

@@ -32,9 +32,9 @@ pakietu samym stworzeniem planu, testów ani listy bibliotek.
 | P11 | Obciążenie promieniowaniem i granice przestrzeni | Wykonane rodziny kontrolne; geometria docelowa otwarta | Tłok/Rayleigh, czasza/sfera/komora, kalibracja Mmd/Mms, wzajemne promieniowanie, obrazy i sprzężony pokój; 4 154 112 realizacji częstotliwościowych, replikacja Bellows2024, bilans energii i odrębna zbieżność. Raport 017. Brak niezależnej identyfikacji Mmd/strat wszystkich egzemplarzy i rozpraszania na finalnej skrzyni |
 | P12 | BL(x),Cms(x),Le(x,i),Rms(v) | Wykonane rodziny warunkowe i pamięć; identyfikacja fizyczna otwarta | Raport020:12 096przypadków. Raport021/P12C: moduł/fazaLgen, dodatnia pamięć i prawidłowa siłaL2R2,30odczytów, dokładne wykluczenie jednej gałęzi dla zapisanych przedziałów i niejednoznaczność dopasowańN3. To nie identyfikacja24produktów ani dowód niemożliwościN2 |
 | P13 | Sprzężony ruch nieliniowy i gaz | Wykonane dla hermetycznego gazu i wybranych rodzin | Raport020:12 096punktów i72kompensacje. P12C dodaje1728ODE z pamięcią;17flag rozstrzygniętoRadau. Brak czasowej reakcji frontu, nieliniowego przecieku, wszystkich gałęzi i fizycznej identyfikacji; raport021 |
-| P14 | THD i IMD | Częściowo — P14B w toku | P13: sinusyH2–H10. P14A:9216odniesień i12pilotów. P14B: uruchomiono3312przypadków; raport024 zawiera15zamrożonych świadków, migawkę1334projekcji×5geometrii, fazory, produkt5Hz i wzorce analityczne. To nie wynik całej kampanii ani rzeczywistego ruchomego tłoka. Rozstrzygnięcia flag, pełne studia i duże amplitudy otwarte |
-| P15 | N8 — model cieplny w czasie | Częściowo — P15A wykonano | Raport025:4225sieciCauer/Foster, dokładna nieidentyfikowalność przy dodatkowym chłodzeniu,25kontroli granic,45warunkowych wymagańRth i7tożsamościSymPy. Nadal brak Rth/Cth produktów, zmiennego chłodzenia i pełnego sprzężenia znapędem |
-| P16 | Sprzężenia cieplne i elektromechaniczne | Do wykonania | P15A daje teoretyczny próg idealnie trzymanego prądu; pełna czasowa integracja Re(T),BL(T),ruchu i chłodzenia pozostaje do wykonania |
+| P14 | THD i IMD | Wykonane rodziny P14B; identyfikacja fizyczna otwarta | Raport026:3312przypadków,23flagi rozstrzygnięteDOP853,4odrębneRadau,16560projekcji,39744fazory, faza/mały sygnał/preload. Zamknięty zadany zbiór modeli,nie THD produktów ani pełna emisja rzeczywistego tłoka |
+| P15 | N8 — model cieplny w czasie | Wykonane rodziny P15A/P15B; parametry produktów otwarte | Raport025:4225sieciCauer/Foster i granice. Raport027:2304przebiegiRe(T),ruchu,strat i przyjętej konwekcji,4pełneODEaudio,1152porównania obwiedni. Brak identyfikacjiR/C, lokalnych gradientów i powietrza skrzyni |
+| P16 | Sprzężenia cieplne i elektromechaniczne | Częściowo — Re(T),ruch i chłodzenie | P15B sprzęga prąd,Re(T),ruch i straty; twierdzenie napięciowe dla stałego biernego tła. Nie wykonano fizycznej identyfikacjiBL(T),pełnych dużych sygnałów, gradientów i wszystkich sprzężeń termicznych |
 | P17 | Łączne granice użytecznego zakresu | Częściowo | Granice liniowe; warunkoweTHD i termika do połączenia |
 | P18 | Płyty MDF: drgania, naprężenia, promieniowanie | Do wykonania | Najpierw płyty analityczne/2D, bez rozpoczynania pracy nad narzędziamiCAD |
 | P19 | Usztywnienia, połączenia i klej | Do wykonania | Obowiązkowy dobór kleju: nośność spoiny iMDF, odrywanie, pełzanie, wilgotność, szczelina, zmęczenie |
@@ -71,9 +71,10 @@ W odpowiedzi na przypomnienie o wymiarach pokoju rozpoczęto niezależnie P26/P2
 liniowych rodzin (raport 015). P09/P10 mają wykonane rodziny z raportu 016.
 P11 wykonano dla jawnych geometrii kontrolnych i sprzężonego pokoju
 (raport 017). P12/P13 mają wykonane rodziny warunkowe (raport020).
-P12C ma wykonane rodziny z raportu021. Najbliższy krok to P14/IMD i wielotony
-z modelemFLUX, potem promieniowanie harmonicznych i pozostałe badaniaP15–P17,
-mechanikęP18–P21 z doborem kleju,
+P12C ma wykonane rodziny z raportu021. P14B wykonano w zadanej dziedzinie
+(raport026), a P15A/P15B mają wykonane rodziny cieplne (raporty025/027).
+Najbliższy krok:P17 — synteza ograniczeńV/I/X i warunkowego chłodzenia;
+następnie mechanikaP18–P21 z doborem kleju,
 czasoweDSP/napędP22–P25, pokójP26–P28 i integracjaP29/P30.
 Poszukiwanie danych materiałowych i nieliniowych może toczyć się równolegle
 z obliczeniami niewymagającymi tych danych. Nie wykonywać zakupów.

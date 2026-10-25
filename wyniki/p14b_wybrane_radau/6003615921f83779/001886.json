@@ -1,0 +1,96 @@
+{
+  "dynamic_run_sha256": "8a0088ea29d52b03b63966e59b24f5ce516fa7efc4d4286edb1a3330feb1b3c2",
+  "raw_spectrum_sha256": "a3fae895ae6524e718493cafe840ab1229c574780116d243d42ba9032c1a4176",
+  "verifier_sha256": "6003615921f83779434e11b13e5713c448c6114b38a472fca4788f5b62365548",
+  "array_file_sha256": "b3d7192363a39f5f60c9c44f454ca2f5641f2cdead05a42bebbbced42069c957",
+  "comparison": {
+    "case_id": "001886",
+    "candidate_id": "C14",
+    "profile": "GAS_ONLY",
+    "raw_spectrum_sha256": "a3fae895ae6524e718493cafe840ab1229c574780116d243d42ba9032c1a4176",
+    "X_band_complex_relative_error": 9.830109810048283e-10,
+    "I_band_complex_relative_error": 2.281758752537569e-09,
+    "max_IM_difference_percentage_points": 8.36621498671385e-08,
+    "refined": {
+      "status": "PERIODIC_WITHIN_MODEL_TOLERANCE",
+      "end_cycles": 8,
+      "closure_error": 3.063682640913612e-11,
+      "nfev": 1148687,
+      "frequency_spacing_hz": 1.25,
+      "startup_x_observed_m": 0.005392008633974873,
+      "startup_current_peak_observed_a": 9.045186455308423,
+      "startup_velocity_observed_m_s": 2.0874569658006323,
+      "x_peak_sampled_m": 0.00539197161021518,
+      "x_dc_m": 2.716880479865164e-06,
+      "current_peak_sampled_a": 2.9917856831510874,
+      "current_rms_a": 1.6690369091908408,
+      "current_dc_a": -2.3876733923344773e-14,
+      "voltage_dc_v": -2.55351295663786e-15,
+      "voltage_rms_v": 28.284271247461902,
+      "voltage_peak_sampled_v": 56.568542494923804,
+      "mean_input_w": 21.972451287178895,
+      "mean_copper_w": 13.928421021206576,
+      "mean_Rms_effective_loss_w": 5.486969256449835,
+      "mean_eddy_loss_w": 0.0,
+      "mean_gas_exergy_loss_w": 2.55706100952232,
+      "energy_relative_residual": 1.671780543208584e-14,
+      "mean_voltage_identity_error_v": 1.5027387879845592e-13,
+      "current_Parseval_relative_error": 1.330375641798598e-16,
+      "x_tail_RMS_ratio": 4.921280585796411e-13,
+      "current_tail_RMS_ratio": 1.1067180061152782e-12,
+      "x_offgrid_RMS_ratio": 4.14600824022523e-13,
+      "temperature_gas_min_k": 292.8248580917536,
+      "temperature_gas_max_k": 293.47618717087664,
+      "volume_ratio_min_sampled": 0.9967786604434404,
+      "band_spectrum_shape": [
+        2,
+        801
+      ]
+    }
+  },
+  "convergence": {
+    "case_id": "001886",
+    "relative_pressure_difference_2to4": 2.3885806767889323e-08,
+    "relative_pressure_difference_4to8": 4.905939338395515e-09,
+    "max_IM_delta_2to4_pp": 4.507580039711523e-07,
+    "max_IM_delta_4to8_pp": 3.5660178143714916e-08,
+    "diagnostics": [
+      {
+        "iterations": 5,
+        "max_observed_mach": 0.006034619585250392,
+        "max_retarded_residual_s": 8.977193988179977e-17,
+        "min_distance_m": 0.9946079924528219,
+        "source_samples": 32768,
+        "source_window_s": 0.8,
+        "position_factor": 1.0,
+        "spline_velocity_bound_m_s": 2.0712794852702596,
+        "spline_position_bound_m": 0.005442539957022766,
+        "scope": "Kontrolny model ruchomego monopola, nie całe ruchome obciążenie membrany."
+      },
+      {
+        "iterations": 5,
+        "max_observed_mach": 0.006034619585000877,
+        "max_retarded_residual_s": 8.847089727481716e-17,
+        "min_distance_m": 0.9946079924526731,
+        "source_samples": 65536,
+        "source_window_s": 0.8,
+        "position_factor": 1.0,
+        "spline_velocity_bound_m_s": 2.0712794853459653,
+        "spline_position_bound_m": 0.005417288314070951,
+        "scope": "Kontrolny model ruchomego monopola, nie całe ruchome obciążenie membrany."
+      },
+      {
+        "iterations": 5,
+        "max_observed_mach": 0.006034633463275526,
+        "max_retarded_residual_s": 8.933825901280557e-17,
+        "min_distance_m": 0.9946079924526608,
+        "source_samples": 131072,
+        "source_window_s": 0.8,
+        "position_factor": 1.0,
+        "spline_velocity_bound_m_s": 2.0712794853521617,
+        "spline_position_bound_m": 0.0054046467912089976,
+        "scope": "Kontrolny model ruchomego monopola, nie całe ruchome obciążenie membrany."
+      }
+    ]
+  }
+}

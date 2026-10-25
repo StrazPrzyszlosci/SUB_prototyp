@@ -3,7 +3,8 @@
 Status: teoria oraz obliczenia warunkowych modeli, 2026-10-25.
 Nie jest to identyfikacja nieliniowości naszych 24 produktów.
 [Raport024](../raporty/024_P14B_emisja_i_swiadkowie.md) zawiera wybrane wyniki;
-pełna kampania P14B pozostaje w toku.
+pełny wykonany zakres3312punktów opisuje późniejszy
+[raport026](../raporty/026_P14B_pelna_kampania_dwutonowa.md).
 
 ## Nieliniowość tworzy częstotliwości nieobecne na wejściu
 

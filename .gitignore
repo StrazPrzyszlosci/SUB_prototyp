@@ -4,3 +4,5 @@ __pycache__/
 .mplconfig/
 .firecrawl/
 .p14b_locks/
+.p15b_locks/
+wyniki/p15b_checkpoint/

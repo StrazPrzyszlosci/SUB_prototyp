@@ -29,12 +29,17 @@ Wykonano18 676wierszy liniowych,1728pełnychODE i odrębne sprawdzenie
 Ocena stanu badań: [raport022 — postęp i pozostały zakres](raporty/022_stan_badan_i_zakres_pozostaly.md).
 Rozpoczęte P14A: [raport023 — wspólne limity i pilot dwutonowy](raporty/023_P14A_dwa_tony_i_wspolne_limity.md).
 Pilot nie zamyka P14/P25; dalsze kroki obejmują szersze sygnały i emisję harmonicznych.
-P14B w toku: [raport024 — fazory, emisja i15zamrożonych świadków](raporty/024_P14B_emisja_i_swiadkowie.md).
+Historyczny etap częściowyP14B: [raport024 — fazory, emisja i15zamrożonych świadków](raporty/024_P14B_emisja_i_swiadkowie.md).
 Przypadek45+95Hz tworzy ruch5Hz; rozdzielono projekcje stałe i kontrolny
 ruchomy monopol. To nie zmierzone THD ani zamknięcie kampanii3312przypadków.
 Rozpoczęto termikę: [raport025 — P15A, topologie i granice](raporty/025_P15A_topologia_i_granice_termiki.md).
 4225sieci kontrolnych, ciągła niejednoznaczność chłodzenia i warunkowe
 wymaganiaRth; nie prognozy temperatur konkretnych produktów.
+**Wykonano zakres P14B:** [raport026 —3312przypadków, fazy, amplitudy i rozruch](raporty/026_P14B_pelna_kampania_dwutonowa.md).
+23flagi rozstrzygnięto osobno;16560projekcji pola i4niezależneRadau.
+**Wykonano rodzinę P15B:** [raport027 —2304przebiegiRe(T),grzania i ruchu](raporty/027_P15B_sprzezenie_grzania_i_napedu.md).
+Nie są to zidentyfikowane temperatury24produktów. Najbliższy krok:P17 —
+synteza ograniczeń, potem panele/usztywnienia/klejP18/P19.
 
 **Bieżący zakres: wyłącznie naukowe zagadnienia prototypu (U-010).**
 Najnowsze zlecenie: [program30badań](PROGRAM_30_BADAN.md), szeroka pula
@@ -101,6 +106,8 @@ Brak modelu THD, kompresji cieplnej i zidentyfikowanej odpowiedzi pokoju.
 23. [023 — P14A, wspólne limity i pilot IMD](raporty/023_P14A_dwa_tony_i_wspolne_limity.md).
 24. [024 — P14B, fazory i emisja; raport częściowy](raporty/024_P14B_emisja_i_swiadkowie.md).
 25. [025 — P15A, topologia, identyfikowalność i granice termiki](raporty/025_P15A_topologia_i_granice_termiki.md).
+26. [026 — wykonany zakres dwutonowy P14B](raporty/026_P14B_pelna_kampania_dwutonowa.md).
+27. [027 — P15B, sprzężenie grzania i napędu](raporty/027_P15B_sprzezenie_grzania_i_napedu.md).
 
 ## Odtworzenie obliczeń
 
@@ -121,6 +128,10 @@ python3 skrypty/odtworz_etap_P14B_P15A.py
 
 Zakres i hashe tej części są w `wyniki/manifest_etap_P14B_P15A.json`;
 nie jest to manifest zakończonego programu30badań.
+Wykonany późniejszy zakresP14B/P15B ma osobny
+[manifest z bazami, wejściami, kontrolami i dokumentacją](wyniki/manifest_P14B_P15B.json).
+Pełna procedura obejmuje już te etapy; nie oznacza to zamknięcia pozostałych
+pakietów. ArchiwumP15B odtwarza zgodne checkpointy,nie nowe2304ODE.
 
 Skrypty ustalają katalog projektu na podstawie własnej ścieżki. Dla osobnego
 środowiska można utworzyć`.venv` i zainstalować`requirements.txt`. Nie trzeba
@@ -151,5 +162,5 @@ materiałów i bez włączania prywatnych kopiiPDF do repozytorium.
 Źródła z internetu: browser-harness oraz dopuszczony Firecrawl. Kosztorys,
 dostępność PL/UE i dobór handlowy pozostają odłożone. Przegląd opinii wszystkich
 24 kandydatów wykonano z jawnymi brakami; nie stanowi rankingu jakości.
-Najbliższy krok: P14/IMD i wielotony z modelemFLUX;
-następnie promieniowanie harmonicznych, termika, mechanika z klejem i integracja.
+Najbliższy krok:P17 — syntezaV/I/X i warunkowego chłodzenia;
+następnie mechanika z klejemP18/P19 i dalsza integracja.
