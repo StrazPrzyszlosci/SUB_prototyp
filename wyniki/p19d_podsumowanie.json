@@ -1,0 +1,18 @@
+{
+  "status": "FINITE_VIRTUAL_DEBOND_SCREENING_NOT_MATERIAL_FRACTURE_OR_FATIGUE_TEST",
+  "cases": 6,
+  "debond": "front_bottom,od krawedzi wewnetrznej wglab szerokosci spoiny;pelna szerokosc frontu.",
+  "contact": "Po odspojeniu normalna kompresja zachowana,bez tarcia;rozciaganie i scinanie usuniete.",
+  "unresolved": [
+    "BrakGc/Kc/SN/J(t) spoinyMDF;nie wolno zGdelta oglosic zdatnosci kleju.",
+    "N10,zalecana odrebna zbieznosc defektu i pola dla decyzji o trwalosci.",
+    "Obciazenie1kPa jest osobna quasistatyczna kontrola,nie pasmem/audioRMS.",
+    "Brak geometrii czola pekniecia3D,MDFortotropii i lokalnej strefy kohezji."
+  ],
+  "input_sha256": {
+    "skrypty/rozwarstwienie_spoiny_P19D.py": "1a2748d8a9b35ead61747f2816bfb228bb6302c859b12155e51b225313f65afc",
+    "skrypty/model_ramy_3D_P18C.py": "698395a0d216659572ae84c1fea1b1251a67c5c32b99a7cf84cc55582e33e1ad",
+    "skrypty/element_brylowy_P18C.py": "d90d0c7f1adf2d00249220653b8335ea1e021b07b774dc770921029da4a8aacb",
+    "skrypty/kontakt_brylowy_P19.py": "73fe36435803241c9078a31988c3702f2aab0fdd6b204689d246c639c52c5bfc"
+  }
+}

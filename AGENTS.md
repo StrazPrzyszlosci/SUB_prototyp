@@ -71,7 +71,8 @@ Optymalizacja jednego sweet spotu 2,5–3 m; brak narzuconego budżetu i gabaryt
 21. Dobór kleju włączyć doP19: obciążenia ciśnieniem/drganiami, ścinanie,
     odrywanie, nośność MDF, geometria i grubość spoiny, pełzanie, temperatura,
     wilgotność, zmęczenie i szczelność. D3/D4 nie jest samodzielnym dowodem
-    nośności. Front demontowalny badać osobno z uszczelką i mocowaniem.
+    nośności. Wcześniejszy plan frontu demontowalnego zastępuje U-021:
+    obecnie front stały pod jeden wybrany przetwornik.
 22. Automatyczne tablice liczbowych punktów „odczytanych z wykresów” przez
     Firecrawl nie są surowymi pomiarami. Przed ilościowym użyciem sprawdzić
     oryginalny obraz, osie, warunki i niepewność digitalizacji. W publikacji
@@ -142,6 +143,13 @@ Optymalizacja jednego sweet spotu 2,5–3 m; brak narzuconego budżetu i gabaryt
     ale błędnie przypisuje siłę pomocniczemu prądowi. Tau w realizacji jest
     stałe po x; nie modelujemy histerezy magnetycznej. Deddy nie jest samo
     w sobie grzaniem cewki; Rms_effective też nie identyfikuje strat materiału.
+
+32. U-021: obecnie front stały, niedemontowalny, pod jeden docelowo wybrany
+    przetwornik. Nie rozwijaj wymiennego frontu ani jego uszczelki obwodowej.
+    Badaj stałe połączenie frontu i dobór kleju; uszczelka pod koszem głośnika
+    to odrębny styk. Regulacja Vb i porównania kandydatów przed pojedynczym
+    wyborem pozostają aktualne. C04 jest referencją modeli, nie zatwierdzonym
+    docelowym przetwornikiem.
 
 ## Stan i postępy
 
@@ -481,6 +489,43 @@ Postęp końca sesji2026-10-23:
 - Na prośbęużytkownikaREADMEprzebudowanowprzewodnik:13wykresów zwarunkami,
   mapatemat→raport→dane,aktualnyzakres i odtwarzanie. Pełnyindeks34raportów
   jestwraporty/README.md. Wybraneobrazyobejrzano;niezmienianobriefu.
+
+- P18C/P19D,2026-10-25:raporty035/036,baza25. WłasnyEAS9 z6osobnymi
+  bryłami i12normalno-stycznymispoinami;nieC3D8I13. Patch regularny/
+  zniekształcony,purebending,masa,objętość,H,R i6ruchówsztywnych sprawdzone.
+  Granica zerowychspoin:36niezależnychruchów. ŹródłoSRC51przeczytane
+  wzakresieliniowym,MathMLobejrzane;timeoutobserwacji nie był awariąźródła.
+- Siatki4/6/10/14/18/22 do36771DOF;ostatniazmianaC0.835%/f0.444%.
+  Warstwy2/3/4:ostatniazmianaC0.762%. To niecertyfikatcałkowitegobłędu<1%;
+  rodzinyN10mająCokoło5.18%poniżejN22. 12blokówgłównych,zpowtórzoną
+  referencją,168harmonicznychpunktów,normalnydociskstóp zachowany dla1Pa/1N.
+  Głośniksztywny6DOF:niepasmoFs,THD,SPL lub odpowiedźnapędu.
+- Jeden/dwaściągi:C−18.1/20.7%,masa+0.464/0.927kg wmodeluN10.
+  Zmianynajniższegofnieoznaczajątejsamejpostaci;12modówniechwyta
+  całejpodatności. Ścinanie/ortotropia/spoiny/podparciesą jawnymistresami.
+- Wirtualneodspojeniefront–dno5/10/15mm:6stanówz zachowaniemkompresji
+  poodspojeniu;rozciąganie i ścinanieusunięte. GdeltaN10/N14różni27/41%,
+  niewolnonazywaćzbieżnymG/Gc,trwałościąlub zatwierdzeniemkleju.
+  Solverużywaprzyrostuenergii zamiastodejmowaniadużychpotencjałów,
+  skalowania/longdouble i refinement;reszty3.6e-11 bezobniżeniakryterium.
+- Frontklejony toreferencja;**jeden najbliższy krok:P19E — front
+  demontowalny do ramy5ścian,uszczelka i mocowania**,dla wymiany12/15.
+  PotemP20regulacja/P21pole. OsieP18C sąlokalne,nieustawieniemwpokoju.
+  READMEzachowujeprzewodnik i ma14wykresów;indeks36raportów.
+
+- U-021 zastępuje powyższy plan P19E frontu demontowalnego: użytkownik
+  wskazał front stały, niedemontowalny, pod jeden docelowy przetwornik.
+  Aktualny najbliższy krok: obliczeniowe wymagania sztywności i geometrii
+  stałego połączenia frontu; następnie regulacjaVb i integracja.
+  Nie przenosić dawnego uzasadnienia rezygnacji z analizy klejonego frontu.
+
+- P19E poU-021:raport037,12progów sztywności zmonotonicznegoC(beta),
+  dC/dbeta=-qT*Kvariable*q. Front-only i wszystkie12spoin,N10/N14,
+  scenariusze+5/10/20%C. DlaN14/+10%/t0.2mm:Eeff9.09MPa(front)
+  i72.14MPa(całość). Różnice siatki doka34%;nie nośność,trwałość,
+  daneproducenta lub progi briefu. **Najbliższy krok:lokalna geometria
+  stałego front–korpus i rozprowadzenie sił**,potemP20/P21.
+  READMEprzewodnik ma15wykresów;indeks37raportów.
 
 ## Decyzje otwarte
 

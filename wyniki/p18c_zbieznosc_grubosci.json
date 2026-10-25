@@ -1,0 +1,24 @@
+{
+  "status": "SCOPED_THICKNESS_CONVERGENCE",
+  "rows": [
+    {
+      "label": "THICKNESS_4",
+      "n": 10,
+      "dof": 18921,
+      "compliance_m3_pa": 2.3509031984335634e-08,
+      "first_elastic_hz": 93.46840597869893,
+      "peak_process_RSS_MiB": 418.34375,
+      "layers": 4,
+      "relative_change_compliance": 0.00762189003585334,
+      "relative_change_f1": 0.0014567758597453517
+    }
+  ],
+  "criterion": "Ostatnia zmiana C/f1<1%,nie scisly blad continuum;N10 pozostaje osobna dyskretyzacja.",
+  "input_sha256": {
+    "skrypty/sprawdz_warstwy_ramy_P18C.py": "6dbfc19e63eb8824f06e0a888b6c1c33b3a4a806cad67340d432b39402aea51d",
+    "skrypty/model_ramy_3D_P18C.py": "698395a0d216659572ae84c1fea1b1251a67c5c32b99a7cf84cc55582e33e1ad",
+    "skrypty/element_brylowy_P18C.py": "d90d0c7f1adf2d00249220653b8335ea1e021b07b774dc770921029da4a8aacb",
+    "skrypty/uzupelnienie_siatki_ramy_P18C.py": "b433de7de66fd5dc36237512c8cdba0e3976a4bb2cd3effcb251969fcabe01bf",
+    "wyniki/p18c_adaptacja_i_granice.json": "3c417c7c3991fdea45cd608eb0d444c0f8e80d76d4ba080b2899b6a4e3ff4c26"
+  }
+}

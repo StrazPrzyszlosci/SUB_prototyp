@@ -1,0 +1,25 @@
+load,joint,tensile_spatial_rms_pa,compressive_spatial_rms_pa,sampled_tensile_max_pa,scope
+GRAVITY,front_left,55710.2176331276,42379.72716044843,401824.2117121016,RMSpo powierzchni i probkowanymax;nie osobliwy peak3D/MDF ani dopuszczalna wytrzymalosc.
+GRAVITY,front_right,55716.876745101115,42370.24504201788,401922.43722032855,RMSpo powierzchni i probkowanymax;nie osobliwy peak3D/MDF ani dopuszczalna wytrzymalosc.
+GRAVITY,front_bottom,88063.51255856887,103196.2799400015,456834.9917315015,RMSpo powierzchni i probkowanymax;nie osobliwy peak3D/MDF ani dopuszczalna wytrzymalosc.
+GRAVITY,front_top,20717.9990588204,42673.45845877499,137616.43586578988,RMSpo powierzchni i probkowanymax;nie osobliwy peak3D/MDF ani dopuszczalna wytrzymalosc.
+GRAVITY,back_left,13048.98166617857,7497.725341244177,75443.01822774866,RMSpo powierzchni i probkowanymax;nie osobliwy peak3D/MDF ani dopuszczalna wytrzymalosc.
+GRAVITY,back_right,13048.921243967048,7497.830684383791,73279.1525705764,RMSpo powierzchni i probkowanymax;nie osobliwy peak3D/MDF ani dopuszczalna wytrzymalosc.
+GRAVITY,back_bottom,15734.625837273514,24514.30759153891,48057.15997223043,RMSpo powierzchni i probkowanymax;nie osobliwy peak3D/MDF ani dopuszczalna wytrzymalosc.
+GRAVITY,back_top,4066.1977731874267,5915.1791043067815,11188.999542269092,RMSpo powierzchni i probkowanymax;nie osobliwy peak3D/MDF ani dopuszczalna wytrzymalosc.
+GRAVITY,bottom_left,18870.51265312977,38774.82772054828,69825.6266283349,RMSpo powierzchni i probkowanymax;nie osobliwy peak3D/MDF ani dopuszczalna wytrzymalosc.
+GRAVITY,top_left,2423.54758212568,4872.047385398727,6953.111436875758,RMSpo powierzchni i probkowanymax;nie osobliwy peak3D/MDF ani dopuszczalna wytrzymalosc.
+GRAVITY,bottom_right,18868.9753542723,38775.64779624964,68431.78764990118,RMSpo powierzchni i probkowanymax;nie osobliwy peak3D/MDF ani dopuszczalna wytrzymalosc.
+GRAVITY,top_right,2423.4702967756966,4872.08603844793,6978.417951600371,RMSpo powierzchni i probkowanymax;nie osobliwy peak3D/MDF ani dopuszczalna wytrzymalosc.
+GRAVITY_PLUS_STATIC_1KPA,front_left,132705.61075019426,66475.93234419715,1618607.6934843878,RMSpo powierzchni i probkowanymax;nie osobliwy peak3D/MDF ani dopuszczalna wytrzymalosc.
+GRAVITY_PLUS_STATIC_1KPA,front_right,132702.59880876238,66481.64428955996,1603115.795137332,RMSpo powierzchni i probkowanymax;nie osobliwy peak3D/MDF ani dopuszczalna wytrzymalosc.
+GRAVITY_PLUS_STATIC_1KPA,front_bottom,129278.12377898386,98952.6895302603,1473906.3699097994,RMSpo powierzchni i probkowanymax;nie osobliwy peak3D/MDF ani dopuszczalna wytrzymalosc.
+GRAVITY_PLUS_STATIC_1KPA,front_top,60196.078066331065,33173.722835476576,821494.8529708434,RMSpo powierzchni i probkowanymax;nie osobliwy peak3D/MDF ani dopuszczalna wytrzymalosc.
+GRAVITY_PLUS_STATIC_1KPA,back_left,55528.29996112121,34318.48015125717,206304.94402346428,RMSpo powierzchni i probkowanymax;nie osobliwy peak3D/MDF ani dopuszczalna wytrzymalosc.
+GRAVITY_PLUS_STATIC_1KPA,back_right,55528.25820311231,34318.54827372498,206898.76028577483,RMSpo powierzchni i probkowanymax;nie osobliwy peak3D/MDF ani dopuszczalna wytrzymalosc.
+GRAVITY_PLUS_STATIC_1KPA,back_bottom,30631.123848898456,19644.74794905642,153757.75794793596,RMSpo powierzchni i probkowanymax;nie osobliwy peak3D/MDF ani dopuszczalna wytrzymalosc.
+GRAVITY_PLUS_STATIC_1KPA,back_top,38131.54958472892,22877.382986448774,162775.89793527877,RMSpo powierzchni i probkowanymax;nie osobliwy peak3D/MDF ani dopuszczalna wytrzymalosc.
+GRAVITY_PLUS_STATIC_1KPA,bottom_left,50021.843935807105,35136.647009234526,232747.15564883524,RMSpo powierzchni i probkowanymax;nie osobliwy peak3D/MDF ani dopuszczalna wytrzymalosc.
+GRAVITY_PLUS_STATIC_1KPA,top_left,61324.13456629565,39487.921711859,234090.62724073406,RMSpo powierzchni i probkowanymax;nie osobliwy peak3D/MDF ani dopuszczalna wytrzymalosc.
+GRAVITY_PLUS_STATIC_1KPA,bottom_right,50020.873454274,35138.06200823976,231962.47183762377,RMSpo powierzchni i probkowanymax;nie osobliwy peak3D/MDF ani dopuszczalna wytrzymalosc.
+GRAVITY_PLUS_STATIC_1KPA,top_right,61324.102760007394,39487.97059370047,234347.73610788488,RMSpo powierzchni i probkowanymax;nie osobliwy peak3D/MDF ani dopuszczalna wytrzymalosc.

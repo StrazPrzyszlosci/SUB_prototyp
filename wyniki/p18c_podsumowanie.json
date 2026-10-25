@@ -1,0 +1,32 @@
+{
+  "status": "SCOPED_FULL_FRAME_STUDY_NOT_FINAL_CABINET",
+  "case_count": 12,
+  "modal_rows": 144,
+  "harmonic_rows": 168,
+  "joint_rows": 252,
+  "support_rows": 9,
+  "unexecuted": [],
+  "input_sha256": {
+    "brief_system_audio_DIY_v0.6.md": "3bd9f8d43a92b96256073e66cd0f4f105336e969a37c29fc42f17cda9d66736f",
+    "dane/konfiguracje/p18c_rama_3D.json": "99409305fbd038939fa7d37e6489dedb09898e16ad657611fef39f958c77f1d9",
+    "dane/zrodla/P18B_geometria_i_ograniczenia.json": "d7c76459def5895df418cb5cccb05d8a7645d92eaaa2da3db78a3ceb44a4c8ae",
+    "dane/materialy/mdf_i_kleje_P18_P19.json": "9983ac3e82ef2b0f0470763fba45e5c908b4ac50041cac34f7405c72a340f7d5",
+    "dane/materialy/kleje_P19_mechanika_v1.json": "1b494d4a56afacdb74debfc76b1977d13147a5566fbdd31bb586e201f4a8c8f4",
+    "skrypty/element_brylowy_P18C.py": "d90d0c7f1adf2d00249220653b8335ea1e021b07b774dc770921029da4a8aacb",
+    "skrypty/model_ramy_3D_P18C.py": "698395a0d216659572ae84c1fea1b1251a67c5c32b99a7cf84cc55582e33e1ad",
+    "skrypty/analiza_ramy_3D_P18C.py": "0d4874cc9f807ee49093f113e4143d4710eefb4d3d61ad5473be746f5459a8fb",
+    "skrypty/model_frontu_z_otworem_P18B.py": "9dc138ae9be3ab7db91803c7441b377d064268ddfd41364d9598938aa4b9c953",
+    "skrypty/model_plyty_MITC_P18.py": "1e98a4553f5697344821a83d7d6afe823c2a801350f14dbdeb6d8ce681690775"
+  },
+  "maximum_power_residual": 7.876644677518055e-10,
+  "scope": [
+    "BryloweEAS9 z zerowa srednia dodatkowych odksztalcen,nie C3D8I13.",
+    "Body shape jest geometria kontrolna;nettopowietrza i driver displacement nie sa zatwierdzone.",
+    "Spoiny liniowe normalnie/stycznie,brak delaminacji,pelzania i zmeczenia.",
+    "Kosz sztywny6DOF,CG80mm,JCG=m*0.1^2 sa hipotezami.",
+    "Sciagi osiowe;bez ich lokalnego zginania,podatnosci nakladek i bezposrednich sil cisnienia na sciag.",
+    "Floor/straty sa scenariuszami,nie pomiarem izolatorow/podlogi.",
+    "Mala harmoniczna odpowiedz przy zachowanym styku;nie zastepuje P19C.",
+    "Nie wyznacza THD,szumu,promieniowania ani SPL pomieszczenia."
+  ]
+}

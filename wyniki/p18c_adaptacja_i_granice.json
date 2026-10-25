@@ -1,0 +1,129 @@
+{
+  "status": "ADAPTIVE_SCOPED_MESH_AND_BOUNDARY_CONTROLS",
+  "adaptive": [
+    {
+      "label": "ADAPTIVE_18",
+      "n": 18,
+      "dof": 25611,
+      "compliance_m3_pa": 2.4054068874003644e-08,
+      "first_elastic_hz": 92.65816588986218,
+      "peak_process_RSS_MiB": 585.71484375,
+      "relative_change_compliance": 0.024293294455123737,
+      "relative_change_f1": 0.011302106407601764
+    },
+    {
+      "label": "ADAPTIVE_22",
+      "n": 22,
+      "dof": 36771,
+      "compliance_m3_pa": 2.4254855141734865e-08,
+      "first_elastic_hz": 92.24638239797338,
+      "peak_process_RSS_MiB": 930.91796875,
+      "relative_change_compliance": 0.008347289133616043,
+      "relative_change_f1": 0.004444114427845092
+    }
+  ],
+  "unexecuted": [],
+  "stopping_rule": "Ostatnia zmiana C i f1<1%;to kontrola siatki,nie certyfikat bledu continuum.",
+  "thickness3": {
+    "label": "THICKNESS_3",
+    "n": 10,
+    "dof": 13746,
+    "compliance_m3_pa": 2.3331204112188483e-08,
+    "first_elastic_hz": 93.60476714383114,
+    "peak_process_RSS_MiB": 930.91796875
+  },
+  "quadrature3": {
+    "label": "QUADRATURE3",
+    "n": 10,
+    "dof": 9339,
+    "compliance_m3_pa": 2.2997684363586157e-08,
+    "first_elastic_hz": 93.88049167491428,
+    "peak_process_RSS_MiB": 930.91796875
+  },
+  "quadrature4": {
+    "label": "QUADRATURE4",
+    "n": 10,
+    "dof": 9339,
+    "compliance_m3_pa": 2.2997684667142175e-08,
+    "first_elastic_hz": 93.88047303920551,
+    "peak_process_RSS_MiB": 930.91796875
+  },
+  "fixed_sides_experiment": {
+    "scope": "Kazda strona spoiny osobno do nieruchomej sprezystej podpory;nie gorna/dolna granica realnejskrzyni.",
+    "compliance_m3_pa": 2.187246465817492e-08,
+    "full_frame_to_fixed_sides_ratio": 1.051444591478478
+  },
+  "gravity_translation_field_checks": [
+    {
+      "ties": 0,
+      "support": 10000.0,
+      "max_translation_m": 0.011201844346885127,
+      "max_all_generalized_slots": 0.011201844346885127,
+      "translation_is_maximum": true
+    },
+    {
+      "ties": 0,
+      "support": 100000.0,
+      "max_translation_m": 0.0011488838755740914,
+      "max_all_generalized_slots": 0.0011488838755740914,
+      "translation_is_maximum": true
+    },
+    {
+      "ties": 0,
+      "support": 1000000.0,
+      "max_translation_m": 0.00014358092392312754,
+      "max_all_generalized_slots": 0.00014358092392312754,
+      "translation_is_maximum": true
+    },
+    {
+      "ties": 1,
+      "support": 10000.0,
+      "max_translation_m": 0.01129022368434475,
+      "max_all_generalized_slots": 0.01129022368434475,
+      "translation_is_maximum": true
+    },
+    {
+      "ties": 1,
+      "support": 100000.0,
+      "max_translation_m": 0.0011572649257727517,
+      "max_all_generalized_slots": 0.0011572649257727517,
+      "translation_is_maximum": true
+    },
+    {
+      "ties": 1,
+      "support": 1000000.0,
+      "max_translation_m": 0.0001439626464322561,
+      "max_all_generalized_slots": 0.0001439626464322561,
+      "translation_is_maximum": true
+    },
+    {
+      "ties": 2,
+      "support": 10000.0,
+      "max_translation_m": 0.011379060725633834,
+      "max_all_generalized_slots": 0.011379060725633834,
+      "translation_is_maximum": true
+    },
+    {
+      "ties": 2,
+      "support": 100000.0,
+      "max_translation_m": 0.0011661036341713764,
+      "max_all_generalized_slots": 0.0011661036341713764,
+      "translation_is_maximum": true
+    },
+    {
+      "ties": 2,
+      "support": 1000000.0,
+      "max_translation_m": 0.00014480154906093903,
+      "max_all_generalized_slots": 0.00014480154906093903,
+      "translation_is_maximum": true
+    }
+  ],
+  "zero_bond_independent_rigid_modes": 36,
+  "zero_bond_rigid_relative_error": 8.350542481833193e-15,
+  "input_sha256": {
+    "skrypty/element_brylowy_P18C.py": "d90d0c7f1adf2d00249220653b8335ea1e021b07b774dc770921029da4a8aacb",
+    "skrypty/model_ramy_3D_P18C.py": "698395a0d216659572ae84c1fea1b1251a67c5c32b99a7cf84cc55582e33e1ad",
+    "skrypty/uzupelnienie_siatki_ramy_P18C.py": "b433de7de66fd5dc36237512c8cdba0e3976a4bb2cd3effcb251969fcabe01bf",
+    "wyniki/p18c_rama.csv": "cde0fe5d06672df47cb14e624820d2c64b8ed27ddf2fe0035f469397dcfabe4b"
+  }
+}

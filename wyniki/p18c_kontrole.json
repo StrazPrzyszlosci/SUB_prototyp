@@ -1,0 +1,72 @@
+{
+  "status": "SCOPED_3D_NUMERICAL_AND_ANALYTIC_CONTROLS_NOT_MDF_QUALIFICATION",
+  "patch": [
+    {
+      "distorted": false,
+      "force_relative_error": 6.698214872654897e-16,
+      "stress_relative_error": 5.872986396548738e-16
+    },
+    {
+      "distorted": true,
+      "force_relative_error": 1.023863859417527e-15,
+      "stress_relative_error": 5.143952920202255e-16
+    }
+  ],
+  "pure_bending": [
+    {
+      "n_length": 4,
+      "enhanced": false,
+      "computed_work_j": 2.2870632684707867e-06,
+      "exact_work_j": 0.00014000000000000004,
+      "compliance_ratio": 0.016336166203362756
+    },
+    {
+      "n_length": 4,
+      "enhanced": true,
+      "computed_work_j": 0.00014000000014633573,
+      "exact_work_j": 0.00014000000000000004,
+      "compliance_ratio": 1.000000001045255
+    },
+    {
+      "n_length": 8,
+      "enhanced": false,
+      "computed_work_j": 8.673157218990315e-06,
+      "exact_work_j": 0.00014000000000000004,
+      "compliance_ratio": 0.061951122992787946
+    },
+    {
+      "n_length": 8,
+      "enhanced": true,
+      "computed_work_j": 0.0001400000000284981,
+      "exact_work_j": 0.00014000000000000004,
+      "compliance_ratio": 1.0000000002035576
+    }
+  ],
+  "material_volume_relative_error": 5.262457136723242e-13,
+  "pressure_port_volume_relative_error": 2.220446049250313e-16,
+  "pressure_rigid_generalized_force": [
+    2.6020852139652106e-18,
+    -2.7755575615628914e-17,
+    -3.0899761915836876e-17,
+    1.0408340855860843e-17,
+    -1.1394151681193288e-17,
+    1.0408340855860843e-17
+  ],
+  "rigid_stiffness_relative_residual": 2.6730243402829993e-15,
+  "static_relative_residual": 4.924968716430128e-12,
+  "tie_mass_kg": 0.4636960000000059,
+  "floor_balance_relative": 1.4740672845818357e-10,
+  "normal_gravity_reactions_n": [
+    103.45833806033478,
+    68.03300751815097,
+    103.45833229085785,
+    68.03301332168891
+  ],
+  "mixed_normal_tangential_bond_patch_relative_error": 3.958383669424452e-14,
+  "mixed_bond_exact_work_relative_error": 2.220446049250313e-16,
+  "input_sha256": {
+    "skrypty/element_brylowy_P18C.py": "d90d0c7f1adf2d00249220653b8335ea1e021b07b774dc770921029da4a8aacb",
+    "skrypty/model_ramy_3D_P18C.py": "698395a0d216659572ae84c1fea1b1251a67c5c32b99a7cf84cc55582e33e1ad",
+    "skrypty/sprawdz_bryly_i_rame_P18C.py": "7f852975346b7d26fb5354f98f763a5da4cacf240b3a91d887e107105465c63e"
+  }
+}

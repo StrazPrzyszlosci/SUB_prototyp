@@ -107,6 +107,7 @@ def main():
     from odtworz_mechanike_P18_P19_P21 import main as mechanical_stage
     from odtworz_front_i_styk_P18B_P19B import main as front_contact_stage
     from odtworz_styk_czasowy_P19C import main as contact_time_stage
+    from odtworz_rame_i_spoiny_3D import main as frame3d_stage
     checks()
     images()
     physics()
@@ -181,6 +182,7 @@ def main():
     mechanical_stage()
     front_contact_stage()
     contact_time_stage()
+    frame3d_stage()
     baseline()  # Manifest powstaje po wszystkich obliczeniach.
 
 

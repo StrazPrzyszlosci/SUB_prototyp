@@ -9,6 +9,8 @@ Podstawa: [brief v0.6](brief_system_audio_DIY_v0.6.md) i doprecyzowania użytkow
 z 2026-10-23 zapisane w [rejestrze decyzji](DECYZJE_I_PYTANIA.md).
 
 Aktualizacja: **Sub12 i Sub15 zatwierdzone jako referencje (U-009)**.
+Aktualizacja U-021: **front stały, niedemontowalny, pod jeden docelowo
+wybrany przetwornik**. Regulacja objętości pozostaje aktualna.
 Referencje monitorów odłożone; liczbowe progi nadal do wyprowadzenia.
 Narzędzia CAD i ich MCP odłożone. Firecrawl dopuszczony obok browser-harness.
 
@@ -116,10 +118,10 @@ nie mogą rozstrzygnąć pełnej jakości użytkowej.
 
 ### R3 — koncepcja regulowanej skrzyni i wybór eksperymentu
 
-Porównać MDF i sklejkę, masę, podatność dużych paneli, koszt obróbki,
-wymienny front, serwis i osłonę przed dziećmi. Głośnik 12″ i 15″ mogą wymagać
-innych frontów oraz innego docelowego zakresu Vb. Nie wymuszać jednej skrzyni,
-jeżeli taka uniwersalność wyraźnie zwiększa koszt lub pogarsza sztywność.
+Porównać MDF i sklejkę, masę, podatność dużych paneli oraz stałe połączenie
+frontu z korpusem, serwis i osłonę. Według U-021 front będzie niedemontowalny,
+pod jeden docelowy model. Warianty 12″/15″ porównujemy przed wyborem,
+z odpowiednim zakresem Vb; nie wymagamy jednego frontu do kilku głośników.
 
 Rekomendowany mechanizm do rozpatrzenia: maksymalna przestrzeń robocza
 z mocowanymi sztywnymi modułami wypornościowymi; alternatywa: szczelna

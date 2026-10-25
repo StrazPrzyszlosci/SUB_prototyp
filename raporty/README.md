@@ -40,3 +40,6 @@ bieżący zakres sprawdzaj w [programie 30 pakietów](../PROGRAM_30_BADAN.md).
 | [032](032_postep_po_mechanice_i_zakres_do_konca.md) | Raport 032 — postęp po pierwszym etapie mechaniki i zakres do końca |
 | [033](033_front_otwor_kosz_i_styk_jednostronny.md) | Raport 033 — P18B/P19B: front z otworem, kosz i jednostronny styk |
 | [034](034_czasowy_styk_i_pelny_MES.md) | Raport 034 — P19C: czasowy styk i porównanie z pełnym MES |
+| [035](035_pelna_rama_3D_spoiny_i_podparcie.md) | Raport 035 — P18C: pełna rama 3D, spoiny i podparcie |
+| [036](036_spoiny_3D_i_wirtualne_odspojenie.md) | Raport 036 — P19D: spoiny 3D i wirtualne odspojenie |
+| [037](037_staly_front_wymagany_modul_spoin.md) | Raport 037 — P19E: wymagany moduł spoin stałego frontu |

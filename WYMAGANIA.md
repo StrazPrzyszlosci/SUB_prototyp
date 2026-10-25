@@ -17,7 +17,7 @@ O = otwarte. Akceptacja briefu nie oznacza akceptacji dowolnych liczb modelu.
 | W10 | Zewnętrzny wzmacniacz, DSP, zasilacz | U | Schemat i dokumentacja mechaniczna | R4/R5 |
 | W11 | Gotowy miniDSP, minimum 8 niezależnych wyjść docelowo | U | Routing i instrukcja konkretnej wersji | R4 |
 | W12 | Moduły klasy D, dopasowanie napięcia/prądu i ochrony | U | Z(f), limity, dokumentacja zasilacza, chłodzenie | R4 |
-| W13 | Możliwa wymiana głośnika i objętości | U | Wymienny front, prześwity, mechanizm uszczelnienia | R3 |
+| W13 | Front stały, niedemontowalny, pod jeden wybrany przetwornik; regulowana objętość | U-021 | Stałe połączenie front–korpus, klej/nośność i bilans Vb. Wcześniejszy wymienny front zastąpiony decyzją użytkownika | P19/P20/R3 |
 | W14 | CNC od wskazanego wykonawcy MDF | U | [Wymagania wykonawcy](WYKONAWCA_CNC.md) | R3/R5 |
 | W15 | Osłona membrany, stabilność, serwis | U | Rysunek mechaniczny i późniejszy odbiór montażu | R5/P1 |
 | W16 | Docelowo 2 subwoofery i monitory aktywne 3-drożne | U | Schemat 8 torów i pozostawiony zakres podziału | R4/P3/P4 |

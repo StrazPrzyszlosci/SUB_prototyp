@@ -1,0 +1,51 @@
+{
+  "status": "INDEPENDENT_ACTIVE_SET_CHECKS_AND_FINITE_DEFECT_MESH_COMPARISON",
+  "independent_enumeration": [
+    {
+      "error": 5.551115123125783e-17,
+      "residual": 5.2033052530308273e-17
+    },
+    {
+      "error": 5.551115123125783e-17,
+      "residual": 3.6138720752198523e-17
+    },
+    {
+      "error": 4.440892098500626e-16,
+      "residual": 2.6729679657845073e-16
+    }
+  ],
+  "bregman_identity_max_error": 8.881784197001252e-16,
+  "mesh_comparisons": [
+    {
+      "load": "GRAVITY",
+      "mesh_n": 14,
+      "dof": 16467,
+      "removed_area_m2": 0.005040000000000001,
+      "total_release_j": 3.0460416161998007e-05,
+      "average_0_to_10mm_release_j_m2": 0.006043733365475794,
+      "N10_average_0_to_10mm_release_j_m2": 0.004750493555405992,
+      "relative_change": 0.27223272592341785,
+      "residual": 2.956656050825361e-11
+    },
+    {
+      "load": "GRAVITY_PLUS_STATIC_1KPA",
+      "mesh_n": 14,
+      "dof": 16467,
+      "removed_area_m2": 0.005040000000000001,
+      "total_release_j": 0.0001616401371987354,
+      "average_0_to_10mm_release_j_m2": 0.03207145579339987,
+      "N10_average_0_to_10mm_release_j_m2": 0.02278951219104763,
+      "relative_change": 0.40729013962828287,
+      "residual": 1.7836828574279195e-11
+    }
+  ],
+  "scope": "Porownanie skonczonego defektu;nie certyfikat pochodnej G ani materialowegoGc.",
+  "input_sha256": {
+    "skrypty/sprawdz_styk_i_defekt_P19D.py": "edb6f2512fa564e1ac8330a7d7802f1c41e922eac19f618cf052541a7ca7278e",
+    "skrypty/kontakt_brylowy_P19.py": "73fe36435803241c9078a31988c3702f2aab0fdd6b204689d246c639c52c5bfc",
+    "skrypty/rozwarstwienie_spoiny_P19D.py": "1a2748d8a9b35ead61747f2816bfb228bb6302c859b12155e51b225313f65afc",
+    "skrypty/model_ramy_3D_P18C.py": "698395a0d216659572ae84c1fea1b1251a67c5c32b99a7cf84cc55582e33e1ad",
+    "skrypty/element_brylowy_P18C.py": "d90d0c7f1adf2d00249220653b8335ea1e021b07b774dc770921029da4a8aacb",
+    "wyniki/p19d_wirtualne_rozwarstwienie.csv": "9ad0fb17296770df701092fd4025b94c3240ad57d52c9523c6fb1c4599407684"
+  }
+}

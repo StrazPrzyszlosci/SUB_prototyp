@@ -157,6 +157,14 @@ Data dostępu2026-10-25. ReakcjaRayleigha rozwija źródłaP11 i własne kontrol
 
 ## Pliki zachowane lokalnie
 
+**SRC51**,2026-10-25: [Abaqus2025 — continuum elements with incompatible modes](https://docs.software.vt.edu/abaqusv2025/English/SIMACAETHERefMap/simathe-c-incompatible.htm).
+Odczytano liniowy kontekst i oryginalne MathML warunków pól dodatkowych.
+C3D8I ma13modów;własnyEAS9niejest jegoimplementacją. Wykorzystanie i
+hash prywatnej ekstrakcji są w [rejestrzeP18C](../dane/zrodla/P18C_teoria_3D_i_metoda.json).
+Wcześniejszy timeout nawigacji rozstrzygnięto ponownym odczytem tej samej
+karty;nie oznaczał niedostępności publikacji. Prac Wilson/Simo nie
+uznajemy za przeczytane na podstawie znalezienia odnośników.
+
 P18B/P19B,2026-10-25: **SRC49** — oryginalny rysunekDaytonRSS390HF-4
 z PDFproducenta; **SRC50** — oryginalny rysunekSTXW.32.800.8.FCX.
 Ponownie obejrzano SRC03/SB34REV2. Wymiary i ich płaszczyzny odniesienia,

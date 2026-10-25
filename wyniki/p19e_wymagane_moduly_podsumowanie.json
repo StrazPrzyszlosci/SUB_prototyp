@@ -1,0 +1,19 @@
+{
+  "status": "STIFFNESS_REQUIREMENTS_FOR_FIXED_FRONT_NOT_STRENGTH_OR_FATIGUE",
+  "cases": 12,
+  "decision": "U-021,frontstaly,niedemontowalny,podjedenwybranydocelowoprzetwornik",
+  "model_reference": "C04niejestostatecznymwyboremglośnika",
+  "monotonicity": "dC/dbeta=-qT*Kvariable*q<=0 przy stalymH i stalejmasie;beta>0.",
+  "assumptions": [
+    "5/10/20%to scenariusze przyrostuC,nie zatwierdzone progi briefu.",
+    "Eeff odwzorowuje jednoczesniekn/ks przy stalejnu_glue=.35;nie opisuje dowolnego konkretnego kleju.",
+    "Zmiana grubosci przeliczona dla tej samej lokalizacji interfejsu i liniowego prawa.",
+    "PrógE nie okresla adhezji,Gc,SN,J(t),szczelnosci lub trwalosci.",
+    "PorownanieN10/N14 jest skonczona kontrola siatki,nie dowod globalnego ekstremum."
+  ],
+  "input_sha256": {
+    "skrypty/wymagany_modul_spoin_ramy_P19E.py": "ff15f8f5673c71e6b5ec983914c90b84168a598b387bc411da3005b4300703d1",
+    "skrypty/model_ramy_3D_P18C.py": "698395a0d216659572ae84c1fea1b1251a67c5c32b99a7cf84cc55582e33e1ad",
+    "skrypty/element_brylowy_P18C.py": "d90d0c7f1adf2d00249220653b8335ea1e021b07b774dc770921029da4a8aacb"
+  }
+}

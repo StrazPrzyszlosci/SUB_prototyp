@@ -1,13 +1,17 @@
 # SUB_prototyp — przewodnik po badaniach subwoofera
 
 Projektujemy **prototyp subwoofera zamkniętego z regulowaną objętością**.
+Aktualna decyzja [U-021](DECYZJE_I_PYTANIA.md): **front stały, niedemontowalny,
+pod jeden docelowo wybrany przetwornik**.
 Badania mają doprowadzić do wyboru **jednego przetwornika i jednej konstrukcji**:
 objętości, płyt, usztywnień, połączeń, kleju oraz wymagań napędu i ochrony.
 Ten README prowadzi od pytań projektowych przez najważniejsze wykresy do
 raportów, danych i odtwarzalnych obliczeń.
 
 **Stan: 2026-10-25.** Porównujemy 24 modele od 11 producentów, w tym 4 STX.
-Najnowszy ukończony zakres to [czasowa analiza styku frontu — raport 034](raporty/034_czasowy_styk_i_pelny_MES.md).
+Najnowsze etapy to [pełna rama 3D — raport 035](raporty/035_pelna_rama_3D_spoiny_i_podparcie.md)
+i [screening spoin/odspojenia — raport 036](raporty/036_spoiny_3D_i_wirtualne_odspojenie.md)
+oraz [wymagania modułu spoin stałego frontu — raport 037](raporty/037_staly_front_wymagany_modul_spoin.md).
 Trwa program badań przed budową; ostateczny wybór i końcowy PDF są przed nami.
 Przedstawione wyniki są obliczeniami i symulacjami, bez pomiarów fizycznego prototypu.
 
@@ -38,7 +42,7 @@ Przedstawione wyniki są obliczeniami i symulacjami, bez pomiarów fizycznego pr
 | Co robią gaz, wypełnienie i nieszczelności? | [009 — przecieki](raporty/009_N7_straty_nieszczelnosci.md), [016 — gaz i materiały](raporty/016_gaz_wypelnienie_i_granice.md) | [Konfiguracje modeli](dane/konfiguracje/), [źródła](baza_wiedzy/ZRODLA.md) |
 | Skąd biorą się nieliniowości i IMD? | [020 — nieliniowy napęd](raporty/020_nieliniowy_naped_i_sprzezony_gaz.md), [021 — pamięć cewki](raporty/021_pamiec_cewki_i_definicja_Lgen.md), [026 — dwa tony](raporty/026_P14B_pelna_kampania_dwutonowa.md) | [Podsumowanie P14B](wyniki/p14b_podsumowanie.json) |
 | Jak prąd, temperatura i chłodzenie wpływają na pracę? | [025 — topologia termiki](raporty/025_P15A_topologia_i_granice_termiki.md), [027 — grzanie i napęd](raporty/027_P15B_sprzezenie_grzania_i_napedu.md) | [Podsumowanie P15B](wyniki/p15b_podsumowanie.json) |
-| Jak policzyć panele, usztywnienia i klej? | [029 — płyty](raporty/029_P18A_plyty_sciagi_i_dynamika.md), [030 — spoiny](raporty/030_P19A_obliczenia_spoin_i_material_kleju.md), [031 — reakcja powietrza](raporty/031_P21A_reakcja_powietrza_i_bilans.md) | [Materiał MDF i kleje](dane/materialy/), [wyniki mechaniki](wyniki/manifest_mechaniki_P18_P19_P21.json) |
+| Jak policzyć panele, usztywnienia i klej? | [029 — płyty](raporty/029_P18A_plyty_sciagi_i_dynamika.md), [030 — spoiny](raporty/030_P19A_obliczenia_spoin_i_material_kleju.md), [035 — pełna rama](raporty/035_pelna_rama_3D_spoiny_i_podparcie.md), [036 — defekt spoiny](raporty/036_spoiny_3D_i_wirtualne_odspojenie.md) | [Materiał MDF i kleje](dane/materialy/), [wyniki 3D](wyniki/manifest_ramy_i_spoin_3D.json) |
 | Jak otwór, kosz i uszczelka zmieniają front? | [033 — front i docisk](raporty/033_front_otwor_kosz_i_styk_jednostronny.md), [034 — styk w czasie](raporty/034_czasowy_styk_i_pelny_MES.md) | [Geometria producentów](dane/zrodla/P18B_geometria_i_ograniczenia.json), [przebiegi P19C](wyniki/p19c_podsumowanie.json) |
 | Jak uwzględniamy pokój i dwie sztuki? | [013 — dwa źródła i gabaryty](raporty/013_pokoj_i_realne_gabaryty.md), [017 — sprzężenie pola](raporty/017_promieniowanie_i_sprzezenie_pokoju.md), [019 — aktualna orientacja](raporty/019_zamiana_kanapy_i_RTV.md) | [Konwencja pokoju](dane/konfiguracje/pokoj_odsluchowy.json), scenariusze opisane w raportach |
 
@@ -195,6 +199,31 @@ warunkowy przypadek; nie potwierdzenie hałasu, przecieku lub THD produktu.
 [Raport 034: wynik, zbieżność i ograniczenia](raporty/034_czasowy_styk_i_pelny_MES.md)
 · [dodatkowy wykres zbieżności](wyniki/54_P19C_zbieznosc_i_pelny_MES.png).
 
+### 13. Cała rama: połączenia ścian, masa i podparcie
+
+Model obejmuje sześć brył i dwanaście podatnych spoin. Wariant z jednym
+ściągiem zmniejsza obliczoną podatność o około 18% przy dodatkowych 0,464 kg.
+Ruch przy osobnej sile 1 N RMS zależy także od podparcia. Głośnik jest tu
+sztywną masą odniesienia. Zgodnie z U-021 rozwijamy stałe połączenie
+frontu z korpusem; wykres nie jest odpowiedzią całego napędu elektroakustycznego.
+
+![Pełna rama — porównanie ściągów, masy i scenariuszy podparcia](wyniki/57_P18C_sciagi_masa_i_podparcie.png)
+
+[Raport 035: siatki do 36 771 współrzędnych, równowaga i ograniczenia](raporty/035_pelna_rama_3D_spoiny_i_podparcie.md)
+· [raport 036: energia wirtualnego odspojenia nie jest jeszcze zbieżna](raporty/036_spoiny_3D_i_wirtualne_odspojenie.md).
+
+### 14. Stały front: wymagany moduł spoiny
+
+Wyznaczono progi efektywnego E dla zadanego przyrostu podatności, osobno
+dla samego frontu i wszystkich spoin. Przykładowo dla +10% C i warstwy
+0,2 mm na N=14 wynoszą około 9,09 i 72,14 MPa. Są to wyniki modelu
+sztywności; nie gwarancja nośności, adhezji, pełzania lub zmęczenia.
+Scenariusze 5/10/20% nie są zatwierdzonymi progami briefu.
+
+![Stały front — wymagania efektywnego modułu spoiny i wpływ grubości warstwy](wyniki/60_P19E_staly_front_i_wymagany_modul.png)
+
+[Raport 037: metoda monotoniczna, dane i ograniczenia siatki](raporty/037_staly_front_wymagany_modul_spoin.md).
+
 <a id="dalsze-prace"></a>
 ## Co wynika dla dalszego projektu
 
@@ -205,12 +234,13 @@ osobne sprawdzenie frontu, docisku i ochrony dynamicznej.
 
 | Pozostały blok | Decyzja, do której ma doprowadzić |
 |---|---|
-| Pełna rama i połączenia, regulacja Vb, pole przestrzenne | Geometria prototypu, realne objętości netto, ścieżki sił, szczelność i wykonanie |
+| Stały front i jego połączenie z korpusem, regulacja Vb, pole przestrzenne | Geometria prototypu, realne objętości netto, ścieżki sił, szczelność i wykonanie |
 | Napęd, cyfrowe DSP, clipping, ochrona i szersze sygnały | Wymagania napięcia/prądu, filtry i kontrola ruchu/temperatury w czasie |
 | Dwie sztuki w docelowym pokoju | Wykonalne miejsca, gabaryty, faza, opóźnienia i integracja |
 | Odporne porównanie finalistów i domknięcie programu | Jeden przetwornik, jedna regulowana obudowa i końcowy PDF z uzasadnieniem |
 
-Najbliższy krok po P19C: **pełna rama i połączenia obudowy**.
+Najbliższy krok po P19E: **lokalna geometria i rozprowadzenie sił
+w stałym połączeniu frontu z korpusem**, następnie regulacja Vb.
 Stan każdego pakietu sprawdzaj w [programie badań](PROGRAM_30_BADAN.md).
 [Raport 032](raporty/032_postep_po_mechanice_i_zakres_do_konca.md) opisuje
 orientacyjną ocenę postępu po wcześniejszym etapie; liczba symulacji
@@ -258,9 +288,14 @@ jej wyniki. Zgodne dzienniki i archiwa przywracają wcześniej policzone
 przypadki; ich odczyt nie jest nową niezależną replikacją. P19C jawnie
 korzysta z zachowanego zimnego pilota i przygotowanych stanów porównawczych.
 
+Etap ramy i spoin 3D można odtworzyć osobno:
+
+    OPENBLAS_NUM_THREADS=1 python3 skrypty/odtworz_rame_i_spoiny_3D.py
+
 Manifesty wykonanych etapów: [P14B/P15B](wyniki/manifest_P14B_P15B.json),
 [P17](wyniki/manifest_P17.json), [panele i spoiny](wyniki/manifest_mechaniki_P18_P19_P21.json),
 [front i docisk](wyniki/manifest_frontu_P18B_P19B.json),
-[styk w czasie](wyniki/manifest_styku_czasowego_P19C.json).
+[styk w czasie](wyniki/manifest_styku_czasowego_P19C.json),
+[rama i spoiny 3D](wyniki/manifest_ramy_i_spoin_3D.json).
 Kontrole sprawdzają opisane modele i ich dziedziny; walidacja urządzenia
 nastąpi po budowie, zgodnie z [briefem](brief_system_audio_DIY_v0.6.md).

@@ -1,0 +1,20 @@
+{
+  "source_id": "SRC51",
+  "access_date": "2026-10-25",
+  "title": "Abaqus2025:Continuum elements with incompatible modes",
+  "url": "https://docs.software.vt.edu/abaqusv2025/English/SIMACAETHERefMap/simathe-c-incompatible.htm",
+  "local_cache": ".firecrawl/p18c_abaqus_incompatible.md",
+  "cache_sha256": "cb5dc5f6dee99a3454d948908e6e3248750cfe3483e8a1e5fbda04448abdcba3",
+  "original_inspection": "Browser-harness potwierdzil oryginalna strone i79MathML;odczytano poczatek sekcji liniowej i warunekzerowejsredniej;brakobrazow. Pierwszytimeout nawigacji nie byl terminalnym bledem zrodla.",
+  "used": [
+    "Dokumentacja wyjasnia pasozytnicze scinanie i efektPoissona przy zginaniu oraz wplyw znieksztalcenia elementu.",
+    "Opisuje warunki niezaleznosci dodatkowego gradientu i ortogonalnosci do stalych gradientow.",
+    "C3D8I ma13wewnetrznychmodow;nie jest naszymEAS9."
+  ],
+  "implementation_scope": "Wlasne9mody odksztalcen o zerowej sredniej i kondensacja;nie kopiowano algorytmu C3D8I. ReferencjeSimo/Wilson znalezione przez dokumentacje,nie przeczytane oryginalne prace.",
+  "companion_url": "https://docs.software.vt.edu/abaqusv2025/English/SIMACAEELMRefMap/simaelm-c-solidcont.htm",
+  "warnings": [
+    "Nie przenosic gwarancji/zakresu producenta na wlasny element.",
+    "Walidacja wlasna:patch3D,purebending,wspolna geometria spoin,objetosc,masa i zbieznosc;nie pelna kwalifikacjaMDF."
+  ]
+}

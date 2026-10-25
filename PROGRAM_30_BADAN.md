@@ -11,6 +11,10 @@ Ma wskazać jeden głośnik i jedną konstrukcję regulowanej obudowy, z materia
 grubościami, usztywnieniami, połączeniami i obliczeniowym doborem kleju.
 Modele warunkowe mają ujawniać nieznane dane; nie zastępują badania urządzenia.
 
+U-021,2026-10-25: front prototypu ma być stały, niedemontowalny,
+pod jeden docelowo wybrany przetwornik. Zastępuje to wcześniejszy plan
+wymiennego frontu; porównania kandydatów i regulacja Vb pozostają w zakresie.
+
 ## Macierz pokrycia
 
 „Częściowo” oznacza rzeczywisty wynik z niezamkniętym zakresem, nie procent
@@ -36,8 +40,8 @@ pakietu samym stworzeniem planu, testów ani listy bibliotek.
 | P15 | N8 — model cieplny w czasie | Wykonane rodziny P15A/P15B; parametry produktów otwarte | Raport025:4225sieciCauer/Foster i granice. Raport027:2304przebiegiRe(T),ruchu,strat i przyjętej konwekcji,4pełneODEaudio,1152porównania obwiedni. Brak identyfikacjiR/C, lokalnych gradientów i powietrza skrzyni |
 | P16 | Sprzężenia cieplne i elektromechaniczne | Częściowo — Re(T),ruch i chłodzenie | P15B sprzęga prąd,Re(T),ruch i straty; twierdzenie napięciowe dla stałego biernego tła. Nie wykonano fizycznej identyfikacjiBL(T),pełnych dużych sygnałów, gradientów i wszystkich sprzężeń termicznych |
 | P17 | Łączne granice użytecznego zakresu | Częściowo — wspólneV/I/X/chłodzenie | Raport028:5184zestawy,31104punkty,analityczne przedziałyVb>0,26246niezależnych brzegów i3tożsamościSymPy. Stały poziom wyjściowy i warunkoweRth. Nie zintegrowano jeszcze rzeczywistegoTHD,ciągłego pasma,muzyki,konstrukcji i pokoju |
-| P18 | Płyty MDF: drgania, naprężenia, promieniowanie | Częściowo — wykonane P18A/P18B | Raport029:172warianty płyt. Raport033:136frontów z otworem,izoparametrycznyMITC,sztywny kosz i podatne mocowania,1088modów i90punktówkomory. Brakpełnejramy,frezu,otworówśrubowych3D i finalnejradiacji |
-| P19 | Usztywnienia, połączenia i klej | Częściowo — wykonane P19A/P19B/P19C | Raport030:656podmodelispoina/MDF. Raport033:12stanówdocisku,72diagnostyki,20flag. Raport034 rozstrzyga1przypadek80Hz wczasie:7odpowiedziROM zpilotem/tłumieniem i3pełneMES2959DOF. Pozostałeflagi,trwałość,pełnezłącza3D i ramaotwarte |
+| P18 | Płyty MDF: drgania, naprężenia, promieniowanie | Częściowo — wykonane P18A/P18B/P18C | Raport029:płyty. Raport033:front. Raport035:pełna rama6brył/12spoin,siatki do36771DOF,168punktówharmonicznych,ściągi i podparcie. U-021:frontstały;geometria finalna,frez i promieniowanie otwarte |
+| P19 | Usztywnienia, połączenia i klej | Częściowo — wykonane rodziny P19A–P19E | Raporty030/033/034:spoiny i styk. Raporty035/036:pełna rama,6ubytków zkontaktem;Gdelta różni się27/41%. Raport037:12progówsztywności stałegofrontu,nie nośność/Gc. Geometrialokalna,SN/J(t)otwarte |
 | P20 | Regulacja objętości | Częściowo | Koncepcje i bilans brutto/netto; mechaniczna analiza porównawcza otwarta |
 | P21 | Wewnętrzne pole i sprzężenie paneli | Częściowo — wykonane odniesienie P21A | Raport031:72punktysprzężeniaRayleigh/MITC i gazu0D,masaDuffy,moc i wzajemność. Przestrzennepole3Dkomory,różneściany,front i podparcie nadal otwarte |
 | P22 | Napęd, impedancja wyjściowa i clipping | Częściowo | Dotychczas idealne ograniczeniaV/I; dynamika i obciążenie rzeczywiste otwarte |
@@ -78,7 +82,11 @@ Wykonano podstawyP18A/P19A i odniesienieP21A (raporty029–031).
 P18B/P19B dodają front z otworem,koszem i jednostronny styk (raport033).
 P19Crozstrzyga konkretny zmiennystyk80Hz wjawnejrodzinie (raport034),
 ze zbieżnościąredukcji i odrębną propagacjąpełnegoMES2959DOF.
-Najbliższykrok:pełna rama i połączenia obudowy;potem regulacja i pole3D P19–P21,
+P18C/P19Dmają wykonaną referencyjną pełnąramę i screeningubytku spoiny
+(raporty035/036). U-021ustala front stały pod jeden docelowy przetwornik.
+P19Ewyznacza wymaganiamodułu spoinw12scenariuszach (raport037).
+Najbliższykrok:geometrialokalna stałegopołączenia front–korpus i rozprowadzeniesił;
+potem regulacja i pole3D P20/P21,
 czasoweDSP/napędP22–P25, pokójP26–P28 i integracjaP29/P30.
 Poszukiwanie danych materiałowych i nieliniowych może toczyć się równolegle
 z obliczeniami niewymagającymi tych danych. Nie wykonywać zakupów.
