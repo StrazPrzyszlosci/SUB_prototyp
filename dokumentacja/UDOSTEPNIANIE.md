@@ -31,7 +31,7 @@ Nie opublikowano posta na Facebooku ani nie sprawdzono podglądu na koncie użyt
 
 - [PNG 1280 × 640 px do wgrania](../grafika/social-preview.png).
 - [Wersja wektorowa SVG](../grafika/social-preview.svg).
-- [Baner README](../grafika/README_baner.svg).
+- [Baner README w PNG](../grafika/README_baner.png).
 - [Kod generujący grafiki](../skrypty/grafiki_przewodnika.py).
 
 Rysunek zachowuje proporcje obudowy odniesienia: 504 × 684 × 504 mm

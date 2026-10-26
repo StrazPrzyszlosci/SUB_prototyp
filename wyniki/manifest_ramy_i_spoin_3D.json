@@ -1,6 +1,6 @@
 {
   "status": "EXECUTED_REFERENCE_FRAME_AND_NONCONVERGED_FINITE_DEFECT_SCREENING",
-  "generated_at": "2026-10-26T20:37:11.331459+01:00",
+  "generated_at": "2026-10-26T21:15:18.310105+01:00",
   "libraries": {
     "Python": "3.12.3",
     "NumPy": "1.26.4",
@@ -65,8 +65,8 @@
     "wyniki/p19e_wymagane_moduly_stalego_frontu.csv": "43b11b05d201e8f6a1ea466160c2915952e20353310b9a9f032af9315f27ebfe"
   },
   "documentation_sha256": {
-    "AGENTS.md": "039c74612ab400b350a58a3c94e8584a6fd06a77bd900387967b8137c7f72ea9",
-    "README.md": "964fe24f051038417ed1f9753c757cadb46298445d18580f9f321046c404c443",
+    "AGENTS.md": "c2fdd21eb1fbd8a0b8825aafdcc4cb245916180bfd19d14d1b557a578a2a1319",
+    "README.md": "1387b463f66086f730916ccfadb2fada21330643f2b70502bee2081bbb610c1d",
     "PROGRAM_30_BADAN.md": "d3d1f626571404138156f4c9483a0437bbe9f1d548c29cbdfb42cd192d151d3d",
     "raporty/README.md": "7914114cac6618e71cca7f097ec0b371cc6c62f0ea08973a1c273ecbdf967071",
     "baza_wiedzy/README.md": "e0da9b96fc12706eaf40d2571bc5ed3cc0771756d8d90a4e412c41cfc43bd6f9",

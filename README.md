@@ -1,6 +1,6 @@
 # SUB_prototyp — subwoofer DIY od teorii do prototypu
 
-![SUB_prototyp: badania subwoofera DIY, źródła, obliczenia i symulacje](grafika/README_baner.svg)
+![SUB_prototyp: badania subwoofera DIY, źródła, obliczenia i symulacje](grafika/README_baner.png)
 
 *Na banerze: obudowa odniesienia 504 × 684 × 504 mm
 (szerokość × głębokość × wysokość). To wymiary przyjęte do porównań,

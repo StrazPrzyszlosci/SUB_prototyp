@@ -1,6 +1,6 @@
 {
   "status": "CONDITIONAL_FILL_GEOMETRY_AND_1D_PLACEMENT_NOT_PRODUCT_IDENTIFICATION",
-  "generated_at": "2026-10-26T20:37:11.442870+01:00",
+  "generated_at": "2026-10-26T21:15:18.742092+01:00",
   "libraries": {
     "Python": "3.12.3",
     "NumPy": "1.26.4",
@@ -50,8 +50,8 @@
     "wyniki/p09c_warstwy_i_straty.csv": "04e1c6346cdd01c8c210f7b2a2aff414cea221c24b0dd7c9a9ad1ba39d251a95"
   },
   "documentation_sha256": {
-    "AGENTS.md": "039c74612ab400b350a58a3c94e8584a6fd06a77bd900387967b8137c7f72ea9",
-    "README.md": "964fe24f051038417ed1f9753c757cadb46298445d18580f9f321046c404c443",
+    "AGENTS.md": "c2fdd21eb1fbd8a0b8825aafdcc4cb245916180bfd19d14d1b557a578a2a1319",
+    "README.md": "1387b463f66086f730916ccfadb2fada21330643f2b70502bee2081bbb610c1d",
     "PLAN_B_R.md": "d7c3d1c15561d8fb47dbe8690939067543401b8b7bb28482ef41f9d034d041c5",
     "PROGRAM_30_BADAN.md": "d3d1f626571404138156f4c9483a0437bbe9f1d548c29cbdfb42cd192d151d3d",
     "raporty/README.md": "7914114cac6618e71cca7f097ec0b371cc6c62f0ea08973a1c273ecbdf967071",

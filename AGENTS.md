@@ -776,6 +776,11 @@ Postęp końca sesji2026-10-23:
   sprzężenie3D,energia i granica0D**,potem główna komora zregulacją/włókniną.
   Wybór głośnika/skrzyni,końcowyPDF iRelease1 czekająna program.
 
+- Na dodatkowe polecenie użytkownika baner wyświetlany wREADME zmieniono
+  zSVGnaPNG. Wszystkie34ilustracje przewodnika są teraz wyświetlane zPNG;
+  grafikaSocialpreview1280×640 także jestPNG. Sam formatREADME nie ustawia
+  zdalnegoSocialpreview;SVGpozostają źródłami/wektorowymi plikami do pobrania.
+
 ## Decyzje otwarte
 
 - Referencje subwooferów ADAM Sub12/Sub15: zatwierdzone; progi odbiorowe otwarte.
