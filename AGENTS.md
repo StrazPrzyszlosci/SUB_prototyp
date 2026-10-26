@@ -168,6 +168,14 @@ Optymalizacja jednego sweet spotu 2,5–3 m; brak narzuconego budżetu i gabaryt
     między nimi. Rho/Cp/phi/promień porów są założeniami,nie kartą włókniny.
     Nowe wyniki obejmują27konfiguracji; dobór produktu i sprzężenie3D otwarte.
 
+35. P19F bada listwę MDF klejoną do stałego frontu i dna. Trzy przekroje,
+    20wariantów/40obciążeń; raport040. Niewielka zmiana względnej korzyściC
+    między siatkami nie dowodzi zbieżności lokalnych naprężeń: dla30mm
+    nadal17–27%różnicyN14/N18. Nowe spoiny mogą przejąć koncentrację.
+    E10/100/1718MPa to założenia efektywne, nie dobór kleju/nośność.
+    Zachowane poleN14/B30 jest wejściem do następnego podmodelu, nie
+    pomiarem lub niezależnym dowodem. Nie zamykać bramkiGc/SN/J(t).
+
 ## Stan i postępy
 
 | Data | Wykonane | Dowód / ograniczenie | Następny krok |
@@ -579,6 +587,23 @@ Postęp końca sesji2026-10-23:
 - **Najbliższykrok główny nadal:lokalna geometria stałego front–korpus**.
   Wypełnienie powiązać potem zP20/P21 i ochroną; w gałęzi doboru rozszerzyć
   odporność i wspólne ograniczenia nowychSB. Końcowywybór iPDFotwarte.
+
+- P19F,2026-10-26:raport040/baza28.20wariantów pełnejramy zlistwą
+  20/30/40mm,siatkamiN10/14/18,modułaminowychspoin10/100/1718MPa
+  i przekrojem2/4/8.40stanówciężar/ciężar+statyczne1kPa,548 ocen spoin.
+  Masa i zajętylitraż policzone; ciśnienie zdjęto z zakrytych powierzchni
+  i dodano naodsłoniętych. Nowe20–40mm:0.128–0.514kg/0.176–0.704l.
+- Kontrole:analitycznytensorM6x6,9momentówaffinicznychciśnienia,Schur
+  135DOF vspełne2706DOF. Różnicaq9e-10,RMSspoin5.2e-11;reszty
+  główne5.4e-10. Reakcjenormalne dodatnie,min66.34N. Bez kwalifikacji
+  fizycznegoMDF/kleju. Trzywykresy64–66 obejrzane,pełnepole17592DOF
+  N14/B30 zachowane wNPZ do lokalnego podmodelu; odtworzoneCbez zmiany.
+- Wniosek:30mm zmniejsza kontrolneC około2.6%,ale naprężenia17–27%
+  różniąsięmiędzyN14/N18;40mm może zwiększyć koncentrację nowejspoiny.
+  **Jeden najbliższykrok:zgodny lokalnypodmodel front–dno–listwa30mm,
+  porównanie20mm,siatka sąsiedniegoMDF i wpływ odległości granicy**,
+  z zachowanegopola. PotemP20/P21,regulacja/wypełnienie/ochrona i synteza.
+  READMEprzewodnik ma22obrazy i indeks40raportów;wybór/PDFotwarte.
 
 ## Decyzje otwarte
 

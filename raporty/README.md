@@ -45,3 +45,4 @@ bieżący zakres sprawdzaj w [programie 30 pakietów](../PROGRAM_30_BADAN.md).
 | [037](037_staly_front_wymagany_modul_spoin.md) | Raport 037 — P19E: wymagany moduł spoin stałego frontu |
 | [038](038_SB_Acoustics_rozszerzenie_i_porownanie.md) | Raport 038 — SB Acoustics: rozszerzenie i porównywalne obliczenia |
 | [039](039_wypelnienie_ilosc_polozenie_i_straty.md) | Raport 039 — P09C: ilość, położenie i straty wypełnienia |
+| [040](040_listwa_stalego_frontu_i_droga_sily.md) | Raport 040 — P19F: listwa stałego frontu i droga siły |

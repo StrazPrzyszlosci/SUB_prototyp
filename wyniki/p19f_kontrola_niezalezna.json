@@ -1,0 +1,23 @@
+{
+  "status": "INDEPENDENT_RIGID_MASS_PRESSURE_MOMENTS_AND_SCHUR_CONTROL_NOT_PRODUCT_VALIDATION",
+  "coarse_dof": 2706,
+  "independent_rigid_mass_6x6_relative_error": 8.084777717400235e-15,
+  "independent_pressure_affine_moment_relative_error": 2.6119057237396727e-13,
+  "schur_eliminated_dof": 135,
+  "coupled_old_dof": 93,
+  "schur_vs_full_displacement_relative_error": 8.977013300748638e-10,
+  "schur_vs_full_joint_rms_relative_error": 5.1075810247880327e-11,
+  "full_residual": [
+    2.9295624947205e-10
+  ],
+  "condensed_residual": [
+    2.0471294175141771e-10
+  ],
+  "input_sha256": {
+    "skrypty/sprawdz_listwe_P19F.py": "ea707beb421cd0d115e4e778706f7e7491c576cae08d108697366f7dff67ef0c",
+    "skrypty/model_listwy_naroznej_P19F.py": "6fba68faaf7a7785d5db0305f786847b7536c7d104b8b1bf310e55c8427142d5",
+    "skrypty/model_ramy_3D_P18C.py": "698395a0d216659572ae84c1fea1b1251a67c5c32b99a7cf84cc55582e33e1ad",
+    "skrypty/element_brylowy_P18C.py": "d90d0c7f1adf2d00249220653b8335ea1e021b07b774dc770921029da4a8aacb",
+    "skrypty/analiza_listwy_stalego_frontu_P19F.py": "221eda2ac808e9d0d68549c36bdd9c6dc72cad923e339d48191c94d54702b805"
+  }
+}

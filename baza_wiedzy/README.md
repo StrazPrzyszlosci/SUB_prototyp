@@ -38,6 +38,7 @@ a potwierdzonych ustaleń użytkownika w [rejestrze](../DECYZJE_I_PYTANIA.md).
 |25|[Pełna rama i spoiny 3D](25_pelna_rama_i_spoiny_3D.md)|Bryły,EAS,niezgodne siatki,ciężar,podparcie i wirtualne odspojenie|
 |26|[Dwie cewki i porównywanie SB](26_dwie_cewki_i_porownywanie_SB.md)|Transformacja portu, limity V/I/X, konflikty katalogowe i zakres rozszerzenia|
 |27|[Ilość i położenie wypełnienia](27_ilosc_i_polozenie_wypelnienia.md)|Masa, porowatość, objętość gazu, warstwy i niezależna sieć FV|
+|28|[Listwa i lokalna droga siły](28_listwa_i_lokalna_droga_sily.md)|Dodatkowe spoiny, masa/ciśnienie, globalna podatność i lokalna zbieżność|
 |Źródła|[Rejestr z datami](ZRODLA.md)|Co przeczytano, co tylko znaleziono i jakie są braki|
 
 ## Od wiedzy do wykonania

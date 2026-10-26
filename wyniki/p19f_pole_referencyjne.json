@@ -1,0 +1,25 @@
+{
+  "status": "REFERENCE_FIELD_FOR_LATER_SUBMODELING_NOT_INDEPENDENT_VALIDATION",
+  "case_id": "N14_B30_REF",
+  "dof": 17592,
+  "linear_residuals": [
+    3.523983460710533e-10,
+    2.0610711122806736e-12,
+    2.1024551684166035e-12
+  ],
+  "C_match_relative_error": 0.0,
+  "input_sha256": {
+    "skrypty/zapisz_pole_referencyjne_P19F.py": "a40591567206423db27470a105afa637c067ce914dd9d2a6de2b47e29b04c755",
+    "skrypty/model_listwy_naroznej_P19F.py": "6fba68faaf7a7785d5db0305f786847b7536c7d104b8b1bf310e55c8427142d5",
+    "skrypty/analiza_listwy_stalego_frontu_P19F.py": "221eda2ac808e9d0d68549c36bdd9c6dc72cad923e339d48191c94d54702b805",
+    "skrypty/model_ramy_3D_P18C.py": "698395a0d216659572ae84c1fea1b1251a67c5c32b99a7cf84cc55582e33e1ad",
+    "skrypty/element_brylowy_P18C.py": "d90d0c7f1adf2d00249220653b8335ea1e021b07b774dc770921029da4a8aacb",
+    "dane/konfiguracje/p19f_listwa_stalego_frontu.json": "c79719fb6866d3389c0d48d5eb50a0371f3b8d6e367b728ab2106ed8a07a8b73",
+    "wyniki/p19f_geometrie_i_podatnosc.csv": "70ddbce22c071b07e551ee6fb2fb516d2d139b7de457145c943903c9300f4e73"
+  },
+  "output_sha256": {
+    "wyniki/p19f_pole_referencyjne_N14_B30.npz": "22af859cfe9b8dede5a3336f70c5e2613dd09a0962a3df6faf9af7e6e309b896"
+  },
+  "array_units": "xyz m; translations m, last 3 generalized basket rotations rad; pressure port N/Pa",
+  "scope": "Full original supported displacement field retained; do not reinterpret as measured deformation. Geometry C04 reference, not selected driver."
+}

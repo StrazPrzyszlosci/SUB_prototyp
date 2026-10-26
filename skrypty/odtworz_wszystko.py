@@ -108,6 +108,7 @@ def main():
     from odtworz_front_i_styk_P18B_P19B import main as front_contact_stage
     from odtworz_styk_czasowy_P19C import main as contact_time_stage
     from odtworz_rame_i_spoiny_3D import main as frame3d_stage
+    from odtworz_listwe_P19F import main as fixed_front_cleat
     from analiza_rozszerzenia_SB import main as sb_extension
     from manifest_rozszerzenia_SB import main as sb_manifest
     from analiza_ilosci_i_rozmieszczenia_wypelnienia import main as filling_placement
@@ -187,6 +188,7 @@ def main():
     front_contact_stage()
     contact_time_stage()
     frame3d_stage()
+    fixed_front_cleat()
     sb_extension()
     sb_manifest()
     filling_placement()

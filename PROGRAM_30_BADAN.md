@@ -52,7 +52,7 @@ pakietu samym stworzeniem planu, testów ani listy bibliotek.
 | P16 | Sprzężenia cieplne i elektromechaniczne | Częściowo — Re(T),ruch i chłodzenie | P15B sprzęga prąd,Re(T),ruch i straty; twierdzenie napięciowe dla stałego biernego tła. Nie wykonano fizycznej identyfikacjiBL(T),pełnych dużych sygnałów, gradientów i wszystkich sprzężeń termicznych |
 | P17 | Łączne granice użytecznego zakresu | Częściowo — wspólneV/I/X/chłodzenie | Raport028:5184zestawy,31104punkty,analityczne przedziałyVb>0,26246niezależnych brzegów i3tożsamościSymPy. Stały poziom wyjściowy i warunkoweRth. Nie zintegrowano jeszcze rzeczywistegoTHD,ciągłego pasma,muzyki,konstrukcji i pokoju |
 | P18 | Płyty MDF: drgania, naprężenia, promieniowanie | Częściowo — wykonane P18A/P18B/P18C | Raport029:płyty. Raport033:front. Raport035:pełna rama6brył/12spoin,siatki do36771DOF,168punktówharmonicznych,ściągi i podparcie. U-021:frontstały;geometria finalna,frez i promieniowanie otwarte |
-| P19 | Usztywnienia, połączenia i klej | Częściowo — wykonane rodziny P19A–P19E | Raporty030/033/034:spoiny i styk. Raporty035/036:pełna rama,6ubytków zkontaktem;Gdelta różni się27/41%. Raport037:12progówsztywności stałegofrontu,nie nośność/Gc. Geometrialokalna,SN/J(t)otwarte |
+| P19 | Usztywnienia, połączenia i klej | Częściowo — wykonane rodziny P19A–P19F | Raporty030/033/034:spoiny i styk. Raporty035–037:pełna rama,niezbieżnyGdelta i12progówsztywności. Raport040:20wariantówlistwy/40obciążeń/548ocen;RMSlokalne17–27%różnicyN14/N18. PoleN14/B30zachowane do podmodelu;nośność,SN/J(t)otwarte |
 | P20 | Regulacja objętości | Częściowo | Koncepcje i bilans brutto/netto; mechaniczna analiza porównawcza otwarta |
 | P21 | Wewnętrzne pole i sprzężenie paneli | Częściowo — wykonane odniesienie P21A | Raport031:72punktysprzężeniaRayleigh/MITC i gazu0D,masaDuffy,moc i wzajemność. Przestrzennepole3Dkomory,różneściany,front i podparcie nadal otwarte |
 | P22 | Napęd, impedancja wyjściowa i clipping | Częściowo | Dotychczas idealne ograniczeniaV/I; dynamika i obciążenie rzeczywiste otwarte |
@@ -96,7 +96,10 @@ ze zbieżnościąredukcji i odrębną propagacjąpełnegoMES2959DOF.
 P18C/P19Dmają wykonaną referencyjną pełnąramę i screeningubytku spoiny
 (raporty035/036). U-021ustala front stały pod jeden docelowy przetwornik.
 P19Ewyznacza wymaganiamodułu spoinw12scenariuszach (raport037).
-Najbliższykrok:geometrialokalna stałegopołączenia front–korpus i rozprowadzeniesił;
+P19Fzbadał listwę20/30/40mm,masę,prawidłowyportciśnienia i dwie nowe spoiny
+(raport040). Lokalnenaprężenia sąniezbieżne mimo stabilniejszej korzyściC.
+Najbliższykrok:zgodny lokalnypodmodel front–dno–listwa30mm z polaN14/B30,
+porównanie20mm,siatka sąsiedniegoMDF i odległośćgranicy;
 potem regulacja i pole3D P20/P21,
 czasoweDSP/napędP22–P25, pokójP26–P28 i integracjaP29/P30.
 Poszukiwanie danych materiałowych i nieliniowych może toczyć się równolegle

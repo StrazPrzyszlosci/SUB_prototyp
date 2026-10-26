@@ -1,0 +1,240 @@
+{
+  "status": "FINITE_CLEAT_GEOMETRY_AND_JOINT_LOAD_SCREENING_NOT_FRACTURE_QUALIFICATION",
+  "date": "2026-10-26",
+  "run_sha256": "fb194c4162cc79b3da1c6e1da3b28640693aca273865c53951f02e2d3b7b5847",
+  "cases": 20,
+  "load_cases": 40,
+  "new_cases_this_invocation": 20,
+  "cache_note": "Zgodny cache nie jest świeżą niezależną replikacją.",
+  "libraries": {
+    "Python": "3.12.3",
+    "NumPy": "1.26.4",
+    "SciPy": "1.17.1"
+  },
+  "input_sha256": {
+    "dane/konfiguracje/p19f_listwa_stalego_frontu.json": "c79719fb6866d3389c0d48d5eb50a0371f3b8d6e367b728ab2106ed8a07a8b73",
+    "skrypty/analiza_listwy_stalego_frontu_P19F.py": "221eda2ac808e9d0d68549c36bdd9c6dc72cad923e339d48191c94d54702b805",
+    "skrypty/model_listwy_naroznej_P19F.py": "6fba68faaf7a7785d5db0305f786847b7536c7d104b8b1bf310e55c8427142d5",
+    "skrypty/model_ramy_3D_P18C.py": "698395a0d216659572ae84c1fea1b1251a67c5c32b99a7cf84cc55582e33e1ad",
+    "skrypty/element_brylowy_P18C.py": "d90d0c7f1adf2d00249220653b8335ea1e021b07b774dc770921029da4a8aacb",
+    "skrypty/model_frontu_z_otworem_P18B.py": "9dc138ae9be3ab7db91803c7441b377d064268ddfd41364d9598938aa4b9c953",
+    "skrypty/model_plyty_MITC_P18.py": "1e98a4553f5697344821a83d7d6afe823c2a801350f14dbdeb6d8ce681690775",
+    "dane/konfiguracje/p18c_rama_3D.json": "99409305fbd038939fa7d37e6489dedb09898e16ad657611fef39f958c77f1d9",
+    "brief_system_audio_DIY_v0.6.md": "3bd9f8d43a92b96256073e66cd0f4f105336e969a37c29fc42f17cda9d66736f"
+  },
+  "attachment_checks": [
+    {
+      "added_mass_kg": 0.12848000000000326,
+      "analytic_mass_kg": 0.12848,
+      "occupied_volume_m3": 0.00017600000000000002,
+      "gas_port_volume_reduction_m3": 0.00017600000000000948,
+      "pressure_rigid_resultant_norm": 4.153390573293137e-16,
+      "rigid_K_relative_error": 4.423185430735328e-15,
+      "new_bond_areas_m2": {
+        "front_cleat": 0.008800000000000006,
+        "bottom_cleat": 0.008800000000000002
+      }
+    },
+    {
+      "added_mass_kg": 0.28908000000001266,
+      "analytic_mass_kg": 0.28908,
+      "occupied_volume_m3": 0.000396,
+      "gas_port_volume_reduction_m3": 0.00039600000000000746,
+      "pressure_rigid_resultant_norm": 5.275816958377791e-16,
+      "rigid_K_relative_error": 4.260748906993659e-15,
+      "new_bond_areas_m2": {
+        "front_cleat": 0.013200000000000007,
+        "bottom_cleat": 0.013199999999999991
+      }
+    },
+    {
+      "added_mass_kg": 0.5139200000000201,
+      "analytic_mass_kg": 0.51392,
+      "occupied_volume_m3": 0.0007040000000000001,
+      "gas_port_volume_reduction_m3": 0.0007039999999999824,
+      "pressure_rigid_resultant_norm": 4.383457886563892e-16,
+      "rigid_K_relative_error": 4.090444012995407e-15,
+      "new_bond_areas_m2": {
+        "front_cleat": 0.017600000000000008,
+        "bottom_cleat": 0.017600000000000015
+      }
+    },
+    {
+      "added_mass_kg": 0.1284800000016233,
+      "analytic_mass_kg": 0.12848,
+      "occupied_volume_m3": 0.00017600000000000002,
+      "gas_port_volume_reduction_m3": 0.00017600000000003724,
+      "pressure_rigid_resultant_norm": 4.90091982839898e-16,
+      "rigid_K_relative_error": 8.379656657248778e-15,
+      "new_bond_areas_m2": {
+        "front_cleat": 0.008800000000000004,
+        "bottom_cleat": 0.0088
+      }
+    },
+    {
+      "added_mass_kg": 0.2890800000041054,
+      "analytic_mass_kg": 0.28908,
+      "occupied_volume_m3": 0.000396,
+      "gas_port_volume_reduction_m3": 0.0003960000000000907,
+      "pressure_rigid_resultant_norm": 6.175886653738262e-16,
+      "rigid_K_relative_error": 8.109060661894454e-15,
+      "new_bond_areas_m2": {
+        "front_cleat": 0.01320000000000001,
+        "bottom_cleat": 0.0132
+      }
+    },
+    {
+      "added_mass_kg": 0.5139200000069621,
+      "analytic_mass_kg": 0.51392,
+      "occupied_volume_m3": 0.0007040000000000001,
+      "gas_port_volume_reduction_m3": 0.0007039999999999824,
+      "pressure_rigid_resultant_norm": 5.568819210205656e-16,
+      "rigid_K_relative_error": 7.800775090393522e-15,
+      "new_bond_areas_m2": {
+        "front_cleat": 0.01760000000000002,
+        "bottom_cleat": 0.01760000000000001
+      }
+    },
+    {
+      "added_mass_kg": 0.1284799999975803,
+      "analytic_mass_kg": 0.12848,
+      "occupied_volume_m3": 0.00017600000000000002,
+      "gas_port_volume_reduction_m3": 0.00017599999999995397,
+      "pressure_rigid_resultant_norm": 1.6357748403732752e-16,
+      "rigid_K_relative_error": 1.6442448609839564e-14,
+      "new_bond_areas_m2": {
+        "front_cleat": 0.008799999999999995,
+        "bottom_cleat": 0.008800000000000006
+      }
+    },
+    {
+      "added_mass_kg": 0.2890799999945557,
+      "analytic_mass_kg": 0.28908,
+      "occupied_volume_m3": 0.000396,
+      "gas_port_volume_reduction_m3": 0.00039599999999995195,
+      "pressure_rigid_resultant_norm": 1.653570397000352e-16,
+      "rigid_K_relative_error": 1.5915090812581243e-14,
+      "new_bond_areas_m2": {
+        "front_cleat": 0.013199999999999993,
+        "bottom_cleat": 0.013199999999999993
+      }
+    },
+    {
+      "added_mass_kg": 0.5139199999905912,
+      "analytic_mass_kg": 0.51392,
+      "occupied_volume_m3": 0.0007040000000000001,
+      "gas_port_volume_reduction_m3": 0.0007040000000000102,
+      "pressure_rigid_resultant_norm": 1.5441485382755796e-16,
+      "rigid_K_relative_error": 1.5230063488761307e-14,
+      "new_bond_areas_m2": {
+        "front_cleat": 0.01760000000000001,
+        "bottom_cleat": 0.0176
+      }
+    },
+    {
+      "added_mass_kg": 0.1284800000016233,
+      "analytic_mass_kg": 0.12848,
+      "occupied_volume_m3": 0.00017600000000000002,
+      "gas_port_volume_reduction_m3": 0.00017600000000003724,
+      "pressure_rigid_resultant_norm": 4.90091982839898e-16,
+      "rigid_K_relative_error": 8.79057104873431e-15,
+      "new_bond_areas_m2": {
+        "front_cleat": 0.008800000000000004,
+        "bottom_cleat": 0.0088
+      }
+    },
+    {
+      "added_mass_kg": 0.1284800000016233,
+      "analytic_mass_kg": 0.12848,
+      "occupied_volume_m3": 0.00017600000000000002,
+      "gas_port_volume_reduction_m3": 0.00017600000000003724,
+      "pressure_rigid_resultant_norm": 4.90091982839898e-16,
+      "rigid_K_relative_error": 8.784586798831527e-15,
+      "new_bond_areas_m2": {
+        "front_cleat": 0.008800000000000004,
+        "bottom_cleat": 0.0088
+      }
+    },
+    {
+      "added_mass_kg": 0.2890800000041054,
+      "analytic_mass_kg": 0.28908,
+      "occupied_volume_m3": 0.000396,
+      "gas_port_volume_reduction_m3": 0.0003960000000000907,
+      "pressure_rigid_resultant_norm": 6.175886653738262e-16,
+      "rigid_K_relative_error": 8.798789716144175e-15,
+      "new_bond_areas_m2": {
+        "front_cleat": 0.01320000000000001,
+        "bottom_cleat": 0.0132
+      }
+    },
+    {
+      "added_mass_kg": 0.2890800000041054,
+      "analytic_mass_kg": 0.28908,
+      "occupied_volume_m3": 0.000396,
+      "gas_port_volume_reduction_m3": 0.0003960000000000907,
+      "pressure_rigid_resultant_norm": 6.175886653738262e-16,
+      "rigid_K_relative_error": 8.790492366190346e-15,
+      "new_bond_areas_m2": {
+        "front_cleat": 0.01320000000000001,
+        "bottom_cleat": 0.0132
+      }
+    },
+    {
+      "added_mass_kg": 0.5139200000069621,
+      "analytic_mass_kg": 0.51392,
+      "occupied_volume_m3": 0.0007040000000000001,
+      "gas_port_volume_reduction_m3": 0.0007039999999999824,
+      "pressure_rigid_resultant_norm": 5.568819210205656e-16,
+      "rigid_K_relative_error": 8.8103584702041e-15,
+      "new_bond_areas_m2": {
+        "front_cleat": 0.01760000000000002,
+        "bottom_cleat": 0.01760000000000001
+      }
+    },
+    {
+      "added_mass_kg": 0.5139200000069621,
+      "analytic_mass_kg": 0.51392,
+      "occupied_volume_m3": 0.0007040000000000001,
+      "gas_port_volume_reduction_m3": 0.0007039999999999824,
+      "pressure_rigid_resultant_norm": 5.568819210205656e-16,
+      "rigid_K_relative_error": 8.799828588322827e-15,
+      "new_bond_areas_m2": {
+        "front_cleat": 0.01760000000000002,
+        "bottom_cleat": 0.01760000000000001
+      }
+    },
+    {
+      "added_mass_kg": 0.2890800000039633,
+      "analytic_mass_kg": 0.28908,
+      "occupied_volume_m3": 0.000396,
+      "gas_port_volume_reduction_m3": 0.00039600000000006297,
+      "pressure_rigid_resultant_norm": 5.359895623589262e-16,
+      "rigid_K_relative_error": 7.934045681551957e-15,
+      "new_bond_areas_m2": {
+        "front_cleat": 0.013200000000000005,
+        "bottom_cleat": 0.0132
+      }
+    },
+    {
+      "added_mass_kg": 0.2890800000041054,
+      "analytic_mass_kg": 0.28908,
+      "occupied_volume_m3": 0.000396,
+      "gas_port_volume_reduction_m3": 0.00039600000000006297,
+      "pressure_rigid_resultant_norm": 5.427487663151767e-16,
+      "rigid_K_relative_error": 8.228480948152651e-15,
+      "new_bond_areas_m2": {
+        "front_cleat": 0.013200000000000003,
+        "bottom_cleat": 0.013200000000000005
+      }
+    }
+  ],
+  "limitations": [
+    "Wewnętrzna listwa o kwadratowym przekroju to hipoteza geometrii, nie rysunek CNC.",
+    "Dwie nowe powierzchnie klejone; końce odsunięte od boków o 10 mm, bez dodatkowych kontaktów końców.",
+    "MDF, efektywny moduł spoin i masa kosza zachowują założenia P18C; C04 nie jest zatwierdzonym głośnikiem.",
+    "Brak fizycznego Gc, S-N, J(t), adhezji partii i wilgotności; nie kwalifikować kleju samym modułem.",
+    "Siatka listwy i globalna rama badane osobno; próbkowane maksimum nie jest zbieżnym pikiem continuum.",
+    "Pola ciśnienia są statyczne; bez odpowiedzi pełnego napędu, THD, emisji i warstwy tłumiącej."
+  ],
+  "next": "Wybrać geometrię do lokalnego uzupełnienia siatki/MDF i warunkowej trwałości; następnie P20/P21."
+}

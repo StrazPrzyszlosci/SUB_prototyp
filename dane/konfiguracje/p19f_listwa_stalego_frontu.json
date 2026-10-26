@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-26",
+  "status": "CONDITIONAL_GLUE_CLEAT_GEOMETRY_NOT_FINAL_JOINT_QUALIFICATION",
+  "parent_geometry": "dane/konfiguracje/p18c_rama_3D.json",
+  "cleat_sections_m": [0.02, 0.03, 0.04],
+  "cleat_end_clearance_m": 0.01,
+  "global_mesh_n": [10, 14, 18],
+  "cleat_cross_intervals": 4,
+  "cleat_cross_refinements": [2, 4, 8],
+  "glue_reference_effective_E_pa": 1718000000.0,
+  "new_joint_E_stress_pa": [10000000.0, 100000000.0],
+  "glue_thickness_m": 0.0002,
+  "glue_nu_assumed": 0.35,
+  "cleat_mdf_E_pa": 2100000000.0,
+  "cleat_mdf_nu_assumed": 0.3,
+  "cleat_dry_density_kg_m3": 730.0,
+  "floor_normal_each_n_m": 100000.0,
+  "floor_tangent_each_n_m": 10000.0,
+  "static_internal_pressure_pa": 1000.0,
+  "gates": [
+    "Wewnętrzna listwa o kwadratowym przekroju to hipoteza geometrii, nie rysunek CNC.",
+    "Dwie nowe powierzchnie klejone; końce odsunięte od boków o 10 mm, bez dodatkowych kontaktów końców.",
+    "MDF, efektywny moduł spoin i masa kosza zachowują założenia P18C; C04 nie jest zatwierdzonym głośnikiem.",
+    "Brak fizycznego Gc, S-N, J(t), adhezji partii i wilgotności; nie kwalifikować kleju samym modułem.",
+    "Siatka listwy i globalna rama badane osobno; próbkowane maksimum nie jest zbieżnym pikiem continuum.",
+    "Pola ciśnienia są statyczne; bez odpowiedzi pełnego napędu, THD, emisji i warstwy tłumiącej."
+  ]
+}
