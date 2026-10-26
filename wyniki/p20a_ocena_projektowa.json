@@ -1,0 +1,662 @@
+{
+  "status": "INSERT_SELECTION_GUIDANCE_WITH_UNQUALIFIED_MATERIAL_SPATIAL_AND_MOUNT_GATES",
+  "constructive_nonzero_translation_segments": 1272,
+  "selected_module_count": 16,
+  "selected_outer_volume_l": 3.0599999999999996,
+  "selected_set_geometric_exclusion_l": 48.959999999999994,
+  "selected_braced_dry_mass_kg": 0.7005780799999998,
+  "selected_braced_sealed_air_mass_kg": 0.7031070945163547,
+  "selected_set_dry_mass_kg": 11.209249279999996,
+  "solid_same_set_mass_kg": 35.7408,
+  "conditional_nominal_host_and_filler_mass_kg": 35.83979464288094,
+  "conditional_nominal_mass_with_braced_insert_set_kg": 47.08950815514261,
+  "conditional_nominal_mass_with_solid_insert_set_kg": 71.58059464288094,
+  "mass_scope": "Nominal C04 circle/geometric frame/density assumptions, no hardware/glue/rails; not weighed prototype or guaranteed bound.",
+  "drive_point_cases": 40068,
+  "spatial_mode_diagnostics": [
+    {
+      "module_id": "M000",
+      "empty_rigid_inner_box_axial_reference_hz": 1046.43895633203,
+      "formal_uniform_gas_pressure_mode_hz": 521.8459482275953,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.07644975324735176,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M001",
+      "empty_rigid_inner_box_axial_reference_hz": 1046.43895633203,
+      "formal_uniform_gas_pressure_mode_hz": 934.9413687260942,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.07644975324735176,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M002",
+      "empty_rigid_inner_box_axial_reference_hz": 1072.5999302403307,
+      "formal_uniform_gas_pressure_mode_hz": 676.4484576465306,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.07458512511936757,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M003",
+      "empty_rigid_inner_box_axial_reference_hz": 1072.5999302403307,
+      "formal_uniform_gas_pressure_mode_hz": 1205.8426416624568,
+      "formal_mode_geq_first_empty_inner_box_mode": true,
+      "probe80_to_empty_box_axial_ratio": 0.07458512511936757,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M004",
+      "empty_rigid_inner_box_axial_reference_hz": 1100.1024925541853,
+      "formal_uniform_gas_pressure_mode_hz": 845.6915862997256,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.07272049699138339,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M005",
+      "empty_rigid_inner_box_axial_reference_hz": 1100.1024925541853,
+      "formal_uniform_gas_pressure_mode_hz": 1490.164534025123,
+      "formal_mode_geq_first_empty_inner_box_mode": true,
+      "probe80_to_empty_box_axial_ratio": 0.07272049699138339,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M006",
+      "empty_rigid_inner_box_axial_reference_hz": 1046.43895633203,
+      "formal_uniform_gas_pressure_mode_hz": 519.6296781076097,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.07644975324735176,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M007",
+      "empty_rigid_inner_box_axial_reference_hz": 1046.43895633203,
+      "formal_uniform_gas_pressure_mode_hz": 934.0249824441239,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.07644975324735176,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M008",
+      "empty_rigid_inner_box_axial_reference_hz": 1072.5999302403307,
+      "formal_uniform_gas_pressure_mode_hz": 675.0022262388667,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.07458512511936757,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M009",
+      "empty_rigid_inner_box_axial_reference_hz": 1072.5999302403307,
+      "formal_uniform_gas_pressure_mode_hz": 1205.2234467864748,
+      "formal_mode_geq_first_empty_inner_box_mode": true,
+      "probe80_to_empty_box_axial_ratio": 0.07458512511936757,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M010",
+      "empty_rigid_inner_box_axial_reference_hz": 1100.1024925541853,
+      "formal_uniform_gas_pressure_mode_hz": 844.6519668744552,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.07272049699138339,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M011",
+      "empty_rigid_inner_box_axial_reference_hz": 1100.1024925541853,
+      "formal_uniform_gas_pressure_mode_hz": 1489.705584873811,
+      "formal_mode_geq_first_empty_inner_box_mode": true,
+      "probe80_to_empty_box_axial_ratio": 0.07272049699138339,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M012",
+      "empty_rigid_inner_box_axial_reference_hz": 932.6955915133311,
+      "formal_uniform_gas_pressure_mode_hz": 436.48626749351246,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.0857728938872727,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M013",
+      "empty_rigid_inner_box_axial_reference_hz": 932.6955915133311,
+      "formal_uniform_gas_pressure_mode_hz": 790.6988366975265,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.0857728938872727,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M014",
+      "empty_rigid_inner_box_axial_reference_hz": 953.4221602136272,
+      "formal_uniform_gas_pressure_mode_hz": 566.2424208606109,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.08390826575928853,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M015",
+      "empty_rigid_inner_box_axial_reference_hz": 953.4221602136272,
+      "formal_uniform_gas_pressure_mode_hz": 1019.0242379361035,
+      "formal_mode_geq_first_empty_inner_box_mode": true,
+      "probe80_to_empty_box_axial_ratio": 0.08390826575928853,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M016",
+      "empty_rigid_inner_box_axial_reference_hz": 975.0908456730278,
+      "formal_uniform_gas_pressure_mode_hz": 706.6857705049682,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.08204363763130434,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M017",
+      "empty_rigid_inner_box_axial_reference_hz": 975.0908456730278,
+      "formal_uniform_gas_pressure_mode_hz": 1258.4421503031917,
+      "formal_mode_geq_first_empty_inner_box_mode": true,
+      "probe80_to_empty_box_axial_ratio": 0.08204363763130434,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M018",
+      "empty_rigid_inner_box_axial_reference_hz": 446.9166376001378,
+      "formal_uniform_gas_pressure_mode_hz": 292.20164422537977,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.17900430028648218,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M019",
+      "empty_rigid_inner_box_axial_reference_hz": 446.9166376001378,
+      "formal_uniform_gas_pressure_mode_hz": 588.8132025645721,
+      "formal_mode_geq_first_empty_inner_box_mode": true,
+      "probe80_to_empty_box_axial_ratio": 0.17900430028648218,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M020",
+      "empty_rigid_inner_box_axial_reference_hz": 451.62102325908666,
+      "formal_uniform_gas_pressure_mode_hz": 377.0118528340818,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.177139672158498,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M021",
+      "empty_rigid_inner_box_axial_reference_hz": 451.62102325908666,
+      "formal_uniform_gas_pressure_mode_hz": 760.2391268600339,
+      "formal_mode_geq_first_empty_inner_box_mode": true,
+      "probe80_to_empty_box_axial_ratio": 0.177139672158498,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M022",
+      "empty_rigid_inner_box_axial_reference_hz": 456.425502229928,
+      "formal_uniform_gas_pressure_mode_hz": 469.22497089489343,
+      "formal_mode_geq_first_empty_inner_box_mode": true,
+      "probe80_to_empty_box_axial_ratio": 0.1752750440305138,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M023",
+      "empty_rigid_inner_box_axial_reference_hz": 456.425502229928,
+      "formal_uniform_gas_pressure_mode_hz": 941.8284715487231,
+      "formal_mode_geq_first_empty_inner_box_mode": true,
+      "probe80_to_empty_box_axial_ratio": 0.1752750440305138,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M024",
+      "empty_rigid_inner_box_axial_reference_hz": 932.6955915133311,
+      "formal_uniform_gas_pressure_mode_hz": 394.81364880310224,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.0857728938872727,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M025",
+      "empty_rigid_inner_box_axial_reference_hz": 932.6955915133311,
+      "formal_uniform_gas_pressure_mode_hz": 702.726341302627,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.0857728938872727,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M026",
+      "empty_rigid_inner_box_axial_reference_hz": 953.4221602136272,
+      "formal_uniform_gas_pressure_mode_hz": 505.55585264000155,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.08390826575928853,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M027",
+      "empty_rigid_inner_box_axial_reference_hz": 953.4221602136272,
+      "formal_uniform_gas_pressure_mode_hz": 902.4174131930927,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.08390826575928853,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M028",
+      "empty_rigid_inner_box_axial_reference_hz": 975.0908456730278,
+      "formal_uniform_gas_pressure_mode_hz": 626.6991733427957,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.08204363763130434,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M029",
+      "empty_rigid_inner_box_axial_reference_hz": 975.0908456730278,
+      "formal_uniform_gas_pressure_mode_hz": 1112.1574390109372,
+      "formal_mode_geq_first_empty_inner_box_mode": true,
+      "probe80_to_empty_box_axial_ratio": 0.08204363763130434,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M030",
+      "empty_rigid_inner_box_axial_reference_hz": 932.6955915133311,
+      "formal_uniform_gas_pressure_mode_hz": 391.91037402135174,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.0857728938872727,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M031",
+      "empty_rigid_inner_box_axial_reference_hz": 932.6955915133311,
+      "formal_uniform_gas_pressure_mode_hz": 701.5137927471712,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.0857728938872727,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M032",
+      "empty_rigid_inner_box_axial_reference_hz": 953.4221602136272,
+      "formal_uniform_gas_pressure_mode_hz": 503.6260624281247,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.08390826575928853,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M033",
+      "empty_rigid_inner_box_axial_reference_hz": 953.4221602136272,
+      "formal_uniform_gas_pressure_mode_hz": 901.5943523846449,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.08390826575928853,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M034",
+      "empty_rigid_inner_box_axial_reference_hz": 975.0908456730278,
+      "formal_uniform_gas_pressure_mode_hz": 625.2958094759897,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.08204363763130434,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M035",
+      "empty_rigid_inner_box_axial_reference_hz": 975.0908456730278,
+      "formal_uniform_gas_pressure_mode_hz": 1111.5463415329784,
+      "formal_mode_geq_first_empty_inner_box_mode": true,
+      "probe80_to_empty_box_axial_ratio": 0.08204363763130434,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M036",
+      "empty_rigid_inner_box_axial_reference_hz": 932.6955915133311,
+      "formal_uniform_gas_pressure_mode_hz": 399.37365920643674,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.0857728938872727,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M037",
+      "empty_rigid_inner_box_axial_reference_hz": 932.6955915133311,
+      "formal_uniform_gas_pressure_mode_hz": 704.6682243835666,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.0857728938872727,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M038",
+      "empty_rigid_inner_box_axial_reference_hz": 953.4221602136272,
+      "formal_uniform_gas_pressure_mode_hz": 508.2284673352,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.08390826575928853,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M039",
+      "empty_rigid_inner_box_axial_reference_hz": 953.4221602136272,
+      "formal_uniform_gas_pressure_mode_hz": 903.5668002593814,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.08390826575928853,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M040",
+      "empty_rigid_inner_box_axial_reference_hz": 975.0908456730278,
+      "formal_uniform_gas_pressure_mode_hz": 628.3660958873784,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.08204363763130434,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M041",
+      "empty_rigid_inner_box_axial_reference_hz": 975.0908456730278,
+      "formal_uniform_gas_pressure_mode_hz": 1112.88607676098,
+      "formal_mode_geq_first_empty_inner_box_mode": true,
+      "probe80_to_empty_box_axial_ratio": 0.08204363763130434,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M042",
+      "empty_rigid_inner_box_axial_reference_hz": 446.9166376001378,
+      "formal_uniform_gas_pressure_mode_hz": 253.37642618623426,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.17900430028648218,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M043",
+      "empty_rigid_inner_box_axial_reference_hz": 446.9166376001378,
+      "formal_uniform_gas_pressure_mode_hz": 483.30755101946113,
+      "formal_mode_geq_first_empty_inner_box_mode": true,
+      "probe80_to_empty_box_axial_ratio": 0.17900430028648218,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M044",
+      "empty_rigid_inner_box_axial_reference_hz": 451.62102325908666,
+      "formal_uniform_gas_pressure_mode_hz": 317.4259444111825,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.177139672158498,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M045",
+      "empty_rigid_inner_box_axial_reference_hz": 451.62102325908666,
+      "formal_uniform_gas_pressure_mode_hz": 619.1725183710323,
+      "formal_mode_geq_first_empty_inner_box_mode": true,
+      "probe80_to_empty_box_axial_ratio": 0.177139672158498,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M046",
+      "empty_rigid_inner_box_axial_reference_hz": 456.425502229928,
+      "formal_uniform_gas_pressure_mode_hz": 389.096022378493,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.1752750440305138,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M047",
+      "empty_rigid_inner_box_axial_reference_hz": 456.425502229928,
+      "formal_uniform_gas_pressure_mode_hz": 763.4189100770875,
+      "formal_mode_geq_first_empty_inner_box_mode": true,
+      "probe80_to_empty_box_axial_ratio": 0.1752750440305138,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M048",
+      "empty_rigid_inner_box_axial_reference_hz": 841.2548472473181,
+      "formal_uniform_gas_pressure_mode_hz": 326.5542183221346,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.09509603452719367,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M049",
+      "empty_rigid_inner_box_axial_reference_hz": 841.2548472473181,
+      "formal_uniform_gas_pressure_mode_hz": 576.1151205120271,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.09509603452719367,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M050",
+      "empty_rigid_inner_box_axial_reference_hz": 858.0799441922645,
+      "formal_uniform_gas_pressure_mode_hz": 413.6910527238188,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.09323140639920947,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M051",
+      "empty_rigid_inner_box_axial_reference_hz": 858.0799441922645,
+      "formal_uniform_gas_pressure_mode_hz": 737.1054907072852,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.09323140639920947,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M052",
+      "empty_rigid_inner_box_axial_reference_hz": 875.5917797880251,
+      "formal_uniform_gas_pressure_mode_hz": 509.34235533487083,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.09136677827122529,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M053",
+      "empty_rigid_inner_box_axial_reference_hz": 875.5917797880251,
+      "formal_uniform_gas_pressure_mode_hz": 906.3532480994129,
+      "formal_mode_geq_first_empty_inner_box_mode": true,
+      "probe80_to_empty_box_axial_ratio": 0.09136677827122529,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M054",
+      "empty_rigid_inner_box_axial_reference_hz": 841.2548472473181,
+      "formal_uniform_gas_pressure_mode_hz": 323.05251627825646,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.09509603452719367,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M055",
+      "empty_rigid_inner_box_axial_reference_hz": 841.2548472473181,
+      "formal_uniform_gas_pressure_mode_hz": 574.639683208354,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.09509603452719367,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M056",
+      "empty_rigid_inner_box_axial_reference_hz": 858.0799441922645,
+      "formal_uniform_gas_pressure_mode_hz": 411.33341948633534,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.09323140639920947,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M057",
+      "empty_rigid_inner_box_axial_reference_hz": 858.0799441922645,
+      "formal_uniform_gas_pressure_mode_hz": 736.1004419960261,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.09323140639920947,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M058",
+      "empty_rigid_inner_box_axial_reference_hz": 875.5917797880251,
+      "formal_uniform_gas_pressure_mode_hz": 507.6142015818716,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.09136677827122529,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M059",
+      "empty_rigid_inner_box_axial_reference_hz": 875.5917797880251,
+      "formal_uniform_gas_pressure_mode_hz": 905.6058471913639,
+      "formal_mode_geq_first_empty_inner_box_mode": true,
+      "probe80_to_empty_box_axial_ratio": 0.09136677827122529,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M060",
+      "empty_rigid_inner_box_axial_reference_hz": 841.2548472473181,
+      "formal_uniform_gas_pressure_mode_hz": 316.6559018274071,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.09509603452719367,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M061",
+      "empty_rigid_inner_box_axial_reference_hz": 841.2548472473181,
+      "formal_uniform_gas_pressure_mode_hz": 572.430753112172,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.09509603452719367,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M062",
+      "empty_rigid_inner_box_axial_reference_hz": 858.0799441922645,
+      "formal_uniform_gas_pressure_mode_hz": 407.63697648888734,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.09323140639920947,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M063",
+      "empty_rigid_inner_box_axial_reference_hz": 858.0799441922645,
+      "formal_uniform_gas_pressure_mode_hz": 734.6997798685609,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.09323140639920947,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M064",
+      "empty_rigid_inner_box_axial_reference_hz": 875.5917797880251,
+      "formal_uniform_gas_pressure_mode_hz": 505.1593844403333,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.09136677827122529,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M065",
+      "empty_rigid_inner_box_axial_reference_hz": 875.5917797880251,
+      "formal_uniform_gas_pressure_mode_hz": 904.6137971371887,
+      "formal_mode_geq_first_empty_inner_box_mode": true,
+      "probe80_to_empty_box_axial_ratio": 0.09136677827122529,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M066",
+      "empty_rigid_inner_box_axial_reference_hz": 446.9166376001378,
+      "formal_uniform_gas_pressure_mode_hz": 218.35302279903252,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.17900430028648218,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M067",
+      "empty_rigid_inner_box_axial_reference_hz": 446.9166376001378,
+      "formal_uniform_gas_pressure_mode_hz": 405.25514704654006,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.17900430028648218,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M068",
+      "empty_rigid_inner_box_axial_reference_hz": 451.62102325908666,
+      "formal_uniform_gas_pressure_mode_hz": 270.76896845137594,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.177139672158498,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M069",
+      "empty_rigid_inner_box_axial_reference_hz": 451.62102325908666,
+      "formal_uniform_gas_pressure_mode_hz": 516.7214178534653,
+      "formal_mode_geq_first_empty_inner_box_mode": true,
+      "probe80_to_empty_box_axial_ratio": 0.177139672158498,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M070",
+      "empty_rigid_inner_box_axial_reference_hz": 456.425502229928,
+      "formal_uniform_gas_pressure_mode_hz": 329.4874652484693,
+      "formal_mode_geq_first_empty_inner_box_mode": false,
+      "probe80_to_empty_box_axial_ratio": 0.1752750440305138,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "M071",
+      "empty_rigid_inner_box_axial_reference_hz": 456.425502229928,
+      "formal_uniform_gas_pressure_mode_hz": 634.9575409605982,
+      "formal_mode_geq_first_empty_inner_box_mode": true,
+      "probe80_to_empty_box_axial_ratio": 0.1752750440305138,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "TIE_8_SSSS",
+      "empty_rigid_inner_box_axial_reference_hz": 1046.43895633203,
+      "formal_uniform_gas_pressure_mode_hz": 1145.5440391037923,
+      "formal_mode_geq_first_empty_inner_box_mode": true,
+      "probe80_to_empty_box_axial_ratio": 0.07644975324735176,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "TIE_8_CCCC",
+      "empty_rigid_inner_box_axial_reference_hz": 1046.43895633203,
+      "formal_uniform_gas_pressure_mode_hz": 1935.160801186965,
+      "formal_mode_geq_first_empty_inner_box_mode": true,
+      "probe80_to_empty_box_axial_ratio": 0.07644975324735176,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "TIE_10_SSSS",
+      "empty_rigid_inner_box_axial_reference_hz": 1072.5999302403307,
+      "formal_uniform_gas_pressure_mode_hz": 1539.9817321447701,
+      "formal_mode_geq_first_empty_inner_box_mode": true,
+      "probe80_to_empty_box_axial_ratio": 0.07458512511936757,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "TIE_10_CCCC",
+      "empty_rigid_inner_box_axial_reference_hz": 1072.5999302403307,
+      "formal_uniform_gas_pressure_mode_hz": 2127.409881547977,
+      "formal_mode_geq_first_empty_inner_box_mode": true,
+      "probe80_to_empty_box_axial_ratio": 0.07458512511936757,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "TIE_12_SSSS",
+      "empty_rigid_inner_box_axial_reference_hz": 1100.1024925541853,
+      "formal_uniform_gas_pressure_mode_hz": 1687.3979424491251,
+      "formal_mode_geq_first_empty_inner_box_mode": true,
+      "probe80_to_empty_box_axial_ratio": 0.07272049699138339,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    },
+    {
+      "module_id": "TIE_12_CCCC",
+      "empty_rigid_inner_box_axial_reference_hz": 1100.1024925541853,
+      "formal_uniform_gas_pressure_mode_hz": 2300.7601948529914,
+      "formal_mode_geq_first_empty_inner_box_mode": true,
+      "probe80_to_empty_box_axial_ratio": 0.07272049699138339,
+      "scope": "Reference only: flag excludes interpreting high formal 0D eigenfrequency as measured or validated physical resonance."
+    }
+  ],
+  "spatially_unqualified_formal_mode_count": 27,
+  "next": "P20B:porownac szczelna przegrode wkilku pozycjach z modulem referencyjnym100mm;potem pelne3D wybranejmetody i P21. Dla modulu wymagane osobneporty cisnienia zewnetrznego/wewnetrznego.",
+  "input_sha256": {
+    "dane/konfiguracje/p20a_regulacja_objetosci.json": "eed4cd0696db7b82249e167cac9cbd4b27dfae1d239e2f2079623a4b288eaf29",
+    "skrypty/wykresy_i_ocena_wkladow_P20A.py": "17fbdb962d9ef7a1ced1a8fce1e618a36e9310814c58e0ad388802c9a7694198",
+    "skrypty/model_wkladu_P20A.py": "433ff38e9f91cc98bd3508eb1069989c225b652eee0ddd04a03e56f654fcf821",
+    "skrypty/model_plyty_MITC_P18.py": "1e98a4553f5697344821a83d7d6afe823c2a801350f14dbdeb6d8ce681690775",
+    "skrypty/model_gazu.py": "ca8f63066f23eac9eb00610b428c173515f3088395501deaec740ea05a2c5115",
+    "dane/zrodla/P18B_geometria_i_ograniczenia.json": "d7c76459def5895df418cb5cccb05d8a7645d92eaaa2da3db78a3ceb44a4c8ae",
+    "dane/konfiguracje/p18c_rama_3D.json": "99409305fbd038939fa7d37e6489dedb09898e16ad657611fef39f958c77f1d9",
+    "wyniki/p20a_podsumowanie.json": "f53fc6ea870160d8c76d496593e76f8254a69849af81564ba84af383ed25b8b2",
+    "wyniki/p20a_dostep_i_uklad.csv": "c15aa08637a0f0b9541732660431a7bba4f7fafc33e8bc841da429dc8f5e7a80",
+    "wyniki/p20a_tory_montazu.json": "fb0581ef7cda0fdbc5a316878e1b00f05e625960180b635362ae20c80efc1150",
+    "wyniki/p20a_moduly_i_sciany.csv": "eb63efb305e8ac04ca249923a0f6cec52bdcd7ce8626493f2f78062c55e7b9e6",
+    "wyniki/p20a_porty_modulow.csv": "75504efdde37edbc6dcd2fd8ba344ca267151ee85e6154914a2ee5c77cda435b",
+    "wyniki/p20a_kanaliki_porty.csv": "092ed492733e1d9ab0e4b90cdb20dbda185bd7cd97a56c1a793d2a72ead59f99",
+    "wyniki/p20a_kanaliki_piki_i_dziedzina.csv": "df0d12e8d668779c742e7d73d94e22c58f40bcf908b9e3aaf1c2c6473a3f441f",
+    "wyniki/p20a_dynamika_mocowan.csv": "ee970d6190b98bf24acd0c0d715c8721ccb6760edc606c5268a5999a392c2fbe",
+    "wyniki/p20a_naped_podsumowanie.json": "17c14c988c9b2d9b0ce624949d7dec2dde71cd2e7b388708141db366e7cc3053"
+  }
+}

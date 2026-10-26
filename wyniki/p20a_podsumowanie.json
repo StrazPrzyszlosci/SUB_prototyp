@@ -1,0 +1,52 @@
+{
+  "status": "INSERT_GEOMETRY_FLEXIBLE_SHELL_LEAK_AND_MOUNT_FAMILIES_NOT_FINAL_CNC_OR_STRENGTH",
+  "date": "2026-10-26",
+  "cases": {
+    "layouts": 108,
+    "module_models": 78,
+    "port_rows": 5616,
+    "thermal_states": 702,
+    "mount_static_rows": 450,
+    "mount_dynamic_rows": 1890
+  },
+  "balances": {
+    "host_geometry_l": 135.424,
+    "fixed_explicit_solids_l": 0.9995200000000001,
+    "liner_envelope_after_hard_intersections_l": 31.465280000000025,
+    "liner_solid_volume_l": 0.6293056000000011,
+    "liner_dry_mass_kg": 0.6293056000000006,
+    "note": "Explicit nonoverlapping P20 brace envelope differs from older lumped rod/pad representation; no driver displacement guessed."
+  },
+  "checks": {
+    "max_module_power_normalized_residual": 7.427645038218114e-16,
+    "min_real_module_admittance": 0.0,
+    "flagged_temperature_domain_rows": 0
+  },
+  "libraries": {
+    "Python": "3.12.3",
+    "NumPy": "1.26.4",
+    "SciPy": "1.17.1"
+  },
+  "input_sha256": {
+    "dane/konfiguracje/p20a_regulacja_objetosci.json": "eed4cd0696db7b82249e167cac9cbd4b27dfae1d239e2f2079623a4b288eaf29",
+    "skrypty/analiza_wkladow_P20A.py": "e6878a1f652ab9bd9953826f1b8c8694f48c826139fc11afecb5698e65c938d9",
+    "skrypty/geometria_wkladow_P20A.py": "2f886b4d6b6a3605de3e9a7a50d97da914dc604fa07ca26c1e8842e902e699c2",
+    "skrypty/model_wkladu_P20A.py": "433ff38e9f91cc98bd3508eb1069989c225b652eee0ddd04a03e56f654fcf821",
+    "skrypty/model_plyty_MITC_P18.py": "1e98a4553f5697344821a83d7d6afe823c2a801350f14dbdeb6d8ce681690775",
+    "skrypty/model_gazu.py": "ca8f63066f23eac9eb00610b428c173515f3088395501deaec740ea05a2c5115",
+    "skrypty/model_subwoofera.py": "bd7e6e250a5b9a605fbbb05343381b827ffa81047a90c692968fc8e34eedc2b8",
+    "dane/konfiguracje/p18c_rama_3D.json": "99409305fbd038939fa7d37e6489dedb09898e16ad657611fef39f958c77f1d9",
+    "dane/zrodla/P18B_geometria_i_ograniczenia.json": "d7c76459def5895df418cb5cccb05d8a7645d92eaaa2da3db78a3ceb44a4c8ae",
+    "brief_system_audio_DIY_v0.6.md": "3bd9f8d43a92b96256073e66cd0f4f105336e969a37c29fc42f17cda9d66736f"
+  },
+  "limitations": [
+    "U-021:front stały; wkłady wkładane przez otwór po wyjęciu docelowego głośnika. Nie rozwijać wymiennego frontu.",
+    "Gabaryty, gęstość, E, damping, luzy, siły i temperatury są scenariuszami. Brak zatwierdzonego końcowego litrażu.",
+    "SSSS i CCCC to dwie rodziny krawędzi aktywnych paneli, nie ścisłe granice każdej klejonej skrzynki.",
+    "Port modułu ma przestrzennie uśrednione ciśnienie; brak pełnego pola3D i sprzężenia naroży wszystkich ścian.",
+    "Nominalna średnica otworu i tor ruchu nie są dokumentacją CNC ani dowodem dowolnej orientacji/montażu.",
+    "Ciśnienie jednorodne daje zerową wypadkową siłę całej zamkniętej bryły; mocowania liczymy od masy/przyspieszeń, obciążenia złączy paneli osobno.",
+    "Brak identyfikacji wyrywania śrub, kleju, S-N/J(t), wilgotności i transportu; wymagania siłowe nie są kwalifikacją mocowania.",
+    "Włóknina nie jest sztywnym podparciem wkładu. Mocowanie ma omijać warstwę miękką; masa/objętość przyszłych szyn pozostaje dodatkowym bilansem."
+  ]
+}

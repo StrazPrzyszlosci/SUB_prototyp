@@ -51,9 +51,9 @@ pakietu samym stworzeniem planu, testów ani listy bibliotek.
 | P15 | N8 — model cieplny w czasie | Wykonane rodziny P15A/P15B; parametry produktów otwarte | Raport025:4225sieciCauer/Foster i granice. Raport027:2304przebiegiRe(T),ruchu,strat i przyjętej konwekcji,4pełneODEaudio,1152porównania obwiedni. Brak identyfikacjiR/C, lokalnych gradientów i powietrza skrzyni |
 | P16 | Sprzężenia cieplne i elektromechaniczne | Częściowo — Re(T),ruch i chłodzenie | P15B sprzęga prąd,Re(T),ruch i straty; twierdzenie napięciowe dla stałego biernego tła. Nie wykonano fizycznej identyfikacjiBL(T),pełnych dużych sygnałów, gradientów i wszystkich sprzężeń termicznych |
 | P17 | Łączne granice użytecznego zakresu | Częściowo — wspólneV/I/X/chłodzenie | Raport028:5184zestawy,31104punkty,analityczne przedziałyVb>0,26246niezależnych brzegów i3tożsamościSymPy. Stały poziom wyjściowy i warunkoweRth. Nie zintegrowano jeszcze rzeczywistegoTHD,ciągłego pasma,muzyki,konstrukcji i pokoju |
-| P18 | Płyty MDF: drgania, naprężenia, promieniowanie | Częściowo — wykonane P18A/P18B/P18C | Raport029:płyty. Raport033:front. Raport035:pełna rama6brył/12spoin,siatki do36771DOF,168punktówharmonicznych,ściągi i podparcie. U-021:frontstały;geometria finalna,frez i promieniowanie otwarte |
+| P18 | Płyty MDF: drgania, naprężenia, promieniowanie | Częściowo — wykonane P18A/P18B/P18C | Raport029:płyty. Raport033:front. Raport035:pełna rama6brył/12spoin,siatki do36771DOF,168punktówharmonicznych,ściągi i podparcie. U-021:frontstały;geometria finalna,frez,promieniowanie i porównanieMDF/sklejka zR3 otwarte |
 | P19 | Usztywnienia, połączenia i klej | Częściowo — wykonane rodziny P19A–P19G | Raporty030–040:spoiny,styk,pełna rama,listwa. Raport041:24podmodele/144okna/do102033DOF,przekazanie stóp i dwa kierunki siatki. Wpływ pola N14/N18 większy niż ostatnie lokalne zagęszczenia;nośność,Gc,SN/J(t) i identyfikacjaMDF otwarte |
-| P20 | Regulacja objętości | Częściowo | Koncepcje i bilans brutto/netto; mechaniczna analiza porównawcza otwarta |
+| P20 | Regulacja objętości | Częściowo — P20A wykonane w rodzinach kontrolnych | Raport042:108układów,78modeli modułów,40068punktów napędu27konfiguracji,geometria/masa/porty/przeciek/mocowania i9rodzin kanału zmasą. Wybrano modułreferencyjny100mm;porównanie z przegrodą,pełne3D i kwalifikacja mocowania otwarte |
 | P21 | Wewnętrzne pole i sprzężenie paneli | Częściowo — wykonane odniesienie P21A | Raport031:72punktysprzężeniaRayleigh/MITC i gazu0D,masaDuffy,moc i wzajemność. Przestrzennepole3Dkomory,różneściany,front i podparcie nadal otwarte |
 | P22 | Napęd, impedancja wyjściowa i clipping | Częściowo | Dotychczas idealne ograniczeniaV/I; dynamika i obciążenie rzeczywiste otwarte |
 | P23 | Cyfrowa korekcja, faza i opóźnienia | Częściowo |216wzorców analogowych; realizacja dyskretna i stabilność otwarte |
@@ -101,8 +101,12 @@ P19Fzbadał listwę20/30/40mm,masę,prawidłowyportciśnienia i dwie nowe spoiny
 P19Gwykonał podmodel zezgodnymi siatkami i obciążeniami rzeczywistych
 wycinków,24realizacje i kontroletransferu(raport041). Lokalna rozdzielczość
 nie zastępuje niepewnego pola globalnego lub danych materiałowych.
-Najbliższykrok:P20—sztywne wkładyregulacjiVb,dostęp przy stałymfroncie,
-netto,masa,podatność i mocowania;potem pole3D P21,
+P20Awykonał badania sztywnych/pustychwkładów,dostępu,netto,podatności,
+szczelności i mocowań (raport042). Tory translacji są zweryfikowane w swej
+klasie, a część formalnych modów0Dwychodzi poza referencję przestrzenną.
+Najbliższykrok:P20B—porównać szczelną przegrodę w kilku pozycjach
+z modułem referencyjnym100mm,zgodniezR3. Potem pełne3D wybranejmetody,
+jej mocowania i pole3D P21,
 czasoweDSP/napędP22–P25, pokójP26–P28 i integracjaP29/P30.
 Poszukiwanie danych materiałowych i nieliniowych może toczyć się równolegle
 z obliczeniami niewymagającymi tych danych. Nie wykonywać zakupów.

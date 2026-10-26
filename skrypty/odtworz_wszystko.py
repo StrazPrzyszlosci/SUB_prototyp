@@ -110,6 +110,7 @@ def main():
     from odtworz_rame_i_spoiny_3D import main as frame3d_stage
     from odtworz_listwe_P19F import main as fixed_front_cleat
     from odtworz_podmodel_P19G import main as local_front_joint
+    from odtworz_regulacje_P20A import main as volume_insert_stage
     from analiza_rozszerzenia_SB import main as sb_extension
     from manifest_rozszerzenia_SB import main as sb_manifest
     from analiza_ilosci_i_rozmieszczenia_wypelnienia import main as filling_placement
@@ -191,6 +192,7 @@ def main():
     frame3d_stage()
     fixed_front_cleat()
     local_front_joint()
+    volume_insert_stage()
     sb_extension()
     sb_manifest()
     filling_placement()

@@ -185,6 +185,28 @@ Optymalizacja jednego sweet spotu 2,5–3 m; brak narzuconego budżetu i gabaryt
     zmiany0.00446N dotyczy jednego zachowanego pola,nie wszystkich24.
     Odróżniać osobne zagęszczenia x i yz od wspólnego certyfikatucontinuum.
 
+37. P20A/raport042 rozdziela obrys wkładu, ciało stałe, zamknięty gaz
+    i podatność ścian. Nie dodawać wewnętrznego Vi drugi raz do głównego
+    gazu. Dostęp zakłada wyjęty głośnik, front pozostaje stały. Tory są
+    konkretną klasą translacji; nie oznaczają globalnego optimum lub
+    niemożliwości innych ruchów. Wyporność głośnika 2/4/6 l to osie stresu,
+    nie dane produktów. Geometria P20 pręta i nakładek jest jawna,
+    nie nakładać jej na dawną masę skupioną P18 bez nowego bilansu.
+38. Napęd P20A ma 40068 punktów z przeciekiem oporowym. Dziewięć rodzin
+    kanału z masą to osobny małosygnałowy kontrprzykład, z ekranami Mach
+    i przemieszczenie/r; nie przenosić poza nimi przepływu/SPL. Współczynnik
+    bezwładności niskof rurki kołowej 4/3 nie jest szczelinowym 6/5.
+    27 formalnych modów jednolitego gazu leży powyżej referencji pustej
+    komory: nie nazywać ich fizycznie zwalidowanymi rezonansami pudełka.
+    SSSS/CCCC nie są uniwersalnymi granicami prawdziwego połączenia.
+39. Ciśnienie jednorodne daje zerową wypadkową na całej zamkniętej bryle,
+    lecz nadal obciąża jej panele/złącza. Wymagania czterech podpór nie
+    identyfikują nośności śrub/kleju lub lokalnych sił od uginania ścian.
+    Flaga otwierania styku wyklucza interpretację liniowego modelu jako
+    rzeczywistego luźnego kontaktu po otwarciu. Włóknina nie jest sztywnym
+    podparciem. Wskaźnik wyboczenia panelu P20A to założony schemat
+    Nx=Ny=p*normal_span/2, nie nośność lub dolna granica całego pudełka.
+
 ## Stan i postępy
 
 | Data | Wykonane | Dowód / ograniczenie | Następny krok |
@@ -631,6 +653,28 @@ Postęp końca sesji2026-10-23:
   Zachować bramkiP19:Gc/SN/J(t),rzeczywistyMDF i całe pole/globalne źródło;
   nie ponawiać samych lokalnych siatek bez nowej hipotezy zmieniającej decyzję.
   Wypełnienieporowate039 pozostaje osobnym bilansem. Wybór/PDFotwarte.
+
+- P20A, 2026-10-26: raport042/baza30. Zbadano 108 układów, 78 modeli
+  ścian, 5616 portów, 702 stany temperatury/ciśnienia, 450/1890 wierszy
+  statyki/dynamiki mocowań i 40068 punktów napędu dla 27 konfiguracji.
+  Do dalszego porównania: moduł 180×100×170 mm, MDF8 ze ściągiem;
+  16 modułów zajmuje 48.96 l, sucha masa 11.21 kg, masywny MDF 35.74 kg
+  przy tych założeniach. To nie końcowa konstrukcja/CNC lub wybór głośnika.
+- Sprawdzono pełne odcinki toru: 1344, w tym1272niezerowe; sekwencja
+  odwracalna w swej klasie, bez gwarancji dostępu narzędzia. Dziewięć
+  porównań Navier/MITC z analitycznym ogonem,36pełnych nodalnychMES+gaz,
+  4porównania modów i12kontroli siatki. Bilans napędu i portu do9e-16;
+  zero wkładów odtwarza gaz1.5e-15. Nie są to dokładności fizycznego wyrobu.
+- Dziewięć rodzin kanalika z masą:7209wierszy i36ekranów amplitudy.
+  Formalne maksimaReY około9.7–43.7Hz; ekrany małej amplitudy ograniczają
+  użycie modelu. Zachowano niezamienność DC i g→0. Temperatura gazu modułu
+  i ciśnienie jego otoczenia to zadane stany,nie wynik grzania cewki.
+- Cztery wykresy70–73 obejrzane;README ma27obrazów i42raporty.
+  **Jeden najbliższy krok:P20B—porównać szczelną przegrodę w kilku
+  pozycjach z referencyjnymi modułami, zgodnie zR3.** Potem pełne3D wybranej
+  metody (dla modułu osobne porty wewnętrzny/zewnętrzny),mocowania iP21.
+  MDF/sklejka, faktyczna wyporność głośników,kwalifikacja kleju i
+  temperatura/DSP/ochrona nadal wymagają syntezy. Końcowy wybór/PDFotwarte.
 
 ## Decyzje otwarte
 

@@ -1,0 +1,24 @@
+{
+  "status": "LINEAR_INERTIAL_NECK_COUNTEREXAMPLES_WITH_EXPLICIT_AMPLITUDE_SCREENS",
+  "cases": 9,
+  "frequency_rows": 7209,
+  "amplitude_screens": 36,
+  "max_normalized_power_residual": 1.086036792809031e-15,
+  "low_frequency_inertance_to_slug": "4/3",
+  "input_sha256": {
+    "dane/konfiguracje/p20a_kanaliki_kontrolne.json": "f11a60591538783d1eced8a103004dda24dfd64e2ce5ec6ed6bdee91f72d1642",
+    "dane/konfiguracje/p20a_regulacja_objetosci.json": "eed4cd0696db7b82249e167cac9cbd4b27dfae1d239e2f2079623a4b288eaf29",
+    "skrypty/kanaliki_z_masa_P20A.py": "12507c2a5e21bda441fe74409cf8c26f5e95fb83a71dd90e3de360f9b7fb50e0",
+    "skrypty/model_wkladu_P20A.py": "433ff38e9f91cc98bd3508eb1069989c225b652eee0ddd04a03e56f654fcf821",
+    "skrypty/model_wypelnienia.py": "33822435e494b4d95659c3679466fcffefcce699450df2932267f1799bf2fdb7",
+    "skrypty/model_gazu.py": "ca8f63066f23eac9eb00610b428c173515f3088395501deaec740ea05a2c5115",
+    "skrypty/model_plyty_MITC_P18.py": "1e98a4553f5697344821a83d7d6afe823c2a801350f14dbdeb6d8ce681690775"
+  },
+  "limitations": [
+    "Rurka kołowa z lepką gęstością ZK/Stokesa, bez ściśliwości samego krótkiego kanalika.",
+    "Dodatkowa długość końców 0/1/2r to scenariusz masy, nie zidentyfikowana poprawka konkretnego otworu.",
+    "Nie identyfikuje szczeliny kleju, strat wejściowych, szumu lub rzeczywistej nieszczelności.",
+    "Progi Mach i przemieszczenie/r są umownymi ekranami małej amplitudy, nie normą bezpieczeństwa i nie dowodem laminarności.",
+    "Poza ekranem nie używać odpowiedzi liniowej do prognozy SPL lub przepływu rzeczywistego urządzenia."
+  ]
+}

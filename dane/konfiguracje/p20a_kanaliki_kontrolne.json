@@ -1,0 +1,17 @@
+{
+  "date":"2026-10-26",
+  "status":"HYPOTHETICAL_LINEAR_NECK_COUNTEREXAMPLES_NOT_DRILLING_INSTRUCTIONS",
+  "radius_m":[0.0005,0.001,0.002],
+  "end_inertance_lengths_in_radii_assumed":[0.0,1.0,2.0],
+  "frequency_hz_grid":[5.0,200.0,801],
+  "outer_pressure_rms_pa_cases":[0.001,0.01,1.0,100.0],
+  "displacement_to_radius_screen_limit_assumed":0.1,
+  "peak_mach_screen_limit_assumed":0.03,
+  "notes":[
+    "Rurka kołowa z lepką gęstością ZK/Stokesa, bez ściśliwości samego krótkiego kanalika.",
+    "Dodatkowa długość końców 0/1/2r to scenariusz masy, nie zidentyfikowana poprawka konkretnego otworu.",
+    "Nie identyfikuje szczeliny kleju, strat wejściowych, szumu lub rzeczywistej nieszczelności.",
+    "Progi Mach i przemieszczenie/r są umownymi ekranami małej amplitudy, nie normą bezpieczeństwa i nie dowodem laminarności.",
+    "Poza ekranem nie używać odpowiedzi liniowej do prognozy SPL lub przepływu rzeczywistego urządzenia."
+  ]
+}

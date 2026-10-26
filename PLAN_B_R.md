@@ -207,8 +207,9 @@ kampanii bez nowej hipotezy zmieniającej decyzję.
 
 Mechanika doszła do frontu, styku w czasie i pełnej ramy 3D (033–036),
 a P19E wyznacza wymagania sztywności stałego frontu (037). **Najbliższy
-krok po P19G: P20 — sztywne wkłady regulacji Vb, dostęp przy stałym froncie,
-bilans netto, masa, podatność i obciążenia mocowania**, potem pole P21.
+krok po P20A: P20B — porównać szczelną przegrodę w kilku pozycjach
+z referencyjnymi wkładami wypornościowymi**, potem pełne 3D wybranej
+metody i pole P21. Porównanie MDF/sklejka z R3 nadal jest otwarte.
 Screening odspojenia nadal nie jest zbieżną prognozą odporności na pękanie.
 
 Raport 040 ma 20 wariantów listwy i 40 obciążeń pełnej ramy. Nowa droga
@@ -220,6 +221,11 @@ Raport 041 wykonał 24 lokalne realizacje, 144 okna i dwa dalsze kierunki
 zagęszczenia do 102033DOF. W badanym oknie zmienność pola globalnego
 dominuje nad ostatnimi osobnymi zagęszczeniami. Bramki materiałowe P19
 pozostają otwarte; nie ponawiać lokalnej siatki bez nowej hipotezy.
+
+Raport 042 zbadał 108 układów dostępu,78modeli wkładów i40068punktów
+napędu dla27konfiguracji. Wybrano referencyjny moduł180×100×170mm/MDF8
+ześciągiem do porównania z przegrodą. Potwierdzone tory dotyczą konkretnej
+klasy translacji; modele płyt nie są kwalifikacją pełnej skrzynki3D.
 
 Raport 038 rozszerza pulę do 26 produktów / 27 konfiguracji elektrycznych,
 w tym trzech SB Acoustics. Nowe SB mają odrębne obliczenia liniowe;

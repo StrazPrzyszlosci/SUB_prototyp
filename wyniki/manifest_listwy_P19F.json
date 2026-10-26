@@ -1,6 +1,6 @@
 {
   "status": "FINITE_CLEAT_GEOMETRY_AND_JOINT_LOAD_SCREENING_NOT_FRACTURE_QUALIFICATION",
-  "generated_at": "2026-10-26T08:24:25.343161+01:00",
+  "generated_at": "2026-10-26T12:36:58.909961+01:00",
   "libraries": {
     "Python": "3.12.3",
     "NumPy": "1.26.4",
@@ -26,7 +26,7 @@
     "skrypty/model_plyty_MITC_P18.py": "1e98a4553f5697344821a83d7d6afe823c2a801350f14dbdeb6d8ce681690775",
     "skrypty/model_ramy_3D_P18C.py": "698395a0d216659572ae84c1fea1b1251a67c5c32b99a7cf84cc55582e33e1ad",
     "skrypty/odtworz_listwe_P19F.py": "95b9d5995c2152a82233fa0b96aa12c0b52af6db5eb3c5b487beb2902d5b6ea2",
-    "skrypty/odtworz_wszystko.py": "5fcc72e152169d6f15e35a769cd8d48249695f0f0793da1e6943977ad2bbd99b",
+    "skrypty/odtworz_wszystko.py": "aab083ebcac7d8bbc75e1530469ab613852e8979dd6e226d84b7b316b3c88612",
     "skrypty/sprawdz_listwe_P19F.py": "ea707beb421cd0d115e4e778706f7e7491c576cae08d108697366f7dff67ef0c",
     "skrypty/wykresy_listwy_P19F.py": "781101ff1048c9c97f682e7d8421f6294a6dde6264a3da555b0304a0669145de",
     "skrypty/zapisz_pole_referencyjne_P19F.py": "a40591567206423db27470a105afa637c067ce914dd9d2a6de2b47e29b04c755",
@@ -51,13 +51,13 @@
     "wyniki/p19f_spoiny_i_przeniesienie_obciazen.csv": "ca2263b162976b10b9d5b78da5abde583cb1f56d615260636b9f5c032a5fcbc5"
   },
   "documentation_sha256": {
-    "README.md": "88d665a52d54503815dc6173198926a32aa0db6eb49d7a39ca573c420f46db38",
-    "AGENTS.md": "aaf0ad6584d9bbd7f6863894e7f51c39acf42cd6bf1953e0947997afc4b95cbb",
-    "PLAN_B_R.md": "417370a5faf8485e1b02c28f36f9f4e5da6cd5e6aa3f23b56663593d6340eec8",
-    "PROGRAM_30_BADAN.md": "d5fc54c0f1480a730ba327ab2a579d2b39a02d3c93f4c1c65bdb5c131fe76539",
-    "raporty/README.md": "20310d5d84208f1756cececd675618ed9c35a1276fe9be28d7a333c5453ab98c",
+    "README.md": "813d17d0484a721f5cbf7d7ed92199aa7a489cc7cf8a84c346000714398844ce",
+    "AGENTS.md": "3100d8d82ad4eb5591f4bff2d62853efd875f837ad0327fbdfd3943d46ca4349",
+    "PLAN_B_R.md": "7f261a9cb8931828e6d50562ba0ace4263e75d9f5bbcf589c0a4587a36df3da9",
+    "PROGRAM_30_BADAN.md": "9e0ae36d43f89fb1487f333d4dc2140e3a83b78959503ae7fc5fea86cf083769",
+    "raporty/README.md": "f17a3b8e5d0cc4f2a4cd7d5ff4434d4f05fb2e8f04623999d1cd9bc8dd46dc9b",
     "raporty/040_listwa_stalego_frontu_i_droga_sily.md": "4fb0818cc0de65c5808d6915b2c0d80e319db2a855f6ce07362f0fb7d564d332",
-    "baza_wiedzy/README.md": "79a28f2da00acddce78a2aa67d3e81a99b10090837f2fd25772e488c4c69bdc7",
+    "baza_wiedzy/README.md": "6af93aad77c06153c318bd08972b47b70628f4905d28c67c2f8d4051e8c5de50",
     "baza_wiedzy/28_listwa_i_lokalna_droga_sily.md": "3055ddb600dc15fd7bf3f7e842df68b8eece852c81be3fae83874208984a4034"
   },
   "limitations": [

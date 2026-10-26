@@ -1,0 +1,534 @@
+{
+  "status": "NAVIER_FEM_GAS_PASSIVITY_CONTINUOUS_PATH_AND_MOUNT_CONTROLS_NOT_PRODUCT_QUALIFICATION",
+  "navier": [
+    {
+      "a_m": 0.164,
+      "b_m": 0.154,
+      "t_m": 0.008,
+      "mesh": 6,
+      "navier_lower_m3_pa": 2.816348967761393e-10,
+      "analytic_tail_bound_m3_pa": 2.9281351709511886e-17,
+      "FEM_compliance_m3_pa": 2.632408445398793e-10,
+      "relative_difference_to_partial_sum": 0.06531169413597471
+    },
+    {
+      "a_m": 0.164,
+      "b_m": 0.154,
+      "t_m": 0.008,
+      "mesh": 10,
+      "navier_lower_m3_pa": 2.816348967761393e-10,
+      "analytic_tail_bound_m3_pa": 2.9281351709511886e-17,
+      "FEM_compliance_m3_pa": 2.749451793786084e-10,
+      "relative_difference_to_partial_sum": 0.023753155145572413
+    },
+    {
+      "a_m": 0.164,
+      "b_m": 0.154,
+      "t_m": 0.008,
+      "mesh": 14,
+      "navier_lower_m3_pa": 2.816348967761393e-10,
+      "analytic_tail_bound_m3_pa": 2.9281351709511886e-17,
+      "FEM_compliance_m3_pa": 2.7821214754258607e-10,
+      "relative_difference_to_partial_sum": 0.012153143210352435
+    },
+    {
+      "a_m": 0.164,
+      "b_m": 0.384,
+      "t_m": 0.008,
+      "mesh": 6,
+      "navier_lower_m3_pa": 2.310824801892309e-09,
+      "analytic_tail_bound_m3_pa": 2.742539400402813e-16,
+      "FEM_compliance_m3_pa": 2.1385016522026216e-09,
+      "relative_difference_to_partial_sum": 0.07457213958781028
+    },
+    {
+      "a_m": 0.164,
+      "b_m": 0.384,
+      "t_m": 0.008,
+      "mesh": 10,
+      "navier_lower_m3_pa": 2.310824801892309e-09,
+      "analytic_tail_bound_m3_pa": 2.742539400402813e-16,
+      "FEM_compliance_m3_pa": 2.2478345537244633e-09,
+      "relative_difference_to_partial_sum": 0.027258772762116523
+    },
+    {
+      "a_m": 0.164,
+      "b_m": 0.384,
+      "t_m": 0.008,
+      "mesh": 14,
+      "navier_lower_m3_pa": 2.310824801892309e-09,
+      "analytic_tail_bound_m3_pa": 2.742539400402813e-16,
+      "FEM_compliance_m3_pa": 2.278551989119909e-09,
+      "relative_difference_to_partial_sum": 0.0139659279863934
+    },
+    {
+      "a_m": 0.156,
+      "b_m": 0.146,
+      "t_m": 0.012,
+      "mesh": 6,
+      "navier_lower_m3_pa": 6.252407776688146e-11,
+      "analytic_tail_bound_m3_pa": 1.56677597013471e-17,
+      "FEM_compliance_m3_pa": 5.847346646027456e-11,
+      "relative_difference_to_partial_sum": 0.06478482292388932
+    },
+    {
+      "a_m": 0.156,
+      "b_m": 0.146,
+      "t_m": 0.012,
+      "mesh": 10,
+      "navier_lower_m3_pa": 6.252407776688146e-11,
+      "analytic_tail_bound_m3_pa": 1.56677597013471e-17,
+      "FEM_compliance_m3_pa": 6.10508826674038e-11,
+      "relative_difference_to_partial_sum": 0.023562044449026653
+    },
+    {
+      "a_m": 0.156,
+      "b_m": 0.146,
+      "t_m": 0.012,
+      "mesh": 14,
+      "navier_lower_m3_pa": 6.252407776688146e-11,
+      "analytic_tail_bound_m3_pa": 1.56677597013471e-17,
+      "FEM_compliance_m3_pa": 6.177031822090554e-11,
+      "relative_difference_to_partial_sum": 0.012055508420072747
+    }
+  ],
+  "full_nodal_gas_comparisons": [
+    {
+      "braced": false,
+      "kappa": 1.0,
+      "corner_hz": 0.0,
+      "f_hz": 20.0,
+      "relative_admittance_error": 1.2605485457937382e-12,
+      "normalized_power_error": 2.941976876422504e-17
+    },
+    {
+      "braced": false,
+      "kappa": 1.0,
+      "corner_hz": 0.0,
+      "f_hz": 80.0,
+      "relative_admittance_error": 1.2643448300167018e-12,
+      "normalized_power_error": 1.5708226231742815e-17
+    },
+    {
+      "braced": false,
+      "kappa": 1.0,
+      "corner_hz": 0.0,
+      "f_hz": 200.0,
+      "relative_admittance_error": 1.4643806018676494e-12,
+      "normalized_power_error": 1.4414512967960358e-16
+    },
+    {
+      "braced": false,
+      "kappa": 1.0,
+      "corner_hz": 1.0,
+      "f_hz": 20.0,
+      "relative_admittance_error": 5.998989436499116e-13,
+      "normalized_power_error": 0.0
+    },
+    {
+      "braced": false,
+      "kappa": 1.0,
+      "corner_hz": 1.0,
+      "f_hz": 80.0,
+      "relative_admittance_error": 1.1488899256462838e-12,
+      "normalized_power_error": 8.343918610929218e-17
+    },
+    {
+      "braced": false,
+      "kappa": 1.0,
+      "corner_hz": 1.0,
+      "f_hz": 200.0,
+      "relative_admittance_error": 1.4500073502908615e-12,
+      "normalized_power_error": 6.492615565764426e-17
+    },
+    {
+      "braced": false,
+      "kappa": 1.0,
+      "corner_hz": 100.0,
+      "f_hz": 20.0,
+      "relative_admittance_error": 1.3347018152833678e-15,
+      "normalized_power_error": 1.6432867690357377e-16
+    },
+    {
+      "braced": false,
+      "kappa": 1.0,
+      "corner_hz": 100.0,
+      "f_hz": 80.0,
+      "relative_admittance_error": 1.8071418026374636e-14,
+      "normalized_power_error": 1.0418433531376453e-16
+    },
+    {
+      "braced": false,
+      "kappa": 1.0,
+      "corner_hz": 100.0,
+      "f_hz": 200.0,
+      "relative_admittance_error": 8.28022314217191e-14,
+      "normalized_power_error": 0.0
+    },
+    {
+      "braced": false,
+      "kappa": 1.4,
+      "corner_hz": 0.0,
+      "f_hz": 20.0,
+      "relative_admittance_error": 1.2294622957605491e-12,
+      "normalized_power_error": 6.975600034066196e-18
+    },
+    {
+      "braced": false,
+      "kappa": 1.4,
+      "corner_hz": 0.0,
+      "f_hz": 80.0,
+      "relative_admittance_error": 1.2376995101761893e-12,
+      "normalized_power_error": 1.6458632016599766e-16
+    },
+    {
+      "braced": false,
+      "kappa": 1.4,
+      "corner_hz": 0.0,
+      "f_hz": 200.0,
+      "relative_admittance_error": 1.4561541619536278e-12,
+      "normalized_power_error": 1.1464003366472854e-16
+    },
+    {
+      "braced": false,
+      "kappa": 1.4,
+      "corner_hz": 1.0,
+      "f_hz": 20.0,
+      "relative_admittance_error": 7.556960883055004e-13,
+      "normalized_power_error": 1.1552565934307617e-16
+    },
+    {
+      "braced": false,
+      "kappa": 1.4,
+      "corner_hz": 1.0,
+      "f_hz": 80.0,
+      "relative_admittance_error": 1.1791109628929756e-12,
+      "normalized_power_error": 8.79866504682368e-17
+    },
+    {
+      "braced": false,
+      "kappa": 1.4,
+      "corner_hz": 1.0,
+      "f_hz": 200.0,
+      "relative_admittance_error": 1.4360951187362402e-12,
+      "normalized_power_error": 1.654046915950495e-16
+    },
+    {
+      "braced": false,
+      "kappa": 1.4,
+      "corner_hz": 100.0,
+      "f_hz": 20.0,
+      "relative_admittance_error": 2.008136097727127e-15,
+      "normalized_power_error": 5.753953582041602e-16
+    },
+    {
+      "braced": false,
+      "kappa": 1.4,
+      "corner_hz": 100.0,
+      "f_hz": 80.0,
+      "relative_admittance_error": 2.5182095070862622e-14,
+      "normalized_power_error": 7.323457660687137e-17
+    },
+    {
+      "braced": false,
+      "kappa": 1.4,
+      "corner_hz": 100.0,
+      "f_hz": 200.0,
+      "relative_admittance_error": 1.1495755112388935e-13,
+      "normalized_power_error": 2.0766654942581244e-16
+    },
+    {
+      "braced": true,
+      "kappa": 1.0,
+      "corner_hz": 0.0,
+      "f_hz": 20.0,
+      "relative_admittance_error": 2.3048238916875904e-13,
+      "normalized_power_error": 6.582346162644832e-18
+    },
+    {
+      "braced": true,
+      "kappa": 1.0,
+      "corner_hz": 0.0,
+      "f_hz": 80.0,
+      "relative_admittance_error": 2.4602673433273073e-13,
+      "normalized_power_error": 8.218012602378191e-17
+    },
+    {
+      "braced": true,
+      "kappa": 1.0,
+      "corner_hz": 0.0,
+      "f_hz": 200.0,
+      "relative_admittance_error": 2.355994482580491e-13,
+      "normalized_power_error": 6.506381030177628e-18
+    },
+    {
+      "braced": true,
+      "kappa": 1.0,
+      "corner_hz": 1.0,
+      "f_hz": 20.0,
+      "relative_admittance_error": 3.2789748169088005e-14,
+      "normalized_power_error": 0.0
+    },
+    {
+      "braced": true,
+      "kappa": 1.0,
+      "corner_hz": 1.0,
+      "f_hz": 80.0,
+      "relative_admittance_error": 1.1508295564240703e-13,
+      "normalized_power_error": 0.0
+    },
+    {
+      "braced": true,
+      "kappa": 1.0,
+      "corner_hz": 1.0,
+      "f_hz": 200.0,
+      "relative_admittance_error": 1.979567953939348e-13,
+      "normalized_power_error": 1.1456945380865531e-16
+    },
+    {
+      "braced": true,
+      "kappa": 1.0,
+      "corner_hz": 100.0,
+      "f_hz": 20.0,
+      "relative_admittance_error": 3.298762168439099e-16,
+      "normalized_power_error": 2.0732037962286743e-16
+    },
+    {
+      "braced": true,
+      "kappa": 1.0,
+      "corner_hz": 100.0,
+      "f_hz": 80.0,
+      "relative_admittance_error": 5.925058688157459e-16,
+      "normalized_power_error": 0.0
+    },
+    {
+      "braced": true,
+      "kappa": 1.0,
+      "corner_hz": 100.0,
+      "f_hz": 200.0,
+      "relative_admittance_error": 2.9800518037841066e-15,
+      "normalized_power_error": 0.0
+    },
+    {
+      "braced": true,
+      "kappa": 1.4,
+      "corner_hz": 0.0,
+      "f_hz": 20.0,
+      "relative_admittance_error": 2.4269485102599287e-13,
+      "normalized_power_error": 5.993195869168861e-18
+    },
+    {
+      "braced": true,
+      "kappa": 1.4,
+      "corner_hz": 0.0,
+      "f_hz": 80.0,
+      "relative_admittance_error": 2.40475668852994e-13,
+      "normalized_power_error": 6.406309823220255e-17
+    },
+    {
+      "braced": true,
+      "kappa": 1.4,
+      "corner_hz": 0.0,
+      "f_hz": 200.0,
+      "relative_admittance_error": 2.4714515005343094e-13,
+      "normalized_power_error": 3.588988838371259e-17
+    },
+    {
+      "braced": true,
+      "kappa": 1.4,
+      "corner_hz": 1.0,
+      "f_hz": 20.0,
+      "relative_admittance_error": 4.741536077463285e-14,
+      "normalized_power_error": 1.4101561396059753e-16
+    },
+    {
+      "braced": true,
+      "kappa": 1.4,
+      "corner_hz": 1.0,
+      "f_hz": 80.0,
+      "relative_admittance_error": 1.572129659124614e-13,
+      "normalized_power_error": 0.0
+    },
+    {
+      "braced": true,
+      "kappa": 1.4,
+      "corner_hz": 1.0,
+      "f_hz": 200.0,
+      "relative_admittance_error": 2.1407773364668293e-13,
+      "normalized_power_error": 6.249881178647416e-17
+    },
+    {
+      "braced": true,
+      "kappa": 1.4,
+      "corner_hz": 100.0,
+      "f_hz": 20.0,
+      "relative_admittance_error": 2.8012969625237307e-16,
+      "normalized_power_error": 1.451403523088936e-16
+    },
+    {
+      "braced": true,
+      "kappa": 1.4,
+      "corner_hz": 100.0,
+      "f_hz": 80.0,
+      "relative_admittance_error": 1.2761925797086274e-15,
+      "normalized_power_error": 2.1948638011479815e-16
+    },
+    {
+      "braced": true,
+      "kappa": 1.4,
+      "corner_hz": 100.0,
+      "f_hz": 200.0,
+      "relative_admittance_error": 4.728155090098331e-15,
+      "normalized_power_error": 0.0
+    }
+  ],
+  "pressure_mode_checks": [
+    {
+      "braced": false,
+      "kappa": 1.0,
+      "nodal_frequency_hz": 549.5989300427617,
+      "secular_frequency_hz": 549.5989300436357,
+      "relative_error": 1.5902834604730742e-12
+    },
+    {
+      "braced": false,
+      "kappa": 1.4,
+      "nodal_frequency_hz": 552.0294967955681,
+      "secular_frequency_hz": 552.029496795776,
+      "relative_error": 3.766986722553156e-13
+    },
+    {
+      "braced": true,
+      "kappa": 1.0,
+      "nodal_frequency_hz": 1215.4064184730871,
+      "secular_frequency_hz": 1215.4064184736812,
+      "relative_error": 4.888311977424564e-13
+    },
+    {
+      "braced": true,
+      "kappa": 1.4,
+      "nodal_frequency_hz": 1215.9485167338232,
+      "secular_frequency_hz": 1215.9485167347736,
+      "relative_error": 7.815970093361102e-13
+    }
+  ],
+  "module_mesh": [
+    {
+      "boundary": "SSSS",
+      "braced": false,
+      "mesh": 6,
+      "static_wall_compliance_m3_pa": 6.355857994256512e-10,
+      "returned_storage_20hz_l": 0.0865895814589124,
+      "returned_storage_80hz_l": 0.08818549715717033
+    },
+    {
+      "boundary": "SSSS",
+      "braced": false,
+      "mesh": 10,
+      "static_wall_compliance_m3_pa": 6.642271947627498e-10,
+      "returned_storage_20hz_l": 0.09032938662082089,
+      "returned_storage_80hz_l": 0.09205315993968012
+    },
+    {
+      "boundary": "SSSS",
+      "braced": false,
+      "mesh": 14,
+      "static_wall_compliance_m3_pa": 6.722281089214396e-10,
+      "returned_storage_20hz_l": 0.09137168999514099,
+      "returned_storage_80hz_l": 0.09313184487274906
+    },
+    {
+      "boundary": "SSSS",
+      "braced": true,
+      "mesh": 6,
+      "static_wall_compliance_m3_pa": 1.806531010392447e-10,
+      "returned_storage_20hz_l": 0.025323663442569085,
+      "returned_storage_80hz_l": 0.025414435929882805
+    },
+    {
+      "boundary": "SSSS",
+      "braced": true,
+      "mesh": 10,
+      "static_wall_compliance_m3_pa": 2.0263164752953541e-10,
+      "returned_storage_20hz_l": 0.02836344327740622,
+      "returned_storage_80hz_l": 0.028472025349350737
+    },
+    {
+      "boundary": "SSSS",
+      "braced": true,
+      "mesh": 14,
+      "static_wall_compliance_m3_pa": 2.107970784619283e-10,
+      "returned_storage_20hz_l": 0.029490560674407258,
+      "returned_storage_80hz_l": 0.029606513143502905
+    },
+    {
+      "boundary": "CCCC",
+      "braced": false,
+      "mesh": 6,
+      "static_wall_compliance_m3_pa": 1.466254344078433e-10,
+      "returned_storage_20hz_l": 0.020604885084541554,
+      "returned_storage_80hz_l": 0.020714737643415224
+    },
+    {
+      "boundary": "CCCC",
+      "braced": false,
+      "mesh": 10,
+      "static_wall_compliance_m3_pa": 1.571027749827804e-10,
+      "returned_storage_20hz_l": 0.022062598566244034,
+      "returned_storage_80hz_l": 0.022190359912530704
+    },
+    {
+      "boundary": "CCCC",
+      "braced": false,
+      "mesh": 14,
+      "static_wall_compliance_m3_pa": 1.600649950428563e-10,
+      "returned_storage_20hz_l": 0.02247437849427728,
+      "returned_storage_80hz_l": 0.022607389737994782
+    },
+    {
+      "boundary": "CCCC",
+      "braced": true,
+      "mesh": 6,
+      "static_wall_compliance_m3_pa": 5.367437898864839e-11,
+      "returned_storage_20hz_l": 0.007587084355943318,
+      "returned_storage_80hz_l": 0.007596211522853933
+    },
+    {
+      "boundary": "CCCC",
+      "braced": true,
+      "mesh": 10,
+      "static_wall_compliance_m3_pa": 6.240445412219386e-11,
+      "returned_storage_20hz_l": 0.008816043300349964,
+      "returned_storage_80hz_l": 0.008828272010444359
+    },
+    {
+      "boundary": "CCCC",
+      "braced": true,
+      "mesh": 14,
+      "static_wall_compliance_m3_pa": 6.562166096386345e-11,
+      "returned_storage_20hz_l": 0.009268590419517409,
+      "returned_storage_80hz_l": 0.009282188217294304
+    }
+  ],
+  "verified_continuous_segments": 1344,
+  "algebra": {
+    "positive_real_identity": "0",
+    "sealed_limit": "0",
+    "open_limit": "0",
+    "dc_then_seal": "ci",
+    "seal_then_dc": "ci*h0/(ci + h0)",
+    "thermal_equilibrium": "0",
+    "rigid_thermal_limit": "0",
+    "soft_thermal_limit": "0"
+  },
+  "max_rigid_mount_force_difference_n": 3.552713678800501e-15,
+  "scope": "Navier tail is an analytic model inequality evaluated in floating point, not an end-to-end interval certificate. Trajectory class has no rotations. SSSS/CCCC not universal bounds.",
+  "input_sha256": {
+    "dane/konfiguracje/p20a_regulacja_objetosci.json": "eed4cd0696db7b82249e167cac9cbd4b27dfae1d239e2f2079623a4b288eaf29",
+    "skrypty/sprawdz_wklady_P20A.py": "a97dddd4abc5d09ce24ad1d2c86ccc3a41812ae8f6bfb2ff7d0eb1e5ba1fd923",
+    "skrypty/model_wkladu_P20A.py": "433ff38e9f91cc98bd3508eb1069989c225b652eee0ddd04a03e56f654fcf821",
+    "skrypty/geometria_wkladow_P20A.py": "2f886b4d6b6a3605de3e9a7a50d97da914dc604fa07ca26c1e8842e902e699c2",
+    "skrypty/model_plyty_MITC_P18.py": "1e98a4553f5697344821a83d7d6afe823c2a801350f14dbdeb6d8ce681690775",
+    "wyniki/p20a_tory_montazu.json": "fb0581ef7cda0fdbc5a316878e1b00f05e625960180b635362ae20c80efc1150"
+  }
+}

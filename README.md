@@ -11,15 +11,14 @@ raportów, danych i odtwarzalnych obliczeń.
 **Stan: 2026-10-26.** Pula obejmuje **26 produktów od 11 producentów**,
 w tym 4 STX i **3 SB Acoustics**. Liczymy **27 konfiguracji elektrycznych**,
 ponieważ nowy dwucewkowy SB ma osobno połączenie szeregowe i równoległe.
-Najnowsze uzupełnienia to [raport 038 — dodatkowe SB](raporty/038_SB_Acoustics_rozszerzenie_i_porownanie.md)
-(5832 punkty modelu liniowego) oraz [raport 039 — obliczenia wypełnienia](raporty/039_wypelnienie_ilosc_polozenie_i_straty.md)
-(masa, objętość gazu, położenie i 17 820 punktów napędu).
-Najnowszy [raport 040 — listwa stałego frontu](raporty/040_listwa_stalego_frontu_i_droga_sily.md)
-dodaje 20 wariantów 3D: poprawę sztywności oraz przeniesienie obciążeń
-na nowe spoiny. Lokalna zbieżność naprężeń pozostaje otwarta.
-Następnie [raport 041 — podmodel lokalny](raporty/041_lokalny_podmodel_i_granice_wiarygodnosci.md)
-sprawdza 24 realizacje do 102 033 współrzędnych. W stałym oknie obserwacji
-wpływ danych globalnych jest większy niż ostatnich osobnych zagęszczeń lokalnych.
+**Aktualny etap: regulacja objętości.** [Raport 042](raporty/042_regulacja_Vb_i_wklady_wypornosciowe.md)
+porównuje dostęp, masę, szczelność i podatność wkładów oraz 40 068 punktów
+napędu dla całej puli. Wybrano moduł referencyjny do dalszego porównania
+ze szczelną przegrodą; metoda regulacji i końcowa konstrukcja są jeszcze otwarte.
+Powiązane wyniki obejmują [dodatkowe SB — 038](raporty/038_SB_Acoustics_rozszerzenie_i_porownanie.md),
+[wypełnienie — 039](raporty/039_wypelnienie_ilosc_polozenie_i_straty.md),
+[listwę stałego frontu — 040](raporty/040_listwa_stalego_frontu_i_droga_sily.md)
+i [lokalny podmodel — 041](raporty/041_lokalny_podmodel_i_granice_wiarygodnosci.md).
 Poprzednie etapy obejmują [pełną ramę 3D — raport 035](raporty/035_pelna_rama_3D_spoiny_i_podparcie.md),
 [screening spoin/odspojenia — raport 036](raporty/036_spoiny_3D_i_wirtualne_odspojenie.md)
 i [wymagania modułu spoin stałego frontu — raport 037](raporty/037_staly_front_wymagany_modul_spoin.md).
@@ -79,6 +78,7 @@ ten przewodnik. „Wykonano rodzinę modeli” nie oznacza zamknięcia całego p
 | Jak policzyć panele, usztywnienia i klej? | [029 — płyty](raporty/029_P18A_plyty_sciagi_i_dynamika.md), [030 — spoiny](raporty/030_P19A_obliczenia_spoin_i_material_kleju.md), [035 — pełna rama](raporty/035_pelna_rama_3D_spoiny_i_podparcie.md), [036 — defekt spoiny](raporty/036_spoiny_3D_i_wirtualne_odspojenie.md) | [Materiał MDF i kleje](dane/materialy/), [wyniki 3D](wyniki/manifest_ramy_i_spoin_3D.json) |
 | Jak otwór, kosz i uszczelka zmieniają front? | [033 — front i docisk](raporty/033_front_otwor_kosz_i_styk_jednostronny.md), [034 — styk w czasie](raporty/034_czasowy_styk_i_pelny_MES.md) | [Geometria producentów](dane/zrodla/P18B_geometria_i_ograniczenia.json), [przebiegi P19C](wyniki/p19c_podsumowanie.json) |
 | Co oznacza stały front i jak dobrać jego połączenie? | [037 — wymagania modułu](raporty/037_staly_front_wymagany_modul_spoin.md), [040 — listwa i droga siły](raporty/040_listwa_stalego_frontu_i_droga_sily.md), [041 — podmodel i dane brzegowe](raporty/041_lokalny_podmodel_i_granice_wiarygodnosci.md), [U-021](DECYZJE_I_PYTANIA.md) | [12 progów](wyniki/p19e_wymagane_moduly_stalego_frontu.csv), [20 wariantów listwy](wyniki/p19f_geometrie_i_podatnosc.csv), [24 lokalne realizacje](wyniki/p19g_ocena_i_roznice.json) |
+| Jak zmieniać objętość przy stałym froncie? | [042 — wkłady wypornościowe](raporty/042_regulacja_Vb_i_wklady_wypornosciowe.md) | [108 układów](wyniki/p20a_dostep_i_uklad.csv), [tory montażu](wyniki/p20a_tory_montazu.json), [porty modułów](wyniki/p20a_porty_modulow.csv), [napęd z wkładami](wyniki/p20a_naped_objetosc_i_wklady.csv) |
 | Jak uwzględniamy pokój i dwie sztuki? | [013 — dwa źródła i gabaryty](raporty/013_pokoj_i_realne_gabaryty.md), [017 — sprzężenie pola](raporty/017_promieniowanie_i_sprzezenie_pokoju.md), [019 — aktualna orientacja](raporty/019_zamiana_kanapy_i_RTV.md) | [Konwencja pokoju](dane/konfiguracje/pokoj_odsluchowy.json), scenariusze opisane w raportach |
 
 Pełny zakres i otwarte bramki są w [programie 30 pakietów](PROGRAM_30_BADAN.md).
@@ -347,6 +347,37 @@ Scenariusze 5/10/20% nie są zatwierdzonymi progami briefu.
 
 [Raport 037: metoda monotoniczna, dane i ograniczenia siatki](raporty/037_staly_front_wymagany_modul_spoin.md).
 
+### 15. Regulacja Vb: dostęp, masa i własna akustyka wkładu
+
+W kontrolnym układzie można wsunąć i wyjąć **16 modułów 180 × 100 × 170 mm**,
+co zajmuje 48,96 l. Front pozostaje stały; dostęp zakłada wyjęty głośnik.
+Tory są sprawdzone w konkretnej klasie translacji osiowych. Nie obejmują
+dowolnych obrotów, mocowań i dostępu narzędzia ani globalnego maksimum pakowania.
+
+![Wkłady — geometria dostępna na sprawdzonym torze i masa zestawu](wyniki/70_P20A_dostep_i_masa_wkladow.png)
+
+Do porównania z przegrodą przyjęto **szczelny moduł MDF 8 mm ze ściągiem**.
+Suchy zestaw 16 modułów waży nominalnie około 11,21 kg; masywny MDF
+o tym samym obrysie około 35,74 kg. Gęstość i geometria są założeniami.
+To wybór przypadku badawczego; nie gotowa dokumentacja wykonawcza.
+
+**Powietrze wewnątrz i ściany są liczone osobno.** Przeciek może oddawać
+znaczną podatność, mimo tego samego fizycznego obrysu. Pokazane fc_ref
+parametryzują umowny opór; nie są pomiarem szczeliny lub tolerancją wyrobu.
+
+![Podatność i szczelność regulatora objętości](wyniki/71_P20A_podatnosc_i_szczelnosc_modulu.png)
+
+**Przypadek graniczny:** po uwzględnieniu masy powietrza w kanale pojawiają
+się formalne rezonanse. Poza ekranami małej amplitudy odpowiedź liniowa
+nie daje prognozy rzeczywistego przepływu, hałasu lub SPL. Rzeczywiste
+mocowanie również wymaga sprawdzenia — wkład nie może być uznany za
+nieruchomy wyłącznie dlatego, że opiera się na włókninie.
+
+![Kanał z masą — pasmo i jawny ekran małej amplitudy](wyniki/72_P20A_kanalik_i_dziedzina_amplitudy.png)
+
+[Raport 042: 78 modeli modułów, bilanse, montaż, mocowanie i ograniczenia przestrzenne](raporty/042_regulacja_Vb_i_wklady_wypornosciowe.md)
+· [dynamika mocowania](wyniki/73_P20A_dynamika_mocowania_wkladu.png).
+
 <a id="dalsze-prace"></a>
 ## Co wynika dla dalszego projektu
 
@@ -364,9 +395,9 @@ osobne sprawdzenie frontu, docisku i ochrony dynamicznej.
 | Dwie sztuki w docelowym pokoju | Wykonalne miejsca, gabaryty, faza, opóźnienia i integracja |
 | Odporne porównanie finalistów i domknięcie programu | Jeden przetwornik, jedna regulowana obudowa i końcowy PDF z uzasadnieniem |
 
-Najbliższy krok po P19G: **P20 — sztywne wkłady regulacji Vb**, dostęp
-przy stałym froncie, bilans netto, masa, podatność ich ścian i obciążenia
-mocowania. Następnie pole przestrzenne P21. Wyniki połączeń pozostają
+Najbliższy krok po P20A: **P20B — porównać szczelną przegrodę w kilku
+pozycjach z referencyjnymi modułami**, zgodnie z R3. Następnie pełne 3D
+wybranej metody i pole przestrzenne P21. Wyniki połączeń pozostają
 warunkowe względem materiału i źródłowego pola; kolejne same lokalne
 zagęszczenia nie zastąpią tych danych.
 Gałąź doboru po raporcie 038 wymaga rozszerzenia analizy odporności
@@ -398,7 +429,7 @@ zapisywane w manifestach. Skrypty ustalają katalog projektu z własnej ścieżk
 Pełne odtworzenie archiwizuje poprzedni stan wyników:
 
 ```bash
-python3 skrypty/odtworz_wszystko.py
+OPENBLAS_NUM_THREADS=1 python3 skrypty/odtworz_wszystko.py
 ```
 
 Można również uruchomić tylko interesujący etap:
@@ -426,6 +457,9 @@ OPENBLAS_NUM_THREADS=1 python3 skrypty/odtworz_listwe_P19F.py
 
 # Lokalny podmodel P19G i osobne kontrole kierunków siatki
 OPENBLAS_NUM_THREADS=1 python3 skrypty/odtworz_podmodel_P19G.py
+
+# Regulacja Vb: wkłady, masa, porty, napęd, kanały i mocowania P20A
+OPENBLAS_NUM_THREADS=1 python3 skrypty/odtworz_regulacje_P20A.py
 ```
 
 Podczas aktywnej kampanii nie uruchamiaj pełnego przebiegu archiwizującego
@@ -445,7 +479,8 @@ Manifesty wykonanych etapów: [P14B/P15B](wyniki/manifest_P14B_P15B.json),
 [rozszerzenie SB](wyniki/manifest_rozszerzenia_SB.json),
 [wypełnienie P09C](wyniki/manifest_wypelnienia_P09C.json),
 [listwa P19F](wyniki/manifest_listwy_P19F.json),
-[podmodel P19G](wyniki/manifest_podmodelu_P19G.json).
+[podmodel P19G](wyniki/manifest_podmodelu_P19G.json),
+[regulacja P20A](wyniki/manifest_regulacji_P20A.json).
 [Nowe SB: wejścia, wersje i kontrole](wyniki/sb_rozszerzenie_weryfikacja.json)
 opisują osobny etap 5832 punktów. Surowe oryginały nowych PDF i wyciągi
 tekstów zachowujemy prywatnie; publiczny [rejestr](dane/zrodla/SB_rozszerzenie_pochodzenie.json)
