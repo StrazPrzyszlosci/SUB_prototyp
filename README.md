@@ -17,6 +17,9 @@ Najnowsze uzupełnienia to [raport 038 — dodatkowe SB](raporty/038_SB_Acoustic
 Najnowszy [raport 040 — listwa stałego frontu](raporty/040_listwa_stalego_frontu_i_droga_sily.md)
 dodaje 20 wariantów 3D: poprawę sztywności oraz przeniesienie obciążeń
 na nowe spoiny. Lokalna zbieżność naprężeń pozostaje otwarta.
+Następnie [raport 041 — podmodel lokalny](raporty/041_lokalny_podmodel_i_granice_wiarygodnosci.md)
+sprawdza 24 realizacje do 102 033 współrzędnych. W stałym oknie obserwacji
+wpływ danych globalnych jest większy niż ostatnich osobnych zagęszczeń lokalnych.
 Poprzednie etapy obejmują [pełną ramę 3D — raport 035](raporty/035_pelna_rama_3D_spoiny_i_podparcie.md),
 [screening spoin/odspojenia — raport 036](raporty/036_spoiny_3D_i_wirtualne_odspojenie.md)
 i [wymagania modułu spoin stałego frontu — raport 037](raporty/037_staly_front_wymagany_modul_spoin.md).
@@ -75,7 +78,7 @@ ten przewodnik. „Wykonano rodzinę modeli” nie oznacza zamknięcia całego p
 | Jak prąd, temperatura i chłodzenie wpływają na pracę? | [025 — topologia termiki](raporty/025_P15A_topologia_i_granice_termiki.md), [027 — grzanie i napęd](raporty/027_P15B_sprzezenie_grzania_i_napedu.md) | [Podsumowanie P15B](wyniki/p15b_podsumowanie.json) |
 | Jak policzyć panele, usztywnienia i klej? | [029 — płyty](raporty/029_P18A_plyty_sciagi_i_dynamika.md), [030 — spoiny](raporty/030_P19A_obliczenia_spoin_i_material_kleju.md), [035 — pełna rama](raporty/035_pelna_rama_3D_spoiny_i_podparcie.md), [036 — defekt spoiny](raporty/036_spoiny_3D_i_wirtualne_odspojenie.md) | [Materiał MDF i kleje](dane/materialy/), [wyniki 3D](wyniki/manifest_ramy_i_spoin_3D.json) |
 | Jak otwór, kosz i uszczelka zmieniają front? | [033 — front i docisk](raporty/033_front_otwor_kosz_i_styk_jednostronny.md), [034 — styk w czasie](raporty/034_czasowy_styk_i_pelny_MES.md) | [Geometria producentów](dane/zrodla/P18B_geometria_i_ograniczenia.json), [przebiegi P19C](wyniki/p19c_podsumowanie.json) |
-| Co oznacza stały front i jak dobrać jego połączenie? | [037 — wymagania modułu](raporty/037_staly_front_wymagany_modul_spoin.md), [040 — listwa i droga siły](raporty/040_listwa_stalego_frontu_i_droga_sily.md), [U-021 — decyzja](DECYZJE_I_PYTANIA.md) | [12 progów](wyniki/p19e_wymagane_moduly_stalego_frontu.csv), [20 wariantów listwy](wyniki/p19f_geometrie_i_podatnosc.csv), [zachowane pole 3D](wyniki/p19f_pole_referencyjne_N14_B30.npz) |
+| Co oznacza stały front i jak dobrać jego połączenie? | [037 — wymagania modułu](raporty/037_staly_front_wymagany_modul_spoin.md), [040 — listwa i droga siły](raporty/040_listwa_stalego_frontu_i_droga_sily.md), [041 — podmodel i dane brzegowe](raporty/041_lokalny_podmodel_i_granice_wiarygodnosci.md), [U-021](DECYZJE_I_PYTANIA.md) | [12 progów](wyniki/p19e_wymagane_moduly_stalego_frontu.csv), [20 wariantów listwy](wyniki/p19f_geometrie_i_podatnosc.csv), [24 lokalne realizacje](wyniki/p19g_ocena_i_roznice.json) |
 | Jak uwzględniamy pokój i dwie sztuki? | [013 — dwa źródła i gabaryty](raporty/013_pokoj_i_realne_gabaryty.md), [017 — sprzężenie pola](raporty/017_promieniowanie_i_sprzezenie_pokoju.md), [019 — aktualna orientacja](raporty/019_zamiana_kanapy_i_RTV.md) | [Konwencja pokoju](dane/konfiguracje/pokoj_odsluchowy.json), scenariusze opisane w raportach |
 
 Pełny zakres i otwarte bramki są w [programie 30 pakietów](PROGRAM_30_BADAN.md).
@@ -315,6 +318,23 @@ kleju lub trwałości. Obciążenie: ciężar i statyczne 1 kPa, model C04.
 
 [Raport 040: geometria, tensor masy/ciśnienia, kontrola Schura i pole do podmodelu](raporty/040_listwa_stalego_frontu_i_droga_sily.md).
 
+**Podmodel P19G:** w stałym fragmencie pierwotnej spoiny dalsze zagęszczenie
+przekroju zmienia RMS rozciągania o około 0,45%, a ścinania o 0,10%.
+Osobne zagęszczenie wzdłuż listwy daje około 0,043/0,081%.
+To skończone kontrole dwóch kierunków. Ocena całych spoin z 040 pozostaje
+otwarta; okno z odcięciem 5 mm nie jest materiałową strefą kohezji.
+
+![Lokalny podmodel — osobne zagęszczenia przekroju oraz długości listwy](wyniki/68_P19G_dwa_kierunki_zbieznosci.png)
+
+**Dane brzegowe też ograniczają wynik:** zmiana źródłowego pola N14→N18
+daje około +19,4% rozciągania i +14,6% ścinania w tym samym oknie.
+Nie uznajemy zera dodatniej części w pojedynczej siatce za dowód nośności.
+Zachowano wpływ odległości granicy i częściowo wyciętej podpory.
+
+![Podmodel — wpływ odległości granicy i źródłowego pola globalnego](wyniki/69_P19G_granica_i_pole_globalne.png)
+
+[Raport 041: 24 podmodele, 144 oceny okien, transfer stóp i kontrole obciążeń](raporty/041_lokalny_podmodel_i_granice_wiarygodnosci.md).
+
 ### 14. Stały front: wymagany moduł spoiny
 
 Wyznaczono progi efektywnego E dla zadanego przyrostu podatności, osobno
@@ -344,10 +364,11 @@ osobne sprawdzenie frontu, docisku i ochrony dynamicznej.
 | Dwie sztuki w docelowym pokoju | Wykonalne miejsca, gabaryty, faza, opóźnienia i integracja |
 | Odporne porównanie finalistów i domknięcie programu | Jeden przetwornik, jedna regulowana obudowa i końcowy PDF z uzasadnieniem |
 
-Najbliższy krok po P19F: **zgodny lokalny podmodel front–dno–listwa
-30 mm, porównanie 20 mm, zagęszczenie sąsiedniego MDF i kontrola odległości
-granicy podmodelu**. Pełne pole globalne do tego zadania jest zachowane.
-Następnie regulacja Vb i pole przestrzenne.
+Najbliższy krok po P19G: **P20 — sztywne wkłady regulacji Vb**, dostęp
+przy stałym froncie, bilans netto, masa, podatność ich ścian i obciążenia
+mocowania. Następnie pole przestrzenne P21. Wyniki połączeń pozostają
+warunkowe względem materiału i źródłowego pola; kolejne same lokalne
+zagęszczenia nie zastąpią tych danych.
 Gałąź doboru po raporcie 038 wymaga rozszerzenia analizy odporności
 i wspólnych ograniczeń na nowe SB. Obecne porównanie nie zatwierdza jeszcze
 głośnika, kleju lub litrażu wykonawczego.
@@ -402,6 +423,9 @@ python3 skrypty/manifest_wypelnienia_P09C.py
 
 # Listwa stałego frontu P19F, niezależne kontrole i zachowanie pola
 OPENBLAS_NUM_THREADS=1 python3 skrypty/odtworz_listwe_P19F.py
+
+# Lokalny podmodel P19G i osobne kontrole kierunków siatki
+OPENBLAS_NUM_THREADS=1 python3 skrypty/odtworz_podmodel_P19G.py
 ```
 
 Podczas aktywnej kampanii nie uruchamiaj pełnego przebiegu archiwizującego
@@ -420,7 +444,8 @@ Manifesty wykonanych etapów: [P14B/P15B](wyniki/manifest_P14B_P15B.json),
 [rama i spoiny 3D](wyniki/manifest_ramy_i_spoin_3D.json),
 [rozszerzenie SB](wyniki/manifest_rozszerzenia_SB.json),
 [wypełnienie P09C](wyniki/manifest_wypelnienia_P09C.json),
-[listwa P19F](wyniki/manifest_listwy_P19F.json).
+[listwa P19F](wyniki/manifest_listwy_P19F.json),
+[podmodel P19G](wyniki/manifest_podmodelu_P19G.json).
 [Nowe SB: wejścia, wersje i kontrole](wyniki/sb_rozszerzenie_weryfikacja.json)
 opisują osobny etap 5832 punktów. Surowe oryginały nowych PDF i wyciągi
 tekstów zachowujemy prywatnie; publiczny [rejestr](dane/zrodla/SB_rozszerzenie_pochodzenie.json)

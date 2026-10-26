@@ -1,0 +1,386 @@
+{
+  "status": "FINITE_LOCAL_RESOLUTION_AND_PARENT_SENSITIVITY_NOT_GLOBAL_STRENGTH_CERTIFICATE",
+  "cases": 24,
+  "observation_rows": 144,
+  "max_dof": 102033,
+  "comparisons": [
+    {
+      "comparison": "YZ_REFINEMENT",
+      "joint": "front_bottom",
+      "quantity": "tension_rms_pa",
+      "first_pa": 2660.7356772429102,
+      "second_pa": 2648.872902329043,
+      "absolute_change_pa": -11.86277491386727,
+      "relative_change": -0.004458456740114691,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "YZ_REFINEMENT",
+      "joint": "front_bottom",
+      "quantity": "compression_rms_pa",
+      "first_pa": 125.02652161455066,
+      "second_pa": 123.30348658321468,
+      "absolute_change_pa": -1.7230350313359821,
+      "relative_change": -0.013781356220146646,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "YZ_REFINEMENT",
+      "joint": "front_bottom",
+      "quantity": "shear_rms_pa",
+      "first_pa": 9902.99695537392,
+      "second_pa": 9893.30096510208,
+      "absolute_change_pa": -9.695990271839037,
+      "relative_change": -0.0009790965619329572,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "YZ_REFINEMENT",
+      "joint": "front_cleat",
+      "quantity": "tension_rms_pa",
+      "first_pa": 732.6406490427437,
+      "second_pa": 739.4351332952566,
+      "absolute_change_pa": 6.794484252512916,
+      "relative_change": 0.009273965703910259,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "YZ_REFINEMENT",
+      "joint": "front_cleat",
+      "quantity": "compression_rms_pa",
+      "first_pa": 1370.0745424866063,
+      "second_pa": 1249.068225654718,
+      "absolute_change_pa": -121.0063168318884,
+      "relative_change": -0.08832097311454956,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "YZ_REFINEMENT",
+      "joint": "front_cleat",
+      "quantity": "shear_rms_pa",
+      "first_pa": 10623.848658548488,
+      "second_pa": 10578.897872965576,
+      "absolute_change_pa": -44.95078558291243,
+      "relative_change": -0.004231120663295895,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "YZ_REFINEMENT",
+      "joint": "bottom_cleat",
+      "quantity": "tension_rms_pa",
+      "first_pa": 0.0,
+      "second_pa": 0.0,
+      "absolute_change_pa": 0.0,
+      "relative_change": null,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "YZ_REFINEMENT",
+      "joint": "bottom_cleat",
+      "quantity": "compression_rms_pa",
+      "first_pa": 7713.314436504616,
+      "second_pa": 7572.356899965618,
+      "absolute_change_pa": -140.95753653899828,
+      "relative_change": -0.0182745741405137,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "YZ_REFINEMENT",
+      "joint": "bottom_cleat",
+      "quantity": "shear_rms_pa",
+      "first_pa": 11680.434264592208,
+      "second_pa": 11627.676086822496,
+      "absolute_change_pa": -52.75817776971235,
+      "relative_change": -0.004516799339357003,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "X_REFINEMENT",
+      "joint": "front_bottom",
+      "quantity": "tension_rms_pa",
+      "first_pa": 2745.9555931322766,
+      "second_pa": 2744.770068417853,
+      "absolute_change_pa": -1.1855247144235364,
+      "relative_change": -0.000431734845744991,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "X_REFINEMENT",
+      "joint": "front_bottom",
+      "quantity": "compression_rms_pa",
+      "first_pa": 77.63157808044029,
+      "second_pa": 76.56302178380632,
+      "absolute_change_pa": -1.0685562966339717,
+      "relative_change": -0.013764454144249871,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "X_REFINEMENT",
+      "joint": "front_bottom",
+      "quantity": "shear_rms_pa",
+      "first_pa": 9898.276095366193,
+      "second_pa": 9906.281694472149,
+      "absolute_change_pa": 8.005599105956207,
+      "relative_change": 0.0008087872098965221,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "X_REFINEMENT",
+      "joint": "front_cleat",
+      "quantity": "tension_rms_pa",
+      "first_pa": 0.0,
+      "second_pa": 0.0,
+      "absolute_change_pa": 0.0,
+      "relative_change": null,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "X_REFINEMENT",
+      "joint": "front_cleat",
+      "quantity": "compression_rms_pa",
+      "first_pa": 1495.1485625857483,
+      "second_pa": 1492.0030098780953,
+      "absolute_change_pa": -3.145552707652996,
+      "relative_change": -0.002103839569101429,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "X_REFINEMENT",
+      "joint": "front_cleat",
+      "quantity": "shear_rms_pa",
+      "first_pa": 10681.989923031793,
+      "second_pa": 10677.829113293634,
+      "absolute_change_pa": -4.160809738159514,
+      "relative_change": -0.00038951635117989714,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "X_REFINEMENT",
+      "joint": "bottom_cleat",
+      "quantity": "tension_rms_pa",
+      "first_pa": 0.0,
+      "second_pa": 0.0,
+      "absolute_change_pa": 0.0,
+      "relative_change": null,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "X_REFINEMENT",
+      "joint": "bottom_cleat",
+      "quantity": "compression_rms_pa",
+      "first_pa": 6750.848411500024,
+      "second_pa": 6766.1506013965045,
+      "absolute_change_pa": 15.30218989648074,
+      "relative_change": 0.00226670619213043,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "X_REFINEMENT",
+      "joint": "bottom_cleat",
+      "quantity": "shear_rms_pa",
+      "first_pa": 11708.903508660436,
+      "second_pa": 11708.056757874627,
+      "absolute_change_pa": -0.8467507858094905,
+      "relative_change": -7.231683010988643e-05,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "DOMAIN_MIDDLE_TO_FAR",
+      "joint": "front_bottom",
+      "quantity": "tension_rms_pa",
+      "first_pa": 2660.7356772429102,
+      "second_pa": 2791.0241881706156,
+      "absolute_change_pa": 130.28851092770537,
+      "relative_change": 0.04896710035576035,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "DOMAIN_MIDDLE_TO_FAR",
+      "joint": "front_bottom",
+      "quantity": "compression_rms_pa",
+      "first_pa": 125.02652161455066,
+      "second_pa": 167.90476986309372,
+      "absolute_change_pa": 42.87824824854306,
+      "relative_change": 0.34295322060333855,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "DOMAIN_MIDDLE_TO_FAR",
+      "joint": "front_bottom",
+      "quantity": "shear_rms_pa",
+      "first_pa": 9902.99695537392,
+      "second_pa": 10206.682680651276,
+      "absolute_change_pa": 303.68572527735705,
+      "relative_change": 0.03066604247642024,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "DOMAIN_MIDDLE_TO_FAR",
+      "joint": "front_cleat",
+      "quantity": "tension_rms_pa",
+      "first_pa": 732.6406490427437,
+      "second_pa": 279.6638706711977,
+      "absolute_change_pa": -452.976778371546,
+      "relative_change": -0.6182796149290899,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "DOMAIN_MIDDLE_TO_FAR",
+      "joint": "front_cleat",
+      "quantity": "compression_rms_pa",
+      "first_pa": 1370.0745424866063,
+      "second_pa": 1547.2647813263834,
+      "absolute_change_pa": 177.19023883977707,
+      "relative_change": 0.12932890389904417,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "DOMAIN_MIDDLE_TO_FAR",
+      "joint": "front_cleat",
+      "quantity": "shear_rms_pa",
+      "first_pa": 10623.848658548488,
+      "second_pa": 10169.452532600984,
+      "absolute_change_pa": -454.3961259475036,
+      "relative_change": -0.04277132897425773,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "DOMAIN_MIDDLE_TO_FAR",
+      "joint": "bottom_cleat",
+      "quantity": "tension_rms_pa",
+      "first_pa": 0.0,
+      "second_pa": 0.0,
+      "absolute_change_pa": 0.0,
+      "relative_change": null,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "DOMAIN_MIDDLE_TO_FAR",
+      "joint": "bottom_cleat",
+      "quantity": "compression_rms_pa",
+      "first_pa": 7713.314436504616,
+      "second_pa": 6859.703931703049,
+      "absolute_change_pa": -853.610504801567,
+      "relative_change": -0.11066714728518068,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "DOMAIN_MIDDLE_TO_FAR",
+      "joint": "bottom_cleat",
+      "quantity": "shear_rms_pa",
+      "first_pa": 11680.434264592208,
+      "second_pa": 11257.609777387632,
+      "absolute_change_pa": -422.82448720457614,
+      "relative_change": -0.036199380744457055,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "PARENT_N14_TO_N18",
+      "joint": "front_bottom",
+      "quantity": "tension_rms_pa",
+      "first_pa": 2660.7356772429102,
+      "second_pa": 3176.1414296263,
+      "absolute_change_pa": 515.4057523833899,
+      "relative_change": 0.19370798715243298,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "PARENT_N14_TO_N18",
+      "joint": "front_bottom",
+      "quantity": "compression_rms_pa",
+      "first_pa": 125.02652161455066,
+      "second_pa": 110.25535366150541,
+      "absolute_change_pa": -14.77116795304525,
+      "relative_change": -0.11814427660863736,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "PARENT_N14_TO_N18",
+      "joint": "front_bottom",
+      "quantity": "shear_rms_pa",
+      "first_pa": 9902.99695537392,
+      "second_pa": 11344.906926647087,
+      "absolute_change_pa": 1441.9099712731677,
+      "relative_change": 0.14560339438362724,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "PARENT_N14_TO_N18",
+      "joint": "front_cleat",
+      "quantity": "tension_rms_pa",
+      "first_pa": 732.6406490427437,
+      "second_pa": 37.51464778845008,
+      "absolute_change_pa": -695.1260012542937,
+      "relative_change": -0.9487952957053829,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "PARENT_N14_TO_N18",
+      "joint": "front_cleat",
+      "quantity": "compression_rms_pa",
+      "first_pa": 1370.0745424866063,
+      "second_pa": 1862.0710257692092,
+      "absolute_change_pa": 491.99648328260287,
+      "relative_change": 0.3591019816992276,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "PARENT_N14_TO_N18",
+      "joint": "front_cleat",
+      "quantity": "shear_rms_pa",
+      "first_pa": 10623.848658548488,
+      "second_pa": 10973.175223214259,
+      "absolute_change_pa": 349.326564665771,
+      "relative_change": 0.032881357396284505,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "PARENT_N14_TO_N18",
+      "joint": "bottom_cleat",
+      "quantity": "tension_rms_pa",
+      "first_pa": 0.0,
+      "second_pa": 0.0,
+      "absolute_change_pa": 0.0,
+      "relative_change": null,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "PARENT_N14_TO_N18",
+      "joint": "bottom_cleat",
+      "quantity": "compression_rms_pa",
+      "first_pa": 7713.314436504616,
+      "second_pa": 7500.532327646601,
+      "absolute_change_pa": -212.78210885801582,
+      "relative_change": -0.027586339259162984,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    },
+    {
+      "comparison": "PARENT_N14_TO_N18",
+      "joint": "bottom_cleat",
+      "quantity": "shear_rms_pa",
+      "first_pa": 11680.434264592208,
+      "second_pa": 12193.181141261588,
+      "absolute_change_pa": 512.7468766693801,
+      "relative_change": 0.04389792922543201,
+      "scope": "Same x window, same 30mm geometry; trim5mm is numerical diagnostic, not material length."
+    }
+  ],
+  "max_free_linear_residual": 1.7810715337152574e-14,
+  "max_force_moment_balance_normalized": 8.227039455714046e-11,
+  "max_energy_work_relative_error": 3.676914689642734e-12,
+  "no_claims": [
+    "Zero dodatniej części w oknie nie jest dowodem bezpieczeństwa połączenia.",
+    "Dwa kierunki zagęszczenia osobno,nie certyfikat wspólnego continuum.",
+    "Okno lokalne nie jest całą spoiną z P19F.",
+    "N14/N18 to dwie realizacje pola,nie statystyczna tolerancja produktu."
+  ],
+  "next": "P20:sztywne moduły regulacjiVb,dostęp przy stałym froncie,bilansnetto i mocowania;gates materiałowe P19 zachować.",
+  "input_sha256": {
+    "skrypty/wykresy_i_ocena_P19G.py": "ab013497b94aba14bcea545ad77e04894091063c788bf656f8b9986233bde1a9",
+    "dane/konfiguracje/p19g_podmodel_lokalny.json": "7a050428e65e4a781cc095a8e1da66e628ae1336cff03180aded4a91960753bf",
+    "wyniki/p19g_przypadki_i_bilans.csv": "b44412cb6a3ca3db6991db22971495dd3ba12afc6a1c52f771ea8d94b50d6b2e",
+    "wyniki/p19g_dodatkowe_przypadki.csv": "ebfa2fd26cdb301a5e8b7e6be2e4c109d0319e0e5f982d2e65aa60bfa571e54f",
+    "wyniki/p19g_lokalne_pola_spoin.csv": "c4ec5579953db06d33b93d5436aa9226ffde2ed13f471d44cae33b600fe8abdb",
+    "wyniki/p19g_dodatkowe_okna.csv": "e8104c89c1190b50eb7e67607cf283a4d90e4e106610d6f21cf1e7d6358b218f"
+  }
+}

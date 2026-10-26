@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-26",
+  "status": "ONE_WAY_LOCAL_SUBMODEL_NOT_MATERIAL_IDENTIFICATION",
+  "parent_reference_npz": "wyniki/p19f_pole_referencyjne_N14_B30.npz",
+  "new_parent_fields": [{"mesh_n":14,"section_m":0.02},{"mesh_n":18,"section_m":0.03}],
+  "center_x_m": 0.1,
+  "domains": [
+    {"id":"near","half_width_x_m":0.02,"rear_y_m":0.08,"top_z_m":0.08},
+    {"id":"middle","half_width_x_m":0.03,"rear_y_m":0.12,"top_z_m":0.105},
+    {"id":"far","half_width_x_m":0.04,"rear_y_m":0.16,"top_z_m":0.125}
+  ],
+  "sections_m": [0.02,0.03],
+  "yz_target_step_m": [0.01,0.005,0.0025],
+  "span_intervals_x": 8,
+  "span_refinements_x": [4,16],
+  "observation_window_x_m": [0.092,0.108],
+  "diagnostic_trim_m": 0.005,
+  "wall_thickness_m": 0.022,
+  "E_mdf_pa": 2100000000.0,
+  "nu_mdf_assumed": 0.3,
+  "rho_mdf_kg_m3": 730.0,
+  "E_glue_pa": 1718000000.0,
+  "nu_glue_assumed": 0.35,
+  "glue_thickness_m": 0.0002,
+  "static_pressure_pa": 1000.0,
+  "floor_patch_size_m": 0.04,
+  "floor_k_xyz_n_m": [10000.0,10000.0,100000.0],
+  "gates": [
+    "Jednokierunkowe warunki brzegowe z globalnego modelu; brak zwrotnej korekty całej ramy.",
+    "Zgodne współrzędne siatek na każdej spoinie, osobne węzły MDF i skończone kn/ks.",
+    "Reakcje stóp przenoszone jako znane trakcje, także przy częściowym przecięciu łaty przez podmodel.",
+    "Obszary omijają nominalny otwór i osiem modelowych łat mocowania kosza; brak nowego obciążenia kosza wewnątrz domeny.",
+    "Okno i odcięcie 5 mm to diagnostyka numeryczna, nie materiałowa długość krytyczna lub strefa kohezji.",
+    "Izotropowy MDF, liniowe spoiny, brak Gc/SN/J(t), pełzania i rzeczywistego filletu.",
+    "Nie przenosić wyników statycznych na THD, emisję paneli, muzykę lub końcowy dobór kleju."
+  ]
+}

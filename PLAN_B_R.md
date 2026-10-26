@@ -207,15 +207,19 @@ kampanii bez nowej hipotezy zmieniającej decyzję.
 
 Mechanika doszła do frontu, styku w czasie i pełnej ramy 3D (033–036),
 a P19E wyznacza wymagania sztywności stałego frontu (037). **Najbliższy
-krok mechaniczny po P19F: zgodny lokalny podmodel front–dno–listwa
-30 mm, porównanie 20 mm, zagęszczenie sąsiedniego MDF i wpływ odległości
-granicy**, potem regulacja Vb i pole przestrzenne P20/P21.
+krok po P19G: P20 — sztywne wkłady regulacji Vb, dostęp przy stałym froncie,
+bilans netto, masa, podatność i obciążenia mocowania**, potem pole P21.
 Screening odspojenia nadal nie jest zbieżną prognozą odporności na pękanie.
 
 Raport 040 ma 20 wariantów listwy i 40 obciążeń pełnej ramy. Nowa droga
 siły odciąża pierwotną spoinę, lecz może skoncentrować naprężenia w nowych.
 Pola naprężeń nadal różnią się o 17–27% przy N14/N18 dla 30 mm; globalny
 spadek C około 2,6% nie zamyka nośności. Pole N14/B30 zachowano do podmodelu.
+
+Raport 041 wykonał 24 lokalne realizacje, 144 okna i dwa dalsze kierunki
+zagęszczenia do 102033DOF. W badanym oknie zmienność pola globalnego
+dominuje nad ostatnimi osobnymi zagęszczeniami. Bramki materiałowe P19
+pozostają otwarte; nie ponawiać lokalnej siatki bez nowej hipotezy.
 
 Raport 038 rozszerza pulę do 26 produktów / 27 konfiguracji elektrycznych,
 w tym trzech SB Acoustics. Nowe SB mają odrębne obliczenia liniowe;

@@ -176,6 +176,15 @@ Optymalizacja jednego sweet spotu 2,5–3 m; brak narzuconego budżetu i gabaryt
     Zachowane poleN14/B30 jest wejściem do następnego podmodelu, nie
     pomiarem lub niezależnym dowodem. Nie zamykać bramkiGc/SN/J(t).
 
+36. P19G,raport041:24lokalne przypadki,144okna,do102033DOF. Warunki
+    z pólN14/B20,N14/B30,N18/B30;oknox92–108mm i diagnostyczne odcięcie
+    5mm nie opisują całej spoiny ani strefy kohezji. Zera dodatniej części
+    nie uznawać za brak odrywania lub dowód bezpieczeństwa. Reakcje stóp
+    obliczać z pełnego pola przed odjęciem ruchu sztywnego; lokalnie są
+    znaną trakcją,bez automatycznego sprzężenia sprężyny. Audyt powrotnej
+    zmiany0.00446N dotyczy jednego zachowanego pola,nie wszystkich24.
+    Odróżniać osobne zagęszczenia x i yz od wspólnego certyfikatucontinuum.
+
 ## Stan i postępy
 
 | Data | Wykonane | Dowód / ograniczenie | Następny krok |
@@ -604,6 +613,24 @@ Postęp końca sesji2026-10-23:
   porównanie20mm,siatka sąsiedniegoMDF i wpływ odległości granicy**,
   z zachowanegopola. PotemP20/P21,regulacja/wypełnienie/ochrona i synteza.
   READMEprzewodnik ma22obrazy i indeks40raportów;wybór/PDFotwarte.
+
+- P19G,2026-10-26:raport041/baza29.22podmodele+2dalsze zagęszczenia,
+  24przypadki/144obserwacje,do102033DOF. Dwie dodatkowe globalne realizacje
+  zapisane,ichCzgodne zP19F. Zgodne siatki trzech spoin i sąsiedniegoMDF;
+  trzydomeny,zmiana x/yz,20/30mm oraz pólN14/N18. Pełnepasma i odcięte
+  okna zapisaneosobno; nie porównywać ich bezpośrednio z całymi spoinami040.
+- Woknie pierwotnejspoiny dalszeh2.5→1.25mm:T−0.45%/shear−0.10%;
+  nx16→32:T−0.043%/shear+0.081%. PoleN14→N18:T+19.4%/shear+14.6%.
+  To wrażliwości skończonych realizacji,nie certyfikat lub tolerancjaMDF.
+  Kontrole afiniczne,sił/momentów/stóp i niezmienniczość względem ruchu
+  sztywnego wykonane. Osobny audyt pominiętej reakcji stopy:0.00446N/104N,
+  tylko jeden przypadek. PeakRSS5375MiB; obliczenia ciężkie kolejno.
+- Trzy wykresy67–69 obejrzane;READMEprzewodnik ma24obrazy i41raportów.
+  **Jeden najbliższy krok:P20 — porównanie sztywnych wkładów regulacjiVb,
+  dostępu przy stałym froncie,netto,masy,podatności i mocowania**.
+  Zachować bramkiP19:Gc/SN/J(t),rzeczywistyMDF i całe pole/globalne źródło;
+  nie ponawiać samych lokalnych siatek bez nowej hipotezy zmieniającej decyzję.
+  Wypełnienieporowate039 pozostaje osobnym bilansem. Wybór/PDFotwarte.
 
 ## Decyzje otwarte
 

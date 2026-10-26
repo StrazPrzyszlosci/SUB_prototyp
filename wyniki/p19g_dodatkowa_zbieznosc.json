@@ -1,0 +1,14 @@
+{
+  "status": "TWO_DIRECTIONAL_MESH_CONTROLS_NOT_CERTIFIED_CONTINUUM_ERROR",
+  "cases": 2,
+  "input_sha256": {
+    "dane/konfiguracje/p19g_podmodel_lokalny.json": "7a050428e65e4a781cc095a8e1da66e628ae1336cff03180aded4a91960753bf",
+    "skrypty/uzupelnij_zbieznosc_P19G.py": "f184aef72e088149eadad1d8988881f575afccbe29f35ed0b3b1d46f7dc43bed",
+    "skrypty/model_podmodelu_P19G.py": "83a4457ee6e2a8268c67a94f09dfa0759eb476a8f5cef5b8c8863263dfcb3c85",
+    "skrypty/analiza_podmodelu_P19G.py": "da012b084ccaaa9e673b628c35eedb9feb46bd40dfb71fb061b7d6f7b24283a9",
+    "skrypty/analiza_listwy_stalego_frontu_P19F.py": "221eda2ac808e9d0d68549c36bdd9c6dc72cad923e339d48191c94d54702b805",
+    "skrypty/model_ramy_3D_P18C.py": "698395a0d216659572ae84c1fea1b1251a67c5c32b99a7cf84cc55582e33e1ad",
+    "skrypty/element_brylowy_P18C.py": "d90d0c7f1adf2d00249220653b8335ea1e021b07b774dc770921029da4a8aacb",
+    "wyniki/p19f_pole_referencyjne_N14_B30.npz": "22af859cfe9b8dede5a3336f70c5e2613dd09a0962a3df6faf9af7e6e309b896"
+  }
+}

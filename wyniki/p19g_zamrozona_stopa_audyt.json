@@ -1,0 +1,28 @@
+{
+  "status": "ONE_SAVED_FIELD_FROZEN_FOOT_FEEDBACK_INDICATOR_NOT_GLOBAL_COUPLED_SOLUTION",
+  "case_id": "B30_middle_H0.0025_P14_X8",
+  "feet": [
+    {
+      "parent_foot_force_n": [
+        -0.0085089208757476,
+        -0.0020276962563667276,
+        103.99058714970467
+      ],
+      "increment_from_local_patch_n": [
+        5.909057620398557e-06,
+        -6.066243102788232e-05,
+        0.004459658412512686
+      ],
+      "increment_norm_relative_to_parent_force": 4.288921713164388e-05,
+      "modified_area_fraction": 0.5500000000000002
+    }
+  ],
+  "scope": "Outside local domain displacement retained from parent. Diagnostic only for this field; no claim for all24cases or nonlinear contact.",
+  "input_sha256": {
+    "dane/konfiguracje/p19g_podmodel_lokalny.json": "7a050428e65e4a781cc095a8e1da66e628ae1336cff03180aded4a91960753bf",
+    "wyniki/p19g_pole_lokalne_B30_middle.npz": "3327e3d72480cba3817ea161169ac1dc72539fd0f1915b523071ff1b7000bdaa",
+    "wyniki/p19f_pole_referencyjne_N14_B30.npz": "22af859cfe9b8dede5a3336f70c5e2613dd09a0962a3df6faf9af7e6e309b896",
+    "skrypty/audyt_stopy_zamrozonej_P19G.py": "8f645871f11a637c6f0ef20e758753507d96ea1fee1312b8957f872ec59b6a6b",
+    "skrypty/model_podmodelu_P19G.py": "83a4457ee6e2a8268c67a94f09dfa0759eb476a8f5cef5b8c8863263dfcb3c85"
+  }
+}

@@ -39,6 +39,7 @@ a potwierdzonych ustaleń użytkownika w [rejestrze](../DECYZJE_I_PYTANIA.md).
 |26|[Dwie cewki i porównywanie SB](26_dwie_cewki_i_porownywanie_SB.md)|Transformacja portu, limity V/I/X, konflikty katalogowe i zakres rozszerzenia|
 |27|[Ilość i położenie wypełnienia](27_ilosc_i_polozenie_wypelnienia.md)|Masa, porowatość, objętość gazu, warstwy i niezależna sieć FV|
 |28|[Listwa i lokalna droga siły](28_listwa_i_lokalna_droga_sily.md)|Dodatkowe spoiny, masa/ciśnienie, globalna podatność i lokalna zbieżność|
+|29|[Podmodel i transfer obciążeń](29_podmodel_i_transfer_obciazen.md)|Cięcia, fizyczne podpory, okna obserwacji i zależność od danych globalnych|
 |Źródła|[Rejestr z datami](ZRODLA.md)|Co przeczytano, co tylko znaleziono i jakie są braki|
 
 ## Od wiedzy do wykonania

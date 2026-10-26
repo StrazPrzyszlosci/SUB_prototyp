@@ -52,7 +52,7 @@ pakietu samym stworzeniem planu, testów ani listy bibliotek.
 | P16 | Sprzężenia cieplne i elektromechaniczne | Częściowo — Re(T),ruch i chłodzenie | P15B sprzęga prąd,Re(T),ruch i straty; twierdzenie napięciowe dla stałego biernego tła. Nie wykonano fizycznej identyfikacjiBL(T),pełnych dużych sygnałów, gradientów i wszystkich sprzężeń termicznych |
 | P17 | Łączne granice użytecznego zakresu | Częściowo — wspólneV/I/X/chłodzenie | Raport028:5184zestawy,31104punkty,analityczne przedziałyVb>0,26246niezależnych brzegów i3tożsamościSymPy. Stały poziom wyjściowy i warunkoweRth. Nie zintegrowano jeszcze rzeczywistegoTHD,ciągłego pasma,muzyki,konstrukcji i pokoju |
 | P18 | Płyty MDF: drgania, naprężenia, promieniowanie | Częściowo — wykonane P18A/P18B/P18C | Raport029:płyty. Raport033:front. Raport035:pełna rama6brył/12spoin,siatki do36771DOF,168punktówharmonicznych,ściągi i podparcie. U-021:frontstały;geometria finalna,frez i promieniowanie otwarte |
-| P19 | Usztywnienia, połączenia i klej | Częściowo — wykonane rodziny P19A–P19F | Raporty030/033/034:spoiny i styk. Raporty035–037:pełna rama,niezbieżnyGdelta i12progówsztywności. Raport040:20wariantówlistwy/40obciążeń/548ocen;RMSlokalne17–27%różnicyN14/N18. PoleN14/B30zachowane do podmodelu;nośność,SN/J(t)otwarte |
+| P19 | Usztywnienia, połączenia i klej | Częściowo — wykonane rodziny P19A–P19G | Raporty030–040:spoiny,styk,pełna rama,listwa. Raport041:24podmodele/144okna/do102033DOF,przekazanie stóp i dwa kierunki siatki. Wpływ pola N14/N18 większy niż ostatnie lokalne zagęszczenia;nośność,Gc,SN/J(t) i identyfikacjaMDF otwarte |
 | P20 | Regulacja objętości | Częściowo | Koncepcje i bilans brutto/netto; mechaniczna analiza porównawcza otwarta |
 | P21 | Wewnętrzne pole i sprzężenie paneli | Częściowo — wykonane odniesienie P21A | Raport031:72punktysprzężeniaRayleigh/MITC i gazu0D,masaDuffy,moc i wzajemność. Przestrzennepole3Dkomory,różneściany,front i podparcie nadal otwarte |
 | P22 | Napęd, impedancja wyjściowa i clipping | Częściowo | Dotychczas idealne ograniczeniaV/I; dynamika i obciążenie rzeczywiste otwarte |
@@ -98,9 +98,11 @@ P18C/P19Dmają wykonaną referencyjną pełnąramę i screeningubytku spoiny
 P19Ewyznacza wymaganiamodułu spoinw12scenariuszach (raport037).
 P19Fzbadał listwę20/30/40mm,masę,prawidłowyportciśnienia i dwie nowe spoiny
 (raport040). Lokalnenaprężenia sąniezbieżne mimo stabilniejszej korzyściC.
-Najbliższykrok:zgodny lokalnypodmodel front–dno–listwa30mm z polaN14/B30,
-porównanie20mm,siatka sąsiedniegoMDF i odległośćgranicy;
-potem regulacja i pole3D P20/P21,
+P19Gwykonał podmodel zezgodnymi siatkami i obciążeniami rzeczywistych
+wycinków,24realizacje i kontroletransferu(raport041). Lokalna rozdzielczość
+nie zastępuje niepewnego pola globalnego lub danych materiałowych.
+Najbliższykrok:P20—sztywne wkładyregulacjiVb,dostęp przy stałymfroncie,
+netto,masa,podatność i mocowania;potem pole3D P21,
 czasoweDSP/napędP22–P25, pokójP26–P28 i integracjaP29/P30.
 Poszukiwanie danych materiałowych i nieliniowych może toczyć się równolegle
 z obliczeniami niewymagającymi tych danych. Nie wykonywać zakupów.
