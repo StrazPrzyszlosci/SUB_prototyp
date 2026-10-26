@@ -1,6 +1,6 @@
 {
   "status": "CONDITIONAL_FILL_GEOMETRY_AND_1D_PLACEMENT_NOT_PRODUCT_IDENTIFICATION",
-  "generated_at": "2026-10-26T18:31:31.320363+01:00",
+  "generated_at": "2026-10-26T20:37:11.442870+01:00",
   "libraries": {
     "Python": "3.12.3",
     "NumPy": "1.26.4",
@@ -50,10 +50,10 @@
     "wyniki/p09c_warstwy_i_straty.csv": "04e1c6346cdd01c8c210f7b2a2aff414cea221c24b0dd7c9a9ad1ba39d251a95"
   },
   "documentation_sha256": {
-    "AGENTS.md": "f67e20ebbc2b3306c668273f03e9ba0ae4e6a8d256441d0680191a191d26d2d2",
-    "README.md": "9a72060c8623b979b255d5b862de192a2f4abc2bfee8a86bfc954e79a9143360",
+    "AGENTS.md": "039c74612ab400b350a58a3c94e8584a6fd06a77bd900387967b8137c7f72ea9",
+    "README.md": "964fe24f051038417ed1f9753c757cadb46298445d18580f9f321046c404c443",
     "PLAN_B_R.md": "d7c3d1c15561d8fb47dbe8690939067543401b8b7bb28482ef41f9d034d041c5",
-    "PROGRAM_30_BADAN.md": "12b4cf13d0afc11840682fb5def064a40d86b86c23427dd8e22f05d731954669",
+    "PROGRAM_30_BADAN.md": "d3d1f626571404138156f4c9483a0437bbe9f1d548c29cbdfb42cd192d151d3d",
     "raporty/README.md": "7914114cac6618e71cca7f097ec0b371cc6c62f0ea08973a1c273ecbdf967071",
     "raporty/039_wypelnienie_ilosc_polozenie_i_straty.md": "5bf5c3870055a0a685de0b740b3ef7c62e949aa4a6f103d68b909667e1e90990",
     "baza_wiedzy/README.md": "e0da9b96fc12706eaf40d2571bc5ed3cc0771756d8d90a4e412c41cfc43bd6f9",

@@ -21,7 +21,7 @@ Rozszerzyć je, jeśli analiza uzgodnionego celu pokaże korzyść.
 Mechanika: maksymalna przestrzeń robocza z mocowanymi sztywnymi modułami
 wypornościowymi jest sensowną koncepcją startową. Alternatywa to uszczelniana
 przegroda. Ocenić koszt, dostęp, ugięcia i ryzyko nieszczelności przed wyborem.
-WykonawcaMDF i jego ograniczenia są opisane w [karcie](../WYKONAWCA_CNC.md).
+Ogólne kwestie obróbki MDF zebrano w [liście do uzgodnienia](../WYKONAWCA_CNC.md).
 
 ## Trzy założenia mogące zmienić wybór
 
@@ -65,7 +65,7 @@ dobieramy dopiero wtedy zgodnie z decyzją użytkownika.
 | Rozrzut i definicjeXmax | Zmieniona liniowość | Rezerwa i jawna analiza czułości | NiezależneBL(x)/THD |
 | Nieszczelne moduły/front | Zmieniona dobroć i odgłosy | Mocowanie, uszczelki, dostęp serwisowy | Sprawdzenie gotowej skrzyni |
 | Drgania dużych paneli | Podbarwienie, straty | Wzmocnienia przeciwległych ścian i krótki rozstaw | Skuteczność po wykonaniu |
-| Niepełne daneCNC | Niepasujące/niekompletne elementy | Checklista, rewizje, tolerancjeZ iR4 | Wycena i kontrola dostawy |
+| Niepełne daneCNC | Niepasujące/niekompletne elementy | Lista kontrolna, rewizje, tolerancje i uzgodnione promienie | Wycena i kontrola dostawy |
 | Pokój maskuje odpowiedź źródła | Nieporównywalny maxSPL | Jasne oznaczeniein-room i ograniczeń metody | Brak pomiarów kontrolowanych poza pokojem |
 | Opinie historyczne lub skopiowane | Błędna reputacja modelu | Data, rewizja, pierwsza ręka, korekty i niezależność | Aktualne relacje finalistów |
 | Błędne wyjścia/gainDSP | Szum, zbyt mało torów, clipping | Schemat 8 torów i audyt konkretnej wersji | Pełna instrukcja i poziomy |

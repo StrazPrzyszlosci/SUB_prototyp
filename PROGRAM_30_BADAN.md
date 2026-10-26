@@ -11,6 +11,10 @@ Ma wskazać jeden głośnik i jedną konstrukcję regulowanej obudowy, z materia
 grubościami, usztywnieniami, połączeniami i obliczeniowym doborem kleju.
 Modele warunkowe mają ujawniać nieznane dane; nie zastępują badania urządzenia.
 
+U-024: po ukończeniu końcowego PDF opublikować **Release 1** na GitHub,
+dołączyć raport i jego SHA-256 oraz wskazać sprawdzony commit. To warunek
+końcowej publikacji, nie polecenie tworzenia wydania w obecnym etapie.
+
 U-021,2026-10-25: front prototypu ma być stały, niedemontowalny,
 pod jeden docelowo wybrany przetwornik. Zastępuje to wcześniejszy plan
 wymiennego frontu; porównania kandydatów i regulacja Vb pozostają w zakresie.

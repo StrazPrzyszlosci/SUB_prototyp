@@ -1,0 +1,107 @@
+{
+  "date": "2026-10-26",
+  "scope": "Publication-only redaction explicitly requested by the repository author.",
+  "numerical_results_changed": false,
+  "brief_changed": false,
+  "files": [
+    {
+      "path": "dane/zrodla/rejestr.json",
+      "original_sha256": "30375bda7709bae4e1ef25d91d480ab5e3fc938354e674d7cf6067590913613a",
+      "published_sha256": "305587531065ee98dbf7f5c66494ceb3458df3413b7f531588ab1fe2c0b43f09",
+      "change": "Removed one commercial source record; remaining records and numerical inputs unchanged."
+    },
+    {
+      "path": "wyniki/archiwum/20261023T210646_582025/stan_wejsc/dane/zrodla/rejestr.json",
+      "original_sha256": "e38eb55f9b40a850c80e0198b357d5428acca3b66f33ed2dad418c677d82c9f0",
+      "published_sha256": "d172f27897b4c5638ea13317818019ee96069f1427be1c9bf8c6e31b3a153960",
+      "change": "Removed one commercial source record; remaining records and numerical inputs unchanged."
+    },
+    {
+      "path": "wyniki/archiwum/20261023T211336_799038/stan_wejsc/dane/zrodla/rejestr.json",
+      "original_sha256": "e38eb55f9b40a850c80e0198b357d5428acca3b66f33ed2dad418c677d82c9f0",
+      "published_sha256": "d172f27897b4c5638ea13317818019ee96069f1427be1c9bf8c6e31b3a153960",
+      "change": "Removed one commercial source record; remaining records and numerical inputs unchanged."
+    },
+    {
+      "path": "wyniki/archiwum/20261024T021040_583073/stan_wejsc/dane/zrodla/rejestr.json",
+      "original_sha256": "5d54b12458b4ce0f82df46816c3b21eaac9ac951bc243ebd95df2e4666fd2002",
+      "published_sha256": "aece4229e82b9b8201f632e5dcd8af385911cd83f5b6702276c04e286eb7ed04",
+      "change": "Removed one commercial source record; remaining records and numerical inputs unchanged."
+    },
+    {
+      "path": "wyniki/archiwum/20261024T025748_648414/stan_wejsc/dane/zrodla/rejestr.json",
+      "original_sha256": "cb9dce93fb4abb5032e92935b06248f9a14a9513db926c447a1dcaed10567cbc",
+      "published_sha256": "ccd272e3f11a2eff577f720a70eacc8e1fb5c997edfce8e9fcc62abfa8c28b0c",
+      "change": "Removed one commercial source record; remaining records and numerical inputs unchanged."
+    },
+    {
+      "path": "wyniki/archiwum/20261024T033057_947087/stan_wejsc/dane/zrodla/rejestr.json",
+      "original_sha256": "33f9e019b5af3d35dc807404f277915d4ed70439a5689250b8395bd429dc57ab",
+      "published_sha256": "fe969d991600b868f26655568b5c9795c3eb3e13742bda9dafd547c7e55a5d9f",
+      "change": "Removed one commercial source record; remaining records and numerical inputs unchanged."
+    },
+    {
+      "path": "wyniki/archiwum/20261024T033633_P06_dwa_pasma/stan_wejsc/dane/zrodla/rejestr.json",
+      "original_sha256": "33f9e019b5af3d35dc807404f277915d4ed70439a5689250b8395bd429dc57ab",
+      "published_sha256": "fe969d991600b868f26655568b5c9795c3eb3e13742bda9dafd547c7e55a5d9f",
+      "change": "Removed one commercial source record; remaining records and numerical inputs unchanged."
+    },
+    {
+      "path": "wyniki/archiwum/20261024T101905_299272/stan_wejsc/dane/zrodla/rejestr.json",
+      "original_sha256": "06e9ef98929ed1ea242ab512a13a696c2933d62ef355db60a988604dd632f23e",
+      "published_sha256": "a5a641e86b5ccfb4af59d39bf5c32bafde0d3763f0deda2d3b074566ee98205f",
+      "change": "Removed one commercial source record; remaining records and numerical inputs unchanged."
+    },
+    {
+      "path": "wyniki/archiwum/20261024T205707_945167/stan_wejsc/dane/zrodla/rejestr.json",
+      "original_sha256": "074061a48030b8b44c8f8cfeb3f22c738b94808bca45e96927c745fd85fe685a",
+      "published_sha256": "7de7291c8bfe75b0588c74696912b432d7e3689e694e6e8442179a602059229c",
+      "change": "Removed one commercial source record; remaining records and numerical inputs unchanged."
+    },
+    {
+      "path": "WYKONAWCA_CNC.md",
+      "original_sha256": "6ce407bbf3c8d6b72c05fb0c62730d0cebd61b5b26e683bb716be2e759ed0974",
+      "published_sha256": "8cd1700cb58dc3fc74e879716fb8bdbd73885e525cf51a2a3d76cf3783d5b8e3",
+      "change": "Commercial attribution removed; generic future engineering preparation retained."
+    },
+    {
+      "path": "WYMAGANIA.md",
+      "original_sha256": "3b2a5c9ea16a9d96d6be25bc176f84ce36afa63fb178b4b1b526296862f3a661",
+      "published_sha256": "fbe52c7bc5a48d84ed8627bec6542e80d3514834f6790edd92f162f1448f7a20",
+      "change": "Commercial attribution removed; generic future engineering preparation retained."
+    },
+    {
+      "path": "baza_wiedzy/04_mechanika_i_CNC.md",
+      "original_sha256": "8846ed03406fa86277cef712e871471247ded7c96665fea7b30ddf623ea06b13",
+      "published_sha256": "98d9a67956dc8bfdb2ced12a5588c1b6ca99b141f083ade27125313aa4f3f017",
+      "change": "Commercial attribution removed; generic future engineering preparation retained."
+    },
+    {
+      "path": "baza_wiedzy/ZRODLA.md",
+      "original_sha256": "b5e3669046e2c8b8a0327bbbf61fd706f4415a3073bc09c504c89c9edbeef917",
+      "published_sha256": "691514319620a92024439d4d6a900db8c779117eba89ab08257f3f5a53506d83",
+      "change": "Commercial attribution removed; generic future engineering preparation retained."
+    },
+    {
+      "path": "raporty/001_inicjalizacja.md",
+      "original_sha256": "34d7517ea4432d03955057c6deafcfcd21e8222255b0b4c4fce22a073495c816",
+      "published_sha256": "549274263d6acb493c213b6eb1aae2db26bc7764dc41ed7805e5188c8d472a63",
+      "change": "Commercial attribution removed; generic future engineering preparation retained."
+    },
+    {
+      "path": "raporty/002_obliczenia_wstepne.md",
+      "original_sha256": "0678097ae9e566fc01979e64c5134a75bd8dd178a3aca038479a9934f1fcd493",
+      "published_sha256": "263e6c59a626afd024069b95e41d3daef61a82664fead794741021addf52ac6d",
+      "change": "Commercial attribution removed; generic future engineering preparation retained."
+    },
+    {
+      "path": "raporty/004_rekomendacje_i_ryzyka.md",
+      "original_sha256": "73ab90f564418d84c073c4932d716c51995741ffda9d14cb046314242d388bea",
+      "published_sha256": "e72ce9c18f3bfe10b1d6c1bb23da7f04de52a9b00171f5ce23e62d756220061f",
+      "change": "Commercial attribution removed; generic future engineering preparation retained."
+    }
+  ],
+  "original_copy": "Exact originals retained privately outside published Git contents.",
+  "historical_manifest_scope": "Existing historical input/documentation hashes describe original research snapshots. For the redacted public files use published_sha256 in this ledger; this is not a new numerical run.",
+  "git_history": "Existing commit history was not rewritten."
+}

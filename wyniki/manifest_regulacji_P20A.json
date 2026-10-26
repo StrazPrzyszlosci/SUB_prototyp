@@ -1,6 +1,6 @@
 {
   "status": "INSERT_GEOMETRY_FLEXIBLE_SHELL_LEAK_AND_MOUNT_FAMILIES_NOT_FINAL_CNC_OR_STRENGTH",
-  "generated_at": "2026-10-26T18:31:32.430018+01:00",
+  "generated_at": "2026-10-26T20:37:11.758594+01:00",
   "libraries": {
     "Python": "3.12.3",
     "NumPy": "1.26.4",
@@ -77,10 +77,10 @@
     "wyniki/p20a_wymagania_mocowan.csv": "1be0a1d73356f107fb07e640c157c9c0e5cc8e8cea721587cb1537a837086056"
   },
   "documentation_sha256": {
-    "README.md": "9a72060c8623b979b255d5b862de192a2f4abc2bfee8a86bfc954e79a9143360",
-    "AGENTS.md": "f67e20ebbc2b3306c668273f03e9ba0ae4e6a8d256441d0680191a191d26d2d2",
+    "README.md": "964fe24f051038417ed1f9753c757cadb46298445d18580f9f321046c404c443",
+    "AGENTS.md": "039c74612ab400b350a58a3c94e8584a6fd06a77bd900387967b8137c7f72ea9",
     "PLAN_B_R.md": "d7c3d1c15561d8fb47dbe8690939067543401b8b7bb28482ef41f9d034d041c5",
-    "PROGRAM_30_BADAN.md": "12b4cf13d0afc11840682fb5def064a40d86b86c23427dd8e22f05d731954669",
+    "PROGRAM_30_BADAN.md": "d3d1f626571404138156f4c9483a0437bbe9f1d548c29cbdfb42cd192d151d3d",
     "raporty/README.md": "7914114cac6618e71cca7f097ec0b371cc6c62f0ea08973a1c273ecbdf967071",
     "raporty/042_regulacja_Vb_i_wklady_wypornosciowe.md": "965a70113884debe40d1398c27a9e0af78b60ef1c3c3ab6b63b16c810e32dde5",
     "baza_wiedzy/README.md": "e0da9b96fc12706eaf40d2571bc5ed3cc0771756d8d90a4e412c41cfc43bd6f9",

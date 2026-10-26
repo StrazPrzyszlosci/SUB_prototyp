@@ -230,6 +230,18 @@ Optymalizacja jednego sweet spotu 2,5–3 m; brak narzuconego budżetu i gabaryt
     24mody są diagnostyką;porty/napęd P20C używają pełnych równań przy6f.
     Gaz0D i odniesienie c/(2maxL) nie walidują rzeczywistych modów z prętem.
 
+42. U-022–025: README ma być przystępnym przewodnikiem dla miłośników audio,
+    z krótkim początkiem, nawigacją, wyjaśnieniami i rozwijanymi szczegółami.
+    Zachować rozróżnienie symulacji i pomiarów oraz zakresów24/26/27.
+    Po ukończeniu programu i końcowegoPDF opublikować Release1 z raportem;
+    nie tworzyć go wcześniej. Wycofane odwołania handlowe usunięto także
+    z publicznych indeksów archiwalnych na bezpośrednie polecenie użytkownika.
+    Historyczne hashe opisują oryginały; publiczne kopie opisuje rejestr
+    `dokumentacja/redakcja_zrodel_20261026.json`. Nie dopisywać tych linków
+    ponownie. Baner zachowuje geometrię odniesienia504×684×504mm;to wejścia
+    modeli,nie końcowy dobór. Socialpreview jest osobnym ustawieniemGitHub;
+    obecnie przygotowanyPNG nie oznacza,że ustawiono go jako zdalneog:image.
+
 ## Stan i postępy
 
 | Data | Wykonane | Dowód / ograniczenie | Następny krok |
@@ -746,6 +758,23 @@ Postęp końca sesji2026-10-23:
   Część istotnych postaci jest blisko/powyżej referencji pustejkomory;
   nie ogłaszać fizycznejwalidacji przezgaz0D. Mocowania,DSP/ochrona,
   pełna synteza i pojedynczywybór/PDF pozostają otwarte.
+
+- Redakcja publicznego przewodnika,2026-10-26:prosty początek,33zachowane
+  wykresy+baner,słownik,nawigacja tematyczna i9rozwijanych części.
+  PoleAbout uzupełniono przezgh i potwierdzono odczytemAPI oraz wprzeglądarce.
+  Zapisano U-024:Release1 po końcowymPDF. Nie wykonano nowych badańFEM.
+- Na polecenie użytkownika wycofano wskazane handlowe odwołania z16plików,
+  wtym9indeksówźródeł zpublikowanymi migawkami. Oryginalne bajty zachowano
+  prywatnie,starehashe bezprzepisywania;rejestrma nowehashe kopii publicznych.
+  TrzyZIP/3135rekordówtekstowych beztych odwołań. Brief i wyniki bez zmian.
+- Grafiki mają źródło wkontrolnymp20a i geometriiC04;wejścia,projekcja iSHA
+  w `grafika/pochodzenie.json`. Wymiary504×684×504mm nie są finalnymdoborem.
+  Własny PNG1280×640 przygotowano;APIzwraca użycie automatycznegoOG,
+  przeglądarkaGitHubniezalogowana. InstrukcjaSocialpreview i MetaDebugger
+  w `dokumentacja/UDOSTEPNIANIE.md`. Nie publikowano postaFacebook.
+- **Najbliższy krok naukowy pozostaje P21B:przestrzenny gaz modułu,
+  sprzężenie3D,energia i granica0D**,potem główna komora zregulacją/włókniną.
+  Wybór głośnika/skrzyni,końcowyPDF iRelease1 czekająna program.
 
 ## Decyzje otwarte
 

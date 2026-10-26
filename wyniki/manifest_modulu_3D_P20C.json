@@ -1,6 +1,6 @@
 {
   "status": "COMPLETE_SCOPED_3D_MODULE_FAMILIES",
-  "generated_at": "2026-10-26T18:31:34.598489+01:00",
+  "generated_at": "2026-10-26T20:37:12.489209+01:00",
   "run_sha256": "529cba5059ecc66a8727bfe4fd64fc889798c981b8295f638e66d051aeacec5f",
   "libraries": {
     "Python": "3.12.3",
@@ -114,10 +114,10 @@
     "wyniki/p20c_zmiana_obciazenia.csv": "16eabfbd0c352aecd4323b3601561408a2186d1d8d4a23a7e4ae416f59263dbc"
   },
   "documentation_sha256": {
-    "README.md": "9a72060c8623b979b255d5b862de192a2f4abc2bfee8a86bfc954e79a9143360",
-    "AGENTS.md": "f67e20ebbc2b3306c668273f03e9ba0ae4e6a8d256441d0680191a191d26d2d2",
+    "README.md": "964fe24f051038417ed1f9753c757cadb46298445d18580f9f321046c404c443",
+    "AGENTS.md": "039c74612ab400b350a58a3c94e8584a6fd06a77bd900387967b8137c7f72ea9",
     "PLAN_B_R.md": "d7c3d1c15561d8fb47dbe8690939067543401b8b7bb28482ef41f9d034d041c5",
-    "PROGRAM_30_BADAN.md": "12b4cf13d0afc11840682fb5def064a40d86b86c23427dd8e22f05d731954669",
+    "PROGRAM_30_BADAN.md": "d3d1f626571404138156f4c9483a0437bbe9f1d548c29cbdfb42cd192d151d3d",
     "raporty/README.md": "7914114cac6618e71cca7f097ec0b371cc6c62f0ea08973a1c273ecbdf967071",
     "raporty/044_modul_3D_dwa_porty_i_wymagania_kleju.md": "458ef9f162070749de7736414c4b20568ff01cfc63a3310a951de6dcca20d75d",
     "baza_wiedzy/README.md": "e0da9b96fc12706eaf40d2571bc5ed3cc0771756d8d90a4e412c41cfc43bd6f9",

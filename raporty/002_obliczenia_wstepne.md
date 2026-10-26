@@ -89,7 +89,7 @@ Rekomendacja obecnej iteracji: utrzymać porównanie 12″/15″, sprawdzić kat
 braki i ceny, następnie zawęzić litraż z rzeczywistym napędem. Nie ma jeszcze
 podstaw do wskazania najtańszego wariantu spełniającego niezatwierdzone progi.
 
-## Geometria poglądowa i wykonawca
+## Geometria poglądowa i przyszłe wykonanie
 
 | Wariant | Wewnętrzne W×H×D [mm] | Zewnętrzne [mm] | Brutto wewnętrzne [l] | Założone wyparcie głośnik+wręgi [l] | Netto przed modułami [l] |
 |---|---|---|---:|---:|---:|
@@ -100,7 +100,7 @@ Płyty 18 mm, front 36 mm jako 2×18. Wyporności są **założeniami projektowy
 nie objętościami ze sprawdzonego modelu kosza. Skrzynie nie są zoptymalizowane,
 rozpisane na formatki ani gotowe do CNC. W K1 zmiana netto 65→45 l wymaga
 20 l dodatkowego sztywnego wyparcia; K2 pozwala badać większy zakres za cenę
-masy i gabarytów. Szczegóły technologiczne: [wykonawca](../WYKONAWCA_CNC.md).
+masy i gabarytów. Przyszłe kwestie technologiczne: [lista do uzgodnienia](../WYKONAWCA_CNC.md).
 
 ## Pokój i wrażliwość
 

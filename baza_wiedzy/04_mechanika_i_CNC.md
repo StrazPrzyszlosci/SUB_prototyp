@@ -6,8 +6,7 @@
 - **[Ustalenie — użytkownik]** Aktualnie prowadzimy prace badawcze do budowy; nie wykonujemy obudowy, nie kontaktujemy wykonawcy i nie zamawiamy CNC.
 - **[Ustalenie — użytkownik]** Posiadane narzędzia to multimetr, oscyloskop i lutownica; dobór oraz zakupy toru pomiarowego nastąpią po budowie, a późniejsze pomiary wyłącznie w pokoju.
 - **[Model/metoda]** Tym oznaczeniem objęto wiedzę inżynierską, wzory i procedury; nie są to wyniki pomiarów, wykonanej symulacji ani potwierdzenie osiągów konstrukcji.
-- **[Deklaracja oferty]** Dane diyKraft, oferta Allegro nr 17586111495, pochodzą z informacji przekazanych przez użytkownika; nie sprawdzano strony, parku maszynowego ani wykonanych elementów.
-- **[Rekomendacja]** Rozdział czytać wraz z [planem B+R](../PLAN_B_R.md), gdy powstanie; szczegóły oferty mają trafić do osobnego [WYKONAWCA_CNC.md](../WYKONAWCA_CNC.md).
+- **[Rekomendacja]** Rozdział czytać wraz z [planem B+R](../PLAN_B_R.md) i ogólną [listą kwestii do uzgodnienia przed obróbką](../WYKONAWCA_CNC.md). Wybór usługi pozostaje przyszłym etapem.
 
 ## Objętości: trzy różne wielkości
 
@@ -90,7 +89,7 @@
 - **[Model/metoda]** Zwiększenie masy samo nie określa amplitudy drgań; potrzebne są sztywność, tłumienie, wymuszenie i sposób podparcia.
 - **[Rekomendacja]** Wzmocnienia skracać mają podatne rozpiętości paneli i łączyć przeciwległe ściany; sprawdzić ich połączenia, wypieraną objętość i dostęp do elementów regulacyjnych.
 - **[Model/metoda]** Nie wystarczy przesunąć jednego rezonansu ponad pasmo subwoofera: trzeba rozpatrzyć pozostałe mody, harmoniczne wymuszenia i skuteczność promieniowania paneli.
-- **[Rekomendacja]** MDF jest roboczym wariantem zgodnym z przekazaną ofertą; wybór materiału i grubości wymaga porównania, nie wynika z samej dostępności usługi.
+- **[Rekomendacja]** MDF jest jednym z wariantów roboczych; wybór materiału i grubości wymaga porównania właściwości oraz wyników obliczeń.
 
 ## FEA: informacje potrzebne do sensownego modelu
 
@@ -105,23 +104,12 @@
 - **[Model/metoda]** Sprzężona analiza akustyczna wymaga modelu komory, strat i warunków promieniowania; strukturalne FEA nie potwierdza szczelności, THD ani braku słyszalnych podbarwień.
 - **[Ustalenie — zakres]** W tym rozdziale nie uruchomiono FEA i nie podano wyników; późniejsza ocena fizyczna będzie ograniczona do dostępnych warunków w pokoju.
 
-## diyKraft: przekazane ograniczenia wykonawcze
+## Warunki przyszłej obróbki
 
-- **[Deklaracja oferty]** Dostępne grubości MDF: 8, 10, 12, 18, 22 i 25 mm; nie jest to potwierdzenie bieżącego stanu materiałów ani ich właściwości mechanicznych.
-- **[Model/metoda]** Front nominalnie 36 mm można analizować jako `2 × 18 mm`; grubość po klejeniu, obróbce i wykończeniu zależy od płyt, spoiny i procesu.
-- **[Rekomendacja]** Dla frontu warstwowego zaprojektować bazowanie warstw, ciągłość sklejenia i dostęp do mocowań; podfrezowanie może wymagać osobnego rysunku każdej warstwy.
-- **[Deklaracja oferty]** Przekazywane formaty: DXF, DWG, SVG, PDF, ZIP lub szkic; akceptowany format nie oznacza zatwierdzonej geometrii ani kompletnego programu maszynowego.
-- **[Deklaracja oferty]** Tolerancje szerokości i długości: ±0,1 mm; głębokości: ±0,5 mm. Są to deklaracje oferty, nie potwierdzona zdolność procesu ani tolerancja całego montażu.
-- **[Model/metoda]** Przy pasowaniach, wpustach i gniazdach uszczelek trzeba zsumować odchyłki obu elementów, grubości płyt i powłok; tolerancja głębokości jest odrębnym składnikiem.
-- **[Deklaracja oferty]** Wewnętrzne narożniki mają R4, czyli promień 4 mm, przy frezie o średnicy 8 mm; nie zakładać ostrego narożnika wklęsłego bez zmiany geometrii.
-- **[Rekomendacja]** Zaprojektować współpracujące promienie albo jawnie oznaczone podcięcia; podcięcie nie może nieświadomie przerwać obwodu uszczelnienia lub osłabić strefy śruby.
-- **[Deklaracja oferty]** Brak wykonywania otworów w bocznych krawędziach płyt; konstrukcja wymagająca takich otworów wymaga przeprojektowania lub jawnego osobnego etapu poza tą usługą.
-- **[Rekomendacja]** Rozważyć mocowania dostępne od powierzchni płyt, kieszenie i warstwy frontu; nie wpisywać bocznego wiercenia jako wykonanej operacji CNC.
-- **[Deklaracja oferty]** Standardowo obrabiana jest jedna strona; operacje obustronne trzeba jednoznacznie oznaczyć wraz z orientacją i wspólnymi bazami.
-- **[Deklaracja oferty]** Maksymalny bok elementu: 1400 mm; maksymalna suma długości i szerokości: 2700 mm; limit masy pojedynczego elementu: 30 kg.
-- **[Model/metoda]** Ograniczenia te dotyczą elementów usługi, nie narzuconego gabarytu subwoofera; ewentualny podział panelu dodaje połączenia wymagające analizy szczelności i sztywności.
-- **[Deklaracja oferty]** Wykonawca nie projektuje i nie sprawdza kompletności; dostarcza surowe elementy do samodzielnego montażu, bez potwierdzenia gotowości konstrukcji do pracy.
-- **[Rekomendacja]** Przygotowanie konstrukcji, zgodności części, instrukcji montażu i kontroli wejść pozostaje po stronie projektu; szczegóły i braki opisać w [dokumencie wykonawcy](../WYKONAWCA_CNC.md).
+- **[Rekomendacja]** Przed wykonaniem potwierdzić materiał, grubości, tolerancje i dostępne narzędzia. Nie zakładać konkretnego promienia frezu lub dokładności bez uzgodnienia.
+- **[Model/metoda]** Front warstwowy wymaga uwzględnienia grubości spoin, bazowania warstw i dostępu do mocowań. Nie wystarczy dodać samych grubości nominalnych płyt.
+- **[Rekomendacja]** Otwory, kieszenie i obróbkę obu stron oznaczać jednoznacznie w dokumentacji. Promienie naroży dopasować do współpracujących elementów.
+- **[Rekomendacja]** Kompletność projektu, bilans netto i kolejność montażu sprawdzić przed przekazaniem dokumentacji. Pomocnicza [lista kwestii technologicznych](../WYKONAWCA_CNC.md) nie wskazuje konkretnej usługi.
 
 ## Pakiet projektu do przyszłej obróbki
 
@@ -129,9 +117,9 @@
 - **[Model/metoda]** Zdefiniować osie, początek układu, jednostki, numer rewizji, stronę widoczną, kierunek warstw i powierzchnie bazowe każdej części.
 - **[Rekomendacja]** Rysunek części ma zawierać identyfikator, ilość, materiał, grubość nominalną, kontur, otwory, kieszenie, głębokości i wymagania stron A/B.
 - **[Model/metoda]** Oddzielić kontury przelotowe od gniazd i operacji o zadanej głębokości; zamknięte kontury, skala oraz brak zdublowanych linii wymagają sprawdzenia po eksporcie.
-- **[Rekomendacja]** Dołączyć rysunek złożeniowy, przekroje połączeń, bilans objętości oraz zestawienie elementów, uszczelek, łączników i części nieobjętych ofertą CNC.
+- **[Rekomendacja]** Dołączyć rysunek złożeniowy, przekroje połączeń, bilans objętości oraz zestawienie elementów, uszczelek, łączników i części spoza zakresu obróbki.
 - **[Model/metoda]** Model CAD opisuje geometrię; CAM dodatkowo określa narzędzia, mocowanie i kolejność obróbki. Sam DXF nie potwierdza wykonalności ani bezpieczeństwa procesu.
-- **[Rekomendacja]** Przed przyszłym zleceniem przeprowadzić przegląd kolizji, dostępu do śrub, promieni R4, tolerancji głębokości, oznaczeń obustronnych i limitów pojedynczych elementów.
+- **[Rekomendacja]** Przed przyszłym zleceniem przeprowadzić przegląd kolizji, dostępu do śrub, uzgodnionych promieni naroży, tolerancji głębokości, oznaczeń obustronnych i limitów pojedynczych elementów.
 - **[Rekomendacja]** Instrukcja montażu ma uwzględniać kolejność klejenia, bazowanie, docisk, wymienność modułów oraz ochronę powierzchni uszczelniających; wartości procesu wymagają danych materiałów.
 - **[Model/metoda]** Masa i położenie środka ciężkości służą ocenie przenoszenia i przewrócenia; sama duża masa nie potwierdza stabilności przy nacisku na osłonę lub obudowę.
 - **[Ustalenie — zakres]** Nie powstały tu pliki CAD/CAM, rozkrój, lista zakupowa ani zamówienie; gotowość do CNC pozostaje przyszłą bramką projektu.

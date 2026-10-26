@@ -18,7 +18,7 @@ Brief zachowano bez zmian. Katalog początkowo zawierał wyłącznie ten dokumen
   protokołów i wersji zapisano w [raporcie źródłowym](003_referencje_i_rynek.md).
 - Zebrano pierwsze opinie historyczne i porady konstruktorów z diyAudio.
   Obejrzano i zachowano 9 załączników wątku 360765, w tym wykresy WinISD.
-- Przeniesiono wymagania wskazanego wykonawcy do [karty CNC](../WYKONAWCA_CNC.md).
+- Przygotowano ogólną [listę kwestii do uzgodnienia przed obróbką CNC](../WYKONAWCA_CNC.md).
 - Wykonano model, kontrole fizyczne i obliczenia; wynik w [raporcie002](002_obliczenia_wstepne.md).
 
 ## Doprecyzowania użytkownika

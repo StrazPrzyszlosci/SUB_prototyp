@@ -1,0 +1,1 @@
+Badania subwoofera DIY: 26 modeli głośników, obudowa zamknięta z regulacją objętości, akustyka, wypełnienie, konstrukcja, klej i DSP. Symulacje w Pythonie, wykresy, źródła i raporty po polsku. Prace przed budową prototypu.
