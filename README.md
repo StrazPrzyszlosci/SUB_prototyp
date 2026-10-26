@@ -8,12 +8,23 @@ objętości, płyt, usztywnień, połączeń, kleju oraz wymagań napędu i ochr
 Ten README prowadzi od pytań projektowych przez najważniejsze wykresy do
 raportów, danych i odtwarzalnych obliczeń.
 
-**Stan: 2026-10-25.** Porównujemy 24 modele od 11 producentów, w tym 4 STX.
-Najnowsze etapy to [pełna rama 3D — raport 035](raporty/035_pelna_rama_3D_spoiny_i_podparcie.md)
-i [screening spoin/odspojenia — raport 036](raporty/036_spoiny_3D_i_wirtualne_odspojenie.md)
-oraz [wymagania modułu spoin stałego frontu — raport 037](raporty/037_staly_front_wymagany_modul_spoin.md).
+**Stan: 2026-10-26.** Pula obejmuje **26 produktów od 11 producentów**,
+w tym 4 STX i **3 SB Acoustics**. Liczymy **27 konfiguracji elektrycznych**,
+ponieważ nowy dwucewkowy SB ma osobno połączenie szeregowe i równoległe.
+Najnowsze uzupełnienia to [raport 038 — dodatkowe SB](raporty/038_SB_Acoustics_rozszerzenie_i_porownanie.md)
+(5832 punkty modelu liniowego) oraz [raport 039 — obliczenia wypełnienia](raporty/039_wypelnienie_ilosc_polozenie_i_straty.md)
+(masa, objętość gazu, położenie i 17 820 punktów napędu).
+Poprzednie etapy obejmują [pełną ramę 3D — raport 035](raporty/035_pelna_rama_3D_spoiny_i_podparcie.md),
+[screening spoin/odspojenia — raport 036](raporty/036_spoiny_3D_i_wirtualne_odspojenie.md)
+i [wymagania modułu spoin stałego frontu — raport 037](raporty/037_staly_front_wymagany_modul_spoin.md).
 Trwa program badań przed budową; ostateczny wybór i końcowy PDF są przed nami.
 Przedstawione wyniki są obliczeniami i symulacjami, bez pomiarów fizycznego prototypu.
+
+**Zakresy nie są jednakowe:** duże kampanie niepewności, nieliniowości
+i termiki wykonano dla pierwotnych 24 baz. Nowe SB mają dane producenta,
+ocenę dostępnych opinii i porównanie liniowe; nie przypisujemy im automatycznie
+wyników starszych kampanii. C04 jest referencją części modeli mechanicznych,
+nie zatwierdzonym docelowym głośnikiem.
 
 | Ustalenie | Obowiązujący kontekst |
 |---|---|
@@ -23,6 +34,17 @@ Przedstawione wyniki są obliczeniami i symulacjami, bez pomiarów fizycznego pr
 | Docelowy system | Dwa subwoofery przy monitorach, jeden sweet spot 2,5–3 m; przyszła architektura co najmniej 8 wyjść DSP |
 | Obecny zakres | Nauka, źródła, obliczenia i symulacje do budowy. Zakupy, CAD i dobór aparatury pozostają odłożone |
 
+## Najważniejsze ustalenia przed lekturą
+
+| Temat | Co wynika z badań | Co pozostaje do rozstrzygnięcia |
+|---|---|---|
+| Głośnik | **Obliczenie:** przewaga zależy od pasma i aktywnego limitu X/V/I; większe Sd lub mniejsze Le nie rozstrzyga wyboru | Jedna końcowa rekomendacja po integracji niepewności, termiki, konstrukcji i DSP |
+| Litraż | **Obliczenie:** trzeba wspólnie spełnić ograniczenia napędu i ruchu; po dojściu do Sd·Xmax dalszy litraż nie podnosi pułapu samego ruchu | Zakres regulacji, netto po odjęciu elementów i mechanizm regulacji |
+| Wypełnienie | **Obliczenie/symulacja:** liczymy masę, objętość włókien i gazu oraz wpływ położenia na straty; porowata mata i sztywny wkład mają różne bilanse | Konkretny materiał, rozmieszczenie, mocowanie i powiązanie z komorą 3D oraz regulacją Vb |
+| Konstrukcja | **Symulacja:** w referencyjnej ramie jeden ściąg zmniejsza podatność o około 18% przy dodatkowych 0,464 kg | Geometria dla wybranego głośnika, lokalne połączenia i pełne sprzężenie z powietrzem |
+| Klej | **Symulacja:** wyznaczono wymagania sztywności; energia wirtualnego odspojenia zmienia się o 27–41% między dwiema siatkami | Nośność, adhezja do MDF, pełzanie, zmęczenie i zbieżna analiza lokalna; D3/D4 nie wystarcza |
+| Pokój i ochrona | **Założenia/scenariusze:** znamy wymiary i orientację mebli; pozycje i straty nie są zmierzone. Dwa tony mogą generować ruch poniżej pasma wejścia | Dwie wykonalne lokalizacje, integracja fazowa, dyskretne DSP i ochrona w czasie |
+
 ## Od czego zacząć
 
 - **Chcę zrozumieć wnioski:** przejdź przez [wykresy i ich objaśnienia](#wykresy).
@@ -31,19 +53,26 @@ Przedstawione wyniki są obliczeniami i symulacjami, bez pomiarów fizycznego pr
 - **Chcę zweryfikować rachunek:** przejdź do [danych i odtwarzania](#odtwarzanie).
 - **Szukam starszego dokumentu:** otwórz [pełny indeks raportów](raporty/README.md).
 
+Jeśli czytasz tylko kilka dokumentów: zacznij od **038/039** (SB i wypełnienie),
+**028** (wspólne wymagania napędu i objętości), **035–037** (rama i klej),
+a potem sprawdź otwarte bramki w **programie 30 pakietów**.
+Starszy raport opisuje stan swojego etapu; bieżące decyzje i zakres prowadzi
+ten przewodnik. „Wykonano rodzinę modeli” nie oznacza zamknięcia całego pakietu.
+
 <a id="mapa"></a>
 ## Mapa badań — pytanie → raport → dane
 
 | Pytanie | Gdzie czytać | Gdzie sprawdzać wejścia lub wyniki |
 |---|---|---|
-| Jakie głośniki badamy i co wiadomo z opinii? | [010 — szeroka pula](raporty/010_szeroka_pula_i_kwalifikacja.md), [012 — identyfikowalność](raporty/012_identyfikowalnosc_i_dane_publikowane.md) | [24 kandydatów](dane/przetworniki/pula_rozszerzona.json), [krytyczna ocena opinii](dane/zrodla/opinie_puli_ocena.json) |
+| Jakie głośniki badamy i co wiadomo z opinii? | [010 — pierwotna szeroka pula](raporty/010_szeroka_pula_i_kwalifikacja.md), [012 — identyfikowalność](raporty/012_identyfikowalnosc_i_dane_publikowane.md), [038 — dodatkowe SB](raporty/038_SB_Acoustics_rozszerzenie_i_porownanie.md) | [24 bazy](dane/przetworniki/pula_rozszerzona.json) + [2 produkty SB](dane/przetworniki/rozszerzenie_SB_20261025.json); [opinie puli](dane/zrodla/opinie_puli_ocena.json) i [nowych SB](dane/zrodla/SB_rozszerzenie_pochodzenie.json) |
 | Jak dobrać litraż, wychylenie i napęd łącznie? | [011 — granice objętości](raporty/011_granice_globalne_litrazu.md), [028 — wspólne ograniczenia](raporty/028_P17_synteza_napedu_objetosci_i_ciepla.md) | [Wyniki P17](wyniki/p17_podsumowanie.json) |
 | Jak niepewność danych zmienia kolejność kandydatów? | [015 — czułość i odporność](raporty/015_niepewnosc_globalna_i_odpornosc.md) | [Baza wiedzy o niepewności](baza_wiedzy/10_niepewnosc_globalna.md) |
-| Co robią gaz, wypełnienie i nieszczelności? | [009 — przecieki](raporty/009_N7_straty_nieszczelnosci.md), [016 — gaz i materiały](raporty/016_gaz_wypelnienie_i_granice.md) | [Konfiguracje modeli](dane/konfiguracje/), [źródła](baza_wiedzy/ZRODLA.md) |
+| Co robią gaz, wypełnienie i nieszczelności? | [009 — przecieki](raporty/009_N7_straty_nieszczelnosci.md), [016 — gaz i materiały](raporty/016_gaz_wypelnienie_i_granice.md), [039 — ilość i położenie materiału](raporty/039_wypelnienie_ilosc_polozenie_i_straty.md) | [Geometria, masa i podatność](wyniki/p09c_geometria_masa_i_podatnosc.csv), [17 820 punktów napędu](wyniki/p09c_naped_i_wypelnienie.csv), [konfiguracje](dane/konfiguracje/) |
 | Skąd biorą się nieliniowości i IMD? | [020 — nieliniowy napęd](raporty/020_nieliniowy_naped_i_sprzezony_gaz.md), [021 — pamięć cewki](raporty/021_pamiec_cewki_i_definicja_Lgen.md), [026 — dwa tony](raporty/026_P14B_pelna_kampania_dwutonowa.md) | [Podsumowanie P14B](wyniki/p14b_podsumowanie.json) |
 | Jak prąd, temperatura i chłodzenie wpływają na pracę? | [025 — topologia termiki](raporty/025_P15A_topologia_i_granice_termiki.md), [027 — grzanie i napęd](raporty/027_P15B_sprzezenie_grzania_i_napedu.md) | [Podsumowanie P15B](wyniki/p15b_podsumowanie.json) |
 | Jak policzyć panele, usztywnienia i klej? | [029 — płyty](raporty/029_P18A_plyty_sciagi_i_dynamika.md), [030 — spoiny](raporty/030_P19A_obliczenia_spoin_i_material_kleju.md), [035 — pełna rama](raporty/035_pelna_rama_3D_spoiny_i_podparcie.md), [036 — defekt spoiny](raporty/036_spoiny_3D_i_wirtualne_odspojenie.md) | [Materiał MDF i kleje](dane/materialy/), [wyniki 3D](wyniki/manifest_ramy_i_spoin_3D.json) |
 | Jak otwór, kosz i uszczelka zmieniają front? | [033 — front i docisk](raporty/033_front_otwor_kosz_i_styk_jednostronny.md), [034 — styk w czasie](raporty/034_czasowy_styk_i_pelny_MES.md) | [Geometria producentów](dane/zrodla/P18B_geometria_i_ograniczenia.json), [przebiegi P19C](wyniki/p19c_podsumowanie.json) |
+| Co oznacza stały front i jakiej sztywności wymaga jego spoina? | [037 — wymagania modułu](raporty/037_staly_front_wymagany_modul_spoin.md), [U-021 — decyzja](DECYZJE_I_PYTANIA.md) | [12 progów](wyniki/p19e_wymagane_moduly_stalego_frontu.csv); uszczelka pod koszem to odrębny styk |
 | Jak uwzględniamy pokój i dwie sztuki? | [013 — dwa źródła i gabaryty](raporty/013_pokoj_i_realne_gabaryty.md), [017 — sprzężenie pola](raporty/017_promieniowanie_i_sprzezenie_pokoju.md), [019 — aktualna orientacja](raporty/019_zamiana_kanapy_i_RTV.md) | [Konwencja pokoju](dane/konfiguracje/pokoj_odsluchowy.json), scenariusze opisane w raportach |
 
 Pełny zakres i otwarte bramki są w [programie 30 pakietów](PROGRAM_30_BADAN.md).
@@ -58,7 +87,7 @@ geometrię oraz aktywny limit. Wykresy używają różnych eksperymentów — m.
 2π i 4π — więc ich liczb SPL nie porównuje się bezpośrednio.
 Zakresy stresowe opisują przyjęte hipotezy; nie są tolerancjami producentów.
 
-### 1. Punkt wyjścia: możliwości 24 kandydatów
+### 1. Głośniki: pierwotna pula i dodatkowe SB Acoustics
 
 Porównanie przy wspólnych 100 l, 40 V RMS i 12 A RMS pokazuje, gdzie
 ogranicza ruch, a gdzie napęd. Prawy panel ilustruje sam iloczyn Sd·Xmax.
@@ -68,6 +97,26 @@ Xmax różnią się, a ten etap nie zawiera pełnej termiki.
 ![24 kandydatów — porównanie liniowych ograniczeń i katalogowego Sd razy Xmax](wyniki/09_szeroka_pula.png)
 
 [Raport 010: modele, źródła, konflikty i opinie](raporty/010_szeroka_pula_i_kwalifikacja.md).
+
+Powyższy wykres zachowuje **pierwotne 24 bazy**. Nowe rozszerzenie dodaje
+SB34SWNRX-S75-6 oraz SB34SWPL76-3-DV, bez nadpisywania dawnych danych.
+
+| Identyfikator | Model SB Acoustics | Konfiguracja |
+|---|---|---|
+| C04 | SB34SWPL76-4 | Jedna cewka, istniejący model odniesienia |
+| C25 | SB34SWNRX-S75-6 | Jedna cewka; PDF podaje 22,5 mm p-p, WWW 22 mm p-p |
+| C26P / C26S | SB34SWPL76-3-DV | Ten sam produkt: obie cewki równolegle / szeregowo |
+
+![SB Acoustics — porównanie napędu i litrażu z odniesieniami C01/C02 Dayton](wyniki/61_SB_porownanie_i_objetosc.png)
+
+**Wynik liniowy:** przy wspólnych 100 l, 40 V RMS/12 A RMS i 80 Hz
+C26P ogranicza prąd, a C26S napięcie. Przy 20 Hz obie konfiguracje
+dochodzą do tego samego Sd·Xmax. C25 ma większe Sd niż C04, lecz mniejszy
+iloczyn Sd·Xmax. Nie oznacza to rozstrzygnięcia THD lub jakości odsłuchu.
+Każda częstotliwość to osobny sinus ustalony, bez kwalifikacji czasu pracy.
+
+[Raport 038: wyniki, oryginalne źródła, opinie i braki](raporty/038_SB_Acoustics_rozszerzenie_i_porownanie.md)
+· [27 konfiguracji w tabeli](wyniki/sb_rozszerzenie_podsumowanie.csv).
 
 ### 2. Odporność wyboru: czy kolejność przetrwa niepewność?
 
@@ -101,6 +150,26 @@ bez identyfikacji konkretnej włókniny.
 ![Relaksacja cieplna gazu — sztywność, straty i wpływ na odpowiedź](wyniki/13_relaksacja_cieplna_gazu.png)
 
 [Raport 016: gaz, pory, materiały, nieliniowości i granice](raporty/016_gaz_wypelnienie_i_granice.md).
+
+**Ilość wypełnienia również jest liczona.** Dla kontrolnej geometrii
+460 × 640 × 460 mm, przed odjęciem kosza i ściągów, wyklejenie pięciu
+ścian warstwą 50 mm ma około **1,18 kg** przy założonej gęstości 20 kg/m³.
+Przy phi=0,98 rzeczywista objętość gazu wynosi około 134,24 l z początkowych
+135,42 l. Obrys materiału zajmuje więcej miejsca niż same włókna.
+To scenariusz obliczenia, nie ilość do zakupu lub końcowy litraż.
+
+![Wypełnienie — masa, rzeczywista objętość gazu i oddzielne granice podatności](wyniki/62_P09C_masa_materialu_i_objetosc_gazu.png)
+
+**Rozmieszczenie też ma znaczenie.** Poniżej ten sam materiał ma tę samą
+masę, a zmieniamy jego położenie w modelu 1D. Warstwa przez cały przekrój
+jest osobnym eksperymentem od wyklejenia pięciu ścian. Veq i oporu wejściowego
+nie traktujemy jako stałego przyrostu fizycznych litrów lub rankingu jakości.
+
+![Ta sama warstwa w trzech położeniach — zmiana strat i granicy napędu](wyniki/63_P09C_polozenie_warstwy_i_naped.png)
+
+[Raport 039: geometria, 55 modeli warstwowych, 27 konfiguracji i niezależna sieć FV](raporty/039_wypelnienie_ilosc_polozenie_i_straty.md).
+Wybór materiału, masy i rozmieszczenia wejdzie do końcowej rekomendacji;
+**sztywne wkłady do regulacji Vb** będą liczone osobno.
 
 ### 5. Dwa tony: ruch może pojawić się również poniżej pasma wejścia
 
@@ -201,6 +270,13 @@ warunkowy przypadek; nie potwierdzenie hałasu, przecieku lub THD produktu.
 
 ### 13. Cała rama: połączenia ścian, masa i podparcie
 
+![Geometria kontrolna sześciu ścian, połączeń i kosza — widok poglądowy](wyniki/55_P18C_pelna_rama_i_polaczenia.png)
+
+To geometria kontrolna, **nie gotowa skrzynia do zamówienia**:
+460 × 640 × 460 mm wewnątrz, ścianki 22 mm. Rozsunięcie ścian na rysunku
+służy czytelności; nie jest szczeliną konstrukcyjną. Geometria brutto
+nie jest finalnym Vb netto po odjęciu głośnika, usztywnień i regulacji.
+
 Model obejmuje sześć brył i dwanaście podatnych spoin. Wariant z jednym
 ściągiem zmniejsza obliczoną podatność o około 18% przy dodatkowych 0,464 kg.
 Ruch przy osobnej sile 1 N RMS zależy także od podparcia. Głośnik jest tu
@@ -211,6 +287,14 @@ frontu z korpusem; wykres nie jest odpowiedzią całego napędu elektroakustyczn
 
 [Raport 035: siatki do 36 771 współrzędnych, równowaga i ograniczenia](raporty/035_pelna_rama_3D_spoiny_i_podparcie.md)
 · [raport 036: energia wirtualnego odspojenia nie jest jeszcze zbieżna](raporty/036_spoiny_3D_i_wirtualne_odspojenie.md).
+
+![Wirtualne odspojenie — energia i zachowany styk ściskający; porównanie siatek](wyniki/59_P19D_wirtualne_odspojenie_i_kontakt.png)
+
+**Otwarta bramka:** wynik energii dla defektu 10 mm różni się o około
+27% dla ciężaru i 41% dla ciężaru z ciśnieniem statycznym 1 kPa między
+N=10 i N=14. Gδ z tego eksperymentu nie jest odpornością materiałową Gc,
+trwałością spoiny lub potwierdzeniem doboru kleju. Stały front pozostaje
+decyzją projektu; dopracowania wymaga lokalna droga przenoszenia sił.
 
 ### 14. Stały front: wymagany moduł spoiny
 
@@ -234,13 +318,18 @@ osobne sprawdzenie frontu, docisku i ochrony dynamicznej.
 
 | Pozostały blok | Decyzja, do której ma doprowadzić |
 |---|---|
+| Nowe SB i porównanie finalistów | Uzupełnienie odporności i wspólnych wymagań napędu; wynik liniowy nie zastępuje brakujących danych fizycznych |
 | Stały front i jego połączenie z korpusem, regulacja Vb, pole przestrzenne | Geometria prototypu, realne objętości netto, ścieżki sił, szczelność i wykonanie |
+| Wypełnienie w docelowej geometrii | Materiał, masa, rozmieszczenie, mocowanie, prześwity i wpływ na straty/podatność przy różnych Vb |
 | Napęd, cyfrowe DSP, clipping, ochrona i szersze sygnały | Wymagania napięcia/prądu, filtry i kontrola ruchu/temperatury w czasie |
 | Dwie sztuki w docelowym pokoju | Wykonalne miejsca, gabaryty, faza, opóźnienia i integracja |
 | Odporne porównanie finalistów i domknięcie programu | Jeden przetwornik, jedna regulowana obudowa i końcowy PDF z uzasadnieniem |
 
-Najbliższy krok po P19E: **lokalna geometria i rozprowadzenie sił
-w stałym połączeniu frontu z korpusem**, następnie regulacja Vb.
+Najbliższy krok mechaniczny po P19E: **lokalna geometria i rozprowadzenie
+sił w stałym połączeniu frontu z korpusem**, następnie regulacja Vb.
+Gałąź doboru po raporcie 038 wymaga rozszerzenia analizy odporności
+i wspólnych ograniczeń na nowe SB. Obecne porównanie nie zatwierdza jeszcze
+głośnika, kleju lub litrażu wykonawczego.
 Stan każdego pakietu sprawdzaj w [programie badań](PROGRAM_30_BADAN.md).
 [Raport 032](raporty/032_postep_po_mechanice_i_zakres_do_konca.md) opisuje
 orientacyjną ocenę postępu po wcześniejszym etapie; liczba symulacji
@@ -281,6 +370,14 @@ OPENBLAS_NUM_THREADS=1 python3 skrypty/odtworz_front_i_styk_P18B_P19B.py
 
 # Czasowa odpowiedź styku P19C
 OPENBLAS_NUM_THREADS=1 python3 skrypty/odtworz_styk_czasowy_P19C.py
+
+# Dodatkowe SB i porównanie liniowe całej rozszerzonej puli
+OPENBLAS_NUM_THREADS=1 python3 skrypty/analiza_rozszerzenia_SB.py
+python3 skrypty/manifest_rozszerzenia_SB.py
+
+# Ilość i rozmieszczenie wypełnienia P09C
+OPENBLAS_NUM_THREADS=1 python3 skrypty/analiza_ilosci_i_rozmieszczenia_wypelnienia.py
+python3 skrypty/manifest_wypelnienia_P09C.py
 ```
 
 Podczas aktywnej kampanii nie uruchamiaj pełnego przebiegu archiwizującego
@@ -296,6 +393,12 @@ Manifesty wykonanych etapów: [P14B/P15B](wyniki/manifest_P14B_P15B.json),
 [P17](wyniki/manifest_P17.json), [panele i spoiny](wyniki/manifest_mechaniki_P18_P19_P21.json),
 [front i docisk](wyniki/manifest_frontu_P18B_P19B.json),
 [styk w czasie](wyniki/manifest_styku_czasowego_P19C.json),
-[rama i spoiny 3D](wyniki/manifest_ramy_i_spoin_3D.json).
+[rama i spoiny 3D](wyniki/manifest_ramy_i_spoin_3D.json),
+[rozszerzenie SB](wyniki/manifest_rozszerzenia_SB.json),
+[wypełnienie P09C](wyniki/manifest_wypelnienia_P09C.json).
+[Nowe SB: wejścia, wersje i kontrole](wyniki/sb_rozszerzenie_weryfikacja.json)
+opisują osobny etap 5832 punktów. Surowe oryginały nowych PDF i wyciągi
+tekstów zachowujemy prywatnie; publiczny [rejestr](dane/zrodla/SB_rozszerzenie_pochodzenie.json)
+zawiera URL, rewizje, hashe i zakres odczytu.
 Kontrole sprawdzają opisane modele i ich dziedziny; walidacja urządzenia
 nastąpi po budowie, zgodnie z [briefem](brief_system_audio_DIY_v0.6.md).

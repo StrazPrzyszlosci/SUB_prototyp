@@ -199,15 +199,29 @@ produktu jako masteringowy ani gotowy do sprzedaży na podstawie obecnej symulac
 
 ## 6. Najbliższy krok
 
-Aktualizacja 2026-10-24: N7 wykonano w modelu zredukowanym (raport 009),
-porównano 24 modele / 11 producentów i rozpoczęto pole zespolone pokoju
-4,6 × 3,7 × 2,5 m (raport 013). P06 wykonano dla liniowych rodzin parametrów
-(raport 015). P09/P10 wykonano w jawnych rodzinach kontrolnych (raport 016).
-P11 wykonano dla geometrii kontrolnych i zwrotnego sprzężenia pokoju
-(raport 017); geometria docelowej skrzyni pozostaje otwarta.
-P12/P13 wykonano w rodzinach warunkowych (raport020).
-P12C wykonano w jawnych rodzinach pamięci (raport021).
-Najbliższy krok: P14 — IMD i wielotony, następnie promieniowanie harmonicznych.
-Obowiązuje pełny [program 30 pakietów](PROGRAM_30_BADAN.md).
-Oferty i dobór handlowy odłożono w U-010. Nie wybierać jeszcze zwycięzcy
-na podstawie samej liniowej granicy ruchu.
+Aktualizacja 2026-10-26: N7, rodziny gazu/promieniowania, nieliniowości
+i pamięci mają wykonane zakresy z raportów 009–021. Kampania dwutonowa
+P14B i rodziny cieplne P15B są zakończone w swoich dziedzinach (026/027);
+P17 łączy warunkowe wymagania V/I/X/chłodzenia (028). Nie ponawiać tych
+kampanii bez nowej hipotezy zmieniającej decyzję.
+
+Mechanika doszła do frontu, styku w czasie i pełnej ramy 3D (033–036),
+a P19E wyznacza wymagania sztywności stałego frontu (037). **Najbliższy
+krok mechaniczny: lokalna geometria i rozprowadzenie sił w połączeniu
+stałego frontu z korpusem**, potem regulacja Vb i pole przestrzenne P20/P21.
+Screening odspojenia nadal nie jest zbieżną prognozą odporności na pękanie.
+
+Raport 038 rozszerza pulę do 26 produktów / 27 konfiguracji elektrycznych,
+w tym trzech SB Acoustics. Nowe SB mają odrębne obliczenia liniowe;
+potrzebują analizy odporności i wspólnych wymagań, zanim wejdą do syntezy
+finalistów. Dawne kampanie dla 24 baz nie stają się ich wynikami.
+
+Raport 039 dodaje obliczenia ilości i położenia wypełnienia: masę,
+porowatość, objętość gazu oraz 17 820 punktów napędu z warstwami 1D.
+Dobór materiału i jego rozmieszczenia ma wejść do końcowej rekomendacji;
+potrzebne jest powiązanie z przestrzenną komorą i regulacją Vb. Nie
+utożsamiać porowatego tłumienia ze sztywnymi wkładami wypornościowymi.
+
+Obowiązuje [program 30 pakietów](PROGRAM_30_BADAN.md); przewodnik po
+wynikach to [README](README.md). P22–P30, pojedynczy wybór i końcowy PDF
+pozostają otwarte. Oferty i dobór handlowy odłożono w U-010.

@@ -151,6 +151,23 @@ Optymalizacja jednego sweet spotu 2,5–3 m; brak narzuconego budżetu i gabaryt
     wyborem pozostają aktualne. C04 jest referencją modeli, nie zatwierdzonym
     docelowym przetwornikiem.
 
+33. Użytkownik polecił dodatkowo uwzględnić SB Acoustics. Rozszerzenie
+    z raportu038 dodaje C25 SB34SWNRX-S75-6 i C26 SB34SWPL76-3-DV,
+    osobno C26P/C26S. Pula:26produktów/27konfiguracji,11producentów,
+    trzySB i czterySTX. Nowe wejścia są addytywne; nie nadpisuj pierwotnych
+    24baz i nie przypisuj ich kampanii nowym modelom. PDF C25 podaje
+    22,5mm p-p, WWW22mm p-p; zachować konflikt. Moc300W C26 ma dopisek
+    ser.; nie uzupełniać brakującego limitu parallel. OpinieBR nie dowodzą
+    jakości sealed; szczegóły i hashe w rejestrze rozszerzeniaSB.
+
+34. Użytkownik przypomniał o obliczeniach wypełnienia. Końcowy dobór
+    obejmuje materiał tłumiący, masę suchą, obszar/grubość/rozmieszczenie,
+    porowatość, straty, podatność i mocowanie/prześwity. To odrębne od
+    sztywnych wkładów regulującychVb. Raport039/P09C rozróżnia geometrię
+    wyklejenia5/6ścian i warstwę poprzeczną1D; nie przenosić tłumienia
+    między nimi. Rho/Cp/phi/promień porów są założeniami,nie kartą włókniny.
+    Nowe wyniki obejmują27konfiguracji; dobór produktu i sprzężenie3D otwarte.
+
 ## Stan i postępy
 
 | Data | Wykonane | Dowód / ograniczenie | Następny krok |
@@ -526,6 +543,42 @@ Postęp końca sesji2026-10-23:
   daneproducenta lub progi briefu. **Najbliższy krok:lokalna geometria
   stałego front–korpus i rozprowadzenie sił**,potemP20/P21.
   READMEprzewodnik ma15wykresów;indeks37raportów.
+
+## Postęp 2026-10-26
+
+- Na polecenie oSB dodano dwa produkty i trzy konfiguracje do istniejącej
+  puli; raport038/baza26. Razem26produktów,27konfiguracji,11producentów,
+  trzySB i czterySTX. OryginalnePDF SRC52/53 obejrzane:tabele,rysunki,
+  krzywe i przypisy; automatyczne tablice krzywych odrzucone.
+- Wykonano5832punkty liniowe dla27konfiguracji,9Vb,6f,2budżetówV/I,
+  2udziałówX. Odrębny układ3równań1458punktów,bilansenergii i Le=0,
+  idealna transformacja cewek2000f. Kontrole do5.4e-15; to precyzja
+  modelu,nie dokładność fizyczna. Dawne24bazy przy100l/20i40Hz bez zmiany.
+- C25ma konfliktPDF22.5/WWW22mm p-p;nie tolerancja producenta.
+  C26Pprzy80Hz/100l/40V12A wiążeI,C26SwiążeV;bezTHD i termiki.
+  Opinie:C25 relacja sklepowaBR;C26 odczytane pytanie,nie test.
+  Zelfbouwaudio503/logowanie;nie uznano fragmentu wyszukiwarki za źródło.
+- READMEzaktualizowano jako przewodnik:18najważniejszychobrazów,
+  tabela wniosków/otwartychdecyzji,mapa raportów,dodatkoweSB i jawne
+  rozróżnienie zakresów24/26/27. Indeks38raportów;zaktualizowano
+  nieaktualny najbliższy krokPLAN_B_R. Brief i stare wyniki bez zmian.
+- **Najbliższy krok główny:lokalna geometria stałego front–korpus
+  i rozprowadzenie sił**,potemP20/P21. GałąźSB wymaga rozszerzenia
+  odporności i wspólnych wymagań napędu;ostatecznywybór/PDFotwarte.
+
+- P09C,2026-10-26:raport039/baza27. Obliczono18geometrii wyklejenia,
+  55modeliwarstw,330wierszyakustycznych,17820punktównapędu27konfiguracji.
+  Masa i objętość ciała stałego/gazu policzone osobno. Przy5ścianach,
+  t50mm/rho20kgm3/phi.98:masa1.1792kg,Vgaz134.2448l wgeometrii135.424l;
+  to założenia kontrolne,nie finalna ilość/objętość prototypu.
+- Odrębna propagacjaFV:80rozwiązań,siatki32–512;ostatni max błądZ
+  1.45e-5,resztamocy znormalizowana6.2e-12. Granice0/pełnawarstwa,
+  quasistatykasumyC i bilansnapędu sprawdzone. Żaden wynik nie jest
+  identyfikacją włókniny, THD lub pomiarem urządzenia. Dwa wykresy62/63
+  obejrzano;READMEma20obrazów i indeks39raportów.
+- **Najbliższykrok główny nadal:lokalna geometria stałego front–korpus**.
+  Wypełnienie powiązać potem zP20/P21 i ochroną; w gałęzi doboru rozszerzyć
+  odporność i wspólne ograniczenia nowychSB. Końcowywybór iPDFotwarte.
 
 ## Decyzje otwarte
 

@@ -36,6 +36,8 @@ a potwierdzonych ustaleń użytkownika w [rejestrze](../DECYZJE_I_PYTANIA.md).
 |23|[Front,otwór,kosz i docisk](23_front_otwor_kosz_i_docisk.md)|KowariantnyMITC,masa i siły,portkomory,uszczelka i śruby jednostronne|
 |24|[Zmienny styk i energia](24_styk_czasowy_i_energia.md)|Trajektoria,docisk,energia portu,rampy,pełnyMES i granice szczelności|
 |25|[Pełna rama i spoiny 3D](25_pelna_rama_i_spoiny_3D.md)|Bryły,EAS,niezgodne siatki,ciężar,podparcie i wirtualne odspojenie|
+|26|[Dwie cewki i porównywanie SB](26_dwie_cewki_i_porownywanie_SB.md)|Transformacja portu, limity V/I/X, konflikty katalogowe i zakres rozszerzenia|
+|27|[Ilość i położenie wypełnienia](27_ilosc_i_polozenie_wypelnienia.md)|Masa, porowatość, objętość gazu, warstwy i niezależna sieć FV|
 |Źródła|[Rejestr z datami](ZRODLA.md)|Co przeczytano, co tylko znaleziono i jakie są braki|
 
 ## Od wiedzy do wykonania

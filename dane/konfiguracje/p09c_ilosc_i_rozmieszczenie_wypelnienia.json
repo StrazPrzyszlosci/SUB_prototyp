@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-26",
+  "status": "HYPOTHETICAL_POROUS_FAMILY_NOT_IDENTIFIED_PRODUCT",
+  "reference_geometry": "dane/konfiguracje/p18c_rama_3D.json",
+  "inside_width_depth_height_m": [0.46, 0.64, 0.46],
+  "geometry_note": "Prosta komora kontrolna bez odjęcia kosza, ściągów i regulatora. Nie finalny Vb netto prototypu.",
+  "liner_faces": [5, 6],
+  "liner_thickness_m": [0.025, 0.05, 0.075],
+  "dry_bulk_density_kg_m3_assumed": [10.0, 20.0, 40.0],
+  "geometric_porosity_assumed": 0.98,
+  "solid_specific_heat_j_kg_k_assumed": 1400.0,
+  "layer_1d_depth_m": [0.025, 0.05, 0.1],
+  "layer_1d_positions": ["front", "middle", "back"],
+  "pore_radius_m": [0.00005, 0.0002, 0.001],
+  "frame_conditions": ["rigid", "limp"],
+  "dynamic_dry_density_kg_m3_assumed": 20.0,
+  "probe_frequencies_hz": [20.0, 25.0, 31.5, 40.0, 63.0, 80.0],
+  "amplifier_scenarios_vrms_irms": [[40.0, 12.0], [60.0, 20.0]],
+  "fraction_of_catalog_xmax": 1.0,
+  "gates": [
+    "Gęstości, porowatość, Cp i promienie porów to założenia, nie pomiary produktu lub tolerancje.",
+    "Warianty masy przy stałej porowatości nie są prawem zagęszczania konkretnej włókniny.",
+    "Geometria 5/6 ścian i propagacja warstwy przez cały przekrój 1D to osobne eksperymenty; nie przenosić tłumienia warstwy na wyklejenie boków.",
+    "ZK zakłada izotermiczne ścianki porów; skończone Cs liczone osobno, bez podwójnego dodawania tego samego mechanizmu.",
+    "Bez strat szkieletu Biota, sorpcji, rozproszenia przy koszu, realnej wentylacji i mechaniki mocowania materiału.",
+    "Nie dobiera się jeszcze konkretnego produktu, ilości wykonawczej ani odstępu wentylacyjnego bez danych przetwornika."
+  ]
+}

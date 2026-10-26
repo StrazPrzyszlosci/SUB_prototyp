@@ -184,6 +184,20 @@ Zachowanie pliku i hash dowodzą, z jakich danych wykonano obliczenia; nie
 potwierdzają poprawności deklaracji producenta. Transkrypcję danych trzeba
 kontrolować z oryginałem, szczególnie jednostki p-p/peak i mm/N/m/N.
 
+## Rozszerzenie SB Acoustics — sprawdzone oryginały
+
+Rozszerzenie SB,2026-10-26: **SRC52** — SB34SWNRX-S75-6, PDF REV.0
+(17.10.2012); **SRC53** — SB34SWPL76-3-DV, PDF REV.1 (03.10.2017).
+Oryginały pobrano przez browser-harness i obejrzano w całości na stronie1:
+tabele,rysunki,osie,legendy i przypisy. Nie zaakceptowano automatycznych
+tablic odczytu krzywych Firecrawl. C25: konflikt22.5mm p-p wPDF /22mm WWW.
+C26:300Woznaczone ser.;Le1.4/6.1mH dla różnych połączeń. Dane,hashe,
+ocena czterech odczytów/awarii opinii i zakres użycia:
+[rejestrSB](../dane/zrodla/SB_rozszerzenie_pochodzenie.json),
+[raport038](../raporty/038_SB_Acoustics_rozszerzenie_i_porownanie.md).
+ForumZelfbouwaudio zwróciło503/dostęp po zalogowaniu;nie jest przeczytaną
+dyskusją. Publiczne własne parametry i rachunki; oryginały prywatne.firecrawl.
+
 ## Znalezione dokumenty do dalszej analizy
 
 - [RSS315HF-4 Specification Sheet](https://www.daytonaudio.com/images/resources/295-464-dayton-audio-rss315hf-4-specifications-46174.pdf).

@@ -15,6 +15,17 @@ U-021,2026-10-25: front prototypu ma być stały, niedemontowalny,
 pod jeden docelowo wybrany przetwornik. Zastępuje to wcześniejszy plan
 wymiennego frontu; porównania kandydatów i regulacja Vb pozostają w zakresie.
 
+Rozszerzenie SB, 2026-10-26: 26 produktów / 27 konfiguracji elektrycznych,
+11 producentów, w tym trzy produkty SB i cztery STX. Raport 038 dodaje
+5832 punkty liniowe. Historyczne kampanie dla 24 baz nie obejmują
+automatycznie nowych produktów; ich niepewność i pełna integracja są otwarte.
+
+Wypełnienie, raport039/P09C:18geometrii masy/porowatości,55modeli warstw
+wtrzechpołożeniach i17820punktów dla27konfiguracji,80odrębnychrozwiązańFV.
+Geometria wyklejenia5/6ścian nie jest tą samą geometrią co warstwa1D.
+Dobór produktu,rzeczywistejmasy i rozmieszczenia oraz sprzężenie3D pozostają
+częścią końcowej rekomendacji;sztywne wkładyVb są odrębnymP20.
+
 ## Macierz pokrycia
 
 „Częściowo” oznacza rzeczywisty wynik z niezamkniętym zakresem, nie procent
@@ -25,13 +36,13 @@ pakietu samym stworzeniem planu, testów ani listy bibliotek.
 |---|---|---|---|
 | P01 | Literatura i rejestr twierdzeń | Częściowo | Źródła katalogowe; odczyt abstraktu Small1972 i dokumentacji KLIPPEL; dalsza bibliografia do weryfikacji |
 | P02 | Wymagania i hipotezy | Częściowo | Brief, Sub12/Sub15 zatwierdzone; nadal brak porównywalnych progów pasmowych |
-| P03 | T/S, Xmax, korelacje, identyfikowalność | Częściowo |24modele/11producentów, w tym4STX; dowód nieidentyfikowalności i syntetyczna identyfikacja z2Vb; zweryfikowane wzrokowo dane2próbekScan32; nieustalone tolerancje populacji |
+| P03 | T/S, Xmax, korelacje, identyfikowalność | Częściowo |26produktów/27konfiguracji/11producentów, w tym4STX i3SB; raport038:oryginały2nowychSB,5832punkty i audytT/S; wcześniej dowód nieidentyfikowalności i identyfikacja z2Vb, dane2próbekScan32; nieustalone tolerancje populacji |
 | P04 | Formalne równania i granice | Częściowo | Model bazowy i N7; bilans/pasywność/stabilność, odrębne granice geometrii |
 | P05 | Niezależna replikacja | Częściowo | N7: odrębny układ4równań, przestrzeń stanu i ODE; P07:algebra i odrębne oceny numeryczne; brak pełnej walidacji pomiarowej |
 | P06 | Niepewność globalna i odporność wyboru | Wykonane dla liniowych rodzin D/L; integracja otwarta | 24 modele, 13 czynników, 6 pasm20–80Hz, lokalna/globalna czułość, Sobol N4096/16384, MC/QMC, 1728 obwiedni, 6624 relacje i jawne kontrprzykłady przy wspólnym napędzie; raport 015. Zakresy nie są tolerancją produkcji. Rozszerzenie na modele nieliniowe/termikę/konstrukcję pozostaje P29 |
 | P07 | Ciągła objętość | Częściowo |20–150l co1l oraz analityczne granice po wszystkichVb>0 dla pojedynczych sinusów, kontrolowane288przypadkami; optymalizacja całego pasma/DSP otwarta |
 | P08 | N7 — przecieki i straty | Częściowo wykonane | ModelCab||Ra,1728rekordów; granice, sumowanie fazorowe,72progi pomocnicze; brak identyfikacji fizycznegoRa |
-| P09 | Wypełnienie, lepkość i straty cieplne gazu | Wykonane rodziny kontrolne; identyfikacja materiału otwarta | 24 modele, 12 096 wierszy termiki/napędu, 17 280 modeli warstw/ZK/wiotkiego szkieletu/dwóch Cp/sorpcji; dodatnie widma relaksacji, niezależna dyfuzja FV i źródła. Brak pełnych parametrów konkretnego produktu; raport 016 |
+| P09 | Wypełnienie, lepkość i straty cieplne gazu | Wykonane rodziny kontrolne i P09C; identyfikacja materiału otwarta | Raport016:24bazy,12096wierszytermiki,17280modeliwypełnienia,radialnaFV. Raport039:18geometrii,55warstw,17820punktównapędu27konfiguracji,80niezależnychsieciFV; masa/gaz/podatność oddzielnie. Produkt i sprzężenie3D otwarte |
 | P10 | Adiabatyczne/izotermiczne powietrze | Wykonane rodziny gazu; integracja w rodzinach P13 wykonana | 56 rodzin bezwymiarowych, 15 552 wiersze dla przetworników i temperatur, 1440 offsetów, 384 modeli wyrównania DC, 42 bilanse nieliniowe. P13 dodaje sprzężony ruch, prąd i temperaturę; nadal model gazu idealnego, nie THD egzemplarzy |
 | P11 | Obciążenie promieniowaniem i granice przestrzeni | Wykonane rodziny kontrolne; geometria docelowa otwarta | Tłok/Rayleigh, czasza/sfera/komora, kalibracja Mmd/Mms, wzajemne promieniowanie, obrazy i sprzężony pokój; 4 154 112 realizacji częstotliwościowych, replikacja Bellows2024, bilans energii i odrębna zbieżność. Raport 017. Brak niezależnej identyfikacji Mmd/strat wszystkich egzemplarzy i rozpraszania na finalnej skrzyni |
 | P12 | BL(x),Cms(x),Le(x,i),Rms(v) | Wykonane rodziny warunkowe i pamięć; identyfikacja fizyczna otwarta | Raport020:12 096przypadków. Raport021/P12C: moduł/fazaLgen, dodatnia pamięć i prawidłowa siłaL2R2,30odczytów, dokładne wykluczenie jednej gałęzi dla zapisanych przedziałów i niejednoznaczność dopasowańN3. To nie identyfikacja24produktów ani dowód niemożliwościN2 |
@@ -51,7 +62,7 @@ pakietu samym stworzeniem planu, testów ani listy bibliotek.
 | P26 | Zespolony model pokoju ze stratami | Częściowo | Rodzina modalna, 4 ustawienia × 9 scenariuszy strat; Green 1D, pasywność i zbieżność, raport 013. P11 dodaje reakcję pola na napęd i gęstą siatkę, raport 017. Pozycje/straty i rozpraszanie na bryle rzeczywistej pozostają nieznane |
 | P27 | Jeden/dwa subwoofery i ustawienie | Częściowo | 4 scenariusze przy monitorach, 15 876 wierszy S0, 1512 diagnostycznych, 120 przypadków fazy i 48 koniecznych testów gabarytu. U-020 zmienia docelowo kanapę na prawą iRTV na lewą stronę rzutu; konfiguracjav2 i raport019. Wymiary U-019 aktualne; dawne S0 i pozycje nadal nie są pomiarem |
 | P28 | Integracja monitorów i8wyjśćDSP | Do wykonania | Wyłącznie architektura i modele sekcji; zakup/model monitorów odłożony |
-| P29 | Odporna optymalizacja wielokryterialna | Do wykonania | Szeroka pula ma24modele i wspólne obliczenia; pełny front i pojedynczy wybór po integracjiTHD/termiki/DSP/konstrukcji |
+| P29 | Odporna optymalizacja wielokryterialna | Do wykonania | Pula ma26produktów/27konfiguracji, wspólne porównanie liniowe; noweSB nie mają jeszcze rozszerzeniaP06/P17; pojedynczy wybór po integracjiTHD/termiki/DSP/konstrukcji |
 | P30 | Odtwarzalność i przyszły protokół | Częściowo | Kod, hashe i archiwa; pełny rejestr hipotez oraz eksperymentów rozróżniających do zamknięcia |
 
 ## Bramka końcowego raportu

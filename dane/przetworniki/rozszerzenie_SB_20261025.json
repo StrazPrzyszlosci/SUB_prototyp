@@ -1,0 +1,61 @@
+{
+  "version": "SB_extension_1",
+  "access_date": "2026-10-26",
+  "collection_started": "2026-10-25",
+  "evidence": "Dane producenta sprawdzone na oryginalnych PDF; modele liniowe, bez identyfikacji THD lub termiki",
+  "base_pool": "dane/przetworniki/pula_rozszerzona.json",
+  "base_pool_sha256": "36d96aa416cf4135ec890e899be7f7818e0cf85c907a9f8a8456917838352b4b",
+  "new_product_count": 2,
+  "new_electrical_configuration_count": 3,
+  "products": [
+    {
+      "candidate_id": "C25",
+      "manufacturer": "SB Acoustics",
+      "product_name": "SB34SWNRX-S75-6",
+      "nominal_size_class_in": 12,
+      "source_id": "SRC52",
+      "url": "https://sbacoustics.com/wp-content/uploads/2020/11/12in-SB34SWNRX-S75-6.pdf",
+      "pdf_revision": "REV. 0 (17.10.2012)",
+      "private_original_sha256": "a43eb3d19f75c9b943ac544f35ec601d9fb0829847717bae099d30083eb82fa0",
+      "model": {
+        "name": "SB Acoustics SB34SWNRX-S75-6",
+        "fs_hz": 19.0,
+        "qes": 0.34,
+        "qms": 5.0,
+        "vas_l": 164.0,
+        "sd_cm2": 508.0,
+        "re_ohm": 4.5,
+        "le_mh": 3.0,
+        "xmax_mm": 11.25,
+        "nominal_ohm": 6.0
+      },
+      "catalog_extra": {"qts": 0.32, "mms_g": 154.0, "cms_mm_n": 0.46, "bl_tm": 15.4, "rms_kg_s": 3.7},
+      "rated_power_w": {"value": 200, "protocol_label": "IEC 268-5", "used_as_thermal_limit": false},
+      "geometry": {"net_mass_kg": 5.85, "outer_diameter_mm": 346.2, "basket_body_diameter_mm": 305.2, "bolt_circle_mm": 324.2, "bolt_count": 8, "bolt_hole_mm": 5.5, "overall_depth_mm": 156.0, "CNC_release": false},
+      "xmax_definition": "PDF: Linear coil travel p-p 22.5 mm -> peak 11.25 mm. Strona WWW: 22 mm p-p -> 11 mm peak; zachowano konflikt, bez uśredniania.",
+      "web_xmax_peak_mm_alternative": 11.0,
+      "qualification_gates": ["Brak BL(x)/Kms(x)/Le(x,f), identyfikacji cieplnej i porównywalnego THD", "Rysunek nominalny nie ustala luzu otworu CNC", "Kandydat 12-calowy; spełnienie briefu pozostaje do syntezy"]
+    },
+    {
+      "candidate_id": "C26",
+      "manufacturer": "SB Acoustics",
+      "product_name": "SB34SWPL76-3-DV",
+      "nominal_size_class_in": 12,
+      "source_id": "SRC53",
+      "url": "https://sbacoustics.com/wp-content/uploads/2020/03/12in-SB34SWPL76-3-DV.pdf",
+      "pdf_revision": "REV. 1 (03.10.2017)",
+      "private_original_sha256": "35bb56c7c8699007c0b7d7c2ceee188a20f7e556f6d206d719c482a919b36c2c",
+      "common_model": {"fs_hz": 27.5, "qes": 0.52, "qms": 5.62, "vas_l": 43.0, "sd_cm2": 458.0, "xmax_mm": 15.0},
+      "configurations": [
+        {"configuration_id": "C26P", "connection": "parallel", "name": "SB Acoustics SB34SWPL76-3-DV parallel", "re_ohm": 1.25, "nominal_ohm": 1.5, "le_mh": 1.4, "catalog_bl_tm": 9.7},
+        {"configuration_id": "C26S", "connection": "series", "name": "SB Acoustics SB34SWPL76-3-DV series", "re_ohm": 5.0, "nominal_ohm": 6.0, "le_mh": 6.1, "catalog_bl_tm": 19.5}
+      ],
+      "catalog_extra": {"qts": 0.48, "mms_g": 231.0, "cms_mm_n": 0.14, "rms_kg_s": 7.1},
+      "rated_power_w": {"value": 300, "connection": "series", "protocol_label": "IEC 268-5", "parallel_rating": null, "used_as_thermal_limit": false},
+      "geometry": {"net_mass_kg": 7.7, "outer_diameter_mm": 346.2, "basket_body_diameter_mm": 305.2, "bolt_circle_mm": 324.2, "bolt_count": 8, "bolt_hole_mm": 5.5, "overall_depth_mm": 166.7, "CNC_release": false},
+      "xmax_definition": "Linear coil travel p-p 30 mm -> peak 15 mm; katalogowa geometria, nie gwarancja THD.",
+      "qualification_gates": ["Le_series nie jest dokładnie 4*Le_parallel; nie dopasowano wspólnej macierzy cewek", "Qes wspólne według tabeli, bez dopisywania pomiarów osobnych połączeń", "300 W ma w PDF dopisek ser.; nie przypisano limitu cieplnego połączeniu parallel", "Brak charakterystyk nieliniowych, termicznych i THD; brak kwalifikacji rzeczywistego wzmacniacza do 1.5 ohm"]
+    }
+  ],
+  "scope": "Nowe wejście addytywne. Pierwotne 24 modele i ich wielkie kampanie pozostają niezmienione; C04 nie jest końcowym wyborem. U-021: jeden stały front po syntezie."
+}

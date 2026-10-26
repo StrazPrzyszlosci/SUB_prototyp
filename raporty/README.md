@@ -43,3 +43,5 @@ bieżący zakres sprawdzaj w [programie 30 pakietów](../PROGRAM_30_BADAN.md).
 | [035](035_pelna_rama_3D_spoiny_i_podparcie.md) | Raport 035 — P18C: pełna rama 3D, spoiny i podparcie |
 | [036](036_spoiny_3D_i_wirtualne_odspojenie.md) | Raport 036 — P19D: spoiny 3D i wirtualne odspojenie |
 | [037](037_staly_front_wymagany_modul_spoin.md) | Raport 037 — P19E: wymagany moduł spoin stałego frontu |
+| [038](038_SB_Acoustics_rozszerzenie_i_porownanie.md) | Raport 038 — SB Acoustics: rozszerzenie i porównywalne obliczenia |
+| [039](039_wypelnienie_ilosc_polozenie_i_straty.md) | Raport 039 — P09C: ilość, położenie i straty wypełnienia |

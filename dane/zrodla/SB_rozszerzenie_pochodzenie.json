@@ -1,0 +1,97 @@
+{
+  "access_date": "2026-10-26",
+  "sources": [
+    {
+      "source_id": "SRC52",
+      "model": "SB34SWNRX-S75-6",
+      "access_date": "2026-10-26",
+      "manufacturer_page": "https://sbacoustics.com/product/12in-sb34swnrx-s75-6-norex/",
+      "pdf_url": "https://sbacoustics.com/wp-content/uploads/2020/11/12in-SB34SWNRX-S75-6.pdf",
+      "revision": "REV. 0 (17.10.2012)",
+      "private_original": ".firecrawl/sb_extension_norex.pdf",
+      "sha256": "a43eb3d19f75c9b943ac544f35ec601d9fb0829847717bae099d30083eb82fa0",
+      "inspected": "Original PDF page 1 rendered with PyMuPDF; table, drawing, curves and footnotes inspected visually. Download through browser-harness from manufacturer. Recording off.",
+      "plot": {
+        "x": "10 Hz–10 kHz, log",
+        "left_y": "40–100 dB SPL",
+        "right_y": "0–160 ohm",
+        "legend": "SPL on-axis/30/60 deg; terminal impedance",
+        "conditions": "IEC baffle, mic distance 31.6 cm, SPL shown for 2.83 V / 1 m"
+      },
+      "curve_digitization": "NONE; automatic Firecrawl curve tables rejected; no numeric curve values used.",
+      "numerical_data_scope": "Only explicit table parameters, labels and dimensions. Published rounding is not a population tolerance.",
+      "drawing_use": "Nominal dimensions only, no CNC clearance approval. No full 3D basket stiffness inferred.",
+      "transient_browser_error": "page_info initially called before document load; same target verified after wait_for_load, no source outage."
+    },
+    {
+      "source_id": "SRC53",
+      "model": "SB34SWPL76-3-DV",
+      "access_date": "2026-10-26",
+      "manufacturer_page": "https://sbacoustics.com/product/12in-sb34swpl76-3-dv/",
+      "pdf_url": "https://sbacoustics.com/wp-content/uploads/2020/03/12in-SB34SWPL76-3-DV.pdf",
+      "revision": "REV. 1 (03.10.2017)",
+      "private_original": ".firecrawl/sb_extension_dual.pdf",
+      "sha256": "35bb56c7c8699007c0b7d7c2ceee188a20f7e556f6d206d719c482a919b36c2c",
+      "inspected": "Original PDF page 1 rendered with PyMuPDF; table, drawing, curves and footnotes inspected visually. Download through browser-harness from manufacturer. Recording off.",
+      "plot": {
+        "x": "10 Hz–20 kHz, log",
+        "left_y": "40–100 dB SPL",
+        "right_y": "0–80 ohm",
+        "legend": "Blue parallel, red series; SPL and impedance",
+        "conditions": "IEC baffle, mic distance 31.6 cm, SPL shown for 2.83 V / 1 m"
+      },
+      "curve_digitization": "NONE; automatic Firecrawl curve tables rejected; no numeric curve values used.",
+      "numerical_data_scope": "Only explicit table parameters, labels and dimensions. Published rounding is not a population tolerance.",
+      "drawing_use": "Nominal dimensions only, no CNC clearance approval. No full 3D basket stiffness inferred.",
+      "transient_browser_error": null
+    }
+  ],
+  "opinions": [
+    {
+      "model": "SB34SWNRX-S75-6",
+      "url": "https://www.madisoundspeakerstore.com/approx-12-subwoofers/sb-acoustics-sb34swnrx-s75-12-woofer/",
+      "private_document": ".firecrawl/sb_extension_norex_owners.md",
+      "status": "OWNER_REPORT_SHOP_NOT_INDEPENDENT_LAB",
+      "review_date": "2016-09-19",
+      "observation": "One posted buyer report describes installation in existing five-sided vented enclosure and subjective positive impression. Shop sealed-box recommendation is editorial content, separate from buyer report.",
+      "limits": "No reproducible THD, temperature or controlled comparison. Vented subjective report is not evidence of sealed performance. Page header first-review text conflicts with review block; one block read, not a verified total count.",
+      "access_date": "2026-10-26",
+      "document_sha256": "d251f4dc26b2d42610e273606cb5f8a104cf362a4a10107ed1aa1b3bc2a648d8",
+      "accepted_numeric_performance_claims": []
+    },
+    {
+      "model": "SB34SWPL76-3-DV",
+      "url": "https://www.diymobileaudio.com/threads/best-budget-items-in-car-audio.140112/page-3",
+      "private_document": ".firecrawl/sb_extension_dual_mobile.md",
+      "status": "EXACT_MODEL_QUESTION_NOT_OWNER_RESULT",
+      "observation": "Public extraction contains an exact-model purchase question dated 2021-03-09, with link into page 2.",
+      "limits": "No accepted owner test or comparative performance result in the inspected excerpt. No transfer from car-audio context.",
+      "access_date": "2026-10-26",
+      "document_sha256": "891da47f64649b3b2ec9f45ecddfc78dfa8917ee099fa0962d9258b15a41793e",
+      "accepted_numeric_performance_claims": []
+    },
+    {
+      "model": "SB34SWPL76-3-DV",
+      "url": "https://zelfbouwaudio.nl/forum/viewtopic.php?t=31643&start=25",
+      "private_document": ".firecrawl/sb_extension_dual_forum.md",
+      "status": "UNAVAILABLE_503_LOGIN_REQUIRED",
+      "observation": "Firecrawl returned 503 service unavailable with forum statement that access is limited to logged-in members.",
+      "limits": "Search snippet not accepted as read article, no login and no inferred measurements.",
+      "access_date": "2026-10-26",
+      "document_sha256": "1b9493353e585c150ffeed3d00fc43c4bb6fd96d808f2108e74596b10101b492",
+      "accepted_numeric_performance_claims": []
+    },
+    {
+      "model": "SB34SWNRX-S75-6 versus SB34SWPL76-4",
+      "url": "https://www.diyaudio.com/community/threads/differences-between-sba-sb34swpl76-4-and-sb34swnrx-s75-6.435577/",
+      "private_document": ".firecrawl/sb_extension_diyaudio_comparison.md",
+      "status": "DESIGN_QUESTION_NOT_COMPARATIVE_TEST",
+      "observation": "Author asks about 180 l sealed cabinets and possible lower THD; subsequent visible answers ask to repost to proper forum.",
+      "limits": "Numbers cited by author and predictions from a database are not accepted measurements. No THD winner identified.",
+      "access_date": "2026-10-26",
+      "document_sha256": "67e070998aed3e6b84d06ba43b28a5458760372e285a22c504ea0ca1e9f6a2f1",
+      "accepted_numeric_performance_claims": []
+    }
+  ],
+  "copyright_policy": "Originals and verbatim extracts private .firecrawl; public factual parameters, hashes, short paraphrases, own calculations and figures."
+}
