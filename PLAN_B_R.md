@@ -207,9 +207,10 @@ kampanii bez nowej hipotezy zmieniającej decyzję.
 
 Mechanika doszła do frontu, styku w czasie i pełnej ramy 3D (033–036),
 a P19E wyznacza wymagania sztywności stałego frontu (037). **Najbliższy
-krok po P20B: P20C — pełne 3D modułu referencyjnego z osobnymi portami
-ciśnienia wnętrze/zewnętrze**, przy zachowaniu kontrolnej sztywno blokowanej
-przegrody w porównaniu. Następnie pole P21. Porównanie MDF/sklejka z R3
+krok po P20C: P21B — przestrzenne pole gazu wewnątrz modułu i sprzężenie
+z pełną bryłą**, z bilansem energii i granicą0D. Następnie główna komora
+z regulacją i włókniną. Kontrolna sztywno blokowana przegroda pozostaje
+w porównaniu metod. Porównanie MDF/sklejka z R3
 ma pierwotne dane i wskaźniki pasa; pełna płyta i klejenie pozostają otwarte.
 Screening odspojenia nadal nie jest zbieżną prognozą odporności na pękanie.
 
@@ -235,6 +236,14 @@ jest niższa, ale nie obejmuje kompletnego mechanizmu. Sprawdzono dostęp,
 pełne układy nodalne, siatki, granice i 72 stany hermetycznego gazu.
 SRC54/55 dodają pierwotne dane sklejki: 9 porównań masy i sztywności pasa,
 bez fikcyjnego uzupełniania skręcania/nu/dampingu lub adhezji powłoki.
+
+Raport044 ma18podstawowych brył modułu,rzeczywiste spoiny i dwa porty
+pracy. Osiem flag przy wspólnychHz rozstrzygnięto n16,do40248DOF;
+oddzielne grubości i pierwotne wyniki zachowano. Ciągła wymagana
+sztywność spoin jest kryterium porównawczym,nie zatwierdzeniem kleju.
+11664punkty27konfiguracji pokazują małą korektę liniowego napędu
+w zbadanym zakresie. Pierwsze istotne porty blisko/powyżej odniesienia
+przestrzennego gazu wymagają P21B; gaz0D nie jest ich fizyczną walidacją.
 
 Raport 038 rozszerza pulę do 26 produktów / 27 konfiguracji elektrycznych,
 w tym trzech SB Acoustics. Nowe SB mają odrębne obliczenia liniowe;

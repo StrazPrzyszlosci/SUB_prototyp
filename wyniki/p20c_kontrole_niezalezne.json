@@ -1,0 +1,446 @@
+{
+  "status": "3D_MASS_VOLUME_WORK_HYDROSTATIC_AND_INDEPENDENT_COUPLED_GAS_CONTROLS",
+  "geometry": [
+    {
+      "ndof": 4824,
+      "elements": 1052,
+      "analytic_budgets": {
+        "mdf_volume_m3": 0.0009358233599999996,
+        "glue_volume_m3": 2.6726400000000007e-06,
+        "inner_air_m3": 0.002121504,
+        "dry_mass_kg": 0.6851020799999996
+      },
+      "rigid_force_scaled_error": 4.723633656034697e-16,
+      "rigid_stiffness_scaled_error": 1.741044726269552e-16,
+      "affine_volume_errors": [
+        1.7007092901733405e-15,
+        0.0,
+        0.0,
+        2.879669813531011e-17,
+        1.417257741811117e-15,
+        5.865737760755118e-17,
+        2.231765731123463e-17,
+        1.4620660615290223e-16,
+        8.503546450866702e-16
+      ],
+      "mass_tensor_relative_error": 1.930433843743098e-15,
+      "static_relative_residual": 1.5073203147594756e-12,
+      "reciprocity_relative_error": 4.340115947352793e-16
+    },
+    {
+      "ndof": 8688,
+      "elements": 1895,
+      "analytic_budgets": {
+        "mdf_volume_m3": 0.0009569433599999996,
+        "glue_volume_m3": 3.0726400000000007e-06,
+        "inner_air_m3": 0.0020999840000000005,
+        "dry_mass_kg": 0.7008116799999997
+      },
+      "rigid_force_scaled_error": 1.882269143067159e-16,
+      "rigid_stiffness_scaled_error": 1.6190140768861568e-16,
+      "affine_volume_errors": [
+        2.9762412578033456e-15,
+        0.0,
+        0.0,
+        3.435881195357518e-17,
+        2.834515483622234e-15,
+        9.999694516196602e-17,
+        1.3996977246243703e-16,
+        1.6190249343632674e-16,
+        2.2676123868977873e-15
+      ],
+      "mass_tensor_relative_error": 5.656977033326562e-15,
+      "static_relative_residual": 9.41986539903029e-13,
+      "reciprocity_relative_error": 4.05371663559355e-16
+    },
+    {
+      "ndof": 4824,
+      "elements": 1052,
+      "analytic_budgets": {
+        "mdf_volume_m3": 0.0009358233599999996,
+        "glue_volume_m3": 2.6726400000000007e-06,
+        "inner_air_m3": 0.002121504,
+        "dry_mass_kg": 0.6863582207999996
+      },
+      "rigid_force_scaled_error": 4.723633656034697e-16,
+      "rigid_stiffness_scaled_error": 1.594071546136115e-16,
+      "affine_volume_errors": [
+        1.7007092901733405e-15,
+        0.0,
+        0.0,
+        2.879669813531011e-17,
+        1.417257741811117e-15,
+        5.865737760755118e-17,
+        2.231765731123463e-17,
+        1.4620660615290223e-16,
+        8.503546450866702e-16
+      ],
+      "mass_tensor_relative_error": 1.918289787719255e-15,
+      "static_relative_residual": 2.528065752743673e-12,
+      "reciprocity_relative_error": 1.0105573378988295e-16
+    },
+    {
+      "ndof": 4824,
+      "elements": 1052,
+      "analytic_budgets": {
+        "mdf_volume_m3": 0.0009358233599999996,
+        "glue_volume_m3": 2.6726400000000007e-06,
+        "inner_air_m3": 0.002121504,
+        "dry_mass_kg": 0.6863582207999996
+      },
+      "rigid_force_scaled_error": 4.723633656034697e-16,
+      "rigid_stiffness_scaled_error": 1.6776630275722127e-16,
+      "affine_volume_errors": [
+        1.7007092901733405e-15,
+        0.0,
+        0.0,
+        2.879669813531011e-17,
+        1.417257741811117e-15,
+        5.865737760755118e-17,
+        2.231765731123463e-17,
+        1.4620660615290223e-16,
+        8.503546450866702e-16
+      ],
+      "mass_tensor_relative_error": 1.918289787719255e-15,
+      "static_relative_residual": 1.5735013947475607e-12,
+      "reciprocity_relative_error": 3.4647973079439127e-16
+    },
+    {
+      "ndof": 8688,
+      "elements": 1895,
+      "analytic_budgets": {
+        "mdf_volume_m3": 0.0009569433599999996,
+        "glue_volume_m3": 3.0726400000000007e-06,
+        "inner_air_m3": 0.0020999840000000005,
+        "dry_mass_kg": 0.7022558207999997
+      },
+      "rigid_force_scaled_error": 1.882269143067159e-16,
+      "rigid_stiffness_scaled_error": 1.789014140831548e-16,
+      "affine_volume_errors": [
+        2.9762412578033456e-15,
+        0.0,
+        0.0,
+        3.435881195357518e-17,
+        2.834515483622234e-15,
+        9.999694516196602e-17,
+        1.3996977246243703e-16,
+        1.6190249343632674e-16,
+        2.2676123868977873e-15
+      ],
+      "mass_tensor_relative_error": 9.846975410130065e-15,
+      "static_relative_residual": 9.923817958841848e-13,
+      "reciprocity_relative_error": 2.5841742805949406e-16
+    },
+    {
+      "ndof": 8688,
+      "elements": 1895,
+      "analytic_budgets": {
+        "mdf_volume_m3": 0.0009569433599999996,
+        "glue_volume_m3": 3.0726400000000007e-06,
+        "inner_air_m3": 0.0020999840000000005,
+        "dry_mass_kg": 0.7022558207999997
+      },
+      "rigid_force_scaled_error": 1.882269143067159e-16,
+      "rigid_stiffness_scaled_error": 1.6712577369846967e-16,
+      "affine_volume_errors": [
+        2.9762412578033456e-15,
+        0.0,
+        0.0,
+        3.435881195357518e-17,
+        2.834515483622234e-15,
+        9.999694516196602e-17,
+        1.3996977246243703e-16,
+        1.6190249343632674e-16,
+        2.2676123868977873e-15
+      ],
+      "mass_tensor_relative_error": 9.846975410130065e-15,
+      "static_relative_residual": 7.077034575249268e-13,
+      "reciprocity_relative_error": 1.348414722685182e-16
+    }
+  ],
+  "hydrostatic": [
+    {
+      "braced": false,
+      "solid_bulk_compliance_exact_m3_pa": 5.362834285714268e-13,
+      "computed_m3_pa": 5.36283428571427e-13,
+      "relative_error": 4.440892098500626e-16,
+      "affine_force_relative_error": 8.934422944733773e-15
+    },
+    {
+      "braced": true,
+      "solid_bulk_compliance_exact_m3_pa": 5.485805714285749e-13,
+      "computed_m3_pa": 5.485805714285738e-13,
+      "relative_error": 1.9984014443252818e-15,
+      "affine_force_relative_error": 1.2013905811018446e-14
+    }
+  ],
+  "full_nodal_gas": [
+    {
+      "braced": false,
+      "glue_E_pa": 10000000.0,
+      "f_hz": 20.0,
+      "G_m3_pa_s": 0.0,
+      "admittance_relative_error": 1.1310812591137372e-12,
+      "pressure_ratio_error": 1.893424736601283e-13,
+      "power_residual": 4.849837272154775e-15
+    },
+    {
+      "braced": false,
+      "glue_E_pa": 10000000.0,
+      "f_hz": 80.0,
+      "G_m3_pa_s": 0.0,
+      "admittance_relative_error": 6.673924679554043e-13,
+      "pressure_ratio_error": 1.3709346707676135e-13,
+      "power_residual": 2.7576890800620577e-14
+    },
+    {
+      "braced": false,
+      "glue_E_pa": 10000000.0,
+      "f_hz": 20.0,
+      "G_m3_pa_s": 9.396780347483515e-08,
+      "admittance_relative_error": 4.994658533454766e-13,
+      "pressure_ratio_error": 1.6437554204952712e-13,
+      "power_residual": 1.6614411706844912e-13
+    },
+    {
+      "braced": false,
+      "glue_E_pa": 10000000.0,
+      "f_hz": 80.0,
+      "G_m3_pa_s": 9.396780347483515e-08,
+      "admittance_relative_error": 2.544647183537344e-13,
+      "pressure_ratio_error": 2.56914223090636e-13,
+      "power_residual": 1.4172270008005935e-13
+    },
+    {
+      "braced": false,
+      "glue_E_pa": 10000000.0,
+      "f_hz": 20.0,
+      "G_m3_pa_s": 9.396780347483515e-06,
+      "admittance_relative_error": 1.931831026248019e-13,
+      "pressure_ratio_error": 3.759233236069824e-14,
+      "power_residual": 2.9873358451719473e-14
+    },
+    {
+      "braced": false,
+      "glue_E_pa": 10000000.0,
+      "f_hz": 80.0,
+      "G_m3_pa_s": 9.396780347483515e-06,
+      "admittance_relative_error": 2.0921564749238658e-13,
+      "pressure_ratio_error": 1.26407557817234e-13,
+      "power_residual": 1.840706625263563e-13
+    },
+    {
+      "braced": false,
+      "glue_E_pa": 1718000000.0,
+      "f_hz": 20.0,
+      "G_m3_pa_s": 0.0,
+      "admittance_relative_error": 6.009077389855685e-13,
+      "pressure_ratio_error": 3.824735370500179e-14,
+      "power_residual": 3.1481814867313863e-15
+    },
+    {
+      "braced": false,
+      "glue_E_pa": 1718000000.0,
+      "f_hz": 80.0,
+      "G_m3_pa_s": 0.0,
+      "admittance_relative_error": 7.401853029598222e-14,
+      "pressure_ratio_error": 1.6668157596224246e-13,
+      "power_residual": 9.470346659901934e-15
+    },
+    {
+      "braced": false,
+      "glue_E_pa": 1718000000.0,
+      "f_hz": 20.0,
+      "G_m3_pa_s": 9.396780347483515e-08,
+      "admittance_relative_error": 2.0817410698220518e-13,
+      "pressure_ratio_error": 6.520356134079961e-14,
+      "power_residual": 7.157791756720649e-14
+    },
+    {
+      "braced": false,
+      "glue_E_pa": 1718000000.0,
+      "f_hz": 80.0,
+      "G_m3_pa_s": 9.396780347483515e-08,
+      "admittance_relative_error": 1.1840945637419103e-13,
+      "pressure_ratio_error": 1.5010215462338706e-13,
+      "power_residual": 1.0004529363918585e-13
+    },
+    {
+      "braced": false,
+      "glue_E_pa": 1718000000.0,
+      "f_hz": 20.0,
+      "G_m3_pa_s": 9.396780347483515e-06,
+      "admittance_relative_error": 3.4109416017509566e-14,
+      "pressure_ratio_error": 6.394212381160443e-15,
+      "power_residual": 2.9517300150432004e-14
+    },
+    {
+      "braced": false,
+      "glue_E_pa": 1718000000.0,
+      "f_hz": 80.0,
+      "G_m3_pa_s": 9.396780347483515e-06,
+      "admittance_relative_error": 9.48260930877273e-14,
+      "pressure_ratio_error": 6.005731928623202e-14,
+      "power_residual": 9.451422468069033e-14
+    },
+    {
+      "braced": true,
+      "glue_E_pa": 10000000.0,
+      "f_hz": 20.0,
+      "G_m3_pa_s": 0.0,
+      "admittance_relative_error": 3.0619266235722246e-14,
+      "pressure_ratio_error": 3.0011952415947016e-16,
+      "power_residual": 3.2998406308315965e-16
+    },
+    {
+      "braced": true,
+      "glue_E_pa": 10000000.0,
+      "f_hz": 80.0,
+      "G_m3_pa_s": 0.0,
+      "admittance_relative_error": 1.6022828640217435e-14,
+      "pressure_ratio_error": 1.4586924889075576e-16,
+      "power_residual": 3.5304649189123766e-15
+    },
+    {
+      "braced": true,
+      "glue_E_pa": 10000000.0,
+      "f_hz": 20.0,
+      "G_m3_pa_s": 9.301461784295357e-08,
+      "admittance_relative_error": 5.833286056753692e-15,
+      "pressure_ratio_error": 3.110964303411351e-16,
+      "power_residual": 1.4104048760117558e-16
+    },
+    {
+      "braced": true,
+      "glue_E_pa": 10000000.0,
+      "f_hz": 80.0,
+      "G_m3_pa_s": 9.301461784295357e-08,
+      "admittance_relative_error": 1.0000111747043564e-14,
+      "pressure_ratio_error": 1.4225790221902086e-16,
+      "power_residual": 1.91001314188178e-15
+    },
+    {
+      "braced": true,
+      "glue_E_pa": 10000000.0,
+      "f_hz": 20.0,
+      "G_m3_pa_s": 9.301461784295357e-06,
+      "admittance_relative_error": 1.873043241445849e-14,
+      "pressure_ratio_error": 3.6554208997266845e-15,
+      "power_residual": 1.8550333245270547e-14
+    },
+    {
+      "braced": true,
+      "glue_E_pa": 10000000.0,
+      "f_hz": 80.0,
+      "G_m3_pa_s": 9.301461784295357e-06,
+      "admittance_relative_error": 1.3487530270096901e-15,
+      "pressure_ratio_error": 7.021666937153402e-16,
+      "power_residual": 8.046104319921531e-16
+    },
+    {
+      "braced": true,
+      "glue_E_pa": 1718000000.0,
+      "f_hz": 20.0,
+      "G_m3_pa_s": 0.0,
+      "admittance_relative_error": 1.906654051348103e-15,
+      "pressure_ratio_error": 1.4747338978993003e-17,
+      "power_residual": 1.6750514623996029e-16
+    },
+    {
+      "braced": true,
+      "glue_E_pa": 1718000000.0,
+      "f_hz": 80.0,
+      "G_m3_pa_s": 0.0,
+      "admittance_relative_error": 5.711317448564942e-15,
+      "pressure_ratio_error": 2.2551991587499495e-17,
+      "power_residual": 9.815128802000332e-16
+    },
+    {
+      "braced": true,
+      "glue_E_pa": 1718000000.0,
+      "f_hz": 20.0,
+      "G_m3_pa_s": 9.301461784295357e-08,
+      "admittance_relative_error": 2.4923693554003317e-16,
+      "pressure_ratio_error": 8.673617379884035e-17,
+      "power_residual": 0.0
+    },
+    {
+      "braced": true,
+      "glue_E_pa": 1718000000.0,
+      "f_hz": 80.0,
+      "G_m3_pa_s": 9.301461784295357e-08,
+      "admittance_relative_error": 2.014392193312091e-15,
+      "pressure_ratio_error": 2.48374603233007e-17,
+      "power_residual": 3.9934434898564617e-16
+    },
+    {
+      "braced": true,
+      "glue_E_pa": 1718000000.0,
+      "f_hz": 20.0,
+      "G_m3_pa_s": 9.301461784295357e-06,
+      "admittance_relative_error": 8.657137726951033e-15,
+      "pressure_ratio_error": 1.5463617361248926e-15,
+      "power_residual": 8.649495216046454e-15
+    },
+    {
+      "braced": true,
+      "glue_E_pa": 1718000000.0,
+      "f_hz": 80.0,
+      "G_m3_pa_s": 9.301461784295357e-06,
+      "admittance_relative_error": 1.0853728057122079e-15,
+      "pressure_ratio_error": 4.965068306494546e-16,
+      "power_residual": 1.0951511366190722e-15
+    }
+  ],
+  "open_limit_witnesses": [
+    {
+      "braced": false,
+      "glue_E_pa": 10000000.0,
+      "open_returned_compliance_m3_pa": 1.495614131524989e-08,
+      "Ci_m3_pa": 1.4955440414507794e-08,
+      "common_material_compliance_m3_pa": 7.009007420997979e-13
+    },
+    {
+      "braced": false,
+      "glue_E_pa": 1718000000.0,
+      "open_returned_compliance_m3_pa": 1.495597656732106e-08,
+      "Ci_m3_pa": 1.4955440414507794e-08,
+      "common_material_compliance_m3_pa": 5.3615281326602e-13
+    },
+    {
+      "braced": true,
+      "glue_E_pa": 10000000.0,
+      "open_returned_compliance_m3_pa": 1.4804474146017313e-08,
+      "Ci_m3_pa": 1.4803736209509669e-08,
+      "common_material_compliance_m3_pa": 7.379365076453299e-13
+    },
+    {
+      "braced": true,
+      "glue_E_pa": 1718000000.0,
+      "open_returned_compliance_m3_pa": 1.4804284639971481e-08,
+      "Ci_m3_pa": 1.4803736209509669e-08,
+      "common_material_compliance_m3_pa": 5.48430461811523e-13
+    }
+  ],
+  "algebra": {
+    "open_limit_error": "0",
+    "sealed_limit_error": "0",
+    "dc_noncommuting_gap": "(b**2 + (a + ci)*(a + 2*b + ci))/(a + ci)",
+    "thin_wall_reduction_error": "0"
+  },
+  "elapsed_seconds": 39.07792010798585,
+  "peak_rss_mib": 353.51953125,
+  "input_sha256": {
+    "dane/konfiguracje/p20c_modul_pelny_3D.json": "f77ec32d7f65fff5c680c58db27375476326f4d35da00337ea2bfdcfae2c7e68",
+    "dane/konfiguracje/p20a_regulacja_objetosci.json": "eed4cd0696db7b82249e167cac9cbd4b27dfae1d239e2f2079623a4b288eaf29",
+    "skrypty/sprawdz_modul_3D_P20C.py": "916d7cacf373a5308688822f275abb77a1b30171361f2f5469d65a040a7b7d7b",
+    "skrypty/model_modulu_3D_P20C.py": "f55105368bc8ae7e228c4b3d7c715019a4c6287c1e36f5cb4318ad3d923d1fbe",
+    "skrypty/element_brylowy_P18C.py": "d90d0c7f1adf2d00249220653b8335ea1e021b07b774dc770921029da4a8aacb",
+    "skrypty/model_ramy_3D_P18C.py": "698395a0d216659572ae84c1fea1b1251a67c5c32b99a7cf84cc55582e33e1ad"
+  },
+  "limitations": [
+    "Homogeneous hydrostatic benchmark does not identify real MDF or glue.",
+    "Full nodal gas solve is independent elimination on the same mesh,not physical validation.",
+    "No strength,fatigue,creep,contact opening or exterior radiation identification."
+  ]
+}

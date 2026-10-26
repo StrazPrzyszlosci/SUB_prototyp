@@ -1,6 +1,6 @@
 {
   "status": "WYKONANY_ZAKRES_P14B_I_P15B_NIE_KONIEC_PROGRAMU_PROTOTYPU",
-  "generated_at": "2026-10-26T16:14:46.491879+01:00",
+  "generated_at": "2026-10-26T18:31:26.815050+01:00",
   "libraries": {
     "Python": "3.12.3",
     "NumPy": "1.26.4",
@@ -36,7 +36,7 @@
     "skrypty/model_subwoofera.py": "bd7e6e250a5b9a605fbbb05343381b827ffa81047a90c692968fc8e34eedc2b8",
     "skrypty/model_termiczny_P15.py": "856f32fe3f080bce780bb0a095ac477abe2af38dc894a608a8ab65c17bc3a4ac",
     "skrypty/model_wymuszen_P14B.py": "893fa2798fbc63cbeba75a3b675e63188de396d25d379718fb4fce78350affbc",
-    "skrypty/odtworz_wszystko.py": "272be63716c8352c900f18fde0422a94f3398c979c696de016aa82c7e35d7c6b",
+    "skrypty/odtworz_wszystko.py": "8dbcdfae2382c34c939c8053c7202244a587e5b5f0d83dc53401a3bbbd45328f",
     "skrypty/podsumuj_studia_P14B.py": "3188df2cb8e78d4867f10bd721a65a0dad516ba72321141936ead2c5a6c57621",
     "skrypty/projekcja_P14B.py": "38a8414e311e8a86535cdcfcb434ccfab943183057f89243fc65b634ee632c66",
     "skrypty/raportuj_pelne_P14B.py": "e16b908ee9992ee2c873dd5047a31e94aab2971bcc3ca200eddd666813dd8745",
@@ -207,9 +207,9 @@
     "wyniki/p15b_sprzezenie_i_obwiednie.csv": "3428913b16637a0a54b09f09acbbef61ab5d4e13c413a4c21889df6412bd6442"
   },
   "documentation_sha256": {
-    "AGENTS.md": "776ef1cc7fd38e21c209c6e3c0e45a7ebd38539bf3b2c3c678e0f4bf9bb645f8",
-    "README.md": "6651840d02e9bacc8c8061d469715b825a78268e73e7011449a0fd36fcb509e8",
-    "PROGRAM_30_BADAN.md": "734d5085a48cf835925d5886f5a1d9ebc0d64221c3e96d0bbb9e690cc3d8092e",
+    "AGENTS.md": "f67e20ebbc2b3306c668273f03e9ba0ae4e6a8d256441d0680191a191d26d2d2",
+    "README.md": "9a72060c8623b979b255d5b862de192a2f4abc2bfee8a86bfc954e79a9143360",
+    "PROGRAM_30_BADAN.md": "12b4cf13d0afc11840682fb5def064a40d86b86c23427dd8e22f05d731954669",
     "raporty/026_P14B_pelna_kampania_dwutonowa.md": "884556219af3eada5c019ce1180d664a3241f221de0d81ece0a2980ccf4c0fab",
     "raporty/027_P15B_sprzezenie_grzania_i_napedu.md": "3f40d9878f6a331efac67ceb387e17ec18b23d2f7c65f7414e6df54ea836ccde",
     "baza_wiedzy/18_sprzezenie_termiczne_i_obwiednia.md": "3153d9b10ed909430924271c74cd003be4b7c247f3b791e2e5348eaccd67af0b",

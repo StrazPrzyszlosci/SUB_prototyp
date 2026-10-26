@@ -1,0 +1,30 @@
+{
+  "date":"2026-10-26",
+  "status":"FULL_3D_CONTROL_MODULE_WITH_PHYSICAL_GLUE_VOLUME_NOT_QUALIFIED_PRODUCT",
+  "reference_insert_config":"dane/konfiguracje/p20a_regulacja_objetosci.json",
+  "outer_width_depth_height_m":[0.18,0.1,0.17],
+  "wall_m":0.008,
+  "glue_thickness_m_assumed":0.0002,
+  "glue_E_pa_cases_assumed":[10000000.0,100000000.0,1718000000.0],
+  "glue_nu_assumed":0.35,
+  "glue_density_kg_m3_assumed":1200.0,
+  "mesh_resolution_cases":[4,8,12],
+  "wall_elements":2,
+  "glue_elements":1,
+  "retained_elastic_modes":24,
+  "material_loss_zeta_at_reference_assumed":0.02,
+  "material_loss_reference_hz":200.0,
+  "probe_frequencies_hz":[20.0,25.0,31.5,40.0,63.0,80.0],
+  "gas_kappa_cases":[1.0,1.4],
+  "leak_100l_reference_corner_hz_cases":[0.0,0.01,1.0,10.0,100.0,"inf"],
+  "mesh_relative_change_screen_assumed":0.05,
+  "gates":[
+    "MDF/klej są rodzinami założeń.1718MPa jest referencją znanej karty folii,nie modułem zidentyfikowanej spoiny MDF ani doborem kleju.",
+    "Pełna objętość spoin jest częścią geometrii; ściąg ma dodatkowe spoiny pad-rod,nieobecne w skupionym P20A. Rod skrócony zamiast nakładania objętości.",
+    "H8 z własnym EAS9 i zgodną masą nodalną. Nie jest to certyfikowany element komercyjnego solvera; potrzebuje odrębnych odniesień i siatek.",
+    "Gaz jednolity0D i brak reakcji promieniowania zewnętrznego/pokoju. Formalne odpowiedzi ponad pierwszą referencją przestrzenną nie są walidacją fizycznego modu.",
+    "Swobodna zamknięta bryła ma sześć ruchów sztywnych; podparcie w korpusie i niejednorodne wymuszenie zostają do integracji.",
+    "Małe deformacje, dodatni liniowy klej bez odspajania,pełzania i histerezy. Brak Gc,S-N,J(t) oraz kwalifikacji MDF i rzeczywistej partii kleju.",
+    "Moduł100mm jest odniesieniem do porównania; sztywno blokowana przegroda pozostaje alternatywą. Nie ma końcowego wyboru głośnika lub całej konstrukcji."
+  ]
+}

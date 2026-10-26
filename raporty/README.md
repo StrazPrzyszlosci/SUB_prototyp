@@ -49,3 +49,4 @@ bieżący zakres sprawdzaj w [programie 30 pakietów](../PROGRAM_30_BADAN.md).
 | [041](041_lokalny_podmodel_i_granice_wiarygodnosci.md) | Raport 041 — P19G: lokalny podmodel i granice wiarygodności |
 | [042](042_regulacja_Vb_i_wklady_wypornosciowe.md) | Raport 042 — P20A: regulacja Vb i wkłady wypornościowe |
 | [043](043_przegroda_dwie_komory_i_materialy.md) | Raport 043 — P20B: przegroda, dwie komory i porównanie materiałów |
+| [044](044_modul_3D_dwa_porty_i_wymagania_kleju.md) | Raport 044 — P20C: moduł 3D, dwa porty i wymagania kleju |

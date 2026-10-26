@@ -1,0 +1,26 @@
+{
+  "status": "SELECTED_SAME_FREQUENCY_AND_SEPARATE_THICKNESS_WITNESSES",
+  "cases": 24,
+  "outside_assumed_5pct_port_screen": 8,
+  "max_matrix_relative_difference": 0.09546075986661785,
+  "max_sealed_admittance_relative_difference": 0.09627122029837586,
+  "peak_rss_mib": 1350.30859375,
+  "input_sha256": {
+    "dane/konfiguracje/p20c_modul_pelny_3D.json": "f77ec32d7f65fff5c680c58db27375476326f4d35da00337ea2bfdcfae2c7e68",
+    "dane/konfiguracje/p20a_regulacja_objetosci.json": "eed4cd0696db7b82249e167cac9cbd4b27dfae1d239e2f2079623a4b288eaf29",
+    "skrypty/sprawdz_siatke_modulu_P20C.py": "db4888498fc9db2243b44a006f419d336e6f14de1d7dc155c320bad59a93e2b3",
+    "skrypty/model_modulu_3D_P20C.py": "f55105368bc8ae7e228c4b3d7c715019a4c6287c1e36f5cb4318ad3d923d1fbe",
+    "skrypty/analiza_modulu_3D_P20C.py": "9affc07b22a946e31fe5a1d695999d876871e5d8490baae8a02a9f5bf3aa7957",
+    "skrypty/element_brylowy_P18C.py": "d90d0c7f1adf2d00249220653b8335ea1e021b07b774dc770921029da4a8aacb",
+    "skrypty/model_ramy_3D_P18C.py": "698395a0d216659572ae84c1fea1b1251a67c5c32b99a7cf84cc55582e33e1ad",
+    "wyniki/p20c_przypadki/529cba5059ecc66a/BARE_E1e+07_N12.json": "23fd1bb8f8972a69f15daf766217cd33679f26a833441b156de7ce15b4f4b00c",
+    "wyniki/p20c_przypadki/529cba5059ecc66a/BARE_E1.718e+09_N12.json": "4ad4c0628fa13f6a9f6ab059c358329bab7f821b871973028a3aa509dff78149",
+    "wyniki/p20c_przypadki/529cba5059ecc66a/TIED_E1e+07_N12.json": "e190e75a113de0a4d1f8e0bb1de7b4a2c4431821ac55d997817eda3edad31d00",
+    "wyniki/p20c_przypadki/529cba5059ecc66a/TIED_E1.718e+09_N12.json": "a5490c724ecf5e506e15c873c7ccb2b65824a3176f34658660b49213dcd5e5c6",
+    "wyniki/p20c_przypadki/529cba5059ecc66a/TIED_E1.718e+09_N8.json": "bfb5af9f912501c9ca46b04cd9eb690cd9c4290dfb388fc4e942a2ff79de0d7b"
+  },
+  "limitations": [
+    "Selected common-Hz and thickness witnesses,not continuum or all-frequency certification.",
+    "Gas reduction beyond empty-cavity reference is formal; it does not validate a physical spatial mode."
+  ]
+}

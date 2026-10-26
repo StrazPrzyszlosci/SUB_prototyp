@@ -11,13 +11,16 @@ raportów, danych i odtwarzalnych obliczeń.
 **Stan: 2026-10-26.** Pula obejmuje **26 produktów od 11 producentów**,
 w tym 4 STX i **3 SB Acoustics**. Liczymy **27 konfiguracji elektrycznych**,
 ponieważ nowy dwucewkowy SB ma osobno połączenie szeregowe i równoległe.
-**Aktualny etap: porównanie metod regulacji i materiałów.**
-[Raport 043](raporty/043_przegroda_dwie_komory_i_materialy.md) dodaje przegrodę
-w kilku pozycjach, 56 modeli podparcia, dwie komory/przecieki i 72 432 punkty
-napędu dla 27 konfiguracji. Przegroda jest lżejsza, ale miękkie podparcie
-może wprowadzać silny rezonans basowy. Moduły z [raportu 042](raporty/042_regulacja_Vb_i_wklady_wypornosciowe.md)
-pozostają odniesieniem do pełnego 3D; metoda regulacji jest jeszcze otwarta.
-Dodano pierwotne dane sklejki i porównanie masy oraz obu kierunków sztywności pasa.
+**Aktualny etap: pełna mechanika 3D regulatora i przejście do pola gazu.**
+[Raport 044](raporty/044_modul_3D_dwa_porty_i_wymagania_kleju.md) dodaje
+18 modeli ścian, naroży i spoin modułu, dalsze siatki do 40 248 DOF,
+ciągłe wymaganie sztywności kleju oraz 11 664 punkty napędu 27 konfiguracji.
+Model bryłowy koryguje podatność modułu o około 33% względem idealnego
+utwierdzenia płyt; wpływ na liniową obwiednię napędu jest mały w badanej dziedzinie.
+[Raport 043](raporty/043_przegroda_dwie_komory_i_materialy.md) zachowuje
+porównanie z lżejszą przegrodą oraz dane sklejki. Osiem flag siatki przy
+rezonansach rozstrzygnięto dalszym zagęszczeniem, z zachowaniem pierwotnych wyników.
+Metoda regulacji, rzeczywisty klej i końcowa konstrukcja pozostają otwarte.
 Powiązane wyniki obejmują [dodatkowe SB — 038](raporty/038_SB_Acoustics_rozszerzenie_i_porownanie.md),
 [wypełnienie — 039](raporty/039_wypelnienie_ilosc_polozenie_i_straty.md),
 [listwę stałego frontu — 040](raporty/040_listwa_stalego_frontu_i_droga_sily.md)
@@ -53,6 +56,7 @@ nie zatwierdzonym docelowym głośnikiem.
 | Wypełnienie | **Obliczenie/symulacja:** liczymy masę, objętość włókien i gazu oraz wpływ położenia na straty; porowata mata i sztywny wkład mają różne bilanse | Konkretny materiał, rozmieszczenie, mocowanie i powiązanie z komorą 3D oraz regulacją Vb |
 | Konstrukcja | **Symulacja:** w referencyjnej ramie jeden ściąg zmniejsza podatność o około 18% przy dodatkowych 0,464 kg | Geometria dla wybranego głośnika, lokalne połączenia i pełne sprzężenie z powietrzem |
 | Klej | **Symulacja:** wyznaczono wymagania sztywności; energia wirtualnego odspojenia zmienia się o 27–41% między dwiema siatkami | Nośność, adhezja do MDF, pełzanie, zmęczenie i zbieżna analiza lokalna; D3/D4 nie wystarcza |
+| Moduł wypornościowy 3D | **Obliczenie:** osobne porty gazu i obrysu, rzeczywista objętość kleju, ciągła zależność podatności od jego E; wybrane siatki i granice sprawdzone | Przestrzenne ciśnienie, mocowanie w korpusie i kwalifikacja materiałów; moduł 100 mm pozostaje referencją |
 | Pokój i ochrona | **Założenia/scenariusze:** znamy wymiary i orientację mebli; pozycje i straty nie są zmierzone. Dwa tony mogą generować ruch poniżej pasma wejścia | Dwie wykonalne lokalizacje, integracja fazowa, dyskretne DSP i ochrona w czasie |
 
 ## Od czego zacząć
@@ -83,7 +87,7 @@ ten przewodnik. „Wykonano rodzinę modeli” nie oznacza zamknięcia całego p
 | Jak policzyć panele, usztywnienia i klej? | [029 — płyty](raporty/029_P18A_plyty_sciagi_i_dynamika.md), [030 — spoiny](raporty/030_P19A_obliczenia_spoin_i_material_kleju.md), [035 — pełna rama](raporty/035_pelna_rama_3D_spoiny_i_podparcie.md), [036 — defekt spoiny](raporty/036_spoiny_3D_i_wirtualne_odspojenie.md) | [Materiał MDF i kleje](dane/materialy/), [wyniki 3D](wyniki/manifest_ramy_i_spoin_3D.json) |
 | Jak otwór, kosz i uszczelka zmieniają front? | [033 — front i docisk](raporty/033_front_otwor_kosz_i_styk_jednostronny.md), [034 — styk w czasie](raporty/034_czasowy_styk_i_pelny_MES.md) | [Geometria producentów](dane/zrodla/P18B_geometria_i_ograniczenia.json), [przebiegi P19C](wyniki/p19c_podsumowanie.json) |
 | Co oznacza stały front i jak dobrać jego połączenie? | [037 — wymagania modułu](raporty/037_staly_front_wymagany_modul_spoin.md), [040 — listwa i droga siły](raporty/040_listwa_stalego_frontu_i_droga_sily.md), [041 — podmodel i dane brzegowe](raporty/041_lokalny_podmodel_i_granice_wiarygodnosci.md), [U-021](DECYZJE_I_PYTANIA.md) | [12 progów](wyniki/p19e_wymagane_moduly_stalego_frontu.csv), [20 wariantów listwy](wyniki/p19f_geometrie_i_podatnosc.csv), [24 lokalne realizacje](wyniki/p19g_ocena_i_roznice.json) |
-| Jak zmieniać objętość przy stałym froncie? | [042 — wkłady wypornościowe](raporty/042_regulacja_Vb_i_wklady_wypornosciowe.md), [043 — przegroda i dwie komory](raporty/043_przegroda_dwie_komory_i_materialy.md) | [Tory montażu modułów](wyniki/p20a_tory_montazu.json), [80 geometrii przegrody](wyniki/p20b_pozycje_i_dostep.csv), [72 432 punkty napędu](wyniki/p20b_naped_i_porownanie_regulatorow.csv) |
+| Jak zmieniać objętość przy stałym froncie? | [042 — wkłady wypornościowe](raporty/042_regulacja_Vb_i_wklady_wypornosciowe.md), [043 — przegroda i dwie komory](raporty/043_przegroda_dwie_komory_i_materialy.md), [044 — pełny moduł 3D](raporty/044_modul_3D_dwa_porty_i_wymagania_kleju.md) | [Tory montażu modułów](wyniki/p20a_tory_montazu.json), [80 geometrii przegrody](wyniki/p20b_pozycje_i_dostep.csv), [18 brył](wyniki/p20c_modele_3D.csv), [ciągłe wymaganie kleju](wyniki/p20c_wymagany_modul_kleju.csv) |
 | Czy sklejka będzie lepsza od MDF? | [043 — pierwotne dane i ograniczenia](raporty/043_przegroda_dwie_komory_i_materialy.md) | [Dane producenta z hashem oryginałów](dane/materialy/sklejka_pierwotne_P20B.json), [masa i kierunkowa sztywność pasa](wyniki/p20b_materialy_masa_i_pas.csv) |
 | Jak uwzględniamy pokój i dwie sztuki? | [013 — dwa źródła i gabaryty](raporty/013_pokoj_i_realne_gabaryty.md), [017 — sprzężenie pola](raporty/017_promieniowanie_i_sprzezenie_pokoju.md), [019 — aktualna orientacja](raporty/019_zamiana_kanapy_i_RTV.md) | [Konwencja pokoju](dane/konfiguracje/pokoj_odsluchowy.json), scenariusze opisane w raportach |
 
@@ -420,6 +424,40 @@ podaje odmienne wilgotności dla tych dwóch sklejek, a MDF jest założeniem
 modelowym. [Raport043](raporty/043_przegroda_dwie_komory_i_materialy.md)
 wyjaśnia granice porównania i rozróżnienie surowej/powlekanej powierzchni.
 
+### 18. Pełny moduł 3D: krawędzie płyt i klej mają znaczenie
+
+Ściany, naroża, nakładki, pręt i warstwy kleju policzono jako bryły.
+Gaz wewnętrzny i obrys zewnętrzny mają **osobne porty pracy**. Referencyjny
+moduł ze ściągiem ma nominalnie 0,7023 kg i 2,099984 l gazu, przy
+niezmiennym obrysie 3,06 l. Objętość kleju jest policzona osobno.
+
+Przy 20 Hz otrzymujemy około **11,705 ml odtwarzanej podatności na moduł**,
+wobec 8,816 ml w modelu płyt CCCC. Ta korekta o około 33% dotyczy modułu,
+a jej wpływ na napęd zależy od udziału w całej podatności skrzyni.
+
+![Moduł 3D — siatka i porównanie metod regulacji](wyniki/78_P20C_siatka_i_porownanie_regulatorow.png)
+
+### 19. Klej: ciągłe wymaganie sztywności i osobna ocena naprężeń
+
+Wyprowadzono monotoniczną zależność statycznej podatności od E kleju.
+W zadanej rodzinie kryterium **najwyżej 5% większej podatności względem
+Eref=1718 MPa** daje około **321 MPa** na drobniejszej siatce. To kryterium
+porównania, bez zatwierdzenia go jako wymogu briefu. Moduł nie potwierdza
+wytrzymałości, adhezji do MDF, pełzania lub zmęczenia produktu.
+
+![Klej — ciągła zależność sztywności i przestrzenne statystyki naprężeń](wyniki/79_P20C_modul_kleju_i_statystyki_spoin.png)
+
+W 11 664 punktach napędu największa zmiana obwiedni przy zachowanych
+umownych ekranach amplitudy wyniosła około **0,0046 dB**. Badanie dotyczy
+osobnych sinusów 20–80 Hz, RMS 2π/1 m i ograniczeń V/I/katalogowego X;
+nie ustala THD lub bezpiecznego czasu pracy. Z kolei formalne postacie
+przy wyższych częstotliwościach wymagają przestrzennego modelu gazu.
+
+![Moduł 3D — postacie, zakres gazu jednolitego i korekta napędu](wyniki/80_P20C_mody_dziedzina_gazu_i_wplyw_na_naped.png)
+
+[Raport 044: równania, kontrola hydrostatyczna, osiem flag i dalsze siatki](raporty/044_modul_3D_dwa_porty_i_wymagania_kleju.md)
+· [11 664 punkty napędu](wyniki/p20c_naped_27_konfiguracji.csv).
+
 <a id="dalsze-prace"></a>
 ## Co wynika dla dalszego projektu
 
@@ -437,9 +475,9 @@ osobne sprawdzenie frontu, docisku i ochrony dynamicznej.
 | Dwie sztuki w docelowym pokoju | Wykonalne miejsca, gabaryty, faza, opóźnienia i integracja |
 | Odporne porównanie finalistów i domknięcie programu | Jeden przetwornik, jedna regulowana obudowa i końcowy PDF z uzasadnieniem |
 
-Najbliższy krok po P20B: **P20C — pełne 3D modułu referencyjnego z osobnymi
-portami ciśnienia wewnętrznego i zewnętrznego**, z zachowaniem kontrolnego
-porównania ze sztywno blokowaną przegrodą. Potem pole przestrzenne P21.
+Najbliższy krok po P20C: **P21B — przestrzenne ciśnienie gazu wewnątrz
+modułu i sprzężenie z pełną bryłą**, z kontrolą pracy, energii i granicy 0D.
+Następnie główna komora z regulatorami i porowatym wyklejeniem.
 Wyniki połączeń pozostają
 warunkowe względem materiału i źródłowego pola; kolejne same lokalne
 zagęszczenia nie zastąpią tych danych.
@@ -506,6 +544,9 @@ OPENBLAS_NUM_THREADS=1 python3 skrypty/odtworz_regulacje_P20A.py
 
 # Przegroda, dwie komory, niezależny pełny układ i dane sklejki P20B
 OPENBLAS_NUM_THREADS=1 python3 skrypty/odtworz_przegrode_P20B.py
+
+# Pełna bryła modułu, spoiny, ciągły moduł kleju i rozstrzygnięcia siatki P20C
+OPENBLAS_NUM_THREADS=1 python3 skrypty/odtworz_modul_3D_P20C.py
 ```
 
 Podczas aktywnej kampanii nie uruchamiaj pełnego przebiegu archiwizującego

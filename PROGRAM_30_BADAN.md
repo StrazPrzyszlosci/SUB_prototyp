@@ -53,8 +53,8 @@ pakietu samym stworzeniem planu, testów ani listy bibliotek.
 | P17 | Łączne granice użytecznego zakresu | Częściowo — wspólneV/I/X/chłodzenie | Raport028:5184zestawy,31104punkty,analityczne przedziałyVb>0,26246niezależnych brzegów i3tożsamościSymPy. Stały poziom wyjściowy i warunkoweRth. Nie zintegrowano jeszcze rzeczywistegoTHD,ciągłego pasma,muzyki,konstrukcji i pokoju |
 | P18 | Płyty MDF: drgania, naprężenia, promieniowanie | Częściowo — wykonane P18A/P18B/P18C | Raport029:płyty. Raport033:front. Raport035:pełna rama6brył/12spoin,siatki do36771DOF,168punktówharmonicznych,ściągi i podparcie. U-021:frontstały;geometria finalna,frez,promieniowanie i porównanieMDF/sklejka zR3 otwarte |
 | P19 | Usztywnienia, połączenia i klej | Częściowo — wykonane rodziny P19A–P19G | Raporty030–040:spoiny,styk,pełna rama,listwa. Raport041:24podmodele/144okna/do102033DOF,przekazanie stóp i dwa kierunki siatki. Wpływ pola N14/N18 większy niż ostatnie lokalne zagęszczenia;nośność,Gc,SN/J(t) i identyfikacjaMDF otwarte |
-| P20 | Regulacja objętości | Częściowo — P20A/P20B w rodzinach kontrolnych | Raport042:108układów/78modułów. Raport043:80geometrii/56modeli przegrody/13836stanów sieci/72432punkty napędu27konfiguracji,64pełne układy nodalne i72statyczne stany gazu. Porównanie wykonane dla podanych rodzin;pełne3D,rzeczywisty mechanizm i mocowania otwarte |
-| P21 | Wewnętrzne pole i sprzężenie paneli | Częściowo — wykonane odniesienie P21A | Raport031:72punktysprzężeniaRayleigh/MITC i gazu0D,masaDuffy,moc i wzajemność. Przestrzennepole3Dkomory,różneściany,front i podparcie nadal otwarte |
+| P20 | Regulacja objętości | Częściowo — P20A/P20B/P20C w rodzinach kontrolnych | Raport042:108układów/78modułów. Raport043:56modeli przegrody. Raport044:18brył zklejem,1944porty gazu,11664punkty napędu27konfiguracji,24pełne MES+gaz,ciągłe wymaganieE,8flag siatki rozstrzygnięte n16/do40248DOF. Pole3D gazu,rzeczywisty mechanizm i mocowania otwarte |
+| P21 | Wewnętrzne pole i sprzężenie paneli | Częściowo — wykonane odniesienie P21A | Raport031:72punktyRayleigh/MITC/gaz0D. P20C:pełna mechanika3Dmodułu z dwoma portami jednolitego gazu,nie przestrzenny gaz. Następne P21B:wewnętrzny gaz modułu i zgodna granica;potem główna komora z wypełnieniem/regulacją |
 | P22 | Napęd, impedancja wyjściowa i clipping | Częściowo | Dotychczas idealne ograniczeniaV/I; dynamika i obciążenie rzeczywiste otwarte |
 | P23 | Cyfrowa korekcja, faza i opóźnienia | Częściowo |216wzorców analogowych; realizacja dyskretna i stabilność otwarte |
 | P24 | Dynamiczna ochrona | Do wykonania | Wychylenie, napięcie, prąd, cieplna pamięć i overshoot |
@@ -108,9 +108,13 @@ P20Bporównał przegrodę zmodułami przy wspólnymgazie iβK, uwzględniając
 dwa ciśnienia,masękrzyżową,podatne mocowania,przecieki i ekranydziedziny.
 SRC54/55:9pierwotnychwariantów sklejki i porównaniepasa;pełny materiał
 ortotropowy i klejenie do powierzchni pozostają otwarte.
-Najbliższykrok:P20C—pełne3D modułu100mm,osobne porty ciśnienia
-wnętrze/zewnętrze,spoiny,naroża i ściąg. Zachować kontrolnyport sztywno
-blokowanejprzegrody,nie zamykać wyboru metody zgóry. Potem pole3D P21,
+P20Cwykonał pełnąbryłę ze spoinami3D i dwoma portami,6pierwiastków
+ciągłego wymaganegoE oraz dodatkowe siatki po8flagach. Nośność/relaksacja
+nie wynika ze sztywności; gaz0D pozostaje odrębnym przybliżeniem.
+Najbliższykrok:P21B—przestrzenny gaz wewnątrz modułu i praca na wspólnej
+granicy z bryłą,energia i granica0D. Następnie główna komora zregulacją
+i porowatymwyklejeniem. Zachować kontrolnyport sztywno blokowanejprzegrody,
+nie zamykać wyboru metody zgóry. Potem
 czasoweDSP/napędP22–P25, pokójP26–P28 i integracjaP29/P30.
 Poszukiwanie danych materiałowych i nieliniowych może toczyć się równolegle
 z obliczeniami niewymagającymi tych danych. Nie wykonywać zakupów.

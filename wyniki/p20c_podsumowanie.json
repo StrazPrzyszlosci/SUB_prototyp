@@ -1,0 +1,37 @@
+{
+  "status": "COMPLETE_SCOPED_3D_MODULE_FAMILIES",
+  "date": "2026-10-26",
+  "run_sha256": "529cba5059ecc66a8727bfe4fd64fc889798c981b8295f638e66d051aeacec5f",
+  "input_sha256": {
+    "dane/konfiguracje/p20c_modul_pelny_3D.json": "f77ec32d7f65fff5c680c58db27375476326f4d35da00337ea2bfdcfae2c7e68",
+    "dane/konfiguracje/p20a_regulacja_objetosci.json": "eed4cd0696db7b82249e167cac9cbd4b27dfae1d239e2f2079623a4b288eaf29",
+    "skrypty/analiza_modulu_3D_P20C.py": "9affc07b22a946e31fe5a1d695999d876871e5d8490baae8a02a9f5bf3aa7957",
+    "skrypty/model_modulu_3D_P20C.py": "f55105368bc8ae7e228c4b3d7c715019a4c6287c1e36f5cb4318ad3d923d1fbe",
+    "skrypty/sprawdz_modul_3D_P20C.py": "916d7cacf373a5308688822f275abb77a1b30171361f2f5469d65a040a7b7d7b",
+    "skrypty/element_brylowy_P18C.py": "d90d0c7f1adf2d00249220653b8335ea1e021b07b774dc770921029da4a8aacb",
+    "skrypty/model_ramy_3D_P18C.py": "698395a0d216659572ae84c1fea1b1251a67c5c32b99a7cf84cc55582e33e1ad",
+    "skrypty/model_gazu.py": "ca8f63066f23eac9eb00610b428c173515f3088395501deaec740ea05a2c5115",
+    "skrypty/analiza_wkladow_P20A.py": "e6878a1f652ab9bd9953826f1b8c8694f48c826139fc11afecb5698e65c938d9",
+    "brief_system_audio_DIY_v0.6.md": "3bd9f8d43a92b96256073e66cd0f4f105336e969a37c29fc42f17cda9d66736f"
+  },
+  "cases": 18,
+  "expected_cases": 18,
+  "mechanical_rows": 162,
+  "gas_rows": 1944,
+  "joint_rows": 252,
+  "checkpoint_folder": "wyniki/p20c_przypadki/529cba5059ecc66a",
+  "libraries": {
+    "Python": "3.12.3",
+    "NumPy": "1.26.4",
+    "SciPy": "1.17.1"
+  },
+  "limitations": [
+    "MDF/klej są rodzinami założeń.1718MPa jest referencją znanej karty folii,nie modułem zidentyfikowanej spoiny MDF ani doborem kleju.",
+    "Pełna objętość spoin jest częścią geometrii; ściąg ma dodatkowe spoiny pad-rod,nieobecne w skupionym P20A. Rod skrócony zamiast nakładania objętości.",
+    "H8 z własnym EAS9 i zgodną masą nodalną. Nie jest to certyfikowany element komercyjnego solvera; potrzebuje odrębnych odniesień i siatek.",
+    "Gaz jednolity0D i brak reakcji promieniowania zewnętrznego/pokoju. Formalne odpowiedzi ponad pierwszą referencją przestrzenną nie są walidacją fizycznego modu.",
+    "Swobodna zamknięta bryła ma sześć ruchów sztywnych; podparcie w korpusie i niejednorodne wymuszenie zostają do integracji.",
+    "Małe deformacje, dodatni liniowy klej bez odspajania,pełzania i histerezy. Brak Gc,S-N,J(t) oraz kwalifikacji MDF i rzeczywistej partii kleju.",
+    "Moduł100mm jest odniesieniem do porównania; sztywno blokowana przegroda pozostaje alternatywą. Nie ma końcowego wyboru głośnika lub całej konstrukcji."
+  ]
+}

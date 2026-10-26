@@ -1,6 +1,6 @@
 {
   "status": "WYKONANE_ZAKRESY_P18A_P19A_P21A_NIE_PELNA_KONSTRUKCJA",
-  "generated_at": "2026-10-26T16:14:48.395520+01:00",
+  "generated_at": "2026-10-26T18:31:29.232650+01:00",
   "libraries": {
     "Python": "3.12.3",
     "NumPy": "1.26.4",
@@ -32,7 +32,7 @@
     "skrypty/model_szczeliny_P19.py": "531f951ed610789298359a8fabc7df7068528728ba5ed606d1dda0b0134daa7b",
     "skrypty/niezalezny_Ritz_P18.py": "f39ab4a6df27ac3ec07b5a88497a21124f328288a5a7f39e24d67431b8474964",
     "skrypty/odtworz_mechanike_P18_P19_P21.py": "51ee6f3c4124f4e53f430bae4c4306c6094aa11b10320c7ec24de181b1d94a20",
-    "skrypty/odtworz_wszystko.py": "272be63716c8352c900f18fde0422a94f3398c979c696de016aa82c7e35d7c6b",
+    "skrypty/odtworz_wszystko.py": "8dbcdfae2382c34c939c8053c7202244a587e5b5f0d83dc53401a3bbbd45328f",
     "skrypty/reakcja_powietrza_P21A.py": "b135a67e3db3dd35ac6a0a73c1e84f0c448a9cb4b1e2dd55210a677853eca2dc",
     "skrypty/sprawdz_MITC_P18.py": "9f975a99ad1fcdd2af0a4f075a6334a6a89aa3be362db1a09eeac4273140b03a",
     "skrypty/sprawdz_polaczenie_normalne_P19.py": "4f227dd9aef1f85ba15d4dc4f0248018ea542250d5402a284b6972c95752e38a",
@@ -86,10 +86,10 @@
     "wyniki/p21a_sprzezenie_podsumowanie.json": "dbef06508c7fb469c5951e407b8b1bfdcf9475c5facaff370ea99baf5e22c761"
   },
   "documentation_sha256": {
-    "AGENTS.md": "776ef1cc7fd38e21c209c6e3c0e45a7ebd38539bf3b2c3c678e0f4bf9bb645f8",
-    "README.md": "6651840d02e9bacc8c8061d469715b825a78268e73e7011449a0fd36fcb509e8",
-    "PROGRAM_30_BADAN.md": "734d5085a48cf835925d5886f5a1d9ebc0d64221c3e96d0bbb9e690cc3d8092e",
-    "baza_wiedzy/README.md": "ad2642d35a75c03ac640423e7b00918f27c423ed1a7a20e8183813c7bdacc813",
+    "AGENTS.md": "f67e20ebbc2b3306c668273f03e9ba0ae4e6a8d256441d0680191a191d26d2d2",
+    "README.md": "9a72060c8623b979b255d5b862de192a2f4abc2bfee8a86bfc954e79a9143360",
+    "PROGRAM_30_BADAN.md": "12b4cf13d0afc11840682fb5def064a40d86b86c23427dd8e22f05d731954669",
+    "baza_wiedzy/README.md": "e0da9b96fc12706eaf40d2571bc5ed3cc0771756d8d90a4e412c41cfc43bd6f9",
     "baza_wiedzy/ZRODLA.md": "b5e3669046e2c8b8a0327bbbf61fd706f4415a3073bc09c504c89c9edbeef917",
     "baza_wiedzy/20_MES_paneli_i_sciagow.md": "39b7948e58b485be30fe98aae6d2ca00d71c9649ccfc102faf79e1a7665abe3c",
     "baza_wiedzy/21_mechanika_spoin_i_kwalifikacja.md": "e8c47fd99c345fa9707d817e6e3da3eaa44838711611be3846c71a27ce3d3deb",

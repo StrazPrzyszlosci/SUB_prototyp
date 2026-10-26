@@ -1,0 +1,64 @@
+{
+  "status": "CONTINUOUS_STATIC_STIFFNESS_REQUIREMENT_NOT_GLUE_QUALIFICATION",
+  "root_cases": 6,
+  "derivative_checks": [
+    {
+      "mesh_resolution": 8,
+      "glue_E_pa": 11000000.0,
+      "analytic_derivative_m3_pa2": -5.0299317001209166e-18,
+      "finite_difference_m3_pa2": -5.029935405515602e-18,
+      "relative_error": 7.366689860344167e-07
+    },
+    {
+      "mesh_resolution": 8,
+      "glue_E_pa": 100000000.0,
+      "analytic_derivative_m3_pa2": -1.0269843942780518e-19,
+      "finite_difference_m3_pa2": -1.0269852575304891e-19,
+      "relative_error": 8.405701605873617e-07
+    },
+    {
+      "mesh_resolution": 8,
+      "glue_E_pa": 1546200000.0,
+      "analytic_derivative_m3_pa2": -7.722086971845608e-22,
+      "finite_difference_m3_pa2": -7.722093367314359e-22,
+      "relative_error": 8.282047034846585e-07
+    },
+    {
+      "mesh_resolution": 12,
+      "glue_E_pa": 11000000.0,
+      "analytic_derivative_m3_pa2": -5.108458906522396e-18,
+      "finite_difference_m3_pa2": -5.108462638061261e-18,
+      "relative_error": 7.304627351878423e-07
+    },
+    {
+      "mesh_resolution": 12,
+      "glue_E_pa": 100000000.0,
+      "analytic_derivative_m3_pa2": -1.0578283811045072e-19,
+      "finite_difference_m3_pa2": -1.0578292624918617e-19,
+      "relative_error": 8.332044878489597e-07
+    },
+    {
+      "mesh_resolution": 12,
+      "glue_E_pa": 1546200000.0,
+      "analytic_derivative_m3_pa2": -8.53163425897351e-22,
+      "finite_difference_m3_pa2": -8.531641176595165e-22,
+      "relative_error": 8.108202302903322e-07
+    }
+  ],
+  "reference": "Adhesive stiffness reference only,not approved product or brief threshold.",
+  "monotonicity": "For Keff=Kmdf+E*Kglue_unit+Hi*Hi.T/Ci on the quotient by rigid motions, d(Ho.T inv(Keff) Ho)/dE=-q.T Kglue_unit q<=0.",
+  "peak_rss_mib": 706.29296875,
+  "input_sha256": {
+    "dane/konfiguracje/p20c_modul_pelny_3D.json": "f77ec32d7f65fff5c680c58db27375476326f4d35da00337ea2bfdcfae2c7e68",
+    "dane/konfiguracje/p20a_regulacja_objetosci.json": "eed4cd0696db7b82249e167cac9cbd4b27dfae1d239e2f2079623a4b288eaf29",
+    "skrypty/wymagany_modul_kleju_P20C.py": "793c1ed37421b253683b073947218b418209e16e88833e08fcc6c0677add1342",
+    "skrypty/model_modulu_3D_P20C.py": "f55105368bc8ae7e228c4b3d7c715019a4c6287c1e36f5cb4318ad3d923d1fbe",
+    "skrypty/element_brylowy_P18C.py": "d90d0c7f1adf2d00249220653b8335ea1e021b07b774dc770921029da4a8aacb",
+    "skrypty/model_ramy_3D_P18C.py": "698395a0d216659572ae84c1fea1b1251a67c5c32b99a7cf84cc55582e33e1ad"
+  },
+  "limitations": [
+    "Isothermal static gas. This derivative does not prove monotonicity of dynamic compliance near resonances.",
+    "No identified creep law or relaxed modulus,surface adhesion,peel strength,S-N or Gc.",
+    "Fixed Poisson ratio,thickness,material law and a comparison criterion,not manufacturer tolerances."
+  ]
+}

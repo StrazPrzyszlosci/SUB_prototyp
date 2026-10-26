@@ -207,7 +207,7 @@ Optymalizacja jednego sweet spotu 2,5–3 m; brak narzuconego budżetu i gabaryt
     podparciem. Wskaźnik wyboczenia panelu P20A to założony schemat
     Nx=Ny=p*normal_span/2, nie nośność lub dolna granica całego pudełka.
 
-34. P20B: przegroda i moduły są porównane przy tej samej ilości gazu,
+40. P20B: przegroda i moduły są porównane przy tej samej ilości gazu,
     ale rodziny termicznego wyklejenia mają różne ilości maty. Ruch ramy
     i ugięcie mają wspólną masę krzyżową, nie dwa razy tę samą płytę.
     G_ref odnosi się do100l, nie rzeczywistego bieguna lub szczeliny.
@@ -218,6 +218,17 @@ Optymalizacja jednego sweet spotu 2,5–3 m; brak narzuconego budżetu i gabaryt
     ortotropowy. Gr planar shear nie jest automatycznie Gxy; nie przenosić
     bareBirch na Form/FormPLUS, MC12% na MC10% lub RH65% na wilgotność65%.
     Przegroda wymaga preinstalacji/innego dostępu; front pozostaje stały.
+
+41. P20C ma pełną bryłę i rzeczywistą objętość spoin oraz osobne Hi/Ho.
+    Nie utożsamiać deltaVi z deltaVo; wspólne ciśnienie ściska materiał.
+    Przy G→∞ r→1,ale G*(1-r) może pozostać skończone. Porównywać to samoG,
+    nie etykietyfc dla różnychVi.18podstawowych modeli i4dalsze n16
+    mają własne zakresy; pierwotne8flag pozostają w audycie z rozstrzygnięciami.
+    Ciągłe dCeff/dE≤0 dotyczy statyki ze stałymnu/geometrią,nie rezonansu.
+    WymaganeE nie jest nośnością,adhezją lub relaksacją konkretnego kleju.
+    PrzestrzennyRMS nie jest czasowymRMS,Gaussmax nie jest fizycznympikiem.
+    24mody są diagnostyką;porty/napęd P20C używają pełnych równań przy6f.
+    Gaz0D i odniesienie c/(2maxL) nie walidują rzeczywistych modów z prętem.
 
 ## Stan i postępy
 
@@ -711,6 +722,30 @@ Postęp końca sesji2026-10-23:
   portami wnętrze/zewnętrze**, ze sztywno blokowanąprzegrodą jako kontrolą
   porównania. Rzeczywistyosprzęt,pełnasklejka,P21,DSP/ochrona i synteza
   nadalotwarte. Końcowygłośnik/skrzynia/PDFniezostałyzatwierdzone.
+
+- P20C,2026-10-26:raport044/baza32.18brył z rzeczywistymi spoinami,
+  162porty mechaniczne,1944gaz/przeciek,252statystyki spoin. Moduł100mm
+  ześciągiem:0.702256kg,2.099984l gazu,3.07264ml kleju. Dwa porty pracy
+  i analityczna hydrostatyka obejmują ściskanie materiału;bez podwójnegoVi.
+- Kontrole:6geometrii/mas,2hydrostatyczne,24pełneMES+gaz,9momentówpracy.
+  Podstawowe n8→12 do3.91%w20–80Hz;24dalsze punkty wspólnychHz/grubości
+  dały8flag. Wszystkie czteryrodziny dogęszczono n16,do40248DOF/RSS1514MiB.
+  Osiem rozstrzygnięć przytychsamychHz:macierz do4.123%,Ydo3.990%,
+  bez zmianyprogu5%.To skończone świadki,nie certyfikat kontinuum.
+- Ciągłe E:6pierwiastków i6odrębnych pochodnych;dla porównawczego5%
+  względem1718MPa wymaganeEokoło320.57MPa przy stałymnu/geometrii.
+  Nośność/pełzanie/SN/Gc/adhezja nadalotwarte. PrzestrzenneRMSnaprężeń
+  nie jest czasowymRMS ani fizycznymmaksimum naroża.
+- Nowa fizyka w11664punktach27konfiguracji. Korekta podatności20Hz
+  względem płyt około32.8%,ale maxzmiana napędu w umownych ekranach
+  amplitudy0.004572dB.2575rekordówpozaekranami zachowano;nieTHDproduktów.
+  Gfizyczne wspólne,zamiastnieporównywalnych etykietfc. Stare dane bez zmian.
+- Wykresy78–80 obejrzane,READMEma33obrazy i44raporty. **Jeden najbliższy
+  krok:P21B—przestrzenne pole gazu wewnątrz modułu ze sprzężeniem3D,
+  praca/energia i granica0D**,potem główna komora zregulacją i włókniną.
+  Część istotnych postaci jest blisko/powyżej referencji pustejkomory;
+  nie ogłaszać fizycznejwalidacji przezgaz0D. Mocowania,DSP/ochrona,
+  pełna synteza i pojedynczywybór/PDF pozostają otwarte.
 
 ## Decyzje otwarte
 

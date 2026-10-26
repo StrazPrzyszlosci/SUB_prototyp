@@ -1,0 +1,138 @@
+{
+  "status": "ADDITIONAL_N16_FOR_ALL_FOUR_FLAGGED_FAMILIES_NOT_CONTINUUM_CERTIFICATE",
+  "previous_flagged_rows": 8,
+  "rows": 8,
+  "probe_rows": 24,
+  "remaining_flags": 0,
+  "controls": [
+    {
+      "case": "BARE_E1.718e+09_N12",
+      "ndof": 34092,
+      "elements": 7556,
+      "analytic_budgets": {
+        "mdf_volume_m3": 0.0009358233599999996,
+        "glue_volume_m3": 2.6726400000000007e-06,
+        "inner_air_m3": 0.002121504,
+        "dry_mass_kg": 0.6863582207999996
+      },
+      "rigid_force_scaled_error": 2.833227902558019e-15,
+      "rigid_stiffness_scaled_error": 1.9900448751161293e-16,
+      "affine_volume_errors": [
+        1.3038771224662276e-14,
+        0.0,
+        0.0,
+        9.850910134121705e-17,
+        1.1054610386126713e-14,
+        6.083940437373681e-17,
+        9.754027280677586e-17,
+        6.53215338837431e-16,
+        1.4030851643930059e-14
+      ],
+      "mass_tensor_relative_error": 9.758172400504959e-14,
+      "static_relative_residual": 3.65183184504454e-12,
+      "reciprocity_relative_error": 7.673981061370636e-16
+    },
+    {
+      "case": "BARE_E1e+07_N12",
+      "ndof": 34092,
+      "elements": 7556,
+      "analytic_budgets": {
+        "mdf_volume_m3": 0.0009358233599999996,
+        "glue_volume_m3": 2.6726400000000007e-06,
+        "inner_air_m3": 0.002121504,
+        "dry_mass_kg": 0.6863582207999996
+      },
+      "rigid_force_scaled_error": 2.833227902558019e-15,
+      "rigid_stiffness_scaled_error": 2.432159810435579e-16,
+      "affine_volume_errors": [
+        1.3038771224662276e-14,
+        0.0,
+        0.0,
+        9.850910134121705e-17,
+        1.1054610386126713e-14,
+        6.083940437373681e-17,
+        9.754027280677586e-17,
+        6.53215338837431e-16,
+        1.4030851643930059e-14
+      ],
+      "mass_tensor_relative_error": 9.758172400504959e-14,
+      "static_relative_residual": 3.640045290332831e-12,
+      "reciprocity_relative_error": 5.602107373707842e-16
+    },
+    {
+      "case": "TIED_E1.718e+09_N12",
+      "ndof": 40248,
+      "elements": 8924,
+      "analytic_budgets": {
+        "mdf_volume_m3": 0.0009569433599999996,
+        "glue_volume_m3": 3.0726400000000007e-06,
+        "inner_air_m3": 0.0020999840000000005,
+        "dry_mass_kg": 0.7022558207999997
+      },
+      "rigid_force_scaled_error": 2.7115039417626857e-15,
+      "rigid_stiffness_scaled_error": 2.274396516956375e-16,
+      "affine_volume_errors": [
+        1.587328670828451e-14,
+        0.0,
+        0.0,
+        1.743545351803276e-16,
+        1.7715721772638962e-14,
+        4.294635237827602e-17,
+        1.5470115633880626e-16,
+        1.2004920887665183e-15,
+        2.1825769223891203e-14
+      ],
+      "mass_tensor_relative_error": 8.989577808480846e-14,
+      "static_relative_residual": 1.5783939533712315e-12,
+      "reciprocity_relative_error": 6.676222603537844e-16
+    },
+    {
+      "case": "TIED_E1e+07_N12",
+      "ndof": 40248,
+      "elements": 8924,
+      "analytic_budgets": {
+        "mdf_volume_m3": 0.0009569433599999996,
+        "glue_volume_m3": 3.0726400000000007e-06,
+        "inner_air_m3": 0.0020999840000000005,
+        "dry_mass_kg": 0.7022558207999997
+      },
+      "rigid_force_scaled_error": 2.7115039417626857e-15,
+      "rigid_stiffness_scaled_error": 2.4399438804292947e-16,
+      "affine_volume_errors": [
+        1.587328670828451e-14,
+        0.0,
+        0.0,
+        1.743545351803276e-16,
+        1.7715721772638962e-14,
+        4.294635237827602e-17,
+        1.5470115633880626e-16,
+        1.2004920887665183e-15,
+        2.1825769223891203e-14
+      ],
+      "mass_tensor_relative_error": 8.989577808480846e-14,
+      "static_relative_residual": 1.9672725434961626e-12,
+      "reciprocity_relative_error": 2.2617442716357314e-16
+    }
+  ],
+  "peak_rss_mib": 1514.296875,
+  "input_sha256": {
+    "dane/konfiguracje/p20c_modul_pelny_3D.json": "f77ec32d7f65fff5c680c58db27375476326f4d35da00337ea2bfdcfae2c7e68",
+    "dane/konfiguracje/p20a_regulacja_objetosci.json": "eed4cd0696db7b82249e167cac9cbd4b27dfae1d239e2f2079623a4b288eaf29",
+    "wyniki/p20c_niezalezna_siatka_i_wspolne_Hz.csv": "3acb408186b183c75fd4d54043266295ec4e618e3722df9959830b785889fb61",
+    "skrypty/dalsza_siatka_modulu_P20C.py": "10ab6235608af743d112bc086800ec3520a6b2c32b26ddd45eebd204a9c0b9d4",
+    "skrypty/model_modulu_3D_P20C.py": "f55105368bc8ae7e228c4b3d7c715019a4c6287c1e36f5cb4318ad3d923d1fbe",
+    "skrypty/sprawdz_modul_3D_P20C.py": "916d7cacf373a5308688822f275abb77a1b30171361f2f5469d65a040a7b7d7b",
+    "skrypty/sprawdz_siatke_modulu_P20C.py": "db4888498fc9db2243b44a006f419d336e6f14de1d7dc155c320bad59a93e2b3",
+    "skrypty/element_brylowy_P18C.py": "d90d0c7f1adf2d00249220653b8335ea1e021b07b774dc770921029da4a8aacb",
+    "skrypty/model_ramy_3D_P18C.py": "698395a0d216659572ae84c1fea1b1251a67c5c32b99a7cf84cc55582e33e1ad",
+    "wyniki/p20c_przypadki/529cba5059ecc66a/BARE_E1.718e+09_N12.json": "4ad4c0628fa13f6a9f6ab059c358329bab7f821b871973028a3aa509dff78149",
+    "wyniki/p20c_przypadki/529cba5059ecc66a/BARE_E1e+07_N12.json": "23fd1bb8f8972a69f15daf766217cd33679f26a833441b156de7ce15b4f4b00c",
+    "wyniki/p20c_przypadki/529cba5059ecc66a/TIED_E1.718e+09_N12.json": "a5490c724ecf5e506e15c873c7ccb2b65824a3176f34658660b49213dcd5e5c6",
+    "wyniki/p20c_przypadki/529cba5059ecc66a/TIED_E1e+07_N12.json": "e190e75a113de0a4d1f8e0bb1de7b4a2c4431821ac55d997817eda3edad31d00"
+  },
+  "limitations": [
+    "Same absolute frequencies and unchanged5%screen;selected finite witnesses,not every continuous frequency.",
+    "Main N12driver study remains its own approximation;N16band differences separately retained.",
+    "Formal gas0D reduction near/above first empty-cavity reference is not physical mode validation."
+  ]
+}
