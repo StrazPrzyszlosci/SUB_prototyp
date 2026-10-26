@@ -1,0 +1,21 @@
+{
+  "status": "VISUALLY_VERIFIED_PRIMARY_FACTS_NOT_ORTHOTROPIC_MATERIAL_IDENTIFICATION",
+  "cases": 9,
+  "reference_MDF18_assumed": {
+    "t_m": 0.018,
+    "E_pa": 2100000000.0,
+    "rho_kg_m3": 730.0,
+    "panel_mass_kg": 2.75629896,
+    "strip_B_n_m": 1020.5999999999998
+  },
+  "input_sha256": {
+    "dane/materialy/sklejka_pierwotne_P20B.json": "8c9d2b5cc30f4adf696c6ceebbbb73dfd354206fa940763e991766c2d106aad8",
+    "dane/konfiguracje/p20a_regulacja_objetosci.json": "eed4cd0696db7b82249e167cac9cbd4b27dfae1d239e2f2079623a4b288eaf29",
+    "skrypty/porownanie_materialow_P20B.py": "c4bebbad4a4ba108d20461f8670050add0cff75424beb566c27b1a2661018b0e"
+  },
+  "limitations": [
+    "Two axes do not identify twisting,cross-coupling,transverse shear or damping of a plate.",
+    "Published moisture12%/10% differs between product families; MDF assumption has no measured matching condition.",
+    "No transfer of coated Form/FormPLUS facts to bare Birch; no conclusion of final superiority from strip stiffness alone."
+  ]
+}

@@ -198,6 +198,28 @@ ocena czterech odczytów/awarii opinii i zakres użycia:
 ForumZelfbouwaudio zwróciło503/dostęp po zalogowaniu;nie jest przeczytaną
 dyskusją. Publiczne własne parametry i rachunki; oryginały prywatne.firecrawl.
 
+## Sklejka — SRC54/SRC55, 2026-10-26
+
+**SRC54:** [Metsä Wood, technical data for concrete formwork](https://www.metsagroup.com/contentassets/695a3e3833774e30bcc964c0bbea34a9/metsa_wood_plywood_for_concrete_formwork_technical_data.pdf).
+Obejrzano oryginalne strony 3 i 10: tabele właściwości i rysunek kierunków.
+Form/FormPLUS standard lay-up ma warunki MC12%, Spruce III+/III MC10%.
+Przyjęto 9 jawnych wierszy Em,a/Em,b, przybliżonej masy i grubości.
+Nie przyjęto numerycznych tablic krzywych Firecrawl, nomogramów betonu,
+utożsamienia Gr planar shear z Gxy lub układu S2 ze standardowym.
+
+**SRC55:** [Metsä Wood Birch datasheet](https://www.metsagroup.com/contentassets/42b1c1d79c43410c8762dcd1c6cc31e1/metsa-wood-birch-product-datasheet-en.pdf).
+Obejrzano oryginalną stronę 2. Średnia gęstość680kg/m³ przy RH65%
+dotyczy tej odmiany; nie przeniesiono jej na powlekane Form/FormPLUS.
+Daty publikacji nie ustalono z nazwy URL. Odrębny Spruce-manual nie został
+pobrany do końca; jego ekstrakcja nie jest przyjętym źródłem liczbowym.
+
+Ekstrakcja Firecrawl i oryginały pobrane przez lokalny browser-harness,
+nagrywanie wyłączone. Obrazy oryginalnych stron obejrzane po renderowaniu
+PyMuPDF. Hashe, warunki i jawne braki:
+[rejestr materiałów](../dane/materialy/sklejka_pierwotne_P20B.json),
+[raport043](../raporty/043_przegroda_dwie_komory_i_materialy.md).
+Publiczne są fakty i własne rachunki; oryginały prywatne w .firecrawl.
+
 ## Znalezione dokumenty do dalszej analizy
 
 - [RSS315HF-4 Specification Sheet](https://www.daytonaudio.com/images/resources/295-464-dayton-audio-rss315hf-4-specifications-46174.pdf).

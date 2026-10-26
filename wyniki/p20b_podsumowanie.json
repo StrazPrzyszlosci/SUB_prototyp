@@ -1,0 +1,45 @@
+{
+  "status": "PARTITION_AND_BACK_CHAMBER_FAMILIES_NOT_FINISHED_SERVICEABLE_ASSEMBLY",
+  "date": "2026-10-26",
+  "cases": {
+    "structural_models": 56,
+    "geometry_rows": 80,
+    "mechanical_port_rows": 336,
+    "network_rows": 13836,
+    "amplitude_rows": 27216
+  },
+  "checks": {
+    "max_normalized_power_residual": 1.8021278468908262e-11,
+    "infeasible_fixed_maximum_geometry_rows": 8,
+    "flagged_amplitude_rows": 9216
+  },
+  "libraries": {
+    "Python": "3.12.3",
+    "NumPy": "1.26.4",
+    "SciPy": "1.17.1"
+  },
+  "input_sha256": {
+    "dane/konfiguracje/p20b_przegroda_vs_moduly.json": "08c0764c2e4da990efb1af3a6bbb5e0b806549d35a6c90510e2a7b87dcc99020",
+    "dane/konfiguracje/p20a_regulacja_objetosci.json": "eed4cd0696db7b82249e167cac9cbd4b27dfae1d239e2f2079623a4b288eaf29",
+    "skrypty/analiza_przegrod_P20B.py": "005c16ef29bdaa2ec374c7b3776fab301722dd47dc86717dcbdbb2d96ed4c24e",
+    "skrypty/model_przegrody_P20B.py": "fe7882b008910887da93dbb1bd83e3eefebe6e84055d008f602a4a1c5910b833",
+    "skrypty/geometria_przegrody_P20B.py": "4b3a7b43f116daffb69dbf5df99f96e544dcd5d40f4b5eea59414054c9f90a03",
+    "skrypty/geometria_wkladow_P20A.py": "2f886b4d6b6a3605de3e9a7a50d97da914dc604fa07ca26c1e8842e902e699c2",
+    "skrypty/model_plyty_MITC_P18.py": "1e98a4553f5697344821a83d7d6afe823c2a801350f14dbdeb6d8ce681690775",
+    "skrypty/model_wypelnienia.py": "33822435e494b4d95659c3679466fcffefcce699450df2932267f1799bf2fdb7",
+    "skrypty/model_gazu.py": "ca8f63066f23eac9eb00610b428c173515f3088395501deaec740ea05a2c5115",
+    "skrypty/analiza_wkladow_P20A.py": "e6878a1f652ab9bd9953826f1b8c8694f48c826139fc11afecb5698e65c938d9",
+    "brief_system_audio_DIY_v0.6.md": "3bd9f8d43a92b96256073e66cd0f4f105336e969a37c29fc42f17cda9d66736f"
+  },
+  "limitations": [
+    "U-021 front stały. Jednoczęściowa sztywna płyta wymaga preinstalacji lub innego dostępu,jeśli jej środkowy wpisany dysk jest większy od otworu.",
+    "Płyta i mocowania są modelami parametrycznymi. Wymiary panelu nie są zwolnioną dokumentacją CNC.",
+    "MDF i gęstość uszczelki,masa osprzętu,luzy i tłumienie to założenia; masy osprzętu nie utożsamiać z kompletną geometrią wykonawczą.",
+    "Uszczelka annularna jest idealizowanym wypełnieniem luzu,poruszającym się ze średnią brzegu; brak jej nieliniowości,kontaktu i zidentyfikowanej przepuszczalności.",
+    "Mocowania obwodowe i cztery łaty są różnymi rodzinami; nie traktować idealnych krawędzi jako rzeczywistej uszczelki.",
+    "Tylny port oporowy i dwa monopole to model redukowany; promieniowanie zewnętrzne jest diagnostyką bez pełnego sprzężenia zwrotnego P21/P27.",
+    "Nie utożsamiać g_ref z rzeczywistą szczeliną lub f_ref z rzeczywistym biegunem przy zmianie objętości.",
+    "Kryteria amplitudy są umownymi ekranami dziedziny,nie dopuszczalnymi parametrami produktu,THD lub trwałością.",
+    "Szczelność obwodu,czterech ewentualnych przejść regulacyjnych,wyrywanie,przesuw i rzeczywista sztywność tylnej ściany pozostają danymi do kwalifikacji."
+  ]
+}

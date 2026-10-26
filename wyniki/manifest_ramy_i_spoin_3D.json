@@ -1,6 +1,6 @@
 {
   "status": "EXECUTED_REFERENCE_FRAME_AND_NONCONVERGED_FINITE_DEFECT_SCREENING",
-  "generated_at": "2026-10-26T12:37:10.686518+01:00",
+  "generated_at": "2026-10-26T16:14:50.159836+01:00",
   "libraries": {
     "Python": "3.12.3",
     "NumPy": "1.26.4",
@@ -23,7 +23,7 @@
     "skrypty/model_plyty_MITC_P18.py": "1e98a4553f5697344821a83d7d6afe823c2a801350f14dbdeb6d8ce681690775",
     "skrypty/model_ramy_3D_P18C.py": "698395a0d216659572ae84c1fea1b1251a67c5c32b99a7cf84cc55582e33e1ad",
     "skrypty/odtworz_rame_i_spoiny_3D.py": "659512f05939276f426c786da53c2430fbf1e835102c6162c1d5b911d517f962",
-    "skrypty/odtworz_wszystko.py": "aab083ebcac7d8bbc75e1530469ab613852e8979dd6e226d84b7b316b3c88612",
+    "skrypty/odtworz_wszystko.py": "272be63716c8352c900f18fde0422a94f3398c979c696de016aa82c7e35d7c6b",
     "skrypty/rozwarstwienie_spoiny_P19D.py": "1a2748d8a9b35ead61747f2816bfb228bb6302c859b12155e51b225313f65afc",
     "skrypty/sprawdz_bryly_i_rame_P18C.py": "7f852975346b7d26fb5354f98f763a5da4cacf240b3a91d887e107105465c63e",
     "skrypty/sprawdz_styk_i_defekt_P19D.py": "edb6f2512fa564e1ac8330a7d7802f1c41e922eac19f618cf052541a7ca7278e",
@@ -65,19 +65,19 @@
     "wyniki/p19e_wymagane_moduly_stalego_frontu.csv": "43b11b05d201e8f6a1ea466160c2915952e20353310b9a9f032af9315f27ebfe"
   },
   "documentation_sha256": {
-    "AGENTS.md": "3100d8d82ad4eb5591f4bff2d62853efd875f837ad0327fbdfd3943d46ca4349",
-    "README.md": "813d17d0484a721f5cbf7d7ed92199aa7a489cc7cf8a84c346000714398844ce",
-    "PROGRAM_30_BADAN.md": "9e0ae36d43f89fb1487f333d4dc2140e3a83b78959503ae7fc5fea86cf083769",
-    "raporty/README.md": "f17a3b8e5d0cc4f2a4cd7d5ff4434d4f05fb2e8f04623999d1cd9bc8dd46dc9b",
-    "baza_wiedzy/README.md": "6af93aad77c06153c318bd08972b47b70628f4905d28c67c2f8d4051e8c5de50",
-    "baza_wiedzy/ZRODLA.md": "089f2008728d15848c9946ef569ef6ca58a139e353a7698aee42ef87aad0e1b3",
+    "AGENTS.md": "776ef1cc7fd38e21c209c6e3c0e45a7ebd38539bf3b2c3c678e0f4bf9bb645f8",
+    "README.md": "6651840d02e9bacc8c8061d469715b825a78268e73e7011449a0fd36fcb509e8",
+    "PROGRAM_30_BADAN.md": "734d5085a48cf835925d5886f5a1d9ebc0d64221c3e96d0bbb9e690cc3d8092e",
+    "raporty/README.md": "eebfafa70e9bdf250ef7a58862ae6d5dea45493239dffee73a16288f0d3e2f15",
+    "baza_wiedzy/README.md": "ad2642d35a75c03ac640423e7b00918f27c423ed1a7a20e8183813c7bdacc813",
+    "baza_wiedzy/ZRODLA.md": "b5e3669046e2c8b8a0327bbbf61fd706f4415a3073bc09c504c89c9edbeef917",
     "baza_wiedzy/25_pelna_rama_i_spoiny_3D.md": "b4069960b56d99cef61cf1dcec84354bf6091b5ee729d0d59e33906061bb0768",
     "raporty/035_pelna_rama_3D_spoiny_i_podparcie.md": "1a170256cd60880fc5e0245890b7db6c27b6d39f51fb49a374d90df22c50d777",
     "raporty/036_spoiny_3D_i_wirtualne_odspojenie.md": "4347f1c145ffe00496555c6fcc76b37ca10a462a10217a1f24a7d33c9e4d6b4b",
     "raporty/037_staly_front_wymagany_modul_spoin.md": "c22e933eec501254b6cd09f38100c19fb3f876c77638accca71610d70a3954ba",
     "DECYZJE_I_PYTANIA.md": "c39611df5165903dad6a0a8bc70bb47e50728875069cd9249f43ff70818dfd77",
     "WYMAGANIA.md": "3b2a5c9ea16a9d96d6be25bc176f84ce36afa63fb178b4b1b526296862f3a661",
-    "PLAN_B_R.md": "7f261a9cb8931828e6d50562ba0ace4263e75d9f5bbcf589c0a4587a36df3da9"
+    "PLAN_B_R.md": "955450f582f3bd2cfab18770ff36b2fc541ebf5972b4662e7af38a8584915eac"
   },
   "coverage": {
     "main_blocks": 12,

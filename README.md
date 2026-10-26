@@ -11,10 +11,13 @@ raportów, danych i odtwarzalnych obliczeń.
 **Stan: 2026-10-26.** Pula obejmuje **26 produktów od 11 producentów**,
 w tym 4 STX i **3 SB Acoustics**. Liczymy **27 konfiguracji elektrycznych**,
 ponieważ nowy dwucewkowy SB ma osobno połączenie szeregowe i równoległe.
-**Aktualny etap: regulacja objętości.** [Raport 042](raporty/042_regulacja_Vb_i_wklady_wypornosciowe.md)
-porównuje dostęp, masę, szczelność i podatność wkładów oraz 40 068 punktów
-napędu dla całej puli. Wybrano moduł referencyjny do dalszego porównania
-ze szczelną przegrodą; metoda regulacji i końcowa konstrukcja są jeszcze otwarte.
+**Aktualny etap: porównanie metod regulacji i materiałów.**
+[Raport 043](raporty/043_przegroda_dwie_komory_i_materialy.md) dodaje przegrodę
+w kilku pozycjach, 56 modeli podparcia, dwie komory/przecieki i 72 432 punkty
+napędu dla 27 konfiguracji. Przegroda jest lżejsza, ale miękkie podparcie
+może wprowadzać silny rezonans basowy. Moduły z [raportu 042](raporty/042_regulacja_Vb_i_wklady_wypornosciowe.md)
+pozostają odniesieniem do pełnego 3D; metoda regulacji jest jeszcze otwarta.
+Dodano pierwotne dane sklejki i porównanie masy oraz obu kierunków sztywności pasa.
 Powiązane wyniki obejmują [dodatkowe SB — 038](raporty/038_SB_Acoustics_rozszerzenie_i_porownanie.md),
 [wypełnienie — 039](raporty/039_wypelnienie_ilosc_polozenie_i_straty.md),
 [listwę stałego frontu — 040](raporty/040_listwa_stalego_frontu_i_droga_sily.md)
@@ -45,6 +48,8 @@ nie zatwierdzonym docelowym głośnikiem.
 |---|---|---|
 | Głośnik | **Obliczenie:** przewaga zależy od pasma i aktywnego limitu X/V/I; większe Sd lub mniejsze Le nie rozstrzyga wyboru | Jedna końcowa rekomendacja po integracji niepewności, termiki, konstrukcji i DSP |
 | Litraż | **Obliczenie:** trzeba wspólnie spełnić ograniczenia napędu i ruchu; po dojściu do Sd·Xmax dalszy litraż nie podnosi pułapu samego ruchu | Zakres regulacji, netto po odjęciu elementów i mechanizm regulacji |
+| Regulacja Vb | **Symulacja:** ruch przegrody i przeciek udostępniają część tylnego gazu; moduły są cięższe, lecz mają sprawdzone tory montażu w kontrolnej klasie | Pełne 3D, szczelność i blokowanie przegrody lub mocowanie modułów; porównanie kompletnych mas |
+| MDF / sklejka | **Dane producenta + obliczenie przybliżone:** sklejka może zmniejszyć masę przy podobnej sztywności pasa; oba kierunki mają znaczenie | Skręcanie, straty, powierzchnia/klej i pełny materiał płyty; nie jest to ranking kompletnych obudów |
 | Wypełnienie | **Obliczenie/symulacja:** liczymy masę, objętość włókien i gazu oraz wpływ położenia na straty; porowata mata i sztywny wkład mają różne bilanse | Konkretny materiał, rozmieszczenie, mocowanie i powiązanie z komorą 3D oraz regulacją Vb |
 | Konstrukcja | **Symulacja:** w referencyjnej ramie jeden ściąg zmniejsza podatność o około 18% przy dodatkowych 0,464 kg | Geometria dla wybranego głośnika, lokalne połączenia i pełne sprzężenie z powietrzem |
 | Klej | **Symulacja:** wyznaczono wymagania sztywności; energia wirtualnego odspojenia zmienia się o 27–41% między dwiema siatkami | Nośność, adhezja do MDF, pełzanie, zmęczenie i zbieżna analiza lokalna; D3/D4 nie wystarcza |
@@ -78,7 +83,8 @@ ten przewodnik. „Wykonano rodzinę modeli” nie oznacza zamknięcia całego p
 | Jak policzyć panele, usztywnienia i klej? | [029 — płyty](raporty/029_P18A_plyty_sciagi_i_dynamika.md), [030 — spoiny](raporty/030_P19A_obliczenia_spoin_i_material_kleju.md), [035 — pełna rama](raporty/035_pelna_rama_3D_spoiny_i_podparcie.md), [036 — defekt spoiny](raporty/036_spoiny_3D_i_wirtualne_odspojenie.md) | [Materiał MDF i kleje](dane/materialy/), [wyniki 3D](wyniki/manifest_ramy_i_spoin_3D.json) |
 | Jak otwór, kosz i uszczelka zmieniają front? | [033 — front i docisk](raporty/033_front_otwor_kosz_i_styk_jednostronny.md), [034 — styk w czasie](raporty/034_czasowy_styk_i_pelny_MES.md) | [Geometria producentów](dane/zrodla/P18B_geometria_i_ograniczenia.json), [przebiegi P19C](wyniki/p19c_podsumowanie.json) |
 | Co oznacza stały front i jak dobrać jego połączenie? | [037 — wymagania modułu](raporty/037_staly_front_wymagany_modul_spoin.md), [040 — listwa i droga siły](raporty/040_listwa_stalego_frontu_i_droga_sily.md), [041 — podmodel i dane brzegowe](raporty/041_lokalny_podmodel_i_granice_wiarygodnosci.md), [U-021](DECYZJE_I_PYTANIA.md) | [12 progów](wyniki/p19e_wymagane_moduly_stalego_frontu.csv), [20 wariantów listwy](wyniki/p19f_geometrie_i_podatnosc.csv), [24 lokalne realizacje](wyniki/p19g_ocena_i_roznice.json) |
-| Jak zmieniać objętość przy stałym froncie? | [042 — wkłady wypornościowe](raporty/042_regulacja_Vb_i_wklady_wypornosciowe.md) | [108 układów](wyniki/p20a_dostep_i_uklad.csv), [tory montażu](wyniki/p20a_tory_montazu.json), [porty modułów](wyniki/p20a_porty_modulow.csv), [napęd z wkładami](wyniki/p20a_naped_objetosc_i_wklady.csv) |
+| Jak zmieniać objętość przy stałym froncie? | [042 — wkłady wypornościowe](raporty/042_regulacja_Vb_i_wklady_wypornosciowe.md), [043 — przegroda i dwie komory](raporty/043_przegroda_dwie_komory_i_materialy.md) | [Tory montażu modułów](wyniki/p20a_tory_montazu.json), [80 geometrii przegrody](wyniki/p20b_pozycje_i_dostep.csv), [72 432 punkty napędu](wyniki/p20b_naped_i_porownanie_regulatorow.csv) |
+| Czy sklejka będzie lepsza od MDF? | [043 — pierwotne dane i ograniczenia](raporty/043_przegroda_dwie_komory_i_materialy.md) | [Dane producenta z hashem oryginałów](dane/materialy/sklejka_pierwotne_P20B.json), [masa i kierunkowa sztywność pasa](wyniki/p20b_materialy_masa_i_pas.csv) |
 | Jak uwzględniamy pokój i dwie sztuki? | [013 — dwa źródła i gabaryty](raporty/013_pokoj_i_realne_gabaryty.md), [017 — sprzężenie pola](raporty/017_promieniowanie_i_sprzezenie_pokoju.md), [019 — aktualna orientacja](raporty/019_zamiana_kanapy_i_RTV.md) | [Konwencja pokoju](dane/konfiguracje/pokoj_odsluchowy.json), scenariusze opisane w raportach |
 
 Pełny zakres i otwarte bramki są w [programie 30 pakietów](PROGRAM_30_BADAN.md).
@@ -378,6 +384,42 @@ nieruchomy wyłącznie dlatego, że opiera się na włókninie.
 [Raport 042: 78 modeli modułów, bilanse, montaż, mocowanie i ograniczenia przestrzenne](raporty/042_regulacja_Vb_i_wklady_wypornosciowe.md)
 · [dynamika mocowania](wyniki/73_P20A_dynamika_mocowania_wkladu.png).
 
+### 16. Przegroda: mniej masy, ale potrzebne sztywne blokowanie
+
+Przegroda 18 mm z modelowym uszczelnieniem i założonym wózkiem ma około
+**3,05 kg**, wobec **11,21 kg samych 16 modułów**. Obie liczby wymagają
+uzupełnienia osprzętu. Przy tej samej ilości gazu z przodu miękka rama
+wprowadza silną odpowiedź w paśmie basowym. Ujemna część reaktywna na
+wykresie nie jest ujemną objętością fizyczną. Wykres przedstawia liniowy
+port; poziom pracy wymaga osobnego sprawdzenia amplitudy i prześwitów.
+
+![Przegroda — wpływ mocowania na podatność i straty](wyniki/75_P20B_podatnosc_i_mocowanie.png)
+
+Cała sztywna płyta 458×458 mm nie przejdzie przez badane otwory do 355,8 mm,
+także przy obrocie: ograniczenie wynika z jej środkowego wpisanego dysku.
+Wymaga wcześniejszego montażu lub innego dostępu. Front pozostaje stały.
+
+![Pozycja przegrody i ograniczenie dostępu przez front](wyniki/74_P20B_pozycje_i_dostep.png)
+
+[Raport 043: dwie komory, przeciek, odpowietrzenie, statyka i kontrole](raporty/043_przegroda_dwie_komory_i_materialy.md).
+Są to scenariusze przy niezmierzonych mocowaniach/uszczelce; nie końcowa
+rekomendacja konstrukcji lub poziomu SPL w pokoju.
+
+### 17. MDF i sklejka: sprawdzaj oba kierunki
+
+Dane Metsä odczytano także z oryginalnych tabel PDF. **Form/FormPLUS12**
+ma w obliczeniu około 38% mniejszą masę samej płyty niż kontrolne MDF18,
+a wskaźnik sztywności słabszego kierunku pasa wynosi około 0,96 wartości MDF.
+**Spruce12** ma słabszy kierunek około 0,19, mimo dobrego wyniku wzdłuż.
+Nie wolno z jednego modułu wywnioskować drgań całej obudowy.
+
+![MDF i sklejka — masa oraz dwa kierunki nominalnej sztywności pasa](wyniki/77_P20B_sklejka_masa_i_kierunki.png)
+
+Wskaźnik Em·t³ nie identyfikuje skręcania, tłumienia i adhezji. Producent
+podaje odmienne wilgotności dla tych dwóch sklejek, a MDF jest założeniem
+modelowym. [Raport043](raporty/043_przegroda_dwie_komory_i_materialy.md)
+wyjaśnia granice porównania i rozróżnienie surowej/powlekanej powierzchni.
+
 <a id="dalsze-prace"></a>
 ## Co wynika dla dalszego projektu
 
@@ -395,9 +437,10 @@ osobne sprawdzenie frontu, docisku i ochrony dynamicznej.
 | Dwie sztuki w docelowym pokoju | Wykonalne miejsca, gabaryty, faza, opóźnienia i integracja |
 | Odporne porównanie finalistów i domknięcie programu | Jeden przetwornik, jedna regulowana obudowa i końcowy PDF z uzasadnieniem |
 
-Najbliższy krok po P20A: **P20B — porównać szczelną przegrodę w kilku
-pozycjach z referencyjnymi modułami**, zgodnie z R3. Następnie pełne 3D
-wybranej metody i pole przestrzenne P21. Wyniki połączeń pozostają
+Najbliższy krok po P20B: **P20C — pełne 3D modułu referencyjnego z osobnymi
+portami ciśnienia wewnętrznego i zewnętrznego**, z zachowaniem kontrolnego
+porównania ze sztywno blokowaną przegrodą. Potem pole przestrzenne P21.
+Wyniki połączeń pozostają
 warunkowe względem materiału i źródłowego pola; kolejne same lokalne
 zagęszczenia nie zastąpią tych danych.
 Gałąź doboru po raporcie 038 wymaga rozszerzenia analizy odporności
@@ -460,6 +503,9 @@ OPENBLAS_NUM_THREADS=1 python3 skrypty/odtworz_podmodel_P19G.py
 
 # Regulacja Vb: wkłady, masa, porty, napęd, kanały i mocowania P20A
 OPENBLAS_NUM_THREADS=1 python3 skrypty/odtworz_regulacje_P20A.py
+
+# Przegroda, dwie komory, niezależny pełny układ i dane sklejki P20B
+OPENBLAS_NUM_THREADS=1 python3 skrypty/odtworz_przegrode_P20B.py
 ```
 
 Podczas aktywnej kampanii nie uruchamiaj pełnego przebiegu archiwizującego

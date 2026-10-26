@@ -1,0 +1,259 @@
+{
+  "date": "2026-10-26",
+  "status": "VISUALLY_VERIFIED_PRIMARY_FACTS_NOT_ORTHOTROPIC_MATERIAL_IDENTIFICATION",
+  "sources": [
+    {
+      "source_id": "SRC54",
+      "url": "https://www.metsagroup.com/contentassets/695a3e3833774e30bcc964c0bbea34a9/metsa_wood_plywood_for_concrete_formwork_technical_data.pdf",
+      "access_date": "2026-10-26",
+      "private_original": ".firecrawl/p20b_metsa_formwork_original.pdf",
+      "sha256": "b527ee9668980979a77c844c1a91f22390f940dff4191c583521abbf6b5f644b",
+      "inspected_pdf_pages": [
+        3,
+        10
+      ],
+      "access_method": "Firecrawl extraction; original PDF downloaded via local browser-harness,recording off; original pages rendered with PyMuPDF and inspected visually.",
+      "publication_date": "Not established from inspected pages; no date inferred from URL.",
+      "accepted": "Explicit native table entries and diagram a/b orientation only; rounded published facts,not measured samples.",
+      "rejected": "Firecrawl numeric curve tables; construction-pressure nomograms are not acoustic/strain-fatigue tests. Page3 properties table has no visible Table1.1 number; an extraction label is not adopted."
+    },
+    {
+      "source_id": "SRC55",
+      "url": "https://www.metsagroup.com/contentassets/42b1c1d79c43410c8762dcd1c6cc31e1/metsa-wood-birch-product-datasheet-en.pdf",
+      "access_date": "2026-10-26",
+      "private_original": ".firecrawl/p20b_metsa_birch_original.pdf",
+      "sha256": "cdd067cbacf3b655c814bf04ea2b24ec520a5e41606a6b1d7559c87040821abc",
+      "inspected_pdf_pages": [
+        2
+      ],
+      "access_method": "Firecrawl extraction; original PDF downloaded via local browser-harness,recording off; original pages rendered with PyMuPDF and inspected visually.",
+      "publication_date": "Not established from inspected pages; no date inferred from URL.",
+      "accepted": "Explicit native table entries and diagram a/b orientation only; rounded published facts,not measured samples.",
+      "rejected": "Firecrawl numeric curve tables; construction-pressure nomograms are not acoustic/strain-fatigue tests. Page3 properties table has no visible Table1.1 number; an extraction label is not adopted."
+    }
+  ],
+  "records": [
+    {
+      "product": "Metsa Wood Form/FormPLUS standard lay-up",
+      "source_id": "SRC54",
+      "pdf_page": 3,
+      "nominal_thickness_m": 0.009000000000000001,
+      "thickness_min_m": 0.0088,
+      "thickness_max_m": 0.0095,
+      "Em_a_bending_pa": 6105000000.0,
+      "Em_b_bending_pa": 11395000000.0,
+      "approx_areal_mass_kg_m2": 6.1,
+      "moisture_content_percent": 12,
+      "test_basis_label": "EN 789 values",
+      "face_veneer_direction": "b",
+      "a_direction": "Panel lengthwise",
+      "b_direction": "Panel crosswise",
+      "missing_for_full_plate_identification": [
+        "nu_xy",
+        "in-plane Gxy or laminate twisting D66",
+        "frequency-dependent damping",
+        "through-thickness material law",
+        "part-specific adhesion and fatigue"
+      ]
+    },
+    {
+      "product": "Metsa Wood Form/FormPLUS standard lay-up",
+      "source_id": "SRC54",
+      "pdf_page": 3,
+      "nominal_thickness_m": 0.012,
+      "thickness_min_m": 0.0115,
+      "thickness_max_m": 0.0125,
+      "Em_a_bending_pa": 6781000000.0,
+      "Em_b_bending_pa": 10719000000.0,
+      "approx_areal_mass_kg_m2": 8.2,
+      "moisture_content_percent": 12,
+      "test_basis_label": "EN 789 values",
+      "face_veneer_direction": "b",
+      "a_direction": "Panel lengthwise",
+      "b_direction": "Panel crosswise",
+      "missing_for_full_plate_identification": [
+        "nu_xy",
+        "in-plane Gxy or laminate twisting D66",
+        "frequency-dependent damping",
+        "through-thickness material law",
+        "part-specific adhesion and fatigue"
+      ]
+    },
+    {
+      "product": "Metsa Wood Form/FormPLUS standard lay-up",
+      "source_id": "SRC54",
+      "pdf_page": 3,
+      "nominal_thickness_m": 0.015,
+      "thickness_min_m": 0.0143,
+      "thickness_max_m": 0.015300000000000001,
+      "Em_a_bending_pa": 7184000000.0,
+      "Em_b_bending_pa": 10316000000.0,
+      "approx_areal_mass_kg_m2": 10.2,
+      "moisture_content_percent": 12,
+      "test_basis_label": "EN 789 values",
+      "face_veneer_direction": "b",
+      "a_direction": "Panel lengthwise",
+      "b_direction": "Panel crosswise",
+      "missing_for_full_plate_identification": [
+        "nu_xy",
+        "in-plane Gxy or laminate twisting D66",
+        "frequency-dependent damping",
+        "through-thickness material law",
+        "part-specific adhesion and fatigue"
+      ]
+    },
+    {
+      "product": "Metsa Wood Form/FormPLUS standard lay-up",
+      "source_id": "SRC54",
+      "pdf_page": 3,
+      "nominal_thickness_m": 0.018000000000000002,
+      "thickness_min_m": 0.0171,
+      "thickness_max_m": 0.0181,
+      "Em_a_bending_pa": 7452000000.0,
+      "Em_b_bending_pa": 10048000000.0,
+      "approx_areal_mass_kg_m2": 12.2,
+      "moisture_content_percent": 12,
+      "test_basis_label": "EN 789 values",
+      "face_veneer_direction": "b",
+      "a_direction": "Panel lengthwise",
+      "b_direction": "Panel crosswise",
+      "missing_for_full_plate_identification": [
+        "nu_xy",
+        "in-plane Gxy or laminate twisting D66",
+        "frequency-dependent damping",
+        "through-thickness material law",
+        "part-specific adhesion and fatigue"
+      ]
+    },
+    {
+      "product": "Metsa Wood Form/FormPLUS standard lay-up",
+      "source_id": "SRC54",
+      "pdf_page": 3,
+      "nominal_thickness_m": 0.021,
+      "thickness_min_m": 0.02,
+      "thickness_max_m": 0.0209,
+      "Em_a_bending_pa": 7642000000.0,
+      "Em_b_bending_pa": 9858000000.0,
+      "approx_areal_mass_kg_m2": 14.3,
+      "moisture_content_percent": 12,
+      "test_basis_label": "EN 789 values",
+      "face_veneer_direction": "b",
+      "a_direction": "Panel lengthwise",
+      "b_direction": "Panel crosswise",
+      "missing_for_full_plate_identification": [
+        "nu_xy",
+        "in-plane Gxy or laminate twisting D66",
+        "frequency-dependent damping",
+        "through-thickness material law",
+        "part-specific adhesion and fatigue"
+      ]
+    },
+    {
+      "product": "Metsa Wood Spruce III+/III",
+      "source_id": "SRC54",
+      "pdf_page": 10,
+      "nominal_thickness_m": 0.012,
+      "thickness_min_m": 0.0115,
+      "thickness_max_m": 0.0125,
+      "Em_a_bending_pa": 8237000000.0,
+      "Em_b_bending_pa": 1363000000.0,
+      "approx_areal_mass_kg_m2": 5.5,
+      "moisture_content_percent": 10,
+      "test_basis_label": "EN 789 values",
+      "face_veneer_direction": "a",
+      "a_direction": "Panel lengthwise",
+      "b_direction": "Panel crosswise",
+      "missing_for_full_plate_identification": [
+        "nu_xy",
+        "in-plane Gxy or laminate twisting D66",
+        "frequency-dependent damping",
+        "through-thickness material law",
+        "part-specific adhesion and fatigue"
+      ]
+    },
+    {
+      "product": "Metsa Wood Spruce III+/III",
+      "source_id": "SRC54",
+      "pdf_page": 10,
+      "nominal_thickness_m": 0.015,
+      "thickness_min_m": 0.0143,
+      "thickness_max_m": 0.015300000000000001,
+      "Em_a_bending_pa": 9237000000.0,
+      "Em_b_bending_pa": 2763000000.0,
+      "approx_areal_mass_kg_m2": 6.9,
+      "moisture_content_percent": 10,
+      "test_basis_label": "EN 789 values",
+      "face_veneer_direction": "a",
+      "a_direction": "Panel lengthwise",
+      "b_direction": "Panel crosswise",
+      "missing_for_full_plate_identification": [
+        "nu_xy",
+        "in-plane Gxy or laminate twisting D66",
+        "frequency-dependent damping",
+        "through-thickness material law",
+        "part-specific adhesion and fatigue"
+      ]
+    },
+    {
+      "product": "Metsa Wood Spruce III+/III",
+      "source_id": "SRC54",
+      "pdf_page": 10,
+      "nominal_thickness_m": 0.018000000000000002,
+      "thickness_min_m": 0.0171,
+      "thickness_max_m": 0.0181,
+      "Em_a_bending_pa": 8615000000.0,
+      "Em_b_bending_pa": 3385000000.0,
+      "approx_areal_mass_kg_m2": 8.3,
+      "moisture_content_percent": 10,
+      "test_basis_label": "EN 789 values",
+      "face_veneer_direction": "a",
+      "a_direction": "Panel lengthwise",
+      "b_direction": "Panel crosswise",
+      "missing_for_full_plate_identification": [
+        "nu_xy",
+        "in-plane Gxy or laminate twisting D66",
+        "frequency-dependent damping",
+        "through-thickness material law",
+        "part-specific adhesion and fatigue"
+      ]
+    },
+    {
+      "product": "Metsa Wood Spruce III+/III",
+      "source_id": "SRC54",
+      "pdf_page": 10,
+      "nominal_thickness_m": 0.021,
+      "thickness_min_m": 0.02,
+      "thickness_max_m": 0.0209,
+      "Em_a_bending_pa": 8277000000.0,
+      "Em_b_bending_pa": 3723000000.0,
+      "approx_areal_mass_kg_m2": 9.7,
+      "moisture_content_percent": 10,
+      "test_basis_label": "EN 789 values",
+      "face_veneer_direction": "a",
+      "a_direction": "Panel lengthwise",
+      "b_direction": "Panel crosswise",
+      "missing_for_full_plate_identification": [
+        "nu_xy",
+        "in-plane Gxy or laminate twisting D66",
+        "frequency-dependent damping",
+        "through-thickness material law",
+        "part-specific adhesion and fatigue"
+      ]
+    }
+  ],
+  "bare_birch_separate_facts": {
+    "source_id": "SRC55",
+    "pdf_page": 2,
+    "average_density_kg_m3": 680,
+    "condition": "Relative humidity65%,not moisture content65%.",
+    "scope": "Bare Birch/Birch L datasheet only; do not transfer density/grade/surface adhesion to Form/FormPLUS."
+  },
+  "failures_and_boundaries": [
+    "Spruce manual separate original download not completed; no values from its extraction accepted. Spruce facts here come from inspected SRC54 page10.",
+    "Chrome default daemon initially failed despite doctor; local named daemon then navigated a real manufacturer page and fetched originals. No cloud browser,recordings off.",
+    "No statistical mean/quantile for Em inferred from symbol m. Characteristic strengths not used as acoustic fatigue allowables.",
+    "Gr labelled planar shear is not automatically in-plane Gxy. No full plywood FEM material fitted.",
+    "Form/FormPLUS coated surface is not bare Birch; actual adhesive suitability needs identified surface preparation.",
+    "MDF referenceE2100MPa/rho730 is an assumption,not a manufacturer result at matched moisture."
+  ]
+}

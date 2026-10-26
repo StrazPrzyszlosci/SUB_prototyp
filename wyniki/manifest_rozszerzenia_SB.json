@@ -1,6 +1,6 @@
 {
   "status": "ADDITIVE_LINEAR_SCREENING_NOT_FINAL_SELECTION",
-  "generated_at": "2026-10-26T12:36:59.066692+01:00",
+  "generated_at": "2026-10-26T16:14:50.417475+01:00",
   "libraries": {
     "Python": "3.12.3",
     "NumPy": "1.26.4",
@@ -20,7 +20,7 @@
     "skrypty/analiza_rozszerzenia_SB.py": "d01acbe156b8865df3b127aa5298ef310d0e35b25380be4932d7844805e81a38",
     "skrypty/manifest_rozszerzenia_SB.py": "e6389b46724a82547b799168b4b89ababd979ccc96455b842e8b62da4b9efdda",
     "skrypty/model_subwoofera.py": "bd7e6e250a5b9a605fbbb05343381b827ffa81047a90c692968fc8e34eedc2b8",
-    "skrypty/odtworz_wszystko.py": "aab083ebcac7d8bbc75e1530469ab613852e8979dd6e226d84b7b316b3c88612",
+    "skrypty/odtworz_wszystko.py": "272be63716c8352c900f18fde0422a94f3398c979c696de016aa82c7e35d7c6b",
     "wyniki/pula_podsumowanie.csv": "ed5eb7b8cdd7660eaa3f5b8b2ea9fa33d11955cc6189cbadd20daaa6c9c646ad"
   },
   "output_sha256": {
@@ -32,14 +32,14 @@
     "wyniki/sb_rozszerzenie_weryfikacja.json": "f12253d80bfc6c3c518737953fdf648b85e85826e52a94ab004efad5a1bf46f3"
   },
   "documentation_sha256": {
-    "README.md": "813d17d0484a721f5cbf7d7ed92199aa7a489cc7cf8a84c346000714398844ce",
-    "AGENTS.md": "3100d8d82ad4eb5591f4bff2d62853efd875f837ad0327fbdfd3943d46ca4349",
-    "PLAN_B_R.md": "7f261a9cb8931828e6d50562ba0ace4263e75d9f5bbcf589c0a4587a36df3da9",
-    "PROGRAM_30_BADAN.md": "9e0ae36d43f89fb1487f333d4dc2140e3a83b78959503ae7fc5fea86cf083769",
-    "raporty/README.md": "f17a3b8e5d0cc4f2a4cd7d5ff4434d4f05fb2e8f04623999d1cd9bc8dd46dc9b",
+    "README.md": "6651840d02e9bacc8c8061d469715b825a78268e73e7011449a0fd36fcb509e8",
+    "AGENTS.md": "776ef1cc7fd38e21c209c6e3c0e45a7ebd38539bf3b2c3c678e0f4bf9bb645f8",
+    "PLAN_B_R.md": "955450f582f3bd2cfab18770ff36b2fc541ebf5972b4662e7af38a8584915eac",
+    "PROGRAM_30_BADAN.md": "734d5085a48cf835925d5886f5a1d9ebc0d64221c3e96d0bbb9e690cc3d8092e",
+    "raporty/README.md": "eebfafa70e9bdf250ef7a58862ae6d5dea45493239dffee73a16288f0d3e2f15",
     "raporty/038_SB_Acoustics_rozszerzenie_i_porownanie.md": "8925a6f93e2cd9c755d385871324143174ff966185057d0858ec3ea8b12d4bff",
-    "baza_wiedzy/README.md": "6af93aad77c06153c318bd08972b47b70628f4905d28c67c2f8d4051e8c5de50",
-    "baza_wiedzy/ZRODLA.md": "089f2008728d15848c9946ef569ef6ca58a139e353a7698aee42ef87aad0e1b3",
+    "baza_wiedzy/README.md": "ad2642d35a75c03ac640423e7b00918f27c423ed1a7a20e8183813c7bdacc813",
+    "baza_wiedzy/ZRODLA.md": "b5e3669046e2c8b8a0327bbbf61fd706f4415a3073bc09c504c89c9edbeef917",
     "baza_wiedzy/26_dwie_cewki_i_porownywanie_SB.md": "dab976132693778a0475e904fe51cb5e9b7ee7d57e3e90d456ed8a8749ec61b4"
   },
   "limitations": [

@@ -207,6 +207,18 @@ Optymalizacja jednego sweet spotu 2,5–3 m; brak narzuconego budżetu i gabaryt
     podparciem. Wskaźnik wyboczenia panelu P20A to założony schemat
     Nx=Ny=p*normal_span/2, nie nośność lub dolna granica całego pudełka.
 
+34. P20B: przegroda i moduły są porównane przy tej samej ilości gazu,
+    ale rodziny termicznego wyklejenia mają różne ilości maty. Ruch ramy
+    i ugięcie mają wspólną masę krzyżową, nie dwa razy tę samą płytę.
+    G_ref odnosi się do100l, nie rzeczywistego bieguna lub szczeliny.
+    Ujemna Re podatności dynamicznej nie jest ujemną objętością gazu.
+    Dwumonopolowe4pi jest diagnostyką bez reakcji zewnętrznej/pokoju;
+    nie porównywać wprost z frontowym2pi. Ekran1%gazu nie jest THD/nośnością.
+    SRC54/55: pierwotne Em/masa sklejki dają wskaźnik pasa, nie pełny tensor
+    ortotropowy. Gr planar shear nie jest automatycznie Gxy; nie przenosić
+    bareBirch na Form/FormPLUS, MC12% na MC10% lub RH65% na wilgotność65%.
+    Przegroda wymaga preinstalacji/innego dostępu; front pozostaje stały.
+
 ## Stan i postępy
 
 | Data | Wykonane | Dowód / ograniczenie | Następny krok |
@@ -675,6 +687,30 @@ Postęp końca sesji2026-10-23:
   metody (dla modułu osobne porty wewnętrzny/zewnętrzny),mocowania iP21.
   MDF/sklejka, faktyczna wyporność głośników,kwalifikacja kleju i
   temperatura/DSP/ochrona nadal wymagają syntezy. Końcowy wybór/PDFotwarte.
+
+- P20B,2026-10-26:raport043/baza31.80geometrii,56modeli przegrody,
+  13836stanówkomór/przecieków,27216ekranów amplitudy,72432punktynapędu
+  dla27konfiguracji. Osobne źródło tylnejwentylacji ma przeciwny znak
+  do membrany. WspólneβK wnowymporównaniu nie nadpisuje wynikówP20A.
+- Weryfikacja:64pełne układy nodalne+2ciśnienia,16mechanicznych,
+  72statyczne stany hermetycznejmasy przy zadanychT/pa,72bilansegeometrii,
+  12świadkówsiatki,3Navier. Max różnicaZ2.13e-12;wybrana siatka10→14
+  do3.50%,nie dokładność fizycznego wyrobu.1000PaRMS zdefinicji przekracza
+  ekran1%peakgazu;nie jest licznikiem uszkodzeń.20027wierszynapędu
+  pozaekranami zachowano z osobnym napięciemdomeny,bez deklaracjimocybezpiecznej.
+- Przegroda18:płyta+modeloweuszczelnienie+wózek3.046kg,16modułów11.209kg
+  bezpełnychmocowań. Miękkarama4×10^4N/m daje rezonansbasowy; sztywny
+  obwód18 oddajeokoło0.46–0.50l przy20–80Hz. Całasztywna płyta nieprzejdzie
+  przezbadaneotwory;udowodniono koniecznywarunek środkowegodysku,niegięcia.
+- SRC54/55:obejrzano oryginały tabelMetsä,9wariantówsklejki.MDF18vsForm12:
+  masa0.624razy,wskaźnikpasa0.957/1.512zależnieodkierunku. To nie pełna
+  płyta, wspólnawilgotność lub kwalifikacjakleju. DataiSHA wrejestrze,
+  oryginałyprywatne,automatycznetablicekrzywychodrzucone.
+- Czterywykresy74–77obejrzane;READMEprzewodnik rozszerzony o3obrazy
+  i raport043. **Jeden najbliższykrok:P20C—pełne3Dmodułu100mm z osobnymi
+  portami wnętrze/zewnętrze**, ze sztywno blokowanąprzegrodą jako kontrolą
+  porównania. Rzeczywistyosprzęt,pełnasklejka,P21,DSP/ochrona i synteza
+  nadalotwarte. Końcowygłośnik/skrzynia/PDFniezostałyzatwierdzone.
 
 ## Decyzje otwarte
 

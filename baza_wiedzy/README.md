@@ -41,6 +41,7 @@ a potwierdzonych ustaleń użytkownika w [rejestrze](../DECYZJE_I_PYTANIA.md).
 |28|[Listwa i lokalna droga siły](28_listwa_i_lokalna_droga_sily.md)|Dodatkowe spoiny, masa/ciśnienie, globalna podatność i lokalna zbieżność|
 |29|[Podmodel i transfer obciążeń](29_podmodel_i_transfer_obciazen.md)|Cięcia, fizyczne podpory, okna obserwacji i zależność od danych globalnych|
 |30|[Wkłady: objętość, gaz i mocowanie](30_wklady_objetosc_gaz_i_mocowanie.md)|Podatność, szczelność, rezonans kanału, droga montażu i siły mocowania|
+|31|[Przegroda, dwa ciśnienia i anizotropia](31_przegroda_dwa_cisnienia_i_anizotropia.md)|Podatne mocowanie, hermetyczny gaz, dostęp, znaki źródeł i ograniczenia Em sklejki|
 |Źródła|[Rejestr z datami](ZRODLA.md)|Co przeczytano, co tylko znaleziono i jakie są braki|
 
 ## Od wiedzy do wykonania

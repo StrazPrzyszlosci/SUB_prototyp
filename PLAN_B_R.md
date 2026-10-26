@@ -207,9 +207,10 @@ kampanii bez nowej hipotezy zmieniającej decyzję.
 
 Mechanika doszła do frontu, styku w czasie i pełnej ramy 3D (033–036),
 a P19E wyznacza wymagania sztywności stałego frontu (037). **Najbliższy
-krok po P20A: P20B — porównać szczelną przegrodę w kilku pozycjach
-z referencyjnymi wkładami wypornościowymi**, potem pełne 3D wybranej
-metody i pole P21. Porównanie MDF/sklejka z R3 nadal jest otwarte.
+krok po P20B: P20C — pełne 3D modułu referencyjnego z osobnymi portami
+ciśnienia wnętrze/zewnętrze**, przy zachowaniu kontrolnej sztywno blokowanej
+przegrody w porównaniu. Następnie pole P21. Porównanie MDF/sklejka z R3
+ma pierwotne dane i wskaźniki pasa; pełna płyta i klejenie pozostają otwarte.
 Screening odspojenia nadal nie jest zbieżną prognozą odporności na pękanie.
 
 Raport 040 ma 20 wariantów listwy i 40 obciążeń pełnej ramy. Nowa droga
@@ -226,6 +227,14 @@ Raport 042 zbadał 108 układów dostępu,78modeli wkładów i40068punktów
 napędu dla27konfiguracji. Wybrano referencyjny moduł180×100×170mm/MDF8
 ześciągiem do porównania z przegrodą. Potwierdzone tory dotyczą konkretnej
 klasy translacji; modele płyt nie są kwalifikacją pełnej skrzynki3D.
+
+Raport 043 porównuje przegrodę w kilku pozycjach z modułami przy tej samej
+ilości gazu: 56 modeli podparcia, 13836 stanów komór/przecieków i72432 punkty
+napędu. Miękki montaż wprowadza rezonans basowy; masa samej przegrody
+jest niższa, ale nie obejmuje kompletnego mechanizmu. Sprawdzono dostęp,
+pełne układy nodalne, siatki, granice i 72 stany hermetycznego gazu.
+SRC54/55 dodają pierwotne dane sklejki: 9 porównań masy i sztywności pasa,
+bez fikcyjnego uzupełniania skręcania/nu/dampingu lub adhezji powłoki.
 
 Raport 038 rozszerza pulę do 26 produktów / 27 konfiguracji elektrycznych,
 w tym trzech SB Acoustics. Nowe SB mają odrębne obliczenia liniowe;

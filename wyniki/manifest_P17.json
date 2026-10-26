@@ -1,6 +1,6 @@
 {
   "status": "P17_WYKONANY_ZAKRES_WARUNKOWY_NIE_FINALNY_WYBOR",
-  "generated_at": "2026-10-26T12:37:08.409600+01:00",
+  "generated_at": "2026-10-26T16:14:47.910305+01:00",
   "run_sha256": "6b080906d4f37976da6b5af0f8567c2691f9cc0f5ab6f5bdbfe36e05b7461fb8",
   "libraries": {
     "Python": "3.12.3",
@@ -23,7 +23,7 @@
     "skrypty/model_gazu.py": "ca8f63066f23eac9eb00610b428c173515f3088395501deaec740ea05a2c5115",
     "skrypty/model_nieliniowy.py": "f1e72234395d688356d6a13f62db9e0f936f723534559d6607d27fdc4a6c2b36",
     "skrypty/model_subwoofera.py": "bd7e6e250a5b9a605fbbb05343381b827ffa81047a90c692968fc8e34eedc2b8",
-    "skrypty/odtworz_wszystko.py": "aab083ebcac7d8bbc75e1530469ab613852e8979dd6e226d84b7b316b3c88612",
+    "skrypty/odtworz_wszystko.py": "272be63716c8352c900f18fde0422a94f3398c979c696de016aa82c7e35d7c6b",
     "skrypty/raportuj_synteze_P17.py": "e1f3b80a9d0b0bb1b3bbe51dd6bdabd97ca9e29894bf6a6fbf2998848ef7d63b",
     "skrypty/sprawdz_synteze_P17.py": "6612cd29dcd1f9b863c899f8e8fa3fd844e8b8dea623f8c596210d19dc9f5b6b",
     "skrypty/synteza_granic_P17.py": "b5b93a5f435afa85517fabe990d269d90a578d7844c045a5abf8841d245cec4c"
@@ -42,10 +42,10 @@
     "wyniki/42_P17_wspolna_objetosc_i_chlodzenie.svg": "fc566dd2a50bd87e5357bb8c721dbeea04e811aad9b049afc80fc49a5e38f8f4"
   },
   "documentation_sha256": {
-    "AGENTS.md": "3100d8d82ad4eb5591f4bff2d62853efd875f837ad0327fbdfd3943d46ca4349",
-    "README.md": "813d17d0484a721f5cbf7d7ed92199aa7a489cc7cf8a84c346000714398844ce",
-    "PROGRAM_30_BADAN.md": "9e0ae36d43f89fb1487f333d4dc2140e3a83b78959503ae7fc5fea86cf083769",
-    "baza_wiedzy/README.md": "6af93aad77c06153c318bd08972b47b70628f4905d28c67c2f8d4051e8c5de50",
+    "AGENTS.md": "776ef1cc7fd38e21c209c6e3c0e45a7ebd38539bf3b2c3c678e0f4bf9bb645f8",
+    "README.md": "6651840d02e9bacc8c8061d469715b825a78268e73e7011449a0fd36fcb509e8",
+    "PROGRAM_30_BADAN.md": "734d5085a48cf835925d5886f5a1d9ebc0d64221c3e96d0bbb9e690cc3d8092e",
+    "baza_wiedzy/README.md": "ad2642d35a75c03ac640423e7b00918f27c423ed1a7a20e8183813c7bdacc813",
     "baza_wiedzy/19_staly_poziom_i_wspolne_ograniczenia.md": "6dd9fb3296c5760169a1b7656c0f240a2953e4e457d8a1eca33fcfcbe4b35f66",
     "raporty/028_P17_synteza_napedu_objetosci_i_ciepla.md": "08dd9e2f9763a60ced60c21d0394e0345993589d71630f0231e064c483825ce4"
   },

@@ -48,3 +48,4 @@ bieżący zakres sprawdzaj w [programie 30 pakietów](../PROGRAM_30_BADAN.md).
 | [040](040_listwa_stalego_frontu_i_droga_sily.md) | Raport 040 — P19F: listwa stałego frontu i droga siły |
 | [041](041_lokalny_podmodel_i_granice_wiarygodnosci.md) | Raport 041 — P19G: lokalny podmodel i granice wiarygodności |
 | [042](042_regulacja_Vb_i_wklady_wypornosciowe.md) | Raport 042 — P20A: regulacja Vb i wkłady wypornościowe |
+| [043](043_przegroda_dwie_komory_i_materialy.md) | Raport 043 — P20B: przegroda, dwie komory i porównanie materiałów |

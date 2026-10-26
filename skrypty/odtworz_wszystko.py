@@ -39,6 +39,7 @@ def main():
     from analiza_fizyki import main as physics
     from analiza_celow_dsp import main as dsp
     from uruchom_badania import main as baseline
+    from odtworz_przegrode_P20B import main as partition_stage
     from sprawdz_nieszczelnosci import main as leakage_checks
     from analiza_nieszczelnosci import main as leakage
     from porownaj_szeroka_pule import main as pool
@@ -193,6 +194,7 @@ def main():
     fixed_front_cleat()
     local_front_joint()
     volume_insert_stage()
+    partition_stage()
     sb_extension()
     sb_manifest()
     filling_placement()
