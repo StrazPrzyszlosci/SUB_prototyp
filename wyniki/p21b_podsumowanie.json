@@ -1,0 +1,40 @@
+{
+  "status": "PARTIAL_ACTIVE_DO_NOT_CLAIM_ALL_CASES",
+  "date": "2026-10-26",
+  "run_sha256": "9de2a58b864caa247d9b49661220c8811ba5c8e4d3e7d2a8877c96541a546178",
+  "input_sha256": {
+    "dane/konfiguracje/p21b_gaz_przestrzenny_modulu.json": "f0c9ee91b8fd96ce788e1ff935cb8b0621aa6c1e8c84a39f958a8b5fa4ed661e",
+    "dane/konfiguracje/p20c_modul_pelny_3D.json": "f77ec32d7f65fff5c680c58db27375476326f4d35da00337ea2bfdcfae2c7e68",
+    "dane/konfiguracje/p20a_regulacja_objetosci.json": "eed4cd0696db7b82249e167cac9cbd4b27dfae1d239e2f2079623a4b288eaf29",
+    "skrypty/analiza_gazu_przestrzennego_P21B.py": "3a0f09c8777f9e51a09fca71591c891a78cae8e9449beea995199ce4b598ba27",
+    "skrypty/model_gazu_3D_P21B.py": "5b45eb16cdf4f293c5f42534cec15159508b3aadaa6f2c7af307551da17d92d3",
+    "skrypty/sprawdz_gaz_3D_P21B.py": "c77bab010db004786a489de2b47e3c73f7309361b620b54261225359e79548a5",
+    "skrypty/model_modulu_3D_P20C.py": "f55105368bc8ae7e228c4b3d7c715019a4c6287c1e36f5cb4318ad3d923d1fbe",
+    "skrypty/element_brylowy_P18C.py": "d90d0c7f1adf2d00249220653b8335ea1e021b07b774dc770921029da4a8aacb",
+    "skrypty/model_ramy_3D_P18C.py": "698395a0d216659572ae84c1fea1b1251a67c5c32b99a7cf84cc55582e33e1ad",
+    "skrypty/model_gazu.py": "ca8f63066f23eac9eb00610b428c173515f3088395501deaec740ea05a2c5115",
+    "skrypty/analiza_wkladow_P20A.py": "e6878a1f652ab9bd9953826f1b8c8694f48c826139fc11afecb5698e65c938d9",
+    "brief_system_audio_DIY_v0.6.md": "3bd9f8d43a92b96256073e66cd0f4f105336e969a37c29fc42f17cda9d66736f"
+  },
+  "cases": 17,
+  "expected_cases": 18,
+  "checkpoint_folder": "wyniki/p21b_przypadki/9de2a58b864caa24",
+  "reference_state_file": "wyniki/p21b_pole_reference_9de2a58b864caa24.npz",
+  "field_rows": 240,
+  "frequency_cases": 120,
+  "flagged_frequency_cases": 0,
+  "libraries": {
+    "Python": "3.12.3",
+    "NumPy": "1.26.4",
+    "SciPy": "1.17.1"
+  },
+  "limitations": [
+    "Zamknięty gaz bez przecieku,włókniny i termowiskozowych warstw przyściennych;straty są na razie w konstrukcji. Nie jest to pełny model tłumienia rzeczywistego modułu.",
+    "Nierównomierny port zewnętrzny jest scenariuszem z gradientem,nie zmierzonym polem głównej skrzyni. Jego uogólniony przepływ energii nie jest równoważny samej zmianie objętości.",
+    "Swobodna bryła zachowuje fizyczny ruch sztywny oraz bezwładność gazu. Projekcję ruchu sztywnego wolno użyć do stabilnego obliczenia energii odkształceń,nie do usunięcia ruchu z warunku płyn–ciało.",
+    "Skalowanie A przy stałym C jest formalną granicą pomijalnej gęstości/bezwładności gazu,nie rzeczywistym ogrzaniem powietrza.",
+    "Wyższe częstotliwości mają charakter diagnostyczny w idealizowanym modelu bez strat gazu;nie prognozować rzeczywistych szczytów bez identyfikacji strat i amplitudy.",
+    "MDF/klej/luzy i pole zewnętrzne są założeniami. Nie przypisano modeli materiałowych ani THD konkretnemu produktowi.",
+    "Kolejny etap to główna komora,regulacja,wypełnienie i mocowanie;nie zastępujemy ich badaniem samego małego modułu."
+  ]
+}

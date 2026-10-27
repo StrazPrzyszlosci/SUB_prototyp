@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-27",
+  "status": "CONDITIONAL_LINEAR_ELECTROMECHANICAL_AND_COPPER_THERMAL_MODEL",
+  "volumes_l": [60, 100, 150],
+  "thermal_resistance_k_w_assumed": [0.3, 0.6, 1.2],
+  "temperature_rise_limit_k_assumed": [40, 80],
+  "catalog_x_reference_fraction": [0.6, 1],
+  "alpha_resistance_per_k_assumed": 0.004,
+  "series_source_R_ohm_assumed": 0.1,
+  "source_peak_rail_v_assumed_for_sine_comparison": 56.568542494923804,
+  "hardware_peak_current_a_assumed": 16.970562748477143,
+  "lambda_search_fractions": [0.02, 0.05, 0.1, 0.2, 0.4, 0.6, 0.8],
+  "sine_probes_hz": [20, 25, 31.5, 40, 63, 80],
+  "limitations": [
+    "Certyfikat dotyczy jawnego modelu ze stałymi M,K,Le,BL,Rms i Re(theta)=Re0*(1+alpha*theta),nie fizycznego produktu o nieznanych krzywych i tolerancjach.",
+    "Ciepło to tylko Re(theta)*i^2;jednobiegunowe chłodzenieRth,Cth>0. Brak nieznanego przydziału strat wirowych,gradientów i dodatkowych źródeł ciepła.",
+    "Próg temperatury,poziom prądu,Rth i frakcja Xmax to scenariusze,nie uzgodnione wymagania briefu lub dopuszczenia materiału cewki.",
+    "Rodzina obejmuje wszystkie theta w przedziale i zmienne w czasie wejście o ograniczonym napięciu,ale nie niepewność innych T/S i nieliniowe zawieszenie/motor.",
+    "Brak zewnętrznego LC;u jest napięciem fizycznego portu Thevenina przed Rs. Granica cyfrowych próbek nie gwarantuje sama granicy po rekonstrukcji DAC i wzmocnieniu.",
+    "Stan początkowy musi należeć do zapisanej elipsoidy,a temperatura do przedziału. Nie jest to ochrona każdego dowolnego stanu początkowego.",
+    "Wyszukanie siedmiu lambda i zaokrąglenie z marginesem daje świadków dopuszczalności,nie globalnie optymalny poziom lub dowód niemożliwości większego wejścia."
+  ]
+}

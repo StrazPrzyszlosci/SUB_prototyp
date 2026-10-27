@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-27",
+  "status": "SOFTWARE_FILTER_REALISATION_STUDY_NOT_IDENTIFIED_HARDWARE",
+  "sample_rates_hz_assumed": [48000, 96000, 192000],
+  "net_air_volumes_l_assumed": [30, 60, 100, 150],
+  "lt_target_hz_assumed": [20, 25, 30],
+  "target_q": 0.7071067811865476,
+  "highpass_hz_assumed": 18,
+  "lowpass_lr4_hz_assumed": 80,
+  "representations": ["float64", "float32", "decimal6", "decimal9", "decimal17"],
+  "band_hz": [20, 80],
+  "band_points": 1001,
+  "stress_cutoffs_hz": [0.5, 2, 5, 18, 80],
+  "stress_q": [0.5, 0.7071067811865476, 2, 10],
+  "software_time_case": {
+    "candidate": "C04",
+    "volume_l": 100,
+    "target_hz": 25,
+    "duration_s": 4,
+    "record_tones_hz": [20, 31.5, 63, 80],
+    "last_time_s": 1,
+    "input_step_amplitude": 0.1
+  },
+  "limitations": [
+    "Częstotliwości i filtry są scenariuszami;96 kHz potwierdzono w dokumentacji Flex Eight,pozostałe Fs nie są ustawieniami tego urządzenia.",
+    "float32 oznacza własne zaokrąglenie współczynników lub software SOS;nie zidentyfikowano formatu arytmetyki IIR,akumulatora,FMA lub skalowania konkretnego miniDSP.",
+    "Model obudowy dla LT ma Le=0,sztywne ścianki i gaz0D. Rzeczywistego produktu nie redukuje się przez to do dokładnego filtru drugiego rzędu.",
+    "Kaskada zawiera LT,HP2 i LP LR4;nie jest nastawą zaakceptowaną do budowy,ochroną X/T ani prognozą SPL pokoju.",
+    "Porównanie błędu w skończonej siatce20–80Hz nie jest certyfikatem globalnego ekstremum ciągłego pasma.",
+    "Dodatnie marginesy Jury są dokładną własnością zapisanych współczynników;nie obejmują automatycznie nieliniowej arytmetyki stanów,zera wejścia,przepełnień lub zmiany nastaw w locie."
+  ]
+}

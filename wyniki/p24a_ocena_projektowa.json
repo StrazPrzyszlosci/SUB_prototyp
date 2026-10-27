@@ -1,0 +1,52 @@
+{
+  "status": "COMPLETE_SCOPED_EXACT_MODEL_INVARIANCE_AND_COST_NOT_DEVICE_CERTIFICATION",
+  "accepted_certificates": 972,
+  "temperature_endpoint_LMIs": 1944,
+  "rejected_search_trials": 3,
+  "failed_trials": [
+    {
+      "case_id": "C03_V100_Rth0.6_T80_X0.6",
+      "trial": {
+        "lambda_fraction": 0.8,
+        "lambda_value": "2583751373/12500000",
+        "candidate_accepted": false,
+        "error": "AssertionError: Endpoint LMI failed"
+      }
+    },
+    {
+      "case_id": "C13_V60_Rth0.3_T80_X0.6",
+      "trial": {
+        "lambda_fraction": 0.8,
+        "lambda_value": "2135493533/6250000",
+        "candidate_accepted": false,
+        "error": "AssertionError: Endpoint LMI failed"
+      }
+    },
+    {
+      "case_id": "C13_V60_Rth0.6_T40_X0.6",
+      "trial": {
+        "lambda_fraction": 0.8,
+        "lambda_value": "38896844333/100000000",
+        "candidate_accepted": false,
+        "error": "AssertionError: Endpoint LMI failed"
+      }
+    }
+  ],
+  "continuous_ODE_cases": 36,
+  "performance_rows": 11664,
+  "thermal_comparison_rows": 23328,
+  "max_sampled_W": 0.9339405580572189,
+  "input_sha256": {
+    "skrypty/raport_i_wykresy_obszarow_P24A.py": "04ade3fff7934ef12ce48160fa393c03f96eed15fd942a6cfa08f821b3c09c76",
+    "wyniki/p24a_podsumowanie.json": "114f64a9599e31e31af27eff2d6d8559edaad7bc37cdf3860fb31a4a8f97f914",
+    "wyniki/p24a_weryfikacja_dokladna_LDL.json": "933a7bf9747530c95d3ac5d4e7166a1850bfa0a9437357db5a0c60076df9163d",
+    "wyniki/p24a_naped_i_ODE_podsumowanie.json": "9c7b0c97ad2aa46cc8dcc36b48295195b7d23c942e428b5547bd6ec18da93058",
+    "wyniki/p24a_tozsamosci_symboliczne.json": "d088e346d3ff47a2416ad5843fd96febdc396d9e53205381c6f7ec5409c67ecf"
+  },
+  "limitations": [
+    "Exact feasibility for declared decimal model parameters does not establish physical fidelity or global optimality.",
+    "Safe-source bound excludes LC,nonlinear BL/Cms/Le,unidentified extra heating and DAC reconstruction uncertainty.",
+    "Frozen-temperature sine cost is a comparison,not inevitable protection penalty or measured usable SPL."
+  ],
+  "next": "P21C main chamber;P24B and P25 integrate realistic signals,filtering and wider uncertainty before final selection."
+}

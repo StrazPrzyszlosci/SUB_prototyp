@@ -259,3 +259,46 @@ utożsamiać porowatego tłumienia ze sztywnymi wkładami wypornościowymi.
 Obowiązuje [program 30 pakietów](PROGRAM_30_BADAN.md); przewodnik po
 wynikach to [README](README.md). P22–P30, pojedynczy wybór i końcowy PDF
 pozostają otwarte. Oferty i dobór handlowy odłożono w U-010.
+
+Aktualizacja 2026-10-27: podczas tej samej aktywnej kampanii P21B wykonano
+niezależne, niewielkie obliczenia P23A. [Raport046](raporty/046_filtry_cyfrowe_stabilnosc_i_zapas.md)
+obejmuje cyfrową LT/HP/LP dla27konfiguracji,972projekty,4860kaskad,
+300przypadków granicznych,sygnały czasowe i normy zapasu poziomu.
+Warunki stabilności zapisanych współczynników obliczono dokładnie;
+precyzja stanów rzeczywistego miniDSP nie została zidentyfikowana.
+Nie zastępuje to P24 ochrony V/I/X/T ani głównej komory P21C.
+Najbliższy krok przestrzenny: dokończyć ten sam P21B bez drugiej kopii,
+następnie P21C. Opisy odczytów forum uzupełnić po badaniach, zgodnie z
+najnowszą kolejnością użytkownika; przed użyciem C02 sprawdzić atrybucję.
+
+P22A wykonano w oddzielnych rodzinach pasywnego źródła:raport047,
+3240obwodów i19440punktów dla27konfiguracji. Rozdzielono Vźródła/Vterminali
+oraz Iźródła/Igłośnika,dodano bilans energii,niezależny KCL/KVL i stan5D.
+Analityczna monotonia dotyczy samego dodatkowegoRs przy stałych budżetach,
+nie dowolnego RLC lub sterowania. P22B/P24 nadal musi zbadać saturację,
+SEM,wykonalność jednoczesnych ograniczeń i ochronę po korekcji cyfrowej.
+
+P22B,raport048:648trajektorii nasyconego źródła i skończonego feedbackI,
+bez obcinania stanuLe lub ruchu.7ciągłychODE i28porównań kroku potwierdza
+wybranych świadków;metoda nie jestL-stabilna i nie zamyka granicyLe→0.
+82przekroczenia umownegoI oraz208wyjść poza katalogoweX zachowano.
+Nie traktować ilościowego ruchu poza domeną jako prognozy produktu.
+P24 ma nadal opracować właściwą ochronęX/T z korekcją,energią i źródłem.
+
+P24A,raport049:972wspólne obszary dla liniowej mechaniki i Re(theta)
+z miedzianym grzaniem/jednym biegunem termicznym. Wszystkie macierze
+sprawdzono dokładnie i osobnym LDL;warunek obejmuje cały przedziałT
+i dowolne ograniczone napięcie źródła w zdefiniowanym modelu.36ODE
+ilustruje wybrane realizacje. Duży konserwatywny koszt względem osobnych
+sinusów nie jest dowodem nieuniknionej straty innych rozwiązań.
+Rth/progi są założeniami,Le jest stałą projekcją. Filtry/LC,wypełnienie,
+podatność i nieliniowości oraz rzeczywista rekonstrukcja nadal wymagają
+integracji. Nie jest to gotowa ochrona hardware lub wybór finalnej nastawy.
+
+U-026,2026-10-27: **głębokość zewnętrzna≤500mm**,ustawienie pionowo/poziomo
+w zabudowie,głośnik przesunięty względem środka całego frontu,preferowane
+centrum lewej/prawej połowy przy ustawieniu poziomym. W/H nieograniczone
+liczbowo na tym etapie. Dawna referencja504×684×504mm odpada gabarytowo;
+wyniki pozostają historią metod. Najbliższa integracja geometrii musi
+objąć ten limit,położenie kosza,wzmocnienia,wkłady,wypełnienie i prześwity
+obu orientacji. Nie projektować dalej końcowej skrzyni o głębokości684mm.

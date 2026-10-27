@@ -1,6 +1,6 @@
 {
   "status": "ONE_WAY_CONFORMING_LOCAL_JOINT_STUDY_NOT_STRENGTH_QUALIFICATION",
-  "generated_at": "2026-10-26T21:15:19.354903+01:00",
+  "generated_at": "2026-10-27T09:23:53.623471+01:00",
   "libraries": {
     "Python": "3.12.3",
     "NumPy": "1.26.4",
@@ -28,7 +28,7 @@
     "skrypty/model_podmodelu_P19G.py": "83a4457ee6e2a8268c67a94f09dfa0759eb476a8f5cef5b8c8863263dfcb3c85",
     "skrypty/model_ramy_3D_P18C.py": "698395a0d216659572ae84c1fea1b1251a67c5c32b99a7cf84cc55582e33e1ad",
     "skrypty/odtworz_podmodel_P19G.py": "ce3769b3063df160d04dcafb0babe2398ed0143850774a3db68ba72ae2391e1e",
-    "skrypty/odtworz_wszystko.py": "8dbcdfae2382c34c939c8053c7202244a587e5b5f0d83dc53401a3bbbd45328f",
+    "skrypty/odtworz_wszystko.py": "0a27ec78730a758861ba864a927316d4f64c7896a9a8b503487336619ba8be6d",
     "skrypty/sprawdz_transfer_P19G.py": "a2e8dcd26754f2f9e6dd3c186b3b68540c9f5033e47772133f69f5c24edbea7a",
     "skrypty/uzupelnij_zbieznosc_P19G.py": "f184aef72e088149eadad1d8988881f575afccbe29f35ed0b3b1d46f7dc43bed",
     "skrypty/wykresy_i_ocena_P19G.py": "ab013497b94aba14bcea545ad77e04894091063c788bf656f8b9986233bde1a9",
@@ -66,13 +66,13 @@
     "wyniki/p19g_zamrozona_stopa_audyt.json": "084ddfe6c1c8fde12471c9e155c642b6f0bc3a2dfbedcf2a0b65266200de9dbc"
   },
   "documentation_sha256": {
-    "README.md": "1387b463f66086f730916ccfadb2fada21330643f2b70502bee2081bbb610c1d",
-    "AGENTS.md": "c2fdd21eb1fbd8a0b8825aafdcc4cb245916180bfd19d14d1b557a578a2a1319",
-    "PLAN_B_R.md": "d7c3d1c15561d8fb47dbe8690939067543401b8b7bb28482ef41f9d034d041c5",
-    "PROGRAM_30_BADAN.md": "d3d1f626571404138156f4c9483a0437bbe9f1d548c29cbdfb42cd192d151d3d",
-    "raporty/README.md": "7914114cac6618e71cca7f097ec0b371cc6c62f0ea08973a1c273ecbdf967071",
+    "README.md": "279d68337d9b43cc611b3409c550a85d2fec8456c151a25b646b026f739a8d16",
+    "AGENTS.md": "b9400132c10537b2e27b43193591545b2468e6d684256260b20f9d1befa993dd",
+    "PLAN_B_R.md": "dbb39b5ad17f2b72332ecfb25dcec923dde41c25c53bddf6fedfc8b603c1d1e0",
+    "PROGRAM_30_BADAN.md": "1974937ce0fee3fb122d5ee2ffa7d1864831541785f474303045b2897d766294",
+    "raporty/README.md": "6d562642d23e30c6e6258ded44f4193eef12d87a2be50b0e81cc901b5138ce54",
     "raporty/041_lokalny_podmodel_i_granice_wiarygodnosci.md": "c1a5ee1280557303e95f89c95ee988fb8f968da96efd0f9e18038c9352b476a6",
-    "baza_wiedzy/README.md": "e0da9b96fc12706eaf40d2571bc5ed3cc0771756d8d90a4e412c41cfc43bd6f9",
+    "baza_wiedzy/README.md": "f39168b0a96f8dd43add56451f1a13c12026d806e1dc51437968e7c24f6ca17c",
     "baza_wiedzy/29_podmodel_i_transfer_obciazen.md": "1b3ffc517ffa20d1f1a732e56a87872af2f917f25681a5a66cf07fc5ec531f22"
   },
   "limitations": [

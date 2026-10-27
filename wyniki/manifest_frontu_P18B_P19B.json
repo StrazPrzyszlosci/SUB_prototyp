@@ -1,6 +1,6 @@
 {
   "status": "SCOPED_P18B_P19B_NOT_FULL_CABINET_OR_CONTACT_TIME_SOLUTION",
-  "generated_at": "2026-10-26T21:15:17.092871+01:00",
+  "generated_at": "2026-10-27T09:23:52.835726+01:00",
   "libraries": {
     "Python": "3.12.3",
     "NumPy": "1.26.4",
@@ -18,7 +18,7 @@
     "skrypty/model_frontu_z_otworem_P18B.py": "9dc138ae9be3ab7db91803c7441b377d064268ddfd41364d9598938aa4b9c953",
     "skrypty/model_plyty_MITC_P18.py": "1e98a4553f5697344821a83d7d6afe823c2a801350f14dbdeb6d8ce681690775",
     "skrypty/odtworz_front_i_styk_P18B_P19B.py": "30ea4122cb397e876d2a5380273985b36529b38cd9f3a8c3c76dd9f7a9261e3b",
-    "skrypty/odtworz_wszystko.py": "8dbcdfae2382c34c939c8053c7202244a587e5b5f0d83dc53401a3bbbd45328f",
+    "skrypty/odtworz_wszystko.py": "0a27ec78730a758861ba864a927316d4f64c7896a9a8b503487336619ba8be6d",
     "skrypty/sprawdz_front_z_otworem_P18B.py": "d6875b609bcf2670dbf8e172038a1a8f28c77aec65985930dd6a370db56890b9",
     "skrypty/wykresy_frontu_i_styku_P18B_P19B.py": "48c7721acdc6402020f163683271415cd676a5145be776ae94affde66b295297",
     "wyniki/p11_kalibracje_masy.csv": "f5c4c7692273f36d58f796aac7a3276e1211c5eaa85054c3f90856c88dac04e8"
@@ -47,11 +47,11 @@
     "wyniki/p19b_podsumowanie.json": "a274d1f3487a586508bb2ed61cdce377f284abd3084e9a9d545d1aac0a0d981b"
   },
   "documentation_sha256": {
-    "AGENTS.md": "c2fdd21eb1fbd8a0b8825aafdcc4cb245916180bfd19d14d1b557a578a2a1319",
-    "README.md": "1387b463f66086f730916ccfadb2fada21330643f2b70502bee2081bbb610c1d",
-    "PROGRAM_30_BADAN.md": "d3d1f626571404138156f4c9483a0437bbe9f1d548c29cbdfb42cd192d151d3d",
-    "baza_wiedzy/README.md": "e0da9b96fc12706eaf40d2571bc5ed3cc0771756d8d90a4e412c41cfc43bd6f9",
-    "baza_wiedzy/ZRODLA.md": "691514319620a92024439d4d6a900db8c779117eba89ab08257f3f5a53506d83",
+    "AGENTS.md": "b9400132c10537b2e27b43193591545b2468e6d684256260b20f9d1befa993dd",
+    "README.md": "279d68337d9b43cc611b3409c550a85d2fec8456c151a25b646b026f739a8d16",
+    "PROGRAM_30_BADAN.md": "1974937ce0fee3fb122d5ee2ffa7d1864831541785f474303045b2897d766294",
+    "baza_wiedzy/README.md": "f39168b0a96f8dd43add56451f1a13c12026d806e1dc51437968e7c24f6ca17c",
+    "baza_wiedzy/ZRODLA.md": "fa75759985ca54a4aedd8413d0b237c490c5b0570ad55681de56bc80f289bbf1",
     "baza_wiedzy/23_front_otwor_kosz_i_docisk.md": "2d9aaf8c8b99d9584f9b3556ba2fab5b5ad4bb03e7acad94b929ef7036373bd9",
     "raporty/032_postep_po_mechanice_i_zakres_do_konca.md": "66994adda726e59051bd40bf6ca090217983fa92c8f93be557a1fdb836582e46",
     "raporty/033_front_otwor_kosz_i_styk_jednostronny.md": "59fafa8ba322ba27150bab55d74e2a9a72d43f01c8197ebc8911ef037dc7f868"

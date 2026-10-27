@@ -43,6 +43,11 @@ a potwierdzonych ustaleń użytkownika w [rejestrze](../DECYZJE_I_PYTANIA.md).
 |30|[Wkłady: objętość, gaz i mocowanie](30_wklady_objetosc_gaz_i_mocowanie.md)|Podatność, szczelność, rezonans kanału, droga montażu i siły mocowania|
 |31|[Przegroda, dwa ciśnienia i anizotropia](31_przegroda_dwa_cisnienia_i_anizotropia.md)|Podatne mocowanie, hermetyczny gaz, dostęp, znaki źródeł i ograniczenia Em sklejki|
 |32|[Dwa porty bryły i gaz przestrzenny](32_dwa_porty_bryly_i_gaz_przestrzenny.md)|Ciśnienie wspólne, skończony strumień przy G→∞, ciągły moduł kleju i wspólne Hz siatki|
+|33|[Przestrzenne ciśnienie i praca granicy](33_przestrzenne_cisnienie_i_praca_granicy.md)|Metoda aktywnego P21B:zgodne sprzężenie,pęd gazu i ograniczenia średniej|
+|34|[Cyfrowe filtry, stabilność i normy](34_cyfrowe_filtry_stabilnosc_i_normy.md)|Dokładne warunki zapisanych współczynników,graniceFs,arytmetyka i zapas sygnału|
+|35|[Port źródła i wykonalność ochrony](35_port_zrodla_i_wykonalnosc_ochrony.md)|Rezystancja,rozdzielone prądy,bilans energii i warunki SEM przy limitachV/I|
+|36|[Nasycenie, energia i granice integratora](36_nasycenie_energia_i_granice_integratora.md)|Zachowany stanLe,implicit midpoint,ciągłeODE,brakL-stabilności i niedostateczność samegoI|
+|37|[Wspólny obszar i granica wejścia](37_wspolny_obszar_i_granica_wejscia.md)|Dokładne LMI,cały przedziałRe(T),ruch/prąd/ciepło i koszt konserwatywnego świadka|
 |Źródła|[Rejestr z datami](ZRODLA.md)|Co przeczytano, co tylko znaleziono i jakie są braki|
 
 ## Od wiedzy do wykonania

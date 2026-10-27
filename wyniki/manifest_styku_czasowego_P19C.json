@@ -1,6 +1,6 @@
 {
   "status": "P19C_ONE_SCOPED_CONTACT_CASE_EXECUTED_NOT_FINAL_CABINET",
-  "generated_at": "2026-10-26T21:15:17.544041+01:00",
+  "generated_at": "2026-10-27T09:23:53.044053+01:00",
   "libraries": {
     "Python": "3.12.3",
     "NumPy": "1.26.4",
@@ -18,7 +18,7 @@
     "skrypty/model_plyty_MITC_P18.py": "1e98a4553f5697344821a83d7d6afe823c2a801350f14dbdeb6d8ce681690775",
     "skrypty/model_styku_czasowego_P19C.py": "76e3555f751a2c19e63ecad9bc087dc3550e11165e538de992157c6769258bcb",
     "skrypty/odtworz_styk_czasowy_P19C.py": "af8f5e7cb88e6b75dd1b44fa31fcadede64734eb8971ca7bd01b8ccfee5d3370",
-    "skrypty/odtworz_wszystko.py": "8dbcdfae2382c34c939c8053c7202244a587e5b5f0d83dc53401a3bbbd45328f",
+    "skrypty/odtworz_wszystko.py": "0a27ec78730a758861ba864a927316d4f64c7896a9a8b503487336619ba8be6d",
     "skrypty/pelny_MES_BDF2_P19C.py": "3dd13eec2320f1257011c70dfadee6741a2ef1b1072190b2b32df718686d62e8",
     "skrypty/sprawdz_styk_czasowy_P19C.py": "9cae198f3b91dca7c4e18f9465fa043a04e9b369ae72e749b7d4a578a67d73a5",
     "skrypty/wykresy_styku_czasowego_P19C.py": "6ee75fa625e26d993c654fa089f302481c49f3b607caf44915d176118e016dbd",
@@ -70,11 +70,11 @@
     "wyniki/p19c_podsumowanie.json": "245c2332d853d6b915afe205f3203afe87dd02fe6424badbe260790c6992359a"
   },
   "documentation_sha256": {
-    "AGENTS.md": "c2fdd21eb1fbd8a0b8825aafdcc4cb245916180bfd19d14d1b557a578a2a1319",
-    "README.md": "1387b463f66086f730916ccfadb2fada21330643f2b70502bee2081bbb610c1d",
-    "PROGRAM_30_BADAN.md": "d3d1f626571404138156f4c9483a0437bbe9f1d548c29cbdfb42cd192d151d3d",
-    "raporty/README.md": "7914114cac6618e71cca7f097ec0b371cc6c62f0ea08973a1c273ecbdf967071",
-    "baza_wiedzy/README.md": "e0da9b96fc12706eaf40d2571bc5ed3cc0771756d8d90a4e412c41cfc43bd6f9",
+    "AGENTS.md": "b9400132c10537b2e27b43193591545b2468e6d684256260b20f9d1befa993dd",
+    "README.md": "279d68337d9b43cc611b3409c550a85d2fec8456c151a25b646b026f739a8d16",
+    "PROGRAM_30_BADAN.md": "1974937ce0fee3fb122d5ee2ffa7d1864831541785f474303045b2897d766294",
+    "raporty/README.md": "6d562642d23e30c6e6258ded44f4193eef12d87a2be50b0e81cc901b5138ce54",
+    "baza_wiedzy/README.md": "f39168b0a96f8dd43add56451f1a13c12026d806e1dc51437968e7c24f6ca17c",
     "baza_wiedzy/24_styk_czasowy_i_energia.md": "7c2a7a694f92ee55f0787f42f3e6e6bd26385f3e31985a9e1a8b7495eb904df3",
     "raporty/034_czasowy_styk_i_pelny_MES.md": "5b4639e7a0dcc0be7405e8513a10d6064c31f5c2f5a13be94eb9371f8d5fd1c9"
   },

@@ -1,0 +1,40 @@
+{
+  "status": "COMPLETE_SCOPED_PREFIX_L1_BOUND_ORDER_COMPARISON",
+  "sample_rate_hz": 96000,
+  "orders": 12,
+  "prefixes": 48,
+  "best_example": {
+    "order": "LT-LP-LP-HP",
+    "prefix_sections": 4,
+    "prefix": "LT-LP-LP-HP",
+    "finite_l1_lower_float": 2.353810133978609,
+    "tail_upper_float": 9.53359139440881e-09,
+    "l1_upper_float": 2.3538101435122,
+    "gain_bound_db": 7.4354286013272635,
+    "same_full_transfer_impulse_absolute_error": 4.8770666324915446e-15,
+    "order_max_intermediate_gain_bound": 2.3538101435122
+  },
+  "worst_example": {
+    "order": "HP-LT-LP-LP",
+    "prefix_sections": 4,
+    "prefix": "HP-LT-LP-LP",
+    "finite_l1_lower_float": 2.353810133990202,
+    "tail_upper_float": 9.533591394408808e-09,
+    "l1_upper_float": 2.353810143523793,
+    "gain_bound_db": 7.435428601370042,
+    "same_full_transfer_impulse_absolute_error": 1.9973172421527963e-14,
+    "order_max_intermediate_gain_bound": 2.9275554594950526
+  },
+  "input_sha256": {
+    "skrypty/kolejnosc_i_zapas_filtrow_P23A.py": "df7ce5857c0f4f8f68e210f5a9e7d82c8d672b5a642003744d04906a3c9662f6",
+    "skrypty/model_filtrow_dyskretnych_P23.py": "7f89820282d4fa09d5e5b2f933bdf5e1bf1558d9b3a00706203216ef443d41e3",
+    "skrypty/analiza_filtrow_dyskretnych_P23A.py": "2f450922b07c025eeda2fd708c7b9c24e79005468396e02748d19d456d838a9f",
+    "wyniki/p23a_podsumowanie.json": "d85d07ac73a63b8d29d387a57fba28cd78e1fef6196384490fb192bf731b5f84"
+  },
+  "limitations": [
+    "All section output limits assumed equal1;internal DF2T states not bounded by these port norms.",
+    "Same linear transfer and zero states;actual processor block order,scaling,latency and accumulator unknown.",
+    "Conservative tail inequality evaluated float,not certified interval;no optimum over arbitrary section factorisations.",
+    "Best among12unique fixed-section permutations for one reference,not a hardware recommendation."
+  ]
+}

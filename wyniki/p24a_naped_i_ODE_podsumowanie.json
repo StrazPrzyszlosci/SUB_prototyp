@@ -1,0 +1,36 @@
+{
+  "status": "COMPLETE_SCOPED_PERFORMANCE_AND_CONTINUOUS_COPPER_THERMAL_CHECKS",
+  "performance_rows": 11664,
+  "thermal_comparison_rows": 23328,
+  "continuous_ODE_cases": 36,
+  "retained_wave_cases": 6,
+  "retained_columns": [
+    "time_s",
+    "source_voltage_v",
+    "x_m",
+    "velocity_m_s",
+    "current_a",
+    "theta_k",
+    "W_dimensionless"
+  ],
+  "max_relative_parameter_mapping_error": 0.0,
+  "elapsed_continuous_s": 27.54176264500711,
+  "input_sha256": {
+    "skrypty/naped_i_trajektorie_P24A.py": "cc0af7537e3dfeef7b1648e00a8c2e0a346ac4c402f530b77cc112750240d442",
+    "dane/konfiguracje/p24a_weryfikacja_i_sygnaly.json": "976c5c24f224201e8106cba79e4387e5eaf82a818f0c812f565d2d08120021ed",
+    "skrypty/analiza_rozszerzenia_SB.py": "d01acbe156b8865df3b127aa5298ef310d0e35b25380be4932d7844805e81a38",
+    "skrypty/model_subwoofera.py": "bd7e6e250a5b9a605fbbb05343381b827ffa81047a90c692968fc8e34eedc2b8",
+    "wyniki/p24a_podsumowanie.json": "114f64a9599e31e31af27eff2d6d8559edaad7bc37cdf3860fb31a4a8f97f914",
+    "wyniki/p24a_weryfikacja_dokladna_LDL.json": "933a7bf9747530c95d3ac5d4e7166a1850bfa0a9437357db5a0c60076df9163d",
+    "dane/konfiguracje/p24a_wspolny_obszar_niezmienniczy.json": "1fa7f4d3655aa43475e1a8a52587099a612d2985811b22fba7b84de6f2c6b984"
+  },
+  "limitations": [
+    "Cth i temperatura są scenariuszami,nie danymi cewki produktu. Pierwszy etap to wybór warunkowych granic modelu.",
+    "36ODE to kontrola przykładowych realizacji;własność wszystkich bounded-input wynika z dokładnych nierówności,nie z tych przebiegów.",
+    "Gorący start ma ruch i prąd zero,theta=limit;nie dowolny gorący stan wielu węzłów cieplnych.",
+    "SPLdiagnostyczny dotyczy osobnych zamrożonych temperatur,półprzestrzeni2pi/1m,sinusaRMS. Nie jest wynikiem ustalonego samogrzania,pokoju lub THD.",
+    "Lyapunov W is dimensionless and is not stored physical energy in joules.",
+    "Individual sine envelopes use the same instantaneous Icap and Xref but allow one separate sinus;not guaranteed all bounded signals.",
+    "36 continuous trajectories confirm selected members;numerical sampling is not the proof of universal invariance."
+  ]
+}

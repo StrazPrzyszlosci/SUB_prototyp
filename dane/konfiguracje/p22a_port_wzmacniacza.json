@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-27",
+  "status": "ASSUMED_PASSIVE_THEVENIN_PORT_NOT_IDENTIFIED_AMPLIFIER",
+  "volumes_l": [30, 60, 100, 150],
+  "source_resistance_ohm_assumed": [0, 0.02, 0.1, 0.5, 1, 2],
+  "passive_output_networks_assumed": [
+    {"id": "RL0_C0", "series_h": 0, "shunt_f": 0},
+    {"id": "L3u_C1u", "series_h": 0.000003, "shunt_f": 0.000001},
+    {"id": "L30u_C1u", "series_h": 0.00003, "shunt_f": 0.000001},
+    {"id": "L30u_C10u", "series_h": 0.00003, "shunt_f": 0.00001},
+    {"id": "L300u_C10u", "series_h": 0.0003, "shunt_f": 0.00001}
+  ],
+  "band_hz": [10, 200],
+  "band_points": 801,
+  "probes_hz": [20, 25, 31.5, 40, 63, 80],
+  "source_voltage_rms_limit_v_assumed": 40,
+  "source_current_rms_limit_a_assumed": 12,
+  "limitations": [
+    "Parametry R/L/C są scenariuszami,nie dokumentacją lub wyborem modułu klasyD. Brak aktywnej pętli sprzężenia,zasilacza,PWM i układu ochrony.",
+    "T/S i Le są liniowe i stałe;Mms obejmuje wcześniejsze obciążenie T/S,bez nowego podwójnego promieniowania.",
+    "I_source obejmuje prąd pojemności równoległej i nie jest zawsze I_driver. V_source nie jest zawsze napięciem terminali przetwornika.",
+    "Budżety40V/12A i katalogoweXmax są założeniami porównawczymi,nie gwarancją THD,czasu pracy lub bezpieczeństwa.",
+    "Obwiednie dotyczą oddzielnych ustalonych sinusów:RMSprądu/napięcia i peakwychylenia;monopol2pi/1m bez pokoju. Clipping i dynamiczna ochrona nadal wymagają osobnego badania."
+  ]
+}

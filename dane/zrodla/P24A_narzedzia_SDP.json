@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-27",
+  "sources": [
+    {
+      "source_id": "SRC62",
+      "title": "CVXPY — semidefinite program example",
+      "url": "https://www.cvxpy.org/examples/basic/sdp.html",
+      "access_date": "2026-10-27",
+      "private_capture": ".firecrawl/p24_cvxpy_sdp.json",
+      "capture_sha256": "9250eb1427f4ca92e42c9bfd7f2d89a880263138eef3dc45ca70a41d2c42160b",
+      "scope": "Składnia symetrycznej zmiennej i porządku PSD. Solver jedynie wyszukuje kandydatów;przyjęcie opiera się na osobnych dokładnych nierównościach."
+    },
+    {
+      "source_id": "SRC63",
+      "title": "Clarabel — semidefinite programming",
+      "url": "https://clarabel.org/stable/examples/example_sdp/",
+      "access_date": "2026-10-27",
+      "private_capture": ".firecrawl/p24_clarabel_sdp.json",
+      "capture_sha256": "d69cae051afd9bf23a9608e1c53bb25a82ed45ece5bcac9b9e7292a6a3717869",
+      "scope": "Obsługa stożka PSD i konwencja svec. Używamy adaptera CVXPY,nie własnego niezweryfikowanego wektoryzowania."
+    }
+  ],
+  "implementation": "Own invariant-ellipsoid derivation,endpoint affine family and exact rational3x3PSD checks;not proof by solver OPTIMAL status.",
+  "limitations": [
+    "Dokumentacja internetowa jest bieżąca;wyszukiwanie wykonuje przypiętyCVXPY1.6.5/Clarabel0.11.1 w oddzielnym środowisku/tmp.",
+    "Źródła opisują narzędzia,nie fizyczne parametry głośników lub termiki.",
+    "Pełne ekstrakcje pozostają prywatne.Firecrawl nie digitalizował wykresów do danych."
+  ]
+}

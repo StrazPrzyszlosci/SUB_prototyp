@@ -1,0 +1,18 @@
+{
+  "status": "EXACT_SYMBOLIC_IDENTITIES_OF_CONDITIONAL_MODEL",
+  "identities": [
+    "Complete square yields Wdot<=-lambda*W+u^2/gamma",
+    "Thermal comparison exponential solves Cth*theta_dot=A-b*theta",
+    "Thermal comparison initial condition",
+    "At exact instantaneous current cap equilibrium=theta_limit",
+    "At cap b=1/(Rth*(1+alpha*theta_limit))>0"
+  ],
+  "input_sha256": {
+    "skrypty/audyt_tozsamosci_P24A.py": "9d67a3a3a07bcb2a35d12165b0a411e3a67e6e09d2663d3917ea24c22936fd01"
+  },
+  "limitations": [
+    "Identities alone do not prove matrix inequalities;use the independent rational LDL verifier.",
+    "X/I projection bounds also use Cauchy-Schwarz for the positive definite ellipsoid.",
+    "The comparison model contains only copper heating and the stated positive one-pole cooling."
+  ]
+}

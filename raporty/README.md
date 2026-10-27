@@ -50,3 +50,11 @@ bieżący zakres sprawdzaj w [programie 30 pakietów](../PROGRAM_30_BADAN.md).
 | [042](042_regulacja_Vb_i_wklady_wypornosciowe.md) | Raport 042 — P20A: regulacja Vb i wkłady wypornościowe |
 | [043](043_przegroda_dwie_komory_i_materialy.md) | Raport 043 — P20B: przegroda, dwie komory i porównanie materiałów |
 | [044](044_modul_3D_dwa_porty_i_wymagania_kleju.md) | Raport 044 — P20C: moduł 3D, dwa porty i wymagania kleju |
+| [046](046_filtry_cyfrowe_stabilnosc_i_zapas.md) | Raport 046 — P23A: filtry cyfrowe, stabilność i zapas sygnału |
+| [047](047_port_zrodla_tlumienie_i_bilans.md) | Raport 047 — P22A: port źródła, tłumienie i bilans mocy |
+| [048](048_nasycenie_SEM_i_stan_pradu.md) | Raport 048 — P22B: nasycenie, SEM i stan prądu |
+| [049](049_obszar_niezmienniczy_i_koszt_ochrony.md) | Raport 049 — P24A: wspólny obszar i koszt ochrony w modelu |
+
+Numer045 zarezerwowano dla badania P21B,obecnie17/18zapisanych wariantów.
+Obliczenia niewielkiego
+P23A,P22A/P22B i P24A ukończono niezależnie; luka numeracji nie jest brakującym raportem końcowym.

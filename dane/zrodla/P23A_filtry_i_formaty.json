@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-27",
+  "sources": [
+    {
+      "source_id": "SRC58",
+      "title": "W3C Audio EQ Cookbook (2021)",
+      "url": "https://www.w3.org/TR/audio-eq-cookbook/",
+      "access_date": "2026-10-27",
+      "private_capture": ".firecrawl/p23_biquad_cookbook.json",
+      "capture_sha256": "d70c712272d9a74a57ade8773ca4031f6b82add14ca5beed9c18cfe082112dcc",
+      "scope": "Biquad HP/LP,normalizacja a0,BLT z prewarpem;oryginalny HPF obejrzano w browser-harness."
+    },
+    {
+      "source_id": "SRC59",
+      "title": "SciPy bilinear — dokumentacja",
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.bilinear.html",
+      "access_date": "2026-10-27",
+      "private_capture": ".firecrawl/p23_scipy_bilinear.json",
+      "capture_sha256": "4bdc4b900a2df20c44d0c17da1e28374c4d5dc40b4f721752a74db08a66e21d7",
+      "scope": "Brak automatycznego prewarpu;online1.18.0,a użyty pakiet1.17.1,sprawdzony niezależnie i przez własny wzór."
+    },
+    {
+      "source_id": "SRC60",
+      "title": "miniDSP Flex Eight — Parametric EQ",
+      "url": "https://docs.minidsp.com/product-manuals/flex-eight/dsp-reference/peq.html",
+      "access_date": "2026-10-27",
+      "private_capture": ".firecrawl/p23_minidsp_peq_actual.json",
+      "capture_sha256": "573dcc4cf3bc5acd11696a5f2708b9ac574ca0652387d8b4ec25602b80c6eeb8",
+      "scope": "96kHz,plik biquad i przykład znaków. Interpretacja dodatniego feedback wynika z przykładu,nie z pomiaru importu."
+    },
+    {
+      "source_id": "SRC61",
+      "title": "miniDSP Flex Eight — FIR filtering",
+      "url": "https://docs.minidsp.com/product-manuals/flex-eight/dsp-reference/fir-filtering.html",
+      "access_date": "2026-10-27",
+      "private_capture": ".firecrawl/p23_minidsp_fir.json",
+      "capture_sha256": "cbde4658010d503a83a2c4296c5a85b61cbd33a0c51e618d2b446edf2da085e1",
+      "scope": "Format pliku IEEE754single NIE identyfikuje precyzji stanów/współczynników IIR."
+    }
+  ],
+  "original_equation_screenshot": {
+    "path": ".firecrawl/p23_w3c_original_hpf.png",
+    "sha256": "770b6a307c92d0ceba52eabc76d317d10d499d8971dc73a8b5fcf85ac2523041",
+    "conditions": "W3C HPF source,normalisation by a0;formula,not measurement graph;no digitisation."
+  },
+  "limitations": [
+    "Próba adresu parametric-eq.html dała404;właściwy peq.html odczytany200.",
+    "Dodatkowe wyszukanie jawnej instrukcji znaków nie dało źródła;konwencja sprzężenia jest sprawdzoną algebraicznie interpretacją przykładu.",
+    "Nie uruchomiono fizycznego miniDSP;nie wczytano współczynników do urządzenia.",
+    "Prywatne pełne ekstrakcje i zrzut nie są przedrukowane w repozytorium."
+  ]
+}

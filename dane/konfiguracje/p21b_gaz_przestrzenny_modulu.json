@@ -1,0 +1,23 @@
+{
+  "date":"2026-10-26",
+  "status":"CLOSED_INVISCID_SPATIAL_GAS_AND_FULL_SOLID_CONTROL_FAMILIES",
+  "solid_config":"dane/konfiguracje/p20c_modul_pelny_3D.json",
+  "mesh_resolution_cases":[4,8,12],
+  "braced_cases":[false,true],
+  "glue_E_pa_cases_assumed":[10000000.0,100000000.0,1718000000.0],
+  "gas_kappa":1.4,
+  "probe_frequencies_hz":[20.0,25.0,31.5,40.0,63.0,80.0],
+  "diagnostic_frequencies_hz":[500.0,800.0,1000.0,1200.0,1600.0,2200.0],
+  "outer_pressure_ports":["uniform","uniform_plus_x_gradient"],
+  "formal_spatial_stiffness_scale_cases":[1.0,100.0,10000.0],
+  "retained_acoustic_modes":12,
+  "gates":[
+    "Zamknięty gaz bez przecieku,włókniny i termowiskozowych warstw przyściennych;straty są na razie w konstrukcji. Nie jest to pełny model tłumienia rzeczywistego modułu.",
+    "Nierównomierny port zewnętrzny jest scenariuszem z gradientem,nie zmierzonym polem głównej skrzyni. Jego uogólniony przepływ energii nie jest równoważny samej zmianie objętości.",
+    "Swobodna bryła zachowuje fizyczny ruch sztywny oraz bezwładność gazu. Projekcję ruchu sztywnego wolno użyć do stabilnego obliczenia energii odkształceń,nie do usunięcia ruchu z warunku płyn–ciało.",
+    "Skalowanie A przy stałym C jest formalną granicą pomijalnej gęstości/bezwładności gazu,nie rzeczywistym ogrzaniem powietrza.",
+    "Wyższe częstotliwości mają charakter diagnostyczny w idealizowanym modelu bez strat gazu;nie prognozować rzeczywistych szczytów bez identyfikacji strat i amplitudy.",
+    "MDF/klej/luzy i pole zewnętrzne są założeniami. Nie przypisano modeli materiałowych ani THD konkretnemu produktowi.",
+    "Kolejny etap to główna komora,regulacja,wypełnienie i mocowanie;nie zastępujemy ich badaniem samego małego modułu."
+  ]
+}

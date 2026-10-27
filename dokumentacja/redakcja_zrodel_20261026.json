@@ -103,5 +103,7 @@
   ],
   "original_copy": "Exact originals retained privately outside published Git contents.",
   "historical_manifest_scope": "Existing historical input/documentation hashes describe original research snapshots. For the redacted public files use published_sha256 in this ledger; this is not a new numerical run.",
-  "git_history": "Existing commit history was not rewritten."
+  "git_history": "Existing commit history was not rewritten.",
+  "published_hashes_scope_commit": "66867ca203cf2da2586baa0fecf705bd66749955",
+  "published_hashes_scope_note": "published_sha256 describes the redacted snapshot at the named commit,not later additive scientific/source updates. Original hashes remain unchanged."
 }

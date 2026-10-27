@@ -1,0 +1,790 @@
+{
+  "status": "COMPLETE_SCOPED_PASSIVE_SOURCE_CHECKS",
+  "independent_KCL_KVL_points": 19440,
+  "max_relative_direct_system_error": 1.989079036755486e-15,
+  "direct_system_worst": {
+    "configuration": "C16",
+    "f_hz": 63.0,
+    "volume_l": 60.0,
+    "rs_ohm": 0.0,
+    "network": "L300u_C10u"
+  },
+  "baseline_vs_existing_model_error": 1.3322676295501878e-15,
+  "independent_state_space_points": 162,
+  "max_relative_state_space_error": 3.458045442478891e-13,
+  "symbolic_identities": [
+    "d|Z+Rs|^2/dRs=2*(ReZ+Rs)>0",
+    "dQ/dRtotal>0",
+    "passive total state energy balance"
+  ],
+  "resistance_limit_witnesses": [
+    {
+      "configuration": "C01",
+      "volume_l": 30.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.992402958801852e-05,
+      "scaled_current_R": 0.9992402958801851
+    },
+    {
+      "configuration": "C01",
+      "volume_l": 30.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999240074697e-09,
+      "scaled_current_R": 0.9999999240074697
+    },
+    {
+      "configuration": "C01",
+      "volume_l": 150.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.993046696483408e-05,
+      "scaled_current_R": 0.9993046696483409
+    },
+    {
+      "configuration": "C01",
+      "volume_l": 150.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999304469474e-09,
+      "scaled_current_R": 0.9999999304469473
+    },
+    {
+      "configuration": "C02",
+      "volume_l": 30.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.996450255793023e-05,
+      "scaled_current_R": 0.9996450255793022
+    },
+    {
+      "configuration": "C02",
+      "volume_l": 30.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999644955023e-09,
+      "scaled_current_R": 0.9999999644955023
+    },
+    {
+      "configuration": "C02",
+      "volume_l": 150.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.994745495096156e-05,
+      "scaled_current_R": 0.9994745495096156
+    },
+    {
+      "configuration": "C02",
+      "volume_l": 150.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999474439029e-09,
+      "scaled_current_R": 0.9999999474439029
+    },
+    {
+      "configuration": "C03",
+      "volume_l": 30.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.983017223549564e-05,
+      "scaled_current_R": 0.9983017223549564
+    },
+    {
+      "configuration": "C03",
+      "volume_l": 30.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999998299909868e-09,
+      "scaled_current_R": 0.9999998299909868
+    },
+    {
+      "configuration": "C03",
+      "volume_l": 150.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.988486589645528e-05,
+      "scaled_current_R": 0.9988486589645528
+    },
+    {
+      "configuration": "C03",
+      "volume_l": 150.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999998847923109e-09,
+      "scaled_current_R": 0.999999884792311
+    },
+    {
+      "configuration": "C04",
+      "volume_l": 30.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.988064775674852e-05,
+      "scaled_current_R": 0.9988064775674852
+    },
+    {
+      "configuration": "C04",
+      "volume_l": 30.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999998807827402e-09,
+      "scaled_current_R": 0.9999998807827402
+    },
+    {
+      "configuration": "C04",
+      "volume_l": 150.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.99579626843929e-05,
+      "scaled_current_R": 0.999579626843929
+    },
+    {
+      "configuration": "C04",
+      "volume_l": 150.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999579646693e-09,
+      "scaled_current_R": 0.9999999579646693
+    },
+    {
+      "configuration": "C05",
+      "volume_l": 30.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.993510357956239e-05,
+      "scaled_current_R": 0.9993510357956239
+    },
+    {
+      "configuration": "C05",
+      "volume_l": 30.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999350832972e-09,
+      "scaled_current_R": 0.9999999350832972
+    },
+    {
+      "configuration": "C05",
+      "volume_l": 150.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.96299914453854e-05,
+      "scaled_current_R": 0.996299914453854
+    },
+    {
+      "configuration": "C05",
+      "volume_l": 150.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999996288441019e-09,
+      "scaled_current_R": 0.9999996288441019
+    },
+    {
+      "configuration": "C06",
+      "volume_l": 30.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.990144188829433e-05,
+      "scaled_current_R": 0.9990144188829433
+    },
+    {
+      "configuration": "C06",
+      "volume_l": 30.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999014286688e-09,
+      "scaled_current_R": 0.9999999014286688
+    },
+    {
+      "configuration": "C06",
+      "volume_l": 150.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.988223057045307e-05,
+      "scaled_current_R": 0.9988223057045308
+    },
+    {
+      "configuration": "C06",
+      "volume_l": 150.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999998821937862e-09,
+      "scaled_current_R": 0.9999998821937862
+    },
+    {
+      "configuration": "C07",
+      "volume_l": 30.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.994845662471989e-05,
+      "scaled_current_R": 0.9994845662471988
+    },
+    {
+      "configuration": "C07",
+      "volume_l": 30.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999484312037e-09,
+      "scaled_current_R": 0.9999999484312037
+    },
+    {
+      "configuration": "C07",
+      "volume_l": 150.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.992793058510506e-05,
+      "scaled_current_R": 0.9992793058510506
+    },
+    {
+      "configuration": "C07",
+      "volume_l": 150.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999279130534e-09,
+      "scaled_current_R": 0.9999999279130535
+    },
+    {
+      "configuration": "C08",
+      "volume_l": 30.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.994063162045232e-05,
+      "scaled_current_R": 0.9994063162045232
+    },
+    {
+      "configuration": "C08",
+      "volume_l": 30.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999406094103e-09,
+      "scaled_current_R": 0.9999999406094102
+    },
+    {
+      "configuration": "C08",
+      "volume_l": 150.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.971259218702381e-05,
+      "scaled_current_R": 0.9971259218702381
+    },
+    {
+      "configuration": "C08",
+      "volume_l": 150.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999997124286856e-09,
+      "scaled_current_R": 0.9999997124286856
+    },
+    {
+      "configuration": "C09",
+      "volume_l": 30.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.995432762683256e-05,
+      "scaled_current_R": 0.9995432762683256
+    },
+    {
+      "configuration": "C09",
+      "volume_l": 30.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999543440783e-09,
+      "scaled_current_R": 0.9999999543440783
+    },
+    {
+      "configuration": "C09",
+      "volume_l": 150.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.996612146825075e-05,
+      "scaled_current_R": 0.9996612146825076
+    },
+    {
+      "configuration": "C09",
+      "volume_l": 150.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999661237443e-09,
+      "scaled_current_R": 0.9999999661237443
+    },
+    {
+      "configuration": "C10",
+      "volume_l": 30.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.996083172260673e-05,
+      "scaled_current_R": 0.9996083172260674
+    },
+    {
+      "configuration": "C10",
+      "volume_l": 30.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.99999960843427e-09,
+      "scaled_current_R": 0.9999999608434269
+    },
+    {
+      "configuration": "C10",
+      "volume_l": 150.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.995933101498255e-05,
+      "scaled_current_R": 0.9995933101498256
+    },
+    {
+      "configuration": "C10",
+      "volume_l": 150.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999593451036e-09,
+      "scaled_current_R": 0.9999999593451036
+    },
+    {
+      "configuration": "C11",
+      "volume_l": 30.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.994322448560482e-05,
+      "scaled_current_R": 0.9994322448560482
+    },
+    {
+      "configuration": "C11",
+      "volume_l": 30.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999432183224e-09,
+      "scaled_current_R": 0.9999999432183224
+    },
+    {
+      "configuration": "C11",
+      "volume_l": 150.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.984566857342732e-05,
+      "scaled_current_R": 0.9984566857342733
+    },
+    {
+      "configuration": "C11",
+      "volume_l": 150.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999998455492614e-09,
+      "scaled_current_R": 0.9999998455492614
+    },
+    {
+      "configuration": "C12",
+      "volume_l": 30.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.949646816374215e-05,
+      "scaled_current_R": 0.9949646816374215
+    },
+    {
+      "configuration": "C12",
+      "volume_l": 30.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999994939285139e-09,
+      "scaled_current_R": 0.9999994939285138
+    },
+    {
+      "configuration": "C12",
+      "volume_l": 150.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.991241282260823e-05,
+      "scaled_current_R": 0.9991241282260822
+    },
+    {
+      "configuration": "C12",
+      "volume_l": 150.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999124390936e-09,
+      "scaled_current_R": 0.9999999124390936
+    },
+    {
+      "configuration": "C13",
+      "volume_l": 30.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.992472363845764e-05,
+      "scaled_current_R": 0.9992472363845765
+    },
+    {
+      "configuration": "C13",
+      "volume_l": 30.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999247473765e-09,
+      "scaled_current_R": 0.9999999247473764
+    },
+    {
+      "configuration": "C13",
+      "volume_l": 150.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.967790518080232e-05,
+      "scaled_current_R": 0.9967790518080232
+    },
+    {
+      "configuration": "C13",
+      "volume_l": 150.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.99999677918982e-09,
+      "scaled_current_R": 0.999999677918982
+    },
+    {
+      "configuration": "C14",
+      "volume_l": 30.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.994850111634064e-05,
+      "scaled_current_R": 0.9994850111634064
+    },
+    {
+      "configuration": "C14",
+      "volume_l": 30.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999484839505e-09,
+      "scaled_current_R": 0.9999999484839505
+    },
+    {
+      "configuration": "C14",
+      "volume_l": 150.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.991421397193658e-05,
+      "scaled_current_R": 0.9991421397193658
+    },
+    {
+      "configuration": "C14",
+      "volume_l": 150.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999143522512e-09,
+      "scaled_current_R": 0.9999999143522511
+    },
+    {
+      "configuration": "C15",
+      "volume_l": 30.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.994387500088e-05,
+      "scaled_current_R": 0.9994387500087999
+    },
+    {
+      "configuration": "C15",
+      "volume_l": 30.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999438621179e-09,
+      "scaled_current_R": 0.9999999438621179
+    },
+    {
+      "configuration": "C15",
+      "volume_l": 150.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.987861327864702e-05,
+      "scaled_current_R": 0.9987861327864702
+    },
+    {
+      "configuration": "C15",
+      "volume_l": 150.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999998790017869e-09,
+      "scaled_current_R": 0.9999998790017869
+    },
+    {
+      "configuration": "C16",
+      "volume_l": 30.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.99389736182416e-05,
+      "scaled_current_R": 0.999389736182416
+    },
+    {
+      "configuration": "C16",
+      "volume_l": 30.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999389544396e-09,
+      "scaled_current_R": 0.9999999389544396
+    },
+    {
+      "configuration": "C16",
+      "volume_l": 150.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.985402543967142e-05,
+      "scaled_current_R": 0.9985402543967141
+    },
+    {
+      "configuration": "C16",
+      "volume_l": 150.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999998542534074e-09,
+      "scaled_current_R": 0.9999998542534073
+    },
+    {
+      "configuration": "C17",
+      "volume_l": 30.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.990372135293327e-05,
+      "scaled_current_R": 0.9990372135293327
+    },
+    {
+      "configuration": "C17",
+      "volume_l": 30.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999040229138e-09,
+      "scaled_current_R": 0.9999999040229138
+    },
+    {
+      "configuration": "C17",
+      "volume_l": 150.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.996293942585892e-05,
+      "scaled_current_R": 0.9996293942585892
+    },
+    {
+      "configuration": "C17",
+      "volume_l": 150.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999629676491e-09,
+      "scaled_current_R": 0.999999962967649
+    },
+    {
+      "configuration": "C18",
+      "volume_l": 30.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.990407461765746e-05,
+      "scaled_current_R": 0.9990407461765746
+    },
+    {
+      "configuration": "C18",
+      "volume_l": 30.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999041421954e-09,
+      "scaled_current_R": 0.9999999041421954
+    },
+    {
+      "configuration": "C18",
+      "volume_l": 150.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.992646678426575e-05,
+      "scaled_current_R": 0.9992646678426574
+    },
+    {
+      "configuration": "C18",
+      "volume_l": 150.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999265109333e-09,
+      "scaled_current_R": 0.9999999265109333
+    },
+    {
+      "configuration": "C19",
+      "volume_l": 30.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.99593963403327e-05,
+      "scaled_current_R": 0.9995939634033271
+    },
+    {
+      "configuration": "C19",
+      "volume_l": 30.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999593963411e-09,
+      "scaled_current_R": 0.9999999593963411
+    },
+    {
+      "configuration": "C19",
+      "volume_l": 150.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.992662461716041e-05,
+      "scaled_current_R": 0.9992662461716041
+    },
+    {
+      "configuration": "C19",
+      "volume_l": 150.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999266272917e-09,
+      "scaled_current_R": 0.9999999266272916
+    },
+    {
+      "configuration": "C20",
+      "volume_l": 30.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.993284818747813e-05,
+      "scaled_current_R": 0.9993284818747813
+    },
+    {
+      "configuration": "C20",
+      "volume_l": 30.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999328212684e-09,
+      "scaled_current_R": 0.9999999328212684
+    },
+    {
+      "configuration": "C20",
+      "volume_l": 150.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.984589295594087e-05,
+      "scaled_current_R": 0.9984589295594087
+    },
+    {
+      "configuration": "C20",
+      "volume_l": 150.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999998456822371e-09,
+      "scaled_current_R": 0.9999998456822371
+    },
+    {
+      "configuration": "C21",
+      "volume_l": 30.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.995188891980288e-05,
+      "scaled_current_R": 0.9995188891980289
+    },
+    {
+      "configuration": "C21",
+      "volume_l": 30.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.99999951869001e-09,
+      "scaled_current_R": 0.999999951869001
+    },
+    {
+      "configuration": "C21",
+      "volume_l": 150.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.987634944335953e-05,
+      "scaled_current_R": 0.9987634944335954
+    },
+    {
+      "configuration": "C21",
+      "volume_l": 150.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999998762025071e-09,
+      "scaled_current_R": 0.9999998762025071
+    },
+    {
+      "configuration": "C22",
+      "volume_l": 30.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.980586475210301e-05,
+      "scaled_current_R": 0.9980586475210301
+    },
+    {
+      "configuration": "C22",
+      "volume_l": 30.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999998056482481e-09,
+      "scaled_current_R": 0.9999998056482481
+    },
+    {
+      "configuration": "C22",
+      "volume_l": 150.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.991311346041449e-05,
+      "scaled_current_R": 0.9991311346041449
+    },
+    {
+      "configuration": "C22",
+      "volume_l": 150.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999131141522e-09,
+      "scaled_current_R": 0.9999999131141522
+    },
+    {
+      "configuration": "C23",
+      "volume_l": 30.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.994899714018814e-05,
+      "scaled_current_R": 0.9994899714018814
+    },
+    {
+      "configuration": "C23",
+      "volume_l": 30.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.99999949032196e-09,
+      "scaled_current_R": 0.999999949032196
+    },
+    {
+      "configuration": "C23",
+      "volume_l": 150.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.994490167523589e-05,
+      "scaled_current_R": 0.9994490167523589
+    },
+    {
+      "configuration": "C23",
+      "volume_l": 150.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999449565839e-09,
+      "scaled_current_R": 0.9999999449565838
+    },
+    {
+      "configuration": "C24",
+      "volume_l": 30.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.994219172047204e-05,
+      "scaled_current_R": 0.9994219172047204
+    },
+    {
+      "configuration": "C24",
+      "volume_l": 30.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999421950334e-09,
+      "scaled_current_R": 0.9999999421950334
+    },
+    {
+      "configuration": "C24",
+      "volume_l": 150.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.969605996553829e-05,
+      "scaled_current_R": 0.9969605996553829
+    },
+    {
+      "configuration": "C24",
+      "volume_l": 150.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999996956877871e-09,
+      "scaled_current_R": 0.9999996956877871
+    },
+    {
+      "configuration": "C25",
+      "volume_l": 30.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.992727075349592e-05,
+      "scaled_current_R": 0.9992727075349592
+    },
+    {
+      "configuration": "C25",
+      "volume_l": 30.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999273147651e-09,
+      "scaled_current_R": 0.9999999273147651
+    },
+    {
+      "configuration": "C25",
+      "volume_l": 150.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.993456547698306e-05,
+      "scaled_current_R": 0.9993456547698306
+    },
+    {
+      "configuration": "C25",
+      "volume_l": 150.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999345804794e-09,
+      "scaled_current_R": 0.9999999345804794
+    },
+    {
+      "configuration": "C26P",
+      "volume_l": 30.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.99333808844826e-05,
+      "scaled_current_R": 0.999333808844826
+    },
+    {
+      "configuration": "C26P",
+      "volume_l": 30.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999333607926e-09,
+      "scaled_current_R": 0.9999999333607926
+    },
+    {
+      "configuration": "C26P",
+      "volume_l": 150.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.997554541498808e-05,
+      "scaled_current_R": 0.9997554541498808
+    },
+    {
+      "configuration": "C26P",
+      "volume_l": 150.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999755454941e-09,
+      "scaled_current_R": 0.9999999755454941
+    },
+    {
+      "configuration": "C26S",
+      "volume_l": 30.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.97309439478099e-05,
+      "scaled_current_R": 0.997309439478099
+    },
+    {
+      "configuration": "C26S",
+      "volume_l": 30.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999997306096315e-09,
+      "scaled_current_R": 0.9999997306096315
+    },
+    {
+      "configuration": "C26S",
+      "volume_l": 150.0,
+      "rs_ohm": 10000.0,
+      "abs_source_current": 9.990268845176351e-05,
+      "scaled_current_R": 0.9990268845176351
+    },
+    {
+      "configuration": "C26S",
+      "volume_l": 150.0,
+      "rs_ohm": 100000000.0,
+      "abs_source_current": 9.999999026888922e-09,
+      "scaled_current_R": 0.9999999026888922
+    }
+  ],
+  "monotonic_envelope_groups": 648,
+  "max_adjacent_gain_db": 2.842170943040401e-14,
+  "input_sha256": {
+    "skrypty/sprawdz_port_wzmacniacza_P22A.py": "94cd00166b1cd3ea1df21c4030b72c3db3470cf47ca0416590319a5679cfec14",
+    "skrypty/model_portu_wzmacniacza_P22.py": "9394bb6ad0855e8ab260ece67cc72fe42638942f0dfc74a9fd3cc76784e57990",
+    "wyniki/p22a_naped_z_portem.csv": "1717f1db48a1012f7f2941d48db38fe99930965cb8775b328cab5761947766df"
+  },
+  "limitations": [
+    "Pure-R monotonicity theorem uses fixed Vsource/Isource/X budgets and a passive fixed linear driver at each positive frequency.",
+    "Do not transfer this to arbitrary RLC active feedback,current control,thermal limits or all frequency-dependent amplifiers.",
+    "KCL/KVL and state-space checks verify the numerical model,not measured amplifier output impedance."
+  ]
+}

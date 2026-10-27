@@ -1,6 +1,6 @@
 {
   "status": "INSERT_GEOMETRY_FLEXIBLE_SHELL_LEAK_AND_MOUNT_FAMILIES_NOT_FINAL_CNC_OR_STRENGTH",
-  "generated_at": "2026-10-26T21:15:19.632305+01:00",
+  "generated_at": "2026-10-27T09:23:53.692015+01:00",
   "libraries": {
     "Python": "3.12.3",
     "NumPy": "1.26.4",
@@ -36,7 +36,7 @@
     "skrypty/model_wypelnienia.py": "33822435e494b4d95659c3679466fcffefcce699450df2932267f1799bf2fdb7",
     "skrypty/naped_z_wkladami_P20A.py": "832453eedf957a2cd0a1bf70d30e0432dc5b3f371842944e39d9028853b2af41",
     "skrypty/odtworz_regulacje_P20A.py": "c6a84a5ae76732fab29f8d6468bc8260d48901162ab37bd0558fd93353abc2b2",
-    "skrypty/odtworz_wszystko.py": "8dbcdfae2382c34c939c8053c7202244a587e5b5f0d83dc53401a3bbbd45328f",
+    "skrypty/odtworz_wszystko.py": "0a27ec78730a758861ba864a927316d4f64c7896a9a8b503487336619ba8be6d",
     "skrypty/sprawdz_wklady_P20A.py": "a97dddd4abc5d09ce24ad1d2c86ccc3a41812ae8f6bfb2ff7d0eb1e5ba1fd923",
     "skrypty/wykresy_i_ocena_wkladow_P20A.py": "17fbdb962d9ef7a1ced1a8fce1e618a36e9310814c58e0ad388802c9a7694198",
     "wyniki/p20a_dostep_i_uklad.csv": "c15aa08637a0f0b9541732660431a7bba4f7fafc33e8bc841da429dc8f5e7a80",
@@ -77,13 +77,13 @@
     "wyniki/p20a_wymagania_mocowan.csv": "1be0a1d73356f107fb07e640c157c9c0e5cc8e8cea721587cb1537a837086056"
   },
   "documentation_sha256": {
-    "README.md": "1387b463f66086f730916ccfadb2fada21330643f2b70502bee2081bbb610c1d",
-    "AGENTS.md": "c2fdd21eb1fbd8a0b8825aafdcc4cb245916180bfd19d14d1b557a578a2a1319",
-    "PLAN_B_R.md": "d7c3d1c15561d8fb47dbe8690939067543401b8b7bb28482ef41f9d034d041c5",
-    "PROGRAM_30_BADAN.md": "d3d1f626571404138156f4c9483a0437bbe9f1d548c29cbdfb42cd192d151d3d",
-    "raporty/README.md": "7914114cac6618e71cca7f097ec0b371cc6c62f0ea08973a1c273ecbdf967071",
+    "README.md": "279d68337d9b43cc611b3409c550a85d2fec8456c151a25b646b026f739a8d16",
+    "AGENTS.md": "b9400132c10537b2e27b43193591545b2468e6d684256260b20f9d1befa993dd",
+    "PLAN_B_R.md": "dbb39b5ad17f2b72332ecfb25dcec923dde41c25c53bddf6fedfc8b603c1d1e0",
+    "PROGRAM_30_BADAN.md": "1974937ce0fee3fb122d5ee2ffa7d1864831541785f474303045b2897d766294",
+    "raporty/README.md": "6d562642d23e30c6e6258ded44f4193eef12d87a2be50b0e81cc901b5138ce54",
     "raporty/042_regulacja_Vb_i_wklady_wypornosciowe.md": "965a70113884debe40d1398c27a9e0af78b60ef1c3c3ab6b63b16c810e32dde5",
-    "baza_wiedzy/README.md": "e0da9b96fc12706eaf40d2571bc5ed3cc0771756d8d90a4e412c41cfc43bd6f9",
+    "baza_wiedzy/README.md": "f39168b0a96f8dd43add56451f1a13c12026d806e1dc51437968e7c24f6ca17c",
     "baza_wiedzy/30_wklady_objetosc_gaz_i_mocowanie.md": "641b3df6e176479765608eb34ee7b2157e219d320cd52d5ef7fd3a79b417518a"
   },
   "limitations": [

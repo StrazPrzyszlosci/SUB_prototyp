@@ -1,0 +1,21 @@
+{
+  "status": "VERIFIED_EXACT_RATIONAL_MODEL_CERTIFICATES_WITH_INDEPENDENT_LDL",
+  "cases": 972,
+  "accepted": 972,
+  "endpoint_LMI_checks": 1944,
+  "positive_X_checks": 972,
+  "search_trials": 6804,
+  "rejected_search_trials": 3,
+  "min_source_voltage_peak_v": "390543/200000",
+  "max_source_voltage_peak_v": "384251/25000",
+  "input_sha256": {
+    "skrypty/sprawdz_swiadkow_P24A.py": "1c1fb611f91e03d848dd9c53067c7644dab7e28f1d57fc6986ef38f8c3669b7e",
+    "wyniki/p24a_podsumowanie.json": "114f64a9599e31e31af27eff2d6d8559edaad7bc37cdf3860fb31a4a8f97f914"
+  },
+  "limitations": [
+    "Exact rational matrix verification proves a sufficient invariant region of the declared model,not real driver parameter fidelity.",
+    "No global optimisation proof:seven selected lambda and solver candidates only;rejected trial does not prove impossibility.",
+    "All-temperature statement uses affine endpoint convexity,not sampling of temperature;thermal model is copper-only one-pole with Cth>0.",
+    "Voltage bound concerns the continuous physical source port,not merely digital sample peaks."
+  ]
+}

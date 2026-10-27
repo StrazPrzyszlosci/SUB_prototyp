@@ -32,6 +32,12 @@ częścią końcowej rekomendacji;sztywne wkładyVb są odrębnymP20.
 
 ## Macierz pokrycia
 
+U-026,2026-10-27: głębokość zewnętrzna≤500mm,praca pionowo/poziomo
+w zabudowie i preferowany głośnik w jednej z połów frontu. Dawne684mm
+głębokości jest odniesieniem historycznym,nie wariantem dopuszczonym.
+Nowa geometria musi wejść do P18–P21,P26–P29;dotychczasowych wyników
+nie przepisujemy jako analizy nowej skrzyni.
+
 „Częściowo” oznacza rzeczywisty wynik z niezamkniętym zakresem, nie procent
 ukończenia. „Do wykonania” oznacza brak wymaganego eksperymentu. Nie zamykamy
 pakietu samym stworzeniem planu, testów ani listy bibliotek.
@@ -59,9 +65,9 @@ pakietu samym stworzeniem planu, testów ani listy bibliotek.
 | P19 | Usztywnienia, połączenia i klej | Częściowo — wykonane rodziny P19A–P19G | Raporty030–040:spoiny,styk,pełna rama,listwa. Raport041:24podmodele/144okna/do102033DOF,przekazanie stóp i dwa kierunki siatki. Wpływ pola N14/N18 większy niż ostatnie lokalne zagęszczenia;nośność,Gc,SN/J(t) i identyfikacjaMDF otwarte |
 | P20 | Regulacja objętości | Częściowo — P20A/P20B/P20C w rodzinach kontrolnych | Raport042:108układów/78modułów. Raport043:56modeli przegrody. Raport044:18brył zklejem,1944porty gazu,11664punkty napędu27konfiguracji,24pełne MES+gaz,ciągłe wymaganieE,8flag siatki rozstrzygnięte n16/do40248DOF. Pole3D gazu,rzeczywisty mechanizm i mocowania otwarte |
 | P21 | Wewnętrzne pole i sprzężenie paneli | Częściowo — wykonane odniesienie P21A | Raport031:72punktyRayleigh/MITC/gaz0D. P20C:pełna mechanika3Dmodułu z dwoma portami jednolitego gazu,nie przestrzenny gaz. Następne P21B:wewnętrzny gaz modułu i zgodna granica;potem główna komora z wypełnieniem/regulacją |
-| P22 | Napęd, impedancja wyjściowa i clipping | Częściowo | Dotychczas idealne ograniczeniaV/I; dynamika i obciążenie rzeczywiste otwarte |
-| P23 | Cyfrowa korekcja, faza i opóźnienia | Częściowo |216wzorców analogowych; realizacja dyskretna i stabilność otwarte |
-| P24 | Dynamiczna ochrona | Do wykonania | Wychylenie, napięcie, prąd, cieplna pamięć i overshoot |
+| P22 | Napęd, impedancja wyjściowa i clipping | Częściowo — P22A/P22B wykonane | Raport047:3240pasywnychportów/19440punktów. Raport048:648trajektorii z saturacją i G0/10,stanLe/SEM,7ciągłychODE/28kroków/100root,208wyjść poza odniesienieX zachowanych. Nie jest to identyfikacja elektroniki lub gwarancja limituI/X/T;pełneLC/temperatura/sterowanie otwarte |
+| P23 | Cyfrowa korekcja, faza i opóźnienia | Częściowo — P23A wykonane | Raport046:27konfiguracji,972projekty/4860kaskad,19440sekcji,300granicHP,9przebiegówsoftware,45kontroli80cyfr+3świadków,12kolejności/48wyjśćpośrednich. Faza/opóźnienie własne filtru,nie latencja hardware;integracja fizycznego głośnika i ochrony otwarta |
+| P24 | Dynamiczna ochrona | Częściowo — P24A wykonane w rodzinie | Raport049:972dokładne świadki wspólnego obszaru X/I/θ,1944końceT,6804próby/3odrzucone,36ciągłychODE,11664porównańsinusów. Cały przedziałRe(T) i dowolny bounded-input w zadanym modelu;nie fizyczna certyfikacja. LC,nieliniowości,filtry/rekonstrukcja i szersza niepewność otwarte |
 | P25 | Sygnały wielotonowe i realistyczne | Częściowo — dwa tony | P14A daje wspólne V/I/X dla sumy2tonów i12pilotów. Więcej tonów, realistyczne widma, clipping i ochrona pozostają do wykonania; nie sumować osobnych limitów sinusów |
 | P26 | Zespolony model pokoju ze stratami | Częściowo | Rodzina modalna, 4 ustawienia × 9 scenariuszy strat; Green 1D, pasywność i zbieżność, raport 013. P11 dodaje reakcję pola na napęd i gęstą siatkę, raport 017. Pozycje/straty i rozpraszanie na bryle rzeczywistej pozostają nieznane |
 | P27 | Jeden/dwa subwoofery i ustawienie | Częściowo | 4 scenariusze przy monitorach, 15 876 wierszy S0, 1512 diagnostycznych, 120 przypadków fazy i 48 koniecznych testów gabarytu. U-020 zmienia docelowo kanapę na prawą iRTV na lewą stronę rzutu; konfiguracjav2 i raport019. Wymiary U-019 aktualne; dawne S0 i pozycje nadal nie są pomiarem |

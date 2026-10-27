@@ -2,11 +2,16 @@
 
 ![SUB_prototyp: badania subwoofera DIY, źródła, obliczenia i symulacje](grafika/README_baner.png)
 
-*Na banerze: obudowa odniesienia 504 × 684 × 504 mm
-(szerokość × głębokość × wysokość). To wymiary przyjęte do porównań,
-nie zatwierdzona konstrukcja końcowa.*
+*Na banerze: historyczna obudowa odniesienia 504 × 684 × 504 mm
+(szerokość × głębokość × wysokość). Jej głębokość przekracza nowy limit;
+nie jest kandydatem na konstrukcję końcową.*
 
-**26 modeli głośników · 11 producentów · 44 raporty · Python**
+> **Aktualne wymaganie: maksymalnie 50 cm głębokości zewnętrznej.**
+> Badamy płytszą skrzynię, którą można ustawić pionowo lub poziomo w zabudowie.
+> Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
+> połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
+
+**26 modeli głośników · 11 producentów · 48 raportów · Python**
 
 Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
@@ -18,6 +23,12 @@ subwoofera zamkniętego z regulacją objętości.
 > i symulacje. Nie ma jeszcze pomiarów gotowego prototypu ani ostatecznego
 > zwycięzcy. Każdy przykład ma opisane warunki i ograniczenia.
 
+Obecna publikacja zawiera ukończone etapy P23A, P22A/P22B i P24A.
+Przestrzenny model gazu P21B ma **17 z 18 zapisanych wariantów**;
+to częściowa migawka. Końcowy PDF i Release 1 powstaną po programie badań.
+[Zapis stanu P21B z hashami](wyniki/manifest_checkpoint_P21B.json)
+pozwala odróżnić tę publikację od przyszłego zamknięcia etapu.
+
 ## Wybierz temat
 
 | Interesuje Cię… | Zacznij tutaj |
@@ -27,6 +38,7 @@ subwoofera zamkniętego z regulacją objętości.
 | Bas w konkretnym pokoju | [Pomieszczenie i ustawienie](#pokoj) |
 | Ścianki, wzmocnienia i klej | [Konstrukcja obudowy](#mechanika) |
 | Zmienianie objętości jednej skrzyni | [Wkłady i ruchoma przegroda](#regulacja) |
+| Korekcja cyfrowa i zapas poziomu | [Filtry DSP](#filtry) |
 | Źródła, szczegóły i własne obliczenia | [Mapa raportów](#mapa) · [Kod i odtwarzanie](#odtwarzanie) |
 
 Skróty wyjaśniamy w [krótkim słowniku](#slownik).
@@ -147,6 +159,146 @@ Temperatury i współczynniki w tym badaniu są założeniami modelu.
 ![Nagrzewanie cewki: zmiany prądu i mocy strat](wyniki/37_P15B_prad_i_grzanie.png)
 
 [Raport 027: sprzężenie temperatury i napędu](raporty/027_P15B_sprzezenie_grzania_i_napedu.md).
+
+</details>
+
+<a id="filtry"></a>
+## DSP: dobry wzór filtru to początek
+
+Filtr cyfrowy trzeba zaprojektować dla właściwej częstotliwości próbkowania
+i zapisać z odpowiednią precyzją. Zaokrąglanie może zmienić bas nawet wtedy,
+gdy filtr pozostaje stabilny. W badaniu 27 konfiguracji głośników porównano
+972 projekty i 4860 wariantów zapisu współczynników.
+
+![Filtry DSP: osobny wpływ projektu cyfrowego i zapisu współczynników](wyniki/84_P23A_transformacja_i_zapis_wspolczynnikow.png)
+
+To badanie programu, a nie pomiar konkretnego miniDSP. Scenariusze używają
+48, 96 i 192 kHz; dokumentacja Flex Eight wymaga projektu dla 96 kHz.
+Zaokrąglenie współczynników do `float32` i do sześciu miejsc po kropce
+to osobne eksperymenty, nie opis wnętrza tego urządzenia.
+
+**Zapas dla muzyki i impulsów wymaga osobnego rachunku.** W jednym
+przykładzie filtr wzmacnia najlepszy znaleziony sinus o około 3,72 dB,
+lecz specjalnie skonstruowany sygnał o ograniczonej amplitudzie daje
+7,44 dB. Taki sygnał nie reprezentuje typowej muzyki; pokazuje, dlaczego
+kontrola samych sinusów nie wystarcza do pełnej ochrony przed przesterowaniem.
+
+![DSP: osobne błędy obliczeń oraz zapas dla sygnału w czasie](wyniki/86_P23A_arytmetyka_i_zapas_sygnalu.png)
+
+<details>
+<summary><strong>Rozwiń: jak sprawdzamy bardzo niskie filtry i ich stabilność</strong></summary>
+
+Dodatkowe 300 filtrów kontrolnych obejmuje graniczne częstotliwości
+0,5–80 Hz. Decyzję o stabilności oparto na dokładnych ułamkach zapisanych
+współczynników. Część hipotetycznych reprezentacji traci ścisłą stabilność.
+Nie jest to diagnoza sprzętu, którego arytmetyki nie zidentyfikowaliśmy.
+
+![Bardzo niskie filtry: dokładne warunki stabilności po zapisaniu współczynników](wyniki/85_P23A_dokladna_stabilnosc_i_granice.png)
+
+[Raport 046: modele, faza, opóźnienie, sygnały czasowe i ograniczenia](raporty/046_filtry_cyfrowe_stabilnosc_i_zapas.md)
+· [Wyprowadzenia: stabilność i zapas poziomu](baza_wiedzy/34_cyfrowe_filtry_stabilnosc_i_normy.md).
+Ochrona wychylenia i temperatury oraz integracja z fizycznym modelem
+głośnika pozostają kolejnym etapem.
+
+</details>
+
+### Wzmacniacz i przewody też zmieniają wynik
+
+Rezystancja między źródłem a głośnikiem zmniejsza jego elektryczne
+tłumienie i zużywa część budżetu napięcia. Dla niskiej impedancji głośnika
+ta sama dodatkowa rezystancja ma większe znaczenie względne.
+Porównaliśmy 3240 pasywnych obwodów i 19 440 punktów napędu.
+
+![Rezystancja źródła i przewodów: zmiana tłumienia oraz obwiedni napędu](wyniki/87_P22A_rezystancja_zrodla_i_obwiednia.png)
+
+To obwody przyjęte do badania. Nie opisują konkretnego wzmacniacza.
+Górny wykres upraszcza indukcyjność cewki do zera; dolny zachowuje jej
+dane katalogowe. Osobne sinusy i limity 40 V RMS / 12 A RMS oraz
+katalogowe Xmax nie określają bezpiecznego czasu pracy.
+
+<details>
+<summary><strong>Rozwiń: dlaczego prąd wzmacniacza i cewki mogą być różne</strong></summary>
+
+W modelu z filtrem wyjściowym część prądu płynie przez kondensator.
+Prąd źródła może wtedy różnić się od prądu cewki. Sprawdzamy oba porty
+oraz bilans energii, żeby poprawnie przypisać ograniczenie prądu.
+
+![Model filtru wyjściowego: dwa prądy i podział mocy czynnej](wyniki/88_P22A_dwa_prady_i_bilans_mocy.png)
+
+[Raport 047: równania obwodu, tłumienie, limity i sprawdzenia](raporty/047_port_zrodla_tlumienie_i_bilans.md)
+· [Baza wiedzy: port źródła i wykonalność ochrony](baza_wiedzy/35_port_zrodla_i_wykonalnosc_ochrony.md).
+Clipping i zachowanie pętli prądowej w czasie opisuje kolejny etap poniżej.
+
+</details>
+
+### Ograniczanie prądu nie zastępuje kontroli ruchu
+
+Przeprowadziliśmy także 648 symulacji w czasie z nasyceniem napięcia
+i hipotetyczną pętlą prądową. Zachowaliśmy energię cewki i SEM od ruchu.
+W badanych warunkach pętla zmniejsza największe przekroczenie prądu,
+lecz nie zapewnia twardego limitu ani samodzielnej ochrony wychylenia.
+
+![Nasycenie i pętla prądowa: prąd oraz ruch wymagają oddzielnej kontroli](wyniki/89_P22B_prad_i_brak_ochrony_wychylenia.png)
+
+Wyniki poza katalogowym Xmax są próbami granic matematycznego modelu.
+Nie opisują dokładnie fizycznego głośnika po wyjściu poza zakres liniowy.
+To argument za ochroną opartą także na ruchu i temperaturze,
+a nie ranking zniekształceń produktów.
+
+<details>
+<summary><strong>Rozwiń: napięcie, prąd i ruch w jednym przebiegu</strong></summary>
+
+Przykład pokazuje oddzielnie napięcie zadane, napięcie po ograniczeniach,
+prąd i wychylenie. Próg pętli prądowej nie jest twardym limitem jej wyniku.
+
+![Nasycenie napięcia oraz zachowany stan prądu i ruchu](wyniki/90_P22B_napiecie_prad_i_ruch_w_czasie.png)
+
+Siedem świadków sprawdzono niezależnymi ciągłymi równaniami i czterema
+krokami czasu. [Raport 048](raporty/048_nasycenie_SEM_i_stan_pradu.md)
+opisuje też bilans energii, ograniczenie metody przy Le→0 i przypadki,
+w których SEM utrudnia jednoczesne dotrzymanie granicy napięcia i prądu.
+To badanie hipotetycznego sterownika. Kolejny etap wyznacza wspólny zapas
+także dla zmieniającej się temperatury.
+
+</details>
+
+### Ile kosztuje bardzo konserwatywny zapas
+
+Można też postawić mocniejsze pytanie: jaki stały poziom napięcia utrzyma
+model w granicach ruchu, prądu i temperatury dla dowolnego sygnału
+o ograniczonej amplitudzie? Dla 972 rodzin modeli znaleźliśmy takie
+warunki i sprawdziliśmy je dokładnymi nierównościami.
+
+![Wspólny zapas ruchu, prądu i temperatury oraz jego koszt w osiągach modelu](wyniki/92_P24A_napiecie_i_cena_konserwatyzmu.png)
+
+To punkt odniesienia do dalszego projektu. W przykładzie C02 / 100 l
+stała granica wynosi około 4,99 V peak; osobny sinus w paśmie może
+wykorzystać większą amplitudę. Różnica pokazuje cenę wybranego warunku.
+Nie określa nieuniknionej straty każdego innego zabezpieczenia.
+Założone chłodzenie i granice temperatury wymagają późniejszej identyfikacji.
+
+<details>
+<summary><strong>Rozwiń: co zostało udowodnione w modelu i co pokazują symulacje</strong></summary>
+
+W każdym przypadku znaleziono obszar ruchu i prądu, którego zadany model
+nie opuszcza przy ograniczonym napięciu. Warunki obejmują cały przedział
+temperatury. Sprawdzono 1944 macierze końców przedziałów, a osobne
+36 przebiegów pokazuje przykładowe zachowanie w czasie.
+
+![Wybrany obszar modelu oraz wykorzystanie granic ruchu i prądu](wyniki/93_P24A_obszar_ruch_prad_i_czas.png)
+
+Obwiednia temperatury jest górnym porównaniem dla tego modelu grzania.
+Pokazuje także różnicę między oszacowaniem a wybraną krótką symulacją.
+
+![Temperatura: górne porównanie i wybrane przebiegi przy założonych parametrach](wyniki/94_P24A_temperatura_i_obwiednia_porownawcza.png)
+
+Model ma stałe parametry mechaniczne i indukcyjność oraz zmienne Re(T).
+Nie obejmuje jeszcze wszystkich nieliniowości, wypełnienia, podatnych ścian
+i realnego toru po DSP. Własność matematyczna nie potwierdza przez to
+dokładności danych rzeczywistego produktu.
+
+[Raport 049: założenia, dowód, koszt i ograniczenia](raporty/049_obszar_niezmienniczy_i_koszt_ochrony.md)
+· [Baza wiedzy: wspólny obszar i granica wejścia](baza_wiedzy/37_wspolny_obszar_i_granica_wejscia.md).
 
 </details>
 
@@ -603,6 +755,21 @@ OPENBLAS_NUM_THREADS=1 python3 skrypty/odtworz_przegrode_P20B.py
 
 # Pełna bryła modułu, spoiny, ciągły moduł kleju i rozstrzygnięcia siatki P20C
 OPENBLAS_NUM_THREADS=1 python3 skrypty/odtworz_modul_3D_P20C.py
+
+# Filtry cyfrowe, dokładna stabilność, software i zapas sygnału P23A
+OPENBLAS_NUM_THREADS=1 python3 skrypty/odtworz_filtry_P23A.py
+
+# Pasywny port wzmacniacza, prądy, energia i obwiednie P22A
+OPENBLAS_NUM_THREADS=1 python3 skrypty/odtworz_port_P22A.py
+
+# Nasycenie napięcia, SEM, stan prądu i odrębne ciągłe ODE P22B
+OPENBLAS_NUM_THREADS=1 python3 skrypty/odtworz_nasycenie_P22B.py
+
+# Dokładne sprawdzenie zapisanych świadków P24A, bez CVXPY
+python3 skrypty/sprawdz_swiadkow_P24A.py
+
+# Tabele, ciągłe ODE, wykresy i raport P24A z zapisanych świadków
+OPENBLAS_NUM_THREADS=1 python3 skrypty/odtworz_obszary_P24A.py
 ```
 
 Podczas aktywnej kampanii nie uruchamiaj pełnego przebiegu archiwizującego
@@ -623,7 +790,15 @@ Manifesty wykonanych etapów: [P14B/P15B](wyniki/manifest_P14B_P15B.json),
 [wypełnienie P09C](wyniki/manifest_wypelnienia_P09C.json),
 [listwa P19F](wyniki/manifest_listwy_P19F.json),
 [podmodel P19G](wyniki/manifest_podmodelu_P19G.json),
-[regulacja P20A](wyniki/manifest_regulacji_P20A.json).
+[regulacja P20A](wyniki/manifest_regulacji_P20A.json),
+[filtry cyfrowe P23A](wyniki/manifest_filtrow_P23A.json),
+[port wzmacniacza P22A](wyniki/manifest_portu_P22A.json),
+[nasycenie i SEM P22B](wyniki/manifest_nasycenia_P22B.json),
+[wspólny obszar P24A](wyniki/manifest_obszarow_P24A.json).
+
+Nowe wyszukiwanie P24A wymaga opcjonalnego `requirements_p24.txt` i flagi
+`--search` w skrypcie etapu. Domyślnie odczytujemy zapisane świadki,
+sprawdzamy je niezależnie i odtwarzamy ODE. Odczyt nie jest nowym SDP.
 [Nowe SB: wejścia, wersje i kontrole](wyniki/sb_rozszerzenie_weryfikacja.json)
 opisują osobny etap 5832 punktów. Surowe oryginały nowych PDF i wyciągi
 tekstów zachowujemy prywatnie; publiczny [rejestr](dane/zrodla/SB_rozszerzenie_pochodzenie.json)

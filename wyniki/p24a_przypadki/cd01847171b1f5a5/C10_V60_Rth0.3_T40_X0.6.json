@@ -1,0 +1,158 @@
+{
+  "case_id": "C10_V60_Rth0.3_T40_X0.6",
+  "configuration": "C10",
+  "product": "C10",
+  "driver_name": "Scan-Speak 32W/4878T00",
+  "volume_l": 60,
+  "Rth_assumed_k_w": 0.3,
+  "temperature_rise_limit_k": 40,
+  "X_catalog_reference_fraction": 0.6,
+  "run_sha256": "cd01847171b1f5a5b07fcec88767fe607e9b97babefe30c743459dbfcb9bf907",
+  "input_sha256": {
+    "brief_system_audio_DIY_v0.6.md": "3bd9f8d43a92b96256073e66cd0f4f105336e969a37c29fc42f17cda9d66736f",
+    "dane/konfiguracje/p24a_wspolny_obszar_niezmienniczy.json": "1fa7f4d3655aa43475e1a8a52587099a612d2985811b22fba7b84de6f2c6b984",
+    "dane/przetworniki/pula_rozszerzona.json": "36d96aa416cf4135ec890e899be7f7818e0cf85c907a9f8a8456917838352b4b",
+    "dane/przetworniki/rozszerzenie_SB_20261025.json": "db4591a4561f98b8cf7bfc3aa6e92aa8da4c3178a442255f942f821302e85ebb",
+    "skrypty/model_subwoofera.py": "bd7e6e250a5b9a605fbbb05343381b827ffa81047a90c692968fc8e34eedc2b8",
+    "skrypty/analiza_rozszerzenia_SB.py": "d01acbe156b8865df3b127aa5298ef310d0e35b25380be4932d7844805e81a38",
+    "requirements_p24.txt": "748f2793a2588b0a8665d8fd2d9ff24c20c670daf121022b8cc3ba294d7e44c4",
+    "skrypty/certyfikat_przedzialu_P24.py": "a46216d3d484ca6ab16660965d66f6aba6928c21912b2642b32f83282d855a2b",
+    "skrypty/szukaj_swiadka_LMI_P24.py": "9e5962e707fe68b547d4bf77e5aa8bd79370de9f651e7ef47919fdf9d8a6e167",
+    "skrypty/analiza_obszarow_P24A.py": "b7aea6c20eb4c5d02f7c9cd47f48cd8581169341660c68f02bf9f6faf5801db7"
+  },
+  "certificate": {
+    "parameters": {
+      "M": "0.15027969746232614",
+      "K": "8454.602600049977",
+      "Le": "0.0005",
+      "BL": "12.635726578873625",
+      "Rms": "2.4280333381611796",
+      "Re0": "3.1",
+      "Rs": "0.1",
+      "Ihardware": "16.970562748477143",
+      "Rth": "0.3",
+      "alpha": "0.004",
+      "theta_limit": "40.0",
+      "Xref": "21/2500",
+      "Icap": "608919/100000"
+    },
+    "X": [
+      [
+        "91696130223/500000000000",
+        "-209274449161/1000000000000",
+        "64074277811/500000000000"
+      ],
+      [
+        "-209274449161/1000000000000",
+        "67582763151/100000000000",
+        "-366259447331/1000000000000"
+      ],
+      [
+        "64074277811/500000000000",
+        "-366259447331/1000000000000",
+        "195999999973/200000000000"
+      ]
+    ],
+    "lambda_value": "25289312661/100000000",
+    "gamma": "1949449452178761799/25000000000000000000",
+    "source_peak_voltage_v": "4440731/1000000",
+    "verification": {
+      "exact_status": "VERIFIED_RATIONAL_MODEL_FAMILY",
+      "X_principal_minors": [
+        "91696130223/500000000000",
+        "67582763151/100000000000",
+        "195999999973/200000000000",
+        "80145761942845262649539/1000000000000000000000000",
+        "81651181452158608516453/500000000000000000000000",
+        "528165096029353706722589/1000000000000000000000000",
+        "62487886660155614060504655650917193/1000000000000000000000000000000000000"
+      ],
+      "negative_LMI_principal_minors": [
+        [
+          "3621038042972408278537/1050000000000000000000",
+          "2116719264097170945670241298033847023/75139848731163070000000000000000000",
+          "6257240188481728612368497873711167/7415646971220000000000000000000",
+          "8581314177438992097996835006652169101592570452827893821636488949295219/27665384649976135261068159165942010000000000000000000000000000000000000000",
+          "416112361947898146574860971439397347240594764955725639471/272525026192335000000000000000000000000000000000000000",
+          "870343791137194858525057134254237532160228757861261413073932950317789910054494461040047/69781199281371363025177257993502975453965630000000000000000000000000000000000000000",
+          "2236102717157259049809141046352903234609244487243412374199820371126421374529239672110162873825207282749/16282279832319984705874693531817360939258647000000000000000000000000000000000000000000000000000000000000"
+        ],
+        [
+          "3621038042972408278537/1050000000000000000000",
+          "2116719264097170945670241298033847023/75139848731163070000000000000000000",
+          "20675630905577992127596933073711167/7415646971220000000000000000000",
+          "8581314177438992097996835006652169101592570452827893821636488949295219/27665384649976135261068159165942010000000000000000000000000000000000000000",
+          "416117556670403024037156189259742616372688223893325639471/272525026192335000000000000000000000000000000000000000",
+          "870345112131314247088745198549576401060176944120230450735967301606190310259057661040047/69781199281371363025177257993502975453965630000000000000000000000000000000000000000",
+          "50438475314720200615864141000751725722904743136170294786580438982952651107749117941918386977133998859/367269469901954542237775042071068291862977000000000000000000000000000000000000000000000000000000000000"
+        ]
+      ],
+      "thermal_margin": "5930983/25000000000000",
+      "voltage_margin": "7177061374798753837139/2500000000000000000000000000",
+      "scope": "All theta in[0,theta_limit] and all measurable source voltage |u|<=voltage,initial xi.T*X^-1*xi<=1 and temperature in interval;only stated model."
+    },
+    "solver_status": "optimal_inaccurate",
+    "search_scope": "Feasible witness at one of seven selected lambda;not global voltage optimum."
+  },
+  "trials": [
+    {
+      "lambda_fraction": 0.02,
+      "lambda_value": "632232817/100000000",
+      "solver_status": "optimal",
+      "warnings": [],
+      "candidate_accepted": true,
+      "voltage_float": 0.836106
+    },
+    {
+      "lambda_fraction": 0.05,
+      "lambda_value": "1580582041/100000000",
+      "solver_status": "optimal",
+      "warnings": [],
+      "candidate_accepted": true,
+      "voltage_float": 1.320528
+    },
+    {
+      "lambda_fraction": 0.1,
+      "lambda_value": "3161164083/100000000",
+      "solver_status": "optimal",
+      "warnings": [],
+      "candidate_accepted": true,
+      "voltage_float": 1.863738
+    },
+    {
+      "lambda_fraction": 0.2,
+      "lambda_value": "1264465633/20000000",
+      "solver_status": "optimal",
+      "warnings": [],
+      "candidate_accepted": true,
+      "voltage_float": 2.623021
+    },
+    {
+      "lambda_fraction": 0.4,
+      "lambda_value": "12644656331/100000000",
+      "solver_status": "optimal",
+      "warnings": [],
+      "candidate_accepted": true,
+      "voltage_float": 3.653671
+    },
+    {
+      "lambda_fraction": 0.6,
+      "lambda_value": "1185436531/6250000",
+      "solver_status": "optimal",
+      "warnings": [],
+      "candidate_accepted": true,
+      "voltage_float": 4.325333
+    },
+    {
+      "lambda_fraction": 0.8,
+      "lambda_value": "25289312661/100000000",
+      "solver_status": "optimal_inaccurate",
+      "warnings": [
+        "Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information."
+      ],
+      "candidate_accepted": true,
+      "voltage_float": 4.440731
+    }
+  ],
+  "status": "EXACT_RATIONAL_WITNESS_ACCEPTED"
+}

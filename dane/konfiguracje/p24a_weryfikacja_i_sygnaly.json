@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-27",
+  "continuous_configurations": ["C02", "C04", "C05", "C11", "C26P", "C26S"],
+  "volume_l": 100,
+  "Rth_assumed_k_w": 0.6,
+  "temperature_limit_k": 80,
+  "X_catalog_reference_fraction": 0.6,
+  "Cth_assumed_j_k": 200,
+  "initial_temperature_cases": ["ambient", "limit"],
+  "signals": ["sine20", "two20_85", "step"],
+  "duration_s": 0.8,
+  "evaluation_rate_hz": 48000,
+  "thermal_upper_Cth_j_k_assumed": [50, 200],
+  "thermal_upper_times_s": [0, 1, 10, 60, 300, 600],
+  "limitations": [
+    "Cth i temperatura są scenariuszami,nie danymi cewki produktu. Pierwszy etap to wybór warunkowych granic modelu.",
+    "36ODE to kontrola przykładowych realizacji;własność wszystkich bounded-input wynika z dokładnych nierówności,nie z tych przebiegów.",
+    "Gorący start ma ruch i prąd zero,theta=limit;nie dowolny gorący stan wielu węzłów cieplnych.",
+    "SPLdiagnostyczny dotyczy osobnych zamrożonych temperatur,półprzestrzeni2pi/1m,sinusaRMS. Nie jest wynikiem ustalonego samogrzania,pokoju lub THD."
+  ]
+}

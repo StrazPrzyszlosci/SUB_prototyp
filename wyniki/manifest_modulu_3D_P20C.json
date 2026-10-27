@@ -1,6 +1,6 @@
 {
   "status": "COMPLETE_SCOPED_3D_MODULE_FAMILIES",
-  "generated_at": "2026-10-26T21:15:21.608131+01:00",
+  "generated_at": "2026-10-27T09:23:54.958277+01:00",
   "run_sha256": "529cba5059ecc66a8727bfe4fd64fc889798c981b8295f638e66d051aeacec5f",
   "libraries": {
     "Python": "3.12.3",
@@ -45,7 +45,7 @@
     "skrypty/naped_z_modulem_3D_P20C.py": "a204b9842af07db516c492516f9bb7e3a5e92967a0f5ec39c2d7bfaed62f0d3c",
     "skrypty/naped_z_przegroda_P20B.py": "5bc22e82c8a16354de58202a9ad5f915470a49ac96653fea049380c09e349571",
     "skrypty/odtworz_modul_3D_P20C.py": "0850a556244674fdb0feb7bce8d44a9d9b9b644093c7906bc8bc8012ac679ab2",
-    "skrypty/odtworz_wszystko.py": "8dbcdfae2382c34c939c8053c7202244a587e5b5f0d83dc53401a3bbbd45328f",
+    "skrypty/odtworz_wszystko.py": "0a27ec78730a758861ba864a927316d4f64c7896a9a8b503487336619ba8be6d",
     "skrypty/sprawdz_modul_3D_P20C.py": "916d7cacf373a5308688822f275abb77a1b30171361f2f5469d65a040a7b7d7b",
     "skrypty/sprawdz_siatke_modulu_P20C.py": "db4888498fc9db2243b44a006f419d336e6f14de1d7dc155c320bad59a93e2b3",
     "skrypty/wykresy_i_ocena_modulu_P20C.py": "990dee7b7b1a3cf22969d86be3d36b3c980181d8e876a11437f419026f4d125b",
@@ -114,13 +114,13 @@
     "wyniki/p20c_zmiana_obciazenia.csv": "16eabfbd0c352aecd4323b3601561408a2186d1d8d4a23a7e4ae416f59263dbc"
   },
   "documentation_sha256": {
-    "README.md": "1387b463f66086f730916ccfadb2fada21330643f2b70502bee2081bbb610c1d",
-    "AGENTS.md": "c2fdd21eb1fbd8a0b8825aafdcc4cb245916180bfd19d14d1b557a578a2a1319",
-    "PLAN_B_R.md": "d7c3d1c15561d8fb47dbe8690939067543401b8b7bb28482ef41f9d034d041c5",
-    "PROGRAM_30_BADAN.md": "d3d1f626571404138156f4c9483a0437bbe9f1d548c29cbdfb42cd192d151d3d",
-    "raporty/README.md": "7914114cac6618e71cca7f097ec0b371cc6c62f0ea08973a1c273ecbdf967071",
+    "README.md": "279d68337d9b43cc611b3409c550a85d2fec8456c151a25b646b026f739a8d16",
+    "AGENTS.md": "b9400132c10537b2e27b43193591545b2468e6d684256260b20f9d1befa993dd",
+    "PLAN_B_R.md": "dbb39b5ad17f2b72332ecfb25dcec923dde41c25c53bddf6fedfc8b603c1d1e0",
+    "PROGRAM_30_BADAN.md": "1974937ce0fee3fb122d5ee2ffa7d1864831541785f474303045b2897d766294",
+    "raporty/README.md": "6d562642d23e30c6e6258ded44f4193eef12d87a2be50b0e81cc901b5138ce54",
     "raporty/044_modul_3D_dwa_porty_i_wymagania_kleju.md": "458ef9f162070749de7736414c4b20568ff01cfc63a3310a951de6dcca20d75d",
-    "baza_wiedzy/README.md": "e0da9b96fc12706eaf40d2571bc5ed3cc0771756d8d90a4e412c41cfc43bd6f9",
+    "baza_wiedzy/README.md": "f39168b0a96f8dd43add56451f1a13c12026d806e1dc51437968e7c24f6ca17c",
     "baza_wiedzy/32_dwa_porty_bryly_i_gaz_przestrzenny.md": "330d80244f4d6d05fb527695d7a2b2a1cc4340ec63abed56e5d554d96fc6b8c3"
   },
   "limitations": [

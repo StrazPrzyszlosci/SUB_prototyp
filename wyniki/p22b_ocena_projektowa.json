@@ -1,0 +1,31 @@
+{
+  "status": "COMPLETE_SCOPED_SOURCE_SATURATION_AND_CURRENT_FEEDBACK_NOT_PROTECTION",
+  "cases": 648,
+  "independent_continuous_cases": 7,
+  "step_comparisons": 28,
+  "remaining_numerical_flags": 0,
+  "max_scaled_state_error_at_primary_rate": 0.0005231326185446619,
+  "maxima_by_feedback": {
+    "0.0": {
+      "current_to_assumed_peak_threshold": 2.8912678941521546,
+      "x_to_catalog_reference": 3.3533386306748674
+    },
+    "10.0": {
+      "current_to_assumed_peak_threshold": 1.4864698098028777,
+      "x_to_catalog_reference": 3.3533386306748674
+    }
+  },
+  "input_sha256": {
+    "skrypty/raport_i_wykresy_nasycenia_P22B.py": "7802f070eb885173a4749311331f7271cc81e6c2cb57a66b001364d727d1d6b1",
+    "wyniki/p22b_podsumowanie.json": "2d23872bf41ab448767e7d6fa37a5786ecbd58b5b677394c13eef79a3f3a0202",
+    "wyniki/p22b_kontrole_niezalezne.json": "d91caad44d0c940b66742834620f5c87c3e06d9448687237b73709f74b6aa9dc",
+    "wyniki/p22b_trajektorie.csv": "8092f0eb9654acfd91a1dacc920b4e4c0b0dc468a94a7bb1b46e38e49096f30d"
+  },
+  "limitations": [
+    "Current feedback G10 is a finite-gain law,not guaranteed current or excursion protection.",
+    "208 mathematical trajectories exceed catalog X reference and cannot be read as quantitative physical product predictions.",
+    "27 local kinematic boundary witnesses do not prove reachability;11 show a local control-voltage infeasibility under the assumptions.",
+    "Selected seven ODE comparisons and four time steps do not certify every trajectory or every Le->0 limit."
+  ],
+  "next": "P24:model-based excursion/current/thermal protection after P23;P21C main chamber and integrated selection remain open."
+}

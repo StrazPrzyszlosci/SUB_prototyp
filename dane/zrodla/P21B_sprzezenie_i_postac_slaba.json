@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-26",
+  "sources": [
+    {
+      "source_id": "SRC56",
+      "title": "DOLFINx demo: Helmholtz equation",
+      "url": "https://docs.fenicsproject.org/dolfinx/main/python/demos/demo_helmholtz.html",
+      "access_date": "2026-10-26",
+      "private_capture": ".firecrawl/p21b_fenics_helmholtz.md",
+      "capture_sha256": "b0f87407612675edc930e9d68407c2acd89b71bb67bf83d31abaf04ddcb0a3f4",
+      "scope": "Complex sesquilinear weak form,gradient/mass terms and manufactured boundary conditions;no FEniCS software run or borrowed numerical results."
+    },
+    {
+      "source_id": "SRC57",
+      "title": "COMSOL6.3 Acoustic–Structure Boundary",
+      "url": "https://doc.comsol.com/6.3/doc/com.comsol.help.aco/aco_ug_multiphysics_couplings.14.03.html",
+      "access_date": "2026-10-26",
+      "private_capture": ".firecrawl/p21b_comsol_boundary.json",
+      "capture_sha256": "3cf04e5ed466ca8e907ec92bb5c09dbd4434409328352e8a9046c366a1b4ad80",
+      "scope": "Mutual pressure force and normal acceleration;our normals and signs separately verified by cavity/piston references."
+    }
+  ],
+  "original_equation_images": [
+    {
+      "pdf_page": null,
+      "image_file": ".firecrawl/p21b_comsol_equation_2.png",
+      "url": "https://doc.comsol.com/6.3/doc/com.comsol.help.aco/images/aco_ug_multiphysics_couplings.14.03.2.png",
+      "sha256": "9683467c9c1e2db57a020116eaf1773623ad62c4cd25656eb4d70e3c1adcbf01",
+      "type": "Boundary equations,not measurement plots",
+      "inspection": "Original images downloaded via browser-harness;visually read in original white-background document screenshot after activating its tab."
+    },
+    {
+      "pdf_page": null,
+      "image_file": ".firecrawl/p21b_comsol_equation_3.png",
+      "url": "https://doc.comsol.com/6.3/doc/com.comsol.help.aco/images/aco_ug_multiphysics_couplings.14.03.3.png",
+      "sha256": "24052bddfb392eec80ccbff4bd414bea0886dc950f0625cb53b2aaae2f706f35",
+      "type": "Boundary equations,not measurement plots",
+      "inspection": "Original images downloaded via browser-harness;visually read in original white-background document screenshot after activating its tab."
+    }
+  ],
+  "implementation": "Own Q1/H8 fluid finite elements on matching cavity/solid boundary;not COMSOL/FEniCS implementation.",
+  "conventions": [
+    "s=+jomega,phasorsRMS",
+    "B:fluid outward normal into solid",
+    "Ds*u-B*p=F; (A+s^2*C)*p=-s^2*B.T*u"
+  ],
+  "limitations": [
+    "No measured material or acoustic losses inferred from documentation.",
+    "Original screenshots/captures private;public own derivation,factual provenance and own results.",
+    "A background screenshot initially timed out;original page verified and captured after activation."
+  ],
+  "private_original_page_screenshot": {
+    "path": ".firecrawl/p21b_comsol_original_page.png",
+    "sha256": "d4fbc120df9d00fb6833f0897a3835ad5bcc8ed267309594908f63ef5f9d8fbf",
+    "purpose": "Original equations inspected on source page;transparent sourcePNG unreadable on a dark preview background."
+  }
+}

@@ -1,6 +1,6 @@
 {
   "status": "PARTITION_AND_BACK_CHAMBER_FAMILIES_NOT_FINISHED_SERVICEABLE_ASSEMBLY",
-  "generated_at": "2026-10-26T21:15:20.635518+01:00",
+  "generated_at": "2026-10-27T09:23:54.226654+01:00",
   "libraries": {
     "Python": "3.12.3",
     "NumPy": "1.26.4",
@@ -39,7 +39,7 @@
     "skrypty/model_wypelnienia.py": "33822435e494b4d95659c3679466fcffefcce699450df2932267f1799bf2fdb7",
     "skrypty/naped_z_przegroda_P20B.py": "5bc22e82c8a16354de58202a9ad5f915470a49ac96653fea049380c09e349571",
     "skrypty/odtworz_przegrode_P20B.py": "27be744489d9a1422e542ad4a23c199fa68c218e3c5c16b482893ba884f5d912",
-    "skrypty/odtworz_wszystko.py": "8dbcdfae2382c34c939c8053c7202244a587e5b5f0d83dc53401a3bbbd45328f",
+    "skrypty/odtworz_wszystko.py": "0a27ec78730a758861ba864a927316d4f64c7896a9a8b503487336619ba8be6d",
     "skrypty/porownanie_materialow_P20B.py": "c4bebbad4a4ba108d20461f8670050add0cff75424beb566c27b1a2661018b0e",
     "skrypty/sprawdz_przegrode_P20B.py": "7082a6ce6e18065e5af002096167777e6bb0a7cad4b7bafe0a08bf5b8dccfed6",
     "skrypty/sprawdz_wklady_P20A.py": "a97dddd4abc5d09ce24ad1d2c86ccc3a41812ae8f6bfb2ff7d0eb1e5ba1fd923",
@@ -72,14 +72,14 @@
     "wyniki/p20b_swiadkowie_gestej_czestotliwosci.csv": "d3a030762799c76d6ef9de59776e913a28359160ce898d0257fd4b89541991b9"
   },
   "documentation_sha256": {
-    "README.md": "1387b463f66086f730916ccfadb2fada21330643f2b70502bee2081bbb610c1d",
-    "AGENTS.md": "c2fdd21eb1fbd8a0b8825aafdcc4cb245916180bfd19d14d1b557a578a2a1319",
-    "PLAN_B_R.md": "d7c3d1c15561d8fb47dbe8690939067543401b8b7bb28482ef41f9d034d041c5",
-    "PROGRAM_30_BADAN.md": "d3d1f626571404138156f4c9483a0437bbe9f1d548c29cbdfb42cd192d151d3d",
-    "raporty/README.md": "7914114cac6618e71cca7f097ec0b371cc6c62f0ea08973a1c273ecbdf967071",
+    "README.md": "279d68337d9b43cc611b3409c550a85d2fec8456c151a25b646b026f739a8d16",
+    "AGENTS.md": "b9400132c10537b2e27b43193591545b2468e6d684256260b20f9d1befa993dd",
+    "PLAN_B_R.md": "dbb39b5ad17f2b72332ecfb25dcec923dde41c25c53bddf6fedfc8b603c1d1e0",
+    "PROGRAM_30_BADAN.md": "1974937ce0fee3fb122d5ee2ffa7d1864831541785f474303045b2897d766294",
+    "raporty/README.md": "6d562642d23e30c6e6258ded44f4193eef12d87a2be50b0e81cc901b5138ce54",
     "raporty/043_przegroda_dwie_komory_i_materialy.md": "5b7ebd2d392c8c21df9eef15f84eed6f7235a41083ef9c3233121c3e633a138c",
-    "baza_wiedzy/README.md": "e0da9b96fc12706eaf40d2571bc5ed3cc0771756d8d90a4e412c41cfc43bd6f9",
-    "baza_wiedzy/ZRODLA.md": "691514319620a92024439d4d6a900db8c779117eba89ab08257f3f5a53506d83",
+    "baza_wiedzy/README.md": "f39168b0a96f8dd43add56451f1a13c12026d806e1dc51437968e7c24f6ca17c",
+    "baza_wiedzy/ZRODLA.md": "fa75759985ca54a4aedd8413d0b237c490c5b0570ad55681de56bc80f289bbf1",
     "baza_wiedzy/31_przegroda_dwa_cisnienia_i_anizotropia.md": "04e56c777ca29b800ddfebd390cd1a47db3c96622f7ea5cb41d77687273c38d4"
   },
   "limitations": [

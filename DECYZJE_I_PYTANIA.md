@@ -30,6 +30,7 @@ Ten rejestr uzupełnia brief, bez zmieniania jego treści.
 | U-023 | Uzupełnić opis repozytorium | Polecenie użytkownika 2026-10-26 | Ustawiono pole About; treść w dokumentacja/opis_repozytorium.txt |
 | U-024 | Po ukończeniu końcowego PDF utworzyć Release 1 | Polecenie użytkownika 2026-10-26 | Pierwsze wydanie z końcowym raportem jako załącznikiem, po programie badań przed budową; bez przedwczesnego release |
 | U-025 | Usunąć wskazane odwołania handlowe do usługi CNC i kalkulatora z publikowanych treści | Polecenia użytkownika 2026-10-26 | Obejmuje bieżące dokumenty i publiczne indeksy archiwalne; oryginalne sumy i zakres redakcji w osobnym rejestrze; wyniki liczbowe bez zmian |
+| U-026 | Głębokość zewnętrzna maksymalnie500mm;obudowa do ustawienia pionowo/poziomo w zabudowie;preferowany głośnik w centrum jednej z połów frontu | Polecenie użytkownika 2026-10-27 | Zastępuje brak limitu gabarytów;geometria504×684×504mm zostaje historią. Nowe proporcje,otwór,mocowanie,wypełnienie i regulacja wymagają wspólnego porównania. W/H oraz rezerwa kablowa nieustalone |
 
 ## Decyzje, których nie podejmowano
 

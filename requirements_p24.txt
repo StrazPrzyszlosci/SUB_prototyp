@@ -1,0 +1,4 @@
+# Opcjonalne:wyszukiwanie kandydatów LMI. Odczyt certyfikatów jest osobny.
+-r requirements.txt
+cvxpy==1.6.5
+clarabel==0.11.1

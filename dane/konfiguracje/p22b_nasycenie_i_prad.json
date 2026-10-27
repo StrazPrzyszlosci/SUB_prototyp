@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-27",
+  "status": "LINEAR_DRIVER_WITH_HYPOTHETICAL_NONLINEAR_AMPLIFIER_PORT",
+  "volumes_l": [60, 100],
+  "source_series_resistance_ohm_assumed": 0.1,
+  "source_voltage_rms_reference_v": 40,
+  "source_rail_peak_v_assumed": 56.568542494923804,
+  "current_threshold_peak_a_assumed": 16.970562748477143,
+  "command_rms_scale": [0.5, 1.5],
+  "current_feedback_gain_ohm_assumed": [0, 10],
+  "signals": ["sine20", "sine80", "two20_85"],
+  "ramp_s": 0.04,
+  "duration_s": 0.6,
+  "last_window_s": 0.2,
+  "integration_rate_hz": 48000,
+  "verification_rates_hz": [12000, 24000, 48000, 96000],
+  "retained_wave_cases": [
+    {"configuration": "C02", "volume_l": 100, "signal": "sine20", "scale": 1.5, "feedback_ohm": 10},
+    {"configuration": "C04", "volume_l": 100, "signal": "two20_85", "scale": 1.5, "feedback_ohm": 10},
+    {"configuration": "C26P", "volume_l": 100, "signal": "sine80", "scale": 1.5, "feedback_ohm": 10}
+  ],
+  "limitations": [
+    "Sterowanie napięciem jest idealnie dwukierunkowym portem akceptującym zwrot energii;nie jest to opis regeneracji rzeczywistego modułu lub zasilacza.",
+    "G=10ohm oznacza hipotetyczne skończone wzmocnienie bez pamięci,nie pasmo pętli sprzętowej lub gwarantowany limit prądu.",
+    "Nie obcinamy stanu prądu ani wychylenia. Re/Le/BL/K/M są liniowe i stałe;przekroczenia katalogowegoXmax zachowano jako wyjście poza odniesienie wiarygodności.",
+    "Sygnał to zadane napięcie sterujące po hipotetycznym DAC;nie symulacja całego konkretnego miniDSP,ustawień LT lub muzyki.",
+    "Stany początkowe zero,duration0.6s,lastwindow0.2s;nie utożsamiać krótkiego przebiegu ze stanem okresowym lub kwalifikacją cieplną.",
+    "Częstotliwość integracji jest krokiem obliczenia ODE,nie częstotliwością PWM,ADC/DAC lub próbkowania wybranego sprzętu."
+  ]
+}

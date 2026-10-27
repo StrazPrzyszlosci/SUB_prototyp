@@ -1,0 +1,102 @@
+{
+  "status": "COMPLETE_SCOPED_CONTINUOUS_SOURCE_CONTROLS",
+  "selected_continuous_cases": 7,
+  "continuous_controls": [
+    {
+      "case_id": "C02_V100_sine20_A1.5_G10",
+      "method": "LSODA",
+      "function_calls": 23046,
+      "stored_energy_j": 2.5970556887564236,
+      "input_energy_j": 214.63830624439674,
+      "copper_heat_j": 178.47762844753547,
+      "returned_energy_j": 6.512229969671306,
+      "energy_relative_residual": 3.715789781613594e-10
+    },
+    {
+      "case_id": "C04_V100_two20_85_A1.5_G10",
+      "method": "LSODA",
+      "function_calls": 32892,
+      "stored_energy_j": 1.3511932163703686,
+      "input_energy_j": 149.26312529535883,
+      "copper_heat_j": 136.14352807722668,
+      "returned_energy_j": 6.456304235176574,
+      "energy_relative_residual": 5.74555028763438e-10
+    },
+    {
+      "case_id": "C26P_V100_sine80_A1.5_G10",
+      "method": "LSODA",
+      "function_calls": 59587,
+      "stored_energy_j": 0.8866709499188449,
+      "input_energy_j": 286.47399991086286,
+      "copper_heat_j": 251.32063698572506,
+      "returned_energy_j": 0.026527989917336518,
+      "energy_relative_residual": 4.453616803800374e-10
+    },
+    {
+      "case_id": "C05_V100_sine20_A1.5_G0",
+      "method": "LSODA",
+      "function_calls": 23746,
+      "stored_energy_j": 1.3656934694999316,
+      "input_energy_j": 95.8207382457833,
+      "copper_heat_j": 79.28973024588053,
+      "returned_energy_j": 6.270380403448195,
+      "energy_relative_residual": 1.5999753769136075e-10
+    },
+    {
+      "case_id": "C26P_V60_two20_85_A1.5_G0",
+      "method": "LSODA",
+      "function_calls": 34695,
+      "stored_energy_j": 3.1517338795663417,
+      "input_energy_j": 509.115271148541,
+      "copper_heat_j": 439.0113858451632,
+      "returned_energy_j": 7.401588599151588,
+      "energy_relative_residual": 2.1712808939117896e-10
+    },
+    {
+      "case_id": "C05_V100_sine20_A1.5_G10",
+      "method": "LSODA",
+      "function_calls": 23746,
+      "stored_energy_j": 1.3656934694999316,
+      "input_energy_j": 95.8207382457833,
+      "copper_heat_j": 79.28973024588053,
+      "returned_energy_j": 6.270380403448195,
+      "energy_relative_residual": 1.5999753769136075e-10
+    },
+    {
+      "case_id": "C26P_V60_two20_85_A1.5_G10",
+      "method": "LSODA",
+      "function_calls": 54304,
+      "stored_energy_j": 0.8861923180657513,
+      "input_energy_j": 248.07879404535157,
+      "copper_heat_j": 213.3411448393686,
+      "returned_energy_j": 4.520717286063094,
+      "energy_relative_residual": 2.14785843078447e-10
+    }
+  ],
+  "time_step_comparisons": 28,
+  "integration_rate_screen_hz": 48000,
+  "assumed_scaled_error_screen": 0.01,
+  "time_step_flags": [],
+  "controller_root_checks": 100,
+  "max_controller_root_error_v": 2.2737367544323206e-13,
+  "kinematic_boundary_cases": 27,
+  "locally_infeasible_kinematic_cases": 11,
+  "symbolic_identities": [
+    "quadratic energy discrete chain rule",
+    "implicit midpoint amplification tends to -1 in stiff damping limit"
+  ],
+  "elapsed_s": 61.28356280401931,
+  "input_sha256": {
+    "skrypty/sprawdz_nasycenie_P22B.py": "b4d135988a57328abf09a3e656aead3d0de285269985f99cd33d307d90ed9018",
+    "dane/konfiguracje/p22b_nasycenie_i_prad.json": "7c43ed4bf3b3d5b4c503bb0fbbcf65c7c76ca1def77b9c8b43b18dd1a796bf6c",
+    "skrypty/model_nasycenia_P22B.py": "cc3938ac99a3938705f7e912d39ce37b24a53742293a43f1639eb278b9740f02",
+    "skrypty/analiza_nasycenia_i_pradu_P22B.py": "3193828bd14f89d69c5d1542e3dc5552e62e7326b3f0a5e7d45923086b46e4b6",
+    "wyniki/p22b_trajektorie.csv": "8092f0eb9654acfd91a1dacc920b4e4c0b0dc468a94a7bb1b46e38e49096f30d"
+  },
+  "limitations": [
+    "Selected continuous controls do not certify every point or a physical device.",
+    "Implicit midpoint preserves the quadratic discrete energy identity but is not L-stable;do not claim a uniform Le->0 discretisation.",
+    "Catalog-X/80Hz boundary states are local kinematic examples,not demonstrated reachable trajectories or measured overloads.",
+    "1percent normalized state error is a numerical comparison screen,not a brief THD specification."
+  ]
+}

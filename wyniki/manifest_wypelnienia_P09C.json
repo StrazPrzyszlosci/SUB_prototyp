@@ -1,6 +1,6 @@
 {
   "status": "CONDITIONAL_FILL_GEOMETRY_AND_1D_PLACEMENT_NOT_PRODUCT_IDENTIFICATION",
-  "generated_at": "2026-10-26T21:15:18.742092+01:00",
+  "generated_at": "2026-10-27T09:23:53.443724+01:00",
   "libraries": {
     "Python": "3.12.3",
     "NumPy": "1.26.4",
@@ -36,7 +36,7 @@
     "skrypty/model_gazu.py": "ca8f63066f23eac9eb00610b428c173515f3088395501deaec740ea05a2c5115",
     "skrypty/model_subwoofera.py": "bd7e6e250a5b9a605fbbb05343381b827ffa81047a90c692968fc8e34eedc2b8",
     "skrypty/model_wypelnienia.py": "33822435e494b4d95659c3679466fcffefcce699450df2932267f1799bf2fdb7",
-    "skrypty/odtworz_wszystko.py": "8dbcdfae2382c34c939c8053c7202244a587e5b5f0d83dc53401a3bbbd45328f"
+    "skrypty/odtworz_wszystko.py": "0a27ec78730a758861ba864a927316d4f64c7896a9a8b503487336619ba8be6d"
   },
   "output_sha256": {
     "wyniki/62_P09C_masa_materialu_i_objetosc_gazu.png": "590d6afe10f05901a98310228ef308acbfb64e1346d5221b6726883be28d2666",
@@ -50,13 +50,13 @@
     "wyniki/p09c_warstwy_i_straty.csv": "04e1c6346cdd01c8c210f7b2a2aff414cea221c24b0dd7c9a9ad1ba39d251a95"
   },
   "documentation_sha256": {
-    "AGENTS.md": "c2fdd21eb1fbd8a0b8825aafdcc4cb245916180bfd19d14d1b557a578a2a1319",
-    "README.md": "1387b463f66086f730916ccfadb2fada21330643f2b70502bee2081bbb610c1d",
-    "PLAN_B_R.md": "d7c3d1c15561d8fb47dbe8690939067543401b8b7bb28482ef41f9d034d041c5",
-    "PROGRAM_30_BADAN.md": "d3d1f626571404138156f4c9483a0437bbe9f1d548c29cbdfb42cd192d151d3d",
-    "raporty/README.md": "7914114cac6618e71cca7f097ec0b371cc6c62f0ea08973a1c273ecbdf967071",
+    "AGENTS.md": "b9400132c10537b2e27b43193591545b2468e6d684256260b20f9d1befa993dd",
+    "README.md": "279d68337d9b43cc611b3409c550a85d2fec8456c151a25b646b026f739a8d16",
+    "PLAN_B_R.md": "dbb39b5ad17f2b72332ecfb25dcec923dde41c25c53bddf6fedfc8b603c1d1e0",
+    "PROGRAM_30_BADAN.md": "1974937ce0fee3fb122d5ee2ffa7d1864831541785f474303045b2897d766294",
+    "raporty/README.md": "6d562642d23e30c6e6258ded44f4193eef12d87a2be50b0e81cc901b5138ce54",
     "raporty/039_wypelnienie_ilosc_polozenie_i_straty.md": "5bf5c3870055a0a685de0b740b3ef7c62e949aa4a6f103d68b909667e1e90990",
-    "baza_wiedzy/README.md": "e0da9b96fc12706eaf40d2571bc5ed3cc0771756d8d90a4e412c41cfc43bd6f9",
+    "baza_wiedzy/README.md": "f39168b0a96f8dd43add56451f1a13c12026d806e1dc51437968e7c24f6ca17c",
     "baza_wiedzy/27_ilosc_i_polozenie_wypelnienia.md": "42f4e2dbe03dadf525685bfcd74438bbbc7bc9ff3fdf488837dc8015d0a9739d"
   }
 }

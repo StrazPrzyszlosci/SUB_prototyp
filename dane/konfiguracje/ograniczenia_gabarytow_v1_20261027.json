@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-27",
+  "decision_id": "U-026",
+  "evidence_type": "user_requirement_and_preference",
+  "maximum_external_depth_m": 0.5,
+  "maximum_external_width_m": null,
+  "maximum_external_height_m": null,
+  "installation_orientations": ["standing", "lying_on_side"],
+  "rotation_interpretation": "Obrót w płaszczyźnie frontu pozwala zamieniać szerokość i wysokość;limit głębokości pozostaje500mm.",
+  "driver_must_be_centered_on_whole_front": false,
+  "driver_preferred_position": "Środek lewej lub prawej połowy frontu przy ustawieniu poziomym;położenie ma ułatwiać zmianę orientacji i montaż w zabudowie.",
+  "driver_exact_coordinates_m": null,
+  "fixed_protrusions_in_depth_envelope_assumed": true,
+  "external_cable_bending_clearance_m": null,
+  "open_details": [
+    "Brak maksymalnej szerokości i wysokości oraz wymiarów konkretnych wnęk.",
+    "Nie potwierdzono osobnej rezerwy na wtyki,kable,maskownicę lub odstępy od zabudowy;w nowych wariantach należy przewidzieć margines w limicie500mm.",
+    "Dokładne przesunięcie głośnika wymaga sprawdzenia kołnierza,kosza,mocowań,wzmocnień i dostępu do regulatora.",
+    "Obie orientacje wymagają osobnego sprawdzenia mocowania wkładów,podparcia,pozycji źródła i prześwitów;nie są automatycznie zatwierdzone przez wcześniejsze modele."
+  ],
+  "previous_reference": {
+    "external_width_depth_height_m": [0.504, 0.684, 0.504],
+    "satisfies_current_depth_limit": false,
+    "status": "Historical control geometry,not an eligible final enclosure after U-026."
+  },
+  "effect": "Zastępuje wcześniejszy brak ograniczeń gabarytowych. Wymaga nowego wspólnego porównania głębokości,wysokości,szerokości,pozycji głośnika,wypełnienia i regulacjiVb. Nie zmienia starych danych liczbowych."
+}

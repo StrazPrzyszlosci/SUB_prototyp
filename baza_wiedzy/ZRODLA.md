@@ -219,6 +219,49 @@ PyMuPDF. Hashe, warunki i jawne braki:
 [raport043](../raporty/043_przegroda_dwie_komory_i_materialy.md).
 Publiczne są fakty i własne rachunki; oryginały prywatne w .firecrawl.
 
+## Przestrzenny gaz — SRC56/SRC57, odczyt 2026-10-26
+
+[DOLFINx: Helmholtz](https://docs.fenicsproject.org/dolfinx/main/python/demos/demo_helmholtz.html)
+oraz [COMSOL: Acoustic–Structure Boundary](https://doc.comsol.com/6.3/doc/com.comsol.help.aco/aco_ug_multiphysics_couplings.14.03.html).
+Odczytano postać słabą i oryginalne wzory sprzężenia ciśnienia z ruchem.
+To źródła metody, nie wyniki uruchomienia tych programów. Własna
+implementacja i niezależne kontrole P21B mają osobny
+[rejestr z hashami](../dane/zrodla/P21B_sprzezenie_i_postac_slaba.json).
+
+## Filtry cyfrowe — SRC58–61, odczyt 2026-10-27
+
+- **SRC58:** [W3C Audio EQ Cookbook](https://www.w3.org/TR/audio-eq-cookbook/),
+  nota z2021r. Oryginalne wzory HPF obejrzano przez browser-harness;
+  ekstrakcja Firecrawl spłaszczała ułamki. Osobno sprawdzono normalizację a0.
+- **SRC59:** [SciPy bilinear](https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.bilinear.html).
+  Metoda bez automatycznego prewarpu;strona opisuje1.18.0,użyty pakiet1.17.1.
+  Własny wzór,12porównań współczynników i80cyfr służą kontroli rachunku.
+- **SRC60:** [miniDSP Flex Eight, Parametric EQ](https://docs.minidsp.com/product-manuals/flex-eight/dsp-reference/peq.html).
+  Potwierdzone96kHz i przykładowy plik biquad. Wniosek o znakach wynika
+  z przykładu i jego biegunów;nie jest pomiarem importu w urządzeniu.
+- **SRC61:** [miniDSP Flex Eight, FIR filtering](https://docs.minidsp.com/product-manuals/flex-eight/dsp-reference/fir-filtering.html).
+  Format pliku single nie identyfikuje precyzji arytmetyki IIR.
+
+Hashe,404nieprawidłowego adresu i ograniczenia:
+[rejestr P23A](../dane/zrodla/P23A_filtry_i_formaty.json),
+[raport046](../raporty/046_filtry_cyfrowe_stabilnosc_i_zapas.md).
+Pełne ekstrakcje i oryginalny zrzut pozostają prywatne. Nie wgrano filtrów
+do sprzętu i nie przypisano mu hipotetycznych błędów float32.
+
+## Narzędzia optymalizacji — SRC62/SRC63, odczyt 2026-10-27
+
+**SRC62:** [CVXPY, semidefinite program example](https://www.cvxpy.org/examples/basic/sdp.html).
+Sprawdzono składnię symetrycznej zmiennej i porządku macierzowego PSD.
+**SRC63:** [Clarabel, semidefinite programming](https://clarabel.org/stable/examples/example_sdp/).
+Opis stożka PSD i konwencji wektoryzowania. Adapter CVXPY obsługuje
+wektoryzację;własny weryfikator bada pełne macierze dokładnie.
+
+To źródła narzędzi,nie fizycznych parametrów głośnika. Użyte wersje
+CVXPY1.6.5/Clarabel0.11.1 przypięto w opcjonalnym `requirements_p24.txt`.
+Sam status solvera nie jest dowodem. Hashe i zakres:
+[rejestrP24A](../dane/zrodla/P24A_narzedzia_SDP.json),
+[raport049](../raporty/049_obszar_niezmienniczy_i_koszt_ochrony.md).
+
 ## Znalezione dokumenty do dalszej analizy
 
 - [RSS315HF-4 Specification Sheet](https://www.daytonaudio.com/images/resources/295-464-dayton-audio-rss315hf-4-specifications-46174.pdf).

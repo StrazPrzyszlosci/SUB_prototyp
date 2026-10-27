@@ -9,7 +9,19 @@ from zoneinfo import ZoneInfo
 ROOT=Path(__file__).resolve().parents[1]
 
 
+def assert_no_live_spatial_campaign():
+    """Plik blokady nie jest dowodem procesu;sprawdzamy faktycznie utrzymany flock."""
+    import fcntl
+    paths=[p for folder in ['.p21b_locks','.p24a_locks'] for p in (ROOT/folder).glob('*.lock')]
+    for path in paths:
+        with path.open('r') as fd:
+            try:fcntl.flock(fd,fcntl.LOCK_EX|fcntl.LOCK_NB)
+            except BlockingIOError:raise RuntimeError('Active campaign '+path.parent.name+': do not archive or rerun its live outputs.')
+            else:fcntl.flock(fd,fcntl.LOCK_UN)
+
+
 def main():
+    assert_no_live_spatial_campaign()
     out=ROOT/'wyniki'
     previous=[p for p in out.iterdir() if p.is_file()] if out.exists() else []
     if previous:
@@ -41,6 +53,11 @@ def main():
     from uruchom_badania import main as baseline
     from odtworz_przegrode_P20B import main as partition_stage
     from odtworz_modul_3D_P20C import main as solid_module_stage
+    from odtworz_gaz_przestrzenny_P21B import main as spatial_module_stage
+    from odtworz_filtry_P23A import main as digital_filter_stage
+    from odtworz_port_P22A import main as amplifier_port_stage
+    from odtworz_nasycenie_P22B import main as source_saturation_stage
+    from odtworz_obszary_P24A import main as invariant_region_stage
     from sprawdz_nieszczelnosci import main as leakage_checks
     from analiza_nieszczelnosci import main as leakage
     from porownaj_szeroka_pule import main as pool
@@ -197,6 +214,11 @@ def main():
     volume_insert_stage()
     partition_stage()
     solid_module_stage()
+    spatial_module_stage()
+    amplifier_port_stage()
+    source_saturation_stage()
+    digital_filter_stage()
+    invariant_region_stage()
     sb_extension()
     sb_manifest()
     filling_placement()

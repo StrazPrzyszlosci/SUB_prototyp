@@ -7,7 +7,10 @@ Pierwszy etap: badania prototypu subwoofera zamkniętego, regulowana objętość
 porównanie co najmniej trzech przetworników, w tym 12″ i 15″. Elektronika
 zewnętrzna: gotowy miniDSP oraz moduły klasy D. Docelowo dwa subwoofery i dwa
 aktywne monitory trójdrożne, co najmniej osiem niezależnych wyjść DSP.
-Optymalizacja jednego sweet spotu 2,5–3 m; brak narzuconego budżetu i gabarytów.
+Optymalizacja jednego sweet spotu 2,5–3 m; brak narzuconego budżetu.
+U-026: maksymalna głębokość zewnętrzna500mm;wysokość i szerokość otwarte.
+Obudowa ma umożliwiać pracę pionowo/poziomo w zabudowie,głośnik może
+być przesunięty,a preferowany jest środek jednej z połów frontu.
 
 ## Zasady pracy
 
@@ -241,6 +244,30 @@ Optymalizacja jednego sweet spotu 2,5–3 m; brak narzuconego budżetu i gabaryt
     ponownie. Baner zachowuje geometrię odniesienia504×684×504mm;to wejścia
     modeli,nie końcowy dobór. Socialpreview jest osobnym ustawieniemGitHub;
     obecnie przygotowanyPNG nie oznacza,że ustawiono go jako zdalneog:image.
+
+43. Najnowsza kolejność od użytkownika: najpierw dokończyć badania,
+    dopiero potem rozbudować podsumowania opinii z forów. Obecne krótkie
+    obserwacje są w raportach010/038 i JSON; nie uruchamiać teraz ponownie
+    wyszukiwań24opinii. Przy końcowej syntezie przygotować czytelne karty
+    treści źródeł z rozdzieleniem relacji autora i własnych wniosków.
+    Audyt powiązania twierdzeń z zamrożonym fragmentem źródła pozostaje
+    obowiązkowy; sam hash dokumentu nie dowodzi każdej zapisanej obserwacji.
+
+44. P23A: dane float32/decimal6/9/17 dotyczą własnych reprezentacji
+    współczynników i software,nie nieustalonej arytmetyki IIR miniDSP.
+    Dokumentacja Flex Eight potwierdza96kHz,format single plikuFIR nie
+    identyfikuje stanówIIR. Jury z dokładnych ułamków opisuje zapisany
+    mianownik,nie całą nieliniową realizację. Normy l1 wyjść/prefiksów
+    nie ograniczają automatycznie stanówDF2T,wychylenia lub temperatury.
+
+45. U-026,2026-10-27: głębokość zewnętrzna prototypu≤500mm. Poprzednie
+    504×684×504mm nie spełnia aktualnego limitu i zostaje historycznym
+    odniesieniem,nie wariantem końcowym. Wysokość/szerokość nieustalone.
+    Umożliwić ustawienie pionowo/poziomo,przesunięty głośnik;preferencja
+    centrum jednej z połów frontu. Nie przenosić wyników centralnego otworu
+    i dawnych podpór na nową geometrię bez sprawdzenia. Wkłady/wypełnienie,
+    dostęp,mocowanie,prześwity i pozycja źródła sprawdzić w obu orientacjach.
+    Konfiguracja `dane/konfiguracje/ograniczenia_gabarytow_v1_20261027.json`.
 
 ## Stan i postępy
 
@@ -780,6 +807,196 @@ Postęp końca sesji2026-10-23:
   zSVGnaPNG. Wszystkie34ilustracje przewodnika są teraz wyświetlane zPNG;
   grafikaSocialpreview1280×640 także jestPNG. Sam formatREADME nie ustawia
   zdalnegoSocialpreview;SVGpozostają źródłami/wektorowymi plikami do pobrania.
+
+- P21B w toku,2026-10-26:nowyQ1/H8gaz na dokładnym dopełnieniu modułu,
+  wspólna granica B,ciśnienieśrednie+zróżnicowanie,pełna bezwładność gazu
+  i rzeczywisty ruch bryły. SRC56/57:odczytano pierwotną postaćsłabą i
+  oryginalne wzory granicyCOMSOL,bez uruchamiania tych programów.
+- Odrębne kontrole ukończone:3Kronecker,3siatki pustejkomory/12modów,
+  12wymuszeń tłokowych1D z zeremciśnienia,4porównania bloków i12granic0D.
+  Najgęstsza siatka:pierwsze12częstotliwości różnią się do0.4515%odanalizy.
+  To weryfikacja modeli,nie pomiar. `wyniki/p21b_kontrole_niezalezne.json`.
+- Trwa ta sama kampania18rodzin/2pól,132układyczęstotliwościowe planowane.
+  Uchwyt wykonania:sesja65020,log`/tmp/sub-p21b-campaign.log`,runSHA
+  `9de2a58b864caa247d9b49661220c8811ba5c8e4d3e7d2a8877c96541a546178`.
+  Status w `wyniki/p21b_podsumowanie.json`;nie uruchamiać drugiejkopii,
+  sprawdzić rzeczywisty uchwyt/proces przed wznowieniem. Checkpointy atomowe
+  i blokada procesu są w kodzie. Nie publikować migawki jako całej kampanii.
+- Opisy opinii użytkownik odłożył do końcowej syntezy. Przed wykorzystaniem
+  obserwacji C02 zweryfikować jej powiązanie z zamrożonym fragmentem;
+  prywatna notatka `.firecrawl/pending_forum_source_audit.md` oznacza
+  otwarte sprawdzenie źródła,nie przyjęty nowy wniosek o produkcie.
+- **Najbliższy krok:dokończyć tę samą kampanięP21B,porównać siatki i pola,
+  a następnie przejść do głównej komory/regulacji/wypełnieniaP21C.**
+  Nie zastępować całego celu badaniem samego modułu;DSP/ochrona,wybór
+  przetwornika i konstrukcji,końcowyPDF orazRelease1 pozostają otwarte.
+
+## Postęp 2026-10-27 — P23A niezależnie od aktywnego P21B
+
+- Wykonano972projekty/4860kaskad dla27konfiguracji,19440rekordówsekcji,
+  300granicHP,9przebiegówsoftware i9przypadków niezgodnegoFs. Raport046,
+  baza34,wyniki `p23a_*`,wykresy84–86. To nie pomiar lub nastawy sprzętu.
+- Wszystkie główne kaskady są ściśle Schura;duże błędy charakterystyki
+  po zaokrągleniu zachowano. Kontrole:9symbolicznych,45transmitancji i
+  45pochodnych z80cyframi,3dodatkowe duże błędy,12współczynników,3DF1
+  vsDF2T i4dokładne granice/znaki. Stressfloat32:12granic/6pozaobszarem,
+  decimal6:17granic/4poza,decimal9:1poza;nie wada konkretnego miniDSP.
+- Norma l1 impulsu referencji96kHz:około2.35381014,7.43543dB z ogonem
+  ocenionymfloat,vs3.7159dB największego znalezionego sinusa. Konstruktywny
+  sygnał ograniczony to świadek,nie typowa muzyka.12kolejności/48prefiksów
+  dało różne zapasy pośrednie przy tej samej transmitancji;stanyDF2T otwarte.
+- Odtwarzanie osobnego małego etapu:`python3 skrypty/odtworz_filtry_P23A.py`.
+  Nie uruchamia archiwizacji lub aktywnegoP21B. Opisy opinii nadal odłożone
+  do syntezy. **Najbliższy krok przestrzenny:dokończyć tę samą sesję65020
+  P21B,bez drugiej kopii,następnie główna komoraP21C**. P23B/P24 łączy
+  filtry z fizycznym modelem i ochroną. Wybór/PDF/Release1 nadal otwarte.
+
+## Postęp P22A,2026-10-27
+
+- Raport047/baza35:3240pasywnychobwodów źródła dla27konfiguracji,
+  19440punktównapędu i648projekcjiQ. Rozdzielone Vźródła/Vterminali,
+  Iźródła/Igłośnika,elementyL/C i stratyR. Wykresy87/88.
+- Kontrole:19440odrębnychKCL/KVL,162punkty stanu5D,3tożsamości
+  symboliczne,648grup monotonii i108świadkówRs→∞. Mms nie jest ponownie
+  powiększane o promieniowanie. To nie model konkretnego wzmacniacza.
+- Dowód pogorszenia obwiedni przez samoRs dotyczy stałychV/I/X i
+  liniowego pasywnego głośnika. Nie dotyczy dowolnegoLC/sterowania/ciepła.
+  KatalogoweXmax i40V/12A nie są gwarancjąTHD lub czasu pracy.
+- Kolejny naukowy etap napędu:P22B/P24—saturacja,SEM i wykonalność
+  wspólnych limitówV/I,ochronaX/T po filtrachP23A. Nie wolno obcinać
+  stanu indukcyjności bez fizycznego bilansu energii. Pełny cel nadal
+  wymagaP21C,integracji,pojedynczego wyboru i końcowegoPDF/Release1.
+
+## Weryfikacja roboczego etapu 2026-10-27
+
+- Pięć wykresów84–88 obejrzano.46raportówMD,39obrazów wREADME;
+  linki nowych dokumentów i składniaPython sprawdzone.13dawnych map
+  wyników i394pliki liczbowe zachowały dokładnie te sameSHA256.
+- ManifestyP22A/P23A są osobne. Nie odświeżano ani nie odtwarzano
+  starych ciężkich kampanii podczas aktywnegoP21B. Nie publikować ich
+  roboczej migawki jako zamkniętych18przypadków.
+- Odczyt P21B16/18:114układówczęstotliwościowych,228wierszy pól,0flag
+  liczbowych. Ten sam proces3439109/sesja65020 nadalaktywny,zablokowany
+  właściwyflock;nie uruchamiać drugiejkopii. Dwa ostatnie modele w toku.
+- Najbliższy krok przestrzenny:P21B→P21C. Niezależny następny krok
+  napędu:P22B/P24,saturacja i warunekSEM. Opiniepo badaniach;końcowy
+  wybór/PDF/Release1 nadalotwarte. Nie jest to zamknięcie całegoprogramu.
+
+## Postęp P22B,2026-10-27
+
+- Raport048/baza36:648trajektorii dla27konfiguracji,60/100l,trzy sygnały,
+  2poziomy,G0/10ohm. Zachowano stanLe,SEM i energię przy saturacji źródła.
+  Czas0.6s,krok1/48000s to integracja,nie PWM lub Fs sprzętu. Brak LT/T.
+- Odrębne7ciągłychLSODA i28porównań12/24/48/96k;przy48k maxbłąd
+  skalowany odniesieniami0.0523133% w tych7świadkach.100brentq do2.28e-13V,
+  bilans dyskretny wszystkich648do1.82e-13. Nie fizyczna dokładność.
+- Zachowano208wyjść poza katalogoweX oraz82przekroczenia proguI.
+  G10 redukuje maxI/Ipróg z2.8913do1.4865,ale nie jest twardym limiterem.
+  C05/STXv2/20Hz jest świadkiem braku ochronyX samymI;3.353X katalogowego
+  to matematyczny stres poza identyfikacją,nie prognoza THD/uszkodzeniaSTX.
+- 27lokalnych stanów kinematycznych daje11ujemnych marginesówSEM;
+  nie udowodniono ich osiągalności sterownikiem. Idealny port może
+  przyjmować energię zwrotną;nie przenosić na nieznany zasilacz/mostek.
+- Implicit midpoint nie jest L-stabilny:r→-1 dla szybkiego zaniku.
+  Nie deklarować jednostajnej granicyLe→0 przy stałymh. P24 musi dodać
+  właściwą ochronę ruchu i pamięci cieplnej po korekcjiP23,nie samoG10.
+- Następny krok przestrzenny pozostaje ta sama aktywna kampaniaP21B,
+  potemP21C. Podsumowania opiniipo badaniach. Wybór/PDF/Release1 otwarte.
+
+## Postęp P24A,2026-10-27 — przed opracowaniem raportu
+
+- Nowa metoda:wspólna elipsoida niezmiennicza dla Re(theta),ze ścisłymi
+  ograniczeniamiX/I i sprzężeniem cieplnym Re(theta)*i². Granica dotyczy
+  dowolnego ograniczonego napięcia fizycznego portu,nie tylko sinusów.
+  M/K/Le/BL/Rms stałe,wytłumienie/przecieki/LC/eddy poza tym modelem.
+- Ukończono972rodziny dla27konfiguracji,3Vb,3umownychRth,2temperatur,
+  2frakcjiX.6804próbylambda,3odrzuconepróby,każda rodzina ma poprawny
+  świadek. Run `cd01847171b1f5a5b07fcec88767fe607e9b97babefe30c743459dbfcb9bf907`,
+  checkpointy `wyniki/p24a_przypadki/cd01847171b1f5a5`. Sesja21034 zakończona0.
+- Wyszukiwanie CVXPY1.6.5/Clarabel0.11.1 w `/tmp/sub-p24-venv`;brak
+  globalnej instalacji. `requirements_p24.txt`,źródłaSRC62/63. Sam status
+  solvera nie jest dowodem. Algorytm przyjmuje tylko dokładne macierze.
+- Odrębny verifier stdlib/Fraction/eliminacjaSchura,bez kodu wyszukującego:
+  972PDX,1944LMI końców przedziału,wiążące nierówności termiczne/napięcia.
+  To dowód dla zapisanej rodziny modeli,nie dokładności danych produktów
+  ani globalnego optimum. Akceptowane napięcia1.952715–15.37004V peak.
+- Dodatkowo11664punkty sinusów i23328analitycznych obwiedniT ocenionych
+  float.36ciągłychODE zRe(theta),ruchem i temperaturą dla6modeli,
+  3sygnałów,2startówT. Sesja34495 generuje/ukończyła te artefakty;
+  sprawdzić uchwyt i `p24a_naped_i_ODE_podsumowanie.json` przed wznowieniem.
+- Najbliższy krok P24A:raport049,baza37,wykresy92–94,interpretacja ceny
+  konserwatywnego zapasu i manifest. Nie nazywać W fizyczną energią;
+  nie przenosić cyfrowego limitu próbek na analog po DAC bez rekonstrukcji.
+- PrzestrzennyP21B nadal ta sama sesja65020,17/18rodzin,podstawowy
+  ostatniTIED_E1.718e+09_N12 w toku;potem główna komoraP21C. Żaden
+  z nowych wyników nie zamyka wyboru prototypu,P29/PDF/Release1 lub
+  odłożonych podsumowań opinii. Wszystkie prace pozostają aktywne.
+
+## Postęp P24A i wznowienie P21B — 2026-10-27
+
+- Opracowano raport049,bazę37 i wykresy92–94;wszystkie trzy obejrzano.
+  Dokładny LDL972świadków/1944LMI oraz36ODE ukończono. Tabela z zapisów
+  odtwarza się identycznie bajtowo.5tożsamości SymPy sprawdzono osobno.
+  Pole W jest bezwymiarowe;stałe Le to model,nie zidentyfikowane Ld/Lgen.
+- Odtwarzanie `python3 skrypty/odtworz_obszary_P24A.py` korzysta z
+  wersjonowanych świadków,bez CVXPY. Nowe wyszukiwanie `--search` wymaga
+  `requirements_p24.txt`;wznowienie zgodnych zapisów nie jest świeżym SDP.
+  Szerokie wejście daje konserwatywny koszt,nie dowód niemożliwości
+  lepszej ochrony. Nowe poziomy nie są nastawą fizycznego urządzenia.
+- Uchwyt65020 i proces3439109 przestały istnieć po17ukończonych modelach.
+  Oryginalny log dochodzi do800Hz ostatniego wariantu,bez zapisu18rekordu.
+  Zweryfikowano12wejść i17checkpointów,bez zmiany runSHA. Nie znamy
+  końcowego kodu wyjścia starego procesu;nie dopisujemy go domysłem.
+- Próba odłączenia potomka w tymczasowej przestrzeniPID nie przeżyła
+  końca polecenia;nie utrzymała blokady. Wznowiono na hoście jako jedyny
+  procesPID3730181,log `/tmp/sub-p21b-resume-20261027.log` i metadane
+  `/tmp/sub-p21b-resume-20261027-process.json`. Rzeczywisty flock i PID
+  potwierdzono.17gotowych przypadków wczytano;liczony tylko ostatni.
+- Przed kolejnym wznowieniem sprawdzić faktyczny proces i flock,nie sam
+  brak starego uchwytu lub istnienie pliku. Nie uruchamiać drugiej kopii.
+- Najbliższy krok:P21B—zakończenie ostatniego wariantu i postprocessing,
+  potem główna komoraP21C z regulacją i wypełnieniem. P24/25 nadal wymaga
+  filtrów,nieliniowości i szerszej niepewności. Wybór/PDF/Release1 oraz
+  odłożone podsumowania opinii pozostają częścią aktywnego pełnego celu.
+
+## U-026 i publikacja stanu roboczego — 2026-10-27
+
+- Nowe polecenie:zewnętrzna głębokość≤500mm,możliwy pion/poziom oraz
+  głośnik przesunięty do jednej z połów frontu. Zapisano konfigurację
+  ograniczeńv1 i decyzjęU-026;READMEoznacza684mm jako dawną,niedopuszczoną
+  geometrię. Nie zmieniono briefu lub starych tabel liczbowych.
+- Na osobne polecenie użytkownika publikujemy obecny stan przed końcem
+  całego programu. P23A/P22A/P22B/P24A są ukończone w opisanych zakresach;
+  P21B pozostaje17/18. Oddzielny manifest_checkpoint_P21B opisuje migawkę,
+  nie zamknięcie etapu. Raport045 i wykresy81–83 nadal wymagają końcaP21B.
+- Po ponownym przerwaniu turyPID3730181 i flock nie istnieją. Zapis
+  doszedł do500Hz ostatniego wariantu,bez końcowego rekordu18. Przed
+  następnym wznowieniem poprawić trwałość checkpointów perczęstotliwość,
+  zachowując17gotowych zestawów i hashe. Nie udawać,że odłączenie procesu
+  zabezpiecza go przed przerwaniem tury przez użytkownika.
+- Dalszy projekt ma łączyć limit500mm z pozycją kosza,oboma ustawieniami,
+  wypełnieniem i regulacją. Prosty pilotaż tej samej metodypakowania dla
+  dawnejskrzyni przy25/50/75mm dał16/2/1wkładów;to wskazówka do nowego
+  badania,nie globalne maksimum pakowania ani wynik nowej skrzyni≤500mm.
+- Najbliższy krok po publikacji:P21B z trwałym zapisem częstotliwości,
+  potem nowa geometriaP21C podU-026. Pełny cel,opiniepo badaniach,
+  końcowy wybór/PDF/Release1 pozostają aktywne.
+
+## Weryfikacja przed publikacją GitHub — 2026-10-27
+
+- Odświeżono wyłącznie metadane13wcześniejszych manifestów i4nowych
+  ukończonych etapów.13map i394wcześniejsze wyniki zachowały dokładnie
+  te sameSHA256. Nie uruchamiano dawnych kampanii obliczeniowych.
+- CzęścioweP21B zamrożono pod `wyniki/checkpointy/P21B_20261027_17_modeli`;
+  indeks i hashe w `wyniki/manifest_checkpoint_P21B.json`. Oryginalne
+  robocze pliki mogą być później przeliczone po ukończeniu18modelu;
+  historycznej migawki nie nadpisywać. Kod postprocessingu opisany jako
+  oczekujący,nie jako wykonany raport045.
+- Paczka publikacji obejmuje naukowe dane,kod,raporty i przewodnik.
+  Lokalne `.kilo/` i `.vscode/` oraz prywatne `.firecrawl/` pominięte.
+  Sprawdzić spójność hashów,linki,składnię i zdalnyHEAD po pushu.
+- Cały program badań nadalotwarty;U-026 obowiązuje przy następnych
+  geometriach. Nie tworzyć końcowegoPDF/Release1 z tej częściowej migawki.
 
 ## Decyzje otwarte
 

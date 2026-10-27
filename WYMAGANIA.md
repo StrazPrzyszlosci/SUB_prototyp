@@ -13,7 +13,7 @@ O = otwarte. Akceptacja briefu nie oznacza akceptacji dowolnych liczb modelu.
 | W06 | Referencje ADAM Audio średniej/wyższej półki | U-009: Sub12/Sub15 zatwierdzone | Progi liczbowe otwarte; referencje monitorów odłożone | R0 |
 | W07 | Główna ocena sweet spot 2,5–3 m | U | Plan ustawienia, późniejsze pomiary z pozycją mikrofonu | R0/P2 |
 | W08 | Sąsiednie punkty tylko diagnostyczne | U | Badanie wrażliwości, bez optymalizacji całej kanapy | P2 |
-| W09 | Brak narzuconego budżetu i gabarytów | U | Koszt minimalny przy spełnionych wymaganiach; jawne kompromisy | R1–R5 |
+| W09 | Brak narzuconego budżetu;głębokość zewnętrzna maksymalnie500mm | U-026 | Limit zastępuje wcześniejszy brak ograniczeń gabarytów;W/H otwarte,nowa geometria do obliczenia | R3/P18–P21/P29 |
 | W10 | Zewnętrzny wzmacniacz, DSP, zasilacz | U | Schemat i dokumentacja mechaniczna | R4/R5 |
 | W11 | Gotowy miniDSP, minimum 8 niezależnych wyjść docelowo | U | Routing i instrukcja konkretnej wersji | R4 |
 | W12 | Moduły klasy D, dopasowanie napięcia/prądu i ochrony | U | Z(f), limity, dokumentacja zasilacza, chłodzenie | R4 |
@@ -30,6 +30,8 @@ O = otwarte. Akceptacja briefu nie oznacza akceptacji dowolnych liczb modelu.
 | W23 | Dwa subwoofery w realnych miejscach przy monitorach | U | Sprawdzenie dwóch gabarytów, prześwitów i odległości 2,5–3 m; brak swobody przód/tył | P18–P21/P27 |
 | W24 | Jeden głośnik i jedna obudowa z obliczonym połączeniem klejowym | U | Wynik integracji całego programu, obecnie otwarte | P19/P29 |
 | W25 | Końcowy PDF po badaniach możliwych bez sprzętu | U | [Macierz 30 pakietów](PROGRAM_30_BADAN.md); nie zastępować braków wynikami fikcyjnymi | P30 |
+| W26 | Ustawienie pionowo lub poziomo w zabudowie | U-026 | Sprawdzić dostęp,mocowanie,podparcie i prześwity w obu orientacjach | P18–P21/P27 |
+| W27 | Głośnik może być przesunięty;preferowany środek jednej z połów frontu | U-026,preferencja | Położenie uzgodnić z koszem,wzmocnieniami i regulacją;nie zakładać centralnego otworu | P18/P21/P29 |
 
 ## Specyfikacja odbiorowa do uzupełnienia
 
