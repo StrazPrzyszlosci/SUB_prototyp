@@ -1,0 +1,192 @@
+{
+  "checks": [
+    {
+      "test": "empty_disk_vs_P21C1",
+      "relative_error": 7.771561172376096e-16
+    },
+    {
+      "test": "independent_FV_transverse_mode",
+      "f": 20,
+      "n": 0,
+      "l": 0,
+      "errors": [
+        1.9393102647650636e-06,
+        4.847993219478833e-07,
+        1.2113042257189412e-07,
+        3.043612686001759e-08
+      ]
+    },
+    {
+      "test": "independent_FV_transverse_mode",
+      "f": 20,
+      "n": 1,
+      "l": 0,
+      "errors": [
+        3.570134594089699e-05,
+        8.925777092192774e-06,
+        2.2314748465575486e-06,
+        5.578958725199924e-07
+      ]
+    },
+    {
+      "test": "independent_FV_transverse_mode",
+      "f": 20,
+      "n": 1,
+      "l": 2,
+      "errors": [
+        0.0006349464976551639,
+        0.0001588504951267416,
+        3.9719748116779995e-05,
+        9.930383172317444e-06
+      ]
+    },
+    {
+      "test": "independent_FV_transverse_mode",
+      "f": 20,
+      "n": 3,
+      "l": 3,
+      "errors": [
+        0.0017271668955596824,
+        0.0004326320984486108,
+        0.00010821069003756223,
+        2.705596665856621e-05
+      ]
+    },
+    {
+      "test": "independent_FV_transverse_mode",
+      "f": 80,
+      "n": 0,
+      "l": 0,
+      "errors": [
+        9.945246005105132e-06,
+        2.4863070306509945e-06,
+        6.216041933890494e-07,
+        1.5530824429057033e-07
+      ]
+    },
+    {
+      "test": "independent_FV_transverse_mode",
+      "f": 80,
+      "n": 1,
+      "l": 0,
+      "errors": [
+        2.892430036998089e-05,
+        7.231382226172394e-06,
+        1.807869382094913e-06,
+        4.5195729105163047e-07
+      ]
+    },
+    {
+      "test": "independent_FV_transverse_mode",
+      "f": 80,
+      "n": 1,
+      "l": 2,
+      "errors": [
+        0.0006286793454356572,
+        0.00015728147025021136,
+        3.932735141436408e-05,
+        9.832273805283537e-06
+      ]
+    },
+    {
+      "test": "independent_FV_transverse_mode",
+      "f": 80,
+      "n": 3,
+      "l": 3,
+      "errors": [
+        0.001720909963785868,
+        0.0004310617807973191,
+        0.00010781772881498773,
+        2.695770191313899e-05
+      ]
+    },
+    {
+      "test": "independent_FV_transverse_mode",
+      "f": 160,
+      "n": 0,
+      "l": 0,
+      "errors": [
+        3.2292571230087525e-05,
+        8.072731369832665e-06,
+        2.0181559329620154e-06,
+        5.045630467254372e-07
+      ]
+    },
+    {
+      "test": "independent_FV_transverse_mode",
+      "f": 160,
+      "n": 1,
+      "l": 0,
+      "errors": [
+        3.117639634651489e-05,
+        7.794268560031046e-06,
+        1.94857908674606e-06,
+        4.871384802230638e-07
+      ]
+    },
+    {
+      "test": "independent_FV_transverse_mode",
+      "f": 160,
+      "n": 1,
+      "l": 2,
+      "errors": [
+        0.0006085808757850542,
+        0.0001522498397812448,
+        3.806900490185279e-05,
+        9.517660353225325e-06
+      ]
+    },
+    {
+      "test": "independent_FV_transverse_mode",
+      "f": 160,
+      "n": 3,
+      "l": 3,
+      "errors": [
+        0.0017008841406563628,
+        0.00042603600192306254,
+        0.00010656007159951321,
+        2.664321197557648e-05
+      ]
+    },
+    {
+      "test": "porous_port_100_200",
+      "radius": 5e-05,
+      "relative_change": 3.450806078609851e-05
+    },
+    {
+      "test": "porous_port_100_200",
+      "radius": 0.0002,
+      "relative_change": 3.5274736411619945e-05
+    },
+    {
+      "test": "porous_port_100_200",
+      "radius": 0.001,
+      "relative_change": 3.1352315141512204e-05
+    }
+  ],
+  "rows": 15120,
+  "multitone_cases": 9,
+  "wall_bay_first_mode_hz": 394.6251482417178,
+  "geometry": {
+    "width_ext_m": 0.88,
+    "height_ext_m": 0.5,
+    "depth_ext_m": 0.48,
+    "side_m": 0.022,
+    "front_m": 0.044,
+    "inside_w_h_d": [
+      0.836,
+      0.456,
+      0.414
+    ],
+    "empty_gross_l": 157.823424
+  },
+  "limitations": [
+    "No physical measurements",
+    "Layer spans whole section; not five-wall lining",
+    "Net-equivalent rectangle omits scattering by basket/braces",
+    "12 SSSS bays is diagnostic wall compliance, not full FE",
+    "Mms rear correction fraction 0..1 is scenario",
+    "50W copper budget not physical thermal certification",
+    "Finite-tone inverse not deployable DSP preset"
+  ]
+}
