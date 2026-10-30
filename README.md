@@ -11,7 +11,7 @@ nie jest kandydatem na konstrukcję końcową.*
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**26 modeli głośników · 11 producentów · 48 raportów · Python**
+**26 modeli głośników · 11 producentów · 55 raportów · Python**
 
 Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
@@ -23,11 +23,34 @@ subwoofera zamkniętego z regulacją objętości.
 > i symulacje. Nie ma jeszcze pomiarów gotowego prototypu ani ostatecznego
 > zwycięzcy. Każdy przykład ma opisane warunki i ograniczenia.
 
-Obecna publikacja zawiera ukończone etapy P23A, P22A/P22B i P24A.
-Przestrzenny model gazu P21B ma **17 z 18 zapisanych wariantów**;
-to częściowa migawka. Końcowy PDF i Release 1 powstaną po programie badań.
-[Zapis stanu P21B z hashami](wyniki/manifest_checkpoint_P21B.json)
-pozwala odróżnić tę publikację od przyszłego zamknięcia etapu.
+**Aktualizacja obliczeń 2026-10-29:** P21B zamknięto w zadanej rodzinie:
+18 modeli, 132 układy częstotliwościowe i 264 oceny pól. Wznowiono
+17 niezmienionych zapisów i dokończono jeden wariant; nie jest to
+18 nowych niezależnych przebiegów. [Raport 045](raporty/045_gaz_przestrzenny_praca_i_granica0D.md).
+Historyczna [migawka 17/18](wyniki/manifest_checkpoint_P21B.json) pozostała bez zmian.
+
+Dodano **P21C0: 27 płytkich geometrii**, 100 mieszczących się źródeł
+kontrolnych i 600 punktów. W głównej komorze sam litraż i pierwszy mod
+nie wystarczają do opisania nacisku na membranę. To model pustego,
+sztywnego wnętrza, bez włókniny i regulatora; nie rekomendacja głośnika.
+[Raport 050](raporty/050_P21C0_plytka_komora_i_polozenie_zrodla.md).
+P23A, P22A/P22B i P24A zachowują swoje wcześniejsze zakresy.
+Końcowy PDF i Release 1 nadal czekają na cały program badań.
+
+**Badania 2026-10-30:** P21C1 — kołowe źródła z powierzchni Sd 26 produktów, 6618 punktów. [Raport 051](raporty/051_P21C1_membrana_kolowa_i_bezwladnosc.md). Model pustej komory; bez pomiarów urządzenia.
+
+**Wstępna rekomendacja prototypu:** Dayton RSS390HF-4, około 120 l netto
+na start, regulacja około 100/120/150 l, korpus 880×480×500 mm (W×D×H),
+MDF 22 mm i stały front 44 mm. [Konfiguracja i ograniczenia — raport 054](raporty/054_rekomendowana_konfiguracja_prototypu.md).
+To wybór do dalszego opracowania, nie dokumentacja do budowy. Całkowita
+głębokość z wystającymi elementami nadal wymaga sprawdzenia.
+
+Nowe [badania komory i frontu — 052](raporty/052_komora_warstwy_wklady_i_front.md)
+oraz [porównanie i odporność — 053](raporty/053_porownanie_i_odpornosc_rekomendacji.md)
+uzupełnia [wrażliwość wyboru — 055](raporty/055_wrazliwosc_wyboru_i_margines_glebokosci.md):
+100 l już spełnia przyjęty próg 0,2 dB od plateau; 120 l jest roboczym
+punktem eksperymentu. Przy większym założonym grzaniu wygrywa C11.
+Skrócenie korpusu do 470 mm wymaga przeprojektowania położeń wkładów.
 
 ## Wybierz temat
 
@@ -588,6 +611,24 @@ przy wyższych częstotliwościach wymagają przestrzennego modelu gazu.
 
 </details>
 
+## Nowe badania przestrzenne: moduł i główna komora
+
+Dla małego modułu przy równomiernym nacisku korekta gazu 3D względem
+0D jest mała w zbadanych punktach 20–80 Hz. Pole z gradientem wymaga
+osobnego bilansu pędu i mocowania. Nie przenosimy tego wyniku automatycznie
+na większą komorę z lokalnie poruszającą się membraną.
+
+![P21B: jednolity gaz i pole przestrzenne](wyniki/81_P21B_0D_3D_i_zroznicowanie_cisnienia.png)
+![P21B: przekrój pola ciśnienia](wyniki/82_P21B_pole_cisnienia_w_module.png)
+![P21B: niezależne wzorce i granica 0D](wyniki/83_P21B_wzorce_i_granica0D.png)
+
+Nowy pilot głównej komory sprawdza głębokości 350/425/500 mm oraz
+źródło centralne i przesunięte. Zmiana nacisku zwrotnego przy zadanym
+ruchu nie jest zmianą SPL lub THD. Objętości dotyczą pustego wnętrza,
+a źródło kwadratowe jest kontrolne, bez przypisania do produktu.
+
+![P21C0: płytkie komory i położenie źródła](wyniki/95_P21C0_plytka_komora.png)
+
 <a id="slownik"></a>
 ## Krótki słownik do wykresów
 
@@ -611,8 +652,9 @@ ani wartości RMS ze szczytowymi. Liczby z modeli nie są pomiarami urządzenia.
 <a id="dalsze-prace"></a>
 ## Co zostało do zrobienia
 
-Następny etap obejmuje przestrzenne ciśnienie gazu i jego sprzężenie
-ze ścianami. Dalej: główna komora z wypełnieniem, cyfrowe filtry i ochrona,
+P21B zamknięto w rodzinie małego modułu, a P21C0 rozpoczął główną
+komorę. Następny etap: skończona membrana, regulacja, wypełnienie i
+podatne ściany oraz uzgodnienie Mmd/Mms. Dalej: integracja filtrów i ochrony,
 sygnały bardziej zbliżone do muzyki, integracja dwóch sztuk oraz końcowy
 wybór głośnika i obudowy. Śledzimy to w [programie 30 pakietów](PROGRAM_30_BADAN.md).
 
@@ -629,10 +671,10 @@ pomiaru, a wyniku innej obudowy nie przenosimy automatycznie na zamkniętą.
 <details>
 <summary><strong>Aktualny stan badań i warunki projektu</strong></summary>
 
-**Stan: 2026-10-26.** Pula obejmuje **26 produktów od 11 producentów**,
+**Historyczna migawka: 2026-10-26.** Pula obejmuje **26 produktów od 11 producentów**,
 w tym 4 STX i **3 SB Acoustics**. Liczymy **27 konfiguracji elektrycznych**,
 ponieważ nowy dwucewkowy SB ma osobno połączenie szeregowe i równoległe.
-**Aktualny etap: pełna mechanika 3D regulatora i przejście do pola gazu.**
+**Etap tej historycznej migawki: pełna mechanika 3D regulatora i przejście do pola gazu.**
 [Raport 044](raporty/044_modul_3D_dwa_porty_i_wymagania_kleju.md) dodaje
 18 modeli ścian, naroży i spoin modułu, dalsze siatki do 40 248 DOF,
 ciągłe wymaganie sztywności kleju oraz 11 664 punkty napędu 27 konfiguracji.

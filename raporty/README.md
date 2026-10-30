@@ -50,11 +50,19 @@ bieżący zakres sprawdzaj w [programie 30 pakietów](../PROGRAM_30_BADAN.md).
 | [042](042_regulacja_Vb_i_wklady_wypornosciowe.md) | Raport 042 — P20A: regulacja Vb i wkłady wypornościowe |
 | [043](043_przegroda_dwie_komory_i_materialy.md) | Raport 043 — P20B: przegroda, dwie komory i porównanie materiałów |
 | [044](044_modul_3D_dwa_porty_i_wymagania_kleju.md) | Raport 044 — P20C: moduł 3D, dwa porty i wymagania kleju |
+| [045](045_gaz_przestrzenny_praca_i_granica0D.md) | Raport 045 — P21B: przestrzenny gaz i praca granicy |
 | [046](046_filtry_cyfrowe_stabilnosc_i_zapas.md) | Raport 046 — P23A: filtry cyfrowe, stabilność i zapas sygnału |
 | [047](047_port_zrodla_tlumienie_i_bilans.md) | Raport 047 — P22A: port źródła, tłumienie i bilans mocy |
 | [048](048_nasycenie_SEM_i_stan_pradu.md) | Raport 048 — P22B: nasycenie, SEM i stan prądu |
 | [049](049_obszar_niezmienniczy_i_koszt_ochrony.md) | Raport 049 — P24A: wspólny obszar i koszt ochrony w modelu |
+| [050](050_P21C0_plytka_komora_i_polozenie_zrodla.md) | Raport 050 — P21C0: płytka komora i położenie źródła |
 
-Numer045 zarezerwowano dla badania P21B,obecnie17/18zapisanych wariantów.
-Obliczenia niewielkiego
-P23A,P22A/P22B i P24A ukończono niezależnie; luka numeracji nie jest brakującym raportem końcowym.
+- [051 — Kołowa membrana i bezwładność powietrza](051_P21C1_membrana_kolowa_i_bezwladnosc.md).
+
+- [Raport 052 — P21C2/P21C3/P18D: warstwa, wkłady i nowy front](052_komora_warstwy_wklady_i_front.md).
+
+- [Raport 053 — P29A/B: porównanie, niepewność i sygnały](053_porownanie_i_odpornosc_rekomendacji.md).
+
+- [Raport 054 — rekomendowana konfiguracja pierwszego prototypu](054_rekomendowana_konfiguracja_prototypu.md).
+
+- [Raport 055 — P29C: kiedy zmienia się wybór i co mieści się w 50 cm](055_wrazliwosc_wyboru_i_margines_glebokosci.md).

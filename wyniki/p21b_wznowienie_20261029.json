@@ -1,0 +1,48 @@
+{
+  "status": "RESUMED_17_UNCHANGED_PLUS_ONE_COMPLETED_NOT_18_FRESH_RUNS",
+  "completion_date": "2026-10-29",
+  "base_commit": "f3530154589139ddaf166860630ef78a6a41eaa4",
+  "run_sha256": "9de2a58b864caa247d9b49661220c8811ba5c8e4d3e7d2a8877c96541a546178",
+  "preserved_case_sha256": {
+    "wyniki/p21b_przypadki/9de2a58b864caa24/BARE_E1e+07_N8.json": "c48e43e550b48588a727b04c4bc5e250d9bf737a14817571ac6229306a1a8312",
+    "wyniki/p21b_przypadki/9de2a58b864caa24/TIED_E1.718e+09_N8.json": "c0ed250d1fadb94045ce4e96ebd60af3ff0442bd63fa13606d18139aff703d4d",
+    "wyniki/p21b_przypadki/9de2a58b864caa24/TIED_E1e+07_N8.json": "fe28948bd5c25dcb54bd32ccd6300e7dee75f6aa2545cd55407444337e7b5e6d",
+    "wyniki/p21b_przypadki/9de2a58b864caa24/BARE_E1.718e+09_N12.json": "cc50c82cd92633ffce27bd6a53d98b51f9e7c3659c47079832e7bb239373050a",
+    "wyniki/p21b_przypadki/9de2a58b864caa24/TIED_E1e+08_N4.json": "061b6f7ae7e215d63d727544a5cc0e73166f1cfb2e4448656c73a995a5ae1bac",
+    "wyniki/p21b_przypadki/9de2a58b864caa24/BARE_E1e+08_N4.json": "4cc563c5391b5eeb4b48ea8d50eeb215e8ce9e1b26151ee8829beacb3759693d",
+    "wyniki/p21b_przypadki/9de2a58b864caa24/TIED_E1.718e+09_N4.json": "e8c5da831c28bb0ffa3740817b20937b9bf1d6cf41f538f2dd070b23e1eb42de",
+    "wyniki/p21b_przypadki/9de2a58b864caa24/BARE_E1e+07_N4.json": "92468f566d1ba4e9eb081a8691a70f85c739e3c08e5a068ad06b09cb23f684b2",
+    "wyniki/p21b_przypadki/9de2a58b864caa24/TIED_E1e+08_N12.json": "108e37082b4ad1bdb317cbd4a3a900579b345fe6946400a362680230557652ec",
+    "wyniki/p21b_przypadki/9de2a58b864caa24/BARE_E1e+07_N12.json": "db60ea2bf446e6f3b2786ac3d0b26b60c4d3bab576765ccf968cef2664631a13",
+    "wyniki/p21b_przypadki/9de2a58b864caa24/BARE_E1.718e+09_N8.json": "9679d88e3b24d00dfcc39901e13ee803026f94967a17447e795bb7366a1c1ed0",
+    "wyniki/p21b_przypadki/9de2a58b864caa24/TIED_E1e+07_N4.json": "2f934b38c72d2327e2df0517fe2a22aa4918e59e3a93fb6d6dd40016d22fdc54",
+    "wyniki/p21b_przypadki/9de2a58b864caa24/TIED_E1e+08_N8.json": "62777f1d4f0a17f51782da5c917faee61bca4cc1fdd7e2b5f11c78afbbc915e2",
+    "wyniki/p21b_przypadki/9de2a58b864caa24/BARE_E1.718e+09_N4.json": "29b4452051fdf631e802c2fee85593fbb49dfe2651791438f332ee3f85df6bd4",
+    "wyniki/p21b_przypadki/9de2a58b864caa24/BARE_E1e+08_N12.json": "26651772e92cadcd1fe5842fcb17a5f7479b8fec7a5832bb03c0757fb8d17d16",
+    "wyniki/p21b_przypadki/9de2a58b864caa24/BARE_E1e+08_N8.json": "115b9a494722342747f805cff3ef7f9efc7ac6c5976e31334a6e337a6abee3f8",
+    "wyniki/p21b_przypadki/9de2a58b864caa24/TIED_E1e+07_N12.json": "cc216baeb88b3241ee93e938cd2ddaae6ce623faa1cfbb8673c8f0d7c2d04b1a"
+  },
+  "new_case": "TIED_E1.718e+09_N12",
+  "checkpoint_policy": "Atomic per-frequency full solver NPZ; existing 17 scientific cases and original input hashes unchanged.",
+  "libraries_for_new_case": {
+    "Python": "3.12.14",
+    "NumPy": "2.3.5",
+    "SciPy": "1.17.0"
+  },
+  "original_independent_checks": "Reused and hash-verified earlier independent controls; not claimed as freshly rerun.",
+  "helper_sha256": "9004c819d9838cfa961ba2506af432d44684fefc996479f785e9c587d5af7261",
+  "frequency_checkpoints": {
+    "wyniki/p21b_checkpointy_czestotliwosci/0acf649e91d1e1214ed8800af27cfa14b114e178505a114e63c0b2efd0fe6800.npz": "24eff9913f5644a7ebf4bc136dc8220d88cc57170c8b84638b8e0886d2a0931d",
+    "wyniki/p21b_checkpointy_czestotliwosci/214272dc974a06d9364885efc9cc0d6b86421b113d7ae0edb79a1f17ccfb5c1e.npz": "73bffe3d022bc2c09157c3ecb9a6e425f8b8d255f47df4b2450439501cd77c16",
+    "wyniki/p21b_checkpointy_czestotliwosci/25cfbd44681557f38549b3b111d17ff4bebc9bd739381d4c678fbdfb50466099.npz": "6a0ef05c3889970be7eda336028c27a03d717ba0f5833c81251ece868aaa8d68",
+    "wyniki/p21b_checkpointy_czestotliwosci/2dc60687b1f6e5444fe0a1552b57a704a073a2729ed61ba123892b6c6641b0cc.npz": "4fe4cf17a142098f8e3578f1bbd0f66cbb81e771685c874e09f1d8c2d1c4e0b4",
+    "wyniki/p21b_checkpointy_czestotliwosci/46184a16ac0dab94b529cf65bbcabd52ca45a6ae430ec0b9588a4d579e96d198.npz": "f1131347ad0a560c57d308137ca3efb25accd8bd109ab163207d028bc9d979f1",
+    "wyniki/p21b_checkpointy_czestotliwosci/51e04f6e4f6e4fedc02010fa3ec7f2620fa1f1ef62bf63f365f71552d74f0537.npz": "62661120491efc1bdd684dcf338ffd49edb9332b9edd551daa9f9c22e59c95be",
+    "wyniki/p21b_checkpointy_czestotliwosci/660bfc066164b13d1b375bc3cde37d0c18fd1c90a66fb375c76c187d71d62b7d.npz": "1875c06063922828cb4536f138c7b7e289e02b9f3d93a7a74816a25f874d2a1d",
+    "wyniki/p21b_checkpointy_czestotliwosci/681b6569b5a069cae66d49eead029264a68181030e303fab737bb5ede9dec808.npz": "61f1c36fe8e47f767f637a77fa59d983938280d981716635a24ebe5a614ff516",
+    "wyniki/p21b_checkpointy_czestotliwosci/7b37080e64e23c31aaba321ac1efa2f42d00f12762ed21b9faeab7dba0a4bdf1.npz": "cf8b8372ea487eed123737157810df74404341fcf4982a4aa0c49f0ca3adbe40",
+    "wyniki/p21b_checkpointy_czestotliwosci/90130568d455474c69f7a5248eb8745b675bddda6936d1ba3058ca6874322a57.npz": "74e8ca801c10e675f4d5e9e4604010bdeff2f10ebe9e4212575b03464ab9c0d5",
+    "wyniki/p21b_checkpointy_czestotliwosci/93de4e8a22efe6f6af152a5e23569897443970caf8a686dec73c80ed432369f5.npz": "77ef5ef90567a40911f38ad719dfb0da719d581ce51d9917a8984091f719e2d0",
+    "wyniki/p21b_checkpointy_czestotliwosci/ef7208124d1ca2acbc987207b7abb0ea0e9d3644965bd071bcea001cbfa622fd.npz": "fbd1c6a3c39ca14838a0fe4cbfb9b8c0c88e68033d56d36556b4bea38e370fb1"
+  }
+}

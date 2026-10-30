@@ -2,14 +2,34 @@
   "selected": "C02",
   "selection_policy": "Post-analysis conservative experimental prototype; maximize observed worst sampled band output at 50W copper and 40Vrms/12Arms, 100L is the smallest original grid volume within 0.2dB of sampled plateau; 120L is an engineering starting point within an adjustable 100/120/150L prototype, not the mathematical minimum. Not pre-registered or global optimum.",
   "fv_effects": [
-    {"count":0,"fill":true,"relative_port_difference":0.00209532415532422,"last_grid_change":0.004429124094168213},
-    {"count":10,"fill":true,"relative_port_difference":0.03468902197644679,"last_grid_change":0.004505448772386113},
-    {"count":16,"fill":true,"relative_port_difference":0.058708679117526814,"last_grid_change":0.008399038966403762},
-    {"count":16,"fill":false,"relative_port_difference":0.03649295349165649,"last_grid_change":0.002689884369162705}
+    {
+      "count": 0,
+      "fill": true,
+      "relative_port_difference": 0.00209532415532422,
+      "last_grid_change": 0.004429124094168213
+    },
+    {
+      "count": 10,
+      "fill": true,
+      "relative_port_difference": 0.03468902197644679,
+      "last_grid_change": 0.004505448772386113
+    },
+    {
+      "count": 16,
+      "fill": true,
+      "relative_port_difference": 0.058708679117526814,
+      "last_grid_change": 0.008399038966403762
+    },
+    {
+      "count": 16,
+      "fill": false,
+      "relative_port_difference": 0.03649295349165649,
+      "last_grid_change": 0.002689884369162705
+    }
   ],
-  "screen_rows":810,
-  "screen_frequency_evaluations":50279130,
-  "integrated_rows":15120,
-  "front_models":36,
-  "recommended_volume_nominal_l":120
+  "screen_rows": 810,
+  "screen_frequency_evaluations": 50279130,
+  "integrated_rows": 15120,
+  "front_models": 36,
+  "recommended_volume_nominal_l": 120
 }

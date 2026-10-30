@@ -1,0 +1,13 @@
+{
+ "date":"2026-10-30",
+ "method":"Wyszukiwanie internetowe dwóch indeksów; odczyt pierwotnych kart i dokumentacji. Bez nowych pomiarów i bez digitalizacji wykresów.",
+ "sources":[
+ {"model":"RSS390HF-4","url":"https://daytonaudio.com/product/126/rss390hf-4-15-reference-hf-subwoofer-4-ohm","pdf_copy":"https://www.parts-express.com/pedocs/specs/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf","findings":"Główne T/S zgodne z zamrożonym wejściem repo; Mms obejmuje airload. Obrys 388.4 mm, otwór 355.8 mm, głębokość całkowita 178 mm. Brak rozdzielonego Mmd i potwierdzonej masy netto. Nie wykorzystano marketingowego ultra-low distortion jako wyniku."},
+ {"model":"RSS390HE-22","url":"https://www.parts-express.com/pedocs/specs/295-292--dayton-audio-rss390he-22-spec-sheet.pdf","findings":"T/S zgodne z zamrożonym wejściem. Xmax 27 mm ma definicję geometrycznej nadwyżki uzwojenia plus 1/3 wysokości płyty. Nie jest to jednolite kryterium THD ani 70% BL. Nie rozstrzygnięto bieżącej dostępności handlowej."},
+ {"model":"UMII15-22","url":"https://www.parts-express.com/pedocs/specs/295-714--dayton-audio-UMII15-22-spec-sheet.pdf","findings":"T/S zgodne z pulą. Nowo odczytany przypis precyzuje Xmax przy 70% BL (deklaracja producenta Klippel verified), połączenie szeregowe. To uzupełnia dawny brak metody; nie nadpisuje danych surowych. Tabela WWW zawiera podejrzane wymiary; nie użyto jej do otworu CNC."},
+ {"model":"miniDSP Flex Eight","url":"https://www.minidsp.com/products/minidsp-in-a-box/minidsp-flex-eight","manual":"https://docs.minidsp.com/product-manuals/flex-eight/signal-flow/index.html","findings":"Wersja analogowa: 2 wejścia i 8 wyjść, maksimum analogowe 2 V RMS. Bez Dirac przetwarzanie 96 kHz; z Dirac 48 kHz. Macierz routingu i przetwarzanie wyjściowe obejmuje compressor, nie potwierdza obserwatora X/T. Nie mieszać wariantu Eight-N z ośmioma analogowymi wyjściami."},
+ {"model":"Kleiberit 303.0","url":"https://www.kleiberit.com/fileadmin/Content_new/Produktinformationen/303.0/dbe3030_KSE.pdf","findings":"PVAc; D3 jednoskładnikowo. Klasa wilgotności i opis zastosowań nie dostarczają Gc, S-N i J(t) dla użytej partii MDF. Pozostaje kandydatem do prób spoin, nie zatwierdzonym klejem konstrukcyjnym."}
+ ],
+ "access_failures":"Bezpośrednie otwarcia trzech PDF daytonaudio.com zwróciły ochronę Imperva. Użyto kopii kart producenta udostępnionych przez Parts Express; nie omijano zabezpieczenia. Indeksowane dane WWW nie są nowym pomiarem.",
+ "not_researched":"Ceny, oferty, zakupy i ponowny przegląd opinii pozostają odłożone. Nie przypisano żadnych dawnych spornych opinii C02 do rekomendacji."
+}

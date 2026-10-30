@@ -1,5 +1,5 @@
 {
-  "status": "PARTIAL_ACTIVE_DO_NOT_CLAIM_ALL_CASES",
+  "status": "COMPLETE_CONFIGURED_SPATIAL_FAMILIES",
   "date": "2026-10-26",
   "run_sha256": "9de2a58b864caa247d9b49661220c8811ba5c8e4d3e7d2a8877c96541a546178",
   "input_sha256": {
@@ -16,17 +16,17 @@
     "skrypty/analiza_wkladow_P20A.py": "e6878a1f652ab9bd9953826f1b8c8694f48c826139fc11afecb5698e65c938d9",
     "brief_system_audio_DIY_v0.6.md": "3bd9f8d43a92b96256073e66cd0f4f105336e969a37c29fc42f17cda9d66736f"
   },
-  "cases": 17,
+  "cases": 18,
   "expected_cases": 18,
   "checkpoint_folder": "wyniki/p21b_przypadki/9de2a58b864caa24",
   "reference_state_file": "wyniki/p21b_pole_reference_9de2a58b864caa24.npz",
-  "field_rows": 240,
-  "frequency_cases": 120,
+  "field_rows": 264,
+  "frequency_cases": 132,
   "flagged_frequency_cases": 0,
   "libraries": {
-    "Python": "3.12.3",
-    "NumPy": "1.26.4",
-    "SciPy": "1.17.1"
+    "Python": "3.12.14",
+    "NumPy": "2.3.5",
+    "SciPy": "1.17.0"
   },
   "limitations": [
     "Zamknięty gaz bez przecieku,włókniny i termowiskozowych warstw przyściennych;straty są na razie w konstrukcji. Nie jest to pełny model tłumienia rzeczywistego modułu.",

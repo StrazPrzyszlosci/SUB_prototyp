@@ -1,0 +1,108 @@
+{
+  "status": "INDEPENDENT_FV_FINITE_PISTON_CONTROLS",
+  "rows": [
+    {
+      "nx": 12,
+      "ny": 8,
+      "nz": 8,
+      "source_x_m": 0.3,
+      "f_hz": 80.0,
+      "finite_volume_ratio": 0.5903238202355872,
+      "modal_ratio": 0.6381166118263862,
+      "absolute_difference": 0.04779279159079908,
+      "modal_tail_bound": 0.00013422428975287003,
+      "mean_volume_relative_error": 7.549516567451064e-15
+    },
+    {
+      "nx": 12,
+      "ny": 8,
+      "nz": 8,
+      "source_x_m": 0.15,
+      "f_hz": 80.0,
+      "finite_volume_ratio": 0.5171753368133503,
+      "modal_ratio": 0.5642989841041637,
+      "absolute_difference": 0.04712364729081342,
+      "modal_tail_bound": 0.00013422428975287003,
+      "mean_volume_relative_error": 3.774758283725532e-15
+    },
+    {
+      "nx": 24,
+      "ny": 16,
+      "nz": 16,
+      "source_x_m": 0.3,
+      "f_hz": 80.0,
+      "finite_volume_ratio": 0.622752150860992,
+      "modal_ratio": 0.6381166118263862,
+      "absolute_difference": 0.015364460965394233,
+      "modal_tail_bound": 0.00013422428975287003,
+      "mean_volume_relative_error": 2.220446049250313e-16
+    },
+    {
+      "nx": 24,
+      "ny": 16,
+      "nz": 16,
+      "source_x_m": 0.15,
+      "f_hz": 80.0,
+      "finite_volume_ratio": 0.5491040602259346,
+      "modal_ratio": 0.5642989841041637,
+      "absolute_difference": 0.015194923878229072,
+      "modal_tail_bound": 0.00013422428975287003,
+      "mean_volume_relative_error": 4.884981308350689e-15
+    },
+    {
+      "nx": 48,
+      "ny": 32,
+      "nz": 32,
+      "source_x_m": 0.3,
+      "f_hz": 80.0,
+      "finite_volume_ratio": 0.6333930540034521,
+      "modal_ratio": 0.6381166118263862,
+      "absolute_difference": 0.004723557822934099,
+      "modal_tail_bound": 0.00013422428975287003,
+      "mean_volume_relative_error": 3.275157922644212e-14
+    },
+    {
+      "nx": 48,
+      "ny": 32,
+      "nz": 32,
+      "source_x_m": 0.15,
+      "f_hz": 80.0,
+      "finite_volume_ratio": 0.5596179527243988,
+      "modal_ratio": 0.5642989841041637,
+      "absolute_difference": 0.004681031379764833,
+      "modal_tail_bound": 0.00013422428975287003,
+      "mean_volume_relative_error": 2.1094237467877974e-15
+    },
+    {
+      "nx": 96,
+      "ny": 64,
+      "nz": 64,
+      "source_x_m": 0.3,
+      "f_hz": 80.0,
+      "finite_volume_ratio": 0.6367034789033843,
+      "modal_ratio": 0.6381166118263862,
+      "absolute_difference": 0.0014131329230019363,
+      "modal_tail_bound": 0.00013422428975287003,
+      "mean_volume_relative_error": 1.9317880628477724e-14
+    },
+    {
+      "nx": 96,
+      "ny": 64,
+      "nz": 64,
+      "source_x_m": 0.15,
+      "f_hz": 80.0,
+      "finite_volume_ratio": 0.5628964408532695,
+      "modal_ratio": 0.5642989841041637,
+      "absolute_difference": 0.0014025432508941726,
+      "modal_tail_bound": 0.00013422428975287003,
+      "mean_volume_relative_error": 3.1086244689504383e-15
+    }
+  ],
+  "input_sha256": {
+    "skrypty/sprawdz_P21C_FV.py": "c8a8e0353c0578bc85774276fa3e81aec50cc204eea10547535ef156c3b8852a",
+    "skrypty/pilot_P21C_geometria.py": "c8ce41ecb375cc97b2e7555c660fb11e59018bd6609d12ba13e495b528d6abe5"
+  },
+  "limitations": [
+    "Two source positions,one geometry and frequency;not a complete continuum certificate or measured validation."
+  ]
+}
