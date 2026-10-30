@@ -1,0 +1,35 @@
+{
+  "status": "CONTINUOUS_Ca_N_BOUND_AT_FINITE_FREQUENCIES_NOT_FULL_SYSTEM_DOMINANCE",
+  "cases": 108,
+  "minimum_active_air_l": 78.8351744,
+  "maximum_relative_impedance_change": 5.802294399939072e-07,
+  "prescribed_gradient_force_per_modal_pa_n": [
+    -0.016999999999999998,
+    0.0,
+    0.0
+  ],
+  "apparent_weight_n": 6.875440823902666,
+  "quasistatic_four_contact_pressure_threshold_rms_pa": 235.51346582421303,
+  "assumed_outer1pct_pressure_screen_rms_pa": 477.6506306915128,
+  "algebra": {
+    "negative_C_derivative_identity": "0",
+    "positive_N_derivative_identity": "0"
+  },
+  "input_sha256": {
+    "dane/konfiguracje/p21b_gaz_przestrzenny_modulu.json": "f0c9ee91b8fd96ce788e1ff935cb8b0621aa6c1e8c84a39f958a8b5fa4ed661e",
+    "dane/konfiguracje/p20c_modul_pelny_3D.json": "f77ec32d7f65fff5c680c58db27375476326f4d35da00337ea2bfdcfae2c7e68",
+    "dane/konfiguracje/p20a_regulacja_objetosci.json": "eed4cd0696db7b82249e167cac9cbd4b27dfae1d239e2f2079623a4b288eaf29",
+    "dane/konfiguracje/p20b_przegroda_vs_moduly.json": "08c0764c2e4da990efb1af3a6bbb5e0b806549d35a6c90510e2a7b87dcc99020",
+    "skrypty/granica_obciazenia_P21B.py": "1bc7335f0e28feae61bec88bfac745c68b118d2cc16fd29aefe5efaf6e27c194",
+    "skrypty/geometria_przegrody_P20B.py": "4b3a7b43f116daffb69dbf5df99f96e544dcd5d40f4b5eea59414054c9f90a03",
+    "wyniki/p21b_macierze_admitancji.csv": "08a2daa990b229271af8c90df8c54aa933440b26287cdae5b5ac25d3e9a003e3",
+    "wyniki/p21b_modele_i_geometria.csv": "98cc2abb3f1a4844665daf9b084ecbbfe08158ed079089900baeba02c70a589a",
+    "wyniki/p21b_pole_reference_9de2a58b864caa24.npz": "9f4ad35663ef777564bf474984d611c7ca2be08326da6717bdd23e1dd9206534"
+  },
+  "limitations": [
+    "Bound assumes ImY>=0;outside band/resonant inductive branches need a separate analysis.",
+    "No conversion to room SPL,THD or probability of a product winning.",
+    "Gradient force budget is a conditional quasistatic check with assumed support span/friction and buoyancy;it does not solve actual mounting dynamics.",
+    "Nonuniform exterior forcing and actual mounting remain a distinct task;do not replace them by this scalar bound."
+  ]
+}

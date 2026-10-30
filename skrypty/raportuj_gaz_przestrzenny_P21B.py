@@ -243,8 +243,9 @@ SPLw pokoju. Referencje i numeryczne progi odbiorowe pozostają odrębne.
 **Jeden następny krok:P21C — główna komora z regulacją,wypełnieniem
 i mocowaniem modułów.** Uwzględnić rzeczywiste niejednorodne pole
 i porównanie sensownych proporcji przy wspólnym netto oraz wymaganym
-zakresie regulacji. Obrys504×684×504mm pozostaje wariantem odniesienia,
-nie wynikiem ukończonej optymalizacji. Dwie sztuki muszą być wykonalne
+zakresie regulacji. Obrys504×684×504mm pozostaje historycznym wariantem odniesienia,
+wykluczonym przez limit głębokości500mm (U-026). Nowe geometrie muszą
+spełniać ten limit w obu orientacjach; pilot pustej komory opisuje raport050. Dwie sztuki muszą być wykonalne
 w pokoju4,6×3,7×2,5m,RTVpo lewej/kanapa po prawej rzutu.
 
 Opisy opinii z forów użytkownik odłożył do końcowej syntezy. Tutaj

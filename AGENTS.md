@@ -1005,3 +1005,60 @@ Postęp końca sesji2026-10-23:
 - Wybór przetwornika, litrażu, wzmacniacza i DSP: wynik przyszłego porównania.
 - Dokładne pozycje w pokoju i modele posiadanych przyrządów: do późniejszego ustalenia; inwentarz potwierdzony wU-001.
 - Wyniki fizycznego prototypu: brak, urządzenie nie było tutaj badane.
+
+## Postęp 2026-10-29 — domknięcie P21B i pilot P21C0
+
+- P21B:18modeli/132układy/264pola;17 historycznych rekordów zachowano
+  bajtowo,1 wariant dokończono. Atomowe checkpointy perczęstotliwość
+  w `wznow_P21B_z_checkpointami.py` przetrwały przerwanie środowiska.
+  Oryginalne wejścia i runSHA niezmienione; poprzednie kontrole odczytano
+  i zweryfikowano hashami, nie nazywać ich nowym niezależnym przebiegiem.
+- Raport045, wykresy81–83, granica obciążenia i asymptotyka opracowane
+  z ukończonych danych; szczegóły pochodzenia w `p21b_wznowienie_20261029.json`.
+- P21C0/raport050:27 geometrii,108 źródeł (8 poza frontem),600punktów.
+  Puste wnętrza60/100/150l, Dext350/425/500mm, ściany geometrycznie22mm;
+  sztywny gaz,kwadrat200/250mm,źródło wcentrum lub środku połowy frontu.
+  Nie utożsamiać z rzeczywistą membraną,otworem lub finalnym Vb netto.
+- Analityczna suma głębokości; poprzecznie40/80/160. Granica ogona
+  do0.00049427 jednostkiR (ocena float,nie certyfikatIV). OdrębneFV
+  do96×64×64 daje różnicę<=0.001414 w2świadkach80Hz. Pierwszy pilot
+  potrójny zachowano jako zastąpiony; nie poluzowano proguFV0.002.
+- Wysoki pierwszy mod nie gwarantuje małej korekty lokalnego nacisku.
+  ZmianaR nie jest zmianąSPL/THD. Przed połączeniem znapędem uzgodnić
+  Mmd/Mms i nie dodawać podwójnie obciążenia powietrzem.
+- Następny krok:P21C ze skończoną membraną,regulacją,wypełnieniem
+  i podatnymi ścianami pod limit500mm. P29,wybór/PDF/Release1 otwarte.
+- Zapis gałęzi GitHub odrzucony403 przez integrację; zmiany przygotowano
+  jako lokalny commit i paczkę do zastosowania,bez deklaracji publikacji.
+
+
+## Postęp 2026-10-30 — P21C1, wyłącznie badania lokalne
+
+Użytkownik wstrzymał publikację i PR; nie ponawiać zapisu GitHub.
+Raport 051: równoważny tłok kołowy z Sd 26 produktów, 27 geometrii,
+1103 dopuszczone źródła, 301 odrzuconych, 6618 punktów i 451 par położeń.
+To model pustej sztywnej komory, nie rzeczywisty stożek/kosz lub finalny Vb.
+Rzędy 80/160/320; Parseval ogranicza ogon do 3.943e-5 R (ocena float).
+Sześć niezależnych całek po dysku oraz trzy świadki obrotu, masy i rzędu 640.
+Zmiana bezwładności po przesunięciu do 4.215 g; nie dodawać jej bez
+uzgodnienia do Mms. Wykres 96 sprawdzony wizualnie; dane i hashe p21c1/manifest_P21C1.
+Następny krok: kołowy port z przestrzennym wypełnieniem i regulacją,
+następnie podatne ściany i bilans mas napędu. Wybór/PDF pozostają otwarte.
+
+
+## Postęp 2026-10-30 — P21C2/C3, P18D i P29A/B/C
+
+Nowsze polecenie użytkownika ponownie autoryzuje PR oraz kontynuowanie badań;
+zastępuje wcześniejszy zakaz publikacji, ale nie zleca merge ani Release.
+Raporty 052–055: przestrzenne warstwy i wkłady, zagęszczenie FV, front
+z przesuniętym otworem, porównanie 27 konfiguracji i warunkowa rekomendacja
+C02 RSS390HF-4, start około 120 l, regulacja 100/120/150 l.
+Korpus 880×480×500 mm, front 44 mm; całkowity obrys z maskownicą nadal otwarty.
+P29C koryguje regułę: próg 0,2 dB spełnia już 100 l (99 l na nowej siatce),
+120 l to punkt eksperymentu, nie matematycznie minimalna objętość.
+Przecięcie C02/C11 przy 86,813 W jest wynikiem scenariusza, nie pomiarem
+chłodzenia. Przy 470 mm obecne wkłady kolidują z matą na 6 mm.
+Hashe: wyniki/manifest_rekomendacji_P29.json. Brak pomiarów urządzenia,
+realnego presetu ochrony X/T i pełnego sprzężenia; nie zamykać 30 pakietów.
+Najbliższy krok: spójna geometria wręg/dostępu/obrysu, następnie ochrona
+czasowa nowego układu. Zachować stare dane, nie dodawać masy powietrza dwa razy.

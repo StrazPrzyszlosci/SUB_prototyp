@@ -1,0 +1,55 @@
+[
+  {
+    "test": "independent_324_I_v_x_energy",
+    "relative_error": 2.151187319332926e-15,
+    "energy_relative": 1.1252021823955858e-15
+  },
+  {
+    "test": "offset_mesh_central_reduction",
+    "relative_error": 0.0
+  },
+  {
+    "test": "16_installation_paths_empty_shell",
+    "segments": 48,
+    "passed": true,
+    "exclusions": "Driver removed. Braces, fasteners, tool access and handling NOT modelled; must preserve swept corridors."
+  },
+  {
+    "test": "eight_channel_routing_and_ideal_LR4",
+    "max_row_l1": 1,
+    "LR4_max_magnitude_error": 6.661338147750939e-16,
+    "limitation": "Ideal acoustic monitor response. Delay and actual phase require measurements."
+  },
+  {
+    "test": "volume_accounting",
+    "geometry": [
+      {
+        "modules": 0,
+        "nominal_net_air_l": 149.442208,
+        "net_air_range_l": [
+          146.442208,
+          153.442208
+        ],
+        "rigid_module_displacement_l": 0.0
+      },
+      {
+        "modules": 10,
+        "nominal_net_air_l": 118.842208,
+        "net_air_range_l": [
+          115.842208,
+          122.842208
+        ],
+        "rigid_module_displacement_l": 30.6
+      },
+      {
+        "modules": 16,
+        "nominal_net_air_l": 100.48220799999999,
+        "net_air_range_l": [
+          97.48220799999999,
+          104.48220799999999
+        ],
+        "rigid_module_displacement_l": 48.96
+      }
+    ]
+  }
+]

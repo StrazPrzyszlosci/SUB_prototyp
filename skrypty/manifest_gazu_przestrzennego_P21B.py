@@ -31,6 +31,7 @@ def main():
         if 'state_sha256' in r:assert sha(ROOT/study['reference_state_file'])==r['state_sha256']
     inputs.update(ROOT/'skrypty'/n for n in ['odtworz_gaz_przestrzenny_P21B.py','raportuj_gaz_przestrzenny_P21B.py','manifest_gazu_przestrzennego_P21B.py','odtworz_wszystko.py'])
     inputs.add(ROOT/'dane/zrodla/P21B_sprzezenie_i_postac_slaba.json')
+    inputs.add(ROOT/'skrypty/wznow_P21B_z_checkpointami.py')
     outputs=sorted(set([p for pat in ['p21b_*','81_P21B*','82_P21B*','83_P21B*'] for p in OUT.glob(pat) if p.is_file()]+casefiles))
     docs=[ROOT/n for n in ['README.md','AGENTS.md','PLAN_B_R.md','PROGRAM_30_BADAN.md','raporty/README.md',
         'raporty/045_gaz_przestrzenny_praca_i_granica0D.md','baza_wiedzy/README.md',

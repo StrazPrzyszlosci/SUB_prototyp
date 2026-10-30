@@ -1,0 +1,2512 @@
+{
+  "title": "Verified source files imported from ChatGPT Work 2026-10-29 through 2026-10-30",
+  "date": "2026-10-30",
+  "status": "all 417 source file Git SHA1 blobs verified identical on branch badania/rekomendacja-c02-p29-20261030",
+  "sha_algorithm": "SHA1 of git blob header + original file bytes",
+  "archive_precedence": "20261030_rekomendacja > 20261030_P21C1 > 20261029_badania",
+  "source_file_count": 417,
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha": "0278abf5f988cd59402822d9a5694ec9bbf1f6f0",
+      "size": 73693,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "PLAN_B_R.md",
+      "sha": "f5f407ac2b54e74edcd5280469e834534439929a",
+      "size": 21544,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "PROGRAM_30_BADAN.md",
+      "sha": "aa5dcea21bdaadb7a181400b2fe05de0ba091ec1",
+      "size": 17426,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "README.md",
+      "sha": "9e20c5c7d95afbbc91dc9714a18ae8b118dc0809",
+      "size": 49871,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p21c0_geometria.json",
+      "sha": "6b979dec46f41177d8941732831762ed8ac0050b",
+      "size": 1460,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/045_gaz_przestrzenny_praca_i_granica0D.md",
+      "sha": "93e6e886a3ee474e94fd5498a64174ed08548891",
+      "size": 12200,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/050_P21C0_plytka_komora_i_polozenie_zrodla.md",
+      "sha": "7b1f5be8c56dcf6c4de9eb5f5bc0a675d7b00f4a",
+      "size": 8498,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/README.md",
+      "sha": "dad2296d37f2709495ac791274dcade0d8018f11",
+      "size": 6354,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/manifest_gazu_przestrzennego_P21B.py",
+      "sha": "3f06c536802dae1dadc26330510cbf8719ccdaa0",
+      "size": 3666,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/odtworz_gaz_przestrzenny_P21B.py",
+      "sha": "2a07f51369e9cb27d974bc58fe1c98ccf167e405",
+      "size": 886,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/pilot_P21C_geometria.py",
+      "sha": "775d02d5e7395aed7c014b2b3f7ca0a42971a686",
+      "size": 10483,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/raportuj_gaz_przestrzenny_P21B.py",
+      "sha": "f427b0c3050b39530d37bcdc54b42107b4ceedc0",
+      "size": 15630,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_P21C_FV.py",
+      "sha": "8c5aaecf442ddbe2f75b29ee574cccdd2129f061",
+      "size": 3756,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/wznow_P21B_z_checkpointami.py",
+      "sha": "c7a25972df71c133cb90081bd0ccc4743dbc9aae",
+      "size": 2760,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "wyniki/81_P21B_0D_3D_i_zroznicowanie_cisnienia.png",
+      "sha": "3f23043c8e07c279537717f9a5dd811f83cffb9c",
+      "size": 194002,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/81_P21B_0D_3D_i_zroznicowanie_cisnienia.svg",
+      "sha": "d405b436f40255ad7cc2a257b930d25841bec17e",
+      "size": 98940,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/82_P21B_pole_cisnienia_w_module.png",
+      "sha": "48f0703fd525d08cca2aa80263c5c8450fd2d30d",
+      "size": 92893,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/82_P21B_pole_cisnienia_w_module.svg",
+      "sha": "0c2ff824e000bde91e3d2490371c303033d88181",
+      "size": 332427,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/83_P21B_wzorce_i_granica0D.png",
+      "sha": "9da1486cd48ed105ff274d042b102016a59be3fd",
+      "size": 185095,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/83_P21B_wzorce_i_granica0D.svg",
+      "sha": "19e0e3f50940c762c89e4300c0e85c684d82639d",
+      "size": 113273,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/95_P21C0_plytka_komora.png",
+      "sha": "203e7c91c08587beaaf14b06be721fe5103632fc",
+      "size": 200779,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/archiwum/P21C0_pilot_3D_20261029/README.md",
+      "sha": "49f719fc2002d09679541cc493e81221d81311aa",
+      "size": 636,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/archiwum/P21C0_pilot_3D_20261029/p21c0_geometria_i_port.csv",
+      "sha": "1e288a25b6ce9da4ec06f6a03c88dcc182570744",
+      "size": 104162,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/archiwum/P21C0_pilot_3D_20261029/p21c0_podsumowanie.json",
+      "sha": "6ec009569e1399014db6489e9139fd551a3fecb8",
+      "size": 4027,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/archiwum/P21C0_pilot_3D_20261029/p21c0_zbieznosc.csv",
+      "sha": "50e9d37b598a8e32ecbc563492147962d6c0b40f",
+      "size": 81661,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/manifest_gazu_przestrzennego_P21B.json",
+      "sha": "be10d60d41d35f017a95cebc9fa0f7c68422c354",
+      "size": 12770,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/p21b_asymptotyka_podsumowanie.json",
+      "sha": "3a918a8ad736b4ba769dcc82dcaa4b0f1c8665dc",
+      "size": 1939,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/p21b_asymptotyka_swobodnego_ruchu.csv",
+      "sha": "dafabcde021889d742961d37d210168a476ca293",
+      "size": 13972,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/p21b_checkpointy_czestotliwosci/0acf649e91d1e1214ed8800af27cfa14b114e178505a114e63c0b2efd0fe6800.npz",
+      "sha": "ce4471b24f584c948269ea97915b9a742ac62155",
+      "size": 1006723,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/p21b_checkpointy_czestotliwosci/214272dc974a06d9364885efc9cc0d6b86421b113d7ae0edb79a1f17ccfb5c1e.npz",
+      "sha": "28d335e2d0f19b524a32a4b60fbbcc7439b4374d",
+      "size": 1067742,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/p21b_checkpointy_czestotliwosci/25cfbd44681557f38549b3b111d17ff4bebc9bd739381d4c678fbdfb50466099.npz",
+      "sha": "efe881c7e56a469e20b40c7428a4a5a38ad23e8e",
+      "size": 1109436,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/p21b_checkpointy_czestotliwosci/2dc60687b1f6e5444fe0a1552b57a704a073a2729ed61ba123892b6c6641b0cc.npz",
+      "sha": "ca4c60e475a8b0ddd673e1df4ae46592364a7451",
+      "size": 1105772,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/p21b_checkpointy_czestotliwosci/46184a16ac0dab94b529cf65bbcabd52ca45a6ae430ec0b9588a4d579e96d198.npz",
+      "sha": "832ac69035b4c920c74e9cbfd3053664a80d8603",
+      "size": 1101706,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/p21b_checkpointy_czestotliwosci/51e04f6e4f6e4fedc02010fa3ec7f2620fa1f1ef62bf63f365f71552d74f0537.npz",
+      "sha": "7d14d4da55054816820629cc085cc2a060afd66b",
+      "size": 1026199,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/p21b_checkpointy_czestotliwosci/660bfc066164b13d1b375bc3cde37d0c18fd1c90a66fb375c76c187d71d62b7d.npz",
+      "sha": "40fc10cf77a89d14dd9aa67018be654a7a2e5d26",
+      "size": 1077476,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/p21b_checkpointy_czestotliwosci/681b6569b5a069cae66d49eead029264a68181030e303fab737bb5ede9dec808.npz",
+      "sha": "7798e7f34c167eba70dcbd8d70ea512b303ff598",
+      "size": 1079629,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/p21b_checkpointy_czestotliwosci/7b37080e64e23c31aaba321ac1efa2f42d00f12762ed21b9faeab7dba0a4bdf1.npz",
+      "sha": "774782cf65e28ba4731af3b9de0e043688579523",
+      "size": 1011669,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/p21b_checkpointy_czestotliwosci/90130568d455474c69f7a5248eb8745b675bddda6936d1ba3058ca6874322a57.npz",
+      "sha": "dfda14cd6ce1adec0cd918868a8d6cc39c80c4ad",
+      "size": 1017007,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/p21b_checkpointy_czestotliwosci/93de4e8a22efe6f6af152a5e23569897443970caf8a686dec73c80ed432369f5.npz",
+      "sha": "1e332a53f3a11192fc95caf7cb1b8adaa8f26caa",
+      "size": 1009364,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/p21b_checkpointy_czestotliwosci/ef7208124d1ca2acbc987207b7abb0ea0e9d3644965bd071bcea001cbfa622fd.npz",
+      "sha": "72538f7788b8c92b4ff3807319ffd6a399f4872d",
+      "size": 1020929,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/p21b_granica_obciazenia_podsumowanie.json",
+      "sha": "e4eb867defd4644960c70ab8db30b77fca027fd9",
+      "size": 2136,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/p21b_granica_skalarnego_obciazenia.csv",
+      "sha": "a126026a11c3b2c14e45750db46d2da7edcaa375",
+      "size": 28711,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/p21b_macierze_admitancji.csv",
+      "sha": "718e570f960ba33a6bcc2cc694e519a6c3bcad86",
+      "size": 62166,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/p21b_modele_i_geometria.csv",
+      "sha": "e23aaf2fa58a8b79ce4cec33acf78b9543c462db",
+      "size": 8700,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/p21b_ocena_projektowa.json",
+      "sha": "6420de826ac5025ef3476c862fd6038960dc25d0",
+      "size": 2018,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/p21b_podsumowanie.json",
+      "sha": "3fd058fbdbcc733bc7ca3be36c92a737bf4b7d9a",
+      "size": 3055,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/p21b_pola_i_energia.csv",
+      "sha": "61a74e7d0fd80365e5a3e46281d148882650e7bd",
+      "size": 182311,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/p21b_pole_reference_9de2a58b864caa24.npz",
+      "sha": "3a06c5606d9d9dcbe9fb2919055a971f74a896c6",
+      "size": 3426036,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/p21b_porownanie_siatek_w_pasmie.csv",
+      "sha": "24bb90043cb773993488e7a0d81f4c63fea0e9be",
+      "size": 8824,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/p21b_porownanie_z0D.csv",
+      "sha": "8b9fe8037b53f99b0f06d090eae92229d6f312b8",
+      "size": 33863,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/p21b_przypadki/9de2a58b864caa24/TIED_E1.718e+09_N12.json",
+      "sha": "6fea4b39eef4e77501ce7969d6d92579019554e6",
+      "size": 72434,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/p21b_sily_przy_wymuszonym_gradiencie.csv",
+      "sha": "616dce8af62b7abde2f926046823bd2b451dae39",
+      "size": 1318,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/p21b_wznowienie_20261029.json",
+      "sha": "eb1c74fa032e6e97abb73ba12d103a98b3f74488",
+      "size": 5299,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/p21c0_geometria_i_port.csv",
+      "sha": "a611f336f7a8f2c0af4755b87f9216f58b1ac7f2",
+      "size": 118043,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/p21c0_niezalezna_FV.json",
+      "sha": "f2bde23edc9364e04305fb7ea0049e4aa5f19443",
+      "size": 3285,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/p21c0_podsumowanie.json",
+      "sha": "1b3303d807d471c0d4c112c8fbffa3f840997f20",
+      "size": 5747,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "wyniki/p21c0_zbieznosc.csv",
+      "sha": "713e0e4eec219d3385e649050cdc6ce32d419838",
+      "size": 88282,
+      "origin": "SUB_prototyp_badania_20261029.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p21c1_membrana.json",
+      "sha": "ea774e547ff84b009d0099fad6227449678e245e",
+      "size": 440,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/membrana_kolowa_P21C1.py",
+      "sha": "2ca1f711c3c9b370b4a474b7a0ae0d2b573374c1",
+      "size": 6485,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/przetworniki/pula_rozszerzona.json",
+      "sha": "c2248fca65131f49507a8923e15ace6548ae2e7a",
+      "size": 40553,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/przetworniki/rozszerzenie_SB_20261025.json",
+      "sha": "3e56a1b6bfaea2aaf973eda03f4060c0395a2284",
+      "size": 4075,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_rozszerzenia_SB.py",
+      "sha": "7bfd61093f83327507d503ed24ef97f4f781921d",
+      "size": 11384,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/model_subwoofera.py",
+      "sha": "27476b6df0c68266058ad19ed95dbc2627b3d655",
+      "size": 6392,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "brief_system_audio_DIY_v0.6.md",
+      "sha": "4846311755b0bcb99e0492f6439258d593025f61",
+      "size": 38283,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/raportuj_P21C1.py",
+      "sha": "cce4f72a827d50324ab8095295eb36f1345659a6",
+      "size": 9851,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/051_P21C1_membrana_kolowa_i_bezwladnosc.md",
+      "sha": "854e70672f8677ad2b84d9cd3baf6c4b2d6dd93c",
+      "size": 6192,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "wyniki/96_P21C1_membrana_i_przesuniecie.png",
+      "sha": "a92cdd4eb13c3a3b6dda406466e3cdadb8583176",
+      "size": 217561,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "wyniki/p21c1_przesuniecie.csv",
+      "sha": "4378a29d61254a93e5c75507cfed2894c873a7f1",
+      "size": 54230,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "wyniki/p21c1_odrzucenia.csv",
+      "sha": "69055bfb08ea5def8236decb8fa472afda31606b",
+      "size": 20507,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "wyniki/p21c1_membrana.csv",
+      "sha": "b58d482618264284a5063069455020bea17c8f1a",
+      "size": 1906162,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "wyniki/p21c1_podsumowanie.json",
+      "sha": "467fa08def69b0c668f863acb7f4219923c0221d",
+      "size": 4433,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "wyniki/manifest_P21C1.json",
+      "sha": "91f02e3a1a5369d9d2d6303895c472f49b0fcafd",
+      "size": 1618,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/badania_wstepne.json",
+      "sha": "3fc1603798e412e64d73d7cdb0fbdb51e6eacd18",
+      "size": 1333,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/ograniczenia_gabarytow_v1_20261027.json",
+      "sha": "4e83a9c9b001b14d4c4abe7b9f1b88c16c09e1b8",
+      "size": 1801,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p06_niepewnosc.json",
+      "sha": "04e4d7592fecc938630c7449b9692bf2cf12e3f6",
+      "size": 3035,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p09_p10_gaz_i_wypelnienie.json",
+      "sha": "8b0856bdf33ddf6f8df268244567ec729d0144bd",
+      "size": 2747,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p09c_ilosc_i_rozmieszczenie_wypelnienia.json",
+      "sha": "9e399ad848a9b2bad0fcd93342947b92843bf759",
+      "size": 1688,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p11_promieniowanie.json",
+      "sha": "dc891d196cd87c97cc396fb68863f7eeeea435cf",
+      "size": 2090,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p12_p13_naped_i_gaz.json",
+      "sha": "b221f871e042d9f0c049a3290457f07b92b92766",
+      "size": 2267,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p12c_digitalizacja_Lgen.json",
+      "sha": "67dc51853efb14c905293cfc959bf279c0650fee",
+      "size": 1348,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p12c_pamiec_cewki.json",
+      "sha": "5efab9dfc4df810dcd1e2d9f21b5ff6878780830",
+      "size": 2144,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p14a_sygnaly_i_pilot.json",
+      "sha": "95608af221bc3e2d1d05130821510a4a150761d6",
+      "size": 1173,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p14b_IMD.json",
+      "sha": "6e20aa8e968a9ec4ba2a64ad664fbeef16fce681",
+      "size": 1996,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p14b_emisja.json",
+      "sha": "da3cf680ba3afb29fdc1b70f4367aa5bd137af7a",
+      "size": 1315,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p15a_topologia_termiczna.json",
+      "sha": "f1e4d86c01835e2cf1024a028cbfa94eb6d9355c",
+      "size": 868,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p15b_sprzezenie_Re_T.json",
+      "sha": "ea8c9fa24261268ae1bf906bf7baf5e14f842f3b",
+      "size": 1530,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p17_synteza_V_I_X_cieplo.json",
+      "sha": "de128c1ad7f2a1b299e22333c8cedeed906dcf96",
+      "size": 1573,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p18a_plyty_i_sciagi.json",
+      "sha": "70ec655a99db7c7234aa8dd3a573295f39722916",
+      "size": 2178,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p18b_front_z_otworem.json",
+      "sha": "1c81d9bc7aa94e292ccdeeb0efa6ddacc0c16377",
+      "size": 1685,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p18c_rama_3D.json",
+      "sha": "18fc00894bf7d80942fce03925c923de53fbc3ec",
+      "size": 1756,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p19a_normalne_polaczenia.json",
+      "sha": "6ec978b2def66493a32151a1d58cd5c3317fdba6",
+      "size": 1974,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p19c_styk_czasowy.json",
+      "sha": "e70fee623d3bf2e6715141b5389bf9f99af28218",
+      "size": 1590,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p19f_listwa_stalego_frontu.json",
+      "sha": "053dc4c72d490978ac20e1b5ac750fb405422214",
+      "size": 1381,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p19g_podmodel_lokalny.json",
+      "sha": "39e6a55598ac32515f3daa0bc34ac6d52561d331",
+      "size": 1776,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p20a_kanaliki_kontrolne.json",
+      "sha": "ddb6c083bddb48f817f32bb7df26c00360c94514",
+      "size": 966,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p20a_regulacja_objetosci.json",
+      "sha": "4e1c3fa221dc2512dde0525e8d914920c02541fa",
+      "size": 3249,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p20b_przegroda_vs_moduly.json",
+      "sha": "5a6695bb3e290238ade6c9adde0981333788ae80",
+      "size": 2648,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p20c_modul_pelny_3D.json",
+      "sha": "0c9825dbc995b6e5f960175e6e8cc4d53a121a80",
+      "size": 1938,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p21b_gaz_przestrzenny_modulu.json",
+      "sha": "7e36c60b6f406b686e7c76d579e4df163157bdd9",
+      "size": 1789,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p22a_port_wzmacniacza.json",
+      "sha": "35ffe1d9698ae4a360d15e314d2e8020f9a6d9c6",
+      "size": 1481,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p22b_nasycenie_i_prad.json",
+      "sha": "39d587d85f321af8bde82db2b48fff1564c6737c",
+      "size": 1839,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p23a_filtry_dyskretne.json",
+      "sha": "bff81ad56be0121a744019d000c293436bb9e33c",
+      "size": 1715,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p24a_weryfikacja_i_sygnaly.json",
+      "sha": "6e41fd544260730371079788a28aac38d9f50ecb",
+      "size": 1045,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p24a_wspolny_obszar_niezmienniczy.json",
+      "sha": "56b412a014799ecdd858e9eb91c88c69296a03a8",
+      "size": 1763,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p26_scenariusze.json",
+      "sha": "debc68270e4223aa6e6a00d20f97b1b8dc64c32e",
+      "size": 2070,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p29_filtry_startowe_96k.json",
+      "sha": "77f48690c4603efb598f781e1ddddf7ae8521538",
+      "size": 992,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/p29a_screening.json",
+      "sha": "8e5dcdce3eaa82e8a07072a083e159db2239570b",
+      "size": 744,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/pokoj_odsluchowy.json",
+      "sha": "9eafd6fc69e4cdc729b6e6d38111b51cdeeeace2",
+      "size": 2034,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/pokoj_rzut_scenariusze_v1.json",
+      "sha": "c97a6973dbfe2ccf401813ec8c58f447810fc434",
+      "size": 2019,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/pokoj_rzut_scenariusze_v2.json",
+      "sha": "3326746b782bac0c649df0895906f6aeef9c9ca2",
+      "size": 2757,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/konfiguracje/rekomendacja_prototypu_P29.json",
+      "sha": "67a2e8e9c21a2c096905868d7dba13a6febccc34",
+      "size": 5684,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/przetworniki/dostepnosc_nieliniowych_P12.json",
+      "sha": "73a51ba94b20df200f121b24a1d3938169bd359e",
+      "size": 10595,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/przetworniki/kandydaci.json",
+      "sha": "0f6437ccd6067712bb9264040e621eca9c95e126",
+      "size": 4659,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "dane/zrodla/P29_weryfikacja_zrodel_20261030.json",
+      "sha": "ae9232dd7fb1aef4f6f50094b51542c44907d8b5",
+      "size": 2684,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/001_inicjalizacja.md",
+      "sha": "36eb2a7e5358c2d7d21a9919dc6419beabc674d4",
+      "size": 3773,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/002_obliczenia_wstepne.md",
+      "sha": "546d64cdf4e98fde120cfddc93fbe70081753520",
+      "size": 7295,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/003_referencje_i_rynek.md",
+      "sha": "d0ed60dfd9945843ee90e51197475ae15c5be612",
+      "size": 5894,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/004_rekomendacje_i_ryzyka.md",
+      "sha": "1af02e1eb37f4f1b7c5e822ee08c07ba570090e4",
+      "size": 5170,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/005_analiza_obrazow_diyaudio.md",
+      "sha": "84286c8f42a5dda03d1bdd370075f1befef06200",
+      "size": 3980,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/006_narzedzia_symulacyjne_i_MCP.md",
+      "sha": "883253a54b1d8909f3d1ccc76629faaf66b628db",
+      "size": 2907,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/007_fizyka_nieliniowosci_i_DSP.md",
+      "sha": "6e6df139c94d9b8c7faa42ec6262b12e2309fe6d",
+      "size": 6172,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/008_weryfikacja_pakietu.md",
+      "sha": "db77d97c1776d4f4745ca7203cf9948b261a0c8c",
+      "size": 1892,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/009_N7_straty_nieszczelnosci.md",
+      "sha": "9aa55215983a17924c1ad19fd111e9ea643ee7d2",
+      "size": 7176,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/010_szeroka_pula_i_kwalifikacja.md",
+      "sha": "ef136066478f19da7063eed27db590c1916fb299",
+      "size": 14192,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/011_granice_globalne_litrazu.md",
+      "sha": "7d1c60eb0391451f556c96af31040b4d670849c5",
+      "size": 3299,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/012_identyfikowalnosc_i_dane_publikowane.md",
+      "sha": "c01dea42a219af90240224e6aa167e7be2bf8517",
+      "size": 3138,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/013_pokoj_i_realne_gabaryty.md",
+      "sha": "0fa4bd92c6411af763b681682b59e9e4b9b0b1bb",
+      "size": 9538,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/014_weryfikacja_etapu_20261024.md",
+      "sha": "b81ac7e379149a1869105cdb2e0bfe9fae5d24ea",
+      "size": 3036,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/015_niepewnosc_globalna_i_odpornosc.md",
+      "sha": "b273dd5607f0fe3bb19d31bf3c85a7a1fc2f7da8",
+      "size": 12797,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/016_gaz_wypelnienie_i_granice.md",
+      "sha": "ed88fca4aee648af38189f1de4efcd89c8cf5758",
+      "size": 15235,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/017_promieniowanie_i_sprzezenie_pokoju.md",
+      "sha": "5a88a11ef113dd9918d5eff954a82fda0fd84f7c",
+      "size": 16707,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/018_rzut_pokoju_i_odleglosc_odsluchu.md",
+      "sha": "d60a94d6e6e9e977f13ea9d1207844b8300d06f2",
+      "size": 5135,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/019_zamiana_kanapy_i_RTV.md",
+      "sha": "2cdcd195c89dae1ecd818892e58af9cebbfb15ef",
+      "size": 2621,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/020_nieliniowy_naped_i_sprzezony_gaz.md",
+      "sha": "ac121e8056a9e83150d2c7a2c03893eda631bc35",
+      "size": 12663,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/021_pamiec_cewki_i_definicja_Lgen.md",
+      "sha": "7493efb22ec1146fdb8a7bda145ab587d52c7645",
+      "size": 13303,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/022_stan_badan_i_zakres_pozostaly.md",
+      "sha": "8e5fba76c1e494395a11a682de4beb0ad5dae7bf",
+      "size": 6161,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/023_P14A_dwa_tony_i_wspolne_limity.md",
+      "sha": "f17175c1390e6d1080c831d3e0d13814b1945143",
+      "size": 5859,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/024_P14B_emisja_i_swiadkowie.md",
+      "sha": "fefc8ffab32e87b3ebd65484816e185d6b2e14d5",
+      "size": 9643,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/025_P15A_topologia_i_granice_termiki.md",
+      "sha": "3d45160d64b823911fa5c48d1ea25179ba0c11e5",
+      "size": 8731,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/026_P14B_pelna_kampania_dwutonowa.md",
+      "sha": "7bbb48f6f64196a472737a7197b6907fd9be28d0",
+      "size": 8729,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/027_P15B_sprzezenie_grzania_i_napedu.md",
+      "sha": "21bcc93a3b8c6255fa257af7ec163ff84a35caec",
+      "size": 9804,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/028_P17_synteza_napedu_objetosci_i_ciepla.md",
+      "sha": "37054235760ec1140c7c39880362a7c5533ecbc1",
+      "size": 9100,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/029_P18A_plyty_sciagi_i_dynamika.md",
+      "sha": "cb98755e37ad299475a8cd4c39a634ac76a3cb00",
+      "size": 7461,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/030_P19A_obliczenia_spoin_i_material_kleju.md",
+      "sha": "6c1577b86145909322eda8df99b2695bcf72697d",
+      "size": 11826,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/031_P21A_reakcja_powietrza_i_bilans.md",
+      "sha": "4e47c45e55acc5548157def68678efe14f7b46bf",
+      "size": 6270,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/032_postep_po_mechanice_i_zakres_do_konca.md",
+      "sha": "91b26a96465404cb0d8ee57858929b195f0b9957",
+      "size": 6695,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/033_front_otwor_kosz_i_styk_jednostronny.md",
+      "sha": "be2ea0abc241c85ef0bc1f5c80a83c3da73d29fb",
+      "size": 13708,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/034_czasowy_styk_i_pelny_MES.md",
+      "sha": "327e32ecd6196322ce23ae097e4f39652b5a9272",
+      "size": 9299,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/035_pelna_rama_3D_spoiny_i_podparcie.md",
+      "sha": "0f244f125db044e192277927f2d38cf53fa7031f",
+      "size": 10879,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/036_spoiny_3D_i_wirtualne_odspojenie.md",
+      "sha": "255044cd22113f61bb39f19e698944d65f8b0d83",
+      "size": 5817,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/037_staly_front_wymagany_modul_spoin.md",
+      "sha": "e0c28a76a33e3f4d3537453edb88d7793784afcc",
+      "size": 4726,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/038_SB_Acoustics_rozszerzenie_i_porownanie.md",
+      "sha": "7c9843282902a1bed2592c166af971ad6f087d22",
+      "size": 9527,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/039_wypelnienie_ilosc_polozenie_i_straty.md",
+      "sha": "d9bbbd474795104def810a2bbcc0b4beff402525",
+      "size": 11824,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/040_listwa_stalego_frontu_i_droga_sily.md",
+      "sha": "01fa9288f753c2d926da9a0c966343734ea6c93c",
+      "size": 8406,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/041_lokalny_podmodel_i_granice_wiarygodnosci.md",
+      "sha": "9d1de213ac1a39ac934ecfed131205fa1c7276e3",
+      "size": 10109,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/042_regulacja_Vb_i_wklady_wypornosciowe.md",
+      "sha": "958319016cb2fc901988dcf5eab16e40d6f7a1af",
+      "size": 15146,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/043_przegroda_dwie_komory_i_materialy.md",
+      "sha": "a94be197e80435395999f4cd18fb56131288e484",
+      "size": 17498,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/044_modul_3D_dwa_porty_i_wymagania_kleju.md",
+      "sha": "fa6594d294d2ff094e33ca0d9d9dec175930e576",
+      "size": 13150,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/046_filtry_cyfrowe_stabilnosc_i_zapas.md",
+      "sha": "ff977583e34f35f924bf066a307976e2f3d2fa24",
+      "size": 9150,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/047_port_zrodla_tlumienie_i_bilans.md",
+      "sha": "beac4cf3d5fcc629a497510aa349e6437e892ba2",
+      "size": 6022,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/048_nasycenie_SEM_i_stan_pradu.md",
+      "sha": "e1d273b9a0a0f9144cd6154967bc5cc7a6e1516e",
+      "size": 6420,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/049_obszar_niezmienniczy_i_koszt_ochrony.md",
+      "sha": "1d34692ec00d5336b078bfbb40c169e05f1b74c9",
+      "size": 9455,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/052_komora_warstwy_wklady_i_front.md",
+      "sha": "7b47e2a5f7735bef120f534b865e91a58676d6f2",
+      "size": 5179,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/053_porownanie_i_odpornosc_rekomendacji.md",
+      "sha": "e6046210b16f752e2e290780fb7603cefdc68dd6",
+      "size": 6264,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/054_rekomendowana_konfiguracja_prototypu.md",
+      "sha": "c069ddc3e86cf85e680ac02daf88a6abf429fa0f",
+      "size": 8826,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "raporty/055_wrazliwosc_wyboru_i_margines_glebokosci.md",
+      "sha": "9c0290fc24d8cb88cd9a818f61fd41d39d85f5aa",
+      "size": 6402,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_P14A_sygnaly.py",
+      "sha": "c8f52cbd1a19c312d728486976ad926a9c7d756f",
+      "size": 8671,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_P14B.py",
+      "sha": "52072974f14143da067f41cc04ff8f32c9616b6c",
+      "size": 10074,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_adwersarialna.py",
+      "sha": "6a111488ef231548bd503a657ced4d9db3480b2b",
+      "size": 3569,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_celow_dsp.py",
+      "sha": "7d8527d06ffa71b82df0947c9b5a692896eef704",
+      "size": 4055,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_cewki_z_pamiecia.py",
+      "sha": "36c7214890e0552eb0660c775a1ee3c486aa254b",
+      "size": 11672,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_filtrow_dyskretnych_P23A.py",
+      "sha": "1afea7e893a5dbb1799792e5b805895eae9c3740",
+      "size": 12770,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_fizyki.py",
+      "sha": "ba662c75ff672c79fae1d3dcc80e55a910648ed1",
+      "size": 6240,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_frontu_z_otworem_P18B.py",
+      "sha": "23a2ade9c6e661629c5a836295ba4d979b48d8d3",
+      "size": 7906,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_gazu_i_wypelnienia.py",
+      "sha": "6824637a4f7218da2d923865c038989bd16652f9",
+      "size": 22349,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_gazu_przestrzennego_P21B.py",
+      "sha": "0219cb225802a3389b4b3083c875b28d960ee4bf",
+      "size": 12091,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_geometrii_odsluchu.py",
+      "sha": "01b6dc358ffbc99fb0e54f32cb62f21af8e86972",
+      "size": 7834,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_granic_litrazu.py",
+      "sha": "c7b9f1f072051919ec1d22c7a9a1abb7478bf02d",
+      "size": 3972,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_ident_Le_i_dopasowania.py",
+      "sha": "15c656d0e795e8e1f076f58baa83a5471bbe0220",
+      "size": 8154,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_ilosci_i_rozmieszczenia_wypelnienia.py",
+      "sha": "b931f929d85d75b6d07fe41338a34b3837993b9b",
+      "size": 14815,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_kompensacji_gazu.py",
+      "sha": "c156f32033a764a58361ff77a3c3c3cf177ecb72",
+      "size": 3883,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_listwy_stalego_frontu_P19F.py",
+      "sha": "6f48695286a3942aac8305b007990090597fd0e4",
+      "size": 8961,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_modulu_3D_P20C.py",
+      "sha": "3b2a1f5c389b0e5c627d7ca2d7217019e5ee3915",
+      "size": 10410,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_napedu_nieliniowego.py",
+      "sha": "0be495efcff4a8016651665fc3ad80eef362236f",
+      "size": 7796,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_nasycenia_i_pradu_P22B.py",
+      "sha": "9134585b192719e7c7334eb6ac0d62b39d73282c",
+      "size": 8569,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_niepewnosci.py",
+      "sha": "d84950b3fdfc32eebf4423e68860123e486f9612",
+      "size": 18188,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_nieszczelnosci.py",
+      "sha": "5c4bd231f24ade3a6c523a6b55b436a4962e89ed",
+      "size": 7050,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_obszarow_P24A.py",
+      "sha": "7ce6d5564337e02d74bfbbdbba15f523e75a28b6",
+      "size": 6583,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_plyt_i_sciagow_P18A.py",
+      "sha": "dc66b17aaaee0c402ee97a1b0b30feb9a47f8596",
+      "size": 10938,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_podmodelu_P19G.py",
+      "sha": "d12dcfc3000dc85cca42e922610dff6dba405511",
+      "size": 6343,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_pokoju.py",
+      "sha": "0dfb9d8bb03753e734a672828eb53901d1c46327",
+      "size": 13715,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_polaczen_normalnych_P19A.py",
+      "sha": "32f918b24343484556253a50af1677cdab08bba5",
+      "size": 8981,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_portu_wzmacniacza_P22A.py",
+      "sha": "f3e4998cdac85755c9ea6f230613cc280b27a6d1",
+      "size": 5479,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_promieniowania.py",
+      "sha": "482c32a7b80717e10a212153ba2ce126ce1911b3",
+      "size": 11962,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_przegrod_P20B.py",
+      "sha": "97552abff515a452cf292293108d6d1704ea00fd",
+      "size": 10145,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_ramy_3D_P18C.py",
+      "sha": "1c1619cab75161ad861d79ebd5c9bd9c79081b27",
+      "size": 8637,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_scian_i_sprzezen.py",
+      "sha": "056724cacca4fe0af9c71dc254477dd88405438e",
+      "size": 14192,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_scinania_i_szczelnosci_P19.py",
+      "sha": "35989087fdce87163deeadd43c7e0fe829ec48f0",
+      "size": 7628,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_sprzezenia_Re_T_P15B.py",
+      "sha": "f814ab2f7ffc97d49bea7f89eca75ff3d1ba2ce9",
+      "size": 8179,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_styku_czasowego_P19C.py",
+      "sha": "8438d4ec48cc038efc41bc457710b369f238baf9",
+      "size": 6202,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_styku_frontu_P19B.py",
+      "sha": "75b29f5f8f779f5715a67da71e3630670dfcd059",
+      "size": 12768,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_syntezy_P17.py",
+      "sha": "25a94cc1b4c2fc3fff7a8aad4b5d16adf3aca13c",
+      "size": 6650,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_topologii_termicznej_P15A.py",
+      "sha": "ded38e95725f2ea7ac098493ffe6873ca57c7f48",
+      "size": 8957,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/analiza_wkladow_P20A.py",
+      "sha": "6ff5b016182a84cbf3010f40e0ec9888f2d1c2f2",
+      "size": 9985,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/archiwizuj_pola_globalne_P19G.py",
+      "sha": "6195872adcb7e9ce73a75a714a2f32ea51e4bc25",
+      "size": 2435,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/archiwum_P15B.py",
+      "sha": "b8934bb73226ef6a801acfb259552d3bd74ff050",
+      "size": 3271,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/archiwum_mechaniki_P18_P19.py",
+      "sha": "6d4bdf07e3752cd27703fd8b513742666df84b9d",
+      "size": 3232,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/asymptotyka_gazu_P21B.py",
+      "sha": "2bec4dc6029a497ffd2c4d5cbd2929c5475a003d",
+      "size": 4967,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/audyt_dynamiki_P14B.py",
+      "sha": "8348e47a70fb47542583b908c294581c3c4434d8",
+      "size": 3145,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/audyt_energii_promieniowania.py",
+      "sha": "e18c75d38dc8e534c0572804315af6c786406c41",
+      "size": 2293,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/audyt_fizyki_P19C.py",
+      "sha": "e8cec9c2630241e4941e58751cd869c7b8b6ace5",
+      "size": 5642,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/audyt_identyfikacji_wypelnienia.py",
+      "sha": "f24b2c05f507318d03d851c2ab3da79d3bca1055",
+      "size": 4295,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/audyt_identyfikowalnosci.py",
+      "sha": "362d4df24a66fe032e6eb70d5e90fa50315aced7",
+      "size": 5446,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/audyt_sprzezenia_Re_T_P15B.py",
+      "sha": "3752de92568209f067b19704d4c38733fb4dc3ab",
+      "size": 6312,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/audyt_stopy_zamrozonej_P19G.py",
+      "sha": "51e82c1a1ce1d79b96ed2dddc6d44eaabe583d92",
+      "size": 3441,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/audyt_symboliczny_P15A.py",
+      "sha": "b73f79b2afc2e4502a0d1ecf49acddfcf672da96",
+      "size": 2374,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/audyt_termodynamiki.py",
+      "sha": "4ad71419f52a5cef10fe7c6576c6fe88ce8184e1",
+      "size": 4267,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/audyt_tozsamosci_P24A.py",
+      "sha": "0147fe636089639316d58b3ac78af47e1f566b9b",
+      "size": 1949,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/audyt_wykluczenia_1_bieguna.py",
+      "sha": "53b0c0447d62438d90c5846af5acdbcbb668b094",
+      "size": 2896,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/audyt_wykresow.py",
+      "sha": "2a49e32b9675679631473317e41e3796f74798d0",
+      "size": 2163,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/certyfikat_przedzialu_P24.py",
+      "sha": "9221702916e638ba30ba836cf19856827234e2a0",
+      "size": 2951,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/dalsza_siatka_modulu_P20C.py",
+      "sha": "0831556b972d1b89e6cef4146b800df19dd02f3e",
+      "size": 4563,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/digitalizuj_Lgen_Purifi.py",
+      "sha": "2d2b2405ad8d4917c296c3ff223e5b1e666b4de7",
+      "size": 4452,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/dogesc_P21C3.py",
+      "sha": "5384610e7d12b8e3f0bdf322bc7605cfb78b0676",
+      "size": 761,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/element_brylowy_P18C.py",
+      "sha": "66bd08e41c766585fc42618ab6c9c5ebf9addf98",
+      "size": 3488,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/emisja_i_sprzezenie_plyty_P18.py",
+      "sha": "06f8ab5bfdda72aca1e9f0dbbe52d9dcc7e23d01",
+      "size": 7952,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/front_przesuniety_P18D.py",
+      "sha": "6763e730e9bae81c581ebd51a2bdef2a8b6162fc",
+      "size": 3142,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/geometria_przegrody_P20B.py",
+      "sha": "b049b0f09a42f40378592438349c3980b3586bcb",
+      "size": 3292,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/geometria_wkladow_P20A.py",
+      "sha": "281eae4fbaf719deb731520fec7f483b5fd3e288",
+      "size": 4794,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/gesty_skan_sprzezenia_pokoju.py",
+      "sha": "861a3c49fc7d343c926a89f2ec3c27e77905fd38",
+      "size": 7999,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/grafiki_przewodnika.py",
+      "sha": "8f3f52a5740a75bb255fc1e728fdefa8fe9ebd82",
+      "size": 7254,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/granica_obciazenia_P21B.py",
+      "sha": "cec625fd26cc2fdc420a55b9cedaf2ede891476b",
+      "size": 6590,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/granice_litrazu.py",
+      "sha": "2ade5ded512d00d7855341f5a6c2da0584249976",
+      "size": 2962,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/integracja_P29B.py",
+      "sha": "6d3a994be3b869a1999d3b12821fcfb6eb632acb",
+      "size": 6924,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/kanaliki_z_masa_P20A.py",
+      "sha": "bf93e97ac376eb401022d97666c660fe4663ca5f",
+      "size": 4808,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/kolejnosc_i_zapas_filtrow_P23A.py",
+      "sha": "162b0646f951bbbc1008f64849ef3172547a9a7b",
+      "size": 3596,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/komora_warstwowa_P21C2.py",
+      "sha": "eac08afb4d94642d8bc8414abef83e2bfbdf5ccd",
+      "size": 2048,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/kontakt_brylowy_P19.py",
+      "sha": "37d6647f21ebebf20379a0fe0cfcdc116474206c",
+      "size": 2986,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/manifest_P14B_P15B.py",
+      "sha": "e7adc06c6165ad53f1f64630059391693c73adb7",
+      "size": 5355,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/manifest_P17.py",
+      "sha": "5a9aecdcb14f3ba11f21c4d2f3ed9ba4469c0fdc",
+      "size": 2364,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/manifest_checkpoint_P21B.py",
+      "sha": "3749758375e5540efcdbdff11f169783128f3aed",
+      "size": 3707,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/manifest_filtrow_P23A.py",
+      "sha": "53bd033fad680ed857567ebcb18b90e54215fa1a",
+      "size": 3707,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/manifest_frontu_P18B_P19B.py",
+      "sha": "ea85a92e6243d1c5ddabd1e71b2eef73875b224b",
+      "size": 3197,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/manifest_listwy_P19F.py",
+      "sha": "b8aaf65c703fc8f250cc1b6f0933334628f74d5d",
+      "size": 2664,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/manifest_mechaniki_P18_P19_P21.py",
+      "sha": "3da912eee1ba864e88b0505eae133893f1099dd2",
+      "size": 4236,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/manifest_modulu_3D_P20C.py",
+      "sha": "3c9923ac79f884ca270ae892cd9789deaaade685",
+      "size": 3749,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/manifest_nasycenia_P22B.py",
+      "sha": "eabf34816ca138bffbbfa952ceffb850bed83bf7",
+      "size": 3286,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/manifest_obszarow_P24A.py",
+      "sha": "5f0d76ce41180c95f1810bd03ed42476d7fb303a",
+      "size": 4170,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/manifest_podmodelu_P19G.py",
+      "sha": "7caa0b7102f9a558620b02809982a22576f8a1d1",
+      "size": 2757,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/manifest_portu_P22A.py",
+      "sha": "da4effb7ce33b684f753962911f8407068742fe1",
+      "size": 2690,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/manifest_przegrody_P20B.py",
+      "sha": "d32974b20fa51102e720178d808d293813c72e8b",
+      "size": 3048,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/manifest_ramy_i_spoin_3D.py",
+      "sha": "87f596a86d011602ae8055f2c52fc798f0c8229b",
+      "size": 3938,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/manifest_regulacji_P20A.py",
+      "sha": "c92bdacf30dc7bf967d0256361fd474d8be448fc",
+      "size": 2946,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/manifest_rozszerzenia_SB.py",
+      "sha": "cdd19c63b9fab147db6bcdb4029e3481f9a56c21",
+      "size": 2227,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/manifest_styku_czasowego_P19C.py",
+      "sha": "9b09cc3c0aaf758dcd17c623c5be7d639514b131",
+      "size": 4133,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/manifest_wypelnienia_P09C.py",
+      "sha": "9dac575d3023de53bb8833cede72503c9412adec",
+      "size": 1858,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/model_cewki_z_pamiecia.py",
+      "sha": "c829c844426ae60b0948164d75874d198cceb6e6",
+      "size": 10767,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/model_emisji_P14B.py",
+      "sha": "df8e61c509341c3e2baffd6fc79e29d01cfeafac",
+      "size": 8605,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/model_filtrow_dyskretnych_P23.py",
+      "sha": "fefd7509ac53f09535473064904f87f23909cd47",
+      "size": 4143,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/model_frontu_z_otworem_P18B.py",
+      "sha": "1ba0df841ee566581aaa39a4c8e2140319116138",
+      "size": 14349,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/model_gazu.py",
+      "sha": "8093a86e9cd0e38aba2bbcb5c14ae35f2bb36919",
+      "size": 8132,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/model_gazu_3D_P21B.py",
+      "sha": "7463191c70d7832a32275e6a3413dd1ff298be74",
+      "size": 11069,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/model_listwy_naroznej_P19F.py",
+      "sha": "bd2a78a14f9553bd381738d8de53593df7495d3a",
+      "size": 4900,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/model_modulu_3D_P20C.py",
+      "sha": "7f08db91dce092264cee774ccac135062859fd4f",
+      "size": 13421,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/model_nasycenia_P22B.py",
+      "sha": "714520d8c09ec1751b36d4d6a1df097c273abed9",
+      "size": 2401,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/model_nieliniowy.py",
+      "sha": "2dae61f020f2b917c616ce2627dc5f0261a6de73",
+      "size": 12903,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/model_niepewnosci.py",
+      "sha": "a92447b77e785f2936d28872a5cf20031fde1517",
+      "size": 3872,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/model_nieszczelnosci.py",
+      "sha": "6e3e7ba46486b9f0d4af4212f91c1dd6883ea4c8",
+      "size": 5407,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/model_normalnego_polaczenia_P19.py",
+      "sha": "57bb8677fbf6dc2015fbf7713e48eda85111a282",
+      "size": 7287,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/model_plyty_MITC_P18.py",
+      "sha": "abe32f18ccfdd4547a49b6b39046a93accde161a",
+      "size": 12267,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/model_podmodelu_P19G.py",
+      "sha": "07c0afa80810b083cdce6e839e1dadbee7e88b8d",
+      "size": 12720,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/model_pokoju.py",
+      "sha": "b09f7b71619674d28514270e7e40b96a055fc231",
+      "size": 4864,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/model_portu_wzmacniacza_P22.py",
+      "sha": "5997d12456952951f096e79f43d07516b1e24917",
+      "size": 1823,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/model_promieniowania.py",
+      "sha": "1064d0cf0a5b4844cde8b20b12035a5c75e19ec2",
+      "size": 9537,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/model_przegrody_P20B.py",
+      "sha": "fbf422a605fcb21fba3f4a025a2ee01d8aba6fc6",
+      "size": 9274,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/model_ramy_3D_P18C.py",
+      "sha": "ecbe10bf87f385ca030d8b4a3d787bf355db29fe",
+      "size": 17771,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/model_sprzezony_Re_T_P15B.py",
+      "sha": "df537550bff00d61097361870d0b6656071647f9",
+      "size": 5992,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/model_styku_czasowego_P19C.py",
+      "sha": "7ab52f06b90077e44a2222ada633195570dd8b99",
+      "size": 12828,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/model_szczeliny_P19.py",
+      "sha": "4a3641c387d09740f346fc4b968b2bed015ab516",
+      "size": 1004,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/model_termiczny_P15.py",
+      "sha": "3700ac69a6e5800747a5bc4a1edc19ec39ecd8a0",
+      "size": 4649,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/model_wkladu_P20A.py",
+      "sha": "fb5cde68ad796adb2928d0376170edc37d64ec87",
+      "size": 7526,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/model_wymuszen_P14B.py",
+      "sha": "b5ff91562f0972537dadec7ef1e098992b8f36ac",
+      "size": 6657,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/model_wypelnienia.py",
+      "sha": "db964a3ec5c200391f96c2f64968252a6fc0fdfd",
+      "size": 10998,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/naped_i_trajektorie_P24A.py",
+      "sha": "6089acf48483b5612050ed5583c24372c81fd3a5",
+      "size": 8514,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/naped_z_modulem_3D_P20C.py",
+      "sha": "285e2f5014f0ffc095c0c2d88630c279aae063b2",
+      "size": 6916,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/naped_z_promieniowaniem.py",
+      "sha": "7445e8f30e795055ced378a9f6ba5284ea6ee3d1",
+      "size": 4477,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/naped_z_przegroda_P20B.py",
+      "sha": "fc997219f8a9f84302a12acdb752298501cb70c1",
+      "size": 11674,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/naped_z_wkladami_P20A.py",
+      "sha": "a5a4bd948d6aa0691842a9ecd33b78da961dc6da",
+      "size": 8475,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/niezalezny_Ritz_P18.py",
+      "sha": "8569568081dc81cd1124794565acf979f1712804",
+      "size": 3649,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/odgroda_i_obrazy.py",
+      "sha": "ffad9a3503ffa806ccd63d3076fc72280ef83ed0",
+      "size": 4608,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/odtworz_etap_P14B_P15A.py",
+      "sha": "37589143726e65c2abcc62f729e7fc6a7b6c3faa",
+      "size": 2751,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/odtworz_filtry_P23A.py",
+      "sha": "7059e502b7fa9035a6beebe6e70f1cc48b6df81a",
+      "size": 538,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/odtworz_front_i_styk_P18B_P19B.py",
+      "sha": "87f23da314e072513a25ff4388cb5e38b539b2b1",
+      "size": 481,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/odtworz_listwe_P19F.py",
+      "sha": "d11eaa34b03a24cf5abfcba82abc39a0f279b073",
+      "size": 462,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/odtworz_mechanike_P18_P19_P21.py",
+      "sha": "7af0659c36849f4901584fd52e980bff7847dd9f",
+      "size": 1146,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/odtworz_modul_3D_P20C.py",
+      "sha": "302f917f622bcb18ffabae9e0ccf2c6ad2210369",
+      "size": 856,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/odtworz_nasycenie_P22B.py",
+      "sha": "aec62b05e409d5c054904f6b8d6bb40d3279b980",
+      "size": 469,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/odtworz_obszary_P24A.py",
+      "sha": "fec51dd5ba16d2301259655cba2a63b4e6b5ce73",
+      "size": 1562,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/odtworz_podmodel_P19G.py",
+      "sha": "009e31035c3b2dea1157a49963ef6b6631d23bc2",
+      "size": 1201,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/odtworz_port_P22A.py",
+      "sha": "6d2e3c9eb962524802bd89bb8de4247f58b0761b",
+      "size": 455,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/odtworz_przegrode_P20B.py",
+      "sha": "6f7e1fc5cb8a11a52711d93ad99a8773e762de05",
+      "size": 572,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/odtworz_rame_i_spoiny_3D.py",
+      "sha": "5d14e5389e9dfbc4926f986d81fad6d3285952a1",
+      "size": 696,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/odtworz_regulacje_P20A.py",
+      "sha": "eea11a8acd31971ca62e29270168826593f4c242",
+      "size": 566,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/odtworz_styk_czasowy_P19C.py",
+      "sha": "3741fa62a83c0a98634aedf535ca25d6fccfb2b6",
+      "size": 644,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/odtworz_wszystko.py",
+      "sha": "85a1ccb17976318140f603fd27f835243c395570",
+      "size": 10044,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/pelny_MES_BDF2_P19C.py",
+      "sha": "9cede4f49846c57b9f5d824c32f5243d847a0305",
+      "size": 5967,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/podsumuj_studia_P14B.py",
+      "sha": "b88b01784a1021e485ef1e7f79905903b4a7823f",
+      "size": 7025,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/porownaj_szeroka_pule.py",
+      "sha": "7f4a24053989d8283ba7995fbe1f5e7ebc7663ab",
+      "size": 7792,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/porownanie_materialow_P20B.py",
+      "sha": "4e1c4aa5eaa03289495924519a9a0370b7051355",
+      "size": 2610,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/projekcja_P14B.py",
+      "sha": "8de6940b882848e1d787c8190be9d5a3267c4154",
+      "size": 8504,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/przedzialy_niepewnosci.py",
+      "sha": "a053c1ee4ada3b9f9a9582c46e58744c5382692b",
+      "size": 4843,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/raport_i_wykresy_filtrow_P23A.py",
+      "sha": "9e2780d6e04d5adb25a8d6047a15cfb274c84e97",
+      "size": 16546,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/raport_i_wykresy_nasycenia_P22B.py",
+      "sha": "71ad942acba90785cb16b60c8bdf8e698059310a",
+      "size": 14369,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/raport_i_wykresy_obszarow_P24A.py",
+      "sha": "9709f90f1353db6c22a6159aa60fdd893d00a865",
+      "size": 17917,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/raport_i_wykresy_portu_P22A.py",
+      "sha": "d30e788e5ca03132fb168c49ed0953ea0f6c46cf",
+      "size": 11393,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/raportuj_P14A.py",
+      "sha": "b736bc1e631c2ae07f725a6dd719c820dc3731ce",
+      "size": 11145,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/raportuj_P14B_swiadkow.py",
+      "sha": "3cd0f4ddf9703bd846517a6581333df67c0625b3",
+      "size": 6511,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/raportuj_gaz_i_wypelnienie.py",
+      "sha": "8247d32616821f8b69ebf2972c228533bb62a65c",
+      "size": 19883,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/raportuj_naped_nieliniowy.py",
+      "sha": "675223ced1f13e68f400798fab71c66a34dd991e",
+      "size": 18061,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/raportuj_niepewnosc.py",
+      "sha": "9bf4d94c0893fbc1e391547e699750046465fe22",
+      "size": 15037,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/raportuj_pamiec_cewki.py",
+      "sha": "e55567c5193df17fc664ac3bbaf54072404dc72a",
+      "size": 20734,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/raportuj_pelne_P14B.py",
+      "sha": "524645ca0b933ace3e92c8c2f86157584e949e9a",
+      "size": 4269,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/raportuj_pokoj.py",
+      "sha": "1ccff5bb83426f9e029978ef20e8f50facc63c0c",
+      "size": 10797,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/raportuj_poszerzenie.py",
+      "sha": "de0020e0a951f9e57e8c1de7d64f567ed9b9446a",
+      "size": 14728,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/raportuj_promieniowanie.py",
+      "sha": "dacb4ffae09ce86d168024383bf78b7124bf9e62",
+      "size": 20834,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/raportuj_rekomendacje_P29.py",
+      "sha": "3bd54f16cd3cc37fa4fc148619345dd854d03226",
+      "size": 24353,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/raportuj_sprzezenie_Re_T_P15B.py",
+      "sha": "b1c705aa48cb3bfbf895a7dfa3f70167cb02f112",
+      "size": 6704,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/raportuj_synteze_P17.py",
+      "sha": "942edde3ad6b5704cc6f9e17b2ffac29adac9fe6",
+      "size": 7855,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/reakcja_powietrza_P21A.py",
+      "sha": "8b06e76a718fb0b28b031c63b4c6eba848421178",
+      "size": 8068,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/replikacja_poprawki_czaszy.py",
+      "sha": "25ee465db954a3a4c04b152af95bb3d1ec071616",
+      "size": 2235,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/replikacja_sily_L2R2.py",
+      "sha": "c2f5842949db7339037f3207cda52e272365e357",
+      "size": 4176,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/rozstrzygnij_P14B.py",
+      "sha": "37e8c1a17ead4f12a69d51138b837dee2b2941da",
+      "size": 6114,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/rozwarstwienie_spoiny_P19D.py",
+      "sha": "9c0eed5ad16a370881a8dc3b570ccaa10cdcb207",
+      "size": 6432,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_MITC_P18.py",
+      "sha": "b14fa086102479fb46481e7c7c1bd9dfc759fc8a",
+      "size": 5253,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_P14A.py",
+      "sha": "a5c209d88e4be2b55f8b116f1d8f727d19c8e42a",
+      "size": 4530,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_bryly_i_rame_P18C.py",
+      "sha": "9ca8974befddc2a9c2fdbc1ed3017335be534900",
+      "size": 7347,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_emisje_P14B.py",
+      "sha": "ffe263c57783b957b08e0f154fff2ec26bc4fbda",
+      "size": 4986,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_filtry_dyskretne_P23A.py",
+      "sha": "5bd05e37754550a777f7268175fc6f9576084a2a",
+      "size": 7580,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_front_z_otworem_P18B.py",
+      "sha": "9f41a78b7134135d9b2213b86e458a88adbde2be",
+      "size": 7005,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_gaz_3D_P21B.py",
+      "sha": "84c870250beac91d8cf0150e263d3571080bd93d",
+      "size": 8352,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_gaz_i_wypelnienie.py",
+      "sha": "36ffc3cd934dfb9e2ef461b4de1e529adfe5641f",
+      "size": 10885,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_granice_termiczne_P15A.py",
+      "sha": "53f7e04a1d223de7793ce5f2f757da982da3ca7e",
+      "size": 1872,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_kampanie_P14B.py",
+      "sha": "9d4c3c0672327366acce61965db6d0a9d6141b0b",
+      "size": 5908,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_kompensacje_gazu.py",
+      "sha": "fef14308cf33136325a3a2c375aa5ec6f4ff44f4",
+      "size": 2730,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_listwe_P19F.py",
+      "sha": "6e70cd9a1c3941aaca571ea1bdc5ed8d616d5e58",
+      "size": 3657,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_model.py",
+      "sha": "48b86dfbd8e62a52ce25ce1693828c343c856e59",
+      "size": 2865,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_modul_3D_P20C.py",
+      "sha": "844aa4683729ddb1fddd2a0a7fe2be2ee02e8b53",
+      "size": 6763,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_naped_nieliniowy.py",
+      "sha": "5013b4d5675f3e5152b5d225ad2c74e24e7e3cd1",
+      "size": 7169,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_nasycenie_P22B.py",
+      "sha": "655b107241f396c6c484e8a65db6d64992b7118d",
+      "size": 8383,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_niepewnosc.py",
+      "sha": "0566a491046af0a05e884a1f5f65e3b81b8b0911",
+      "size": 5700,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_nieszczelnosci.py",
+      "sha": "7156e32d91dd8b25f25ccd8f691e703e4ba8fefe",
+      "size": 8912,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_pakiet_gazu.py",
+      "sha": "3db658b30d84ad5c7e51a7fa48c35eb8444a83c4",
+      "size": 4254,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_pakiet_nieliniowy.py",
+      "sha": "59a7e830815fc4b754c0c12267c4511ae9eed243",
+      "size": 7194,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_pakiet_pamieci.py",
+      "sha": "e6bffabd574c05df2cb16b5959f60b386db2bf6a",
+      "size": 7051,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_pakiet_promieniowania.py",
+      "sha": "e8f8243f90ff27dc7d916f417f51ee6fa538673e",
+      "size": 4786,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_pamiec_cewki.py",
+      "sha": "68dceacc81d33df6b7bd558ae24ad088b8372bab",
+      "size": 8707,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_pokoj.py",
+      "sha": "29ba585fdb03d94fc517d197faa941e9d3a9fb61",
+      "size": 5091,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_polaczenie_normalne_P19.py",
+      "sha": "48745f9f42e2bd383e80790a2855b90313c26589",
+      "size": 3048,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_port_wzmacniacza_P22A.py",
+      "sha": "647a3d61b01df4b895adf07866cd5107253e60c5",
+      "size": 6222,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_promieniowanie.py",
+      "sha": "91997f4e64d99856d0b212df8dc1b0bf59be94cd",
+      "size": 7997,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_przegrode_P20B.py",
+      "sha": "c2068219697a4c9de0ae3fee91a210add997d4a8",
+      "size": 11761,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_reakcje_powietrza_P21A.py",
+      "sha": "bc9d83571ac31fc8bc28cb19ff4dc1adc10a6688",
+      "size": 3052,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_siatke_modulu_P20C.py",
+      "sha": "1e5bfc5e77879c4168875c5c6afcb683e6667a4a",
+      "size": 4691,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_styk_czasowy_P19C.py",
+      "sha": "b536f8f7a4eef46835e24480a27a9941f72e79d5",
+      "size": 4249,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_styk_i_defekt_P19D.py",
+      "sha": "12979c64b13323353f3eb6439c9600d8c3654bcc",
+      "size": 3412,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_swiadkow_P24A.py",
+      "sha": "8a00f5543a55034b3750ed54213a33572259733c",
+      "size": 4459,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_swiadkow_p06.py",
+      "sha": "799a485bc6a7c9960589eb69eeff16073393d5bd",
+      "size": 3842,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_synteze_P17.py",
+      "sha": "4e26ba035c4e2e40472a80eefda3d55a145d36a7",
+      "size": 7500,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_transfer_P19G.py",
+      "sha": "f35d3bfa0442f7dc61297d124276ce0aa028802d",
+      "size": 5494,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_warstwy_ramy_P18C.py",
+      "sha": "c63c7979cf25890acbf14096f3aae9098a1adcd3",
+      "size": 1553,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_wklady_P20A.py",
+      "sha": "53cd656d5fb3af92ca8108a56435718ed8fe9c51",
+      "size": 8250,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sprawdz_zbieznosc_pokoju_P11.py",
+      "sha": "948b445313f35464d3ff93daa1f10fff5930b762",
+      "size": 4902,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/sygnaly_P14.py",
+      "sha": "5fa0a2668bfd4cd643085f6ce6ec3db3010d1d1a",
+      "size": 4119,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/synteza_P29A.py",
+      "sha": "e1edd43549d9f80373244828b359dc02ad465548",
+      "size": 2713,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/synteza_granic_P17.py",
+      "sha": "1096b55b16c07532cf0d73b115b0ef5064c0be7d",
+      "size": 4489,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/szukaj_swiadka_LMI_P24.py",
+      "sha": "9569b6c90121cf965d86c9b0d2b6508cb94fb5c7",
+      "size": 2864,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/tabela_z_certyfikatow_P24A.py",
+      "sha": "a8eabaddd33b934704b6d11df728abb7640b65ee",
+      "size": 2071,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/termodynamika_nieliniowa.py",
+      "sha": "983e6eea117152cddaae9cc886afc2cb88bae4ca",
+      "size": 5525,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/uruchom_badania.py",
+      "sha": "d9299184d9f6af15885e2faf264b4114f9133d36",
+      "size": 11352,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/uzupelnienie_siatki_ramy_P18C.py",
+      "sha": "ece822ae075d7327a8c9e2d72591796d1f095e5f",
+      "size": 5427,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/uzupelnij_zbieznosc_P19G.py",
+      "sha": "512930fdf1cce96d3ddbdb6dcdea5175fb07ce38",
+      "size": 1676,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/weryfikacja_i_geometria_P29.py",
+      "sha": "6045aee73c6e5cb8a8ddef2fd9b7e59021b35a28",
+      "size": 5785,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/wizualizuj_sobol.py",
+      "sha": "0491f57e1e40050c546f4ffa8286b12d546ef48d",
+      "size": 2012,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/wklady_przestrzenne_P21C3.py",
+      "sha": "24743b30b3c2752a5235537262f3f282c9fa1548",
+      "size": 4887,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/wrazliwosc_P29C.py",
+      "sha": "ecda1ce0b3f1560c31f8b07338ca46c873ac4008",
+      "size": 3305,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/wykresy_frontu_i_styku_P18B_P19B.py",
+      "sha": "0d5e1235cf9f150ddd8937e4b9ffe213960606b0",
+      "size": 6939,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/wykresy_i_ocena_P19G.py",
+      "sha": "a1f2aa7dedf3deebf79592a37b2f64c5180c573c",
+      "size": 7406,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/wykresy_i_ocena_gazu_P21B.py",
+      "sha": "ccb07b60bcd9f5c0f5bf86184b194a674a57ae33",
+      "size": 9846,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/wykresy_i_ocena_modulu_P20C.py",
+      "sha": "1940ae661bb7615bf347fa41eacf5e8d515026cd",
+      "size": 10976,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/wykresy_i_ocena_przegrody_P20B.py",
+      "sha": "436afc2933318ec4efda92fcd707a16f27aeb6ae",
+      "size": 10556,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/wykresy_i_ocena_wkladow_P20A.py",
+      "sha": "ca5ad84ba995c5f3b4c5cb3de03436800d52fdbf",
+      "size": 11050,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/wykresy_listwy_P19F.py",
+      "sha": "f1feef98b9da88eb0ee99a04e61864fd98ec0711",
+      "size": 6246,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/wykresy_mechaniki_P18_P19_P21.py",
+      "sha": "fc1e2d64cee6c11136bca47ba32a16e2661c01c0",
+      "size": 8978,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/wykresy_ramy_3D_P18C.py",
+      "sha": "e4e21c85c121e0264dbdfc229904fa716ef3c892",
+      "size": 9929,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/wykresy_styku_czasowego_P19C.py",
+      "sha": "566b0744d126df8604df1b5b3498f947f9fe895d",
+      "size": 3969,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/wymagania_zlaczy_i_pretow_P19.py",
+      "sha": "58134aaef081dd85ef7860ac9156e2dcfae8382b",
+      "size": 5867,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/wymagany_modul_kleju_P20C.py",
+      "sha": "3217a7bbedaab2630d86e7ad7766fef650dcfc6b",
+      "size": 4507,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/wymagany_modul_relaksacji_P19.py",
+      "sha": "ce9866619ee356674f92acd41996ef0bdacddb3a",
+      "size": 2909,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/wymagany_modul_spoin_ramy_P19E.py",
+      "sha": "299c8a1026e0da1c0423ced1fe730dc67b6aa1e3",
+      "size": 3571,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/zachowaj_swiadkow_P14B.py",
+      "sha": "cbcc10dcb0635f8beda3ce666f1f070745a92e5a",
+      "size": 1452,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/zapisz_pole_referencyjne_P19F.py",
+      "sha": "06cf1d83b721ff15a08025783109d36ce71dcec3",
+      "size": 2647,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "skrypty/zbierz_opinie_puli.py",
+      "sha": "e9ad95a0c7c600e9400cc008a99749c2048817c5",
+      "size": 5508,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "wyniki/97_P29_wybor_i_front.png",
+      "sha": "85a3621a2c1f3974c314780fbd72fc49ef0f7630",
+      "size": 163665,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "wyniki/manifest_rekomendacji_P29.json",
+      "sha": "5fd7db2e7fd9895c46e1a92cd79f9a1464c122d6",
+      "size": 37711,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "wyniki/p18d_front.json",
+      "sha": "18331a6a3710b3b03b4bf10744300c31e8fcb5a2",
+      "size": 9185,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "wyniki/p21c3_dogeszczenie.json",
+      "sha": "c6856c0820c6e53ff07f0769a797c3dffe4dfdc4",
+      "size": 986,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "wyniki/p21c3_wyniki.json",
+      "sha": "836f6d5ef560e1b616e6b7068f81dcca1cf4618a",
+      "size": 10610,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "wyniki/p29_interpretacja.json",
+      "sha": "42b0cf92aa368589733b88990b86abd35f04bd8f",
+      "size": 1196,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "wyniki/p29_kontrole_i_geometria.json",
+      "sha": "fa4436917c93cdbe01c8b5d928b6a114eabc515d",
+      "size": 1393,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "wyniki/p29a_screening.csv",
+      "sha": "0d3fafb4491fd562ea1f0d3faa10d470da5346a7",
+      "size": 78556,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "wyniki/p29a_stress_samples.npy",
+      "sha": "ebf3ddf0ac5ffb29d6fa22d0d7297385fd434a0f",
+      "size": 49376,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "wyniki/p29b_podsumowanie.json",
+      "sha": "f48195ada505ff0f3186ef15ba8c7767e373d0a6",
+      "size": 4262,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "wyniki/p29b_warstwa_naped.csv",
+      "sha": "432a5505d692650fc525313ecd69cadd40dce524",
+      "size": 2097811,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "wyniki/p29b_wieloton.csv",
+      "sha": "62ab8e1cda125b00b20c7a0919307c8b0f5c9386",
+      "size": 1542,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "wyniki/p29c_grzanie.csv",
+      "sha": "bfdcef607b0fb3f9a6cf09fcde3ab6113c5cc774",
+      "size": 11027,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "wyniki/p29c_objetosc.csv",
+      "sha": "aa64624500d9df56febeb5ca52f7a8a74def3273",
+      "size": 2085,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    },
+    {
+      "path": "wyniki/p29c_podsumowanie.json",
+      "sha": "870352631637fc4974581c7099d05bb6615252b5",
+      "size": 4571,
+      "origin": "SUB_prototyp_rekomendacja_PR_20261030.zip"
+    }
+  ]
+}

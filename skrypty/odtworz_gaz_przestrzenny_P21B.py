@@ -11,7 +11,7 @@ def main():
     from odtworz_wszystko import assert_no_live_spatial_campaign
     assert_no_live_spatial_campaign()
     from sprawdz_gaz_3D_P21B import main as checks
-    from analiza_gazu_przestrzennego_P21B import main as study
+    from wznow_P21B_z_checkpointami import main as study
     from granica_obciazenia_P21B import main as bound
     from asymptotyka_gazu_P21B import main as asymptote
     from wykresy_i_ocena_gazu_P21B import main as figures

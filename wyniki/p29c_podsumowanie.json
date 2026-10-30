@@ -1,0 +1,196 @@
+{
+  "scope": "512 same Sobol points, 121 f 20\u201380 Hz, independent steady sinusoids 2pi/1m/RMS; not tolerance population or continuous-domain proof",
+  "thermal_coefficients": {
+    "C01": [
+      91.83465531356454,
+      79.26783202957157
+    ],
+    "C02": [
+      95.79678678044436,
+      80.1885348168467
+    ],
+    "C03": [
+      91.69859003437458,
+      79.31675255930199
+    ],
+    "C04": [
+      91.23598594045092,
+      82.19898620600519
+    ],
+    "C05": [
+      85.81970630955327,
+      80.17842410199157
+    ],
+    "C06": [
+      91.8403062228329,
+      79.51062309605122
+    ],
+    "C07": [
+      87.11557358054372,
+      74.84797381489362
+    ],
+    "C08": [
+      91.14702945338463,
+      78.86440717916334
+    ],
+    "C09": [
+      89.80276979322105,
+      84.66958849687293
+    ],
+    "C10": [
+      91.83912679589945,
+      83.59222946776586
+    ],
+    "C11": [
+      98.46653729240674,
+      76.41094369770789
+    ],
+    "C12": [
+      88.69919850149623,
+      79.99636319575161
+    ],
+    "C13": [
+      86.50323779429313,
+      78.87901322420274
+    ],
+    "C14": [
+      91.05392532797575,
+      77.31207480127141
+    ],
+    "C15": [
+      95.21802138839945,
+      76.60943173889166
+    ],
+    "C16": [
+      94.79188090015236,
+      77.04008726108171
+    ],
+    "C17": [
+      89.80276979322105,
+      86.54163399813342
+    ],
+    "C18": [
+      88.99874162088929,
+      80.97170508055343
+    ],
+    "C19": [
+      94.4578509878321,
+      81.26043822482498
+    ],
+    "C20": [
+      95.79798326638027,
+      74.29138339810945
+    ],
+    "C21": [
+      97.16092199987617,
+      73.80031262931374
+    ],
+    "C22": [
+      90.52603679305125,
+      79.65625553110635
+    ],
+    "C23": [
+      90.87073633121007,
+      81.40548893766722
+    ],
+    "C24": [
+      94.2498726650561,
+      78.80233790119253
+    ],
+    "C25": [
+      89.63717589388592,
+      83.41480356735495
+    ],
+    "C26P": [
+      91.23598594045092,
+      77.04501403258053
+    ],
+    "C26S": [
+      91.23598594045092,
+      77.04501403258053
+    ]
+  },
+  "C02_C11_crossover_pcu_W": 86.81290882086273,
+  "shared_grid_reproduction_max_db_error": 1.4210854715202004e-14,
+  "first_integer_volume_within_point2_db": 99,
+  "plateau_db": 95.79678678044436,
+  "depth_budget": [
+    {
+      "body_depth_mm": 450,
+      "external_protrusion_budget_mm": 50,
+      "inside_depth_mm": 384,
+      "net_nominal_10_modules_l": 107.40572800000001,
+      "net_nominal_16_modules_l": 89.045728,
+      "old_module_to_mat_gap_mm": -26,
+      "old_layout_nonintersecting": false
+    },
+    {
+      "body_depth_mm": 460,
+      "external_protrusion_budget_mm": 40,
+      "inside_depth_mm": 394,
+      "net_nominal_10_modules_l": 111.21788800000002,
+      "net_nominal_16_modules_l": 92.857888,
+      "old_module_to_mat_gap_mm": -16,
+      "old_layout_nonintersecting": false
+    },
+    {
+      "body_depth_mm": 466,
+      "external_protrusion_budget_mm": 34,
+      "inside_depth_mm": 400,
+      "net_nominal_10_modules_l": 113.50518400000001,
+      "net_nominal_16_modules_l": 95.145184,
+      "old_module_to_mat_gap_mm": -10,
+      "old_layout_nonintersecting": false
+    },
+    {
+      "body_depth_mm": 470,
+      "external_protrusion_budget_mm": 30,
+      "inside_depth_mm": 404,
+      "net_nominal_10_modules_l": 115.03004800000002,
+      "net_nominal_16_modules_l": 96.67004800000001,
+      "old_module_to_mat_gap_mm": -6,
+      "old_layout_nonintersecting": false
+    },
+    {
+      "body_depth_mm": 476,
+      "external_protrusion_budget_mm": 24,
+      "inside_depth_mm": 410,
+      "net_nominal_10_modules_l": 117.31734400000002,
+      "net_nominal_16_modules_l": 98.957344,
+      "old_module_to_mat_gap_mm": 0,
+      "old_layout_nonintersecting": true
+    },
+    {
+      "body_depth_mm": 480,
+      "external_protrusion_budget_mm": 20,
+      "inside_depth_mm": 414,
+      "net_nominal_10_modules_l": 118.842208,
+      "net_nominal_16_modules_l": 100.48220799999999,
+      "old_module_to_mat_gap_mm": 4,
+      "old_layout_nonintersecting": true
+    }
+  ],
+  "heat_winner_transitions": [
+    {
+      "pcu_w": 25,
+      "winner": "C19",
+      "best_minband_db": 94.4578509878321,
+      "C02_db": 94.16793490356707,
+      "C11_db": 90.39034378442827
+    },
+    {
+      "pcu_w": 27,
+      "winner": "C02",
+      "best_minband_db": 94.50217245843658,
+      "C02_db": 94.50217245843658,
+      "C11_db": 90.72458133929777
+    },
+    {
+      "pcu_w": 87,
+      "winner": "C11",
+      "best_minband_db": 95.80613622389407,
+      "C02_db": 95.79678678044436,
+      "C11_db": 95.80613622389407
+    }
+  ]
+}

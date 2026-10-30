@@ -64,15 +64,15 @@ pakietu samym stworzeniem planu, testów ani listy bibliotek.
 | P18 | Płyty MDF: drgania, naprężenia, promieniowanie | Częściowo — wykonane P18A/P18B/P18C | Raport029:płyty. Raport033:front. Raport035:pełna rama6brył/12spoin,siatki do36771DOF,168punktówharmonicznych,ściągi i podparcie. U-021:frontstały;geometria finalna,frez,promieniowanie i porównanieMDF/sklejka zR3 otwarte |
 | P19 | Usztywnienia, połączenia i klej | Częściowo — wykonane rodziny P19A–P19G | Raporty030–040:spoiny,styk,pełna rama,listwa. Raport041:24podmodele/144okna/do102033DOF,przekazanie stóp i dwa kierunki siatki. Wpływ pola N14/N18 większy niż ostatnie lokalne zagęszczenia;nośność,Gc,SN/J(t) i identyfikacjaMDF otwarte |
 | P20 | Regulacja objętości | Częściowo — P20A/P20B/P20C w rodzinach kontrolnych | Raport042:108układów/78modułów. Raport043:56modeli przegrody. Raport044:18brył zklejem,1944porty gazu,11664punkty napędu27konfiguracji,24pełne MES+gaz,ciągłe wymaganieE,8flag siatki rozstrzygnięte n16/do40248DOF. Pole3D gazu,rzeczywisty mechanizm i mocowania otwarte |
-| P21 | Wewnętrzne pole i sprzężenie paneli | Częściowo — wykonane odniesienie P21A | Raport031:72punktyRayleigh/MITC/gaz0D. P20C:pełna mechanika3Dmodułu z dwoma portami jednolitego gazu,nie przestrzenny gaz. Następne P21B:wewnętrzny gaz modułu i zgodna granica;potem główna komora z wypełnieniem/regulacją |
+| P21 | Wewnętrzne pole i sprzężenie paneli | Częściowo — P21B wykonane, P21C0 wykonany jako pilot | Raport045:18modeli/132układy/264pola; 17 zapisów zachowano, 1 dokończono. Raport050:27płytkich geometrii/600punktów, szereg z analityczną sumą głębokości i granicą ogona, niezależne FV. Główna komora z regulacją, włókniną, podatnymi ścianami i napędem pozostaje otwarta |
 | P22 | Napęd, impedancja wyjściowa i clipping | Częściowo — P22A/P22B wykonane | Raport047:3240pasywnychportów/19440punktów. Raport048:648trajektorii z saturacją i G0/10,stanLe/SEM,7ciągłychODE/28kroków/100root,208wyjść poza odniesienieX zachowanych. Nie jest to identyfikacja elektroniki lub gwarancja limituI/X/T;pełneLC/temperatura/sterowanie otwarte |
 | P23 | Cyfrowa korekcja, faza i opóźnienia | Częściowo — P23A wykonane | Raport046:27konfiguracji,972projekty/4860kaskad,19440sekcji,300granicHP,9przebiegówsoftware,45kontroli80cyfr+3świadków,12kolejności/48wyjśćpośrednich. Faza/opóźnienie własne filtru,nie latencja hardware;integracja fizycznego głośnika i ochrony otwarta |
 | P24 | Dynamiczna ochrona | Częściowo — P24A wykonane w rodzinie | Raport049:972dokładne świadki wspólnego obszaru X/I/θ,1944końceT,6804próby/3odrzucone,36ciągłychODE,11664porównańsinusów. Cały przedziałRe(T) i dowolny bounded-input w zadanym modelu;nie fizyczna certyfikacja. LC,nieliniowości,filtry/rekonstrukcja i szersza niepewność otwarte |
 | P25 | Sygnały wielotonowe i realistyczne | Częściowo — dwa tony | P14A daje wspólne V/I/X dla sumy2tonów i12pilotów. Więcej tonów, realistyczne widma, clipping i ochrona pozostają do wykonania; nie sumować osobnych limitów sinusów |
 | P26 | Zespolony model pokoju ze stratami | Częściowo | Rodzina modalna, 4 ustawienia × 9 scenariuszy strat; Green 1D, pasywność i zbieżność, raport 013. P11 dodaje reakcję pola na napęd i gęstą siatkę, raport 017. Pozycje/straty i rozpraszanie na bryle rzeczywistej pozostają nieznane |
 | P27 | Jeden/dwa subwoofery i ustawienie | Częściowo | 4 scenariusze przy monitorach, 15 876 wierszy S0, 1512 diagnostycznych, 120 przypadków fazy i 48 koniecznych testów gabarytu. U-020 zmienia docelowo kanapę na prawą iRTV na lewą stronę rzutu; konfiguracjav2 i raport019. Wymiary U-019 aktualne; dawne S0 i pozycje nadal nie są pomiarem |
-| P28 | Integracja monitorów i8wyjśćDSP | Do wykonania | Wyłącznie architektura i modele sekcji; zakup/model monitorów odłożony |
-| P29 | Odporna optymalizacja wielokryterialna | Do wykonania | Pula ma26produktów/27konfiguracji, wspólne porównanie liniowe; noweSB nie mają jeszcze rozszerzeniaP06/P17; pojedynczy wybór po integracjiTHD/termiki/DSP/konstrukcji |
+| P28 | Integracja monitorów i8wyjśćDSP | Częściowo — macierz 2→8 i idealne LR4 | Raport053: kontrola sumowania i stabilne filtry software; faza, opóźnienia i realne monitory nadal nieznane |
+| P29 | Odporna optymalizacja wielokryterialna | Częściowo — warunkowa rekomendacja C02 | Raporty052–055: 27 konfiguracji, stres Sobola, warstwy/wkłady/front, wrażliwość Pcu i V; nie zintegrowano rzeczywistego THD, chłodzenia i pełnej konstrukcji |
 | P30 | Odtwarzalność i przyszły protokół | Częściowo | Kod, hashe i archiwa; pełny rejestr hipotez oraz eksperymentów rozróżniających do zamknięcia |
 
 ## Bramka końcowego raportu
@@ -128,3 +128,44 @@ nie zamykać wyboru metody zgóry. Potem
 czasoweDSP/napędP22–P25, pokójP26–P28 i integracjaP29/P30.
 Poszukiwanie danych materiałowych i nieliniowych może toczyć się równolegle
 z obliczeniami niewymagającymi tych danych. Nie wykonywać zakupów.
+
+## Aktualizacja 2026-10-29 — następny krok po P21B/P21C0
+
+Zamknięto zadaną rodzinę P21B, zachowując historyczną migawkę 17/18.
+P21C0 bada puste sztywne komory o głębokości do 500 mm i skończone
+źródło kwadratowe; nie zamyka całego P21C. Teraz: uzgodnić port
+skończonej membrany i Mmd/Mms, następnie dodać przestrzenną regulację,
+wypełnienie i podatność ścian. Nie przenosić małej korekty małego modułu
+na port głównej komory. P29, końcowy wybór i PDF pozostają otwarte.
+
+
+## Postęp 2026-10-30 — P21C1, wyłącznie badania lokalne
+
+Użytkownik wstrzymał publikację i PR; nie ponawiać zapisu GitHub.
+Raport 051: równoważny tłok kołowy z Sd 26 produktów, 27 geometrii,
+1103 dopuszczone źródła, 301 odrzuconych, 6618 punktów i 451 par położeń.
+To model pustej sztywnej komory, nie rzeczywisty stożek/kosz lub finalny Vb.
+Rzędy 80/160/320; Parseval ogranicza ogon do 3.943e-5 R (ocena float).
+Sześć niezależnych całek po dysku oraz trzy świadki obrotu, masy i rzędu 640.
+Zmiana bezwładności po przesunięciu do 4.215 g; nie dodawać jej bez
+uzgodnienia do Mms. Wykres 96 sprawdzony wizualnie; dane i hashe p21c1/manifest_P21C1.
+Następny krok: kołowy port z przestrzennym wypełnieniem i regulacją,
+następnie podatne ściany i bilans mas napędu. Wybór/PDF pozostają otwarte.
+
+
+## Postęp 2026-10-30 — P21C2/C3, P18D i P29A/B/C
+
+Nowsze polecenie użytkownika ponownie autoryzuje PR oraz kontynuowanie badań;
+zastępuje wcześniejszy zakaz publikacji, ale nie zleca merge ani Release.
+Raporty 052–055: przestrzenne warstwy i wkłady, zagęszczenie FV, front
+z przesuniętym otworem, porównanie 27 konfiguracji i warunkowa rekomendacja
+C02 RSS390HF-4, start około 120 l, regulacja 100/120/150 l.
+Korpus 880×480×500 mm, front 44 mm; całkowity obrys z maskownicą nadal otwarty.
+P29C koryguje regułę: próg 0,2 dB spełnia już 100 l (99 l na nowej siatce),
+120 l to punkt eksperymentu, nie matematycznie minimalna objętość.
+Przecięcie C02/C11 przy 86,813 W jest wynikiem scenariusza, nie pomiarem
+chłodzenia. Przy 470 mm obecne wkłady kolidują z matą na 6 mm.
+Hashe: wyniki/manifest_rekomendacji_P29.json. Brak pomiarów urządzenia,
+realnego presetu ochrony X/T i pełnego sprzężenia; nie zamykać 30 pakietów.
+Najbliższy krok: spójna geometria wręg/dostępu/obrysu, następnie ochrona
+czasowa nowego układu. Zachować stare dane, nie dodawać masy powietrza dwa razy.

@@ -1,0 +1,28 @@
+{
+  "status": "SPATIAL_MODULE_FINDINGS_NOT_FULL_MAIN_CABINET_OR_MATERIAL_IDENTIFICATION",
+  "field_rows": 264,
+  "comparison_rows": 132,
+  "numerical_flagged_rows": 0,
+  "max_uniform_admittance_change_at_probes": 5.251578137064856e-05,
+  "max_uniform_admittance_change_at_diagnostics": 0.02133867206523542,
+  "max_uniform_admittance_mesh_change_at_probes": 0.0391050471589834,
+  "max_absolute_deviation_mesh_change_pa_per_outer_pa": 3.3913386551505213e-07,
+  "minimum_gas_mode_reference_hz": 1030.137220244366,
+  "input_sha256": {
+    "dane/konfiguracje/p21b_gaz_przestrzenny_modulu.json": "f0c9ee91b8fd96ce788e1ff935cb8b0621aa6c1e8c84a39f958a8b5fa4ed661e",
+    "skrypty/wykresy_i_ocena_gazu_P21B.py": "af09515a429c123312c0c30086c092bafe03c92c8b4bb532260fc2323836cb7c",
+    "wyniki/p21b_pole_reference_9de2a58b864caa24.npz": "9f4ad35663ef777564bf474984d611c7ca2be08326da6717bdd23e1dd9206534",
+    "wyniki/p21b_podsumowanie.json": "75781f14490028b19722660b3b16454cb014f4b58de241c31b8fcb9886c5af8b",
+    "wyniki/p21b_modele_i_geometria.csv": "98cc2abb3f1a4844665daf9b084ecbbfe08158ed079089900baeba02c70a589a",
+    "wyniki/p21b_pola_i_energia.csv": "31b81d300c3a5d60daf144261272c87bdfc36db0cc715466840ae16aedf8687f",
+    "wyniki/p21b_porownanie_z0D.csv": "257d3eecc6f24d9438b874677c94398f7459c6c5242e721d594ab851591d8317",
+    "wyniki/p21b_macierze_admitancji.csv": "08a2daa990b229271af8c90df8c54aa933440b26287cdae5b5ac25d3e9a003e3",
+    "wyniki/p21b_kontrole_niezalezne.json": "eade53740af5bbf5d772099d26dcea459096b00ab2f1258c323b4f3bc653efd2"
+  },
+  "next": "P21C: główna komora z regulacją i wypełnieniem,rzeczywiste mocowanie i niejednorodne pole;nie zastępować tego samym modułem.",
+  "limitations": [
+    "Matched-case mesh changes and finite frequency samples,not a continuum certificate.",
+    "Large relative variation of small internal pressure is not large SPL,THD or a product ranking.",
+    "Rigid-cavity modes and lossless diagnostic responses do not identify physical coupled resonance peaks."
+  ]
+}
