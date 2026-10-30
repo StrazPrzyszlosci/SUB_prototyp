@@ -1,34 +1,51 @@
-# Publikacja wyników badań Work — inwentaryzacja 29–30.10.2026
+# Import badań ChatGPT Work — 29–30 października 2026
 
-**Status: IMPORT CZĘŚCIOWY.** Dokument podaje stan faktyczny, aby nie pomylić opublikowanych raportów z pełnym zbiorem danych, niezbędnym do reprodukcji badań.
+**Status: ZAKOŃCZONO PRZENIESIENIE PLIKÓW, 417/417 ZGODNYCH BAJTOWO NA GAŁĘZI.**
+Porównanie wykonano na gałęzi `badania/rekomendacja-c02-p29-20261030` po zapisaniu plików. Import pozostaje do przeglądu w PR i nie został automatycznie scalony z `main`.
 
-## Pakiety źródłowe (archiwa przygotowane w trybie Work)
+## Źródła
 
-| Archiwum | Rozmiar | SHA-256 |
-|---|---:|---|
-| `SUB_prototyp_badania_20261029.zip` | 34 183 508 B | `dc924c28457a0ac06d8c7ffe31da06bbaaceb5146333597ef98da687ef9a4dc2` |
-| `SUB_prototyp_P21C1_20261030.zip` | 634 267 B | `cc94596be15fb26af4e39a2d3f9217994e58c817d72c1be16f0e6b5fb69274e1` |
-| `SUB_prototyp_rekomendacja_PR_20261030.zip` | 20 416 511 B | `3765ed4bfa2852c9fa17024384fb4d6b8ae8d5ce1174790ab18748df2dbf62ab` |
+Zachowano wszystkie ścieżki wynikające z połączenia trzech archiwów
+przy priorytecie nowszych wersji identycznej ścieżki:
 
-Są to **archiwa przekazania**, nie trzy niezależne zbiory wyników: między nimi występują duplikaty, a nowsze wersje niektórych plików zastępują starsze. Po połączeniu ścieżek, z priorytetem najnowszego pakietu, inwentaryzacja wykazała 417 unikalnych plików. W chwili porównania 92 miały treść inną niż głowica gałęzi roboczej; obejmowały około 23,1 MB danych. Ta liczba nie oznacza 92 nowych raportów.
+| Archiwum Work | Rozmiar |
+|---|---:|
+| `SUB_prototyp_badania_20261029.zip` | 34 183 508 B |
+| `SUB_prototyp_P21C1_20261030.zip` | 634 267 B |
+| `SUB_prototyp_rekomendacja_PR_20261030.zip` | 20 416 511 B |
 
-## Publikacja
+Po usunięciu duplikatów ścieżek powstało **417 plików źródłowych**.
+Dla każdego obliczono obiektowy SHA Git: `sha1("blob "+len+NUL+oryginalne bajty)`.
+Porównanie z `GET /git/trees/<branch>?recursive=1` dało **417 zgodnych SHA, 0 braków**.
 
-- PR #1 został scalony z `main` (raporty 054 i 055). Jego scalenia nie wykonał mechanizm tego importu.
-- PR #2 (draft) obejmuje część pozostałych raportów i skryptów: raporty 050–053, dane wejściowe P21C1/P29A, skrypty P21C1/P21C2/P21C3/P29A/P29C i przykładowe JSON.
-- **Nie uznawać PR #2 za pełny import.** Pełne źródła, skrypty pomocnicze, wykresy i wyniki CSV/NPZ, zwłaszcza punkty kontrolne P21B i obszerne tabele P21C/P29, wymagają osobnego przeniesienia i weryfikacji SHA.
+Szczegółowy wykaz 417 pozycji, rozmiarów, SHA obiektów i archiwów:
+[`wyniki/manifest_importu_work_20261030.json`](../wyniki/manifest_importu_work_20261030.json).
 
-Zachować oryginalne archiwa do momentu pełnego porównania hashy w repozytorium. W paczce najnowszej znajduje się `zmiany.bundle` z lokalnym grafem commitów i instrukcją `PR.md`; nie jest to to samo co dokonany już import GitHub API.
+## Co przeniesiono
 
-## Status naukowy
+- Dokumentacja i raporty 045, 050–055; raporty 054–055 weszły do `main` przez wcześniejszy PR #1.
+- Skrypty badań P21B, P21C0, P21C1, P21C2, P21C3, P18D i P29.
+- Konfiguracje i dane wejściowe, wynikowe CSV i JSON (w tym ~1,9 MB `p21c1_membrana.csv` i ~2,1 MB `p29b_warstwa_naped.csv`).
+- Oryginalne wykresy PNG/SVG oraz macierze, snapshoty numeryczne i checkpointy NPZ (w tym ~3,4 MB `p21b_pole_reference_9de2a58b864caa24.npz`).
+- Indeksy projektowe i oryginalne manifesty badań.
 
-Wybór **RSS390HF-4 / ok. 120 l netto** jest warunkową rekomendacją symulacyjną. Zakres regulacji około 100/120/150 l, korpus 880×480×500 mm, front 44 mm i ograniczenie całkowitej głębokości 500 mm wymagają dalszej weryfikacji wykonawczej. Raport 055 koryguje próg objętości: 99 l jest pierwszym punktem na siatce co 1 l mieszczącym się 0,2 dB od modelowego plateau; 120 l to punkt startu prób, a nie matematyczne optimum.
+85 oryginalnych obiektów Work (ponad 21 MB), które istniały już w magazynie obiektów GitHub, włączono do gałęzi bez ponownego przesyłania ich bajtów: `create_tree` + `create_commit` + `update_ref`.
+Dla pozostałych sześciu brakujących obiektów utworzono nowe bloby przez API, zachowując oryginalne zakończenia wierszy CRLF w CSV.
+Część raportów była dodana wcześniej tradycyjnym `create_file`.
 
-Nie ma pomiarów zbudowanego prototypu, potwierdzonego THD, danych rzeczywistego chłodzenia lub finalnej ochrony czasowej DSP.
+## Stan publikacji
 
-## Warunek zakończenia importu
+- PR #1 (**scalony przez innego aktora**) obejmuje rekomendację oraz raport 055.
+- PR #2 (**scalony przez innego aktora**) obejmuje wstępną część skryptów i raportów.
+- Dalsza publikacja wszystkich pozostałych plików jest na gałęzi `badania/rekomendacja-c02-p29-20261030` i wymaga odrębnego PR do `main`; nie należy uznawać jej za już scaloną.
 
-1. Dla każdej zmienionej lub nowej ścieżki porównać SHA pliku z archiwum i GitHub.
-2. Dołączyć brakujące dane binarne/numeryczne, wykresy, komplet skryptów i zmodyfikowane indeksy.
-3. Sprawdzić zależności skryptów i odtwarzalność raportów w środowisku z bibliotekami wymienionymi w manifestach Work.
-4. Dopiero wtedy oznaczyć import jako kompletny. Nie scalać automatycznie PR #2.
+## Ograniczenia naukowe
+
+Zgodność plików **nie** oznacza niezależnego ponownego wykonania
+wszystkich symulacji, recenzji metodyki ani pomiarowego potwierdzenia wyników.
+Rekomendacja RSS390HF-4 i startowej komory około 120 l pozostaje
+warunkowa i modelowa. Weryfikacja konstrukcji, wysunięć poza korpus,
+limitu całkowitej głębokości 500 mm, ochrony DSP i pomiary prototypu
+pozostają otwarte.
+
+Pliki i wykresy są dostępne do recenzji. Nie łączyć PR automatycznie.
