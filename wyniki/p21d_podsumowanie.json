@@ -1,0 +1,89 @@
+{
+  "fine_mesh_statistics": [
+    {
+      "configuration": "150",
+      "proxy": "A",
+      "dof": 39331,
+      "Z_real": 33.01667176012489,
+      "Z_imag": -130.35575825549301,
+      "last_relative_port_change": 0.07579051289607273,
+      "last_change_scaled_to_0D": 0.005427628814179351,
+      "last_velocity_magnitude_change_dB": -0.0032719101070764938
+    },
+    {
+      "configuration": "150",
+      "proxy": "B",
+      "dof": 38750,
+      "Z_real": 33.31929950868263,
+      "Z_imag": 27.807035220384826,
+      "last_relative_port_change": 0.428562070561654,
+      "last_change_scaled_to_0D": 0.009904879034109502,
+      "last_velocity_magnitude_change_dB": -0.005921193596751703
+    },
+    {
+      "configuration": "120",
+      "proxy": "A",
+      "dof": 42496,
+      "Z_real": 63.42974865755963,
+      "Z_imag": -636.9784315533301,
+      "last_relative_port_change": 0.014797243399097583,
+      "last_change_scaled_to_0D": 0.004031084916522592,
+      "last_velocity_magnitude_change_dB": -0.0031560475574209847
+    },
+    {
+      "configuration": "120",
+      "proxy": "B",
+      "dof": 41643,
+      "Z_real": 63.79654005724158,
+      "Z_imag": -480.4709774413301,
+      "last_relative_port_change": 0.035929816705959586,
+      "last_change_scaled_to_0D": 0.0074112413036025535,
+      "last_velocity_magnitude_change_dB": -0.005683541605821581
+    },
+    {
+      "configuration": "100",
+      "proxy": "A",
+      "dof": 38064,
+      "Z_real": 306.3108079188023,
+      "Z_imag": -284.066228627338,
+      "last_relative_port_change": 0.041997391581171425,
+      "last_change_scaled_to_0D": 0.006261920964739134,
+      "last_velocity_magnitude_change_dB": -0.006105237017531682
+    },
+    {
+      "configuration": "100",
+      "proxy": "B",
+      "dof": 38038,
+      "Z_real": 307.6921871875916,
+      "Z_imag": -130.406365984622,
+      "last_relative_port_change": 0.0757195176550098,
+      "last_change_scaled_to_0D": 0.009031478956647073,
+      "last_velocity_magnitude_change_dB": -0.008576852294101028
+    }
+  ],
+  "motor_shape_statistics": [
+    {
+      "configuration": "150",
+      "relative_port_change": 1.1761783774197174,
+      "change_scaled_to_0D": 0.08423032656675379,
+      "velocity_magnitude_change_dB": -0.05016792603581177
+    },
+    {
+      "configuration": "120",
+      "relative_port_change": 0.24449437168241392,
+      "change_scaled_to_0D": 0.06660548504079811,
+      "velocity_magnitude_change_dB": -0.05011548400262328
+    },
+    {
+      "configuration": "100",
+      "relative_port_change": 0.367837049226153,
+      "change_scaled_to_0D": 0.05484546643105542,
+      "velocity_magnitude_change_dB": -0.04849314647168038
+    }
+  ],
+  "max_fine_port_change_scaled_to_0D": 0.009904879034109502,
+  "max_abs_fine_velocity_change_dB": 0.008576852294101028,
+  "max_abs_motor_shape_velocity_change_dB": 0.05016792603581177,
+  "all_primary_input_power_balance_max": 4.202737435416247e-16,
+  "scope": "Refinement witnesses only C02 80Hz. No accuracy certificate for C11/C06 or continuous band."
+}

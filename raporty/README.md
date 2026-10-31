@@ -66,3 +66,10 @@ bieżący zakres sprawdzaj w [programie 30 pakietów](../PROGRAM_30_BADAN.md).
 - [Raport 054 — rekomendowana konfiguracja pierwszego prototypu](054_rekomendowana_konfiguracja_prototypu.md).
 
 - [Raport 055 — P29C: kiedy zmienia się wybór i co mieści się w 50 cm](055_wrazliwosc_wyboru_i_margines_glebokosci.md).
+
+- [Raport 056 — audyt zakresów i bramki kolejnych badań](056_macierz_luk_i_bramek.md).
+- [Raport 057 — P20D: geometria, wkłady i pełna głębokość](057_P20D_geometria_dostep_i_pelna_glebokosc.md).
+- [Raport 058 — P25C: sygnały wielotonowe i ochrona](058_P25C_sygnaly_czasowe_i_bariera_energii.md).
+- [Raport 059 — P18E: podatne wręgi i panele](059_podatne_wregi_i_panele.md).
+- [Raport 060 — P21D: przestrzenne pole gazu i port](060_P21D_wspolna_geometria_i_port_napedu.md).
+- [Raport 061 — P26D/P27D: bryły, orientacje i dwa źródła](061_bryly_offset_i_dwa_subwoofery.md).

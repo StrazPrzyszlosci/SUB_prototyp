@@ -1,0 +1,4880 @@
+{
+  "scope": "Research geometry only. New module differs from P20C. Hardware retention and detailed basket solids not identified; conservative envelopes do not identify acoustic scatterer. Tolerances and grille dimensions are design scenarios, not supplier specifications.",
+  "variants": [
+    {
+      "W_mm": 880,
+      "D_mm": 440,
+      "H_mm": 500,
+      "gross_l": 142.574784,
+      "brace_l": 1.65264,
+      "mat_envelope_l": 18.317376,
+      "net0_nom_l": 135.48167478260868,
+      "net0_low_l": 130.3946113230769,
+      "net0_high_l": 140.5594576,
+      "net20_nom_l": 77.88167478260867,
+      "module_fill_clearance_mm": 3.0,
+      "collision_flags": [
+        "module_4_outside",
+        "module_4_brace",
+        "module_5_outside",
+        "module_5_brace",
+        "module_6_outside",
+        "module_7_outside",
+        "module_8_outside",
+        "module_8_brace",
+        "module_9_outside",
+        "module_9_brace",
+        "module_10_outside",
+        "module_10_brace",
+        "module_11_outside",
+        "module_11_brace",
+        "module_12_brace",
+        "module_12_module",
+        "module_13_brace",
+        "module_13_module",
+        "module_14_module",
+        "module_15_module",
+        "module_16_brace",
+        "module_16_module",
+        "module_17_brace",
+        "module_17_module",
+        "module_18_brace",
+        "module_18_module",
+        "module_19_brace",
+        "module_19_module"
+      ]
+    },
+    {
+      "W_mm": 880,
+      "D_mm": 450,
+      "H_mm": 500,
+      "gross_l": 146.386944,
+      "brace_l": 1.68168,
+      "mat_envelope_l": 18.317376,
+      "net0_nom_l": 139.26479478260867,
+      "net0_low_l": 134.15047932307692,
+      "net0_high_l": 144.3699096,
+      "net20_nom_l": 81.66479478260867,
+      "module_fill_clearance_mm": 13.0,
+      "collision_flags": [
+        "module_4_outside",
+        "module_4_brace",
+        "module_5_outside",
+        "module_5_brace",
+        "module_6_outside",
+        "module_7_outside",
+        "module_8_outside",
+        "module_8_brace",
+        "module_9_outside",
+        "module_9_brace",
+        "module_10_outside",
+        "module_10_brace",
+        "module_11_outside",
+        "module_11_brace",
+        "module_12_brace",
+        "module_12_module",
+        "module_13_brace",
+        "module_13_module",
+        "module_14_module",
+        "module_15_module",
+        "module_16_brace",
+        "module_16_module",
+        "module_17_brace",
+        "module_17_module",
+        "module_18_brace",
+        "module_18_module",
+        "module_19_brace",
+        "module_19_module"
+      ]
+    },
+    {
+      "W_mm": 880,
+      "D_mm": 460,
+      "H_mm": 500,
+      "gross_l": 150.199104,
+      "brace_l": 1.71072,
+      "mat_envelope_l": 18.317376,
+      "net0_nom_l": 143.04791478260867,
+      "net0_low_l": 137.90634732307691,
+      "net0_high_l": 148.1803616,
+      "net20_nom_l": 85.44791478260866,
+      "module_fill_clearance_mm": 23.0,
+      "collision_flags": [
+        "module_4_outside",
+        "module_4_brace",
+        "module_5_outside",
+        "module_5_brace",
+        "module_6_outside",
+        "module_7_outside",
+        "module_8_outside",
+        "module_8_brace",
+        "module_9_outside",
+        "module_9_brace",
+        "module_10_outside",
+        "module_10_brace",
+        "module_11_outside",
+        "module_11_brace",
+        "module_12_brace",
+        "module_12_module",
+        "module_13_brace",
+        "module_13_module",
+        "module_14_module",
+        "module_15_module",
+        "module_16_brace",
+        "module_16_module",
+        "module_17_brace",
+        "module_17_module",
+        "module_18_brace",
+        "module_18_module",
+        "module_19_brace",
+        "module_19_module"
+      ]
+    },
+    {
+      "W_mm": 880,
+      "D_mm": 470,
+      "H_mm": 500,
+      "gross_l": 154.011264,
+      "brace_l": 1.73976,
+      "mat_envelope_l": 18.317376,
+      "net0_nom_l": 146.8310347826087,
+      "net0_low_l": 141.6622153230769,
+      "net0_high_l": 151.9908136,
+      "net20_nom_l": 89.23103478260869,
+      "module_fill_clearance_mm": 33.0,
+      "collision_flags": [
+        "module_4_outside",
+        "module_4_brace",
+        "module_5_outside",
+        "module_5_brace",
+        "module_6_outside",
+        "module_7_outside",
+        "module_8_outside",
+        "module_8_brace",
+        "module_9_outside",
+        "module_9_brace",
+        "module_10_outside",
+        "module_10_brace",
+        "module_11_outside",
+        "module_11_brace",
+        "module_12_brace",
+        "module_12_module",
+        "module_13_brace",
+        "module_13_module",
+        "module_14_module",
+        "module_15_module",
+        "module_16_brace",
+        "module_16_module",
+        "module_17_brace",
+        "module_17_module",
+        "module_18_brace",
+        "module_18_module",
+        "module_19_brace",
+        "module_19_module"
+      ]
+    },
+    {
+      "W_mm": 880,
+      "D_mm": 480,
+      "H_mm": 500,
+      "gross_l": 157.823424,
+      "brace_l": 1.7688,
+      "mat_envelope_l": 18.317376,
+      "net0_nom_l": 150.61415478260867,
+      "net0_low_l": 145.41808332307693,
+      "net0_high_l": 155.8012656,
+      "net20_nom_l": 93.01415478260866,
+      "module_fill_clearance_mm": 43.0,
+      "collision_flags": [
+        "module_4_outside",
+        "module_4_brace",
+        "module_5_outside",
+        "module_5_brace",
+        "module_6_outside",
+        "module_7_outside",
+        "module_8_outside",
+        "module_8_brace",
+        "module_9_outside",
+        "module_9_brace",
+        "module_10_outside",
+        "module_10_brace",
+        "module_11_outside",
+        "module_11_brace",
+        "module_12_brace",
+        "module_12_module",
+        "module_13_brace",
+        "module_13_module",
+        "module_14_module",
+        "module_15_module",
+        "module_16_brace",
+        "module_16_module",
+        "module_17_brace",
+        "module_17_module",
+        "module_18_brace",
+        "module_18_module",
+        "module_19_brace",
+        "module_19_module"
+      ]
+    },
+    {
+      "W_mm": 940,
+      "D_mm": 440,
+      "H_mm": 500,
+      "gross_l": 152.807424,
+      "brace_l": 1.65264,
+      "mat_envelope_l": 19.685376,
+      "net0_nom_l": 145.69448869565218,
+      "net0_low_l": 140.49632209230768,
+      "net0_high_l": 150.88216617142857,
+      "net20_nom_l": 88.09448869565217,
+      "module_fill_clearance_mm": 3.0,
+      "collision_flags": [
+        "module_4_outside",
+        "module_4_brace",
+        "module_5_outside",
+        "module_5_brace",
+        "module_6_outside",
+        "module_7_outside",
+        "module_8_outside",
+        "module_8_brace",
+        "module_9_outside",
+        "module_9_brace",
+        "module_10_outside",
+        "module_10_brace",
+        "module_11_outside",
+        "module_11_brace",
+        "module_12_brace",
+        "module_13_brace",
+        "module_16_brace",
+        "module_17_brace",
+        "module_18_brace",
+        "module_19_brace"
+      ]
+    },
+    {
+      "W_mm": 940,
+      "D_mm": 450,
+      "H_mm": 500,
+      "gross_l": 156.893184,
+      "brace_l": 1.68168,
+      "mat_envelope_l": 19.685376,
+      "net0_nom_l": 149.75120869565217,
+      "net0_low_l": 144.5245900923077,
+      "net0_high_l": 154.96741817142856,
+      "net20_nom_l": 92.15120869565216,
+      "module_fill_clearance_mm": 13.0,
+      "collision_flags": [
+        "module_4_outside",
+        "module_4_brace",
+        "module_5_outside",
+        "module_5_brace",
+        "module_6_outside",
+        "module_7_outside",
+        "module_8_outside",
+        "module_8_brace",
+        "module_9_outside",
+        "module_9_brace",
+        "module_10_outside",
+        "module_10_brace",
+        "module_11_outside",
+        "module_11_brace",
+        "module_12_brace",
+        "module_13_brace",
+        "module_16_brace",
+        "module_17_brace",
+        "module_18_brace",
+        "module_19_brace"
+      ]
+    },
+    {
+      "W_mm": 940,
+      "D_mm": 460,
+      "H_mm": 500,
+      "gross_l": 160.978944,
+      "brace_l": 1.71072,
+      "mat_envelope_l": 19.685376,
+      "net0_nom_l": 153.80792869565218,
+      "net0_low_l": 148.5528580923077,
+      "net0_high_l": 159.05267017142856,
+      "net20_nom_l": 96.20792869565217,
+      "module_fill_clearance_mm": 23.0,
+      "collision_flags": [
+        "module_4_outside",
+        "module_4_brace",
+        "module_5_outside",
+        "module_5_brace",
+        "module_6_outside",
+        "module_7_outside",
+        "module_8_outside",
+        "module_8_brace",
+        "module_9_outside",
+        "module_9_brace",
+        "module_10_outside",
+        "module_10_brace",
+        "module_11_outside",
+        "module_11_brace",
+        "module_12_brace",
+        "module_13_brace",
+        "module_16_brace",
+        "module_17_brace",
+        "module_18_brace",
+        "module_19_brace"
+      ]
+    },
+    {
+      "W_mm": 940,
+      "D_mm": 470,
+      "H_mm": 500,
+      "gross_l": 165.064704,
+      "brace_l": 1.73976,
+      "mat_envelope_l": 19.685376,
+      "net0_nom_l": 157.8646486956522,
+      "net0_low_l": 152.58112609230767,
+      "net0_high_l": 163.13792217142856,
+      "net20_nom_l": 100.26464869565218,
+      "module_fill_clearance_mm": 33.0,
+      "collision_flags": [
+        "module_4_outside",
+        "module_4_brace",
+        "module_5_outside",
+        "module_5_brace",
+        "module_6_outside",
+        "module_7_outside",
+        "module_8_outside",
+        "module_8_brace",
+        "module_9_outside",
+        "module_9_brace",
+        "module_10_outside",
+        "module_10_brace",
+        "module_11_outside",
+        "module_11_brace",
+        "module_12_brace",
+        "module_13_brace",
+        "module_16_brace",
+        "module_17_brace",
+        "module_18_brace",
+        "module_19_brace"
+      ]
+    },
+    {
+      "W_mm": 940,
+      "D_mm": 480,
+      "H_mm": 500,
+      "gross_l": 169.150464,
+      "brace_l": 1.7688,
+      "mat_envelope_l": 19.685376,
+      "net0_nom_l": 161.92136869565218,
+      "net0_low_l": 156.6093940923077,
+      "net0_high_l": 167.22317417142855,
+      "net20_nom_l": 104.32136869565217,
+      "module_fill_clearance_mm": 43.0,
+      "collision_flags": [
+        "module_4_outside",
+        "module_4_brace",
+        "module_5_outside",
+        "module_5_brace",
+        "module_6_outside",
+        "module_7_outside",
+        "module_8_outside",
+        "module_8_brace",
+        "module_9_outside",
+        "module_9_brace",
+        "module_10_outside",
+        "module_10_brace",
+        "module_11_outside",
+        "module_11_brace",
+        "module_12_brace",
+        "module_13_brace",
+        "module_16_brace",
+        "module_17_brace",
+        "module_18_brace",
+        "module_19_brace"
+      ]
+    },
+    {
+      "W_mm": 980,
+      "D_mm": 440,
+      "H_mm": 500,
+      "gross_l": 159.629184,
+      "brace_l": 1.65264,
+      "mat_envelope_l": 20.597376,
+      "net0_nom_l": 152.50303130434784,
+      "net0_low_l": 147.2307959384615,
+      "net0_high_l": 157.76397188571428,
+      "net20_nom_l": 94.90303130434783,
+      "module_fill_clearance_mm": 3.0,
+      "collision_flags": []
+    },
+    {
+      "W_mm": 980,
+      "D_mm": 450,
+      "H_mm": 500,
+      "gross_l": 163.897344,
+      "brace_l": 1.68168,
+      "mat_envelope_l": 20.597376,
+      "net0_nom_l": 156.74215130434783,
+      "net0_low_l": 151.44066393846154,
+      "net0_high_l": 162.03242388571428,
+      "net20_nom_l": 99.14215130434782,
+      "module_fill_clearance_mm": 13.0,
+      "collision_flags": []
+    },
+    {
+      "W_mm": 980,
+      "D_mm": 460,
+      "H_mm": 500,
+      "gross_l": 168.165504,
+      "brace_l": 1.71072,
+      "mat_envelope_l": 20.597376,
+      "net0_nom_l": 160.9812713043478,
+      "net0_low_l": 155.65053193846154,
+      "net0_high_l": 166.3008758857143,
+      "net20_nom_l": 103.3812713043478,
+      "module_fill_clearance_mm": 23.0,
+      "collision_flags": []
+    },
+    {
+      "W_mm": 980,
+      "D_mm": 470,
+      "H_mm": 500,
+      "gross_l": 172.433664,
+      "brace_l": 1.73976,
+      "mat_envelope_l": 20.597376,
+      "net0_nom_l": 165.22039130434783,
+      "net0_low_l": 159.8603999384615,
+      "net0_high_l": 170.5693278857143,
+      "net20_nom_l": 107.62039130434782,
+      "module_fill_clearance_mm": 33.0,
+      "collision_flags": []
+    },
+    {
+      "W_mm": 980,
+      "D_mm": 480,
+      "H_mm": 500,
+      "gross_l": 176.701824,
+      "brace_l": 1.7688,
+      "mat_envelope_l": 20.597376,
+      "net0_nom_l": 169.4595113043478,
+      "net0_low_l": 164.07026793846154,
+      "net0_high_l": 174.83777988571427,
+      "net20_nom_l": 111.8595113043478,
+      "module_fill_clearance_mm": 43.0,
+      "collision_flags": []
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "H_mm": 500,
+      "gross_l": 163.040064,
+      "brace_l": 1.65264,
+      "mat_envelope_l": 21.053376,
+      "net0_nom_l": 155.90730260869566,
+      "net0_low_l": 150.59803286153846,
+      "net0_high_l": 161.20487474285713,
+      "net20_nom_l": 98.30730260869565,
+      "module_fill_clearance_mm": 3.0,
+      "collision_flags": []
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 450,
+      "H_mm": 500,
+      "gross_l": 167.399424,
+      "brace_l": 1.68168,
+      "mat_envelope_l": 21.053376,
+      "net0_nom_l": 160.23762260869566,
+      "net0_low_l": 154.89870086153846,
+      "net0_high_l": 165.5649267428571,
+      "net20_nom_l": 102.63762260869565,
+      "module_fill_clearance_mm": 13.0,
+      "collision_flags": []
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 460,
+      "H_mm": 500,
+      "gross_l": 171.758784,
+      "brace_l": 1.71072,
+      "mat_envelope_l": 21.053376,
+      "net0_nom_l": 164.56794260869563,
+      "net0_low_l": 159.19936886153846,
+      "net0_high_l": 169.92497874285712,
+      "net20_nom_l": 106.96794260869562,
+      "module_fill_clearance_mm": 23.0,
+      "collision_flags": []
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 470,
+      "H_mm": 500,
+      "gross_l": 176.118144,
+      "brace_l": 1.73976,
+      "mat_envelope_l": 21.053376,
+      "net0_nom_l": 168.89826260869566,
+      "net0_low_l": 163.50003686153843,
+      "net0_high_l": 174.28503074285712,
+      "net20_nom_l": 111.29826260869565,
+      "module_fill_clearance_mm": 33.0,
+      "collision_flags": []
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 480,
+      "H_mm": 500,
+      "gross_l": 180.477504,
+      "brace_l": 1.7688,
+      "mat_envelope_l": 21.053376,
+      "net0_nom_l": 173.22858260869566,
+      "net0_low_l": 167.80070486153846,
+      "net0_high_l": 178.6450827428571,
+      "net20_nom_l": 115.62858260869565,
+      "module_fill_clearance_mm": 43.0,
+      "collision_flags": []
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 440,
+      "H_mm": 500,
+      "gross_l": 166.450944,
+      "brace_l": 1.65264,
+      "mat_envelope_l": 21.509376,
+      "net0_nom_l": 159.31157391304347,
+      "net0_low_l": 153.96526978461537,
+      "net0_high_l": 164.64577759999997,
+      "net20_nom_l": 101.71157391304347,
+      "module_fill_clearance_mm": 3.0,
+      "collision_flags": []
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 450,
+      "H_mm": 500,
+      "gross_l": 170.901504,
+      "brace_l": 1.68168,
+      "mat_envelope_l": 21.509376,
+      "net0_nom_l": 163.73309391304346,
+      "net0_low_l": 158.35673778461538,
+      "net0_high_l": 169.09742959999997,
+      "net20_nom_l": 106.13309391304345,
+      "module_fill_clearance_mm": 13.0,
+      "collision_flags": []
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 460,
+      "H_mm": 500,
+      "gross_l": 175.352064,
+      "brace_l": 1.71072,
+      "mat_envelope_l": 21.509376,
+      "net0_nom_l": 168.15461391304348,
+      "net0_low_l": 162.74820578461538,
+      "net0_high_l": 173.5490816,
+      "net20_nom_l": 110.55461391304347,
+      "module_fill_clearance_mm": 23.0,
+      "collision_flags": []
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 470,
+      "H_mm": 500,
+      "gross_l": 179.802624,
+      "brace_l": 1.73976,
+      "mat_envelope_l": 21.509376,
+      "net0_nom_l": 172.5761339130435,
+      "net0_low_l": 167.13967378461535,
+      "net0_high_l": 178.0007336,
+      "net20_nom_l": 114.97613391304348,
+      "module_fill_clearance_mm": 33.0,
+      "collision_flags": []
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 480,
+      "H_mm": 500,
+      "gross_l": 184.253184,
+      "brace_l": 1.7688,
+      "mat_envelope_l": 21.509376,
+      "net0_nom_l": 176.99765391304348,
+      "net0_low_l": 171.5311417846154,
+      "net0_high_l": 182.45238559999999,
+      "net20_nom_l": 119.39765391304347,
+      "module_fill_clearance_mm": 43.0,
+      "collision_flags": []
+    }
+  ],
+  "selected": [
+    {
+      "W_mm": 980,
+      "D_mm": 450,
+      "H_mm": 500,
+      "gross_l": 163.897344,
+      "brace_l": 1.68168,
+      "mat_envelope_l": 20.597376,
+      "net0_nom_l": 156.74215130434783,
+      "net0_low_l": 151.44066393846154,
+      "net0_high_l": 162.03242388571428,
+      "net20_nom_l": 99.14215130434782,
+      "module_fill_clearance_mm": 13.0,
+      "collision_flags": [],
+      "inside_mm": [
+        936.0,
+        384.0,
+        456.0
+      ],
+      "brace_mass_range_kg": [
+        1.0930920000000002,
+        1.345344
+      ],
+      "shell_mass_range_kg": [
+        33.948131006681386,
+        41.78231508514632
+      ],
+      "regulation": [
+        {
+          "large": 2,
+          "small": 0,
+          "net_nom_l": 150.44215130434782,
+          "net_low_l": 145.07293368846155,
+          "net_high_l": 155.79969413571428
+        },
+        {
+          "large": 11,
+          "small": 1,
+          "net_nom_l": 120.29215130434783,
+          "net_low_l": 114.59505243846154,
+          "net_high_l": 125.97531538571427
+        },
+        {
+          "large": 16,
+          "small": 3,
+          "net_nom_l": 100.94215130434782,
+          "net_low_l": 95.02953656346153,
+          "net_high_l": 106.83930126071428
+        },
+        {
+          "large": 16,
+          "small": 4,
+          "net_nom_l": 99.14215130434782,
+          "net_low_l": 93.20644143846152,
+          "net_high_l": 105.06220638571428
+        }
+      ],
+      "braces_mm": [
+        [
+          [
+            426.0,
+            0.0,
+            0.0
+          ],
+          [
+            448.0,
+            384.0,
+            22.0
+          ]
+        ],
+        [
+          [
+            426.0,
+            0.0,
+            434.0
+          ],
+          [
+            448.0,
+            384.0,
+            456.0
+          ]
+        ],
+        [
+          [
+            426.0,
+            0.0,
+            22.0
+          ],
+          [
+            448.0,
+            10.0,
+            434.0
+          ]
+        ],
+        [
+          [
+            426.0,
+            362.0,
+            22.0
+          ],
+          [
+            448.0,
+            384.0,
+            434.0
+          ]
+        ],
+        [
+          [
+            681.0,
+            0.0,
+            0.0
+          ],
+          [
+            703.0,
+            384.0,
+            22.0
+          ]
+        ],
+        [
+          [
+            681.0,
+            0.0,
+            434.0
+          ],
+          [
+            703.0,
+            384.0,
+            456.0
+          ]
+        ],
+        [
+          [
+            681.0,
+            0.0,
+            22.0
+          ],
+          [
+            703.0,
+            10.0,
+            434.0
+          ]
+        ],
+        [
+          [
+            681.0,
+            362.0,
+            22.0
+          ],
+          [
+            703.0,
+            384.0,
+            434.0
+          ]
+        ],
+        [
+          [
+            198.0,
+            220.0,
+            0.0
+          ],
+          [
+            220.0,
+            384.0,
+            22.0
+          ]
+        ],
+        [
+          [
+            198.0,
+            220.0,
+            434.0
+          ],
+          [
+            220.0,
+            384.0,
+            456.0
+          ]
+        ],
+        [
+          [
+            198.0,
+            362.0,
+            22.0
+          ],
+          [
+            220.0,
+            384.0,
+            434.0
+          ]
+        ]
+      ],
+      "modules_mm": [
+        [
+          [
+            9.0,
+            218.0,
+            40.0
+          ],
+          [
+            189.0,
+            318.0,
+            140.0
+          ]
+        ],
+        [
+          [
+            9.0,
+            218.0,
+            316.0
+          ],
+          [
+            189.0,
+            318.0,
+            416.0
+          ]
+        ],
+        [
+          [
+            233.0,
+            218.0,
+            40.0
+          ],
+          [
+            413.0,
+            318.0,
+            140.0
+          ]
+        ],
+        [
+          [
+            233.0,
+            218.0,
+            316.0
+          ],
+          [
+            413.0,
+            318.0,
+            416.0
+          ]
+        ],
+        [
+          [
+            714.5,
+            168.0,
+            12.0
+          ],
+          [
+            924.5,
+            318.0,
+            112.0
+          ]
+        ],
+        [
+          [
+            714.5,
+            168.0,
+            342.0
+          ],
+          [
+            924.5,
+            318.0,
+            442.0
+          ]
+        ],
+        [
+          [
+            714.5,
+            168.0,
+            122.0
+          ],
+          [
+            924.5,
+            318.0,
+            222.0
+          ]
+        ],
+        [
+          [
+            714.5,
+            168.0,
+            232.0
+          ],
+          [
+            924.5,
+            318.0,
+            332.0
+          ]
+        ],
+        [
+          [
+            714.5,
+            8.0,
+            12.0
+          ],
+          [
+            924.5,
+            158.0,
+            112.0
+          ]
+        ],
+        [
+          [
+            714.5,
+            8.0,
+            342.0
+          ],
+          [
+            924.5,
+            158.0,
+            442.0
+          ]
+        ],
+        [
+          [
+            714.5,
+            8.0,
+            122.0
+          ],
+          [
+            924.5,
+            158.0,
+            222.0
+          ]
+        ],
+        [
+          [
+            714.5,
+            8.0,
+            232.0
+          ],
+          [
+            924.5,
+            158.0,
+            332.0
+          ]
+        ],
+        [
+          [
+            459.5,
+            168.0,
+            12.0
+          ],
+          [
+            669.5,
+            318.0,
+            112.0
+          ]
+        ],
+        [
+          [
+            459.5,
+            168.0,
+            342.0
+          ],
+          [
+            669.5,
+            318.0,
+            442.0
+          ]
+        ],
+        [
+          [
+            459.5,
+            168.0,
+            122.0
+          ],
+          [
+            669.5,
+            318.0,
+            222.0
+          ]
+        ],
+        [
+          [
+            459.5,
+            168.0,
+            232.0
+          ],
+          [
+            669.5,
+            318.0,
+            332.0
+          ]
+        ],
+        [
+          [
+            459.5,
+            8.0,
+            12.0
+          ],
+          [
+            669.5,
+            158.0,
+            112.0
+          ]
+        ],
+        [
+          [
+            459.5,
+            8.0,
+            342.0
+          ],
+          [
+            669.5,
+            158.0,
+            442.0
+          ]
+        ],
+        [
+          [
+            459.5,
+            8.0,
+            122.0
+          ],
+          [
+            669.5,
+            158.0,
+            222.0
+          ]
+        ],
+        [
+          [
+            459.5,
+            8.0,
+            232.0
+          ],
+          [
+            669.5,
+            158.0,
+            332.0
+          ]
+        ]
+      ],
+      "fill_box_mm": [
+        [
+          0.0,
+          334.0,
+          0.0
+        ],
+        [
+          936.0,
+          384.0,
+          456.0
+        ]
+      ],
+      "paths": [
+        {
+          "module": 0,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              104.99,
+              105.0,
+              228.0
+            ],
+            [
+              99.0,
+              105.0,
+              228.0
+            ],
+            [
+              99.0,
+              166.99,
+              228.0
+            ],
+            [
+              99.0,
+              268.0,
+              228.0
+            ],
+            [
+              99.0,
+              268.0,
+              90.0
+            ]
+          ]
+        },
+        {
+          "module": 1,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              104.99,
+              105.0,
+              228.0
+            ],
+            [
+              99.0,
+              105.0,
+              228.0
+            ],
+            [
+              99.0,
+              164.99,
+              228.0
+            ],
+            [
+              99.0,
+              166.99,
+              228.0
+            ],
+            [
+              99.0,
+              268.0,
+              228.0
+            ],
+            [
+              99.0,
+              268.0,
+              366.0
+            ]
+          ]
+        },
+        {
+          "module": 2,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              282.01,
+              105.0,
+              228.0
+            ],
+            [
+              313.01,
+              105.0,
+              228.0
+            ],
+            [
+              323.0,
+              105.0,
+              228.0
+            ],
+            [
+              323.0,
+              164.99,
+              228.0
+            ],
+            [
+              323.0,
+              166.99,
+              228.0
+            ],
+            [
+              323.0,
+              268.0,
+              228.0
+            ],
+            [
+              323.0,
+              268.0,
+              193.01
+            ],
+            [
+              323.0,
+              268.0,
+              90.0
+            ]
+          ]
+        },
+        {
+          "module": 3,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              282.01,
+              105.0,
+              228.0
+            ],
+            [
+              313.01,
+              105.0,
+              228.0
+            ],
+            [
+              323.0,
+              105.0,
+              228.0
+            ],
+            [
+              323.0,
+              164.99,
+              228.0
+            ],
+            [
+              323.0,
+              166.99,
+              228.0
+            ],
+            [
+              323.0,
+              268.0,
+              228.0
+            ],
+            [
+              323.0,
+              268.0,
+              262.99
+            ],
+            [
+              323.0,
+              268.0,
+              366.0
+            ]
+          ]
+        },
+        {
+          "module": 4,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              297.01,
+              105.0,
+              228.0
+            ],
+            [
+              317.99,
+              105.0,
+              228.0
+            ],
+            [
+              328.01,
+              105.0,
+              228.0
+            ],
+            [
+              521.01,
+              105.0,
+              228.0
+            ],
+            [
+              556.01,
+              105.0,
+              228.0
+            ],
+            [
+              572.99,
+              105.0,
+              228.0
+            ],
+            [
+              811.01,
+              105.0,
+              228.0
+            ],
+            [
+              819.5,
+              105.0,
+              228.0
+            ],
+            [
+              819.5,
+              139.99,
+              228.0
+            ],
+            [
+              819.5,
+              141.99,
+              228.0
+            ],
+            [
+              819.5,
+              243.0,
+              228.0
+            ],
+            [
+              819.5,
+              243.0,
+              193.01
+            ],
+            [
+              819.5,
+              243.0,
+              75.01
+            ],
+            [
+              819.5,
+              243.0,
+              62.0
+            ]
+          ]
+        },
+        {
+          "module": 5,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              297.01,
+              105.0,
+              228.0
+            ],
+            [
+              317.99,
+              105.0,
+              228.0
+            ],
+            [
+              328.01,
+              105.0,
+              228.0
+            ],
+            [
+              521.01,
+              105.0,
+              228.0
+            ],
+            [
+              556.01,
+              105.0,
+              228.0
+            ],
+            [
+              572.99,
+              105.0,
+              228.0
+            ],
+            [
+              606.49,
+              105.0,
+              228.0
+            ],
+            [
+              811.01,
+              105.0,
+              228.0
+            ],
+            [
+              819.5,
+              105.0,
+              228.0
+            ],
+            [
+              819.5,
+              139.99,
+              228.0
+            ],
+            [
+              819.5,
+              141.99,
+              228.0
+            ],
+            [
+              819.5,
+              243.0,
+              228.0
+            ],
+            [
+              819.5,
+              243.0,
+              262.99
+            ],
+            [
+              819.5,
+              243.0,
+              380.99
+            ],
+            [
+              819.5,
+              243.0,
+              392.0
+            ]
+          ]
+        },
+        {
+          "module": 6,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              297.01,
+              105.0,
+              228.0
+            ],
+            [
+              317.99,
+              105.0,
+              228.0
+            ],
+            [
+              328.01,
+              105.0,
+              228.0
+            ],
+            [
+              521.01,
+              105.0,
+              228.0
+            ],
+            [
+              556.01,
+              105.0,
+              228.0
+            ],
+            [
+              572.99,
+              105.0,
+              228.0
+            ],
+            [
+              606.49,
+              105.0,
+              228.0
+            ],
+            [
+              811.01,
+              105.0,
+              228.0
+            ],
+            [
+              819.5,
+              105.0,
+              228.0
+            ],
+            [
+              819.5,
+              139.99,
+              228.0
+            ],
+            [
+              819.5,
+              141.99,
+              228.0
+            ],
+            [
+              819.5,
+              243.0,
+              228.0
+            ],
+            [
+              819.5,
+              243.0,
+              193.01
+            ],
+            [
+              819.5,
+              243.0,
+              172.0
+            ]
+          ]
+        },
+        {
+          "module": 7,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              297.01,
+              105.0,
+              228.0
+            ],
+            [
+              317.99,
+              105.0,
+              228.0
+            ],
+            [
+              328.01,
+              105.0,
+              228.0
+            ],
+            [
+              521.01,
+              105.0,
+              228.0
+            ],
+            [
+              556.01,
+              105.0,
+              228.0
+            ],
+            [
+              572.99,
+              105.0,
+              228.0
+            ],
+            [
+              606.49,
+              105.0,
+              228.0
+            ],
+            [
+              606.49,
+              139.99,
+              228.0
+            ],
+            [
+              606.49,
+              141.99,
+              228.0
+            ],
+            [
+              606.49,
+              243.0,
+              228.0
+            ],
+            [
+              606.49,
+              243.0,
+              262.99
+            ],
+            [
+              606.49,
+              243.0,
+              275.01
+            ],
+            [
+              811.01,
+              243.0,
+              275.01
+            ],
+            [
+              819.5,
+              243.0,
+              275.01
+            ],
+            [
+              819.5,
+              243.0,
+              282.0
+            ]
+          ]
+        },
+        {
+          "module": 8,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              297.01,
+              105.0,
+              228.0
+            ],
+            [
+              317.99,
+              105.0,
+              228.0
+            ],
+            [
+              328.01,
+              105.0,
+              228.0
+            ],
+            [
+              521.01,
+              105.0,
+              228.0
+            ],
+            [
+              556.01,
+              105.0,
+              228.0
+            ],
+            [
+              572.99,
+              105.0,
+              228.0
+            ],
+            [
+              606.49,
+              105.0,
+              228.0
+            ],
+            [
+              606.49,
+              89.99,
+              228.0
+            ],
+            [
+              811.01,
+              89.99,
+              228.0
+            ],
+            [
+              819.5,
+              89.99,
+              228.0
+            ],
+            [
+              819.5,
+              88.01,
+              228.0
+            ],
+            [
+              819.5,
+              83.0,
+              228.0
+            ],
+            [
+              819.5,
+              83.0,
+              193.01
+            ],
+            [
+              819.5,
+              83.0,
+              178.99
+            ],
+            [
+              819.5,
+              83.0,
+              165.01
+            ],
+            [
+              819.5,
+              83.0,
+              75.01
+            ],
+            [
+              819.5,
+              83.0,
+              68.99
+            ],
+            [
+              819.5,
+              83.0,
+              62.0
+            ]
+          ]
+        },
+        {
+          "module": 9,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              297.01,
+              105.0,
+              228.0
+            ],
+            [
+              317.99,
+              105.0,
+              228.0
+            ],
+            [
+              328.01,
+              105.0,
+              228.0
+            ],
+            [
+              521.01,
+              105.0,
+              228.0
+            ],
+            [
+              556.01,
+              105.0,
+              228.0
+            ],
+            [
+              572.99,
+              105.0,
+              228.0
+            ],
+            [
+              606.49,
+              105.0,
+              228.0
+            ],
+            [
+              606.49,
+              89.99,
+              228.0
+            ],
+            [
+              811.01,
+              89.99,
+              228.0
+            ],
+            [
+              819.5,
+              89.99,
+              228.0
+            ],
+            [
+              819.5,
+              88.01,
+              228.0
+            ],
+            [
+              819.5,
+              83.0,
+              228.0
+            ],
+            [
+              819.5,
+              83.0,
+              262.99
+            ],
+            [
+              819.5,
+              83.0,
+              275.01
+            ],
+            [
+              819.5,
+              83.0,
+              288.99
+            ],
+            [
+              819.5,
+              83.0,
+              380.99
+            ],
+            [
+              819.5,
+              83.0,
+              385.01
+            ],
+            [
+              819.5,
+              83.0,
+              392.0
+            ]
+          ]
+        },
+        {
+          "module": 10,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              297.01,
+              105.0,
+              228.0
+            ],
+            [
+              317.99,
+              105.0,
+              228.0
+            ],
+            [
+              328.01,
+              105.0,
+              228.0
+            ],
+            [
+              521.01,
+              105.0,
+              228.0
+            ],
+            [
+              556.01,
+              105.0,
+              228.0
+            ],
+            [
+              572.99,
+              105.0,
+              228.0
+            ],
+            [
+              606.49,
+              105.0,
+              228.0
+            ],
+            [
+              606.49,
+              89.99,
+              228.0
+            ],
+            [
+              811.01,
+              89.99,
+              228.0
+            ],
+            [
+              819.5,
+              89.99,
+              228.0
+            ],
+            [
+              819.5,
+              88.01,
+              228.0
+            ],
+            [
+              819.5,
+              83.0,
+              228.0
+            ],
+            [
+              819.5,
+              83.0,
+              193.01
+            ],
+            [
+              819.5,
+              83.0,
+              178.99
+            ],
+            [
+              819.5,
+              83.0,
+              172.0
+            ]
+          ]
+        },
+        {
+          "module": 11,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              297.01,
+              105.0,
+              228.0
+            ],
+            [
+              317.99,
+              105.0,
+              228.0
+            ],
+            [
+              328.01,
+              105.0,
+              228.0
+            ],
+            [
+              521.01,
+              105.0,
+              228.0
+            ],
+            [
+              556.01,
+              105.0,
+              228.0
+            ],
+            [
+              572.99,
+              105.0,
+              228.0
+            ],
+            [
+              606.49,
+              105.0,
+              228.0
+            ],
+            [
+              606.49,
+              89.99,
+              228.0
+            ],
+            [
+              606.49,
+              88.01,
+              228.0
+            ],
+            [
+              606.49,
+              88.01,
+              262.99
+            ],
+            [
+              606.49,
+              88.01,
+              275.01
+            ],
+            [
+              811.01,
+              88.01,
+              275.01
+            ],
+            [
+              819.5,
+              88.01,
+              275.01
+            ],
+            [
+              819.5,
+              83.0,
+              275.01
+            ],
+            [
+              819.5,
+              83.0,
+              282.0
+            ]
+          ]
+        },
+        {
+          "module": 12,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              297.01,
+              105.0,
+              228.0
+            ],
+            [
+              317.99,
+              105.0,
+              228.0
+            ],
+            [
+              328.01,
+              105.0,
+              228.0
+            ],
+            [
+              521.01,
+              105.0,
+              228.0
+            ],
+            [
+              556.01,
+              105.0,
+              228.0
+            ],
+            [
+              564.5,
+              105.0,
+              228.0
+            ],
+            [
+              564.5,
+              139.99,
+              228.0
+            ],
+            [
+              564.5,
+              141.99,
+              228.0
+            ],
+            [
+              564.5,
+              236.01,
+              228.0
+            ],
+            [
+              564.5,
+              243.0,
+              228.0
+            ],
+            [
+              564.5,
+              243.0,
+              193.01
+            ],
+            [
+              564.5,
+              243.0,
+              178.99
+            ],
+            [
+              564.5,
+              243.0,
+              165.01
+            ],
+            [
+              564.5,
+              243.0,
+              75.01
+            ],
+            [
+              564.5,
+              243.0,
+              68.99
+            ],
+            [
+              564.5,
+              243.0,
+              62.0
+            ]
+          ]
+        },
+        {
+          "module": 13,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              297.01,
+              105.0,
+              228.0
+            ],
+            [
+              317.99,
+              105.0,
+              228.0
+            ],
+            [
+              328.01,
+              105.0,
+              228.0
+            ],
+            [
+              351.49,
+              105.0,
+              228.0
+            ],
+            [
+              521.01,
+              105.0,
+              228.0
+            ],
+            [
+              556.01,
+              105.0,
+              228.0
+            ],
+            [
+              564.5,
+              105.0,
+              228.0
+            ],
+            [
+              564.5,
+              139.99,
+              228.0
+            ],
+            [
+              564.5,
+              141.99,
+              228.0
+            ],
+            [
+              564.5,
+              236.01,
+              228.0
+            ],
+            [
+              564.5,
+              243.0,
+              228.0
+            ],
+            [
+              564.5,
+              243.0,
+              262.99
+            ],
+            [
+              564.5,
+              243.0,
+              275.01
+            ],
+            [
+              564.5,
+              243.0,
+              288.99
+            ],
+            [
+              564.5,
+              243.0,
+              380.99
+            ],
+            [
+              564.5,
+              243.0,
+              385.01
+            ],
+            [
+              564.5,
+              243.0,
+              392.0
+            ]
+          ]
+        },
+        {
+          "module": 14,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              297.01,
+              105.0,
+              228.0
+            ],
+            [
+              317.99,
+              105.0,
+              228.0
+            ],
+            [
+              328.01,
+              105.0,
+              228.0
+            ],
+            [
+              351.49,
+              105.0,
+              228.0
+            ],
+            [
+              521.01,
+              105.0,
+              228.0
+            ],
+            [
+              556.01,
+              105.0,
+              228.0
+            ],
+            [
+              564.5,
+              105.0,
+              228.0
+            ],
+            [
+              564.5,
+              139.99,
+              228.0
+            ],
+            [
+              564.5,
+              141.99,
+              228.0
+            ],
+            [
+              564.5,
+              236.01,
+              228.0
+            ],
+            [
+              564.5,
+              243.0,
+              228.0
+            ],
+            [
+              564.5,
+              243.0,
+              193.01
+            ],
+            [
+              564.5,
+              243.0,
+              178.99
+            ],
+            [
+              564.5,
+              243.0,
+              172.0
+            ]
+          ]
+        },
+        {
+          "module": 15,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              297.01,
+              105.0,
+              228.0
+            ],
+            [
+              317.99,
+              105.0,
+              228.0
+            ],
+            [
+              328.01,
+              105.0,
+              228.0
+            ],
+            [
+              351.49,
+              105.0,
+              228.0
+            ],
+            [
+              351.49,
+              139.99,
+              228.0
+            ],
+            [
+              351.49,
+              139.99,
+              262.99
+            ],
+            [
+              351.49,
+              139.99,
+              275.01
+            ],
+            [
+              521.01,
+              139.99,
+              275.01
+            ],
+            [
+              556.01,
+              139.99,
+              275.01
+            ],
+            [
+              564.5,
+              139.99,
+              275.01
+            ],
+            [
+              564.5,
+              141.99,
+              275.01
+            ],
+            [
+              564.5,
+              236.01,
+              275.01
+            ],
+            [
+              564.5,
+              243.0,
+              275.01
+            ],
+            [
+              564.5,
+              243.0,
+              282.0
+            ]
+          ]
+        },
+        {
+          "module": 16,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              297.01,
+              105.0,
+              228.0
+            ],
+            [
+              317.99,
+              105.0,
+              228.0
+            ],
+            [
+              328.01,
+              105.0,
+              228.0
+            ],
+            [
+              351.49,
+              105.0,
+              228.0
+            ],
+            [
+              351.49,
+              89.99,
+              228.0
+            ],
+            [
+              521.01,
+              89.99,
+              228.0
+            ],
+            [
+              556.01,
+              89.99,
+              228.0
+            ],
+            [
+              564.5,
+              89.99,
+              228.0
+            ],
+            [
+              564.5,
+              88.01,
+              228.0
+            ],
+            [
+              564.5,
+              83.0,
+              228.0
+            ],
+            [
+              564.5,
+              83.0,
+              193.01
+            ],
+            [
+              564.5,
+              83.0,
+              178.99
+            ],
+            [
+              564.5,
+              83.0,
+              165.01
+            ],
+            [
+              564.5,
+              83.0,
+              75.01
+            ],
+            [
+              564.5,
+              83.0,
+              68.99
+            ],
+            [
+              564.5,
+              83.0,
+              62.0
+            ]
+          ]
+        },
+        {
+          "module": 17,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              297.01,
+              105.0,
+              228.0
+            ],
+            [
+              317.99,
+              105.0,
+              228.0
+            ],
+            [
+              328.01,
+              105.0,
+              228.0
+            ],
+            [
+              351.49,
+              105.0,
+              228.0
+            ],
+            [
+              351.49,
+              89.99,
+              228.0
+            ],
+            [
+              521.01,
+              89.99,
+              228.0
+            ],
+            [
+              556.01,
+              89.99,
+              228.0
+            ],
+            [
+              564.5,
+              89.99,
+              228.0
+            ],
+            [
+              564.5,
+              88.01,
+              228.0
+            ],
+            [
+              564.5,
+              83.0,
+              228.0
+            ],
+            [
+              564.5,
+              83.0,
+              262.99
+            ],
+            [
+              564.5,
+              83.0,
+              275.01
+            ],
+            [
+              564.5,
+              83.0,
+              288.99
+            ],
+            [
+              564.5,
+              83.0,
+              380.99
+            ],
+            [
+              564.5,
+              83.0,
+              385.01
+            ],
+            [
+              564.5,
+              83.0,
+              392.0
+            ]
+          ]
+        },
+        {
+          "module": 18,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              297.01,
+              105.0,
+              228.0
+            ],
+            [
+              317.99,
+              105.0,
+              228.0
+            ],
+            [
+              328.01,
+              105.0,
+              228.0
+            ],
+            [
+              351.49,
+              105.0,
+              228.0
+            ],
+            [
+              351.49,
+              89.99,
+              228.0
+            ],
+            [
+              521.01,
+              89.99,
+              228.0
+            ],
+            [
+              556.01,
+              89.99,
+              228.0
+            ],
+            [
+              564.5,
+              89.99,
+              228.0
+            ],
+            [
+              564.5,
+              88.01,
+              228.0
+            ],
+            [
+              564.5,
+              83.0,
+              228.0
+            ],
+            [
+              564.5,
+              83.0,
+              193.01
+            ],
+            [
+              564.5,
+              83.0,
+              178.99
+            ],
+            [
+              564.5,
+              83.0,
+              172.0
+            ]
+          ]
+        },
+        {
+          "module": 19,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              297.01,
+              105.0,
+              228.0
+            ],
+            [
+              317.99,
+              105.0,
+              228.0
+            ],
+            [
+              328.01,
+              105.0,
+              228.0
+            ],
+            [
+              351.49,
+              105.0,
+              228.0
+            ],
+            [
+              351.49,
+              89.99,
+              228.0
+            ],
+            [
+              351.49,
+              88.01,
+              228.0
+            ],
+            [
+              351.49,
+              88.01,
+              262.99
+            ],
+            [
+              351.49,
+              88.01,
+              275.01
+            ],
+            [
+              521.01,
+              88.01,
+              275.01
+            ],
+            [
+              556.01,
+              88.01,
+              275.01
+            ],
+            [
+              564.5,
+              88.01,
+              275.01
+            ],
+            [
+              564.5,
+              83.0,
+              275.01
+            ],
+            [
+              564.5,
+              83.0,
+              282.0
+            ]
+          ]
+        }
+      ],
+      "all_paths_pass": true,
+      "driver_checks": [
+        {
+          "id": "C02",
+          "conservative_envelope_mm": [
+            [
+              14.800000000000011,
+              0.0,
+              33.80000000000001
+            ],
+            [
+              403.2,
+              178.0,
+              422.2
+            ]
+          ],
+          "collisions": 0,
+          "depth_total_min_mm": 486,
+          "depth_total_max_mm": 506
+        },
+        {
+          "id": "C11",
+          "conservative_envelope_mm": [
+            [
+              15.0,
+              0.0,
+              34.0
+            ],
+            [
+              403.0,
+              200.0,
+              422.0
+            ]
+          ],
+          "collisions": 0,
+          "depth_total_min_mm": 499,
+          "depth_total_max_mm": 519
+        },
+        {
+          "id": "C06",
+          "conservative_envelope_mm": [
+            [
+              46.0,
+              0.0,
+              65.0
+            ],
+            [
+              372.0,
+              174.0,
+              391.0
+            ]
+          ],
+          "collisions": 0,
+          "depth_total_min_mm": 487,
+          "depth_total_max_mm": 507
+        }
+      ],
+      "partition_volume_error_mm3": 0.0,
+      "orientation_note": "Rigid 90 degree rotation of geometry and paths preserves distances. Gravity/fastener forces NOT thereby verified."
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "H_mm": 500,
+      "gross_l": 163.040064,
+      "brace_l": 1.65264,
+      "mat_envelope_l": 21.053376,
+      "net0_nom_l": 155.90730260869566,
+      "net0_low_l": 150.59803286153846,
+      "net0_high_l": 161.20487474285713,
+      "net20_nom_l": 98.30730260869565,
+      "module_fill_clearance_mm": 3.0,
+      "collision_flags": [],
+      "inside_mm": [
+        956.0,
+        374.0,
+        456.0
+      ],
+      "brace_mass_range_kg": [
+        1.074216,
+        1.3221120000000002
+      ],
+      "shell_mass_range_kg": [
+        34.18036300668139,
+        42.06813908514632
+      ],
+      "regulation": [
+        {
+          "large": 2,
+          "small": 0,
+          "net_nom_l": 149.60730260869565,
+          "net_low_l": 144.23030261153846,
+          "net_high_l": 154.97214499285712
+        },
+        {
+          "large": 11,
+          "small": 1,
+          "net_nom_l": 119.45730260869566,
+          "net_low_l": 113.75242136153845,
+          "net_high_l": 125.14776624285712
+        },
+        {
+          "large": 16,
+          "small": 3,
+          "net_nom_l": 100.10730260869565,
+          "net_low_l": 94.18690548653845,
+          "net_high_l": 106.01175211785713
+        },
+        {
+          "large": 16,
+          "small": 4,
+          "net_nom_l": 98.30730260869565,
+          "net_low_l": 92.36381036153844,
+          "net_high_l": 104.23465724285712
+        }
+      ],
+      "braces_mm": [
+        [
+          [
+            426.0,
+            0.0,
+            0.0
+          ],
+          [
+            448.0,
+            374.0,
+            22.0
+          ]
+        ],
+        [
+          [
+            426.0,
+            0.0,
+            434.0
+          ],
+          [
+            448.0,
+            374.0,
+            456.0
+          ]
+        ],
+        [
+          [
+            426.0,
+            0.0,
+            22.0
+          ],
+          [
+            448.0,
+            10.0,
+            434.0
+          ]
+        ],
+        [
+          [
+            426.0,
+            352.0,
+            22.0
+          ],
+          [
+            448.0,
+            374.0,
+            434.0
+          ]
+        ],
+        [
+          [
+            691.0,
+            0.0,
+            0.0
+          ],
+          [
+            713.0,
+            374.0,
+            22.0
+          ]
+        ],
+        [
+          [
+            691.0,
+            0.0,
+            434.0
+          ],
+          [
+            713.0,
+            374.0,
+            456.0
+          ]
+        ],
+        [
+          [
+            691.0,
+            0.0,
+            22.0
+          ],
+          [
+            713.0,
+            10.0,
+            434.0
+          ]
+        ],
+        [
+          [
+            691.0,
+            352.0,
+            22.0
+          ],
+          [
+            713.0,
+            374.0,
+            434.0
+          ]
+        ],
+        [
+          [
+            198.0,
+            220.0,
+            0.0
+          ],
+          [
+            220.0,
+            374.0,
+            22.0
+          ]
+        ],
+        [
+          [
+            198.0,
+            220.0,
+            434.0
+          ],
+          [
+            220.0,
+            374.0,
+            456.0
+          ]
+        ],
+        [
+          [
+            198.0,
+            352.0,
+            22.0
+          ],
+          [
+            220.0,
+            374.0,
+            434.0
+          ]
+        ]
+      ],
+      "modules_mm": [
+        [
+          [
+            9.0,
+            218.0,
+            40.0
+          ],
+          [
+            189.0,
+            318.0,
+            140.0
+          ]
+        ],
+        [
+          [
+            9.0,
+            218.0,
+            316.0
+          ],
+          [
+            189.0,
+            318.0,
+            416.0
+          ]
+        ],
+        [
+          [
+            233.0,
+            218.0,
+            40.0
+          ],
+          [
+            413.0,
+            318.0,
+            140.0
+          ]
+        ],
+        [
+          [
+            233.0,
+            218.0,
+            316.0
+          ],
+          [
+            413.0,
+            318.0,
+            416.0
+          ]
+        ],
+        [
+          [
+            729.5,
+            168.0,
+            12.0
+          ],
+          [
+            939.5,
+            318.0,
+            112.0
+          ]
+        ],
+        [
+          [
+            729.5,
+            168.0,
+            342.0
+          ],
+          [
+            939.5,
+            318.0,
+            442.0
+          ]
+        ],
+        [
+          [
+            729.5,
+            168.0,
+            122.0
+          ],
+          [
+            939.5,
+            318.0,
+            222.0
+          ]
+        ],
+        [
+          [
+            729.5,
+            168.0,
+            232.0
+          ],
+          [
+            939.5,
+            318.0,
+            332.0
+          ]
+        ],
+        [
+          [
+            729.5,
+            8.0,
+            12.0
+          ],
+          [
+            939.5,
+            158.0,
+            112.0
+          ]
+        ],
+        [
+          [
+            729.5,
+            8.0,
+            342.0
+          ],
+          [
+            939.5,
+            158.0,
+            442.0
+          ]
+        ],
+        [
+          [
+            729.5,
+            8.0,
+            122.0
+          ],
+          [
+            939.5,
+            158.0,
+            222.0
+          ]
+        ],
+        [
+          [
+            729.5,
+            8.0,
+            232.0
+          ],
+          [
+            939.5,
+            158.0,
+            332.0
+          ]
+        ],
+        [
+          [
+            464.5,
+            168.0,
+            12.0
+          ],
+          [
+            674.5,
+            318.0,
+            112.0
+          ]
+        ],
+        [
+          [
+            464.5,
+            168.0,
+            342.0
+          ],
+          [
+            674.5,
+            318.0,
+            442.0
+          ]
+        ],
+        [
+          [
+            464.5,
+            168.0,
+            122.0
+          ],
+          [
+            674.5,
+            318.0,
+            222.0
+          ]
+        ],
+        [
+          [
+            464.5,
+            168.0,
+            232.0
+          ],
+          [
+            674.5,
+            318.0,
+            332.0
+          ]
+        ],
+        [
+          [
+            464.5,
+            8.0,
+            12.0
+          ],
+          [
+            674.5,
+            158.0,
+            112.0
+          ]
+        ],
+        [
+          [
+            464.5,
+            8.0,
+            342.0
+          ],
+          [
+            674.5,
+            158.0,
+            442.0
+          ]
+        ],
+        [
+          [
+            464.5,
+            8.0,
+            122.0
+          ],
+          [
+            674.5,
+            158.0,
+            222.0
+          ]
+        ],
+        [
+          [
+            464.5,
+            8.0,
+            232.0
+          ],
+          [
+            674.5,
+            158.0,
+            332.0
+          ]
+        ]
+      ],
+      "fill_box_mm": [
+        [
+          0.0,
+          324.0,
+          0.0
+        ],
+        [
+          956.0,
+          374.0,
+          456.0
+        ]
+      ],
+      "paths": [
+        {
+          "module": 0,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              104.99,
+              105.0,
+              228.0
+            ],
+            [
+              99.0,
+              105.0,
+              228.0
+            ],
+            [
+              99.0,
+              166.99,
+              228.0
+            ],
+            [
+              99.0,
+              268.0,
+              228.0
+            ],
+            [
+              99.0,
+              268.0,
+              90.0
+            ]
+          ]
+        },
+        {
+          "module": 1,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              104.99,
+              105.0,
+              228.0
+            ],
+            [
+              99.0,
+              105.0,
+              228.0
+            ],
+            [
+              99.0,
+              164.99,
+              228.0
+            ],
+            [
+              99.0,
+              166.99,
+              228.0
+            ],
+            [
+              99.0,
+              268.0,
+              228.0
+            ],
+            [
+              99.0,
+              268.0,
+              366.0
+            ]
+          ]
+        },
+        {
+          "module": 2,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              282.01,
+              105.0,
+              228.0
+            ],
+            [
+              313.01,
+              105.0,
+              228.0
+            ],
+            [
+              323.0,
+              105.0,
+              228.0
+            ],
+            [
+              323.0,
+              164.99,
+              228.0
+            ],
+            [
+              323.0,
+              166.99,
+              228.0
+            ],
+            [
+              323.0,
+              268.0,
+              228.0
+            ],
+            [
+              323.0,
+              268.0,
+              193.01
+            ],
+            [
+              323.0,
+              268.0,
+              90.0
+            ]
+          ]
+        },
+        {
+          "module": 3,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              282.01,
+              105.0,
+              228.0
+            ],
+            [
+              313.01,
+              105.0,
+              228.0
+            ],
+            [
+              323.0,
+              105.0,
+              228.0
+            ],
+            [
+              323.0,
+              164.99,
+              228.0
+            ],
+            [
+              323.0,
+              166.99,
+              228.0
+            ],
+            [
+              323.0,
+              268.0,
+              228.0
+            ],
+            [
+              323.0,
+              268.0,
+              262.99
+            ],
+            [
+              323.0,
+              268.0,
+              366.0
+            ]
+          ]
+        },
+        {
+          "module": 4,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              297.01,
+              105.0,
+              228.0
+            ],
+            [
+              317.99,
+              105.0,
+              228.0
+            ],
+            [
+              328.01,
+              105.0,
+              228.0
+            ],
+            [
+              521.01,
+              105.0,
+              228.0
+            ],
+            [
+              556.01,
+              105.0,
+              228.0
+            ],
+            [
+              582.99,
+              105.0,
+              228.0
+            ],
+            [
+              821.01,
+              105.0,
+              228.0
+            ],
+            [
+              834.5,
+              105.0,
+              228.0
+            ],
+            [
+              834.5,
+              139.99,
+              228.0
+            ],
+            [
+              834.5,
+              141.99,
+              228.0
+            ],
+            [
+              834.5,
+              243.0,
+              228.0
+            ],
+            [
+              834.5,
+              243.0,
+              193.01
+            ],
+            [
+              834.5,
+              243.0,
+              75.01
+            ],
+            [
+              834.5,
+              243.0,
+              62.0
+            ]
+          ]
+        },
+        {
+          "module": 5,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              297.01,
+              105.0,
+              228.0
+            ],
+            [
+              317.99,
+              105.0,
+              228.0
+            ],
+            [
+              328.01,
+              105.0,
+              228.0
+            ],
+            [
+              521.01,
+              105.0,
+              228.0
+            ],
+            [
+              556.01,
+              105.0,
+              228.0
+            ],
+            [
+              582.99,
+              105.0,
+              228.0
+            ],
+            [
+              621.49,
+              105.0,
+              228.0
+            ],
+            [
+              821.01,
+              105.0,
+              228.0
+            ],
+            [
+              834.5,
+              105.0,
+              228.0
+            ],
+            [
+              834.5,
+              139.99,
+              228.0
+            ],
+            [
+              834.5,
+              141.99,
+              228.0
+            ],
+            [
+              834.5,
+              243.0,
+              228.0
+            ],
+            [
+              834.5,
+              243.0,
+              262.99
+            ],
+            [
+              834.5,
+              243.0,
+              380.99
+            ],
+            [
+              834.5,
+              243.0,
+              392.0
+            ]
+          ]
+        },
+        {
+          "module": 6,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              297.01,
+              105.0,
+              228.0
+            ],
+            [
+              317.99,
+              105.0,
+              228.0
+            ],
+            [
+              328.01,
+              105.0,
+              228.0
+            ],
+            [
+              521.01,
+              105.0,
+              228.0
+            ],
+            [
+              556.01,
+              105.0,
+              228.0
+            ],
+            [
+              582.99,
+              105.0,
+              228.0
+            ],
+            [
+              621.49,
+              105.0,
+              228.0
+            ],
+            [
+              821.01,
+              105.0,
+              228.0
+            ],
+            [
+              834.5,
+              105.0,
+              228.0
+            ],
+            [
+              834.5,
+              139.99,
+              228.0
+            ],
+            [
+              834.5,
+              141.99,
+              228.0
+            ],
+            [
+              834.5,
+              243.0,
+              228.0
+            ],
+            [
+              834.5,
+              243.0,
+              193.01
+            ],
+            [
+              834.5,
+              243.0,
+              172.0
+            ]
+          ]
+        },
+        {
+          "module": 7,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              297.01,
+              105.0,
+              228.0
+            ],
+            [
+              317.99,
+              105.0,
+              228.0
+            ],
+            [
+              328.01,
+              105.0,
+              228.0
+            ],
+            [
+              521.01,
+              105.0,
+              228.0
+            ],
+            [
+              556.01,
+              105.0,
+              228.0
+            ],
+            [
+              582.99,
+              105.0,
+              228.0
+            ],
+            [
+              621.49,
+              105.0,
+              228.0
+            ],
+            [
+              621.49,
+              139.99,
+              228.0
+            ],
+            [
+              621.49,
+              141.99,
+              228.0
+            ],
+            [
+              621.49,
+              243.0,
+              228.0
+            ],
+            [
+              621.49,
+              243.0,
+              262.99
+            ],
+            [
+              621.49,
+              243.0,
+              275.01
+            ],
+            [
+              821.01,
+              243.0,
+              275.01
+            ],
+            [
+              834.5,
+              243.0,
+              275.01
+            ],
+            [
+              834.5,
+              243.0,
+              282.0
+            ]
+          ]
+        },
+        {
+          "module": 8,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              297.01,
+              105.0,
+              228.0
+            ],
+            [
+              317.99,
+              105.0,
+              228.0
+            ],
+            [
+              328.01,
+              105.0,
+              228.0
+            ],
+            [
+              521.01,
+              105.0,
+              228.0
+            ],
+            [
+              556.01,
+              105.0,
+              228.0
+            ],
+            [
+              582.99,
+              105.0,
+              228.0
+            ],
+            [
+              621.49,
+              105.0,
+              228.0
+            ],
+            [
+              621.49,
+              89.99,
+              228.0
+            ],
+            [
+              821.01,
+              89.99,
+              228.0
+            ],
+            [
+              834.5,
+              89.99,
+              228.0
+            ],
+            [
+              834.5,
+              88.01,
+              228.0
+            ],
+            [
+              834.5,
+              83.0,
+              228.0
+            ],
+            [
+              834.5,
+              83.0,
+              193.01
+            ],
+            [
+              834.5,
+              83.0,
+              178.99
+            ],
+            [
+              834.5,
+              83.0,
+              165.01
+            ],
+            [
+              834.5,
+              83.0,
+              75.01
+            ],
+            [
+              834.5,
+              83.0,
+              68.99
+            ],
+            [
+              834.5,
+              83.0,
+              62.0
+            ]
+          ]
+        },
+        {
+          "module": 9,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              297.01,
+              105.0,
+              228.0
+            ],
+            [
+              317.99,
+              105.0,
+              228.0
+            ],
+            [
+              328.01,
+              105.0,
+              228.0
+            ],
+            [
+              521.01,
+              105.0,
+              228.0
+            ],
+            [
+              556.01,
+              105.0,
+              228.0
+            ],
+            [
+              582.99,
+              105.0,
+              228.0
+            ],
+            [
+              621.49,
+              105.0,
+              228.0
+            ],
+            [
+              621.49,
+              89.99,
+              228.0
+            ],
+            [
+              821.01,
+              89.99,
+              228.0
+            ],
+            [
+              834.5,
+              89.99,
+              228.0
+            ],
+            [
+              834.5,
+              88.01,
+              228.0
+            ],
+            [
+              834.5,
+              83.0,
+              228.0
+            ],
+            [
+              834.5,
+              83.0,
+              262.99
+            ],
+            [
+              834.5,
+              83.0,
+              275.01
+            ],
+            [
+              834.5,
+              83.0,
+              288.99
+            ],
+            [
+              834.5,
+              83.0,
+              380.99
+            ],
+            [
+              834.5,
+              83.0,
+              385.01
+            ],
+            [
+              834.5,
+              83.0,
+              392.0
+            ]
+          ]
+        },
+        {
+          "module": 10,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              297.01,
+              105.0,
+              228.0
+            ],
+            [
+              317.99,
+              105.0,
+              228.0
+            ],
+            [
+              328.01,
+              105.0,
+              228.0
+            ],
+            [
+              521.01,
+              105.0,
+              228.0
+            ],
+            [
+              556.01,
+              105.0,
+              228.0
+            ],
+            [
+              582.99,
+              105.0,
+              228.0
+            ],
+            [
+              621.49,
+              105.0,
+              228.0
+            ],
+            [
+              621.49,
+              89.99,
+              228.0
+            ],
+            [
+              821.01,
+              89.99,
+              228.0
+            ],
+            [
+              834.5,
+              89.99,
+              228.0
+            ],
+            [
+              834.5,
+              88.01,
+              228.0
+            ],
+            [
+              834.5,
+              83.0,
+              228.0
+            ],
+            [
+              834.5,
+              83.0,
+              193.01
+            ],
+            [
+              834.5,
+              83.0,
+              178.99
+            ],
+            [
+              834.5,
+              83.0,
+              172.0
+            ]
+          ]
+        },
+        {
+          "module": 11,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              297.01,
+              105.0,
+              228.0
+            ],
+            [
+              317.99,
+              105.0,
+              228.0
+            ],
+            [
+              328.01,
+              105.0,
+              228.0
+            ],
+            [
+              521.01,
+              105.0,
+              228.0
+            ],
+            [
+              556.01,
+              105.0,
+              228.0
+            ],
+            [
+              582.99,
+              105.0,
+              228.0
+            ],
+            [
+              621.49,
+              105.0,
+              228.0
+            ],
+            [
+              621.49,
+              89.99,
+              228.0
+            ],
+            [
+              621.49,
+              88.01,
+              228.0
+            ],
+            [
+              621.49,
+              88.01,
+              262.99
+            ],
+            [
+              621.49,
+              88.01,
+              275.01
+            ],
+            [
+              821.01,
+              88.01,
+              275.01
+            ],
+            [
+              834.5,
+              88.01,
+              275.01
+            ],
+            [
+              834.5,
+              83.0,
+              275.01
+            ],
+            [
+              834.5,
+              83.0,
+              282.0
+            ]
+          ]
+        },
+        {
+          "module": 12,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              297.01,
+              105.0,
+              228.0
+            ],
+            [
+              317.99,
+              105.0,
+              228.0
+            ],
+            [
+              328.01,
+              105.0,
+              228.0
+            ],
+            [
+              521.01,
+              105.0,
+              228.0
+            ],
+            [
+              556.01,
+              105.0,
+              228.0
+            ],
+            [
+              569.5,
+              105.0,
+              228.0
+            ],
+            [
+              569.5,
+              139.99,
+              228.0
+            ],
+            [
+              569.5,
+              141.99,
+              228.0
+            ],
+            [
+              569.5,
+              236.01,
+              228.0
+            ],
+            [
+              569.5,
+              243.0,
+              228.0
+            ],
+            [
+              569.5,
+              243.0,
+              193.01
+            ],
+            [
+              569.5,
+              243.0,
+              178.99
+            ],
+            [
+              569.5,
+              243.0,
+              165.01
+            ],
+            [
+              569.5,
+              243.0,
+              75.01
+            ],
+            [
+              569.5,
+              243.0,
+              68.99
+            ],
+            [
+              569.5,
+              243.0,
+              62.0
+            ]
+          ]
+        },
+        {
+          "module": 13,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              297.01,
+              105.0,
+              228.0
+            ],
+            [
+              317.99,
+              105.0,
+              228.0
+            ],
+            [
+              328.01,
+              105.0,
+              228.0
+            ],
+            [
+              356.49,
+              105.0,
+              228.0
+            ],
+            [
+              521.01,
+              105.0,
+              228.0
+            ],
+            [
+              556.01,
+              105.0,
+              228.0
+            ],
+            [
+              569.5,
+              105.0,
+              228.0
+            ],
+            [
+              569.5,
+              139.99,
+              228.0
+            ],
+            [
+              569.5,
+              141.99,
+              228.0
+            ],
+            [
+              569.5,
+              236.01,
+              228.0
+            ],
+            [
+              569.5,
+              243.0,
+              228.0
+            ],
+            [
+              569.5,
+              243.0,
+              262.99
+            ],
+            [
+              569.5,
+              243.0,
+              275.01
+            ],
+            [
+              569.5,
+              243.0,
+              288.99
+            ],
+            [
+              569.5,
+              243.0,
+              380.99
+            ],
+            [
+              569.5,
+              243.0,
+              385.01
+            ],
+            [
+              569.5,
+              243.0,
+              392.0
+            ]
+          ]
+        },
+        {
+          "module": 14,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              297.01,
+              105.0,
+              228.0
+            ],
+            [
+              317.99,
+              105.0,
+              228.0
+            ],
+            [
+              328.01,
+              105.0,
+              228.0
+            ],
+            [
+              356.49,
+              105.0,
+              228.0
+            ],
+            [
+              521.01,
+              105.0,
+              228.0
+            ],
+            [
+              556.01,
+              105.0,
+              228.0
+            ],
+            [
+              569.5,
+              105.0,
+              228.0
+            ],
+            [
+              569.5,
+              139.99,
+              228.0
+            ],
+            [
+              569.5,
+              141.99,
+              228.0
+            ],
+            [
+              569.5,
+              236.01,
+              228.0
+            ],
+            [
+              569.5,
+              243.0,
+              228.0
+            ],
+            [
+              569.5,
+              243.0,
+              193.01
+            ],
+            [
+              569.5,
+              243.0,
+              178.99
+            ],
+            [
+              569.5,
+              243.0,
+              172.0
+            ]
+          ]
+        },
+        {
+          "module": 15,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              297.01,
+              105.0,
+              228.0
+            ],
+            [
+              317.99,
+              105.0,
+              228.0
+            ],
+            [
+              328.01,
+              105.0,
+              228.0
+            ],
+            [
+              356.49,
+              105.0,
+              228.0
+            ],
+            [
+              356.49,
+              139.99,
+              228.0
+            ],
+            [
+              356.49,
+              139.99,
+              262.99
+            ],
+            [
+              356.49,
+              139.99,
+              275.01
+            ],
+            [
+              521.01,
+              139.99,
+              275.01
+            ],
+            [
+              556.01,
+              139.99,
+              275.01
+            ],
+            [
+              569.5,
+              139.99,
+              275.01
+            ],
+            [
+              569.5,
+              141.99,
+              275.01
+            ],
+            [
+              569.5,
+              236.01,
+              275.01
+            ],
+            [
+              569.5,
+              243.0,
+              275.01
+            ],
+            [
+              569.5,
+              243.0,
+              282.0
+            ]
+          ]
+        },
+        {
+          "module": 16,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              297.01,
+              105.0,
+              228.0
+            ],
+            [
+              317.99,
+              105.0,
+              228.0
+            ],
+            [
+              328.01,
+              105.0,
+              228.0
+            ],
+            [
+              356.49,
+              105.0,
+              228.0
+            ],
+            [
+              356.49,
+              89.99,
+              228.0
+            ],
+            [
+              521.01,
+              89.99,
+              228.0
+            ],
+            [
+              556.01,
+              89.99,
+              228.0
+            ],
+            [
+              569.5,
+              89.99,
+              228.0
+            ],
+            [
+              569.5,
+              88.01,
+              228.0
+            ],
+            [
+              569.5,
+              83.0,
+              228.0
+            ],
+            [
+              569.5,
+              83.0,
+              193.01
+            ],
+            [
+              569.5,
+              83.0,
+              178.99
+            ],
+            [
+              569.5,
+              83.0,
+              165.01
+            ],
+            [
+              569.5,
+              83.0,
+              75.01
+            ],
+            [
+              569.5,
+              83.0,
+              68.99
+            ],
+            [
+              569.5,
+              83.0,
+              62.0
+            ]
+          ]
+        },
+        {
+          "module": 17,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              297.01,
+              105.0,
+              228.0
+            ],
+            [
+              317.99,
+              105.0,
+              228.0
+            ],
+            [
+              328.01,
+              105.0,
+              228.0
+            ],
+            [
+              356.49,
+              105.0,
+              228.0
+            ],
+            [
+              356.49,
+              89.99,
+              228.0
+            ],
+            [
+              521.01,
+              89.99,
+              228.0
+            ],
+            [
+              556.01,
+              89.99,
+              228.0
+            ],
+            [
+              569.5,
+              89.99,
+              228.0
+            ],
+            [
+              569.5,
+              88.01,
+              228.0
+            ],
+            [
+              569.5,
+              83.0,
+              228.0
+            ],
+            [
+              569.5,
+              83.0,
+              262.99
+            ],
+            [
+              569.5,
+              83.0,
+              275.01
+            ],
+            [
+              569.5,
+              83.0,
+              288.99
+            ],
+            [
+              569.5,
+              83.0,
+              380.99
+            ],
+            [
+              569.5,
+              83.0,
+              385.01
+            ],
+            [
+              569.5,
+              83.0,
+              392.0
+            ]
+          ]
+        },
+        {
+          "module": 18,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              297.01,
+              105.0,
+              228.0
+            ],
+            [
+              317.99,
+              105.0,
+              228.0
+            ],
+            [
+              328.01,
+              105.0,
+              228.0
+            ],
+            [
+              356.49,
+              105.0,
+              228.0
+            ],
+            [
+              356.49,
+              89.99,
+              228.0
+            ],
+            [
+              521.01,
+              89.99,
+              228.0
+            ],
+            [
+              556.01,
+              89.99,
+              228.0
+            ],
+            [
+              569.5,
+              89.99,
+              228.0
+            ],
+            [
+              569.5,
+              88.01,
+              228.0
+            ],
+            [
+              569.5,
+              83.0,
+              228.0
+            ],
+            [
+              569.5,
+              83.0,
+              193.01
+            ],
+            [
+              569.5,
+              83.0,
+              178.99
+            ],
+            [
+              569.5,
+              83.0,
+              172.0
+            ]
+          ]
+        },
+        {
+          "module": 19,
+          "passed": true,
+          "centres_mm": [
+            [
+              209.0,
+              105.0,
+              228.0
+            ],
+            [
+              297.01,
+              105.0,
+              228.0
+            ],
+            [
+              317.99,
+              105.0,
+              228.0
+            ],
+            [
+              328.01,
+              105.0,
+              228.0
+            ],
+            [
+              356.49,
+              105.0,
+              228.0
+            ],
+            [
+              356.49,
+              89.99,
+              228.0
+            ],
+            [
+              356.49,
+              88.01,
+              228.0
+            ],
+            [
+              356.49,
+              88.01,
+              262.99
+            ],
+            [
+              356.49,
+              88.01,
+              275.01
+            ],
+            [
+              521.01,
+              88.01,
+              275.01
+            ],
+            [
+              556.01,
+              88.01,
+              275.01
+            ],
+            [
+              569.5,
+              88.01,
+              275.01
+            ],
+            [
+              569.5,
+              83.0,
+              275.01
+            ],
+            [
+              569.5,
+              83.0,
+              282.0
+            ]
+          ]
+        }
+      ],
+      "all_paths_pass": true,
+      "driver_checks": [
+        {
+          "id": "C02",
+          "conservative_envelope_mm": [
+            [
+              14.800000000000011,
+              0.0,
+              33.80000000000001
+            ],
+            [
+              403.2,
+              178.0,
+              422.2
+            ]
+          ],
+          "collisions": 0,
+          "depth_total_min_mm": 476,
+          "depth_total_max_mm": 496
+        },
+        {
+          "id": "C11",
+          "conservative_envelope_mm": [
+            [
+              15.0,
+              0.0,
+              34.0
+            ],
+            [
+              403.0,
+              200.0,
+              422.0
+            ]
+          ],
+          "collisions": 0,
+          "depth_total_min_mm": 489,
+          "depth_total_max_mm": 509
+        },
+        {
+          "id": "C06",
+          "conservative_envelope_mm": [
+            [
+              46.0,
+              0.0,
+              65.0
+            ],
+            [
+              372.0,
+              174.0,
+              391.0
+            ]
+          ],
+          "collisions": 0,
+          "depth_total_min_mm": 477,
+          "depth_total_max_mm": 497
+        }
+      ],
+      "partition_volume_error_mm3": 0.0,
+      "orientation_note": "Rigid 90 degree rotation of geometry and paths preserves distances. Gravity/fastener forces NOT thereby verified."
+    }
+  ],
+  "depth": [
+    {
+      "id": "C02",
+      "D_mm": 440,
+      "overall_low_mm": 476,
+      "overall_high_mm": 496,
+      "robust_for_scenarios": true
+    },
+    {
+      "id": "C02",
+      "D_mm": 450,
+      "overall_low_mm": 486,
+      "overall_high_mm": 506,
+      "robust_for_scenarios": false
+    },
+    {
+      "id": "C02",
+      "D_mm": 460,
+      "overall_low_mm": 496,
+      "overall_high_mm": 516,
+      "robust_for_scenarios": false
+    },
+    {
+      "id": "C02",
+      "D_mm": 470,
+      "overall_low_mm": 506,
+      "overall_high_mm": 526,
+      "robust_for_scenarios": false
+    },
+    {
+      "id": "C02",
+      "D_mm": 480,
+      "overall_low_mm": 516,
+      "overall_high_mm": 536,
+      "robust_for_scenarios": false
+    },
+    {
+      "id": "C11",
+      "D_mm": 440,
+      "overall_low_mm": 489,
+      "overall_high_mm": 509,
+      "robust_for_scenarios": false
+    },
+    {
+      "id": "C11",
+      "D_mm": 450,
+      "overall_low_mm": 499,
+      "overall_high_mm": 519,
+      "robust_for_scenarios": false
+    },
+    {
+      "id": "C11",
+      "D_mm": 460,
+      "overall_low_mm": 509,
+      "overall_high_mm": 529,
+      "robust_for_scenarios": false
+    },
+    {
+      "id": "C11",
+      "D_mm": 470,
+      "overall_low_mm": 519,
+      "overall_high_mm": 539,
+      "robust_for_scenarios": false
+    },
+    {
+      "id": "C11",
+      "D_mm": 480,
+      "overall_low_mm": 529,
+      "overall_high_mm": 549,
+      "robust_for_scenarios": false
+    },
+    {
+      "id": "C06",
+      "D_mm": 440,
+      "overall_low_mm": 477,
+      "overall_high_mm": 497,
+      "robust_for_scenarios": true
+    },
+    {
+      "id": "C06",
+      "D_mm": 450,
+      "overall_low_mm": 487,
+      "overall_high_mm": 507,
+      "robust_for_scenarios": false
+    },
+    {
+      "id": "C06",
+      "D_mm": 460,
+      "overall_low_mm": 497,
+      "overall_high_mm": 517,
+      "robust_for_scenarios": false
+    },
+    {
+      "id": "C06",
+      "D_mm": 470,
+      "overall_low_mm": 507,
+      "overall_high_mm": 527,
+      "robust_for_scenarios": false
+    },
+    {
+      "id": "C06",
+      "D_mm": 480,
+      "overall_low_mm": 517,
+      "overall_high_mm": 537,
+      "robust_for_scenarios": false
+    }
+  ],
+  "tests": {
+    "disjoint_vs_partition": true,
+    "continuous_sweeps": true,
+    "sample_checks": [
+      17,
+      33
+    ],
+    "smallest_bore_with_clearance_margin_mm": 23.696217848315342
+  },
+  "software": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8"
+  }
+}

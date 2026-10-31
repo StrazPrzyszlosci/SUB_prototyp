@@ -1,0 +1,91 @@
+{
+  "cases": 216,
+  "scope": "Reduced sealed 0D model, NOT integrated spatial enclosure; no measured music or physical validation",
+  "convergence": [
+    {
+      "index": 0,
+      "x_scaled_difference": 1.5553818766278482e-06,
+      "i_scaled_difference": 2.0069111636717452e-05,
+      "theta_difference_K": 2.272612103748628e-05
+    },
+    {
+      "index": 1,
+      "x_scaled_difference": 6.811586653451432e-06,
+      "i_scaled_difference": 2.8744699506752904e-05,
+      "theta_difference_K": 7.187231294381036e-05
+    },
+    {
+      "index": 2,
+      "x_scaled_difference": 8.709083758924e-06,
+      "i_scaled_difference": 6.669736045017427e-05,
+      "theta_difference_K": 1.0665789508479406e-05
+    },
+    {
+      "index": 4,
+      "x_scaled_difference": 7.987511498780143e-09,
+      "i_scaled_difference": 3.2960551412180677e-06,
+      "theta_difference_K": 1.0080942613455157e-06
+    },
+    {
+      "index": 54,
+      "x_scaled_difference": 6.7082891224992005e-06,
+      "i_scaled_difference": 1.8707643674363937e-05,
+      "theta_difference_K": 5.205116061279824e-06
+    }
+  ],
+  "independent_DOP853": [
+    {
+      "index": 0,
+      "final_state": [
+        7.921084125945497e-22,
+        -7.426283922361178e-20,
+        7.099147907462388e-19,
+        3.840569712026697
+      ],
+      "nfev": 4246070,
+      "scaled_final_error": 2.6454539930886866e-08
+    },
+    {
+      "index": 4,
+      "final_state": [
+        8.08971323723989e-22,
+        -7.446658518406396e-20,
+        7.211710505774658e-19,
+        0.17715196383961612
+      ],
+      "nfev": 1956302,
+      "scaled_final_error": 1.6387437714801555e-08
+    }
+  ],
+  "max_energy_relative_error": 9.94841492197727e-06,
+  "max_thermal_balance_error_J": 1.4017587091075256e-10,
+  "signal_crest_factor_before_filter": [
+    2.9820737672017765,
+    3.169568203628842,
+    4.501649608323636,
+    3.4711370941079265
+  ],
+  "signal_crest_factor_after_filter": [
+    3.787094269252194,
+    3.212803036356151,
+    4.563400236363132,
+    5.3244990347023275
+  ],
+  "strategies": {
+    "rail": {
+      "max_x_ratio": 2.907971208902993,
+      "max_i_ratio": 4.178904651673473,
+      "max_theta_K": 69.86352812631745
+    },
+    "current_feedback": {
+      "max_x_ratio": 2.821384608828064,
+      "max_i_ratio": 2.806129434812562,
+      "max_theta_K": 64.21243597014924
+    },
+    "energy_barrier": {
+      "max_x_ratio": 0.3646861281023656,
+      "max_i_ratio": 0.9961948870527515,
+      "max_theta_K": 59.9999583333478
+    }
+  }
+}

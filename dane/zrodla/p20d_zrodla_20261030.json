@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-30",
+  "HF_PDF": {"url": "https://www.parts-express.com/pedocs/specs/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf", "type": "manufacturer datasheet hosted by distributor", "inspection": "page 1 original drawing visually inspected; 388.4 overall diameter, 355.8 bore, 178 overall height, 10.5 flange thickness. 178 is not mounting depth from inner baffle. Xmax14 from parameter table. No displacement or dustcap forward envelope established."},
+  "HE_PDF": {"url": "https://www.parts-express.com/pedocs/specs/295-292--dayton-audio-rss390he-22-spec-sheet.pdf", "type": "manufacturer datasheet hosted by distributor", "inspection": "page 1 drawing visually inspected: 388 diameter, 358 bore, 200 overall depth; 22 and 10 front drawing dimensions are not assumed to be a complete moving envelope. Xmax27 uses manufacturer's geometric definition."},
+  "STX_WWW": {"url": "https://stx.pl/manufacturer/stx/w-32-800-8-fcx.html", "type": "manufacturer text", "inspection": "326 diameter, 288 bore, 174 max depth, 30 mm p-p linear travel; no mass or basket displacement given."},
+  "access_note": "Dayton original-domain PDF endpoints returned an iframe wrapper. Distributor-hosted manufacturer PDFs were opened and their original pages inspected. Firecrawl/browser-harness tools unavailable in this session; web retrieval used. No commercial pricing analysis."
+}

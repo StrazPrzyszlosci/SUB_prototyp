@@ -1,0 +1,59 @@
+{
+  "scope": "Independent scalar ODE versus RK4 full trajectory at 200Hz checkpoints through 1.25s, same interpolated input; no continuous error bound or hardware validation.",
+  "results": [
+    {
+      "index": 54,
+      "case": {
+        "candidate": "C02",
+        "volume_l": 150,
+        "signal": "multisine_schroeder",
+        "strategy": "rail",
+        "Rth": 0.3,
+        "Cth": 200,
+        "theta0": 0
+      },
+      "duration_s": 1.25,
+      "nfev": 303632,
+      "checkpoints": 250,
+      "max_scaled_trajectory_error": [
+        1.2701812163033468e-05,
+        1.8538715923721583e-05,
+        5.8214776659275455e-05,
+        5.964072503222839e-09
+      ],
+      "scales": [
+        "Xref_m",
+        "1_m_s",
+        "Icap_A",
+        "80_K"
+      ]
+    },
+    {
+      "index": 5,
+      "case": {
+        "candidate": "C02",
+        "volume_l": 100,
+        "signal": "multisine_aligned",
+        "strategy": "energy_barrier",
+        "Rth": 1.2,
+        "Cth": 50,
+        "theta0": 60
+      },
+      "duration_s": 1.25,
+      "nfev": 217916,
+      "checkpoints": 250,
+      "max_scaled_trajectory_error": [
+        0.00012154239922601673,
+        0.00020307028698163254,
+        0.0008156957190217014,
+        2.3872176768691135e-08
+      ],
+      "scales": [
+        "Xref_m",
+        "1_m_s",
+        "Icap_A",
+        "80_K"
+      ]
+    }
+  ]
+}

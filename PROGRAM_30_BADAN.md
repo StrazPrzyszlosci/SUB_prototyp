@@ -61,19 +61,19 @@ pakietu samym stworzeniem planu, testów ani listy bibliotek.
 | P15 | N8 — model cieplny w czasie | Wykonane rodziny P15A/P15B; parametry produktów otwarte | Raport025:4225sieciCauer/Foster i granice. Raport027:2304przebiegiRe(T),ruchu,strat i przyjętej konwekcji,4pełneODEaudio,1152porównania obwiedni. Brak identyfikacjiR/C, lokalnych gradientów i powietrza skrzyni |
 | P16 | Sprzężenia cieplne i elektromechaniczne | Częściowo — Re(T),ruch i chłodzenie | P15B sprzęga prąd,Re(T),ruch i straty; twierdzenie napięciowe dla stałego biernego tła. Nie wykonano fizycznej identyfikacjiBL(T),pełnych dużych sygnałów, gradientów i wszystkich sprzężeń termicznych |
 | P17 | Łączne granice użytecznego zakresu | Częściowo — wspólneV/I/X/chłodzenie | Raport028:5184zestawy,31104punkty,analityczne przedziałyVb>0,26246niezależnych brzegów i3tożsamościSymPy. Stały poziom wyjściowy i warunkoweRth. Nie zintegrowano jeszcze rzeczywistegoTHD,ciągłego pasma,muzyki,konstrukcji i pokoju |
-| P18 | Płyty MDF: drgania, naprężenia, promieniowanie | Częściowo — wykonane P18A/P18B/P18C | Raport029:płyty. Raport033:front. Raport035:pełna rama6brył/12spoin,siatki do36771DOF,168punktówharmonicznych,ściągi i podparcie. U-021:frontstały;geometria finalna,frez,promieniowanie i porównanieMDF/sklejka zR3 otwarte |
+| P18 | Płyty MDF: drgania, naprężenia, promieniowanie | Częściowo — P18A–E w modelach kontrolnych | Raport029:płyty. Raport033:front. Raport035:pełna rama6brył/12spoin,siatki do36771DOF,168punktówharmonicznych,ściągi i podparcie. U-021:frontstały;geometria finalna,frez,promieniowanie i porównanieMDF/sklejka zR3 otwarte; P18E/raport059: 27 modeli podatnych wręg, do 5070 DOF i zbieżność; nie pełny MES całej skrzyni |
 | P19 | Usztywnienia, połączenia i klej | Częściowo — wykonane rodziny P19A–P19G | Raporty030–040:spoiny,styk,pełna rama,listwa. Raport041:24podmodele/144okna/do102033DOF,przekazanie stóp i dwa kierunki siatki. Wpływ pola N14/N18 większy niż ostatnie lokalne zagęszczenia;nośność,Gc,SN/J(t) i identyfikacjaMDF otwarte |
-| P20 | Regulacja objętości | Częściowo — P20A/P20B/P20C w rodzinach kontrolnych | Raport042:108układów/78modułów. Raport043:56modeli przegrody. Raport044:18brył zklejem,1944porty gazu,11664punkty napędu27konfiguracji,24pełne MES+gaz,ciągłe wymaganieE,8flag siatki rozstrzygnięte n16/do40248DOF. Pole3D gazu,rzeczywisty mechanizm i mocowania otwarte |
-| P21 | Wewnętrzne pole i sprzężenie paneli | Częściowo — P21B wykonane, P21C0 wykonany jako pilot | Raport045:18modeli/132układy/264pola; 17 zapisów zachowano, 1 dokończono. Raport050:27płytkich geometrii/600punktów, szereg z analityczną sumą głębokości i granicą ogona, niezależne FV. Główna komora z regulacją, włókniną, podatnymi ścianami i napędem pozostaje otwarta |
+| P20 | Regulacja objętości | Częściowo — P20A–D w modelach konstrukcji | Raport042:108układów/78modułów. Raport043:56modeli przegrody. Raport044:18brył zklejem,1944porty gazu,11664punkty napędu27konfiguracji,24pełne MES+gaz,ciągłe wymaganieE,8flag siatki rozstrzygnięte n16/do40248DOF. Pole3D gazu,rzeczywisty mechanizm i mocowania otwarte; P20D/raport057: geometra 1000×440×500 mm, tory wkładów, obrys i ograniczenia maskownicy, bez gotowych rysunków |
+| P21 | Wewnętrzne pole i sprzężenie paneli | Częściowo — P21B/C/D w określonych zakresach | Raport045:18modeli/132układy/264pola; 17 zapisów zachowano, 1 dokończono. Raport050:27płytkich geometrii/600punktów, szereg z analityczną sumą głębokości i granicą ogona, niezależne FV. Główna komora z regulacją, włókniną, podatnymi ścianami i napędem pozostaje otwarta; P21D/raport060: 45 pól, 12 zagęszczeń, 54 odpowiedzi napędu; pełne sprężyste sprzężenie pozostaje otwarte |
 | P22 | Napęd, impedancja wyjściowa i clipping | Częściowo — P22A/P22B wykonane | Raport047:3240pasywnychportów/19440punktów. Raport048:648trajektorii z saturacją i G0/10,stanLe/SEM,7ciągłychODE/28kroków/100root,208wyjść poza odniesienieX zachowanych. Nie jest to identyfikacja elektroniki lub gwarancja limituI/X/T;pełneLC/temperatura/sterowanie otwarte |
 | P23 | Cyfrowa korekcja, faza i opóźnienia | Częściowo — P23A wykonane | Raport046:27konfiguracji,972projekty/4860kaskad,19440sekcji,300granicHP,9przebiegówsoftware,45kontroli80cyfr+3świadków,12kolejności/48wyjśćpośrednich. Faza/opóźnienie własne filtru,nie latencja hardware;integracja fizycznego głośnika i ochrony otwarta |
 | P24 | Dynamiczna ochrona | Częściowo — P24A wykonane w rodzinie | Raport049:972dokładne świadki wspólnego obszaru X/I/θ,1944końceT,6804próby/3odrzucone,36ciągłychODE,11664porównańsinusów. Cały przedziałRe(T) i dowolny bounded-input w zadanym modelu;nie fizyczna certyfikacja. LC,nieliniowości,filtry/rekonstrukcja i szersza niepewność otwarte |
-| P25 | Sygnały wielotonowe i realistyczne | Częściowo — dwa tony | P14A daje wspólne V/I/X dla sumy2tonów i12pilotów. Więcej tonów, realistyczne widma, clipping i ochrona pozostają do wykonania; nie sumować osobnych limitów sinusów |
-| P26 | Zespolony model pokoju ze stratami | Częściowo | Rodzina modalna, 4 ustawienia × 9 scenariuszy strat; Green 1D, pasywność i zbieżność, raport 013. P11 dodaje reakcję pola na napęd i gęstą siatkę, raport 017. Pozycje/straty i rozpraszanie na bryle rzeczywistej pozostają nieznane |
-| P27 | Jeden/dwa subwoofery i ustawienie | Częściowo | 4 scenariusze przy monitorach, 15 876 wierszy S0, 1512 diagnostycznych, 120 przypadków fazy i 48 koniecznych testów gabarytu. U-020 zmienia docelowo kanapę na prawą iRTV na lewą stronę rzutu; konfiguracjav2 i raport019. Wymiary U-019 aktualne; dawne S0 i pozycje nadal nie są pomiarem |
+| P25 | Sygnały wielotonowe i realistyczne | Częściowo — P25C 216 przebiegów | P14A daje wspólne V/I/X dla sumy2tonów i12pilotów. P25C rozszerza zakres na osiem tonów, impulsy, clipping i trzy hipotetyczne strategie ochrony; rzeczywiste nagrania, pełna nieliniowość i sprzętowa ochrona pozostają otwarte; nie sumować osobnych limitów sinusów; P25C/raport058: 216 przebiegów 3 kandydatów, 4 sygnałów i 3 strategii w modelu0D; bariera energii tylko idealna |
+| P26 | Zespolony model pokoju ze stratami | Częściowo | Rodzina modalna, 4 ustawienia × 9 scenariuszy strat; Green 1D, pasywność i zbieżność, raport 013. P11 dodaje reakcję pola na napęd i gęstą siatkę, raport 017. Pozycje/straty i rozpraszanie na bryle rzeczywistej pozostają nieznane; P26D/raport061: osiem orientacji brył × dziewięć środowisk, bez rzeczywistego RT60 i rozpraszania brył |
+| P27 | Jeden/dwa subwoofery i ustawienie | Częściowo | 4 scenariusze przy monitorach, 15 876 wierszy S0, 1512 diagnostycznych, 120 przypadków fazy i 48 koniecznych testów gabarytu. U-020 zmienia docelowo kanapę na prawą iRTV na lewą stronę rzutu; konfiguracjav2 i raport019. Wymiary U-019 aktualne; dawne S0 i pozycje nadal nie są pomiarem; P27D/raport061: wspólny budżet dwóch źródeł, nominalne gain/delay nie odporne na straty |
 | P28 | Integracja monitorów i8wyjśćDSP | Częściowo — macierz 2→8 i idealne LR4 | Raport053: kontrola sumowania i stabilne filtry software; faza, opóźnienia i realne monitory nadal nieznane |
 | P29 | Odporna optymalizacja wielokryterialna | Częściowo — warunkowa rekomendacja C02 | Raporty052–055: 27 konfiguracji, stres Sobola, warstwy/wkłady/front, wrażliwość Pcu i V; nie zintegrowano rzeczywistego THD, chłodzenia i pełnej konstrukcji |
-| P30 | Odtwarzalność i przyszły protokół | Częściowo | Kod, hashe i archiwa; pełny rejestr hipotez oraz eksperymentów rozróżniających do zamknięcia |
+| P30 | Odtwarzalność i przyszły protokół | Częściowo | Kod, hashe i archiwa; pełny rejestr hipotez oraz eksperymentów rozróżniających do zamknięcia; Raport056 i p30 audyt manifestów/źródeł; pełny program nadal otwarty |
 
 ## Bramka końcowego raportu
 
@@ -169,3 +169,17 @@ Hashe: wyniki/manifest_rekomendacji_P29.json. Brak pomiarów urządzenia,
 realnego presetu ochrony X/T i pełnego sprzężenia; nie zamykać 30 pakietów.
 Najbliższy krok: spójna geometria wręg/dostępu/obrysu, następnie ochrona
 czasowa nowego układu. Zachować stare dane, nie dodawać masy powietrza dwa razy.
+
+
+## Aktualizacja 2026-10-31 — badania Work 056–061
+
+Najnowsza seria obejmuje: P20D (wspólna geometria, dostęp do wkładów i obrys),
+P18E (podatne wręgi, modele zredukowane), P21D (przestrzenny port i napęd),
+P25C (216 krótkich przebiegów ochrony), P26D/P27D (osiem geometrii
+dwóch źródeł w dziewięciu założonych środowiskach) oraz audyt P30.
+Wyniki są w raportach 056–061; wejścia, skrypty, surowe dane i wykresy
+są w odpowiednich katalogach. Nie należy dodawać skutków podatnych
+ścian do P21D bez bilansu energii, ani nazywać P25C gotową ochroną
+sprzętu lub P26D pomiarami konkretnego pokoju.
+Ceny nie zostały jeszcze włączone; obowiązuje kryterium wyboru
+najtańszego przetwornika spełniającego łącznie wymagania.

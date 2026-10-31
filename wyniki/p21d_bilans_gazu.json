@@ -1,0 +1,23 @@
+{
+  "scope": "Algebraic FV power balance, not independent validation of physical material; RMS complex convention",
+  "rows": [
+    {
+      "configuration": "150",
+      "f_hz": 80.0,
+      "Q_normalization_m3_s": 1,
+      "power_port": 33.683584997639144,
+      "power_viscous": 20.331523014624413,
+      "power_thermal": 13.352061983016267,
+      "relative_residual": 4.556439907893971e-14
+    },
+    {
+      "configuration": "100",
+      "f_hz": 80.0,
+      "Q_normalization_m3_s": 1,
+      "power_port": 311.9791401823439,
+      "power_viscous": 260.93658557742367,
+      "power_thermal": 51.04255460493049,
+      "relative_residual": 3.293312480150402e-14
+    }
+  ]
+}

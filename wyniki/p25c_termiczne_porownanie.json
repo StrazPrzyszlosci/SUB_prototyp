@@ -1,0 +1,113 @@
+{
+  "scope": "Six-second RMS acceleration transfer at same rail-clipped waveform; heated start +60 K versus Re0. Not isolated self-heating or measured SPL.",
+  "rows": [
+    {
+      "index": 25,
+      "candidate": "C02",
+      "signal": "multisine_aligned",
+      "cold_acceleration_rms_m_s2": 457.74681431303287,
+      "heated_acceleration_rms_m_s2": 417.2954857298489,
+      "heated_over_cold_dB": -0.8036328788108078,
+      "theta_end_k": 68.1011449783487
+    },
+    {
+      "index": 31,
+      "candidate": "C02",
+      "signal": "multisine_schroeder",
+      "cold_acceleration_rms_m_s2": 457.40555338638717,
+      "heated_acceleration_rms_m_s2": 416.46843519539584,
+      "heated_over_cold_dB": -0.8143868395042854,
+      "theta_end_k": 68.09401602092049
+    },
+    {
+      "index": 37,
+      "candidate": "C02",
+      "signal": "bass_bursts",
+      "cold_acceleration_rms_m_s2": 475.0116737869722,
+      "heated_acceleration_rms_m_s2": 416.9763921926724,
+      "heated_over_cold_dB": -1.13185631031303,
+      "theta_end_k": 67.60700004053328
+    },
+    {
+      "index": 43,
+      "candidate": "C02",
+      "signal": "subsonic_impulse",
+      "cold_acceleration_rms_m_s2": 345.8601063190206,
+      "heated_acceleration_rms_m_s2": 333.5516037272793,
+      "heated_over_cold_dB": -0.3147487509773904,
+      "theta_end_k": 56.90632299009087
+    },
+    {
+      "index": 97,
+      "candidate": "C11",
+      "signal": "multisine_aligned",
+      "cold_acceleration_rms_m_s2": 332.85324807950144,
+      "heated_acceleration_rms_m_s2": 306.9070930732545,
+      "heated_over_cold_dB": -0.7049174710120792,
+      "theta_end_k": 63.613088320799534
+    },
+    {
+      "index": 103,
+      "candidate": "C11",
+      "signal": "multisine_schroeder",
+      "cold_acceleration_rms_m_s2": 333.42597927907144,
+      "heated_acceleration_rms_m_s2": 307.0937969023405,
+      "heated_over_cold_dB": -0.7145678263234272,
+      "theta_end_k": 63.554982743360476
+    },
+    {
+      "index": 109,
+      "candidate": "C11",
+      "signal": "bass_bursts",
+      "cold_acceleration_rms_m_s2": 371.97547595433696,
+      "heated_acceleration_rms_m_s2": 329.3163334992722,
+      "heated_over_cold_dB": -1.0580207332930034,
+      "theta_end_k": 62.4429349412741
+    },
+    {
+      "index": 115,
+      "candidate": "C11",
+      "signal": "subsonic_impulse",
+      "cold_acceleration_rms_m_s2": 233.28813107932018,
+      "heated_acceleration_rms_m_s2": 227.1080137288585,
+      "heated_over_cold_dB": -0.23320369814002348,
+      "theta_end_k": 55.75345139704441
+    },
+    {
+      "index": 169,
+      "candidate": "C06",
+      "signal": "multisine_aligned",
+      "cold_acceleration_rms_m_s2": 448.78798910735026,
+      "heated_acceleration_rms_m_s2": 416.0692396126796,
+      "heated_over_cold_dB": -0.657512324335846,
+      "theta_end_k": 59.914547818490185
+    },
+    {
+      "index": 175,
+      "candidate": "C06",
+      "signal": "multisine_schroeder",
+      "cold_acceleration_rms_m_s2": 449.28876780109755,
+      "heated_acceleration_rms_m_s2": 415.97468087385516,
+      "heated_over_cold_dB": -0.6691732830475399,
+      "theta_end_k": 59.89982670816543
+    },
+    {
+      "index": 181,
+      "candidate": "C06",
+      "signal": "bass_bursts",
+      "cold_acceleration_rms_m_s2": 490.16603573974714,
+      "heated_acceleration_rms_m_s2": 437.66937814374404,
+      "heated_over_cold_dB": -0.9839410633237066,
+      "theta_end_k": 60.488701139767656
+    },
+    {
+      "index": 187,
+      "candidate": "C06",
+      "signal": "subsonic_impulse",
+      "cold_acceleration_rms_m_s2": 317.49651958892133,
+      "heated_acceleration_rms_m_s2": 308.16593422039,
+      "heated_over_cold_dB": -0.2590868069866873,
+      "theta_end_k": 55.51570239367149
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "skrypty/pokoj_bryly_P26D.py": "46c41170e5dfe75800c3319c5385a5ffb14d27b2c7f189d3ab61fcb22bbca8af",
+  "skrypty/model_pokoju.py": "bc3c9c425d0a73b6ca76eefcb4b3a39e16210f9a8745a5fb2ea7333d611c053a",
+  "dane/konfiguracje/p26_scenariusze.json": "09c101cfec1c0609490b5dba5dac8aae63bc30a87d4a205644211c532b20e6a0",
+  "dane/konfiguracje/pokoj_odsluchowy.json": "65ee8679213e2a41f3aad384accf2801495a423d0d0b188eb74e916f1e2d3b0c",
+  "dane/konfiguracje/pokoj_rzut_scenariusze_v2.json": "812850531d5d22b7f68c4ea8fdb9e53c63a09712ab64c12110368690535d186c",
+  "dane/konfiguracje/p26d_bryly_scenariusze.json": "069df820c5e5c0712ded6393235f61fb365de0b2a48354df60376c16c2a9beaa",
+  "brief_system_audio_DIY_v0.6.md": "3bd9f8d43a92b96256073e66cd0f4f105336e969a37c29fc42f17cda9d66736f",
+  "wyniki/p26d_podsumowanie.json": "ddbda3ecd11d572112b2eea8f9803c0325bf1c8887b46e82e5fd811804e974cf",
+  "wyniki/p26d_porownanie.csv": "4c46995d6ce673498deda6bf91fcdf0ac3d83996c60778526571ecc558f53320",
+  "wyniki/p26d_odpowiedzi_nominalne.json": "252cd3e27f41ae7ba6b4791f675bbb294b677b3a82842a08c92f001ee43a25e4",
+  "wyniki/p26d_bryly_i_odpowiedz.png": "cc31735adafdd7f2ae9dcdce65bc7a272aae6f790f6c3e0e2fef788ad656528c",
+  "raporty/061_bryly_offset_i_dwa_subwoofery.md": "06c0dfa57f3cfcdc7c437bf247aeb844f735eaa224605292cea69cc602fb04ec",
+  "skrypty/raportuj_bryly_P26D.py": "de0cc9884cbda9654d3feb83930fac54d7a189325ee8f5cea36ef3b90a08c4ec"
+}

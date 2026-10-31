@@ -1,0 +1,13 @@
+{
+  "dane/konfiguracje/p18e_podatne_wregi.json": "0995996847edb83e75cc53539ee45a0920f0c561d00cd89fc05f948190efcf91",
+  "skrypty/mechanika_podatnych_wreg_P18E.py": "d3c6306694165f1a17058f5d4055ded78f3f49bbc8fa2be7f68f5cf3dcea93ec",
+  "skrypty/model_plyty_MITC_P18.py": "1e98a4553f5697344821a83d7d6afe823c2a801350f14dbdeb6d8ce681690775",
+  "dane/konfiguracje/p18e_geometria_zamrozona.json": "f1860cf8368d3d3688554122f20a9b77d2a6d3b656073b92e80e628df23f1dc7",
+  "brief_system_audio_DIY_v0.6.md": "3bd9f8d43a92b96256073e66cd0f4f105336e969a37c29fc42f17cda9d66736f",
+  "wyniki/p18e_przypadki.json": "ac688dd1d8cde7c2d6a669b1636271a41f4e4a48e2064faef35201b24b7b6240",
+  "wyniki/p18e_kontrole.json": "df0a95da060fc7e063de1722d9ef3f8f8bb4938d102099af5f5478e908efeff4",
+  "wyniki/p18e_pola.png": "57cd0fcc318a75e170a1bbd75ea989b64b936a7968fc95c5cceaf1a330492a4b",
+  "wyniki/p18e_wrazliwosc.png": "e45eebaca76d7e214aea0ffdeb514f9c23171b31b58188c9737b1a6828262b62",
+  "raporty/059_podatne_wregi_i_panele.md": "be50736ba7681dd40601e0a6beb38c0e6edc300753c70f016c799e73a5d0fb41",
+  "skrypty/raportuj_podatne_wregi_P18E.py": "adcebec919467bc04059ac827206fdb4f35cb934ac811de3fe3fbbaf6e11e558"
+}

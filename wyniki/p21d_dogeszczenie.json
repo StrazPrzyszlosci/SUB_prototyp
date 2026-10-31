@@ -1,0 +1,137 @@
+{
+  "scope": "C02 80Hz; extra grids for near-zero port, no continuum certificate",
+  "rows": [
+    {
+      "configuration": "150",
+      "proxy": "A",
+      "step_m": 0.025,
+      "f_hz": 80,
+      "dof": 17216,
+      "Z_real": 33.20456820022135,
+      "Z_imag": -120.16578704081309,
+      "residual": 1.7065702804836034e-13,
+      "compliance_reference_magnitude": 1877.7451001966792
+    },
+    {
+      "configuration": "150",
+      "proxy": "A",
+      "step_m": 0.018,
+      "f_hz": 80,
+      "dof": 39331,
+      "Z_real": 33.01667176012489,
+      "Z_imag": -130.35575825549301,
+      "residual": 3.1696755552821576e-13,
+      "compliance_reference_magnitude": 1877.7451001965844
+    },
+    {
+      "configuration": "150",
+      "proxy": "B",
+      "step_m": 0.025,
+      "f_hz": 80,
+      "dof": 16292,
+      "Z_real": 33.51894219951028,
+      "Z_imag": 46.4048017667054,
+      "residual": 1.7529501764714749e-13,
+      "compliance_reference_magnitude": 1877.7451001967092
+    },
+    {
+      "configuration": "150",
+      "proxy": "B",
+      "step_m": 0.018,
+      "f_hz": 80,
+      "dof": 38750,
+      "Z_real": 33.31929950868263,
+      "Z_imag": 27.807035220384826,
+      "residual": 3.175362572565802e-13,
+      "compliance_reference_magnitude": 1877.7451001964748
+    },
+    {
+      "configuration": "120",
+      "proxy": "A",
+      "step_m": 0.025,
+      "f_hz": 80,
+      "dof": 19623,
+      "Z_real": 64.03507947823545,
+      "Z_imag": -627.5256522430032,
+      "residual": 2.065195262549867e-13,
+      "compliance_reference_magnitude": 2349.774704325415
+    },
+    {
+      "configuration": "120",
+      "proxy": "A",
+      "step_m": 0.018,
+      "f_hz": 80,
+      "dof": 42496,
+      "Z_real": 63.42974865755963,
+      "Z_imag": -636.9784315533301,
+      "residual": 3.611523486861846e-13,
+      "compliance_reference_magnitude": 2349.7747043254312
+    },
+    {
+      "configuration": "120",
+      "proxy": "B",
+      "step_m": 0.025,
+      "f_hz": 80,
+      "dof": 19087,
+      "Z_real": 64.40917241675938,
+      "Z_imag": -463.06700931312525,
+      "residual": 2.0560350249533158e-13,
+      "compliance_reference_magnitude": 2349.7747043253853
+    },
+    {
+      "configuration": "120",
+      "proxy": "B",
+      "step_m": 0.018,
+      "f_hz": 80,
+      "dof": 41643,
+      "Z_real": 63.79654005724158,
+      "Z_imag": -480.4709774413301,
+      "residual": 3.47305536109487e-13,
+      "compliance_reference_magnitude": 2349.7747043252343
+    },
+    {
+      "configuration": "100",
+      "proxy": "A",
+      "step_m": 0.025,
+      "f_hz": 80,
+      "dof": 18966,
+      "Z_real": 309.6131775480925,
+      "Z_imag": -266.8351729493012,
+      "residual": 1.9242794662371723e-13,
+      "compliance_reference_magnitude": 2801.800799840935
+    },
+    {
+      "configuration": "100",
+      "proxy": "A",
+      "step_m": 0.018,
+      "f_hz": 80,
+      "dof": 38064,
+      "Z_real": 306.3108079188023,
+      "Z_imag": -284.066228627338,
+      "residual": 3.2287900670163003e-13,
+      "compliance_reference_magnitude": 2801.8007998406383
+    },
+    {
+      "configuration": "100",
+      "proxy": "B",
+      "step_m": 0.025,
+      "f_hz": 80,
+      "dof": 18426,
+      "Z_real": 311.2184872472852,
+      "Z_imag": -105.34886973109845,
+      "residual": 2.087921128763128e-13,
+      "compliance_reference_magnitude": 2801.80079984099
+    },
+    {
+      "configuration": "100",
+      "proxy": "B",
+      "step_m": 0.018,
+      "f_hz": 80,
+      "dof": 38038,
+      "Z_real": 307.6921871875916,
+      "Z_imag": -130.406365984622,
+      "residual": 3.1517588289764843e-13,
+      "compliance_reference_magnitude": 2801.8007998407697
+    }
+  ]
+}
