@@ -38,7 +38,9 @@ jobs:
           assert 30<ref['f1_to_f8_Hz'][0]<36
           assert 70<ref['max_ugięcie_um']<100
           rd=open('README.md',encoding='utf8').read()
-          assert '95 raportów' in rd
+          import re
+          m=re.search(r'19 producentów · (\\d+) raport(?:y|ów) · Python/JavaScript',rd)
+          assert m is not None and int(m.group(1))>=95, 'README report index too small or missing'
           assert 'p37a_mac_globalny_18_modow.svg' in rd
           assert 'p37b_wrazliwosc_material_spoiny.svg' in rd
           assert 'klient' not in rd.lower()
