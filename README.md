@@ -11,7 +11,7 @@ nie jest kandydatem na konstrukcję końcową.*
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**26 modeli głośników · 11 producentów · 65 raportów · Python**
+**26 modeli głośników · 11 producentów · 66 raportów · Python**
 
 Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
@@ -806,6 +806,27 @@ ale nie uzyskaliśmy jeszcze ścisłej zbieżności całego pasma.
 · [podsumowanie 52 272 obliczeń](wyniki/p21f_podsumowanie.json)
 · [kod odtwarzania](skrypty/p21f_mody_gaz_panele.py).
 
+**P21G: prawdziwe przestrzenne wręgi i wkłady, dwa podatne porty paneli.**
+Połączyliśmy ciśnienie z rozwiązania objętościowego (FV) dla
+11 wręg, wkładów i zastępczego kosza P20D z obliczeniami
+ruchu dwóch sprężystych ścian oraz trzech finalistów C02/C11/C06.
+W wariancie ok. 120 l (rzeczywista *modelowa* objętość 119,937 l)
+zmiana prędkości membrany C02 przy tym samym napięciu wynosi
+**−0,060 do +0,133 dB** w paśmie 20–80 Hz przy nominalnej
+podatności i założonym tłumieniu.
+
+![P21G: wspólny port FV obudowy z przeszkodami i podatnymi ścianami](wyniki/106_P21G_komora_i_podatne_panele.svg)
+
+To **nie pełny mechaniczny MES**: postacie uginania ścian są
+uproszczone, materiały przyjęto scenariuszowo, a model wyklejenia
+jest inny niż w P21D. Badano ruch membrany, **nie bezpośredni dźwięk
+promieniowany przez panele**. Przeliczono 348 przypadków napędu,
+sprawdzając bilans mocy i trzy rozdzielczości siatki.
+
+[Raport 066 — P21G: komora z przeszkodami i podatnymi panelami](raporty/066_P21G_FV_podatne_sciany_rzeczywiste_przeszkody.md)
+· [wyniki i kontrole](wyniki/p21g_podsumowanie.json)
+· [skrypt](skrypty/p21g_fv_podatne_panele.py).
+
 [Raport 050 — źródło w komorze](raporty/050_P21C0_plytka_komora_i_polozenie_zrodla.md)
 · [raport 051 — kołowa membrana](raporty/051_P21C1_membrana_kolowa_i_bezwladnosc.md)
 · [raport 052 — warstwy i wkłady](raporty/052_komora_warstwy_wklady_i_front.md).
@@ -836,7 +857,7 @@ ani wartości RMS ze szczytowymi. Liczby z modeli nie są pomiarami urządzenia.
 ## Co zostało do zrobienia
 
 Zbadano już wspólną geometrię z wręgami i wkładami (P20D),
-przestrzenne pole gazu oraz port napędu (P21D), nowy model gaz–panele (P21E) i wielomodowy wariant P21F, podatność paneli
+przestrzenne pole gazu oraz port napędu (P21D), modele P21E/P21F oraz wspólną przestrzenną komorę z panelami (P21G), podatność paneli
 (P18E), krótkie sygnały z ochroną (P25C), próbkowaną barierę (P25D), odporność na błędy stanu (P25E) i warianty ustawienia
 dwóch źródeł w pokoju (P26D/P27D). **Nie są to jeszcze jeden
 sprzężony model wielofizyczny ani zweryfikowany prototyp.**
@@ -931,6 +952,7 @@ nie zatwierdzonym docelowym głośnikiem.
 | Jak wygląda przestrzenne pole gazu w geometrii P20D? | [060 — P21D](raporty/060_P21D_wspolna_geometria_i_port_napedu.md) | [przebiegi napędu](wyniki/p21d_naped.csv), [przestrzenny wykres](wyniki/101_P21D_komora_i_naped.png) |
 | Jak zmienia się napęd po uwzględnieniu podatności dwóch ścian? | [064 — P21E: model sprzężony gaz–panel](raporty/064_P21E_gaz_podatne_sciany_i_naped.md) | [wykres](wyniki/104_P21E_podatne_sciany.svg), [podsumowanie](wyniki/p21e_podsumowanie.json), [skrypt](skrypty/p21e_gaz_podatne_sciany.py) |
 | Czy przestrzenne mody gazu i podatne pola zmieniają obciążenie membrany? | [065 — P21F: wielomody i podatne pola](raporty/065_P21F_wielomody_gazu_i_scian.md) | [wykres](wyniki/105_P21F_mody_i_panele.svg), [podsumowanie](wyniki/p21f_podsumowanie.json), [skrypt](skrypty/p21f_mody_gaz_panele.py) |
+| Jak wręgi, wkłady i podatne panele współdziałają z powietrzem? | [066 — P21G: porty FV z przeszkodami](raporty/066_P21G_FV_podatne_sciany_rzeczywiste_przeszkody.md) | [wykres](wyniki/106_P21G_komora_i_podatne_panele.svg), [podsumowanie](wyniki/p21g_podsumowanie.json), [skrypt](skrypty/p21g_fv_podatne_panele.py) |
 | Czy dwa źródła w orientacji pionowej i poziomej są odporne na nieznane straty pokoju? | [061 — P26D/P27D](raporty/061_bryly_offset_i_dwa_subwoofery.md) | [porównanie](wyniki/p26d_porownanie.csv), [wykres](wyniki/p26d_bryly_i_odpowiedz.png) |
 
 Pełny zakres i otwarte bramki są w [programie 30 pakietów](PROGRAM_30_BADAN.md).
