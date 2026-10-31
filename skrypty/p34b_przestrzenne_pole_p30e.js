@@ -3,6 +3,8 @@
 // P34B research-grade simplified 3D gas FV geometry. NO acoustic damping or panel coupling.
 // npm dependencies: none. Node 18+.
 const fs=require("node:fs"),path=require("node:path");
+// The legacy cfg.source_xz_mm=[231,250] is retained for historical output reproduction.
+// P38B transforms the external P31C center [231,250] to cavity-local [209,228].
 const cfg={
   "date": "2026-10-31",
   "inside_mm": [
@@ -84,7 +86,7 @@ function geometryAir(x,y,z,blocks,c,hasBasket=true){
  for(const b of blocks)if(insideBox(x,y,z,b))return false;
  // Placeholder 5 L displacement, not physical driver contour.
  if(hasBasket){
-  const dx=x-231,dz=z-250;
+  const dx=x-c.source_xz_mm[0],dz=z-c.source_xz_mm[1];
   if(y>=0&&y<=94 && dx*dx+dz*dz<=130*130)return false;
  }
  return true;
@@ -100,12 +102,12 @@ function buildGrid(c,geom,state,h,speed=343,source="offset"){
   const id=idx(i,j,k),nsub=3;let count=0;
   for(let a=0;a<nsub;a++)for(let b=0;b<nsub;b++)for(let d=0;d<nsub;d++){
    const X=(i+(a+.5)/nsub)*dx,Y=(j+(b+.5)/nsub)*dy,Z=(k+(d+.5)/nsub)*dz;
-   if(geometryAir(X,Y,Z,solid,c.nominal_basket_displacement_l>0))count++;
+   if(geometryAir(X,Y,Z,solid,c,c.nominal_basket_displacement_l>0))count++;
   }
   fluid[id]=count/27;fluidVolume[id]=fluid[id]*volumeCell;sumFluid+=fluidVolume[id];
   if(j===0){
    let count2=0;
-   const X0=source==="offset"?231:W/2,Z0=source==="offset"?250:H/2;
+   const X0=source==="offset"?c.source_xz_mm[0]:W/2,Z0=source==="offset"?c.source_xz_mm[1]:H/2;
    for(let a=0;a<5;a++)for(let b=0;b<5;b++){
     const x=(i+(a+.5)/5)*dx,z=(k+(b+.5)/5)*dz;
     if((x-X0)**2+(z-Z0)**2<c.source_radius_mm**2)count2++;

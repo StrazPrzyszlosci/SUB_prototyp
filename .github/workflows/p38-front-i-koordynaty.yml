@@ -1,0 +1,39 @@
+name: P38 front geometry and acoustic coordinate audit
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  catalog-front-and-coordinate-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Recalculate front geometry and 15 paired FV simulations
+        run: |
+          node --check skrypty/p38a_front_Dayton_wymiary.js
+          node --check skrypty/p38b_audyt_ukladu_wspolrzednych.js
+          node --check skrypty/p34b_przestrzenne_pole_p30e.js
+          node skrypty/p38a_front_Dayton_wymiary.js >/tmp/p38a.log
+          node skrypty/p38b_audyt_ukladu_wspolrzednych.js >/tmp/p38b.log
+      - name: Cross-check catalog dimensions, coordinate frames and reference guide
+        run: |
+          node - <<'NODE'
+          const fs=require('node:fs');
+          const a=JSON.parse(fs.readFileSync('wyniki/p38a_front_geom_20261101.json'));
+          const b=JSON.parse(fs.readFileSync('wyniki/p38b_koordynaty_FV_15_20261101.json'));
+          if(a.holes.length!==8)throw Error('Manufacturer mounting holes');
+          if(Math.abs(a.clearance.wood_radial_at_flange_hole_mm-2.85)>1e-6)throw Error('Radial wood ligament');
+          if(a.local_center_mm[0]!==209||a.local_center_mm[1]!==228)throw Error('Exterior to interior conversion');
+          if(b.cases!==15||b.results.length!==15)throw Error('FV pair count');
+          const ref=b.results.find(x=>x.state==='120'&&x.frequency_Hz===80&&x.mesh_mm===55);
+          if(!ref||Math.abs(ref.legacy_rms_percent-19.0882768)>.05||Math.abs(ref.corrected_rms_percent-21.0259762)>.05)throw Error('P38B coordinate regression');
+          const md=fs.readFileSync('README.md','utf8');
+          const count=md.match(/19 producentów · (\d+) raport(?:y|ów) · Python\/JavaScript/);
+          if(!count||Number(count[1])<97||/klient/i.test(md))throw Error('Research guide regression');
+          if(!md.includes('p38a_front_NIE_CNC.svg')||!md.includes('p38b_audyt_pozycji_zrodla.svg'))throw Error('Missing P38 figures');
+          console.log('PASS P38: catalog holes/rigid shell clearance, coordinate frame 15 paired FV calculations');
+          NODE

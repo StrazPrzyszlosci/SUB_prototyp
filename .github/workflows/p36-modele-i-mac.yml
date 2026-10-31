@@ -36,7 +36,8 @@ jobs:
           const b0=b.rows.find(x=>x.id==='C02' && x.volume_l===120 && x.wall_mm===22 && x.E_GPa===2.1 && x.rho_kgm3===730 && x.brace_support==='no_braces');
           if(!b0 || Math.abs(b0.rigid_case.f3_hz-32.14555)>.02)throw Error('Dayton reference');
           const md=fs.readFileSync('README.md','utf8');
-          if(!md.includes('93 raporty') || /klient/i.test(md))throw Error('README research terminology');
+          const count=md.match(/19 producentów · (\d+) raport(?:y|ów) · Python\/JavaScript/);
+          if(!count || Number(count[1])<93 || /klient/i.test(md))throw Error('README research terminology or missing report index');
           if((md.match(/!\[[^\]]*\]\([^)]*\)/g)||[]).length<88)throw Error('README missing diagrams');
           console.log('PASS P36: 324 static, 972 linear acoustic and 12×3 modal tests');
           NODE
