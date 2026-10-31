@@ -1,0 +1,42 @@
+name: P36 - material compliance, closed box and modal MAC
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  p36-research-regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax and reproducible calculations
+        run: |
+          node --check skrypty/p36a_podatnosc_i_grubosc_MDF.js
+          node --check skrypty/p36b_przetworniki_i_podatnosc.js
+          node --check skrypty/p36c_test_MAC_plyty.js
+          node skrypty/p36a_podatnosc_i_grubosc_MDF.js >/tmp/p36a.log
+          node skrypty/p36b_przetworniki_i_podatnosc.js >/tmp/p36b.log
+          node skrypty/p36c_test_MAC_plyty.js >/tmp/p36c.log
+      - name: Cross checks and guide integrity
+        run: |
+          node - <<'NODE'
+          const fs=require('node:fs');
+          const a=JSON.parse(fs.readFileSync('wyniki/p36a_podatnosc_MDF_324_20261031.json'));
+          const b=JSON.parse(fs.readFileSync('wyniki/p36b_trzy_glosniki_972_20261031.json'));
+          const c=JSON.parse(fs.readFileSync('wyniki/p36c_plate_mode_MAC_20261031.json'));
+          if(a.grid_cases!==324 || b.cases!==972)throw Error('Bad design space count');
+          const ref=(support)=>a.rows.find(x=>x.target_l===120 && x.thickness_mm===22 && x.E_GPa===2.1 && x.rho_kgm3===730 && x.support===support);
+          if(Math.abs(ref('no_braces').equivalent_stiffness_volume_l-12.25586)>.02)throw Error('Compliance unit regression');
+          if(Math.abs(ref('two_ideal_lines').equivalent_stiffness_volume_l-3.585125)>.02)throw Error('Braced compliance regression');
+          if(!a.convergence.every(x=>Math.abs(x.equivalent_l-a.convergence.at(-1).equivalent_l)<.005))throw Error('Navier series convergence');
+          if(c.comparisons.length!==2 || c.comparisons.some(x=>x.min_MAC<.90 || x.id_match_count!==12))throw Error('MAC test');
+          const b0=b.rows.find(x=>x.id==='C02' && x.volume_l===120 && x.wall_mm===22 && x.E_GPa===2.1 && x.rho_kgm3===730 && x.brace_support==='no_braces');
+          if(!b0 || Math.abs(b0.rigid_case.f3_hz-32.14555)>.02)throw Error('Dayton reference');
+          const md=fs.readFileSync('README.md','utf8');
+          if(!md.includes('93 raporty') || /klient/i.test(md))throw Error('README research terminology');
+          if((md.match(/!\[[^\]]*\]\([^)]*\)/g)||[]).length<88)throw Error('README missing diagrams');
+          console.log('PASS P36: 324 static, 972 linear acoustic and 12×3 modal tests');
+          NODE
