@@ -1,0 +1,397 @@
+{
+  "study": "P30A",
+  "status": "P20D geometric sensitivity and translation-only assembly checks, NOT CAD/FEA/CNC signoff",
+  "source": "P20D repository report 057 and configuration p20d_geometria.json",
+  "design_parameters": {
+    "outer_height_mm": 500,
+    "wall_mm": 22,
+    "front_mm": 44,
+    "nominal_driver_effective_displacement_l": 5,
+    "nominal_other_hardware_l": 0.175,
+    "fill_density_kg_m3": 20,
+    "fill_solid_density_kg_m3": 1380,
+    "large_module_dimensions_mm": [
+      210,
+      150,
+      100
+    ],
+    "small_module_dimensions_mm": [
+      180,
+      100,
+      100
+    ],
+    "candidate_variable_mat_thickness": "50 mm baseline; 45/40/35/30 mm alternative; acoustic equivalence not established"
+  },
+  "tested_variants": [
+    {
+      "width_mm": 1000,
+      "body_depth_mm": 440,
+      "body_height_mm": 500,
+      "rear_mat_thickness_mm": 50,
+      "inside_mm": [
+        956.0,
+        374.0,
+        456.0
+      ],
+      "rear_mat_start_y_mm": 324.0,
+      "braces_l": 1.6526,
+      "net_empty_nom_l": 155.9073,
+      "net_empty_stress_l": [
+        150.598,
+        161.2049
+      ],
+      "family_p20d_counts": {
+        "150_l": {
+          "large": 2,
+          "small": 0,
+          "net_nom_l": 149.6073,
+          "net_stress_l": [
+            144.298,
+            154.9049
+          ]
+        },
+        "120_l": {
+          "large": 11,
+          "small": 1,
+          "net_nom_l": 119.4573,
+          "net_stress_l": [
+            114.148,
+            124.7549
+          ]
+        },
+        "100_l": {
+          "large": 16,
+          "small": 3,
+          "net_nom_l": 100.1073,
+          "net_stress_l": [
+            94.798,
+            105.4049
+          ]
+        }
+      },
+      "total_depth_min_mm": 476,
+      "total_depth_max_mm": 496,
+      "margin_worst_mm": 4,
+      "margin_already_includes_total_depth_allowance_mm": 2,
+      "static_collisions": [],
+      "basket_AABB_collisions": 0,
+      "module_mat_front_gap_mm": 6.0,
+      "insert_clearance_after_hardware_mm": 3.0
+    },
+    {
+      "width_mm": 1000,
+      "body_depth_mm": 435,
+      "body_height_mm": 500,
+      "rear_mat_thickness_mm": 45,
+      "inside_mm": [
+        956.0,
+        369.0,
+        456.0
+      ],
+      "rear_mat_start_y_mm": 324.0,
+      "braces_l": 1.6381,
+      "net_empty_nom_l": 153.7735,
+      "net_empty_stress_l": [
+        148.4977,
+        159.0403
+      ],
+      "family_p20d_counts": {
+        "150_l": {
+          "large": 2,
+          "small": 0,
+          "net_nom_l": 147.4735,
+          "net_stress_l": [
+            142.1977,
+            152.7403
+          ]
+        },
+        "120_l": {
+          "large": 11,
+          "small": 1,
+          "net_nom_l": 117.3235,
+          "net_stress_l": [
+            112.0477,
+            122.5903
+          ]
+        },
+        "100_l": {
+          "large": 16,
+          "small": 3,
+          "net_nom_l": 97.9735,
+          "net_stress_l": [
+            92.6977,
+            103.2403
+          ]
+        }
+      },
+      "total_depth_min_mm": 471,
+      "total_depth_max_mm": 491,
+      "margin_worst_mm": 9,
+      "margin_already_includes_total_depth_allowance_mm": 2,
+      "static_collisions": [],
+      "basket_AABB_collisions": 0,
+      "module_mat_front_gap_mm": 6.0,
+      "insert_clearance_after_hardware_mm": 3.0
+    },
+    {
+      "width_mm": 1020,
+      "body_depth_mm": 435,
+      "body_height_mm": 500,
+      "rear_mat_thickness_mm": 45,
+      "inside_mm": [
+        976.0,
+        369.0,
+        456.0
+      ],
+      "rear_mat_start_y_mm": 324.0,
+      "braces_l": 1.6381,
+      "net_empty_nom_l": 157.1329,
+      "net_empty_stress_l": [
+        151.8206,
+        162.4357
+      ],
+      "family_p20d_counts": {
+        "150_l": {
+          "large": 2,
+          "small": 0,
+          "net_nom_l": 150.8329,
+          "net_stress_l": [
+            145.5206,
+            156.1357
+          ]
+        },
+        "120_l": {
+          "large": 11,
+          "small": 1,
+          "net_nom_l": 120.6829,
+          "net_stress_l": [
+            115.3706,
+            125.9857
+          ]
+        },
+        "100_l": {
+          "large": 16,
+          "small": 3,
+          "net_nom_l": 101.3329,
+          "net_stress_l": [
+            96.0206,
+            106.6357
+          ]
+        }
+      },
+      "total_depth_min_mm": 471,
+      "total_depth_max_mm": 491,
+      "margin_worst_mm": 9,
+      "margin_already_includes_total_depth_allowance_mm": 2,
+      "static_collisions": [],
+      "basket_AABB_collisions": 0,
+      "module_mat_front_gap_mm": 6.0,
+      "insert_clearance_after_hardware_mm": 3.0
+    },
+    {
+      "width_mm": 1040,
+      "body_depth_mm": 430,
+      "body_height_mm": 500,
+      "rear_mat_thickness_mm": 40,
+      "inside_mm": [
+        996.0,
+        364.0,
+        456.0
+      ],
+      "rear_mat_start_y_mm": 324.0,
+      "braces_l": 1.6236,
+      "net_empty_nom_l": 158.2685,
+      "net_empty_stress_l": [
+        152.9544,
+        163.5757
+      ],
+      "family_p20d_counts": {
+        "150_l": {
+          "large": 2,
+          "small": 0,
+          "net_nom_l": 151.9685,
+          "net_stress_l": [
+            146.6544,
+            157.2757
+          ]
+        },
+        "120_l": {
+          "large": 11,
+          "small": 1,
+          "net_nom_l": 121.8185,
+          "net_stress_l": [
+            116.5044,
+            127.1257
+          ]
+        },
+        "100_l": {
+          "large": 16,
+          "small": 3,
+          "net_nom_l": 102.4685,
+          "net_stress_l": [
+            97.1544,
+            107.7757
+          ]
+        }
+      },
+      "total_depth_min_mm": 466,
+      "total_depth_max_mm": 486,
+      "margin_worst_mm": 14,
+      "margin_already_includes_total_depth_allowance_mm": 2,
+      "static_collisions": [],
+      "basket_AABB_collisions": 0,
+      "module_mat_front_gap_mm": 6.0,
+      "insert_clearance_after_hardware_mm": 3.0
+    },
+    {
+      "width_mm": 1050,
+      "body_depth_mm": 425,
+      "body_height_mm": 500,
+      "rear_mat_thickness_mm": 35,
+      "inside_mm": [
+        1006.0,
+        359.0,
+        456.0
+      ],
+      "rear_mat_start_y_mm": 324.0,
+      "braces_l": 1.6091,
+      "net_empty_nom_l": 157.6796,
+      "net_empty_stress_l": [
+        152.3824,
+        162.9724
+      ],
+      "family_p20d_counts": {
+        "150_l": {
+          "large": 2,
+          "small": 0,
+          "net_nom_l": 151.3796,
+          "net_stress_l": [
+            146.0824,
+            156.6724
+          ]
+        },
+        "120_l": {
+          "large": 11,
+          "small": 1,
+          "net_nom_l": 121.2296,
+          "net_stress_l": [
+            115.9324,
+            126.5224
+          ]
+        },
+        "100_l": {
+          "large": 16,
+          "small": 3,
+          "net_nom_l": 101.8796,
+          "net_stress_l": [
+            96.5824,
+            107.1724
+          ]
+        }
+      },
+      "total_depth_min_mm": 461,
+      "total_depth_max_mm": 481,
+      "margin_worst_mm": 19,
+      "margin_already_includes_total_depth_allowance_mm": 2,
+      "static_collisions": [],
+      "basket_AABB_collisions": 0,
+      "module_mat_front_gap_mm": 6.0,
+      "insert_clearance_after_hardware_mm": 3.0
+    },
+    {
+      "width_mm": 1055,
+      "body_depth_mm": 420,
+      "body_height_mm": 500,
+      "rear_mat_thickness_mm": 30,
+      "inside_mm": [
+        1011.0,
+        354.0,
+        456.0
+      ],
+      "rear_mat_start_y_mm": 324.0,
+      "braces_l": 1.5946,
+      "net_empty_nom_l": 156.2396,
+      "net_empty_stress_l": [
+        150.9686,
+        161.5089
+      ],
+      "family_p20d_counts": {
+        "150_l": {
+          "large": 2,
+          "small": 0,
+          "net_nom_l": 149.9396,
+          "net_stress_l": [
+            144.6686,
+            155.2089
+          ]
+        },
+        "120_l": {
+          "large": 11,
+          "small": 1,
+          "net_nom_l": 119.7896,
+          "net_stress_l": [
+            114.5186,
+            125.0589
+          ]
+        },
+        "100_l": {
+          "large": 16,
+          "small": 3,
+          "net_nom_l": 100.4396,
+          "net_stress_l": [
+            95.1686,
+            105.7089
+          ]
+        }
+      },
+      "total_depth_min_mm": 456,
+      "total_depth_max_mm": 476,
+      "margin_worst_mm": 24,
+      "margin_already_includes_total_depth_allowance_mm": 2,
+      "static_collisions": [],
+      "basket_AABB_collisions": 0,
+      "module_mat_front_gap_mm": 6.0,
+      "insert_clearance_after_hardware_mm": 3.0
+    }
+  ],
+  "route_tests": {
+    "1000x440_mat50": {
+      "tested_modules": 20,
+      "paths_passed": 20,
+      "total_segments": 270,
+      "first_failure": null,
+      "verdict": "20_of_20_in_translational_roadmap"
+    },
+    "1020x435_mat45": {
+      "tested_modules": 20,
+      "paths_passed": 20,
+      "total_segments": 270,
+      "first_failure": null,
+      "verdict": "20_of_20_in_translational_roadmap"
+    },
+    "1040x430_mat40": {
+      "tested_modules": 20,
+      "paths_passed": 20,
+      "total_segments": 270,
+      "first_failure": null,
+      "verdict": "20_of_20_in_translational_roadmap"
+    },
+    "1050x425_mat35": {
+      "tested_modules": 20,
+      "paths_passed": 20,
+      "total_segments": 270,
+      "first_failure": null,
+      "verdict": "20_of_20_in_translational_roadmap"
+    }
+  },
+  "limitations": [
+    "No real grille outline, driver resting projection, 3D basket shape, module locking detail or tool/hand clearance.",
+    "Assembly path proofs cover only axis-aligned rigid translations and selected waypoint roadmap, with 3mm envelope; gravity, bolt tool, wiring omitted.",
+    "Reducing the rear mat from 50mm to 35/40mm invalidates carrying forward the acoustic port results for 50mm without recalculation.",
+    "The P20D low/high volume stress bounds describe scenarios, not verified manufacturing tolerances or probability.",
+    "Rounded nominal dimensions do not certify target net Vb; actual driver/brace/hardware displacement must be measured.",
+    "No FEM structural stiffness at the 10mm front brace rim, no gasket/clamping/long-term humidity or fatigue validation.",
+    "Calculated depth bound includes separate nominal 2mm tolerance budget, but unknown actual grille geometry can exceed it.",
+    "No material purchase or CNC approval."
+  ]
+}
