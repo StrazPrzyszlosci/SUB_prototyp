@@ -1,0 +1,40 @@
+name: P34 - FV komory i mocowanie wkladow
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  p34-reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Kontrola kodu i odtworzenie 46+324 wynikow
+        run: |
+          node --check skrypty/p34a_przestrzenne_pole_p30e.js
+          node --check skrypty/p34b_sily_mocowania_wkladow.js
+          node skrypty/p34a_przestrzenne_pole_p30e.js >/tmp/p34a.log
+          node skrypty/p34b_sily_mocowania_wkladow.js >/tmp/p34b.log
+          node skrypty/p34a_test_geometrii_i_modow.js >/tmp/p34a_test.log
+      - name: Assercje granic i wyniku
+        run: |
+          node - <<'NODE'
+          const fs=require('node:fs');
+          const a=JSON.parse(fs.readFileSync('wyniki/p34a_przestrzenne_pole_p30e_20261031.json'));
+          const b=JSON.parse(fs.readFileSync('wyniki/p34b_moduly_wklady_324_20261031.json'));
+          if(a.cases!==46 || a.rows.length!==46)throw Error('P34A count');
+          if(b.cases!==324 || b.rows.length!==324)throw Error('P34B count');
+          const x=a.rows.find(x=>x.state==='120'&&x.freq_Hz===80&&x.step_h_mm===36);
+          if(!x||x.relative_residual>1e-6||Math.abs(x.volume_l-120)>3)throw Error('FV geometry/solver');
+          if(Math.abs(x.rms_nonuniformity_pct-20.4226)>1)throw Error('FV numerical regression');
+          const y=b.rows.find(x=>x.liters===100&&x.rho===730&&x.wall_mm===8&&x.acceleration_g===5&&x.net_differential_pressure_Pa===1000);
+          if(!y || Math.abs(y.total_module_mass_kg-12.3396864)>1e-5)throw Error('P34B shell masses');
+          const md=fs.readFileSync('README.md','utf8');
+          const imgs=md.match(/!\[[^\]]*\]\([^)]*\)/g)||[];
+          if(imgs.length<80)throw Error('README missing illustrations');
+          if(/klient/i.test(md))throw Error('Commercial terminology in README');
+          console.log('PASS',a.cases,b.cases,imgs.length);
+          NODE
