@@ -161,7 +161,7 @@ Im(Hfree)=rho*omega/(4*pi^(3/2)*sigma)*[1-2*q*Dawson(q)]
 
 Sprawdzono go osobną całką radialną par rozkładów Gaussa. Model pokoju
 jest pasywną rodziną modalną, ale pomija rozpraszanie na wybranej bryle
-skrzyni. Nie jest dzięki samej pasywności zidentyfikowanym pokojem klienta.
+skrzyni. Nie jest dzięki samej pasywności zidentyfikowanym pokojem użytkownika.
 
 Napęd rozwiązujemy łącznie dla prędkości i prądów wszystkich portów.
 Praca oddana do pokoju jest składnikiem bilansu, a nie tylko wykresem

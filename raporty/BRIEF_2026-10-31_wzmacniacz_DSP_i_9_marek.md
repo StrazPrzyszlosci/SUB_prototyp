@@ -1,4 +1,4 @@
-# Nowy brief klienta — RSS390HF-4 tylko jako faworyt wstępny; dziewięć nowych marek i aktywna elektronika
+# Rozszerzenie warunków badawczych — RSS390HF-4 tylko jako faworyt wstępny; dziewięć nowych marek i aktywna elektronika
 
 > **ERRATUM (P22C, 31.10.2026):** Pierwszy przesiew 180 i 274725
 > przypadków miał błąd konwersji `Xrms→Xpeak`, zawyżający
@@ -13,7 +13,7 @@
 
 ## 1. Zmiana celu, brak narzuconego zwycięzcy
 
-Nowy brief klienta oznacza, że dotychczasowa C02 Dayton RSS390HF-4 jest **jednym z kandydatów**. Nie przepisujemy statusów C02/C11/C06 jako zatwierdzenia zakupowego.
+Rozszerzenie warunków badawczych oznacza, że dotychczasowa C02 Dayton RSS390HF-4 jest **jednym z kandydatów**. Nie przepisujemy statusów C02/C11/C06 jako zatwierdzenia zakupowego.
 
 Przestrzeń projektowa obejmuje odtąd **75, 80, 100, 120 i 150 l netto** (jako scenariusze, *nie* potwierdzone objętości konkretnej geometrii P20D). Limit głębokości obudowy z dotychczasowego projektu pozostaje **500 mm z wszystkimi wystającymi elementami**, do ponownego sprawdzenia dla każdej membrany/kosza. Projekt to **dwa subwoofery sterowane niezależnie**, centralny DSP o 8 wyjściach; 6 kanałów monitorów trójdrożnych + kanały 7/8 dla subwooferów.
 

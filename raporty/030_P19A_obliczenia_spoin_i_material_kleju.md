@@ -128,7 +128,7 @@ trwałości połączeniaMDF w zadanej temperaturze i wilgotności.
 20 Hz, komora kontrolna100 l, para elastycznych ścian i inne cztery
 sztywne. W normalnym modelu SSSS otrzymano ciśnienie840,4 Pa RMS,
 siłę ściągu114,1 N peak i normalny szczyt29,44 kPa. Wartości są
-symulacją, nie wynikami prototypu ani zatwierdzonym poziomem klienta.
+symulacją, nie wynikami prototypu ani zatwierdzonym poziomem użytkownika.
 Tłumienie w tym teście jest założeniem Rayleigha; nie wyprowadzono
 go z danych reologicznych kleju.
 

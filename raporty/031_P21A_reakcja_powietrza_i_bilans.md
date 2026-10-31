@@ -65,7 +65,7 @@ Psource = Pgas_relaxation + 2*Pstructural + 2*Pradiation
 ```
 
 Źródło odniesienia odpowiada ruchowi stożka95dB RMS/4pi/1m. To
-definicja wymuszenia, **nie zatwierdzony próg klienta ani wynik całej
+definicja wymuszenia, **nie zatwierdzony próg użytkownika ani wynik całej
 obudowy**. Zewnętrzny panel w odgrodzie ma inne warunki niż stożkowy
 monopol4pi; nie dodawano mechanicznie ich liczb SPL.
 

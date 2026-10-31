@@ -72,7 +72,7 @@ def main():
         band_status_counts={s:sum(r['status']==s for r in bands) for s in sorted({r['status'] for r in bands})},
         input_sha256=hashes,run_sha256=run,
         room=dict(dimensions_m=[4.6,3.7,2.5],front_width_m=3.7,layout='RTVleft_sofaright_U020',room_transfer_applied=False),
-        geometry='Monopol4pi/1m/RMS,sinusdługotrwały;poziomy85/90/95/100dBto diagnostyka,nie progi klienta.',
+        geometry='Monopol4pi/1m/RMS,sinusdługotrwały;poziomy85/90/95/100dBto diagnostyka,nie progi użytkownika.',
         limitations=['Wspólny zakres dla6częstotliwości nie certyfikuje całego ciągłego pasma ani sumy tonów.',
             'Rth_test i limityT to scenariusze,nie pomiary. Xmax katalogowe nie gwarantujeTHD.',
             'Nie przenosić na sweetspot2.5–3m,roomgain ani realny zysk dwóch subwooferów.',

@@ -80,5 +80,9 @@ bieżący zakres sprawdzaj w [programie 30 pakietów](../PROGRAM_30_BADAN.md).
 - [Raport 065 — P21F: przestrzenne mody gazu i podatne pola ścian](065_P21F_wielomody_gazu_i_scian.md).
 - [Raport 066 — P21G: przestrzenny FV z przeszkodami P20D i podatnymi panelami](066_P21G_FV_podatne_sciany_rzeczywiste_przeszkody.md).
 
-- [Brief klienta 31.10.2026 — dobór modułów ICEpower/Hypex, Flex Eight/HTx i audyt 9 nowych marek (raport nienumerowany)](BRIEF_2026-10-31_wzmacniacz_DSP_i_9_marek.md).
+- [rozszerzenie warunków badawczych 31.10.2026 — dobór modułów ICEpower/Hypex, Flex Eight/HTx i audyt 9 nowych marek (raport nienumerowany)](BRIEF_2026-10-31_wzmacniacz_DSP_i_9_marek.md).
 - [Raport 067 — P24B: 729 trajektorii z Re(T), cieplną siecią Cauer oraz niezależnymi barierami X/T](067_P24B_czasowa_termika_i_dwie_ochrony.md).
+
+- [Raport 080 — P31A: porównanie 33 konfiguracji, w tym tańszych STX](080_P31A_porownanie_kosztowe_STX_Dayton_33.md).
+- [Raport 081 — P31B: **sprostowanie jednostek** i podatne podpory płyty](081_P31B_podatnosc_wreg_obudowy_1020_425.md).
+- [Raport 082 — P32A: 612 analiz drgań panelu i tłumienia](082_P32A_dynamika_panelu_wreg_i_tlumienia.md).

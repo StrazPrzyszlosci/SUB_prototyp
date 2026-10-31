@@ -1,4 +1,6 @@
-# Raport 081 — P31B: badania podatnego podparcia dwóch wręg nowej obudowy
+# Raport 081 — P31B (ERRATA 31.10.2026, skorygowano wymiary): badania podatnego podparcia dwóch wręg nowej obudowy
+
+> **Sprostowanie krytycznego błędu jednostek (31.10.2026):** Poprzedni skrypt używał `(W−0,044)/1000` i `(D−0,066)/1000`, odejmując 0,044 i 0,066 mm zamiast 44 i 66 mm. Podane wcześniej częstotliwości (np. 115,3 Hz bez wręg) i ugięcia są **nieważne**. Poprawione dla 1020×425mm: rozpiętości panelu 976×359mm, f1 bez wręg **156.24 Hz**. Sprawdzono niezależnie wzorem analitycznym; to nadal nie pełen MES.
 
 **31.10.2026. Wyniki: 135 scenariuszy modelu Rayleigha–Ritza dla jednej płyty plus kontrole podstawowego przypadku i zmiany liczby funkcji.** Nie wykonano pełnej symulacji MES obudowy; to test pułapek projektowych.
 
@@ -15,20 +17,20 @@ Płyta Kirchhoffa o podporach po obwodzie SSSS, baza `sin(mπx/a)sin(nπy/b)` (7
 ## Analiza wybranego wariantu 1020×425, E=2.1GPa, rho=730kg/m³
 | Hipotetyczna sztywność linii k [N/m²] | Pierwsze f1 płyty [Hz] | Ugięcie w środku na 1000Pa [µm] | f1/f1 bez wręg |
 |---:|---:|---:|---:|
-| 0.0e+0 | 115.3 | 179.61 | 1.00 |
-| 1.0e+5 | 117.3 | 172.84 | 1.02 |
-| 1.0e+6 | 134.0 | 128.89 | 1.16 |
-| 1.0e+7 | 194.5 | 35.15 | 1.69 |
-| 1.0e+8 | 210.9 | 2.44 | 1.83 |
+| 0.0e+0 | 156.2 | 96.27 | 1.00 |
+| 1.0e+5 | 157.8 | 94.10 | 1.01 |
+| 1.0e+6 | 171.1 | 78.15 | 1.10 |
+| 1.0e+7 | 228.5 | 28.16 | 1.46 |
+| 1.0e+8 | 249.1 | 2.18 | 1.59 |
 
-Zakres f1 przy wszystkich 45 kombinacjach E/ρ/k w tej geometrii: **93.1–266.1Hz**. To nie jest fizyczna tolerancja, nie model częstotliwości własnej całej skrzyni ani wynik pomiarowy.
+Zakres f1 przy wszystkich 45 kombinacjach E/ρ/k w tej geometrii: **126.1–314.2Hz**. To nie jest fizyczna tolerancja, nie model częstotliwości własnej całej skrzyni ani wynik pomiarowy.
 
 ## Kontrole
 - Gdy k=0, `f11=(π/2)√(D/ρh)·(1/a²+1/b²)`; zgodność do 0.001Hz dla wszystkich trzech geometrycznych przypadków.
 - Statyka z dwóch baz: 5×3 vs 7×5 funkcji. Dla E=2.1GPa, rho=730, k=1e6:
-  - 1000×440: 138.43 → 138.59µm, zmiana -0.11%.
-  - 1020×425: 128.72 → 128.89µm, zmiana -0.13%.
-  - 1040×430: 134.46 → 134.76µm, zmiana -0.22%.
+  - 1000×440: 87.45 → 87.23µm, zmiana 0.25%.
+  - 1020×425: 78.35 → 78.15µm, zmiana 0.26%.
+  - 1040×430: 82.50 → 82.34µm, zmiana 0.19%.
 - Kontrola dodatniości energii i brak własnych wartości ujemnych. To kontrole równania redukcji, a nie walidacja spoiny.
 
 ## Wniosek dla projektu

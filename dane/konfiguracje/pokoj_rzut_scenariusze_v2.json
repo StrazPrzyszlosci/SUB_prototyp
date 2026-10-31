@@ -3,7 +3,7 @@
   "source_date": "2026-10-24",
   "source_image": "dane/zrodla/materialy_uzytkownika/rzut_pokoju_sSKtLurb.jpeg",
   "source_image_sha256": "5057c9f85aec6fc13ca37d46f979afbacb2f13c6aad2f92cf2e6d6293973b2be",
-  "user_statement": "klient mówi że będzie zamieniał kanapę i RTV miejscami; czyli kanapa będzie po prawej a RTV po lewej",
+  "user_statement": "użytkownik mówi że będzie zamieniał kanapę i RTV miejscami; czyli kanapa będzie po prawej a RTV po lewej",
   "confirmed_orientation": {
     "front_y0": "lewa strona obrazu, docelowa ściana RTV",
     "rear_y_length": "prawa strona obrazu, docelowa kanapa",

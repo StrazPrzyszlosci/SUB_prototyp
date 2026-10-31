@@ -35,7 +35,7 @@
   ],
   "construction_gate": "Sprawdzić miejsce dla dwóch egzemplarzy z prześwitami i monitorami; duża objętośćzoptymalizacji20Hz niejestautomatycznie praktycznąrekomendacją.",
   "acoustic_gate": "Nieprzyjmowaćstałegoroomgain ani parytetuSPLzmodelem2π/1m bezmodelupokoju i późniejszejidentyfikacji.",
-  "position_data_status": "Brak dokładnych pozycji. U-020 zmienia docelową orientację: RTV po lewej, kanapa po prawej; wymiaryU-019 bez zmian. Nie przenosić dawnych źródeł/S0 jako danych klienta.",
+  "position_data_status": "Brak dokładnych pozycji. U-020 zmienia docelową orientację: RTV po lewej, kanapa po prawej; wymiaryU-019 bez zmian. Nie przenosić dawnych źródeł/S0 jako danych użytkownika.",
   "current_layout_source": "Oryginalny rzut sSKtLurb.jpeg iU-018/U-019 opisują stan poprzedzający planowaną zamianęU-020; zachowano konfiguracjęv1",
   "target_layout_source": "U-020: docelowo kanapa po prawej iRTV po lewej obrazu; pokoj_rzut_scenariusze_v2.json"
 }

@@ -33,7 +33,7 @@
     "layout": "RTVleft_sofaright_U020",
     "room_transfer_applied": false
   },
-  "geometry": "Monopol4pi/1m/RMS,sinusdługotrwały;poziomy85/90/95/100dBto diagnostyka,nie progi klienta.",
+  "geometry": "Monopol4pi/1m/RMS,sinusdługotrwały;poziomy85/90/95/100dBto diagnostyka,nie progi użytkownika.",
   "limitations": [
     "Wspólny zakres dla6częstotliwości nie certyfikuje całego ciągłego pasma ani sumy tonów.",
     "Rth_test i limityT to scenariusze,nie pomiary. Xmax katalogowe nie gwarantujeTHD.",

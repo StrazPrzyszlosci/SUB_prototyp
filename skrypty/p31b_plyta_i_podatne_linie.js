@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 "use strict";
+// P31B ERRATUM 2026-10-31: inner panel spans were previously calculated
+// by subtracting .044/.066 mm; corrected to 44/66 mm.
 // P31B research: Kirchhoff plate Ritz sine basis + elastic line-to-ground braces.
 // NOT an eigenanalysis of the entire cabinet. Node 18+, no deps.
 const fs=require("node:fs"),path=require("node:path");
@@ -74,7 +76,8 @@ function minEigen(A){
  return Math.min(...a.map((x,i)=>x[i]));
 }
 function runOne(p,W,D,E,rho,kSupport,mMax,nMax){
- const a=(W-.044)/1000,b=(D-.066)/1000,t=p.panel_thickness_m,rig=E*t**3/(12*(1-p.nu*p.nu));
+ const a=(W-44)/1000,b=(D-66)/1000,t=p.panel_thickness_m,rig=E*t**3/(12*(1-p.nu*p.nu));
+ if(Math.abs(a-(W-44)/1000)>1e-12 || Math.abs(b-(D-66)/1000)>1e-12)throw Error('Unit conversion');
  const mass=rho*t*a*b/4, x1=.426,x2=(.426+a)/2;
  const F=[],Q=[];let lowest=Infinity;
  for(let n=1;n<=nMax;n++){
@@ -128,6 +131,7 @@ function analyze(p){
    f1_Hz_coarse:test.model_f1_Hz,f1_Hz_finer:finer.model_f1_Hz});
  }
  const selected=cases.filter(x=>x.W_mm===1020&&x.E_GPa===2.1&&x.rho_kg_m3===730);
+ if(Math.abs(selected[0].model_f1_Hz-156.2429)>.002 || Math.abs(selected[2].model_f1_Hz-171.132)>.002)throw Error('Unit conversion regression: expected 976x359mm and f1=156.2429/171.132Hz');
  const paramSweep=cases.filter(x=>x.W_mm===1020);
  const low=Math.min(...paramSweep.map(x=>x.model_f1_Hz)),high=Math.max(...paramSweep.map(x=>x.model_f1_Hz));
  return {study:"P31B",status:"Rayleigh-Ritz Kirchhoff SINGLE panel with elastic LINE-to-GROUND braces. Not FEM of cabinet.",parameters:p,cases:cases.length,

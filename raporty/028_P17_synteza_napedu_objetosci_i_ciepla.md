@@ -25,7 +25,7 @@ cieplne. Nie jest to ranking rzeczywistego chłodzenia tych produktów.
 20/25/31,5/40/63/80Hz, poziomy85/90/95/100dB RMS, budżety40V/12A
 lub60V/20A RMS, przyrosty40/80/120K i testowe Rth0,3/0,6/1,2K/W.
 Wartości są osiami eksperymentu obliczeniowego, **nie wymaganiami
-zaakceptowanymi przez klienta** i nie katalogowym maxSPL referencjiADAM.
+zaakceptowanymi przez użytkownika** i nie katalogowym maxSPL referencjiADAM.
 
 Każdy punkt jest osobnym długotrwałym sinusem i diagnostycznym
 monopolem4pi/1m. Wspólny przedział Vb oznacza jedną objętość spełniającą
@@ -169,7 +169,7 @@ Nie zastosowano stałego roomgain ani prostego dodania dwóch subwooferów.
 Wynik4pi/1m nie jest poziomem w sweetspocie2,5–3m. Przedział z górną
 granicą infinity nie jest zgodą na dowolnie wielką obudowę: trzeba
 zmieścić dwa egzemplarze i prześwity w realnym pokoju. Dokładnych
-pozycji nadal nie przyjęto jako zmierzonych danych klienta.
+pozycji nadal nie przyjęto jako zmierzonych danych użytkownika.
 
 **Kolejny krok:P18/P19.** Porównać panele, usztywnienia, połączenia,
 regulację objętości i klej dla sensownych geometrii, a następnie połączyć
