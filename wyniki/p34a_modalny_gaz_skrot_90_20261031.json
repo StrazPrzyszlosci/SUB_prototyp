@@ -1,0 +1,155 @@
+{
+  "study": "P34A",
+  "date": "2026-10-31",
+  "method": "Rigid Neumann box modal expansion with finite disk source Bessel J1; hypothetical volume-equivalent cuboids",
+  "executed_cases": 90,
+  "frequencies_hz": [
+    20,
+    40,
+    60,
+    80,
+    100,
+    150
+  ],
+  "modal_max_index": [
+    4,
+    6,
+    8,
+    10,
+    12
+  ],
+  "records_at_mode10": [
+    {
+      "volume_l": 100,
+      "f_hz": 20,
+      "rms_departure_percent": 0.396,
+      "max_departure_percent": 1.314
+    },
+    {
+      "volume_l": 100,
+      "f_hz": 40,
+      "rms_departure_percent": 1.598,
+      "max_departure_percent": 5.279
+    },
+    {
+      "volume_l": 100,
+      "f_hz": 60,
+      "rms_departure_percent": 3.648,
+      "max_departure_percent": 11.97
+    },
+    {
+      "volume_l": 100,
+      "f_hz": 80,
+      "rms_departure_percent": 6.625,
+      "max_departure_percent": 21.517
+    },
+    {
+      "volume_l": 100,
+      "f_hz": 100,
+      "rms_departure_percent": 10.655,
+      "max_departure_percent": 34.121
+    },
+    {
+      "volume_l": 100,
+      "f_hz": 150,
+      "rms_departure_percent": 26.966,
+      "max_departure_percent": 81.454
+    },
+    {
+      "volume_l": 120,
+      "f_hz": 20,
+      "rms_departure_percent": 0.631,
+      "max_departure_percent": 1.846
+    },
+    {
+      "volume_l": 120,
+      "f_hz": 40,
+      "rms_departure_percent": 2.567,
+      "max_departure_percent": 7.446
+    },
+    {
+      "volume_l": 120,
+      "f_hz": 60,
+      "rms_departure_percent": 5.949,
+      "max_departure_percent": 16.994
+    },
+    {
+      "volume_l": 120,
+      "f_hz": 80,
+      "rms_departure_percent": 11.052,
+      "max_departure_percent": 30.854
+    },
+    {
+      "volume_l": 120,
+      "f_hz": 100,
+      "rms_departure_percent": 18.365,
+      "max_departure_percent": 49.642
+    },
+    {
+      "volume_l": 120,
+      "f_hz": 150,
+      "rms_departure_percent": 52.462,
+      "max_departure_percent": 95.527
+    },
+    {
+      "volume_l": 150,
+      "f_hz": 20,
+      "rms_departure_percent": 1.158,
+      "max_departure_percent": 2.93
+    },
+    {
+      "volume_l": 150,
+      "f_hz": 40,
+      "rms_departure_percent": 4.783,
+      "max_departure_percent": 11.92
+    },
+    {
+      "volume_l": 150,
+      "f_hz": 60,
+      "rms_departure_percent": 11.384,
+      "max_departure_percent": 27.647
+    },
+    {
+      "volume_l": 150,
+      "f_hz": 80,
+      "rms_departure_percent": 22.05,
+      "max_departure_percent": 51.516
+    },
+    {
+      "volume_l": 150,
+      "f_hz": 100,
+      "rms_departure_percent": 39.022,
+      "max_departure_percent": 86.187
+    },
+    {
+      "volume_l": 150,
+      "f_hz": 150,
+      "rms_departure_percent": 123.708,
+      "max_departure_percent": 233.636
+    }
+  ],
+  "first_axial_mode_hz": {
+    "100": 280.8,
+    "120": 234,
+    "150": 187.2
+  },
+  "physical_baseline_f_x_Hz": 175.7172131147541,
+  "geometry": {
+    "physical_width_m": 0.976,
+    "physical_depth_m": 0.359,
+    "physical_height_m": 0.456,
+    "volume_based_widths_m": {
+      "100": 0.6108586228803207,
+      "120": 0.7330303474563847,
+      "150": 0.916287934320481
+    }
+  },
+  "modal_truncation_10_to_12_max_deviation_percentage_points": {
+    "at80Hz": {
+      "100": 0.262,
+      "120": 0.284,
+      "150": 0.51
+    }
+  },
+  "caveat": "Hypothetical equivalent cuboids with changed x width, NOT actual removable inserts in 1020x425x500 P30E. Cannot be used to choose padding or approve CNC."
+}
