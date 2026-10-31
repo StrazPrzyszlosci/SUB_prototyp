@@ -1196,3 +1196,32 @@ README, bez chronologii na początku.
 Kolejna bramka: połączenie prawdziwego FV P21D z przestrzennymi
 portami podatnych ścian P18E i zachowaniem energii we wspólnym
 modelu wręg, wkładów i wypełnienia P20D. Nie zamykać programu P21.
+
+
+## Postęp 2026-10-31 — P21G: sprzężenie FV z podatnymi panelami
+
+Wykonano 29 przestrzennych rozwiązań FV dla geometrii z rzeczywistymi
+modelowymi wręgami i wkładami P20D oraz 348 odpowiedzi napędu
+C02/C11/C06, przy trzech rozdzielczościach (60/45/35 mm).
+Objętość modelu z 11 dużymi i 1 małym wkładem wyniosła
+119,937424 l, zgodnie z geometrią P21D przed odjęciem włókien.
+Dwa porty uginających się ścian są wzajemnie połączone z ciśnieniem,
+ale ich funkcje kształtu pozostają założeniem, nie MES.
+
+Dla C02 przy 120_refined oraz skali podatności s=1
+zmiana amplitudy prędkości 20–80 Hz względem sztywnych ścian
+to −0,06038…+0,13322 dB. Maksymalna reszta bilansu mocy
+1,065e-15; wzajemności 3,145e-15; numerycznego FV 2,681e-12.
+Przy 80 Hz C02 zmiana amplitudy 45→35 mm wyniosła ~0,00184 dB.
+Nie zamyka to niepewności pełnego pasma ani realnej geometrii.
+
+Raport 066, skrypt `skrypty/p21g_fv_podatne_panele.py`,
+konfiguracja `dane/konfiguracje/p21g_fv_panele.json`,
+wyniki `wyniki/p21g_podsumowanie.json`, wykres 106.
+Nie wznawiać łącznej symulacji z P21D, jakby model wypełnienia był
+identyczny; użyto przyjętej kompleksowej podatności gazu.
+Nie certyfikować MDF, kleju, pełnych modów paneli ani THD.
+
+Kolejne badanie: dynamiczna macierz sztywności paneli z MES P18E
+sprzężona z wieloma portami ciśnienia FV, osobna zbieżność paneli,
+a następnie zewnętrzne promieniowanie konstrukcji i aktualizacja P29.
