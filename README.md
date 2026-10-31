@@ -11,7 +11,7 @@ nie jest kandydatem na konstrukcję końcową.*
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 81 raportów · Python/JavaScript**
+**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 82 raporty · Python/JavaScript**
 
 Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie. Aktualna pula obejmuje także dwa przypadki wstrzymane w nowym audycie źródeł (EMS i SUPRAVOX), a ponadto nie każda konfiguracja ma jeszcze pełny komplet badań nieliniowych i termicznych.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
@@ -51,11 +51,71 @@ Skróty wyjaśniamy w [krótkim słowniku](#slownik).
 - **Pokój jest częścią układu.** Wymiary pozwalają obliczyć częstotliwości
   możliwych rezonansów, ale ich poziom zależy też od ustawienia i tłumienia.
 
+## Konstrukcja w obrazach — od pomysłu do sprawdzalnego prototypu
+
+**Zamiast od razu ciąć płyty, najpierw pytamy: czy skrzynia się zmieści, czy da się ją zmontować i czy nie będzie sama grała?** Poniższe ilustracje pokazują etapy symulacji. Kliknięcie obrazu otwiera źródło z wyjaśnieniem. **Żadna ilustracja nie jest dokumentacją CNC** — obciążenia, materiały i wybrane uproszczenia są wyraźnie opisane w raportach.
+
+### 1. Najpierw ustawiamy wymiary i litraż
+
+![Przekrój poglądowy projektu: głośnik, wręgi i regulowane wkłady](dokumentacja/P31C_schemat_konstrukcji_1020_425.svg)
+
+*Obecny kierunek: zamknięta obudowa 1020 × 425 × 500 mm, tylna mata 50 mm i regulacja około 100 / 120 / 150 l. To **schemat koncepcyjny** — brakuje rzeczywistych śrub, zamków, stopek i maskownicy. [Dlaczego ten wariant?](raporty/078_P30E_mata50_montaz_robustnosc.md)*
+
+![Badanie geometrii: skrzynia, tory montażowe i objętości](wyniki/100_P20D_geometria.png)
+
+*Symulacja starszego wariantu P20D pozwoliła opracować sposób badania dojścia modułów przez otwór po głośniku. Dla nowego P30E sprawdzono obwiednię przejścia do 6 mm, lecz montaż narzędziem wciąż nie jest zatwierdzony. [Raport geometrii](raporty/057_P20D_geometria_dostep_i_pelna_glebokosc.md).*
+
+### 2. Jak wzmocnienia zmieniają zachowanie ścian?
+
+![Badanie wpływu grubości MDF i ściągów na ugięcie](wyniki/43_P18A_grubosc_sciagi_i_ugiecie.png)
+
+*Grubsza płyta może pomóc, ale kosztuje więcej i zwiększa masę. O skuteczności decydują również podpory i sposób ich połączenia. [Omówienie badań paneli](raporty/059_podatne_wregi_i_panele.md).*
+
+![Model pola ugięcia i podatnych wręg — starsza geometria](wyniki/p18e_pola.png)
+
+*To nie fotografia rzeczywistej ścianki, lecz model mechaniczny. Pokazuje, dlaczego idealne unieruchomienie wręgi może dawać zbyt optymistyczny wynik. Dla nowego korpusu przeprowadzono osobną analizę P31B.*
+
+![P32A: drgania pojedynczego panelu w zależności od częstotliwości](wyniki/p32a_widmo_drganiowe.svg)
+
+*Nowy przebieg wymuszenia 20–180 Hz na poprawnie zwymiarowanej płycie. Ważny jest nie tylko rezonans, lecz **amplituda ruchu** przy danej częstotliwości. Zasymulowano ciśnienie 1000 Pa peak i hipotetyczne tłumienie; nie jest to pełny MES obudowy. [Raport 082](raporty/082_P32A_dynamika_panelu_wreg_i_tlumienia.md).*
+
+![P32A: porównanie sztywności podpór i tłumienia](wyniki/p32a_wregi_i_tlumienie.svg)
+
+*Dlaczego wzmocnienie nie jest po prostu „mocniejsze/słabsze”? Odpowiedź zależy jednocześnie od podatności podparcia i tłumienia materiału. [Kod badania](skrypty/p32a_dynamika_panelu.js).*
+
+### 3. Front, mocowanie głośnika i trwałość połączeń
+
+![Siatki frontów z otworami i modelowymi wzmocnieniami](wyniki/49_P18B_siatka_frontu_z_otworem.png)
+
+*Wycięcie dużego otworu osłabia front; rama musi przenosić ciężar kosza oraz siły okresowe. Przed wykonaniem potrzebny jest dokładny szablon rzeczywistego głośnika.*
+
+![Zintegrowana rama i połączenia — starszy model porównawczy](wyniki/55_P18C_pelna_rama_i_polaczenia.png)
+
+*Model całej ramy pozwala wyszukiwać słabe miejsca i kierunki pracy spoin. Po zmianie geometrii na 1020 × 425 mm wymaga ponownego przeliczenia.*
+
+![Lokalne naprężenia przy spoinie — wpływ sztywności i wzmocnienia](wyniki/65_P19F_sztywnosc_i_przeniesienie_naprezen.png)
+
+*Usztywnienie może zmniejszyć ugięcie, jednocześnie przenosząc obciążenie na inny fragment połączenia. [Badania spoin](raporty/030_P19A_obliczenia_spoin_i_material_kleju.md).*
+
+### 4. Wkłady i powietrze wewnątrz skrzyni
+
+![Dostęp przez otwór frontowy i masa wkładów](wyniki/70_P20A_dostep_i_masa_wkladow.png)
+
+*Regulacja litrażu ma sens tylko wtedy, gdy wkłady można faktycznie włożyć, bezpiecznie zamocować i wyjąć. Ich masa i szczelność są częścią konstrukcji.*
+
+![Przestrzenne ciśnienie gazu i podatne panele](wyniki/106_P21G_komora_i_podatne_panele.svg)
+
+*Powietrze w skrzyni nie zawsze jest idealnie jednorodne. Zmiana wręg i wkładów zmienia przeszkody, dlatego **akustyka nowej geometrii nie jest jeszcze zweryfikowana**. [Raport o komorze](raporty/066_P21G_FV_podatne_sciany_rzeczywiste_przeszkody.md).*
+
+**Co dalej?** Pełny CAD połączony z MES ramy i spoin, nowe obliczenia przestrzenne komory 100/120/150 l, a następnie pomiary pierwszego prototypu. [Plan konstrukcyjny i bramki przed wykonaniem](dokumentacja/P31C_koncepcja_konstrukcyjna_i_bramki.md) · [Ostatni raport 082](raporty/082_P32A_dynamika_panelu_wreg_i_tlumienia.md).
+
+---
+
 <a id="wykresy"></a>
 <a id="glosniki"></a>
 ## Głośniki: porównanie w tych samych warunkach
 
-**Rozszerzenie briefu klienta (31.10.2026):** Dayton RSS390HF-4 jest
+**Rozszerzenie warunków badawczych (31.10.2026):** Dayton RSS390HF-4 jest
 **wstępnym faworytem, a nie ostatecznym wyborem**. Do aktualnej puli
 26 modeli dołączono audyt dokumentacji dziewięciu kolejnych marek:
 GPA, VOLT, SUPRAVOX, EMS, PURIFI, Kartesian, PHL, ETON i Davis.
@@ -159,7 +219,7 @@ Większa skrzynia zmienia obciążenie membrany, ale nie zwiększa jej własnego
 zapasu ruchu. Trzeba sprawdzić równocześnie ruch, napięcie, prąd i chłodzenie.
 Na wykresie niżej szukamy objętości pasujących do sześciu osobnych sinusów
 20–80 Hz. Przykład używa 90 dB RMS, 4π / 1 m i 40 V / 12 A oraz założonych
-warunków chłodzenia. To cel obliczenia, nie zatwierdzone wymaganie klienta
+warunków chłodzenia. To cel obliczenia, nie zatwierdzone kryterium projektowe
 lub wynik w pokoju.
 
 ![Zakresy objętości przy wspólnych wymaganiach ruchu, napędu i chłodzenia](wyniki/42_P17_wspolna_objetosc_i_chlodzenie.png)
@@ -307,9 +367,9 @@ pełne 500 W/4 Ω wymaga około 2,37 Vrms. Ostateczny wzmacniacz
 musi być wybrany na podstawie realnego zespolonego obciążenia,
 temperatury, prądu, zgodności wejścia i kompletnego kosztorysu.
 
-[Porównanie elektroniki i ochrony klienta](raporty/BRIEF_2026-10-31_wzmacniacz_DSP_i_9_marek.md)
+[Porównanie elektroniki i zabezpieczeń](raporty/BRIEF_2026-10-31_wzmacniacz_DSP_i_9_marek.md)
 · [180 kontrolnych obliczeń Dayton](wyniki/brief20261031_180_swiadkow_Dayton.csv)
-· [konfiguracja DSP i 5 architektur](dane/konfiguracje/brief_klienta_20261031_wzmacniacz_dsp.json).
+· [analiza rzeczywistego napędu i DSP](raporty/P22C_2026-10-31_wzmacniacze_impedancja_DSP_Xpeak.md).
 
 **P22C: policzono zespoloną impedancję i ograniczenia rzeczywistego toru DSP–wzmacniacz.**
 Dla pięciu kandydatów, pięciu objętości, czterech modułów, trzech
@@ -543,7 +603,7 @@ i słuchacza, drzwi, okna oraz straty w pomieszczeniu.
 ![Możliwe częstotliwości rezonansów osiowych idealnego pokoju](wyniki/02_mody_osiowe.png)
 
 Badamy dwa subwoofery w realnych miejscach przy monitorach. Dokładne
-pozycje nie są jeszcze znane. Aktualny plan klienta zakłada RTV po lewej
+pozycje nie są jeszcze znane. Wariant rozpatrywany w badaniach zakłada RTV po lewej
 i kanapę po prawej oryginalnego rzutu; dawne scenariusze ustawienia pozostają
 przykładami obliczeń.
 
@@ -1292,6 +1352,11 @@ Wykonano 225 nowych warunkowych obliczeń (5 najważniejszych finalistów × 5 p
 
 **Raport 080 (P31A):** 33 konfiguracje, 1980 wariantów (17 820 punktów częstotliwościowych). Wsparcie decyzji między Dayton RSS390HF-4 (modelowy 20Hz 98,76dB) a STX W.32.800.8.FCX (94,80dB) i W.38.800.8.MC (94,11dB) przy 120l, 0.7Xmax, umownych 50W strat. Modele NIE oceniają rzeczywistego THD/IMD; ceny to weryfikowany snapshot, nie pełny koszt dwóch subwooferów.
 
-**Raport 081 (P31B):** 135 scenariuszy modelu Rayleigha–Ritza panelu i dwóch sprężystych podparć: przy E=2,1GPa f1≈115–211Hz zależnie od założonej sztywności linii. **Nie jest to MES całej obudowy ani zatwierdzenie projektu.**
+**Raport 081 (P31B, sprostowany):** 135 scenariuszy modelu Rayleigha–Ritza panelu i dwóch sprężystych podparć. Po korekcie błędu mm/m przy E=2,1GPa f1≈156–249Hz zależnie od założonej sztywności linii. **Nie jest to MES całej obudowy ani zatwierdzenie projektu.**
 
 [Raport 080](raporty/080_P31A_porownanie_kosztowe_STX_Dayton_33.md) · [skrypt i dane P31A](skrypty/p31a_koszt_i_wspolne_limity_33.js) · [Raport 081](raporty/081_P31B_podatnosc_wreg_obudowy_1020_425.md) · [wyniki P31B](wyniki/p31b_podatnosc_dwoch_linii_135_20261031.json) · [Schemat konstrukcyjny SVG](dokumentacja/P31C_schemat_konstrukcji_1020_425.svg) · [Bramki przed CNC](dokumentacja/P31C_koncepcja_konstrukcyjna_i_bramki.md).
+
+
+## P32A — dalsze badania drgań (31.10.2026)
+
+Nowy raport 082 zawiera **612 zespolonych obliczeń** wymuszonego ruchu pojedynczej płyty z dwiema sprężystymi liniami podparcia w paśmie 20–180 Hz, w tym kontrolę bilansu mocy i zbieżności bazy. Ważne: to **nie MES całej skrzyni**. Poprawiono również wcześniejszy błąd jednostek w raporcie 081. [Kod i wyniki](skrypty/p32a_dynamika_panelu.js) · [raport 082](raporty/082_P32A_dynamika_panelu_wreg_i_tlumienia.md).
