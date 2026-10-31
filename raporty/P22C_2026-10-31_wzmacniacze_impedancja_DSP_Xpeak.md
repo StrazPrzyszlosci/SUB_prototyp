@@ -5,7 +5,7 @@
 
 ## Cel
 
-Brief klienta nie zatwierdza przetwornika Dayton RSS390HF-4 ani wzmacniacza. Celem jest wyznaczenie, **czy ogranicza nas gain i napięcie DSP, dostępne napięcie końcówki, prąd, wychylenie szczytowe, czy modelowe straty miedziane cewki** na *tym samym częstotliwościowo zmiennym obciążeniu*. Porównujemy cztery gotowe moduły i trzy ścieżki sygnału. Oddzielamy krótkotrwałą moc deklarowaną przez producenta od mocy ciągłej.
+Brief użytkownika nie zatwierdza przetwornika Dayton RSS390HF-4 ani wzmacniacza. Celem jest wyznaczenie, **czy ogranicza nas gain i napięcie DSP, dostępne napięcie końcówki, prąd, wychylenie szczytowe, czy modelowe straty miedziane cewki** na *tym samym częstotliwościowo zmiennym obciążeniu*. Porównujemy cztery gotowe moduły i trzy ścieżki sygnału. Oddzielamy krótkotrwałą moc deklarowaną przez producenta od mocy ciągłej.
 
 **Błąd poprzednich obliczeń:** w oryginalnych 180 i 274 725 obliczeniach z briefu porównano wychylenie **RMS** z katalogowym **jednostronnym szczytowym** Xmax. Poprawne kryterium dla sinusoidy: \`X_peak=sqrt(2)*|v_RMS|/omega <= Xmax\`. Dotychczasowe limitujące amplitudy były zawyżone \`sqrt(2)\`, a poziom w części mechanicznie ograniczanej mógł być zawyżony o **3,0103 dB**. Zaktualizowano dane źródłowe [180 przypadków](../wyniki/brief20261031_180_swiadkow_Dayton.csv) i [274725 przypadków](../wyniki/brief20261031_pelna_pula_35_wstepna_analiza.json) oraz skrypt pierwotnego przesiewu. Historyczne wyniki w commitach pozostają widoczne, lecz nie powinny być używane.
 
