@@ -1,0 +1,13 @@
+probe_id,material,nominal_thickness_mm,orientation,environment_C,RH_percent,conditioning_hours,width_mm,thickness_mm,span_mm,mass_g,load_N,deflection_mm,slope_N_per_mm,calculated_E_GPa,glue_type,glue_batch,joint_area_mm2,joint_overlap_mm,force_shear_N,slip_mm,moment_Nm,angle_rad,fracture_force_N,notes
+MDF22-A1,MDF,22,parallel,,,,,,,,,,,,,,,,,,,,
+MDF22-A2,MDF,22,parallel,,,,,,,,,,,,,,,,,,,,
+MDF22-A3,MDF,22,parallel,,,,,,,,,,,,,,,,,,,,
+MDF22-B1,MDF,22,perpendicular,,,,,,,,,,,,,,,,,,,,
+MDF22-B2,MDF,22,perpendicular,,,,,,,,,,,,,,,,,,,,
+MDF22-B3,MDF,22,perpendicular,,,,,,,,,,,,,,,,,,,,
+MDF44-A1,MDF,44,parallel,,,,,,,,,,,,,,,,,,,,
+MDF44-A2,MDF,44,parallel,,,,,,,,,,,,,,,,,,,,
+MDF44-A3,MDF,44,parallel,,,,,,,,,,,,,,,,,,,,
+JOINT-01,MDF-MDF,,,,,,,,,,,,,,,,,,,,,
+JOINT-02,MDF-MDF,,,,,,,,,,,,,,,,,,,,,
+JOINT-03,MDF-MDF,,,,,,,,,,,,,,,,,,,,,
