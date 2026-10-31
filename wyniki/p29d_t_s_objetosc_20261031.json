@@ -1,0 +1,327 @@
+{
+  "study": "P29D - simple sealed T/S sanity check, not new global ranking",
+  "model": "ideal lossless second-order sealed high-pass, one driver, no EQ, no room",
+  "date": "2026-10-31",
+  "base_commit": "73e66b05e2d45f29c1e226ea685dcdf0ef893f36",
+  "drivers": [
+    {
+      "id": "C02",
+      "name": "Dayton RSS390HF-4",
+      "fs": 19.5,
+      "qts": 0.43,
+      "vas": 212,
+      "sd": 829.6,
+      "xmax": 14,
+      "source": "https://www.daytonaudio.com/images/resources/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf"
+    },
+    {
+      "id": "C11",
+      "name": "Dayton RSS390HE-22 (series nominal T/S)",
+      "fs": 29,
+      "qts": 0.51,
+      "vas": 71.3,
+      "sd": 804,
+      "xmax": 27,
+      "source": "https://daytonaudio.vortxhosting.com/images/resources/295-292--dayton-audio-rss390he-22-spec-sheet.pdf"
+    },
+    {
+      "id": "C19",
+      "name": "Dayton RSS390HO-4",
+      "fs": 21.5,
+      "qts": 0.32,
+      "vas": 168,
+      "sd": 829.6,
+      "xmax": 12,
+      "source": "https://www.daytonaudio.com/images/resources/295-469-dayton-audio-rss390ho-4-specifications-46177.pdf"
+    },
+    {
+      "id": "C06",
+      "name": "STX W.32.800.8.FCX",
+      "fs": 24,
+      "qts": 0.39,
+      "vas": 96,
+      "sd": 491,
+      "xmax": 15,
+      "source": "https://stx.pl/manufacturer/stx/w-32-800-8-fcx.html"
+    },
+    {
+      "id": "N07",
+      "name": "PHL 6301MNd",
+      "fs": 36,
+      "qts": 0.26,
+      "vas": 140,
+      "sd": 871,
+      "xmax": 10.5,
+      "source": "https://www.phlaudio.com/fileadmin/user_upload/phl_audio/6301MNd_SpecSheet.pdf"
+    }
+  ],
+  "volumes_l": [
+    75,
+    80,
+    100,
+    120,
+    150
+  ],
+  "case_count": 25,
+  "rows": [
+    {
+      "id": "C02",
+      "model": "Dayton RSS390HF-4",
+      "volume_net_l": 75,
+      "qtc": 0.84116,
+      "fc_hz": 38.1456,
+      "f3_hz": 33.0086,
+      "relative_gain_20Hz_db": -10.8275,
+      "Vd_cc": 1161.44
+    },
+    {
+      "id": "C02",
+      "model": "Dayton RSS390HF-4",
+      "volume_net_l": 80,
+      "qtc": 0.82151,
+      "fc_hz": 37.2547,
+      "f3_hz": 32.7735,
+      "relative_gain_20Hz_db": -10.5081,
+      "Vd_cc": 1161.44
+    },
+    {
+      "id": "C02",
+      "model": "Dayton RSS390HF-4",
+      "volume_net_l": 100,
+      "qtc": 0.75953,
+      "fc_hz": 34.4439,
+      "f3_hz": 32.2296,
+      "relative_gain_20Hz_db": -9.5454,
+      "Vd_cc": 1161.44
+    },
+    {
+      "id": "C02",
+      "model": "Dayton RSS390HF-4",
+      "volume_net_l": 120,
+      "qtc": 0.71523,
+      "fc_hz": 32.4349,
+      "f3_hz": 32.0707,
+      "relative_gain_20Hz_db": -8.9201,
+      "Vd_cc": 1161.44
+    },
+    {
+      "id": "C02",
+      "model": "Dayton RSS390HF-4",
+      "volume_net_l": 150,
+      "qtc": 0.668,
+      "fc_hz": 30.2931,
+      "f3_hz": 32.1698,
+      "relative_gain_20Hz_db": -8.3354,
+      "Vd_cc": 1161.44
+    },
+    {
+      "id": "C11",
+      "model": "Dayton RSS390HE-22 (series nominal T/S)",
+      "volume_net_l": 75,
+      "qtc": 0.7123,
+      "fc_hz": 40.5032,
+      "f3_hz": 40.2102,
+      "relative_gain_20Hz_db": -12.4801,
+      "Vd_cc": 2170.8
+    },
+    {
+      "id": "C11",
+      "model": "Dayton RSS390HE-22 (series nominal T/S)",
+      "volume_net_l": 80,
+      "qtc": 0.70137,
+      "fc_hz": 39.8816,
+      "f3_hz": 40.2107,
+      "relative_gain_20Hz_db": -12.2897,
+      "Vd_cc": 2170.8
+    },
+    {
+      "id": "C11",
+      "model": "Dayton RSS390HE-22 (series nominal T/S)",
+      "volume_net_l": 100,
+      "qtc": 0.6675,
+      "fc_hz": 37.9557,
+      "f3_hz": 40.3411,
+      "relative_gain_20Hz_db": -11.7178,
+      "Vd_cc": 2170.8
+    },
+    {
+      "id": "C11",
+      "model": "Dayton RSS390HE-22 (series nominal T/S)",
+      "volume_net_l": 120,
+      "qtc": 0.64393,
+      "fc_hz": 36.6155,
+      "f3_hz": 40.5561,
+      "relative_gain_20Hz_db": -11.3399,
+      "Vd_cc": 2170.8
+    },
+    {
+      "id": "C11",
+      "model": "Dayton RSS390HE-22 (series nominal T/S)",
+      "volume_net_l": 150,
+      "qtc": 0.61946,
+      "fc_hz": 35.2244,
+      "f3_hz": 40.8948,
+      "relative_gain_20Hz_db": -10.9696,
+      "Vd_cc": 2170.8
+    },
+    {
+      "id": "C19",
+      "model": "Dayton RSS390HO-4",
+      "volume_net_l": 75,
+      "qtc": 0.576,
+      "fc_hz": 38.7,
+      "f3_hz": 49.3822,
+      "relative_gain_20Hz_db": -12.7453,
+      "Vd_cc": 995.52
+    },
+    {
+      "id": "C19",
+      "model": "Dayton RSS390HO-4",
+      "volume_net_l": 80,
+      "qtc": 0.56342,
+      "fc_hz": 37.8547,
+      "f3_hz": 49.771,
+      "relative_gain_20Hz_db": -12.5417,
+      "Vd_cc": 995.52
+    },
+    {
+      "id": "C19",
+      "model": "Dayton RSS390HO-4",
+      "volume_net_l": 100,
+      "qtc": 0.52386,
+      "fc_hz": 35.197,
+      "f3_hz": 51.204,
+      "relative_gain_20Hz_db": -11.9543,
+      "Vd_cc": 995.52
+    },
+    {
+      "id": "C19",
+      "model": "Dayton RSS390HO-4",
+      "volume_net_l": 120,
+      "qtc": 0.49574,
+      "fc_hz": 33.3077,
+      "f3_hz": 52.3823,
+      "relative_gain_20Hz_db": -11.5929,
+      "Vd_cc": 995.52
+    },
+    {
+      "id": "C19",
+      "model": "Dayton RSS390HO-4",
+      "volume_net_l": 150,
+      "qtc": 0.46593,
+      "fc_hz": 31.3045,
+      "f3_hz": 53.7297,
+      "relative_gain_20Hz_db": -11.2671,
+      "Vd_cc": 995.52
+    },
+    {
+      "id": "C06",
+      "model": "STX W.32.800.8.FCX",
+      "volume_net_l": 75,
+      "qtc": 0.58889,
+      "fc_hz": 36.2392,
+      "f3_hz": 44.8993,
+      "relative_gain_20Hz_db": -11.6674,
+      "Vd_cc": 736.5
+    },
+    {
+      "id": "C06",
+      "model": "STX W.32.800.8.FCX",
+      "volume_net_l": 80,
+      "qtc": 0.57846,
+      "fc_hz": 35.5978,
+      "f3_hz": 45.1643,
+      "relative_gain_20Hz_db": -11.513,
+      "Vd_cc": 736.5
+    },
+    {
+      "id": "C06",
+      "model": "STX W.32.800.8.FCX",
+      "volume_net_l": 100,
+      "qtc": 0.546,
+      "fc_hz": 33.6,
+      "f3_hz": 46.1303,
+      "relative_gain_20Hz_db": -11.0682,
+      "Vd_cc": 736.5
+    },
+    {
+      "id": "C06",
+      "model": "STX W.32.800.8.FCX",
+      "volume_net_l": 120,
+      "qtc": 0.52324,
+      "fc_hz": 32.1994,
+      "f3_hz": 46.9216,
+      "relative_gain_20Hz_db": -10.7925,
+      "Vd_cc": 736.5
+    },
+    {
+      "id": "C06",
+      "model": "STX W.32.800.8.FCX",
+      "volume_net_l": 150,
+      "qtc": 0.49944,
+      "fc_hz": 30.735,
+      "f3_hz": 47.8305,
+      "relative_gain_20Hz_db": -10.539,
+      "Vd_cc": 736.5
+    },
+    {
+      "id": "N07",
+      "model": "PHL 6301MNd",
+      "volume_net_l": 75,
+      "qtc": 0.44021,
+      "fc_hz": 60.9524,
+      "f3_hz": 113.2167,
+      "relative_gain_20Hz_db": -20.6677,
+      "Vd_cc": 914.55
+    },
+    {
+      "id": "N07",
+      "model": "PHL 6301MNd",
+      "volume_net_l": 80,
+      "qtc": 0.43116,
+      "fc_hz": 59.6992,
+      "f3_hz": 114.1019,
+      "relative_gain_20Hz_db": -20.4335,
+      "Vd_cc": 914.55
+    },
+    {
+      "id": "N07",
+      "model": "PHL 6301MNd",
+      "volume_net_l": 100,
+      "qtc": 0.40279,
+      "fc_hz": 55.771,
+      "f3_hz": 116.8721,
+      "relative_gain_20Hz_db": -19.724,
+      "Vd_cc": 914.55
+    },
+    {
+      "id": "N07",
+      "model": "PHL 6301MNd",
+      "volume_net_l": 120,
+      "qtc": 0.38271,
+      "fc_hz": 52.9906,
+      "f3_hz": 118.8034,
+      "relative_gain_20Hz_db": -19.2515,
+      "Vd_cc": 914.55
+    },
+    {
+      "id": "N07",
+      "model": "PHL 6301MNd",
+      "volume_net_l": 150,
+      "qtc": 0.36152,
+      "fc_hz": 50.056,
+      "f3_hz": 120.7919,
+      "relative_gain_20Hz_db": -18.7874,
+      "Vd_cc": 914.55
+    }
+  ],
+  "decision": "C02 HF remains conditional frontrunner under P29A stress with 50W hypothetical copper budget; 100/120L alignments best first experiment; 150L control. HE C11 merits follow-up for higher excursions and 75-80L packaging.",
+  "warnings": [
+    "Do not merge P29A 27-configuration stress ranking with 33-configuration linear screening as if identical methods.",
+    "F3 values are relative to asymptotic high-frequency passband in lossless, infinite-baffle single-driver model, NOT measured F3, in-room F3, high-power level nor Dirac/FIR preset.",
+    "PHL lower Qts strongly penalizes native deep sealed F3; amp/DSP EQ might reshape it, but power/X/THD and noise require full re-evaluation.",
+    "RSS390HE-22 listed nominal series T/S from manufacturer; dual coils, gain and amplifier current require explicit wiring check.",
+    "20Hz comparison of normalized response is NOT maximum clean 20Hz SPL; excursion-limited radiation depends on Sd*Xmax and distortion.",
+    "Actual P29 cabinet 880x480x500 body only, depth <=500 inclusive of grill/connections; insert collisions if reducing depth."
+  ]
+}
