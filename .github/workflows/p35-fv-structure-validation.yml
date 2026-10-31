@@ -1,0 +1,57 @@
+name: P35 - FV face loads and Q4 stabilization
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  fv-boundaries:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Recalculate pressure faces
+        run: |
+          node --check skrypty/p35a_graniczne_cisnienie_FV.js
+          node skrypty/p35a_graniczne_cisnienie_FV.js >/tmp/p35a.log
+          node - <<'NODE'
+          const fs=require('node:fs');
+          const x=JSON.parse(fs.readFileSync('wyniki/p35a_sily_sciany_36_20261031.json'));
+          if(x.cases!==36 || x.rows.length!==36)throw Error('P35A case count');
+          const s=x.rows.find(y=>y.state==='120'&&y.f===80&&y.h===36);
+          if(!s || Math.abs(s.volume_l-120)>3)throw Error('P35A geometry');
+          if(Math.abs(s.boundary.right.mean_pressure_ratio-1.368966)>.03)throw Error('P35A right-wall pressure');
+          if(Math.abs(s.boundary.left.mean_pressure_ratio-.772883)>.03)throw Error('P35A left-wall pressure');
+          if(!Object.values(s.boundary).every(x=>x.area_m2>0))throw Error('P35A empty boundary');
+          console.log('P35A PASS',s.boundary);
+          NODE
+  fem-q4-stabilization:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install numerical libraries
+        run: python -m pip install --disable-pip-version-check numpy scipy
+      - name: Recalculate original global FEM with P33C shear correction
+        env:
+          OPENBLAS_NUM_THREADS: '1'
+          OMP_NUM_THREADS: '1'
+        run: |
+          python -m py_compile skrypty/p35b_globalne_gamma_Q4.py
+          python skrypty/p35b_globalne_gamma_Q4.py --out /tmp/p35b_results.json >/tmp/p35b.log
+          python - <<'PY'
+          import json
+          x=json.load(open('/tmp/p35b_results.json'))
+          assert x['cases']==16
+          assert x['free_element'][0]['null_modes']==8
+          assert all(z['null_modes']==6 for z in x['free_element'][1:])
+          a=next(z for z in x['global_cases'] if z['gamma']==.001 and z['mesh']==.11 and z['joint_trans_N_m2']==3e7)
+          assert abs(a['max_static_disp_um']-83.090)<3,a
+          assert abs(a['first_freq_Hz'][0]-32.874)<2,a
+          print('P35B PASS')
+          PY

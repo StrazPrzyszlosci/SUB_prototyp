@@ -11,7 +11,7 @@ nie jest kandydatem na konstrukcję końcową.*
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 88 raportów · Python/JavaScript**
+**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 90 raportów · Python/JavaScript**
 
 Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie. Aktualna pula obejmuje także dwa przypadki wstrzymane w nowym audycie źródeł (EMS i SUPRAVOX), a ponadto nie każda konfiguracja ma jeszcze pełny komplet badań nieliniowych i termicznych.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
@@ -118,6 +118,18 @@ Skróty wyjaśniamy w [krótkim słowniku](#slownik).
 *Usztywnienie może zmniejszyć ugięcie, jednocześnie przenosząc obciążenie na inny fragment połączenia. [Badania spoin](raporty/030_P19A_obliczenia_spoin_i_material_kleju.md).*
 
 ### 4. Wkłady i powietrze wewnątrz skrzyni
+
+### 4c. Jak przekazać ciśnienie ze skrzyni do obliczeń jej ścian?
+
+![Względne ciśnienie na każdej z sześciu ścian — P35A](wyniki/p35a_cisnienie_scian_80hz.svg)
+
+*Poprzednio liczyliśmy rozkład powietrza wewnątrz komory. Teraz obliczamy również jego nacisk na poszczególne ściany. Przy 80 Hz prawa strona ma w tym modelu inne ciśnienie niż lewa. **To nie są jeszcze siły przy realnej mocy** — potrzebny rzeczywisty poziom ciśnienia, maty i kosza. [Raport 089](raporty/089_P35A_rozklad_cisnienia_na_scianach.md).*
+
+### 4d. Kontrola jakości MES: nie tylko liczba w hercach
+
+![Kontrola siatki i stabilizatora numerycznego Q4 — P35B](wyniki/p35b_stabilizacja_Q4_siatki.svg)
+
+*Audyt P33C ujawnił sztuczne drgania pojedynczego elementu Q4. Powtórzyliśmy 16 symulacji całej skrzyni po dodaniu różnych wariantów stabilizacji. Problem lokalny można ograniczyć numerycznie, ale **nie da się jeszcze uznać konstrukcji za zweryfikowaną** bez dobrego opisu spoin i pełnej geometrii. [Raport 090](raporty/090_P35B_globalna_stabilizacja_hourglass.md).*
 
 ### 4b. Liczymy już rzeczywiste rozmieszczenie przeszkód, nie tylko pusty prostopadłościan
 
@@ -1441,3 +1453,14 @@ Po badaniu P34A idealnych prostopadłościanów (raport 086) wykonano **P34B, ra
 **Ważne po audycie P33C:** globalny MES P33B ma niewykluczone mody hourglass. Jego częstotliwości i ugięcia **nie są zatwierdzone do projektowania konstrukcji**. Kolejny mechaniczny krok musi najpierw naprawić i niezależnie zweryfikować element powłokowy, zanim połączy się go z polem gazu.
 
 [Raport 087](raporty/087_P34B_przestrzenne_cisnienie_100_120_150.md) · [Raport 088](raporty/088_P34C_obciazenia_i_blokowanie_wkladow.md) · [kod FV](skrypty/p34b_przestrzenne_pole_p30e.js) · [kod obciążeń](skrypty/p34c_sily_mocowania_wkladow.js) · [dane FV](wyniki/p34b_przestrzenne_pole_p30e_20261031.json) · [dane wkładów](wyniki/p34c_moduly_wklady_324_20261031.json).
+
+
+## P35 — nacisk na ściany i kontrola poprawności MES (31.10.2026)
+
+**Raport 089, P35A:** wykonano 36 analiz rozkładu względnego ciśnienia na powierzchniach sześciu ścian, dla 100/120/150 l, 20/40/60/80 Hz i trzech siatek. W stanie 120 l przy 80 Hz średnie ciśnienie modelowe wynosi względem średniej komory: front 94,6%, tył 109,9%, lewa ściana 77,3%, prawa 136,9%, góra 99,3%, dół 101,8%. **To model bez tłumienia maty i ruchu ścian, nie rzeczywiste siły ani SPL.**
+
+**Raport 090, P35B:** 16 pełnych globalnych przeliczeń Q4 przy stabilizacji gamma=0/0,001/0,01/0,03. Lokalny test elementu dla gamma>0 usuwa 2 sztuczne mody hourglass, ale wyniki globalne wciąż silnie zależą od sztywności spoin i liczby elementów. **MES nie jest jeszcze zatwierdzony do CNC.**
+
+[Raport 089](raporty/089_P35A_rozklad_cisnienia_na_scianach.md) · [36 analiz FV](wyniki/p35a_sily_sciany_36_20261031.json) · [raport 090](raporty/090_P35B_globalna_stabilizacja_hourglass.md) · [16 obliczeń Q4](wyniki/p35b_stabilizacja_globalna_16_20261031.json) · [skrypt numeryczny](skrypty/p35b_globalne_gamma_Q4.py) · [schemat ciśnienia](wyniki/p35a_cisnienie_scian_80hz.svg).
+
+**Następna bramka:** pomiar właściwości MDF i spoin, dokładny CAD kosza/frontu z siatką dopasowaną do obwodu oraz sprzężenie ścian z powietrzem z rzeczywistym tłumieniem maty. Nadal **nie rozpoczynać frezowania na podstawie obecnych modeli**.

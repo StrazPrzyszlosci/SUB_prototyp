@@ -1,0 +1,241 @@
+{
+  "study": "P35B",
+  "date": "2026-10-31",
+  "method": "Modified original Q4 P33B via P33C element(gamma), 16 real local Python executions",
+  "cases": 16,
+  "global": [
+    {
+      "gamma": 0,
+      "mesh_m": 0.15,
+      "joint_trans_Nm2": 30000000,
+      "joint_rot_N": 3000,
+      "first_freq_Hz": 30.34459,
+      "max_static_disp_um": 100.0211,
+      "dof": 1212
+    },
+    {
+      "gamma": 0,
+      "mesh_m": 0.11,
+      "joint_trans_Nm2": 30000000,
+      "joint_rot_N": 3000,
+      "first_freq_Hz": 32.86994,
+      "max_static_disp_um": 83.27916,
+      "dof": 1812
+    },
+    {
+      "gamma": 0,
+      "mesh_m": 0.085,
+      "joint_trans_Nm2": 30000000,
+      "joint_rot_N": 3000,
+      "first_freq_Hz": 33.65196,
+      "max_static_disp_um": 86.33904,
+      "dof": 2826
+    },
+    {
+      "gamma": 0.001,
+      "mesh_m": 0.15,
+      "joint_trans_Nm2": 30000000,
+      "joint_rot_N": 3000,
+      "first_freq_Hz": 30.36685,
+      "max_static_disp_um": 99.50847,
+      "dof": 1212
+    },
+    {
+      "gamma": 0.001,
+      "mesh_m": 0.11,
+      "joint_trans_Nm2": 30000000,
+      "joint_rot_N": 3000,
+      "first_freq_Hz": 32.87351,
+      "max_static_disp_um": 83.09005,
+      "dof": 1812
+    },
+    {
+      "gamma": 0.001,
+      "mesh_m": 0.085,
+      "joint_trans_Nm2": 30000000,
+      "joint_rot_N": 3000,
+      "first_freq_Hz": 33.65955,
+      "max_static_disp_um": 86.17553,
+      "dof": 2826
+    },
+    {
+      "gamma": 0.01,
+      "mesh_m": 0.15,
+      "joint_trans_Nm2": 30000000,
+      "joint_rot_N": 3000,
+      "first_freq_Hz": 30.53145,
+      "max_static_disp_um": 95.40648,
+      "dof": 1212
+    },
+    {
+      "gamma": 0.01,
+      "mesh_m": 0.11,
+      "joint_trans_Nm2": 30000000,
+      "joint_rot_N": 3000,
+      "first_freq_Hz": 32.90373,
+      "max_static_disp_um": 81.43698,
+      "dof": 1812
+    },
+    {
+      "gamma": 0.01,
+      "mesh_m": 0.085,
+      "joint_trans_Nm2": 30000000,
+      "joint_rot_N": 3000,
+      "first_freq_Hz": 33.72255,
+      "max_static_disp_um": 84.80546,
+      "dof": 2826
+    },
+    {
+      "gamma": 0.03,
+      "mesh_m": 0.15,
+      "joint_trans_Nm2": 30000000,
+      "joint_rot_N": 3000,
+      "first_freq_Hz": 30.7616,
+      "max_static_disp_um": 88.45077,
+      "dof": 1212
+    },
+    {
+      "gamma": 0.03,
+      "mesh_m": 0.11,
+      "joint_trans_Nm2": 30000000,
+      "joint_rot_N": 3000,
+      "first_freq_Hz": 32.9612,
+      "max_static_disp_um": 78.05969,
+      "dof": 1812
+    },
+    {
+      "gamma": 0.03,
+      "mesh_m": 0.085,
+      "joint_trans_Nm2": 30000000,
+      "joint_rot_N": 3000,
+      "first_freq_Hz": 33.83723,
+      "max_static_disp_um": 82.1629,
+      "dof": 2826
+    },
+    {
+      "gamma": 0.001,
+      "mesh_m": 0.11,
+      "joint_trans_Nm2": 3000000,
+      "joint_rot_N": 300,
+      "first_freq_Hz": 25.78117,
+      "max_static_disp_um": 161.94309,
+      "dof": 1812
+    },
+    {
+      "gamma": 0.001,
+      "mesh_m": 0.11,
+      "joint_trans_Nm2": 300000000,
+      "joint_rot_N": 30000,
+      "first_freq_Hz": 34.80972,
+      "max_static_disp_um": 48.9888,
+      "dof": 1812
+    },
+    {
+      "gamma": 0.01,
+      "mesh_m": 0.11,
+      "joint_trans_Nm2": 3000000,
+      "joint_rot_N": 300,
+      "first_freq_Hz": 25.85399,
+      "max_static_disp_um": 160.05063,
+      "dof": 1812
+    },
+    {
+      "gamma": 0.01,
+      "mesh_m": 0.11,
+      "joint_trans_Nm2": 300000000,
+      "joint_rot_N": 30000,
+      "first_freq_Hz": 34.83661,
+      "max_static_disp_um": 47.76695,
+      "dof": 1812
+    }
+  ],
+  "plate": [
+    {
+      "gamma": 0.001,
+      "nx": 8,
+      "ny": 4,
+      "frequency_Hz": 153.982443,
+      "relative_to_Kirchhoff_pct": -1.446733
+    },
+    {
+      "gamma": 0.001,
+      "nx": 16,
+      "ny": 8,
+      "frequency_Hz": 154.04589,
+      "relative_to_Kirchhoff_pct": -1.406125
+    },
+    {
+      "gamma": 0.001,
+      "nx": 32,
+      "ny": 12,
+      "frequency_Hz": 154.038083,
+      "relative_to_Kirchhoff_pct": -1.411122
+    },
+    {
+      "gamma": 0.01,
+      "nx": 8,
+      "ny": 4,
+      "frequency_Hz": 156.92205,
+      "relative_to_Kirchhoff_pct": 0.434701
+    },
+    {
+      "gamma": 0.01,
+      "nx": 16,
+      "ny": 8,
+      "frequency_Hz": 154.746025,
+      "relative_to_Kirchhoff_pct": -0.958018
+    },
+    {
+      "gamma": 0.01,
+      "nx": 32,
+      "ny": 12,
+      "frequency_Hz": 154.343129,
+      "relative_to_Kirchhoff_pct": -1.215884
+    },
+    {
+      "gamma": 0.03,
+      "nx": 8,
+      "ny": 4,
+      "frequency_Hz": 163.130091,
+      "relative_to_Kirchhoff_pct": 4.408029
+    },
+    {
+      "gamma": 0.03,
+      "nx": 16,
+      "ny": 8,
+      "frequency_Hz": 156.285609,
+      "relative_to_Kirchhoff_pct": 0.027361
+    },
+    {
+      "gamma": 0.03,
+      "nx": 32,
+      "ny": 12,
+      "frequency_Hz": 155.018158,
+      "relative_to_Kirchhoff_pct": -0.783845
+    }
+  ],
+  "kernel": [
+    {
+      "gamma": 0,
+      "null_modes": 8
+    },
+    {
+      "gamma": 0.001,
+      "null_modes": 6
+    },
+    {
+      "gamma": 0.01,
+      "null_modes": 6
+    },
+    {
+      "gamma": 0.03,
+      "null_modes": 6
+    }
+  ],
+  "limits": [
+    "The gamma blend is numerical, not a measured MDF material property.",
+    "Global model has hypothetical joints/feet/front hole cut-cells and masses, no MC-based mode identity check.",
+    "No verified full-cabinet FEM convergence or CNC release; model remains conditional.",
+    "The full unrounded local execution file is available separately; GitHub summary retains principal results and reproducible code."
+  ]
+}
