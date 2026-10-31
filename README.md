@@ -11,7 +11,7 @@ nie jest kandydatem na konstrukcję końcową.*
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 74 raporty · Python/JavaScript**
+**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 75 raportów · Python/JavaScript**
 
 Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie. Aktualna pula obejmuje także dwa przypadki wstrzymane w nowym audycie źródeł (EMS i SUPRAVOX), a ponadto nie każda konfiguracja ma jeszcze pełny komplet badań nieliniowych i termicznych.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
@@ -1249,3 +1249,10 @@ pomiaru — to pomaga porównać wyniki.
 **Raport 074:** wykonano 162 modelowe przebiegi sprzężenia termiki cewki z prądem zależnym od częstotliwości i Re(T). Porównano stałą moc zimnej cewki do Pcu(T), w 3 scenariuszach termicznych, na 20/40/80Hz i w trzech poziomach napięcia. Błąd modelu stałej mocy może zmieniać znak: w części punktów przy 40Hz nagrzewanie rośnie, a przy 80Hz maleje. **Wyniki dotyczą nieskalibrowanego modelu; brak limitów bezpiecznej temperatury.**
 
 [Raport 074](raporty/074_P24I_sprzezenie_ReT_i_cykliczne_grzanie.md) · [kod badań](skrypty/p24i_sprzezenie_re_cykle.js) · [162 wyniki JSON](wyniki/p24i_sprzezenie_re_cykle_20261031.json).
+
+
+## P29D — czy zmienia się rekomendacja głośnika i litrażu? (31.10.2026)
+
+Wykonano 225 nowych warunkowych obliczeń (5 najważniejszych finalistów × 5 pojemności 75–150l × 3 częstotliwości × 3 hipotetyczne budżety strat). **C02 Dayton RSS390HF-4 nadal jest wstępnym faworytem; 120l to punkt startu prototypu, 100l jest atrakcyjnym kompromisem, 80l warunkową opcją wymuszoną gabarytem.** P29C wskazuje praktycznie plateau metryki od około 100l. Nowy model pokazuje mniejsze straty cewki przy osiąganiu Xmax/20Hz w 120l niż w 80l, lecz nie stanowi pomiaru termicznego.
+
+[Raport 075](raporty/075_P29D_rekomendacja_kandydatow_i_objetosc.md) · [kod](skrypty/p29d_5_finalistow_75_150l.js) · [225 obliczeń i F3 JSON](wyniki/p29d_5_finalistow_75_150l_20261031.json).
