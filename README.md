@@ -55,6 +55,31 @@ Skróty wyjaśniamy w [krótkim słowniku](#slownik).
 <a id="glosniki"></a>
 ## Głośniki: porównanie w tych samych warunkach
 
+**Rozszerzenie briefu klienta (31.10.2026):** Dayton RSS390HF-4 jest
+**wstępnym faworytem, a nie ostatecznym wyborem**. Do aktualnej puli
+26 modeli dołączono audyt dokumentacji dziewięciu kolejnych marek:
+GPA, VOLT, SUPRAVOX, EMS, PURIFI, Kartesian, PHL, ETON i Davis.
+Modele nie przechodzą automatycznie do rankingu tylko dlatego, że
+występują w katalogu: sprawdzamy Xmax, Sd, Vd, zgodność montażu
+i kompletność fabrycznych T/S. **EMS B15EX oczekuje na kompletną
+kartę producenta.**
+
+[Zweryfikowany rejestr parametrów i źródeł](dane/karty_producentow/2026-10-31_9_marek_weryfikacja.json)
+· [pełny raport briefu](raporty/BRIEF_2026-10-31_wzmacniacz_DSP_i_9_marek.md)
+· [odtwarzanie dokumentacji i SHA-256](skrypty/odtworz_dokumentacje_producentow.py).
+Oryginalnych PDF producentów bez potwierdzonych praw do redystrybucji
+nie kopiujemy do repo; zapisujemy weryfikowalne parametry i odnośniki.
+
+**Przeprowadzono 274 725 nowych obliczeń przesiewowych** dla
+35 konfiguracji elektrycznych (34 unikalne produkty), z których
+33 miały komplet spójnych danych. EMS i SUPRAVOX pozostają
+zablokowane z wyjaśnionych w audycie przyczyn.
+[Agregaty i świadkowie dla całej puli](wyniki/brief20261031_pelna_pula_35_wstepna_analiza.json).
+To liniowa wstępna analiza, nie pełne badania nieliniowości, THD,
+termiki i mechaniki gotowej skrzyni dla wszystkich 34 produktów.
+
+
+
 Badamy modele firm BMS, Dayton Audio, Eminence, FaitalPRO, LaVoce,
 PURIFI, Peerless, SB Acoustics, SEAS, STX i Scan-Speak. W puli są także
 mniejsze modele kontrolne — obecność w zestawieniu nie oznacza spełnienia briefu.
@@ -194,6 +219,20 @@ Temperatury i współczynniki w tym badaniu są założeniami modelu.
 
 <a id="filtry"></a>
 ## DSP: dobry wzór filtru to początek
+
+Nowy brief porównuje centralny **Flex Eight (RCA 2 Vrms)**
+z **Flex HTx (RCA 2 Vrms, TRS symetryczne 4 Vrms)** oraz
+modułami ICEpower/Hypex. Dla NC500MP przy wzmocnieniu
+25,5 dB wejście 2 Vrms daje modelowo tylko około **355 W/4 Ω**;
+pełne 500 W/4 Ω wymaga około 2,37 Vrms. Ostateczny wzmacniacz
+musi być wybrany na podstawie realnego zespolonego obciążenia,
+temperatury, prądu, zgodności wejścia i kompletnego kosztorysu.
+
+[Porównanie elektroniki i ochrony klienta](raporty/BRIEF_2026-10-31_wzmacniacz_DSP_i_9_marek.md)
+· [180 kontrolnych obliczeń Dayton](wyniki/brief20261031_180_swiadkow_Dayton.csv)
+· [konfiguracja DSP i 5 architektur](dane/konfiguracje/brief_klienta_20261031_wzmacniacz_dsp.json).
+
+
 
 Filtr cyfrowy trzeba zaprojektować dla właściwej częstotliwości próbkowania
 i zapisać z odpowiednią precyzją. Zaokrąglanie może zmienić bas nawet wtedy,
@@ -942,6 +981,7 @@ nie zatwierdzonym docelowym głośnikiem.
 | Jak uwzględniamy pokój i dwie sztuki? | [013 — dwa źródła i gabaryty](raporty/013_pokoj_i_realne_gabaryty.md), [017 — sprzężenie pola](raporty/017_promieniowanie_i_sprzezenie_pokoju.md), [019 — aktualna orientacja](raporty/019_zamiana_kanapy_i_RTV.md) | [Konwencja pokoju](dane/konfiguracje/pokoj_odsluchowy.json), scenariusze opisane w raportach |
 
 | Jak położenie membrany i przestrzenna komora zmieniają obciążenie? | [050 — geometria](raporty/050_P21C0_plytka_komora_i_polozenie_zrodla.md), [051 — membrana](raporty/051_P21C1_membrana_kolowa_i_bezwladnosc.md), [052 — wypełnienie i wkłady](raporty/052_komora_warstwy_wklady_i_front.md) | [Wykres 95](wyniki/95_P21C0_plytka_komora.png), [wykres 96](wyniki/96_P21C1_membrana_i_przesuniecie.png), [wyniki P21C3](wyniki/p21c3_wyniki.json) |
+| Które nowe marki mają zweryfikowane T/S i czym różnią się od Dayton? | [nowy brief i audyt dziewięciu marek](raporty/BRIEF_2026-10-31_wzmacniacz_DSP_i_9_marek.md) | [zamrożone karty](dane/karty_producentow/2026-10-31_9_marek_weryfikacja.json), [audyt danych](skrypty/audyt_danych_9_marek.py), [analiza 26+9](skrypty/brief20261031_pomiarowe_bramki_i_porownanie.py) |
 | Dlaczego faworytem jest RSS390HF-4 i kiedy inny przetwornik wygrywa? | [053 — porównanie](raporty/053_porownanie_i_odpornosc_rekomendacji.md), [054 — konstrukcja](raporty/054_rekomendowana_konfiguracja_prototypu.md), [055 — wrażliwość](raporty/055_wrazliwosc_wyboru_i_margines_glebokosci.md) | [Wykres 97](wyniki/97_P29_wybor_i_front.png), [podsumowanie P29C](wyniki/p29c_podsumowanie.json) |
 
 | Co pokazują nowe próby dynamicznego ograniczania wychylenia i temperatury? | [058 — sygnały i energetyczna bariera](raporty/058_P25C_sygnaly_czasowe_i_bariera_energii.md) | [216 przebiegów](wyniki/p25c_kampania.csv), [wykresy](wyniki/p25c_przebiegi.png), [kontrole](wyniki/p25c_weryfikacja_przejsciowa.json) |

@@ -1,0 +1,6983 @@
+{
+  "name": "Joint initial 34-product 35-electrical-configuration extended screening",
+  "date": "2026-10-31",
+  "inventory": {
+    "prior_base_products": 24,
+    "prior_SB_new_products": 2,
+    "prior_SB_electrical_configurations": 3,
+    "new_suppliers": 9,
+    "new_unique_products": 8,
+    "overlap": "PURIFI PTT10.0X04-NAB-01 already in original 24",
+    "total_distinct_products": 34,
+    "total_electrical_configurations": 35
+  },
+  "executed_scenario_evaluations": 274725,
+  "analysed_configurations": 33,
+  "blocked": [
+    {
+      "model": "400-2000 EXC 12V field coil",
+      "reason": "Inconsistent Mms vs Fs/Vas/Sd",
+      "mass_rel_error": -0.16175
+    },
+    {
+      "model": "B15EX",
+      "reason": "Missing original verified complete T/S"
+    }
+  ],
+  "scenarios": {
+    "volume_l": [
+      75,
+      80,
+      100,
+      120,
+      150
+    ],
+    "frequency_hz": "10..120 step 1",
+    "coil_copper_loss_assumptions_w": [
+      100,
+      300,
+      500
+    ],
+    "ideal_reference_amp_power_4ohm_w": [
+      250,
+      300,
+      400,
+      500,
+      700
+    ]
+  },
+  "method": "Complex 0D sealed box: I/U=1/(Re+jwLe+BL²/Zm), Zm=Rms+jwMms+1/(jwCms)+Sd² rho c²/(jwVb), v/U=BL I/(Zm U); coherent RMS. U capped by Xmax, I²Re budget, sqrt(4*Pamp) nominal resistor-equivalent; SPL simple freefield half-space 1m piston approximation. Source BL/Mms fallback is derived from self-consistent small-signal parameters; 1kHz Le used in 20Hz approximate transfer where DC Le unavailable.",
+  "limits": "Not actual clean SPL, distortion/IMD, amplifier clip at complex 1.5/6/8Ω, dynamic coil temperature, real cabinet gas or measured T/S. Bare watt ratings not universally comparable. This is a CROSS-POOL FIRST SCREEN, NOT full reproduction of all 26 original P01–P30 experiments.",
+  "per_configuration_and_volume": [
+    {
+      "name": "Dayton RSS315HF-4",
+      "manufacturer": "base",
+      "volume_l": 75,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 164,
+        "hypothetical_coil_budget": 640,
+        "nominal_4ohm_voltage": 861
+      },
+      "max_ideal_2pi_spl_db": 115.273,
+      "min_ideal_2pi_spl_db": 85.097,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 36.2398,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.9056,
+          "i_coil_rms": 6.5755
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.5148,
+          "i_coil_rms": 2.8614
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 113.9451,
+          "i_coil_rms": 11.1625
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton RSS315HF-4",
+      "manufacturer": "base",
+      "volume_l": 80,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 176,
+        "hypothetical_coil_budget": 642,
+        "nominal_4ohm_voltage": 847
+      },
+      "max_ideal_2pi_spl_db": 115.206,
+      "min_ideal_2pi_spl_db": 85.413,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 35.6847,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.9056,
+          "i_coil_rms": 6.2681
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.5026,
+          "i_coil_rms": 3.0331
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 113.9087,
+          "i_coil_rms": 11.2028
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton RSS315HF-4",
+      "manufacturer": "base",
+      "volume_l": 100,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 197,
+        "hypothetical_coil_budget": 644,
+        "nominal_4ohm_voltage": 824
+      },
+      "max_ideal_2pi_spl_db": 115.044,
+      "min_ideal_2pi_spl_db": 86.436,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 34.1319,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.9056,
+          "i_coil_rms": 5.3505
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.4522,
+          "i_coil_rms": 3.5817
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 113.7994,
+          "i_coil_rms": 11.3203
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton RSS315HF-4",
+      "manufacturer": "base",
+      "volume_l": 120,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 220,
+        "hypothetical_coil_budget": 646,
+        "nominal_4ohm_voltage": 799
+      },
+      "max_ideal_2pi_spl_db": 114.925,
+      "min_ideal_2pi_spl_db": 87.191,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 33.1995,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.9056,
+          "i_coil_rms": 4.744
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.4074,
+          "i_coil_rms": 3.9637
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 113.7265,
+          "i_coil_rms": 11.396
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton RSS315HF-4",
+      "manufacturer": "base",
+      "volume_l": 150,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 241,
+        "hypothetical_coil_budget": 641,
+        "nominal_4ohm_voltage": 783
+      },
+      "max_ideal_2pi_spl_db": 114.815,
+      "min_ideal_2pi_spl_db": 88.017,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 32.3576,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.9056,
+          "i_coil_rms": 4.144
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.354,
+          "i_coil_rms": 4.3508
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 113.6535,
+          "i_coil_rms": 11.4697
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton RSS390HF-4",
+      "manufacturer": "base",
+      "volume_l": 75,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 27,
+        "hypothetical_coil_budget": 842,
+        "nominal_4ohm_voltage": 796
+      },
+      "max_ideal_2pi_spl_db": 117.546,
+      "min_ideal_2pi_spl_db": 84.373,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 104.2813,
+          "i_coil_rms": 11.191
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 114.1676,
+          "i_coil_rms": 2.4329
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 116.1331,
+          "i_coil_rms": 12.8037
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton RSS390HF-4",
+      "manufacturer": "base",
+      "volume_l": 80,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 32,
+        "hypothetical_coil_budget": 838,
+        "nominal_4ohm_voltage": 795
+      },
+      "max_ideal_2pi_spl_db": 117.433,
+      "min_ideal_2pi_spl_db": 84.813,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 104.5991,
+          "i_coil_rms": 10.8803
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 114.1571,
+          "i_coil_rms": 2.7421
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 116.0534,
+          "i_coil_rms": 12.8574
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton RSS390HF-4",
+      "manufacturer": "base",
+      "volume_l": 100,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 76,
+        "hypothetical_coil_budget": 828,
+        "nominal_4ohm_voltage": 761
+      },
+      "max_ideal_2pi_spl_db": 117.091,
+      "min_ideal_2pi_spl_db": 86.287,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 41.2903,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 104.8678,
+          "i_coil_rms": 8.9761
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 114.0552,
+          "i_coil_rms": 3.9544
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.3813,
+          "limit": "hypothetical_I2Re",
+          "ideal_2pi_1m_spl_db": 115.7499,
+          "i_coil_rms": 12.9099
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton RSS390HF-4",
+      "manufacturer": "base",
+      "volume_l": 120,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 121,
+        "hypothetical_coil_budget": 822,
+        "nominal_4ohm_voltage": 722
+      },
+      "max_ideal_2pi_spl_db": 116.83,
+      "min_ideal_2pi_spl_db": 87.429,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 38.4015,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 104.8678,
+          "i_coil_rms": 7.4868
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 113.9315,
+          "i_coil_rms": 4.8431
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.0641,
+          "limit": "hypothetical_I2Re",
+          "ideal_2pi_1m_spl_db": 115.531,
+          "i_coil_rms": 12.9099
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton RSS390HF-4",
+      "manufacturer": "base",
+      "volume_l": 150,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 160,
+        "hypothetical_coil_budget": 818,
+        "nominal_4ohm_voltage": 687
+      },
+      "max_ideal_2pi_spl_db": 116.575,
+      "min_ideal_2pi_spl_db": 88.743,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 35.8573,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 104.8678,
+          "i_coil_rms": 6.0095
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 113.7673,
+          "i_coil_rms": 5.7235
+        },
+        {
+          "hz": 80,
+          "v_rms": 43.7695,
+          "limit": "hypothetical_I2Re",
+          "ideal_2pi_1m_spl_db": 115.3174,
+          "i_coil_rms": 12.9099
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton RSS315HFA-8",
+      "manufacturer": "base",
+      "volume_l": 75,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 32,
+        "hypothetical_coil_budget": 391,
+        "nominal_4ohm_voltage": 1242
+      },
+      "max_ideal_2pi_spl_db": 111.619,
+      "min_ideal_2pi_spl_db": 84.688,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 99.9493,
+          "i_coil_rms": 4.1315
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 107.7984,
+          "i_coil_rms": 1.9912
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 109.9766,
+          "i_coil_rms": 5.7845
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton RSS315HFA-8",
+      "manufacturer": "base",
+      "volume_l": 80,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 44,
+        "hypothetical_coil_budget": 391,
+        "nominal_4ohm_voltage": 1230
+      },
+      "max_ideal_2pi_spl_db": 111.596,
+      "min_ideal_2pi_spl_db": 85.029,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 100.1151,
+          "i_coil_rms": 3.9945
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 107.7656,
+          "i_coil_rms": 2.0926
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 109.9337,
+          "i_coil_rms": 5.7989
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton RSS315HFA-8",
+      "manufacturer": "base",
+      "volume_l": 100,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 64,
+        "hypothetical_coil_budget": 391,
+        "nominal_4ohm_voltage": 1210
+      },
+      "max_ideal_2pi_spl_db": 111.528,
+      "min_ideal_2pi_spl_db": 86.136,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 100.5922,
+          "i_coil_rms": 3.5389
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 107.6493,
+          "i_coil_rms": 2.4025
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 109.8056,
+          "i_coil_rms": 5.8406
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton RSS315HFA-8",
+      "manufacturer": "base",
+      "volume_l": 120,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 82,
+        "hypothetical_coil_budget": 390,
+        "nominal_4ohm_voltage": 1193
+      },
+      "max_ideal_2pi_spl_db": 111.482,
+      "min_ideal_2pi_spl_db": 86.961,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.1203,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.7696,
+          "i_coil_rms": 3.1552
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 107.5575,
+          "i_coil_rms": 2.6094
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 109.7205,
+          "i_coil_rms": 5.8673
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton RSS315HFA-8",
+      "manufacturer": "base",
+      "volume_l": 150,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 101,
+        "hypothetical_coil_budget": 387,
+        "nominal_4ohm_voltage": 1177
+      },
+      "max_ideal_2pi_spl_db": 111.437,
+      "min_ideal_2pi_spl_db": 87.871,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 42.7719,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.7696,
+          "i_coil_rms": 2.7072
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 107.4552,
+          "i_coil_rms": 2.8136
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 109.6358,
+          "i_coil_rms": 5.8932
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "SB Acoustics SB34SWPL76-4",
+      "manufacturer": "base",
+      "volume_l": 75,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 169,
+        "hypothetical_coil_budget": 705,
+        "nominal_4ohm_voltage": 791
+      },
+      "max_ideal_2pi_spl_db": 113.258,
+      "min_ideal_2pi_spl_db": 88.054,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 39.0913,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.307,
+          "i_coil_rms": 2.9429
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 108.7699,
+          "i_coil_rms": 4.8866
+        },
+        {
+          "hz": 80,
+          "v_rms": 43.074,
+          "limit": "hypothetical_I2Re",
+          "ideal_2pi_1m_spl_db": 112.2545,
+          "i_coil_rms": 11.9523
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "SB Acoustics SB34SWPL76-4",
+      "manufacturer": "base",
+      "volume_l": 80,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 177,
+        "hypothetical_coil_budget": 703,
+        "nominal_4ohm_voltage": 785
+      },
+      "max_ideal_2pi_spl_db": 113.183,
+      "min_ideal_2pi_spl_db": 88.266,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 38.786,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.307,
+          "i_coil_rms": 2.7423
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 108.765,
+          "i_coil_rms": 5.0173
+        },
+        {
+          "hz": 80,
+          "v_rms": 43.0572,
+          "limit": "hypothetical_I2Re",
+          "ideal_2pi_1m_spl_db": 112.2181,
+          "i_coil_rms": 11.9523
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "SB Acoustics SB34SWPL76-4",
+      "manufacturer": "base",
+      "volume_l": 100,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 186,
+        "hypothetical_coil_budget": 713,
+        "nominal_4ohm_voltage": 766
+      },
+      "max_ideal_2pi_spl_db": 113.031,
+      "min_ideal_2pi_spl_db": 88.266,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 37.9382,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.307,
+          "i_coil_rms": 2.1431
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 108.7439,
+          "i_coil_rms": 5.4047
+        },
+        {
+          "hz": 80,
+          "v_rms": 43.0106,
+          "limit": "hypothetical_I2Re",
+          "ideal_2pi_1m_spl_db": 112.1099,
+          "i_coil_rms": 11.9523
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "SB Acoustics SB34SWPL76-4",
+      "manufacturer": "base",
+      "volume_l": 120,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 192,
+        "hypothetical_coil_budget": 717,
+        "nominal_4ohm_voltage": 756
+      },
+      "max_ideal_2pi_spl_db": 112.907,
+      "min_ideal_2pi_spl_db": 88.266,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 37.4322,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.307,
+          "i_coil_rms": 1.7471
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 108.7244,
+          "i_coil_rms": 5.6586
+        },
+        {
+          "hz": 80,
+          "v_rms": 42.9826,
+          "limit": "hypothetical_I2Re",
+          "ideal_2pi_1m_spl_db": 112.0386,
+          "i_coil_rms": 11.9523
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "SB Acoustics SB34SWPL76-4",
+      "manufacturer": "base",
+      "volume_l": 150,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 198,
+        "hypothetical_coil_budget": 727,
+        "nominal_4ohm_voltage": 740
+      },
+      "max_ideal_2pi_spl_db": 112.793,
+      "min_ideal_2pi_spl_db": 88.266,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 36.9757,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.307,
+          "i_coil_rms": 1.3569
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 108.7008,
+          "i_coil_rms": 5.9085
+        },
+        {
+          "hz": 80,
+          "v_rms": 42.9568,
+          "limit": "hypothetical_I2Re",
+          "ideal_2pi_1m_spl_db": 111.9678,
+          "i_coil_rms": 11.9523
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "STX W.32.500.8.MC_v2",
+      "manufacturer": "base",
+      "volume_l": 75,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 645,
+        "hypothetical_coil_budget": 174,
+        "nominal_4ohm_voltage": 846
+      },
+      "max_ideal_2pi_spl_db": 118.19,
+      "min_ideal_2pi_spl_db": 82.849,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 21.4776,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 94.8907,
+          "i_coil_rms": 2.6253
+        },
+        {
+          "hz": 40,
+          "v_rms": 31.2656,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 106.9319,
+          "i_coil_rms": 0.973
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 115.2677,
+          "i_coil_rms": 4.3606
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "STX W.32.500.8.MC_v2",
+      "manufacturer": "base",
+      "volume_l": 80,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 639,
+        "hypothetical_coil_budget": 180,
+        "nominal_4ohm_voltage": 846
+      },
+      "max_ideal_2pi_spl_db": 118.151,
+      "min_ideal_2pi_spl_db": 82.849,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 20.9136,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 94.8907,
+          "i_coil_rms": 2.4801
+        },
+        {
+          "hz": 40,
+          "v_rms": 31.1215,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 106.9319,
+          "i_coil_rms": 0.8617
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 115.2203,
+          "i_coil_rms": 4.4303
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "STX W.32.500.8.MC_v2",
+      "manufacturer": "base",
+      "volume_l": 100,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 639,
+        "hypothetical_coil_budget": 194,
+        "nominal_4ohm_voltage": 832
+      },
+      "max_ideal_2pi_spl_db": 118.032,
+      "min_ideal_2pi_spl_db": 82.849,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 19.3316,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 94.8907,
+          "i_coil_rms": 2.0453
+        },
+        {
+          "hz": 40,
+          "v_rms": 30.8165,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 106.9319,
+          "i_coil_rms": 0.6213
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 115.0739,
+          "i_coil_rms": 4.6322
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "STX W.32.500.8.MC_v2",
+      "manufacturer": "base",
+      "volume_l": 120,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 636,
+        "hypothetical_coil_budget": 204,
+        "nominal_4ohm_voltage": 825
+      },
+      "max_ideal_2pi_spl_db": 117.953,
+      "min_ideal_2pi_spl_db": 82.849,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 18.3839,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 94.8907,
+          "i_coil_rms": 1.7565
+        },
+        {
+          "hz": 40,
+          "v_rms": 30.7211,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 106.9319,
+          "i_coil_rms": 0.6017
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 114.9731,
+          "i_coil_rms": 4.7609
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "STX W.32.500.8.MC_v2",
+      "manufacturer": "base",
+      "volume_l": 150,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 632,
+        "hypothetical_coil_budget": 215,
+        "nominal_4ohm_voltage": 818
+      },
+      "max_ideal_2pi_spl_db": 117.874,
+      "min_ideal_2pi_spl_db": 82.849,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 17.5384,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 94.8907,
+          "i_coil_rms": 1.4691
+        },
+        {
+          "hz": 40,
+          "v_rms": 30.7131,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 106.9319,
+          "i_coil_rms": 0.7136
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 114.8701,
+          "i_coil_rms": 4.8849
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "STX W.32.800.8.FCX",
+      "manufacturer": "base",
+      "volume_l": 75,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 58,
+        "hypothetical_coil_budget": 401,
+        "nominal_4ohm_voltage": 1206
+      },
+      "max_ideal_2pi_spl_db": 114.177,
+      "min_ideal_2pi_spl_db": 85.05,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 100.7121,
+          "i_coil_rms": 4.9666
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 108.843,
+          "i_coil_rms": 1.3904
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.2024,
+          "i_coil_rms": 6.4526
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "STX W.32.800.8.FCX",
+      "manufacturer": "base",
+      "volume_l": 80,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 65,
+        "hypothetical_coil_budget": 401,
+        "nominal_4ohm_voltage": 1199
+      },
+      "max_ideal_2pi_spl_db": 114.152,
+      "min_ideal_2pi_spl_db": 85.385,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 100.8722,
+          "i_coil_rms": 4.8101
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 108.8331,
+          "i_coil_rms": 1.5043
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.1603,
+          "i_coil_rms": 6.4788
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "STX W.32.800.8.FCX",
+      "manufacturer": "base",
+      "volume_l": 100,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 94,
+        "hypothetical_coil_budget": 403,
+        "nominal_4ohm_voltage": 1168
+      },
+      "max_ideal_2pi_spl_db": 114.076,
+      "min_ideal_2pi_spl_db": 86.475,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 42.5819,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.9113,
+          "i_coil_rms": 4.084
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 108.7847,
+          "i_coil_rms": 1.8772
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.0337,
+          "i_coil_rms": 6.555
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "STX W.32.800.8.FCX",
+      "manufacturer": "base",
+      "volume_l": 120,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 114,
+        "hypothetical_coil_budget": 401,
+        "nominal_4ohm_voltage": 1150
+      },
+      "max_ideal_2pi_spl_db": 114.026,
+      "min_ideal_2pi_spl_db": 87.286,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 41.175,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.9113,
+          "i_coil_rms": 3.5883
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 108.7372,
+          "i_coil_rms": 2.1393
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 111.9493,
+          "i_coil_rms": 6.6037
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "STX W.32.800.8.FCX",
+      "manufacturer": "base",
+      "volume_l": 150,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 140,
+        "hypothetical_coil_budget": 393,
+        "nominal_4ohm_voltage": 1132
+      },
+      "max_ideal_2pi_spl_db": 113.976,
+      "min_ideal_2pi_spl_db": 88.179,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 39.9066,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.9113,
+          "i_coil_rms": 3.0962
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 108.678,
+          "i_coil_rms": 2.4047
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 111.8648,
+          "i_coil_rms": 6.6509
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "STX W.38.500.8.MC",
+      "manufacturer": "base",
+      "volume_l": 75,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 883,
+        "hypothetical_coil_budget": 246,
+        "nominal_4ohm_voltage": 536
+      },
+      "max_ideal_2pi_spl_db": 124.113,
+      "min_ideal_2pi_spl_db": 81.009,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 32.1347,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 96.1865,
+          "i_coil_rms": 5.9927
+        },
+        {
+          "hz": 40,
+          "v_rms": 30.4052,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 108.2277,
+          "i_coil_rms": 4.5552
+        },
+        {
+          "hz": 80,
+          "v_rms": 38.2434,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 120.2689,
+          "i_coil_rms": 1.6349
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "STX W.38.500.8.MC",
+      "manufacturer": "base",
+      "volume_l": 80,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 931,
+        "hypothetical_coil_budget": 236,
+        "nominal_4ohm_voltage": 498
+      },
+      "max_ideal_2pi_spl_db": 123.982,
+      "min_ideal_2pi_spl_db": 81.468,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 30.5465,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 96.1865,
+          "i_coil_rms": 5.6661
+        },
+        {
+          "hz": 40,
+          "v_rms": 29.1231,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 108.2277,
+          "i_coil_rms": 4.2304
+        },
+        {
+          "hz": 80,
+          "v_rms": 38.4662,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 120.2689,
+          "i_coil_rms": 1.9063
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "STX W.38.500.8.MC",
+      "manufacturer": "base",
+      "volume_l": 100,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 980,
+        "hypothetical_coil_budget": 201,
+        "nominal_4ohm_voltage": 484
+      },
+      "max_ideal_2pi_spl_db": 123.596,
+      "min_ideal_2pi_spl_db": 83.01,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 25.8415,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 96.1865,
+          "i_coil_rms": 4.6868
+        },
+        {
+          "hz": 40,
+          "v_rms": 25.5455,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 108.2277,
+          "i_coil_rms": 3.2586
+        },
+        {
+          "hz": 80,
+          "v_rms": 39.5531,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 120.2689,
+          "i_coil_rms": 2.7928
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "STX W.38.500.8.MC",
+      "manufacturer": "base",
+      "volume_l": 120,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 1039,
+        "hypothetical_coil_budget": 149,
+        "nominal_4ohm_voltage": 477
+      },
+      "max_ideal_2pi_spl_db": 123.34,
+      "min_ideal_2pi_spl_db": 84.145,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 22.775,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 96.1865,
+          "i_coil_rms": 4.0342
+        },
+        {
+          "hz": 40,
+          "v_rms": 23.4521,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 108.2277,
+          "i_coil_rms": 2.6143
+        },
+        {
+          "hz": 80,
+          "v_rms": 40.6067,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 120.2689,
+          "i_coil_rms": 3.4124
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "STX W.38.500.8.MC",
+      "manufacturer": "base",
+      "volume_l": 150,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 1013,
+        "hypothetical_coil_budget": 172,
+        "nominal_4ohm_voltage": 480
+      },
+      "max_ideal_2pi_spl_db": 123.086,
+      "min_ideal_2pi_spl_db": 84.145,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 19.7952,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 96.1865,
+          "i_coil_rms": 3.3821
+        },
+        {
+          "hz": 40,
+          "v_rms": 21.6722,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 108.2277,
+          "i_coil_rms": 1.9761
+        },
+        {
+          "hz": 80,
+          "v_rms": 41.9012,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 120.2689,
+          "i_coil_rms": 4.0428
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "STX W.38.800.8.MC",
+      "manufacturer": "base",
+      "volume_l": 75,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 108,
+        "hypothetical_coil_budget": 195,
+        "nominal_4ohm_voltage": 1362
+      },
+      "max_ideal_2pi_spl_db": 122.247,
+      "min_ideal_2pi_spl_db": 84.793,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 41.5151,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.218,
+          "i_coil_rms": 5.6217
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.5637,
+          "i_coil_rms": 2.79
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 118.0119,
+          "i_coil_rms": 2.839
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "STX W.38.800.8.MC",
+      "manufacturer": "base",
+      "volume_l": 80,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 124,
+        "hypothetical_coil_budget": 195,
+        "nominal_4ohm_voltage": 1346
+      },
+      "max_ideal_2pi_spl_db": 122.193,
+      "min_ideal_2pi_spl_db": 85.233,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 40.1005,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.218,
+          "i_coil_rms": 5.3167
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.6984,
+          "i_coil_rms": 2.5824
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 117.9976,
+          "i_coil_rms": 2.9795
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "STX W.38.800.8.MC",
+      "manufacturer": "base",
+      "volume_l": 100,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 194,
+        "hypothetical_coil_budget": 187,
+        "nominal_4ohm_voltage": 1284
+      },
+      "max_ideal_2pi_spl_db": 122.024,
+      "min_ideal_2pi_spl_db": 86.704,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 36.0322,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.218,
+          "i_coil_rms": 4.4019
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 111.0677,
+          "i_coil_rms": 1.9151
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 117.9345,
+          "i_coil_rms": 3.3916
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "STX W.38.800.8.MC",
+      "manufacturer": "base",
+      "volume_l": 120,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 271,
+        "hypothetical_coil_budget": 164,
+        "nominal_4ohm_voltage": 1230
+      },
+      "max_ideal_2pi_spl_db": 121.908,
+      "min_ideal_2pi_spl_db": 87.845,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 33.5015,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.218,
+          "i_coil_rms": 3.7924
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 111.2783,
+          "i_coil_rms": 1.4422
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 117.8764,
+          "i_coil_rms": 3.6571
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "STX W.38.800.8.MC",
+      "manufacturer": "base",
+      "volume_l": 150,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 321,
+        "hypothetical_coil_budget": 157,
+        "nominal_4ohm_voltage": 1187
+      },
+      "max_ideal_2pi_spl_db": 121.791,
+      "min_ideal_2pi_spl_db": 88.177,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 31.1576,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.218,
+          "i_coil_rms": 3.1835
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 111.4545,
+          "i_coil_rms": 0.9711
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 117.806,
+          "i_coil_rms": 3.9138
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Scan-Speak 30W/4558T00",
+      "manufacturer": "base",
+      "volume_l": 75,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 500,
+        "hypothetical_coil_budget": 767,
+        "nominal_4ohm_voltage": 398
+      },
+      "max_ideal_2pi_spl_db": 116.321,
+      "min_ideal_2pi_spl_db": 86.833,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 21.0579,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 98.8737,
+          "i_coil_rms": 4.1556
+        },
+        {
+          "hz": 40,
+          "v_rms": 35.9102,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 110.9149,
+          "i_coil_rms": 3.6243
+        },
+        {
+          "hz": 80,
+          "v_rms": 42.9545,
+          "limit": "hypothetical_I2Re",
+          "ideal_2pi_1m_spl_db": 115.1225,
+          "i_coil_rms": 13.8675
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Scan-Speak 30W/4558T00",
+      "manufacturer": "base",
+      "volume_l": 80,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 498,
+        "hypothetical_coil_budget": 774,
+        "nominal_4ohm_voltage": 393
+      },
+      "max_ideal_2pi_spl_db": 116.26,
+      "min_ideal_2pi_spl_db": 86.833,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 20.6416,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 98.8737,
+          "i_coil_rms": 3.8548
+        },
+        {
+          "hz": 40,
+          "v_rms": 36.062,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 110.9149,
+          "i_coil_rms": 3.9188
+        },
+        {
+          "hz": 80,
+          "v_rms": 42.8188,
+          "limit": "hypothetical_I2Re",
+          "ideal_2pi_1m_spl_db": 115.046,
+          "i_coil_rms": 13.8675
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Scan-Speak 30W/4558T00",
+      "manufacturer": "base",
+      "volume_l": 100,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 488,
+        "hypothetical_coil_budget": 798,
+        "nominal_4ohm_voltage": 379
+      },
+      "max_ideal_2pi_spl_db": 115.966,
+      "min_ideal_2pi_spl_db": 86.833,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 19.5303,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 98.8737,
+          "i_coil_rms": 2.9546
+        },
+        {
+          "hz": 40,
+          "v_rms": 36.6158,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 110.9149,
+          "i_coil_rms": 4.8082
+        },
+        {
+          "hz": 80,
+          "v_rms": 42.4316,
+          "limit": "hypothetical_I2Re",
+          "ideal_2pi_1m_spl_db": 114.8205,
+          "i_coil_rms": 13.8675
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Scan-Speak 30W/4558T00",
+      "manufacturer": "base",
+      "volume_l": 120,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 478,
+        "hypothetical_coil_budget": 810,
+        "nominal_4ohm_voltage": 377
+      },
+      "max_ideal_2pi_spl_db": 115.779,
+      "min_ideal_2pi_spl_db": 86.833,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 18.9175,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 98.8737,
+          "i_coil_rms": 2.3577
+        },
+        {
+          "hz": 40,
+          "v_rms": 37.0645,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 110.9149,
+          "i_coil_rms": 5.4045
+        },
+        {
+          "hz": 80,
+          "v_rms": 42.1891,
+          "limit": "hypothetical_I2Re",
+          "ideal_2pi_1m_spl_db": 114.6734,
+          "i_coil_rms": 13.8675
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Scan-Speak 30W/4558T00",
+      "manufacturer": "base",
+      "volume_l": 150,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 469,
+        "hypothetical_coil_budget": 826,
+        "nominal_4ohm_voltage": 370
+      },
+      "max_ideal_2pi_spl_db": 115.557,
+      "min_ideal_2pi_spl_db": 86.833,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 18.4192,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 98.8737,
+          "i_coil_rms": 1.7664
+        },
+        {
+          "hz": 40,
+          "v_rms": 37.5743,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 110.9149,
+          "i_coil_rms": 6.0026
+        },
+        {
+          "hz": 80,
+          "v_rms": 41.9581,
+          "limit": "hypothetical_I2Re",
+          "ideal_2pi_1m_spl_db": 114.5288,
+          "i_coil_rms": 13.8675
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Scan-Speak 32W/4878T00",
+      "manufacturer": "base",
+      "volume_l": 75,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 327,
+        "hypothetical_coil_budget": 632,
+        "nominal_4ohm_voltage": 706
+      },
+      "max_ideal_2pi_spl_db": 116.689,
+      "min_ideal_2pi_spl_db": 86.746,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 28.6867,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.9101,
+          "i_coil_rms": 5.2923
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.5455,
+          "i_coil_rms": 2.5572
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 115.3637,
+          "i_coil_rms": 11.2602
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Scan-Speak 32W/4878T00",
+      "manufacturer": "base",
+      "volume_l": 80,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 337,
+        "hypothetical_coil_budget": 627,
+        "nominal_4ohm_voltage": 701
+      },
+      "max_ideal_2pi_spl_db": 116.618,
+      "min_ideal_2pi_spl_db": 87.19,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 28.0443,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.9101,
+          "i_coil_rms": 4.9318
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.5155,
+          "i_coil_rms": 2.8821
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 115.3112,
+          "i_coil_rms": 11.3107
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Scan-Speak 32W/4878T00",
+      "manufacturer": "base",
+      "volume_l": 100,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 366,
+        "hypothetical_coil_budget": 620,
+        "nominal_4ohm_voltage": 679
+      },
+      "max_ideal_2pi_spl_db": 116.382,
+      "min_ideal_2pi_spl_db": 88.675,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 26.3101,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.9101,
+          "i_coil_rms": 3.8513
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.3975,
+          "i_coil_rms": 3.8413
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 115.1539,
+          "i_coil_rms": 11.4566
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Scan-Speak 32W/4878T00",
+      "manufacturer": "base",
+      "volume_l": 120,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 371,
+        "hypothetical_coil_budget": 630,
+        "nominal_4ohm_voltage": 664
+      },
+      "max_ideal_2pi_spl_db": 116.229,
+      "min_ideal_2pi_spl_db": 88.869,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 25.3362,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.9101,
+          "i_coil_rms": 3.1322
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.2971,
+          "i_coil_rms": 4.4594
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 115.0493,
+          "i_coil_rms": 11.5494
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Scan-Speak 32W/4878T00",
+      "manufacturer": "base",
+      "volume_l": 150,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 367,
+        "hypothetical_coil_budget": 645,
+        "nominal_4ohm_voltage": 653
+      },
+      "max_ideal_2pi_spl_db": 116.069,
+      "min_ideal_2pi_spl_db": 88.869,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 24.5289,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.9101,
+          "i_coil_rms": 2.4151
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.1807,
+          "i_coil_rms": 5.0556
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 114.9451,
+          "i_coil_rms": 11.6387
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton RSS390HE-22 seria",
+      "manufacturer": "base",
+      "volume_l": 75,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 0,
+        "hypothetical_coil_budget": 571,
+        "nominal_4ohm_voltage": 1094
+      },
+      "max_ideal_2pi_spl_db": 115.782,
+      "min_ideal_2pi_spl_db": 83.055,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 100.7998,
+          "i_coil_rms": 7.5206
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.4994,
+          "i_coil_rms": 1.1789
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 114.2148,
+          "i_coil_rms": 8.4535
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton RSS390HE-22 seria",
+      "manufacturer": "base",
+      "volume_l": 80,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 0,
+        "hypothetical_coil_budget": 570,
+        "nominal_4ohm_voltage": 1095
+      },
+      "max_ideal_2pi_spl_db": 115.728,
+      "min_ideal_2pi_spl_db": 83.341,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 100.9915,
+          "i_coil_rms": 7.382
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.5227,
+          "i_coil_rms": 1.168
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 114.1641,
+          "i_coil_rms": 8.4916
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton RSS390HE-22 seria",
+      "manufacturer": "base",
+      "volume_l": 100,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 0,
+        "hypothetical_coil_budget": 569,
+        "nominal_4ohm_voltage": 1096
+      },
+      "max_ideal_2pi_spl_db": 115.577,
+      "min_ideal_2pi_spl_db": 84.26,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 101.5706,
+          "i_coil_rms": 6.9092
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.567,
+          "i_coil_rms": 1.3869
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 114.0117,
+          "i_coil_rms": 8.6011
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton RSS390HE-22 seria",
+      "manufacturer": "base",
+      "volume_l": 120,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 0,
+        "hypothetical_coil_budget": 572,
+        "nominal_4ohm_voltage": 1093
+      },
+      "max_ideal_2pi_spl_db": 115.47,
+      "min_ideal_2pi_spl_db": 84.931,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 101.9564,
+          "i_coil_rms": 6.54
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.5746,
+          "i_coil_rms": 1.6823
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 113.9099,
+          "i_coil_rms": 8.6705
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton RSS390HE-22 seria",
+      "manufacturer": "base",
+      "volume_l": 150,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 0,
+        "hypothetical_coil_budget": 572,
+        "nominal_4ohm_voltage": 1093
+      },
+      "max_ideal_2pi_spl_db": 115.367,
+      "min_ideal_2pi_spl_db": 85.659,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 102.338,
+          "i_coil_rms": 6.1213
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.5647,
+          "i_coil_rms": 2.0384
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 113.808,
+          "i_coil_rms": 8.737
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "SEAS L26RO4Y XM004-04",
+      "manufacturer": "base",
+      "volume_l": 75,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 183,
+        "hypothetical_coil_budget": 418,
+        "nominal_4ohm_voltage": 1064
+      },
+      "max_ideal_2pi_spl_db": 113.893,
+      "min_ideal_2pi_spl_db": 85.729,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 38.0911,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 97.7702,
+          "i_coil_rms": 3.4098
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 105.9385,
+          "i_coil_rms": 2.0897
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 111.4192,
+          "i_coil_rms": 8.5043
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "SEAS L26RO4Y XM004-04",
+      "manufacturer": "base",
+      "volume_l": 80,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 183,
+        "hypothetical_coil_budget": 418,
+        "nominal_4ohm_voltage": 1064
+      },
+      "max_ideal_2pi_spl_db": 113.872,
+      "min_ideal_2pi_spl_db": 85.729,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 37.9354,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 97.7702,
+          "i_coil_rms": 3.2942
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 105.9386,
+          "i_coil_rms": 2.1584
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 111.4085,
+          "i_coil_rms": 8.5292
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "SEAS L26RO4Y XM004-04",
+      "manufacturer": "base",
+      "volume_l": 100,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 186,
+        "hypothetical_coil_budget": 427,
+        "nominal_4ohm_voltage": 1052
+      },
+      "max_ideal_2pi_spl_db": 113.819,
+      "min_ideal_2pi_spl_db": 85.729,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 37.4918,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 97.7702,
+          "i_coil_rms": 2.9484
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 105.9371,
+          "i_coil_rms": 2.3669
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 111.3763,
+          "i_coil_rms": 8.6032
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "SEAS L26RO4Y XM004-04",
+      "manufacturer": "base",
+      "volume_l": 120,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 189,
+        "hypothetical_coil_budget": 430,
+        "nominal_4ohm_voltage": 1046
+      },
+      "max_ideal_2pi_spl_db": 113.771,
+      "min_ideal_2pi_spl_db": 85.729,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 37.2163,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 97.7702,
+          "i_coil_rms": 2.7192
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 105.9346,
+          "i_coil_rms": 2.5071
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 111.3545,
+          "i_coil_rms": 8.6519
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "SEAS L26RO4Y XM004-04",
+      "manufacturer": "base",
+      "volume_l": 150,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 189,
+        "hypothetical_coil_budget": 434,
+        "nominal_4ohm_voltage": 1042
+      },
+      "max_ideal_2pi_spl_db": 113.739,
+      "min_ideal_2pi_spl_db": 85.729,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 36.9574,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 97.7702,
+          "i_coil_rms": 2.4913
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 105.9307,
+          "i_coil_rms": 2.648
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 111.3326,
+          "i_coil_rms": 8.7002
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "BMS 12N630 8ohm",
+      "manufacturer": "base",
+      "volume_l": 75,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 423,
+        "hypothetical_coil_budget": 161,
+        "nominal_4ohm_voltage": 1081
+      },
+      "max_ideal_2pi_spl_db": 115.543,
+      "min_ideal_2pi_spl_db": 83.533,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 26.8194,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 95.5742,
+          "i_coil_rms": 2.7428
+        },
+        {
+          "hz": 40,
+          "v_rms": 42.0583,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 107.6154,
+          "i_coil_rms": 0.4806
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.7814,
+          "i_coil_rms": 4.2827
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "BMS 12N630 8ohm",
+      "manufacturer": "base",
+      "volume_l": 80,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 426,
+        "hypothetical_coil_budget": 167,
+        "nominal_4ohm_voltage": 1072
+      },
+      "max_ideal_2pi_spl_db": 115.519,
+      "min_ideal_2pi_spl_db": 83.533,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 26.3839,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 95.5742,
+          "i_coil_rms": 2.625
+        },
+        {
+          "hz": 40,
+          "v_rms": 42.0144,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 107.6154,
+          "i_coil_rms": 0.4158
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.7483,
+          "i_coil_rms": 4.3196
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "BMS 12N630 8ohm",
+      "manufacturer": "base",
+      "volume_l": 100,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 432,
+        "hypothetical_coil_budget": 175,
+        "nominal_4ohm_voltage": 1058
+      },
+      "max_ideal_2pi_spl_db": 115.446,
+      "min_ideal_2pi_spl_db": 83.533,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 25.152,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 95.5742,
+          "i_coil_rms": 2.2717
+        },
+        {
+          "hz": 40,
+          "v_rms": 41.9541,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 107.6154,
+          "i_coil_rms": 0.4075
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.6479,
+          "i_coil_rms": 4.4276
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "BMS 12N630 8ohm",
+      "manufacturer": "base",
+      "volume_l": 120,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 435,
+        "hypothetical_coil_budget": 181,
+        "nominal_4ohm_voltage": 1049
+      },
+      "max_ideal_2pi_spl_db": 115.398,
+      "min_ideal_2pi_spl_db": 83.533,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 24.3991,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 95.5742,
+          "i_coil_rms": 2.0364
+        },
+        {
+          "hz": 40,
+          "v_rms": 41.9738,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 107.6154,
+          "i_coil_rms": 0.5487
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.5802,
+          "i_coil_rms": 4.4975
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "BMS 12N630 8ohm",
+      "manufacturer": "base",
+      "volume_l": 150,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 435,
+        "hypothetical_coil_budget": 189,
+        "nominal_4ohm_voltage": 1041
+      },
+      "max_ideal_2pi_spl_db": 115.349,
+      "min_ideal_2pi_spl_db": 83.533,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 23.7072,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 95.5742,
+          "i_coil_rms": 1.8013
+        },
+        {
+          "hz": 40,
+          "v_rms": 42.0414,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 107.6154,
+          "i_coil_rms": 0.74
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.5117,
+          "i_coil_rms": 4.5657
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "BMS 15S430v2",
+      "manufacturer": "base",
+      "volume_l": 75,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 108,
+        "hypothetical_coil_budget": 124,
+        "nominal_4ohm_voltage": 1433
+      },
+      "max_ideal_2pi_spl_db": 121.654,
+      "min_ideal_2pi_spl_db": 84.292,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 40.802,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.1249,
+          "i_coil_rms": 6.4432
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.4204,
+          "i_coil_rms": 3.7146
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 117.3832,
+          "i_coil_rms": 1.4718
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "BMS 15S430v2",
+      "manufacturer": "base",
+      "volume_l": 80,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 118,
+        "hypothetical_coil_budget": 121,
+        "nominal_4ohm_voltage": 1426
+      },
+      "max_ideal_2pi_spl_db": 121.622,
+      "min_ideal_2pi_spl_db": 84.657,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 39.6734,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.1249,
+          "i_coil_rms": 6.159
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.5193,
+          "i_coil_rms": 3.5228
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 117.371,
+          "i_coil_rms": 1.5957
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "BMS 15S430v2",
+      "manufacturer": "base",
+      "volume_l": 100,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 165,
+        "hypothetical_coil_budget": 108,
+        "nominal_4ohm_voltage": 1392
+      },
+      "max_ideal_2pi_spl_db": 121.525,
+      "min_ideal_2pi_spl_db": 85.852,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 36.4114,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.1249,
+          "i_coil_rms": 5.3062
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.7917,
+          "i_coil_rms": 2.9104
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 117.3235,
+          "i_coil_rms": 1.9657
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "BMS 15S430v2",
+      "manufacturer": "base",
+      "volume_l": 120,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 211,
+        "hypothetical_coil_budget": 90,
+        "nominal_4ohm_voltage": 1364
+      },
+      "max_ideal_2pi_spl_db": 121.457,
+      "min_ideal_2pi_spl_db": 86.751,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 34.3593,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.1249,
+          "i_coil_rms": 4.7378
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.9499,
+          "i_coil_rms": 2.4731
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 117.2832,
+          "i_coil_rms": 2.2093
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "BMS 15S430v2",
+      "manufacturer": "base",
+      "volume_l": 150,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 275,
+        "hypothetical_coil_budget": 57,
+        "nominal_4ohm_voltage": 1333
+      },
+      "max_ideal_2pi_spl_db": 121.389,
+      "min_ideal_2pi_spl_db": 87.755,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 32.427,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.1249,
+          "i_coil_rms": 4.1695
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 111.0866,
+          "i_coil_rms": 2.0158
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 117.2361,
+          "i_coil_rms": 2.4495
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "FaitalPRO 15XL1400 8ohm",
+      "manufacturer": "base",
+      "volume_l": 75,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 0,
+        "hypothetical_coil_budget": 183,
+        "nominal_4ohm_voltage": 1482
+      },
+      "max_ideal_2pi_spl_db": 119.951,
+      "min_ideal_2pi_spl_db": 83.898,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 100.1036,
+          "i_coil_rms": 6.2795
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 109.5232,
+          "i_coil_rms": 2.6635
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 116.1304,
+          "i_coil_rms": 2.8498
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "FaitalPRO 15XL1400 8ohm",
+      "manufacturer": "base",
+      "volume_l": 80,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 0,
+        "hypothetical_coil_budget": 182,
+        "nominal_4ohm_voltage": 1483
+      },
+      "max_ideal_2pi_spl_db": 119.918,
+      "min_ideal_2pi_spl_db": 84.211,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 100.3061,
+          "i_coil_rms": 6.1759
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 109.5959,
+          "i_coil_rms": 2.5032
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 116.1086,
+          "i_coil_rms": 2.9394
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "FaitalPRO 15XL1400 8ohm",
+      "manufacturer": "base",
+      "volume_l": 100,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 0,
+        "hypothetical_coil_budget": 177,
+        "nominal_4ohm_voltage": 1488
+      },
+      "max_ideal_2pi_spl_db": 119.819,
+      "min_ideal_2pi_spl_db": 85.224,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 100.9213,
+          "i_coil_rms": 5.8185
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 109.7945,
+          "i_coil_rms": 2.0014
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 116.0368,
+          "i_coil_rms": 3.203
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "FaitalPRO 15XL1400 8ohm",
+      "manufacturer": "base",
+      "volume_l": 120,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 0,
+        "hypothetical_coil_budget": 172,
+        "nominal_4ohm_voltage": 1493
+      },
+      "max_ideal_2pi_spl_db": 119.753,
+      "min_ideal_2pi_spl_db": 85.972,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 101.3346,
+          "i_coil_rms": 5.5353
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 109.909,
+          "i_coil_rms": 1.6512
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 115.9836,
+          "i_coil_rms": 3.3743
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "FaitalPRO 15XL1400 8ohm",
+      "manufacturer": "base",
+      "volume_l": 150,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 4,
+        "hypothetical_coil_budget": 171,
+        "nominal_4ohm_voltage": 1490
+      },
+      "max_ideal_2pi_spl_db": 119.685,
+      "min_ideal_2pi_spl_db": 86.79,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 101.7464,
+          "i_coil_rms": 5.2099
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.0078,
+          "i_coil_rms": 1.2913
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 115.9264,
+          "i_coil_rms": 3.5418
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "LaVoce WAF154.00",
+      "manufacturer": "base",
+      "volume_l": 75,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 0,
+        "hypothetical_coil_budget": 141,
+        "nominal_4ohm_voltage": 1524
+      },
+      "max_ideal_2pi_spl_db": 120.353,
+      "min_ideal_2pi_spl_db": 84.156,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 99.9695,
+          "i_coil_rms": 5.8582
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 109.3187,
+          "i_coil_rms": 2.685
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 116.1725,
+          "i_coil_rms": 2.1662
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "LaVoce WAF154.00",
+      "manufacturer": "base",
+      "volume_l": 80,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 0,
+        "hypothetical_coil_budget": 139,
+        "nominal_4ohm_voltage": 1526
+      },
+      "max_ideal_2pi_spl_db": 120.321,
+      "min_ideal_2pi_spl_db": 84.494,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 100.1867,
+          "i_coil_rms": 5.7558
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 109.4017,
+          "i_coil_rms": 2.5312
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 116.1575,
+          "i_coil_rms": 2.2595
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "LaVoce WAF154.00",
+      "manufacturer": "base",
+      "volume_l": 100,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 0,
+        "hypothetical_coil_budget": 136,
+        "nominal_4ohm_voltage": 1529
+      },
+      "max_ideal_2pi_spl_db": 120.224,
+      "min_ideal_2pi_spl_db": 85.595,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 100.8476,
+          "i_coil_rms": 5.3992
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 109.6297,
+          "i_coil_rms": 2.0476
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 116.1042,
+          "i_coil_rms": 2.5358
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "LaVoce WAF154.00",
+      "manufacturer": "base",
+      "volume_l": 120,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 4,
+        "hypothetical_coil_budget": 129,
+        "nominal_4ohm_voltage": 1532
+      },
+      "max_ideal_2pi_spl_db": 120.158,
+      "min_ideal_2pi_spl_db": 86.416,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 101.2917,
+          "i_coil_rms": 5.1132
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 109.7624,
+          "i_coil_rms": 1.7089
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 116.0618,
+          "i_coil_rms": 2.7164
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "LaVoce WAF154.00",
+      "manufacturer": "base",
+      "volume_l": 150,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 14,
+        "hypothetical_coil_budget": 122,
+        "nominal_4ohm_voltage": 1529
+      },
+      "max_ideal_2pi_spl_db": 120.091,
+      "min_ideal_2pi_spl_db": 87.321,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 101.7335,
+          "i_coil_rms": 4.7812
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 109.8776,
+          "i_coil_rms": 1.3609
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 116.0142,
+          "i_coil_rms": 2.8937
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Peerless XXLS 830844 4ohm",
+      "manufacturer": "base",
+      "volume_l": 75,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 348,
+        "hypothetical_coil_budget": 703,
+        "nominal_4ohm_voltage": 614
+      },
+      "max_ideal_2pi_spl_db": 117.314,
+      "min_ideal_2pi_spl_db": 86.833,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 27.8683,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 98.8737,
+          "i_coil_rms": 2.8304
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.28,
+          "i_coil_rms": 2.9554
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.0263,
+          "limit": "hypothetical_I2Re",
+          "ideal_2pi_1m_spl_db": 116.8293,
+          "i_coil_rms": 13.3631
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Peerless XXLS 830844 4ohm",
+      "manufacturer": "base",
+      "volume_l": 80,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 348,
+        "hypothetical_coil_budget": 706,
+        "nominal_4ohm_voltage": 611
+      },
+      "max_ideal_2pi_spl_db": 117.261,
+      "min_ideal_2pi_spl_db": 86.833,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 27.6109,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 98.8737,
+          "i_coil_rms": 2.6276
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.2975,
+          "i_coil_rms": 3.1492
+        },
+        {
+          "hz": 80,
+          "v_rms": 43.8381,
+          "limit": "hypothetical_I2Re",
+          "ideal_2pi_1m_spl_db": 116.7643,
+          "i_coil_rms": 13.3631
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Peerless XXLS 830844 4ohm",
+      "manufacturer": "base",
+      "volume_l": 100,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 356,
+        "hypothetical_coil_budget": 724,
+        "nominal_4ohm_voltage": 585
+      },
+      "max_ideal_2pi_spl_db": 117.063,
+      "min_ideal_2pi_spl_db": 86.833,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 26.899,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 98.8737,
+          "i_coil_rms": 2.0202
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.3421,
+          "i_coil_rms": 3.7327
+        },
+        {
+          "hz": 80,
+          "v_rms": 43.3036,
+          "limit": "hypothetical_I2Re",
+          "ideal_2pi_1m_spl_db": 116.5722,
+          "i_coil_rms": 13.3631
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Peerless XXLS 830844 4ohm",
+      "manufacturer": "base",
+      "volume_l": 120,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 358,
+        "hypothetical_coil_budget": 734,
+        "nominal_4ohm_voltage": 573
+      },
+      "max_ideal_2pi_spl_db": 116.909,
+      "min_ideal_2pi_spl_db": 86.833,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 26.4772,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 98.8737,
+          "i_coil_rms": 1.6164
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.3651,
+          "i_coil_rms": 4.1223
+        },
+        {
+          "hz": 80,
+          "v_rms": 42.9711,
+          "limit": "hypothetical_I2Re",
+          "ideal_2pi_1m_spl_db": 116.4464,
+          "i_coil_rms": 13.3631
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Peerless XXLS 830844 4ohm",
+      "manufacturer": "base",
+      "volume_l": 150,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 357,
+        "hypothetical_coil_budget": 746,
+        "nominal_4ohm_voltage": 562
+      },
+      "max_ideal_2pi_spl_db": 116.741,
+      "min_ideal_2pi_spl_db": 86.833,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 26.1001,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 98.8737,
+          "i_coil_rms": 1.2144
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.3824,
+          "i_coil_rms": 4.5114
+        },
+        {
+          "hz": 80,
+          "v_rms": 42.6563,
+          "limit": "hypothetical_I2Re",
+          "ideal_2pi_1m_spl_db": 116.3224,
+          "i_coil_rms": 13.3631
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "PURIFI PTT10.0X04-NAB-01",
+      "manufacturer": "PURIFI",
+      "volume_l": 75,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 333,
+        "hypothetical_coil_budget": 394,
+        "nominal_4ohm_voltage": 938
+      },
+      "max_ideal_2pi_spl_db": 115.083,
+      "min_ideal_2pi_spl_db": 86.029,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 29.1137,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 98.0697,
+          "i_coil_rms": 3.6201
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 109.0225,
+          "i_coil_rms": 1.6903
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.8503,
+          "i_coil_rms": 7.9515
+        }
+      ],
+      "derived_mms": false,
+      "derived_bl": false,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "PURIFI PTT10.0X04-NAB-01",
+      "manufacturer": "PURIFI",
+      "volume_l": 80,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 333,
+        "hypothetical_coil_budget": 398,
+        "nominal_4ohm_voltage": 934
+      },
+      "max_ideal_2pi_spl_db": 115.055,
+      "min_ideal_2pi_spl_db": 86.029,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 28.7782,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 98.0697,
+          "i_coil_rms": 3.4455
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 109.0103,
+          "i_coil_rms": 1.8305
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.8212,
+          "i_coil_rms": 7.9848
+        }
+      ],
+      "derived_mms": false,
+      "derived_bl": false,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "PURIFI PTT10.0X04-NAB-01",
+      "manufacturer": "PURIFI",
+      "volume_l": 100,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 336,
+        "hypothetical_coil_budget": 411,
+        "nominal_4ohm_voltage": 918
+      },
+      "max_ideal_2pi_spl_db": 114.968,
+      "min_ideal_2pi_spl_db": 86.029,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 27.8487,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 98.0697,
+          "i_coil_rms": 2.9224
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 108.9644,
+          "i_coil_rms": 2.2558
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.7335,
+          "i_coil_rms": 8.0825
+        }
+      ],
+      "derived_mms": false,
+      "derived_bl": false,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "PURIFI PTT10.0X04-NAB-01",
+      "manufacturer": "PURIFI",
+      "volume_l": 120,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 339,
+        "hypothetical_coil_budget": 419,
+        "nominal_4ohm_voltage": 907
+      },
+      "max_ideal_2pi_spl_db": 114.916,
+      "min_ideal_2pi_spl_db": 86.029,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 27.2975,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 98.0697,
+          "i_coil_rms": 2.5745
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 108.9263,
+          "i_coil_rms": 2.5398
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.6749,
+          "i_coil_rms": 8.1459
+        }
+      ],
+      "derived_mms": false,
+      "derived_bl": false,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "PURIFI PTT10.0X04-NAB-01",
+      "manufacturer": "PURIFI",
+      "volume_l": 150,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 336,
+        "hypothetical_coil_budget": 425,
+        "nominal_4ohm_voltage": 904
+      },
+      "max_ideal_2pi_spl_db": 114.857,
+      "min_ideal_2pi_spl_db": 86.029,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 26.8052,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 98.0697,
+          "i_coil_rms": 2.2278
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 108.8824,
+          "i_coil_rms": 2.8221
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.6162,
+          "i_coil_rms": 8.2079
+        }
+      ],
+      "derived_mms": false,
+      "derived_bl": false,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton RSS390HO-4",
+      "manufacturer": "base",
+      "volume_l": 75,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 64,
+        "hypothetical_coil_budget": 638,
+        "nominal_4ohm_voltage": 963
+      },
+      "max_ideal_2pi_spl_db": 118.165,
+      "min_ideal_2pi_spl_db": 85.917,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 43.5074,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 103.5288,
+          "i_coil_rms": 8.3769
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.3137,
+          "i_coil_rms": 1.3277
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 116.7502,
+          "i_coil_rms": 10.7023
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton RSS390HO-4",
+      "manufacturer": "base",
+      "volume_l": 80,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 77,
+        "hypothetical_coil_budget": 632,
+        "nominal_4ohm_voltage": 956
+      },
+      "max_ideal_2pi_spl_db": 118.074,
+      "min_ideal_2pi_spl_db": 86.328,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 42.4804,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 103.5288,
+          "i_coil_rms": 7.8887
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.33,
+          "i_coil_rms": 1.4985
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 116.697,
+          "i_coil_rms": 10.776
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton RSS390HO-4",
+      "manufacturer": "base",
+      "volume_l": 100,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 118,
+        "hypothetical_coil_budget": 631,
+        "nominal_4ohm_voltage": 916
+      },
+      "max_ideal_2pi_spl_db": 117.819,
+      "min_ideal_2pi_spl_db": 87.692,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 39.6163,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 103.5288,
+          "i_coil_rms": 6.4268
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.348,
+          "i_coil_rms": 2.251
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 116.5355,
+          "i_coil_rms": 10.9875
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton RSS390HO-4",
+      "manufacturer": "base",
+      "volume_l": 120,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 146,
+        "hypothetical_coil_budget": 634,
+        "nominal_4ohm_voltage": 885
+      },
+      "max_ideal_2pi_spl_db": 117.657,
+      "min_ideal_2pi_spl_db": 88.737,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 37.9145,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 103.5288,
+          "i_coil_rms": 5.4556
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.334,
+          "i_coil_rms": 2.8398
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 116.4268,
+          "i_coil_rms": 11.1207
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton RSS390HO-4",
+      "manufacturer": "base",
+      "volume_l": 150,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 177,
+        "hypothetical_coil_budget": 633,
+        "nominal_4ohm_voltage": 855
+      },
+      "max_ideal_2pi_spl_db": 117.491,
+      "min_ideal_2pi_spl_db": 89.924,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 36.4064,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 103.5288,
+          "i_coil_rms": 4.4892
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.2994,
+          "i_coil_rms": 3.4495
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 116.3172,
+          "i_coil_rms": 11.2479
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton UMII12-22 seria",
+      "manufacturer": "base",
+      "volume_l": 75,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 0,
+        "hypothetical_coil_budget": 560,
+        "nominal_4ohm_voltage": 1105
+      },
+      "max_ideal_2pi_spl_db": 114.04,
+      "min_ideal_2pi_spl_db": 81.744,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 99.8836,
+          "i_coil_rms": 8.0373
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 109.5335,
+          "i_coil_rms": 2.1919
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.4546,
+          "i_coil_rms": 8.2087
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton UMII12-22 seria",
+      "manufacturer": "base",
+      "volume_l": 80,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 0,
+        "hypothetical_coil_budget": 560,
+        "nominal_4ohm_voltage": 1105
+      },
+      "max_ideal_2pi_spl_db": 114.006,
+      "min_ideal_2pi_spl_db": 81.985,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 100.0503,
+          "i_coil_rms": 7.9217
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 109.5402,
+          "i_coil_rms": 2.185
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.4125,
+          "i_coil_rms": 8.2393
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton UMII12-22 seria",
+      "manufacturer": "base",
+      "volume_l": 100,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 0,
+        "hypothetical_coil_budget": 559,
+        "nominal_4ohm_voltage": 1106
+      },
+      "max_ideal_2pi_spl_db": 113.902,
+      "min_ideal_2pi_spl_db": 82.752,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 100.553,
+          "i_coil_rms": 7.5336
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 109.5409,
+          "i_coil_rms": 2.2737
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.2862,
+          "i_coil_rms": 8.3284
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton UMII12-22 seria",
+      "manufacturer": "base",
+      "volume_l": 120,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 0,
+        "hypothetical_coil_budget": 558,
+        "nominal_4ohm_voltage": 1107
+      },
+      "max_ideal_2pi_spl_db": 113.833,
+      "min_ideal_2pi_spl_db": 83.304,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 100.8881,
+          "i_coil_rms": 7.2364
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 109.5251,
+          "i_coil_rms": 2.4155
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.2021,
+          "i_coil_rms": 8.3857
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton UMII12-22 seria",
+      "manufacturer": "base",
+      "volume_l": 150,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 0,
+        "hypothetical_coil_budget": 560,
+        "nominal_4ohm_voltage": 1105
+      },
+      "max_ideal_2pi_spl_db": 113.758,
+      "min_ideal_2pi_spl_db": 83.892,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 101.2206,
+          "i_coil_rms": 6.9048
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 109.4965,
+          "i_coil_rms": 2.6098
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.1181,
+          "i_coil_rms": 8.4412
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton UMII15-22 seria",
+      "manufacturer": "base",
+      "volume_l": 75,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 0,
+        "hypothetical_coil_budget": 684,
+        "nominal_4ohm_voltage": 981
+      },
+      "max_ideal_2pi_spl_db": 115.739,
+      "min_ideal_2pi_spl_db": 80.532,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 99.7521,
+          "i_coil_rms": 9.4118
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.0176,
+          "i_coil_rms": 3.6976
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 113.9502,
+          "i_coil_rms": 9.0056
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton UMII15-22 seria",
+      "manufacturer": "base",
+      "volume_l": 80,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 0,
+        "hypothetical_coil_budget": 685,
+        "nominal_4ohm_voltage": 980
+      },
+      "max_ideal_2pi_spl_db": 115.632,
+      "min_ideal_2pi_spl_db": 80.858,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 100.0512,
+          "i_coil_rms": 9.3211
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.0858,
+          "i_coil_rms": 3.5154
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 113.8647,
+          "i_coil_rms": 9.045
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton UMII15-22 seria",
+      "manufacturer": "base",
+      "volume_l": 100,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 0,
+        "hypothetical_coil_budget": 682,
+        "nominal_4ohm_voltage": 983
+      },
+      "max_ideal_2pi_spl_db": 115.299,
+      "min_ideal_2pi_spl_db": 81.917,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 100.9914,
+          "i_coil_rms": 8.9852
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.2104,
+          "i_coil_rms": 3.1988
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 113.6104,
+          "i_coil_rms": 9.1564
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton UMII15-22 seria",
+      "manufacturer": "base",
+      "volume_l": 120,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 0,
+        "hypothetical_coil_budget": 686,
+        "nominal_4ohm_voltage": 979
+      },
+      "max_ideal_2pi_spl_db": 115.072,
+      "min_ideal_2pi_spl_db": 82.701,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 101.6526,
+          "i_coil_rms": 8.6928
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.223,
+          "i_coil_rms": 3.2361
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 113.4428,
+          "i_coil_rms": 9.2253
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton UMII15-22 seria",
+      "manufacturer": "base",
+      "volume_l": 150,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 0,
+        "hypothetical_coil_budget": 685,
+        "nominal_4ohm_voltage": 980
+      },
+      "max_ideal_2pi_spl_db": 114.844,
+      "min_ideal_2pi_spl_db": 83.562,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 102.3375,
+          "i_coil_rms": 8.3268
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.1784,
+          "i_coil_rms": 3.4723
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 113.2769,
+          "i_coil_rms": 9.2902
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton RSS315HO-4",
+      "manufacturer": "base",
+      "volume_l": 75,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 147,
+        "hypothetical_coil_budget": 502,
+        "nominal_4ohm_voltage": 1016
+      },
+      "max_ideal_2pi_spl_db": 115.06,
+      "min_ideal_2pi_spl_db": 86.04,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 38.3256,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 99.597,
+          "i_coil_rms": 4.8749
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 108.0269,
+          "i_coil_rms": 2.0789
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 113.075,
+          "i_coil_rms": 9.5486
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton RSS315HO-4",
+      "manufacturer": "base",
+      "volume_l": 80,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 157,
+        "hypothetical_coil_budget": 502,
+        "nominal_4ohm_voltage": 1006
+      },
+      "max_ideal_2pi_spl_db": 115.021,
+      "min_ideal_2pi_spl_db": 86.289,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 38.0519,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 99.597,
+          "i_coil_rms": 4.689
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 108.0266,
+          "i_coil_rms": 2.1831
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 113.0575,
+          "i_coil_rms": 9.5848
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton RSS315HO-4",
+      "manufacturer": "base",
+      "volume_l": 100,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 177,
+        "hypothetical_coil_budget": 499,
+        "nominal_4ohm_voltage": 989
+      },
+      "max_ideal_2pi_spl_db": 114.934,
+      "min_ideal_2pi_spl_db": 87.085,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 37.2781,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 99.597,
+          "i_coil_rms": 4.1329
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 108.0218,
+          "i_coil_rms": 2.5057
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 113.0046,
+          "i_coil_rms": 9.6916
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton RSS315HO-4",
+      "manufacturer": "base",
+      "volume_l": 120,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 198,
+        "hypothetical_coil_budget": 488,
+        "nominal_4ohm_voltage": 979
+      },
+      "max_ideal_2pi_spl_db": 114.86,
+      "min_ideal_2pi_spl_db": 87.556,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 36.8033,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 99.597,
+          "i_coil_rms": 3.7641
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 108.015,
+          "i_coil_rms": 2.7266
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.9689,
+          "i_coil_rms": 9.7616
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Dayton RSS315HO-4",
+      "manufacturer": "base",
+      "volume_l": 150,
+      "nominal_ohm": 4,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 201,
+        "hypothetical_coil_budget": 496,
+        "nominal_4ohm_voltage": 968
+      },
+      "max_ideal_2pi_spl_db": 114.803,
+      "min_ideal_2pi_spl_db": 87.556,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 36.3628,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 99.597,
+          "i_coil_rms": 3.3975
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 108.0055,
+          "i_coil_rms": 2.9505
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 112.9329,
+          "i_coil_rms": 9.8304
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Eminence LAB12 6ohm",
+      "manufacturer": "base",
+      "volume_l": 75,
+      "nominal_ohm": 6,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 256,
+        "hypothetical_coil_budget": 513,
+        "nominal_4ohm_voltage": 896
+      },
+      "max_ideal_2pi_spl_db": 115.812,
+      "min_ideal_2pi_spl_db": 85.859,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 32.8413,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 99.9417,
+          "i_coil_rms": 4.5728
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.8544,
+          "i_coil_rms": 1.4174
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 114.1245,
+          "i_coil_rms": 8.3744
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Eminence LAB12 6ohm",
+      "manufacturer": "base",
+      "volume_l": 80,
+      "nominal_ohm": 6,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 269,
+        "hypothetical_coil_budget": 509,
+        "nominal_4ohm_voltage": 887
+      },
+      "max_ideal_2pi_spl_db": 115.755,
+      "min_ideal_2pi_spl_db": 86.235,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 32.1528,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 99.9417,
+          "i_coil_rms": 4.3142
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.843,
+          "i_coil_rms": 1.6381
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 114.0759,
+          "i_coil_rms": 8.41
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Eminence LAB12 6ohm",
+      "manufacturer": "base",
+      "volume_l": 100,
+      "nominal_ohm": 6,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 309,
+        "hypothetical_coil_budget": 500,
+        "nominal_4ohm_voltage": 856
+      },
+      "max_ideal_2pi_spl_db": 115.611,
+      "min_ideal_2pi_spl_db": 87.472,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 30.2385,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 99.9417,
+          "i_coil_rms": 3.5389
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.7842,
+          "i_coil_rms": 2.2952
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 113.9302,
+          "i_coil_rms": 8.5128
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Eminence LAB12 6ohm",
+      "manufacturer": "base",
+      "volume_l": 120,
+      "nominal_ohm": 6,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 330,
+        "hypothetical_coil_budget": 496,
+        "nominal_4ohm_voltage": 839
+      },
+      "max_ideal_2pi_spl_db": 115.506,
+      "min_ideal_2pi_spl_db": 87.901,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 29.1047,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 99.9417,
+          "i_coil_rms": 3.0221
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.7253,
+          "i_coil_rms": 2.7242
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 113.833,
+          "i_coil_rms": 8.5781
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Eminence LAB12 6ohm",
+      "manufacturer": "base",
+      "volume_l": 150,
+      "nominal_ohm": 6,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 327,
+        "hypothetical_coil_budget": 507,
+        "nominal_4ohm_voltage": 831
+      },
+      "max_ideal_2pi_spl_db": 115.406,
+      "min_ideal_2pi_spl_db": 87.901,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 28.1011,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 99.9417,
+          "i_coil_rms": 2.5057
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.6512,
+          "i_coil_rms": 3.1427
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 113.7359,
+          "i_coil_rms": 8.6409
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Eminence LAB15 6ohm",
+      "manufacturer": "base",
+      "volume_l": 75,
+      "nominal_ohm": 6,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 4,
+        "hypothetical_coil_budget": 376,
+        "nominal_4ohm_voltage": 1285
+      },
+      "max_ideal_2pi_spl_db": 118.168,
+      "min_ideal_2pi_spl_db": 84.985,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 100.9629,
+          "i_coil_rms": 5.9135
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 109.7848,
+          "i_coil_rms": 0.9411
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 115.4891,
+          "i_coil_rms": 6.0912
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Eminence LAB15 6ohm",
+      "manufacturer": "base",
+      "volume_l": 80,
+      "nominal_ohm": 6,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 6,
+        "hypothetical_coil_budget": 375,
+        "nominal_4ohm_voltage": 1284
+      },
+      "max_ideal_2pi_spl_db": 118.13,
+      "min_ideal_2pi_spl_db": 85.324,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 101.1457,
+          "i_coil_rms": 5.762
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 109.8253,
+          "i_coil_rms": 0.8053
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 115.4506,
+          "i_coil_rms": 6.154
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Eminence LAB15 6ohm",
+      "manufacturer": "base",
+      "volume_l": 100,
+      "nominal_ohm": 6,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 20,
+        "hypothetical_coil_budget": 373,
+        "nominal_4ohm_voltage": 1272
+      },
+      "max_ideal_2pi_spl_db": 118.007,
+      "min_ideal_2pi_spl_db": 86.428,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 101.6896,
+          "i_coil_rms": 5.2495
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 109.9255,
+          "i_coil_rms": 0.5895
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 115.3315,
+          "i_coil_rms": 6.336
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Eminence LAB15 6ohm",
+      "manufacturer": "base",
+      "volume_l": 120,
+      "nominal_ohm": 6,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 30,
+        "hypothetical_coil_budget": 374,
+        "nominal_4ohm_voltage": 1261
+      },
+      "max_ideal_2pi_spl_db": 117.92,
+      "min_ideal_2pi_spl_db": 87.251,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 102.0441,
+          "i_coil_rms": 4.8544
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 109.9739,
+          "i_coil_rms": 0.712
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 115.2494,
+          "i_coil_rms": 6.452
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Eminence LAB15 6ohm",
+      "manufacturer": "base",
+      "volume_l": 150,
+      "nominal_ohm": 6,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 43,
+        "hypothetical_coil_budget": 377,
+        "nominal_4ohm_voltage": 1245
+      },
+      "max_ideal_2pi_spl_db": 117.831,
+      "min_ideal_2pi_spl_db": 88.159,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 102.3867,
+          "i_coil_rms": 4.4119
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.0068,
+          "i_coil_rms": 0.9822
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 115.1653,
+          "i_coil_rms": 6.5638
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "SB Acoustics SB34SWNRX-S75-6",
+      "manufacturer": "SB Acoustics",
+      "volume_l": 75,
+      "nominal_ohm": 6,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 360,
+        "hypothetical_coil_budget": 493,
+        "nominal_4ohm_voltage": 812
+      },
+      "max_ideal_2pi_spl_db": 115.678,
+      "min_ideal_2pi_spl_db": 86.667,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 28.9879,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 98.7081,
+          "i_coil_rms": 3.3272
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.3447,
+          "i_coil_rms": 1.9984
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 114.0782,
+          "i_coil_rms": 8.5076
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "SB Acoustics SB34SWNRX-S75-6",
+      "manufacturer": "SB Acoustics",
+      "volume_l": 80,
+      "nominal_ohm": 6,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 366,
+        "hypothetical_coil_budget": 498,
+        "nominal_4ohm_voltage": 801
+      },
+      "max_ideal_2pi_spl_db": 115.621,
+      "min_ideal_2pi_spl_db": 86.667,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 28.4296,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 98.7081,
+          "i_coil_rms": 3.1107
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.336,
+          "i_coil_rms": 2.194
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 114.0288,
+          "i_coil_rms": 8.5386
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "SB Acoustics SB34SWNRX-S75-6",
+      "manufacturer": "SB Acoustics",
+      "volume_l": 100,
+      "nominal_ohm": 6,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 372,
+        "hypothetical_coil_budget": 513,
+        "nominal_4ohm_voltage": 780
+      },
+      "max_ideal_2pi_spl_db": 115.45,
+      "min_ideal_2pi_spl_db": 86.667,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 26.901,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 98.7081,
+          "i_coil_rms": 2.4626
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.2869,
+          "i_coil_rms": 2.7797
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 113.8805,
+          "i_coil_rms": 8.6278
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "SB Acoustics SB34SWNRX-S75-6",
+      "manufacturer": "SB Acoustics",
+      "volume_l": 120,
+      "nominal_ohm": 6,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 372,
+        "hypothetical_coil_budget": 525,
+        "nominal_4ohm_voltage": 768
+      },
+      "max_ideal_2pi_spl_db": 115.343,
+      "min_ideal_2pi_spl_db": 86.667,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 26.0179,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 98.7081,
+          "i_coil_rms": 2.0322
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.2354,
+          "i_coil_rms": 3.164
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 113.7815,
+          "i_coil_rms": 8.684
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "SB Acoustics SB34SWNRX-S75-6",
+      "manufacturer": "SB Acoustics",
+      "volume_l": 150,
+      "nominal_ohm": 6,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 368,
+        "hypothetical_coil_budget": 536,
+        "nominal_4ohm_voltage": 761
+      },
+      "max_ideal_2pi_spl_db": 115.231,
+      "min_ideal_2pi_spl_db": 86.667,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 25.2573,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 98.7081,
+          "i_coil_rms": 1.6045
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.1695,
+          "i_coil_rms": 3.54
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 113.6824,
+          "i_coil_rms": 8.7378
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "SB Acoustics SB34SWPL76-3-DV parallel",
+      "manufacturer": "SB Acoustics",
+      "volume_l": 75,
+      "nominal_ohm": 1.5,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 378,
+        "hypothetical_coil_budget": 1114,
+        "nominal_4ohm_voltage": 173
+      },
+      "max_ideal_2pi_spl_db": 116.569,
+      "min_ideal_2pi_spl_db": 83.646,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 25.9144,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.307,
+          "i_coil_rms": 11.1068
+        },
+        {
+          "hz": 40,
+          "v_rms": 39.1523,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 112.3482,
+          "i_coil_rms": 6.3424
+        },
+        {
+          "hz": 80,
+          "v_rms": 27.212,
+          "limit": "hypothetical_I2Re",
+          "ideal_2pi_1m_spl_db": 113.1536,
+          "i_coil_rms": 20
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "SB Acoustics SB34SWPL76-3-DV parallel",
+      "manufacturer": "SB Acoustics",
+      "volume_l": 80,
+      "nominal_ohm": 1.5,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 383,
+        "hypothetical_coil_budget": 1120,
+        "nominal_4ohm_voltage": 162
+      },
+      "max_ideal_2pi_spl_db": 116.409,
+      "min_ideal_2pi_spl_db": 83.864,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 25.6134,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.307,
+          "i_coil_rms": 10.7316
+        },
+        {
+          "hz": 40,
+          "v_rms": 39.1232,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 112.3482,
+          "i_coil_rms": 6.6857
+        },
+        {
+          "hz": 80,
+          "v_rms": 27.1738,
+          "limit": "hypothetical_I2Re",
+          "ideal_2pi_1m_spl_db": 113.1088,
+          "i_coil_rms": 20
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "SB Acoustics SB34SWPL76-3-DV parallel",
+      "manufacturer": "SB Acoustics",
+      "volume_l": 100,
+      "nominal_ohm": 1.5,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 387,
+        "hypothetical_coil_budget": 1125,
+        "nominal_4ohm_voltage": 153
+      },
+      "max_ideal_2pi_spl_db": 116.186,
+      "min_ideal_2pi_spl_db": 84.554,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 24.7436,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.307,
+          "i_coil_rms": 9.6074
+        },
+        {
+          "hz": 40,
+          "v_rms": 39.0728,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 112.3482,
+          "i_coil_rms": 7.7351
+        },
+        {
+          "hz": 80,
+          "v_rms": 27.064,
+          "limit": "hypothetical_I2Re",
+          "ideal_2pi_1m_spl_db": 112.9757,
+          "i_coil_rms": 20
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "SB Acoustics SB34SWPL76-3-DV parallel",
+      "manufacturer": "SB Acoustics",
+      "volume_l": 120,
+      "nominal_ohm": 1.5,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 394,
+        "hypothetical_coil_budget": 1124,
+        "nominal_4ohm_voltage": 147
+      },
+      "max_ideal_2pi_spl_db": 115.874,
+      "min_ideal_2pi_spl_db": 85.046,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 24.1934,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.307,
+          "i_coil_rms": 8.8593
+        },
+        {
+          "hz": 40,
+          "v_rms": 39.07,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 112.3482,
+          "i_coil_rms": 8.447
+        },
+        {
+          "hz": 80,
+          "v_rms": 26.9946,
+          "limit": "hypothetical_I2Re",
+          "ideal_2pi_1m_spl_db": 112.8881,
+          "i_coil_rms": 20
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "SB Acoustics SB34SWPL76-3-DV parallel",
+      "manufacturer": "SB Acoustics",
+      "volume_l": 150,
+      "nominal_ohm": 1.5,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 398,
+        "hypothetical_coil_budget": 1130,
+        "nominal_4ohm_voltage": 137
+      },
+      "max_ideal_2pi_spl_db": 115.784,
+      "min_ideal_2pi_spl_db": 85.567,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 23.6691,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 100.307,
+          "i_coil_rms": 8.1129
+        },
+        {
+          "hz": 40,
+          "v_rms": 39.0919,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 112.3482,
+          "i_coil_rms": 9.166
+        },
+        {
+          "hz": 80,
+          "v_rms": 26.9282,
+          "limit": "hypothetical_I2Re",
+          "ideal_2pi_1m_spl_db": 112.8014,
+          "i_coil_rms": 20
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "SB Acoustics SB34SWPL76-3-DV series",
+      "manufacturer": "SB Acoustics",
+      "volume_l": 75,
+      "nominal_ohm": 6,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 24,
+        "hypothetical_coil_budget": 510,
+        "nominal_4ohm_voltage": 1131
+      },
+      "max_ideal_2pi_spl_db": 112.991,
+      "min_ideal_2pi_spl_db": 83.646,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 98.9801,
+          "i_coil_rms": 4.7667
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 107.5178,
+          "i_coil_rms": 1.8185
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 111.5297,
+          "i_coil_rms": 8.2948
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "SB Acoustics SB34SWPL76-3-DV series",
+      "manufacturer": "SB Acoustics",
+      "volume_l": 80,
+      "nominal_ohm": 6,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 28,
+        "hypothetical_coil_budget": 510,
+        "nominal_4ohm_voltage": 1127
+      },
+      "max_ideal_2pi_spl_db": 112.957,
+      "min_ideal_2pi_spl_db": 83.864,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 99.0823,
+          "i_coil_rms": 4.6602
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 107.5265,
+          "i_coil_rms": 1.9188
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 111.4957,
+          "i_coil_rms": 8.3052
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "SB Acoustics SB34SWPL76-3-DV series",
+      "manufacturer": "SB Acoustics",
+      "volume_l": 100,
+      "nominal_ohm": 6,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 37,
+        "hypothetical_coil_budget": 512,
+        "nominal_4ohm_voltage": 1116
+      },
+      "max_ideal_2pi_spl_db": 112.855,
+      "min_ideal_2pi_spl_db": 84.554,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 99.3847,
+          "i_coil_rms": 4.3198
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 107.5444,
+          "i_coil_rms": 2.2246
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 111.3939,
+          "i_coil_rms": 8.3351
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "SB Acoustics SB34SWPL76-3-DV series",
+      "manufacturer": "SB Acoustics",
+      "volume_l": 120,
+      "nominal_ohm": 6,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 48,
+        "hypothetical_coil_budget": 512,
+        "nominal_4ohm_voltage": 1105
+      },
+      "max_ideal_2pi_spl_db": 112.788,
+      "min_ideal_2pi_spl_db": 85.046,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 99.5819,
+          "i_coil_rms": 4.0749
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 107.5493,
+          "i_coil_rms": 2.4307
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 111.326,
+          "i_coil_rms": 8.354
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "SB Acoustics SB34SWPL76-3-DV series",
+      "manufacturer": "SB Acoustics",
+      "volume_l": 150,
+      "nominal_ohm": 6,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 58,
+        "hypothetical_coil_budget": 515,
+        "nominal_4ohm_voltage": 1092
+      },
+      "max_ideal_2pi_spl_db": 112.721,
+      "min_ideal_2pi_spl_db": 85.567,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 99.7743,
+          "i_coil_rms": 3.8152
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 107.5486,
+          "i_coil_rms": 2.6374
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 111.2581,
+          "i_coil_rms": 8.3721
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "416-8B",
+      "manufacturer": "Great Plains Audio (GPA)",
+      "volume_l": 75,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 1103,
+        "hypothetical_coil_budget": 68,
+        "nominal_4ohm_voltage": 494
+      },
+      "max_ideal_2pi_spl_db": 121.327,
+      "min_ideal_2pi_spl_db": 81.883,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 24.6778,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 93.9244,
+          "i_coil_rms": 3.1764
+        },
+        {
+          "hz": 40,
+          "v_rms": 23.4624,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 105.9656,
+          "i_coil_rms": 2.1641
+        },
+        {
+          "hz": 80,
+          "v_rms": 37.4599,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 118.0068,
+          "i_coil_rms": 1.9032
+        }
+      ],
+      "derived_mms": false,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "416-8B",
+      "manufacturer": "Great Plains Audio (GPA)",
+      "volume_l": 80,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 1088,
+        "hypothetical_coil_budget": 73,
+        "nominal_4ohm_voltage": 504
+      },
+      "max_ideal_2pi_spl_db": 121.193,
+      "min_ideal_2pi_spl_db": 81.883,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 23.3781,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 93.9244,
+          "i_coil_rms": 2.9846
+        },
+        {
+          "hz": 40,
+          "v_rms": 22.5519,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 105.9656,
+          "i_coil_rms": 1.9725
+        },
+        {
+          "hz": 80,
+          "v_rms": 37.9946,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 118.0068,
+          "i_coil_rms": 2.0942
+        }
+      ],
+      "derived_mms": false,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "416-8B",
+      "manufacturer": "Great Plains Audio (GPA)",
+      "volume_l": 100,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 1059,
+        "hypothetical_coil_budget": 92,
+        "nominal_4ohm_voltage": 514
+      },
+      "max_ideal_2pi_spl_db": 120.817,
+      "min_ideal_2pi_spl_db": 81.883,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 19.5576,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 93.9244,
+          "i_coil_rms": 2.4092
+        },
+        {
+          "hz": 40,
+          "v_rms": 20.1552,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 105.9656,
+          "i_coil_rms": 1.3979
+        },
+        {
+          "hz": 80,
+          "v_rms": 39.8494,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 118.0068,
+          "i_coil_rms": 2.6679
+        }
+      ],
+      "derived_mms": false,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "416-8B",
+      "manufacturer": "Great Plains Audio (GPA)",
+      "volume_l": 120,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 1031,
+        "hypothetical_coil_budget": 105,
+        "nominal_4ohm_voltage": 529
+      },
+      "max_ideal_2pi_spl_db": 120.595,
+      "min_ideal_2pi_spl_db": 81.883,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 17.1053,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 93.9244,
+          "i_coil_rms": 2.0256
+        },
+        {
+          "hz": 40,
+          "v_rms": 18.9063,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 105.9656,
+          "i_coil_rms": 1.0155
+        },
+        {
+          "hz": 80,
+          "v_rms": 41.2757,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 118.0068,
+          "i_coil_rms": 3.0507
+        }
+      ],
+      "derived_mms": false,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "416-8B",
+      "manufacturer": "Great Plains Audio (GPA)",
+      "volume_l": 150,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 1009,
+        "hypothetical_coil_budget": 117,
+        "nominal_4ohm_voltage": 539
+      },
+      "max_ideal_2pi_spl_db": 120.375,
+      "min_ideal_2pi_spl_db": 81.883,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 14.7731,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 93.9244,
+          "i_coil_rms": 1.642
+        },
+        {
+          "hz": 40,
+          "v_rms": 18.0062,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 105.9656,
+          "i_coil_rms": 0.6345
+        },
+        {
+          "hz": 80,
+          "v_rms": 42.8363,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 118.0068,
+          "i_coil_rms": 3.4337
+        }
+      ],
+      "derived_mms": false,
+      "derived_bl": true,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "RV3863 8 ohm",
+      "manufacturer": "VOLT Loudspeakers",
+      "volume_l": 75,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 231,
+        "hypothetical_coil_budget": 233,
+        "nominal_4ohm_voltage": 1201
+      },
+      "max_ideal_2pi_spl_db": 121.273,
+      "min_ideal_2pi_spl_db": 84.062,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 36.3134,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 98.6853,
+          "i_coil_rms": 5.0475
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.6587,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 110.7265,
+          "i_coil_rms": 2.8979
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 117.8956,
+          "i_coil_rms": 3.4274
+        }
+      ],
+      "derived_mms": false,
+      "derived_bl": false,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "RV3863 8 ohm",
+      "manufacturer": "VOLT Loudspeakers",
+      "volume_l": 80,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 261,
+        "hypothetical_coil_budget": 231,
+        "nominal_4ohm_voltage": 1173
+      },
+      "max_ideal_2pi_spl_db": 121.21,
+      "min_ideal_2pi_spl_db": 84.482,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 35.0331,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 98.6853,
+          "i_coil_rms": 4.7838
+        },
+        {
+          "hz": 40,
+          "v_rms": 43.9349,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 110.7265,
+          "i_coil_rms": 2.6387
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 117.8566,
+          "i_coil_rms": 3.5598
+        }
+      ],
+      "derived_mms": false,
+      "derived_bl": false,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "RV3863 8 ohm",
+      "manufacturer": "VOLT Loudspeakers",
+      "volume_l": 100,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 365,
+        "hypothetical_coil_budget": 209,
+        "nominal_4ohm_voltage": 1091
+      },
+      "max_ideal_2pi_spl_db": 121.02,
+      "min_ideal_2pi_spl_db": 85.88,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 31.3299,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 98.6853,
+          "i_coil_rms": 3.993
+        },
+        {
+          "hz": 40,
+          "v_rms": 42.0303,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 110.7265,
+          "i_coil_rms": 1.869
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 117.7214,
+          "i_coil_rms": 3.9424
+        }
+      ],
+      "derived_mms": false,
+      "derived_bl": false,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "RV3863 8 ohm",
+      "manufacturer": "VOLT Loudspeakers",
+      "volume_l": 120,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 438,
+        "hypothetical_coil_budget": 182,
+        "nominal_4ohm_voltage": 1045
+      },
+      "max_ideal_2pi_spl_db": 120.892,
+      "min_ideal_2pi_spl_db": 86.644,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 29.0049,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 98.6853,
+          "i_coil_rms": 3.4662
+        },
+        {
+          "hz": 40,
+          "v_rms": 41.0034,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 110.7265,
+          "i_coil_rms": 1.3703
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 117.6168,
+          "i_coil_rms": 4.184
+        }
+      ],
+      "derived_mms": false,
+      "derived_bl": false,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "RV3863 8 ohm",
+      "manufacturer": "VOLT Loudspeakers",
+      "volume_l": 150,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 459,
+        "hypothetical_coil_budget": 195,
+        "nominal_4ohm_voltage": 1011
+      },
+      "max_ideal_2pi_spl_db": 120.764,
+      "min_ideal_2pi_spl_db": 86.644,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 26.8302,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 98.6853,
+          "i_coil_rms": 2.9399
+        },
+        {
+          "hz": 40,
+          "v_rms": 40.1884,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 110.7265,
+          "i_coil_rms": 0.9054
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 117.5017,
+          "i_coil_rms": 4.4144
+        }
+      ],
+      "derived_mms": false,
+      "derived_bl": false,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Wom265_vKi-6",
+      "manufacturer": "Kartesian",
+      "volume_l": 75,
+      "nominal_ohm": 6,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 701,
+        "hypothetical_coil_budget": 224,
+        "nominal_4ohm_voltage": 740
+      },
+      "max_ideal_2pi_spl_db": 118.85,
+      "min_ideal_2pi_spl_db": 83.348,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 20.6023,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 95.3891,
+          "i_coil_rms": 3.7584
+        },
+        {
+          "hz": 40,
+          "v_rms": 28.6861,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 107.4303,
+          "i_coil_rms": 1.4272
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 116.2187,
+          "i_coil_rms": 5.7637
+        }
+      ],
+      "derived_mms": false,
+      "derived_bl": false,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Wom265_vKi-6",
+      "manufacturer": "Kartesian",
+      "volume_l": 80,
+      "nominal_ohm": 6,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 698,
+        "hypothetical_coil_budget": 228,
+        "nominal_4ohm_voltage": 739
+      },
+      "max_ideal_2pi_spl_db": 118.815,
+      "min_ideal_2pi_spl_db": 83.348,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 20.1052,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 95.3891,
+          "i_coil_rms": 3.5867
+        },
+        {
+          "hz": 40,
+          "v_rms": 28.5616,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 107.4303,
+          "i_coil_rms": 1.2677
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 116.1724,
+          "i_coil_rms": 5.85
+        }
+      ],
+      "derived_mms": false,
+      "derived_bl": false,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Wom265_vKi-6",
+      "manufacturer": "Kartesian",
+      "volume_l": 100,
+      "nominal_ohm": 6,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 688,
+        "hypothetical_coil_budget": 241,
+        "nominal_4ohm_voltage": 736
+      },
+      "max_ideal_2pi_spl_db": 118.71,
+      "min_ideal_2pi_spl_db": 83.348,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 18.6868,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 95.3891,
+          "i_coil_rms": 3.072
+        },
+        {
+          "hz": 40,
+          "v_rms": 28.2854,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 107.4303,
+          "i_coil_rms": 0.8198
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 116.0309,
+          "i_coil_rms": 6.1005
+        }
+      ],
+      "derived_mms": false,
+      "derived_bl": false,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Wom265_vKi-6",
+      "manufacturer": "Kartesian",
+      "volume_l": 120,
+      "nominal_ohm": 6,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 684,
+        "hypothetical_coil_budget": 253,
+        "nominal_4ohm_voltage": 728
+      },
+      "max_ideal_2pi_spl_db": 118.64,
+      "min_ideal_2pi_spl_db": 83.348,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 17.8115,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 95.3891,
+          "i_coil_rms": 2.7292
+        },
+        {
+          "hz": 40,
+          "v_rms": 28.1838,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 107.4303,
+          "i_coil_rms": 0.5873
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 115.9345,
+          "i_coil_rms": 6.2608
+        }
+      ],
+      "derived_mms": false,
+      "derived_bl": false,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Wom265_vKi-6",
+      "manufacturer": "Kartesian",
+      "volume_l": 150,
+      "nominal_ohm": 6,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 677,
+        "hypothetical_coil_budget": 264,
+        "nominal_4ohm_voltage": 724
+      },
+      "max_ideal_2pi_spl_db": 118.57,
+      "min_ideal_2pi_spl_db": 83.348,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 17.0028,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 95.3891,
+          "i_coil_rms": 2.3867
+        },
+        {
+          "hz": 40,
+          "v_rms": 28.1494,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 107.4303,
+          "i_coil_rms": 0.5046
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 115.8366,
+          "i_coil_rms": 6.4159
+        }
+      ],
+      "derived_mms": false,
+      "derived_bl": false,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "6301MNd",
+      "manufacturer": "PHL Audio",
+      "volume_l": 75,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 4,
+        "hypothetical_coil_budget": 143,
+        "nominal_4ohm_voltage": 1518
+      },
+      "max_ideal_2pi_spl_db": 120.92,
+      "min_ideal_2pi_spl_db": 84.547,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 100.5741,
+          "i_coil_rms": 6.2527
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 109.8059,
+          "i_coil_rms": 2.9332
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 116.641,
+          "i_coil_rms": 2.1222
+        }
+      ],
+      "derived_mms": false,
+      "derived_bl": false,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "6301MNd",
+      "manufacturer": "PHL Audio",
+      "volume_l": 80,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 6,
+        "hypothetical_coil_budget": 141,
+        "nominal_4ohm_voltage": 1518
+      },
+      "max_ideal_2pi_spl_db": 120.888,
+      "min_ideal_2pi_spl_db": 84.918,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 100.807,
+          "i_coil_rms": 6.1308
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 109.8933,
+          "i_coil_rms": 2.7592
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 116.6271,
+          "i_coil_rms": 2.2268
+        }
+      ],
+      "derived_mms": false,
+      "derived_bl": false,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "6301MNd",
+      "manufacturer": "PHL Audio",
+      "volume_l": 100,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 28,
+        "hypothetical_coil_budget": 123,
+        "nominal_4ohm_voltage": 1514
+      },
+      "max_ideal_2pi_spl_db": 120.79,
+      "min_ideal_2pi_spl_db": 86.135,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 101.514,
+          "i_coil_rms": 5.7015
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.1312,
+          "i_coil_rms": 2.213
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 116.5758,
+          "i_coil_rms": 2.5384
+        }
+      ],
+      "derived_mms": false,
+      "derived_bl": false,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "6301MNd",
+      "manufacturer": "PHL Audio",
+      "volume_l": 120,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 40,
+        "hypothetical_coil_budget": 120,
+        "nominal_4ohm_voltage": 1505
+      },
+      "max_ideal_2pi_spl_db": 120.723,
+      "min_ideal_2pi_spl_db": 87.054,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 101.9869,
+          "i_coil_rms": 5.3529
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.2672,
+          "i_coil_rms": 1.8337
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 116.5338,
+          "i_coil_rms": 2.7431
+        }
+      ],
+      "derived_mms": false,
+      "derived_bl": false,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "6301MNd",
+      "manufacturer": "PHL Audio",
+      "volume_l": 150,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 58,
+        "hypothetical_coil_budget": 117,
+        "nominal_4ohm_voltage": 1490
+      },
+      "max_ideal_2pi_spl_db": 120.655,
+      "min_ideal_2pi_spl_db": 88.081,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 102.4538,
+          "i_coil_rms": 4.9447
+        },
+        {
+          "hz": 40,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 110.3828,
+          "i_coil_rms": 1.4507
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 116.4858,
+          "i_coil_rms": 2.9448
+        }
+      ],
+      "derived_mms": false,
+      "derived_bl": false,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Symphony II 12-212/C8/62 HEX",
+      "manufacturer": "ETON Soundsysteme",
+      "volume_l": 75,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 537,
+        "hypothetical_coil_budget": 225,
+        "nominal_4ohm_voltage": 903
+      },
+      "max_ideal_2pi_spl_db": 117.219,
+      "min_ideal_2pi_spl_db": 84.351,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 26.2518,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 96.3923,
+          "i_coil_rms": 3.0579
+        },
+        {
+          "hz": 40,
+          "v_rms": 35.6829,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 108.4335,
+          "i_coil_rms": 0.7081
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 114.9511,
+          "i_coil_rms": 4.7435
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": false,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Symphony II 12-212/C8/62 HEX",
+      "manufacturer": "ETON Soundsysteme",
+      "volume_l": 80,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 540,
+        "hypothetical_coil_budget": 230,
+        "nominal_4ohm_voltage": 895
+      },
+      "max_ideal_2pi_spl_db": 117.176,
+      "min_ideal_2pi_spl_db": 84.351,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 25.4838,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 96.3923,
+          "i_coil_rms": 2.8891
+        },
+        {
+          "hz": 40,
+          "v_rms": 35.5156,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 108.4335,
+          "i_coil_rms": 0.5555
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 114.8899,
+          "i_coil_rms": 4.7988
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": false,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Symphony II 12-212/C8/62 HEX",
+      "manufacturer": "ETON Soundsysteme",
+      "volume_l": 100,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 543,
+        "hypothetical_coil_budget": 245,
+        "nominal_4ohm_voltage": 877
+      },
+      "max_ideal_2pi_spl_db": 117.049,
+      "min_ideal_2pi_spl_db": 84.351,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 23.3107,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 96.3923,
+          "i_coil_rms": 2.383
+        },
+        {
+          "hz": 40,
+          "v_rms": 35.197,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 108.4335,
+          "i_coil_rms": 0.2693
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 114.7036,
+          "i_coil_rms": 4.9574
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": false,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Symphony II 12-212/C8/62 HEX",
+      "manufacturer": "ETON Soundsysteme",
+      "volume_l": 120,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 537,
+        "hypothetical_coil_budget": 254,
+        "nominal_4ohm_voltage": 874
+      },
+      "max_ideal_2pi_spl_db": 116.964,
+      "min_ideal_2pi_spl_db": 84.351,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 21.9928,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 96.3923,
+          "i_coil_rms": 2.0457
+        },
+        {
+          "hz": 40,
+          "v_rms": 35.1401,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 108.4335,
+          "i_coil_rms": 0.4478
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 114.5774,
+          "i_coil_rms": 5.057
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": false,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "Symphony II 12-212/C8/62 HEX",
+      "manufacturer": "ETON Soundsysteme",
+      "volume_l": 150,
+      "nominal_ohm": 8,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 534,
+        "hypothetical_coil_budget": 265,
+        "nominal_4ohm_voltage": 866
+      },
+      "max_ideal_2pi_spl_db": 116.88,
+      "min_ideal_2pi_spl_db": 84.351,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 20.8029,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 96.3923,
+          "i_coil_rms": 1.7087
+        },
+        {
+          "hz": 40,
+          "v_rms": 35.2084,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 108.4335,
+          "i_coil_rms": 0.7462
+        },
+        {
+          "hz": 80,
+          "v_rms": 44.7214,
+          "limit": "amp_resistive_voltage",
+          "ideal_2pi_1m_spl_db": 114.45,
+          "i_coil_rms": 5.152
+        }
+      ],
+      "derived_mms": true,
+      "derived_bl": false,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "39 GPA 15 (paper)",
+      "manufacturer": "Davis Acoustics",
+      "volume_l": 75,
+      "nominal_ohm": 6.5,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 1157,
+        "hypothetical_coil_budget": 108,
+        "nominal_4ohm_voltage": 400
+      },
+      "max_ideal_2pi_spl_db": 123.18,
+      "min_ideal_2pi_spl_db": 82.456,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 22.5237,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 94.6163,
+          "i_coil_rms": 4.2536
+        },
+        {
+          "hz": 40,
+          "v_rms": 22.1293,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 106.6575,
+          "i_coil_rms": 3.0049
+        },
+        {
+          "hz": 80,
+          "v_rms": 34.3886,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 118.6987,
+          "i_coil_rms": 2.0444
+        }
+      ],
+      "derived_mms": false,
+      "derived_bl": false,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "39 GPA 15 (paper)",
+      "manufacturer": "Davis Acoustics",
+      "volume_l": 80,
+      "nominal_ohm": 6.5,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 1159,
+        "hypothetical_coil_budget": 100,
+        "nominal_4ohm_voltage": 406
+      },
+      "max_ideal_2pi_spl_db": 123.075,
+      "min_ideal_2pi_spl_db": 82.575,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 21.4196,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 94.6163,
+          "i_coil_rms": 4.0121
+        },
+        {
+          "hz": 40,
+          "v_rms": 21.3518,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 106.6575,
+          "i_coil_rms": 2.7638
+        },
+        {
+          "hz": 80,
+          "v_rms": 34.751,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 118.6987,
+          "i_coil_rms": 2.2826
+        }
+      ],
+      "derived_mms": false,
+      "derived_bl": false,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "39 GPA 15 (paper)",
+      "manufacturer": "Davis Acoustics",
+      "volume_l": 100,
+      "nominal_ohm": 6.5,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 1128,
+        "hypothetical_coil_budget": 127,
+        "nominal_4ohm_voltage": 410
+      },
+      "max_ideal_2pi_spl_db": 122.762,
+      "min_ideal_2pi_spl_db": 82.575,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 18.173,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 94.6163,
+          "i_coil_rms": 3.2876
+        },
+        {
+          "hz": 40,
+          "v_rms": 19.2745,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 106.6575,
+          "i_coil_rms": 2.0411
+        },
+        {
+          "hz": 80,
+          "v_rms": 36.053,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 118.6987,
+          "i_coil_rms": 3.0006
+        }
+      ],
+      "derived_mms": false,
+      "derived_bl": false,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "39 GPA 15 (paper)",
+      "manufacturer": "Davis Acoustics",
+      "volume_l": 120,
+      "nominal_ohm": 6.5,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 1102,
+        "hypothetical_coil_budget": 147,
+        "nominal_4ohm_voltage": 416
+      },
+      "max_ideal_2pi_spl_db": 122.555,
+      "min_ideal_2pi_spl_db": 82.575,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 16.0857,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 94.6163,
+          "i_coil_rms": 2.8047
+        },
+        {
+          "hz": 40,
+          "v_rms": 18.1501,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 106.6575,
+          "i_coil_rms": 1.5604
+        },
+        {
+          "hz": 80,
+          "v_rms": 37.0872,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 118.6987,
+          "i_coil_rms": 3.4807
+        }
+      ],
+      "derived_mms": false,
+      "derived_bl": false,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    },
+    {
+      "name": "39 GPA 15 (paper)",
+      "manufacturer": "Davis Acoustics",
+      "volume_l": 150,
+      "nominal_ohm": 6.5,
+      "frequency_points": 111,
+      "scenarios": 1665,
+      "limit_counts": {
+        "Xmax": 1078,
+        "hypothetical_coil_budget": 165,
+        "nominal_4ohm_voltage": 422
+      },
+      "max_ideal_2pi_spl_db": 122.349,
+      "min_ideal_2pi_spl_db": 82.575,
+      "witness": [
+        {
+          "hz": 20,
+          "v_rms": 14.0921,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 94.6163,
+          "i_coil_rms": 2.3218
+        },
+        {
+          "hz": 40,
+          "v_rms": 17.2828,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 106.6575,
+          "i_coil_rms": 1.0818
+        },
+        {
+          "hz": 80,
+          "v_rms": 38.242,
+          "limit": "Xmax",
+          "ideal_2pi_1m_spl_db": 118.6987,
+          "i_coil_rms": 3.9616
+        }
+      ],
+      "derived_mms": false,
+      "derived_bl": false,
+      "full_THd_or_clean_SPL": false,
+      "amplifier_electrical_matching_valid_for_actual_impedance": false
+    }
+  ]
+}
