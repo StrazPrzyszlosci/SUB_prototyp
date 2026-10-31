@@ -406,12 +406,13 @@ Skrzynia nie jest idealnie sztywna. Jej ścianki się uginają, a połączenia
 przenoszą nierówne obciążenia. Poniższe części można rozwinąć niezależnie.
 Wykresy przedstawiają modele, nie rysunki wykonawcze.
 
-**Koncepcja do dalszych badań:** korpus 880 × 480 × 500 mm (W × D × H),
-MDF 22 mm i stały front 44 mm. Drewniany korpus ma 480 mm głębokości,
-więc do limitu **500 mm dla całego urządzenia** pozostaje tylko 20 mm
-na wszystkie elementy wystające, maskownicę, ruch membrany i tolerancje.
-Nie jest to jeszcze zatwierdzona geometria. Usztywnienia, mocowania
-wkładów, wypełnienie i tory montażowe wymagają wspólnego sprawdzenia.
+**Wcześniejszy wariant porównawczy:** korpus 880 × 480 × 500 mm
+(W × D × H), MDF 22 mm i stały front 44 mm. Pozostawia on tylko
+20 mm z dopuszczalnych 500 mm całkowitej głębokości na wystające
+elementy i tolerancje. Wariant ten pozostaje udokumentowany
+w raportach 054–055, ale **nie należy go mylić z nowszą
+geometrią P20D (1000 × 440 × 500 mm)**. Oba są koncepcjami
+badawczymi, nie zatwierdzoną dokumentacją produkcyjną.
 
 [Wstępna geometria i bilans netto — 054](raporty/054_rekomendowana_konfiguracja_prototypu.md)
 · [margines głębokości — 055](raporty/055_wrazliwosc_wyboru_i_margines_glebokosci.md).
