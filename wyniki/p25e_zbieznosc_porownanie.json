@@ -1,0 +1,91 @@
+{
+  "cases": 288,
+  "duration_s": 0.8,
+  "reference_fs": 24000,
+  "refined_fs": 48000,
+  "by_mode": {
+    "ideal": {
+      "max_E_ratio": 2.4506661665313345e-05,
+      "max_X_ratio": 1.4756513600833188e-05,
+      "max_I_ratio": 0.0003191712027268978,
+      "max_theta_k": 1.339212003892247e-06,
+      "u_rms_v": 0.00013573756607776488,
+      "x_rms_m": 6.435637556851878e-08
+    },
+    "naive": {
+      "max_E_ratio": 0.00020174267720096672,
+      "max_X_ratio": 2.250720721747035e-05,
+      "max_I_ratio": 0.0011557542861970194,
+      "max_theta_k": 9.351550903777782e-06,
+      "u_rms_v": 0.0006604545137172124,
+      "x_rms_m": 3.361324849029089e-07
+    },
+    "robust_now": {
+      "max_E_ratio": 0.0002589218667974347,
+      "max_X_ratio": 3.5444034523726686e-05,
+      "max_I_ratio": 0.0058185834151015525,
+      "max_theta_k": 2.1261794924434287e-05,
+      "u_rms_v": 0.004921777630723767,
+      "x_rms_m": 7.532455274484543e-07
+    },
+    "robust_delay": {
+      "max_E_ratio": 0.008345834078017589,
+      "max_X_ratio": 0.0006473338044780952,
+      "max_I_ratio": 0.031874032385526496,
+      "max_theta_k": 0.0002775255252849204,
+      "u_rms_v": 0.028175299643589113,
+      "x_rms_m": 2.4186922314868835e-06
+    }
+  },
+  "all_violation_labels_identical": true,
+  "paired_performance": {
+    "robust_now_500": {
+      "median_x_rms_relative_to_ideal": 0.8186939509842925,
+      "range_x_rms_relative_to_ideal": [
+        0.7030216123292622,
+        0.8809065753464981
+      ],
+      "median_u_rms_relative_to_ideal": 0.8373303308185152
+    },
+    "robust_delay_500": {
+      "median_x_rms_relative_to_ideal": 0.7327133517968453,
+      "range_x_rms_relative_to_ideal": [
+        0.6513147270420876,
+        0.8054198160211661
+      ],
+      "median_u_rms_relative_to_ideal": 0.7854348610150097
+    },
+    "robust_now_2000": {
+      "median_x_rms_relative_to_ideal": 0.8136234533673503,
+      "range_x_rms_relative_to_ideal": [
+        0.6950294446333276,
+        0.8993097209435236
+      ],
+      "median_u_rms_relative_to_ideal": 0.8391786071313526
+    },
+    "robust_delay_2000": {
+      "median_x_rms_relative_to_ideal": 0.798150809144454,
+      "range_x_rms_relative_to_ideal": [
+        0.68676410148117,
+        0.8610367057071934
+      ],
+      "median_u_rms_relative_to_ideal": 0.8277915635246975
+    },
+    "robust_now_6000": {
+      "median_x_rms_relative_to_ideal": 0.8124650345927326,
+      "range_x_rms_relative_to_ideal": [
+        0.7047920311044872,
+        0.896746968492605
+      ],
+      "median_u_rms_relative_to_ideal": 0.8659099992785744
+    },
+    "robust_delay_6000": {
+      "median_x_rms_relative_to_ideal": 0.806775233132883,
+      "range_x_rms_relative_to_ideal": [
+        0.694044130987193,
+        0.8890304480875846
+      ],
+      "median_u_rms_relative_to_ideal": 0.8632189460787272
+    }
+  }
+}

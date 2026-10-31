@@ -1,0 +1,141 @@
+{
+  "n": 288,
+  "groups": {
+    "ideal_500": {
+      "n": 24,
+      "E_violations": 0,
+      "X_violations": 0,
+      "I_violations": 0,
+      "peak_E_cap": 0.9907375962458462,
+      "peak_X_ref": 0.32029085484578934,
+      "peak_I_ref": 0.6063477752074172,
+      "median_output_voltage_rms_v": 4.451911156448061,
+      "median_x_rms_mm": 1.0301537552020918
+    },
+    "naive_500": {
+      "n": 24,
+      "E_violations": 24,
+      "X_violations": 0,
+      "I_violations": 0,
+      "peak_E_cap": 1.5244766740104272,
+      "peak_X_ref": 0.3329447300347601,
+      "peak_I_ref": 0.6260515442485682,
+      "median_output_voltage_rms_v": 4.455384959085981,
+      "median_x_rms_mm": 1.0314432205243615
+    },
+    "robust_now_500": {
+      "n": 24,
+      "E_violations": 0,
+      "X_violations": 0,
+      "I_violations": 0,
+      "peak_E_cap": 0.9656100750752331,
+      "peak_X_ref": 0.2912255409998211,
+      "peak_I_ref": 0.5804257824150154,
+      "median_output_voltage_rms_v": 3.653047440786535,
+      "median_x_rms_mm": 0.8489857212315159
+    },
+    "robust_delay_500": {
+      "n": 24,
+      "E_violations": 0,
+      "X_violations": 0,
+      "I_violations": 0,
+      "peak_E_cap": 0.924530986202611,
+      "peak_X_ref": 0.28707024808137244,
+      "peak_I_ref": 0.5252241387857576,
+      "median_output_voltage_rms_v": 3.41602340502879,
+      "median_x_rms_mm": 0.7582332378334504
+    },
+    "ideal_2000": {
+      "n": 24,
+      "E_violations": 0,
+      "X_violations": 0,
+      "I_violations": 0,
+      "peak_E_cap": 0.9998919866429952,
+      "peak_X_ref": 0.3229678943196095,
+      "peak_I_ref": 0.8134600200427684,
+      "median_output_voltage_rms_v": 4.8313722547255615,
+      "median_x_rms_mm": 1.1044366157855772
+    },
+    "naive_2000": {
+      "n": 24,
+      "E_violations": 24,
+      "X_violations": 0,
+      "I_violations": 0,
+      "peak_E_cap": 1.614646803217375,
+      "peak_X_ref": 0.331198942600839,
+      "peak_I_ref": 0.7781885460945918,
+      "median_output_voltage_rms_v": 4.9641710352028365,
+      "median_x_rms_mm": 1.0995363550526909
+    },
+    "robust_now_2000": {
+      "n": 24,
+      "E_violations": 0,
+      "X_violations": 0,
+      "I_violations": 0,
+      "peak_E_cap": 0.9934149812827442,
+      "peak_X_ref": 0.292385954613883,
+      "peak_I_ref": 0.7144785770722285,
+      "median_output_voltage_rms_v": 4.068477514861575,
+      "median_x_rms_mm": 0.9057863980575764
+    },
+    "robust_delay_2000": {
+      "n": 24,
+      "E_violations": 0,
+      "X_violations": 0,
+      "I_violations": 0,
+      "peak_E_cap": 0.9868961052285945,
+      "peak_X_ref": 0.2919818805716928,
+      "peak_I_ref": 0.7101930468598805,
+      "median_output_voltage_rms_v": 3.947886116655849,
+      "median_x_rms_mm": 0.8766717982237786
+    },
+    "ideal_6000": {
+      "n": 24,
+      "E_violations": 0,
+      "X_violations": 0,
+      "I_violations": 0,
+      "peak_E_cap": 0.9999947391287176,
+      "peak_X_ref": 0.32308497610036574,
+      "peak_I_ref": 0.9238819694541854,
+      "median_output_voltage_rms_v": 4.980467990873806,
+      "median_x_rms_mm": 1.1228158652236122
+    },
+    "naive_6000": {
+      "n": 24,
+      "E_violations": 24,
+      "X_violations": 0,
+      "I_violations": 0,
+      "peak_E_cap": 1.6361562424705904,
+      "peak_X_ref": 0.3302754666052463,
+      "peak_I_ref": 0.98028035431223,
+      "median_output_voltage_rms_v": 5.165581160073323,
+      "median_x_rms_mm": 1.115949690248438
+    },
+    "robust_now_6000": {
+      "n": 24,
+      "E_violations": 0,
+      "X_violations": 0,
+      "I_violations": 0,
+      "peak_E_cap": 0.9967120887652348,
+      "peak_X_ref": 0.29226967100725076,
+      "peak_I_ref": 0.8780822643669948,
+      "median_output_voltage_rms_v": 4.241056174132852,
+      "median_x_rms_mm": 0.9190910641968655
+    },
+    "robust_delay_6000": {
+      "n": 24,
+      "E_violations": 0,
+      "X_violations": 0,
+      "I_violations": 0,
+      "peak_E_cap": 0.9926176264379248,
+      "peak_X_ref": 0.2914681331406202,
+      "peak_I_ref": 0.886430720693341,
+      "median_output_voltage_rms_v": 4.174270075997347,
+      "median_x_rms_mm": 0.911308195602893
+    }
+  },
+  "checks": {
+    "energy_balance_scaled_max": 6.387457409353923e-05,
+    "thermal_balance_k_max": 1.1092993190686684e-12
+  }
+}
