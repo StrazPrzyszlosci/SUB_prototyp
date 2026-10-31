@@ -1,0 +1,152 @@
+{
+  "title": "P25D: sample-and-hold energy barrier experiments",
+  "scope": "Reduced sealed 0D, assumptions, NOT hardware or THD measurements",
+  "cases": 144,
+  "duration_s": 1,
+  "sample_rates": [
+    500,
+    2000,
+    6000
+  ],
+  "per_configuration_n": 12,
+  "notes": "Pointwise-barrier maxima at 24k are not numerically converged; see report 062",
+  "strategies": {
+    "rail": {
+      "500": {
+        "n": 12,
+        "energy_violations": 12,
+        "x_violations": 8,
+        "i_violations": 12,
+        "max_energy_fraction": 367.4589707390781,
+        "max_x_fraction": 2.7133733639435604,
+        "max_i_fraction": 4.361922933183305
+      },
+      "2000": {
+        "n": 12,
+        "energy_violations": 8,
+        "x_violations": 8,
+        "i_violations": 12,
+        "max_energy_fraction": 368.56700949074235,
+        "max_x_fraction": 2.7182050099226314,
+        "max_i_fraction": 4.0966339761924075
+      },
+      "6000": {
+        "n": 12,
+        "energy_violations": 12,
+        "x_violations": 8,
+        "i_violations": 12,
+        "max_energy_fraction": 368.928648109996,
+        "max_x_fraction": 2.7182140895144906,
+        "max_i_fraction": 4.138513995651
+      }
+    },
+    "sample_pointwise": {
+      "500": {
+        "n": 12,
+        "energy_violations": 12,
+        "x_violations": 8,
+        "i_violations": 12,
+        "max_energy_fraction": 135.42500196107582,
+        "max_x_fraction": 1.5129717979136326,
+        "max_i_fraction": 4.738026100778289
+      },
+      "2000": {
+        "n": 12,
+        "energy_violations": 8,
+        "x_violations": 6,
+        "i_violations": 12,
+        "max_energy_fraction": 91.37587131323316,
+        "max_x_fraction": 1.3640692439867959,
+        "max_i_fraction": 4.413899544073241
+      },
+      "6000": {
+        "n": 12,
+        "energy_violations": 12,
+        "x_violations": 0,
+        "i_violations": 8,
+        "max_energy_fraction": 26.165272288585836,
+        "max_x_fraction": 0.6259123635735284,
+        "max_i_fraction": 2.346823647626739
+      }
+    },
+    "zoh_energy_bound": {
+      "500": {
+        "n": 12,
+        "energy_violations": 0,
+        "x_violations": 0,
+        "i_violations": 0,
+        "max_energy_fraction": 0.9907482347305782,
+        "max_x_fraction": 0.3456071983399875,
+        "max_i_fraction": 0.6193882564265409
+      },
+      "2000": {
+        "n": 12,
+        "energy_violations": 0,
+        "x_violations": 0,
+        "i_violations": 0,
+        "max_energy_fraction": 0.9998150712997224,
+        "max_x_fraction": 0.3485639243961098,
+        "max_i_fraction": 0.8327825571914512
+      },
+      "6000": {
+        "n": 12,
+        "energy_violations": 0,
+        "x_violations": 0,
+        "i_violations": 0,
+        "max_energy_fraction": 0.999995219515687,
+        "max_x_fraction": 0.3486808956248884,
+        "max_i_fraction": 0.9229702254196068
+      }
+    },
+    "zoh_delayed_state": {
+      "500": {
+        "n": 12,
+        "energy_violations": 0,
+        "x_violations": 0,
+        "i_violations": 0,
+        "max_energy_fraction": 0.965027098983983,
+        "max_x_fraction": 0.34105278189389343,
+        "max_i_fraction": 0.5681113800383301
+      },
+      "2000": {
+        "n": 12,
+        "energy_violations": 0,
+        "x_violations": 0,
+        "i_violations": 0,
+        "max_energy_fraction": 0.9987471455621486,
+        "max_x_fraction": 0.34817108955724085,
+        "max_i_fraction": 0.7572739148954186
+      },
+      "6000": {
+        "n": 12,
+        "energy_violations": 0,
+        "x_violations": 0,
+        "i_violations": 0,
+        "max_energy_fraction": 0.9999595462232457,
+        "max_x_fraction": 0.3486485970371843,
+        "max_i_fraction": 0.8840953083547113
+      }
+    }
+  },
+  "verification_48k": {
+    "cases": 96,
+    "energy_abs_error_max": {
+      "rail": 0.0029256153931,
+      "sample_pointwise": 9.6247676413,
+      "zoh_energy_bound": 1.53585757556e-7,
+      "zoh_delayed_state": 0.00000136145898155
+    },
+    "x_abs_error_max": {
+      "rail": 0.000023895361303,
+      "sample_pointwise": 0.515452801911,
+      "zoh_energy_bound": 0.00000136724281241,
+      "zoh_delayed_state": 0.00000170371952674
+    },
+    "i_abs_error_max": {
+      "rail": 0.00113379598125,
+      "sample_pointwise": 0.182514634075,
+      "zoh_energy_bound": 0.000159464773254,
+      "zoh_delayed_state": 0.000189160611565
+    }
+  }
+}
