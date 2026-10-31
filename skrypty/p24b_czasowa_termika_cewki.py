@@ -34,7 +34,7 @@ def thermal_transfer(m,vol,f,amp,tc):
 def run_scenario(cfg,vol,f,amp,thermal,signal,guard,dt):
     m=cfg["model"]
     n=round(cfg["duration_s"]/dt)
-    tc=tm=0.0;maximum_tc=maximum_tm=maximum_x=0.0;step_count=0;exceed_x_s=exceed_T80_s=0.0
+    tc=tm=0.0;maximum_tc=maximum_tm=maximum_x=0.0;step_count=0;exceed_x_s=at_T80_s=0.0
     first_80_s=None;total_power_J=0.0;thermal_residual=0.0
     req_energy=delivered_energy=0.0;on_time=limiting_time=0.0;stop_time=None
     trace=[]
@@ -74,7 +74,7 @@ def run_scenario(cfg,vol,f,amp,thermal,signal,guard,dt):
         xpk_mm=xpk_per*u*1000
         if xpk_mm>m["xmax_oneway_peak_mm"]*(1+1e-10):exceed_x_s+=dt
         if newtc>=80:
-            exceed_T80_s+=dt
+            at_T80_s+=dt
             if first_80_s is None:first_80_s=t+dt
         maximum_tc=max(maximum_tc,newtc);maximum_tm=max(maximum_tm,newtm)
         maximum_x=max(maximum_x,xpk_mm)
@@ -84,25 +84,25 @@ def run_scenario(cfg,vol,f,amp,thermal,signal,guard,dt):
         if (k+1)*dt % 1 <dt*0.5 and (abs(vol-80)<1e-10 and f==40 and
            amp["id"]=="NC500_RCA2" and thermal["id"]=="central_ASSUMED"
            and signal["id"]=="sustained"):
-            trace.append(dict(time_s=round((k+1)*dt,4),coil_rise_K=tc,
-                              motor_rise_K=tm,source_vrms=u))
+            trace.append(dict(t=round((k+1)*dt,4),coil=tc,
+                              motor=tm,vrms=u))
         if tc>=cfg["numerical_stop_rise_K"]:
             stop_time=t+dt
             break
     if thermal_residual>1e-10:raise AssertionError(("energy",thermal_residual))
     if guard["temperature_guard_rise_K"] is not None and maximum_tc>guard["temperature_guard_rise_K"]+1e-8:
         raise AssertionError(("thermal_guard_failed",maximum_tc))
-    return dict(volume_l=vol,frequency_hz=f,amp=amp["id"],thermal=thermal["id"],
+    return dict(volume_l=vol,f_hz=f,amp=amp["id"],thermal=thermal["id"],
         program=signal["id"],protection=guard["id"],dt_s=dt,
-        executed_steps=step_count,stopped_at_200K_s=stop_time,
-        maximum_coil_rise_K=maximum_tc,maximum_motor_rise_K=maximum_tm,
-        final_coil_rise_K=tc,maximum_xpeak_mm=maximum_x,
-        time_over_xmax_s=exceed_x_s,time_over_hypothetical_80K_s=exceed_T80_s,
+        steps=step_count,stopped_at_200K_s=stop_time,
+        max_coil_rise_K=maximum_tc,max_motor_rise_K=maximum_tm,
+        final_coil_rise_K=tc,max_xpeak_mm=maximum_x,
+        time_over_peak_Xmax_s=exceed_x_s,time_at_or_above_hypothetical_80K_s=at_T80_s,
         first_time_over_80K_s=first_80_s,on_s=on_time,
         limited_on_s=limiting_time,energy_copper_J=total_power_J,
         source_energy_ratio=delivered_energy/max(req_energy,1e-18),
-        average_level_reduction_on_db=10*math.log10(max(1e-20,delivered_energy/max(req_energy,1e-18))),
-        maximum_thermal_energy_residual=thermal_residual),trace
+        avg_level_reduction_on_db=10*math.log10(max(1e-20,delivered_energy/max(req_energy,1e-18))),
+        max_thermal_energy_residual=thermal_residual),trace
 
 def main():
     c=json.loads(CFG.read_text());OUT.mkdir(exist_ok=True)
@@ -115,9 +115,9 @@ def main():
           for protect in c["protection"]:
            row,trace=run_scenario(c,vol,f,amp,th,sig,protect,c["dt_s"])
            rows.append(row)
-           profiles.extend([dict(strategy=protect["id"],**p) for p in trace])
+           profiles.extend([dict(**p,protection=protect["id"]) for p in trace])
     assert len(rows)==729,len(rows)
-    with (OUT/"p24b_wyniki_729.csv").open("w",newline="") as h:
+    with (OUT/"p24b_kampania_729.csv").open("w",newline="") as h:
         writer=csv.DictWriter(h,fieldnames=list(rows[0]))
         writer.writeheader();writer.writerows(rows)
     with (OUT/"p24b_profile_termiczne.csv").open("w",newline="") as h:
@@ -130,15 +130,15 @@ def main():
       A,_=run_scenario(c,80,40,a,th,sig,p,.2)
       B,_=run_scenario(c,80,40,a,th,sig,p,.1)
       independent.append(dict(protection=p["id"],
-        max_coil_rise_at_dt_0_2_K=A["maximum_coil_rise_K"],
-        max_coil_rise_at_dt_0_1_K=B["maximum_coil_rise_K"],
-        difference_K=A["maximum_coil_rise_K"]-B["maximum_coil_rise_K"],
-        relative_change_percent=100*(A["maximum_coil_rise_K"]-B["maximum_coil_rise_K"])/max(B["maximum_coil_rise_K"],1e-12)))
+        max_coil_rise_at_dt_0_2_K=A["max_coil_rise_K"],
+        max_coil_rise_at_dt_0_1_K=B["max_coil_rise_K"],
+        difference_K=A["max_coil_rise_K"]-B["max_coil_rise_K"],
+        relative_change_percent=100*(A["max_coil_rise_K"]-B["max_coil_rise_K"])/max(B["max_coil_rise_K"],1e-12)))
     summary=dict(phase="P24B - no factory thermal calibration",scenarios=len(rows),
        profiles=len(profiles),stopped=sum(x["stopped_at_200K_s"] is not None for x in rows),
-       unprotected_exceed_X=sum(x["time_over_xmax_s"]>0 for x in rows if x["protection"]=="no_speaker_protection"),
-       coil_rise_80_contour_crossings=sum(x["time_over_hypothetical_80K_s"]>0 for x in rows),
-       max_thermal_energy_residual=max(x["maximum_thermal_energy_residual"] for x in rows),
+       unprotected_exceed_X=sum(x["time_over_peak_Xmax_s"]>0 for x in rows if x["protection"]=="no_speaker_protection"),
+       coil_rise_80_contour_crossings=sum(x["time_at_or_above_hypothetical_80K_s"]>0 for x in rows),
+       max_thermal_energy_residual=max(x["max_thermal_energy_residual"] for x in rows),
        dt_audit=independent,
        requested_observations=[x for x in rows if x["volume_l"]==80 and x["frequency_hz"]==40 and
          x["amp"]=="NC500_RCA2" and x["thermal"]=="central_ASSUMED" and x["program"]=="sustained"],
@@ -146,7 +146,7 @@ def main():
     (OUT/"p24b_podsumowanie.json").write_text(json.dumps(summary,indent=2,ensure_ascii=False)+"\n")
     (OUT/"p24b_manifest.json").write_text(json.dumps(dict(python=platform.python_version(),
        sha256={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in
-         [CFG,Path(__file__),OUT/"p24b_wyniki_729.csv",OUT/"p24b_profile_termiczne.csv",OUT/"p24b_podsumowanie.json"]}),
+         [CFG,Path(__file__),OUT/"p24b_kampania_729.csv",OUT/"p24b_profile_termiczne.csv",OUT/"p24b_podsumowanie.json"]}),
             indent=2)+"\n")
     print(json.dumps({k:v for k,v in summary.items() if k not in ("warnings","requested_observations")},indent=2))
 if __name__=="__main__":main()
