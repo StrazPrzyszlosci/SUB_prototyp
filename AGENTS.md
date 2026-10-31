@@ -1245,8 +1245,14 @@ Konfiguracja 5 architektur i dwóch wariantów miniDSP:
 Skrypt szerszego przebiegu 26+9:
 `skrypty/brief20261031_pomiarowe_bramki_i_porownanie.py`
 (zatrzymuje źródła o niespójności Mms >8% i brak oficjalnych T/S).
-Nie twierdzić, że całą 35-modelową kampanię już uruchomiono
-i zatwierdzono. Ceny pełnych modułów i obudów, THD, kompresja,
+Wykonano niezależnie **274 725 liniowych punktów** na 35 konfiguracjach,
+z czego 33 kompletne i 2 wstrzymane (EMS, SUPRAVOX). JSON
+\`wyniki/brief20261031_pelna_pula_35_wstepna_analiza.json\` zawiera
+165 grup i świadków 20/40/80 Hz. PURIFI już było w bazie 24;
+łącznie 24+2 SB+8 nowych = **34 odrębne produkty** i
+24+3 SB konfig.+8 = **35 wariantów elektrycznych**.
+Nie twierdzić, że ukończono pełne badania P01–P30 dla nowej puli,
+ani że odtworzono już niezależnie ten szeroki eksperyment Pythonem. Ceny pełnych modułów i obudów, THD, kompresja,
 warunki bezpieczeństwa sieci 230 V i kompatybilność interfejsu
 modelowego P25E z miniDSP pozostają otwarte.
 Pełna analiza: `raporty/BRIEF_2026-10-31_wzmacniacz_DSP_i_9_marek.md`.
