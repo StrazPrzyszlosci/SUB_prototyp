@@ -29,7 +29,7 @@ def load():
     return pool,brief
 
 def get(t,k,a=None):
-    return t.get(k,t.get(a)) if a else t.get(k)
+    return (t.get(k) if t.get(k) is not None else t.get(a)) if a else t.get(k)
 
 def build(t):
     try:
