@@ -3,7 +3,7 @@
 **Aktualizacja U-020:** opis orientacji poniżej dotyczy wcześniejszego
 układu z oryginalnego rzutu. Docelowo RTV będzie po lewej, kanapa po prawej;
 obowiązuje [raport019](019_zamiana_kanapy_i_RTV.md) i konfiguracja v2.
-Rachunki odległości pozostają warunkową geometrią, nie pozycjami klienta.
+Rachunki odległości pozostają warunkową geometrią, nie pozycjami użytkownika.
 
 Stan: 2026-10-24. **Dane użytkownika:** osoba siedzi na kanapie po lewej
 stronie przesłanego rzutu; ściana RTV jest po prawej.
@@ -16,7 +16,7 @@ od lewej do prawej strony osoby patrzącej na RTV. Oś z pozostaje pionowa.
 To przypisanie orientacji nie zamienia symbolu człowieka w pomiar uszu.
 
 Dotychczasowe współrzędne S0=(1,85; 3,10; 1,10) m i monitorów y=0,65 m
-były **założeniami**, nie danymi klienta. Nie uznajemy ich za potwierdzone
+były **założeniami**, nie danymi użytkownika. Nie uznajemy ich za potwierdzone
 samym otrzymaniem rzutu. Raporty 013 i 017 zachowują dziedzinę swoich
 scenariuszy; ich wykresy nie stają się przez to odpowiedzią tego wnętrza.
 
