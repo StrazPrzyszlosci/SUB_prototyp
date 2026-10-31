@@ -1,0 +1,2617 @@
+{
+  "study": "P31B",
+  "status": "Rayleigh-Ritz Kirchhoff SINGLE panel with elastic LINE-to-GROUND braces. Not FEM of cabinet.",
+  "parameters": {
+    "study": "P31B",
+    "date": "2026-10-31",
+    "cabinets": [
+      {
+        "W": 1000,
+        "D": 440,
+        "H": 500
+      },
+      {
+        "W": 1020,
+        "D": 425,
+        "H": 500
+      },
+      {
+        "W": 1040,
+        "D": 430,
+        "H": 500
+      }
+    ],
+    "panel_thickness_m": 0.022,
+    "front_thickness_m": 0.044,
+    "nu": 0.3,
+    "E_Pa": [
+      1500000000,
+      2100000000,
+      3000000000
+    ],
+    "rho_kg_m3": [
+      650,
+      730,
+      800
+    ],
+    "line_support_N_per_m2": [
+      0,
+      100000,
+      1000000,
+      10000000,
+      100000000
+    ],
+    "pressure_Pa": 1000,
+    "modes_m": 7,
+    "modes_n": 5,
+    "coarse_modes_m": 5,
+    "coarse_modes_n": 3,
+    "sigma_tolerance": 1e-8
+  },
+  "cases": 135,
+  "selected_support_sensitivity": [
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 0,
+      "model_f1_Hz": 115.278,
+      "mid_displacement_um_per_1000Pa": 179.6122,
+      "integrated_vol_displacement_cm3_per_1000Pa": 34.7327,
+      "unbraced_analytical_f11_Hz": 115.278,
+      "ratio_frequency_to_unbraced": 1,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 100000,
+      "model_f1_Hz": 117.3485,
+      "mid_displacement_um_per_1000Pa": 172.8367,
+      "integrated_vol_displacement_cm3_per_1000Pa": 33.595,
+      "unbraced_analytical_f11_Hz": 115.278,
+      "ratio_frequency_to_unbraced": 1.01796,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 1000000,
+      "model_f1_Hz": 133.991,
+      "mid_displacement_um_per_1000Pa": 128.894,
+      "integrated_vol_displacement_cm3_per_1000Pa": 26.222,
+      "unbraced_analytical_f11_Hz": 115.278,
+      "ratio_frequency_to_unbraced": 1.16233,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 10000000,
+      "model_f1_Hz": 194.4874,
+      "mid_displacement_um_per_1000Pa": 35.148,
+      "integrated_vol_displacement_cm3_per_1000Pa": 10.5484,
+      "unbraced_analytical_f11_Hz": 115.278,
+      "ratio_frequency_to_unbraced": 1.68712,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 100000000,
+      "model_f1_Hz": 210.8509,
+      "mid_displacement_um_per_1000Pa": 2.4422,
+      "integrated_vol_displacement_cm3_per_1000Pa": 5.0745,
+      "unbraced_analytical_f11_Hz": 115.278,
+      "ratio_frequency_to_unbraced": 1.82907,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    }
+  ],
+  "selected_range_f1_scenario_Hz": [
+    93.0676,
+    266.0969
+  ],
+  "modal_convergence_checks": [
+    {
+      "box_W_mm": 1000,
+      "box_D_mm": 440,
+      "static_center_um_coarse": 138.4296,
+      "static_center_um_finer": 138.5868,
+      "change_percent": -0.113,
+      "f1_Hz_coarse": 129.4044,
+      "f1_Hz_finer": 129.2363
+    },
+    {
+      "box_W_mm": 1020,
+      "box_D_mm": 425,
+      "static_center_um_coarse": 128.7243,
+      "static_center_um_finer": 128.894,
+      "change_percent": -0.132,
+      "f1_Hz_coarse": 134.1562,
+      "f1_Hz_finer": 133.991
+    },
+    {
+      "box_W_mm": 1040,
+      "box_D_mm": 430,
+      "static_center_um_coarse": 134.4641,
+      "static_center_um_finer": 134.7604,
+      "change_percent": -0.22,
+      "f1_Hz_coarse": 131.3342,
+      "f1_Hz_finer": 131.1614
+    }
+  ],
+  "all_cases": [
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 0,
+      "model_f1_Hz": 97.9691,
+      "mid_displacement_um_per_1000Pa": 280.984,
+      "integrated_vol_displacement_cm3_per_1000Pa": 54.6847,
+      "unbraced_analytical_f11_Hz": 97.9691,
+      "ratio_frequency_to_unbraced": 1,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 100000,
+      "model_f1_Hz": 100.7404,
+      "mid_displacement_um_per_1000Pa": 264.4923,
+      "integrated_vol_displacement_cm3_per_1000Pa": 51.8909,
+      "unbraced_analytical_f11_Hz": 97.9691,
+      "ratio_frequency_to_unbraced": 1.02829,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 1000000,
+      "model_f1_Hz": 121.7388,
+      "mid_displacement_um_per_1000Pa": 172.4428,
+      "integrated_vol_displacement_cm3_per_1000Pa": 36.3193,
+      "unbraced_analytical_f11_Hz": 97.9691,
+      "ratio_frequency_to_unbraced": 1.24263,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 10000000,
+      "model_f1_Hz": 173.589,
+      "mid_displacement_um_per_1000Pa": 34.9292,
+      "integrated_vol_displacement_cm3_per_1000Pa": 13.179,
+      "unbraced_analytical_f11_Hz": 97.9691,
+      "ratio_frequency_to_unbraced": 1.77188,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 100000000,
+      "model_f1_Hz": 184.0558,
+      "mid_displacement_um_per_1000Pa": -0.5798,
+      "integrated_vol_displacement_cm3_per_1000Pa": 7.166,
+      "unbraced_analytical_f11_Hz": 97.9691,
+      "ratio_frequency_to_unbraced": 1.87871,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 0,
+      "model_f1_Hz": 92.4452,
+      "mid_displacement_um_per_1000Pa": 280.984,
+      "integrated_vol_displacement_cm3_per_1000Pa": 54.6847,
+      "unbraced_analytical_f11_Hz": 92.4452,
+      "ratio_frequency_to_unbraced": 1,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 100000,
+      "model_f1_Hz": 95.0602,
+      "mid_displacement_um_per_1000Pa": 264.4923,
+      "integrated_vol_displacement_cm3_per_1000Pa": 51.8909,
+      "unbraced_analytical_f11_Hz": 92.4452,
+      "ratio_frequency_to_unbraced": 1.02829,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 1000000,
+      "model_f1_Hz": 114.8747,
+      "mid_displacement_um_per_1000Pa": 172.4428,
+      "integrated_vol_displacement_cm3_per_1000Pa": 36.3193,
+      "unbraced_analytical_f11_Hz": 92.4452,
+      "ratio_frequency_to_unbraced": 1.24263,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 10000000,
+      "model_f1_Hz": 163.8014,
+      "mid_displacement_um_per_1000Pa": 34.9292,
+      "integrated_vol_displacement_cm3_per_1000Pa": 13.179,
+      "unbraced_analytical_f11_Hz": 92.4452,
+      "ratio_frequency_to_unbraced": 1.77188,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 100000000,
+      "model_f1_Hz": 173.678,
+      "mid_displacement_um_per_1000Pa": -0.5798,
+      "integrated_vol_displacement_cm3_per_1000Pa": 7.166,
+      "unbraced_analytical_f11_Hz": 92.4452,
+      "ratio_frequency_to_unbraced": 1.87871,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 0,
+      "model_f1_Hz": 88.3081,
+      "mid_displacement_um_per_1000Pa": 280.984,
+      "integrated_vol_displacement_cm3_per_1000Pa": 54.6847,
+      "unbraced_analytical_f11_Hz": 88.3081,
+      "ratio_frequency_to_unbraced": 1,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 100000,
+      "model_f1_Hz": 90.8061,
+      "mid_displacement_um_per_1000Pa": 264.4923,
+      "integrated_vol_displacement_cm3_per_1000Pa": 51.8909,
+      "unbraced_analytical_f11_Hz": 88.3081,
+      "ratio_frequency_to_unbraced": 1.02829,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 1000000,
+      "model_f1_Hz": 109.7339,
+      "mid_displacement_um_per_1000Pa": 172.4428,
+      "integrated_vol_displacement_cm3_per_1000Pa": 36.3193,
+      "unbraced_analytical_f11_Hz": 88.3081,
+      "ratio_frequency_to_unbraced": 1.24263,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 10000000,
+      "model_f1_Hz": 156.471,
+      "mid_displacement_um_per_1000Pa": 34.9292,
+      "integrated_vol_displacement_cm3_per_1000Pa": 13.179,
+      "unbraced_analytical_f11_Hz": 88.3081,
+      "ratio_frequency_to_unbraced": 1.77188,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 100000000,
+      "model_f1_Hz": 165.9057,
+      "mid_displacement_um_per_1000Pa": -0.5798,
+      "integrated_vol_displacement_cm3_per_1000Pa": 7.166,
+      "unbraced_analytical_f11_Hz": 88.3081,
+      "ratio_frequency_to_unbraced": 1.87871,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 0,
+      "model_f1_Hz": 115.9186,
+      "mid_displacement_um_per_1000Pa": 200.7029,
+      "integrated_vol_displacement_cm3_per_1000Pa": 39.0605,
+      "unbraced_analytical_f11_Hz": 115.9186,
+      "ratio_frequency_to_unbraced": 1,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 100000,
+      "model_f1_Hz": 118.2734,
+      "mid_displacement_um_per_1000Pa": 192.1476,
+      "integrated_vol_displacement_cm3_per_1000Pa": 37.6111,
+      "unbraced_analytical_f11_Hz": 115.9186,
+      "ratio_frequency_to_unbraced": 1.02031,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 1000000,
+      "model_f1_Hz": 136.9586,
+      "mid_displacement_um_per_1000Pa": 138.5868,
+      "integrated_vol_displacement_cm3_per_1000Pa": 28.5469,
+      "unbraced_analytical_f11_Hz": 115.9186,
+      "ratio_frequency_to_unbraced": 1.18151,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 10000000,
+      "model_f1_Hz": 200.1185,
+      "mid_displacement_um_per_1000Pa": 34.3354,
+      "integrated_vol_displacement_cm3_per_1000Pa": 10.9871,
+      "unbraced_analytical_f11_Hz": 115.9186,
+      "ratio_frequency_to_unbraced": 1.72637,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 100000000,
+      "model_f1_Hz": 217.224,
+      "mid_displacement_um_per_1000Pa": 0.8304,
+      "integrated_vol_displacement_cm3_per_1000Pa": 5.3381,
+      "unbraced_analytical_f11_Hz": 115.9186,
+      "ratio_frequency_to_unbraced": 1.87394,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 0,
+      "model_f1_Hz": 109.3826,
+      "mid_displacement_um_per_1000Pa": 200.7029,
+      "integrated_vol_displacement_cm3_per_1000Pa": 39.0605,
+      "unbraced_analytical_f11_Hz": 109.3826,
+      "ratio_frequency_to_unbraced": 1,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 100000,
+      "model_f1_Hz": 111.6046,
+      "mid_displacement_um_per_1000Pa": 192.1476,
+      "integrated_vol_displacement_cm3_per_1000Pa": 37.6111,
+      "unbraced_analytical_f11_Hz": 109.3826,
+      "ratio_frequency_to_unbraced": 1.02031,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 1000000,
+      "model_f1_Hz": 129.2363,
+      "mid_displacement_um_per_1000Pa": 138.5868,
+      "integrated_vol_displacement_cm3_per_1000Pa": 28.5469,
+      "unbraced_analytical_f11_Hz": 109.3826,
+      "ratio_frequency_to_unbraced": 1.18151,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 10000000,
+      "model_f1_Hz": 188.835,
+      "mid_displacement_um_per_1000Pa": 34.3354,
+      "integrated_vol_displacement_cm3_per_1000Pa": 10.9871,
+      "unbraced_analytical_f11_Hz": 109.3826,
+      "ratio_frequency_to_unbraced": 1.72637,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 100000000,
+      "model_f1_Hz": 204.976,
+      "mid_displacement_um_per_1000Pa": 0.8304,
+      "integrated_vol_displacement_cm3_per_1000Pa": 5.3381,
+      "unbraced_analytical_f11_Hz": 109.3826,
+      "ratio_frequency_to_unbraced": 1.87394,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 0,
+      "model_f1_Hz": 104.4876,
+      "mid_displacement_um_per_1000Pa": 200.7029,
+      "integrated_vol_displacement_cm3_per_1000Pa": 39.0605,
+      "unbraced_analytical_f11_Hz": 104.4876,
+      "ratio_frequency_to_unbraced": 1,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 100000,
+      "model_f1_Hz": 106.6102,
+      "mid_displacement_um_per_1000Pa": 192.1476,
+      "integrated_vol_displacement_cm3_per_1000Pa": 37.6111,
+      "unbraced_analytical_f11_Hz": 104.4876,
+      "ratio_frequency_to_unbraced": 1.02031,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 1000000,
+      "model_f1_Hz": 123.4528,
+      "mid_displacement_um_per_1000Pa": 138.5868,
+      "integrated_vol_displacement_cm3_per_1000Pa": 28.5469,
+      "unbraced_analytical_f11_Hz": 104.4876,
+      "ratio_frequency_to_unbraced": 1.18151,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 10000000,
+      "model_f1_Hz": 180.3844,
+      "mid_displacement_um_per_1000Pa": 34.3354,
+      "integrated_vol_displacement_cm3_per_1000Pa": 10.9871,
+      "unbraced_analytical_f11_Hz": 104.4876,
+      "ratio_frequency_to_unbraced": 1.72637,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 100000000,
+      "model_f1_Hz": 195.8031,
+      "mid_displacement_um_per_1000Pa": 0.8304,
+      "integrated_vol_displacement_cm3_per_1000Pa": 5.3381,
+      "unbraced_analytical_f11_Hz": 104.4876,
+      "ratio_frequency_to_unbraced": 1.87394,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 3,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 0,
+      "model_f1_Hz": 138.5492,
+      "mid_displacement_um_per_1000Pa": 140.492,
+      "integrated_vol_displacement_cm3_per_1000Pa": 27.3424,
+      "unbraced_analytical_f11_Hz": 138.5492,
+      "ratio_frequency_to_unbraced": 1,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 3,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 100000,
+      "model_f1_Hz": 140.5274,
+      "mid_displacement_um_per_1000Pa": 136.2465,
+      "integrated_vol_displacement_cm3_per_1000Pa": 26.6231,
+      "unbraced_analytical_f11_Hz": 138.5492,
+      "ratio_frequency_to_unbraced": 1.01428,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 3,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 1000000,
+      "model_f1_Hz": 156.7961,
+      "mid_displacement_um_per_1000Pa": 106.9977,
+      "integrated_vol_displacement_cm3_per_1000Pa": 21.6716,
+      "unbraced_analytical_f11_Hz": 138.5492,
+      "ratio_frequency_to_unbraced": 1.1317,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 3,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 10000000,
+      "model_f1_Hz": 230.1666,
+      "mid_displacement_um_per_1000Pa": 32.6697,
+      "integrated_vol_displacement_cm3_per_1000Pa": 9.1396,
+      "unbraced_analytical_f11_Hz": 138.5492,
+      "ratio_frequency_to_unbraced": 1.66126,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 3,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 100000000,
+      "model_f1_Hz": 258.6376,
+      "mid_displacement_um_per_1000Pa": 1.8833,
+      "integrated_vol_displacement_cm3_per_1000Pa": 3.9626,
+      "unbraced_analytical_f11_Hz": 138.5492,
+      "ratio_frequency_to_unbraced": 1.86676,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 3,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 0,
+      "model_f1_Hz": 130.7372,
+      "mid_displacement_um_per_1000Pa": 140.492,
+      "integrated_vol_displacement_cm3_per_1000Pa": 27.3424,
+      "unbraced_analytical_f11_Hz": 130.7372,
+      "ratio_frequency_to_unbraced": 1,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 3,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 100000,
+      "model_f1_Hz": 132.6039,
+      "mid_displacement_um_per_1000Pa": 136.2465,
+      "integrated_vol_displacement_cm3_per_1000Pa": 26.6231,
+      "unbraced_analytical_f11_Hz": 130.7372,
+      "ratio_frequency_to_unbraced": 1.01428,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 3,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 1000000,
+      "model_f1_Hz": 147.9553,
+      "mid_displacement_um_per_1000Pa": 106.9977,
+      "integrated_vol_displacement_cm3_per_1000Pa": 21.6716,
+      "unbraced_analytical_f11_Hz": 130.7372,
+      "ratio_frequency_to_unbraced": 1.1317,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 3,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 10000000,
+      "model_f1_Hz": 217.1888,
+      "mid_displacement_um_per_1000Pa": 32.6697,
+      "integrated_vol_displacement_cm3_per_1000Pa": 9.1396,
+      "unbraced_analytical_f11_Hz": 130.7372,
+      "ratio_frequency_to_unbraced": 1.66126,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 3,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 100000000,
+      "model_f1_Hz": 244.0546,
+      "mid_displacement_um_per_1000Pa": 1.8833,
+      "integrated_vol_displacement_cm3_per_1000Pa": 3.9626,
+      "unbraced_analytical_f11_Hz": 130.7372,
+      "ratio_frequency_to_unbraced": 1.86676,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 3,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 0,
+      "model_f1_Hz": 124.8866,
+      "mid_displacement_um_per_1000Pa": 140.492,
+      "integrated_vol_displacement_cm3_per_1000Pa": 27.3424,
+      "unbraced_analytical_f11_Hz": 124.8866,
+      "ratio_frequency_to_unbraced": 1,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 3,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 100000,
+      "model_f1_Hz": 126.6697,
+      "mid_displacement_um_per_1000Pa": 136.2465,
+      "integrated_vol_displacement_cm3_per_1000Pa": 26.6231,
+      "unbraced_analytical_f11_Hz": 124.8866,
+      "ratio_frequency_to_unbraced": 1.01428,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 3,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 1000000,
+      "model_f1_Hz": 141.3341,
+      "mid_displacement_um_per_1000Pa": 106.9977,
+      "integrated_vol_displacement_cm3_per_1000Pa": 21.6716,
+      "unbraced_analytical_f11_Hz": 124.8866,
+      "ratio_frequency_to_unbraced": 1.1317,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 3,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 10000000,
+      "model_f1_Hz": 207.4693,
+      "mid_displacement_um_per_1000Pa": 32.6697,
+      "integrated_vol_displacement_cm3_per_1000Pa": 9.1396,
+      "unbraced_analytical_f11_Hz": 124.8866,
+      "ratio_frequency_to_unbraced": 1.66126,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1000,
+      "D_mm": 440,
+      "inner_W_mm": 956,
+      "inner_depth_mm": 374,
+      "E_GPa": 3,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 100000000,
+      "model_f1_Hz": 233.1328,
+      "mid_displacement_um_per_1000Pa": 1.8833,
+      "integrated_vol_displacement_cm3_per_1000Pa": 3.9626,
+      "unbraced_analytical_f11_Hz": 124.8866,
+      "ratio_frequency_to_unbraced": 1.86676,
+      "front_brace_location_inner_mm": [
+        426,
+        691
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 0,
+      "model_f1_Hz": 103.2493,
+      "mid_displacement_um_per_1000Pa": 251.4571,
+      "integrated_vol_displacement_cm3_per_1000Pa": 48.6258,
+      "unbraced_analytical_f11_Hz": 103.2493,
+      "ratio_frequency_to_unbraced": 1,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 100000,
+      "model_f1_Hz": 105.8332,
+      "mid_displacement_um_per_1000Pa": 238.3725,
+      "integrated_vol_displacement_cm3_per_1000Pa": 46.4287,
+      "unbraced_analytical_f11_Hz": 103.2493,
+      "ratio_frequency_to_unbraced": 1.02503,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 1000000,
+      "model_f1_Hz": 125.7544,
+      "mid_displacement_um_per_1000Pa": 162.0379,
+      "integrated_vol_displacement_cm3_per_1000Pa": 33.6247,
+      "unbraced_analytical_f11_Hz": 103.2493,
+      "ratio_frequency_to_unbraced": 1.21797,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 10000000,
+      "model_f1_Hz": 178.8061,
+      "mid_displacement_um_per_1000Pa": 36.5804,
+      "integrated_vol_displacement_cm3_per_1000Pa": 12.6638,
+      "unbraced_analytical_f11_Hz": 103.2493,
+      "ratio_frequency_to_unbraced": 1.73179,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 100000000,
+      "model_f1_Hz": 189.3078,
+      "mid_displacement_um_per_1000Pa": 1.6697,
+      "integrated_vol_displacement_cm3_per_1000Pa": 6.8005,
+      "unbraced_analytical_f11_Hz": 103.2493,
+      "ratio_frequency_to_unbraced": 1.8335,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 0,
+      "model_f1_Hz": 97.4277,
+      "mid_displacement_um_per_1000Pa": 251.4571,
+      "integrated_vol_displacement_cm3_per_1000Pa": 48.6258,
+      "unbraced_analytical_f11_Hz": 97.4277,
+      "ratio_frequency_to_unbraced": 1,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 100000,
+      "model_f1_Hz": 99.8659,
+      "mid_displacement_um_per_1000Pa": 238.3725,
+      "integrated_vol_displacement_cm3_per_1000Pa": 46.4287,
+      "unbraced_analytical_f11_Hz": 97.4277,
+      "ratio_frequency_to_unbraced": 1.02503,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 1000000,
+      "model_f1_Hz": 118.6638,
+      "mid_displacement_um_per_1000Pa": 162.0379,
+      "integrated_vol_displacement_cm3_per_1000Pa": 33.6247,
+      "unbraced_analytical_f11_Hz": 97.4277,
+      "ratio_frequency_to_unbraced": 1.21797,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 10000000,
+      "model_f1_Hz": 168.7242,
+      "mid_displacement_um_per_1000Pa": 36.5804,
+      "integrated_vol_displacement_cm3_per_1000Pa": 12.6638,
+      "unbraced_analytical_f11_Hz": 97.4277,
+      "ratio_frequency_to_unbraced": 1.73179,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 100000000,
+      "model_f1_Hz": 178.6338,
+      "mid_displacement_um_per_1000Pa": 1.6697,
+      "integrated_vol_displacement_cm3_per_1000Pa": 6.8005,
+      "unbraced_analytical_f11_Hz": 97.4277,
+      "ratio_frequency_to_unbraced": 1.8335,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 0,
+      "model_f1_Hz": 93.0676,
+      "mid_displacement_um_per_1000Pa": 251.4571,
+      "integrated_vol_displacement_cm3_per_1000Pa": 48.6258,
+      "unbraced_analytical_f11_Hz": 93.0676,
+      "ratio_frequency_to_unbraced": 1,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 100000,
+      "model_f1_Hz": 95.3967,
+      "mid_displacement_um_per_1000Pa": 238.3725,
+      "integrated_vol_displacement_cm3_per_1000Pa": 46.4287,
+      "unbraced_analytical_f11_Hz": 93.0676,
+      "ratio_frequency_to_unbraced": 1.02503,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 1000000,
+      "model_f1_Hz": 113.3535,
+      "mid_displacement_um_per_1000Pa": 162.0379,
+      "integrated_vol_displacement_cm3_per_1000Pa": 33.6247,
+      "unbraced_analytical_f11_Hz": 93.0676,
+      "ratio_frequency_to_unbraced": 1.21797,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 10000000,
+      "model_f1_Hz": 161.1736,
+      "mid_displacement_um_per_1000Pa": 36.5804,
+      "integrated_vol_displacement_cm3_per_1000Pa": 12.6638,
+      "unbraced_analytical_f11_Hz": 93.0676,
+      "ratio_frequency_to_unbraced": 1.73179,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 100000000,
+      "model_f1_Hz": 170.6397,
+      "mid_displacement_um_per_1000Pa": 1.6697,
+      "integrated_vol_displacement_cm3_per_1000Pa": 6.8005,
+      "unbraced_analytical_f11_Hz": 93.0676,
+      "ratio_frequency_to_unbraced": 1.8335,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 0,
+      "model_f1_Hz": 122.1662,
+      "mid_displacement_um_per_1000Pa": 179.6122,
+      "integrated_vol_displacement_cm3_per_1000Pa": 34.7327,
+      "unbraced_analytical_f11_Hz": 122.1662,
+      "ratio_frequency_to_unbraced": 1,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 100000,
+      "model_f1_Hz": 124.3605,
+      "mid_displacement_um_per_1000Pa": 172.8367,
+      "integrated_vol_displacement_cm3_per_1000Pa": 33.595,
+      "unbraced_analytical_f11_Hz": 122.1662,
+      "ratio_frequency_to_unbraced": 1.01796,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 1000000,
+      "model_f1_Hz": 141.9974,
+      "mid_displacement_um_per_1000Pa": 128.894,
+      "integrated_vol_displacement_cm3_per_1000Pa": 26.222,
+      "unbraced_analytical_f11_Hz": 122.1662,
+      "ratio_frequency_to_unbraced": 1.16233,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 10000000,
+      "model_f1_Hz": 206.1086,
+      "mid_displacement_um_per_1000Pa": 35.148,
+      "integrated_vol_displacement_cm3_per_1000Pa": 10.5484,
+      "unbraced_analytical_f11_Hz": 122.1662,
+      "ratio_frequency_to_unbraced": 1.68712,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 100000000,
+      "model_f1_Hz": 223.4499,
+      "mid_displacement_um_per_1000Pa": 2.4422,
+      "integrated_vol_displacement_cm3_per_1000Pa": 5.0745,
+      "unbraced_analytical_f11_Hz": 122.1662,
+      "ratio_frequency_to_unbraced": 1.82907,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 0,
+      "model_f1_Hz": 115.278,
+      "mid_displacement_um_per_1000Pa": 179.6122,
+      "integrated_vol_displacement_cm3_per_1000Pa": 34.7327,
+      "unbraced_analytical_f11_Hz": 115.278,
+      "ratio_frequency_to_unbraced": 1,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 100000,
+      "model_f1_Hz": 117.3485,
+      "mid_displacement_um_per_1000Pa": 172.8367,
+      "integrated_vol_displacement_cm3_per_1000Pa": 33.595,
+      "unbraced_analytical_f11_Hz": 115.278,
+      "ratio_frequency_to_unbraced": 1.01796,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 1000000,
+      "model_f1_Hz": 133.991,
+      "mid_displacement_um_per_1000Pa": 128.894,
+      "integrated_vol_displacement_cm3_per_1000Pa": 26.222,
+      "unbraced_analytical_f11_Hz": 115.278,
+      "ratio_frequency_to_unbraced": 1.16233,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 10000000,
+      "model_f1_Hz": 194.4874,
+      "mid_displacement_um_per_1000Pa": 35.148,
+      "integrated_vol_displacement_cm3_per_1000Pa": 10.5484,
+      "unbraced_analytical_f11_Hz": 115.278,
+      "ratio_frequency_to_unbraced": 1.68712,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 100000000,
+      "model_f1_Hz": 210.8509,
+      "mid_displacement_um_per_1000Pa": 2.4422,
+      "integrated_vol_displacement_cm3_per_1000Pa": 5.0745,
+      "unbraced_analytical_f11_Hz": 115.278,
+      "ratio_frequency_to_unbraced": 1.82907,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 0,
+      "model_f1_Hz": 110.1191,
+      "mid_displacement_um_per_1000Pa": 179.6122,
+      "integrated_vol_displacement_cm3_per_1000Pa": 34.7327,
+      "unbraced_analytical_f11_Hz": 110.1191,
+      "ratio_frequency_to_unbraced": 1,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 100000,
+      "model_f1_Hz": 112.097,
+      "mid_displacement_um_per_1000Pa": 172.8367,
+      "integrated_vol_displacement_cm3_per_1000Pa": 33.595,
+      "unbraced_analytical_f11_Hz": 110.1191,
+      "ratio_frequency_to_unbraced": 1.01796,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 1000000,
+      "model_f1_Hz": 127.9948,
+      "mid_displacement_um_per_1000Pa": 128.894,
+      "integrated_vol_displacement_cm3_per_1000Pa": 26.222,
+      "unbraced_analytical_f11_Hz": 110.1191,
+      "ratio_frequency_to_unbraced": 1.16233,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 10000000,
+      "model_f1_Hz": 185.7838,
+      "mid_displacement_um_per_1000Pa": 35.148,
+      "integrated_vol_displacement_cm3_per_1000Pa": 10.5484,
+      "unbraced_analytical_f11_Hz": 110.1191,
+      "ratio_frequency_to_unbraced": 1.68712,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 100000000,
+      "model_f1_Hz": 201.415,
+      "mid_displacement_um_per_1000Pa": 2.4422,
+      "integrated_vol_displacement_cm3_per_1000Pa": 5.0745,
+      "unbraced_analytical_f11_Hz": 110.1191,
+      "ratio_frequency_to_unbraced": 1.82907,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 3,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 0,
+      "model_f1_Hz": 146.0165,
+      "mid_displacement_um_per_1000Pa": 125.7286,
+      "integrated_vol_displacement_cm3_per_1000Pa": 24.3129,
+      "unbraced_analytical_f11_Hz": 146.0165,
+      "ratio_frequency_to_unbraced": 1,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 3,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 100000,
+      "model_f1_Hz": 147.8591,
+      "mid_displacement_um_per_1000Pa": 122.3709,
+      "integrated_vol_displacement_cm3_per_1000Pa": 23.7491,
+      "unbraced_analytical_f11_Hz": 146.0165,
+      "ratio_frequency_to_unbraced": 1.01262,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 3,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 1000000,
+      "model_f1_Hz": 163.1545,
+      "mid_displacement_um_per_1000Pa": 98.6037,
+      "integrated_vol_displacement_cm3_per_1000Pa": 19.7603,
+      "unbraced_analytical_f11_Hz": 146.0165,
+      "ratio_frequency_to_unbraced": 1.11737,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 3,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 10000000,
+      "model_f1_Hz": 236.8525,
+      "mid_displacement_um_per_1000Pa": 32.794,
+      "integrated_vol_displacement_cm3_per_1000Pa": 8.7493,
+      "unbraced_analytical_f11_Hz": 146.0165,
+      "ratio_frequency_to_unbraced": 1.62209,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 3,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 100000000,
+      "model_f1_Hz": 266.0969,
+      "mid_displacement_um_per_1000Pa": 3.0114,
+      "integrated_vol_displacement_cm3_per_1000Pa": 3.775,
+      "unbraced_analytical_f11_Hz": 146.0165,
+      "ratio_frequency_to_unbraced": 1.82238,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 3,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 0,
+      "model_f1_Hz": 137.7835,
+      "mid_displacement_um_per_1000Pa": 125.7286,
+      "integrated_vol_displacement_cm3_per_1000Pa": 24.3129,
+      "unbraced_analytical_f11_Hz": 137.7835,
+      "ratio_frequency_to_unbraced": 1,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 3,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 100000,
+      "model_f1_Hz": 139.5222,
+      "mid_displacement_um_per_1000Pa": 122.3709,
+      "integrated_vol_displacement_cm3_per_1000Pa": 23.7491,
+      "unbraced_analytical_f11_Hz": 137.7835,
+      "ratio_frequency_to_unbraced": 1.01262,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 3,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 1000000,
+      "model_f1_Hz": 153.9552,
+      "mid_displacement_um_per_1000Pa": 98.6037,
+      "integrated_vol_displacement_cm3_per_1000Pa": 19.7603,
+      "unbraced_analytical_f11_Hz": 137.7835,
+      "ratio_frequency_to_unbraced": 1.11737,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 3,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 10000000,
+      "model_f1_Hz": 223.4978,
+      "mid_displacement_um_per_1000Pa": 32.794,
+      "integrated_vol_displacement_cm3_per_1000Pa": 8.7493,
+      "unbraced_analytical_f11_Hz": 137.7835,
+      "ratio_frequency_to_unbraced": 1.62209,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 3,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 100000000,
+      "model_f1_Hz": 251.0933,
+      "mid_displacement_um_per_1000Pa": 3.0114,
+      "integrated_vol_displacement_cm3_per_1000Pa": 3.775,
+      "unbraced_analytical_f11_Hz": 137.7835,
+      "ratio_frequency_to_unbraced": 1.82238,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 3,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 0,
+      "model_f1_Hz": 131.6175,
+      "mid_displacement_um_per_1000Pa": 125.7286,
+      "integrated_vol_displacement_cm3_per_1000Pa": 24.3129,
+      "unbraced_analytical_f11_Hz": 131.6175,
+      "ratio_frequency_to_unbraced": 1,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 3,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 100000,
+      "model_f1_Hz": 133.2784,
+      "mid_displacement_um_per_1000Pa": 122.3709,
+      "integrated_vol_displacement_cm3_per_1000Pa": 23.7491,
+      "unbraced_analytical_f11_Hz": 131.6175,
+      "ratio_frequency_to_unbraced": 1.01262,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 3,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 1000000,
+      "model_f1_Hz": 147.0655,
+      "mid_displacement_um_per_1000Pa": 98.6037,
+      "integrated_vol_displacement_cm3_per_1000Pa": 19.7603,
+      "unbraced_analytical_f11_Hz": 131.6175,
+      "ratio_frequency_to_unbraced": 1.11737,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 3,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 10000000,
+      "model_f1_Hz": 213.4959,
+      "mid_displacement_um_per_1000Pa": 32.794,
+      "integrated_vol_displacement_cm3_per_1000Pa": 8.7493,
+      "unbraced_analytical_f11_Hz": 131.6175,
+      "ratio_frequency_to_unbraced": 1.62209,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1020,
+      "D_mm": 425,
+      "inner_W_mm": 976,
+      "inner_depth_mm": 359,
+      "E_GPa": 3,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 100000000,
+      "model_f1_Hz": 239.8565,
+      "mid_displacement_um_per_1000Pa": 3.0114,
+      "integrated_vol_displacement_cm3_per_1000Pa": 3.775,
+      "unbraced_analytical_f11_Hz": 131.6175,
+      "ratio_frequency_to_unbraced": 1.82238,
+      "front_brace_location_inner_mm": [
+        426,
+        701
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 0,
+      "model_f1_Hz": 100.6331,
+      "mid_displacement_um_per_1000Pa": 264.4648,
+      "integrated_vol_displacement_cm3_per_1000Pa": 52.824,
+      "unbraced_analytical_f11_Hz": 100.6331,
+      "ratio_frequency_to_unbraced": 1,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 100000,
+      "model_f1_Hz": 103.2312,
+      "mid_displacement_um_per_1000Pa": 250.4004,
+      "integrated_vol_displacement_cm3_per_1000Pa": 50.3629,
+      "unbraced_analytical_f11_Hz": 100.6331,
+      "ratio_frequency_to_unbraced": 1.02582,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 1000000,
+      "model_f1_Hz": 123.2516,
+      "mid_displacement_um_per_1000Pa": 169.2153,
+      "integrated_vol_displacement_cm3_per_1000Pa": 36.1692,
+      "unbraced_analytical_f11_Hz": 100.6331,
+      "ratio_frequency_to_unbraced": 1.22476,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 10000000,
+      "model_f1_Hz": 176.9877,
+      "mid_displacement_um_per_1000Pa": 38.9795,
+      "integrated_vol_displacement_cm3_per_1000Pa": 13.4672,
+      "unbraced_analytical_f11_Hz": 100.6331,
+      "ratio_frequency_to_unbraced": 1.75874,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 100000000,
+      "model_f1_Hz": 186.9837,
+      "mid_displacement_um_per_1000Pa": 3.4453,
+      "integrated_vol_displacement_cm3_per_1000Pa": 7.2328,
+      "unbraced_analytical_f11_Hz": 100.6331,
+      "ratio_frequency_to_unbraced": 1.85807,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 0,
+      "model_f1_Hz": 94.959,
+      "mid_displacement_um_per_1000Pa": 264.4648,
+      "integrated_vol_displacement_cm3_per_1000Pa": 52.824,
+      "unbraced_analytical_f11_Hz": 94.959,
+      "ratio_frequency_to_unbraced": 1,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 100000,
+      "model_f1_Hz": 97.4106,
+      "mid_displacement_um_per_1000Pa": 250.4004,
+      "integrated_vol_displacement_cm3_per_1000Pa": 50.3629,
+      "unbraced_analytical_f11_Hz": 94.959,
+      "ratio_frequency_to_unbraced": 1.02582,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 1000000,
+      "model_f1_Hz": 116.3021,
+      "mid_displacement_um_per_1000Pa": 169.2153,
+      "integrated_vol_displacement_cm3_per_1000Pa": 36.1692,
+      "unbraced_analytical_f11_Hz": 94.959,
+      "ratio_frequency_to_unbraced": 1.22476,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 10000000,
+      "model_f1_Hz": 167.0084,
+      "mid_displacement_um_per_1000Pa": 38.9795,
+      "integrated_vol_displacement_cm3_per_1000Pa": 13.4672,
+      "unbraced_analytical_f11_Hz": 94.959,
+      "ratio_frequency_to_unbraced": 1.75874,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 100000000,
+      "model_f1_Hz": 176.4408,
+      "mid_displacement_um_per_1000Pa": 3.4453,
+      "integrated_vol_displacement_cm3_per_1000Pa": 7.2328,
+      "unbraced_analytical_f11_Hz": 94.959,
+      "ratio_frequency_to_unbraced": 1.85807,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 0,
+      "model_f1_Hz": 90.7095,
+      "mid_displacement_um_per_1000Pa": 264.4648,
+      "integrated_vol_displacement_cm3_per_1000Pa": 52.824,
+      "unbraced_analytical_f11_Hz": 90.7095,
+      "ratio_frequency_to_unbraced": 1,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 100000,
+      "model_f1_Hz": 93.0513,
+      "mid_displacement_um_per_1000Pa": 250.4004,
+      "integrated_vol_displacement_cm3_per_1000Pa": 50.3629,
+      "unbraced_analytical_f11_Hz": 90.7095,
+      "ratio_frequency_to_unbraced": 1.02582,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 1000000,
+      "model_f1_Hz": 111.0975,
+      "mid_displacement_um_per_1000Pa": 169.2153,
+      "integrated_vol_displacement_cm3_per_1000Pa": 36.1692,
+      "unbraced_analytical_f11_Hz": 90.7095,
+      "ratio_frequency_to_unbraced": 1.22476,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 10000000,
+      "model_f1_Hz": 159.5346,
+      "mid_displacement_um_per_1000Pa": 38.9795,
+      "integrated_vol_displacement_cm3_per_1000Pa": 13.4672,
+      "unbraced_analytical_f11_Hz": 90.7095,
+      "ratio_frequency_to_unbraced": 1.75874,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 1.5,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 100000000,
+      "model_f1_Hz": 168.5448,
+      "mid_displacement_um_per_1000Pa": 3.4453,
+      "integrated_vol_displacement_cm3_per_1000Pa": 7.2328,
+      "unbraced_analytical_f11_Hz": 90.7095,
+      "ratio_frequency_to_unbraced": 1.85807,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 0,
+      "model_f1_Hz": 119.0707,
+      "mid_displacement_um_per_1000Pa": 188.9034,
+      "integrated_vol_displacement_cm3_per_1000Pa": 37.7314,
+      "unbraced_analytical_f11_Hz": 119.0707,
+      "ratio_frequency_to_unbraced": 1,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 100000,
+      "model_f1_Hz": 121.2772,
+      "mid_displacement_um_per_1000Pa": 181.6174,
+      "integrated_vol_displacement_cm3_per_1000Pa": 36.4564,
+      "unbraced_analytical_f11_Hz": 119.0707,
+      "ratio_frequency_to_unbraced": 1.01853,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 1000000,
+      "model_f1_Hz": 138.9988,
+      "mid_displacement_um_per_1000Pa": 134.7604,
+      "integrated_vol_displacement_cm3_per_1000Pa": 28.2624,
+      "unbraced_analytical_f11_Hz": 119.0707,
+      "ratio_frequency_to_unbraced": 1.16736,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 10000000,
+      "model_f1_Hz": 204.0421,
+      "mid_displacement_um_per_1000Pa": 37.0754,
+      "integrated_vol_displacement_cm3_per_1000Pa": 11.2261,
+      "unbraced_analytical_f11_Hz": 119.0707,
+      "ratio_frequency_to_unbraced": 1.71362,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 100000000,
+      "model_f1_Hz": 220.74,
+      "mid_displacement_um_per_1000Pa": 3.7299,
+      "integrated_vol_displacement_cm3_per_1000Pa": 5.3961,
+      "unbraced_analytical_f11_Hz": 119.0707,
+      "ratio_frequency_to_unbraced": 1.85386,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 0,
+      "model_f1_Hz": 112.357,
+      "mid_displacement_um_per_1000Pa": 188.9034,
+      "integrated_vol_displacement_cm3_per_1000Pa": 37.7314,
+      "unbraced_analytical_f11_Hz": 112.357,
+      "ratio_frequency_to_unbraced": 1,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 100000,
+      "model_f1_Hz": 114.4391,
+      "mid_displacement_um_per_1000Pa": 181.6174,
+      "integrated_vol_displacement_cm3_per_1000Pa": 36.4564,
+      "unbraced_analytical_f11_Hz": 112.357,
+      "ratio_frequency_to_unbraced": 1.01853,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 1000000,
+      "model_f1_Hz": 131.1614,
+      "mid_displacement_um_per_1000Pa": 134.7604,
+      "integrated_vol_displacement_cm3_per_1000Pa": 28.2624,
+      "unbraced_analytical_f11_Hz": 112.357,
+      "ratio_frequency_to_unbraced": 1.16736,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 10000000,
+      "model_f1_Hz": 192.5373,
+      "mid_displacement_um_per_1000Pa": 37.0754,
+      "integrated_vol_displacement_cm3_per_1000Pa": 11.2261,
+      "unbraced_analytical_f11_Hz": 112.357,
+      "ratio_frequency_to_unbraced": 1.71362,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 100000000,
+      "model_f1_Hz": 208.2937,
+      "mid_displacement_um_per_1000Pa": 3.7299,
+      "integrated_vol_displacement_cm3_per_1000Pa": 5.3961,
+      "unbraced_analytical_f11_Hz": 112.357,
+      "ratio_frequency_to_unbraced": 1.85386,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 0,
+      "model_f1_Hz": 107.3289,
+      "mid_displacement_um_per_1000Pa": 188.9034,
+      "integrated_vol_displacement_cm3_per_1000Pa": 37.7314,
+      "unbraced_analytical_f11_Hz": 107.3289,
+      "ratio_frequency_to_unbraced": 1,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 100000,
+      "model_f1_Hz": 109.3178,
+      "mid_displacement_um_per_1000Pa": 181.6174,
+      "integrated_vol_displacement_cm3_per_1000Pa": 36.4564,
+      "unbraced_analytical_f11_Hz": 107.3289,
+      "ratio_frequency_to_unbraced": 1.01853,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 1000000,
+      "model_f1_Hz": 125.2918,
+      "mid_displacement_um_per_1000Pa": 134.7604,
+      "integrated_vol_displacement_cm3_per_1000Pa": 28.2624,
+      "unbraced_analytical_f11_Hz": 107.3289,
+      "ratio_frequency_to_unbraced": 1.16736,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 10000000,
+      "model_f1_Hz": 183.921,
+      "mid_displacement_um_per_1000Pa": 37.0754,
+      "integrated_vol_displacement_cm3_per_1000Pa": 11.2261,
+      "unbraced_analytical_f11_Hz": 107.3289,
+      "ratio_frequency_to_unbraced": 1.71362,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 2.1,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 100000000,
+      "model_f1_Hz": 198.9723,
+      "mid_displacement_um_per_1000Pa": 3.7299,
+      "integrated_vol_displacement_cm3_per_1000Pa": 5.3961,
+      "unbraced_analytical_f11_Hz": 107.3289,
+      "ratio_frequency_to_unbraced": 1.85386,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 3,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 0,
+      "model_f1_Hz": 142.3168,
+      "mid_displacement_um_per_1000Pa": 132.2324,
+      "integrated_vol_displacement_cm3_per_1000Pa": 26.412,
+      "unbraced_analytical_f11_Hz": 142.3168,
+      "ratio_frequency_to_unbraced": 1,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 3,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 100000,
+      "model_f1_Hz": 144.1696,
+      "mid_displacement_um_per_1000Pa": 128.6206,
+      "integrated_vol_displacement_cm3_per_1000Pa": 25.78,
+      "unbraced_analytical_f11_Hz": 142.3168,
+      "ratio_frequency_to_unbraced": 1.01302,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 3,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 1000000,
+      "model_f1_Hz": 159.5392,
+      "mid_displacement_um_per_1000Pa": 103.2184,
+      "integrated_vol_displacement_cm3_per_1000Pa": 21.3369,
+      "unbraced_analytical_f11_Hz": 142.3168,
+      "ratio_frequency_to_unbraced": 1.12101,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 3,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 10000000,
+      "model_f1_Hz": 234.3492,
+      "mid_displacement_um_per_1000Pa": 34.3681,
+      "integrated_vol_displacement_cm3_per_1000Pa": 9.3229,
+      "unbraced_analytical_f11_Hz": 142.3168,
+      "ratio_frequency_to_unbraced": 1.64667,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 3,
+      "rho_kg_m3": 650,
+      "spring_k_N_per_m2": 100000000,
+      "model_f1_Hz": 262.9268,
+      "mid_displacement_um_per_1000Pa": 3.9323,
+      "integrated_vol_displacement_cm3_per_1000Pa": 4.0135,
+      "unbraced_analytical_f11_Hz": 142.3168,
+      "ratio_frequency_to_unbraced": 1.84748,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 3,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 0,
+      "model_f1_Hz": 134.2923,
+      "mid_displacement_um_per_1000Pa": 132.2324,
+      "integrated_vol_displacement_cm3_per_1000Pa": 26.412,
+      "unbraced_analytical_f11_Hz": 134.2923,
+      "ratio_frequency_to_unbraced": 1,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 3,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 100000,
+      "model_f1_Hz": 136.0407,
+      "mid_displacement_um_per_1000Pa": 128.6206,
+      "integrated_vol_displacement_cm3_per_1000Pa": 25.78,
+      "unbraced_analytical_f11_Hz": 134.2923,
+      "ratio_frequency_to_unbraced": 1.01302,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 3,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 1000000,
+      "model_f1_Hz": 150.5437,
+      "mid_displacement_um_per_1000Pa": 103.2184,
+      "integrated_vol_displacement_cm3_per_1000Pa": 21.3369,
+      "unbraced_analytical_f11_Hz": 134.2923,
+      "ratio_frequency_to_unbraced": 1.12101,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 3,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 10000000,
+      "model_f1_Hz": 221.1356,
+      "mid_displacement_um_per_1000Pa": 34.3681,
+      "integrated_vol_displacement_cm3_per_1000Pa": 9.3229,
+      "unbraced_analytical_f11_Hz": 134.2923,
+      "ratio_frequency_to_unbraced": 1.64667,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 3,
+      "rho_kg_m3": 730,
+      "spring_k_N_per_m2": 100000000,
+      "model_f1_Hz": 248.1019,
+      "mid_displacement_um_per_1000Pa": 3.9323,
+      "integrated_vol_displacement_cm3_per_1000Pa": 4.0135,
+      "unbraced_analytical_f11_Hz": 134.2923,
+      "ratio_frequency_to_unbraced": 1.84748,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 3,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 0,
+      "model_f1_Hz": 128.2826,
+      "mid_displacement_um_per_1000Pa": 132.2324,
+      "integrated_vol_displacement_cm3_per_1000Pa": 26.412,
+      "unbraced_analytical_f11_Hz": 128.2826,
+      "ratio_frequency_to_unbraced": 1,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 3,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 100000,
+      "model_f1_Hz": 129.9527,
+      "mid_displacement_um_per_1000Pa": 128.6206,
+      "integrated_vol_displacement_cm3_per_1000Pa": 25.78,
+      "unbraced_analytical_f11_Hz": 128.2826,
+      "ratio_frequency_to_unbraced": 1.01302,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 3,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 1000000,
+      "model_f1_Hz": 143.8067,
+      "mid_displacement_um_per_1000Pa": 103.2184,
+      "integrated_vol_displacement_cm3_per_1000Pa": 21.3369,
+      "unbraced_analytical_f11_Hz": 128.2826,
+      "ratio_frequency_to_unbraced": 1.12101,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 3,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 10000000,
+      "model_f1_Hz": 211.2395,
+      "mid_displacement_um_per_1000Pa": 34.3681,
+      "integrated_vol_displacement_cm3_per_1000Pa": 9.3229,
+      "unbraced_analytical_f11_Hz": 128.2826,
+      "ratio_frequency_to_unbraced": 1.64667,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    },
+    {
+      "W_mm": 1040,
+      "D_mm": 430,
+      "inner_W_mm": 996,
+      "inner_depth_mm": 364,
+      "E_GPa": 3,
+      "rho_kg_m3": 800,
+      "spring_k_N_per_m2": 100000000,
+      "model_f1_Hz": 236.999,
+      "mid_displacement_um_per_1000Pa": 3.9323,
+      "integrated_vol_displacement_cm3_per_1000Pa": 4.0135,
+      "unbraced_analytical_f11_Hz": 128.2826,
+      "ratio_frequency_to_unbraced": 1.84748,
+      "front_brace_location_inner_mm": [
+        426,
+        711
+      ]
+    }
+  ],
+  "warnings": [
+    "A single simply-supported unperforated plate is NOT the full cabinet: front aperture, joint flexibility, bending-torsion of ring braces, adhesive and gasket remain unmodeled.",
+    "Line springs to immovable ground overstate brace effectiveness: real ring frame moves; spring k is a hypothetical span of 0..1e8 N/m2, not material property.",
+    "No physical panel vibration frequencies or radiation measurement, no complete FEM or acoustic-structural coupling.",
+    "Pressure 1000Pa uniform synthetic; near-field nonuniform pressure, screw preload and real dynamic loads not included.",
+    "Static response uses 7x5 basis; convergence against 5x3 checked at one support/E/rho and full convergence not certified.",
+    "No CNC release, fastener qualification, fatigue/creep or real mounting load."
+  ]
+}
