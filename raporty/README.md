@@ -114,3 +114,6 @@ bieżący zakres sprawdzaj w [programie 30 pakietów](../PROGRAM_30_BADAN.md).
 - [Raport 098 — P39A: 36 nacisków FV sześciu ścian po korekcie osi głośnika](098_P39A_naciski_scian_korekta_FV.md).
 - [Raport 099 — P39B: 54 warianty pierścienia i 20 kontroli całkowitej głębokości](099_P39B_geometria_pierscienia_i_glebokosc.md).
 - [Raport 100 — P39C: parametryczny edytowalny model CAD OpenSCAD, nie do CNC](100_P39C_edytowalny_model_3D_OpenSCAD.md).
+
+- [Raport 101 — P40A: 432 konfiguracje sił i momentów w ośmiu punktach mocowania](101_P40A_reakcje_8_mocowan.md).
+- [Raport 102 — P40B: 675 kontroli tolerancji i budżetu promieniowego pierścienia](102_P40B_tolerancje_pierscienia_675.md).
