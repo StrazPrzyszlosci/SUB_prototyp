@@ -43,7 +43,7 @@ def one_volt(d, air, m, volume_l, f, amp):
          voltage_at_driver_per=abs(1-amp['output_resistance_ohm']*i),
          p1per=rho*w*m['sd']*abs(v)/(2*math.pi),
          load_z_real=zload.real,load_z_imag=zload.imag,
-         power_error=error)
+         power_error=error, input_power_per_V2=input_power)
 
 def case(d, air, m, volume_l, f, amp, dsp, heat_budget):
     q=one_volt(d,air,m,volume_l,f,amp)
@@ -67,7 +67,7 @@ def case(d, air, m, volume_l, f, amp, dsp, heat_budget):
         copper_loss_budget_w=heat_budget,voltage_source_rms=u,
         terminal_voltage_rms=at_voicecoil_v,current_coil_rms=current_rms,
         current_coil_peak=current_rms*math.sqrt(2),
-        nominal_input_power_W=u*u*q['iper']*q['voltage_at_driver_per'],
+        input_active_power_W=u*u*q['input_power_per_V2'],
         copper_loss_W=d['re_ohm']*current_rms**2,
         xmax_peak_mm=peak_x_mm,
         active_limit=reason,amp_ideal_cap_vrms=amps['manufacturer_nominal_4ohm_voltage_reference'],
