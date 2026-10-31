@@ -1,0 +1,57 @@
+name: P39 - corrected FV wall pressures and editable 3D mount
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  acoustic-and-cad-envelope:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Recalculate 36 wall-pressure cases and 54+20 geometric candidates
+        run: |
+          node --check skrypty/p39a_sciany_FV_po_korekcie.js
+          node --check skrypty/p39b_obwiednie_pierscien_mocowanie.js
+          node skrypty/p39a_sciany_FV_po_korekcie.js >/tmp/p39a.log
+          node skrypty/p39b_obwiednie_pierscien_mocowanie.js >/tmp/p39b.log
+      - name: Independent regression assertions and README integrity
+        run: |
+          node - <<'NODE'
+          const fs=require('node:fs');
+          const a=JSON.parse(fs.readFileSync('wyniki/p39a_pola_na_scianach_36_20261101.json','utf8'));
+          const b=JSON.parse(fs.readFileSync('wyniki/p39b_kolizje_pierscien_glebokosc_20261101.json','utf8'));
+          const ref=a.rows.find(z=>z.state==='120'&&z.frequency_Hz===80&&z.mesh_mm===36);
+          if(a.models!==36||a.rows.length!==36)throw Error('36 FV cases missing');
+          if(ref===undefined||Math.abs(ref.boundary.left.mean_pressure_ratio-.735469)>1e-5 ||
+             Math.abs(ref.boundary.right.mean_pressure_ratio-1.383758)>1e-5)
+             throw Error('P39 corrected face loads');
+          if(Math.abs(ref.rms_field_pct-21.71559719)>.02)throw Error('P39 pressure reference');
+          if(b.cases!==54||b.depth_cases!==20||b.ring_candidates.length!==54)throw Error('P39 mounting design space');
+          const k=b.reference_geometry;
+          if(k.inner_side_gap_mm!==9||k.first_brace_gap_x_mm!==17||k.metal_hole_ligament_mm!==2.75)throw Error('P39 ring clearance');
+          const failures=b.depth_envelope_scenarios.filter(x=>!x.pass_total_le500mm).length;
+          if(failures!==7)throw Error('P39 depth budget');
+          const md=fs.readFileSync('README.md','utf8');
+          if(!md.includes('100 raportów')||/klient/i.test(md))throw Error('Research guide terminology or report count');
+          const figs=md.match(/!\[[^\]]*\]\([^)]*\)/g)||[];
+          if(figs.length<94||!md.includes('p39a_cisnienie_scian_po_korekcie.svg'))throw Error('P39 guide illustrations');
+          console.log('PASS P39A/B: 36 FV, 54 steel ring scenarios, 20 depth conditions, 7 failures,',figs.length,'illustrations');
+          NODE
+  openscad-reference-compilation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install OpenSCAD
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends openscad
+      - name: Check reference parametric 3D CSG model syntax
+        run: |
+          openscad -o /tmp/p39_ref.csg dokumentacja/P39C_front_korpus_pierscien_REFERENCYJNY_NIE_CNC.scad
+          test -s /tmp/p39_ref.csg
+          echo 'PASS OpenSCAD reference CSG compilation; NOT CNC certification'
