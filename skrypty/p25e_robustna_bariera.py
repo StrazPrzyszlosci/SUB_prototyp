@@ -102,7 +102,7 @@ def simulate(p, waves, fs, rate, cfg_array):
                 widx=int(p[c,20])
                 cmd=max(-rail,min(rail,waves[widx,j]))
                 # Deterministic bounded errors; amplitude exact <= sensor specification.
-                tm=j/fs; phase=0.19*c
+                tm=j/fs; phase=0.19*(c//4)  # same sensor-error realization in all four strategies
                 xm=x[c]+sens_x*np.sin(2*np.pi*11*tm+phase)
                 vm=v[c]+sens_v*np.cos(2*np.pi*13*tm+.37*phase)
                 im=i[c]+sens_i*np.sin(2*np.pi*17*tm+.71*phase)

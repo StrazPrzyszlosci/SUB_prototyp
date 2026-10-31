@@ -17,33 +17,33 @@
       "E_violations": 24,
       "X_violations": 0,
       "I_violations": 0,
-      "peak_E_cap": 1.5244766740104272,
-      "peak_X_ref": 0.3329447300347601,
-      "peak_I_ref": 0.6260515442485682,
-      "median_output_voltage_rms_v": 4.455384959085981,
-      "median_x_rms_mm": 1.0314432205243615
+      "peak_E_cap": 1.518492311026947,
+      "peak_X_ref": 0.33239219710371326,
+      "peak_I_ref": 0.6514631270314554,
+      "median_output_voltage_rms_v": 4.473782869956917,
+      "median_x_rms_mm": 1.0218971357687763
     },
     "robust_now_500": {
       "n": 24,
       "E_violations": 0,
       "X_violations": 0,
       "I_violations": 0,
-      "peak_E_cap": 0.9656100750752331,
-      "peak_X_ref": 0.2912255409998211,
-      "peak_I_ref": 0.5804257824150154,
-      "median_output_voltage_rms_v": 3.653047440786535,
-      "median_x_rms_mm": 0.8489857212315159
+      "peak_E_cap": 0.9654834722997323,
+      "peak_X_ref": 0.29215726765702843,
+      "peak_I_ref": 0.5920045686271702,
+      "median_output_voltage_rms_v": 3.6667040357932636,
+      "median_x_rms_mm": 0.8412609848153608
     },
     "robust_delay_500": {
       "n": 24,
       "E_violations": 0,
       "X_violations": 0,
       "I_violations": 0,
-      "peak_E_cap": 0.924530986202611,
-      "peak_X_ref": 0.28707024808137244,
-      "peak_I_ref": 0.5252241387857576,
-      "median_output_voltage_rms_v": 3.41602340502879,
-      "median_x_rms_mm": 0.7582332378334504
+      "peak_E_cap": 0.9175415169435556,
+      "peak_X_ref": 0.2893380607608914,
+      "peak_I_ref": 0.5311140455985192,
+      "median_output_voltage_rms_v": 3.424017866709029,
+      "median_x_rms_mm": 0.7540357162377551
     },
     "ideal_2000": {
       "n": 24,
@@ -61,33 +61,33 @@
       "E_violations": 24,
       "X_violations": 0,
       "I_violations": 0,
-      "peak_E_cap": 1.614646803217375,
-      "peak_X_ref": 0.331198942600839,
-      "peak_I_ref": 0.7781885460945918,
-      "median_output_voltage_rms_v": 4.9641710352028365,
-      "median_x_rms_mm": 1.0995363550526909
+      "peak_E_cap": 1.643903764758393,
+      "peak_X_ref": 0.33241607453376504,
+      "peak_I_ref": 0.8105946741259719,
+      "median_output_voltage_rms_v": 4.957753297557158,
+      "median_x_rms_mm": 1.098549109971949
     },
     "robust_now_2000": {
       "n": 24,
       "E_violations": 0,
       "X_violations": 0,
       "I_violations": 0,
-      "peak_E_cap": 0.9934149812827442,
-      "peak_X_ref": 0.292385954613883,
-      "peak_I_ref": 0.7144785770722285,
-      "median_output_voltage_rms_v": 4.068477514861575,
-      "median_x_rms_mm": 0.9057863980575764
+      "peak_E_cap": 0.9931393576112899,
+      "peak_X_ref": 0.29195016029077614,
+      "peak_I_ref": 0.6879741602239206,
+      "median_output_voltage_rms_v": 4.066575199089512,
+      "median_x_rms_mm": 0.9034688665311397
     },
     "robust_delay_2000": {
       "n": 24,
       "E_violations": 0,
       "X_violations": 0,
       "I_violations": 0,
-      "peak_E_cap": 0.9868961052285945,
-      "peak_X_ref": 0.2919818805716928,
-      "peak_I_ref": 0.7101930468598805,
-      "median_output_voltage_rms_v": 3.947886116655849,
-      "median_x_rms_mm": 0.8766717982237786
+      "peak_E_cap": 0.9861135952037394,
+      "peak_X_ref": 0.29326434727190787,
+      "peak_I_ref": 0.7132950408686279,
+      "median_output_voltage_rms_v": 3.952970690597958,
+      "median_x_rms_mm": 0.8725465304904575
     },
     "ideal_6000": {
       "n": 24,
@@ -105,37 +105,37 @@
       "E_violations": 24,
       "X_violations": 0,
       "I_violations": 0,
-      "peak_E_cap": 1.6361562424705904,
-      "peak_X_ref": 0.3302754666052463,
-      "peak_I_ref": 0.98028035431223,
-      "median_output_voltage_rms_v": 5.165581160073323,
-      "median_x_rms_mm": 1.115949690248438
+      "peak_E_cap": 1.654971240006505,
+      "peak_X_ref": 0.33293110379061697,
+      "peak_I_ref": 0.9627558991240899,
+      "median_output_voltage_rms_v": 5.14451017881383,
+      "median_x_rms_mm": 1.1161628142875935
     },
     "robust_now_6000": {
       "n": 24,
       "E_violations": 0,
       "X_violations": 0,
       "I_violations": 0,
-      "peak_E_cap": 0.9967120887652348,
-      "peak_X_ref": 0.29226967100725076,
-      "peak_I_ref": 0.8780822643669948,
-      "median_output_voltage_rms_v": 4.241056174132852,
-      "median_x_rms_mm": 0.9190910641968655
+      "peak_E_cap": 0.9964853822804666,
+      "peak_X_ref": 0.2929136574220231,
+      "peak_I_ref": 0.8438209503448797,
+      "median_output_voltage_rms_v": 4.270814862741377,
+      "median_x_rms_mm": 0.9175972678120592
     },
     "robust_delay_6000": {
       "n": 24,
       "E_violations": 0,
       "X_violations": 0,
       "I_violations": 0,
-      "peak_E_cap": 0.9926176264379248,
-      "peak_X_ref": 0.2914681331406202,
-      "peak_I_ref": 0.886430720693341,
-      "median_output_voltage_rms_v": 4.174270075997347,
-      "median_x_rms_mm": 0.911308195602893
+      "peak_E_cap": 0.9957820690893789,
+      "peak_X_ref": 0.29203294694516224,
+      "peak_I_ref": 0.8094417443058783,
+      "median_output_voltage_rms_v": 4.200268945262382,
+      "median_x_rms_mm": 0.9102523843584189
     }
   },
   "checks": {
-    "energy_balance_scaled_max": 6.387457409353923e-05,
-    "thermal_balance_k_max": 1.1092993190686684e-12
+    "energy_balance_scaled_max": 6.426419882337949e-05,
+    "thermal_balance_k_max": 1.1664269550237804e-12
   }
 }
