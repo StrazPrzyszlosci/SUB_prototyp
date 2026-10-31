@@ -1,0 +1,181 @@
+{
+  "study": "P22C",
+  "date": "2026-10-31",
+  "scope": "Harmonic small-signal sealed-box model and manufacturer nominal amplifier output constraints, 0D rear air only, NOT THD, thermal transient, manufacturer-validated amplifier clipping behavior or physical SPL. Amp peak output/current limits are manufacturer nominal, 1kHz power ratings cannot be used as full-time clean bass ratings.",
+  "air": {
+    "density_kg_m3": 1.2,
+    "velocity_m_s": 343,
+    "pressure_reference_pa": 0.00002
+  },
+  "box_volumes_net_l": [
+    75,
+    80,
+    100,
+    120,
+    150
+  ],
+  "frequency_hz": {
+    "start": 10,
+    "stop": 120,
+    "step": 1
+  },
+  "hypothetical_voice_coil_copper_loss_budgets_w": [
+    100,
+    250,
+    500
+  ],
+  "drivers": [
+    {
+      "id": "C02",
+      "name": "Dayton RSS390HF-4",
+      "fs_hz": 19.5,
+      "vas_l": 212,
+      "sd_cm2": 829.6,
+      "re_ohm": 3,
+      "le_mh": 0.92,
+      "qes": 0.5,
+      "qms": 3.02,
+      "xmax_oneway_mm": 14,
+      "nominal_ohm": 4,
+      "mms_g_published": 306,
+      "bl_tm_published": 15,
+      "source": "client brief 2026-10-31; original repo C02 and daytonaudio.com/product/126/rss390hf-4-15-reference-hf-subwoofer-4-ohm"
+    },
+    {
+      "id": "C11",
+      "name": "Dayton RSS390HE-22 series",
+      "fs_hz": 29,
+      "vas_l": 71.3,
+      "sd_cm2": 804,
+      "re_ohm": 4.3,
+      "le_mh": 2.2,
+      "qes": 0.58,
+      "qms": 4.59,
+      "xmax_oneway_mm": 27,
+      "nominal_ohm": 4,
+      "source": "original repo dane/przetworniki/pula_rozszerzona.json"
+    },
+    {
+      "id": "C06",
+      "name": "STX W.32.800.8.FCX",
+      "fs_hz": 24,
+      "vas_l": 96,
+      "sd_cm2": 491,
+      "re_ohm": 5.4,
+      "le_mh": 1.68,
+      "qes": 0.45,
+      "qms": 3.34,
+      "xmax_oneway_mm": 15,
+      "nominal_ohm": 8,
+      "source": "original repo dane/przetworniki/pula_rozszerzona.json"
+    },
+    {
+      "id": "N07",
+      "name": "PHL 6301MNd",
+      "fs_hz": 36,
+      "vas_l": 140,
+      "sd_cm2": 871,
+      "re_ohm": 5.4,
+      "le_mh": 1.616,
+      "qes": 0.28,
+      "qms": 3.39,
+      "xmax_oneway_mm": 10.5,
+      "nominal_ohm": 8,
+      "mms_g_published": 150,
+      "bl_tm_published": 25.5,
+      "source": "manufacturer PDF https://www.phlaudio.com/fileadmin/user_upload/phl_audio/6301MNd_SpecSheet.pdf; Le 1 kHz"
+    },
+    {
+      "id": "N05",
+      "name": "PURIFI PTT10.0X04-NAB-01",
+      "fs_hz": 24,
+      "vas_l": 82,
+      "sd_cm2": 360,
+      "re_ohm": 3.9,
+      "le_mh": 0.62,
+      "qes": 0.35,
+      "qms": 5.5,
+      "xmax_oneway_mm": 14.75,
+      "nominal_ohm": 4,
+      "mms_g_published": 98,
+      "bl_tm_published": 12.8,
+      "source": "official -01 https://purifi-audio.com/shop/ptt10-0x04-nab-01-ptt10-0x04-nab-01-2043; Le 1kHz"
+    }
+  ],
+  "amps": [
+    {
+      "id": "ICE300",
+      "name": "ICEpower 300AS1",
+      "gain_db": 28.15,
+      "rated_4ohm_W_1pct": 300,
+      "current_peak_A": 20,
+      "voltage_peak_V": 50,
+      "output_resistance_ohm": 0.006,
+      "source": "https://shop.icepoweraudio.com/product/300as1/; datasheet 2.2"
+    },
+    {
+      "id": "NC500MP",
+      "name": "Hypex NC500MP",
+      "gain_db": 25.5,
+      "rated_4ohm_W_1pct": 500,
+      "current_peak_A": 27,
+      "voltage_peak_V": null,
+      "output_resistance_ohm": 0.0026,
+      "continuous_w_per_4ohm_reference_25C": 100,
+      "source": "https://www.hypex.nl/media/64/53/92/1646059344/NC500_OEM_02xx_R11.pdf 04xx 2025-01-29"
+    },
+    {
+      "id": "NCx252MP",
+      "name": "Hypex NCx252MP one channel",
+      "gain_db": 25.5,
+      "rated_4ohm_W_1pct": 250,
+      "current_peak_A": 17.5,
+      "voltage_peak_V": null,
+      "output_resistance_ohm": 0.003,
+      "continuous_w_per_4ohm_reference_25C": 50,
+      "source": "https://www.hypex.nl/media/86/f4/49/1752661533/Hypex_NCx252MP_Datasheet_01xx_R03.pdf"
+    },
+    {
+      "id": "NC252MP",
+      "name": "Hypex NC252MP one channel",
+      "gain_db": 25.5,
+      "rated_4ohm_W_1pct": 250,
+      "current_peak_A": 17.5,
+      "voltage_peak_V": null,
+      "output_resistance_ohm": 0.003,
+      "continuous_w_per_4ohm_reference_25C": 50,
+      "source": "https://www.hypex.nl/media/7f/85/fa/1708610358/NC252MP_04xx_R14.pdf"
+    }
+  ],
+  "dsp": [
+    {
+      "id": "eight_rca",
+      "name": "Flex Eight RCA",
+      "vrms_max": 2,
+      "connection": "unbalanced",
+      "source": "https://www.minidsp.com/products/minidsp-in-a-box/minidsp-flex-eight"
+    },
+    {
+      "id": "htx_rca",
+      "name": "Flex HTx RCA",
+      "vrms_max": 2,
+      "connection": "unbalanced",
+      "source": "https://www.minidsp.com/products/ht-series/flex-htx"
+    },
+    {
+      "id": "htx_trs",
+      "name": "Flex HTx TRS",
+      "vrms_max": 4,
+      "connection": "balanced",
+      "source": "https://www.minidsp.com/products/ht-series/flex-htx"
+    }
+  ],
+  "notes": [
+    "Manufacturer 1kHz 1% rated watts do not imply allowable continuous acoustic bass SPL",
+    "Hypothetical voice-coil I² Re budget is NOT the 500W long-term thermal limit; no RC thermal model",
+    "Gain uses full scale DSP, no EQ boost; DSP output source impedance/limiter latency not modeled",
+    "AMPLIFIER nominal rated 4ohm power converted to voltage cap not universal power into non4ohm load",
+    "Use distinct amp Ipeak and Vpeak limits. Conservative sine peak-to-RMS conversion √2.",
+    "If manufacturer rated output / peak rms caps are inconsistent, smallest wins."
+  ]
+}

@@ -1,4 +1,5 @@
 # Indeks raportów SUB_prototyp
+- [Badanie P22C: impedancja zespolona, cztery końcówki mocy, trzy ścieżki DSP, 99 900 przypadków i poprawka RMS/Xmax](P22C_2026-10-31_wzmacniacze_impedancja_DSP_Xpeak.md).
 
 Aktualne wnioski i wybrane wykresy prowadzi [główny przewodnik](../README.md).
 Poniższy indeks zachowuje chronologię. Wcześniejsze raporty częściowe pozostają historią etapu;

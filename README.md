@@ -11,9 +11,9 @@ nie jest kandydatem na konstrukcję końcową.*
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**26 modeli głośników · 11 producentów · 66 raportów · Python**
+**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 66 raportów · Python**
 
-Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie.
+Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie. Aktualna pula obejmuje także dwa przypadki wstrzymane w nowym audycie źródeł (EMS i SUPRAVOX), a ponadto nie każda konfiguracja ma jeszcze pełny komplet badań nieliniowych i termicznych.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
 wypełnienie, wzmocnienia, klej, wzmacniacz i ustawienie w pokoju.
 Celem jest **jeden konkretny głośnik i jedna konstrukcja prototypu**
@@ -231,6 +231,30 @@ temperatury, prądu, zgodności wejścia i kompletnego kosztorysu.
 [Porównanie elektroniki i ochrony klienta](raporty/BRIEF_2026-10-31_wzmacniacz_DSP_i_9_marek.md)
 · [180 kontrolnych obliczeń Dayton](wyniki/brief20261031_180_swiadkow_Dayton.csv)
 · [konfiguracja DSP i 5 architektur](dane/konfiguracje/brief_klienta_20261031_wzmacniacz_dsp.json).
+
+**P22C: policzono zespoloną impedancję i ograniczenia rzeczywistego toru DSP–wzmacniacz.**
+Dla pięciu kandydatów, pięciu objętości, czterech modułów, trzech
+ścieżek DSP i trzech hipotetycznych budżetów strat cewki wykonano
+**99 900 obliczeń**, niezależnie odtworzonych w Pythonie.
+
+**Ważna korekta:** katalogowe Xmax to wychylenie **szczytowe**.
+W poprzednich tabelach 180 i 274 725 przypadków porównano je
+omyłkowo z wychyleniem RMS; oba zbiory **przeliczono ponownie**
+(bez przyznawania zmian w THD, których nie mierzono).
+
+![P22C — częstotliwościowa obwiednia napięcia, Xmax i mocy w 80 l](wyniki/107_P22C_wzmacniacz_DSP_Xmax.svg)
+
+W modelu 80l, C02, 40Hz, przy scenariuszu strat miedzianych
+250W, NC500MP z RCA 2Vrms osiąga modelowo 112,66dB,
+a z TRS 4Vrms 113,90dB (+1,24dB); przy 20Hz **zysk wynosi 0dB**,
+ponieważ ogranicza mechanika. To liniowe wyliczenia półprzestrzeni,
+nie czysty SPL w pokoju i nie końcowy limiter.
+
+[Raport P22C — impedancja, DSP, wzmacniacze i erratum RMS](raporty/P22C_2026-10-31_wzmacniacze_impedancja_DSP_Xpeak.md)
+· [900 grup wyników](wyniki/p22c_napiecie_prad_wychylenie_analiza.json)
+· [świadkowie](wyniki/p22c_swiadkowie_36.csv)
+· [skrypt](skrypty/p22c_naped_dsp_zespolona_impedancja.py)
+· [niezależny audyt](skrypty/p22c_niezalezna_kontrola.py).
 
 
 

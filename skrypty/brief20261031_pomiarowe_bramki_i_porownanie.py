@@ -3,7 +3,7 @@
 
 No inferred THD/IMD, compression, coil temperature, room SPL or final limiter.
 Original 24 drivers + 3 SB electric configurations (2 products) + 8 unique additional maker drivers = 35 electric configurations / 34 distinct products. PURIFI already in original 24; no duplicate.
-RMS harmonic electrical quantities and on-axis HALF-SPACE POINT SOURCE model.
+RMS harmonic electrical quantities and HALF-SPACE MONOPOLE model. CRITICAL: catalogue one-way Xmax is PEAK displacement, hence Xpk=sqrt(2)*Xrms under 1Vrms sinusoid.
 Output: wyniki/brief20261031_przeglad_modeli.csv,
 wyniki/brief20261031_akustyka_moc.csv, wyniki/brief20261031_dsp_wzmacniacze.csv
 """
@@ -157,7 +157,7 @@ def main():
         for vb in brief['sealed_volume_scenarios_l']:
             for f in range(10,121):
                 q=response(model,vb,f)
-                mech_v=x/q['x'] if x is not None else None
+                mech_v=x/(math.sqrt(2)*q['x']) if x is not None else None
                 # Thermal reference here is COIL I² Re only, using 100/300/500 W
                 # scenarios, not a manufacturer's AES/IEC power equivalence.
                 for heat_reference in [100,300,500]:
