@@ -88,3 +88,5 @@ bieżący zakres sprawdzaj w [programie 30 pakietów](../PROGRAM_30_BADAN.md).
 - [Raport 082 — P32A: 612 analiz drgań panelu i tłumienia](082_P32A_dynamika_panelu_wreg_i_tlumienia.md).
 
 - [Raport 083 — P33A: pierwszy globalny model energetyczny obudowy z frontem, wręgami i połączeniami](083_P33A_globalna_siatka_obudowy_i_spoin.md).
+
+- [Raport 084 — P33B: zintegrowany MES powłokowy Q4, 15 symulacji i kontrola płyty](084_P33B_globalny_MES_powlokowy_Q4.md).

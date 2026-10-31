@@ -11,7 +11,7 @@ nie jest kandydatem na konstrukcję końcową.*
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 83 raporty · Python/JavaScript**
+**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 84 raporty · Python/JavaScript**
 
 Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie. Aktualna pula obejmuje także dwa przypadki wstrzymane w nowym audycie źródeł (EMS i SUPRAVOX), a ponadto nie każda konfiguracja ma jeszcze pełny komplet badań nieliniowych i termicznych.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
@@ -98,6 +98,10 @@ Skróty wyjaśniamy w [krótkim słowniku](#slownik).
 ![P33A: uproszczona globalna siatka ścian, wręg i kosza](wyniki/p33a_siatka_calej_skrzyni.svg)
 
 *Połączono w jednym modelu sześć ścian, naroża, dwa obwody wręg, otwór frontowy, masę kosza i wkładów. **To uproszczony model energetyczny**, a nie jeszcze poprawny pełny MES powłokowy. [Raport 083](raporty/083_P33A_globalna_siatka_obudowy_i_spoin.md).*
+
+![P33B: dlaczego wyniki zmieniają się wraz z modelem powłokowym](wyniki/p33b_rozbieznosc_modeli.svg)
+
+*Po dodaniu obrotów węzłów i momentów połączeń model P33B dał znacznie inne ugięcie niż P33A. **To sygnał niepewności modelu, nie wskazanie „prawdziwej” liczby.** [Raport 084 — powłokowy MES Q4](raporty/084_P33B_globalny_MES_powlokowy_Q4.md).*
 
 ![P33A: zbieżność siatki i wrażliwość na połączenia naroży](wyniki/p33a_zbieznosc_ugiec.svg)
 
@@ -1377,3 +1381,10 @@ Nowy raport 082 zawiera **612 zespolonych obliczeń** wymuszonego ruchu pojedync
 **Raport 083:** 14 symulacji z sześcioma ścianami, otworem na głośnik, dwoma obwodami wręg, podatnością połączeń oraz hipotetyczną masą kosza i wkładów. Przeprowadzono kontrolę zbieżności siatki (140/105/80 mm) i poprawiono odwzorowanie kołowego otworu frontu za pomocą całkowania na 10×10 podkomórkach. Wyniki wskazują wysoką wrażliwość na sztywność naroży i rozkład masy. **Model jest wstępny i nie jest zwalidowanym MES powłokowym ani dokumentacją wykonawczą.**
 
 [Raport 083](raporty/083_P33A_globalna_siatka_obudowy_i_spoin.md) · [Kod Python](skrypty/p33a_global_shell_network.py) · [Podsumowanie JSON](wyniki/p33a_globalny_model_podsumowanie_20261031.json) · [Model siatki](wyniki/p33a_siatka_calej_skrzyni.svg) · [Wynik zbieżności](wyniki/p33a_zbieznosc_ugiec.svg).
+
+
+## P33B — globalny model powłokowy z obrotami węzłów (31.10.2026)
+
+**Raport 084:** wykonano 15 scenariuszy **MES Q4 Reissnera–Mindlina** z sześcioma ścianami, podatnymi narożami, uproszczonymi wręgami i masami. Test samej płyty 976×359×22 mm dał f1≈154,0 Hz przy 32×12 elementach wobec wzoru Kirchhoffa 156,24 Hz. Dla całej skrzyni amplitudy zależą silnie od metody modelowania i spoin: P33A i P33B różnią się ok. 4× przy tylko zbliżonych (nie równoważnych!) ustawieniach. **Nie jest to kompletna, pomiarowo zwalidowana analiza wytrzymałości ani zgoda na CNC.**
+
+[Raport 084](raporty/084_P33B_globalny_MES_powlokowy_Q4.md) · [Kod MES](skrypty/p33b_powlokowy_fem.py) · [Test płyty](skrypty/p33b_test_plyty_wzorcowej.py) · [15 wyników](wyniki/p33b_shell_podsumowanie_15_20261031.json) · [Grafika porównawcza](wyniki/p33b_rozbieznosc_modeli.svg).

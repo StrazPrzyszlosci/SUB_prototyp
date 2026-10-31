@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="555" viewBox="0 0 1040 555"><rect width="1040" height="555" fill="white"/><text x="40" y="44" font-family="Arial" font-size="26" font-weight="bold" fill="#183d55">Dlaczego potrzebujemy modelu powłokowego?</text><text x="40" y="74" font-family="Arial" font-size="16" fill="#536e7c">P33A vs P33B • umowny nacisk 1000 Pa • podobne, lecz nieidentyczne warunki połączeń</text>
+<text x="50" y="139" font-family="Arial" font-size="18" fill="#2d4a5d">Model uproszczony P33A (3DOF)</text>
+<rect x="50" y="168" width="660" height="75" rx="5" fill="#d7eaf3"/><rect x="50" y="168" width="604" height="75" rx="5" fill="#4e87ab"/><text x="690" y="214" font-family="Arial" font-size="21" fill="#183a53">330,7 µm</text>
+<text x="50" y="299" font-family="Arial" font-size="18" fill="#2d4a5d">Powłokowy MES P33B (6DOF)</text>
+<rect x="50" y="327" width="660" height="75" rx="5" fill="#e9f0e8"/><rect x="50" y="327" width="152" height="75" rx="5" fill="#6a9c79"/><text x="690" y="373" font-family="Arial" font-size="21" fill="#183a53">83,3 µm</text>
+<text x="50" y="462" font-family="Arial" font-size="16" fill="#2c5466">Około czterokrotna różnica to ostrzeżenie o zależności od modelu, a nie wynik pomiaru!</text>
+<text x="50" y="496" font-family="Arial" font-size="14" fill="#6a7c85">Brak kalibracji spoin i stopek; wartości nie są bezpośrednio porównywalną prognozą gotowej skrzyni.</text></svg>
