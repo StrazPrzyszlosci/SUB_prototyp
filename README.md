@@ -20,7 +20,7 @@ Celem jest **jeden konkretny głośnik i jedna konstrukcja prototypu**
 subwoofera zamkniętego z regulacją objętości. Szukamy możliwie
 **najtańszego przetwornika spełniającego wszystkie wymagania jednocześnie**,
 a nie „najlepszego głośnika w ogóle”. Koszt będzie kryterium końcowego
-porównania, ale obecne wyniki nie zawierają jeszcze cen.
+porównania, a dane cenowe obejmują obecnie tylko część modeli; nadal brakuje pełnego kosztorysu dwóch gotowych urządzeń.
 
 > **Stan projektu: badania przed budową.** Pokazane wykresy to obliczenia
 > i symulacje. Nie ma jeszcze pomiarów gotowego prototypu ani ostatecznego
