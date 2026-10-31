@@ -235,6 +235,7 @@ U/I, API miniDSP ani fizycznej skuteczności toru wyciszenia.
 [Raport 071 — P24F](raporty/071_P24F_obserwator_w_petli_i_brak_pobudzenia.md)
 · [Kod odtwarzający 192 przebiegi](skrypty/p24f_obserwator_i_ochrona.py)
 · [Wyniki CSV](wyniki/p24f_192_przypadkow.csv)
+· [Pełne trajektorie JSON](wyniki/p24f_192_trajektorii_20261031.json)
 · [Podsumowanie JSON](wyniki/p24f_podsumowanie_20261031.json).
 
 
