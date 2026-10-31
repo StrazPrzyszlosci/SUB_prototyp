@@ -1,0 +1,66 @@
+{
+  "scope": "Reduced opposing top/bottom panel pair. Finite perimeter springs terminate on a reference frame, not a computed full cabinet. Brace beams use centroidal EI, no composite eccentric membrane action. Axial legs plus two glue layers. 10mm front member is actual P20D proposal; 22mm comparison conflicts with access and is only mechanical counterfactual. No strength, fatigue, complete front-hole, fastener or cabinet safety qualification. Material and joint parameters are scenarios, not measured properties.",
+  "cases": 27,
+  "controls": [
+    {
+      "test": "series_glue_leg_compliance_algebra",
+      "E_MDF_Pa": 2100000000.0,
+      "leg_length_m": 0.412,
+      "glue_each_m": 0.00025,
+      "glue_compliance_fraction_of_leg_max": 0.05,
+      "required_Eglue_Pa": 50970873.78640777,
+      "meaning": "joint elastic compliance <=5% of axial leg compliance, not strength or whole-cabinet criterion"
+    },
+    {
+      "test": "independent_Navier_Mindlin",
+      "nx": 12,
+      "relative_compliance": -0.08673210088378502,
+      "relative_f1": 0.04371241127729597
+    },
+    {
+      "test": "independent_Navier_Mindlin",
+      "nx": 20,
+      "relative_compliance": -0.03405906853579921,
+      "relative_f1": 0.016655575611615125
+    },
+    {
+      "test": "independent_Navier_Mindlin",
+      "nx": 32,
+      "relative_compliance": -0.012968169163913745,
+      "relative_f1": 0.0062540072450567585
+    },
+    {
+      "test": "independent_Navier_Mindlin",
+      "nx": 48,
+      "relative_compliance": -0.006061416125773267,
+      "relative_f1": 0.0029161168785705183
+    },
+    {
+      "test": "independent_Navier_Mindlin",
+      "nx": 64,
+      "relative_compliance": -0.00349782306458557,
+      "relative_f1": 0.0016816432500497136
+    },
+    {
+      "test": "independent_elastic_end_beam_formula",
+      "elements": 4,
+      "relative_midspan": 5.662137425588298e-15
+    },
+    {
+      "test": "independent_elastic_end_beam_formula",
+      "elements": 8,
+      "relative_midspan": 8.948397578478762e-14
+    },
+    {
+      "test": "independent_elastic_end_beam_formula",
+      "elements": 16,
+      "relative_midspan": 1.6218137943724287e-12
+    }
+  ],
+  "software": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "acceptance": "Equilibrium/energy residual <1e-7. Mesh changes reported, not assumed <5%. No material strength threshold supplied."
+}

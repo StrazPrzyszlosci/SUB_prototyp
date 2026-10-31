@@ -1,0 +1,1568 @@
+[
+  {
+    "E": 2100000000.0,
+    "Eg": 100000000.0,
+    "kt": 10000000.0,
+    "kr": 1000,
+    "front": 0.01,
+    "parity": "breathing",
+    "braced": true,
+    "nx": 12,
+    "ny": 5,
+    "dof": 234,
+    "f1_Hz": 152.6411230115211,
+    "f2_Hz": 196.8861648825935,
+    "compliance_m3_Pa": 1.660310191086787e-08,
+    "wmax_m_Pa": 9.070048736506059e-08,
+    "surface_stress_bound_Pa_Pa": 171.6274495824388,
+    "max_leg_force_N_Pa": 0.04153956453164692,
+    "max_leg_axial_stress_Pa_Pa": 111.57017742154854,
+    "reaction_balance_relative": 7.762841948299755e-16,
+    "static_energy_relative": 1.8732638755674594e-14,
+    "linear_residual": 5.658224680377166e-13,
+    "gravity_common_normal_deflection_m": null,
+    "gravity_scope": "horizontal: top/bottom normal load; vertical: normal component zero, in-plane load NOT modelled",
+    "harmonics": [
+      {
+        "f_Hz": 20,
+        "leg_mean_axial_stress_per_Papeak": 113.45437236081541,
+        "beam_centroid_bending_stress_per_Papeak": 996.6227396992866,
+        "w_peak_per_Papeak_m": 9.240575808185018e-08,
+        "max_surface_stress_per_Papeak": 174.48155073683765,
+        "power_residual": 1.7808423373370948e-14
+      },
+      {
+        "f_Hz": 40,
+        "leg_mean_axial_stress_per_Papeak": 119.53351605763753,
+        "beam_centroid_bending_stress_per_Papeak": 1049.1302903345093,
+        "w_peak_per_Papeak_m": 9.790632515472533e-08,
+        "max_surface_stress_per_Papeak": 183.64816158471538,
+        "power_residual": 1.3655470848992705e-14
+      },
+      {
+        "f_Hz": 80,
+        "leg_mean_axial_stress_per_Papeak": 152.67131971896663,
+        "beam_centroid_bending_stress_per_Papeak": 1329.9921512346673,
+        "w_peak_per_Papeak_m": 1.278635156506988e-07,
+        "max_surface_stress_per_Papeak": 233.1835026698961,
+        "power_residual": 1.1136509611523073e-16
+      },
+      {
+        "f_Hz": 160,
+        "leg_mean_axial_stress_per_Papeak": 961.3247310880831,
+        "beam_centroid_bending_stress_per_Papeak": 7168.075158498682,
+        "w_peak_per_Papeak_m": 8.776480069803853e-07,
+        "max_surface_stress_per_Papeak": 1669.8549301334542,
+        "power_residual": 3.537215829445283e-14
+      }
+    ]
+  },
+  {
+    "E": 2100000000.0,
+    "Eg": 100000000.0,
+    "kt": 10000000.0,
+    "kr": 1000,
+    "front": 0.022,
+    "parity": "breathing",
+    "braced": true,
+    "nx": 12,
+    "ny": 5,
+    "dof": 234,
+    "f1_Hz": 157.28454701001812,
+    "f2_Hz": 199.77529865774898,
+    "compliance_m3_Pa": 1.564148324839253e-08,
+    "wmax_m_Pa": 8.410808856118802e-08,
+    "surface_stress_bound_Pa_Pa": 167.7545076942105,
+    "max_leg_force_N_Pa": 0.041160444745053294,
+    "max_leg_axial_stress_Pa_Pa": 85.04224120878781,
+    "reaction_balance_relative": 1.2886317634177594e-14,
+    "static_energy_relative": 2.8345701062205063e-14,
+    "linear_residual": 5.492091217290406e-13,
+    "gravity_common_normal_deflection_m": null,
+    "gravity_scope": "horizontal: top/bottom normal load; vertical: normal component zero, in-plane load NOT modelled",
+    "harmonics": [
+      {
+        "f_Hz": 20,
+        "leg_mean_axial_stress_per_Papeak": 86.38911430569068,
+        "beam_centroid_bending_stress_per_Papeak": 972.6273682960597,
+        "w_peak_per_Papeak_m": 8.559778975613534e-08,
+        "max_surface_stress_per_Papeak": 170.421431470797,
+        "power_residual": 2.2160381341227046e-15
+      },
+      {
+        "f_Hz": 40,
+        "leg_mean_axial_stress_per_Papeak": 90.71572636103056,
+        "beam_centroid_bending_stress_per_Papeak": 1021.5293073278069,
+        "w_peak_per_Papeak_m": 9.038274495107548e-08,
+        "max_surface_stress_per_Papeak": 178.955320416553,
+        "power_residual": 6.019680521887855e-16
+      },
+      {
+        "f_Hz": 80,
+        "leg_mean_axial_stress_per_Papeak": 113.81071123815184,
+        "beam_centroid_bending_stress_per_Papeak": 1278.389458594335,
+        "w_peak_per_Papeak_m": 1.1591479018655778e-07,
+        "max_surface_stress_per_Papeak": 223.80889598379463,
+        "power_residual": 2.248301139687058e-14
+      },
+      {
+        "f_Hz": 160,
+        "leg_mean_axial_stress_per_Papeak": 1215.8959730835045,
+        "beam_centroid_bending_stress_per_Papeak": 12297.868725231798,
+        "w_peak_per_Papeak_m": 1.3484689548736087e-06,
+        "max_surface_stress_per_Papeak": 2686.779956863381,
+        "power_residual": 8.477550239964612e-14
+      }
+    ]
+  },
+  {
+    "E": 2100000000.0,
+    "Eg": 100000000.0,
+    "kt": 10000000.0,
+    "kr": 1000,
+    "front": 0.01,
+    "parity": "breathing",
+    "braced": false,
+    "nx": 12,
+    "ny": 5,
+    "dof": 234,
+    "f1_Hz": 139.2065650390981,
+    "f2_Hz": 182.46744463971498,
+    "compliance_m3_Pa": 2.213138192663662e-08,
+    "wmax_m_Pa": 1.1709851671552825e-07,
+    "surface_stress_bound_Pa_Pa": 187.57439412679102,
+    "max_leg_force_N_Pa": 0,
+    "max_leg_axial_stress_Pa_Pa": 0.0,
+    "reaction_balance_relative": 1.7388765964191452e-14,
+    "static_energy_relative": 8.671211890357856e-14,
+    "linear_residual": 4.276728881363233e-13,
+    "gravity_common_normal_deflection_m": null,
+    "gravity_scope": "horizontal: top/bottom normal load; vertical: normal component zero, in-plane load NOT modelled",
+    "harmonics": [
+      {
+        "f_Hz": 20,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 0.0,
+        "w_peak_per_Papeak_m": 1.197353754873757e-07,
+        "max_surface_stress_per_Papeak": 192.01249884639128,
+        "power_residual": 1.9612702646060204e-14
+      },
+      {
+        "f_Hz": 40,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 0.0,
+        "w_peak_per_Papeak_m": 1.2836867359357447e-07,
+        "max_surface_stress_per_Papeak": 206.54807662989816,
+        "power_residual": 5.267786081088315e-15
+      },
+      {
+        "f_Hz": 80,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 0.0,
+        "w_peak_per_Papeak_m": 1.7906750204181695e-07,
+        "max_surface_stress_per_Papeak": 292.0154065011333,
+        "power_residual": 2.185844567121878e-14
+      },
+      {
+        "f_Hz": 160,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 0.0,
+        "w_peak_per_Papeak_m": 4.097525256855565e-07,
+        "max_surface_stress_per_Papeak": 705.078008405085,
+        "power_residual": 3.1993541205840336e-13
+      }
+    ]
+  },
+  {
+    "E": 2100000000.0,
+    "Eg": 100000000.0,
+    "kt": 10000000.0,
+    "kr": 1000,
+    "front": 0.01,
+    "parity": "breathing",
+    "braced": true,
+    "nx": 20,
+    "ny": 8,
+    "dof": 567,
+    "f1_Hz": 146.20494577045528,
+    "f2_Hz": 188.60514988438237,
+    "compliance_m3_Pa": 1.8237926426470396e-08,
+    "wmax_m_Pa": 1.0043507874860444e-07,
+    "surface_stress_bound_Pa_Pa": 168.80665682358614,
+    "max_leg_force_N_Pa": 0.038132317392607425,
+    "max_leg_axial_stress_Pa_Pa": 103.80632125410963,
+    "reaction_balance_relative": 1.198582796817482e-13,
+    "static_energy_relative": 4.136373297095041e-14,
+    "linear_residual": 1.2904185709784099e-12,
+    "gravity_common_normal_deflection_m": null,
+    "gravity_scope": "horizontal: top/bottom normal load; vertical: normal component zero, in-plane load NOT modelled",
+    "harmonics": [
+      {
+        "f_Hz": 20,
+        "leg_mean_axial_stress_per_Papeak": 105.742710858085,
+        "beam_centroid_bending_stress_per_Papeak": 436.8893341670758,
+        "w_peak_per_Papeak_m": 1.02495037487645e-07,
+        "max_surface_stress_per_Papeak": 172.4376288421852,
+        "power_residual": 2.753255644215322e-14
+      },
+      {
+        "f_Hz": 40,
+        "leg_mean_axial_stress_per_Papeak": 112.03478931794606,
+        "beam_centroid_bending_stress_per_Papeak": 462.88776120832483,
+        "w_peak_per_Papeak_m": 1.0918457339275063e-07,
+        "max_surface_stress_per_Papeak": 184.23408823964348,
+        "power_residual": 2.8735870780010635e-14
+      },
+      {
+        "f_Hz": 80,
+        "leg_mean_axial_stress_per_Papeak": 147.5491758745626,
+        "beam_centroid_bending_stress_per_Papeak": 607.2267800294578,
+        "w_peak_per_Papeak_m": 1.4685051236387376e-07,
+        "max_surface_stress_per_Papeak": 250.7677599223369,
+        "power_residual": 5.418265778654721e-15
+      },
+      {
+        "f_Hz": 160,
+        "leg_mean_axial_stress_per_Papeak": 522.2854320562975,
+        "beam_centroid_bending_stress_per_Papeak": 1890.7871897475482,
+        "w_peak_per_Papeak_m": 5.544326595732596e-07,
+        "max_surface_stress_per_Papeak": 996.5865087335944,
+        "power_residual": 7.475152460093721e-14
+      }
+    ]
+  },
+  {
+    "E": 2100000000.0,
+    "Eg": 100000000.0,
+    "kt": 10000000.0,
+    "kr": 1000,
+    "front": 0.022,
+    "parity": "breathing",
+    "braced": true,
+    "nx": 20,
+    "ny": 8,
+    "dof": 567,
+    "f1_Hz": 150.10088242093855,
+    "f2_Hz": 191.32627269680978,
+    "compliance_m3_Pa": 1.7284844358841586e-08,
+    "wmax_m_Pa": 9.478508733068993e-08,
+    "surface_stress_bound_Pa_Pa": 164.89392911122582,
+    "max_leg_force_N_Pa": 0.0377273742427324,
+    "max_leg_axial_stress_Pa_Pa": 77.94912033622397,
+    "reaction_balance_relative": 1.356944772562797e-13,
+    "static_energy_relative": 4.938721890880454e-14,
+    "linear_residual": 1.2803127757615026e-12,
+    "gravity_common_normal_deflection_m": null,
+    "gravity_scope": "horizontal: top/bottom normal load; vertical: normal component zero, in-plane load NOT modelled",
+    "harmonics": [
+      {
+        "f_Hz": 20,
+        "leg_mean_axial_stress_per_Papeak": 79.32267922703748,
+        "beam_centroid_bending_stress_per_Papeak": 428.495567278124,
+        "w_peak_per_Papeak_m": 9.662843017162357e-08,
+        "max_surface_stress_per_Papeak": 168.25676590968627,
+        "power_residual": 5.290424845118741e-14
+      },
+      {
+        "f_Hz": 40,
+        "leg_mean_axial_stress_per_Papeak": 83.76665279397088,
+        "beam_centroid_bending_stress_per_Papeak": 452.98537836082414,
+        "w_peak_per_Papeak_m": 1.0258980522417054e-07,
+        "max_surface_stress_per_Papeak": 179.13529474441617,
+        "power_residual": 1.1596298487057782e-14
+      },
+      {
+        "f_Hz": 80,
+        "leg_mean_axial_stress_per_Papeak": 108.32120795770219,
+        "beam_centroid_bending_stress_per_Papeak": 586.5012605457187,
+        "w_peak_per_Papeak_m": 1.3547165777929314e-07,
+        "max_surface_stress_per_Papeak": 239.20464349396678,
+        "power_residual": 5.3081652412006436e-14
+      },
+      {
+        "f_Hz": 160,
+        "leg_mean_axial_stress_per_Papeak": 536.7821295052098,
+        "beam_centroid_bending_stress_per_Papeak": 2700.786718944173,
+        "w_peak_per_Papeak_m": 7.185878975974099e-07,
+        "max_surface_stress_per_Papeak": 1329.7184581754013,
+        "power_residual": 2.2468535987783622e-13
+      }
+    ]
+  },
+  {
+    "E": 2100000000.0,
+    "Eg": 100000000.0,
+    "kt": 10000000.0,
+    "kr": 1000,
+    "front": 0.01,
+    "parity": "breathing",
+    "braced": false,
+    "nx": 20,
+    "ny": 8,
+    "dof": 567,
+    "f1_Hz": 136.00968398217827,
+    "f2_Hz": 178.68707414916943,
+    "compliance_m3_Pa": 2.3151457848937408e-08,
+    "wmax_m_Pa": 1.2553933275932457e-07,
+    "surface_stress_bound_Pa_Pa": 187.77378322901757,
+    "max_leg_force_N_Pa": 0,
+    "max_leg_axial_stress_Pa_Pa": 0.0,
+    "reaction_balance_relative": 1.487360517294233e-13,
+    "static_energy_relative": 2.4152867509875252e-14,
+    "linear_residual": 1.393294741231348e-12,
+    "gravity_common_normal_deflection_m": null,
+    "gravity_scope": "horizontal: top/bottom normal load; vertical: normal component zero, in-plane load NOT modelled",
+    "harmonics": [
+      {
+        "f_Hz": 20,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 0.0,
+        "w_peak_per_Papeak_m": 1.2850430699987189e-07,
+        "max_surface_stress_per_Papeak": 192.43852886491652,
+        "power_residual": 2.0700576816419357e-14
+      },
+      {
+        "f_Hz": 40,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 0.0,
+        "w_peak_per_Papeak_m": 1.3825402914098902e-07,
+        "max_surface_stress_per_Papeak": 207.78401347139578,
+        "power_residual": 9.982247238157615e-15
+      },
+      {
+        "f_Hz": 80,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 0.0,
+        "w_peak_per_Papeak_m": 1.9682884424095362e-07,
+        "max_surface_stress_per_Papeak": 300.12358194234037,
+        "power_residual": 4.3792146621984494e-14
+      },
+      {
+        "f_Hz": 160,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 0.0,
+        "w_peak_per_Papeak_m": 3.73454348569768e-07,
+        "max_surface_stress_per_Papeak": 604.331043698558,
+        "power_residual": 7.180722973240903e-14
+      }
+    ]
+  },
+  {
+    "E": 2100000000.0,
+    "Eg": 100000000.0,
+    "kt": 10000000.0,
+    "kr": 1000,
+    "front": 0.01,
+    "parity": "breathing",
+    "braced": true,
+    "nx": 32,
+    "ny": 13,
+    "dof": 1386,
+    "f1_Hz": 144.26523954433605,
+    "f2_Hz": 186.0129659552483,
+    "compliance_m3_Pa": 1.87691912701851e-08,
+    "wmax_m_Pa": 1.0197836064574218e-07,
+    "surface_stress_bound_Pa_Pa": 173.03628516336758,
+    "max_leg_force_N_Pa": 0.03816999873203574,
+    "max_leg_axial_stress_Pa_Pa": 103.69869240497867,
+    "reaction_balance_relative": 2.654891946318532e-14,
+    "static_energy_relative": 3.913521756869201e-14,
+    "linear_residual": 3.835018042414096e-12,
+    "gravity_common_normal_deflection_m": null,
+    "gravity_scope": "horizontal: top/bottom normal load; vertical: normal component zero, in-plane load NOT modelled",
+    "harmonics": [
+      {
+        "f_Hz": 20,
+        "leg_mean_axial_stress_per_Papeak": 105.68579964233662,
+        "beam_centroid_bending_stress_per_Papeak": 202.68993505602194,
+        "w_peak_per_Papeak_m": 1.0411918657901204e-07,
+        "max_surface_stress_per_Papeak": 176.88741666074776,
+        "power_residual": 1.057804250822025e-14
+      },
+      {
+        "f_Hz": 40,
+        "leg_mean_axial_stress_per_Papeak": 112.15718300057527,
+        "beam_centroid_bending_stress_per_Papeak": 215.15903934924052,
+        "w_peak_per_Papeak_m": 1.1108643288716632e-07,
+        "max_surface_stress_per_Papeak": 189.42719186698605,
+        "power_residual": 5.603573633128069e-14
+      },
+      {
+        "f_Hz": 80,
+        "leg_mean_axial_stress_per_Papeak": 149.09878012216745,
+        "beam_centroid_bending_stress_per_Papeak": 285.1859919296161,
+        "w_peak_per_Papeak_m": 1.5082708903265654e-07,
+        "max_surface_stress_per_Papeak": 260.9444366804738,
+        "power_residual": 4.4485578772748746e-14
+      },
+      {
+        "f_Hz": 160,
+        "leg_mean_axial_stress_per_Papeak": 456.059220779734,
+        "beam_centroid_bending_stress_per_Papeak": 798.1511348128921,
+        "w_peak_per_Papeak_m": 4.912369811385421e-07,
+        "max_surface_stress_per_Papeak": 900.8679184899603,
+        "power_residual": 4.072166007151264e-14
+      }
+    ]
+  },
+  {
+    "E": 2100000000.0,
+    "Eg": 100000000.0,
+    "kt": 10000000.0,
+    "kr": 1000,
+    "front": 0.022,
+    "parity": "breathing",
+    "braced": true,
+    "nx": 32,
+    "ny": 13,
+    "dof": 1386,
+    "f1_Hz": 148.01174437902762,
+    "f2_Hz": 188.61137861068073,
+    "compliance_m3_Pa": 1.7809587032735063e-08,
+    "wmax_m_Pa": 9.592078101350835e-08,
+    "surface_stress_bound_Pa_Pa": 169.59417709454812,
+    "max_leg_force_N_Pa": 0.03778588325285594,
+    "max_leg_axial_stress_Pa_Pa": 78.07000672077673,
+    "reaction_balance_relative": 2.8567258369743265e-14,
+    "static_energy_relative": 1.6163140259195914e-14,
+    "linear_residual": 4.389619034331791e-12,
+    "gravity_common_normal_deflection_m": null,
+    "gravity_scope": "horizontal: top/bottom normal load; vertical: normal component zero, in-plane load NOT modelled",
+    "harmonics": [
+      {
+        "f_Hz": 20,
+        "leg_mean_axial_stress_per_Papeak": 79.48407449002109,
+        "beam_centroid_bending_stress_per_Papeak": 199.06276806555113,
+        "w_peak_per_Papeak_m": 9.783452231845611e-08,
+        "max_surface_stress_per_Papeak": 173.17809608865753,
+        "power_residual": 4.965442061231304e-14
+      },
+      {
+        "f_Hz": 40,
+        "leg_mean_axial_stress_per_Papeak": 84.06922512171418,
+        "beam_centroid_bending_stress_per_Papeak": 210.83706636921414,
+        "w_peak_per_Papeak_m": 1.0404719684185007e-07,
+        "max_surface_stress_per_Papeak": 184.7992672622166,
+        "power_residual": 9.178613513586882e-14
+      },
+      {
+        "f_Hz": 80,
+        "leg_mean_axial_stress_per_Papeak": 109.68250373365697,
+        "beam_centroid_bending_stress_per_Papeak": 275.75302613791183,
+        "w_peak_per_Papeak_m": 1.386870856492745e-07,
+        "max_surface_stress_per_Papeak": 249.71431316153024,
+        "power_residual": 1.1478042634268858e-13
+      },
+      {
+        "f_Hz": 160,
+        "leg_mean_axial_stress_per_Papeak": 449.39854470021305,
+        "beam_centroid_bending_stress_per_Papeak": 1055.9928175942425,
+        "w_peak_per_Papeak_m": 6.077560857781e-07,
+        "max_surface_stress_per_Papeak": 1160.340553435099,
+        "power_residual": 7.661265431470298e-13
+      }
+    ]
+  },
+  {
+    "E": 2100000000.0,
+    "Eg": 100000000.0,
+    "kt": 10000000.0,
+    "kr": 1000,
+    "front": 0.01,
+    "parity": "breathing",
+    "braced": false,
+    "nx": 32,
+    "ny": 13,
+    "dof": 1386,
+    "f1_Hz": 134.7118502425908,
+    "f2_Hz": 177.1287814667056,
+    "compliance_m3_Pa": 2.3578800669098316e-08,
+    "wmax_m_Pa": 1.2625534470600796e-07,
+    "surface_stress_bound_Pa_Pa": 192.20059375181052,
+    "max_leg_force_N_Pa": 0,
+    "max_leg_axial_stress_Pa_Pa": 0.0,
+    "reaction_balance_relative": 6.117119455260243e-14,
+    "static_energy_relative": 3.297664655263319e-14,
+    "linear_residual": 5.025025198331289e-12,
+    "gravity_common_normal_deflection_m": null,
+    "gravity_scope": "horizontal: top/bottom normal load; vertical: normal component zero, in-plane load NOT modelled",
+    "harmonics": [
+      {
+        "f_Hz": 20,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 0.0,
+        "w_peak_per_Papeak_m": 1.2929441833959123e-07,
+        "max_surface_stress_per_Papeak": 197.08907592933627,
+        "power_residual": 6.035437499433982e-14
+      },
+      {
+        "f_Hz": 40,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 0.0,
+        "w_peak_per_Papeak_m": 1.3930635182673896e-07,
+        "max_surface_stress_per_Papeak": 213.20078872749244,
+        "power_residual": 3.4183422106642416e-14
+      },
+      {
+        "f_Hz": 80,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 0.0,
+        "w_peak_per_Papeak_m": 2.0005452953741018e-07,
+        "max_surface_stress_per_Papeak": 311.12269786658317,
+        "power_residual": 1.4860428995812292e-14
+      },
+      {
+        "f_Hz": 160,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 0.0,
+        "w_peak_per_Papeak_m": 3.530164316917606e-07,
+        "max_surface_stress_per_Papeak": 585.9596361171456,
+        "power_residual": 3.5518161208758294e-13
+      }
+    ]
+  },
+  {
+    "E": 2100000000.0,
+    "Eg": 100000000.0,
+    "kt": 10000000.0,
+    "kr": 1000,
+    "front": 0.01,
+    "parity": "breathing",
+    "braced": true,
+    "nx": 48,
+    "ny": 19,
+    "dof": 2940,
+    "f1_Hz": 143.54247058722112,
+    "f2_Hz": 185.08945940092232,
+    "compliance_m3_Pa": 1.8968726671394764e-08,
+    "wmax_m_Pa": 1.0303795614929736e-07,
+    "surface_stress_bound_Pa_Pa": 173.8937047211863,
+    "max_leg_force_N_Pa": 0.03756607992973589,
+    "max_leg_axial_stress_Pa_Pa": 102.430382170403,
+    "reaction_balance_relative": 1.0355631159031908e-13,
+    "static_energy_relative": 1.5506861948062866e-13,
+    "linear_residual": 9.983493312276363e-12,
+    "gravity_common_normal_deflection_m": null,
+    "gravity_scope": "horizontal: top/bottom normal load; vertical: normal component zero, in-plane load NOT modelled",
+    "harmonics": [
+      {
+        "f_Hz": 20,
+        "leg_mean_axial_stress_per_Papeak": 104.41452492093542,
+        "beam_centroid_bending_stress_per_Papeak": 162.8427377305509,
+        "w_peak_per_Papeak_m": 1.052258365320174e-07,
+        "max_surface_stress_per_Papeak": 177.81354548825095,
+        "power_residual": 2.379560268708178e-14
+      },
+      {
+        "f_Hz": 40,
+        "leg_mean_axial_stress_per_Papeak": 110.88180558416417,
+        "beam_centroid_bending_stress_per_Papeak": 174.2980959499267,
+        "w_peak_per_Papeak_m": 1.1235242357048009e-07,
+        "max_surface_stress_per_Papeak": 190.5871567245501,
+        "power_residual": 4.9219311894011465e-14
+      },
+      {
+        "f_Hz": 80,
+        "leg_mean_axial_stress_per_Papeak": 147.9610805939436,
+        "beam_centroid_bending_stress_per_Papeak": 239.767955961704,
+        "w_peak_per_Papeak_m": 1.5310148319532426e-07,
+        "max_surface_stress_per_Papeak": 263.744849941131,
+        "power_residual": 2.789580759620706e-14
+      },
+      {
+        "f_Hz": 160,
+        "leg_mean_axial_stress_per_Papeak": 430.03897403426384,
+        "beam_centroid_bending_stress_per_Papeak": 761.3139396627136,
+        "w_peak_per_Papeak_m": 4.733291024813286e-07,
+        "max_surface_stress_per_Papeak": 865.9600920324665,
+        "power_residual": 1.755002183974168e-12
+      }
+    ]
+  },
+  {
+    "E": 2100000000.0,
+    "Eg": 100000000.0,
+    "kt": 10000000.0,
+    "kr": 1000,
+    "front": 0.022,
+    "parity": "breathing",
+    "braced": true,
+    "nx": 48,
+    "ny": 19,
+    "dof": 2940,
+    "f1_Hz": 147.1855311160646,
+    "f2_Hz": 187.6146272979975,
+    "compliance_m3_Pa": 1.8021031570325087e-08,
+    "wmax_m_Pa": 9.716924019957797e-08,
+    "surface_stress_bound_Pa_Pa": 170.56823926726898,
+    "max_leg_force_N_Pa": 0.03721704252836189,
+    "max_leg_axial_stress_Pa_Pa": 76.89471596768986,
+    "reaction_balance_relative": 2.8272270375707805e-13,
+    "static_energy_relative": 3.194698949892144e-14,
+    "linear_residual": 1.2184383976956298e-11,
+    "gravity_common_normal_deflection_m": null,
+    "gravity_scope": "horizontal: top/bottom normal load; vertical: normal component zero, in-plane load NOT modelled",
+    "harmonics": [
+      {
+        "f_Hz": 20,
+        "leg_mean_axial_stress_per_Papeak": 78.30429908590598,
+        "beam_centroid_bending_stress_per_Papeak": 160.8391761134598,
+        "w_peak_per_Papeak_m": 9.912813744936654e-08,
+        "max_surface_stress_per_Papeak": 174.22522229833612,
+        "power_residual": 1.0006137924387688e-14
+      },
+      {
+        "f_Hz": 40,
+        "leg_mean_axial_stress_per_Papeak": 82.8790364453629,
+        "beam_centroid_bending_stress_per_Papeak": 171.57336347164366,
+        "w_peak_per_Papeak_m": 1.0548242530344684e-07,
+        "max_surface_stress_per_Papeak": 186.09388018776758,
+        "power_residual": 1.938052710658139e-13
+      },
+      {
+        "f_Hz": 80,
+        "leg_mean_axial_stress_per_Papeak": 108.54932675749866,
+        "beam_centroid_bending_stress_per_Papeak": 231.68407959467376,
+        "w_peak_per_Papeak_m": 1.4112134838903157e-07,
+        "max_surface_stress_per_Papeak": 252.6867917754032,
+        "power_residual": 5.858380615536947e-14
+      },
+      {
+        "f_Hz": 160,
+        "leg_mean_axial_stress_per_Papeak": 415.0378408317814,
+        "beam_centroid_bending_stress_per_Papeak": 977.2197566174405,
+        "w_peak_per_Papeak_m": 5.772230089703299e-07,
+        "max_surface_stress_per_Papeak": 1098.7682174041447,
+        "power_residual": 1.7888520419915478e-13
+      }
+    ]
+  },
+  {
+    "E": 2100000000.0,
+    "Eg": 100000000.0,
+    "kt": 10000000.0,
+    "kr": 1000,
+    "front": 0.01,
+    "parity": "breathing",
+    "braced": false,
+    "nx": 48,
+    "ny": 19,
+    "dof": 2940,
+    "f1_Hz": 134.25753236263685,
+    "f2_Hz": 176.52690516533886,
+    "compliance_m3_Pa": 2.3730132695301964e-08,
+    "wmax_m_Pa": 1.2720761516490023e-07,
+    "surface_stress_bound_Pa_Pa": 192.75844140788476,
+    "max_leg_force_N_Pa": 0,
+    "max_leg_axial_stress_Pa_Pa": 0.0,
+    "reaction_balance_relative": 4.712045062617967e-13,
+    "static_energy_relative": 2.6854461881581294e-13,
+    "linear_residual": 1.1721417726889535e-11,
+    "gravity_common_normal_deflection_m": null,
+    "gravity_scope": "horizontal: top/bottom normal load; vertical: normal component zero, in-plane load NOT modelled",
+    "harmonics": [
+      {
+        "f_Hz": 20,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 0.0,
+        "w_peak_per_Papeak_m": 1.3029093354202253e-07,
+        "max_surface_stress_per_Papeak": 197.6973100101379,
+        "power_residual": 1.612999547345309e-14
+      },
+      {
+        "f_Hz": 40,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 0.0,
+        "w_peak_per_Papeak_m": 1.40455372335243e-07,
+        "max_surface_stress_per_Papeak": 213.9860781499561,
+        "power_residual": 5.656285963617194e-14
+      },
+      {
+        "f_Hz": 80,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 0.0,
+        "w_peak_per_Papeak_m": 2.0234888101927498e-07,
+        "max_surface_stress_per_Papeak": 313.34140568020126,
+        "power_residual": 1.1473381253464057e-13
+      },
+      {
+        "f_Hz": 160,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 0.0,
+        "w_peak_per_Papeak_m": 3.4838121920610575e-07,
+        "max_surface_stress_per_Papeak": 576.4122106758851,
+        "power_residual": 7.391109068446679e-13
+      }
+    ]
+  },
+  {
+    "E": 2100000000.0,
+    "Eg": 100000000.0,
+    "kt": 10000000.0,
+    "kr": 1000,
+    "front": 0.01,
+    "parity": "breathing",
+    "braced": true,
+    "nx": 64,
+    "ny": 25,
+    "dof": 5070,
+    "f1_Hz": 143.30533263139878,
+    "f2_Hz": 184.7547287844697,
+    "compliance_m3_Pa": 1.9034747767801515e-08,
+    "wmax_m_Pa": 1.0336970720226007e-07,
+    "surface_stress_bound_Pa_Pa": 175.25634170462575,
+    "max_leg_force_N_Pa": 0.037368515174528986,
+    "max_leg_axial_stress_Pa_Pa": 102.0062333725831,
+    "reaction_balance_relative": 9.316962906349473e-13,
+    "static_energy_relative": 1.89122024086929e-13,
+    "linear_residual": 3.218369926402406e-11,
+    "gravity_common_normal_deflection_m": null,
+    "gravity_scope": "horizontal: top/bottom normal load; vertical: normal component zero, in-plane load NOT modelled",
+    "harmonics": [
+      {
+        "f_Hz": 20,
+        "leg_mean_axial_stress_per_Papeak": 103.9886644879452,
+        "beam_centroid_bending_stress_per_Papeak": 162.93454085563596,
+        "w_peak_per_Papeak_m": 1.0556884187914928e-07,
+        "max_surface_stress_per_Papeak": 178.6874420225887,
+        "power_residual": 1.9150821253147867e-13
+      },
+      {
+        "f_Hz": 40,
+        "leg_mean_axial_stress_per_Papeak": 110.45218083006866,
+        "beam_centroid_bending_stress_per_Papeak": 174.43932867374406,
+        "w_peak_per_Papeak_m": 1.1274320972122094e-07,
+        "max_surface_stress_per_Papeak": 191.16562461138284,
+        "power_residual": 4.3698104537707125e-14
+      },
+      {
+        "f_Hz": 80,
+        "leg_mean_axial_stress_per_Papeak": 147.56294619555902,
+        "beam_centroid_bending_stress_per_Papeak": 240.2903942989444,
+        "w_peak_per_Papeak_m": 1.5385180245495811e-07,
+        "max_surface_stress_per_Papeak": 264.8244743356001,
+        "power_residual": 2.59529687092997e-13
+      },
+      {
+        "f_Hz": 160,
+        "leg_mean_axial_stress_per_Papeak": 421.69290160258146,
+        "beam_centroid_bending_stress_per_Papeak": 750.843521443459,
+        "w_peak_per_Papeak_m": 4.676780200519797e-07,
+        "max_surface_stress_per_Papeak": 853.5746158829118,
+        "power_residual": 1.7032382626624963e-12
+      }
+    ]
+  },
+  {
+    "E": 2100000000.0,
+    "Eg": 100000000.0,
+    "kt": 10000000.0,
+    "kr": 1000,
+    "front": 0.022,
+    "parity": "breathing",
+    "braced": true,
+    "nx": 64,
+    "ny": 25,
+    "dof": 5070,
+    "f1_Hz": 146.9153230592981,
+    "f2_Hz": 187.25504106362888,
+    "compliance_m3_Pa": 1.8091038605326248e-08,
+    "wmax_m_Pa": 9.757643893959299e-08,
+    "surface_stress_bound_Pa_Pa": 172.56011501354152,
+    "max_leg_force_N_Pa": 0.03703224372580634,
+    "max_leg_axial_stress_Pa_Pa": 76.51290025993046,
+    "reaction_balance_relative": 1.0164665247103816e-12,
+    "static_energy_relative": 2.3044504951970267e-13,
+    "linear_residual": 3.581522173163113e-11,
+    "gravity_common_normal_deflection_m": null,
+    "gravity_scope": "horizontal: top/bottom normal load; vertical: normal component zero, in-plane load NOT modelled",
+    "harmonics": [
+      {
+        "f_Hz": 20,
+        "leg_mean_axial_stress_per_Papeak": 77.92084151058967,
+        "beam_centroid_bending_stress_per_Papeak": 160.90331426598385,
+        "w_peak_per_Papeak_m": 9.955245348507646e-08,
+        "max_surface_stress_per_Papeak": 175.82479319597155,
+        "power_residual": 3.8939259241221474e-13
+      },
+      {
+        "f_Hz": 40,
+        "leg_mean_axial_stress_per_Papeak": 82.49160581783333,
+        "beam_centroid_bending_stress_per_Papeak": 171.68344888106537,
+        "w_peak_per_Papeak_m": 1.0596427629071096e-07,
+        "max_surface_stress_per_Papeak": 186.71737236311333,
+        "power_residual": 2.822387191015338e-13
+      },
+      {
+        "f_Hz": 80,
+        "leg_mean_axial_stress_per_Papeak": 108.17767577896709,
+        "beam_centroid_bending_stress_per_Papeak": 232.14020396784514,
+        "w_peak_per_Papeak_m": 1.419356823785558e-07,
+        "max_surface_stress_per_Papeak": 253.84863895489633,
+        "power_residual": 9.457787220884506e-14
+      },
+      {
+        "f_Hz": 160,
+        "leg_mean_axial_stress_per_Papeak": 404.5233439346004,
+        "beam_centroid_bending_stress_per_Papeak": 957.5947285790384,
+        "w_peak_per_Papeak_m": 5.678649396383278e-07,
+        "max_surface_stress_per_Papeak": 1078.5892222197053,
+        "power_residual": 9.70353317842793e-13
+      }
+    ]
+  },
+  {
+    "E": 2100000000.0,
+    "Eg": 100000000.0,
+    "kt": 10000000.0,
+    "kr": 1000,
+    "front": 0.01,
+    "parity": "breathing",
+    "braced": false,
+    "nx": 64,
+    "ny": 25,
+    "dof": 5070,
+    "f1_Hz": 134.07657587434744,
+    "f2_Hz": 176.27553691024858,
+    "compliance_m3_Pa": 2.3790123259304115e-08,
+    "wmax_m_Pa": 1.2758724156859052e-07,
+    "surface_stress_bound_Pa_Pa": 193.00209953398488,
+    "max_leg_force_N_Pa": 0,
+    "max_leg_axial_stress_Pa_Pa": 0.0,
+    "reaction_balance_relative": 2.1647461057028948e-12,
+    "static_energy_relative": 9.14309738987484e-13,
+    "linear_residual": 5.861011253627915e-11,
+    "gravity_common_normal_deflection_m": null,
+    "gravity_scope": "horizontal: top/bottom normal load; vertical: normal component zero, in-plane load NOT modelled",
+    "harmonics": [
+      {
+        "f_Hz": 20,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 0.0,
+        "w_peak_per_Papeak_m": 1.3068836998404262e-07,
+        "max_surface_stress_per_Papeak": 197.96167892708584,
+        "power_residual": 3.1962142839513563e-13
+      },
+      {
+        "f_Hz": 40,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 0.0,
+        "w_peak_per_Papeak_m": 1.409142474097368e-07,
+        "max_surface_stress_per_Papeak": 214.3231819613866,
+        "power_residual": 3.440422337371607e-13
+      },
+      {
+        "f_Hz": 80,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 0.0,
+        "w_peak_per_Papeak_m": 2.0327115673967094e-07,
+        "max_surface_stress_per_Papeak": 314.26684012671285,
+        "power_residual": 8.66437963175e-14
+      },
+      {
+        "f_Hz": 160,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 0.0,
+        "w_peak_per_Papeak_m": 3.4658170369672304e-07,
+        "max_surface_stress_per_Papeak": 572.7500508765213,
+        "power_residual": 2.4073159377747734e-13
+      }
+    ]
+  },
+  {
+    "E": 1500000000,
+    "Eg": 100000000.0,
+    "kt": 10000000.0,
+    "kr": 1000,
+    "front": 0.01,
+    "parity": "breathing",
+    "braced": true,
+    "nx": 20,
+    "ny": 8,
+    "dof": 567,
+    "f1_Hz": 125.97740916066167,
+    "f2_Hz": 163.65479294487184,
+    "compliance_m3_Pa": 2.4081454444625717e-08,
+    "wmax_m_Pa": 1.360951809572617e-07,
+    "surface_stress_bound_Pa_Pa": 165.88206445068846,
+    "max_leg_force_N_Pa": 0.03646762346468111,
+    "max_leg_axial_stress_Pa_Pa": 89.86246479738696,
+    "reaction_balance_relative": 2.080441642144334e-14,
+    "static_energy_relative": 1.0057469074903746e-13,
+    "linear_residual": 1.1426534497259332e-12,
+    "gravity_common_normal_deflection_m": null,
+    "gravity_scope": "horizontal: top/bottom normal load; vertical: normal component zero, in-plane load NOT modelled",
+    "harmonics": [
+      {
+        "f_Hz": 20,
+        "leg_mean_axial_stress_per_Papeak": 92.13683896911995,
+        "beam_centroid_bending_stress_per_Papeak": 429.876688003054,
+        "w_peak_per_Papeak_m": 1.3987828223379453e-07,
+        "max_surface_stress_per_Papeak": 170.71465161805622,
+        "power_residual": 5.710912571100762e-14
+      },
+      {
+        "f_Hz": 40,
+        "leg_mean_axial_stress_per_Papeak": 99.74544338407107,
+        "beam_centroid_bending_stress_per_Papeak": 464.95460160205056,
+        "w_peak_per_Papeak_m": 1.5252354288238347e-07,
+        "max_surface_stress_per_Papeak": 186.87775592393243,
+        "power_residual": 7.316865482373721e-14
+      },
+      {
+        "f_Hz": 80,
+        "leg_mean_axial_stress_per_Papeak": 149.91735978974847,
+        "beam_centroid_bending_stress_per_Papeak": 690.8322814123916,
+        "w_peak_per_Papeak_m": 2.3562745506200231e-07,
+        "max_surface_stress_per_Papeak": 293.3539420872538,
+        "power_residual": 1.1153442167405888e-14
+      },
+      {
+        "f_Hz": 160,
+        "leg_mean_axial_stress_per_Papeak": 161.79278935711088,
+        "beam_centroid_bending_stress_per_Papeak": 518.1636783898899,
+        "w_peak_per_Papeak_m": 2.7516465394436066e-07,
+        "max_surface_stress_per_Papeak": 367.414666240461,
+        "power_residual": 4.935410687305755e-13
+      }
+    ]
+  },
+  {
+    "E": 3000000000,
+    "Eg": 100000000.0,
+    "kt": 10000000.0,
+    "kr": 1000,
+    "front": 0.01,
+    "parity": "breathing",
+    "braced": true,
+    "nx": 20,
+    "ny": 8,
+    "dof": 567,
+    "f1_Hz": 171.34264504847067,
+    "f2_Hz": 218.56464202547332,
+    "compliance_m3_Pa": 1.3605382057024119e-08,
+    "wmax_m_Pa": 7.248946890720791e-08,
+    "surface_stress_bound_Pa_Pa": 171.29689743835098,
+    "max_leg_force_N_Pa": 0.03980458361566109,
+    "max_leg_axial_stress_Pa_Pa": 120.38194061091954,
+    "reaction_balance_relative": 7.328122799194968e-14,
+    "static_energy_relative": 6.918817370507869e-14,
+    "linear_residual": 1.1922566977083019e-12,
+    "gravity_common_normal_deflection_m": null,
+    "gravity_scope": "horizontal: top/bottom normal load; vertical: normal component zero, in-plane load NOT modelled",
+    "harmonics": [
+      {
+        "f_Hz": 20,
+        "leg_mean_axial_stress_per_Papeak": 122.01105965229961,
+        "beam_centroid_bending_stress_per_Papeak": 443.6526188340626,
+        "w_peak_per_Papeak_m": 7.356692387135391e-08,
+        "max_surface_stress_per_Papeak": 173.97118952702743,
+        "power_residual": 6.265576062117649e-15
+      },
+      {
+        "f_Hz": 40,
+        "leg_mean_axial_stress_per_Papeak": 127.18812883752715,
+        "beam_centroid_bending_stress_per_Papeak": 462.7067545182231,
+        "w_peak_per_Papeak_m": 7.698944361770723e-08,
+        "max_surface_stress_per_Papeak": 182.46750422289279,
+        "power_residual": 3.279830587134231e-14
+      },
+      {
+        "f_Hz": 80,
+        "leg_mean_axial_stress_per_Papeak": 153.45905015387143,
+        "beam_centroid_bending_stress_per_Papeak": 558.3331353453425,
+        "w_peak_per_Papeak_m": 9.432757587553938e-08,
+        "max_surface_stress_per_Papeak": 225.53647847162262,
+        "power_residual": 3.3504424928197987e-15
+      },
+      {
+        "f_Hz": 160,
+        "leg_mean_axial_stress_per_Papeak": 877.3550348506656,
+        "beam_centroid_bending_stress_per_Papeak": 3054.5606641914546,
+        "w_peak_per_Papeak_m": 5.683228182502892e-07,
+        "max_surface_stress_per_Papeak": 1408.8725351712624,
+        "power_residual": 7.487609890054653e-15
+      }
+    ]
+  },
+  {
+    "E": 2100000000.0,
+    "Eg": 1000000,
+    "kt": 10000000.0,
+    "kr": 1000,
+    "front": 0.01,
+    "parity": "breathing",
+    "braced": true,
+    "nx": 20,
+    "ny": 8,
+    "dof": 567,
+    "f1_Hz": 140.43229042419964,
+    "f2_Hz": 182.38098168032315,
+    "compliance_m3_Pa": 2.001296521353749e-08,
+    "wmax_m_Pa": 1.0884727509286569e-07,
+    "surface_stress_bound_Pa_Pa": 172.30192715478026,
+    "max_leg_force_N_Pa": 0.022701932545369327,
+    "max_leg_axial_stress_Pa_Pa": 49.612072703515324,
+    "reaction_balance_relative": 1.072824757255026e-13,
+    "static_energy_relative": 4.811072336049561e-14,
+    "linear_residual": 1.6749850714416963e-12,
+    "gravity_common_normal_deflection_m": null,
+    "gravity_scope": "horizontal: top/bottom normal load; vertical: normal component zero, in-plane load NOT modelled",
+    "harmonics": [
+      {
+        "f_Hz": 20,
+        "leg_mean_axial_stress_per_Papeak": 50.63283781805009,
+        "beam_centroid_bending_stress_per_Papeak": 447.0571317757722,
+        "w_peak_per_Papeak_m": 1.1126963401728286e-07,
+        "max_surface_stress_per_Papeak": 176.33152320396977,
+        "power_residual": 3.3786243391204594e-14
+      },
+      {
+        "f_Hz": 40,
+        "leg_mean_axial_stress_per_Papeak": 53.97260276820111,
+        "beam_centroid_bending_stress_per_Papeak": 476.1346224729231,
+        "w_peak_per_Papeak_m": 1.191899190715665e-07,
+        "max_surface_stress_per_Papeak": 189.51304236487152,
+        "power_residual": 7.316783690451904e-14
+      },
+      {
+        "f_Hz": 80,
+        "leg_mean_axial_stress_per_Papeak": 73.49512693639713,
+        "beam_centroid_bending_stress_per_Papeak": 643.0865361827912,
+        "w_peak_per_Papeak_m": 1.653648482579712e-07,
+        "max_surface_stress_per_Papeak": 266.4976491144687,
+        "power_residual": 5.788607251657335e-14
+      },
+      {
+        "f_Hz": 160,
+        "leg_mean_axial_stress_per_Papeak": 174.72416537417664,
+        "beam_centroid_bending_stress_per_Papeak": 1281.2022831267825,
+        "w_peak_per_Papeak_m": 4.1433549007242914e-07,
+        "max_surface_stress_per_Papeak": 707.3005708255228,
+        "power_residual": 5.475221699686006e-13
+      }
+    ]
+  },
+  {
+    "E": 2100000000.0,
+    "Eg": 10000000,
+    "kt": 10000000.0,
+    "kr": 1000,
+    "front": 0.01,
+    "parity": "breathing",
+    "braced": true,
+    "nx": 20,
+    "ny": 8,
+    "dof": 567,
+    "f1_Hz": 145.27709331531335,
+    "f2_Hz": 187.62722581852486,
+    "compliance_m3_Pa": 1.8511559382702905e-08,
+    "wmax_m_Pa": 1.0173495431767568e-07,
+    "surface_stress_bound_Pa_Pa": 169.33370146463824,
+    "max_leg_force_N_Pa": 0.03592368658598598,
+    "max_leg_axial_stress_Pa_Pa": 94.38125651600365,
+    "reaction_balance_relative": 1.2513701220659204e-13,
+    "static_energy_relative": 1.0188076312917994e-14,
+    "linear_residual": 1.5212509761901804e-12,
+    "gravity_common_normal_deflection_m": null,
+    "gravity_scope": "horizontal: top/bottom normal load; vertical: normal component zero, in-plane load NOT modelled",
+    "harmonics": [
+      {
+        "f_Hz": 20,
+        "leg_mean_axial_stress_per_Papeak": 96.17047575166391,
+        "beam_centroid_bending_stress_per_Papeak": 438.44445681055936,
+        "w_peak_per_Papeak_m": 1.0384874486903705e-07,
+        "max_surface_stress_per_Papeak": 173.02527095020784,
+        "power_residual": 4.855625699733005e-14
+      },
+      {
+        "f_Hz": 40,
+        "leg_mean_axial_stress_per_Papeak": 101.99043053036353,
+        "beam_centroid_bending_stress_per_Papeak": 464.89899028524843,
+        "w_peak_per_Papeak_m": 1.107202366699179e-07,
+        "max_surface_stress_per_Papeak": 185.03113527386847,
+        "power_residual": 4.363171317702378e-14
+      },
+      {
+        "f_Hz": 80,
+        "leg_mean_axial_stress_per_Papeak": 135.013294226115,
+        "beam_centroid_bending_stress_per_Papeak": 612.5069149298301,
+        "w_peak_per_Papeak_m": 1.4961365018390634e-07,
+        "max_surface_stress_per_Papeak": 253.1021947028097,
+        "power_residual": 1.7312943813104612e-14
+      },
+      {
+        "f_Hz": 160,
+        "leg_mean_axial_stress_per_Papeak": 445.6419841497748,
+        "beam_centroid_bending_stress_per_Papeak": 1764.1382076610962,
+        "w_peak_per_Papeak_m": 5.255228954010626e-07,
+        "max_surface_stress_per_Papeak": 936.8028195990025,
+        "power_residual": 1.919591215826109e-14
+      }
+    ]
+  },
+  {
+    "E": 2100000000.0,
+    "Eg": 1718000000,
+    "kt": 10000000.0,
+    "kr": 1000,
+    "front": 0.01,
+    "parity": "breathing",
+    "braced": true,
+    "nx": 20,
+    "ny": 8,
+    "dof": 567,
+    "f1_Hz": 146.31123899558852,
+    "f2_Hz": 188.71662155349625,
+    "compliance_m3_Pa": 1.820685046485939e-08,
+    "wmax_m_Pa": 1.0028736503732043e-07,
+    "surface_stress_bound_Pa_Pa": 168.7470993583471,
+    "max_leg_force_N_Pa": 0.038378937273620684,
+    "max_leg_axial_stress_Pa_Pa": 104.90373227774803,
+    "reaction_balance_relative": 9.688026751478094e-14,
+    "static_energy_relative": 7.632640427136164e-15,
+    "linear_residual": 1.158208743186724e-12,
+    "gravity_common_normal_deflection_m": null,
+    "gravity_scope": "horizontal: top/bottom normal load; vertical: normal component zero, in-plane load NOT modelled",
+    "harmonics": [
+      {
+        "f_Hz": 20,
+        "leg_mean_axial_stress_per_Papeak": 106.85695686970548,
+        "beam_centroid_bending_stress_per_Papeak": 436.7129842517729,
+        "w_peak_per_Papeak_m": 1.0234125633740641e-07,
+        "max_surface_stress_per_Papeak": 172.37120798869378,
+        "power_residual": 7.032207965786259e-15
+      },
+      {
+        "f_Hz": 40,
+        "leg_mean_axial_stress_per_Papeak": 113.20298643016623,
+        "beam_centroid_bending_stress_per_Papeak": 462.66004514436827,
+        "w_peak_per_Papeak_m": 1.0901030305949186e-07,
+        "max_surface_stress_per_Papeak": 184.14397596550117,
+        "power_residual": 4.4941805612903996e-14
+      },
+      {
+        "f_Hz": 80,
+        "leg_mean_axial_stress_per_Papeak": 149.00060894974112,
+        "beam_centroid_bending_stress_per_Papeak": 606.6326460090219,
+        "w_peak_per_Papeak_m": 1.4653868264152205e-07,
+        "max_surface_stress_per_Papeak": 250.50465373022803,
+        "power_residual": 2.048388871967979e-14
+      },
+      {
+        "f_Hz": 160,
+        "leg_mean_axial_stress_per_Papeak": 531.7583325297346,
+        "beam_centroid_bending_stress_per_Papeak": 1906.2403284735701,
+        "w_peak_per_Papeak_m": 5.57953692840068e-07,
+        "max_surface_stress_per_Papeak": 1003.8703252426628,
+        "power_residual": 3.8966660531498506e-13
+      }
+    ]
+  },
+  {
+    "E": 2100000000.0,
+    "Eg": 100000000.0,
+    "kt": 1000000,
+    "kr": 1000,
+    "front": 0.01,
+    "parity": "breathing",
+    "braced": true,
+    "nx": 20,
+    "ny": 8,
+    "dof": 567,
+    "f1_Hz": 122.99951366844171,
+    "f2_Hz": 139.48553555213445,
+    "compliance_m3_Pa": 2.979328309791771e-08,
+    "wmax_m_Pa": 1.368898555557533e-07,
+    "surface_stress_bound_Pa_Pa": 174.68967033661457,
+    "max_leg_force_N_Pa": 0.050444365319157344,
+    "max_leg_axial_stress_Pa_Pa": 223.97114703078108,
+    "reaction_balance_relative": 1.7078252286259458e-13,
+    "static_energy_relative": 1.2882494452295858e-14,
+    "linear_residual": 1.411911442183072e-12,
+    "gravity_common_normal_deflection_m": null,
+    "gravity_scope": "horizontal: top/bottom normal load; vertical: normal component zero, in-plane load NOT modelled",
+    "harmonics": [
+      {
+        "f_Hz": 20,
+        "leg_mean_axial_stress_per_Papeak": 229.60838238009686,
+        "beam_centroid_bending_stress_per_Papeak": 465.3858076539747,
+        "w_peak_per_Papeak_m": 1.4082743080770179e-07,
+        "max_surface_stress_per_Papeak": 179.58204797797777,
+        "power_residual": 3.0348697277467996e-14
+      },
+      {
+        "f_Hz": 40,
+        "leg_mean_axial_stress_per_Papeak": 248.50061568322283,
+        "beam_centroid_bending_stress_per_Papeak": 507.41380933213185,
+        "w_peak_per_Papeak_m": 1.5407988422375295e-07,
+        "max_surface_stress_per_Papeak": 196.02328114884537,
+        "power_residual": 4.027056912803239e-14
+      },
+      {
+        "f_Hz": 80,
+        "leg_mean_axial_stress_per_Papeak": 375.13717160757653,
+        "beam_centroid_bending_stress_per_Papeak": 791.0870261325842,
+        "w_peak_per_Papeak_m": 2.448357681018876e-07,
+        "max_surface_stress_per_Papeak": 307.3560001496974,
+        "power_residual": 6.560226704447278e-14
+      },
+      {
+        "f_Hz": 160,
+        "leg_mean_axial_stress_per_Papeak": 399.35875487069484,
+        "beam_centroid_bending_stress_per_Papeak": 568.3680009551362,
+        "w_peak_per_Papeak_m": 2.6333458058327097e-07,
+        "max_surface_stress_per_Papeak": 412.5902165863753,
+        "power_residual": 2.4785064511801457e-14
+      }
+    ]
+  },
+  {
+    "E": 2100000000.0,
+    "Eg": 100000000.0,
+    "kt": 100000000,
+    "kr": 1000,
+    "front": 0.01,
+    "parity": "breathing",
+    "braced": true,
+    "nx": 20,
+    "ny": 8,
+    "dof": 567,
+    "f1_Hz": 152.4371243898158,
+    "f2_Hz": 204.24994775771742,
+    "compliance_m3_Pa": 1.5440925548588838e-08,
+    "wmax_m_Pa": 9.450187999746049e-08,
+    "surface_stress_bound_Pa_Pa": 168.04507566224947,
+    "max_leg_force_N_Pa": 0.034251416611822585,
+    "max_leg_axial_stress_Pa_Pa": 70.76738969384833,
+    "reaction_balance_relative": 1.6239865355843085e-13,
+    "static_energy_relative": 3.021385369755534e-14,
+    "linear_residual": 1.5629452766561275e-12,
+    "gravity_common_normal_deflection_m": null,
+    "gravity_scope": "horizontal: top/bottom normal load; vertical: normal component zero, in-plane load NOT modelled",
+    "harmonics": [
+      {
+        "f_Hz": 20,
+        "leg_mean_axial_stress_per_Papeak": 72.04074943755013,
+        "beam_centroid_bending_stress_per_Papeak": 423.244469016573,
+        "w_peak_per_Papeak_m": 9.627091037483702e-08,
+        "max_surface_stress_per_Papeak": 171.32084411422923,
+        "power_residual": 2.4069329235643676e-14
+      },
+      {
+        "f_Hz": 40,
+        "leg_mean_axial_stress_per_Papeak": 76.14755291668222,
+        "beam_centroid_bending_stress_per_Papeak": 445.43109286048,
+        "w_peak_per_Papeak_m": 1.0197623080140465e-07,
+        "max_surface_stress_per_Papeak": 181.8898808500568,
+        "power_residual": 1.3522351581027988e-14
+      },
+      {
+        "f_Hz": 80,
+        "leg_mean_axial_stress_per_Papeak": 98.50479492975853,
+        "beam_centroid_bending_stress_per_Papeak": 564.625478732193,
+        "w_peak_per_Papeak_m": 1.3303404600507985e-07,
+        "max_surface_stress_per_Papeak": 239.5143431305882,
+        "power_residual": 7.178091159835255e-15
+      },
+      {
+        "f_Hz": 160,
+        "leg_mean_axial_stress_per_Papeak": 629.7064058764291,
+        "beam_centroid_bending_stress_per_Papeak": 3091.012272783762,
+        "w_peak_per_Papeak_m": 8.783366662754067e-07,
+        "max_surface_stress_per_Papeak": 1648.9372452329417,
+        "power_residual": 3.147096965165249e-13
+      }
+    ]
+  },
+  {
+    "E": 2100000000.0,
+    "Eg": 100000000.0,
+    "kt": 10000000.0,
+    "kr": 0,
+    "front": 0.01,
+    "parity": "breathing",
+    "braced": true,
+    "nx": 20,
+    "ny": 8,
+    "dof": 567,
+    "f1_Hz": 142.762666627826,
+    "f2_Hz": 185.86062779098353,
+    "compliance_m3_Pa": 1.9097505304724392e-08,
+    "wmax_m_Pa": 1.0548607691901188e-07,
+    "surface_stress_bound_Pa_Pa": 176.51511389230936,
+    "max_leg_force_N_Pa": 0.03888306409437648,
+    "max_leg_axial_stress_Pa_Pa": 104.91636450603454,
+    "reaction_balance_relative": 5.4339893638098276e-14,
+    "static_energy_relative": 7.363302268554814e-14,
+    "linear_residual": 1.2810854592332709e-12,
+    "gravity_common_normal_deflection_m": null,
+    "gravity_scope": "horizontal: top/bottom normal load; vertical: normal component zero, in-plane load NOT modelled",
+    "harmonics": [
+      {
+        "f_Hz": 20,
+        "leg_mean_axial_stress_per_Papeak": 106.96999623644054,
+        "beam_centroid_bending_stress_per_Papeak": 457.01764784847484,
+        "w_peak_per_Papeak_m": 1.0775317301778281e-07,
+        "max_surface_stress_per_Papeak": 180.48724623867838,
+        "power_residual": 1.4997610211052024e-14
+      },
+      {
+        "f_Hz": 40,
+        "leg_mean_axial_stress_per_Papeak": 113.66952486858872,
+        "beam_centroid_bending_stress_per_Papeak": 485.64765923601504,
+        "w_peak_per_Papeak_m": 1.1514430648424964e-07,
+        "max_surface_stress_per_Papeak": 193.44277637826156,
+        "power_residual": 1.7604534297787377e-14
+      },
+      {
+        "f_Hz": 80,
+        "leg_mean_axial_stress_per_Papeak": 152.24966214115165,
+        "beam_centroid_bending_stress_per_Papeak": 647.8109041117596,
+        "w_peak_per_Papeak_m": 1.5759758750769595e-07,
+        "max_surface_stress_per_Papeak": 267.9826036115017,
+        "power_residual": 1.677223201032274e-14
+      },
+      {
+        "f_Hz": 160,
+        "leg_mean_axial_stress_per_Papeak": 416.3080110080601,
+        "beam_centroid_bending_stress_per_Papeak": 1543.9304112050793,
+        "w_peak_per_Papeak_m": 4.5988040419458554e-07,
+        "max_surface_stress_per_Papeak": 823.7374715241236,
+        "power_residual": 1.1030431711692582e-13
+      }
+    ]
+  },
+  {
+    "E": 2100000000.0,
+    "Eg": 100000000.0,
+    "kt": 10000000.0,
+    "kr": 1000,
+    "front": 0.01,
+    "parity": "common",
+    "braced": true,
+    "nx": 32,
+    "ny": 13,
+    "dof": 1386,
+    "f1_Hz": 132.17232210959847,
+    "f2_Hz": 172.58654154314632,
+    "compliance_m3_Pa": 2.2755143294941405e-08,
+    "wmax_m_Pa": 1.205162203278894e-07,
+    "surface_stress_bound_Pa_Pa": 181.80495227910785,
+    "max_leg_force_N_Pa": 0.0,
+    "max_leg_axial_stress_Pa_Pa": 0.0,
+    "reaction_balance_relative": 1.2575803956245678e-14,
+    "static_energy_relative": 5.350921529677812e-14,
+    "linear_residual": 5.042546529379738e-12,
+    "gravity_common_normal_deflection_m": 2.079664799160951e-05,
+    "gravity_scope": "horizontal: top/bottom normal load; vertical: normal component zero, in-plane load NOT modelled",
+    "harmonics": [
+      {
+        "f_Hz": 20,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 211.45681183485928,
+        "w_peak_per_Papeak_m": 1.2354311946935056e-07,
+        "max_surface_stress_per_Papeak": 186.59280678074344,
+        "power_residual": 1.5336167887595075e-13
+      },
+      {
+        "f_Hz": 40,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 227.27092748779216,
+        "w_peak_per_Papeak_m": 1.3355438446973871e-07,
+        "max_surface_stress_per_Papeak": 202.4348377112077,
+        "power_residual": 4.873910771724224e-14
+      },
+      {
+        "f_Hz": 80,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 323.767740483126,
+        "w_peak_per_Papeak_m": 1.9559531444661302e-07,
+        "max_surface_stress_per_Papeak": 300.76436174078196,
+        "power_residual": 5.0236876579996245e-14
+      },
+      {
+        "f_Hz": 160,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 426.09636841220066,
+        "w_peak_per_Papeak_m": 3.043698601618427e-07,
+        "max_surface_stress_per_Papeak": 501.01570745823096,
+        "power_residual": 4.737273264312551e-13
+      }
+    ]
+  },
+  {
+    "E": 2100000000.0,
+    "Eg": 100000000.0,
+    "kt": 10000000.0,
+    "kr": 1000,
+    "front": 0.022,
+    "parity": "common",
+    "braced": true,
+    "nx": 32,
+    "ny": 13,
+    "dof": 1386,
+    "f1_Hz": 132.00905424368094,
+    "f2_Hz": 172.37247520624857,
+    "compliance_m3_Pa": 2.2755143294941405e-08,
+    "wmax_m_Pa": 1.205162203278894e-07,
+    "surface_stress_bound_Pa_Pa": 181.80495227910785,
+    "max_leg_force_N_Pa": 0.0,
+    "max_leg_axial_stress_Pa_Pa": 0.0,
+    "reaction_balance_relative": 1.2575803956245678e-14,
+    "static_energy_relative": 5.350921529677812e-14,
+    "linear_residual": 5.042546529379738e-12,
+    "gravity_common_normal_deflection_m": 2.093020029503174e-05,
+    "gravity_scope": "horizontal: top/bottom normal load; vertical: normal component zero, in-plane load NOT modelled",
+    "harmonics": [
+      {
+        "f_Hz": 20,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 211.46113174718323,
+        "w_peak_per_Papeak_m": 1.235509758415179e-07,
+        "max_surface_stress_per_Papeak": 186.59795256229012,
+        "power_residual": 3.499613996877442e-14
+      },
+      {
+        "f_Hz": 40,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 227.29232030360166,
+        "w_peak_per_Papeak_m": 1.3359081416720572e-07,
+        "max_surface_stress_per_Papeak": 202.46101963284536,
+        "power_residual": 1.1229849710265497e-13
+      },
+      {
+        "f_Hz": 80,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 323.99672257707095,
+        "w_peak_per_Papeak_m": 1.9589585720505302e-07,
+        "max_surface_stress_per_Papeak": 301.0571669521644,
+        "power_residual": 7.941781302864707e-14
+      },
+      {
+        "f_Hz": 160,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 421.2516445799191,
+        "w_peak_per_Papeak_m": 3.0215740043482134e-07,
+        "max_surface_stress_per_Papeak": 496.4144490747027,
+        "power_residual": 2.0511623382751416e-13
+      }
+    ]
+  },
+  {
+    "E": 2100000000.0,
+    "Eg": 100000000.0,
+    "kt": 10000000.0,
+    "kr": 1000,
+    "front": 0.01,
+    "parity": "common",
+    "braced": true,
+    "nx": 48,
+    "ny": 19,
+    "dof": 2940,
+    "f1_Hz": 131.7005510221734,
+    "f2_Hz": 171.95031549510233,
+    "compliance_m3_Pa": 2.2917125473668894e-08,
+    "wmax_m_Pa": 1.2147877734928265e-07,
+    "surface_stress_bound_Pa_Pa": 182.31951315800114,
+    "max_leg_force_N_Pa": 0.0,
+    "max_leg_axial_stress_Pa_Pa": 0.0,
+    "reaction_balance_relative": 3.0011146972126954e-13,
+    "static_energy_relative": 5.905048971746557e-14,
+    "linear_residual": 1.2052838080158882e-11,
+    "gravity_common_normal_deflection_m": 2.0958772114489517e-05,
+    "gravity_scope": "horizontal: top/bottom normal load; vertical: normal component zero, in-plane load NOT modelled",
+    "harmonics": [
+      {
+        "f_Hz": 20,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 168.11553165215673,
+        "w_peak_per_Papeak_m": 1.2455231328486836e-07,
+        "max_surface_stress_per_Papeak": 187.167776742274,
+        "power_residual": 1.212542808635671e-13
+      },
+      {
+        "f_Hz": 40,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 182.31066229360678,
+        "w_peak_per_Papeak_m": 1.3472529341939676e-07,
+        "max_surface_stress_per_Papeak": 203.2222879719435,
+        "power_residual": 5.138051111648424e-14
+      },
+      {
+        "f_Hz": 80,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 270.52158339647326,
+        "w_peak_per_Papeak_m": 1.9802215896790912e-07,
+        "max_surface_stress_per_Papeak": 303.2900900593612,
+        "power_residual": 1.0657332704085085e-13
+      },
+      {
+        "f_Hz": 160,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 417.34101395724065,
+        "w_peak_per_Papeak_m": 3.0077721744815204e-07,
+        "max_surface_stress_per_Papeak": 493.60349027782195,
+        "power_residual": 1.601985095520343e-13
+      }
+    ]
+  },
+  {
+    "E": 2100000000.0,
+    "Eg": 100000000.0,
+    "kt": 10000000.0,
+    "kr": 1000,
+    "front": 0.01,
+    "parity": "common",
+    "braced": true,
+    "nx": 64,
+    "ny": 25,
+    "dof": 5070,
+    "f1_Hz": 131.54738877821814,
+    "f2_Hz": 171.71402984113055,
+    "compliance_m3_Pa": 2.2970307664111413e-08,
+    "wmax_m_Pa": 1.2180651945830483e-07,
+    "surface_stress_bound_Pa_Pa": 182.94829352348216,
+    "max_leg_force_N_Pa": 0.0,
+    "max_leg_axial_stress_Pa_Pa": 0.0,
+    "reaction_balance_relative": 1.2352234108134712e-12,
+    "static_energy_relative": 1.0443150398684817e-13,
+    "linear_residual": 6.055860489497348e-11,
+    "gravity_common_normal_deflection_m": 2.1011564276001785e-05,
+    "gravity_scope": "horizontal: top/bottom normal load; vertical: normal component zero, in-plane load NOT modelled",
+    "harmonics": [
+      {
+        "f_Hz": 20,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 168.2219978833916,
+        "w_peak_per_Papeak_m": 1.2489562282384062e-07,
+        "max_surface_stress_per_Papeak": 187.34902419973963,
+        "power_residual": 3.0960782865213623e-13
+      },
+      {
+        "f_Hz": 40,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 182.46174793967182,
+        "w_peak_per_Papeak_m": 1.35122578480125e-07,
+        "max_surface_stress_per_Papeak": 203.43756768203588,
+        "power_residual": 1.1370793017186528e-13
+      },
+      {
+        "f_Hz": 80,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 271.0646752750918,
+        "w_peak_per_Papeak_m": 1.9883838325988393e-07,
+        "max_surface_stress_per_Papeak": 304.09549323887387,
+        "power_residual": 2.2518550722807916e-14
+      },
+      {
+        "f_Hz": 160,
+        "leg_mean_axial_stress_per_Papeak": 0.0,
+        "beam_centroid_bending_stress_per_Papeak": 414.7271565940735,
+        "w_peak_per_Papeak_m": 2.997005251460314e-07,
+        "max_surface_stress_per_Papeak": 490.94573132773246,
+        "power_residual": 1.3585391232835264e-12
+      }
+    ]
+  }
+]
