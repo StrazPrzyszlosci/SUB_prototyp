@@ -1145,3 +1145,25 @@ Wyprowadzone nierówności dotyczą dodatnich stałych parametrów, wzajemnego
 BL i dokładnego napięcia ZOH, bez obserwatora rzeczywistych sensorów.
 Dalsze bramki: niepewność wzmacniacza i napięcia, zmienne Le/BL/Cms,
 sprzężenie z P18E/P21D, dłuższe sygnały i fizyczna walidacja po budowie.
+
+
+## Postęp 2026-10-31 — P21E: model gaz–panele–napęd
+
+Wykonano **9801 punktów częstotliwościowych** w nowej redukcji
+wzajemnie sprzężonej: 3 finalistów C02/C11/C06, 3 objętości,
+3 skale podatności dwóch ścian, 3 scenariusze częstotliwości trybu
+oraz 121 częstotliwości 20–80 Hz. Statyczna podatność pojedynczej
+płyty pochodzi z raportu 059, lecz jej podwojenie i przypisanie
+pierwszej częstotliwości wspólnemu trybowi ścian są założeniami.
+
+Podsumowanie i 39 świadków: `wyniki/p21e_podsumowanie.json`,
+`wyniki/p21e_nominal.csv`. Skrypt: `skrypty/p21e_gaz_podatne_sciany.py`.
+Raport: `raporty/064_P21E_gaz_podatne_sciany_i_naped.md`.
+Przy 120 l nominalny ekwiwalent statyczny podatności to 5,3746 l;
+nie jest objętością fizyczną. C02: od −0,05753 do +0,13243 dB
+zmiany amplitudy prędkości. Niezależnie złożona macierz 2×2 i
+bilans portu dały reszty rzędu 10⁻¹⁵; nie oznacza to walidacji 3D.
+
+Następna bramka: wielomodowy model pełnej ramy i sprzężenie rozłożonego
+ciśnienia P21D z podatnymi panelami P18E, bez zakładania idealnych
+podpór, oraz audyt mechanicznej wykonalności konstrukcji P20D.
