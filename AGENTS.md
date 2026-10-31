@@ -1087,3 +1087,19 @@ Hashe: wyniki/manifest_rekomendacji_P29.json. Brak pomiarów urządzenia,
 realnego presetu ochrony X/T i pełnego sprzężenia; nie zamykać 30 pakietów.
 Najbliższy krok: spójna geometria wręg/dostępu/obrysu, następnie ochrona
 czasowa nowego układu. Zachować stare dane, nie dodawać masy powietrza dwa razy.
+
+
+## Postęp 2026-10-31 — import Work, raporty 056–061
+
+Dołączono oryginalne wyniki P20D/P18E/P21D/P25C/P26D/P27D
+(57 nowych plików danych, skryptów, wykresów i raportów)
+względem aktualnej gałęzi głównej po PR #4. Zachowano
+najnowszy przewodnik README oraz niniejsze AGENTS zamiast
+przywracać starsze wersje z archiwum. Pełny rejestr:
+`raporty/WORK_20261031_IMPORT_STATUS.md`.
+P20D to jedna dopuszczalna geometria w modelu; P18E nie jest
+pełnym MES; P21D nie zawiera pełnego sprzężenia sprężystych ścian;
+ochrona P25C wymaga pomiarów i realizacji; P26D/P27D to scenariusze
+pokoju. Brak fizycznej walidacji i cen, program P01–P30 pozostaje otwarty.
+Przestrzegać zasad redakcyjnych README opisanych wcześniej:
+wyniki w rozdziałach, historia w AGENTS, bez changelogu na początku.

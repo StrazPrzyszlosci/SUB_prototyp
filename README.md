@@ -11,7 +11,7 @@ nie jest kandydatem na konstrukcję końcową.*
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**26 modeli głośników · 11 producentów · 60 raportów (pakiet badawczy w weryfikacji) · Python**
+**26 modeli głośników · 11 producentów · 61 raportów · Python**
 
 Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
@@ -327,6 +327,20 @@ Nie obejmuje jeszcze wszystkich nieliniowości, wypełnienia, podatnych ścian
 i realnego toru po DSP. Własność matematyczna nie potwierdza przez to
 dokładności danych rzeczywistego produktu.
 
+**Nowa kontrola z sygnałami wielotonowymi:** w 216 scenariuszowych
+przebiegach P25C sam filtr HP 20 Hz i ograniczanie napięcia nie
+utrzymywały zawsze zadanego zapasu ruchu. W jednym teście C02
+model wyznaczył ruch 24,427 mm wobec przyjętego progu 8,4 mm —
+**nie jest to prognoza rzeczywistego wychylenia lub uszkodzenia**,
+gdyż model liniowy opuścił domenę katalogową. Zbadano także
+energetyczną barierę ochronną, której gwarancja dotyczy wyłącznie
+idealnego modelu z obserwacją stanu, nie gotowego miniDSP.
+
+![P25C: sygnały w czasie, napięcie, prąd i ruch](wyniki/p25c_przebiegi.png)
+![P25C: ograniczenia i wpływ ochrony](wyniki/p25c_ograniczenia.png)
+
+[Raport 058 — sygnały czasowe i bariera energii](raporty/058_P25C_sygnaly_czasowe_i_bariera_energii.md).
+
 [Raport 049: założenia, dowód, koszt i ograniczenia](raporty/049_obszar_niezmienniczy_i_koszt_ochrony.md)
 · [Baza wiedzy: wspólny obszar i granica wejścia](baza_wiedzy/37_wspolny_obszar_i_granica_wejscia.md).
 
@@ -347,8 +361,21 @@ pozycje nie są jeszcze znane. Aktualny plan klienta zakłada RTV po lewej
 i kanapę po prawej oryginalnego rzutu; dawne scenariusze ustawienia pozostają
 przykładami obliczeń.
 
-[Raport 013: pomieszczenie i dwie sztuki](raporty/013_pokoj_i_realne_gabaryty.md)
-· [raport 019: aktualna orientacja pokoju](raporty/019_zamiana_kanapy_i_RTV.md).
+W kolejnym modelu P26D/P27D uwzględniono także rzeczywisty
+przesunięty otwór głośnika w dwóch możliwych orientacjach skrzyni
+oraz **wspólny budżet obu źródeł**, zamiast przypisywania każdemu
+pełnej mocy bez ograniczeń. Dla jednego scenariusza poprawa
+nierównomierności w punkcie odsłuchu **33,51 → 31,49 dB** po
+dobraniu gain/delay pogorszyła najgorszy wariant niepewności
+**36,39 → 43,71 dB**. To ostrzeżenie przed dostrajaniem
+do jednego niezmierzonego pokoju, nie prognoza rzeczywistych
+głębokich dołków w pomieszczeniu.
+
+![P26D: orientacja dwóch obudów i scenariusze odpowiedzi pokoju](wyniki/p26d_bryly_i_odpowiedz.png)
+
+[Raport 061 — obudowy, przesunięte źródła i dwa subwoofery](raporty/061_bryly_offset_i_dwa_subwoofery.md)
+· [raport 013 — pomieszczenie](raporty/013_pokoj_i_realne_gabaryty.md)
+· [raport 019 — orientacja pokoju](raporty/019_zamiana_kanapy_i_RTV.md).
 
 <a id="mechanika"></a>
 ## Konstrukcja obudowy: od ścianek do kleju
@@ -725,16 +752,18 @@ ani wartości RMS ze szczytowymi. Liczby z modeli nie są pomiarami urządzenia.
 <a id="dalsze-prace"></a>
 ## Co zostało do zrobienia
 
-Istnieją już modele membrany kołowej, wypełnienia, wkładów,
-paneli, sygnałów wielotonowych i porównanie 27 konfiguracji.
-Trzeba je połączyć w **jeden spójny model wybranej skrzyni**:
-geometrię wręg, wkładów i wypełnienia, obrys całego urządzenia
-do 500 mm głębokości, sprzężenie akustyki i mechaniki oraz
-ochronę ruchu i temperatury z DSP.
+Zbadano już wspólną geometrię z wręgami i wkładami (P20D),
+przestrzenne pole gazu oraz port napędu (P21D), podatność paneli
+(P18E), krótkie sygnały z ochroną (P25C) i warianty ustawienia
+dwóch źródeł w pokoju (P26D/P27D). **Nie są to jeszcze jeden
+sprzężony model wielofizyczny ani zweryfikowany prototyp.**
 
-Dalsze badania obejmują dwa subwoofery z monitorami, odporność
-końcowej rekomendacji i protokół pomiarów. Zakres i otwarte bramki
-są w [programie 30 pakietów](PROGRAM_30_BADAN.md).
+Brakuje integracji przestrzennego pola gazu z rzeczywistą
+podatnością wszystkich ścian, kalibracji materiału i napędu,
+wykonalnej ochrony DSP, danych o monitorach, pomiarów
+pokoju i oceny kosztów spełniających wymagania wariantów.
+Szczegółowy stan i kryteria znajdują się w
+[programie 30 pakietów](PROGRAM_30_BADAN.md).
 
 **Końcowy raport PDF powstanie po ukończeniu badań możliwych bez urządzenia.**
 Wtedy zostanie opublikowany jako **Release 1**, z raportem w załącznikach.
@@ -810,6 +839,12 @@ nie zatwierdzonym docelowym głośnikiem.
 
 | Jak położenie membrany i przestrzenna komora zmieniają obciążenie? | [050 — geometria](raporty/050_P21C0_plytka_komora_i_polozenie_zrodla.md), [051 — membrana](raporty/051_P21C1_membrana_kolowa_i_bezwladnosc.md), [052 — wypełnienie i wkłady](raporty/052_komora_warstwy_wklady_i_front.md) | [Wykres 95](wyniki/95_P21C0_plytka_komora.png), [wykres 96](wyniki/96_P21C1_membrana_i_przesuniecie.png), [wyniki P21C3](wyniki/p21c3_wyniki.json) |
 | Dlaczego faworytem jest RSS390HF-4 i kiedy inny przetwornik wygrywa? | [053 — porównanie](raporty/053_porownanie_i_odpornosc_rekomendacji.md), [054 — konstrukcja](raporty/054_rekomendowana_konfiguracja_prototypu.md), [055 — wrażliwość](raporty/055_wrazliwosc_wyboru_i_margines_glebokosci.md) | [Wykres 97](wyniki/97_P29_wybor_i_front.png), [podsumowanie P29C](wyniki/p29c_podsumowanie.json) |
+
+| Co pokazują nowe próby dynamicznego ograniczania wychylenia i temperatury? | [058 — sygnały i energetyczna bariera](raporty/058_P25C_sygnaly_czasowe_i_bariera_energii.md) | [216 przebiegów](wyniki/p25c_kampania.csv), [wykresy](wyniki/p25c_przebiegi.png), [kontrole](wyniki/p25c_weryfikacja_przejsciowa.json) |
+| Czy skrzynia, wkłady i ich prześwity mieszczą się w obrysie? | [057 — geometria P20D](raporty/057_P20D_geometria_dostep_i_pelna_glebokosc.md) | [warianty](wyniki/p20d_warianty.csv), [wykres geometrii](wyniki/100_P20D_geometria.png) |
+| Czy wręgi pracują jak idealnie sztywne podpory? | [059 — model podatnych wręg](raporty/059_podatne_wregi_i_panele.md) | [pola ugięcia](wyniki/p18e_pola.png), [kontrole](wyniki/p18e_kontrole.json) |
+| Jak wygląda przestrzenne pole gazu w geometrii P20D? | [060 — P21D](raporty/060_P21D_wspolna_geometria_i_port_napedu.md) | [przebiegi napędu](wyniki/p21d_naped.csv), [przestrzenny wykres](wyniki/101_P21D_komora_i_naped.png) |
+| Czy dwa źródła w orientacji pionowej i poziomej są odporne na nieznane straty pokoju? | [061 — P26D/P27D](raporty/061_bryly_offset_i_dwa_subwoofery.md) | [porównanie](wyniki/p26d_porownanie.csv), [wykres](wyniki/p26d_bryly_i_odpowiedz.png) |
 
 Pełny zakres i otwarte bramki są w [programie 30 pakietów](PROGRAM_30_BADAN.md).
 Podstawy fizyczne wyjaśnia [baza wiedzy](baza_wiedzy/README.md), a ślad pracy

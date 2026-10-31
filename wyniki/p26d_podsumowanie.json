@@ -1,0 +1,420 @@
+{
+  "scope": "Scenarios, not measured room or actual placement. New complete cabinet bound 1000x440x500 mm plus stated protrusions and feet; only C02 excursion bound here. V orientation is rotation about depth axis. No obstacle scattering. Unknown monitor responses.",
+  "cases": 288,
+  "model_layout_environments": 72,
+  "optimization": [
+    {
+      "layout": "A_H_in",
+      "alpha_left": 0.5,
+      "relative_delay_right_ms": 0,
+      "search_candidates": 27,
+      "selection": "minimum central ripple in nominal environment only; frozen for all other environments"
+    },
+    {
+      "layout": "A_H_out",
+      "alpha_left": 0.5,
+      "relative_delay_right_ms": 0,
+      "search_candidates": 27,
+      "selection": "minimum central ripple in nominal environment only; frozen for all other environments"
+    },
+    {
+      "layout": "A_V_low",
+      "alpha_left": 0.5,
+      "relative_delay_right_ms": 0,
+      "search_candidates": 27,
+      "selection": "minimum central ripple in nominal environment only; frozen for all other environments"
+    },
+    {
+      "layout": "A_V_high",
+      "alpha_left": 0.5,
+      "relative_delay_right_ms": 0,
+      "search_candidates": 27,
+      "selection": "minimum central ripple in nominal environment only; frozen for all other environments"
+    },
+    {
+      "layout": "B_H_in",
+      "alpha_left": 0.25,
+      "relative_delay_right_ms": -4,
+      "search_candidates": 27,
+      "selection": "minimum central ripple in nominal environment only; frozen for all other environments"
+    },
+    {
+      "layout": "B_H_out",
+      "alpha_left": 0.75,
+      "relative_delay_right_ms": -8,
+      "search_candidates": 27,
+      "selection": "minimum central ripple in nominal environment only; frozen for all other environments"
+    },
+    {
+      "layout": "B_V_low",
+      "alpha_left": 0.25,
+      "relative_delay_right_ms": -6,
+      "search_candidates": 27,
+      "selection": "minimum central ripple in nominal environment only; frozen for all other environments"
+    },
+    {
+      "layout": "B_V_high",
+      "alpha_left": 0.75,
+      "relative_delay_right_ms": 0,
+      "search_candidates": 27,
+      "selection": "minimum central ripple in nominal environment only; frozen for all other environments"
+    }
+  ],
+  "checks": [
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_H_in",
+      "T60_s": 0.2,
+      "tau0_s": 0.02,
+      "relative_error": 2.675394578392129e-16
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_H_in",
+      "T60_s": 0.2,
+      "tau0_s": 0.2,
+      "relative_error": 2.543280362080636e-16
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_H_in",
+      "T60_s": 0.2,
+      "tau0_s": 2,
+      "relative_error": 2.536648228323932e-16
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_H_in",
+      "T60_s": 0.4,
+      "tau0_s": 0.02,
+      "relative_error": 1.4193277682880457e-16
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_H_in",
+      "T60_s": 0.4,
+      "tau0_s": 0.2,
+      "relative_error": 1.341770610436719e-16
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_H_in",
+      "T60_s": 0.4,
+      "tau0_s": 2,
+      "relative_error": 1.4962761150411235e-16
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_H_in",
+      "T60_s": 0.8,
+      "tau0_s": 0.02,
+      "relative_error": 8.00201008384461e-17
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_H_in",
+      "T60_s": 0.8,
+      "tau0_s": 0.2,
+      "relative_error": 9.98969766316885e-17
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_H_in",
+      "T60_s": 0.8,
+      "tau0_s": 2,
+      "relative_error": 8.555015464859129e-17
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_H_out",
+      "T60_s": 0.2,
+      "tau0_s": 0.02,
+      "relative_error": 1.4895976087530507e-16
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_H_out",
+      "T60_s": 0.2,
+      "tau0_s": 0.2,
+      "relative_error": 2.5337859636632715e-16
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_H_out",
+      "T60_s": 0.2,
+      "tau0_s": 2,
+      "relative_error": 2.5235613836734406e-16
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_H_out",
+      "T60_s": 0.4,
+      "tau0_s": 0.02,
+      "relative_error": 1.386235597918121e-16
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_H_out",
+      "T60_s": 0.4,
+      "tau0_s": 0.2,
+      "relative_error": 1.3508141484965776e-16
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_H_out",
+      "T60_s": 0.4,
+      "tau0_s": 2,
+      "relative_error": 1.3371357363415447e-16
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_H_out",
+      "T60_s": 0.8,
+      "tau0_s": 0.02,
+      "relative_error": 7.759114307837975e-17
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_H_out",
+      "T60_s": 0.8,
+      "tau0_s": 0.2,
+      "relative_error": 9.686539817404797e-17
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_H_out",
+      "T60_s": 0.8,
+      "tau0_s": 2,
+      "relative_error": 7.64798616936771e-17
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_V_low",
+      "T60_s": 0.2,
+      "tau0_s": 0.02,
+      "relative_error": 2.6930498654327156e-16
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_V_low",
+      "T60_s": 0.2,
+      "tau0_s": 0.2,
+      "relative_error": 2.565967249584047e-16
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_V_low",
+      "T60_s": 0.2,
+      "tau0_s": 2,
+      "relative_error": 2.554331936049036e-16
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_V_low",
+      "T60_s": 0.4,
+      "tau0_s": 0.02,
+      "relative_error": 1.5386246638386905e-16
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_V_low",
+      "T60_s": 0.4,
+      "tau0_s": 0.2,
+      "relative_error": 1.3436227865296425e-16
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_V_low",
+      "T60_s": 0.4,
+      "tau0_s": 2,
+      "relative_error": 1.3402014332546485e-16
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_V_low",
+      "T60_s": 0.8,
+      "tau0_s": 0.02,
+      "relative_error": 1.3883630532735485e-16
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_V_low",
+      "T60_s": 0.8,
+      "tau0_s": 0.2,
+      "relative_error": 1.3702026799612067e-16
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_V_low",
+      "T60_s": 0.8,
+      "tau0_s": 2,
+      "relative_error": 1.3684312880482872e-16
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_V_high",
+      "T60_s": 0.2,
+      "tau0_s": 0.02,
+      "relative_error": 2.66437530359864e-16
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_V_high",
+      "T60_s": 0.2,
+      "tau0_s": 0.2,
+      "relative_error": 2.534737985066882e-16
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_V_high",
+      "T60_s": 0.2,
+      "tau0_s": 2,
+      "relative_error": 2.5220455832679343e-16
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_V_high",
+      "T60_s": 0.4,
+      "tau0_s": 0.02,
+      "relative_error": 1.5377614853209723e-16
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_V_high",
+      "T60_s": 0.4,
+      "tau0_s": 0.2,
+      "relative_error": 1.4984713898748343e-16
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_V_high",
+      "T60_s": 0.4,
+      "tau0_s": 2,
+      "relative_error": 1.3472673771626187e-16
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_V_high",
+      "T60_s": 0.8,
+      "tau0_s": 0.02,
+      "relative_error": 1.3879656100533714e-16
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_V_high",
+      "T60_s": 0.8,
+      "tau0_s": 0.2,
+      "relative_error": 1.412016613964463e-16
+    },
+    {
+      "test": "x_reflection_equal_sources",
+      "layout": "A_V_high",
+      "T60_s": 0.8,
+      "tau0_s": 2,
+      "relative_error": 1.3680871453654336e-16
+    },
+    {
+      "test": "cutoff40_60",
+      "layout": "A_H_in",
+      "frequencies_Hz": [
+        20.0,
+        40.0,
+        60.0,
+        62.0,
+        80.0
+      ],
+      "relative_L2": 1.7438505941903492e-08,
+      "max_pointwise_relative": 3.145491434872764e-07,
+      "max_magnitude_change_dB": 1.969198600733936e-06,
+      "note": "Source and receiver smoothing fixed .12/.03m. No certificate for point-source limit or all environments."
+    },
+    {
+      "test": "cutoff40_60",
+      "layout": "B_V_high",
+      "frequencies_Hz": [
+        20.0,
+        40.0,
+        60.0,
+        60.5,
+        80.0
+      ],
+      "relative_L2": 1.810812404006213e-08,
+      "max_pointwise_relative": 8.747281261345601e-07,
+      "max_magnitude_change_dB": 7.077302012655109e-06,
+      "note": "Source and receiver smoothing fixed .12/.03m. No certificate for point-source limit or all environments."
+    },
+    {
+      "test": "frequency_mesh_worst_equal_case",
+      "layout": "A_V_high",
+      "T60_s": 0.8,
+      "tau0_s": 0.02,
+      "step_Hz": 0.25,
+      "ripple_dB": 78.96668963016171,
+      "minimum_frequency_Hz": 59.5,
+      "ripple_change_vs_halfHz_dB": 0.042811263723436355,
+      "note": "Deep cancellations are sensitive to frequency sampling; no continuum maximum claim."
+    },
+    {
+      "test": "frequency_mesh_worst_equal_case",
+      "layout": "A_V_high",
+      "T60_s": 0.8,
+      "tau0_s": 0.02,
+      "step_Hz": 0.125,
+      "ripple_dB": 78.98013236127659,
+      "minimum_frequency_Hz": 59.5,
+      "ripple_change_vs_halfHz_dB": 0.056253994838314725,
+      "note": "Deep cancellations are sensitive to frequency sampling; no continuum maximum claim."
+    },
+    {
+      "test": "frequency_mesh_worst_equal_case",
+      "layout": "B_H_out",
+      "T60_s": 0.4,
+      "tau0_s": 2,
+      "step_Hz": 0.25,
+      "ripple_dB": 66.54653981778614,
+      "minimum_frequency_Hz": 62.0,
+      "ripple_change_vs_halfHz_dB": 0.02195399704943668,
+      "note": "Deep cancellations are sensitive to frequency sampling; no continuum maximum claim."
+    },
+    {
+      "test": "frequency_mesh_worst_equal_case",
+      "layout": "B_H_out",
+      "T60_s": 0.4,
+      "tau0_s": 2,
+      "step_Hz": 0.125,
+      "ripple_dB": 66.54653981778614,
+      "minimum_frequency_Hz": 62.0,
+      "ripple_change_vs_halfHz_dB": 0.02195399704943668,
+      "note": "Deep cancellations are sensitive to frequency sampling; no continuum maximum claim."
+    }
+  ],
+  "axial_modes": [
+    {
+      "axis": "x",
+      "length_m": 3.7,
+      "first_axial_Hz": 46.35135135135135
+    },
+    {
+      "axis": "y",
+      "length_m": 4.6,
+      "first_axial_Hz": 37.28260869565218
+    },
+    {
+      "axis": "z",
+      "length_m": 2.5,
+      "first_axial_Hz": 68.6
+    }
+  ],
+  "software": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "limitations": [
+    "No obstacle scattering or cabinet recoil",
+    "No electrical or excursion limits in imposed-U transfer",
+    "Phenomenological rigid-mode diagonal damping, not physical impedance boundary",
+    "No measured room or monitors",
+    "Frequency grid .5Hz, no continuum optimum or guaranteed EQ"
+  ]
+}
