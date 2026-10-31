@@ -119,7 +119,7 @@ być przesunięty,a preferowany jest środek jednej z połów frontu.
     dawnego S0 za potwierdzone. U-019 potwierdza aktualny układ i przybliżone
     wymiary briefu4,6×3,7×2,5m. Rzut i scenariusze są w raporcie018;
     uwzględnić przejście i stolarkę jako nierozpoznane warunki brzegowe.
-29. U-020 zastępuje docelową orientację U-018: klient zamieni meble,
+29. U-020 zastępuje docelową orientację U-018: użytkownik zamieni meble,
     kanapa będzie po prawej, RTV po lewej stronie oryginalnego rzutu.
     Front y=0 jest po lewej, +y w prawo, x=0 na dole obrazu, +x ku górze.
     Okna/przejście nie zostały obrócone razem z meblami. Wymiary U-019
@@ -375,7 +375,7 @@ Postęp końca sesji2026-10-23:
   Odtworzono opublikowane minimum Bellows2024; sprawdzono energię,
   235 008 kombinacji V/I/X i odrębną zbieżność przestrzenną 44 punktów.
   Maksymalna znaleziona poprawka SPL około 1,712 dB dotyczy warunkowego
-  C07 i hipotetycznego ustawienia B; nie jest prognozą dla klienta.
+  C07 i hipotetycznego ustawienia B; nie jest prognozą dla użytkownika.
   Rozpraszanie na finalnej skrzyni i identyfikacja rzeczywistego Mmd/strat
   pozostają otwarte przy integracji P18/P21/P29. P11 włączono do pełnego
   odtwarzania; końcowy PDF i pojedynczy wybór nadal oczekują reszty programu.
@@ -1227,7 +1227,7 @@ sprzężona z wieloma portami ciśnienia FV, osobna zbieżność paneli,
 a następnie zewnętrzne promieniowanie konstrukcji i aktualizacja P29.
 
 
-## Postęp 2026-10-31 — nowy brief klienta: końcówki mocy, DSP, 9 marek
+## Postęp 2026-10-31 — Rozszerzenie warunków badawczych: końcówki mocy, DSP, 9 marek
 
 **Uwaga: to nowa przestrzeń projektowa, nie akceptacja RSS390HF-4.**
 Dotychczasowa rekomendacja C02 ma odtąd status **wstępnego
