@@ -269,6 +269,31 @@ być przesunięty,a preferowany jest środek jednej z połów frontu.
     dostęp,mocowanie,prześwity i pozycja źródła sprawdzić w obu orientacjach.
     Konfiguracja `dane/konfiguracje/ograniczenia_gabarytow_v1_20261027.json`.
 
+## Zasady redakcyjne README.md
+
+README.md jest publicznym **przewodnikiem tematycznym po badaniach**,
+nie dziennikiem zmian. Początek ma wyjaśniać cel projektu,
+ograniczenia, nawigację i główne wnioski — bez datowanych
+komunikatów o kolejnych kampaniach. Istotne wyniki umieszczaj
+w odpowiednich rozdziałach (przetworniki, akustyka, mechanika,
+regulacja, DSP, pomieszczenie), wraz z wykresem PNG/SVG, wyjaśnieniem
+jego warunków oraz odnośnikami do raportu, kodu i danych.
+Nie publikuj wykresu bez interpretacji ani nie przypisuj symulacjom
+statusu pomiarów. Historię pracy zapisuj w AGENTS.md i raportach.
+Ewentualny changelog README może być wyłącznie na samym końcu.
+Nie nazywaj niewyeksportowanych obliczeń Work opublikowanymi.
+
+**Kryterium doboru przetwornika:** szukać najtańszego rozwiązania,
+które jednocześnie spełnia przyjęte progi SPL/jakości w zakresie 20–40 Hz,
+ograniczenia cieplne, Sd i użyteczne wychylenie, V/I napędu,
+głębokość zewnętrzną do 500 mm i wymagania nieliniowości gazu w
+zamkniętej skrzyni. `Sd·Xmax` nie jest dowodem liniowości ani niskiego THD.
+Dotychczasowy RSS390HF-4 jest wstępnym faworytem modelowym, nie
+najtańszym potwierdzonym rozwiązaniem. Analiza cen została odłożona
+w obecnym zakresie badań; po jej wznowieniu należy ponowić ranking
+wśród wariantów spełniających kryteria, bez przypisywania starym
+wynikom nieobliczonego wymiaru kosztu.
+
 ## Stan i postępy
 
 | Data | Wykonane | Dowód / ograniczenie | Następny krok |
