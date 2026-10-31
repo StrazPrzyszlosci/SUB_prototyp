@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="990" height="450" viewBox="0 0 990 450"><rect width="990" height="450" fill="white"/>
+<text x="48" y="45" font-family="Arial" font-weight="bold" font-size="27" fill="#193b51">Czy rozpoznajemy ten sam rezonans na dwóch siatkach?</text><text x="48" y="77" font-family="Arial" font-size="15" fill="#567181">P36C • 12 modów pojedynczej płyty • test metody MAC, NIE całej obudowy</text>
+<text x="50" y="159" font-family="Arial" font-size="18" fill="#37586a">8×4 → 16×8</text><rect x="278" y="132" width="560" height="47" fill="#eff2f5"/><rect x="278" y="132" width="535.7968" height="47" fill="#4b81b0"/><text x="850" y="165" font-family="Arial" font-size="18" fill="#315266">0,957</text>
+<text x="50" y="248" font-family="Arial" font-size="18" fill="#37586a">16×8 → 32×12</text><rect x="278" y="221" width="560" height="47" fill="#eff2f5"/><rect x="278" y="221" width="558.348" height="47" fill="#519a7a"/><text x="850" y="254" font-family="Arial" font-size="18" fill="#315266">0,997</text>
+<text x="48" y="321" font-family="Arial" font-size="16" fill="#426170">Minimalne MAC dla wszystkich dwunastu dopasowanych modów; 12/12 identyfikacji zgodnych.</text>
+<text x="48" y="364" font-family="Arial" font-size="15" fill="#5e7481">Przed porównaniem postaci interpolowano je na wspólne punkty fizyczne.</text>
+<text x="48" y="406" font-family="Arial" font-size="15" fill="#955c4b">Wynik nie oznacza, że globalny MES subwoofera ma już zweryfikowane postacie.</text></svg>
