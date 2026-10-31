@@ -46,6 +46,12 @@ def solve(f,vb,compliance,fpanel,zeta,driver,cfg):
     rw=2*zeta*np.sqrt(kw*mw)
     zwall=kw-w*w*mw+1j*w*rw
 
+    # Power entering the box port must equal wall damper dissipation,
+    # using consistent RMS amplitudes for U=1 V RMS.
+    wall_power=rw*(w*abs(qwall))**2
+    port_power=np.real(zbox)*abs(v)**2
+    power_residual=abs(wall_power-port_power)/max(wall_power,port_power,1e-40)
+
     # Cross-check 1: two algebraically equivalent expressions for gas load.
     zport=sd*sd/(1j*w*(cg+1/zwall))
     port_residual=abs(zport-zbox)/max(abs(zbox),1e-50)
@@ -64,7 +70,8 @@ def solve(f,vb,compliance,fpanel,zeta,driver,cfg):
         rigid_speed_m_s_V=float(abs(vr)),elastic_speed_m_s_V=float(abs(v)),
         box_mechanical_resistance_Ns_m=float(np.real(zbox)),
         electrical_impedance_real_ohm=float(np.real(ze)),
-        wall_loss_rms_W=float(rw*(w*abs(qwall))**2),
+        wall_loss_rms_W=float(wall_power),
+        energy_port_balance_error=float(power_residual),
         port_residual=float(port_residual),
         direct_matrix_residual=float(matrix_residual),
         gas_compliance_m3_Pa=float(cg),wall_compliance_abs_m3_Pa=float(abs(cwall)))
@@ -92,10 +99,12 @@ def main():
 
     err=max(r['port_residual'] for r in rows)
     independent_error=max(r['direct_matrix_residual'] for r in rows)
+    power_error=max(r['energy_port_balance_error'] for r in rows)
     bad=sum(r['box_mechanical_resistance_Ns_m']<-1e-8 or
             r['electrical_impedance_real_ohm']<=0 for r in rows)
     assert err<2e-12,err
     assert independent_error<2e-12,independent_error
+    assert power_error<2e-12,power_error
     assert bad==0,bad
 
     static=[]
@@ -107,6 +116,7 @@ def main():
            equivalent_added_l=cw*cfg['rho_kg_m3']*cfg['sound_speed_m_s']**2*1000))
     summary={'n':len(rows),'independent_port_formula_error_max':err,
              'direct_2x2_matrix_error_max':independent_error,
+             'power_balance_max_relative_error':power_error,
              'nonpassive_cases':bad,'static_equivalents':static,
              'results_by_candidate':{},'model':'reduced reciprocal gas-panel; not spatial FEM'}
     for name in cfg['candidates']:
