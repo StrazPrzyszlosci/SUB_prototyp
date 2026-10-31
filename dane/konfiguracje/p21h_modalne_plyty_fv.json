@@ -1,0 +1,146 @@
+{
+  "scope": "P21H theoretical simply-supported Kirchhoff-Love plate modes coupled to spatial FV of conditional P20D rectangular obstacles. Not a P18E bonded-brace FEM, not measured modal shapes or fatigue/THD validation.",
+  "rho_kg_m3": 1.2,
+  "sound_m_s": 343,
+  "fill_depth_m": 0.05,
+  "fill_bulk_loss_tangent": 0.035,
+  "source_x_m": 0.209,
+  "source_z_m": 0.228,
+  "panel_E_pa": [
+    1500000000,
+    2100000000,
+    3000000000
+  ],
+  "panel_density_kg_m3": 730,
+  "panel_nu": 0.3,
+  "panel_t_m": 0.022,
+  "damping_zeta": [
+    0.01,
+    0.03,
+    0.06
+  ],
+  "panel_mode_cutoffs": [
+    1,
+    2,
+    3
+  ],
+  "drivers": [
+    "Dayton RSS390HF-4",
+    "Dayton RSS390HE-22 seria",
+    "STX W.32.800.8.FCX"
+  ],
+  "grid_settings": [
+    {
+      "name": "120_coarse",
+      "large": 11,
+      "small": 1,
+      "step_m": 0.06,
+      "frequency_hz": [
+        20,
+        30,
+        40,
+        50,
+        60,
+        70,
+        80,
+        90,
+        100,
+        110,
+        120,
+        130,
+        135,
+        138,
+        140,
+        142,
+        143,
+        144,
+        145,
+        146,
+        148,
+        150,
+        152,
+        155,
+        160,
+        165,
+        170,
+        180
+      ]
+    },
+    {
+      "name": "120_refined",
+      "large": 11,
+      "small": 1,
+      "step_m": 0.045,
+      "frequency_hz": [
+        20,
+        30,
+        40,
+        50,
+        60,
+        70,
+        80,
+        90,
+        100,
+        110,
+        120,
+        130,
+        135,
+        138,
+        140,
+        142,
+        143,
+        144,
+        145,
+        146,
+        148,
+        150,
+        152,
+        155,
+        160,
+        165,
+        170,
+        180
+      ]
+    },
+    {
+      "name": "120_fine_witness",
+      "large": 11,
+      "small": 1,
+      "step_m": 0.035,
+      "frequency_hz": [
+        80,
+        140,
+        146,
+        160,
+        180
+      ]
+    },
+    {
+      "name": "100_coarse",
+      "large": 16,
+      "small": 3,
+      "step_m": 0.06,
+      "frequency_hz": [
+        40,
+        80,
+        140,
+        146,
+        160
+      ]
+    },
+    {
+      "name": "150_coarse",
+      "large": 2,
+      "small": 0,
+      "step_m": 0.06,
+      "frequency_hz": [
+        40,
+        80,
+        140,
+        146,
+        160
+      ]
+    }
+  ],
+  "caveats": "Uniform rectangular plate simply-supported around entire perimeter, independent top and bottom; rigid braces not mechanically modeled, but are included as gas obstacles; no complex density CircularPores or front-face reconstruction. Absolute modal response near resonance contingent on assumed E/zeta/boundaries."
+}
