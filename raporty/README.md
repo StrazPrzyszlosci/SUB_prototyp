@@ -79,3 +79,4 @@ bieżący zakres sprawdzaj w [programie 30 pakietów](../PROGRAM_30_BADAN.md).
 - [Raport 065 — P21F: przestrzenne mody gazu i podatne pola ścian](065_P21F_wielomody_gazu_i_scian.md).
 
 - [Brief klienta 31.10.2026 — dobór modułów ICEpower/Hypex, Flex Eight/HTx i audyt 9 nowych marek (raport nienumerowany)](BRIEF_2026-10-31_wzmacniacz_DSP_i_9_marek.md).
+- [Badanie P22C: impedancja zespolona, cztery końcówki mocy, trzy ścieżki DSP, 99 900 przypadków i poprawka RMS/Xmax](P22C_2026-10-31_wzmacniacze_impedancja_DSP_Xpeak.md).
