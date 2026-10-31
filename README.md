@@ -11,7 +11,7 @@ nie jest kandydatem na konstrukcję końcową.*
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 75 raportów · Python/JavaScript**
+**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 76 raportów · Python/JavaScript**
 
 Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie. Aktualna pula obejmuje także dwa przypadki wstrzymane w nowym audycie źródeł (EMS i SUPRAVOX), a ponadto nie każda konfiguracja ma jeszcze pełny komplet badań nieliniowych i termicznych.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
@@ -1256,3 +1256,12 @@ pomiaru — to pomaga porównać wyniki.
 Wykonano 225 nowych warunkowych obliczeń (5 najważniejszych finalistów × 5 pojemności 75–150l × 3 częstotliwości × 3 hipotetyczne budżety strat). **C02 Dayton RSS390HF-4 nadal jest wstępnym faworytem; 120l to punkt startu prototypu, 100l jest atrakcyjnym kompromisem, 80l warunkową opcją wymuszoną gabarytem.** P29C wskazuje praktycznie plateau metryki od około 100l. Nowy model pokazuje mniejsze straty cewki przy osiąganiu Xmax/20Hz w 120l niż w 80l, lecz nie stanowi pomiaru termicznego.
 
 [Raport 075](raporty/075_P29D_rekomendacja_kandydatow_i_objetosc.md) · [kod](skrypty/p29d_5_finalistow_75_150l.js) · [225 obliczeń i F3 JSON](wyniki/p29d_5_finalistow_75_150l_20261031.json).
+
+
+## P30A–C — konstrukcja prototypu oparta na wielu badaniach (31.10.2026)
+
+**Raport 076:** sprawdzono sześć korpusów 1000–1055 mm szerokości, 420–440 mm głębokości, z 30–50 mm warstwą tylną, 20 wkładami i wariantami objętości około 100/120/150 l. Potwierdzono 20/20 translacyjnych torów wkładania w czterech układach (nie jest to test zamków i narzędzi). Do tego 180 analitycznych testów hipotetycznych płyt SSSS i 486 wariantów małosygnałowej odpowiedzi C02 przy rozrzucie T/S i litrażu.
+
+**Preferowany wariant do dalszego CAD/MES:** korpus **1040×430×500 mm**, tylna mata **40 mm**, nominalnie **102,47/121,82/151,97 l** z wkładami. Pełny obrys z osłoną ma w rozpatrywanych scenariuszach maks. **486 mm**; nominalna rezerwa 14 mm nie jest fizycznie zweryfikowana. Alternatywa 1050×425×500 mm ma większy zapas głębokości, ale wymaga jeszcze cieńszej maty 35 mm. **Nie zatwierdzono CNC ani granic bezpiecznego wysterowania.**
+
+[Raport 076](raporty/076_P30ABC_plytki_korpus_wklady_i_panele.md) · [kod geometrii](skrypty/p30a_robust_geometry.py) · [kod analizy płyt i T/S](skrypty/p30b_struktura_i_akustyka.py) · [warianty geometrii](wyniki/p30a_geometria_przeglad_20261031.json) · [666 wyników](wyniki/p30bc_paneli_ts_20261031.json).
