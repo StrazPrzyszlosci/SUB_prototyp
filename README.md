@@ -11,7 +11,7 @@ nie jest kandydatem na konstrukcję końcową.*
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 82 raporty · Python/JavaScript**
+**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 83 raporty · Python/JavaScript**
 
 Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie. Aktualna pula obejmuje także dwa przypadki wstrzymane w nowym audycie źródeł (EMS i SUPRAVOX), a ponadto nie każda konfiguracja ma jeszcze pełny komplet badań nieliniowych i termicznych.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
@@ -92,6 +92,16 @@ Skróty wyjaśniamy w [krótkim słowniku](#slownik).
 ![Zintegrowana rama i połączenia — starszy model porównawczy](wyniki/55_P18C_pelna_rama_i_polaczenia.png)
 
 *Model całej ramy pozwala wyszukiwać słabe miejsca i kierunki pracy spoin. Po zmianie geometrii na 1020 × 425 mm wymaga ponownego przeliczenia.*
+
+### 3a. Co się zmienia, gdy liczymy całą skrzynię jednocześnie?
+
+![P33A: uproszczona globalna siatka ścian, wręg i kosza](wyniki/p33a_siatka_calej_skrzyni.svg)
+
+*Połączono w jednym modelu sześć ścian, naroża, dwa obwody wręg, otwór frontowy, masę kosza i wkładów. **To uproszczony model energetyczny**, a nie jeszcze poprawny pełny MES powłokowy. [Raport 083](raporty/083_P33A_globalna_siatka_obudowy_i_spoin.md).*
+
+![P33A: zbieżność siatki i wrażliwość na połączenia naroży](wyniki/p33a_zbieznosc_ugiec.svg)
+
+*Im sztywniejsze przyjęte naroża, tym mniejsze ugięcie w tym modelu. Sprawdzono trzy rozmiary siatki i trzy sztywności połączeń, ale nie zmierzono rzeczywistych własności spoin. **Nie jest to zatwierdzenie do CNC**. [Kod do odtworzenia](skrypty/p33a_global_shell_network.py).*
 
 ![Lokalne naprężenia przy spoinie — wpływ sztywności i wzmocnienia](wyniki/65_P19F_sztywnosc_i_przeniesienie_naprezen.png)
 
@@ -1360,3 +1370,10 @@ Wykonano 225 nowych warunkowych obliczeń (5 najważniejszych finalistów × 5 p
 ## P32A — dalsze badania drgań (31.10.2026)
 
 Nowy raport 082 zawiera **612 zespolonych obliczeń** wymuszonego ruchu pojedynczej płyty z dwiema sprężystymi liniami podparcia w paśmie 20–180 Hz, w tym kontrolę bilansu mocy i zbieżności bazy. Ważne: to **nie MES całej skrzyni**. Poprawiono również wcześniejszy błąd jednostek w raporcie 081. [Kod i wyniki](skrypty/p32a_dynamika_panelu.js) · [raport 082](raporty/082_P32A_dynamika_panelu_wreg_i_tlumienia.md).
+
+
+## P33A — pierwsze globalne sprzężenie konstrukcji (31.10.2026)
+
+**Raport 083:** 14 symulacji z sześcioma ścianami, otworem na głośnik, dwoma obwodami wręg, podatnością połączeń oraz hipotetyczną masą kosza i wkładów. Przeprowadzono kontrolę zbieżności siatki (140/105/80 mm) i poprawiono odwzorowanie kołowego otworu frontu za pomocą całkowania na 10×10 podkomórkach. Wyniki wskazują wysoką wrażliwość na sztywność naroży i rozkład masy. **Model jest wstępny i nie jest zwalidowanym MES powłokowym ani dokumentacją wykonawczą.**
+
+[Raport 083](raporty/083_P33A_globalna_siatka_obudowy_i_spoin.md) · [Kod Python](skrypty/p33a_global_shell_network.py) · [Podsumowanie JSON](wyniki/p33a_globalny_model_podsumowanie_20261031.json) · [Model siatki](wyniki/p33a_siatka_calej_skrzyni.svg) · [Wynik zbieżności](wyniki/p33a_zbieznosc_ugiec.svg).
