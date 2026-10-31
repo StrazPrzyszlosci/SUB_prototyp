@@ -100,3 +100,7 @@ bieżący zakres sprawdzaj w [programie 30 pakietów](../PROGRAM_30_BADAN.md).
 
 - [Raport 089 — P35A: 36 analiz względnego ciśnienia na ścianach](089_P35A_rozklad_cisnienia_na_scianach.md).
 - [Raport 090 — P35B: 16 globalnych testów stabilizacji hourglass elementu Q4](090_P35B_globalna_stabilizacja_hourglass.md).
+
+- [Raport 091 — P36A: 324 przypadki podatności MDF, grubości i idealnych wręg](091_P36A_grubosc_MDF_podatnosc_i_wregi.md).
+- [Raport 092 — P36B: 972 scenariusze C02 Dayton kontra STX przy zmianie podatności](092_P36B_podatnosc_i_porownanie_Dayton_STX.md).
+- [Raport 093 — P36C: test MAC 12 postaci płytowych, trzy siatki](093_P36C_weryfikacja_MAC_na_plycie.md).

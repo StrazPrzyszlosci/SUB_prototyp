@@ -11,7 +11,7 @@ nie jest kandydatem na konstrukcję końcową.*
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 90 raportów · Python/JavaScript**
+**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 93 raporty · Python/JavaScript**
 
 Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie. Aktualna pula obejmuje także dwa przypadki wstrzymane w nowym audycie źródeł (EMS i SUPRAVOX), a ponadto nie każda konfiguracja ma jeszcze pełny komplet badań nieliniowych i termicznych.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
@@ -1455,6 +1455,26 @@ Po badaniu P34A idealnych prostopadłościanów (raport 086) wykonano **P34B, ra
 [Raport 087](raporty/087_P34B_przestrzenne_cisnienie_100_120_150.md) · [Raport 088](raporty/088_P34C_obciazenia_i_blokowanie_wkladow.md) · [kod FV](skrypty/p34b_przestrzenne_pole_p30e.js) · [kod obciążeń](skrypty/p34c_sily_mocowania_wkladow.js) · [dane FV](wyniki/p34b_przestrzenne_pole_p30e_20261031.json) · [dane wkładów](wyniki/p34c_moduly_wklady_324_20261031.json).
 
 
+## Nowe badania P36 — dlaczego liczymy ściany, a nie tylko litry?
+
+### Czy lepsza jest grubsza płyta MDF, czy poprawnie połączona wręga?
+
+![P36A: porównanie podatności 18/22/25/28mm MDF i liczby idealnych podpór](wyniki/p36a_podatnosc_MDF_i_wreg.svg)
+
+*W modelu analitycznym przy 22 mm MDF dodatkowa podatność ścian odpowiada około 12,26 l gazu bez wręg i 3,59 l przy dwóch idealnych liniach podparcia. **To nie jest dodatkowa wolna objętość skrzyni ani dowód jakości połączeń.** Wykonano 324 scenariusze. [Raport 091](raporty/091_P36A_grubosc_MDF_podatnosc_i_wregi.md).*
+
+### A czy podatność ścian zmieni wybór między Daytonem a STX?
+
+![P36B: F3 trzech przetworników w idealnym i podatnym modelu 120l](wyniki/p36b_F3_Dayton_STX_P36.svg)
+
+*W obliczeniach małosygnałowych C02 Dayton RSS390HF-4 ma F3 około 32 Hz, STX FCX około 46 Hz, a STX 38.800 MC około 91 Hz przy 120 l bez DSP. **F3 nie jest miarą THD, zniekształceń ani jakości słuchowej.** 972 warianty i właściwe dane T/S z repozytorium. [Raport 092](raporty/092_P36B_podatnosc_i_porownanie_Dayton_STX.md).*
+
+### Jak sprawdzamy, czy MES rozpoznaje tę samą postać drgań?
+
+![P36C: minimalne współczynniki MAC przy zagęszczeniu siatki](wyniki/p36c_zgodnosc_MAC_plyta.svg)
+
+*Wykonaliśmy weryfikację metody MAC na niezależnym modelu **jednej** płyty, nie całej skrzyni. 12 modów śledzono przez trzy siatki: zgodność 12/12 i minimalne MAC 0,957 oraz 0,997. **Globalny MAC całej obudowy jest nadal do wykonania**, po udostępnieniu wektorów własnych i poprawie geometrii. [Raport 093](raporty/093_P36C_weryfikacja_MAC_na_plycie.md).*
+
 ## P35 — nacisk na ściany i kontrola poprawności MES (31.10.2026)
 
 **Raport 089, P35A:** wykonano 36 analiz rozkładu względnego ciśnienia na powierzchniach sześciu ścian, dla 100/120/150 l, 20/40/60/80 Hz i trzech siatek. W stanie 120 l przy 80 Hz średnie ciśnienie modelowe wynosi względem średniej komory: front 94,6%, tył 109,9%, lewa ściana 77,3%, prawa 136,9%, góra 99,3%, dół 101,8%. **To model bez tłumienia maty i ruchu ścian, nie rzeczywiste siły ani SPL.**
@@ -1464,3 +1484,16 @@ Po badaniu P34A idealnych prostopadłościanów (raport 086) wykonano **P34B, ra
 [Raport 089](raporty/089_P35A_rozklad_cisnienia_na_scianach.md) · [36 analiz FV](wyniki/p35a_sily_sciany_36_20261031.json) · [raport 090](raporty/090_P35B_globalna_stabilizacja_hourglass.md) · [16 obliczeń Q4](wyniki/p35b_stabilizacja_globalna_16_20261031.json) · [skrypt numeryczny](skrypty/p35b_globalne_gamma_Q4.py) · [schemat ciśnienia](wyniki/p35a_cisnienie_scian_80hz.svg).
 
 **Następna bramka:** pomiar właściwości MDF i spoin, dokładny CAD kosza/frontu z siatką dopasowaną do obwodu oraz sprzężenie ścian z powietrzem z rzeczywistym tłumieniem maty. Nadal **nie rozpoczynać frezowania na podstawie obecnych modeli**.
+
+
+## P36 — wyniki wrażliwości MDF i niezależnego testu MAC (31.10.2026)
+
+**Raport 091:** 324 analityczne warianty podatności idealnie podpartych płyt: grubość, E, gęstość, objętość i zero/jedna/dwie *idealne* linie podparcia. Dla 22mm MDF przy 120l: równoważnik podatności 12,26 / 6,29 / 3,59l. Idealne wręgi nie zastępują rzeczywistych spoin; nie ma podstaw, by zmienić grubość na 18mm.
+
+**Raport 092:** 972 małosygnałowe warianty trzech modeli C02/C06/C08. Uwzględnienie podatności P36A pokazuje niewielką zmianę F3 Dayton RSS390HF-4, ale NIE ocenia promieniowania ścian, THD ani odpowiedzi pomieszczenia.
+
+**Raport 093:** 36 rozwiązań 12 postaci pojedynczej płyty w trzech siatkach, dwie macierze MAC i 24 przyporządkowania. Test metody przeszedł kontrolę, **globalny MAC obudowy pozostaje otwarty**.
+
+[Raport 091](raporty/091_P36A_grubosc_MDF_podatnosc_i_wregi.md) · [Raport 092](raporty/092_P36B_podatnosc_i_porownanie_Dayton_STX.md) · [Raport 093](raporty/093_P36C_weryfikacja_MAC_na_plycie.md) · [Skrypt analizy MDF](skrypty/p36a_podatnosc_i_grubosc_MDF.js) · [Porównanie Dayton/STX](skrypty/p36b_przetworniki_i_podatnosc.js) · [MAC](skrypty/p36c_test_MAC_plyty.js).
+
+**Bramka przed CNC nadal niezaliczona:** rzeczywista sprężystość i trwałość spoin, pełny CAD frontu i zamków, globalny MAC z konwergencją oraz pomiar po zbudowaniu. Nie zatwierdzono wykonania produkcyjnego.

@@ -1,0 +1,259 @@
+{
+  "study": "P36C",
+  "date": "2026-10-31",
+  "status": "INDEPENDENT PLATE-MODE MAC BENCHMARK, NOT GLOBAL 6DOF ENCLOSURE MAC",
+  "cfg": {
+    "date": "2026-10-31",
+    "panel_a_mm": 976,
+    "panel_b_mm": 359,
+    "h_mm": 22,
+    "E_GPa": 2.1,
+    "rho_kgm3": 730,
+    "nu": 0.3,
+    "modes_m": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "modes_n": [
+      1,
+      2,
+      3
+    ],
+    "mesh": [
+      [
+        8,
+        4
+      ],
+      [
+        16,
+        8
+      ],
+      [
+        32,
+        12
+      ]
+    ],
+    "common_probe": [
+      17,
+      13
+    ],
+    "accept_MAC": 0.9
+  },
+  "tests": 36,
+  "comparisons": [
+    {
+      "pair": "8x4 to 16x8",
+      "mean_MAC": 0.9844429857130513,
+      "min_MAC": 0.9567829502357925,
+      "id_match_count": 12,
+      "all_modes": 12,
+      "matched": [
+        {
+          "from": "1,1",
+          "to": "1,1",
+          "mac": 0.999863779584318,
+          "freq_from": 151.58611248092632,
+          "freq_to": 154.79818202974923
+        },
+        {
+          "from": "2,1",
+          "to": "2,1",
+          "mac": 0.99894322875703,
+          "freq_from": 204.65809606077187,
+          "freq_to": 209.8671295155463
+        },
+        {
+          "from": "3,1",
+          "to": "3,1",
+          "mac": 0.9946773257489075,
+          "freq_from": 285.96909227405655,
+          "freq_to": 299.56264186889086
+        },
+        {
+          "from": "4,1",
+          "to": "4,1",
+          "mac": 0.9821956066612388,
+          "freq_from": 385.71179495496006,
+          "freq_to": 420.8302459944995
+        },
+        {
+          "from": "1,2",
+          "to": "1,2",
+          "mac": 0.997132550046815,
+          "freq_from": 500.18887317556874,
+          "freq_to": 547.0600191551202
+        },
+        {
+          "from": "2,2",
+          "to": "2,2",
+          "mac": 0.9962145137976759,
+          "freq_from": 553.2608567554142,
+          "freq_to": 602.1289666409174
+        },
+        {
+          "from": "3,2",
+          "to": "3,2",
+          "mac": 0.9919602635371965,
+          "freq_from": 634.571852968699,
+          "freq_to": 691.824478994262
+        },
+        {
+          "from": "4,2",
+          "to": "4,2",
+          "mac": 0.9795126395338223,
+          "freq_from": 734.3145556496024,
+          "freq_to": 813.0920831198706
+        },
+        {
+          "from": "1,3",
+          "to": "1,3",
+          "mac": 0.973993988953509,
+          "freq_from": 931.0855825382387,
+          "freq_to": 1148.0400203101847
+        },
+        {
+          "from": "2,3",
+          "to": "2,3",
+          "mac": 0.9730972558278482,
+          "freq_from": 984.1575661180842,
+          "freq_to": 1203.1089677959815
+        },
+        {
+          "from": "3,3",
+          "to": "3,3",
+          "mac": 0.968941725872462,
+          "freq_from": 1065.468562331369,
+          "freq_to": 1292.8044801493263
+        },
+        {
+          "from": "4,3",
+          "to": "4,3",
+          "mac": 0.9567829502357925,
+          "freq_from": 1165.2112650122724,
+          "freq_to": 1414.072084274935
+        }
+      ]
+    },
+    {
+      "pair": "16x8 to 32x12",
+      "mean_MAC": 0.998894136169164,
+      "min_MAC": 0.997046754732163,
+      "id_match_count": 12,
+      "all_modes": 12,
+      "matched": [
+        {
+          "from": "1,1",
+          "to": "1,1",
+          "mac": 0.9999828062253058,
+          "freq_from": 154.79818202974923,
+          "freq_to": 155.56033891037458
+        },
+        {
+          "from": "2,1",
+          "to": "2,1",
+          "mac": 0.9999618214073046,
+          "freq_from": 209.8671295155463,
+          "freq_to": 211.2096835633631
+        },
+        {
+          "from": "3,1",
+          "to": "3,1",
+          "mac": 0.9998768403601921,
+          "freq_from": 299.56264186889086,
+          "freq_to": 303.3984561212322
+        },
+        {
+          "from": "4,1",
+          "to": "4,1",
+          "mac": 0.999473415586569,
+          "freq_from": 420.8302459944995,
+          "freq_to": 431.2917807839132
+        },
+        {
+          "from": "1,2",
+          "to": "1,2",
+          "mac": 0.9996215059441631,
+          "freq_from": 547.0600191551202,
+          "freq_to": 558.4642212350498
+        },
+        {
+          "from": "2,2",
+          "to": "2,2",
+          "mac": 0.9996005287081097,
+          "freq_from": 602.1289666409174,
+          "freq_to": 614.1135658880382
+        },
+        {
+          "from": "3,2",
+          "to": "3,2",
+          "mac": 0.9995155783652031,
+          "freq_from": 691.824478994262,
+          "freq_to": 706.3023384459074
+        },
+        {
+          "from": "4,2",
+          "to": "4,2",
+          "mac": 0.9991122993515739,
+          "freq_from": 813.0920831198706,
+          "freq_to": 834.1956631085883
+        },
+        {
+          "from": "1,3",
+          "to": "1,3",
+          "mac": 0.9975549086013147,
+          "freq_from": 1148.0400203101847,
+          "freq_to": 1203.9022854947561
+        },
+        {
+          "from": "2,3",
+          "to": "2,3",
+          "mac": 0.9975339747331772,
+          "freq_from": 1203.1089677959815,
+          "freq_to": 1259.5516301477448
+        },
+        {
+          "from": "3,3",
+          "to": "3,3",
+          "mac": 0.997449200014894,
+          "freq_from": 1292.8044801493263,
+          "freq_to": 1351.7404027056139
+        },
+        {
+          "from": "4,3",
+          "to": "4,3",
+          "mac": 0.997046754732163,
+          "freq_from": 1414.072084274935,
+          "freq_to": 1479.6337273682948
+        }
+      ]
+    }
+  ],
+  "frequency_convergence": [
+    {
+      "grid": "8x4",
+      "f11": 151.58611248092632,
+      "f11_exact": 156.24285982105562,
+      "relative_error_pct": -2.980454495944751
+    },
+    {
+      "grid": "16x8",
+      "f11": 154.79818202974923,
+      "f11_exact": 156.24285982105562,
+      "relative_error_pct": -0.9246360396634956
+    },
+    {
+      "grid": "32x12",
+      "f11": 155.56033891037458,
+      "f11_exact": 156.24285982105562,
+      "relative_error_pct": -0.4368333448726669
+    }
+  ],
+  "warnings": [
+    "Eigenmodes from separable finite-difference simply-supported plate, not the global Q4 cabinet FEM; method tests matching and sampling only.",
+    "Fixed common probe interpolation and 12 selected low-order modes, not a proof for near-degenerate complex cabinet modes.",
+    "MAC>0.9 criterion is chosen for the benchmark only; global acceptable threshold and mode classification need independent definition.",
+    "Global P33B still has nonconforming hole and unmeasured joint stiffness."
+  ]
+}

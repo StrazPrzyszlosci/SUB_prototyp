@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 610" width="1020" height="610"><rect width="1020" height="610" fill="white"/>
+<text x="43" y="44" font-family="Arial" font-size="27" font-weight="bold" fill="#183e52">Czy podatność MDF zmieni wybór głośnika?</text>
+<text x="43" y="72" font-family="Arial" font-size="16" fill="#54707d">P36B • 120 l · liniowy model skrzyni zamkniętej · bez korekcji DSP</text>
+<text x="58" y="154" font-family="Arial" font-size="19" font-weight="bold" fill="#27485b">Dayton RSS390HF-4</text>
+ <rect x="275" y="132" width="181.62235750000002" height="27" rx="4" fill="#4f88ac"/><text x="471.6223575" y="151" font-family="Arial" font-size="14" fill="#375466">32.15 Hz</text>
+ <rect x="275" y="171" width="181.69106150000002" height="27" rx="4" fill="#dc955b"/><text x="471.69106150000005" y="190" font-family="Arial" font-size="14" fill="#375466">32.16 Hz</text><text x="58" y="274" font-family="Arial" font-size="19" font-weight="bold" fill="#27485b">STX W.32.800.8.FCX</text>
+ <rect x="275" y="252" width="258.956563" height="27" rx="4" fill="#4f88ac"/><text x="548.956563" y="271" font-family="Arial" font-size="14" fill="#375466">45.83 Hz</text>
+ <rect x="275" y="291" width="261.17577" height="27" rx="4" fill="#dc955b"/><text x="551.17577" y="310" font-family="Arial" font-size="14" fill="#375466">46.23 Hz</text><text x="58" y="394" font-family="Arial" font-size="19" font-weight="bold" fill="#27485b">STX W.38.800.8.MC</text>
+ <rect x="275" y="372" width="513.993721" height="27" rx="4" fill="#4f88ac"/><text x="803.993721" y="391" font-family="Arial" font-size="14" fill="#375466">90.97 Hz</text>
+ <rect x="275" y="411" width="520.188042" height="27" rx="4" fill="#dc955b"/><text x="810.188042" y="430" font-family="Arial" font-size="14" fill="#375466">92.07 Hz</text><rect x="58" y="542" width="19" height="19" fill="#4f88ac"/><text x="86" y="557" font-family="Arial" font-size="14" fill="#4d6675">Idealnie sztywna skrzynia</text>
+<rect x="331" y="542" width="19" height="19" fill="#dc955b"/><text x="360" y="557" font-family="Arial" font-size="14" fill="#4d6675">Z hipotetyczną podatnością bez wręg</text>
+<text x="55" y="596" font-family="Arial" font-size="13" fill="#875b52">F3 nie jest pomiarem jakości ani promieniowania własnego ścian. Front z otworem w analizie sztywności uproszczony.</text></svg>
