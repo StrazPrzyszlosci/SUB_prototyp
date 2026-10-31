@@ -1,5 +1,14 @@
 # Nowy brief klienta — RSS390HF-4 tylko jako faworyt wstępny; dziewięć nowych marek i aktywna elektronika
 
+> **ERRATUM (P22C, 31.10.2026):** Pierwszy przesiew 180 i 274725
+> przypadków miał błąd konwersji `Xrms→Xpeak`, zawyżający
+> napięcie odpowiadające katalogowemu Xmax o √2. Dane zostały
+> ponownie przeliczone na tej gałęzi. Obowiązujące wzory i
+> obciążenia wzmacniaczy dokumentuje
+> [raport P22C](P22C_2026-10-31_wzmacniacze_impedancja_DSP_Xpeak.md).
+> Nie stosować wcześniejszych wartości do zabezpieczeń.
+
+
 **Data aktualizacji: 31.10.2026. Status: nowy zakres i przeprowadzony etap weryfikacji źródeł/obliczeń przesiewowych. Nie ukończono ponownej pełnej kampanii badawczej wszystkich modeli ani kwalifikacji bezpieczeństwa.**
 
 ## 1. Zmiana celu, brak narzuconego zwycięzcy
