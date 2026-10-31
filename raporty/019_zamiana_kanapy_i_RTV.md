@@ -1,6 +1,6 @@
 # Raport 019 — docelowa zamiana kanapy i ściany RTV
 
-Stan: 2026-10-24. **Dane użytkownika U-020:** klient zamieni kanapę i RTV
+Stan: 2026-10-24. **Dane użytkownika U-020:** użytkownik zamieni kanapę i RTV
 miejscami. Docelowo **kanapa po prawej, RTV po lewej stronie rzutu**.
 Wymiary około 4,6 × 3,7 × 2,5 m potwierdzone w U-019 pozostają bez zmian.
 
@@ -26,7 +26,7 @@ z_new = z_old
 ```
 
 Transformacja zachowuje odległości. Nie wyznacza nowych pozycji uszu,
-monitorów ani subwooferów, ponieważ klient przestawia meble, a nie obraca
+monitorów ani subwooferów, ponieważ użytkownik przestawia meble, a nie obraca
 całego wnętrza wraz z otworami i jego warunkami brzegowymi.
 
 ## Konsekwencje akustyczne i konstrukcyjne
