@@ -1,0 +1,122 @@
+{
+  "status": "Executed JS simulation of 729 hypothetical 2-node thermal transients using same mathematical model as committed Python script. No measured Rth/Cth, no real thermal limits or native miniDSP observer.",
+  "cases": 729,
+  "steps": 628826,
+  "programs": [
+    "sustained",
+    "burst5_every30",
+    "burst1_every10"
+  ],
+  "protect": [
+    "no_speaker_protection",
+    "peak_only_0.80Xmax",
+    "peak_and_thermal_80K_oracle"
+  ],
+  "stop_over200K": 40,
+  "unprotected_overX": 108,
+  "any_80K": 170,
+  "max_energy_residual": 4.4320126272913816e-16,
+  "dt_audit": [
+    {
+      "protection": "no_speaker_protection",
+      "dt_0_2_coil_rise_K": 12.031547582358966,
+      "dt_0_1_coil_rise_K": 12.031395128829702,
+      "relative_change_percent": 0.0012671309322934772
+    },
+    {
+      "protection": "peak_only_0.80Xmax",
+      "dt_0_2_coil_rise_K": 10.332670651089863,
+      "dt_0_1_coil_rise_K": 10.332538301482735,
+      "relative_change_percent": 0.0012809012003269585
+    },
+    {
+      "protection": "peak_and_thermal_80K_oracle",
+      "dt_0_2_coil_rise_K": 10.332670651089863,
+      "dt_0_1_coil_rise_K": 10.332538301482735,
+      "relative_change_percent": 0.0012809012003269585
+    }
+  ],
+  "selected": [
+    {
+      "volume_l": 80,
+      "f_hz": 40,
+      "amp": "NC500_RCA2",
+      "thermal": "central_ASSUMED",
+      "program": "sustained",
+      "protection": "no_speaker_protection",
+      "dt_s": 0.2,
+      "steps": 900,
+      "stopped_at_200K_s": null,
+      "max_coil_rise_K": 12.031547582358966,
+      "max_motor_rise_K": 2.376819235216354,
+      "final_coil_rise_K": 12.031547582358966,
+      "max_xpeak_mm": 12.132398176585154,
+      "time_over_peak_Xmax_s": 0,
+      "time_over_hypothetical_80K_s": 0,
+      "first_time_over_80K_s": null,
+      "on_s": 179.99999999999832,
+      "limited_on_s": 0,
+      "energy_copper_J": 2986.5630490367926,
+      "source_energy_ratio": 1,
+      "avg_level_reduction_on_db": 0,
+      "max_thermal_energy_residual": 2.8137767606755434e-16
+    },
+    {
+      "volume_l": 80,
+      "f_hz": 40,
+      "amp": "NC500_RCA2",
+      "thermal": "central_ASSUMED",
+      "program": "sustained",
+      "protection": "peak_only_0.80Xmax",
+      "dt_s": 0.2,
+      "steps": 900,
+      "stopped_at_200K_s": null,
+      "max_coil_rise_K": 10.332670651089863,
+      "max_motor_rise_K": 2.0383043179731,
+      "final_coil_rise_K": 10.332670651089863,
+      "max_xpeak_mm": 11.200000000000003,
+      "time_over_peak_Xmax_s": 0,
+      "time_over_hypothetical_80K_s": 0,
+      "first_time_over_80K_s": null,
+      "on_s": 179.99999999999832,
+      "limited_on_s": 179.99999999999832,
+      "energy_copper_J": 2561.6867261204156,
+      "source_energy_ratio": 0.860688549060524,
+      "avg_level_reduction_on_db": -0.6515397502075576,
+      "max_thermal_energy_residual": 3.6068157180647697e-16
+    },
+    {
+      "volume_l": 80,
+      "f_hz": 40,
+      "amp": "NC500_RCA2",
+      "thermal": "central_ASSUMED",
+      "program": "sustained",
+      "protection": "peak_and_thermal_80K_oracle",
+      "dt_s": 0.2,
+      "steps": 900,
+      "stopped_at_200K_s": null,
+      "max_coil_rise_K": 10.332670651089863,
+      "max_motor_rise_K": 2.0383043179731,
+      "final_coil_rise_K": 10.332670651089863,
+      "max_xpeak_mm": 11.200000000000003,
+      "time_over_peak_Xmax_s": 0,
+      "time_over_hypothetical_80K_s": 0,
+      "first_time_over_80K_s": null,
+      "on_s": 179.99999999999832,
+      "limited_on_s": 179.99999999999832,
+      "energy_copper_J": 2561.6867261204156,
+      "source_energy_ratio": 0.860688549060524,
+      "avg_level_reduction_on_db": -0.6515397502075576,
+      "max_thermal_energy_residual": 3.6068157180647697e-16
+    }
+  ],
+  "warnings": [
+    "Rth/Cth parameters are intentionally uncalibrated with approximately order-of-magnitude variation; NO factory Dayton temperature limits are known.",
+    "80 K coil temperature RISE is arbitrary diagnostic contour, NOT safe operating limit.",
+    "Peak guard at 0.8*Xmax is hypothetical ideal-model safety factor, not measured mechanical clearance.",
+    "Temperature oracle reads exact internal state at every time step. Neither miniDSP Flex Eight nor Flex HTx is verified to run this observer/control.",
+    "Small-signal BL,Cms,Le fixed, no BL(x)/Cms(x)/power compression/multitone; one sinus repeated with burst duty, NOT actual music spectrum.",
+    "AMP 4-ohm 1kHz power is only reference voltage cap; output time/current/thermal not measured. Only the manufacturer Ipeak reference is modeled.",
+    "Stop at 200 K rise to avoid extrapolating nonlinear thermal model into nonsensical temperatures."
+  ]
+}
