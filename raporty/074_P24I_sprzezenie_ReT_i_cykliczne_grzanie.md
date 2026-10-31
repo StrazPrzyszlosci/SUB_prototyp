@@ -28,7 +28,7 @@ Każdy przypadek porównuje dwa równoległe modele przez maksymalnie 3600 s prz
 Część impulsu wewnątrz kroku obliczono jako **dokładne pokrycie czasowe przedziałów ON/OFF**, nie proste próbkowanie stanu na początku kroku. To zapewnia identyczny całkowity czas pobudzenia w obu porównaniach. Przy osiągnięciu przez którykolwiek model umownego +200 K przerwano obie trajektorie. To koniec zakresu ekstrapolacji, **nie rzeczywista temperatura awarii**.
 
 ## Główne wyniki
-| f [Hz] | Nominalne |Zother| [Ω] | Zwiększenie maks. Tc | Zmniejszenie maks. Tc | Największa dodatnia różnica [K] | Największa ujemna różnica [K] |
+| f [Hz] | Moduł Zother [Ω] | Zwiększenie maks. Tc | Zmniejszenie maks. Tc | Największa dodatnia różnica [K] | Największa ujemna różnica [K] |
 |---:|---:|---:|---:|---:|---:|
 | 20 | 2.47 | 18/54 | 32/54 | 20.23 | -14.56 |
 | 40 | 13.78 | 28/54 | 0/54 | 0.96 | 0.00 |
