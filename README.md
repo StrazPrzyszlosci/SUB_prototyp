@@ -232,6 +232,30 @@ temperatury, prądu, zgodności wejścia i kompletnego kosztorysu.
 · [180 kontrolnych obliczeń Dayton](wyniki/brief20261031_180_swiadkow_Dayton.csv)
 · [konfiguracja DSP i 5 architektur](dane/konfiguracje/brief_klienta_20261031_wzmacniacz_dsp.json).
 
+**P22C: policzono zespoloną impedancję i ograniczenia rzeczywistego toru DSP–wzmacniacz.**
+Dla pięciu kandydatów, pięciu objętości, czterech modułów, trzech
+ścieżek DSP i trzech hipotetycznych budżetów strat cewki wykonano
+**99 900 obliczeń**, niezależnie odtworzonych w Pythonie.
+
+**Ważna korekta:** katalogowe Xmax to wychylenie **szczytowe**.
+W poprzednich tabelach 180 i 274 725 przypadków porównano je
+omyłkowo z wychyleniem RMS; oba zbiory **przeliczono ponownie**
+(bez przyznawania zmian w THD, których nie mierzono).
+
+![P22C — częstotliwościowa obwiednia napięcia, Xmax i mocy w 80 l](wyniki/107_P22C_wzmacniacz_DSP_Xmax.svg)
+
+W modelu 80l, C02, 40Hz, przy scenariuszu strat miedzianych
+250W, NC500MP z RCA 2Vrms osiąga modelowo 112,66dB,
+a z TRS 4Vrms 113,90dB (+1,24dB); przy 20Hz **zysk wynosi 0dB**,
+ponieważ ogranicza mechanika. To liniowe wyliczenia półprzestrzeni,
+nie czysty SPL w pokoju i nie końcowy limiter.
+
+[Raport P22C — impedancja, DSP, wzmacniacze i erratum RMS](raporty/P22C_2026-10-31_wzmacniacze_impedancja_DSP_Xpeak.md)
+· [900 grup wyników](wyniki/p22c_napiecie_prad_wychylenie_analiza.json)
+· [świadkowie](wyniki/p22c_swiadkowie_36.csv)
+· [skrypt](skrypty/p22c_naped_dsp_zespolona_impedancja.py)
+· [niezależny audyt](skrypty/p22c_niezalezna_kontrola.py).
+
 
 
 Filtr cyfrowy trzeba zaprojektować dla właściwej częstotliwości próbkowania
