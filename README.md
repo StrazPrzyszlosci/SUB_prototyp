@@ -11,7 +11,7 @@ nie jest kandydatem na konstrukcję końcową.*
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 100 raportów · Python/JavaScript**
+**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 102 raporty · Python/JavaScript**
 
 Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie. Aktualna pula obejmuje także dwa przypadki wstrzymane w nowym audycie źródeł (EMS i SUPRAVOX), a ponadto nie każda konfiguracja ma jeszcze pełny komplet badań nieliniowych i termicznych.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
@@ -66,6 +66,20 @@ Skróty wyjaśniamy w [krótkim słowniku](#slownik).
 ![P38B: wpływ korekty współrzędnych kosza na ciśnienie 80 Hz](wyniki/p38b_audyt_pozycji_zrodla.svg)
 
 *Oś x231/z250mm w P31C jest określona **od zewnętrznych krawędzi obudowy**. Po odjęciu grubości MDF22mm właściwe współrzędne wewnętrzne to **x209/z228mm**. Historyczny model P34B używał x231/z250mm także wewnątrz. W 120l na siatce55mm model RMS przy 80Hz zmienia się z 19,09% do 21,03%. **Oba wyniki to symulacje, nie THD**. [Raport 097](raporty/097_P38B_audyt_wspolrzednych_FV.md).*
+
+## P40 — czy osiem śrub utrzyma głośnik i czy pierścień daje miejsce na montaż?
+
+### Sam ciężar dzielony przez 8 to za mało
+
+![P40A: reakcje mocowań głośnika dla 4–8 czynnych śrub](wyniki/p40a_reakcje_grup_srub.svg)
+
+*Dla 15 kg, hipotetycznego obciążenia 5g i środka masy 120mm za frontem w modelu reakcji ośmiu śrub największe obciążenie pojedynczego punktu przy bocznym działaniu siły wynosi **151 N**, a nie **92 N** z uproszczenia F/8. Jeśli część śrub przestaje pracować, obciążenia mogą wzrosnąć kilkukrotnie. **To nie jest pomiar wytrzymałości śrub ani MDF.** [Raport 101](raporty/101_P40A_reakcje_8_mocowan.md).*
+
+### Ile naprawdę miejsca jest w pierścieniu wzmacniającym?
+
+![P40B: wymiana luzu montażowego na pas metalowego pierścienia przy śrubie](wyniki/p40b_budzet_promieniowy_pierscienia.svg)
+
+*Wycięcie Ø355,8mm i śruby na Ø368mm przy otworze kołnierza Ø6,5mm dają **tylko 2,85mm przestrzeni promieniowej łącznie**. Zbadano **675 wariantów** średnic i przesunięć pierścienia: 171 przechodzi podstawowe warunki geometryczne, ale przy przyjętych *przykładowych* rezerwach **1mm luzu + 2mm metalu żadna zwykła obręcz nie przechodzi**. To warunki badawcze, a nie normy. [Raport 102](raporty/102_P40B_tolerancje_pierscienia_675.md).*
 
 ## Nowe badania P39 — ciśnienie, mocowania i edytowalny model 3D
 
@@ -1570,3 +1584,14 @@ Po badaniu P34A idealnych prostopadłościanów (raport 086) wykonano **P34B, ra
 [Raport 098](raporty/098_P39A_naciski_scian_korekta_FV.md) · [Raport 099](raporty/099_P39B_geometria_pierscienia_i_glebokosc.md) · [Raport 100](raporty/100_P39C_edytowalny_model_3D_OpenSCAD.md) · [Model OpenSCAD](dokumentacja/P39C_front_korpus_pierscien_REFERENCYJNY_NIE_CNC.scad) · [36 map ciśnienia](wyniki/p39a_pola_na_scianach_36_20261101.json) · [54+20 kontroli geometrii](wyniki/p39b_kolizje_pierscien_glebokosc_20261101.json).
 
 **Bramka CNC pozostaje zamknięta.** Przed budową trzeba sprawdzić rzeczywistą bryłę kosza i narzędzia montażowe, zaprojektować wytrzymałe mocowanie śrub, skontrolować 500mm pełnego obrysu, przeprowadzić próby spoin/MDF i dopiero wtedy walidować siatkę MES oraz sprzężenie akustyczne.
+
+
+## P40 — rzeczywista bramka doboru mocowania (01.11.2026)
+
+**Raport 101:** wykonano 432 liniowe scenariusze rozkładu sił i momentów na osiem połączeń kosza z frontem, z masami 12/15/18kg, przyspieszeniami 1/3/5/10g, hipotetycznym ramieniem środka masy 60/120/180mm i wzorcami 4/6/8 czynnych połączeń. Analiza nie podaje nośności śrub ani MDF i nie określa wymaganego bezpieczeństwa transportowego. Dla wszystkich 8 śrub w wariancie 15kg/5g/e120mm model maksymalnej reakcji bocznej daje **151,11N**, a zwykłe F/8 tylko 91,94N.
+
+**Raport 102:** wykonano 675 wariantów tolerancji pierścienia metalowego i prowadzenia trzpienia przez dwa otwory. Zwykła współosiowa obręcz ma na promieniu tylko **2,85mm** na sumę luzu od wycięcia i materiału przy otworze. Wymaganie badawcze 1mm+2mm daje **0 przejść** i wykazuje deficyt 0,15mm już w geometrii nominalnej. Nie jest to próg normatywny ani badanie nośności.
+
+[Raport 101](raporty/101_P40A_reakcje_8_mocowan.md) · [432 przypadki reakcji](wyniki/p40a_reakcje_432_20261101.json) · [Raport 102](raporty/102_P40B_tolerancje_pierscienia_675.md) · [675 scenariuszy geometrii](wyniki/p40b_tolerancje_675_20261101.json).
+
+**Następna rekomendacja:** porównać co najmniej dwa alternatywne sposoby przenoszenia sił poza wąską strefę BCD Ø368mm, ustalić geometrię rzeczywistego kosza i połączeń, przeprowadzić wytrzymałościowy FEM kontaktowy oraz próby nośności na prawdziwym MDF 44mm. **Nie wydawać CNC ani nie dobierać śrub wyłącznie na podstawie tych modeli.**
