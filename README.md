@@ -11,7 +11,7 @@ nie jest kandydatem na konstrukcję końcową.*
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**26 modeli głośników · 11 producentów · 62 raporty · Python**
+**26 modeli głośników · 11 producentów · 63 raporty · Python**
 
 Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
@@ -359,6 +359,29 @@ w grupie 12 trajektorii i ma logarytmiczną oś energii.
 brak tu błędów czujników, modelu wzmacniacza i rzeczywistych nieliniowości.
 
 [Raport 062 — dowód granicy ZOH i kontrola zagęszczenia](raporty/062_P25D_probkowana_bariera_energetyczna.md)
+
+**A co, jeśli DSP nie zna dokładnie parametrów głośnika ani jego ruchu?**
+W badaniu P25E przeprowadzono **288 symulacji** z hipotetycznym
+rozrzutem parametrów i ograniczonym błędem odczytu prądu, położenia
+i prędkości membrany. Samo wykorzystanie nominalnej energii nie
+gwarantuje zachowania przyjętego limitu. Konserwatywne oszacowanie
+energii z górnych granic parametrów pozwala wyprowadzić matematyczny
+warunek ochrony zarówno dla bieżącego, jak i opóźnionego o próbkę
+odczytu.
+
+![P25E: jak błędy pomiaru i parametrów zmieniają ochronę energetyczną](wyniki/103_P25E_odpornosc_obserwacji.svg)
+
+W obliczonej próbie naiwna strategia przekroczyła przyjęty limit
+energii w **72/72** przypadków, natomiast dwie wersje z marginesem
+nie przekroczyły go w **0/144**. Nie oznacza to automatycznie
+przekroczenia dopuszczalnego wychylenia — granica energii jest
+celowo zachowawcza. Kosztem odporności jest mniejszy modelowy RMS
+ruchu membrany; nie jest to prognoza utraty głośności w pokoju.
+
+[Raport 063 — model, ścisły warunek ZOH i niepewność](raporty/063_P25E_odporna_bariera_bledy_obserwacji.md)
+· [pełne 288 prób](wyniki/p25e_kampania.csv)
+· [kod i założenia](skrypty/p25e_robustna_bariera.py).
+
 · [agregaty 144 prób](wyniki/p25d_agregaty.csv)
 · [kod odtwarzający eksperyment](skrypty/p25d_probkowana_bariera.py).
 
@@ -776,7 +799,7 @@ ani wartości RMS ze szczytowymi. Liczby z modeli nie są pomiarami urządzenia.
 
 Zbadano już wspólną geometrię z wręgami i wkładami (P20D),
 przestrzenne pole gazu oraz port napędu (P21D), podatność paneli
-(P18E), krótkie sygnały z ochroną (P25C), próbkowaną barierę (P25D) i warianty ustawienia
+(P18E), krótkie sygnały z ochroną (P25C), próbkowaną barierę (P25D), odporność na błędy stanu (P25E) i warianty ustawienia
 dwóch źródeł w pokoju (P26D/P27D). **Nie są to jeszcze jeden
 sprzężony model wielofizyczny ani zweryfikowany prototyp.**
 
@@ -864,6 +887,7 @@ nie zatwierdzonym docelowym głośnikiem.
 
 | Co pokazują nowe próby dynamicznego ograniczania wychylenia i temperatury? | [058 — sygnały i energetyczna bariera](raporty/058_P25C_sygnaly_czasowe_i_bariera_energii.md) | [216 przebiegów](wyniki/p25c_kampania.csv), [wykresy](wyniki/p25c_przebiegi.png), [kontrole](wyniki/p25c_weryfikacja_przejsciowa.json) |
 | Czy próbkowanie i opóźnienie sterownika unieważniają barierę ruchu/prądu? | [062 — P25D: ograniczenie energii między próbkami](raporty/062_P25D_probkowana_bariera_energetyczna.md) | [wykres](wyniki/102_P25D_bariera_probkowana.svg), [dane zbiorcze](wyniki/p25d_podsumowanie.json), [kod](skrypty/p25d_probkowana_bariera.py) |
+| Czy błędy pomiaru i niepewność T/S znoszą matematyczny limit ochrony? | [063 — P25E: odporna bariera ZOH](raporty/063_P25E_odporna_bariera_bledy_obserwacji.md) | [wykres](wyniki/103_P25E_odpornosc_obserwacji.svg), [288 przypadków](wyniki/p25e_kampania.csv), [porównanie kroków](wyniki/p25e_zbieznosc_porownanie.json) |
 | Czy skrzynia, wkłady i ich prześwity mieszczą się w obrysie? | [057 — geometria P20D](raporty/057_P20D_geometria_dostep_i_pelna_glebokosc.md) | [warianty](wyniki/p20d_warianty.csv), [wykres geometrii](wyniki/100_P20D_geometria.png) |
 | Czy wręgi pracują jak idealnie sztywne podpory? | [059 — model podatnych wręg](raporty/059_podatne_wregi_i_panele.md) | [pola ugięcia](wyniki/p18e_pola.png), [kontrole](wyniki/p18e_kontrole.json) |
 | Jak wygląda przestrzenne pole gazu w geometrii P20D? | [060 — P21D](raporty/060_P21D_wspolna_geometria_i_port_napedu.md) | [przebiegi napędu](wyniki/p21d_naped.csv), [przestrzenny wykres](wyniki/101_P21D_komora_i_naped.png) |
