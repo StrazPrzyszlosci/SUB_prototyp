@@ -1,0 +1,83 @@
+{
+  "scope": "Robust sample-and-hold barrier under bounded state and parameter errors; 0D sealed small-signal model; not a hardware limiter",
+  "candidates": {
+    "C02": [
+      19.5,
+      0.5,
+      3.02,
+      212,
+      829.6,
+      3,
+      0.92,
+      14
+    ],
+    "C11": [
+      29,
+      0.58,
+      4.59,
+      71.3,
+      804,
+      4.3,
+      2.2,
+      27
+    ],
+    "C06": [
+      24,
+      0.45,
+      3.34,
+      96,
+      491,
+      5.4,
+      1.68,
+      15
+    ]
+  },
+  "nominal_order": "Fs[Hz],Qes,Qms,Vas[L],Sd[cm^2],Re[ohm],Le[mH],Xmax[mm]",
+  "thermal_cases": [
+    [
+      0.3,
+      200,
+      0
+    ],
+    [
+      1.2,
+      50,
+      60
+    ]
+  ],
+  "uncertainty": {
+    "K_fraction": 0.1,
+    "M_fraction": 0.08,
+    "L_fraction": 0.15,
+    "BL_fraction": 0.1,
+    "Rm_fraction": 0.15,
+    "Re_fraction": 0.1
+  },
+  "sensor_bounds": {
+    "x_m": 0.0002,
+    "v_m_s": 0.03,
+    "i_a": 0.15
+  },
+  "temperature_limit_k": 80,
+  "hardware_current_peak_a": 16.97056274847714,
+  "xmax_fraction": 0.6,
+  "alpha_k_inv": 0.004,
+  "input_rms_v": 70,
+  "rail_peak_v": 56.568542494923804,
+  "controller_rates_hz": [
+    500,
+    2000,
+    6000
+  ],
+  "signals": [
+    "multisine_aligned",
+    "subsonic_impulse"
+  ],
+  "strategies": [
+    "ideal",
+    "naive",
+    "robust_now",
+    "robust_delay"
+  ],
+  "bounds_note": "Percentages/measurement errors are hypothetical stress envelopes, not measured driver tolerances. Voltage actuator and interval assumed exact. Re_min applies at theta>=0; BL reciprocity and constant K/M/Le are assumed."
+}
