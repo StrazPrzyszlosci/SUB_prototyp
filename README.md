@@ -11,7 +11,7 @@ nie jest kandydatem na konstrukcję końcową.*
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 70 raportów · Python**
+**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 71 raportów · Python**
 
 Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie. Aktualna pula obejmuje także dwa przypadki wstrzymane w nowym audycie źródeł (EMS i SUPRAVOX), a ponadto nie każda konfiguracja ma jeszcze pełny komplet badań nieliniowych i termicznych.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
@@ -219,6 +219,25 @@ Temperatury i współczynniki w tym badaniu są założeniami modelu.
 
 <a id="filtry"></a>
 ## DSP: dobry wzór filtru to początek
+
+**P24F — obserwator U/I w pętli zabezpieczenia (raport 071).**
+W 192 deterministycznych trajektoriach porównano cztery strategie termiczne
+z syntetycznymi pomiarami Z(f) przy 80/150/300 Hz, trzema hipotetycznymi
+sieciami cieplnymi, utratą pomiarów i dryftem rezystancji połączeń.
+Kontur wzrostu temperatury **+80 K jest tylko punktem diagnostycznym**,
+a nie limitem pracy Daytona. Mimo założonego marginesu estymacji 15 K i tempa
+5 K/s strategia predykcyjna przekroczyła ten kontur w 7/48 przypadków.
+Strategia z wcześniejszym progiem 55 K przekroczyła go w 3/48 przypadków,
+co **nie potwierdza jej bezpieczeństwa w rzeczywistym urządzeniu**.
+Nie potwierdzono praktycznej dostępności sygnału diagnostycznego, czujników
+U/I, API miniDSP ani fizycznej skuteczności toru wyciszenia.
+
+[Raport 071 — P24F](raporty/071_P24F_obserwator_w_petli_i_brak_pobudzenia.md)
+· [Kod odtwarzający 192 przebiegi](skrypty/p24f_obserwator_i_ochrona.py)
+· [Wyniki CSV](wyniki/p24f_192_przypadkow.csv)
+· [Podsumowanie JSON](wyniki/p24f_podsumowanie_20261031.json).
+
+
 
 **Czasowe nagrzewanie cewki (P24B) i dwie niezależne ochrony.**
 W 729 hipotetycznych trajektoriach sprzęgliśmy zespolone Z(f),
