@@ -80,5 +80,5 @@ bieżący zakres sprawdzaj w [programie 30 pakietów](../PROGRAM_30_BADAN.md).
 - [Raport 065 — P21F: przestrzenne mody gazu i podatne pola ścian](065_P21F_wielomody_gazu_i_scian.md).
 - [Raport 066 — P21G: przestrzenny FV z przeszkodami P20D i podatnymi panelami](066_P21G_FV_podatne_sciany_rzeczywiste_przeszkody.md).
 
-- [Brief klienta 31.10.2026 — dobór modułów ICEpower/Hypex, Flex Eight/HTx i audyt 9 nowych marek (raport nienumerowany)](BRIEF_2026-10-31_wzmacniacz_DSP_i_9_marek.md).
+- [rozszerzenie warunków badawczych 31.10.2026 — dobór modułów ICEpower/Hypex, Flex Eight/HTx i audyt 9 nowych marek (raport nienumerowany)](BRIEF_2026-10-31_wzmacniacz_DSP_i_9_marek.md).
 - [Raport 067 — P24B: 729 trajektorii z Re(T), cieplną siecią Cauer oraz niezależnymi barierami X/T](067_P24B_czasowa_termika_i_dwie_ochrony.md).
