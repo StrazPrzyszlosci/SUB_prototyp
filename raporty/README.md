@@ -77,3 +77,4 @@ bieżący zakres sprawdzaj w [programie 30 pakietów](../PROGRAM_30_BADAN.md).
 - [Raport 063 — P25E: błędy stanu i parametrów w cyfrowej barierze energetycznej](063_P25E_odporna_bariera_bledy_obserwacji.md).
 - [Raport 064 — P21E: port gazu, podatne ściany i 9801 obliczeń napędu](064_P21E_gaz_podatne_sciany_i_naped.md).
 - [Raport 065 — P21F: przestrzenne mody gazu i podatne pola ścian](065_P21F_wielomody_gazu_i_scian.md).
+- [Raport 066 — P21G: przestrzenny FV z przeszkodami P20D i podatnymi panelami](066_P21G_FV_podatne_sciany_rzeczywiste_przeszkody.md).

@@ -1,0 +1,121 @@
+{
+  "study": "P21G - compliant wall volume ports coupled to FV with P20D real AABB obstacles; distinct from full structural FEM",
+  "run_date": "2026-10-31",
+  "cases": 348,
+  "fluid_factorizations": 29,
+  "geometry": {
+    "external_mm": [
+      1000,
+      440,
+      500
+    ],
+    "inner_mm": [
+      956,
+      374,
+      456
+    ],
+    "driver_xz_mm": [
+      209,
+      228
+    ],
+    "proxy_motor": "A, assumed solid 5l, not measured basket",
+    "fill": "50mm rear layer, hypothetical bulk loss tangent 0.035; constant rho",
+    "wall_ports": "top and bottom fluid-exposed boundary faces; uniform assumed normal displacement"
+  },
+  "checks": {
+    "fv_max_relative_linear_residual": 2.6808595723995628e-12,
+    "reciprocity_max_relative": 3.145223880684887e-15,
+    "coupled_max_relative_rms_power_error": 1.064918930409454e-15,
+    "passivity_failures": 0
+  },
+  "states": [
+    {
+      "name": "120_coarse",
+      "large": 11,
+      "small": 1,
+      "mesh_step_m": 0.06,
+      "dof": 5601,
+      "air_l": 119.937424,
+      "frequencies_hz": "20..80 step 5"
+    },
+    {
+      "name": "120_refined",
+      "large": 11,
+      "small": 1,
+      "mesh_step_m": 0.045,
+      "dof": 8843,
+      "air_l": 119.937424,
+      "frequencies_hz": "20..80 step 5"
+    },
+    {
+      "name": "120_fine80",
+      "large": 11,
+      "small": 1,
+      "mesh_step_m": 0.035,
+      "dof": 10841,
+      "air_l": 119.937424,
+      "frequencies_hz": [
+        80
+      ]
+    },
+    {
+      "name": "100_coarse",
+      "large": 16,
+      "small": 3,
+      "mesh_step_m": 0.06,
+      "dof": 6257,
+      "air_l": 100.587424,
+      "frequencies_hz": [
+        40
+      ]
+    },
+    {
+      "name": "150_coarse",
+      "large": 2,
+      "small": 0,
+      "mesh_step_m": 0.06,
+      "dof": 3118,
+      "air_l": 150.087424,
+      "frequencies_hz": [
+        40
+      ]
+    }
+  ],
+  "ranges_nominal_scale1_at_120_refined": [
+    {
+      "candidate": "C02",
+      "min_delta_db": -0.06037640645016054,
+      "max_delta_db": 0.13322280355573599,
+      "at20_db": 0.13322280355573599,
+      "at40_db": -0.04247364099278393,
+      "at80_db": -0.0516933783247526
+    },
+    {
+      "candidate": "C11",
+      "min_delta_db": -0.035096759091423825,
+      "max_delta_db": 0.08431936480529739,
+      "at20_db": 0.08431936480529739,
+      "at40_db": -0.004281858239664131,
+      "at80_db": -0.035096759091423825
+    },
+    {
+      "candidate": "C06",
+      "min_delta_db": -0.0291492957476105,
+      "max_delta_db": 0.06069923158306122,
+      "at20_db": 0.06069923158306122,
+      "at40_db": -0.016148555032787525,
+      "at80_db": -0.029116991658690687
+    }
+  ],
+  "convergence": {
+    "coarse_to_refined_max_abs_vel_db_C02_three_f": [
+      0.0017301275952270382,
+      0.0021445778621325927,
+      0.0077437886120017415
+    ],
+    "refined_to_fine_80_C02_delta_db": -0.0000037657503902457923,
+    "refined_to_fine_80_C02_abs_v_db": -0.001839524339634316
+  },
+  "local_full_csv_sha256": "3f6bedf0a5ebdecf3bb920965c6bcf1f74bba7c5d98a902035efa99fc04ba91a",
+  "limitations": "No full cabinet FEM; panel distribution, stiffness, mode frequency and damping assumed. Fixed 50 mm imaginary-bulk fill is phenomenological, not CircularPores P21D. Face reconstruction and true 3D basket shape omitted. Frequency grid finite and no measured data. Real SPL and panel radiation not calculated."
+}
