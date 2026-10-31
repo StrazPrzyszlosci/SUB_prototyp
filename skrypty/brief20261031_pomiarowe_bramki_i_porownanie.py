@@ -42,7 +42,7 @@ def load():
     # PURIFI exact -01 is ALREADY in original 24. Update its data provenance
     # in situ with newly verified official factory parameters, DO NOT duplicate.
     for z in known:
-        existing=next((x for x in pool if x['model']==z['model']),None)
+        existing=next((x for x in pool if x['model']==z['model'] or x['model'].endswith(' '+z['model'])),None)
         if existing:
             existing.update(brand=z['brand'],verification=z['documentation_status'],
                 t=z['spec'],url=z['official_product_url'])
