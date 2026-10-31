@@ -1167,3 +1167,32 @@ bilans portu dały reszty rzędu 10⁻¹⁵; nie oznacza to walidacji 3D.
 Następna bramka: wielomodowy model pełnej ramy i sprzężenie rozłożonego
 ciśnienia P21D z podatnymi panelami P18E, bez zakładania idealnych
 podpór, oraz audyt mechanicznej wykonalności konstrukcji P20D.
+
+
+## Postęp 2026-10-31 — P21F: gaz przestrzenny i podatne pola
+
+Wykonano **52 272 obliczenia** pasywnego portu Galerkina z modami
+akustycznymi prostokątnej komory i 1–3 podatnymi polami na jej brzegach,
+przy trzech finalistach C02/C11/C06, objętościach 100/120/150 l,
+dwóch pozycjach membrany oraz czterech wariantach ścian. Zastosowano
+sześć ucięć modów nmax=0..5, czyli do 215 niezerowych modów.
+W 2178 kontrolach model nmax0 zgadzał się z równaniem P21E do
+7,18·10^-16. Maksymalny względny błąd bilansu mocy 7,36·10^-15;
+model akustyczny nie wygenerował ujemnych strat. Przejście nmax4→5
+zmieniało amplitudę do 0,02398 dB: **nie stwierdzono pełnej
+zbieżności**. Dodatkowe 288 świadków n5→6→7→8 wykazało
+zmiany maks. 0,01529/0,00510/0,00615 dB, nie monotoniczne.
+
+Zachować ostrożność: wewnętrzny prostokąt 956×374×456 mm pochodzi
+z P20D, lecz rzeczywiste wręgi, wkłady, mata, lokalne pole ciśnienia
+oraz zidentyfikowane postacie ścian pozostają poza tym zastępczym
+modelem. Warianty 100/120/150 l zmieniają K0 przy tych samych
+postaciach przestrzennych: to scenariusz, nie fizyczne MES/FV.
+Raport 065, skrypty P21F w `skrypty/`, dane wejściowe i podsumowanie
+w `dane/konfiguracje/p21f_mody_gaz_panele.json` i
+`wyniki/p21f_podsumowanie.json`. Wykres w rozdziale akustyki
+README, bez chronologii na początku.
+
+Kolejna bramka: połączenie prawdziwego FV P21D z przestrzennymi
+portami podatnych ścian P18E i zachowaniem energii we wspólnym
+modelu wręg, wkładów i wypełnienia P20D. Nie zamykać programu P21.
