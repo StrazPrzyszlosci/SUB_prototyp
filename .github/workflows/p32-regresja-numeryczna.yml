@@ -1,0 +1,34 @@
+name: P31B P32A - kontrola numeryczna
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  numerical-regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Reprodukcja modeli
+        run: |
+          node --check skrypty/p31b_plyta_i_podatne_linie.js
+          node --check skrypty/p32a_dynamika_panelu.js
+          node skrypty/p31b_plyta_i_podatne_linie.js > /tmp/p31b.log
+          node skrypty/p32a_dynamika_panelu.js > /tmp/p32a.log
+      - name: Asercje wynikow
+        run: |
+          node - <<'NODE'
+          const fs=require('node:fs');
+          const a=JSON.parse(fs.readFileSync('wyniki/p31b_podatnosc_dwoch_linii_135_20261031.json'));
+          const b=JSON.parse(fs.readFileSync('wyniki/p32a_dynamika_panelu_612_20261031.json'));
+          const t=a.selected_support_sensitivity[0].model_f1_Hz;
+          if(a.cases!==135||t<156.24||t>156.25)throw Error('P31B: blad jednostek lub liczby przypadkow');
+          if(b.studied_models!==36||b.frequency_points!==612)throw Error('P32A: liczba przypadkow');
+          if(b.convergence.some(x=>Math.abs(x.rel_percent)>5))throw Error('P32A: brak zbieznosci');
+          const readme=fs.readFileSync('README.md','utf8');
+          const images=(readme.match(/!\[[^\]]*\]\([^)]*\)/g)||[]);
+          if(images.length<60)throw Error('Brak galerii konstrukcji');
+          console.log('PASS P31B and P32A; figure count:',images.length);
+          NODE
