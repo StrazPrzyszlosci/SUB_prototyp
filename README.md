@@ -11,7 +11,7 @@ nie jest kandydatem na konstrukcję końcową.*
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 79 raportów · Python/JavaScript**
+**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 81 raportów · Python/JavaScript**
 
 Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie. Aktualna pula obejmuje także dwa przypadki wstrzymane w nowym audycie źródeł (EMS i SUPRAVOX), a ponadto nie każda konfiguracja ma jeszcze pełny komplet badań nieliniowych i termicznych.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
@@ -1286,3 +1286,12 @@ Wykonano 225 nowych warunkowych obliczeń (5 najważniejszych finalistów × 5 p
 **Raport 079:** 324 hipotetyczne scenariusze quasi-statycznego przewracania wysokiej skrzyni przy faktycznym rozkładzie zmienionych wkładów P30E. Sprawdzono 3 poziomy litrażu, 2 gęstości MDF, 3 masy i 3 położenia środka masy głośnika, dwa ustawienia membrany oraz 3 odległości linii kontaktu stopek od krawędzi. Modelowe minimalne kąty przy stopkach bez cofnięcia: około **19,70° (głośnik nisko)** i **15,27° (wysoko)**. Cofnięcie stopek o 25 mm obniża wynik do około 17,10° i 12,99°. **To nie jest certyfikat bezpieczeństwa ani dopuszczalny kąt/siła użytkowa.**
 
 [Raport 079](raporty/079_P30F_stabilnosc_1020_425.md) · [reprodukcja skryptem](skrypty/p30f_stabilnosc_nowego_korpusu.py) · [wyniki zbiorcze](wyniki/p30f_stabilnosc_podsumowanie_20261031.json).
+
+
+## P31 — porównanie STX/Dayton i mechanika wręg nowego korpusu (31.10.2026)
+
+**Raport 080 (P31A):** 33 konfiguracje, 1980 wariantów (17 820 punktów częstotliwościowych). Wsparcie decyzji między Dayton RSS390HF-4 (modelowy 20Hz 98,76dB) a STX W.32.800.8.FCX (94,80dB) i W.38.800.8.MC (94,11dB) przy 120l, 0.7Xmax, umownych 50W strat. Modele NIE oceniają rzeczywistego THD/IMD; ceny to weryfikowany snapshot, nie pełny koszt dwóch subwooferów.
+
+**Raport 081 (P31B):** 135 scenariuszy modelu Rayleigha–Ritza panelu i dwóch sprężystych podparć: przy E=2,1GPa f1≈115–211Hz zależnie od założonej sztywności linii. **Nie jest to MES całej obudowy ani zatwierdzenie projektu.**
+
+[Raport 080](raporty/080_P31A_porownanie_kosztowe_STX_Dayton_33.md) · [skrypt i dane P31A](skrypty/p31a_koszt_i_wspolne_limity_33.js) · [Raport 081](raporty/081_P31B_podatnosc_wreg_obudowy_1020_425.md) · [wyniki P31B](wyniki/p31b_podatnosc_dwoch_linii_135_20261031.json) · [Schemat konstrukcyjny SVG](dokumentacja/P31C_schemat_konstrukcji_1020_425.svg) · [Bramki przed CNC](dokumentacja/P31C_koncepcja_konstrukcyjna_i_bramki.md).
