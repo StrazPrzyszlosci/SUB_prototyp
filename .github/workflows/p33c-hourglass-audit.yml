@@ -1,0 +1,32 @@
+name: P33C — audyt elementu powłokowego
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  q4-hourglass:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install numpy scipy
+      - name: Test elementu swobodnego i płyty analitycznej
+        env:
+          OPENBLAS_NUM_THREADS: '1'
+        run: |
+          python skrypty/p33c_hourglass_audyt.py --out /tmp/p33c.json
+          python - <<'PY'
+          import json
+          z=json.load(open('/tmp/p33c.json'))
+          a=z['element_tests'];p=z['plate_tests']
+          assert len(a)==8 and len(p)==18
+          assert a[0]['null_modes']==8 and all(x['null_modes']==6 for x in a[1:])
+          h=[x for x in p if x['gamma']==1 and x['nx']==8][0]
+          assert 320<h['f1_Hz']<360
+          ref=[x for x in p if x['gamma']==0 and x['nx']==32][0]
+          assert 152<ref['f1_Hz']<156
+          print('PASS Q4 hourglass/locking audit')
+          PY

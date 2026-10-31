@@ -1,5 +1,8 @@
 # Raport 084 — P33B: zintegrowany MES powłokowy Q4 całej obudowy
 
+> **KRYTYCZNE SPROSTOWANIE P33C (31.10.2026):** [Raport 085](085_P33C_audyt_hourglass_elementu_Q4.md) wykazał **dwa nadmiarowe mechanizmy hourglass** pojedynczego elementu Q4 w P33B. Wartości ugięć i częstotliwości w dalszej części są HISTORYCZNYM, NIEZWALIDOWANYM eksperymentem; nie używać ich do ustalania wymiarów, nośności lub wyboru spoin bez stabilizacji elementu i ponownego, poprawnego rozwiązania całego korpusu. Sama zbieżność prostej płyty nie wykryła tej wady.
+
+
 **31.10.2026. Wykonane: 15 modeli numerycznych, trzy zagęszczenia siatki, trzy poziomy podatności naroży i sześć prób masy/wręg, plus niezależna kontrola płyty.**
 
 **Status:** opracowano działający, globalny **MES powłokowy z obrotami węzłów (Q4 Reissnera–Mindlina)**. To nie jest jeszcze zwalidowany model CAD produkcyjny: połączenia i geometria kosza/wkładów są uproszczone, a sztywności spoin i stopki nie zmierzone. Wnioski konstrukcyjne dotyczą **wrażliwości**, nie rzeczywistych rezonansów ani wytrzymałości.
