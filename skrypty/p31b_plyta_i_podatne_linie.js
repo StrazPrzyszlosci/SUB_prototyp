@@ -131,6 +131,7 @@ function analyze(p){
    f1_Hz_coarse:test.model_f1_Hz,f1_Hz_finer:finer.model_f1_Hz});
  }
  const selected=cases.filter(x=>x.W_mm===1020&&x.E_GPa===2.1&&x.rho_kg_m3===730);
+ if(Math.abs(selected[0].model_f1_Hz-156.2429)>.002 || Math.abs(selected[2].model_f1_Hz-171.132)>.002)throw Error('Unit conversion regression: expected 976x359mm and f1=156.2429/171.132Hz');
  const paramSweep=cases.filter(x=>x.W_mm===1020);
  const low=Math.min(...paramSweep.map(x=>x.model_f1_Hz)),high=Math.max(...paramSweep.map(x=>x.model_f1_Hz));
  return {study:"P31B",status:"Rayleigh-Ritz Kirchhoff SINGLE panel with elastic LINE-to-GROUND braces. Not FEM of cabinet.",parameters:p,cases:cases.length,
