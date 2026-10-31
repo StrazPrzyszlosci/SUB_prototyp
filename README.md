@@ -11,7 +11,7 @@ nie jest kandydatem na konstrukcję końcową.*
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 77 raportów · Python/JavaScript**
+**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 78 raportów · Python/JavaScript**
 
 Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie. Aktualna pula obejmuje także dwa przypadki wstrzymane w nowym audycie źródeł (EMS i SUPRAVOX), a ponadto nie każda konfiguracja ma jeszcze pełny komplet badań nieliniowych i termicznych.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
@@ -1272,3 +1272,10 @@ Wykonano 225 nowych warunkowych obliczeń (5 najważniejszych finalistów × 5 p
 **Raport 077:** 324 scenariusze modelu środka masy i quasi-statycznego przewracania: trzy korpusy, trzy układy wkładów, dwie gęstości MDF, trzy hipotetyczne masy i trzy położenia środka masy głośnika, dwie orientacje frontu (głośnik nisko/wysoko). Dla korpusu **1040×430×500 mm** modelowy najmniejszy kąt statycznego wywrócenia w rozważanej rodzinie wynosi **19,68° nisko i 15,39° wysoko**. Analiza pokazuje potrzebę przetestowania stopek i zabezpieczenia przed przewróceniem, **nie stanowi normy bezpieczeństwa ani dopuszczalnej siły pchnięcia**.
 
 [Raport 077](raporty/077_P30D_stabilnosc_pionowa_i_srodek_masy.md) · [kod obliczeń](skrypty/p30d_stabilnosc_pionowa.py) · [324 pełne wyniki](wyniki/p30d_stabilnosc_pionowa_20261031.json).
+
+
+## P30E — pełna mata 50 mm, roboczy wybór 1020×425×500 mm (31.10.2026)
+
+**Raport 078:** siedem wariantów z matą 50 mm, skróconymi tylnymi wkładami i 9 próbami dodatkowych obwiedni montażowych 3–8 mm. **1020×425×500 mm** uzyskał nominalnie 100,12 / 119,92 / 150,16 l, 19 mm hipotetycznej rezerwy całkowitej głębokości oraz przejście 20/20 dróg wkładania w grafie translacyjnym przy 6 mm. Przy 8 mm występują kolizje. Analizowano masę MDF (ok. 47 kg w stanie 120 l), zakresy niepewności wyporności i wymiarów, idealną pustą komorę oraz analityczny wzorzec jednego pola płyty. Nowe dane nie zastępują P18E (pełniejszy model podatnych wręg) ani P21G (przestrzenna akustyka). **Nie jest to projekt do CNC.**
+
+[Raport 078](raporty/078_P30E_mata50_montaz_robustnosc.md) · [skrypt reprodukcji](skrypty/p30e_mat50_geometria_montaz.py) · [wyniki kontrolne](wyniki/p30e_50mm_weryfikacja_skrot_20261031.json). Skrypt generuje rozszerzony plik wynikowy.
