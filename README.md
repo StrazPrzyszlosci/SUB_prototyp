@@ -11,7 +11,7 @@ nie jest kandydatem na konstrukcję końcową.*
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**26 modeli głośników · 11 producentów · 63 raporty · Python**
+**26 modeli głośników · 11 producentów · 64 raporty · Python**
 
 Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
@@ -768,6 +768,24 @@ nie jest to dowód dokładności całego pasma ani rzeczywistego THD.
 
 [Raport P21D — wspólna geometria i port napędu](raporty/060_P21D_wspolna_geometria_i_port_napedu.md).
 
+**Czy uginające się ścianki zmieniają pracę membrany?** W modelu P21E
+połączono sprężynę powietrzną skrzyni z jednym równoważnym trybem
+uginania dwóch paneli. Przy modelowych 120 l dodatkowa podatność paneli
+odpowiada około **5,37 l podatności powietrza w granicy statycznej**
+— *nie* dodatkowej fizycznej objętości komory. Dla C02 zmiana
+amplitudy ruchu w próbie nominalnej 20–80 Hz wyniosła od
+**−0,058 do +0,132 dB**.
+
+![P21E: wpływ uginania ścian na ruch trzech przetworników](wyniki/104_P21E_podatne_sciany.svg)
+
+To symulacja liniowa o **jednorodnym ciśnieniu**, nie połączone
+przestrzenne obliczenie FEM–FV z P18E i P21D. Nie wyznaczono
+rzeczywistych postaci drgań, promieniowania paneli ani THD.
+
+[Raport 064 — P21E: sprzężenie gazu i podatnych ścian](raporty/064_P21E_gaz_podatne_sciany_i_naped.md)
+· [39 punktów kontrolnych](wyniki/p21e_nominal.csv)
+· [podsumowanie 9801 przypadków](wyniki/p21e_podsumowanie.json).
+
 [Raport 050 — źródło w komorze](raporty/050_P21C0_plytka_komora_i_polozenie_zrodla.md)
 · [raport 051 — kołowa membrana](raporty/051_P21C1_membrana_kolowa_i_bezwladnosc.md)
 · [raport 052 — warstwy i wkłady](raporty/052_komora_warstwy_wklady_i_front.md).
@@ -798,7 +816,7 @@ ani wartości RMS ze szczytowymi. Liczby z modeli nie są pomiarami urządzenia.
 ## Co zostało do zrobienia
 
 Zbadano już wspólną geometrię z wręgami i wkładami (P20D),
-przestrzenne pole gazu oraz port napędu (P21D), podatność paneli
+przestrzenne pole gazu oraz port napędu (P21D), nowy model gaz–panele (P21E), podatność paneli
 (P18E), krótkie sygnały z ochroną (P25C), próbkowaną barierę (P25D), odporność na błędy stanu (P25E) i warianty ustawienia
 dwóch źródeł w pokoju (P26D/P27D). **Nie są to jeszcze jeden
 sprzężony model wielofizyczny ani zweryfikowany prototyp.**
@@ -891,6 +909,7 @@ nie zatwierdzonym docelowym głośnikiem.
 | Czy skrzynia, wkłady i ich prześwity mieszczą się w obrysie? | [057 — geometria P20D](raporty/057_P20D_geometria_dostep_i_pelna_glebokosc.md) | [warianty](wyniki/p20d_warianty.csv), [wykres geometrii](wyniki/100_P20D_geometria.png) |
 | Czy wręgi pracują jak idealnie sztywne podpory? | [059 — model podatnych wręg](raporty/059_podatne_wregi_i_panele.md) | [pola ugięcia](wyniki/p18e_pola.png), [kontrole](wyniki/p18e_kontrole.json) |
 | Jak wygląda przestrzenne pole gazu w geometrii P20D? | [060 — P21D](raporty/060_P21D_wspolna_geometria_i_port_napedu.md) | [przebiegi napędu](wyniki/p21d_naped.csv), [przestrzenny wykres](wyniki/101_P21D_komora_i_naped.png) |
+| Jak zmienia się napęd po uwzględnieniu podatności dwóch ścian? | [064 — P21E: model sprzężony gaz–panel](raporty/064_P21E_gaz_podatne_sciany_i_naped.md) | [wykres](wyniki/104_P21E_podatne_sciany.svg), [podsumowanie](wyniki/p21e_podsumowanie.json), [skrypt](skrypty/p21e_gaz_podatne_sciany.py) |
 | Czy dwa źródła w orientacji pionowej i poziomej są odporne na nieznane straty pokoju? | [061 — P26D/P27D](raporty/061_bryly_offset_i_dwa_subwoofery.md) | [porównanie](wyniki/p26d_porownanie.csv), [wykres](wyniki/p26d_bryly_i_odpowiedz.png) |
 
 Pełny zakres i otwarte bramki są w [programie 30 pakietów](PROGRAM_30_BADAN.md).
