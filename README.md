@@ -11,7 +11,7 @@ nie jest kandydatem na konstrukcję końcową.*
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 68 raportów · Python**
+**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 69 raportów · Python**
 
 Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie. Aktualna pula obejmuje także dwa przypadki wstrzymane w nowym audycie źródeł (EMS i SUPRAVOX), a ponadto nie każda konfiguracja ma jeszcze pełny komplet badań nieliniowych i termicznych.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
@@ -245,6 +245,19 @@ pomiaru U/I na zaciskach ani regulacji temperatury cewki.
 [Raport 068 — P24C: obserwowalność i wykonalność ochrony](raporty/068_P24C_obserwowalnosc_temperatury_i_wykonalnosc_DSP.md)
 · [wyniki 50 000 prób](wyniki/p24c_obserwowalnosc_20261031.json)
 · [skrypt](skrypty/p24c_obserwowalnosc_ui.py).
+
+**P24D: opóźnienia i awarie ochrony dwóch subwooferów.** Wykonano
+88 modelowych prób (16 scenariuszy podstawowych i 72 kombinacje opóźnienia
+oraz błędu obserwacji) przy 20 i 80 Hz. W 36/72 wariantach siatki
+naruszono **umowny** kontur +80 K. Przy 80 Hz, błędzie −20 K, progu
+testowym 45 K i zwłoce 0,25 s obliczono szczyt +75,095 K; przy zwłoce
+5 s +105,630 K. Awaria aktuatora potrafi pozbawić ochronę skuteczności.
+**To nie są limity bezpieczne, pomiary ani gwarancja implementacji miniDSP.**
+
+[Raport 069 — P24D: opóźnienia, watchdog i awarie](raporty/069_P24D_opoznienia_ochrony_faulty_dwa_kanaly.md)
+· [skrypt odtwarzający](skrypty/p24d_opoznienia_ochrony_dwoch_kanalow.py)
+· [wyniki skrótowe](wyniki/p24d_podsumowanie_20261031.json).
+
 
 **Nie wyznaczono temperatury granicznej prawdziwego głośnika.**
 Przyjęte parametry cieplne i kontur przyrostu +80 K to wyłącznie

@@ -1,0 +1,225 @@
+{
+  "study": "P24D",
+  "date": "2026-10-31",
+  "repro_script": "skrypty/p24d_opoznienia_ochrony_dwoch_kanalow.py",
+  "repo_results_generated_by_script": "wyniki/p24d_opoznienia_faulty_20261031.json",
+  "report": "raporty/069_P24D_opoznienia_ochrony_faulty_dwa_kanaly.md",
+  "status": "Hypothetical modeling; no physical calibration, DSP certification or deployable limiter",
+  "base_model": "P24B central assumed Cauer, Dayton RSS390HF-4 80l NC500MP TRS4",
+  "assumed_contours_K": {
+    "diagnostic": 80,
+    "numerical_stop": 200
+  },
+  "assumed_peak_mechanical_guard_mm": 11.2,
+  "test_cases": 88,
+  "core_cases": 16,
+  "latency_bias_grid_cases": 72,
+  "latency_bias_grid_violations": 36,
+  "grid": {
+    "frequency_hz": [
+      20,
+      80
+    ],
+    "observation_bias_K": [
+      0,
+      -10,
+      -20,
+      -30,
+      -40,
+      -60
+    ],
+    "actuator_latency_s": [
+      0.1,
+      0.25,
+      0.5,
+      1,
+      2,
+      5
+    ],
+    "mask_violates_diagnostic_contour": {
+      "20Hz": [
+        "......",
+        "......",
+        "......",
+        ".....X",
+        "XXXXXX",
+        "XXXXXX"
+      ],
+      "80Hz": [
+        ".....X",
+        ".....X",
+        "...XXX",
+        "XXXXXX",
+        "XXXXXX",
+        "XXXXXX"
+      ]
+    }
+  },
+  "core_results": [
+    {
+      "frequency_hz": 20,
+      "scenario": "none",
+      "peak_coil_rise_K": 125.727,
+      "seconds_above_hypothetical_80K": 130.45,
+      "first_mute_s": null,
+      "stop_at_hypothetical_200K_s": null
+    },
+    {
+      "frequency_hz": 20,
+      "scenario": "naive_late",
+      "peak_coil_rise_K": 101.977,
+      "seconds_above_hypothetical_80K": 130.45,
+      "first_mute_s": 88,
+      "stop_at_hypothetical_200K_s": null
+    },
+    {
+      "frequency_hz": 20,
+      "scenario": "guarded",
+      "peak_coil_rise_K": 66.93,
+      "seconds_above_hypothetical_80K": 0,
+      "first_mute_s": 34.25,
+      "stop_at_hypothetical_200K_s": null
+    },
+    {
+      "frequency_hz": 20,
+      "scenario": "guarded_slow_actuator",
+      "peak_coil_rise_K": 73.441,
+      "seconds_above_hypothetical_80K": 0,
+      "first_mute_s": 39,
+      "stop_at_hypothetical_200K_s": null
+    },
+    {
+      "frequency_hz": 20,
+      "scenario": "guarded_bias_exceeds_bound",
+      "peak_coil_rise_K": 105.714,
+      "seconds_above_hypothetical_80K": 130.45,
+      "first_mute_s": 100.25,
+      "stop_at_hypothetical_200K_s": null
+    },
+    {
+      "frequency_hz": 20,
+      "scenario": "guarded_dropout_fail_closed",
+      "peak_coil_rise_K": 46.066,
+      "seconds_above_hypothetical_80K": 0,
+      "first_mute_s": 20.3,
+      "stop_at_hypothetical_200K_s": null
+    },
+    {
+      "frequency_hz": 20,
+      "scenario": "guarded_dropout_fail_open",
+      "peak_coil_rise_K": 125.727,
+      "seconds_above_hypothetical_80K": 130.45,
+      "first_mute_s": null,
+      "stop_at_hypothetical_200K_s": null
+    },
+    {
+      "frequency_hz": 20,
+      "scenario": "guarded_actuator_stuck_on",
+      "peak_coil_rise_K": 125.727,
+      "seconds_above_hypothetical_80K": 130.45,
+      "first_mute_s": null,
+      "stop_at_hypothetical_200K_s": null
+    },
+    {
+      "frequency_hz": 80,
+      "scenario": "none",
+      "peak_coil_rise_K": 200.008,
+      "seconds_above_hypothetical_80K": 55.55,
+      "first_mute_s": null,
+      "stop_at_hypothetical_200K_s": 64
+    },
+    {
+      "frequency_hz": 80,
+      "scenario": "naive_late",
+      "peak_coil_rise_K": 116.533,
+      "seconds_above_hypothetical_80K": 171.55,
+      "first_mute_s": 14,
+      "stop_at_hypothetical_200K_s": null
+    },
+    {
+      "frequency_hz": 80,
+      "scenario": "guarded",
+      "peak_coil_rise_K": 75.095,
+      "seconds_above_hypothetical_80K": 0,
+      "first_mute_s": 7.25,
+      "stop_at_hypothetical_200K_s": null
+    },
+    {
+      "frequency_hz": 80,
+      "scenario": "guarded_slow_actuator",
+      "peak_coil_rise_K": 105.63,
+      "seconds_above_hypothetical_80K": 69.7,
+      "first_mute_s": 12,
+      "stop_at_hypothetical_200K_s": null
+    },
+    {
+      "frequency_hz": 80,
+      "scenario": "guarded_bias_exceeds_bound",
+      "peak_coil_rise_K": 111.96,
+      "seconds_above_hypothetical_80K": 171.55,
+      "first_mute_s": 13.25,
+      "stop_at_hypothetical_200K_s": null
+    },
+    {
+      "frequency_hz": 80,
+      "scenario": "guarded_dropout_fail_closed",
+      "peak_coil_rise_K": 73.766,
+      "seconds_above_hypothetical_80K": 0,
+      "first_mute_s": 7.25,
+      "stop_at_hypothetical_200K_s": null
+    },
+    {
+      "frequency_hz": 80,
+      "scenario": "guarded_dropout_fail_open",
+      "peak_coil_rise_K": 73.766,
+      "seconds_above_hypothetical_80K": 0,
+      "first_mute_s": 7.25,
+      "stop_at_hypothetical_200K_s": null
+    },
+    {
+      "frequency_hz": 80,
+      "scenario": "guarded_actuator_stuck_on",
+      "peak_coil_rise_K": 200.008,
+      "seconds_above_hypothetical_80K": 55.55,
+      "first_mute_s": null,
+      "stop_at_hypothetical_200K_s": 64
+    }
+  ],
+  "dt_audit": [
+    {
+      "frequency_hz": 20,
+      "scenario": "guarded",
+      "dt_coarse_s": 0.05,
+      "dt_fine_s": 0.025,
+      "peak_difference_K": 0.003
+    },
+    {
+      "frequency_hz": 20,
+      "scenario": "naive_late",
+      "dt_coarse_s": 0.05,
+      "dt_fine_s": 0.025,
+      "peak_difference_K": 0.001
+    },
+    {
+      "frequency_hz": 80,
+      "scenario": "guarded",
+      "dt_coarse_s": 0.05,
+      "dt_fine_s": 0.025,
+      "peak_difference_K": 0.02
+    },
+    {
+      "frequency_hz": 80,
+      "scenario": "naive_late",
+      "dt_coarse_s": 0.05,
+      "dt_fine_s": 0.025,
+      "peak_difference_K": 0.024
+    }
+  ],
+  "restrictions": [
+    "Not a true U/I observer: sensor measures idealized coil state plus prescribed bias",
+    "No real miniDSP latency measurement; simulated actuator only",
+    "Thermal and mechanical parameters are hypothetical",
+    "Failure counts are not probabilities",
+    "Shared PSU common-mode fault not studied"
+  ]
+}
