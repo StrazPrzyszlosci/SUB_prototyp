@@ -11,7 +11,7 @@ nie jest kandydatem na konstrukcję końcową.*
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 84 raporty · Python/JavaScript**
+**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 86 raportów · Python/JavaScript**
 
 Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie. Aktualna pula obejmuje także dwa przypadki wstrzymane w nowym audycie źródeł (EMS i SUPRAVOX), a ponadto nie każda konfiguracja ma jeszcze pełny komplet badań nieliniowych i termicznych.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
@@ -112,6 +112,26 @@ Skróty wyjaśniamy w [krótkim słowniku](#slownik).
 *Usztywnienie może zmniejszyć ugięcie, jednocześnie przenosząc obciążenie na inny fragment połączenia. [Badania spoin](raporty/030_P19A_obliczenia_spoin_i_material_kleju.md).*
 
 ### 4. Wkłady i powietrze wewnątrz skrzyni
+
+### 4a. Nowa skrzynia: gdzie powietrze ma miejsce, a gdzie przeszkadzają mu wkłady?
+
+![P34A: schemat planu, wręg, modułów i porowatej tylnej maty](dokumentacja/P34A_przekroj_wkladow_i_maty.svg)
+
+*To przekrój **jednego z czterech poziomów**, a nie pełny projekt do wycinania. Sztywne moduły wypierają powietrze; 50-milimetrowa mata jest porowata i nie należy traktować jej jak szczelnej przegrody. [Raport 085 — geometria komory](raporty/085_P34A_przestrzenne_cisnienie_100_120_150.md).*
+
+![P34A: jak zmienia się niejednorodność ciśnienia od 20 do 80 Hz](wyniki/p34a_niejednorodnosc_pole_3_litraze.svg)
+
+*Przy 20 Hz gaz w modelu jest bliski jednorodnemu; przy 80 Hz lokalne różnice rosną, a położenie przeszkód ma znaczenie. To **model bez absorpcji maty i ruchu ścian**, nie wykres THD ani SPL. [Kod symulacji](skrypty/p34a_przestrzenne_pole_p30e.js).*
+
+![P34A: co pokazuje zwiększenie rozdzielczości siatki](wyniki/p34a_zbieznosc_siatki_80Hz.svg)
+
+*Zanim zaufa się wynikowi, trzeba sprawdzić, czy zmienia się on po podziale komory na mniejsze komórki. Porównaliśmy trzy siatki przy 80 Hz, ale nie dowodzi to poprawności samego opisu maty i głośnika. [Pełne 46 przypadków](wyniki/p34a_przestrzenne_pole_p30e_20261031.json).*
+
+![P34B: przybliżone obciążenia mechanizmów trzymających moduły](wyniki/p34b_sily_mocowania_wkladow.svg)
+
+*Moduły mają masę i podlegają przyspieszeniom przy przenoszeniu urządzenia. Samo ciasne wsunięcie nie jest zatwierdzonym mocowaniem. **Nie traktuj liczb jako doboru śruby** — brak rzeczywistej nośności MDF, zamków i spoin. [Raport 086 — mocowania](raporty/086_P34B_obciazenia_i_blokowanie_wkladow.md).*
+
+
 
 ![Dostęp przez otwór frontowy i masa wkładów](wyniki/70_P20A_dostep_i_masa_wkladow.png)
 
@@ -1388,3 +1408,14 @@ Nowy raport 082 zawiera **612 zespolonych obliczeń** wymuszonego ruchu pojedync
 **Raport 084:** wykonano 15 scenariuszy **MES Q4 Reissnera–Mindlina** z sześcioma ścianami, podatnymi narożami, uproszczonymi wręgami i masami. Test samej płyty 976×359×22 mm dał f1≈154,0 Hz przy 32×12 elementach wobec wzoru Kirchhoffa 156,24 Hz. Dla całej skrzyni amplitudy zależą silnie od metody modelowania i spoin: P33A i P33B różnią się ok. 4× przy tylko zbliżonych (nie równoważnych!) ustawieniach. **Nie jest to kompletna, pomiarowo zwalidowana analiza wytrzymałości ani zgoda na CNC.**
 
 [Raport 084](raporty/084_P33B_globalny_MES_powlokowy_Q4.md) · [Kod MES](skrypty/p33b_powlokowy_fem.py) · [Test płyty](skrypty/p33b_test_plyty_wzorcowej.py) · [15 wyników](wyniki/p33b_shell_podsumowanie_15_20261031.json) · [Grafika porównawcza](wyniki/p33b_rozbieznosc_modeli.svg).
+
+
+## P34 — powietrze w nowej komorze i mocowanie modułów (31.10.2026)
+
+**Raport 085 / P34A:** 46 przestrzennych analiz modelu FV dla objętości 100/120/150 l, trzech siatek, zmiany położenia źródła i prędkości dźwięku. Dla 120 l wynik modelowy względnego odchylenia RMS ciśnienia wynosi przy siatce ~55 mm około **0,98% / 4,07% / 9,74% / 19,09%** dla 20/40/60/80 Hz. Model ma **idealnie sztywne ściany i nie zawiera tłumienia maty** — nie jest fizyczną charakterystyką urządzenia.
+
+**Raport 086 / P34B:** 324 warianty obciążeń modułów. Modelowa masa wkładów MDF w stanie 100 l: około **12,34 kg** przy 8 mm i 730 kg/m³. Mechaniczne blokady i nośność MDF/spoin nie zostały zweryfikowane.
+
+[Raport 085](raporty/085_P34A_przestrzenne_cisnienie_100_120_150.md) · [Raport 086](raporty/086_P34B_obciazenia_i_blokowanie_wkladow.md) · [Mapa geometryczna](dokumentacja/P34A_przekroj_wkladow_i_maty.svg) · [Wyniki FV](wyniki/p34a_przestrzenne_pole_p30e_20261031.json) · [Wyniki obciążeń](wyniki/p34b_moduly_wklady_324_20261031.json).
+
+**Kolejna bramka przed CAD/CNC:** rzeczywista geometria kosza i blokad, pomiar porowatości/oporu przepływowego maty, sprzężony model ciśnienie–ściany oraz kwalifikacja mocowań w MDF. Bez tych danych nie należy zatwierdzać cięcia.
