@@ -100,7 +100,7 @@ function buildGrid(c,geom,state,h,speed=343,source="offset"){
   const id=idx(i,j,k),nsub=3;let count=0;
   for(let a=0;a<nsub;a++)for(let b=0;b<nsub;b++)for(let d=0;d<nsub;d++){
    const X=(i+(a+.5)/nsub)*dx,Y=(j+(b+.5)/nsub)*dy,Z=(k+(d+.5)/nsub)*dz;
-   if(geometryAir(X,Y,Z,solid,c))count++;
+   if(geometryAir(X,Y,Z,solid,c.nominal_basket_displacement_l>0))count++;
   }
   fluid[id]=count/27;fluidVolume[id]=fluid[id]*volumeCell;sumFluid+=fluidVolume[id];
   if(j===0){
