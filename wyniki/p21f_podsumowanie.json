@@ -1,0 +1,80 @@
+{
+  "status": "52,272 actually executed harmonic simulations of reduced Galerkin Neumann cavity with compliant panel patches; values refer to model assumptions, not physical testing",
+  "n": 52272,
+  "reference_checks": 2178,
+  "reference_error_rel": 7.177683033583853e-16,
+  "power_balance_rel_max": 7.361399329225004e-15,
+  "acoustic_modal_power_rel_max": 3.351298626412972e-16,
+  "negative_acoustic_dissipation_count": 0,
+  "n4_n5_abs_db_max": 0.023975261142351444,
+  "scenarios": {
+    "rigid": {
+      "minimum_gain_db": -0.5386312424083205,
+      "maximum_gain_db": 0.13041268678138238,
+      "maximum_spatial_abs_db": 0.5386312424083205,
+      "maximum_n4_n5_abs_db": 0.023975261142351444
+    },
+    "uniform_one": {
+      "minimum_gain_db": -0.606710411154423,
+      "maximum_gain_db": 0.3186982393465001,
+      "maximum_spatial_abs_db": 0.5363619522540826,
+      "maximum_n4_n5_abs_db": 0.02395559367550842
+    },
+    "three_patches": {
+      "minimum_gain_db": -0.6151520819587204,
+      "maximum_gain_db": 0.3189472496410516,
+      "maximum_spatial_abs_db": 0.5427434467136547,
+      "maximum_n4_n5_abs_db": 0.02381286948834511
+    },
+    "three_patches_2x": {
+      "minimum_gain_db": -0.6824907065822443,
+      "maximum_gain_db": 0.4938095342038933,
+      "maximum_spatial_abs_db": 0.5482436999073527,
+      "maximum_n4_n5_abs_db": 0.02365243664752968
+    }
+  },
+  "c02_120_l_at_0_209_m": {
+    "rigid": {
+      "minimum_gain_db": -0.4460259514396467,
+      "maximum_gain_db": 0.09988356157795258,
+      "maximum_n4_n5_abs_db": 0.014797037902952323
+    },
+    "uniform_one": {
+      "minimum_gain_db": -0.49365428590446114,
+      "maximum_gain_db": 0.22967832134696928,
+      "maximum_n4_n5_abs_db": 0.01474937683728562
+    },
+    "three_patches": {
+      "minimum_gain_db": -0.4995428535526749,
+      "maximum_gain_db": 0.2298441612088006,
+      "maximum_n4_n5_abs_db": 0.014648495352556695
+    },
+    "three_patches_2x": {
+      "minimum_gain_db": -0.5475961168693086,
+      "maximum_gain_db": 0.34823091173159537,
+      "maximum_n4_n5_abs_db": 0.014510353599167568
+    }
+  },
+  "high_order_check": {
+    "n": 288,
+    "frequencies_hz": [
+      20,
+      40,
+      60,
+      80
+    ],
+    "truncations": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "maximum_absolute_difference_dB": {
+      "5_to_6": 0.01528702456135171,
+      "6_to_7": 0.005098300095117877,
+      "7_to_8": 0.006149227226190357
+    },
+    "note": "Selected witnesses only, not a global error certificate; not monotonic."
+  },
+  "limits": "Rectangular surrogate; real P21D obstacles and damping not modeled. Finite modal truncation errors and material uncertainties remain."
+}
