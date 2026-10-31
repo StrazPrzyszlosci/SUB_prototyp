@@ -1,0 +1,45 @@
+name: P40 - bolt group equilibrium and annulus tolerance
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  bolt-and-ring-regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Recompute 432 loads and 675 geometric cases
+        run: |
+          node --check skrypty/p40a_reakcje_osmiu_srub.js
+          node --check skrypty/p40b_tolerancje_pierscieni.js
+          node skrypty/p40a_reakcje_osmiu_srub.js >/tmp/p40a.log
+          node skrypty/p40b_tolerancje_pierscieni.js >/tmp/p40b.log
+      - name: Independent equilibrium and geometric identity tests
+        run: |
+          node - <<'NODE'
+          const fs=require('node:fs');
+          const a=JSON.parse(fs.readFileSync('wyniki/p40a_reakcje_432_20261101.json','utf8'));
+          const b=JSON.parse(fs.readFileSync('wyniki/p40b_tolerancje_675_20261101.json','utf8'));
+          if(a.cases!==432||a.results.length!==432)throw Error('P40A case count');
+          if(b.statistics.cases!==675||b.results.length!==675)throw Error('P40B case count');
+          const all=a.results.find(x=>x.mass_kg===15&&x.accel_g===5&&x.eccentricity_mm===120&&x.active==='all8'&&x.direction==='x');
+          const F=15*5*9.80665,r=184,e=120;
+          const exact=Math.hypot(F/8,F*e/(4*r));
+          if(!all||Math.abs(all.max_resultant_N-exact)>.001)throw Error('Analytic 8 bolt closed-form');
+          if(all.force_ratio_to_ideal8<=1.6)throw Error('Force moment neglected');
+          const rank=b.statistics;
+          const radial=368/2-6.5/2-355.8/2;
+          if(Math.abs(radial-2.85)>1e-10||Math.abs(rank.radial_budget_mm-radial)>1e-10)throw Error('Flange geometry identity');
+          if(rank.basic_geometric!==171||rank.target_1_plus_1!==9||rank.target_1_plus_2!==0)throw Error('Tolerance filter regression');
+          if(rank.nominal_target_infeasibility_margin_mm>=0)throw Error('Impossible 1+2mm constraint');
+          const guide=fs.readFileSync('README.md','utf8');
+          const count=guide.match(/19 producentów · (\d+) raport(?:y|ów) · Python\/JavaScript/);
+          if(!count||Number(count[1])<102||/klient/i.test(guide))throw Error('Report count or research terminology');
+          for(const fig of ['p40a_reakcje_grup_srub.svg','p40b_budzet_promieniowy_pierscienia.svg'])if(!guide.includes(fig))throw Error('Missing figure '+fig);
+          if((guide.match(/!\[[^\]]*\]\([^)]*\)/g)||[]).length<96)throw Error('Missing guide diagrams');
+          console.log('PASS P40: 432 force equilibria, 675 tolerance cases, independent analytic identity');
+          NODE

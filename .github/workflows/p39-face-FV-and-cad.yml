@@ -36,7 +36,8 @@ jobs:
           const failures=b.depth_envelope_scenarios.filter(x=>!x.pass_total_le500mm).length;
           if(failures!==7)throw Error('P39 depth budget');
           const md=fs.readFileSync('README.md','utf8');
-          if(!md.includes('100 raportów')||/klient/i.test(md))throw Error('Research guide terminology or report count');
+          const count=md.match(/19 producentów · (\d+) raport(?:y|ów) · Python\/JavaScript/);
+          if(!count||Number(count[1])<100||/klient/i.test(md))throw Error('Research guide terminology or report count');
           const figs=md.match(/!\[[^\]]*\]\([^)]*\)/g)||[];
           if(figs.length<94||!md.includes('p39a_cisnienie_scian_po_korekcie.svg'))throw Error('P39 guide illustrations');
           console.log('PASS P39A/B: 36 FV, 54 steel ring scenarios, 20 depth conditions, 7 failures,',figs.length,'illustrations');
