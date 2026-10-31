@@ -1326,3 +1326,47 @@ Bramki nadal otwarte: THD/IMD, BL(x)/Cms(x)/Le(x)/Re(T),
 pomiar Z(f), kompatybilność próbkowania i kompresora miniDSP,
 warunki zasilania230V/obudowy ochronnej, kompletne koszty,
 faktyczne Vb i P21G/P21H mechanika gaz/panele.
+
+
+## P24B — czasowa termika Cauer i granice ochrony, 2026-10-31
+
+Wykonano 729 trajektorii dla C02, 628826 kroków dt=0,2 s:
+3 objętości × 3 częstotliwości × 3 wzmocnienia
+ICEpower300AS1/NC500MP-RCA/NC500MP-TRS × 3 hipotetyczne
+sieci Cauer × 3 cykle sygnału × 3 rodzaje ochrony.
+Sprzężenie Re(T)=Re25*(1+0.00393*ΔT), zespolonego Z(f)
+i ograniczeń DSP. Model parametrycznie nawiązuje do P15A
+i P22C, lecz NIE zawiera producentowych Rth/Cth.
+
+**Główne świadki:**
+- 80l/80Hz, Cauer środkowy, ciągłe 180s:
+ICE300 brak ochrony +156,45 K;
+NC500MP RCA2V brak ochrony +178,13 K;
+NC500MP TRS4V bez ochrony po 64s osiąga umowny stop
+modelu +200K przy Xpk<14mm.
+- Tamże idealna ochrona X/T, hipotetyczny kontur
+ΔT=80K, utrzymany przez 180s za cenę −5,044dB
+średniego poziomu napięcia (nie równoważnego SPL).
+- NC500MP TRS4V 80l/20Hz bez kontroli Xpk=19,20mm;
+sama kontrola Xpk≤11,2mm nie zatrzymuje wzrostu T
+przekraczającego hipotetyczny kontur 80K (ΔT=125,73K).
+- 80l/80Hz ICE300 5s on/25s off daje +48,62K
+zamiast +156,45K dla długiego sygnału.
+- 108/243 niechronionych trajektorii miało Xpk>Xmax.
+40/729 przerwano przy umownym +200K (22 bez kontroli,
+18 tylko X, 0 przy idealnym X/T).
+Bilans Cauer sprawdzony z resztą ≤4,43e-16.
+Dodatkowy test dt 0,1s w 80l/80Hz NC500 TRS4
+potwierdza stop 64s i idealny kontur 80K,
+ale nie jest walidacją fizyczną.
+
+**Nie nazywać** 80K bezpiecznym limitem producenta,
+nie nazywać 0,8Xmax ustawieniem praktycznego limitera.
+Nie wpisywać do miniDSP ochrony X+T jako dostępnej
+funkcji bez kontroli API, opóźnienia i telemetrii.
+Czynniki temperatury, zmienne BL/Cms/Le, chłodzenie
+ruchome, termika końcówki 230V i pomiary pozostają
+otwarte. Wyniki: `wyniki/p24b_kampania_729.csv`,
+`wyniki/p24b_podsumowanie.json`, wykres 108,
+`raporty/067_P24B_czasowa_termika_i_dwie_ochrony.md`,
+skrypt Python i konfiguracja P24B.

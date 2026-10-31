@@ -1,0 +1,134 @@
+{
+  "study": "P24B/P22D",
+  "date": "2026-10-31",
+  "purpose": "Couple P22C frequency-dependent voice-coil current and amplifier output limits with P15A-inspired two-state Cauer coil/motor model and Re(T); test when ideal state-aware protection can gain vs mechanical-only. Study scenarios, NOT measured Dayton thermal properties or deployable miniDSP limiter.",
+  "model": {
+    "driver": "Dayton RSS390HF-4",
+    "fs_hz": 19.5,
+    "sd_cm2": 829.6,
+    "vas_l": 212,
+    "qms": 3.02,
+    "qes": 0.5,
+    "mms_g": 306,
+    "bl_tm": 15,
+    "re_25_ohm": 3,
+    "le_mh": 0.92,
+    "xmax_oneway_peak_mm": 14,
+    "rho_kg_m3": 1.2,
+    "sound_m_s": 343,
+    "alpha_copper_per_K": 0.00393,
+    "ambient_C": 25
+  },
+  "box_volumes_l": [
+    75,
+    80,
+    120
+  ],
+  "frequency_hz": [
+    20,
+    40,
+    80
+  ],
+  "amps": [
+    {
+      "id": "ICE300_RCA2",
+      "model": "ICEpower 300AS1",
+      "max_dsp_input_vrms": 2,
+      "gain_db": 28.15,
+      "rated_4ohm_w_reference": 300,
+      "peak_output_voltage_V": 50,
+      "peak_output_current_A": 20,
+      "series_output_resistance_ohm": 0.006
+    },
+    {
+      "id": "NC500_RCA2",
+      "model": "Hypex NC500MP",
+      "max_dsp_input_vrms": 2,
+      "gain_db": 25.5,
+      "rated_4ohm_w_reference": 500,
+      "peak_output_voltage_V": null,
+      "peak_output_current_A": 27,
+      "series_output_resistance_ohm": 0.0026
+    },
+    {
+      "id": "NC500_TRS4",
+      "model": "Hypex NC500MP",
+      "max_dsp_input_vrms": 4,
+      "gain_db": 25.5,
+      "rated_4ohm_w_reference": 500,
+      "peak_output_voltage_V": null,
+      "peak_output_current_A": 27,
+      "series_output_resistance_ohm": 0.0026
+    }
+  ],
+  "thermal_scenarios": [
+    {
+      "id": "favorable_ASSUMED",
+      "Ccoil_J_K": 90,
+      "Rcoil_motor_K_W": 0.25,
+      "Cmotor_J_K": 1500,
+      "Rmotor_ambient_K_W": 0.8
+    },
+    {
+      "id": "central_ASSUMED",
+      "Ccoil_J_K": 40,
+      "Rcoil_motor_K_W": 0.6,
+      "Cmotor_J_K": 1000,
+      "Rmotor_ambient_K_W": 1.5
+    },
+    {
+      "id": "adverse_ASSUMED",
+      "Ccoil_J_K": 20,
+      "Rcoil_motor_K_W": 1.2,
+      "Cmotor_J_K": 500,
+      "Rmotor_ambient_K_W": 2.5
+    }
+  ],
+  "signal_programs": [
+    {
+      "id": "sustained",
+      "on_s": 180,
+      "period_s": 180
+    },
+    {
+      "id": "burst5_every30",
+      "on_s": 5,
+      "period_s": 30
+    },
+    {
+      "id": "burst1_every10",
+      "on_s": 1,
+      "period_s": 10
+    }
+  ],
+  "protection": [
+    {
+      "id": "no_speaker_protection",
+      "xmax_guard_fraction": null,
+      "temperature_guard_rise_K": null
+    },
+    {
+      "id": "peak_only_0.80Xmax",
+      "xmax_guard_fraction": 0.8,
+      "temperature_guard_rise_K": null
+    },
+    {
+      "id": "peak_and_thermal_80K_oracle",
+      "xmax_guard_fraction": 0.8,
+      "temperature_guard_rise_K": 80
+    }
+  ],
+  "dt_s": 0.2,
+  "duration_s": 180,
+  "numerical_stop_rise_K": 200,
+  "audit_dt_s": 0.1,
+  "warnings": [
+    "Rth/Cth parameters are intentionally uncalibrated with approximately order-of-magnitude variation; NO factory Dayton temperature limits are known.",
+    "80 K coil temperature RISE is arbitrary diagnostic contour, NOT safe operating limit.",
+    "Peak guard at 0.8*Xmax is hypothetical ideal-model safety factor, not measured mechanical clearance.",
+    "Temperature oracle reads exact internal state at every time step. Neither miniDSP Flex Eight nor Flex HTx is verified to run this observer/control.",
+    "Small-signal BL,Cms,Le fixed, no BL(x)/Cms(x)/power compression/multitone; one sinus repeated with burst duty, NOT actual music spectrum.",
+    "AMP 4-ohm 1kHz power is only reference voltage cap; output time/current/thermal not measured. Only the manufacturer Ipeak reference is modeled.",
+    "Stop at 200 K rise to avoid extrapolating nonlinear thermal model into nonsensical temperatures."
+  ]
+}

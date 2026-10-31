@@ -11,7 +11,7 @@ nie jest kandydatem na konstrukcję końcową.*
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 66 raportów · Python**
+**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 67 raportów · Python**
 
 Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie. Aktualna pula obejmuje także dwa przypadki wstrzymane w nowym audycie źródeł (EMS i SUPRAVOX), a ponadto nie każda konfiguracja ma jeszcze pełny komplet badań nieliniowych i termicznych.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
@@ -219,6 +219,26 @@ Temperatury i współczynniki w tym badaniu są założeniami modelu.
 
 <a id="filtry"></a>
 ## DSP: dobry wzór filtru to początek
+
+**Czasowe nagrzewanie cewki (P24B) i dwie niezależne ochrony.**
+W 729 hipotetycznych trajektoriach sprzęgliśmy zespolone Z(f),
+zmienną `Re(T)`, dwie pojemności i opory cieplne, prąd końcówki
+oraz ograniczenie szczytowego wychylenia. Zależy to silnie od
+częstotliwości i czasu trwania sygnału: ogranicznik Xmax nie
+zastępuje temperatury cewki.
+
+![P24B — modelowy przebieg temperatury 80 Hz i zabezpieczenia](wyniki/108_P24B_czasowe_nagrzewanie_80Hz.svg)
+
+[Raport 067 — P24B: cewka, DSP i termika](raporty/067_P24B_czasowa_termika_i_dwie_ochrony.md)
+· [729 trajektorii CSV](wyniki/p24b_kampania_729.csv)
+· [skrypt odtwarzania](skrypty/p24b_czasowa_termika_cewki.py)
+· [założenia cieplne](dane/konfiguracje/p24b_czasowa_termika_20261031.json).
+
+**Nie wyznaczono temperatury granicznej prawdziwego głośnika.**
+Przyjęte parametry cieplne i kontur przyrostu +80 K to wyłącznie
+warianty badawcze; żaden finalny limiter nie został zatwierdzony.
+
+
 
 Nowy brief porównuje centralny **Flex Eight (RCA 2 Vrms)**
 z **Flex HTx (RCA 2 Vrms, TRS symetryczne 4 Vrms)** oraz
