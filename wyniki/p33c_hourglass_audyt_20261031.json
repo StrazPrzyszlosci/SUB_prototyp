@@ -1,0 +1,172 @@
+{
+  "study": "P33C",
+  "date": "2026-10-31",
+  "kind": "EXECUTED independent Python audit, 8 element + 18 plate cases",
+  "element_tests": [
+    {
+      "gamma": 0,
+      "null_modes": 8,
+      "lambda7": 0,
+      "lambda8": 0
+    },
+    {
+      "gamma": 0.00001,
+      "null_modes": 6,
+      "lambda7": 0.30490765,
+      "lambda8": 105.08215187
+    },
+    {
+      "gamma": 0.0001,
+      "null_modes": 6,
+      "lambda7": 3.04834274,
+      "lambda8": 820.22863248
+    },
+    {
+      "gamma": 0.001,
+      "null_modes": 6,
+      "lambda7": 30.40876545,
+      "lambda8": 830.5940171
+    },
+    {
+      "gamma": 0.01,
+      "null_modes": 6,
+      "lambda7": 295.14233543,
+      "lambda8": 934.24786325
+    },
+    {
+      "gamma": 0.03,
+      "null_modes": 6,
+      "lambda7": 784.90073494,
+      "lambda8": 1164.58974359
+    },
+    {
+      "gamma": 0.1,
+      "null_modes": 6,
+      "lambda7": 1242.0745,
+      "lambda8": 1970.78632
+    },
+    {
+      "gamma": 1,
+      "null_modes": 6,
+      "lambda7": 1335.20484,
+      "lambda8": 12336.17094
+    }
+  ],
+  "plate_tests": [
+    {
+      "gamma": 0,
+      "nx": 8,
+      "ny": 4,
+      "f1_Hz": 153.649
+    },
+    {
+      "gamma": 0,
+      "nx": 16,
+      "ny": 8,
+      "f1_Hz": 153.968
+    },
+    {
+      "gamma": 0,
+      "nx": 32,
+      "ny": 12,
+      "f1_Hz": 154.004
+    },
+    {
+      "gamma": 0.001,
+      "nx": 8,
+      "ny": 4,
+      "f1_Hz": 153.982
+    },
+    {
+      "gamma": 0.001,
+      "nx": 16,
+      "ny": 8,
+      "f1_Hz": 154.046
+    },
+    {
+      "gamma": 0.001,
+      "nx": 32,
+      "ny": 12,
+      "f1_Hz": 154.038
+    },
+    {
+      "gamma": 0.01,
+      "nx": 8,
+      "ny": 4,
+      "f1_Hz": 156.922
+    },
+    {
+      "gamma": 0.01,
+      "nx": 16,
+      "ny": 8,
+      "f1_Hz": 154.746
+    },
+    {
+      "gamma": 0.01,
+      "nx": 32,
+      "ny": 12,
+      "f1_Hz": 154.343
+    },
+    {
+      "gamma": 0.03,
+      "nx": 8,
+      "ny": 4,
+      "f1_Hz": 163.13
+    },
+    {
+      "gamma": 0.03,
+      "nx": 16,
+      "ny": 8,
+      "f1_Hz": 156.286
+    },
+    {
+      "gamma": 0.03,
+      "nx": 32,
+      "ny": 12,
+      "f1_Hz": 155.018
+    },
+    {
+      "gamma": 0.1,
+      "nx": 8,
+      "ny": 4,
+      "f1_Hz": 182.622
+    },
+    {
+      "gamma": 0.1,
+      "nx": 16,
+      "ny": 8,
+      "f1_Hz": 161.519
+    },
+    {
+      "gamma": 0.1,
+      "nx": 32,
+      "ny": 12,
+      "f1_Hz": 157.351
+    },
+    {
+      "gamma": 1,
+      "nx": 8,
+      "ny": 4,
+      "f1_Hz": 337.511
+    },
+    {
+      "gamma": 1,
+      "nx": 16,
+      "ny": 8,
+      "f1_Hz": 216.507
+    },
+    {
+      "gamma": 1,
+      "nx": 32,
+      "ny": 12,
+      "f1_Hz": 184.307
+    }
+  ],
+  "benchmark_f_Kirchhoff_Hz": 156.242859821,
+  "note": "Numeric values recorded from Python NumPy/SciPy execution, rounded 3-8 decimal places; full-precision results reproducible by source",
+  "warnings": [
+    "P33B zero-shear reduced quadrature has TWO spurious element mechanisms; the previous global P33B estimates remain provisional.",
+    "gamma>0 fixes local rank but full stiffness may lock for coarse elements; do not select gamma based solely on the plate f1.",
+    "Only a local kernel and stand-alone plate; complete six-wall assembly must be repeated and calibrated."
+  ]
+}
