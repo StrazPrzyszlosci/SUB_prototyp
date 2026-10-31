@@ -1,0 +1,1908 @@
+{
+  "study": "P35A",
+  "date": "2026-10-31",
+  "status": "rigid-wall FV face pressure normalizations only, not FSI",
+  "cases": 36,
+  "assumptions": {
+    "date": "2026-10-31",
+    "inside_mm": [
+      976,
+      359,
+      456
+    ],
+    "brace1_x_mm": 426,
+    "brace2_x_mm": 701,
+    "rear_mat_mm": 50,
+    "material_density_mat_kgm3": 20,
+    "nominal_basket_displacement_l": 5,
+    "module_sets": [
+      {
+        "id": "100",
+        "large": 16,
+        "small": 4,
+        "nominal_l": 100.12
+      },
+      {
+        "id": "120",
+        "large": 12,
+        "small": 0,
+        "nominal_l": 119.92
+      },
+      {
+        "id": "150",
+        "large": 1,
+        "small": 0,
+        "nominal_l": 150.16
+      }
+    ],
+    "frequency_Hz": [
+      20,
+      40,
+      60,
+      80
+    ],
+    "coarse_h_mm": [
+      80,
+      55
+    ],
+    "fine_h_mm": 36,
+    "air_density_kgm3": 1.2,
+    "air_sound_speed_ms": 343,
+    "source_xz_mm": [
+      231,
+      250
+    ],
+    "source_radius_mm": 177.9,
+    "speed_sensitivity_ms": [
+      330,
+      355
+    ],
+    "max_iterations": 2000,
+    "relative_tolerance": 1e-9
+  },
+  "rows": [
+    {
+      "state": "100",
+      "f": 20,
+      "h": 80,
+      "volume_l": 96.65407525925882,
+      "field_rms_pct": 1.5980605461120332,
+      "boundary": {
+        "front": {
+          "area_m2": 0.2282338,
+          "mean_pressure_ratio": 0.992855,
+          "force_N_per_Pa": 0.226603,
+          "rms_relative_percent": 2.015,
+          "peak_relative_percent": 6.18
+        },
+        "back": {
+          "area_m2": 0.3499586,
+          "mean_pressure_ratio": 1.006406,
+          "force_N_per_Pa": 0.3522003,
+          "rms_relative_percent": 1.4487,
+          "peak_relative_percent": 2.6309
+        },
+        "left": {
+          "area_m2": 0.1394516,
+          "mean_pressure_ratio": 0.985794,
+          "force_N_per_Pa": 0.1374706,
+          "rms_relative_percent": 1.4812,
+          "peak_relative_percent": 2.1619
+        },
+        "right": {
+          "area_m2": 0.0860962,
+          "mean_pressure_ratio": 1.027026,
+          "force_N_per_Pa": 0.088423,
+          "rms_relative_percent": 2.7035,
+          "peak_relative_percent": 2.8431
+        },
+        "top": {
+          "area_m2": 0.2493616,
+          "mean_pressure_ratio": 0.999681,
+          "force_N_per_Pa": 0.2492821,
+          "rms_relative_percent": 1.6778,
+          "peak_relative_percent": 2.7302
+        },
+        "bottom": {
+          "area_m2": 0.211029,
+          "mean_pressure_ratio": 0.99941,
+          "force_N_per_Pa": 0.2109045,
+          "rms_relative_percent": 1.4307,
+          "peak_relative_percent": 2.8344
+        }
+      }
+    },
+    {
+      "state": "100",
+      "f": 20,
+      "h": 55,
+      "volume_l": 98.50658561003279,
+      "field_rms_pct": 1.3879503037219483,
+      "boundary": {
+        "front": {
+          "area_m2": 0.2104197,
+          "mean_pressure_ratio": 0.991248,
+          "force_N_per_Pa": 0.2085781,
+          "rms_relative_percent": 1.8398,
+          "peak_relative_percent": 3.3077
+        },
+        "back": {
+          "area_m2": 0.4355932,
+          "mean_pressure_ratio": 1.007114,
+          "force_N_per_Pa": 0.438692,
+          "rms_relative_percent": 1.3409,
+          "peak_relative_percent": 2.3745
+        },
+        "left": {
+          "area_m2": 0.1429162,
+          "mean_pressure_ratio": 0.987644,
+          "force_N_per_Pa": 0.1411504,
+          "rms_relative_percent": 1.2962,
+          "peak_relative_percent": 1.9499
+        },
+        "right": {
+          "area_m2": 0.0897918,
+          "mean_pressure_ratio": 1.024226,
+          "force_N_per_Pa": 0.0919671,
+          "rms_relative_percent": 2.423,
+          "peak_relative_percent": 2.5195
+        },
+        "top": {
+          "area_m2": 0.2527461,
+          "mean_pressure_ratio": 1.000336,
+          "force_N_per_Pa": 0.252831,
+          "rms_relative_percent": 1.4544,
+          "peak_relative_percent": 2.4566
+        },
+        "bottom": {
+          "area_m2": 0.2527461,
+          "mean_pressure_ratio": 1.001608,
+          "force_N_per_Pa": 0.2531525,
+          "rms_relative_percent": 1.3576,
+          "peak_relative_percent": 2.4637
+        }
+      }
+    },
+    {
+      "state": "100",
+      "f": 20,
+      "h": 36,
+      "volume_l": 100.52110531673118,
+      "field_rms_pct": 1.448532158919415,
+      "boundary": {
+        "front": {
+          "area_m2": 0.2693069,
+          "mean_pressure_ratio": 0.995386,
+          "force_N_per_Pa": 0.2680644,
+          "rms_relative_percent": 1.9103,
+          "peak_relative_percent": 5.3167
+        },
+        "back": {
+          "area_m2": 0.422776,
+          "mean_pressure_ratio": 1.006796,
+          "force_N_per_Pa": 0.425649,
+          "rms_relative_percent": 1.3619,
+          "peak_relative_percent": 2.3875
+        },
+        "left": {
+          "area_m2": 0.1502719,
+          "mean_pressure_ratio": 0.986417,
+          "force_N_per_Pa": 0.1482308,
+          "rms_relative_percent": 1.4203,
+          "peak_relative_percent": 2.1914
+        },
+        "right": {
+          "area_m2": 0.1277917,
+          "mean_pressure_ratio": 1.024146,
+          "force_N_per_Pa": 0.1308774,
+          "rms_relative_percent": 2.4148,
+          "peak_relative_percent": 2.4627
+        },
+        "top": {
+          "area_m2": 0.2628807,
+          "mean_pressure_ratio": 0.999402,
+          "force_N_per_Pa": 0.2627235,
+          "rms_relative_percent": 1.5033,
+          "peak_relative_percent": 2.5128
+        },
+        "bottom": {
+          "area_m2": 0.2628807,
+          "mean_pressure_ratio": 1.000926,
+          "force_N_per_Pa": 0.263124,
+          "rms_relative_percent": 1.3852,
+          "peak_relative_percent": 2.4386
+        }
+      }
+    },
+    {
+      "state": "100",
+      "f": 40,
+      "h": 80,
+      "volume_l": 96.65407525925882,
+      "field_rms_pct": 6.784394410756995,
+      "boundary": {
+        "front": {
+          "area_m2": 0.2282338,
+          "mean_pressure_ratio": 0.970763,
+          "force_N_per_Pa": 0.2215611,
+          "rms_relative_percent": 8.4539,
+          "peak_relative_percent": 25.097
+        },
+        "back": {
+          "area_m2": 0.3499586,
+          "mean_pressure_ratio": 1.026613,
+          "force_N_per_Pa": 0.3592721,
+          "rms_relative_percent": 6.1901,
+          "peak_relative_percent": 11.2359
+        },
+        "left": {
+          "area_m2": 0.1394516,
+          "mean_pressure_ratio": 0.939336,
+          "force_N_per_Pa": 0.1309919,
+          "rms_relative_percent": 6.2995,
+          "peak_relative_percent": 9.0623
+        },
+        "right": {
+          "area_m2": 0.0860962,
+          "mean_pressure_ratio": 1.11552,
+          "force_N_per_Pa": 0.096042,
+          "rms_relative_percent": 11.5561,
+          "peak_relative_percent": 12.1662
+        },
+        "top": {
+          "area_m2": 0.2493616,
+          "mean_pressure_ratio": 0.998907,
+          "force_N_per_Pa": 0.249089,
+          "rms_relative_percent": 7.1094,
+          "peak_relative_percent": 11.6764
+        },
+        "bottom": {
+          "area_m2": 0.211029,
+          "mean_pressure_ratio": 0.997154,
+          "force_N_per_Pa": 0.2104284,
+          "rms_relative_percent": 6.1064,
+          "peak_relative_percent": 12.1275
+        }
+      }
+    },
+    {
+      "state": "100",
+      "f": 40,
+      "h": 55,
+      "volume_l": 98.50658561003279,
+      "field_rms_pct": 5.852893496958084,
+      "boundary": {
+        "front": {
+          "area_m2": 0.2104197,
+          "mean_pressure_ratio": 0.964245,
+          "force_N_per_Pa": 0.2028961,
+          "rms_relative_percent": 7.6551,
+          "peak_relative_percent": 13.5372
+        },
+        "back": {
+          "area_m2": 0.4355932,
+          "mean_pressure_ratio": 1.029547,
+          "force_N_per_Pa": 0.4484637,
+          "rms_relative_percent": 5.6826,
+          "peak_relative_percent": 10.0689
+        },
+        "left": {
+          "area_m2": 0.1429162,
+          "mean_pressure_ratio": 0.947642,
+          "force_N_per_Pa": 0.1354334,
+          "rms_relative_percent": 5.4699,
+          "peak_relative_percent": 8.1166
+        },
+        "right": {
+          "area_m2": 0.0897918,
+          "mean_pressure_ratio": 1.102798,
+          "force_N_per_Pa": 0.0990222,
+          "rms_relative_percent": 10.2815,
+          "peak_relative_percent": 10.7003
+        },
+        "top": {
+          "area_m2": 0.2527461,
+          "mean_pressure_ratio": 1.001553,
+          "force_N_per_Pa": 0.2531387,
+          "rms_relative_percent": 6.1279,
+          "peak_relative_percent": 10.4304
+        },
+        "bottom": {
+          "area_m2": 0.2527461,
+          "mean_pressure_ratio": 1.006676,
+          "force_N_per_Pa": 0.2544334,
+          "rms_relative_percent": 5.7422,
+          "peak_relative_percent": 10.4596
+        }
+      }
+    },
+    {
+      "state": "100",
+      "f": 40,
+      "h": 36,
+      "volume_l": 100.52110531673118,
+      "field_rms_pct": 6.112723581283369,
+      "boundary": {
+        "front": {
+          "area_m2": 0.2693069,
+          "mean_pressure_ratio": 0.98166,
+          "force_N_per_Pa": 0.2643677,
+          "rms_relative_percent": 7.967,
+          "peak_relative_percent": 21.6176
+        },
+        "back": {
+          "area_m2": 0.422776,
+          "mean_pressure_ratio": 1.028183,
+          "force_N_per_Pa": 0.4346912,
+          "rms_relative_percent": 5.7786,
+          "peak_relative_percent": 10.13
+        },
+        "left": {
+          "area_m2": 0.1502719,
+          "mean_pressure_ratio": 0.942381,
+          "force_N_per_Pa": 0.1416134,
+          "rms_relative_percent": 6.0005,
+          "peak_relative_percent": 9.1194
+        },
+        "right": {
+          "area_m2": 0.1277917,
+          "mean_pressure_ratio": 1.102519,
+          "force_N_per_Pa": 0.1408928,
+          "rms_relative_percent": 10.2524,
+          "peak_relative_percent": 10.4617
+        },
+        "top": {
+          "area_m2": 0.2628807,
+          "mean_pressure_ratio": 0.997628,
+          "force_N_per_Pa": 0.2622572,
+          "rms_relative_percent": 6.3339,
+          "peak_relative_percent": 10.3349
+        },
+        "bottom": {
+          "area_m2": 0.2628807,
+          "mean_pressure_ratio": 1.00375,
+          "force_N_per_Pa": 0.2638664,
+          "rms_relative_percent": 5.8663,
+          "peak_relative_percent": 10.3576
+        }
+      }
+    },
+    {
+      "state": "100",
+      "f": 60,
+      "h": 80,
+      "volume_l": 96.65407525925882,
+      "field_rms_pct": 17.02792238135691,
+      "boundary": {
+        "front": {
+          "area_m2": 0.2282338,
+          "mean_pressure_ratio": 0.931357,
+          "force_N_per_Pa": 0.2125671,
+          "rms_relative_percent": 20.7923,
+          "peak_relative_percent": 58.1313
+        },
+        "back": {
+          "area_m2": 0.3499586,
+          "mean_pressure_ratio": 1.064253,
+          "force_N_per_Pa": 0.3724443,
+          "rms_relative_percent": 15.7055,
+          "peak_relative_percent": 28.4755
+        },
+        "left": {
+          "area_m2": 0.1394516,
+          "mean_pressure_ratio": 0.846301,
+          "force_N_per_Pa": 0.118018,
+          "rms_relative_percent": 15.8567,
+          "peak_relative_percent": 22.234
+        },
+        "right": {
+          "area_m2": 0.0860962,
+          "mean_pressure_ratio": 1.293192,
+          "force_N_per_Pa": 0.1113389,
+          "rms_relative_percent": 29.3305,
+          "peak_relative_percent": 30.9391
+        },
+        "top": {
+          "area_m2": 0.2493616,
+          "mean_pressure_ratio": 0.998402,
+          "force_N_per_Pa": 0.2489632,
+          "rms_relative_percent": 17.7822,
+          "peak_relative_percent": 29.6642
+        },
+        "bottom": {
+          "area_m2": 0.211029,
+          "mean_pressure_ratio": 0.991383,
+          "force_N_per_Pa": 0.2092106,
+          "rms_relative_percent": 15.4624,
+          "peak_relative_percent": 30.8331
+        }
+      }
+    },
+    {
+      "state": "100",
+      "f": 60,
+      "h": 55,
+      "volume_l": 98.50658561003279,
+      "field_rms_pct": 14.494303094759545,
+      "boundary": {
+        "front": {
+          "area_m2": 0.2104197,
+          "mean_pressure_ratio": 0.91634,
+          "force_N_per_Pa": 0.1928161,
+          "rms_relative_percent": 18.5249,
+          "peak_relative_percent": 31.7907
+        },
+        "back": {
+          "area_m2": 0.4355932,
+          "mean_pressure_ratio": 1.07122,
+          "force_N_per_Pa": 0.4666163,
+          "rms_relative_percent": 14.1915,
+          "peak_relative_percent": 25.1614
+        },
+        "left": {
+          "area_m2": 0.1429162,
+          "mean_pressure_ratio": 0.869322,
+          "force_N_per_Pa": 0.1242402,
+          "rms_relative_percent": 13.5613,
+          "peak_relative_percent": 19.6443
+        },
+        "right": {
+          "area_m2": 0.0897918,
+          "mean_pressure_ratio": 1.257194,
+          "force_N_per_Pa": 0.1128857,
+          "rms_relative_percent": 25.724,
+          "peak_relative_percent": 26.8115
+        },
+        "top": {
+          "area_m2": 0.2527461,
+          "mean_pressure_ratio": 1.004431,
+          "force_N_per_Pa": 0.253866,
+          "rms_relative_percent": 15.1527,
+          "peak_relative_percent": 26.1239
+        },
+        "bottom": {
+          "area_m2": 0.2527461,
+          "mean_pressure_ratio": 1.016085,
+          "force_N_per_Pa": 0.2568116,
+          "rms_relative_percent": 14.2908,
+          "peak_relative_percent": 26.1922
+        }
+      }
+    },
+    {
+      "state": "100",
+      "f": 60,
+      "h": 36,
+      "volume_l": 100.52110531673118,
+      "field_rms_pct": 15.159540711497721,
+      "boundary": {
+        "front": {
+          "area_m2": 0.2693069,
+          "mean_pressure_ratio": 0.959305,
+          "force_N_per_Pa": 0.2583475,
+          "rms_relative_percent": 19.3646,
+          "peak_relative_percent": 50.1696
+        },
+        "back": {
+          "area_m2": 0.422776,
+          "mean_pressure_ratio": 1.06776,
+          "force_N_per_Pa": 0.4514235,
+          "rms_relative_percent": 14.4642,
+          "peak_relative_percent": 25.3456
+        },
+        "left": {
+          "area_m2": 0.1502719,
+          "mean_pressure_ratio": 0.855902,
+          "force_N_per_Pa": 0.1286181,
+          "rms_relative_percent": 14.9106,
+          "peak_relative_percent": 22.0662
+        },
+        "right": {
+          "area_m2": 0.1277917,
+          "mean_pressure_ratio": 1.256802,
+          "force_N_per_Pa": 0.1606088,
+          "rms_relative_percent": 25.6816,
+          "peak_relative_percent": 26.2298
+        },
+        "top": {
+          "area_m2": 0.2628807,
+          "mean_pressure_ratio": 0.994774,
+          "force_N_per_Pa": 0.2615068,
+          "rms_relative_percent": 15.6655,
+          "peak_relative_percent": 25.6055
+        },
+        "bottom": {
+          "area_m2": 0.2628807,
+          "mean_pressure_ratio": 1.008632,
+          "force_N_per_Pa": 0.26515,
+          "rms_relative_percent": 14.6346,
+          "peak_relative_percent": 25.962
+        }
+      }
+    },
+    {
+      "state": "100",
+      "f": 80,
+      "h": 80,
+      "volume_l": 96.65407525925882,
+      "field_rms_pct": 36.23474782476788,
+      "boundary": {
+        "front": {
+          "area_m2": 0.2282338,
+          "mean_pressure_ratio": 0.868676,
+          "force_N_per_Pa": 0.1982614,
+          "rms_relative_percent": 42.9564,
+          "peak_relative_percent": 108.824
+        },
+        "back": {
+          "area_m2": 0.3499586,
+          "mean_pressure_ratio": 1.12865,
+          "force_N_per_Pa": 0.3949806,
+          "rms_relative_percent": 33.9412,
+          "peak_relative_percent": 61.3883
+        },
+        "left": {
+          "area_m2": 0.1394516,
+          "mean_pressure_ratio": 0.668884,
+          "force_N_per_Pa": 0.0932769,
+          "rms_relative_percent": 33.8764,
+          "peak_relative_percent": 45.6655
+        },
+        "right": {
+          "area_m2": 0.0860962,
+          "mean_pressure_ratio": 1.633452,
+          "force_N_per_Pa": 0.140634,
+          "rms_relative_percent": 63.3725,
+          "peak_relative_percent": 67.04
+        },
+        "top": {
+          "area_m2": 0.2493616,
+          "mean_pressure_ratio": 1.000269,
+          "force_N_per_Pa": 0.2494286,
+          "rms_relative_percent": 37.637,
+          "peak_relative_percent": 64.1859
+        },
+        "bottom": {
+          "area_m2": 0.211029,
+          "mean_pressure_ratio": 0.977069,
+          "force_N_per_Pa": 0.2061899,
+          "rms_relative_percent": 33.3116,
+          "peak_relative_percent": 66.7844
+        }
+      }
+    },
+    {
+      "state": "100",
+      "f": 80,
+      "h": 55,
+      "volume_l": 98.50658561003279,
+      "field_rms_pct": 30.074713457699083,
+      "boundary": {
+        "front": {
+          "area_m2": 0.2104197,
+          "mean_pressure_ratio": 0.841181,
+          "force_N_per_Pa": 0.1770012,
+          "rms_relative_percent": 37.1562,
+          "peak_relative_percent": 60.7751
+        },
+        "back": {
+          "area_m2": 0.4355932,
+          "mean_pressure_ratio": 1.141719,
+          "force_N_per_Pa": 0.497325,
+          "rms_relative_percent": 29.8019,
+          "peak_relative_percent": 52.8543
+        },
+        "left": {
+          "area_m2": 0.1429162,
+          "mean_pressure_ratio": 0.726064,
+          "force_N_per_Pa": 0.1037663,
+          "rms_relative_percent": 28.1823,
+          "peak_relative_percent": 39.3554
+        },
+        "right": {
+          "area_m2": 0.0897918,
+          "mean_pressure_ratio": 1.541192,
+          "force_N_per_Pa": 0.1383864,
+          "rms_relative_percent": 54.1302,
+          "peak_relative_percent": 56.5414
+        },
+        "top": {
+          "area_m2": 0.2527461,
+          "mean_pressure_ratio": 1.010989,
+          "force_N_per_Pa": 0.2555236,
+          "rms_relative_percent": 31.3672,
+          "peak_relative_percent": 55.0577
+        },
+        "bottom": {
+          "area_m2": 0.2527461,
+          "mean_pressure_ratio": 1.032009,
+          "force_N_per_Pa": 0.2608362,
+          "rms_relative_percent": 29.8521,
+          "peak_relative_percent": 55.1855
+        }
+      }
+    },
+    {
+      "state": "100",
+      "f": 80,
+      "h": 36,
+      "volume_l": 100.52110531673118,
+      "field_rms_pct": 31.54099908234647,
+      "boundary": {
+        "front": {
+          "area_m2": 0.2693069,
+          "mean_pressure_ratio": 0.929808,
+          "force_N_per_Pa": 0.2504036,
+          "rms_relative_percent": 39.1308,
+          "peak_relative_percent": 94.1043
+        },
+        "back": {
+          "area_m2": 0.422776,
+          "mean_pressure_ratio": 1.134342,
+          "force_N_per_Pa": 0.4795725,
+          "rms_relative_percent": 30.495,
+          "peak_relative_percent": 53.3636
+        },
+        "left": {
+          "area_m2": 0.1502719,
+          "mean_pressure_ratio": 0.696862,
+          "force_N_per_Pa": 0.1047188,
+          "rms_relative_percent": 31.1081,
+          "peak_relative_percent": 44.2152
+        },
+        "right": {
+          "area_m2": 0.1277917,
+          "mean_pressure_ratio": 1.541625,
+          "force_N_per_Pa": 0.1970069,
+          "rms_relative_percent": 54.1662,
+          "peak_relative_percent": 55.398
+        },
+        "top": {
+          "area_m2": 0.2628807,
+          "mean_pressure_ratio": 0.991168,
+          "force_N_per_Pa": 0.260559,
+          "rms_relative_percent": 32.4607,
+          "peak_relative_percent": 54.0497
+        },
+        "bottom": {
+          "area_m2": 0.2628807,
+          "mean_pressure_ratio": 1.015926,
+          "force_N_per_Pa": 0.2670674,
+          "rms_relative_percent": 30.6967,
+          "peak_relative_percent": 54.8114
+        }
+      }
+    },
+    {
+      "state": "120",
+      "f": 20,
+      "h": 80,
+      "volume_l": 119.96030125583987,
+      "field_rms_pct": 1.0350274814670422,
+      "boundary": {
+        "front": {
+          "area_m2": 0.3093837,
+          "mean_pressure_ratio": 0.996103,
+          "force_N_per_Pa": 0.3081779,
+          "rms_relative_percent": 1.3755,
+          "peak_relative_percent": 6.8764
+        },
+        "back": {
+          "area_m2": 0.3770085,
+          "mean_pressure_ratio": 1.004196,
+          "force_N_per_Pa": 0.3785904,
+          "rms_relative_percent": 0.9845,
+          "peak_relative_percent": 1.8685
+        },
+        "left": {
+          "area_m2": 0.163704,
+          "mean_pressure_ratio": 0.989399,
+          "force_N_per_Pa": 0.1619685,
+          "rms_relative_percent": 1.1362,
+          "peak_relative_percent": 1.9232
+        },
+        "right": {
+          "area_m2": 0.0860962,
+          "mean_pressure_ratio": 1.018883,
+          "force_N_per_Pa": 0.0877219,
+          "rms_relative_percent": 1.8886,
+          "peak_relative_percent": 1.988
+        },
+        "top": {
+          "area_m2": 0.2876942,
+          "mean_pressure_ratio": 0.999403,
+          "force_N_per_Pa": 0.2875225,
+          "rms_relative_percent": 1.1434,
+          "peak_relative_percent": 2.3187
+        },
+        "bottom": {
+          "area_m2": 0.2605419,
+          "mean_pressure_ratio": 1.000368,
+          "force_N_per_Pa": 0.2606379,
+          "rms_relative_percent": 0.8832,
+          "peak_relative_percent": 1.9669
+        }
+      }
+    },
+    {
+      "state": "120",
+      "f": 20,
+      "h": 55,
+      "volume_l": 119.54692852361256,
+      "field_rms_pct": 0.9819594193744853,
+      "boundary": {
+        "front": {
+          "area_m2": 0.298332,
+          "mean_pressure_ratio": 0.995199,
+          "force_N_per_Pa": 0.2968996,
+          "rms_relative_percent": 1.3454,
+          "peak_relative_percent": 3.5241
+        },
+        "back": {
+          "area_m2": 0.4355932,
+          "mean_pressure_ratio": 1.005461,
+          "force_N_per_Pa": 0.4379719,
+          "rms_relative_percent": 1.019,
+          "peak_relative_percent": 1.8066
+        },
+        "left": {
+          "area_m2": 0.163704,
+          "mean_pressure_ratio": 0.989762,
+          "force_N_per_Pa": 0.1620281,
+          "rms_relative_percent": 1.0996,
+          "peak_relative_percent": 1.9006
+        },
+        "right": {
+          "area_m2": 0.0897918,
+          "mean_pressure_ratio": 1.017936,
+          "force_N_per_Pa": 0.0914023,
+          "rms_relative_percent": 1.7937,
+          "peak_relative_percent": 1.8417
+        },
+        "top": {
+          "area_m2": 0.287352,
+          "mean_pressure_ratio": 0.999911,
+          "force_N_per_Pa": 0.2873265,
+          "rms_relative_percent": 1.0578,
+          "peak_relative_percent": 2.1676
+        },
+        "bottom": {
+          "area_m2": 0.287352,
+          "mean_pressure_ratio": 1.001126,
+          "force_N_per_Pa": 0.2876755,
+          "rms_relative_percent": 0.952,
+          "peak_relative_percent": 1.8012
+        }
+      }
+    },
+    {
+      "state": "120",
+      "f": 20,
+      "h": 36,
+      "volume_l": 120.06868214310694,
+      "field_rms_pct": 1.0426887778293032,
+      "boundary": {
+        "front": {
+          "area_m2": 0.3263653,
+          "mean_pressure_ratio": 0.996362,
+          "force_N_per_Pa": 0.3251781,
+          "rms_relative_percent": 1.4808,
+          "peak_relative_percent": 5.8346
+        },
+        "back": {
+          "area_m2": 0.422776,
+          "mean_pressure_ratio": 1.005357,
+          "force_N_per_Pa": 0.4250409,
+          "rms_relative_percent": 1.0487,
+          "peak_relative_percent": 1.8449
+        },
+        "left": {
+          "area_m2": 0.163704,
+          "mean_pressure_ratio": 0.988689,
+          "force_N_per_Pa": 0.1618524,
+          "rms_relative_percent": 1.2087,
+          "peak_relative_percent": 2.1167
+        },
+        "right": {
+          "area_m2": 0.1277917,
+          "mean_pressure_ratio": 1.018182,
+          "force_N_per_Pa": 0.1301153,
+          "rms_relative_percent": 1.8184,
+          "peak_relative_percent": 1.8626
+        },
+        "top": {
+          "area_m2": 0.2829026,
+          "mean_pressure_ratio": 0.999507,
+          "force_N_per_Pa": 0.2827633,
+          "rms_relative_percent": 1.145,
+          "peak_relative_percent": 2.442
+        },
+        "bottom": {
+          "area_m2": 0.2829026,
+          "mean_pressure_ratio": 1.001025,
+          "force_N_per_Pa": 0.2831925,
+          "rms_relative_percent": 1.0037,
+          "peak_relative_percent": 1.8481
+        }
+      }
+    },
+    {
+      "state": "120",
+      "f": 40,
+      "h": 80,
+      "volume_l": 119.96030125583987,
+      "field_rms_pct": 4.290754000643008,
+      "boundary": {
+        "front": {
+          "area_m2": 0.3093837,
+          "mean_pressure_ratio": 0.984392,
+          "force_N_per_Pa": 0.3045547,
+          "rms_relative_percent": 5.634,
+          "peak_relative_percent": 27.6921
+        },
+        "back": {
+          "area_m2": 0.3770085,
+          "mean_pressure_ratio": 1.017136,
+          "force_N_per_Pa": 0.3834689,
+          "rms_relative_percent": 4.1133,
+          "peak_relative_percent": 7.8099
+        },
+        "left": {
+          "area_m2": 0.163704,
+          "mean_pressure_ratio": 0.955744,
+          "force_N_per_Pa": 0.1564591,
+          "rms_relative_percent": 4.7223,
+          "peak_relative_percent": 7.9015
+        },
+        "right": {
+          "area_m2": 0.0860962,
+          "mean_pressure_ratio": 1.078971,
+          "force_N_per_Pa": 0.0928952,
+          "rms_relative_percent": 7.8987,
+          "peak_relative_percent": 8.3229
+        },
+        "top": {
+          "area_m2": 0.2876942,
+          "mean_pressure_ratio": 0.997663,
+          "force_N_per_Pa": 0.2870219,
+          "rms_relative_percent": 4.7347,
+          "peak_relative_percent": 9.4487
+        },
+        "bottom": {
+          "area_m2": 0.2605419,
+          "mean_pressure_ratio": 1.001364,
+          "force_N_per_Pa": 0.2608972,
+          "rms_relative_percent": 3.6816,
+          "peak_relative_percent": 8.2326
+        }
+      }
+    },
+    {
+      "state": "120",
+      "f": 40,
+      "h": 55,
+      "volume_l": 119.54692852361256,
+      "field_rms_pct": 4.06832564767085,
+      "boundary": {
+        "front": {
+          "area_m2": 0.298332,
+          "mean_pressure_ratio": 0.980723,
+          "force_N_per_Pa": 0.2925809,
+          "rms_relative_percent": 5.5032,
+          "peak_relative_percent": 14.2792
+        },
+        "back": {
+          "area_m2": 0.4355932,
+          "mean_pressure_ratio": 1.022418,
+          "force_N_per_Pa": 0.4453582,
+          "rms_relative_percent": 4.2479,
+          "peak_relative_percent": 7.5385
+        },
+        "left": {
+          "area_m2": 0.163704,
+          "mean_pressure_ratio": 0.957347,
+          "force_N_per_Pa": 0.1567215,
+          "rms_relative_percent": 4.5612,
+          "peak_relative_percent": 7.7942
+        },
+        "right": {
+          "area_m2": 0.0897918,
+          "mean_pressure_ratio": 1.074863,
+          "force_N_per_Pa": 0.0965139,
+          "rms_relative_percent": 7.4869,
+          "peak_relative_percent": 7.6918
+        },
+        "top": {
+          "area_m2": 0.287352,
+          "mean_pressure_ratio": 0.999716,
+          "force_N_per_Pa": 0.2872704,
+          "rms_relative_percent": 4.3792,
+          "peak_relative_percent": 8.8241
+        },
+        "bottom": {
+          "area_m2": 0.287352,
+          "mean_pressure_ratio": 1.004608,
+          "force_N_per_Pa": 0.2886761,
+          "rms_relative_percent": 3.9575,
+          "peak_relative_percent": 7.5159
+        }
+      }
+    },
+    {
+      "state": "120",
+      "f": 40,
+      "h": 36,
+      "volume_l": 120.06868214310694,
+      "field_rms_pct": 4.325382807009114,
+      "boundary": {
+        "front": {
+          "area_m2": 0.3263653,
+          "mean_pressure_ratio": 0.9856,
+          "force_N_per_Pa": 0.3216658,
+          "rms_relative_percent": 6.0679,
+          "peak_relative_percent": 23.553
+        },
+        "back": {
+          "area_m2": 0.422776,
+          "mean_pressure_ratio": 1.021984,
+          "force_N_per_Pa": 0.4320702,
+          "rms_relative_percent": 4.3779,
+          "peak_relative_percent": 7.7068
+        },
+        "left": {
+          "area_m2": 0.163704,
+          "mean_pressure_ratio": 0.952833,
+          "force_N_per_Pa": 0.1559826,
+          "rms_relative_percent": 5.0196,
+          "peak_relative_percent": 8.6828
+        },
+        "right": {
+          "area_m2": 0.1277917,
+          "mean_pressure_ratio": 1.075971,
+          "force_N_per_Pa": 0.1375002,
+          "rms_relative_percent": 7.5979,
+          "peak_relative_percent": 7.783
+        },
+        "top": {
+          "area_m2": 0.2829026,
+          "mean_pressure_ratio": 0.998075,
+          "force_N_per_Pa": 0.2823582,
+          "rms_relative_percent": 4.7418,
+          "peak_relative_percent": 9.9417
+        },
+        "bottom": {
+          "area_m2": 0.2829026,
+          "mean_pressure_ratio": 1.00418,
+          "force_N_per_Pa": 0.2840852,
+          "rms_relative_percent": 4.1788,
+          "peak_relative_percent": 7.7215
+        }
+      }
+    },
+    {
+      "state": "120",
+      "f": 60,
+      "h": 80,
+      "volume_l": 119.96030125583987,
+      "field_rms_pct": 10.29046660602122,
+      "boundary": {
+        "front": {
+          "area_m2": 0.3093837,
+          "mean_pressure_ratio": 0.964828,
+          "force_N_per_Pa": 0.2985019,
+          "rms_relative_percent": 13.2333,
+          "peak_relative_percent": 63.0736
+        },
+        "back": {
+          "area_m2": 0.3770085,
+          "mean_pressure_ratio": 1.040012,
+          "force_N_per_Pa": 0.3920934,
+          "rms_relative_percent": 9.995,
+          "peak_relative_percent": 18.9857
+        },
+        "left": {
+          "area_m2": 0.163704,
+          "mean_pressure_ratio": 0.892656,
+          "force_N_per_Pa": 0.1461314,
+          "rms_relative_percent": 11.3723,
+          "peak_relative_percent": 18.6488
+        },
+        "right": {
+          "area_m2": 0.0860962,
+          "mean_pressure_ratio": 1.192176,
+          "force_N_per_Pa": 0.1026418,
+          "rms_relative_percent": 19.2217,
+          "peak_relative_percent": 20.2898
+        },
+        "top": {
+          "area_m2": 0.2876942,
+          "mean_pressure_ratio": 0.994973,
+          "force_N_per_Pa": 0.286248,
+          "rms_relative_percent": 11.3315,
+          "peak_relative_percent": 21.9792
+        },
+        "bottom": {
+          "area_m2": 0.2605419,
+          "mean_pressure_ratio": 1.002592,
+          "force_N_per_Pa": 0.2612172,
+          "rms_relative_percent": 8.9113,
+          "peak_relative_percent": 20.0623
+        }
+      }
+    },
+    {
+      "state": "120",
+      "f": 60,
+      "h": 55,
+      "volume_l": 119.54692852361256,
+      "field_rms_pct": 9.744162713680277,
+      "boundary": {
+        "front": {
+          "area_m2": 0.298332,
+          "mean_pressure_ratio": 0.956356,
+          "force_N_per_Pa": 0.2853117,
+          "rms_relative_percent": 12.8916,
+          "peak_relative_percent": 32.885
+        },
+        "back": {
+          "area_m2": 0.4355932,
+          "mean_pressure_ratio": 1.052819,
+          "force_N_per_Pa": 0.4586007,
+          "rms_relative_percent": 10.2794,
+          "peak_relative_percent": 18.2695
+        },
+        "left": {
+          "area_m2": 0.163704,
+          "mean_pressure_ratio": 0.89691,
+          "force_N_per_Pa": 0.1468277,
+          "rms_relative_percent": 10.9458,
+          "peak_relative_percent": 18.3333
+        },
+        "right": {
+          "area_m2": 0.0897918,
+          "mean_pressure_ratio": 1.181524,
+          "force_N_per_Pa": 0.1060911,
+          "rms_relative_percent": 18.1537,
+          "peak_relative_percent": 18.6691
+        },
+        "top": {
+          "area_m2": 0.287352,
+          "mean_pressure_ratio": 0.999667,
+          "force_N_per_Pa": 0.2872562,
+          "rms_relative_percent": 10.4743,
+          "peak_relative_percent": 20.4901
+        },
+        "bottom": {
+          "area_m2": 0.287352,
+          "mean_pressure_ratio": 1.0108,
+          "force_N_per_Pa": 0.2904553,
+          "rms_relative_percent": 9.5316,
+          "peak_relative_percent": 18.2138
+        }
+      }
+    },
+    {
+      "state": "120",
+      "f": 60,
+      "h": 36,
+      "volume_l": 120.06868214310694,
+      "field_rms_pct": 10.384243458641684,
+      "boundary": {
+        "front": {
+          "area_m2": 0.3263653,
+          "mean_pressure_ratio": 0.96827,
+          "force_N_per_Pa": 0.3160098,
+          "rms_relative_percent": 14.2625,
+          "peak_relative_percent": 53.8858
+        },
+        "back": {
+          "area_m2": 0.422776,
+          "mean_pressure_ratio": 1.051769,
+          "force_N_per_Pa": 0.4446629,
+          "rms_relative_percent": 10.6221,
+          "peak_relative_percent": 18.7158
+        },
+        "left": {
+          "area_m2": 0.163704,
+          "mean_pressure_ratio": 0.885801,
+          "force_N_per_Pa": 0.1450092,
+          "rms_relative_percent": 12.0707,
+          "peak_relative_percent": 20.4357
+        },
+        "right": {
+          "area_m2": 0.1277917,
+          "mean_pressure_ratio": 1.184567,
+          "force_N_per_Pa": 0.1513779,
+          "rms_relative_percent": 18.4586,
+          "peak_relative_percent": 18.9101
+        },
+        "top": {
+          "area_m2": 0.2829026,
+          "mean_pressure_ratio": 0.995875,
+          "force_N_per_Pa": 0.2817358,
+          "rms_relative_percent": 11.3511,
+          "peak_relative_percent": 23.0885
+        },
+        "bottom": {
+          "area_m2": 0.2829026,
+          "mean_pressure_ratio": 1.009744,
+          "force_N_per_Pa": 0.2856593,
+          "rms_relative_percent": 10.0919,
+          "peak_relative_percent": 18.7569
+        }
+      }
+    },
+    {
+      "state": "120",
+      "f": 80,
+      "h": 80,
+      "volume_l": 119.96030125583987,
+      "field_rms_pct": 20.212705457452522,
+      "boundary": {
+        "front": {
+          "area_m2": 0.3093837,
+          "mean_pressure_ratio": 0.937433,
+          "force_N_per_Pa": 0.2900266,
+          "rms_relative_percent": 25.1998,
+          "peak_relative_percent": 114.3549
+        },
+        "back": {
+          "area_m2": 0.3770085,
+          "mean_pressure_ratio": 1.075386,
+          "force_N_per_Pa": 0.4054298,
+          "rms_relative_percent": 19.9968,
+          "peak_relative_percent": 37.9924
+        },
+        "left": {
+          "area_m2": 0.163704,
+          "mean_pressure_ratio": 0.785958,
+          "force_N_per_Pa": 0.1286645,
+          "rms_relative_percent": 22.4596,
+          "peak_relative_percent": 35.7274
+        },
+        "right": {
+          "area_m2": 0.0860962,
+          "mean_pressure_ratio": 1.385163,
+          "force_N_per_Pa": 0.1192572,
+          "rms_relative_percent": 38.5256,
+          "peak_relative_percent": 40.7719
+        },
+        "top": {
+          "area_m2": 0.2876942,
+          "mean_pressure_ratio": 0.991841,
+          "force_N_per_Pa": 0.2853469,
+          "rms_relative_percent": 22.1818,
+          "peak_relative_percent": 41.1793
+        },
+        "bottom": {
+          "area_m2": 0.2605419,
+          "mean_pressure_ratio": 1.003118,
+          "force_N_per_Pa": 0.2613543,
+          "rms_relative_percent": 17.73,
+          "peak_relative_percent": 40.2926
+        }
+      }
+    },
+    {
+      "state": "120",
+      "f": 80,
+      "h": 55,
+      "volume_l": 119.54692852361256,
+      "field_rms_pct": 19.088276755224516,
+      "boundary": {
+        "front": {
+          "area_m2": 0.298332,
+          "mean_pressure_ratio": 0.921739,
+          "force_N_per_Pa": 0.2749844,
+          "rms_relative_percent": 24.4341,
+          "peak_relative_percent": 60.6748
+        },
+        "back": {
+          "area_m2": 0.4355932,
+          "mean_pressure_ratio": 1.100869,
+          "force_N_per_Pa": 0.4795311,
+          "rms_relative_percent": 20.4289,
+          "peak_relative_percent": 36.3721
+        },
+        "left": {
+          "area_m2": 0.163704,
+          "mean_pressure_ratio": 0.795606,
+          "force_N_per_Pa": 0.1302439,
+          "rms_relative_percent": 21.495,
+          "peak_relative_percent": 34.9305
+        },
+        "right": {
+          "area_m2": 0.0897918,
+          "mean_pressure_ratio": 1.361675,
+          "force_N_per_Pa": 0.1222672,
+          "rms_relative_percent": 36.1703,
+          "peak_relative_percent": 37.2521
+        },
+        "top": {
+          "area_m2": 0.287352,
+          "mean_pressure_ratio": 1.000357,
+          "force_N_per_Pa": 0.2874547,
+          "rms_relative_percent": 20.4741,
+          "peak_relative_percent": 38.2809
+        },
+        "bottom": {
+          "area_m2": 0.287352,
+          "mean_pressure_ratio": 1.020465,
+          "force_N_per_Pa": 0.2932327,
+          "rms_relative_percent": 18.815,
+          "peak_relative_percent": 36.2589
+        }
+      }
+    },
+    {
+      "state": "120",
+      "f": 80,
+      "h": 36,
+      "volume_l": 120.06868214310694,
+      "field_rms_pct": 20.422570934274653,
+      "boundary": {
+        "front": {
+          "area_m2": 0.3263653,
+          "mean_pressure_ratio": 0.945733,
+          "force_N_per_Pa": 0.3086546,
+          "rms_relative_percent": 27.1868,
+          "peak_relative_percent": 98.4204
+        },
+        "back": {
+          "area_m2": 0.422776,
+          "mean_pressure_ratio": 1.098816,
+          "force_N_per_Pa": 0.4645532,
+          "rms_relative_percent": 21.2026,
+          "peak_relative_percent": 37.3902
+        },
+        "left": {
+          "area_m2": 0.163704,
+          "mean_pressure_ratio": 0.772883,
+          "force_N_per_Pa": 0.1265241,
+          "rms_relative_percent": 23.7879,
+          "peak_relative_percent": 38.9875
+        },
+        "right": {
+          "area_m2": 0.1277917,
+          "mean_pressure_ratio": 1.368966,
+          "force_N_per_Pa": 0.1749425,
+          "rms_relative_percent": 36.9002,
+          "peak_relative_percent": 37.8061
+        },
+        "top": {
+          "area_m2": 0.2829026,
+          "mean_pressure_ratio": 0.993341,
+          "force_N_per_Pa": 0.2810188,
+          "rms_relative_percent": 22.2261,
+          "peak_relative_percent": 43.155
+        },
+        "bottom": {
+          "area_m2": 0.2829026,
+          "mean_pressure_ratio": 1.018311,
+          "force_N_per_Pa": 0.2880827,
+          "rms_relative_percent": 20.0096,
+          "peak_relative_percent": 37.4888
+        }
+      }
+    },
+    {
+      "state": "150",
+      "f": 20,
+      "h": 80,
+      "volume_l": 150.54972287635243,
+      "field_rms_pct": 1.375684440668604,
+      "boundary": {
+        "front": {
+          "area_m2": 0.3905335,
+          "mean_pressure_ratio": 0.997269,
+          "force_N_per_Pa": 0.3894669,
+          "rms_relative_percent": 1.8541,
+          "peak_relative_percent": 9.0752
+        },
+        "back": {
+          "area_m2": 0.4243459,
+          "mean_pressure_ratio": 1.002329,
+          "force_N_per_Pa": 0.4253341,
+          "rms_relative_percent": 1.1028,
+          "peak_relative_percent": 1.7274
+        },
+        "left": {
+          "area_m2": 0.163704,
+          "mean_pressure_ratio": 0.981632,
+          "force_N_per_Pa": 0.160697,
+          "rms_relative_percent": 1.9087,
+          "peak_relative_percent": 2.9354
+        },
+        "right": {
+          "area_m2": 0.1556199,
+          "mean_pressure_ratio": 1.017101,
+          "force_N_per_Pa": 0.1582812,
+          "rms_relative_percent": 1.7101,
+          "peak_relative_percent": 1.7446
+        },
+        "top": {
+          "area_m2": 0.3419987,
+          "mean_pressure_ratio": 0.998636,
+          "force_N_per_Pa": 0.3415322,
+          "rms_relative_percent": 1.5052,
+          "peak_relative_percent": 3.3545
+        },
+        "bottom": {
+          "area_m2": 0.3180409,
+          "mean_pressure_ratio": 0.999735,
+          "force_N_per_Pa": 0.3179564,
+          "rms_relative_percent": 1.2039,
+          "peak_relative_percent": 2.0722
+        }
+      }
+    },
+    {
+      "state": "150",
+      "f": 20,
+      "h": 55,
+      "volume_l": 151.48316330315387,
+      "field_rms_pct": 1.3408059148100129,
+      "boundary": {
+        "front": {
+          "area_m2": 0.3862443,
+          "mean_pressure_ratio": 0.996733,
+          "force_N_per_Pa": 0.3849826,
+          "rms_relative_percent": 1.8612,
+          "peak_relative_percent": 4.9781
+        },
+        "back": {
+          "area_m2": 0.4355932,
+          "mean_pressure_ratio": 1.002634,
+          "force_N_per_Pa": 0.4367405,
+          "rms_relative_percent": 1.0867,
+          "peak_relative_percent": 1.7094
+        },
+        "left": {
+          "area_m2": 0.163704,
+          "mean_pressure_ratio": 0.981772,
+          "force_N_per_Pa": 0.16072,
+          "rms_relative_percent": 1.8939,
+          "peak_relative_percent": 2.9475
+        },
+        "right": {
+          "area_m2": 0.1556199,
+          "mean_pressure_ratio": 1.016997,
+          "force_N_per_Pa": 0.1582649,
+          "rms_relative_percent": 1.6997,
+          "peak_relative_percent": 1.7208
+        },
+        "top": {
+          "area_m2": 0.3442044,
+          "mean_pressure_ratio": 0.999228,
+          "force_N_per_Pa": 0.3439386,
+          "rms_relative_percent": 1.4242,
+          "peak_relative_percent": 3.2041
+        },
+        "bottom": {
+          "area_m2": 0.3269015,
+          "mean_pressure_ratio": 0.999503,
+          "force_N_per_Pa": 0.3267389,
+          "rms_relative_percent": 1.2536,
+          "peak_relative_percent": 2.3156
+        }
+      }
+    },
+    {
+      "state": "150",
+      "f": 20,
+      "h": 36,
+      "volume_l": 150.2094068903555,
+      "field_rms_pct": 1.37150034730677,
+      "boundary": {
+        "front": {
+          "area_m2": 0.3834238,
+          "mean_pressure_ratio": 0.996263,
+          "force_N_per_Pa": 0.381991,
+          "rms_relative_percent": 1.965,
+          "peak_relative_percent": 7.7833
+        },
+        "back": {
+          "area_m2": 0.422776,
+          "mean_pressure_ratio": 1.002661,
+          "force_N_per_Pa": 0.423901,
+          "rms_relative_percent": 1.1172,
+          "peak_relative_percent": 1.7403
+        },
+        "left": {
+          "area_m2": 0.163704,
+          "mean_pressure_ratio": 0.98103,
+          "force_N_per_Pa": 0.1605985,
+          "rms_relative_percent": 1.972,
+          "peak_relative_percent": 3.1437
+        },
+        "right": {
+          "area_m2": 0.1595065,
+          "mean_pressure_ratio": 1.017278,
+          "force_N_per_Pa": 0.1622624,
+          "rms_relative_percent": 1.7278,
+          "peak_relative_percent": 1.7549
+        },
+        "top": {
+          "area_m2": 0.3362945,
+          "mean_pressure_ratio": 0.998841,
+          "force_N_per_Pa": 0.3359049,
+          "rms_relative_percent": 1.4961,
+          "peak_relative_percent": 3.4722
+        },
+        "bottom": {
+          "area_m2": 0.3196095,
+          "mean_pressure_ratio": 0.999475,
+          "force_N_per_Pa": 0.3194417,
+          "rms_relative_percent": 1.2833,
+          "peak_relative_percent": 2.3562
+        }
+      }
+    },
+    {
+      "state": "150",
+      "f": 40,
+      "h": 80,
+      "volume_l": 150.54972287635243,
+      "field_rms_pct": 5.713969753330801,
+      "boundary": {
+        "front": {
+          "area_m2": 0.3905335,
+          "mean_pressure_ratio": 0.98929,
+          "force_N_per_Pa": 0.386351,
+          "rms_relative_percent": 7.6272,
+          "peak_relative_percent": 36.616
+        },
+        "back": {
+          "area_m2": 0.4243459,
+          "mean_pressure_ratio": 1.0093,
+          "force_N_per_Pa": 0.4282923,
+          "rms_relative_percent": 4.6217,
+          "peak_relative_percent": 7.2108
+        },
+        "left": {
+          "area_m2": 0.163704,
+          "mean_pressure_ratio": 0.923245,
+          "force_N_per_Pa": 0.1511389,
+          "rms_relative_percent": 7.9557,
+          "peak_relative_percent": 12.1039
+        },
+        "right": {
+          "area_m2": 0.1556199,
+          "mean_pressure_ratio": 1.071405,
+          "force_N_per_Pa": 0.1667318,
+          "rms_relative_percent": 7.1405,
+          "peak_relative_percent": 7.2844
+        },
+        "top": {
+          "area_m2": 0.3419987,
+          "mean_pressure_ratio": 0.994473,
+          "force_N_per_Pa": 0.3401086,
+          "rms_relative_percent": 6.2408,
+          "peak_relative_percent": 13.7174
+        },
+        "bottom": {
+          "area_m2": 0.3180409,
+          "mean_pressure_ratio": 0.998705,
+          "force_N_per_Pa": 0.3176291,
+          "rms_relative_percent": 5.0253,
+          "peak_relative_percent": 8.6005
+        }
+      }
+    },
+    {
+      "state": "150",
+      "f": 40,
+      "h": 55,
+      "volume_l": 151.48316330315387,
+      "field_rms_pct": 5.569093414659641,
+      "boundary": {
+        "front": {
+          "area_m2": 0.3862443,
+          "mean_pressure_ratio": 0.987142,
+          "force_N_per_Pa": 0.3812781,
+          "rms_relative_percent": 7.6533,
+          "peak_relative_percent": 20.241
+        },
+        "back": {
+          "area_m2": 0.4355932,
+          "mean_pressure_ratio": 1.010573,
+          "force_N_per_Pa": 0.4401986,
+          "rms_relative_percent": 4.5509,
+          "peak_relative_percent": 7.1333
+        },
+        "left": {
+          "area_m2": 0.163704,
+          "mean_pressure_ratio": 0.923932,
+          "force_N_per_Pa": 0.1512513,
+          "rms_relative_percent": 7.8838,
+          "peak_relative_percent": 12.1365
+        },
+        "right": {
+          "area_m2": 0.1556199,
+          "mean_pressure_ratio": 1.070932,
+          "force_N_per_Pa": 0.1666583,
+          "rms_relative_percent": 7.0933,
+          "peak_relative_percent": 7.1808
+        },
+        "top": {
+          "area_m2": 0.3442044,
+          "mean_pressure_ratio": 0.996881,
+          "force_N_per_Pa": 0.3431307,
+          "rms_relative_percent": 5.9078,
+          "peak_relative_percent": 13.0949
+        },
+        "bottom": {
+          "area_m2": 0.3269015,
+          "mean_pressure_ratio": 0.99783,
+          "force_N_per_Pa": 0.326192,
+          "rms_relative_percent": 5.2199,
+          "peak_relative_percent": 9.5599
+        }
+      }
+    },
+    {
+      "state": "150",
+      "f": 40,
+      "h": 36,
+      "volume_l": 150.2094068903555,
+      "field_rms_pct": 5.699678916747797,
+      "boundary": {
+        "front": {
+          "area_m2": 0.3834238,
+          "mean_pressure_ratio": 0.985265,
+          "force_N_per_Pa": 0.3777742,
+          "rms_relative_percent": 8.0748,
+          "peak_relative_percent": 31.4926
+        },
+        "back": {
+          "area_m2": 0.422776,
+          "mean_pressure_ratio": 1.01068,
+          "force_N_per_Pa": 0.4272913,
+          "rms_relative_percent": 4.6826,
+          "peak_relative_percent": 7.2662
+        },
+        "left": {
+          "area_m2": 0.163704,
+          "mean_pressure_ratio": 0.92081,
+          "force_N_per_Pa": 0.1507403,
+          "rms_relative_percent": 8.2112,
+          "peak_relative_percent": 12.9385
+        },
+        "right": {
+          "area_m2": 0.1595065,
+          "mean_pressure_ratio": 1.072153,
+          "force_N_per_Pa": 0.1710153,
+          "rms_relative_percent": 7.2154,
+          "peak_relative_percent": 7.3286
+        },
+        "top": {
+          "area_m2": 0.3362945,
+          "mean_pressure_ratio": 0.99531,
+          "force_N_per_Pa": 0.3347174,
+          "rms_relative_percent": 6.205,
+          "peak_relative_percent": 14.1814
+        },
+        "bottom": {
+          "area_m2": 0.3196095,
+          "mean_pressure_ratio": 0.997704,
+          "force_N_per_Pa": 0.3188757,
+          "rms_relative_percent": 5.348,
+          "peak_relative_percent": 9.7227
+        }
+      }
+    },
+    {
+      "state": "150",
+      "f": 60,
+      "h": 80,
+      "volume_l": 150.54972287635243,
+      "field_rms_pct": 13.74805854680406,
+      "boundary": {
+        "front": {
+          "area_m2": 0.3905335,
+          "mean_pressure_ratio": 0.976839,
+          "force_N_per_Pa": 0.3814884,
+          "rms_relative_percent": 18.0508,
+          "peak_relative_percent": 83.6912
+        },
+        "back": {
+          "area_m2": 0.4243459,
+          "mean_pressure_ratio": 1.020836,
+          "force_N_per_Pa": 0.4331874,
+          "rms_relative_percent": 11.2888,
+          "peak_relative_percent": 17.4908
+        },
+        "left": {
+          "area_m2": 0.163704,
+          "mean_pressure_ratio": 0.813498,
+          "force_N_per_Pa": 0.1331728,
+          "rms_relative_percent": 19.252,
+          "peak_relative_percent": 28.7493
+        },
+        "right": {
+          "area_m2": 0.1556199,
+          "mean_pressure_ratio": 1.173283,
+          "force_N_per_Pa": 0.1825861,
+          "rms_relative_percent": 17.3284,
+          "peak_relative_percent": 17.6771
+        },
+        "top": {
+          "area_m2": 0.3419987,
+          "mean_pressure_ratio": 0.987291,
+          "force_N_per_Pa": 0.3376522,
+          "rms_relative_percent": 14.9671,
+          "peak_relative_percent": 32.1094
+        },
+        "bottom": {
+          "area_m2": 0.3180409,
+          "mean_pressure_ratio": 0.996092,
+          "force_N_per_Pa": 0.3167981,
+          "rms_relative_percent": 12.1903,
+          "peak_relative_percent": 20.6608
+        }
+      }
+    },
+    {
+      "state": "150",
+      "f": 60,
+      "h": 55,
+      "volume_l": 151.48316330315387,
+      "field_rms_pct": 13.397283106934903,
+      "boundary": {
+        "front": {
+          "area_m2": 0.3862443,
+          "mean_pressure_ratio": 0.971978,
+          "force_N_per_Pa": 0.3754209,
+          "rms_relative_percent": 18.0964,
+          "peak_relative_percent": 46.9111
+        },
+        "back": {
+          "area_m2": 0.4355932,
+          "mean_pressure_ratio": 1.02392,
+          "force_N_per_Pa": 0.4460124,
+          "rms_relative_percent": 11.0999,
+          "peak_relative_percent": 17.2925
+        },
+        "left": {
+          "area_m2": 0.163704,
+          "mean_pressure_ratio": 0.815598,
+          "force_N_per_Pa": 0.1335167,
+          "rms_relative_percent": 19.0349,
+          "peak_relative_percent": 28.7541
+        },
+        "right": {
+          "area_m2": 0.1556199,
+          "mean_pressure_ratio": 1.171967,
+          "force_N_per_Pa": 0.1823813,
+          "rms_relative_percent": 17.1968,
+          "peak_relative_percent": 17.406
+        },
+        "top": {
+          "area_m2": 0.3442044,
+          "mean_pressure_ratio": 0.992861,
+          "force_N_per_Pa": 0.3417472,
+          "rms_relative_percent": 14.1793,
+          "peak_relative_percent": 30.6227
+        },
+        "bottom": {
+          "area_m2": 0.3269015,
+          "mean_pressure_ratio": 0.994352,
+          "force_N_per_Pa": 0.3250552,
+          "rms_relative_percent": 12.6092,
+          "peak_relative_percent": 22.7541
+        }
+      }
+    },
+    {
+      "state": "150",
+      "f": 60,
+      "h": 36,
+      "volume_l": 150.2094068903555,
+      "field_rms_pct": 13.725753607961058,
+      "boundary": {
+        "front": {
+          "area_m2": 0.3834238,
+          "mean_pressure_ratio": 0.967774,
+          "force_N_per_Pa": 0.3710676,
+          "rms_relative_percent": 19.0735,
+          "peak_relative_percent": 72.3577
+        },
+        "back": {
+          "area_m2": 0.422776,
+          "mean_pressure_ratio": 1.024158,
+          "force_N_per_Pa": 0.4329893,
+          "rms_relative_percent": 11.4384,
+          "peak_relative_percent": 17.6313
+        },
+        "left": {
+          "area_m2": 0.163704,
+          "mean_pressure_ratio": 0.807915,
+          "force_N_per_Pa": 0.1322589,
+          "rms_relative_percent": 19.8359,
+          "peak_relative_percent": 30.6326
+        },
+        "right": {
+          "area_m2": 0.1595065,
+          "mean_pressure_ratio": 1.17515,
+          "force_N_per_Pa": 0.1874441,
+          "rms_relative_percent": 17.5152,
+          "peak_relative_percent": 17.7907
+        },
+        "top": {
+          "area_m2": 0.3362945,
+          "mean_pressure_ratio": 0.989229,
+          "force_N_per_Pa": 0.3326723,
+          "rms_relative_percent": 14.89,
+          "peak_relative_percent": 33.1266
+        },
+        "bottom": {
+          "area_m2": 0.3196095,
+          "mean_pressure_ratio": 0.994004,
+          "force_N_per_Pa": 0.3176931,
+          "rms_relative_percent": 12.9388,
+          "peak_relative_percent": 23.1237
+        }
+      }
+    },
+    {
+      "state": "150",
+      "f": 80,
+      "h": 80,
+      "volume_l": 150.54972287635243,
+      "field_rms_pct": 27.12732540107029,
+      "boundary": {
+        "front": {
+          "area_m2": 0.3905335,
+          "mean_pressure_ratio": 0.961765,
+          "force_N_per_Pa": 0.3756014,
+          "rms_relative_percent": 34.7665,
+          "peak_relative_percent": 152.6105
+        },
+        "back": {
+          "area_m2": 0.4243459,
+          "mean_pressure_ratio": 1.036657,
+          "force_N_per_Pa": 0.439901,
+          "rms_relative_percent": 22.7528,
+          "peak_relative_percent": 34.8912
+        },
+        "left": {
+          "area_m2": 0.163704,
+          "mean_pressure_ratio": 0.62707,
+          "force_N_per_Pa": 0.1026538,
+          "rms_relative_percent": 38.2879,
+          "peak_relative_percent": 55.6181
+        },
+        "right": {
+          "area_m2": 0.1556199,
+          "mean_pressure_ratio": 1.345915,
+          "force_N_per_Pa": 0.2094511,
+          "rms_relative_percent": 34.5918,
+          "peak_relative_percent": 35.2857
+        },
+        "top": {
+          "area_m2": 0.3419987,
+          "mean_pressure_ratio": 0.976672,
+          "force_N_per_Pa": 0.3340205,
+          "rms_relative_percent": 29.3854,
+          "peak_relative_percent": 60.7571
+        },
+        "bottom": {
+          "area_m2": 0.3180409,
+          "mean_pressure_ratio": 0.990005,
+          "force_N_per_Pa": 0.314862,
+          "rms_relative_percent": 24.3296,
+          "peak_relative_percent": 40.6461
+        }
+      }
+    },
+    {
+      "state": "150",
+      "f": 80,
+      "h": 55,
+      "volume_l": 151.48316330315387,
+      "field_rms_pct": 26.418066404805067,
+      "boundary": {
+        "front": {
+          "area_m2": 0.3862443,
+          "mean_pressure_ratio": 0.953031,
+          "force_N_per_Pa": 0.3681028,
+          "rms_relative_percent": 34.7948,
+          "peak_relative_percent": 87.4422
+        },
+        "back": {
+          "area_m2": 0.4355932,
+          "mean_pressure_ratio": 1.042801,
+          "force_N_per_Pa": 0.4542372,
+          "rms_relative_percent": 22.3198,
+          "peak_relative_percent": 34.4571
+        },
+        "left": {
+          "area_m2": 0.163704,
+          "mean_pressure_ratio": 0.632614,
+          "force_N_per_Pa": 0.1035615,
+          "rms_relative_percent": 37.7215,
+          "peak_relative_percent": 55.4072
+        },
+        "right": {
+          "area_m2": 0.1556199,
+          "mean_pressure_ratio": 1.342706,
+          "force_N_per_Pa": 0.2089517,
+          "rms_relative_percent": 34.2708,
+          "peak_relative_percent": 34.6781
+        },
+        "top": {
+          "area_m2": 0.3442044,
+          "mean_pressure_ratio": 0.986997,
+          "force_N_per_Pa": 0.3397286,
+          "rms_relative_percent": 27.8632,
+          "peak_relative_percent": 57.8577
+        },
+        "bottom": {
+          "area_m2": 0.3269015,
+          "mean_pressure_ratio": 0.987651,
+          "force_N_per_Pa": 0.3228646,
+          "rms_relative_percent": 25.0057,
+          "peak_relative_percent": 44.1461
+        }
+      }
+    },
+    {
+      "state": "150",
+      "f": 80,
+      "h": 36,
+      "volume_l": 150.2094068903555,
+      "field_rms_pct": 27.11524486905504,
+      "boundary": {
+        "front": {
+          "area_m2": 0.3834238,
+          "mean_pressure_ratio": 0.945635,
+          "force_N_per_Pa": 0.362579,
+          "rms_relative_percent": 36.6282,
+          "peak_relative_percent": 133.0794
+        },
+        "back": {
+          "area_m2": 0.422776,
+          "mean_pressure_ratio": 1.043213,
+          "force_N_per_Pa": 0.4410453,
+          "rms_relative_percent": 23.0574,
+          "peak_relative_percent": 35.1899
+        },
+        "left": {
+          "area_m2": 0.163704,
+          "mean_pressure_ratio": 0.616859,
+          "force_N_per_Pa": 0.1009823,
+          "rms_relative_percent": 39.3504,
+          "peak_relative_percent": 58.9793
+        },
+        "right": {
+          "area_m2": 0.1595065,
+          "mean_pressure_ratio": 1.349796,
+          "force_N_per_Pa": 0.2153012,
+          "rms_relative_percent": 34.98,
+          "peak_relative_percent": 35.5312
+        },
+        "top": {
+          "area_m2": 0.3362945,
+          "mean_pressure_ratio": 0.980257,
+          "force_N_per_Pa": 0.329655,
+          "rms_relative_percent": 29.2614,
+          "peak_relative_percent": 62.4907
+        },
+        "bottom": {
+          "area_m2": 0.3196095,
+          "mean_pressure_ratio": 0.986821,
+          "force_N_per_Pa": 0.3153973,
+          "rms_relative_percent": 25.7245,
+          "peak_relative_percent": 45.0446
+        }
+      }
+    }
+  ],
+  "warnings": [
+    "No actual pressure magnitude: face force is Newton per Pascal of spatial mean pressure.",
+    "Face area weighting uses air-volume fraction, no conformal integration of sphere/source flange; forces on internal modules and braces omitted.",
+    "No damping/porous 50mm mat, no structural wall displacement or motion feedback, rigid Neumann boundaries.",
+    "P33B failed P33C hourglass audit and cannot be used for validated load/deflection predictions.",
+    "A numerical convergence trend and grid model do not certify true material parameters or manufacturability."
+  ]
+}
