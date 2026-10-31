@@ -1,0 +1,333 @@
+{
+  "study": "P38B",
+  "date": "2026-11-01",
+  "status": "coordinate consistency sensitivity study, not physical validation",
+  "cases": 15,
+  "definition": {
+    "outside_center_xz_mm": [
+      231,
+      250
+    ],
+    "wall_mm": 22,
+    "correct_inside_center_mm": [
+      209,
+      228
+    ],
+    "braces_outside_x_mm": [
+      448,
+      723
+    ],
+    "braces_inside_x_mm": [
+      426,
+      701
+    ]
+  },
+  "results": [
+    {
+      "state": "100",
+      "frequency_Hz": 20,
+      "mesh_mm": 55,
+      "legacy_local_center_mm": [
+        231,
+        250
+      ],
+      "correct_local_center_mm": [
+        209,
+        228
+      ],
+      "legacy_volume_l": 98.50658561003279,
+      "corrected_volume_l": 98.37612713462616,
+      "legacy_rms_percent": 1.3879503037219483,
+      "corrected_rms_percent": 1.4585166246335421,
+      "change_pp": 0.07056632091159387,
+      "legacy_source_pmean_ratio": 0.9764921270560396,
+      "corrected_source_pmean_ratio": 0.9755866966332287
+    },
+    {
+      "state": "100",
+      "frequency_Hz": 40,
+      "mesh_mm": 55,
+      "legacy_local_center_mm": [
+        231,
+        250
+      ],
+      "correct_local_center_mm": [
+        209,
+        228
+      ],
+      "legacy_volume_l": 98.50658561003279,
+      "corrected_volume_l": 98.37612713462616,
+      "legacy_rms_percent": 5.852893496958084,
+      "corrected_rms_percent": 6.149582563137074,
+      "change_pp": 0.29668906617899005,
+      "legacy_source_pmean_ratio": 0.9035316396817313,
+      "corrected_source_pmean_ratio": 0.8996562061225738
+    },
+    {
+      "state": "100",
+      "frequency_Hz": 60,
+      "mesh_mm": 55,
+      "legacy_local_center_mm": [
+        231,
+        250
+      ],
+      "correct_local_center_mm": [
+        209,
+        228
+      ],
+      "legacy_volume_l": 98.50658561003279,
+      "corrected_volume_l": 98.37612713462616,
+      "legacy_rms_percent": 14.494303094759545,
+      "corrected_rms_percent": 15.224092441618476,
+      "change_pp": 0.7297893468589312,
+      "legacy_source_pmean_ratio": 0.7723443785063971,
+      "corrected_source_pmean_ratio": 0.7625262710142824
+    },
+    {
+      "state": "100",
+      "frequency_Hz": 80,
+      "mesh_mm": 55,
+      "legacy_local_center_mm": [
+        231,
+        250
+      ],
+      "correct_local_center_mm": [
+        209,
+        228
+      ],
+      "legacy_volume_l": 98.50658561003279,
+      "corrected_volume_l": 98.37612713462616,
+      "legacy_rms_percent": 30.074713457699083,
+      "corrected_rms_percent": 31.56729751416249,
+      "change_pp": 1.4925840564634072,
+      "legacy_source_pmean_ratio": 0.5613906487806342,
+      "corrected_source_pmean_ratio": 0.5404627818646329
+    },
+    {
+      "state": "100",
+      "frequency_Hz": 80,
+      "mesh_mm": 36,
+      "legacy_local_center_mm": [
+        231,
+        250
+      ],
+      "correct_local_center_mm": [
+        209,
+        228
+      ],
+      "legacy_volume_l": 100.52110531673118,
+      "corrected_volume_l": 100.4820881973173,
+      "legacy_rms_percent": 31.54099908234647,
+      "corrected_rms_percent": 32.67189304524587,
+      "change_pp": 1.1308939628993961,
+      "legacy_source_pmean_ratio": 0.5003791113297753,
+      "corrected_source_pmean_ratio": 0.47614451387745416
+    },
+    {
+      "state": "120",
+      "frequency_Hz": 20,
+      "mesh_mm": 55,
+      "legacy_local_center_mm": [
+        231,
+        250
+      ],
+      "correct_local_center_mm": [
+        209,
+        228
+      ],
+      "legacy_volume_l": 119.54692852361256,
+      "corrected_volume_l": 119.41647004820594,
+      "legacy_rms_percent": 0.9819594193744853,
+      "corrected_rms_percent": 1.0819273049337699,
+      "change_pp": 0.0999678855592846,
+      "legacy_source_pmean_ratio": 0.9773144946996312,
+      "corrected_source_pmean_ratio": 0.9757655363419473
+    },
+    {
+      "state": "120",
+      "frequency_Hz": 40,
+      "mesh_mm": 55,
+      "legacy_local_center_mm": [
+        231,
+        250
+      ],
+      "correct_local_center_mm": [
+        209,
+        228
+      ],
+      "legacy_volume_l": 119.54692852361256,
+      "corrected_volume_l": 119.41647004820594,
+      "legacy_rms_percent": 4.06832564767085,
+      "corrected_rms_percent": 4.482673999141309,
+      "change_pp": 0.41434835147045934,
+      "legacy_source_pmean_ratio": 0.9080595863142965,
+      "corrected_source_pmean_ratio": 0.9016072622816937
+    },
+    {
+      "state": "120",
+      "frequency_Hz": 60,
+      "mesh_mm": 55,
+      "legacy_local_center_mm": [
+        231,
+        250
+      ],
+      "correct_local_center_mm": [
+        209,
+        228
+      ],
+      "legacy_volume_l": 119.54692852361256,
+      "corrected_volume_l": 119.41647004820594,
+      "legacy_rms_percent": 9.744162713680277,
+      "corrected_rms_percent": 10.73627150858973,
+      "change_pp": 0.9921087949094538,
+      "legacy_source_pmean_ratio": 0.7881798089963129,
+      "corrected_source_pmean_ratio": 0.7726015847581307
+    },
+    {
+      "state": "120",
+      "frequency_Hz": 80,
+      "mesh_mm": 55,
+      "legacy_local_center_mm": [
+        231,
+        250
+      ],
+      "correct_local_center_mm": [
+        209,
+        228
+      ],
+      "legacy_volume_l": 119.54692852361256,
+      "corrected_volume_l": 119.41647004820594,
+      "legacy_rms_percent": 19.088276755224516,
+      "corrected_rms_percent": 21.025976215920434,
+      "change_pp": 1.9376994606959173,
+      "legacy_source_pmean_ratio": 0.6089705545023236,
+      "corrected_source_pmean_ratio": 0.5781855775478366
+    },
+    {
+      "state": "120",
+      "frequency_Hz": 80,
+      "mesh_mm": 36,
+      "legacy_local_center_mm": [
+        231,
+        250
+      ],
+      "correct_local_center_mm": [
+        209,
+        228
+      ],
+      "legacy_volume_l": 120.06868214310694,
+      "corrected_volume_l": 120.02966502369306,
+      "legacy_rms_percent": 20.422570934274653,
+      "corrected_rms_percent": 21.715597190569095,
+      "change_pp": 1.2930262562944428,
+      "legacy_source_pmean_ratio": 0.5471909525589939,
+      "corrected_source_pmean_ratio": 0.5163489279107176
+    },
+    {
+      "state": "150",
+      "frequency_Hz": 20,
+      "mesh_mm": 55,
+      "legacy_local_center_mm": [
+        231,
+        250
+      ],
+      "correct_local_center_mm": [
+        209,
+        228
+      ],
+      "legacy_volume_l": 151.48316330315387,
+      "corrected_volume_l": 151.35270482774723,
+      "legacy_rms_percent": 1.3408059148100129,
+      "corrected_rms_percent": 1.4594574131800515,
+      "change_pp": 0.11865149837003863,
+      "legacy_source_pmean_ratio": 0.9671943980713951,
+      "corrected_source_pmean_ratio": 0.9648158267809885
+    },
+    {
+      "state": "150",
+      "frequency_Hz": 40,
+      "mesh_mm": 55,
+      "legacy_local_center_mm": [
+        231,
+        250
+      ],
+      "correct_local_center_mm": [
+        209,
+        228
+      ],
+      "legacy_volume_l": 151.48316330315387,
+      "corrected_volume_l": 151.35270482774723,
+      "legacy_rms_percent": 5.569093414659641,
+      "corrected_rms_percent": 6.061081298718034,
+      "change_pp": 0.49198788405839267,
+      "legacy_source_pmean_ratio": 0.8665375907913072,
+      "corrected_source_pmean_ratio": 0.8566096687049674
+    },
+    {
+      "state": "150",
+      "frequency_Hz": 60,
+      "mesh_mm": 55,
+      "legacy_local_center_mm": [
+        231,
+        250
+      ],
+      "correct_local_center_mm": [
+        209,
+        228
+      ],
+      "legacy_volume_l": 151.48316330315387,
+      "corrected_volume_l": 151.35270482774723,
+      "legacy_rms_percent": 13.397283106934903,
+      "corrected_rms_percent": 14.575992707246863,
+      "change_pp": 1.1787096003119597,
+      "legacy_source_pmean_ratio": 0.6903846863077852,
+      "corrected_source_pmean_ratio": 0.6663300140819667
+    },
+    {
+      "state": "150",
+      "frequency_Hz": 80,
+      "mesh_mm": 55,
+      "legacy_local_center_mm": [
+        231,
+        250
+      ],
+      "correct_local_center_mm": [
+        209,
+        228
+      ],
+      "legacy_volume_l": 151.48316330315387,
+      "corrected_volume_l": 151.35270482774723,
+      "legacy_rms_percent": 26.418066404805067,
+      "corrected_rms_percent": 28.72153072634126,
+      "change_pp": 2.303464321536193,
+      "legacy_source_pmean_ratio": 0.4220537141473073,
+      "corrected_source_pmean_ratio": 0.3742570942896322
+    },
+    {
+      "state": "150",
+      "frequency_Hz": 80,
+      "mesh_mm": 36,
+      "legacy_local_center_mm": [
+        231,
+        250
+      ],
+      "correct_local_center_mm": [
+        209,
+        228
+      ],
+      "legacy_volume_l": 150.2094068903555,
+      "corrected_volume_l": 150.17038977094163,
+      "legacy_rms_percent": 27.11524486905504,
+      "corrected_rms_percent": 28.57466288374705,
+      "change_pp": 1.4594180146920088,
+      "legacy_source_pmean_ratio": 0.3586570593828533,
+      "corrected_source_pmean_ratio": 0.31523363773571106
+    }
+  ],
+  "warnings": [
+    "P34B and P35A original source position 231/250 was used as local although P31C defines these as external coordinates; do not interpret old values as a validated corrected CAD model.",
+    "Correction shifts hypothetical basket and source x/z by -22mm; rigid modules remain unchanged.",
+    "FV walls rigid, foam loss omitted, basket approximated as a 5 L cylinder, not a real Dayton basket CAD.",
+    "Historic result JSON is intentionally retained; new results must declare coordinate frame."
+  ]
+}
