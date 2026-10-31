@@ -1,0 +1,40 @@
+name: P33A - regresja modelu obudowy
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  global-energy-mesh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Biblioteki naukowe
+        run: python -m pip install --disable-pip-version-check numpy scipy matplotlib
+      - name: Odtworzenie 14 symulacji globalnych
+        env:
+          OPENBLAS_NUM_THREADS: '1'
+          OMP_NUM_THREADS: '1'
+        run: |
+          python -m py_compile skrypty/p33a_global_shell_network.py
+          python skrypty/p33a_global_shell_network.py --out /tmp/p33a_results
+      - name: Kontrola zbieznosci, otworu i danych
+        run: |
+          python - <<'PY'
+          import json, math
+          z=json.load(open('/tmp/p33a_results/p33a_global_shell_results.json'))
+          assert z['cases']==14
+          a=[x for x in z['scenarios'] if x['Ejoint_N_m2']==3e7 and x['driver_kg']==15 and x['insert_kg']==8 and x['braces']]
+          assert len(a)==3
+          a.sort(key=lambda x:x['mesh'],reverse=True)
+          assert abs(a[0]['max_static_normal_um']-347.586)<10
+          assert abs(a[1]['max_static_normal_um']-330.679)<10
+          assert abs(a[2]['max_static_normal_um']-335.556)<10
+          assert abs(a[2]['front_removed_m2']-math.pi*(.3558/2)**2)<.001
+          assert abs(a[2]['f_modes_Hz'][0]-33.878)<2
+          assert all(x['energy_J']>0 and x['MDF_mass_kg']>20 for x in z['scenarios'])
+          print('PASS: 14 przypadkow, nieujemna energia, kontrola siatki i geometrii')
+          PY
