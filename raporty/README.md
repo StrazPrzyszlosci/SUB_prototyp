@@ -97,3 +97,6 @@ bieżący zakres sprawdzaj w [programie 30 pakietów](../PROGRAM_30_BADAN.md).
 
 - [Raport 087 — P34B: 46 symulacji FV z przeszkodami P30E, 100/120/150 l](087_P34B_przestrzenne_cisnienie_100_120_150.md).
 - [Raport 088 — P34C: 324 scenariusze obciążeń i mocowania wkładów](088_P34C_obciazenia_i_blokowanie_wkladow.md).
+
+- [Raport 089 — P35A: 36 analiz względnego ciśnienia na ścianach](089_P35A_rozklad_cisnienia_na_scianach.md).
+- [Raport 090 — P35B: 16 globalnych testów stabilizacji hourglass elementu Q4](090_P35B_globalna_stabilizacja_hourglass.md).
