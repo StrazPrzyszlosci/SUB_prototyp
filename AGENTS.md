@@ -283,6 +283,17 @@ statusu pomiarów. Historię pracy zapisuj w AGENTS.md i raportach.
 Ewentualny changelog README może być wyłącznie na samym końcu.
 Nie nazywaj niewyeksportowanych obliczeń Work opublikowanymi.
 
+**Kryterium doboru przetwornika:** szukać najtańszego rozwiązania,
+które jednocześnie spełnia przyjęte progi SPL/jakości w zakresie 20–40 Hz,
+ograniczenia cieplne, Sd i użyteczne wychylenie, V/I napędu,
+głębokość zewnętrzną do 500 mm i wymagania nieliniowości gazu w
+zamkniętej skrzyni. `Sd·Xmax` nie jest dowodem liniowości ani niskiego THD.
+Dotychczasowy RSS390HF-4 jest wstępnym faworytem modelowym, nie
+najtańszym potwierdzonym rozwiązaniem. Analiza cen została odłożona
+w obecnym zakresie badań; po jej wznowieniu należy ponowić ranking
+wśród wariantów spełniających kryteria, bez przypisywania starym
+wynikom nieobliczonego wymiaru kosztu.
+
 ## Stan i postępy
 
 | Data | Wykonane | Dowód / ograniczenie | Następny krok |
