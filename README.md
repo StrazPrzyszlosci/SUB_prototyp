@@ -357,15 +357,29 @@ Skrzynia nie jest idealnie sztywna. Jej ścianki się uginają, a połączenia
 przenoszą nierówne obciążenia. Poniższe części można rozwinąć niezależnie.
 Wykresy przedstawiają modele, nie rysunki wykonawcze.
 
-**Koncepcja do dalszych badań:** korpus 880 × 480 × 500 mm (W × D × H),
-MDF 22 mm i stały front 44 mm. Drewniany korpus ma 480 mm głębokości,
-więc do limitu **500 mm dla całego urządzenia** pozostaje tylko 20 mm
-na wszystkie elementy wystające, maskownicę, ruch membrany i tolerancje.
-Nie jest to jeszcze zatwierdzona geometria. Usztywnienia, mocowania
-wkładów, wypełnienie i tory montażowe wymagają wspólnego sprawdzenia.
+**Jak pogodzić duży głośnik z limitem 50 cm głębokości?**
+Wcześniejszy korpus 880 × 480 × 500 mm (W × D × H) zostawiał tylko
+20 mm na wszystkie wystające elementy. W nowym modelu geometrycznym
+przeanalizowano 25 korpusów, w tym **1000 × 440 × 500 mm**
+(MDF 22 mm, stały front 44 mm). Przy przyjętych, jawnych scenariuszach
+osłony cały obrys dla RSS390HF-4 wynosi **476–496 mm**. To wynik
+modelowy, nie potwierdzone wymiary gotowej maskownicy.
 
-[Wstępna geometria i bilans netto — 054](raporty/054_rekomendowana_konfiguracja_prototypu.md)
-· [margines głębokości — 055](raporty/055_wrazliwosc_wyboru_i_margines_glebokosci.md).
+![Model geometryczny obudowy i kontrola pełnej głębokości](wyniki/100_P20D_geometria.png)
+
+[Geometria, dostęp i ograniczenia — raport 057](raporty/057_P20D_geometria_dostep_i_pelna_glebokosc.md)
+· [wcześniejszy wariant — 054](raporty/054_rekomendowana_konfiguracja_prototypu.md).
+
+**Dlaczego same gęste wręgi nie wystarczą?** W zredukowanym MES
+z podatnym podparciem modelowym najniższa postać z wręgami
+wyniosła **143,305 Hz**, a nie około 395 Hz przypisywane wcześniej
+idealnie podpartemu małemu polu. Nie są to częstotliwości własne
+ukończonej skrzyni. Wytrzymałość kleju, pełna rama i wibracje kosza
+nadal wymagają wspólnego modelu.
+
+![Podatne wręgi: postacie drgań i zależność od podparcia](wyniki/p18e_pola.png)
+
+[Raport 059 — model podatnych wręg i zbieżność](raporty/059_podatne_wregi_i_panele.md).
 
 <details>
 <summary><strong>Ścianki, wzmocnienia i rozprowadzanie sił</strong></summary>
@@ -533,6 +547,16 @@ Porównujemy szczelne wkłady wkładane przez otwór po zdjęciu głośnika
 oraz przesuwaną przegrodę. Front pozostaje stały. Ważne są masa, szczelność,
 sztywność i możliwość zmiany ustawienia po złożeniu skrzyni.
 
+W wariancie **1000 × 440 × 500 mm** z dwiema ramami i tylną matą
+zbadano konkretne tory montażowe **20 wkładów**: 16 dużych i 4 małych.
+Wszystkie 20 torów zaliczono w modelu translacji z obwiednią montażową,
+lecz nadal nie zweryfikowano zamków, dostępu narzędzi i wpływu grawitacji.
+Modelowe stany netto to około **149,61 / 119,46 / 100,11 l** przy
+umownej wyporności głośnika i osprzętu. Nie są to gwarantowane objętości
+każdego wykonanego egzemplarza.
+
+[Szczegóły torów, masy, litrażu i kolizji — raport 057](raporty/057_P20D_geometria_dostep_i_pelna_glebokosc.md).
+
 <details>
 <summary><strong>Wkłady, przegroda, MDF i sklejka — wyniki kolejnych porównań</strong></summary>
 
@@ -667,8 +691,20 @@ o powierzchni odpowiadającej katalogowemu `Sd` oraz różne położenia
 [Raport 050 — źródło w komorze](raporty/050_P21C0_plytka_komora_i_polozenie_zrodla.md)
 · [raport 051 — kołowa membrana](raporty/051_P21C1_membrana_kolowa_i_bezwladnosc.md)
 · [raport 052 — warstwy i wkłady](raporty/052_komora_warstwy_wklady_i_front.md).
-Wyniki nie zastępują sprzężonego modelu z podatnymi ścianami,
-wypełnieniem i rzeczywistym napędem.
+W przestrzennej analizie **tej samej geometrii wręg i wkładów** porównano
+trzy objętości, dwie zastępcze bryły kosza oraz modele membran C02/C11/C06.
+Samo przeliczenie litrów nie opisuje całego obciążenia membrany.
+Przy 80 Hz port blisko zera miał w jednym przypadku **42,86% różnicy
+między siatkami**; nie można go więc uznać za dokładnie wyznaczony.
+Jednocześnie w sześciu sprawdzonych przypadkach ostatnia zmiana
+amplitudy prędkości C02 nie przekroczyła **0,00858 dB**.
+To nie gwarancja dla całego pasma ani dla rzeczywistego kosza.
+
+![Wpływ przestrzennej komory na port akustyczny i napęd](wyniki/101_P21D_komora_i_naped.png)
+
+[Raport 060 — wspólna geometria, port i kontrola siatki](raporty/060_P21D_wspolna_geometria_i_port_napedu.md).
+Wyniki nadal nie zastępują pełnego sprzężenia z podatnymi ścianami,
+realnym materiałem tłumiącym i zwalidowanym napędem.
 
 <a id="slownik"></a>
 ## Krótki słownik do wykresów
