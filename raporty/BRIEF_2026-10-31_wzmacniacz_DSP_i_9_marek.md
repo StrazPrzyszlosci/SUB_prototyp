@@ -21,7 +21,7 @@ Centralny plik [9 marek — zweryfikowane parametry techniczne](../dane/karty_pr
 - [VOLT RV3863](https://voltloudspeakers.co.uk/speaker/rv3863-15inch/): pełna tabela producenta na stronie produktu, wartości 400W AES i ±7,5mm.
 - [SUPRAVOX 400-2000 EXC](https://supravox.fr/en/products/copie-de-400-2000-exc-haut-parleur-de-grave): trzy oddzielne zestawy T/S dla 9/12/15V uzwojenia pola.
 - [EMS B15EX](https://www.emspeaker.com/ems_products.html): strona firmowa potwierdza model i typ napędu, **nie zawiera wystarczających oficjalnych danych T/S**. Dane z innych baz nie mają statusu zweryfikowanych przez producenta; **status HOLD**.
-- [PURIFI PTT10.0X04-NAB-01](https://purifi-audio.com/shop/ptt10-0x04-nab-01-ptt10-0x04-nab-01-2043): pełne oficjalne tabele. Udostępniony starszy PDF dotyczy wersji **-02**, więc nie mieszać wersji dokumentacji, zwłaszcza mocy.
+- [PURIFI PTT10.0X04-NAB-01](https://purifi-audio.com/shop/ptt10-0x04-nab-01-ptt10-0x04-nab-01-2043): pełne oficjalne tabele. Zweryfikowano [oryginalną kartę PDF wersji **-01**, wyd. 0.95 (czerwiec 2024)](https://ptt.purifi-audio.com/shop/ptt10-0x04-nab-01-ptt10-0x04-nab-01-2043/document/583). Jej wartości mocy oznaczono **TBD**, więc wartości 450 W (long term maximum) oraz 135 W (100 h noise) pochodzą z **aktualnej strony produktu**, a nie ze starego PDF. Nie mylić liniowych ±14,75 mm z mechanicznymi ±25 mm.
 - [Kartesian Wom265_vKi-6, datasheet v1.6](https://www.kartesian-acoustic.com/_files/ugd/f62092_f4db69c69657404f8edce8f61ada3010.pdf).
 - [PHL 6301MNd, datasheet](https://www.phlaudio.com/fileadmin/user_upload/phl_audio/6301MNd_SpecSheet.pdf).
 - [ETON Symphony II 12-212/C8/62](https://eton-hifi.com/en/products/symphony-ii-12-212-c8-62-hex) i [oryginalna karta PDF](https://www.eton-hifi.com/out/media/12_212_C8_62.pdf). ETON opisuje 92,7g jako Mmd, nie należy jej bez kontroli nazywać Mms.
@@ -48,7 +48,7 @@ Wzory \`Qtc=Qts sqrt(1+Vas/Vb)\`, \`fc=Fs sqrt(1+Vas/Vb)\`. **Nie są predykcją
 
 ## 3. Elektronika: porównanie pięciu architektur i DSP
 
-Konfiguracja [dane/konfiguracje/brief_klienta_20231031_wzmacniacz_dsp.json](../dane/konfiguracje/brief_klienta_20261031_wzmacniacz_dsp.json) zawiera producentów i definicje limitów testowych. Poniższe wyniki dotyczą wyłącznie **4Ω czystej rezystancji** i nominalnego fabrycznego wzmocnienia. Przy rzeczywistym \`Z(f)\`, pełnym ograniczeniu prądowym i nagrzewaniu dostępne poziomy mogą być inne.
+Konfiguracja [dane/konfiguracje/brief_klienta_20261031_wzmacniacz_dsp.json](../dane/konfiguracje/brief_klienta_20261031_wzmacniacz_dsp.json) zawiera producentów i definicje limitów testowych. Poniższe wyniki dotyczą wyłącznie **4Ω czystej rezystancji** i nominalnego fabrycznego wzmocnienia. Przy rzeczywistym \`Z(f)\`, pełnym ograniczeniu prądowym i nagrzewaniu dostępne poziomy mogą być inne.
 
 | Architektura | Moc zadeklarowana przy 4Ω (warunki katalogowe) | Wzmocnienie | 1Vrms wej. | 2Vrms wej. | 4Vrms wej. |
 |---|---:|---:|---:|---:|---:|
