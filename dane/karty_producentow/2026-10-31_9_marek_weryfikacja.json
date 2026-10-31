@@ -9,8 +9,8 @@
       "model": "416-8B",
       "documentation_status": "manufacturer_sheet_mirror_and_official_page",
       "official_product_url": "https://greatplainsacoustics.com/products/416-8b-alnico-16-in-low-frecuency-loudspeaker-each",
-      "original_manufacturer_datasheet_url": "https://soundbox.co.jp/GPA/Classic-Series-416-8B-Spec-Sheet.pdf",
-      "source_note": "Original Great Plains Audio factory document GPA-416-8B-REV.1 2013-02-28 hosted by distributor, corroborated by current manufacturer page. Original manufacturer archive's PDF link now 404.",
+      "original_manufacturer_datasheet_url": "https://archive.greatplainsacoustics.com/wp-content/uploads/2016/06/Classic-Series-416-8B-Spec-Sheet.pdf",
+      "source_note": "Original manufacturer archival 416-8B Rev.1 sheet 2013-02-28, hosted on Great Plains Acoustics archive, plus current product page. Original factory lists Vd=0.314L, while rounded Sd*Xmax=0.32948L; do not erase this 4.93% inconsistency. A distributor mirror exists but factory archive is primary. Derived from rounded Sd/Xmax 329.48cm3 is not equal to published Vd 314cm3.",
       "spec": {
         "nominal_diameter_in": 15,
         "nominal_impedance_ohm": 8,
@@ -40,7 +40,8 @@
         "magnet": "AlNiCo V",
         "voice_coil_diameter_mm": 76,
         "baffle_mount_pcd_mm": 381
-      }
+      },
+      "secondary_mirror_original_sheet_url": "https://soundbox.co.jp/GPA/Classic-Series-416-8B-Spec-Sheet.pdf"
     },
     {
       "id": "N02",
@@ -88,7 +89,7 @@
       "documentation_status": "manufacturer_product_full_published_table",
       "official_product_url": "https://supravox.fr/en/products/copie-de-400-2000-exc-haut-parleur-de-grave",
       "original_manufacturer_datasheet_url": null,
-      "source_note": "Field coil has separately powered 9–15V DC 3A supply; T/S strongly dependent on field coil voltage. 12V row retained. Manufacturer lists 'linear excursion 10mm' without unambiguous ± convention; Xmax marked unverified.",
+      "source_note": "Field coil has separately powered 9–15V DC 3A supply; T/S strongly dependent on field coil voltage. 12V row retained. Manufacturer lists 'linear excursion 10mm' without unambiguous ± convention; Xmax marked unverified. CROSS-FIELD FLAG: published Mms=66g is -16.2% relative to Mms reconstructed from Fs=22Hz, Vas=686L, Sd=855cm² under rho=1.2 c=343; do not numerically combine both values as if internally calibrated, manufacturer clarification needed.",
       "spec": {
         "nominal_diameter_in": 16,
         "nominal_impedance_ohm": 8,
