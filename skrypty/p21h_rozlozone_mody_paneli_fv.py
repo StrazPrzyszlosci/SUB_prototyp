@@ -66,7 +66,7 @@ def coupled(Z,d,c,desc,limit,f,E,zeta):
     sd,cms,mechm,rm,bl,re,le=driver_ts(d,c)
     s=2j*np.pi*f;w=2*np.pi*f;ze=re+s*le
     Zm=rm+s*mechm+1/(s*cms)
-    indices=[0]+[3+j for j,(_,m,n) in enumerate(desc) if m<=limit and n<=limit]
+    indices=[0]+[1+j for j,(_,m,n) in enumerate(desc) if m<=limit and n<=limit]
     z=Z[np.ix_(indices,indices)];nm=len(indices)-1
     zrig=Zm+sd*sd*z[0,0];Irig=1/(ze+bl*bl/zrig);vrig=bl*Irig/zrig
     mass,omega,rw=structure(c,[x for x in desc if x[1]<=limit and x[2]<=limit],E,zeta)
