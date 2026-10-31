@@ -11,7 +11,7 @@ nie jest kandydatem na konstrukcję końcową.*
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**26 modeli głośników · 11 producentów · 64 raporty · Python**
+**26 modeli głośników · 11 producentów · 65 raportów · Python**
 
 Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
@@ -786,11 +786,31 @@ rzeczywistych postaci drgań, promieniowania paneli ani THD.
 · [39 punktów kontrolnych](wyniki/p21e_nominal.csv)
 · [podsumowanie 9801 przypadków](wyniki/p21e_podsumowanie.json).
 
+**Czy przestrzenne ciśnienie może zmienić napęd mocniej niż same ugięcia ścian?**
+Badanie P21F łączy jeden dysk membrany z przestrzennymi modami
+akustycznymi i trzema **modelowymi** podatnymi polami ścian.
+W przeanalizowanej rodzinie, przy 120 l i przesuniętej membranie C02,
+zmiana amplitudy prędkości 20–80 Hz względem sztywnego modelu 0D
+wynosi **−0,500 do +0,230 dB**. Dla samego przestrzennego gazu
+ze sztywnymi ścianami: **−0,446 do +0,100 dB**.
+
+![P21F: trzej kandydaci, przestrzenne mody powietrza i trzy podatne pola ścian](wyniki/105_P21F_mody_i_panele.svg)
+
+To **model zastępczy pustego prostopadłościanu**, a nie rozwiązanie
+dla rzeczywistego układu wręg, wkładów i maty P20D/P21D. Wpisanie
+100/120/150 l do podatności gazu przy niezmienionej geometrii modów
+jest jawnym uproszczeniem. Sprawdziliśmy pasywność i bilans energii,
+ale nie uzyskaliśmy jeszcze ścisłej zbieżności całego pasma.
+
+[Raport 065 — P21F: mody gazu i podatne pola](raporty/065_P21F_wielomody_gazu_i_scian.md)
+· [podsumowanie 52 272 obliczeń](wyniki/p21f_podsumowanie.json)
+· [kod odtwarzania](skrypty/p21f_mody_gaz_panele.py).
+
 [Raport 050 — źródło w komorze](raporty/050_P21C0_plytka_komora_i_polozenie_zrodla.md)
 · [raport 051 — kołowa membrana](raporty/051_P21C1_membrana_kolowa_i_bezwladnosc.md)
 · [raport 052 — warstwy i wkłady](raporty/052_komora_warstwy_wklady_i_front.md).
-Wyniki nie zastępują sprzężonego modelu z podatnymi ścianami,
-wypełnieniem i rzeczywistym napędem.
+Wyniki nie zastępują **pełnego przestrzennego** sprzężenia
+rzeczywistych podatnych ścian, wręg, wypełnienia i napędu.
 
 <a id="slownik"></a>
 ## Krótki słownik do wykresów
@@ -816,7 +836,7 @@ ani wartości RMS ze szczytowymi. Liczby z modeli nie są pomiarami urządzenia.
 ## Co zostało do zrobienia
 
 Zbadano już wspólną geometrię z wręgami i wkładami (P20D),
-przestrzenne pole gazu oraz port napędu (P21D), nowy model gaz–panele (P21E), podatność paneli
+przestrzenne pole gazu oraz port napędu (P21D), nowy model gaz–panele (P21E) i wielomodowy wariant P21F, podatność paneli
 (P18E), krótkie sygnały z ochroną (P25C), próbkowaną barierę (P25D), odporność na błędy stanu (P25E) i warianty ustawienia
 dwóch źródeł w pokoju (P26D/P27D). **Nie są to jeszcze jeden
 sprzężony model wielofizyczny ani zweryfikowany prototyp.**
@@ -910,6 +930,7 @@ nie zatwierdzonym docelowym głośnikiem.
 | Czy wręgi pracują jak idealnie sztywne podpory? | [059 — model podatnych wręg](raporty/059_podatne_wregi_i_panele.md) | [pola ugięcia](wyniki/p18e_pola.png), [kontrole](wyniki/p18e_kontrole.json) |
 | Jak wygląda przestrzenne pole gazu w geometrii P20D? | [060 — P21D](raporty/060_P21D_wspolna_geometria_i_port_napedu.md) | [przebiegi napędu](wyniki/p21d_naped.csv), [przestrzenny wykres](wyniki/101_P21D_komora_i_naped.png) |
 | Jak zmienia się napęd po uwzględnieniu podatności dwóch ścian? | [064 — P21E: model sprzężony gaz–panel](raporty/064_P21E_gaz_podatne_sciany_i_naped.md) | [wykres](wyniki/104_P21E_podatne_sciany.svg), [podsumowanie](wyniki/p21e_podsumowanie.json), [skrypt](skrypty/p21e_gaz_podatne_sciany.py) |
+| Czy przestrzenne mody gazu i podatne pola zmieniają obciążenie membrany? | [065 — P21F: wielomody i podatne pola](raporty/065_P21F_wielomody_gazu_i_scian.md) | [wykres](wyniki/105_P21F_mody_i_panele.svg), [podsumowanie](wyniki/p21f_podsumowanie.json), [skrypt](skrypty/p21f_mody_gaz_panele.py) |
 | Czy dwa źródła w orientacji pionowej i poziomej są odporne na nieznane straty pokoju? | [061 — P26D/P27D](raporty/061_bryly_offset_i_dwa_subwoofery.md) | [porównanie](wyniki/p26d_porownanie.csv), [wykres](wyniki/p26d_bryly_i_odpowiedz.png) |
 
 Pełny zakres i otwarte bramki są w [programie 30 pakietów](PROGRAM_30_BADAN.md).
