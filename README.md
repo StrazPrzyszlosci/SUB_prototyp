@@ -11,7 +11,7 @@ nie jest kandydatem na konstrukcję końcową.*
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 85 raportów · Python/JavaScript**
+**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 86 raportów · Python/JavaScript**
 
 Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie. Aktualna pula obejmuje także dwa przypadki wstrzymane w nowym audycie źródeł (EMS i SUPRAVOX), a ponadto nie każda konfiguracja ma jeszcze pełny komplet badań nieliniowych i termicznych.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
@@ -122,6 +122,10 @@ Skróty wyjaśniamy w [krótkim słowniku](#slownik).
 ![Dostęp przez otwór frontowy i masa wkładów](wyniki/70_P20A_dostep_i_masa_wkladow.png)
 
 *Regulacja litrażu ma sens tylko wtedy, gdy wkłady można faktycznie włożyć, bezpiecznie zamocować i wyjąć. Ich masa i szczelność są częścią konstrukcji.*
+
+![P34A: czy ciśnienie w skrzyni jest równomierne?](wyniki/p34a_modalny_gaz_100_120_150.svg)
+
+*Model sztywnej komory pokazuje, jak nawet poniżej pierwszej fali stojącej lokalne ciśnienie może odróżniać się od prostego modelu T/S. Zbadano 90 przypadków dla trzech objętości. **To prostopadłościany zastępcze, nie rzeczywiste wkłady P30E.** [Raport 086](raporty/086_P34A_gaz_3D_komora_zastepcza_i_niejednorodnosc.md).*
 
 ![Przestrzenne ciśnienie gazu i podatne panele](wyniki/106_P21G_komora_i_podatne_panele.svg)
 
@@ -1399,3 +1403,10 @@ Nowy raport 082 zawiera **612 zespolonych obliczeń** wymuszonego ruchu pojedync
 ## P33C — kontrola metody MES, zanim przejdziemy do CNC (31.10.2026)
 
 **Raport 085:** wykonano 8 testów własnych elementu Q4 i 18 testów częstotliwości płyty (łącznie 26) z porównaniem stabilizacji ścinania. Wykryto dwa sztuczne mechanizmy *hourglass* elementu P33B. Pełne całkowanie eliminuje je, ale na grubej siatce zawyża f₁ do 337,5 Hz wobec referencyjnych 156,24 Hz. **Wyniki P33B są wstrzymane jako parametry projektowe** do czasu ponownego testu globalnego modelu. [Raport 085](raporty/085_P33C_audyt_hourglass_elementu_Q4.md) · [skrypt audytu](skrypty/p33c_hourglass_audyt.py) · [dane testów](wyniki/p33c_hourglass_audyt_20261031.json).
+
+
+## P34A — 90 kontroli przestrzennej akustyki komory (31.10.2026)
+
+**Raport 086:** model Neumanna idealnych sztywnych prostopadłościanów o objętościach 100/120/150 l i źródle na tarczy Ø355,8 mm. Przebadano 6 częstotliwości, 5 obcięć modalnych, łącznie 90 przypadków. Przy 80Hz RMS różnicy modułu ciśnienia względem ciśnienia jednorodnego w **prostopadłościanach zastępczych** to odpowiednio 6,63%, 11,05%, 22,05%. To nie jest model rzeczywistego rozmieszczenia wkładów P30E, nie stanowi wyników pomiarów ani zatwierdzenia jakości basu. Niezbędny P34B ze szczegółową geometrią przeszkód, matą i podatnymi ścianami.
+
+[Raport 086](raporty/086_P34A_gaz_3D_komora_zastepcza_i_niejednorodnosc.md) · [skrypt Python](skrypty/p34a_modalny_gaz_3d.py) · [dane JSON](wyniki/p34a_modalny_gaz_skrot_90_20261031.json) · [wykres](wyniki/p34a_modalny_gaz_100_120_150.svg).
