@@ -109,6 +109,13 @@ def main():
             overview.append(dict(model=key,source_status=obj['verification'],
                 analysable=False,reason='Missing producer-verified T/S',vd_cm3=None))
             continue
+        # Do not combine contradictory manufacturer mass and Fs/Vas/Sd into
+        # the same electromechanical solver without explicit reconciliation.
+        if abs(model['mass_ts_discrepancy'])>.08:
+            overview.append(dict(model=key,source_status=obj['verification'],
+                analysable=False,reason='Published Mms differs by >8% from Fs/Vas/Sd mass at assumed rho,c; manufacturer clarification needed',
+                mass_rel_error=model['mass_ts_discrepancy'],vd_cm3=None))
+            continue
         x=model['xmax'];vd=x*model['sd']*1e6 if x else None
         issue=[]
         if abs(model['mass_ts_discrepancy'])>.08:issue.append('Mms does not agree Fs+Vas at default rho/c')
