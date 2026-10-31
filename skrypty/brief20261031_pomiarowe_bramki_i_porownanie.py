@@ -2,7 +2,7 @@
 """Conditional first-pass sealed-box T/S driver and DSP/amplifier constraints.
 
 No inferred THD/IMD, compression, coil temperature, room SPL or final limiter.
-Full 26 historical entries + all newly producer-verified entries are considered.
+Original 24 drivers + 3 SB electric configurations (2 products) + 8 unique additional maker drivers = 35 electric configurations / 34 distinct products. PURIFI already in original 24; no duplicate.
 RMS harmonic electrical quantities and on-axis HALF-SPACE POINT SOURCE model.
 Output: wyniki/brief20261031_przeglad_modeli.csv,
 wyniki/brief20261031_akustyka_moc.csv, wyniki/brief20261031_dsp_wzmacniacze.csv
@@ -13,26 +13,46 @@ ROOT=Path(__file__).resolve().parents[1];O=ROOT/'wyniki'
 REG=ROOT/'dane/karty_producentow/2026-10-31_9_marek_weryfikacja.json'
 BRIEF=ROOT/'dane/konfiguracje/brief_klienta_20261031_wzmacniacz_dsp.json'
 OLD=ROOT/'dane/przetworniki/pula_rozszerzona.json'
+SB=ROOT/'dane/przetworniki/rozszerzenie_SB_20261025.json'
 RHO=1.2;SOUND=343.;PREF=2e-5
 
 def load():
     known=json.loads(REG.read_text())['models']
-    brief=json.loads(BRIEF.read_text());old=json.loads(OLD.read_text())['drivers']
-    pool=[dict(model=x['model']['name'],brand='original_26',verification='existing_research_collection',
-               t=x['model']) for x in old]
-    # The original 26 already include C02 RSS390HF-4. Never double count.
-    dayton=[x for x in pool if 'RSS390HF-4' in x['model']]
-    if not dayton:
-        pool.append(dict(model='Dayton RSS390HF-4 (brief)',brand='Dayton Audio',
-            verification='client_brief_need_independent_maker_check',
-            t=brief['reference_driver']['parameters_from_client_brief']))
-    else:
-        for x in dayton:
-            x['customer_brief_parameters_for_independent_check']=(
-                brief['reference_driver']['parameters_from_client_brief'])
+    brief=json.loads(BRIEF.read_text())
+    old=json.loads(OLD.read_text())['drivers']
+    sb=json.loads(SB.read_text())['products']
+    pool=[dict(model=x['model']['name'],brand='original_24',
+               verification='existing_research_collection',
+               t=dict(x['model'], power_w=x['model'].get('rated_w')))
+          for x in old]
+    # Original SB addendum contains TWO products and THREE electric variants.
+    for product in sb:
+        if 'model' in product:
+            t=dict(product['model'])
+            t['power_w']=product['rated_power_w']['value']
+            pool.append(dict(model=t['name'],brand='SB Acoustics',
+                verification='previous_maker_PDF_research',t=t))
+        else:
+            for variant in product['configurations']:
+                t=dict(product['common_model'],**variant)
+                t['power_w']=(product['rated_power_w']['value']
+                         if variant['connection']=='series' else None)
+                pool.append(dict(model=variant['name'],brand='SB Acoustics',
+                    verification='previous_maker_PDF_research_electrical_configuration',t=t))
+    # PURIFI exact -01 is ALREADY in original 24. Update its data provenance
+    # in situ with newly verified official factory parameters, DO NOT duplicate.
     for z in known:
-        pool.append(dict(model=z['model'],brand=z['brand'],
-           verification=z['documentation_status'],t=z['spec'],url=z['official_product_url']))
+        existing=next((x for x in pool if x['model']==z['model']),None)
+        if existing:
+            existing.update(brand=z['brand'],verification=z['documentation_status'],
+                t=z['spec'],url=z['official_product_url'])
+        else:
+            pool.append(dict(model=z['model'],brand=z['brand'],
+                verification=z['documentation_status'],t=z['spec'],
+                url=z['official_product_url']))
+    names=[x['model'] for x in pool]
+    assert len(names)==len(set(names)), 'Duplicate manufacturer/electrical variant'
+    assert len(pool)==35, '24 base+3 SB electrical variants+8 newly unique maker models'
     return pool,brief
 
 def get(t,k,a=None):
@@ -169,7 +189,7 @@ def main():
         with (O/filename).open('w',newline='') as h:
             w=csv.DictWriter(h,fieldnames=keys);w.writeheader();w.writerows(rows)
     summary=dict(drivers_total=len(drivers),drivers_analysable=sum(x['analysable'] for x in overview),
-        new_manufacturer_models=9,complete_sweep_rows=len(sweep),
+        new_manufacturer_models=9,unique_product_count=34,complete_sweep_rows=len(sweep),
         electrical_match_rows=len(dsp),errors=[x for x in overview
              if x.get('qualifiers') and ('does not agree' in x['qualifiers'] or 'differs' in x['qualifiers'])],
         status='Simulated 0D linear, half-space 1 m pressure ONLY. Not full room SPL, THD, thermal time course or certified limiter')
