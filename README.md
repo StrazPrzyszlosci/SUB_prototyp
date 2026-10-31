@@ -11,7 +11,7 @@ nie jest kandydatem na konstrukcję końcową.*
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 97 raportów · Python/JavaScript**
+**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 100 raportów · Python/JavaScript**
 
 Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie. Aktualna pula obejmuje także dwa przypadki wstrzymane w nowym audycie źródeł (EMS i SUPRAVOX), a ponadto nie każda konfiguracja ma jeszcze pełny komplet badań nieliniowych i termicznych.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
@@ -66,6 +66,24 @@ Skróty wyjaśniamy w [krótkim słowniku](#slownik).
 ![P38B: wpływ korekty współrzędnych kosza na ciśnienie 80 Hz](wyniki/p38b_audyt_pozycji_zrodla.svg)
 
 *Oś x231/z250mm w P31C jest określona **od zewnętrznych krawędzi obudowy**. Po odjęciu grubości MDF22mm właściwe współrzędne wewnętrzne to **x209/z228mm**. Historyczny model P34B używał x231/z250mm także wewnątrz. W 120l na siatce55mm model RMS przy 80Hz zmienia się z 19,09% do 21,03%. **Oba wyniki to symulacje, nie THD**. [Raport 097](raporty/097_P38B_audyt_wspolrzednych_FV.md).*
+
+## Nowe badania P39 — ciśnienie, mocowania i edytowalny model 3D
+
+### Co zmieniło się po przeliczeniu nacisków na ściany?
+
+![P39A: porównanie nacisków na 6 ścian przed i po korekcie położenia głośnika](wyniki/p39a_cisnienie_scian_po_korekcie.svg)
+
+*W 36 nowych symulacjach powietrza w komorze zastosowano właściwą oś głośnika **x209/z228 mm w układzie wnętrza**, a wyniki porównano z historycznym P35A. Dla 120l / 80Hz, na siatce 36mm średnie ciśnienie względne na lewej ścianie zmieniło się z 0,773 na **0,735**, na prawej z 1,369 na **1,384**. To **względne pole modelowe**, nie fizyczne SPL ani obciążenie zweryfikowanego MDF. [Raport 098](raporty/098_P39A_naciski_scian_korekta_FV.md).*
+
+### Czy pierścień wzmacniający pod Daytonem zmieści się wewnątrz?
+
+![P39B: pierścień, wnętrze frontu i bramki odległości](wyniki/p39b_pierscien_i_odstepy.svg)
+
+*54 zestawienia średnic i grubości pokazują, że pierścień przykładowy Ø400/Ø356/t4mm geometrycznie pozostawia 9mm do lewego boku oraz 17mm do pierwszej wręgi w projekcji X. Ale **luz promieniowy od wycięcia wynosi zaledwie 0,1mm**, a cienki pasek MDF przy śrubie pozostaje. Taki pierścień **nie jest zatwierdzony wytrzymałościowo**. [Raport 099](raporty/099_P39B_geometria_pierscienia_i_glebokosc.md).*
+
+### Jak wygląda obudowa w edytowalnym modelu trójwymiarowym?
+
+[Model 3D OpenSCAD — **REFERENCYJNY, NIE DO CNC**](dokumentacja/P39C_front_korpus_pierscien_REFERENCYJNY_NIE_CNC.scad) jest parametrycznym złożeniem paneli, wręg, frontu z otworem i pierścienia. Umożliwia dalsze opracowywanie pełnego CAD; **nie jest jeszcze dokładną bryłą kosza Dayton z terminalami, zamkami i realnymi łącznikami**. [Raport 100](raporty/100_P39C_edytowalny_model_3D_OpenSCAD.md).
 
 ## Konstrukcja w obrazach — od pomysłu do sprawdzalnego prototypu
 
@@ -1539,3 +1557,16 @@ Po badaniu P34A idealnych prostopadłościanów (raport 086) wykonano **P34B, ra
 **P38, 1.11.2026 — nowy audyt geometrii przed CNC.** Wykonano pomiary geometryczne z dokumentacji producenta Dayton RSS390HF-4 (osiem śrub, Ø368mm BCD, Ø355,8mm otwór) oraz 15 par obliczeń FV po korekcie zewnętrznego układu współrzędnych do wnętrza. Wykryto bardzo wąski obszar MDF przy śrubach **2,85mm** i potencjalne przesunięcie źródła o **22mm** w P34B/P35A. Zachowano archiwalne wyniki; dalsze obliczenia muszą korzystać ze spójnego układu odniesienia. Dodano parametryczny szkic DXF, **który nie jest jeszcze projektem do CNC**, oraz poprawiono przestarzały test P36 w GitHub Actions.
 
 [Raport 096](raporty/096_P38A_front_Dayton_otwory_i_mocowania.md) · [Raport 097](raporty/097_P38B_audyt_wspolrzednych_FV.md) · [kod frontu](skrypty/p38a_front_Dayton_wymiary.js) · [kod kontroli FV](skrypty/p38b_audyt_ukladu_wspolrzednych.js) · [porównanie 15 par](wyniki/p38b_koordynaty_FV_15_20261101.json).
+
+
+## P39 — przebudowa modelu po audycie współrzędnych (01.11.2026)
+
+**Raport 098:** 36 nowych obliczeń FV sześciu ścian dla 100/120/150l i 20–80Hz; kompletne porównanie z P35A w archiwalnym układzie odniesienia. Wszystkie naciski to wartości względne w modelu bez strat maty i podatności ścian.
+
+**Raport 099:** 54 warianty pierścienia wzmacniającego i 20 wariantów pełnego obrysu głębokości. **Siedem wariantów z przykładowymi maskownicami/złączami przekracza 500mm**. Wariant Ø400/Ø356/t4 mieści się tylko w modelowej geometrii — nie rozwiązano nośności mocowania ośmiu śrub.
+
+**Raport 100:** plik `.scad` do dalszego modelowania 3D. Kosz i wręgi to wciąż bryły umowne, nie pełny projekt produkcyjny.
+
+[Raport 098](raporty/098_P39A_naciski_scian_korekta_FV.md) · [Raport 099](raporty/099_P39B_geometria_pierscienia_i_glebokosc.md) · [Raport 100](raporty/100_P39C_edytowalny_model_3D_OpenSCAD.md) · [Model OpenSCAD](dokumentacja/P39C_front_korpus_pierscien_REFERENCYJNY_NIE_CNC.scad) · [36 map ciśnienia](wyniki/p39a_pola_na_scianach_36_20261101.json) · [54+20 kontroli geometrii](wyniki/p39b_kolizje_pierscien_glebokosc_20261101.json).
+
+**Bramka CNC pozostaje zamknięta.** Przed budową trzeba sprawdzić rzeczywistą bryłę kosza i narzędzia montażowe, zaprojektować wytrzymałe mocowanie śrub, skontrolować 500mm pełnego obrysu, przeprowadzić próby spoin/MDF i dopiero wtedy walidować siatkę MES oraz sprzężenie akustyczne.

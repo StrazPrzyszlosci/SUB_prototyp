@@ -110,3 +110,7 @@ bieżący zakres sprawdzaj w [programie 30 pakietów](../PROGRAM_30_BADAN.md).
 
 - [Raport 096 — P38A: front Dayton RSS390HF-4, rozstaw ośmiu otworów i ryzyko mocowania](096_P38A_front_Dayton_otwory_i_mocowania.md).
 - [Raport 097 — P38B: 15 par FV po kontroli układu współrzędnych źródła](097_P38B_audyt_wspolrzednych_FV.md).
+
+- [Raport 098 — P39A: 36 nacisków FV sześciu ścian po korekcie osi głośnika](098_P39A_naciski_scian_korekta_FV.md).
+- [Raport 099 — P39B: 54 warianty pierścienia i 20 kontroli całkowitej głębokości](099_P39B_geometria_pierscienia_i_glebokosc.md).
+- [Raport 100 — P39C: parametryczny edytowalny model CAD OpenSCAD, nie do CNC](100_P39C_edytowalny_model_3D_OpenSCAD.md).
