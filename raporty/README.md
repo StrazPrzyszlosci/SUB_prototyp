@@ -73,3 +73,4 @@ bieżący zakres sprawdzaj w [programie 30 pakietów](../PROGRAM_30_BADAN.md).
 - [Raport 059 — P18E: podatne wręgi i panele](059_podatne_wregi_i_panele.md).
 - [Raport 060 — P21D: przestrzenne pole gazu i port](060_P21D_wspolna_geometria_i_port_napedu.md).
 - [Raport 061 — P26D/P27D: bryły, orientacje i dwa źródła](061_bryly_offset_i_dwa_subwoofery.md).
+- [Raport 062 — P25D: próbkujemy barierę energetyczną; dowód ZOH i 144 symulacje](062_P25D_probkowana_bariera_energetyczna.md).

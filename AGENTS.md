@@ -1103,3 +1103,26 @@ ochrona P25C wymaga pomiarów i realizacji; P26D/P27D to scenariusze
 pokoju. Brak fizycznej walidacji i cen, program P01–P30 pozostaje otwarty.
 Przestrzegać zasad redakcyjnych README opisanych wcześniej:
 wyniki w rozdziałach, historia w AGENTS, bez changelogu na początku.
+
+
+## Postęp 2026-10-31 — P25D: próbkowana bariera energetyczna
+
+Nowy, niezależny od poprzedniej kampanii eksperyment z modelem 0D P25C:
+analiza ścisłej nierówności E' <= u²/(4Re0) w interwale ZOH,
+jawna reguła ograniczenia napięcia na podstawie E(tk) i wariant
+z obserwacją przesuniętą o jedną próbkę (górna granica z poprzedniego u).
+Raport 062, skrypt \`skrypty/p25d_probkowana_bariera.py\`, konfiguracja
+\`dane/konfiguracje/p25d_probkowanie.json\`, dane
+\`wyniki/p25d_podsumowanie.json\` i \`wyniki/p25d_agregaty.csv\`.
+
+Wykonano 144 krótkie trajektorie dla C02/C11/C06 oraz 96 powtórzeń
+przy 2× większej częstotliwości całkowania. Próbkowana wersja
+punktowej bariery P25C w 12/12 testów na częstotliwość sterownika
+wyszła poza Ecap; duże maksima tej strategii nie są numerycznie
+zbieżne. Warianty z konserwatywnym marginesem ZOH miały 0/12
+przekroczeń na częstotliwość (łącznie 72/72); wynika to również
+z dowodu matematycznego pod dokładnymi warunkami modelu.
+Bez dodatkowej identyfikacji nie uznawać ani jednego za preset DSP.
+Bramka kolejna: obserwator z błędem stanu i parametrów, predykcyjny
+limiter o mniejszej utracie zapasu, integracja z przestrzennym
+portem P21D i realnym wzmacniaczem. Starsze wyniki P25C zachowano.

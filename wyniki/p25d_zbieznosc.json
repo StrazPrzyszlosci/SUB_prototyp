@@ -1,0 +1,32 @@
+{
+  "reference": "p25d_probkowanie.csv",
+  "method": "RK4 with recalculated input filter at 24k versus 48k; compare max absolute dimensionless ratios",
+  "case_count": 96,
+  "rates_hz": [
+    2000,
+    6000
+  ],
+  "max_absolute_difference": {
+    "rail": {
+      "energy": 0.0029256153931100926,
+      "x": 0.00002389536130298353,
+      "i": 0.0011337959812500742
+    },
+    "sample_pointwise": {
+      "energy": 9.624767641296451,
+      "x": 0.5154528019114579,
+      "i": 0.18251463407471136
+    },
+    "zoh_energy_bound": {
+      "energy": 1.535857575563071e-7,
+      "x": 0.0000013672428124111846,
+      "i": 0.00015946477325418096
+    },
+    "zoh_delayed_state": {
+      "energy": 0.000001361458981552488,
+      "x": 0.0000017037195267355365,
+      "i": 0.00018916061156443176
+    }
+  },
+  "limitations": "Not independent numerical method; sample_pointwise mode not converged; no real hardware delays, measurement noise or nonlinear physical driver"
+}

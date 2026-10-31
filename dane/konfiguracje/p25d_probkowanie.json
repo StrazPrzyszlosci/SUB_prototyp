@@ -1,0 +1,46 @@
+{
+  "scope": "Sample-and-hold energy bound, small-signal 0D sealed enclosure; model-only, not hardware certification",
+  "rho_kg_m3": 1.2,
+  "sound_speed_m_s": 343,
+  "volume_l": [
+    120
+  ],
+  "candidates": [
+    "Dayton RSS390HF-4",
+    "Dayton RSS390HE-22 seria",
+    "STX W.32.800.8.FCX"
+  ],
+  "thermal_scenarios": [
+    [
+      0.3,
+      200,
+      0
+    ],
+    [
+      1.2,
+      50,
+      60
+    ]
+  ],
+  "integration_rate_hz": 24000,
+  "controller_rates_hz": [
+    500,
+    2000,
+    6000
+  ],
+  "duration_s": 1,
+  "input_rms_V": 70,
+  "rail_peak_V": 56.568542494923804,
+  "I_rail_peak_A": 16.97056274847714,
+  "fraction_Xmax": 0.6,
+  "theta_limit_K": 80,
+  "alpha_1_K": 0.004,
+  "barrier_rate_per_s": 500,
+  "modes": [
+    "rail",
+    "sample_pointwise",
+    "zoh_energy_bound",
+    "zoh_delayed_state"
+  ],
+  "caveat": "Assumed thermal properties and perfect sensors; digital implementation, nonlinear mechanics, uncertainty and DAC reconstruction not verified."
+}
