@@ -17,7 +17,10 @@ Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
 wypełnienie, wzmocnienia, klej, wzmacniacz i ustawienie w pokoju.
 Celem jest **jeden konkretny głośnik i jedna konstrukcja prototypu**
-subwoofera zamkniętego z regulacją objętości.
+subwoofera zamkniętego z regulacją objętości. Szukamy możliwie
+**najtańszego przetwornika spełniającego wszystkie wymagania jednocześnie**,
+a nie „najlepszego głośnika w ogóle”. Koszt będzie kryterium końcowego
+porównania, ale obecne wyniki nie zawierają jeszcze cen.
 
 > **Stan projektu: badania przed budową.** Pokazane wykresy to obliczenia
 > i symulacje. Nie ma jeszcze pomiarów gotowego prototypu ani ostatecznego
@@ -93,12 +96,24 @@ odporności modelu, a nie zmierzoną statystyką produkcji.
 
 ### Który głośnik wybrać do pierwszego prototypu?
 
+O wyborze decyduje kilka ograniczeń jednocześnie: **grzanie cewki**
+(wzrost rezystancji i kompresja mocy), **powierzchnia membrany i użyteczne
+wychylenie** (`Sd·Xmax` jako wskaźnik katalogowy, nie gwarancja liniowości),
+**napięcie i prąd wzmacniacza**, objętość i całkowita głębokość obudowy
+**do 500 mm**, wymagany zakres **20–40 Hz** oraz **nieliniowość
+sprężyny powietrznej** w zamkniętej komorze. Trzeba badać ich wspólne
+oddziaływanie, a nie ranking pojedynczego parametru. Celem jest wybór
+najtańszego spośród wariantów spełniających zaakceptowane progi jakości
+i wydajności; dopóki progi i ceny nie są ustalone, wybór jest warunkowy.
+
 W porównaniu **26 przetworników / 27 konfiguracji elektrycznych**
 wstępnym faworytem jest **Dayton Audio RSS390HF-4 (15″, 4 Ω)**.
 W modelu osobnych sinusów 20–80 Hz, przy 120 l, napędzie 40 V RMS /
 12 A RMS i założonym limicie strat miedzi 50 W, uzyskał najwyższe
-minimum w badanej próbie stresowej. Nie jest to ranking zmierzonych
-zniekształceń ani prognoza poziomu w konkretnym pokoju.
+minimum w badanej próbie stresowej. To wynik częściowej optymalizacji,
+**bez kosztów zakupu i bez pomiarowego porównania THD**. Nie jest to
+ranking zmierzonych zniekształceń ani prognoza poziomu w konkretnym pokoju.
+Po uwzględnieniu ceny oraz pełnego zestawu kryteriów faworyt może się zmienić.
 
 ![Porównanie kryteriów wyboru głośnika i wpływu frontu](wyniki/97_P29_wybor_i_front.png)
 
