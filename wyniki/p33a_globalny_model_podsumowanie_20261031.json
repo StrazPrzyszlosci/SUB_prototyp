@@ -1,0 +1,164 @@
+{
+  "study": "P33A",
+  "date": "2026-10-31",
+  "status": "UNVALIDATED REDUCED 3D GLOBAL GRILLAGE; NOT CAD/CNC RELEASE",
+  "geometry": {
+    "external_mm": [
+      1020,
+      425,
+      500
+    ],
+    "front_mm": 44,
+    "other_panels_mm": 22,
+    "front_aperture_mm": 355.8,
+    "front_center_xz_mm": [
+      231,
+      250
+    ],
+    "brace_x_mm": [
+      426,
+      701
+    ],
+    "mat_back_mm": 50
+  },
+  "physics": {
+    "MDF_E_GPa": 2.1,
+    "MDF_rho_kg_m3": 730,
+    "Poisson": 0.3,
+    "pressure_peak_Pa": 1000,
+    "foot_spring_N_m": 1500000,
+    "driver_mass_kg": 15,
+    "insert_mass_kg": 8,
+    "cone_pressure_transfer": "hypothetical flange force"
+  },
+  "base_results": [
+    {
+      "target_mesh_mm": 140,
+      "joint_stiffness_N_m2": 3000000,
+      "DOF": 867,
+      "mode1_hz": 28.1534,
+      "first_mode_above_50_hz": 52.7931,
+      "max_static_displacement_um": 430.754,
+      "removed_front_area_m2": 0.10011
+    },
+    {
+      "target_mesh_mm": 140,
+      "joint_stiffness_N_m2": 30000000,
+      "DOF": 867,
+      "mode1_hz": 34.59,
+      "first_mode_above_50_hz": 61.6462,
+      "max_static_displacement_um": 347.586,
+      "removed_front_area_m2": 0.10011
+    },
+    {
+      "target_mesh_mm": 140,
+      "joint_stiffness_N_m2": 300000000,
+      "DOF": 867,
+      "mode1_hz": 35.5869,
+      "first_mode_above_50_hz": 62.9883,
+      "max_static_displacement_um": 338.3,
+      "removed_front_area_m2": 0.10011
+    },
+    {
+      "target_mesh_mm": 105,
+      "joint_stiffness_N_m2": 3000000,
+      "DOF": 1296,
+      "mode1_hz": 27.4605,
+      "first_mode_above_50_hz": 52.0323,
+      "max_static_displacement_um": 411.449,
+      "removed_front_area_m2": 0.1000248
+    },
+    {
+      "target_mesh_mm": 105,
+      "joint_stiffness_N_m2": 30000000,
+      "DOF": 1296,
+      "mode1_hz": 34.1283,
+      "first_mode_above_50_hz": 61.2153,
+      "max_static_displacement_um": 330.679,
+      "removed_front_area_m2": 0.1000248
+    },
+    {
+      "target_mesh_mm": 105,
+      "joint_stiffness_N_m2": 300000000,
+      "DOF": 1296,
+      "mode1_hz": 35.1974,
+      "first_mode_above_50_hz": 62.6948,
+      "max_static_displacement_um": 321.594,
+      "removed_front_area_m2": 0.1000248
+    },
+    {
+      "target_mesh_mm": 80,
+      "joint_stiffness_N_m2": 3000000,
+      "DOF": 1854,
+      "mode1_hz": 26.1513,
+      "first_mode_above_50_hz": 50.7294,
+      "max_static_displacement_um": 420.623,
+      "removed_front_area_m2": 0.0994
+    },
+    {
+      "target_mesh_mm": 80,
+      "joint_stiffness_N_m2": 30000000,
+      "DOF": 1854,
+      "mode1_hz": 33.8781,
+      "first_mode_above_50_hz": 60.2383,
+      "max_static_displacement_um": 335.556,
+      "removed_front_area_m2": 0.0994
+    },
+    {
+      "target_mesh_mm": 80,
+      "joint_stiffness_N_m2": 300000000,
+      "DOF": 1854,
+      "mode1_hz": 34.9915,
+      "first_mode_above_50_hz": 61.7948,
+      "max_static_displacement_um": 325.884,
+      "removed_front_area_m2": 0.0994
+    }
+  ],
+  "mass_sensitivity_105mm": [
+    {
+      "mass_driver_kg": 0,
+      "mass_insert_kg": 0,
+      "braces": true,
+      "f1_hz": 43.4509,
+      "max_disp_um": 330.679
+    },
+    {
+      "mass_driver_kg": 12,
+      "mass_insert_kg": 0,
+      "braces": true,
+      "f1_hz": 37.9673,
+      "max_disp_um": 330.679
+    },
+    {
+      "mass_driver_kg": 18,
+      "mass_insert_kg": 0,
+      "braces": true,
+      "f1_hz": 35.6258,
+      "max_disp_um": 330.679
+    },
+    {
+      "mass_driver_kg": 15,
+      "mass_insert_kg": 14,
+      "braces": true,
+      "f1_hz": 32.1395,
+      "max_disp_um": 330.679
+    },
+    {
+      "mass_driver_kg": 15,
+      "mass_insert_kg": 8,
+      "braces": false,
+      "f1_hz": 34.4013,
+      "max_disp_um": 346.187
+    }
+  ],
+  "source": "skrypty/p33a_global_shell_network.py",
+  "full_raw_json_command": "python skrypty/p33a_global_shell_network.py --out wyniki/p33a",
+  "warnings": [
+    "Three translational DOF/node displacement-only grillage, not an industrial 6DOF shell FEM.",
+    "Elastic joint springs without rotational release/toughness and beam-like ring braces, simplified aperture mass/curvature.",
+    "Missing local U brace, screws, embedded insert geometry, mesh front compliance and calibrated MDF/glue properties.",
+    "First 18 modes include support and global motion; modal identities/MAC not matched across meshes.",
+    "Assumed 1000Pa, driver/basket load path, 1.5MN/m feet, 0–18kg drivers and 0–14kg inserts; no measured acoustic excitation.",
+    "No approval for cutting CNC or selecting glue from these results."
+  ]
+}
