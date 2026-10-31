@@ -1,0 +1,66 @@
+{
+  "source_model": "P21E raport 064, P21D raport 060, P20D geometry",
+  "geometry_status": "Neumann rectangular empty-cavity surrogate. Braces, sealed inserts, porosity, irregular solid basket omitted. Nominal air volume only modifies zero-mode compressibility; geometric width/depth/height are from rectangular P20D gross cavity.",
+  "interior_rect_m": [
+    0.956,
+    0.374,
+    0.456
+  ],
+  "driver_centres_xz_m": [
+    0.209,
+    0.478
+  ],
+  "rho_kg_m3": 1.2,
+  "speed_of_sound_m_s": 343,
+  "volume_l": [
+    100,
+    120,
+    150
+  ],
+  "frequency_hz": {
+    "start": 20,
+    "stop": 80,
+    "step": 0.5
+  },
+  "acoustic_cutoff_max_index": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "acoustic_damping_ratio": 0.025,
+  "panel_frequency_hz": [
+    143.30533,
+    152.44,
+    123
+  ],
+  "panel_damping_ratio": 0.03,
+  "single_panel_compliance_m3_Pa": 1.9034748e-8,
+  "three_panel_compliance_weights": [
+    0.375,
+    0.375,
+    0.25
+  ],
+  "wall_patch_fraction_of_span": 0.8,
+  "panel_scenarios": [
+    "rigid",
+    "uniform_one",
+    "three_patches",
+    "three_patches_2x"
+  ],
+  "panel_wall_definitions": [
+    "x=0 side face uniform piston",
+    "x=Lx side face uniform piston",
+    "z=Lz top face uniform piston"
+  ],
+  "candidate_model_names": [
+    "Dayton RSS390HF-4",
+    "Dayton RSS390HE-22 seria",
+    "STX W.32.800.8.FCX"
+  ],
+  "source_data": "dane/przetworniki/pula_rozszerzona.json",
+  "electrical_drive": "1 V RMS harmonic, not SPL/THD or DSP",
+  "scope": "Passive reciprocal Galerkin model, 3D Neumann rectangular acoustic modes and 1-3 compliant wall pistons. Not actual P21D obstacles, foam, FEM, real product parameters or measurements. Panel damping and shape assumed."
+}
