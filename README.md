@@ -11,7 +11,7 @@ nie jest kandydatem na konstrukcję końcową.*
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**26 modeli głośników · 11 producentów · 55 raportów · Python**
+**26 modeli głośników · 11 producentów · 60 raportów (pakiet badawczy w weryfikacji) · Python**
 
 Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
@@ -353,6 +353,28 @@ przykładami obliczeń.
 <a id="mechanika"></a>
 ## Konstrukcja obudowy: od ścianek do kleju
 
+**Projekt geometryczny jest teraz badany także jako całość.** W scenariuszu
+P20D sprawdzono korpus **1000 × 440 × 500 mm (W × D × H)** oraz dostęp
+do wkładów regulacyjnych; model przewiduje nominalne stany
+około **100 / 120 / 150 l**. To wariant obliczeniowy, nie gotowe
+rysunki wykonawcze ani potwierdzone wyporności kosza czy maskownicy.
+
+![P20D: geometria skrzyni, miejsca montażowe i regulacja objętości](wyniki/100_P20D_geometria.png)
+
+[Raport P20D — geometria, dostęp i pełny limit głębokości](raporty/057_P20D_geometria_dostep_i_pelna_glebokosc.md).
+
+**Podatne wręgi nie są idealnymi podporami.** W modelu P18E uzyskano
+częstotliwość około **143 Hz** dla jednego z wariantów konstrukcyjnych;
+wartości około 395 Hz z idealnie podpartego małego pola nie należy
+przypisywać całej rzeczywistej skrzyni. Wynik zależy od założonych
+sztywności i nie jest pomiarem obudowy.
+
+![P18E: pola ugięcia i wpływ podatnych wręg](wyniki/p18e_pola.png)
+
+[Raport P18E — podatne wręgi i panele](raporty/059_podatne_wregi_i_panele.md).
+
+
+
 Skrzynia nie jest idealnie sztywna. Jej ścianki się uginają, a połączenia
 przenoszą nierówne obciążenia. Poniższe części można rozwinąć niezależnie.
 Wykresy przedstawiają modele, nie rysunki wykonawcze.
@@ -663,6 +685,16 @@ o powierzchni odpowiadającej katalogowemu `Sd` oraz różne położenia
 źródła. Lokalnej masy akustycznej nie wolno doliczać ponownie do `Mms`.
 
 ![P21C1: wpływ kołowej membrany i przesunięcia na obciążenie komory](wyniki/96_P21C1_membrana_i_przesuniecie.png)
+
+**P21D uwzględnia wspólną geometrię i port napędu.** Sprawdzono
+45 pól, 12 zagęszczeń i 54 odpowiedzi napędu w zdefiniowanych
+warunkach modelowych. W sześciu kontrolowanych przypadkach ostatnia
+zmiana amplitudy ruchu C02 była nie większa niż 0,00858 dB;
+nie jest to dowód dokładności całego pasma ani rzeczywistego THD.
+
+![P21D: przestrzenna komora i obciążenie napędu](wyniki/101_P21D_komora_i_naped.png)
+
+[Raport P21D — wspólna geometria i port napędu](raporty/060_P21D_wspolna_geometria_i_port_napedu.md).
 
 [Raport 050 — źródło w komorze](raporty/050_P21C0_plytka_komora_i_polozenie_zrodla.md)
 · [raport 051 — kołowa membrana](raporty/051_P21C1_membrana_kolowa_i_bezwladnosc.md)

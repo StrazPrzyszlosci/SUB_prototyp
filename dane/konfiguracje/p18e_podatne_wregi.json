@@ -1,0 +1,18 @@
+{
+  "units": "SI throughout; dimensions taken from P20D in mm then converted",
+  "geometry": "1000x440x500 mm; inside 956x374x456 mm",
+  "mdf_E_Pa": [1500000000, 2100000000, 3000000000],
+  "mdf_nu": 0.3,
+  "mdf_rho_kg_m3": 730,
+  "panel_t_m": 0.022,
+  "glue_E_Pa": [1000000, 10000000, 100000000, 1718000000],
+  "glue_t_m": 0.00025,
+  "perimeter_translation_N_m2": [1000000, 10000000, 100000000],
+  "perimeter_rotation_N": [0, 1000],
+  "front_leg_depth_m": [0.010, 0.022],
+  "mesh_nx": [12, 20, 32, 48, 64],
+  "frequency_Hz": [20, 40, 80, 160],
+  "loss_zeta": 0.03,
+  "pressure_peak_Pa": [250, 1000, 2500],
+  "scope": "Reduced opposing top/bottom panel pair. Finite perimeter springs terminate on a reference frame, not a computed full cabinet. Brace beams use centroidal EI, no composite eccentric membrane action. Axial legs plus two glue layers. 10mm front member is actual P20D proposal; 22mm comparison conflicts with access and is only mechanical counterfactual. No strength, fatigue, complete front-hole, fastener or cabinet safety qualification. Material and joint parameters are scenarios, not measured properties."
+}

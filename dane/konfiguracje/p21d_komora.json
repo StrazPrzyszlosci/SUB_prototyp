@@ -1,0 +1,88 @@
+{
+  "geometry": "p20d_geometria.json",
+  "outside_W_D_H_mm": [
+    1000,
+    440,
+    500
+  ],
+  "inside_W_D_H_mm": [
+    956,
+    374,
+    456
+  ],
+  "module_counts_large_small": [
+    [
+      2,
+      0
+    ],
+    [
+      11,
+      1
+    ],
+    [
+      16,
+      3
+    ]
+  ],
+  "source_centre_xz_mm": [
+    209,
+    228
+  ],
+  "proxy_A_mm": [
+    [
+      84,
+      40,
+      128
+    ],
+    [
+      334,
+      140,
+      328
+    ]
+  ],
+  "proxy_B_mm": [
+    [
+      109,
+      20,
+      128
+    ],
+    [
+      309,
+      145,
+      328
+    ]
+  ],
+  "proxy_status": "Two assumed equal-volume solid obstructions, NOT manufacturer basket geometry",
+  "fill": {
+    "depth_mm": 50,
+    "pore_radius_m": 0.0002,
+    "porosity": 0.9855072463768116,
+    "dry_density_kg_m3": 20,
+    "solid_density_kg_m3": 1380,
+    "frame": "rigid"
+  },
+  "frequencies_hz": [
+    20,
+    40,
+    80
+  ],
+  "coarse_steps_m": [
+    0.05,
+    0.035
+  ],
+  "refinement_steps_m": [
+    0.025,
+    0.018
+  ],
+  "refinement_frequency_hz": 80,
+  "candidate_ids": [
+    "C02",
+    "C11",
+    "C06"
+  ],
+  "mass_conventions": [
+    0,
+    1
+  ],
+  "scope": "Frozen definition and audit mirror of explicit constants in scripts; no elastic coupling"
+}
