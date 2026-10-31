@@ -1,0 +1,39 @@
+name: P33B - shell FEM numerical verification
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  shell-fem:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install numerical tools
+        run: python -m pip install numpy scipy
+      - name: Run plate benchmark and global campaign
+        env:
+          OPENBLAS_NUM_THREADS: '1'
+          OMP_NUM_THREADS: '1'
+        run: |
+          python -m py_compile skrypty/p33b_powlokowy_fem.py skrypty/p33b_test_plyty_wzorcowej.py
+          python skrypty/p33b_test_plyty_wzorcowej.py
+          python skrypty/p33b_powlokowy_fem.py --out /tmp/p33b_result.json
+      - name: Test recorded conditions
+        run: |
+          python - <<'PY'
+          import json,math
+          x=json.load(open('/tmp/p33b_result.json'))
+          assert x['cases']==15
+          b=[r for r in x['rows'] if r['mesh']==.11 and r['joint_trans_N_m2']==3e7 and r['driverMass']==15 and r['insertMass']==8 and r['braces']]
+          assert len(b)==1
+          b=b[0]
+          assert 28 < b['first_freq_Hz'][0] < 38, b['first_freq_Hz'][0]
+          assert 70 < b['max_static_disp_um'] < 100, b['max_static_disp_um']
+          assert abs(b['hole_area']-math.pi*(.3558/2)**2)<.001
+          assert all(r['energy_J']>0 for r in x['rows'])
+          print('PASS P33B shell FEM',b['ndof'],'DOF')
+          PY
