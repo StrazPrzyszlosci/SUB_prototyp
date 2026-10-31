@@ -11,7 +11,7 @@ nie jest kandydatem na konstrukcję końcową.*
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 69 raportów · Python**
+**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 70 raportów · Python**
 
 Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie. Aktualna pula obejmuje także dwa przypadki wstrzymane w nowym audycie źródeł (EMS i SUPRAVOX), a ponadto nie każda konfiguracja ma jeszcze pełny komplet badań nieliniowych i termicznych.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
@@ -257,6 +257,20 @@ testowym 45 K i zwłoce 0,25 s obliczono szczyt +75,095 K; przy zwłoce
 [Raport 069 — P24D: opóźnienia, watchdog i awarie](raporty/069_P24D_opoznienia_ochrony_faulty_dwa_kanaly.md)
 · [skrypt odtwarzający](skrypty/p24d_opoznienia_ochrony_dwoch_kanalow.py)
 · [wyniki skrótowe](wyniki/p24d_podsumowanie_20261031.json).
+
+**P24E: kilka częstotliwości zamiast jednego odczytu U/I.** W 120 000
+prób syntetycznych porównano identyfikację Re(T), BL² i Le. Przy modelowym
+spadku BL o 3% pojedynczy pomiar 40 Hz obciążał estymację T błędem
+−53,62 K; dopasowanie parametrów z 80/150/300 Hz uzyskało przy przyjętym
+szumie RMSE 1,241 K, ale tylko gdy struktura modelu jest prawidłowa.
+**Zasadnicza granica:** dodatkowe 0,1 Ω w przewodach jest nieodróżnialne
+od przyrostu Re i odpowiada błędowi +8,48 K nawet przy wielu punktach.
+Nie jest to walidacja hardware, dostępności pasma ani ochrony DSP.
+
+[Raport 070 — P24E: identyfikowalność Re/BL/Le](raporty/070_P24E_wieloczestotliwosciowa_ident_Re_BL_Le.md)
+· [skrypt](skrypty/p24e_wieloczestotliwosciowa_ident.py)
+· [wyniki kontrolne](wyniki/p24e_podsumowanie_20261031.json).
+
 
 
 **Nie wyznaczono temperatury granicznej prawdziwego głośnika.**
