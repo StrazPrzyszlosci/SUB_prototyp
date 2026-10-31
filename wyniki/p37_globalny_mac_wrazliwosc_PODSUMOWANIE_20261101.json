@@ -1,0 +1,139 @@
+{
+  "study": "P37 numerical MAC/sensitivity",
+  "date": "2026-11-01",
+  "status": "executed locally using archived 6DOF Q4 code; summary of data; full 18×18 matching produced by script",
+  "runs": 14,
+  "each_modes": 18,
+  "compare": [
+    {
+      "pair": "150→110mm",
+      "avg": 0.805957,
+      "min": 0.033231,
+      "below09": 10,
+      "reordered": 6,
+      "first7": [
+        0.991861,
+        0.998744,
+        0.999041,
+        0.996527,
+        0.918448,
+        0.960061,
+        0.973311
+      ]
+    },
+    {
+      "pair": "110→85mm",
+      "avg": 0.859603,
+      "min": 0.036139,
+      "below09": 5,
+      "reordered": 7,
+      "first7": [
+        0.997539,
+        0.996389,
+        0.996523,
+        0.995745,
+        0.987052,
+        0.989991,
+        0.962096
+      ]
+    },
+    {
+      "pair": "γ 0.001→0.01",
+      "avg": 0.990028,
+      "min": 0.890374,
+      "below09": 1,
+      "reordered": 0,
+      "first7": [
+        0.999999,
+        0.999999,
+        0.999999,
+        0.999993,
+        0.999991,
+        0.99998,
+        0.99995
+      ]
+    },
+    {
+      "pair": "spoiny 0.1×",
+      "avg": 0.558918,
+      "min": 0.014601,
+      "below09": 15,
+      "reordered": 11,
+      "first7": [
+        0.703113,
+        0.730467,
+        0.861972,
+        0.966683,
+        0.934627,
+        0.918892,
+        0.866091
+      ]
+    },
+    {
+      "pair": "spoiny 10×",
+      "avg": 0.750789,
+      "min": 0.038907,
+      "below09": 11,
+      "reordered": 6,
+      "first7": [
+        0.999211,
+        0.996466,
+        0.998377,
+        0.996692,
+        0.994589,
+        0.995966,
+        0.951767
+      ]
+    }
+  ],
+  "sensitivities": [
+    {
+      "parameter": "MDF E",
+      "scale": "±10%",
+      "f_elasticity": 0.187882,
+      "u_elasticity": -0.774281,
+      "low_f": 32.22,
+      "high_f": 33.46,
+      "low_u": 90.149,
+      "high_u": 77.176
+    },
+    {
+      "parameter": "MDF rho",
+      "scale": "±10%",
+      "f_elasticity": -0.307412,
+      "u_elasticity": 0,
+      "low_f": 33.93,
+      "high_f": 31.9,
+      "low_u": 83.09,
+      "high_u": 83.09
+    },
+    {
+      "parameter": "Joint transl.",
+      "scale": "0.1× to 10×",
+      "f_elasticity": 0.061834,
+      "u_elasticity": -0.149324,
+      "low_f": 26.06,
+      "high_f": 34.64,
+      "low_u": 149.464,
+      "high_u": 75.143
+    },
+    {
+      "parameter": "Joint rotational",
+      "scale": "0.1× to 10×",
+      "f_elasticity": 0.002109,
+      "u_elasticity": -0.117223,
+      "low_f": 32.77,
+      "high_f": 33.09,
+      "low_u": 95.538,
+      "high_u": 55.684
+    }
+  ],
+  "method": "Common observation points across six faces; area weighted 3D translations, nearest-four interpolation; Hungarian assignment, 18 eigenvectors; 3 meshes + 2 joint variants + gamma perturbation; 8 additional one-factor sensitivities",
+  "limitations": [
+    "Not physically verified; Q4 shear stabilization and hole cut-cells are approximate",
+    "MAC is sampled displacement MAC, not exact FE mass MAC",
+    "High mode matching may be degraded by missing 19th+ mode; modes near degeneracy may mix",
+    "Sensitivity indices are changes of assumed model and not confidence intervals",
+    "No CNC acceptance, material glue tensile strength, verified acoustic impedance or THD"
+  ]
+}

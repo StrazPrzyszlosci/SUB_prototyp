@@ -104,3 +104,6 @@ bieżący zakres sprawdzaj w [programie 30 pakietów](../PROGRAM_30_BADAN.md).
 - [Raport 091 — P36A: 324 przypadki podatności MDF, grubości i idealnych wręg](091_P36A_grubosc_MDF_podatnosc_i_wregi.md).
 - [Raport 092 — P36B: 972 scenariusze C02 Dayton kontra STX przy zmianie podatności](092_P36B_podatnosc_i_porownanie_Dayton_STX.md).
 - [Raport 093 — P36C: test MAC 12 postaci płytowych, trzy siatki](093_P36C_weryfikacja_MAC_na_plycie.md).
+
+- [Raport 094 — P37A: globalne śledzenie 18 postaci drgań MAC na sześciu ścianach](094_P37A_globalny_MAC_18_modow.md).
+- [Raport 095 — P37B: wrażliwość E i gęstości MDF oraz sztywności spoin](095_P37B_czulosc_MDF_spoiny.md).

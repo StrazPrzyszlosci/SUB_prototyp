@@ -1,0 +1,46 @@
+name: P37 global MAC and MDF/joint sensitivity
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  global-mac:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install numerical dependencies
+        run: python -m pip install --disable-pip-version-check numpy scipy
+      - name: Recalculate 14 complete shell models and 18-mode MAC
+        run: |
+          python -m py_compile skrypty/p37_mac_globalny_i_wrazliwosc.py
+          python skrypty/p37_mac_globalny_i_wrazliwosc.py --out /tmp/p37_full.json
+      - name: Reproducibility, MAC, and research terminology assertions
+        run: |
+          python - <<'PY'
+          import json
+          x=json.load(open('/tmp/p37_full.json',encoding='utf8'))
+          assert x['full_global_models']==14, x['full_global_models']
+          assert len(x['MAC_comparisons'])==5
+          assert all(len(s['matches'])==18 for s in x['MAC_comparisons'])
+          assert len(x['material_joint_sensitivity'])==4
+          fine=x['MAC_comparisons'][1]
+          assert fine['a']=='reference' and fine['b']=='fine'
+          assert fine['matches'][0]['MAC']>.98
+          assert 0.7<fine['avg_MAC']<.95
+          ref=next(s for s in x['models'] if s['id']=='reference')
+          assert 30<ref['f1_to_f8_Hz'][0]<36
+          assert 70<ref['max_ugięcie_um']<100
+          rd=open('README.md',encoding='utf8').read()
+          assert '95 raportów' in rd
+          assert 'p37a_mac_globalny_18_modow.svg' in rd
+          assert 'p37b_wrazliwosc_material_spoiny.svg' in rd
+          assert 'klient' not in rd.lower()
+          print('PASS P37: 14 models, 90 modal matches, 4 sensitivity pairs')
+          PY

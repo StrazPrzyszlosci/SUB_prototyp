@@ -11,7 +11,7 @@ nie jest kandydatem na konstrukcję końcową.*
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 93 raporty · Python/JavaScript**
+**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 95 raportów · Python/JavaScript**
 
 Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie. Aktualna pula obejmuje także dwa przypadki wstrzymane w nowym audycie źródeł (EMS i SUPRAVOX), a ponadto nie każda konfiguracja ma jeszcze pełny komplet badań nieliniowych i termicznych.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
@@ -1469,11 +1469,23 @@ Po badaniu P34A idealnych prostopadłościanów (raport 086) wykonano **P34B, ra
 
 *W obliczeniach małosygnałowych C02 Dayton RSS390HF-4 ma F3 około 32 Hz, STX FCX około 46 Hz, a STX 38.800 MC około 91 Hz przy 120 l bez DSP. **F3 nie jest miarą THD, zniekształceń ani jakości słuchowej.** 972 warianty i właściwe dane T/S z repozytorium. [Raport 092](raporty/092_P36B_podatnosc_i_porownanie_Dayton_STX.md).*
 
+### Czy wszystkie postacie całej skrzyni są tak samo wiarygodne?
+
+![P37A: globalne dopasowywanie 18 postaci drgań powłokowego MES](wyniki/p37a_mac_globalny_18_modow.svg)
+
+*P36C wykazał poprawność algorytmu MAC na pojedynczej płycie. Teraz porównano **18 postaci całego, uproszczonego modelu skrzyni** na wspólnych punktach sześciu ścian. Pierwsze cztery postacie dobrze się dopasowują między siatkami 110 i 85 mm, lecz wiele wyższych postaci ma MAC poniżej 0,90. To **nie jest jeszcze walidacja fizycznego MES**. [Raport 094](raporty/094_P37A_globalny_MAC_18_modow.md).*
+
+### Co naprawdę trzeba zmierzyć w MDF i spoinach?
+
+![P37B: wpływ E, gęstości i podatności spoin na postacie oraz ugięcie](wyniki/p37b_wrazliwosc_material_spoiny.svg)
+
+*Zmiana modułu E wpływa głównie na modelowe ugięcie; gęstość na częstotliwości. Nieznana sztywność naroży może zmienić wyniki nawet kilkakrotnie. To **pochodne modelu**, a nie wyniki pomiarów gotowej skrzyni. Następny krok to pomiary próbek MDF i realnych spoin. [Raport 095](raporty/095_P37B_czulosc_MDF_spoiny.md).*
+
 ### Jak sprawdzamy, czy MES rozpoznaje tę samą postać drgań?
 
 ![P36C: minimalne współczynniki MAC przy zagęszczeniu siatki](wyniki/p36c_zgodnosc_MAC_plyta.svg)
 
-*Wykonaliśmy weryfikację metody MAC na niezależnym modelu **jednej** płyty, nie całej skrzyni. 12 modów śledzono przez trzy siatki: zgodność 12/12 i minimalne MAC 0,957 oraz 0,997. **Globalny MAC całej obudowy jest nadal do wykonania**, po udostępnieniu wektorów własnych i poprawie geometrii. [Raport 093](raporty/093_P36C_weryfikacja_MAC_na_plycie.md).*
+*Wykonaliśmy weryfikację metody MAC na niezależnym modelu **jednej** płyty, nie całej skrzyni. 12 modów śledzono przez trzy siatki: zgodność 12/12 i minimalne MAC 0,957 oraz 0,997. **Pierwszy globalny MAC uproszczonej obudowy wykonano w P37A**, ale pełna kwalifikacja MES wymaga jeszcze poprawnej geometrii i weryfikacji eksperymentalnej. [Raport 093](raporty/093_P36C_weryfikacja_MAC_na_plycie.md).*
 
 ## P35 — nacisk na ściany i kontrola poprawności MES (31.10.2026)
 
@@ -1492,8 +1504,19 @@ Po badaniu P34A idealnych prostopadłościanów (raport 086) wykonano **P34B, ra
 
 **Raport 092:** 972 małosygnałowe warianty trzech modeli C02/C06/C08. Uwzględnienie podatności P36A pokazuje niewielką zmianę F3 Dayton RSS390HF-4, ale NIE ocenia promieniowania ścian, THD ani odpowiedzi pomieszczenia.
 
-**Raport 093:** 36 rozwiązań 12 postaci pojedynczej płyty w trzech siatkach, dwie macierze MAC i 24 przyporządkowania. Test metody przeszedł kontrolę, **globalny MAC obudowy pozostaje otwarty**.
+**Raport 093:** 36 rozwiązań 12 postaci pojedynczej płyty w trzech siatkach, dwie macierze MAC i 24 przyporządkowania. Test metody przeszedł kontrolę, **P37A sprawdził wstępny globalny MAC, ale jego kwalifikacja pozostaje otwarta**.
 
 [Raport 091](raporty/091_P36A_grubosc_MDF_podatnosc_i_wregi.md) · [Raport 092](raporty/092_P36B_podatnosc_i_porownanie_Dayton_STX.md) · [Raport 093](raporty/093_P36C_weryfikacja_MAC_na_plycie.md) · [Skrypt analizy MDF](skrypty/p36a_podatnosc_i_grubosc_MDF.js) · [Porównanie Dayton/STX](skrypty/p36b_przetworniki_i_podatnosc.js) · [MAC](skrypty/p36c_test_MAC_plyty.js).
 
-**Bramka przed CNC nadal niezaliczona:** rzeczywista sprężystość i trwałość spoin, pełny CAD frontu i zamków, globalny MAC z konwergencją oraz pomiar po zbudowaniu. Nie zatwierdzono wykonania produkcyjnego.
+**Bramka przed CNC nadal niezaliczona:** rzeczywista sprężystość i trwałość spoin, pełny CAD frontu i zamków, globalny MAC na zweryfikowanym CAD oraz pomiar po zbudowaniu. Nie zatwierdzono wykonania produkcyjnego.
+
+
+## P37 — globalne rozpoznawanie drgań i priorytety pomiarów materiałowych (01.11.2026)
+
+**Raport 094:** 6 globalnych przebiegów z 18 postaciami MES oraz 90 przyporządkowań MAC (5 porównań × 18). Między dwiema najdrobniejszymi siatkami pierwsze cztery postacie mają MAC ≥0,9957, ale **5 z 18 dopasowań** ma MAC poniżej 0,90. Przy spoinach dziesięciokrotnie bardziej podatnych aż **15 z 18** spada poniżej 0,90. Mody wyższe mogą mieszać się lub wypadać poza obcięte 18 wartości własnych.
+
+**Raport 095:** 8 dodatkowych wariantów globalnego MES — wpływ E i gęstości MDF (±10%) oraz dwóch składowych sztywności spoin (×0,1–×10). Elastyczności modelowego ugięcia wyniosły: E **−0,774**, gęstość **0**, sprężystość translacyjna spoin **−0,149**, obrotowa **−0,117**. **To nie są mierzone parametry materiału**; wymagane są osobne próby spoin i MDF.
+
+[Raport 094](raporty/094_P37A_globalny_MAC_18_modow.md) · [Raport 095](raporty/095_P37B_czulosc_MDF_spoiny.md) · [Kod odtwarzający 14 modeli](skrypty/p37_mac_globalny_i_wrazliwosc.py) · [Podsumowanie JSON](wyniki/p37_globalny_mac_wrazliwosc_PODSUMOWANIE_20261101.json) · [Wykres MAC](wyniki/p37a_mac_globalny_18_modow.svg) · [Wykres materiałowy](wyniki/p37b_wrazliwosc_material_spoiny.svg).
+
+**Wynik decyzyjny:** aktualny prototyp 1020×425×500mm i 120l pozostaje konstrukcją badawczą. **Nie zatwierdzamy CNC**, dopóki spoiny i MDF nie zostaną zmierzone, front i mocowania dokładnie zamodelowane, a MES powtórnie przetestowany na siatkach dopasowanych do geometrii.
