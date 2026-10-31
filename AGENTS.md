@@ -1196,3 +1196,57 @@ README, bez chronologii na początku.
 Kolejna bramka: połączenie prawdziwego FV P21D z przestrzennymi
 portami podatnych ścian P18E i zachowaniem energii we wspólnym
 modelu wręg, wkładów i wypełnienia P20D. Nie zamykać programu P21.
+
+
+## Postęp 2026-10-31 — nowy brief klienta: końcówki mocy, DSP, 9 marek
+
+**Uwaga: to nowa przestrzeń projektowa, nie akceptacja RSS390HF-4.**
+Dotychczasowa rekomendacja C02 ma odtąd status **wstępnego
+faworyta**. Badamy 75/80 l obok 100/120/150 l i wszystkie ograniczenia
+mechaniczne, termiczne, napięciowe, prądowe i architektury zdalnego
+sterowania, także przy 100% głośności streamera.
+Dwie jednostki subwoofera: osobne kanały 7 i 8 w 8-kanałowym
+centralnym DSP, 1–6 dla aktywnych monitorów; oddzielne tory mocy.
+
+Nowe 9 marek: GPA 416-8B, VOLT RV3863, Supravox 400-2000 EXC,
+EMS B15EX, PURIFI PTT10.0X04-NAB-01, Kartesian Wom265_vKi-6,
+PHL 6301MNd, ETON 12-212/C8/62, Davis 39 GPA 15.
+Zamrożone tabele danych T/S, wymiarów i pierwotne URL w
+`dane/karty_producentow/2026-10-31_9_marek_weryfikacja.json`.
+Skrypt `skrypty/odtworz_dokumentacje_producentow.py` pobiera
+oryginalne źródła lokalnie, sprawdza sygnaturę PDF i liczy SHA-256.
+**Nie ma prawnej zgody na redystrybucję kompletnych kart PDF w repo
+i w bieżącym PR ich nie ma**; dane numeryczne są odtwarzalne z
+repo i oryginalnych producentów, ale wykresy FRD/ZMA nie są
+zarchiwizowane numerycznie.
+EMS B15EX nie ma pełnych producentowych T/S; **HOLD**.
+PURIFI: odtworzono oryginalną kartę wersji -01 PDF v0.95,
+bez mieszania specyfikacji -02; moc 450/135 W pochodzi z aktualnej
+strony modelu, ponieważ PDF -01 podaje moc TBD.
+GPA: Vd producenta 314 cm³ versus Sd*Xmax 329,48 cm³.
+Supravox: producent Mms=66 g versus odtworzenie z Fs/Vas/Sd
+78,74 g (~16,2% odchylenia). To flagi spójności;
+nie wolno ich poprawiać na podstawie intuicji ani liczyć jako
+jednego spójnego kompletu bez wyjaśnienia u producenta.
+Wykonany audyt dziewięciu marek:
+`wyniki/brief20261031_audyt_t_s_9_marek.json`.
+
+Dostępne wykonane 180 kontrolnych punktów liniowego modelu C02,
+5 objętości×6 częstotliwości×2 hipotetyczne budżety strat cewki×3
+budżety mocy końcówki. Pliki:
+`wyniki/brief20261031_180_swiadkow_Dayton.csv` i podsumowanie JSON.
+To **symulacja 0D**, nie zmierzony ani maksymalny czysty SPL
+i nie certyfikat limitera. Bez BL(x), Cms(x), Le(x), Rth/Cth,
+realnego Z(f), impedancji źródła i firmware DSP progi X/T
+pozostają do identyfikacji.
+
+Konfiguracja 5 architektur i dwóch wariantów miniDSP:
+`dane/konfiguracje/brief_klienta_20261031_wzmacniacz_dsp.json`.
+Skrypt szerszego przebiegu 26+9:
+`skrypty/brief20261031_pomiarowe_bramki_i_porownanie.py`
+(zatrzymuje źródła o niespójności Mms >8% i brak oficjalnych T/S).
+Nie twierdzić, że całą 35-modelową kampanię już uruchomiono
+i zatwierdzono. Ceny pełnych modułów i obudów, THD, kompresja,
+warunki bezpieczeństwa sieci 230 V i kompatybilność interfejsu
+modelowego P25E z miniDSP pozostają otwarte.
+Pełna analiza: `raporty/BRIEF_2026-10-31_wzmacniacz_DSP_i_9_marek.md`.
