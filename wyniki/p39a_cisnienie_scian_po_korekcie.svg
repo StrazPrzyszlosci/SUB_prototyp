@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1070" height="610" viewBox="0 0 1070 610"><rect width="1070" height="610" fill="#fff"/>
+<text x="36" y="42" font-family="Arial" font-weight="bold" font-size="27" fill="#1d4056">P39A • ciśnienie na ścianach po korekcie osi kosza</text>
+<text x="36" y="73" font-family="Arial" font-size="15" fill="#5b7380">120 litrów • 80 Hz • siatka ok. 36 mm • względnie do średniej danej komory</text>
+<rect x="45" y="90" width="19" height="14" fill="#778a9c"/><text x="71" y="103" font-family="Arial" font-size="15" fill="#456274">Historyczne x231/z250 we wnętrzu</text>
+<rect x="479" y="90" width="19" height="14" fill="#d48855"/><text x="507" y="103" font-family="Arial" font-size="15" fill="#456274">Skorygowane x209/z228 we wnętrzu</text>
+<line x1="516" y1="118" x2="516" y2="540" stroke="#c4d6dc" stroke-dasharray="4 4"/>
+<text x="40" y="146" font-family="Arial" font-size="17" fill="#345266">Front</text>
+ <rect x="156" y="121" width="340.46388" height="19" fill="#778a9c" rx="3"/>
+ <rect x="156" y="145" width="342.00036" height="19" fill="#d48855" rx="3"/>
+ <text x="512.00036" y="148" fill="#3b5568" font-size="14" font-family="Arial">0.946 → 0.950</text><text x="40" y="214" font-family="Arial" font-size="17" fill="#345266">Tył</text>
+ <rect x="156" y="189" width="395.57376" height="19" fill="#778a9c" rx="3"/>
+ <rect x="156" y="213" width="395.97263999999996" height="19" fill="#d48855" rx="3"/>
+ <text x="565.97264" y="216" fill="#3b5568" font-size="14" font-family="Arial">1.099 → 1.100</text><text x="40" y="282" font-family="Arial" font-size="17" fill="#345266">Lewa</text>
+ <rect x="156" y="257" width="278.23788" height="19" fill="#778a9c" rx="3"/>
+ <rect x="156" y="281" width="264.76884" height="19" fill="#d48855" rx="3"/>
+ <text x="448.23788" y="284" fill="#3b5568" font-size="14" font-family="Arial">0.773 → 0.735</text><text x="40" y="350" font-family="Arial" font-size="17" fill="#345266">Prawa</text>
+ <rect x="156" y="325" width="492.82775999999996" height="19" fill="#778a9c" rx="3"/>
+ <rect x="156" y="349" width="498.15288000000004" height="19" fill="#d48855" rx="3"/>
+ <text x="668.1528800000001" y="352" fill="#3b5568" font-size="14" font-family="Arial">1.369 → 1.384</text><text x="40" y="418" font-family="Arial" font-size="17" fill="#345266">Góra</text>
+ <rect x="156" y="393" width="357.60276" height="19" fill="#778a9c" rx="3"/>
+ <rect x="156" y="417" width="362.59596000000005" height="19" fill="#d48855" rx="3"/>
+ <text x="532.5959600000001" y="420" fill="#3b5568" font-size="14" font-family="Arial">0.993 → 1.007</text><text x="40" y="486" font-family="Arial" font-size="17" fill="#345266">Dół</text>
+ <rect x="156" y="461" width="366.59196" height="19" fill="#778a9c" rx="3"/>
+ <rect x="156" y="485" width="362.23164" height="19" fill="#d48855" rx="3"/>
+ <text x="536.59196" y="488" fill="#3b5568" font-size="14" font-family="Arial">1.018 → 1.006</text>
+<text x="38" y="566" font-family="Arial" font-size="15" fill="#7d5042">Sztywne ściany, bez modelu strat maty i bez sprzężenia mechanicznego.</text>
+<text x="38" y="589" font-family="Arial" font-size="14" fill="#677e88">Nie jest to rzeczywisty nacisk w paskalach ani pomiar SPL lub THD.</text>
+</svg>
