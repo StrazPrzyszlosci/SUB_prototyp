@@ -17,7 +17,7 @@ To różnica modeli i konwencji, nie zmierzony błąd katalogu.
 W gęstym skanie sprzężenie pokoju zmienia ciśnienie w punkcie S0 do około
 **1.712 dB** względem przyłożenia tego samego
 pola do źródła bez reakcji pokoju. Maksimum dotyczy warunkowego C07 i
-hipotetycznego ustawienia B. Nie jest korektą do zastosowania w pokoju klienta.
+hipotetycznego ustawienia B. Nie jest korektą do zastosowania w pokoju użytkownika.
 Dla C02/C06/C11 znalezione zmiany są mniejsze; podano je poniżej.
 
 **Rekomendacja:** zachować oddzielne modele geometrii i konwencji referencyjnej.
