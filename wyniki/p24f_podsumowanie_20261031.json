@@ -1,0 +1,76 @@
+{
+  "study": "P24F",
+  "status": "simulated NOT validated",
+  "base_model": "P24B/P24E hypothetical RSS390HF-4",
+  "scenario_count": 192,
+  "dt_s": 0.05,
+  "duration_s": 150.0,
+  "seed": 20261031,
+  "policy_summary": {
+    "no_thermal_guard": {
+      "n": 48,
+      "above_80_cases": 40,
+      "no_excitation_cases": 6,
+      "max_coil_K": 200.128,
+      "min_on_s": 13.8,
+      "median_on_s": 107.0,
+      "model_stops": 24
+    },
+    "naive_measured_80": {
+      "n": 48,
+      "above_80_cases": 24,
+      "no_excitation_cases": 6,
+      "max_coil_K": 113.931,
+      "min_on_s": 0.25,
+      "median_on_s": 44.25,
+      "model_stops": 0
+    },
+    "margin_measured_55": {
+      "n": 48,
+      "above_80_cases": 3,
+      "no_excitation_cases": 6,
+      "max_coil_K": 87.028,
+      "min_on_s": 0.25,
+      "median_on_s": 27.5,
+      "model_stops": 0
+    },
+    "predicted_bound_15K_5Kps": {
+      "n": 48,
+      "above_80_cases": 7,
+      "no_excitation_cases": 6,
+      "max_coil_K": 94.16,
+      "min_on_s": 0.25,
+      "median_on_s": 32.7,
+      "model_stops": 0
+    }
+  },
+  "violation_cases_with_assumed_15K_sensor_error_bound": 6,
+  "two_predicted_bound_failures_despite_within_15K": [
+    {
+      "thermal": "adverse",
+      "sensor": "cable_minus_0p1",
+      "frequency_hz": 80.0,
+      "max_true_coil_rise_K": 83.147,
+      "time_true_above_diagnostic_80K_s": 10.05,
+      "measurement_max_abs_error_K": 11.1
+    },
+    {
+      "thermal": "adverse",
+      "sensor": "dropout_20to45",
+      "frequency_hz": 80.0,
+      "max_true_coil_rise_K": 81.851,
+      "time_true_above_diagnostic_80K_s": 1.05,
+      "measurement_max_abs_error_K": 11.189
+    }
+  ],
+  "limits": [
+    "No acoustic injection, music excitation, ADC, clipping or nonlinearity models.",
+    "Temperature threshold 80 K is only a diagnostic contour; not a safe limit.",
+    "Predicted 15K error envelope and 5K/s growth are assumed and tested, not certified bounds.",
+    "The synthetic spectrogram supplies coherent 80/150/300Hz data even during music; outside the explicit dropout/sparse/no-excitation scenarios.",
+    "Cold calibration is noisy and fixed; cable drift and unmodeled Cms are deliberately allowed.",
+    "True plant, correction and guards share nominal electromechanical model; gross model mismatch remains untested.",
+    "Gate is ideal command realized after assumed 0.25s; physical power stage and miniDSP API unverified.",
+    "All 3 thermal scenarios hypothetical, no measured true temperatures."
+  ]
+}
