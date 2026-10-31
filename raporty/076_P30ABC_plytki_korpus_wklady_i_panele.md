@@ -63,8 +63,8 @@ Wyniki P29D pozostają podstawą oceny grzania przy 20 Hz i wyboru RSS390HF-4; n
 
 ## Odtwarzanie i pliki
 
-`python3 p30a_robust_geometry.py` — wymaga NumPy, generuje `p30a_geometria_przeglad_20261031.json`.
+`python3 skrypty/p30a_robust_geometry.py` — wymaga NumPy, generuje `p30a_geometria_przeglad_20261031.json`.
 
-`python3 p30b_struktura_i_akustyka.py` — wymaga tylko standardowej biblioteki Python, generuje `p30bc_paneli_ts_20261031.json`.
+`python3 skrypty/p30b_struktura_i_akustyka.py` — wymaga tylko standardowej biblioteki Python, generuje `p30bc_paneli_ts_20261031.json`.
 
 Obydwa skrypty to **oddzielne numeryczne ekrany**. Nie generują rysunków CNC, nie symulują pełnego MES skrzyni ani nie zastępują pomiarów sprzętu.
