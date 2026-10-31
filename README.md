@@ -11,9 +11,9 @@ nie jest kandydatem na konstrukcję końcową.*
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**26 modeli głośników · 11 producentów · 65 raportów · Python**
+**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 65 raportów · Python**
 
-Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie.
+Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie. Aktualna pula obejmuje także dwa przypadki wstrzymane w nowym audycie źródeł (EMS i SUPRAVOX), a ponadto nie każda konfiguracja ma jeszcze pełny komplet badań nieliniowych i termicznych.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
 wypełnienie, wzmocnienia, klej, wzmacniacz i ustawienie w pokoju.
 Celem jest **jeden konkretny głośnik i jedna konstrukcja prototypu**
