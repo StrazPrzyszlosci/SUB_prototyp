@@ -67,7 +67,7 @@ Badana zmiana \`20log10(|v_podatne|/|v_sztywne|)\` jest stosunkiem prędkości p
 
 ![P21G: wpływ podatnych ścian na prędkość trzech przetworników](../wyniki/106_P21G_komora_i_podatne_panele.svg)
 
-Przy dwukrotnie większej, nadal hipotetycznej podatności C02 dla 120_refined uzyskał od **−0,113** do **+0,2535 dB** (dla najgorszej ujemnej wartości sprawdź tabelę CSV po uruchomieniu skryptu; zakres w niniejszym raporcie jest zaokrąglony). Nie ma podstaw do utożsamienia tych różnic z poprawą jakości brzmienia.
+Przy dwukrotnie większej, nadal hipotetycznej podatności C02 dla 120_refined uzyskał od **−0,11533** do **+0,25350 dB** na badanej siatce. Nie ma podstaw do utożsamienia tych różnic z poprawą jakości brzmienia.
 
 ### Kontrole fizyczne i numeryczne
 
