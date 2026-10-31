@@ -265,7 +265,7 @@ function runP35(){
    "Forces are in Newton per Pascal cavity average only, not real driver SPL or physically measured wall load.",
    "Field masks use heuristic cut cell openness, not conformal CFD geometry."]};
  const name=path.join(__dirname,"..","wyniki","p39a_pola_na_scianach_36_20261101.json");
- fs.mkdirSync(path.dirname(name),{recursive:true});fs.writeFileSync(name,JSON.stringify(out,null,2)+"\\n");
+ fs.mkdirSync(path.dirname(name),{recursive:true});fs.writeFileSync(name,JSON.stringify(out,null,2)+"\n");
  const z=rows.find(x=>x.state==="120"&&x.frequency_Hz===80&&x.mesh_mm===36);
  if(!z||Math.abs(z.boundary.right.mean_pressure_ratio-1.383758)>0.0001)throw Error("P39A face regression");
  console.log("P39A CORRECTED 36; 120L 80Hz right wall ratio",z.boundary.right.mean_pressure_ratio);
