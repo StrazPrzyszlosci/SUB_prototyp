@@ -1,0 +1,172 @@
+{
+  "date": "2026-10-31",
+  "campaign": "Independent JS numerical implementation for Dayton source T/S from user brief; equations duplicated in committed Python reference script.",
+  "case_count": 180,
+  "volume_l": [
+    75,
+    80,
+    100,
+    120,
+    150
+  ],
+  "f_hz": [
+    15,
+    20,
+    30,
+    40,
+    60,
+    80
+  ],
+  "coil_budget_W": [
+    300,
+    500
+  ],
+  "amplifier_nominal_4ohm_W": [
+    300,
+    400,
+    500
+  ],
+  "lin_data": {
+    "rho_kgm3": 1.2,
+    "sound_ms": 343,
+    "fs_hz": 19.5,
+    "vas_l": 212,
+    "sd_m2": 0.08296,
+    "mms_kg": 0.306,
+    "cms_m_N": 0.00021818700859534736,
+    "rms_Nsm": 12.41449229402006,
+    "bl_NA": 15,
+    "re_ohm": 3,
+    "le_H": 0.00092,
+    "xmax_m": 0.014
+  },
+  "scope": "1Vrms analytic passive sealed box 0D; 2pi piston half-space 1m, no baffle/room, no THD, thermal time constant, nonlinear BL(x), Cms(x), high-order harmonics; power ratings reduced to scenario voltage caps on ideal 4ohm only",
+  "key_witnesses": [
+    {
+      "volume_l": 75,
+      "f_hz": 20,
+      "coil_budget_W": 500,
+      "amplifier_nominal_W4ohm": 500,
+      "voltage_cap_Vrms": 44.72136,
+      "x_max_cap_Vrms": 47.812831,
+      "heat_cap_Vrms": 51.661091,
+      "amplifier_cap_Vrms": 44.72136,
+      "dominant_limit": "amp_resistive_voltage",
+      "piston_halfspace_Spl_1m_dB": 104.287169,
+      "output_current_Arms": 11.175727,
+      "coil_I2R_W": 374.690654
+    },
+    {
+      "volume_l": 75,
+      "f_hz": 40,
+      "coil_budget_W": 500,
+      "amplifier_nominal_W4ohm": 500,
+      "voltage_cap_Vrms": 44.72136,
+      "x_max_cap_Vrms": 61.392572,
+      "heat_cap_Vrms": 236.070135,
+      "amplifier_cap_Vrms": 44.72136,
+      "dominant_limit": "amp_resistive_voltage",
+      "piston_halfspace_Spl_1m_dB": 114.156941,
+      "output_current_Arms": 2.445673,
+      "coil_I2R_W": 17.943944
+    },
+    {
+      "volume_l": 75,
+      "f_hz": 80,
+      "coil_budget_W": 500,
+      "amplifier_nominal_W4ohm": 500,
+      "voltage_cap_Vrms": 44.72136,
+      "x_max_cap_Vrms": 195.898496,
+      "heat_cap_Vrms": 45.08559,
+      "amplifier_cap_Vrms": 44.72136,
+      "dominant_limit": "amp_resistive_voltage",
+      "piston_halfspace_Spl_1m_dB": 116.119835,
+      "output_current_Arms": 12.80565,
+      "coil_I2R_W": 491.953992
+    },
+    {
+      "volume_l": 80,
+      "f_hz": 20,
+      "coil_budget_W": 500,
+      "amplifier_nominal_W4ohm": 500,
+      "voltage_cap_Vrms": 44.72136,
+      "x_max_cap_Vrms": 46.098183,
+      "heat_cap_Vrms": 53.142969,
+      "amplifier_cap_Vrms": 44.72136,
+      "dominant_limit": "amp_resistive_voltage",
+      "piston_halfspace_Spl_1m_dB": 104.604382,
+      "output_current_Arms": 10.864095,
+      "coil_I2R_W": 354.085684
+    },
+    {
+      "volume_l": 80,
+      "f_hz": 40,
+      "coil_budget_W": 500,
+      "amplifier_nominal_W4ohm": 500,
+      "voltage_cap_Vrms": 44.72136,
+      "x_max_cap_Vrms": 61.470616,
+      "heat_cap_Vrms": 209.35714,
+      "amplifier_cap_Vrms": 44.72136,
+      "dominant_limit": "amp_resistive_voltage",
+      "piston_halfspace_Spl_1m_dB": 114.145906,
+      "output_current_Arms": 2.757729,
+      "coil_I2R_W": 22.815209
+    },
+    {
+      "volume_l": 80,
+      "f_hz": 80,
+      "coil_budget_W": 500,
+      "amplifier_nominal_W4ohm": 500,
+      "voltage_cap_Vrms": 44.72136,
+      "x_max_cap_Vrms": 197.69841,
+      "heat_cap_Vrms": 44.898176,
+      "amplifier_cap_Vrms": 44.72136,
+      "dominant_limit": "amp_resistive_voltage",
+      "piston_halfspace_Spl_1m_dB": 116.040394,
+      "output_current_Arms": 12.859103,
+      "coil_I2R_W": 496.069591
+    },
+    {
+      "volume_l": 120,
+      "f_hz": 20,
+      "coil_budget_W": 500,
+      "amplifier_nominal_W4ohm": 500,
+      "voltage_cap_Vrms": 38.397285,
+      "x_max_cap_Vrms": 38.397285,
+      "heat_cap_Vrms": 66.375636,
+      "amplifier_cap_Vrms": 44.72136,
+      "dominant_limit": "xmax",
+      "piston_halfspace_Spl_1m_dB": 104.867758,
+      "output_current_Arms": 7.468204,
+      "coil_I2R_W": 167.322231
+    },
+    {
+      "volume_l": 120,
+      "f_hz": 40,
+      "coil_budget_W": 500,
+      "amplifier_nominal_W4ohm": 500,
+      "voltage_cap_Vrms": 44.72136,
+      "x_max_cap_Vrms": 63.100696,
+      "heat_cap_Vrms": 118.845416,
+      "amplifier_cap_Vrms": 44.72136,
+      "dominant_limit": "amp_resistive_voltage",
+      "piston_halfspace_Spl_1m_dB": 113.918575,
+      "output_current_Arms": 4.857994,
+      "coil_I2R_W": 70.800305
+    },
+    {
+      "volume_l": 120,
+      "f_hz": 80,
+      "coil_budget_W": 500,
+      "amplifier_nominal_W4ohm": 500,
+      "voltage_cap_Vrms": 44.061004,
+      "x_max_cap_Vrms": 206.8447,
+      "heat_cap_Vrms": 44.061004,
+      "amplifier_cap_Vrms": 44.72136,
+      "dominant_limit": "coil_heat_scenario",
+      "piston_halfspace_Spl_1m_dB": 115.518357,
+      "output_current_Arms": 12.909944,
+      "coil_I2R_W": 500
+    }
+  ]
+}
