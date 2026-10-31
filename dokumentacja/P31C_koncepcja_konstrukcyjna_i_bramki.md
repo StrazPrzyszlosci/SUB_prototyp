@@ -26,7 +26,7 @@ Głębokość 19mm rezerwy wynika z **niezweryfikowanych** zakresów wystawania,
 
 ## Co nowe badanie P31B naprawdę rozstrzygnęło
 
-[P31B, raport 081](../raporty/081_P31B_podatnosc_wreg_obudowy_1020_425.md) — 135 scenariuszy pojedynczego panelu Rayleigh–Ritza z dwiema **sprężystymi** liniami. Przy E 2,1GPa i rho 730kg/m³ modelowa pierwsza częstotliwość zmienia się od 115,3Hz (bez podparć) przez 134,0Hz (k=1e6N/m²) do 194,5Hz (k=1e7N/m²). Ta wrażliwość podważa stwierdzenie „panele o małych polach więc sztywne”. Sprężyny do idealnego podłoża nie odwzorowują realnego układu 3D. Nie jest to pełny MES.
+[P31B, raport 081](../raporty/081_P31B_podatnosc_wreg_obudowy_1020_425.md) — 135 scenariuszy pojedynczego panelu Rayleigh–Ritza z dwiema **sprężystymi** liniami. Przy E 2,1GPa i rho 730kg/m³ modelowa pierwsza częstotliwość zmienia się od 156,2Hz (bez podparć) przez 171,1Hz (k=1e6N/m²) do 228,5Hz (k=1e7N/m²). Wartości po sprostowaniu błędu jednostek w P31B. Ta wrażliwość podważa stwierdzenie „panele o małych polach więc sztywne”. Sprężyny do idealnego podłoża nie odwzorowują realnego układu 3D. Nie jest to pełny MES.
 
 ## Wymagane następne testy — kolejność i bramki
 
