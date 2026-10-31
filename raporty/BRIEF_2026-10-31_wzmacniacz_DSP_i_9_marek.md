@@ -1,5 +1,14 @@
 # Nowy brief klienta — RSS390HF-4 tylko jako faworyt wstępny; dziewięć nowych marek i aktywna elektronika
 
+> **ERRATUM (P22C, 31.10.2026):** Pierwszy przesiew 180 i 274725
+> przypadków miał błąd konwersji `Xrms→Xpeak`, zawyżający
+> napięcie odpowiadające katalogowemu Xmax o √2. Dane zostały
+> ponownie przeliczone na tej gałęzi. Obowiązujące wzory i
+> obciążenia wzmacniaczy dokumentuje
+> [raport P22C](P22C_2026-10-31_wzmacniacze_impedancja_DSP_Xpeak.md).
+> Nie stosować wcześniejszych wartości do zabezpieczeń.
+
+
 **Data aktualizacji: 31.10.2026. Status: nowy zakres i przeprowadzony etap weryfikacji źródeł/obliczeń przesiewowych. Nie ukończono ponownej pełnej kampanii badawczej wszystkich modeli ani kwalifikacji bezpieczeństwa.**
 
 ## 1. Zmiana celu, brak narzuconego zwycięzcy
@@ -68,7 +77,7 @@ Konfiguracja [dane/konfiguracje/brief_klienta_20261031_wzmacniacz_dsp.json](../d
 
 ## 4. Nowy test mechaniczny, cieplny i napięciowy dla Dayton
 
-Wykonano **180 niezależnie przeliczonych świadków** (5 litraży×6 częstotliwości×2 budżety strat cewki 300/500W×3 hipotetyczne limity idealnej końcówki 300/400/500W). [Wyniki CSV](../wyniki/brief20261031_180_swiadkow_Dayton.csv), [założenia i 9 szczegółowych świadków](../wyniki/brief20261031_180_swiadkow_podsumowanie.json). Dodatkowy [skrypt Python](../skrypty/brief20261031_pomiarowe_bramki_i_porownanie.py) przygotowuje pełne odtwarzanie szerszego przebiegu na danych T/S. **Niezależnie wykonano już 274 725 obliczeń przesiewowych w implementacji JavaScript**, zapisując [165 agregatów po konfiguracji i objętości oraz świadków 20/40/80 Hz](../wyniki/brief20261031_pelna_pula_35_wstepna_analiza.json). Wynik: 24 oryginalne produkty + 2 produkty SB (3 konfiguracje elektryczne) + 8 nowych unikalnych producentowych modeli = **34 różne produkty / 35 konfiguracji**, bo PURIFI PTT10.0X04-NAB-01 był już w bazie. Z 35 konfiguracji **33 przeanalizowano**, a SUPRAVOX (rozbieżność Mms) i EMS (brak kompletnego T/S) zablokowano. Siatka: 5 objętości × 111 częstotliwości 10–120 Hz × 3 hipotetyczne budżety I²Re × 5 nominalnych limitów mocy 4 Ω = **8325 wierszy scenariuszy na konfigurację**. To pierwsze badanie przesiewowe, **nie** komplet badań P01–P30 każdej marki. Przy obciążeniu znamionowo 6/8 Ω ani 1,5 Ω budżet `sqrt(4*P)` *nie* jest rzeczywistą charakterystyką końcówki. Nie uruchamiano tu jeszcze osobno pełnej replikacji Python wszystkich punktów; obie implementacje wymagają testu porównawczego.
+Wykonano **180 punktów przeliczonych ponownie z poprawioną konwencją Xmax** (5 litraży×6 częstotliwości×2 budżety strat cewki 300/500W×3 hipotetyczne limity idealnej końcówki 300/400/500W). [Wyniki CSV](../wyniki/brief20261031_180_swiadkow_Dayton.csv), [założenia i 9 szczegółowych świadków](../wyniki/brief20261031_180_swiadkow_podsumowanie.json). Dodatkowy [skrypt Python](../skrypty/brief20261031_pomiarowe_bramki_i_porownanie.py) przygotowuje pełne odtwarzanie szerszego przebiegu na danych T/S. **Niezależnie wykonano już 274 725 obliczeń przesiewowych w implementacji JavaScript**, zapisując [165 agregatów po konfiguracji i objętości oraz świadków 20/40/80 Hz](../wyniki/brief20261031_pelna_pula_35_wstepna_analiza.json). Wynik: 24 oryginalne produkty + 2 produkty SB (3 konfiguracje elektryczne) + 8 nowych unikalnych producentowych modeli = **34 różne produkty / 35 konfiguracji**, bo PURIFI PTT10.0X04-NAB-01 był już w bazie. Z 35 konfiguracji **33 przeanalizowano**, a SUPRAVOX (rozbieżność Mms) i EMS (brak kompletnego T/S) zablokowano. Siatka: 5 objętości × 111 częstotliwości 10–120 Hz × 3 hipotetyczne budżety I²Re × 5 nominalnych limitów mocy 4 Ω = **8325 wierszy scenariuszy na konfigurację**. To pierwsze badanie przesiewowe, **nie** komplet badań P01–P30 każdej marki. Przy obciążeniu znamionowo 6/8 Ω ani 1,5 Ω budżet `sqrt(4*P)` *nie* jest rzeczywistą charakterystyką końcówki. Nie uruchamiano tu jeszcze osobno pełnej replikacji Python wszystkich punktów; obie implementacje wymagają testu porównawczego.
 
 Kolejność weryfikacji:
 \`I/U=1/[Re+jwLe+BL²/Zm]\`,
@@ -83,12 +92,12 @@ Na jednej częstotliwości i dla RMS \`X=|v|/w\`, \`Pcu=Re|I|²\`. Ogranicznikie
 
 | Vb | f | Dominujące przyjęte ograniczenie | Zastosowane napięcie RMS | Modelowy poziom w półprzestrzeni, 1m |
 |---|---:|---|---:|---:|
-| 75l | 20Hz | limit napięcia wzmacniacza | 44,72V | 104,29dB |
-| 75l | 40Hz | limit napięcia wzmacniacza | 44,72V | 114,16dB |
-| 75l | 80Hz | limit napięcia wzmacniacza | 44,72V | 116,12dB |
-| 80l | 20Hz | limit napięcia wzmacniacza | 44,72V | 104,60dB |
-| 120l | 20Hz | **Xmax** | **38,40V** | 104,87dB |
-| 120l | 80Hz | hipotetyczny limit cewki | 44,06V | 115,52dB |
+| 75l | 20Hz | **Xmax szczytowe** | **33,81V** | **101,86dB** |
+| 75l | 40Hz | **Xmax szczytowe** | **43,41V** | **113,90dB** |
+| 75l | 80Hz | nominalny wzmacniacz 4Ω jako limit napięcia | 44,72V | 116,12dB |
+| 80l | 20Hz | **Xmax szczytowe** | **32,60V** | **101,86dB** |
+| 120l | 20Hz | **Xmax szczytowe** | **27,15V** | **101,86dB** |
+| 120l | 80Hz | hipotetyczny limit strat cewki | 44,06V | 115,52dB |
 
 Uwaga: 104–116dB to idealizowana liniowa **jednometrowa presja półprzestrzenna** z prędkości membrany. Nie uwzględnia emisji paneli, odpowiedzi pokoju, frontu, wzbudzania modów, kompresji, realnego zniekształcenia, szumu ani pełnego modelu prądowego DSP. Nie należy nazywać tego „maksymalnym czystym SPL”.
 
