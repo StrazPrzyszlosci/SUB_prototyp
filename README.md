@@ -23,35 +23,6 @@ subwoofera zamkniętego z regulacją objętości.
 > i symulacje. Nie ma jeszcze pomiarów gotowego prototypu ani ostatecznego
 > zwycięzcy. Każdy przykład ma opisane warunki i ograniczenia.
 
-**Aktualizacja obliczeń 2026-10-29:** P21B zamknięto w zadanej rodzinie:
-18 modeli, 132 układy częstotliwościowe i 264 oceny pól. Wznowiono
-17 niezmienionych zapisów i dokończono jeden wariant; nie jest to
-18 nowych niezależnych przebiegów. [Raport 045](raporty/045_gaz_przestrzenny_praca_i_granica0D.md).
-Historyczna [migawka 17/18](wyniki/manifest_checkpoint_P21B.json) pozostała bez zmian.
-
-Dodano **P21C0: 27 płytkich geometrii**, 100 mieszczących się źródeł
-kontrolnych i 600 punktów. W głównej komorze sam litraż i pierwszy mod
-nie wystarczają do opisania nacisku na membranę. To model pustego,
-sztywnego wnętrza, bez włókniny i regulatora; nie rekomendacja głośnika.
-[Raport 050](raporty/050_P21C0_plytka_komora_i_polozenie_zrodla.md).
-P23A, P22A/P22B i P24A zachowują swoje wcześniejsze zakresy.
-Końcowy PDF i Release 1 nadal czekają na cały program badań.
-
-**Badania 2026-10-30:** P21C1 — kołowe źródła z powierzchni Sd 26 produktów, 6618 punktów. [Raport 051](raporty/051_P21C1_membrana_kolowa_i_bezwladnosc.md). Model pustej komory; bez pomiarów urządzenia.
-
-**Wstępna rekomendacja prototypu:** Dayton RSS390HF-4, około 120 l netto
-na start, regulacja około 100/120/150 l, korpus 880×480×500 mm (W×D×H),
-MDF 22 mm i stały front 44 mm. [Konfiguracja i ograniczenia — raport 054](raporty/054_rekomendowana_konfiguracja_prototypu.md).
-To wybór do dalszego opracowania, nie dokumentacja do budowy. Całkowita
-głębokość z wystającymi elementami nadal wymaga sprawdzenia.
-
-Nowe [badania komory i frontu — 052](raporty/052_komora_warstwy_wklady_i_front.md)
-oraz [porównanie i odporność — 053](raporty/053_porownanie_i_odpornosc_rekomendacji.md)
-uzupełnia [wrażliwość wyboru — 055](raporty/055_wrazliwosc_wyboru_i_margines_glebokosci.md):
-100 l już spełnia przyjęty próg 0,2 dB od plateau; 120 l jest roboczym
-punktem eksperymentu. Przy większym założonym grzaniu wygrywa C11.
-Skrócenie korpusu do 470 mm wymaga przeprojektowania położeń wkładów.
-
 ## Wybierz temat
 
 | Interesuje Cię… | Zacznij tutaj |
@@ -119,6 +90,27 @@ odporności modelu, a nie zmierzoną statystyką produkcji.
 [Raport 015: zakresy, czułość i przykłady zmiany kolejności](raporty/015_niepewnosc_globalna_i_odpornosc.md).
 
 </details>
+
+### Który głośnik wybrać do pierwszego prototypu?
+
+W porównaniu **26 przetworników / 27 konfiguracji elektrycznych**
+wstępnym faworytem jest **Dayton Audio RSS390HF-4 (15″, 4 Ω)**.
+W modelu osobnych sinusów 20–80 Hz, przy 120 l, napędzie 40 V RMS /
+12 A RMS i założonym limicie strat miedzi 50 W, uzyskał najwyższe
+minimum w badanej próbie stresowej. Nie jest to ranking zmierzonych
+zniekształceń ani prognoza poziomu w konkretnym pokoju.
+
+![Porównanie kryteriów wyboru głośnika i wpływu frontu](wyniki/97_P29_wybor_i_front.png)
+
+**Wybór jest warunkowy.** Przy modelowych limitach strat miedzi
+27–86 W na siatce wygrywa C02, a przy 87–200 W — **RSS390HE-22 (C11)**.
+To zakresy przyjętego modelu, a nie zmierzone dopuszczalne moce
+poszczególnych produktów. STX W.32.800.8.FCX pozostaje wariantem
+porównawczym 12″.
+
+[Porównanie wariantów — 053](raporty/053_porownanie_i_odpornosc_rekomendacji.md)
+· [projekt eksperymentu — 054](raporty/054_rekomendowana_konfiguracja_prototypu.md)
+· [wrażliwość rekomendacji — 055](raporty/055_wrazliwosc_wyboru_i_margines_glebokosci.md).
 
 <a id="akustyka"></a>
 ## Objętość i wypełnienie: więcej litrów nie rozwiązuje wszystkiego
@@ -348,7 +340,17 @@ przykładami obliczeń.
 
 Skrzynia nie jest idealnie sztywna. Jej ścianki się uginają, a połączenia
 przenoszą nierówne obciążenia. Poniższe części można rozwinąć niezależnie.
-Wykresy pokazują kolejne etapy badań, nie gotowe rysunki wykonawcze.
+Wykresy przedstawiają modele, nie rysunki wykonawcze.
+
+**Koncepcja do dalszych badań:** korpus 880 × 480 × 500 mm (W × D × H),
+MDF 22 mm i stały front 44 mm. Drewniany korpus ma 480 mm głębokości,
+więc do limitu **500 mm dla całego urządzenia** pozostaje tylko 20 mm
+na wszystkie elementy wystające, maskownicę, ruch membrany i tolerancje.
+Nie jest to jeszcze zatwierdzona geometria. Usztywnienia, mocowania
+wkładów, wypełnienie i tory montażowe wymagają wspólnego sprawdzenia.
+
+[Wstępna geometria i bilans netto — 054](raporty/054_rekomendowana_konfiguracja_prototypu.md)
+· [margines głębokości — 055](raporty/055_wrazliwosc_wyboru_i_margines_glebokosci.md).
 
 <details>
 <summary><strong>Ścianki, wzmocnienia i rozprowadzanie sił</strong></summary>
@@ -501,6 +503,17 @@ Scenariusze 5/10/20% nie są zatwierdzonymi progami briefu.
 <a id="regulacja"></a>
 ## Regulacja objętości: jedna skrzynia, kilka wariantów
 
+Badana skrzynia ma umożliwiać eksperymenty przy około **100, 120
+i 150 l netto** bez zmieniania stałego frontu. W przyjętym kryterium
+różnicy 0,2 dB od plateau wystarcza już około **100 l** (99 l na siatce
+co 1 l). Objętość **120 l jest punktem startowym próby**, a nie
+udowodnionym optimum. Wkłady zajmują miejsce i zmieniają przestrzenny
+rozkład ciśnienia; objętość netto musi też uwzględniać kosz,
+usztywnienia, osprzęt i ciało stałe maty tłumiącej.
+
+[Bilans litrów i wariant doświadczenia — 054](raporty/054_rekomendowana_konfiguracja_prototypu.md)
+· [korekta kryterium objętości — 055](raporty/055_wrazliwosc_wyboru_i_margines_glebokosci.md).
+
 Porównujemy szczelne wkłady wkładane przez otwór po zdjęciu głośnika
 oraz przesuwaną przegrodę. Front pozostaje stały. Ważne są masa, szczelność,
 sztywność i możliwość zmiany ustawienia po złożeniu skrzyni.
@@ -611,7 +624,7 @@ przy wyższych częstotliwościach wymagają przestrzennego modelu gazu.
 
 </details>
 
-## Nowe badania przestrzenne: moduł i główna komora
+## Powietrze w skrzyni: moduł, komora i membrana
 
 Dla małego modułu przy równomiernym nacisku korekta gazu 3D względem
 0D jest mała w zbadanych punktach 20–80 Hz. Pole z gradientem wymaga
@@ -628,6 +641,19 @@ ruchu nie jest zmianą SPL lub THD. Objętości dotyczą pustego wnętrza,
 a źródło kwadratowe jest kontrolne, bez przypisania do produktu.
 
 ![P21C0: płytkie komory i położenie źródła](wyniki/95_P21C0_plytka_komora.png)
+
+W rzeczywistym głośniku powietrze poruszane jest przez membranę
+o skończonej powierzchni. Model P21C1 porównuje kołowe tłoki
+o powierzchni odpowiadającej katalogowemu `Sd` oraz różne położenia
+źródła. Lokalnej masy akustycznej nie wolno doliczać ponownie do `Mms`.
+
+![P21C1: wpływ kołowej membrany i przesunięcia na obciążenie komory](wyniki/96_P21C1_membrana_i_przesuniecie.png)
+
+[Raport 050 — źródło w komorze](raporty/050_P21C0_plytka_komora_i_polozenie_zrodla.md)
+· [raport 051 — kołowa membrana](raporty/051_P21C1_membrana_kolowa_i_bezwladnosc.md)
+· [raport 052 — warstwy i wkłady](raporty/052_komora_warstwy_wklady_i_front.md).
+Wyniki nie zastępują sprzężonego modelu z podatnymi ścianami,
+wypełnieniem i rzeczywistym napędem.
 
 <a id="slownik"></a>
 ## Krótki słownik do wykresów
@@ -652,11 +678,16 @@ ani wartości RMS ze szczytowymi. Liczby z modeli nie są pomiarami urządzenia.
 <a id="dalsze-prace"></a>
 ## Co zostało do zrobienia
 
-P21B zamknięto w rodzinie małego modułu, a P21C0 rozpoczął główną
-komorę. Następny etap: skończona membrana, regulacja, wypełnienie i
-podatne ściany oraz uzgodnienie Mmd/Mms. Dalej: integracja filtrów i ochrony,
-sygnały bardziej zbliżone do muzyki, integracja dwóch sztuk oraz końcowy
-wybór głośnika i obudowy. Śledzimy to w [programie 30 pakietów](PROGRAM_30_BADAN.md).
+Istnieją już modele membrany kołowej, wypełnienia, wkładów,
+paneli, sygnałów wielotonowych i porównanie 27 konfiguracji.
+Trzeba je połączyć w **jeden spójny model wybranej skrzyni**:
+geometrię wręg, wkładów i wypełnienia, obrys całego urządzenia
+do 500 mm głębokości, sprzężenie akustyki i mechaniki oraz
+ochronę ruchu i temperatury z DSP.
+
+Dalsze badania obejmują dwa subwoofery z monitorami, odporność
+końcowej rekomendacji i protokół pomiarów. Zakres i otwarte bramki
+są w [programie 30 pakietów](PROGRAM_30_BADAN.md).
 
 **Końcowy raport PDF powstanie po ukończeniu badań możliwych bez urządzenia.**
 Wtedy zostanie opublikowany jako **Release 1**, z raportem w załącznikach.
@@ -669,12 +700,12 @@ opinie z forów i własne symulacje są rozdzielone. Opinie nie zastępują
 pomiaru, a wyniku innej obudowy nie przenosimy automatycznie na zamkniętą.
 
 <details>
-<summary><strong>Aktualny stan badań i warunki projektu</strong></summary>
+<summary><strong>Zakres modeli, źródeł i założeń porównawczych</strong></summary>
 
-**Historyczna migawka: 2026-10-26.** Pula obejmuje **26 produktów od 11 producentów**,
+Pula obejmuje **26 produktów od 11 producentów**,
 w tym 4 STX i **3 SB Acoustics**. Liczymy **27 konfiguracji elektrycznych**,
 ponieważ nowy dwucewkowy SB ma osobno połączenie szeregowe i równoległe.
-**Etap tej historycznej migawki: pełna mechanika 3D regulatora i przejście do pola gazu.**
+Modele regulatora i pola gazu umożliwiają ocenę przybliżeń i konstrukcji.
 [Raport 044](raporty/044_modul_3D_dwa_porty_i_wymagania_kleju.md) dodaje
 18 modeli ścian, naroży i spoin modułu, dalsze siatki do 40 248 DOF,
 ciągłe wymaganie sztywności kleju oraz 11 664 punkty napędu 27 konfiguracji.
@@ -729,6 +760,9 @@ nie zatwierdzonym docelowym głośnikiem.
 | Jak zmieniać objętość przy stałym froncie? | [042 — wkłady wypornościowe](raporty/042_regulacja_Vb_i_wklady_wypornosciowe.md), [043 — przegroda i dwie komory](raporty/043_przegroda_dwie_komory_i_materialy.md), [044 — pełny moduł 3D](raporty/044_modul_3D_dwa_porty_i_wymagania_kleju.md) | [Tory montażu modułów](wyniki/p20a_tory_montazu.json), [80 geometrii przegrody](wyniki/p20b_pozycje_i_dostep.csv), [18 brył](wyniki/p20c_modele_3D.csv), [ciągłe wymaganie kleju](wyniki/p20c_wymagany_modul_kleju.csv) |
 | Czy sklejka będzie lepsza od MDF? | [043 — pierwotne dane i ograniczenia](raporty/043_przegroda_dwie_komory_i_materialy.md) | [Dane producenta z hashem oryginałów](dane/materialy/sklejka_pierwotne_P20B.json), [masa i kierunkowa sztywność pasa](wyniki/p20b_materialy_masa_i_pas.csv) |
 | Jak uwzględniamy pokój i dwie sztuki? | [013 — dwa źródła i gabaryty](raporty/013_pokoj_i_realne_gabaryty.md), [017 — sprzężenie pola](raporty/017_promieniowanie_i_sprzezenie_pokoju.md), [019 — aktualna orientacja](raporty/019_zamiana_kanapy_i_RTV.md) | [Konwencja pokoju](dane/konfiguracje/pokoj_odsluchowy.json), scenariusze opisane w raportach |
+
+| Jak położenie membrany i przestrzenna komora zmieniają obciążenie? | [050 — geometria](raporty/050_P21C0_plytka_komora_i_polozenie_zrodla.md), [051 — membrana](raporty/051_P21C1_membrana_kolowa_i_bezwladnosc.md), [052 — wypełnienie i wkłady](raporty/052_komora_warstwy_wklady_i_front.md) | [Wykres 95](wyniki/95_P21C0_plytka_komora.png), [wykres 96](wyniki/96_P21C1_membrana_i_przesuniecie.png), [wyniki P21C3](wyniki/p21c3_wyniki.json) |
+| Dlaczego faworytem jest RSS390HF-4 i kiedy inny przetwornik wygrywa? | [053 — porównanie](raporty/053_porownanie_i_odpornosc_rekomendacji.md), [054 — konstrukcja](raporty/054_rekomendowana_konfiguracja_prototypu.md), [055 — wrażliwość](raporty/055_wrazliwosc_wyboru_i_margines_glebokosci.md) | [Wykres 97](wyniki/97_P29_wybor_i_front.png), [podsumowanie P29C](wyniki/p29c_podsumowanie.json) |
 
 Pełny zakres i otwarte bramki są w [programie 30 pakietów](PROGRAM_30_BADAN.md).
 Podstawy fizyczne wyjaśnia [baza wiedzy](baza_wiedzy/README.md), a ślad pracy
