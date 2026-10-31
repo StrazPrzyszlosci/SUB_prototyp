@@ -1,0 +1,190 @@
+{
+  "study": "P33B",
+  "date": "2026-10-31",
+  "status": "Numerical shell FEM, NOT validated construction/CNC",
+  "source": "skrypty/p33b_powlokowy_fem.py",
+  "design": "Q4 Reissner-Mindlin, 5 local DOF, six global DOF with drilling stabilization, 2x2 membrane/bending and 1 point shear",
+  "sample_count": 15,
+  "inputs": {
+    "box_mm": [
+      1020,
+      425,
+      500
+    ],
+    "front_mm": 44,
+    "other_mm": 22,
+    "front_hole_mm": 355.8,
+    "E_GPa": 2.1,
+    "rho": 730,
+    "Poisson": 0.3,
+    "pressure_Pa_peak": 1000,
+    "foot_stiff_N_m": 1500000,
+    "driver_mass_kg": 15,
+    "insert_mass_kg": 8
+  },
+  "mesh_joint_cases": [
+    {
+      "target_mesh_mm": 150,
+      "trans_joint_N_m2": 3000000,
+      "rot_joint_N": 300,
+      "DOF": 1212,
+      "first_mode_hz": 24.3032,
+      "max_stress_test_displacement_um": 185.954,
+      "approx_hole_area_m2": 0.0994
+    },
+    {
+      "target_mesh_mm": 150,
+      "trans_joint_N_m2": 30000000,
+      "rot_joint_N": 3000,
+      "DOF": 1212,
+      "first_mode_hz": 30.3446,
+      "max_stress_test_displacement_um": 100.021,
+      "approx_hole_area_m2": 0.0994
+    },
+    {
+      "target_mesh_mm": 150,
+      "trans_joint_N_m2": 300000000,
+      "rot_joint_N": 30000,
+      "DOF": 1212,
+      "first_mode_hz": 31.8573,
+      "max_stress_test_displacement_um": 60.02,
+      "approx_hole_area_m2": 0.0994
+    },
+    {
+      "target_mesh_mm": 110,
+      "trans_joint_N_m2": 3000000,
+      "rot_joint_N": 300,
+      "DOF": 1812,
+      "first_mode_hz": 25.7686,
+      "max_stress_test_displacement_um": 162.161,
+      "approx_hole_area_m2": 0.099471
+    },
+    {
+      "target_mesh_mm": 110,
+      "trans_joint_N_m2": 30000000,
+      "rot_joint_N": 3000,
+      "DOF": 1812,
+      "first_mode_hz": 32.8699,
+      "max_stress_test_displacement_um": 83.279,
+      "approx_hole_area_m2": 0.099471
+    },
+    {
+      "target_mesh_mm": 110,
+      "trans_joint_N_m2": 300000000,
+      "rot_joint_N": 30000,
+      "DOF": 1812,
+      "first_mode_hz": 34.8065,
+      "max_stress_test_displacement_um": 49.131,
+      "approx_hole_area_m2": 0.099471
+    },
+    {
+      "target_mesh_mm": 85,
+      "trans_joint_N_m2": 3000000,
+      "rot_joint_N": 300,
+      "DOF": 2826,
+      "first_mode_hz": 25.4838,
+      "max_stress_test_displacement_um": 162.6,
+      "approx_hole_area_m2": 0.0994
+    },
+    {
+      "target_mesh_mm": 85,
+      "trans_joint_N_m2": 30000000,
+      "rot_joint_N": 3000,
+      "DOF": 2826,
+      "first_mode_hz": 33.652,
+      "max_stress_test_displacement_um": 86.339,
+      "approx_hole_area_m2": 0.0994
+    },
+    {
+      "target_mesh_mm": 85,
+      "trans_joint_N_m2": 300000000,
+      "rot_joint_N": 30000,
+      "DOF": 2826,
+      "first_mode_hz": 35.8596,
+      "max_stress_test_displacement_um": 51.821,
+      "approx_hole_area_m2": 0.0994
+    }
+  ],
+  "additional_mass_bracing_cases": [
+    {
+      "kind": "driver",
+      "driver_mass_kg": 0,
+      "insert_mass_kg": 8,
+      "braces": true,
+      "f1": 37.7222,
+      "um": 83.279
+    },
+    {
+      "kind": "driver",
+      "driver_mass_kg": 12,
+      "insert_mass_kg": 8,
+      "braces": true,
+      "f1": 33.789,
+      "um": 83.279
+    },
+    {
+      "kind": "driver",
+      "driver_mass_kg": 18,
+      "insert_mass_kg": 8,
+      "braces": true,
+      "f1": 31.99,
+      "um": 83.279
+    },
+    {
+      "kind": "insert",
+      "driver_mass_kg": 15,
+      "insert_mass_kg": 0,
+      "braces": true,
+      "f1": 34.7,
+      "um": 83.279
+    },
+    {
+      "kind": "insert",
+      "driver_mass_kg": 15,
+      "insert_mass_kg": 14,
+      "braces": true,
+      "f1": 31.52,
+      "um": 83.279
+    },
+    {
+      "kind": "brace",
+      "driver_mass_kg": 15,
+      "insert_mass_kg": 8,
+      "braces": false,
+      "f1": 22.77,
+      "um": 221.96
+    }
+  ],
+  "independent_shell_plate_benchmark": {
+    "rect_panel_mm": [
+      976,
+      359,
+      22
+    ],
+    "analytical_Kirchhoff_f1_Hz": 156.242859821,
+    "model_8x4_Hz": 153.648829,
+    "model_16x8_Hz": 153.967802,
+    "model_32x12_Hz": 154.004139,
+    "relative_difference_last_percent": -1.4328467,
+    "interpretation": "Mindlin shear and discretization differ from Kirchhoff plate; this is only one component check."
+  },
+  "comparison_to_P33A": {
+    "P33A_model": "3DOF displacement-only energy grillage",
+    "P33B_model": "6DOF Q4 Mindlin",
+    "mesh_rough_mm": "P33A 105 vs P33B 110",
+    "joint_parameters_not_equivalent": "not directly comparable",
+    "P33A_max_um": 330.679,
+    "P33B_max_um": 83.279,
+    "difference_factor": 3.97,
+    "safe_interpretation": "Strong dependence on model class and parameterized joints; no physical validation."
+  },
+  "not_validated": [
+    "full geometry ring U and inserts",
+    "true front flange holes and driver dynamic inertia",
+    "joint real elastic-rotational stiffness and strength",
+    "curved conforming front mesh and hourglass checks",
+    "motor reaction and spatial gas pressure P21G",
+    "MDF orthotropy creep moisture and measured damping",
+    "physical modes radiation THD and power rating"
+  ]
+}
