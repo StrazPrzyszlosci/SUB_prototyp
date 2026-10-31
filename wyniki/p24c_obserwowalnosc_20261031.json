@@ -1,0 +1,107 @@
+{
+  "study": "P24C preliminary numerical observability, not an equipment measurement",
+  "base_commit": "52ebf1de02f2211cf7c9238c65ec8ecd41d9dd67",
+  "driver": "RSS390HF-4 C02 nominal as used in P24B",
+  "volume_l": 80,
+  "assumptions": {
+    "delta_T_true_K": 80,
+    "noise_rms_ratio_fraction": 0.005,
+    "noise_phase_std_deg": 0.2,
+    "cold_and_hot_noise": "independent",
+    "samples_per_frequency": 10000,
+    "rng_seed": 20261031,
+    "model": "P24B linear small-signal fixed BL Cms Le and simple motional impedance",
+    "gain_drift_hot_vs_cold_fraction": 0.01,
+    "BL_drop_hot_vs_cold_fraction": [
+      0.01,
+      0.03
+    ],
+    "external_resistance_drift_ohm": 0.1,
+    "error_terms": "hypothetical not instrument specifications or measured driver drifts"
+  },
+  "re_ohm_per_K": 0.011790000000000002,
+  "state_matrix_A": [
+    [
+      -0.041666666666666664,
+      0.041666666666666664
+    ],
+    [
+      0.0016666666666666668,
+      -0.0023333333333333335
+    ]
+  ],
+  "observability_determinant": 0.041666666666666664,
+  "rows": [
+    {
+      "f_hz": 20,
+      "z_cold_ohm_abs": 4.1164,
+      "z_cold_ohm_real": 3.3064,
+      "z_hot80_ohm_real": 4.2496,
+      "ideal_delta_K": 80,
+      "rmse_K_noise_assumed": 2.54,
+      "p95_abs_error_K_noise_assumed": 4.95,
+      "gain_drift_1pct_bias_K": 3.6,
+      "bl_drop_1pct_bias_K": -0.52,
+      "bl_drop_3pct_bias_K": -1.54,
+      "external_resistance_drift_0p1ohm_bias_K": 8.48
+    },
+    {
+      "f_hz": 40,
+      "z_cold_ohm_abs": 16.2167,
+      "z_cold_ohm_real": 13.6969,
+      "z_hot80_ohm_real": 14.6401,
+      "ideal_delta_K": 80,
+      "rmse_K_noise_assumed": 9.13,
+      "p95_abs_error_K_noise_assumed": 17.83,
+      "gain_drift_1pct_bias_K": 12.42,
+      "bl_drop_1pct_bias_K": -18.05,
+      "bl_drop_3pct_bias_K": -53.62,
+      "external_resistance_drift_0p1ohm_bias_K": 8.48
+    },
+    {
+      "f_hz": 80,
+      "z_cold_ohm_abs": 3.4778,
+      "z_cold_ohm_real": 3.1903,
+      "z_hot80_ohm_real": 4.1335,
+      "ideal_delta_K": 80,
+      "rmse_K_noise_assumed": 2.3,
+      "p95_abs_error_K_noise_assumed": 4.5,
+      "gain_drift_1pct_bias_K": 3.51,
+      "bl_drop_1pct_bias_K": -0.32,
+      "bl_drop_3pct_bias_K": -0.95,
+      "external_resistance_drift_0p1ohm_bias_K": 8.48
+    },
+    {
+      "f_hz": 150,
+      "z_cold_ohm_abs": 3.0383,
+      "z_cold_ohm_real": 3.0381,
+      "z_hot80_ohm_real": 3.9813,
+      "ideal_delta_K": 80,
+      "rmse_K_noise_assumed": 2.11,
+      "p95_abs_error_K_noise_assumed": 4.12,
+      "gain_drift_1pct_bias_K": 3.38,
+      "bl_drop_1pct_bias_K": -0.06,
+      "bl_drop_3pct_bias_K": -0.19,
+      "external_resistance_drift_0p1ohm_bias_K": 8.48
+    },
+    {
+      "f_hz": 300,
+      "z_cold_ohm_abs": 3.2928,
+      "z_cold_ohm_real": 3.0087,
+      "z_hot80_ohm_real": 3.9519,
+      "ideal_delta_K": 80,
+      "rmse_K_noise_assumed": 2.19,
+      "p95_abs_error_K_noise_assumed": 4.28,
+      "gain_drift_1pct_bias_K": 3.35,
+      "bl_drop_1pct_bias_K": -0.01,
+      "bl_drop_3pct_bias_K": -0.04,
+      "external_resistance_drift_0p1ohm_bias_K": 8.48
+    }
+  ],
+  "interpretation": [
+    "With known Re0 and nonzero alpha, Tc is structurally identifiable from calibrated terminal impedance under fixed mechanical parameters.",
+    "The 2-state coil/motor model is structurally observable from Tc(t) when Rcm and Cc are finite, but structural observability does not calibrate its Rth Cth or guarantee useful noise tolerance.",
+    "Coherent U and I at the speaker terminals are required; a line-level DSP output meter is not a terminal-current sensor.",
+    "These calculations do not validate operation of the proposed protection on miniDSP and do not authorize final T or X limits."
+  ]
+}
