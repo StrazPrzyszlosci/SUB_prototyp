@@ -1370,3 +1370,8 @@ otwarte. Wyniki: `wyniki/p24b_kampania_729.csv`,
 `wyniki/p24b_podsumowanie.json`, wykres 108,
 `raporty/067_P24B_czasowa_termika_i_dwie_ochrony.md`,
 skrypt Python i konfiguracja P24B.
+
+
+## Zasada redakcyjna — nazewnictwo badań
+
+W README, raportach i nowych plikach opisuj aktualizacje zakresu jako **„rozszerzenie warunków badawczych”** lub „aktualizacja założeń projektu badawczego”. Nie przedstawiaj prac jako zlecenia handlowego. Stosuj terminy „uczestnik projektu”, „użytkownik”, „odbiorca” wyłącznie w uzasadnionym kontekście. Zachowaj archiwa, identyfikatory i stare ścieżki dla odtwarzalności.
