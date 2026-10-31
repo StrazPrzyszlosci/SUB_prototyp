@@ -11,7 +11,7 @@ nie jest kandydatem na konstrukcję końcową.*
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 67 raportów · Python**
+**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 68 raportów · Python**
 
 Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie. Aktualna pula obejmuje także dwa przypadki wstrzymane w nowym audycie źródeł (EMS i SUPRAVOX), a ponadto nie każda konfiguracja ma jeszcze pełny komplet badań nieliniowych i termicznych.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
@@ -233,6 +233,18 @@ zastępuje temperatury cewki.
 · [729 trajektorii CSV](wyniki/p24b_kampania_729.csv)
 · [skrypt odtwarzania](skrypty/p24b_czasowa_termika_cewki.py)
 · [założenia cieplne](dane/konfiguracje/p24b_czasowa_termika_20261031.json).
+
+**P24C: obserwowalność temperatury z U/I i audyt miniDSP.** Dla modelu C02
+wykonano 50 000 prób Monte Carlo: błąd estymacji zależy silnie od
+częstotliwości, błędów fazy i zmian BL. Przy 40 Hz w modelu 80 l
+hipotetyczny spadek BL o 3% daje błąd oceny przyrostu T o −53,62 K;
+nie jest to pomiar. Instrukcje Flex Eight/HTx potwierdzają zwrotnice,
+PEQ i kompresor poziomu sygnału, **ale nie potwierdzają** wbudowanego
+pomiaru U/I na zaciskach ani regulacji temperatury cewki.
+
+[Raport 068 — P24C: obserwowalność i wykonalność ochrony](raporty/068_P24C_obserwowalnosc_temperatury_i_wykonalnosc_DSP.md)
+· [wyniki 50 000 prób](wyniki/p24c_obserwowalnosc_20261031.json)
+· [skrypt](skrypty/p24c_obserwowalnosc_ui.py).
 
 **Nie wyznaczono temperatury granicznej prawdziwego głośnika.**
 Przyjęte parametry cieplne i kontur przyrostu +80 K to wyłącznie
