@@ -1256,3 +1256,44 @@ ani że odtworzono już niezależnie ten szeroki eksperyment Pythonem. Ceny peł
 warunki bezpieczeństwa sieci 230 V i kompatybilność interfejsu
 modelowego P25E z miniDSP pozostają otwarte.
 Pełna analiza: `raporty/BRIEF_2026-10-31_wzmacniacz_DSP_i_9_marek.md`.
+
+
+## P22C 2026-10-31 — korekta kryterium Xpeak i nowy port wzmacniacza
+
+W poprzednim 180-punktowym przebiegu C02 oraz 274725-punktowym
+przesiewie 34 produktów / 35 konfiguracji porównano Xrms z
+katalogowym *jednostronnym Xmax*. Błąd zawyżał limity napięcia
+mechanicznego `sqrt(2)` i niektóre graniczne SPL o maks. 3,0103 dB.
+**Zastąpiono oba pliki obliczeń i poprawiono skrypt przesiewowy**:
+`Xpk = sqrt(2)*abs(vrms)/omega`. Nie przenosić dawnych
+wartości 44,72V/20Hz dla 75l jako granicy bezpiecznej.
+Nowe wyniki z briefu: 75l/20Hz U_Xpk=33,8088Vrms;
+80l/20Hz=32,5963Vrms;120l/20Hz=27,1510Vrms (C02, 1V
+sinus, brak impedancji źródła).
+
+P22C: **99900** małosygnałowych punktów:
+5 modeli C02/C11/C06/PHL/PURIFI × 5 Vb × 111 częstotliwości ×
+4 gotowe końcówki × 3 wyjścia DSP × 3 hipotetyczne
+budżety Pcu=100/250/500W. Uwzględniono Rs wzmacniacza,
+Z_load(f), prąd szczytowy, referencję P4@1kHz, gain DSP 2/4Vrms,
+Xpeak i I²Re. Wykonano niezależną replikację Pythona 99900
+punktów; reszty bilansu mocy do 8e-16, kontrola Xpk/Ipk/Pcu.
+Dane: `wyniki/p22c_napiecie_prad_wychylenie_analiza.json`,
+`wyniki/p22c_swiadkowie_36.csv`, wykres 107.
+Kod kampanii i niezależnego testu: `skrypty/p22c_*`.
+Raport: `raporty/P22C_2026-10-31_wzmacniacze_impedancja_DSP_Xpeak.md`.
+
+Dla C02/80l/40Hz w scenariuszu cewki Pcu≤250W i NC500MP,
+wejście Flex Eight RCA2V daje 112,655 dB modelowej półprzestrzeni,
+HTx TRS4V 113,899 dB (+1,244 dB). Przy20Hz oba Xpk=14mm
+i 101,857 dB, bez zysku. Nie ma w tych danych THD, IMD,
+wyniku dwóch subwooferów w pokoju ani pomiaru kompresji.
+Moc NC500MP 500W/4ohm (1kHz 1%THD) jest ograniczona
+czasowo: 100W ciągłej przy25°C wg producenta;
+NCx252MP/NC252MP mają analogicznie 250W chwilowe i
+50W ciągłej/kanał. Bez kalibracji ograniczeń czasowych
+nie dobierać na tej podstawie finalnej wartości limitera.
+Bramki nadal otwarte: THD/IMD, BL(x)/Cms(x)/Le(x)/Re(T),
+pomiar Z(f), kompatybilność próbkowania i kompresora miniDSP,
+warunki zasilania230V/obudowy ochronnej, kompletne koszty,
+faktyczne Vb i P21G/P21H mechanika gaz/panele.
