@@ -70,6 +70,14 @@ kartę producenta.**
 Oryginalnych PDF producentów bez potwierdzonych praw do redystrybucji
 nie kopiujemy do repo; zapisujemy weryfikowalne parametry i odnośniki.
 
+**Przeprowadzono 274 725 nowych obliczeń przesiewowych** dla
+35 konfiguracji elektrycznych (34 unikalne produkty), z których
+33 miały komplet spójnych danych. EMS i SUPRAVOX pozostają
+zablokowane z wyjaśnionych w audycie przyczyn.
+[Agregaty i świadkowie dla całej puli](wyniki/brief20261031_pelna_pula_35_wstepna_analiza.json).
+To liniowa wstępna analiza, nie pełne badania nieliniowości, THD,
+termiki i mechaniki gotowej skrzyni dla wszystkich 34 produktów.
+
 
 
 Badamy modele firm BMS, Dayton Audio, Eminence, FaitalPRO, LaVoce,
