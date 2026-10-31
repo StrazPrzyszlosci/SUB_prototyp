@@ -107,3 +107,6 @@ bieżący zakres sprawdzaj w [programie 30 pakietów](../PROGRAM_30_BADAN.md).
 
 - [Raport 094 — P37A: globalne śledzenie 18 postaci drgań MAC na sześciu ścianach](094_P37A_globalny_MAC_18_modow.md).
 - [Raport 095 — P37B: wrażliwość E i gęstości MDF oraz sztywności spoin](095_P37B_czulosc_MDF_spoiny.md).
+
+- [Raport 096 — P38A: front Dayton RSS390HF-4, rozstaw ośmiu otworów i ryzyko mocowania](096_P38A_front_Dayton_otwory_i_mocowania.md).
+- [Raport 097 — P38B: 15 par FV po kontroli układu współrzędnych źródła](097_P38B_audyt_wspolrzednych_FV.md).
