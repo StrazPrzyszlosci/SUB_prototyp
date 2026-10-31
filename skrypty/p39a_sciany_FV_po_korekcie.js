@@ -245,15 +245,30 @@ function main(){
 
 function runP35(){
  const geom=geometry(cfg),rows=[];
- for(const state of ["100","120","150"])for(const f of [20,40,60,80])for(const h of [80,55,36]){
-  const p=simulate(cfg,geom,state,h,f);
-  rows.push({state,f,h,volume_l:p.volume_l,field_rms_pct:p.rms_nonuniformity_pct,boundary:p.boundary});
+ const baseline=JSON.parse(fs.readFileSync(path.join(__dirname,"..","wyniki","p35a_sily_sciany_36_20261031.json"),"utf8"));
+ for(const state of ["100","120","150"])for(const frequency_Hz of [20,40,60,80])for(const mesh_mm of [80,55,36]){
+  const p=simulate(cfg,geom,state,mesh_mm,frequency_Hz);
+  const old=baseline.rows.find(x=>x.state===state && x.h===mesh_mm && x.f===frequency_Hz);
+  if(!old)throw Error("Historical P35A baseline missing");
+  rows.push({state,frequency_Hz,mesh_mm,volume_l:p.volume_l,rms_field_pct:p.rms_nonuniformity_pct,
+   source_ratio:p.source_pressure_relative_to_mean,boundary:p.boundary,
+   baseline_volume_l:old.volume_l,baseline_rms_field_pct:old.field_rms_pct,
+   deltas:{volume_l:p.volume_l-old.volume_l,rms_field_pp:p.rms_nonuniformity_pct-old.field_rms_pct,
+    faces:Object.fromEntries(Object.keys(p.boundary).map(face=>[face,p.boundary[face].mean_pressure_ratio-old.boundary[face].mean_pressure_ratio]))}});
  }
- if(rows.length!==36)throw Error("Wrong number of outputs");
- const x={study:"P39A",date:"2026-11-01",status:"CORRECTED external to internal coordinates rigid FV faces, not FSI",cases:rows.length,assumptions:cfg,rows,warnings:["No actual pressure magnitude: face force is Newton per Pascal of spatial mean pressure.","Face area weighting uses air-volume fraction, no conformal integration of sphere/source flange; forces on internal modules and braces omitted.","No damping/porous 50mm mat, no structural wall displacement or motion feedback, rigid Neumann boundaries.","P33B failed P33C hourglass audit and cannot be used for validated load/deflection predictions.","A numerical convergence trend and grid model do not certify true material parameters or manufacturability."]};
+ if(rows.length!==36)throw Error("Wrong number of corrected cases");
+ const out={study:"P39A",date:"2026-11-01",models:36,
+  assumptions:{local_center_xz_mm:[209,228],exterior_xz_mm:[231,250],wall_mm:22,air_speed_ms:343,
+   mesh_mm:[80,55,36],volume_targets_l:[100,120,150],f_Hz:[20,40,60,80]},
+  rows,warnings:["RIGID-wall FV with approximate AABB braces and basket cylinder, no mat absorption or true structure-acoustic coupling.",
+   "For comparison the historical P35A results retain external x231,z250 wrongly used as interior local coordinates.",
+   "Forces are in Newton per Pascal cavity average only, not real driver SPL or physically measured wall load.",
+   "Field masks use heuristic cut cell openness, not conformal CFD geometry."]};
  const name=path.join(__dirname,"..","wyniki","p39a_pola_na_scianach_36_20261101.json");
- fs.mkdirSync(path.dirname(name),{recursive:true});fs.writeFileSync(name,JSON.stringify(x,null,2)+"\n");
- console.log(JSON.stringify({cases:rows.length,at80:rows.filter(x=>x.f===80&&x.h===36)},null,2));
+ fs.mkdirSync(path.dirname(name),{recursive:true});fs.writeFileSync(name,JSON.stringify(out,null,2)+"\\n");
+ const z=rows.find(x=>x.state==="120"&&x.frequency_Hz===80&&x.mesh_mm===36);
+ if(!z||Math.abs(z.boundary.right.mean_pressure_ratio-1.383758)>0.0001)throw Error("P39A face regression");
+ console.log("P39A CORRECTED 36; 120L 80Hz right wall ratio",z.boundary.right.mean_pressure_ratio);
 }
 if(require.main===module)runP35();
 module.exports={cfg,geometry,simulate,runP35};
