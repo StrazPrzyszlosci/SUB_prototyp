@@ -90,3 +90,6 @@ bieżący zakres sprawdzaj w [programie 30 pakietów](../PROGRAM_30_BADAN.md).
 - [Raport 083 — P33A: pierwszy globalny model energetyczny obudowy z frontem, wręgami i połączeniami](083_P33A_globalna_siatka_obudowy_i_spoin.md).
 
 - [Raport 084 — P33B: zintegrowany MES powłokowy Q4, 15 symulacji i kontrola płyty](084_P33B_globalny_MES_powlokowy_Q4.md).
+
+- [Raport 085 — P34A: 46 symulacji przestrzennego ciśnienia przy 100/120/150 l](085_P34A_przestrzenne_cisnienie_100_120_150.md).
+- [Raport 086 — P34B: 324 scenariusze obciążenia wkładów i ich blokad](086_P34B_obciazenia_i_blokowanie_wkladow.md).
