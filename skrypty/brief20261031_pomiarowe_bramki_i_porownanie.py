@@ -20,9 +20,16 @@ def load():
     brief=json.loads(BRIEF.read_text());old=json.loads(OLD.read_text())['drivers']
     pool=[dict(model=x['model']['name'],brand='original_26',verification='existing_research_collection',
                t=x['model']) for x in old]
-    pool.append(dict(model='Dayton RSS390HF-4 (brief)',brand='Dayton Audio',
-        verification='client_brief_need_independent_maker_check',
-        t=brief['reference_driver']['parameters_from_client_brief']))
+    # The original 26 already include C02 RSS390HF-4. Never double count.
+    dayton=[x for x in pool if 'RSS390HF-4' in x['model']]
+    if not dayton:
+        pool.append(dict(model='Dayton RSS390HF-4 (brief)',brand='Dayton Audio',
+            verification='client_brief_need_independent_maker_check',
+            t=brief['reference_driver']['parameters_from_client_brief']))
+    else:
+        for x in dayton:
+            x['customer_brief_parameters_for_independent_check']=(
+                brief['reference_driver']['parameters_from_client_brief'])
     for z in known:
         pool.append(dict(model=z['model'],brand=z['brand'],
            verification=z['documentation_status'],t=z['spec'],url=z['official_product_url']))
