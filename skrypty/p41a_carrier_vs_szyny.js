@@ -203,13 +203,14 @@ function main(){
  if(anchors.some(a=>!a.passed_2d_envelope))throw Error("P41A anchor collides in 2D");
  const p=results.find(x=>x.concept==='A_carrier'&&x.mass_kg===15&&x.accel_g===5&&x.eccentricity_mm===120&&x.direction==='x'&&x.k_base_N_per_mm===300&&x.special_factor===3&&!x.omit_one_anchor);
  if(!p||p.max_resultant_N<100||p.max_resultant_N>350)throw Error("P41A reference regression");
- const out={study:'P41A',date:'2026-11-01',status:'Rigid plate on hypothetical elastic anchors; NOT real strength/contact FEM',
+ const out={study:'P41A',date:'2026-11-01',status:'RIGID frame and bilateral linear anchor springs, NOT material strength or contact FEM',
  cases:results.length,inputs:cfg,anchor_geometry:anchors,
  results_columns:['concept','mass_kg','accel_g','eccentricity_mm','direction','k_base_N_per_mm','special_factor','omit_one_anchor','max_resultant_N','max_tensile_normal_N','max_compressive_normal_N','max_abs_normal_anchor_displacement_mm','theta_x_mrad','theta_z_mrad'],
  results:results.map(x=>[x.concept==='A_carrier'?'A':'B',x.mass_kg,x.accel_g,x.eccentricity_mm,x.direction,x.k_base_N_per_mm,x.special_factor,x.omit_one_anchor?1:0,x.max_resultant_N,x.max_tensile_normal_N,x.max_compressive_normal_N,x.max_abs_normal_anchor_displacement_mm,x.theta_x_mrad,x.theta_z_mrad]),
- warnings:["Anchor points are candidate positions only; no CAD 3D proves screws, frame, basket, clamp heads or module path can coexist.","The carrier and rails are modeled as INFINITELY RIGID, joined to bilateral linear springs; real beam/carrier bending, contact, tension-only constraints and MDF delamination not included.","Spring k0=100/300/1000 N/mm and multipliers 0.5/1/3/10 are uncertainty SCENARIOS, not measured MDF/brace properties.","Negative normal reactions are assumed possible; real preloaded flange/gasket may open or re-distribute load.","Acceleration 1/5/10g is hypothetical research exploration, not approved transport/safety specification.","No strength, SF, screw size, breakage or CNC release can be derived."]};
+ reference_detailed_reactions:results.filter(x=>x.mass_kg===15&&x.accel_g===5&&x.eccentricity_mm===120&&x.k_base_N_per_mm===300&&x.special_factor===3&&!x.omit_one_anchor),
+ warnings:["Anchor locations are 2D only; unknown real basket, bolts, 3D tools and 20 module paths.","Assumed rigid load distributor, stiffness of MDF and brace never measured; real contact/friction/opening unmodeled.","No selected material, load requirement, safety factor, fatigue or CNC approval."]};
  const file=path.join(__dirname,'..','wyniki','p41a_carrier_vs_szyny_2592_20261101.json');
- fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,JSON.stringify(out,null,2)+'\n');
+ fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,JSON.stringify(out)+'\n');
  console.log(JSON.stringify({cases:results.length,anchor_positions:anchors.length,base:p},null,2));
 }
 if(require.main===module)main();module.exports={cfg,linearSolve3,model,geometry,main};
