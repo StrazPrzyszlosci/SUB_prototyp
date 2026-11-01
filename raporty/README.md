@@ -121,3 +121,7 @@ bieżący zakres sprawdzaj w [programie 30 pakietów](../PROGRAM_30_BADAN.md).
 - [Raport 103 — P41A: 2592 scenariusze równowagi A (carrier) kontra B (szyny)](103_P41A_carrier_kontra_szyny_2592.md).
 - [Raport 104 — P41B: 54 obliczenia belek i 54 przypadki podatnego B](104_P41B_podatnosc_belek_108.md).
 - [Raport 105 — P41C: porównawcze bryły A/B OpenSCAD, tylko R&D](105_P41C_koncepcje_3D_A_B.md).
+
+- [Raport 106 — P42A: 1458 modeli z czterema odległymi podporami, kontrola uzupełniająca P41](106_P42A_podpory_1458.md).
+- [Raport 107 — P42B: 162 testy uproszczonych obwiedni 3D nośników i wkładów](107_P42B_obwiednie_3D_dwoch_wariantow.md).
+- [Raport 108 — P42C: 48 kontroli prostych łączników względem wycięcia kosza](108_P42C_laczniki_i_koncepcje_3D.md).

@@ -11,7 +11,7 @@ nie jest kandydatem na konstrukcję końcową.*
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 105 raportów · Python/JavaScript**
+**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 108 raportów · Python/JavaScript**
 
 Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie. Aktualna pula obejmuje także dwa przypadki wstrzymane w nowym audycie źródeł (EMS i SUPRAVOX), a ponadto nie każda konfiguracja ma jeszcze pełny komplet badań nieliniowych i termicznych.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
@@ -82,6 +82,26 @@ Skróty wyjaśniamy w [krótkim słowniku](#slownik).
 *W modelu belki długości 380mm pod siłą środkową 200N, hipotetyczny profil 25×4mm ugina się o **0,627mm** przy E=70GPa, a o **0,219mm** przy E=200GPa. Po połączeniu tej podatności z modelem B jego obliczeniowe ugięcie rośnie: **0,325→0,383mm** w wybranym wariancie. Nie dowodzi to bezpieczeństwa ani możliwości wykonania. [Raport 104](raporty/104_P41B_podatnosc_belek_108.md).*
 
 **[Obie koncepcje w edytowalnym modelu OpenSCAD](dokumentacja/P41C_porownanie_nosne_A_B_NIE_CNC.scad)** — ustaw parametr `concept` na `"A"` lub `"B"`. Oba modele mają niezweryfikowane połączenia i zastępczą bryłę kosza. [Raport 105](raporty/105_P41C_koncepcje_3D_A_B.md).
+
+## P42 — audyt uzupełniający do badań P41: cztery podpory i trasy łączników
+
+### Jak dwa nowe układy czterech punktów przenoszą obciążenia?
+
+![P42A: obciążenia modelowej ramy i dwóch belek](wyniki/p42a_reakcje_dwa_uklady.svg)
+
+*W osobnym eksperymencie zbadano 1458 układów **czterech odległych podpór** w szerokiej ramie A lub dwóch belkach B, plus ośmiopunktowy model referencyjny. Przy 13,61kg, 5g i umownym `k=1000 N/mm` rama A korzystniej od B przenosi moment od poziomej siły. **To inna geometria i liczba podpór niż wcześniej w P41 (osiem punktów)**, dlatego wyniki są uzupełnieniem, a nie zamiennikiem P41 ani pomiarem wytrzymałości. [Raport 106](raporty/106_P42A_podpory_1458.md).*
+
+### Czy podpory mieszczą się w uproszczonych obwiedniach 3D?
+
+![P42B: testy AABB dla dwóch układów](wyniki/p42b_obwiednie_porownanie.svg)
+
+*162 próby pokazały brak kolizji niektórych hipotetycznych obwiedni ramy A i sześć odrzuconych przypadków belek B przy **umownym, przesadnie szerokim promieniu silnika 205mm**. Nie sprawdzono jednak całego kosza ani samych połączeń pomiędzy śrubami i podporami. [Raport 107](raporty/107_P42B_obwiednie_3D_dwoch_wariantow.md).*
+
+### Czy najkrótsze łączniki nie przechodzą przez wycięcie?
+
+![P42C: rzut prostych połączeń z ośmiu punktów kołnierza](wyniki/p42c_8_lacznikow_szkic.svg)
+
+*48 testów rzutu wykazało, że dwa proste połączenia do belek B przecinają obszar otworu Ø355,8, a w ramie A jeden łącznik o szerokości 10mm ma podobny problem. To **kontrola 2D**, nie gotowy projekt mocowania. [Raport 108](raporty/108_P42C_laczniki_i_koncepcje_3D.md) · [Model OpenSCAD](dokumentacja/P42D_dwie_sciezki_REFERENCYJNE_NIE_CNC.scad).*
 
 ## P40 — czy osiem śrub utrzyma głośnik i czy pierścień daje miejsce na montaż?
 
@@ -1624,3 +1644,12 @@ Po badaniu P34A idealnych prostopadłościanów (raport 086) wykonano **P34B, ra
 [Raport 103](raporty/103_P41A_carrier_kontra_szyny_2592.md) · [2592 scenariusze](wyniki/p41a_carrier_vs_szyny_2592_20261101.json) · [Raport 104](raporty/104_P41B_podatnosc_belek_108.md) · [108 przypadków](wyniki/p41b_podatnosc_belek_108_20261101.json) · [Raport 105](raporty/105_P41C_koncepcje_3D_A_B.md) · [OpenSCAD A/B](dokumentacja/P41C_porownanie_nosne_A_B_NIE_CNC.scad).
 
 **Bramka CNC: nadal zamknięta.** Konieczne są wymiary prawdziwego kosza, 3D śrub/narzędzi, kontaktowy model mechaniczy ze zweryfikowaną materiałowo sztywnością i testy MDF/spoin; bez tych danych żaden z A/B nie ma udowodnionej wytrzymałości.
+
+
+## P42 — kontrola niezależna od P41 (01.11.2026)
+
+Repozytorium ma już badania P41A–C dotyczące ośmiu kotew ramy i szyn. **P42 nie zastępuje ich wyników.** Zmieniono rozmieszczenie i liczbę podpór, żeby sprawdzić, jak bardzo geometria i ścieżka od kołnierza do podpór wpływa na wnioski. Obliczenia P42A (**1458** przypadków) pokazują silny wpływ szerokości rozstawu w osi X. P42B (**162** obwiednie 3D z bryłami P34B) potwierdza tylko zgodność wybranych uproszczonych kształtów. P42C (**48** łączników w rzucie) identyfikuje konflikty prostej drogi obciążenia z otworem głośnika.
+
+[Raport 106](raporty/106_P42A_podpory_1458.md) · [Raport 107](raporty/107_P42B_obwiednie_3D_dwoch_wariantow.md) · [Raport 108](raporty/108_P42C_laczniki_i_koncepcje_3D.md) · [Model 3D](dokumentacja/P42D_dwie_sciezki_REFERENCYJNE_NIE_CNC.scad) · [1458 wyników](wyniki/p42a_podpory_1458_20261101.json) · [162 obwiednie](wyniki/p42b_obwiednie_162_20261101.json) · [48 łączników](wyniki/p42c_laczniki_48_20261101.json).
+
+**Nie można jeszcze wybrać fizycznie bezpiecznego rozwiązania A/B ani wydawać CNC**: nieznane są rzeczywiste bryły kosza, przekroje, materiały i nośność łączników. Model sprężynowy nie jest sprawdzonym MES kontaktowym, a modele P41 i P42 stosują różne rozmieszczenia punktów.
