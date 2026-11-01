@@ -1,0 +1,13 @@
+name: README - integralnosc tresci i ilustracji
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  readme-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sprawdz odsylacze, PNG, SVG i zakres
+        run: python3 skrypty/sprawdz_readme.py

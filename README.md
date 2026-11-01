@@ -1,10 +1,8 @@
 # SUB_prototyp — subwoofer DIY od teorii do prototypu
 
-![SUB_prototyp: badania subwoofera DIY, źródła, obliczenia i symulacje](grafika/README_baner.png)
+![SUB_prototyp: badania subwoofera DIY, źródła, obliczenia i symulacje](grafika/README_baner_aktualny_2026.svg)
 
-*Na banerze: historyczna obudowa odniesienia 504 × 684 × 504 mm
-(szerokość × głębokość × wysokość). Jej głębokość przekracza nowy limit;
-nie jest kandydatem na konstrukcję końcową.*
+*Grafika przedstawia referencyjny projekt 1020 × 425 × 500 mm — schemat, **nie rysunek do CNC**. Historyczna obudowa 504 × 684 × 504 mm nie spełnia limitu głębokości.*
 
 > **Aktualne wymaganie: maksymalnie 50 cm głębokości zewnętrznej.**
 > Badamy płytszą skrzynię, którą można ustawić pionowo lub poziomo w zabudowie.
@@ -24,9 +22,7 @@ porównania, a dane cenowe obejmują obecnie tylko część modeli; nadal brakuj
 
 > **Uwaga P33C (31.10.2026):** Audyt elementu powłokowego wykazał dwa nadmiarowe mechanizmy numeryczne (*hourglass*) w P33B. Liczb z raportu 084 nie traktujemy jako potwierdzonych ugięć i częstotliwości skrzyni. [Sprostowanie i 26 testów](raporty/085_P33C_audyt_hourglass_elementu_Q4.md).
 
-**Stan projektu: badania przed budową.** Pokazane wykresy to obliczenia
-> i symulacje. Nie ma jeszcze pomiarów gotowego prototypu ani ostatecznego
-> zwycięzcy. Każdy przykład ma opisane warunki i ograniczenia.
+> **Stan projektu: badania przed budową.** Wykresy przedstawiają obliczenia i symulacje, nie pomiary gotowego prototypu. Nie ma jeszcze ostatecznego zwycięzcy ani projektu zatwierdzonego do CNC.
 
 ## Wybierz temat
 
@@ -40,7 +36,7 @@ porównania, a dane cenowe obejmują obecnie tylko część modeli; nadal brakuj
 | Korekcja cyfrowa i zapas poziomu | [Filtry DSP](#filtry) |
 | Źródła, szczegóły i własne obliczenia | [Mapa raportów](#mapa) · [Kod i odtwarzanie](#odtwarzanie) |
 
-Skróty wyjaśniamy w [krótkim słowniku](#slownik).
+Skróty wyjaśniamy w [krótkim słowniku](#slownik). Najpierw warto przejść do [praktycznego przewodnika](#praktyczny-przewodnik).
 
 ## Co już wynika z badań
 
@@ -52,6 +48,89 @@ Skróty wyjaśniamy w [krótkim słowniku](#slownik).
   pogrubienie płyty. Sposób połączenia i sztywność kleju mają znaczenie.
 - **Pokój jest częścią układu.** Wymiary pozwalają obliczyć częstotliwości
   możliwych rezonansów, ale ich poziom zależy też od ustawienia i tłumienia.
+
+
+<a id="praktyczny-przewodnik"></a>
+## Praktyczny przewodnik — co projektujemy i co z tego wynika?
+
+**Cel:** pierwszy prototyp zamkniętego subwoofera, docelowo **dwa urządzenia** do pokoju około **4,6 × 3,7 × 2,5 m**. Projektujemy dla miejsca odsłuchu, a nie maksymalnej mocy na etykiecie. Na razie niczego nie zamawiamy ani nie frezujemy.
+
+### 1. Aktualny wariant konstrukcji
+
+| Element | Wstępne założenie | Warunek, którego jeszcze nie potwierdzono |
+|---|---|---|
+| Przetwornik | **Dayton Audio RSS390HF-4** — wstępny faworyt | Pełny audyt 34 modeli, rzeczywiste THD/IMD, termika, dostępność i ceny |
+| Korpus | **1020 × 425 × 500 mm** (szerokość × głębokość × wysokość), projekt P30E | Obrys całego urządzenia z maskownicą, stopkami, terminalami i tolerancjami do **500 mm głębokości** |
+| Objętość | około **100 / 120 / 150 l netto**, z punktem eksperymentalnym 120 l | Bilans wyporności, montaż i szczelność ruchomych wkładów |
+| Mechanika | modelowo MDF 22 mm, front 44 mm, wręgi i wzmocnienia | Nośność śrub, MDF, kleju i spoin oraz poprawne obliczenia MES |
+| Wypełnienie | planowana mata 50 mm przy tylnej ścianie | Parametry i montaż realnego materiału |
+| Elektronika | zewnętrzny **płytkowy wzmacniacz klasy D** i DSP; modelowe limity 40 V RMS / 12 A RMS | Konkretny wzmacniacz, zasilacz, chłodzenie i sprawdzone zabezpieczenia |
+| Integracja | docelowo co najmniej **8 wyjść DSP** | Routing, opóźnienia, filtry, rzeczywiste działanie ochrony |
+
+**Praktycznie:** to *punkt wyjścia do opracowania konstrukcji*, nie gotowe wymiary do zamówienia w CNC. W raporcie [P30E](raporty/078_P30E_mata50_montaz_robustnosc.md) stany objętości mają nominalnie 100,12 / 119,92 / 150,16 l, lecz to nadal wielkości modelowe.
+
+![Schemat korpusu i wymiennych wkładów — NIE CNC](dokumentacja/P31C_schemat_konstrukcji_1020_425.svg)
+
+*Na rysunku sprawdzamy dostęp przez otwór głośnika, a nie tylko liczbę litrów. Blokady, uszczelki i miejsce na narzędzia wymagają pełnego CAD i prób.*
+
+### 2. Wybór głośnika: co naprawdę porównujemy?
+
+**Nie wystarczą średnica, moc znamionowa ani sam niski Fs.** W każdym wariancie trzeba jednocześnie ocenić zapas wychylenia, możliwy poziom 20–40 Hz, napięcie i prąd, rozgrzewanie cewki, pasmo po DSP, montaż i koszt. Test pojedynczych sinusów nie jest testem muzycznym ani pomiarem THD.
+
+| Kandydat | Wniosek użyteczny na dziś | Otwarty warunek |
+|---|---|---|
+| **Dayton RSS390HF-4 (C02)** | Warunkowy faworyt dla części przyjętych limitów mocy strat cewki | Pełna termika, montaż, zniekształcenia i koszt |
+| **Dayton RSS390HE-22 (C11)** | Może być korzystniejszy przy innym limicie strat | Porównywalne chłodzenie i napęd |
+| **STX W.32.800.8.FCX (C06)** | Ważna alternatywa 12-calowa | Docelowy zapas SPL i wychylenia w tym samym pokoju |
+| **SB Acoustics** | Modele i warianty połączenia cewek są w szerszym porównaniu | Pełna zgodność danych, termiki, THD i kosztów z pozostałą pulą |
+
+**Wniosek praktyczny:** tańszy model może wygrać, jeżeli spełni *wszystkie* uzgodnione progi. Dopóki progi i ceny nie są kompletne, **nie istnieje uczciwy ranking najtańszego rozwiązania**. [Szczegółowe porównanie](#glosniki) · [wymagania](WYMAGANIA.md).
+
+### 3. Dlaczego trzy litraże nie gwarantują trzech dobrych ustawień?
+
+Zmniejszenie wolnej objętości zmienia sprężystość powietrza i ruch membrany. Wyjmowany wkład musi jednak przejść przez otwór, dać się zamocować bez kolizji, pozostać szczelny oraz nie grzechotać. Dlatego warianty **100/120/150 l** są pozycjami do *porównania*, a nie trzema gotowymi presetami. [Badania regulacji](#regulacja).
+
+### 4. Dlaczego samo pogrubienie MDF lub dodanie metalowego pierścienia nie wystarcza?
+
+W badanej geometrii Dayton RSS390HF-4 wycięcie **Ø355,8 mm**, okrąg śrub **Ø368 mm** i otwory kołnierza **Ø6,5 mm** pozostawiają przy śrubie tylko **2,85 mm lokalnego materiału na promieniu**. Jest to **alarm o kolizji/nośności, a nie dopuszczalny zapas MDF**. Porównano drogę sił przez szeroką ramę A oraz szyny B, ale nie wykazano rzeczywistej nośności żadnej z nich.
+
+![Front Dayton — średnice, wycięcie, osiem otworów; szkic badawczy](wyniki/p38a_front_NIE_CNC.svg)
+
+*Co trzeba zrobić? Zmierzyć dokładny kosz, terminale i przestrzeń na wkrętak, zaprojektować rzeczywiste połączenia i sprawdzić ich nośność na docelowym MDF. [Raport 096](raporty/096_P38A_front_Dayton_otwory_i_mocowania.md) · [Raport 108](raporty/108_P42C_laczniki_i_koncepcje_3D.md).*
+
+### 5. Co oznaczają wykresy DSP i temperatury?
+
+Przyjęte **40 V RMS / 12 A RMS** to założenia symulacji, **nie parametry zakupionego wzmacniacza**. Model ogranicznika może ujawnić ryzyko wychylenia, grzania i przesterowania, ale nie jest jeszcze sprawdzonym presetem. Potrzebny jest fizyczny napęd, zasilanie, chłodzenie i walidacja zabezpieczeń. [Filtry](#filtry) · [Ochrona](#ochrona).
+
+### 6. Co pokaże pokój, a czego nie odczytamy z wykresu modów?
+
+Przybliżone wymiary pomieszczenia pozwalają wyliczyć częstotliwości *idealnych modów osiowych*. Nie mówią, jak silny będzie rezonans ani jak długo zaniknie w konkretnym punkcie. Ostateczne ustawienie **dwóch subwooferów** będzie wymagało pomiarów po budowie.
+
+![Osiowe częstotliwości modalne pokoju — bez nakładających się etykiet](wyniki/02_mody_osiowe_czytelne.svg)
+
+*Każdy wiersz pokazuje inną oś pokoju. Pionowe znaczniki to częstotliwości, **nie amplitudy i nie prognoza jakości basu**. [Przejdź do akustyki pokoju](#pokoj).*
+
+### 7. Lista kontroli przed frezowaniem i pierwszym uruchomieniem
+
+- [ ] **Głębokość:** całe urządzenie z osprzętem nie przekracza **500 mm** w docelowym ustawieniu.
+- [ ] **Kosz:** wszystkie osiem mocowań, zaciski, śruby, narzędzia i wręgi mają zweryfikowane prześwity oraz wytrzymałość.
+- [ ] **Netto:** objętość dla 100/120/150 l zawiera faktyczne wyporności, a wkłady dają się zamontować, uszczelnić i wyjąć.
+- [ ] **Materiały:** zbadano parametry MDF, kleju i spoin; nie przyjęto hipotetycznej sztywności za pomiar.
+- [ ] **Model:** wyniki MES są wolne od problemu *hourglass* P33B i dotyczą aktualnego CAD; akustyka uwzględnia rzeczywistą pozycję źródła.
+- [ ] **Elektronika:** dobrano zasilanie, moduł klasy D, chłodzenie i sprawdzono zabezpieczenia DSP.
+- [ ] **Odbiór:** istnieje plan pomiarów impedancji, szczelności, wychylenia, drgań paneli, THD/IMD i odpowiedzi w pokoju.
+
+**Bramka CNC nadal zamknięta.** [Pełny plan weryfikacji](dokumentacja/P35_plan_walidacji_przed_CNC.md).
+
+### Jak czytać szczegółowe wyniki?
+
+Dla każdego wykresu sprawdzaj kolejno: **co obliczono**, **co to zmienia w projekcie** i **czego jeszcze nie potwierdzono**. Historyczne modele pozostają dostępne dla kontroli rozwoju badań, ale nie mogą być podstawą wykonania konstrukcji, jeśli wykryto w nich błąd. [Mapa raportów i kod](#mapa).
+
+---
+<details>
+<summary><strong>Rozwiń szczegółowe badania konstrukcyjne P38–P42 (rysunki i historia decyzji)</strong></summary>
+
+> **Ważne:** P38B wykrył przesunięcie źródła względem wnętrza o 22 mm w obu osiach. Nie traktuj starszych map P34B/P35A jako aktualnych. Warianty mocowań nie są dopuszczone do CNC.
 
 ## P38 — znamy już rozstaw śrub i błąd układu współrzędnych
 
@@ -133,6 +212,8 @@ Skróty wyjaśniamy w [krótkim słowniku](#slownik).
 
 [Model 3D OpenSCAD — **REFERENCYJNY, NIE DO CNC**](dokumentacja/P39C_front_korpus_pierscien_REFERENCYJNY_NIE_CNC.scad) jest parametrycznym złożeniem paneli, wręg, frontu z otworem i pierścienia. Umożliwia dalsze opracowywanie pełnego CAD; **nie jest jeszcze dokładną bryłą kosza Dayton z terminalami, zamkami i realnymi łącznikami**. [Raport 100](raporty/100_P39C_edytowalny_model_3D_OpenSCAD.md).
 
+</details>
+
 ## Konstrukcja w obrazach — od pomysłu do sprawdzalnego prototypu
 
 **Zamiast od razu ciąć płyty, najpierw pytamy: czy skrzynia się zmieści, czy da się ją zmontować i czy nie będzie sama grała?** Poniższe ilustracje pokazują etapy symulacji. Kliknięcie obrazu otwiera źródło z wyjaśnieniem. **Żadna ilustracja nie jest dokumentacją CNC** — obciążenia, materiały i wybrane uproszczenia są wyraźnie opisane w raportach.
@@ -187,7 +268,7 @@ Skróty wyjaśniamy w [krótkim słowniku](#slownik).
 
 ![P33B: dlaczego wyniki zmieniają się wraz z modelem powłokowym](wyniki/p33b_rozbieznosc_modeli.svg)
 
-*Po dodaniu obrotów węzłów i momentów połączeń model P33B dał znacznie inne ugięcie niż P33A. **To sygnał niepewności modelu, nie wskazanie „prawdziwej” liczby.** [Raport 084 — powłokowy MES Q4](raporty/084_P33B_globalny_MES_powlokowy_Q4.md).*
+**ARCHIWALNY WYNIK — NIE UŻYWAĆ DO PROJEKTOWANIA.** W P33C wykryto dwa sztuczne mechanizmy *hourglass* elementu P33B. Wykres ilustruje problem numeryczny; nie wyznacza wiarygodnych ugięć ani częstotliwości skrzyni. [Raport 084 — archiwalny](raporty/084_P33B_globalny_MES_powlokowy_Q4.md) · [sprostowanie P33C](raporty/085_P33C_audyt_hourglass_elementu_Q4.md).
 
 ![P33A: zbieżność siatki i wrażliwość na połączenia naroży](wyniki/p33a_zbieznosc_ugiec.svg)
 
@@ -199,31 +280,19 @@ Skróty wyjaśniamy w [krótkim słowniku](#slownik).
 
 ### 4. Wkłady i powietrze wewnątrz skrzyni
 
-### 4c. Jak przekazać ciśnienie ze skrzyni do obliczeń jej ścian?
-
-![Względne ciśnienie na każdej z sześciu ścian — P35A](wyniki/p35a_cisnienie_scian_80hz.svg)
-
-*Poprzednio liczyliśmy rozkład powietrza wewnątrz komory. Teraz obliczamy również jego nacisk na poszczególne ściany. Przy 80 Hz prawa strona ma w tym modelu inne ciśnienie niż lewa. **To nie są jeszcze siły przy realnej mocy** — potrzebny rzeczywisty poziom ciśnienia, maty i kosza. [Raport 089](raporty/089_P35A_rozklad_cisnienia_na_scianach.md).*
-
-### 4d. Kontrola jakości MES: nie tylko liczba w hercach
-
-![Kontrola siatki i stabilizatora numerycznego Q4 — P35B](wyniki/p35b_stabilizacja_Q4_siatki.svg)
-
-*Audyt P33C ujawnił sztuczne drgania pojedynczego elementu Q4. Powtórzyliśmy 16 symulacji całej skrzyni po dodaniu różnych wariantów stabilizacji. Problem lokalny można ograniczyć numerycznie, ale **nie da się jeszcze uznać konstrukcji za zweryfikowaną** bez dobrego opisu spoin i pełnej geometrii. [Raport 090](raporty/090_P35B_globalna_stabilizacja_hourglass.md).*
-
 ### 4b. Liczymy już rzeczywiste rozmieszczenie przeszkód, nie tylko pusty prostopadłościan
 
 ![P34B: plan wnętrza skrzyni z wręgami, modułami oraz matą 50 mm](dokumentacja/P34B_przekroj_wkladow_i_maty.svg)
 
-*Na planie pokazano przykładowy poziom ułożenia zamkniętych modułów. Cała konstrukcja jest trójwymiarowa. **To schemat wyjaśniający, nie geometria do cięcia CNC.** [Raport 087](raporty/087_P34B_przestrzenne_cisnienie_100_120_150.md).*
+**ARCHIWALNY SCHEMAT P34B:** pokazuje rozmieszczenie przeszkód, a nie geometrię do CNC. Po audycie P38B ujawniono przesunięcie źródła o 22 mm w obu osiach. Nie przenosić wyniku na obecny model. [Raport 087](raporty/087_P34B_przestrzenne_cisnienie_100_120_150.md) · [audyt 097](raporty/097_P38B_audyt_wspolrzednych_FV.md).
 
 ![P34B: odchylenia przestrzenne ciśnienia w trzech litrażach](wyniki/p34b_niejednorodnosc_pole_3_litraze.svg)
 
-*Przy 20 Hz rozkład ciśnienia jest w modelu stosunkowo równomierny, przy 80 Hz wpływ geometrii rośnie. Model ma sztywne ściany i **nie oblicza tłumienia porowatej maty** — to nie wykres THD ani SPL. [46 przypadków FV](wyniki/p34b_przestrzenne_pole_p30e_20261031.json).*
+**ARCHIWALNE DANE P34B:** mapa względnego ciśnienia została policzona w starszym układzie źródła i nie jest wynikiem dla bieżącej geometrii. Nie opisuje THD, SPL ani tłumienia maty. [Dane historyczne](wyniki/p34b_przestrzenne_pole_p30e_20261031.json) · [ponowne obliczenia P39A](raporty/098_P39A_naciski_scian_korekta_FV.md).
 
 ![P34B: badanie zgodności obliczeń przy coraz gęstszej siatce](wyniki/p34b_zbieznosc_siatki_80Hz.svg)
 
-*Dzielimy powietrze na coraz mniejsze komórki i sprawdzamy, jak zmienia się wynik. Modelowe 120 l mieści się blisko celu, ale uproszczony kosz 5 l i własności maty wymagają pomiarów. [Skrypt do powtórzenia](skrypty/p34b_przestrzenne_pole_p30e.js).*
+**KONTROLA SIATKI W ARCHIWALNYM MODELU P34B:** zagęszczenie komórek nie usuwa błędu współrzędnych. Zachowujemy wykres dla zrozumienia metody, a nie jako potwierdzenie nowej konstrukcji. [Historyczny kod](skrypty/p34b_przestrzenne_pole_p30e.js) · [korekta P38B](raporty/097_P38B_audyt_wspolrzednych_FV.md).
 
 ![P34C: modelowe siły działające na zamknięte wkłady](wyniki/p34c_sily_mocowania_wkladow.svg)
 
@@ -239,11 +308,21 @@ Skróty wyjaśniamy w [krótkim słowniku](#slownik).
 
 *Model sztywnej komory pokazuje, jak nawet poniżej pierwszej fali stojącej lokalne ciśnienie może odróżniać się od prostego modelu T/S. Zbadano 90 przypadków dla trzech objętości. **To prostopadłościany zastępcze, nie rzeczywiste wkłady P30E.** [Raport 086](raporty/086_P34A_gaz_3D_komora_zastepcza_i_niejednorodnosc.md).*
 
-![Przestrzenne ciśnienie gazu i podatne panele](wyniki/106_P21G_komora_i_podatne_panele.svg)
+> **P21G — brak dowodów do weryfikacji:** w obecnym repo nie ma raportu 066, skryptu, JSON ani rysunku. Nie można więc traktować tej kampanii jako potwierdzonej. Dostępne częściowe modele: [P21D](raporty/060_P21D_wspolna_geometria_i_port_napedu.md), [P21E](raporty/064_P21E_gaz_podatne_sciany_i_naped.md), [P21F](raporty/065_P21F_wielomody_gazu_i_scian.md).
 
-*Powietrze w skrzyni nie zawsze jest idealnie jednorodne. Zmiana wręg i wkładów zmienia przeszkody, dlatego **akustyka nowej geometrii nie jest jeszcze zweryfikowana**. [Raport o komorze](raporty/066_P21G_FV_podatne_sciany_rzeczywiste_przeszkody.md).*
+### 4c. Jak przekazać ciśnienie ze skrzyni do obliczeń jej ścian?
 
-**Co dalej?** Pełny CAD połączony z MES ramy i spoin, nowe obliczenia przestrzenne komory 100/120/150 l, a następnie pomiary pierwszego prototypu. [Plan konstrukcyjny i bramki przed wykonaniem](dokumentacja/P31C_koncepcja_konstrukcyjna_i_bramki.md) · [Ostatni raport 082](raporty/082_P32A_dynamika_panelu_wreg_i_tlumienia.md).
+![Względne ciśnienie na każdej z sześciu ścian — P35A](wyniki/p35a_cisnienie_scian_80hz.svg)
+
+**ARCHIWALNA MAPA P35A (błąd położenia źródła wykryty w P38B):** wartości względne służą jedynie za przykład metody. Do interpretacji bieżącej geometrii używaj poprawionego [P39A, raport 098](raporty/098_P39A_naciski_scian_korekta_FV.md). To nie są zmierzone siły ani SPL.
+
+### 4d. Kontrola jakości MES: nie tylko liczba w hercach
+
+![Kontrola siatki i stabilizatora numerycznego Q4 — P35B](wyniki/p35b_stabilizacja_Q4_siatki.svg)
+
+*Audyt P33C ujawnił sztuczne drgania pojedynczego elementu Q4. Powtórzyliśmy 16 symulacji całej skrzyni po dodaniu różnych wariantów stabilizacji. Problem lokalny można ograniczyć numerycznie, ale **nie da się jeszcze uznać konstrukcji za zweryfikowaną** bez dobrego opisu spoin i pełnej geometrii. [Raport 090](raporty/090_P35B_globalna_stabilizacja_hourglass.md).*
+
+**Co dalej?** Pełny CAD kosza, sprawdzenie mocowań, przestrzenna akustyka 100/120/150 l z aktualnym źródłem i podatnością ścian, a potem pomiary pierwszej sztuki. [Bramki przed CNC](dokumentacja/P35_plan_walidacji_przed_CNC.md) · [najnowszy raport 108](raporty/108_P42C_laczniki_i_koncepcje_3D.md).
 
 ---
 
@@ -741,7 +820,7 @@ wypadają około 37,3 / 46,4 / 68,6 Hz. Sam wykres częstotliwości nie mówi,
 jak mocno będzie słychać każdy z nich. Znaczenie mają pozycje głośników
 i słuchacza, drzwi, okna oraz straty w pomieszczeniu.
 
-![Możliwe częstotliwości rezonansów osiowych idealnego pokoju](wyniki/02_mody_osiowe.png)
+![Możliwe częstotliwości rezonansów osiowych idealnego pokoju](wyniki/02_mody_osiowe_czytelne.svg)
 
 Badamy dwa subwoofery w realnych miejscach przy monitorach. Dokładne
 pozycje nie są jeszcze znane. Wariant rozpatrywany w badaniach zakłada RTV po lewej
@@ -1149,32 +1228,12 @@ ale nie uzyskaliśmy jeszcze ścisłej zbieżności całego pasma.
 · [podsumowanie 52 272 obliczeń](wyniki/p21f_podsumowanie.json)
 · [kod odtwarzania](skrypty/p21f_mody_gaz_panele.py).
 
-**P21G: prawdziwe przestrzenne wręgi i wkłady, dwa podatne porty paneli.**
-Połączyliśmy ciśnienie z rozwiązania objętościowego (FV) dla
-11 wręg, wkładów i zastępczego kosza P20D z obliczeniami
-ruchu dwóch sprężystych ścian oraz trzech finalistów C02/C11/C06.
-W wariancie ok. 120 l (rzeczywista *modelowa* objętość 119,937 l)
-zmiana prędkości membrany C02 przy tym samym napięciu wynosi
-**−0,060 do +0,133 dB** w paśmie 20–80 Hz przy nominalnej
-podatności i założonym tłumieniu.
-
-![P21G: wspólny port FV obudowy z przeszkodami i podatnymi ścianami](wyniki/106_P21G_komora_i_podatne_panele.svg)
-
-To **nie pełny mechaniczny MES**: postacie uginania ścian są
-uproszczone, materiały przyjęto scenariuszowo, a model wyklejenia
-jest inny niż w P21D. Badano ruch membrany, **nie bezpośredni dźwięk
-promieniowany przez panele**. Przeliczono 348 przypadków napędu,
-sprawdzając bilans mocy i trzy rozdzielczości siatki.
-
-[Raport 066 — P21G: komora z przeszkodami i podatnymi panelami](raporty/066_P21G_FV_podatne_sciany_rzeczywiste_przeszkody.md)
-· [wyniki i kontrole](wyniki/p21g_podsumowanie.json)
-· [skrypt](skrypty/p21g_fv_podatne_panele.py).
+**P21G — status niepotwierdzony.** Starsze README podawało wyniki przestrzennego modelu FV z podatnymi panelami, jednak obecnie nie ma kompletu plików źródłowych i dowodów: raportu 066, skryptu, wyników i grafiki. **Nie wykorzystujemy tamtych liczb do projektowania, dopóki nie zostaną odzyskane i niezależnie sprawdzone.** [Dostępny model P21D](raporty/060_P21D_wspolna_geometria_i_port_napedu.md) · [P21E](raporty/064_P21E_gaz_podatne_sciany_i_naped.md) · [P21F](raporty/065_P21F_wielomody_gazu_i_scian.md).
 
 [Raport 050 — źródło w komorze](raporty/050_P21C0_plytka_komora_i_polozenie_zrodla.md)
 · [raport 051 — kołowa membrana](raporty/051_P21C1_membrana_kolowa_i_bezwladnosc.md)
 · [raport 052 — warstwy i wkłady](raporty/052_komora_warstwy_wklady_i_front.md).
-Wyniki nie zastępują **pełnego przestrzennego** sprzężenia
-rzeczywistych podatnych ścian, wręg, wypełnienia i napędu.
+Wyniki nie zastępują **pełnego przestrzennego** sprzężenia rzeczywistych podatnych ścian, wręg, wypełnienia i napędu. Status P21G pozostaje otwarty.
 
 <a id="slownik"></a>
 ## Krótki słownik do wykresów
@@ -1200,7 +1259,7 @@ ani wartości RMS ze szczytowymi. Liczby z modeli nie są pomiarami urządzenia.
 ## Co zostało do zrobienia
 
 Zbadano już wspólną geometrię z wręgami i wkładami (P20D),
-przestrzenne pole gazu oraz port napędu (P21D), modele P21E/P21F oraz wspólną przestrzenną komorę z panelami (P21G), podatność paneli
+przestrzenne pole gazu i port napędu (P21D), dostępne modele P21E/P21F (P21G pozostaje niepotwierdzony), podatność paneli
 (P18E), krótkie sygnały z ochroną (P25C), próbkowaną barierę (P25D), odporność na błędy stanu (P25E) i warianty ustawienia
 dwóch źródeł w pokoju (P26D/P27D). **Nie są to jeszcze jeden
 sprzężony model wielofizyczny ani zweryfikowany prototyp.**
@@ -1225,9 +1284,7 @@ pomiaru, a wyniku innej obudowy nie przenosimy automatycznie na zamkniętą.
 <details>
 <summary><strong>Zakres modeli, źródeł i założeń porównawczych</strong></summary>
 
-Pula obejmuje **26 produktów od 11 producentów**,
-w tym 4 STX i **3 SB Acoustics**. Liczymy **27 konfiguracji elektrycznych**,
-ponieważ nowy dwucewkowy SB ma osobno połączenie szeregowe i równoległe.
+Historyczny etap obejmował **26 produktów / 27 konfiguracji elektrycznych / 11 producentów**, w tym 4 STX i 3 SB Acoustics. **Obecnie w zestawie jest 34 modeli / 35 konfiguracji / 19 producentów**, wliczając przypadki wstrzymane w audycie dokumentacji. Starszych wyników nie należy przypisywać nowym produktom automatycznie.
 Modele regulatora i pola gazu umożliwiają ocenę przybliżeń i konstrukcji.
 [Raport 044](raporty/044_modul_3D_dwa_porty_i_wymagania_kleju.md) dodaje
 18 modeli ścian, naroży i spoin modułu, dalsze siatki do 40 248 DOF,
@@ -1296,7 +1353,7 @@ nie zatwierdzonym docelowym głośnikiem.
 | Jak wygląda przestrzenne pole gazu w geometrii P20D? | [060 — P21D](raporty/060_P21D_wspolna_geometria_i_port_napedu.md) | [przebiegi napędu](wyniki/p21d_naped.csv), [przestrzenny wykres](wyniki/101_P21D_komora_i_naped.png) |
 | Jak zmienia się napęd po uwzględnieniu podatności dwóch ścian? | [064 — P21E: model sprzężony gaz–panel](raporty/064_P21E_gaz_podatne_sciany_i_naped.md) | [wykres](wyniki/104_P21E_podatne_sciany.svg), [podsumowanie](wyniki/p21e_podsumowanie.json), [skrypt](skrypty/p21e_gaz_podatne_sciany.py) |
 | Czy przestrzenne mody gazu i podatne pola zmieniają obciążenie membrany? | [065 — P21F: wielomody i podatne pola](raporty/065_P21F_wielomody_gazu_i_scian.md) | [wykres](wyniki/105_P21F_mody_i_panele.svg), [podsumowanie](wyniki/p21f_podsumowanie.json), [skrypt](skrypty/p21f_mody_gaz_panele.py) |
-| Jak wręgi, wkłady i podatne panele współdziałają z powietrzem? | [066 — P21G: porty FV z przeszkodami](raporty/066_P21G_FV_podatne_sciany_rzeczywiste_przeszkody.md) | [wykres](wyniki/106_P21G_komora_i_podatne_panele.svg), [podsumowanie](wyniki/p21g_podsumowanie.json), [skrypt](skrypty/p21g_fv_podatne_panele.py) |
+| Jak wręgi i podatne panele współdziałają z powietrzem? | P21G: dokumentacja niedostępna; weryfikacja otwarta | [P21D](raporty/060_P21D_wspolna_geometria_i_port_napedu.md), [P21E](raporty/064_P21E_gaz_podatne_sciany_i_naped.md), [P21F](raporty/065_P21F_wielomody_gazu_i_scian.md) |
 | Czy dwa źródła w orientacji pionowej i poziomej są odporne na nieznane straty pokoju? | [061 — P26D/P27D](raporty/061_bryly_offset_i_dwa_subwoofery.md) | [porównanie](wyniki/p26d_porownanie.csv), [wykres](wyniki/p26d_bryly_i_odpowiedz.png) |
 
 Pełny zakres i otwarte bramki są w [programie 30 pakietów](PROGRAM_30_BADAN.md).
@@ -1428,6 +1485,11 @@ pomiaru — to pomaga porównać wyniki.
 
 [Informacje o udostępnianiu linku i grafice podglądu](dokumentacja/UDOSTEPNIANIE.md).
 
+
+<details>
+<summary><strong>Rozwiń chronologiczne archiwum badań P24G–P42</strong></summary>
+
+> **Historia, nie instrukcja produkcyjna.** Część modeli zastąpiono wynikami późniejszych audytów; P21G nie ma pełnej dokumentacji źródłowej.
 
 ## P24G — przedziałowa analiza ograniczenia cewki (31.10.2026)
 
@@ -1656,3 +1718,5 @@ Repozytorium ma już badania P41A–C dotyczące ośmiu kotew ramy i szyn. **P42
 [Raport 106](raporty/106_P42A_podpory_1458.md) · [Raport 107](raporty/107_P42B_obwiednie_3D_dwoch_wariantow.md) · [Raport 108](raporty/108_P42C_laczniki_i_koncepcje_3D.md) · [Model 3D](dokumentacja/P42D_dwie_sciezki_REFERENCYJNE_NIE_CNC.scad) · [1458 wyników](wyniki/p42a_podpory_1458_20261101.json) · [162 obwiednie](wyniki/p42b_obwiednie_162_20261101.json) · [48 łączników](wyniki/p42c_laczniki_48_20261101.json).
 
 **Nie można jeszcze wybrać fizycznie bezpiecznego rozwiązania A/B ani wydawać CNC**: nieznane są rzeczywiste bryły kosza, przekroje, materiały i nośność łączników. Model sprężynowy nie jest sprawdzonym MES kontaktowym, a modele P41 i P42 stosują różne rozmieszczenia punktów.
+
+</details>
