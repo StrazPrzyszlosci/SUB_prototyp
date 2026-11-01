@@ -1,0 +1,417 @@
+{
+  "study": "P43",
+  "date": "2026-11-01",
+  "source_commit": "6a42868cbec6d85bbbee0d1a05a1e7d06df41f57",
+  "inputs": {
+    "date": "2026-11-01",
+    "parent_commit": "6a42868cbec6d85bbbee0d1a05a1e7d06df41f57",
+    "units": {
+      "length": "mm",
+      "force": "N",
+      "stiffness": "N/mm",
+      "angle": "rad"
+    },
+    "center": [
+      231,
+      250
+    ],
+    "aperture_r": 177.9,
+    "bcd_r": 184,
+    "flange_r": 194.2,
+    "front": [
+      1020,
+      500
+    ],
+    "anchors": {
+      "A": [
+        [
+          75,
+          45
+        ],
+        [
+          425,
+          45
+        ],
+        [
+          75,
+          455
+        ],
+        [
+          425,
+          455
+        ]
+      ],
+      "B": [
+        [
+          176,
+          37
+        ],
+        [
+          286,
+          37
+        ],
+        [
+          176,
+          463
+        ],
+        [
+          286,
+          463
+        ]
+      ]
+    },
+    "width": [
+      4,
+      8,
+      10
+    ],
+    "margin": [
+      0,
+      1,
+      2
+    ],
+    "masses": [
+      13.61,
+      15
+    ],
+    "accel": [
+      1,
+      5,
+      10
+    ],
+    "ecc": [
+      90,
+      120,
+      180
+    ],
+    "pattern": [
+      "equal",
+      "left_half",
+      "first_quarter"
+    ],
+    "dirs": [
+      "X",
+      "Z",
+      "Y"
+    ],
+    "k": 1000,
+    "g0": 9.80665
+  },
+  "route": {
+    "combinations": 576,
+    "selected": 144,
+    "groups": [
+      {
+        "variant": "A",
+        "width_mm": 4,
+        "clearance_mm": 0,
+        "feasible_bolts": 8,
+        "nearest_direct_collisions": 0,
+        "routed_detours": 0,
+        "max_excess_length_mm": 0,
+        "mean_excess_length_mm": 0
+      },
+      {
+        "variant": "A",
+        "width_mm": 4,
+        "clearance_mm": 1,
+        "feasible_bolts": 8,
+        "nearest_direct_collisions": 0,
+        "routed_detours": 0,
+        "max_excess_length_mm": 0,
+        "mean_excess_length_mm": 0
+      },
+      {
+        "variant": "A",
+        "width_mm": 4,
+        "clearance_mm": 2,
+        "feasible_bolts": 8,
+        "nearest_direct_collisions": 0,
+        "routed_detours": 0,
+        "max_excess_length_mm": 0,
+        "mean_excess_length_mm": 0
+      },
+      {
+        "variant": "A",
+        "width_mm": 8,
+        "clearance_mm": 0,
+        "feasible_bolts": 8,
+        "nearest_direct_collisions": 0,
+        "routed_detours": 0,
+        "max_excess_length_mm": 0,
+        "mean_excess_length_mm": 0
+      },
+      {
+        "variant": "A",
+        "width_mm": 8,
+        "clearance_mm": 1,
+        "feasible_bolts": 8,
+        "nearest_direct_collisions": 1,
+        "routed_detours": 1,
+        "max_excess_length_mm": 0.0085,
+        "mean_excess_length_mm": 0.0011
+      },
+      {
+        "variant": "A",
+        "width_mm": 8,
+        "clearance_mm": 2,
+        "feasible_bolts": 8,
+        "nearest_direct_collisions": 1,
+        "routed_detours": 1,
+        "max_excess_length_mm": 0.0723,
+        "mean_excess_length_mm": 0.009
+      },
+      {
+        "variant": "A",
+        "width_mm": 10,
+        "clearance_mm": 0,
+        "feasible_bolts": 8,
+        "nearest_direct_collisions": 1,
+        "routed_detours": 1,
+        "max_excess_length_mm": 0.0085,
+        "mean_excess_length_mm": 0.0011
+      },
+      {
+        "variant": "A",
+        "width_mm": 10,
+        "clearance_mm": 1,
+        "feasible_bolts": 8,
+        "nearest_direct_collisions": 1,
+        "routed_detours": 1,
+        "max_excess_length_mm": 0.0723,
+        "mean_excess_length_mm": 0.009
+      },
+      {
+        "variant": "A",
+        "width_mm": 10,
+        "clearance_mm": 2,
+        "feasible_bolts": 0,
+        "nearest_direct_collisions": 8,
+        "routed_detours": 0,
+        "max_excess_length_mm": null,
+        "mean_excess_length_mm": null
+      },
+      {
+        "variant": "B",
+        "width_mm": 4,
+        "clearance_mm": 0,
+        "feasible_bolts": 8,
+        "nearest_direct_collisions": 2,
+        "routed_detours": 2,
+        "max_excess_length_mm": 4.9705,
+        "mean_excess_length_mm": 1.2426
+      },
+      {
+        "variant": "B",
+        "width_mm": 4,
+        "clearance_mm": 1,
+        "feasible_bolts": 8,
+        "nearest_direct_collisions": 2,
+        "routed_detours": 2,
+        "max_excess_length_mm": 5.4813,
+        "mean_excess_length_mm": 1.3703
+      },
+      {
+        "variant": "B",
+        "width_mm": 4,
+        "clearance_mm": 2,
+        "feasible_bolts": 8,
+        "nearest_direct_collisions": 2,
+        "routed_detours": 2,
+        "max_excess_length_mm": 6.0301,
+        "mean_excess_length_mm": 1.5075
+      },
+      {
+        "variant": "B",
+        "width_mm": 8,
+        "clearance_mm": 0,
+        "feasible_bolts": 8,
+        "nearest_direct_collisions": 2,
+        "routed_detours": 2,
+        "max_excess_length_mm": 6.0301,
+        "mean_excess_length_mm": 1.5075
+      },
+      {
+        "variant": "B",
+        "width_mm": 8,
+        "clearance_mm": 1,
+        "feasible_bolts": 8,
+        "nearest_direct_collisions": 2,
+        "routed_detours": 2,
+        "max_excess_length_mm": 6.6235,
+        "mean_excess_length_mm": 1.6559
+      },
+      {
+        "variant": "B",
+        "width_mm": 8,
+        "clearance_mm": 2,
+        "feasible_bolts": 8,
+        "nearest_direct_collisions": 2,
+        "routed_detours": 2,
+        "max_excess_length_mm": 7.2786,
+        "mean_excess_length_mm": 1.8197
+      },
+      {
+        "variant": "B",
+        "width_mm": 10,
+        "clearance_mm": 0,
+        "feasible_bolts": 8,
+        "nearest_direct_collisions": 2,
+        "routed_detours": 2,
+        "max_excess_length_mm": 6.6235,
+        "mean_excess_length_mm": 1.6559
+      },
+      {
+        "variant": "B",
+        "width_mm": 10,
+        "clearance_mm": 1,
+        "feasible_bolts": 8,
+        "nearest_direct_collisions": 2,
+        "routed_detours": 2,
+        "max_excess_length_mm": 7.2786,
+        "mean_excess_length_mm": 1.8197
+      },
+      {
+        "variant": "B",
+        "width_mm": 10,
+        "clearance_mm": 2,
+        "feasible_bolts": 0,
+        "nearest_direct_collisions": 8,
+        "routed_detours": 0,
+        "max_excess_length_mm": null,
+        "mean_excess_length_mm": null
+      }
+    ],
+    "notes": [
+      "Only 2D clearance of ideal continuous links (centerlines with radius width/2), not physical connections.",
+      "All 8 start centers lie INSIDE the manufacturer flange projected disk (R194.2mm), so a planar viable path is not a 3D fastening solution.",
+      "No real screw head/washer, flange fixing, cabinet panel load transfer, basket profile, module/brace collision or tool access.",
+      "Margins 0/1/2mm are hypothetical screens, not manufacturing tolerances."
+    ]
+  },
+  "failure": {
+    "cases": 1620,
+    "paired_scenarios": 324,
+    "reference": [
+      {
+        "variant": "A",
+        "axis": "X",
+        "accel_g": 5,
+        "e_mm": 120,
+        "mass_kg": 13.61,
+        "pattern": "equal",
+        "baseline_max_N": 202.2915,
+        "worst_failure_N": 319.1141,
+        "worst_failed": 1,
+        "amplification": 1.5775,
+        "baseline_preload_N": 114.4016,
+        "worst_preload_N": 228.8032,
+        "baseline_disp_mm": 0.1394,
+        "worst_disp_mm": 0.4153
+      },
+      {
+        "variant": "A",
+        "axis": "Z",
+        "accel_g": 5,
+        "e_mm": 120,
+        "mass_kg": 13.61,
+        "pattern": "equal",
+        "baseline_max_N": 193.3173,
+        "worst_failure_N": 296.0282,
+        "worst_failed": 1,
+        "amplification": 1.5313,
+        "baseline_preload_N": 97.6599,
+        "worst_preload_N": 195.3198,
+        "baseline_disp_mm": 0.0925,
+        "worst_disp_mm": 0.3227
+      },
+      {
+        "variant": "A",
+        "axis": "Y",
+        "accel_g": 5,
+        "e_mm": 120,
+        "mass_kg": 13.61,
+        "pattern": "equal",
+        "baseline_max_N": 184.9492,
+        "worst_failure_N": 369.8984,
+        "worst_failed": 1,
+        "amplification": 2,
+        "baseline_preload_N": 0,
+        "worst_preload_N": 36.2272,
+        "baseline_disp_mm": 0.1889,
+        "worst_disp_mm": 0.6593
+      },
+      {
+        "variant": "B",
+        "axis": "X",
+        "accel_g": 5,
+        "e_mm": 120,
+        "mass_kg": 13.61,
+        "pattern": "equal",
+        "baseline_max_N": 400.417,
+        "worst_failure_N": 761.2368,
+        "worst_failed": 1,
+        "amplification": 1.9011,
+        "baseline_preload_N": 364.005,
+        "worst_preload_N": 728.01,
+        "baseline_disp_mm": 1.2853,
+        "worst_disp_mm": 2.9559
+      },
+      {
+        "variant": "B",
+        "axis": "Z",
+        "accel_g": 5,
+        "e_mm": 120,
+        "mass_kg": 13.61,
+        "pattern": "equal",
+        "baseline_max_N": 191.4905,
+        "worst_failure_N": 291.2401,
+        "worst_failed": 1,
+        "amplification": 1.5209,
+        "baseline_preload_N": 93.9919,
+        "worst_preload_N": 187.9838,
+        "baseline_disp_mm": 0.0857,
+        "worst_disp_mm": 0.4675
+      },
+      {
+        "variant": "B",
+        "axis": "Y",
+        "accel_g": 5,
+        "e_mm": 120,
+        "mass_kg": 13.61,
+        "pattern": "equal",
+        "baseline_max_N": 166.8356,
+        "worst_failure_N": 333.6713,
+        "worst_failed": 1,
+        "amplification": 2,
+        "baseline_preload_N": 0,
+        "worst_preload_N": 0,
+        "baseline_disp_mm": 0.1668,
+        "worst_disp_mm": 0.9421
+      }
+    ],
+    "max_amplification": {
+      "variant": "A",
+      "axis": "Y",
+      "accel_g": 1,
+      "e_mm": 90,
+      "mass_kg": 13.61,
+      "pattern": "equal",
+      "baseline_max_N": 36.9898,
+      "worst_failure_N": 73.9797,
+      "worst_failed": 1,
+      "amplification": 2,
+      "baseline_preload_N": 0,
+      "worst_preload_N": 7.2454,
+      "baseline_disp_mm": 0.0378,
+      "worst_disp_mm": 0.1319
+    },
+    "notes": [
+      "Uniform pre-load is only a mathematical contact-sign threshold: does not predict real bolt preload or avoid material failure.",
+      "Loss of one of four points is modeled by k=0; remaining three non-collinear points in both topologies; no progressive rupture/contact.",
+      "Assumed point stiffness 1000N/mm; the model omits flexible load-links, joint bending, fatigue, fastener/MDF capacity.",
+      "In-plane shear proportional to stiffness and independent of friction, so resultant R is an assumed reaction metric.",
+      "g=1/5/10 and e=90/120/180 mm are artificial stress loads, NOT defined transport standard."
+    ]
+  }
+}
