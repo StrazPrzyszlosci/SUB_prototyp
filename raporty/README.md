@@ -117,3 +117,7 @@ bieżący zakres sprawdzaj w [programie 30 pakietów](../PROGRAM_30_BADAN.md).
 
 - [Raport 101 — P40A: 432 konfiguracje sił i momentów w ośmiu punktach mocowania](101_P40A_reakcje_8_mocowan.md).
 - [Raport 102 — P40B: 675 kontroli tolerancji i budżetu promieniowego pierścienia](102_P40B_tolerancje_pierscienia_675.md).
+
+- [Raport 103 — P41A: 2592 scenariusze równowagi A (carrier) kontra B (szyny)](103_P41A_carrier_kontra_szyny_2592.md).
+- [Raport 104 — P41B: 54 obliczenia belek i 54 przypadki podatnego B](104_P41B_podatnosc_belek_108.md).
+- [Raport 105 — P41C: porównawcze bryły A/B OpenSCAD, tylko R&D](105_P41C_koncepcje_3D_A_B.md).

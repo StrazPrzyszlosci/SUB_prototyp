@@ -1,0 +1,63 @@
+name: P41 - alternative bracket/rail load paths and beam bounds
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  p41-numerical:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Recompute 2592 frames and 108 beam/coupling scenarios
+        run: |
+          node --check skrypty/p41a_carrier_vs_szyny.js
+          node --check skrypty/p41b_belki_podatnosc.js
+          node skrypty/p41a_carrier_vs_szyny.js >/tmp/p41a.log
+          node skrypty/p41b_belki_podatnosc.js >/tmp/p41b.log
+      - name: Independent matrix results, bending identity, geometry and guide assertions
+        run: |
+          node - <<'NODE'
+          const fs=require('node:fs');
+          const A=JSON.parse(fs.readFileSync('wyniki/p41a_carrier_vs_szyny_2592_20261101.json','utf8'));
+          const B=JSON.parse(fs.readFileSync('wyniki/p41b_podatnosc_belek_108_20261101.json','utf8'));
+          if(A.cases!==2592||A.results.length!==2592)throw Error('P41A count');
+          if(A.anchor_geometry.length!==16||A.anchor_geometry.some(a=>!a.passed_2d_envelope))throw Error('P41A 2D geometry');
+          const brace=A.anchor_geometry.filter(x=>x.x_hits_first_brace_projection);
+          if(brace.length!==2||brace.some(x=>x.concept!=='B_brace_rails'))throw Error('B brace nodes');
+          const ref=A.reference_detailed_reactions.find(z=>z.concept==='A_carrier'&&z.direction==='x');
+          if(!ref||Math.abs(ref.max_resultant_N-223.395)>0.002)throw Error('P41A rigid carrier');
+          if(Math.abs(ref.max_abs_normal_anchor_displacement_mm-0.364427)>1e-5)throw Error('P41A anchor compliance');
+          if(B.beam_cases!==54||B.coupled_cases!==54||B.beams.length!==54||B.coupled.length!==54)throw Error('P41B case count');
+          const rail=B.beams.find(x=>x.section_d_y_mm===25&&x.section_h_z_mm===4&&x.span_mm===380&&x.E_GPa===70&&x.center_force_N===200);
+          const exact=200*380**3/(48*70000*(4*25**3/12));
+          if(!rail||Math.abs(rail.central_deflection_mm-exact)>1e-5)throw Error('Beam analytical closed form');
+          const coupled=B.coupled.find(x=>x.profile==='25x4'&&x.span_mm===380&&x.E_GPa===70&&x.direction==='x');
+          if(!coupled||Math.abs(coupled.max_normal_disp_B_with_beam_mm-.383099)>1e-5)throw Error('Beam recoupling');
+          if(!(coupled.max_normal_disp_B_with_beam_mm>coupled.max_normal_disp_A_mm))throw Error('Tradeoff direction');
+          const md=fs.readFileSync('README.md','utf8');
+          const m=md.match(/19 producentów · (\d+) raport(?:y|ów) · Python\/JavaScript/);
+          if(!m||Number(m[1])<105||/klient/i.test(md))throw Error('Guide report/terminology');
+          const images=md.match(/!\[[^\]]*\]\([^)]*\)/g)||[];
+          if(images.length<98||!md.includes('p41a_punkty_carrier_szyny.svg')||!md.includes('p41b_ugięcia_szyn.svg'))throw Error('Guide figures');
+          console.log('PASS P41: 2,592 equilibrium comparisons, 54 beam tests, 54 coupled tests, 16 anchor geometry checks');
+          NODE
+  p41-openscad:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install OpenSCAD CLI
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends openscad
+      - name: Compile both CSG topologies; not a CAD/CNC release
+        run: |
+          openscad -o /tmp/p41_A.csg -D 'concept="A"' dokumentacja/P41C_porownanie_nosne_A_B_NIE_CNC.scad
+          openscad -o /tmp/p41_B.csg -D 'concept="B"' dokumentacja/P41C_porownanie_nosne_A_B_NIE_CNC.scad
+          test -s /tmp/p41_A.csg
+          test -s /tmp/p41_B.csg
+          echo 'PASS conceptual A/B CSG syntax only — no true 3D clearance or structural validation'
