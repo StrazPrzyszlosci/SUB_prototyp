@@ -1375,3 +1375,10 @@ skrypt Python i konfiguracja P24B.
 ## Zasada redakcyjna — nazewnictwo badań
 
 W README, raportach i nowych plikach opisuj aktualizacje zakresu jako **„rozszerzenie warunków badawczych”** lub „aktualizacja założeń projektu badawczego”. Nie przedstawiaj prac jako zlecenia handlowego. Stosuj terminy „uczestnik projektu”, „użytkownik”, „odbiorca” wyłącznie w uzasadnionym kontekście. Zachowaj archiwa, identyfikatory i stare ścieżki dla odtwarzalności.
+
+## Postęp 2026-11-01 — P43A/B
+
+- Badanie P43A: 576 analitycznych dróg 2D od 8 otworów Dayton do 4 podpór A/B przy szerokościach 4/8/10 mm i marginesach 0/1/2 mm; wybrano 144 najkrótsze rozwiązania. Raport 109, skrypt `skrypty/p43_trasy_i_awarie_podpor.js`, CSV/JSON i wykres. **Wniosek:** 10 mm szerokości + 2 mm marginesu jest geometrycznie sprzeczne z promieniem BCD184 mm i wycięciem r177,9 mm w płaszczyźnie frontu; to nie wyklucza łączników przestrzennych.
+- Badanie P43B: 1620 rozwiązań sztywnego interfejsu na czterech lub trzech aktywnych sprężynach, dla dwóch topologii, trzech kierunków/poziomów g/mimośrodów/rozkładów k i dwóch mas. Raport 110. Wybiórczy wzrost maksymalnej reakcji przy X: A 202,29→319,11 N, B 400,42→761,24 N (13,61 kg/5g/e120/hipotetyczne k=1000 N/mm). Warunek wstępnego docisku wyłącznie matematyczny, nie moment dokręcenia ani ocena nośności.
+- **Bramka:** brak pełnej geometrii kosza i łącznika 3D, właściwości MDF/spoin, kontaktu, rzeczywistych śrub i pomiarów; żadnego pliku nie wydawać jako CNC. Zachowano poprzednie dane/raporty P41–P42 i nie przywracano usuniętego obrazka P42C.
+- **Następny krok:** P44 — skojarzyć fizyczną geometrię ośmiu śrub, obwód kosza, porty wentylacyjne i model jednostronnego kontaktu z realną ścieżką sił (po uzyskaniu brakujących danych); do tego czasu pogłębiać tylko warunkowe granice analityczne i walidację ich numerów.

@@ -11,7 +11,7 @@ nie jest kandydatem na konstrukcję końcową.*
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 108 raportów · Python/JavaScript**
+**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 110 raportów · Python/JavaScript**
 
 Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie. Aktualna pula obejmuje także dwa przypadki wstrzymane w nowym audycie źródeł (EMS i SUPRAVOX), a ponadto nie każda konfiguracja ma jeszcze pełny komplet badań nieliniowych i termicznych.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
@@ -100,6 +100,22 @@ Skróty wyjaśniamy w [krótkim słowniku](#slownik).
 ### Czy najkrótsze łączniki nie przechodzą przez wycięcie?
 
 *48 testów rzutu wykazało, że dwa proste połączenia do belek B przecinają obszar otworu Ø355,8, a w ramie A jeden łącznik o szerokości 10mm ma podobny problem. To **kontrola 2D**, nie gotowy projekt mocowania. [Raport 108](raporty/108_P42C_laczniki_i_koncepcje_3D.md) · [Model OpenSCAD](dokumentacja/P42D_dwie_sciezki_REFERENCYJNE_NIE_CNC.scad).*
+
+## P43 — czy łączniki można poprowadzić bezpiecznie wokół wycięcia?
+
+### Dlaczego cienki margines przy śrubach jest ważniejszy niż samo obejście otworu?
+
+![P43A: budżet radialny tras od ośmiu śrub](wyniki/p43a_budzet_radialny_trasy.svg)
+
+*Wykonano **576 analiz par śruba–podpora**, wybierając 144 najkrótsze trasy w uproszczonej płaszczyźnie. Przy 8 mm szerokości i hipotetycznym odstępie 2 mm pozostaje **0,1 mm** radialnego marginesu na osi łącznika; przy 10 mm + 2 mm nie ma już miejsca nawet na jego początek. To **nie jest** rzeczywista szerokość drewna przy otworze śruby: tam między Ø6,5 mm a wycięciem pozostaje jedynie 2,85 mm MDF. [Raport 109](raporty/109_P43A_trasy_omijajace_wyciecie.md) · [wyniki CSV](wyniki/p43a_trasy_144.csv).*
+
+### Co jeśli jedna z czterech podpór przestaje przenosić obciążenie?
+
+![P43B: maksymalne reakcje po awarii podpory](wyniki/p43b_max_reakcje_po_utracie_podpory.svg)
+
+*W **1620 modelowych przypadkach** porównano pełne cztery podpory z wyłączeniem jednej. Przy 13,61 kg, 5g, mimośrodzie 120 mm i poziomej sile X maksymalna obliczona reakcja wzrasta w ramie A z **202,3 do 319,1 N**, a w belkach B z **400,4 do 761,2 N**. Sprężyny mają założoną sztywność, a prawdziwych połączeń nadal nie ma: nie jest to dowód bezpieczeństwa ani ugięcia gotowej konstrukcji. [Raport 110](raporty/110_P43B_awaria_jednej_podpory.md) · [pełne dane CSV](wyniki/p43b_awarie_1620.csv) · [kod odtwarzania](skrypty/p43_trasy_i_awarie_podpor.js).*
+
+**Wniosek:** szeroka rama A pozostaje kandydatem do badań konstrukcyjnych, ale żaden wariant nie jest zatwierdzony do CNC bez rzeczywistych złączy, geometrii kosza oraz weryfikacji kontaktu i materiałów.
 
 ## P40 — czy osiem śrub utrzyma głośnik i czy pierścień daje miejsce na montaż?
 

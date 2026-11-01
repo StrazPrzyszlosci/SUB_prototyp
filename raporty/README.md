@@ -125,3 +125,6 @@ bieżący zakres sprawdzaj w [programie 30 pakietów](../PROGRAM_30_BADAN.md).
 - [Raport 106 — P42A: 1458 modeli z czterema odległymi podporami, kontrola uzupełniająca P41](106_P42A_podpory_1458.md).
 - [Raport 107 — P42B: 162 testy uproszczonych obwiedni 3D nośników i wkładów](107_P42B_obwiednie_3D_dwoch_wariantow.md).
 - [Raport 108 — P42C: 48 kontroli prostych łączników względem wycięcia kosza](108_P42C_laczniki_i_koncepcje_3D.md).
+
+- [Raport 109 — P43A: trasy śrub do podpór z obejściem wycięcia, 576 zestawień i 144 optymalizacje geometrii 2D](109_P43A_trasy_omijajace_wyciecie.md).
+- [Raport 110 — P43B: 1620 scenariuszy utraty jednej z czterech podpór i docisk matematyczny](110_P43B_awaria_jednej_podpory.md).
