@@ -254,8 +254,10 @@ Skróty wyjaśniamy w [krótkim słowniku](#slownik).
 ## Głośniki: porównanie w tych samych warunkach
 
 **Rozszerzenie warunków badawczych (31.10.2026):** Dayton RSS390HF-4 jest
-**wstępnym faworytem, a nie ostatecznym wyborem**. Do aktualnej puli
-26 modeli dołączono audyt dokumentacji dziewięciu kolejnych marek:
+**wstępnym faworytem, a nie ostatecznym wyborem**. Aktualna pula liczy
+**34 modele głośników (35 konfiguracji elektrycznych)**. Po wcześniejszym
+porównaniu 26 modeli rozszerzyliśmy zestaw i przeprowadziliśmy audyt
+dokumentacji dziewięciu kolejnych marek:
 GPA, VOLT, SUPRAVOX, EMS, PURIFI, Kartesian, PHL, ETON i Davis.
 Modele nie przechodzą automatycznie do rankingu tylko dlatego, że
 występują w katalogu: sprawdzamy Xmax, Sd, Vd, zgodność montażu
@@ -329,8 +331,11 @@ oddziaływanie, a nie ranking pojedynczego parametru. Celem jest wybór
 najtańszego spośród wariantów spełniających zaakceptowane progi jakości
 i wydajności; dopóki progi i ceny nie są ustalone, wybór jest warunkowy.
 
-W porównaniu **26 przetworników / 27 konfiguracji elektrycznych**
-wstępnym faworytem jest **Dayton Audio RSS390HF-4 (15″, 4 Ω)**.
+We wcześniejszym porównaniu **26 przetworników / 27 konfiguracji elektrycznych**
+wstępnym faworytem został **Dayton Audio RSS390HF-4 (15″, 4 Ω)**.
+Aktualna pula **34 modeli / 35 konfiguracji elektrycznych** została objęta
+szerszą analizą przesiewową, ale nie wszystkie modele mają jeszcze kompletny
+zestaw badań nieliniowości, termiki i kosztów.
 W modelu osobnych sinusów 20–80 Hz, przy 120 l, napędzie 40 V RMS /
 12 A RMS i założonym limicie strat miedzi 50 W, uzyskał najwyższe
 minimum w badanej próbie stresowej. To wynik częściowej optymalizacji,
