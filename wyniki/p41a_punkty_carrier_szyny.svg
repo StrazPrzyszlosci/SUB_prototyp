@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1150" height="535" viewBox="0 0 1150 535"><rect width="1150" height="535" fill="white"/><text x="36" y="44" font-family="Arial" font-size="27" font-weight="bold" fill="#173e52">P41A — dwie ścieżki mocowania poza cienkim pasem MDF</text>
+<text x="36" y="75" font-family="Arial" font-size="15" fill="#677d8b">Hipotetyczne punkty dodatkowych mocowań, obrys frontu 1020×500 mm, kosz Ø388,4</text>
+<text x="45" y="120" font-family="Arial" font-size="20" font-weight="bold" fill="#26516a">A — C-kształtna rama</text>
+ <rect x="45" y="143" width="448.8" height="220" fill="#f0e9e0" stroke="#8c6c4c" stroke-width="2"/>
+ <circle cx="146.64" cy="253" r="85.448" fill="#d6e4ee" stroke="#59798e" stroke-width="1.6"/>
+ <circle cx="146.64" cy="253" r="78.276" fill="#fff" stroke="#738893"/>
+ <line x1="242.12" x2="242.12" y1="143" y2="363" stroke="#bd8661" stroke-dasharray="6 4" stroke-width="2"/>
+<circle cx="80.2" cy="338.8" r="6.3" fill="#438f74" stroke="#fff" stroke-width="1.6"/>
+<circle cx="146.64" cy="347.6" r="6.3" fill="#438f74" stroke="#fff" stroke-width="1.6"/>
+<circle cx="212.2" cy="338.8" r="6.3" fill="#438f74" stroke="#fff" stroke-width="1.6"/>
+<circle cx="229.8" cy="308" r="6.3" fill="#438f74" stroke="#fff" stroke-width="1.6"/>
+<circle cx="229.8" cy="198" r="6.3" fill="#438f74" stroke="#fff" stroke-width="1.6"/>
+<circle cx="212.2" cy="167.2" r="6.3" fill="#438f74" stroke="#fff" stroke-width="1.6"/>
+<circle cx="146.64" cy="158.4" r="6.3" fill="#438f74" stroke="#fff" stroke-width="1.6"/>
+<circle cx="80.2" cy="167.2" r="6.3" fill="#438f74" stroke="#fff" stroke-width="1.6"/>
+<text x="45" y="390" font-family="Arial" font-size="16" fill="#526b7b">Maks. reakcja: 223.4 N</text>
+ <text x="45" y="417" font-family="Arial" font-size="16" fill="#526b7b">Modelowe ugięcie: 0.364 mm</text>
+<text x="610" y="120" font-family="Arial" font-size="20" font-weight="bold" fill="#26516a">B — belki do wręgi</text>
+ <rect x="610" y="143" width="448.8" height="220" fill="#f0e9e0" stroke="#8c6c4c" stroke-width="2"/>
+ <circle cx="711.64" cy="253" r="85.448" fill="#d6e4ee" stroke="#59798e" stroke-width="1.6"/>
+ <circle cx="711.64" cy="253" r="78.276" fill="#fff" stroke="#738893"/>
+ <line x1="807.12" x2="807.12" y1="143" y2="363" stroke="#bd8661" stroke-dasharray="6 4" stroke-width="2"/>
+<circle cx="645.2" cy="338.8" r="6.3" fill="#438f74" stroke="#fff" stroke-width="1.6"/>
+<circle cx="711.64" cy="347.6" r="6.3" fill="#438f74" stroke="#fff" stroke-width="1.6"/>
+<circle cx="777.2" cy="338.8" r="6.3" fill="#438f74" stroke="#fff" stroke-width="1.6"/>
+<circle cx="808.44" cy="321.2" r="6.3" fill="#c66e4a" stroke="#fff" stroke-width="1.6"/>
+<circle cx="808.44" cy="184.8" r="6.3" fill="#c66e4a" stroke="#fff" stroke-width="1.6"/>
+<circle cx="777.2" cy="167.2" r="6.3" fill="#438f74" stroke="#fff" stroke-width="1.6"/>
+<circle cx="711.64" cy="158.4" r="6.3" fill="#438f74" stroke="#fff" stroke-width="1.6"/>
+<circle cx="645.2" cy="167.2" r="6.3" fill="#438f74" stroke="#fff" stroke-width="1.6"/>
+<text x="610" y="390" font-family="Arial" font-size="16" fill="#526b7b">Maks. reakcja: 221.6 N</text>
+ <text x="610" y="417" font-family="Arial" font-size="16" fill="#526b7b">Modelowe ugięcie: 0.325 mm</text>
+<circle cx="51" cy="458" r="7" fill="#438f74"/><text x="68" y="464" font-family="Arial" font-size="16" fill="#456474">Potencjalna kotwa w MDF</text>
+<circle cx="363" cy="458" r="7" fill="#c66e4a"/><text x="381" y="464" font-family="Arial" font-size="16" fill="#456474">Kotwa przy pierwszej wrędze (złącze nieznane)</text>
+<text x="37" y="505" font-family="Arial" font-size="15" fill="#9e6546">Przejście testu 2D nie oznacza miejsca na narzędzie lub braku kolizji w prawdziwym CAD 3D.</text></svg>
