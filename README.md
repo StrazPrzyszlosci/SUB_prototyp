@@ -11,7 +11,7 @@ nie jest kandydatem na konstrukcję końcową.*
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 102 raporty · Python/JavaScript**
+**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 105 raportów · Python/JavaScript**
 
 Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie. Aktualna pula obejmuje także dwa przypadki wstrzymane w nowym audycie źródeł (EMS i SUPRAVOX), a ponadto nie każda konfiguracja ma jeszcze pełny komplet badań nieliniowych i termicznych.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
@@ -66,6 +66,22 @@ Skróty wyjaśniamy w [krótkim słowniku](#slownik).
 ![P38B: wpływ korekty współrzędnych kosza na ciśnienie 80 Hz](wyniki/p38b_audyt_pozycji_zrodla.svg)
 
 *Oś x231/z250mm w P31C jest określona **od zewnętrznych krawędzi obudowy**. Po odjęciu grubości MDF22mm właściwe współrzędne wewnętrzne to **x209/z228mm**. Historyczny model P34B używał x231/z250mm także wewnątrz. W 120l na siatce55mm model RMS przy 80Hz zmienia się z 19,09% do 21,03%. **Oba wyniki to symulacje, nie THD**. [Raport 097](raporty/097_P38B_audyt_wspolrzednych_FV.md).*
+
+## P41 — dwie alternatywy mocowania Dayton zamiast cienkiego pierścienia
+
+### Porównanie nośnika typu A i belek typu B
+
+![P41A: dwie hipotetyczne ścieżki przeniesienia siły z kosza do struktury](wyniki/p41a_punkty_carrier_szyny.svg)
+
+*Dla tego samego przykładu 15kg / 5g / e120mm, sztywności kotew 300N/mm i mnożnika 3×, wariant A daje **223,4N**, a B **221,6N** maksymalnej reakcji na kotwę przy sile X. Oba układy w tym modelu przyjmują idealnie sztywny element przenoszący siły. Nie jest to badanie nośności śrub ani MDF. [Raport 103](raporty/103_P41A_carrier_kontra_szyny_2592.md).*
+
+### Dlaczego sam wybór metalu nie wystarcza?
+
+![P41B: analityczne ugięcia szyn zależne od przekroju i modułu E](wyniki/p41b_ugięcia_szyn.svg)
+
+*W modelu belki długości 380mm pod siłą środkową 200N, hipotetyczny profil 25×4mm ugina się o **0,627mm** przy E=70GPa, a o **0,219mm** przy E=200GPa. Po połączeniu tej podatności z modelem B jego obliczeniowe ugięcie rośnie: **0,325→0,383mm** w wybranym wariancie. Nie dowodzi to bezpieczeństwa ani możliwości wykonania. [Raport 104](raporty/104_P41B_podatnosc_belek_108.md).*
+
+**[Obie koncepcje w edytowalnym modelu OpenSCAD](dokumentacja/P41C_porownanie_nosne_A_B_NIE_CNC.scad)** — ustaw parametr `concept` na `"A"` lub `"B"`. Oba modele mają niezweryfikowane połączenia i zastępczą bryłę kosza. [Raport 105](raporty/105_P41C_koncepcje_3D_A_B.md).
 
 ## P40 — czy osiem śrub utrzyma głośnik i czy pierścień daje miejsce na montaż?
 
@@ -1595,3 +1611,16 @@ Po badaniu P34A idealnych prostopadłościanów (raport 086) wykonano **P34B, ra
 [Raport 101](raporty/101_P40A_reakcje_8_mocowan.md) · [432 przypadki reakcji](wyniki/p40a_reakcje_432_20261101.json) · [Raport 102](raporty/102_P40B_tolerancje_pierscienia_675.md) · [675 scenariuszy geometrii](wyniki/p40b_tolerancje_675_20261101.json).
 
 **Następna rekomendacja:** porównać co najmniej dwa alternatywne sposoby przenoszenia sił poza wąską strefę BCD Ø368mm, ustalić geometrię rzeczywistego kosza i połączeń, przeprowadzić wytrzymałościowy FEM kontaktowy oraz próby nośności na prawdziwym MDF 44mm. [Plan badań próbek i dwóch alternatywnych ścieżek sił](dokumentacja/P40_plan_weryfikacji_zlacza_i_dwoch_sciezek_sil.md). **Nie wydawać CNC ani nie dobierać śrub wyłącznie na podstawie tych modeli.**
+
+
+## P41 — analiza alternatywnych ścieżek sił kosza (01.11.2026)
+
+**P41A (raport 103):** 2592 równowag sił/momentów dla idealnie sztywnego nośnika, 8 podatnych kotew i dwóch układów A/B. Obliczono reakcje i maksymalne ugięcia przy masach 13,6 i 15kg, przyspieszeniach 1/5/10g oraz wielu hipotetycznych sztywnościach złączy. Model nie oblicza rzeczywistych naprężeń MDF ani bezpieczeństwa śrub.
+
+**P41B (raport 104):** 54 analityczne obliczenia belek o 3 przekrojach, 3 długościach, 2 modułach E i 3 siłach oraz 54 ponowne porównania wariantu B z ugięciem belek. Obliczenie pokazuje, że **ranking A/B jest zależny od sztywności**, więc nie można wskazać zwycięzcy bez pomiarów i poprawnego przestrzennego MES.
+
+**P41C (raport 105):** dwa referencyjne zespoły brył w OpenSCAD (carrier i szyny z tabami do pierwszej wręgi), **bez kompletnego kosza i rzeczywistego układu śrub**. Nie zostały zatwierdzone do frezowania ani montażu.
+
+[Raport 103](raporty/103_P41A_carrier_kontra_szyny_2592.md) · [2592 scenariusze](wyniki/p41a_carrier_vs_szyny_2592_20261101.json) · [Raport 104](raporty/104_P41B_podatnosc_belek_108.md) · [108 przypadków](wyniki/p41b_podatnosc_belek_108_20261101.json) · [Raport 105](raporty/105_P41C_koncepcje_3D_A_B.md) · [OpenSCAD A/B](dokumentacja/P41C_porownanie_nosne_A_B_NIE_CNC.scad).
+
+**Bramka CNC: nadal zamknięta.** Konieczne są wymiary prawdziwego kosza, 3D śrub/narzędzi, kontaktowy model mechaniczy ze zweryfikowaną materiałowo sztywnością i testy MDF/spoin; bez tych danych żaden z A/B nie ma udowodnionej wytrzymałości.
