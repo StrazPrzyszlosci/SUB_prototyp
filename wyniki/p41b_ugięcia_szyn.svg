@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="620" viewBox="0 0 1050 620"><rect width="1050" height="620" fill="white"/>
+<text x="35" y="42" font-family="Arial" font-weight="bold" font-size="27" fill="#214154">P41B — podatność szyn może odwrócić przewagę konstrukcji B</text>
+<text x="35" y="75" font-family="Arial" font-size="15" fill="#637b86">Obliczeniowa belka swobodnie podparta, L380 mm, F200 N w środku, ugiecie w kierunku Y</text>
+<rect x="40" y="101" width="17" height="15" fill="#cb865c"/><text x="65" y="114" font-family="Arial" font-size="16" fill="#425e70">E=70 GPa</text>
+<rect x="270" y="101" width="17" height="15" fill="#5183a0"/><text x="295" y="114" font-family="Arial" font-size="16" fill="#425e70">E=200 GPa</text><text x="37" y="164" font-family="Arial" font-size="16" fill="#34576b">20×3 / 70 GPa</text>
+<rect x="250" y="142" width="547.086825" height="29" rx="3" fill="#cb865c"/>
+<text x="812.086825" y="163" font-family="Arial" font-size="16" fill="#3b596b">1.633 mm</text><text x="37" y="222" font-family="Arial" font-size="16" fill="#34576b">20×3 / 200 GPa</text>
+<rect x="250" y="200" width="191.480305" height="29" rx="3" fill="#5183a0"/>
+<text x="456.480305" y="221" font-family="Arial" font-size="16" fill="#3b596b">0.572 mm</text><text x="37" y="280" font-family="Arial" font-size="16" fill="#34576b">25×4 / 70 GPa</text>
+<rect x="250" y="258" width="210.081515" height="29" rx="3" fill="#cb865c"/>
+<text x="475.08151499999997" y="279" font-family="Arial" font-size="16" fill="#3b596b">0.627 mm</text><text x="37" y="338" font-family="Arial" font-size="16" fill="#34576b">25×4 / 200 GPa</text>
+<rect x="250" y="316" width="73.52848" height="29" rx="3" fill="#5183a0"/>
+<text x="338.52848" y="337" font-family="Arial" font-size="16" fill="#3b596b">0.219 mm</text><text x="37" y="396" font-family="Arial" font-size="16" fill="#34576b">30×6 / 70 GPa</text>
+<rect x="250" y="374" width="81.0499" height="29" rx="3" fill="#cb865c"/>
+<text x="346.0499" y="395" font-family="Arial" font-size="16" fill="#3b596b">0.242 mm</text><text x="37" y="454" font-family="Arial" font-size="16" fill="#34576b">30×6 / 200 GPa</text>
+<rect x="250" y="432" width="28.367465000000003" height="29" rx="3" fill="#5183a0"/>
+<text x="293.367465" y="453" font-family="Arial" font-size="16" fill="#3b596b">0.085 mm</text>
+<text x="35" y="546" font-family="Arial" font-size="16" fill="#6c594a">Przekrój w mm: wymiar y × wymiar z. Sztywność zależy od wymiaru y w 3. potędze.</text>
+<text x="35" y="580" font-family="Arial" font-size="14" fill="#a26249">To model analityczny, bez węzłów, skręcania, dopuszczalnych naprężeń i fizycznych próbek.</text></svg>
