@@ -1,0 +1,64 @@
+name: P42 - four support load paths and connector fit audit
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  p42-model-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Recompute 1458 spring cases, 162 AABB envelopes and 48 connector paths
+        run: |
+          node --check skrypty/p42a_model_czterech_podpor.js
+          node --check skrypty/p42b_obwiednie_podpor_3d.js
+          node --check skrypty/p42c_laczniki_w_rzucie.js
+          node skrypty/p42a_model_czterech_podpor.js >/tmp/p42a.log
+          node skrypty/p42b_obwiednie_podpor_3d.js >/tmp/p42b.log
+          node skrypty/p42c_laczniki_w_rzucie.js >/tmp/p42c.log
+      - name: Check independent analytical and geometric invariants
+        run: |
+          node - <<'NODE'
+          const fs=require('node:fs');
+          const A=JSON.parse(fs.readFileSync('wyniki/p42a_podpory_1458_20261101.json','utf8'));
+          const B=JSON.parse(fs.readFileSync('wyniki/p42b_obwiednie_162_20261101.json','utf8'));
+          const C=JSON.parse(fs.readFileSync('wyniki/p42c_laczniki_48_20261101.json','utf8'));
+          if(A.study!=='P42A'||A.cases!==1458||A.results.length!==1458)throw Error('P42A reproducibility');
+          if(B.study!=='P42B'||B.summary.n!==162||B.rows.length!==162)throw Error('P42B reproducibility');
+          if(C.study!=='P42C'||C.cases!==48||C.rows.length!==48)throw Error('P42C reproducibility');
+          function val(t,d){return A.reference.find(x=>x.option===t&&x.direction===d).max_resultant_anchor_N}
+          if(Math.abs(val('carrier4','X')-202.2915)>.01||Math.abs(val('rails4','X')-400.417)>.01)
+            throw Error('P42 reference reactions');
+          if(!(val('rails4','X')>val('carrier4','X'))||Math.abs(val('carrier4','Z')-val('rails4','Z'))>3)
+            throw Error('Load direction comparison');
+          if(A.results.some(x=>x.max_equilibrium_residual>1e-6))throw Error('Support equilibrium');
+          if(B.summary.pass_carrier!==81||B.summary.pass_rails!==75||B.summary.module_bar_collisions!==0)
+            throw Error('AABB test');
+          if(C.interference_counts.carrier4_width10!==1||C.interference_counts.rails4_width4!==2)
+            throw Error('Straight link cutout interference');
+          const src=fs.readFileSync('README.md','utf8');
+          const n=src.match(/19 producentów · (\d+) raport(?:y|ów) · Python\/JavaScript/);
+          if(!n||Number(n[1])<108||/klient/i.test(src))throw Error('README research integrity');
+          if((src.match(/!\[[^\]]*\]\([^)]*\)/g)||[]).length<101)throw Error('Missing P42 guide figures');
+          console.log('PASS P42: 1458 + 162 + 48, 108 reports and 101 guide diagrams');
+          NODE
+  p42-openscad:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install OpenSCAD CLI
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends openscad
+      - name: Compile both provisional CSG options
+        run: |
+          openscad -o /tmp/p42_carrier.csg -D 'variant="carrier4"' dokumentacja/P42D_dwie_sciezki_REFERENCYJNE_NIE_CNC.scad
+          openscad -o /tmp/p42_rails.csg -D 'variant="rails4"' dokumentacja/P42D_dwie_sciezki_REFERENCYJNE_NIE_CNC.scad
+          test -s /tmp/p42_carrier.csg
+          test -s /tmp/p42_rails.csg
+          echo 'CSG compiled; no structural CAD or CNC qualification'
