@@ -1,0 +1,553 @@
+{
+  "study": "P41C",
+  "date": "2026-11-01",
+  "method": "straight nearest-pad links, exact point-to-segment XZ geometry, offset by link half-width",
+  "cases": 48,
+  "source_dimensions": "Dayton RSS390HF-4 manufacturer 8 holes BCD368 and aperture D355.8",
+  "inputs": {
+    "date": "2026-11-01",
+    "cx": 231,
+    "cz": 250,
+    "bcd_radius_mm": 184,
+    "aperture_radius_mm": 177.9,
+    "candidate_paths": {
+      "carrier4": [
+        [
+          75,
+          45
+        ],
+        [
+          425,
+          45
+        ],
+        [
+          75,
+          455
+        ],
+        [
+          425,
+          455
+        ]
+      ],
+      "rails4": [
+        [
+          176,
+          37
+        ],
+        [
+          286,
+          37
+        ],
+        [
+          176,
+          463
+        ],
+        [
+          286,
+          463
+        ]
+      ]
+    },
+    "assumed_link_halfwidth_mm": [
+      2,
+      4,
+      5
+    ]
+  },
+  "interference_counts": {
+    "carrier4_width4": 0,
+    "carrier4_width8": 0,
+    "carrier4_width10": 1,
+    "rails4_width4": 2,
+    "rails4_width8": 2,
+    "rails4_width10": 2
+  },
+  "rows": [
+    {
+      "layout": "carrier4",
+      "bolt_id": 1,
+      "anchor_id": 2,
+      "link_width_mm": 4,
+      "length_mm": 205.2438,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 4.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "carrier4",
+      "bolt_id": 2,
+      "anchor_id": 4,
+      "link_width_mm": 4,
+      "length_mm": 98.4434,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 4.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "carrier4",
+      "bolt_id": 3,
+      "anchor_id": 3,
+      "link_width_mm": 4,
+      "length_mm": 157.4071,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 4.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "carrier4",
+      "bolt_id": 4,
+      "anchor_id": 3,
+      "link_width_mm": 4,
+      "length_mm": 79.2419,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 4.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "carrier4",
+      "bolt_id": 5,
+      "anchor_id": 3,
+      "link_width_mm": 4,
+      "length_mm": 206.9034,
+      "minimum_centerline_radius_mm": 182.3073,
+      "projected_edge_margin_mm": 2.4073,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "carrier4",
+      "bolt_id": 6,
+      "anchor_id": 1,
+      "link_width_mm": 4,
+      "length_mm": 79.2419,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 4.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "carrier4",
+      "bolt_id": 7,
+      "anchor_id": 1,
+      "link_width_mm": 4,
+      "length_mm": 157.4071,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 4.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "carrier4",
+      "bolt_id": 8,
+      "anchor_id": 2,
+      "link_width_mm": 4,
+      "length_mm": 98.4434,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 4.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "carrier4",
+      "bolt_id": 1,
+      "anchor_id": 2,
+      "link_width_mm": 8,
+      "length_mm": 205.2438,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 2.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "carrier4",
+      "bolt_id": 2,
+      "anchor_id": 4,
+      "link_width_mm": 8,
+      "length_mm": 98.4434,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 2.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "carrier4",
+      "bolt_id": 3,
+      "anchor_id": 3,
+      "link_width_mm": 8,
+      "length_mm": 157.4071,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 2.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "carrier4",
+      "bolt_id": 4,
+      "anchor_id": 3,
+      "link_width_mm": 8,
+      "length_mm": 79.2419,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 2.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "carrier4",
+      "bolt_id": 5,
+      "anchor_id": 3,
+      "link_width_mm": 8,
+      "length_mm": 206.9034,
+      "minimum_centerline_radius_mm": 182.3073,
+      "projected_edge_margin_mm": 0.4073,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "carrier4",
+      "bolt_id": 6,
+      "anchor_id": 1,
+      "link_width_mm": 8,
+      "length_mm": 79.2419,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 2.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "carrier4",
+      "bolt_id": 7,
+      "anchor_id": 1,
+      "link_width_mm": 8,
+      "length_mm": 157.4071,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 2.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "carrier4",
+      "bolt_id": 8,
+      "anchor_id": 2,
+      "link_width_mm": 8,
+      "length_mm": 98.4434,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 2.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "carrier4",
+      "bolt_id": 1,
+      "anchor_id": 2,
+      "link_width_mm": 10,
+      "length_mm": 205.2438,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 1.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "carrier4",
+      "bolt_id": 2,
+      "anchor_id": 4,
+      "link_width_mm": 10,
+      "length_mm": 98.4434,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 1.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "carrier4",
+      "bolt_id": 3,
+      "anchor_id": 3,
+      "link_width_mm": 10,
+      "length_mm": 157.4071,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 1.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "carrier4",
+      "bolt_id": 4,
+      "anchor_id": 3,
+      "link_width_mm": 10,
+      "length_mm": 79.2419,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 1.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "carrier4",
+      "bolt_id": 5,
+      "anchor_id": 3,
+      "link_width_mm": 10,
+      "length_mm": 206.9034,
+      "minimum_centerline_radius_mm": 182.3073,
+      "projected_edge_margin_mm": -0.5927,
+      "projected_aperture_interference": true
+    },
+    {
+      "layout": "carrier4",
+      "bolt_id": 6,
+      "anchor_id": 1,
+      "link_width_mm": 10,
+      "length_mm": 79.2419,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 1.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "carrier4",
+      "bolt_id": 7,
+      "anchor_id": 1,
+      "link_width_mm": 10,
+      "length_mm": 157.4071,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 1.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "carrier4",
+      "bolt_id": 8,
+      "anchor_id": 2,
+      "link_width_mm": 10,
+      "length_mm": 98.4434,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 1.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "rails4",
+      "bolt_id": 1,
+      "anchor_id": 2,
+      "link_width_mm": 4,
+      "length_mm": 249.0181,
+      "minimum_centerline_radius_mm": 157.3862,
+      "projected_edge_margin_mm": -22.5138,
+      "projected_aperture_interference": true
+    },
+    {
+      "layout": "rails4",
+      "bolt_id": 2,
+      "anchor_id": 4,
+      "link_width_mm": 4,
+      "length_mm": 111.8584,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 4.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "rails4",
+      "bolt_id": 3,
+      "anchor_id": 3,
+      "link_width_mm": 4,
+      "length_mm": 62.1772,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 4.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "rails4",
+      "bolt_id": 4,
+      "anchor_id": 3,
+      "link_width_mm": 4,
+      "length_mm": 111.8584,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 4.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "rails4",
+      "bolt_id": 5,
+      "anchor_id": 3,
+      "link_width_mm": 4,
+      "length_mm": 249.0181,
+      "minimum_centerline_radius_mm": 157.3862,
+      "projected_edge_margin_mm": -22.5138,
+      "projected_aperture_interference": true
+    },
+    {
+      "layout": "rails4",
+      "bolt_id": 6,
+      "anchor_id": 1,
+      "link_width_mm": 4,
+      "length_mm": 111.8584,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 4.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "rails4",
+      "bolt_id": 7,
+      "anchor_id": 1,
+      "link_width_mm": 4,
+      "length_mm": 62.1772,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 4.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "rails4",
+      "bolt_id": 8,
+      "anchor_id": 2,
+      "link_width_mm": 4,
+      "length_mm": 111.8584,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 4.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "rails4",
+      "bolt_id": 1,
+      "anchor_id": 2,
+      "link_width_mm": 8,
+      "length_mm": 249.0181,
+      "minimum_centerline_radius_mm": 157.3862,
+      "projected_edge_margin_mm": -24.5138,
+      "projected_aperture_interference": true
+    },
+    {
+      "layout": "rails4",
+      "bolt_id": 2,
+      "anchor_id": 4,
+      "link_width_mm": 8,
+      "length_mm": 111.8584,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 2.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "rails4",
+      "bolt_id": 3,
+      "anchor_id": 3,
+      "link_width_mm": 8,
+      "length_mm": 62.1772,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 2.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "rails4",
+      "bolt_id": 4,
+      "anchor_id": 3,
+      "link_width_mm": 8,
+      "length_mm": 111.8584,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 2.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "rails4",
+      "bolt_id": 5,
+      "anchor_id": 3,
+      "link_width_mm": 8,
+      "length_mm": 249.0181,
+      "minimum_centerline_radius_mm": 157.3862,
+      "projected_edge_margin_mm": -24.5138,
+      "projected_aperture_interference": true
+    },
+    {
+      "layout": "rails4",
+      "bolt_id": 6,
+      "anchor_id": 1,
+      "link_width_mm": 8,
+      "length_mm": 111.8584,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 2.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "rails4",
+      "bolt_id": 7,
+      "anchor_id": 1,
+      "link_width_mm": 8,
+      "length_mm": 62.1772,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 2.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "rails4",
+      "bolt_id": 8,
+      "anchor_id": 2,
+      "link_width_mm": 8,
+      "length_mm": 111.8584,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 2.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "rails4",
+      "bolt_id": 1,
+      "anchor_id": 2,
+      "link_width_mm": 10,
+      "length_mm": 249.0181,
+      "minimum_centerline_radius_mm": 157.3862,
+      "projected_edge_margin_mm": -25.5138,
+      "projected_aperture_interference": true
+    },
+    {
+      "layout": "rails4",
+      "bolt_id": 2,
+      "anchor_id": 4,
+      "link_width_mm": 10,
+      "length_mm": 111.8584,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 1.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "rails4",
+      "bolt_id": 3,
+      "anchor_id": 3,
+      "link_width_mm": 10,
+      "length_mm": 62.1772,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 1.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "rails4",
+      "bolt_id": 4,
+      "anchor_id": 3,
+      "link_width_mm": 10,
+      "length_mm": 111.8584,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 1.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "rails4",
+      "bolt_id": 5,
+      "anchor_id": 3,
+      "link_width_mm": 10,
+      "length_mm": 249.0181,
+      "minimum_centerline_radius_mm": 157.3862,
+      "projected_edge_margin_mm": -25.5138,
+      "projected_aperture_interference": true
+    },
+    {
+      "layout": "rails4",
+      "bolt_id": 6,
+      "anchor_id": 1,
+      "link_width_mm": 10,
+      "length_mm": 111.8584,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 1.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "rails4",
+      "bolt_id": 7,
+      "anchor_id": 1,
+      "link_width_mm": 10,
+      "length_mm": 62.1772,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 1.1,
+      "projected_aperture_interference": false
+    },
+    {
+      "layout": "rails4",
+      "bolt_id": 8,
+      "anchor_id": 2,
+      "link_width_mm": 10,
+      "length_mm": 111.8584,
+      "minimum_centerline_radius_mm": 184,
+      "projected_edge_margin_mm": 1.1,
+      "projected_aperture_interference": false
+    }
+  ],
+  "warnings": [
+    "Only orthographic 2D front projection; a 3D link behind the baffle may bypass a cutout, but it may hit the actual basket or magnet.",
+    "Link cross-section/plane, head, washer, flange radius, screw pilot and fastening to MDF are not designed.",
+    "The nearest-anchor straight segment is a convenience heuristic, not an optimized or validated structural load path.",
+    "The projected hole interference can only reject this idealized STRAIGHT connection in the assumed plane, not the entire carrier/rail concept."
+  ]
+}
