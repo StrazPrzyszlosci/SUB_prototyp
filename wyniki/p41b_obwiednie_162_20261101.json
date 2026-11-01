@@ -1,0 +1,2869 @@
+{
+  "study": "P41B",
+  "date": "2026-11-01",
+  "status": "research geometry envelope; NOT real CAD fit",
+  "inputs": {
+    "date": "2026-11-01",
+    "size_mm": [
+      1020,
+      425,
+      500
+    ],
+    "wall_mm": 22,
+    "driver_center": [
+      231,
+      250
+    ],
+    "flange_radius_mm": 194.2,
+    "layouts": {
+      "carrier4": {
+        "pads": [
+          [
+            75,
+            45
+          ],
+          [
+            425,
+            45
+          ],
+          [
+            75,
+            455
+          ],
+          [
+            425,
+            455
+          ]
+        ],
+        "y": [
+          44,
+          74
+        ]
+      },
+      "rails4": {
+        "pads": [
+          [
+            176,
+            37
+          ],
+          [
+            286,
+            37
+          ],
+          [
+            176,
+            463
+          ],
+          [
+            286,
+            463
+          ]
+        ],
+        "y": [
+          44,
+          403
+        ]
+      }
+    },
+    "widths_half_mm": [
+      6,
+      9,
+      12
+    ],
+    "shifts_mm": [
+      [
+        0,
+        0
+      ],
+      [
+        -2,
+        -2
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "envelope_radius_mm": [
+      130,
+      170,
+      205
+    ],
+    "volumes": [
+      "100",
+      "120",
+      "150"
+    ]
+  },
+  "summary": {
+    "n": 162,
+    "pass": 156,
+    "pass_carrier": 81,
+    "pass_rails": 75,
+    "module_bar_collisions": 0,
+    "motor_envelope_failures": 6,
+    "side_wall_failures": 0
+  },
+  "rows": [
+    {
+      "layout": "carrier4",
+      "state": "100",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 249.2007,
+      "motor_surrogate_gap_mm": 119.2007,
+      "flange_gap_mm": 55.0007,
+      "inner_sidewall_gap_mm": 47,
+      "inner_topbottom_gap_mm": 17,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "100",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 249.2007,
+      "motor_surrogate_gap_mm": 79.2007,
+      "flange_gap_mm": 55.0007,
+      "inner_sidewall_gap_mm": 47,
+      "inner_topbottom_gap_mm": 17,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "100",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 249.2007,
+      "motor_surrogate_gap_mm": 44.2007,
+      "flange_gap_mm": 55.0007,
+      "inner_sidewall_gap_mm": 47,
+      "inner_topbottom_gap_mm": 17,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "100",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 248.8232,
+      "motor_surrogate_gap_mm": 118.8232,
+      "flange_gap_mm": 54.6232,
+      "inner_sidewall_gap_mm": 45,
+      "inner_topbottom_gap_mm": 15,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "100",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 248.8232,
+      "motor_surrogate_gap_mm": 78.8232,
+      "flange_gap_mm": 54.6232,
+      "inner_sidewall_gap_mm": 45,
+      "inner_topbottom_gap_mm": 15,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "100",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 248.8232,
+      "motor_surrogate_gap_mm": 43.8232,
+      "flange_gap_mm": 54.6232,
+      "inner_sidewall_gap_mm": 45,
+      "inner_topbottom_gap_mm": 15,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "100",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 246.4001,
+      "motor_surrogate_gap_mm": 116.4001,
+      "flange_gap_mm": 52.2001,
+      "inner_sidewall_gap_mm": 49,
+      "inner_topbottom_gap_mm": 15,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "100",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 246.4001,
+      "motor_surrogate_gap_mm": 76.4001,
+      "flange_gap_mm": 52.2001,
+      "inner_sidewall_gap_mm": 49,
+      "inner_topbottom_gap_mm": 15,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "100",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 246.4001,
+      "motor_surrogate_gap_mm": 41.4001,
+      "flange_gap_mm": 52.2001,
+      "inner_sidewall_gap_mm": 49,
+      "inner_topbottom_gap_mm": 15,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "100",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 245,
+      "motor_surrogate_gap_mm": 115,
+      "flange_gap_mm": 50.8,
+      "inner_sidewall_gap_mm": 44,
+      "inner_topbottom_gap_mm": 14,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "100",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 245,
+      "motor_surrogate_gap_mm": 75,
+      "flange_gap_mm": 50.8,
+      "inner_sidewall_gap_mm": 44,
+      "inner_topbottom_gap_mm": 14,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "100",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 245,
+      "motor_surrogate_gap_mm": 40,
+      "flange_gap_mm": 50.8,
+      "inner_sidewall_gap_mm": 44,
+      "inner_topbottom_gap_mm": 14,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "100",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 244.616,
+      "motor_surrogate_gap_mm": 114.616,
+      "flange_gap_mm": 50.416,
+      "inner_sidewall_gap_mm": 42,
+      "inner_topbottom_gap_mm": 12,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "100",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 244.616,
+      "motor_surrogate_gap_mm": 74.616,
+      "flange_gap_mm": 50.416,
+      "inner_sidewall_gap_mm": 42,
+      "inner_topbottom_gap_mm": 12,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "100",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 244.616,
+      "motor_surrogate_gap_mm": 39.616,
+      "flange_gap_mm": 50.416,
+      "inner_sidewall_gap_mm": 42,
+      "inner_topbottom_gap_mm": 12,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "100",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 242.2003,
+      "motor_surrogate_gap_mm": 112.2003,
+      "flange_gap_mm": 48.0003,
+      "inner_sidewall_gap_mm": 46,
+      "inner_topbottom_gap_mm": 12,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "100",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 242.2003,
+      "motor_surrogate_gap_mm": 72.2003,
+      "flange_gap_mm": 48.0003,
+      "inner_sidewall_gap_mm": 46,
+      "inner_topbottom_gap_mm": 12,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "100",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 242.2003,
+      "motor_surrogate_gap_mm": 37.2003,
+      "flange_gap_mm": 48.0003,
+      "inner_sidewall_gap_mm": 46,
+      "inner_topbottom_gap_mm": 12,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "100",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 240.8007,
+      "motor_surrogate_gap_mm": 110.8007,
+      "flange_gap_mm": 46.6007,
+      "inner_sidewall_gap_mm": 41,
+      "inner_topbottom_gap_mm": 11,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "100",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 240.8007,
+      "motor_surrogate_gap_mm": 70.8007,
+      "flange_gap_mm": 46.6007,
+      "inner_sidewall_gap_mm": 41,
+      "inner_topbottom_gap_mm": 11,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "100",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 240.8007,
+      "motor_surrogate_gap_mm": 35.8007,
+      "flange_gap_mm": 46.6007,
+      "inner_sidewall_gap_mm": 41,
+      "inner_topbottom_gap_mm": 11,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "100",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 240.4101,
+      "motor_surrogate_gap_mm": 110.4101,
+      "flange_gap_mm": 46.2101,
+      "inner_sidewall_gap_mm": 39,
+      "inner_topbottom_gap_mm": 9,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "100",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 240.4101,
+      "motor_surrogate_gap_mm": 70.4101,
+      "flange_gap_mm": 46.2101,
+      "inner_sidewall_gap_mm": 39,
+      "inner_topbottom_gap_mm": 9,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "100",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 240.4101,
+      "motor_surrogate_gap_mm": 35.4101,
+      "flange_gap_mm": 46.2101,
+      "inner_sidewall_gap_mm": 39,
+      "inner_topbottom_gap_mm": 9,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "100",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 238.0021,
+      "motor_surrogate_gap_mm": 108.0021,
+      "flange_gap_mm": 43.8021,
+      "inner_sidewall_gap_mm": 43,
+      "inner_topbottom_gap_mm": 9,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "100",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 238.0021,
+      "motor_surrogate_gap_mm": 68.0021,
+      "flange_gap_mm": 43.8021,
+      "inner_sidewall_gap_mm": 43,
+      "inner_topbottom_gap_mm": 9,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "100",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 238.0021,
+      "motor_surrogate_gap_mm": 33.0021,
+      "flange_gap_mm": 43.8021,
+      "inner_sidewall_gap_mm": 43,
+      "inner_topbottom_gap_mm": 9,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "120",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 249.2007,
+      "motor_surrogate_gap_mm": 119.2007,
+      "flange_gap_mm": 55.0007,
+      "inner_sidewall_gap_mm": 47,
+      "inner_topbottom_gap_mm": 17,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "120",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 249.2007,
+      "motor_surrogate_gap_mm": 79.2007,
+      "flange_gap_mm": 55.0007,
+      "inner_sidewall_gap_mm": 47,
+      "inner_topbottom_gap_mm": 17,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "120",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 249.2007,
+      "motor_surrogate_gap_mm": 44.2007,
+      "flange_gap_mm": 55.0007,
+      "inner_sidewall_gap_mm": 47,
+      "inner_topbottom_gap_mm": 17,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "120",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 248.8232,
+      "motor_surrogate_gap_mm": 118.8232,
+      "flange_gap_mm": 54.6232,
+      "inner_sidewall_gap_mm": 45,
+      "inner_topbottom_gap_mm": 15,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "120",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 248.8232,
+      "motor_surrogate_gap_mm": 78.8232,
+      "flange_gap_mm": 54.6232,
+      "inner_sidewall_gap_mm": 45,
+      "inner_topbottom_gap_mm": 15,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "120",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 248.8232,
+      "motor_surrogate_gap_mm": 43.8232,
+      "flange_gap_mm": 54.6232,
+      "inner_sidewall_gap_mm": 45,
+      "inner_topbottom_gap_mm": 15,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "120",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 246.4001,
+      "motor_surrogate_gap_mm": 116.4001,
+      "flange_gap_mm": 52.2001,
+      "inner_sidewall_gap_mm": 49,
+      "inner_topbottom_gap_mm": 15,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "120",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 246.4001,
+      "motor_surrogate_gap_mm": 76.4001,
+      "flange_gap_mm": 52.2001,
+      "inner_sidewall_gap_mm": 49,
+      "inner_topbottom_gap_mm": 15,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "120",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 246.4001,
+      "motor_surrogate_gap_mm": 41.4001,
+      "flange_gap_mm": 52.2001,
+      "inner_sidewall_gap_mm": 49,
+      "inner_topbottom_gap_mm": 15,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "120",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 245,
+      "motor_surrogate_gap_mm": 115,
+      "flange_gap_mm": 50.8,
+      "inner_sidewall_gap_mm": 44,
+      "inner_topbottom_gap_mm": 14,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "120",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 245,
+      "motor_surrogate_gap_mm": 75,
+      "flange_gap_mm": 50.8,
+      "inner_sidewall_gap_mm": 44,
+      "inner_topbottom_gap_mm": 14,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "120",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 245,
+      "motor_surrogate_gap_mm": 40,
+      "flange_gap_mm": 50.8,
+      "inner_sidewall_gap_mm": 44,
+      "inner_topbottom_gap_mm": 14,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "120",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 244.616,
+      "motor_surrogate_gap_mm": 114.616,
+      "flange_gap_mm": 50.416,
+      "inner_sidewall_gap_mm": 42,
+      "inner_topbottom_gap_mm": 12,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "120",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 244.616,
+      "motor_surrogate_gap_mm": 74.616,
+      "flange_gap_mm": 50.416,
+      "inner_sidewall_gap_mm": 42,
+      "inner_topbottom_gap_mm": 12,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "120",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 244.616,
+      "motor_surrogate_gap_mm": 39.616,
+      "flange_gap_mm": 50.416,
+      "inner_sidewall_gap_mm": 42,
+      "inner_topbottom_gap_mm": 12,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "120",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 242.2003,
+      "motor_surrogate_gap_mm": 112.2003,
+      "flange_gap_mm": 48.0003,
+      "inner_sidewall_gap_mm": 46,
+      "inner_topbottom_gap_mm": 12,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "120",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 242.2003,
+      "motor_surrogate_gap_mm": 72.2003,
+      "flange_gap_mm": 48.0003,
+      "inner_sidewall_gap_mm": 46,
+      "inner_topbottom_gap_mm": 12,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "120",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 242.2003,
+      "motor_surrogate_gap_mm": 37.2003,
+      "flange_gap_mm": 48.0003,
+      "inner_sidewall_gap_mm": 46,
+      "inner_topbottom_gap_mm": 12,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "120",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 240.8007,
+      "motor_surrogate_gap_mm": 110.8007,
+      "flange_gap_mm": 46.6007,
+      "inner_sidewall_gap_mm": 41,
+      "inner_topbottom_gap_mm": 11,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "120",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 240.8007,
+      "motor_surrogate_gap_mm": 70.8007,
+      "flange_gap_mm": 46.6007,
+      "inner_sidewall_gap_mm": 41,
+      "inner_topbottom_gap_mm": 11,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "120",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 240.8007,
+      "motor_surrogate_gap_mm": 35.8007,
+      "flange_gap_mm": 46.6007,
+      "inner_sidewall_gap_mm": 41,
+      "inner_topbottom_gap_mm": 11,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "120",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 240.4101,
+      "motor_surrogate_gap_mm": 110.4101,
+      "flange_gap_mm": 46.2101,
+      "inner_sidewall_gap_mm": 39,
+      "inner_topbottom_gap_mm": 9,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "120",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 240.4101,
+      "motor_surrogate_gap_mm": 70.4101,
+      "flange_gap_mm": 46.2101,
+      "inner_sidewall_gap_mm": 39,
+      "inner_topbottom_gap_mm": 9,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "120",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 240.4101,
+      "motor_surrogate_gap_mm": 35.4101,
+      "flange_gap_mm": 46.2101,
+      "inner_sidewall_gap_mm": 39,
+      "inner_topbottom_gap_mm": 9,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "120",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 238.0021,
+      "motor_surrogate_gap_mm": 108.0021,
+      "flange_gap_mm": 43.8021,
+      "inner_sidewall_gap_mm": 43,
+      "inner_topbottom_gap_mm": 9,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "120",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 238.0021,
+      "motor_surrogate_gap_mm": 68.0021,
+      "flange_gap_mm": 43.8021,
+      "inner_sidewall_gap_mm": 43,
+      "inner_topbottom_gap_mm": 9,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "120",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 238.0021,
+      "motor_surrogate_gap_mm": 33.0021,
+      "flange_gap_mm": 43.8021,
+      "inner_sidewall_gap_mm": 43,
+      "inner_topbottom_gap_mm": 9,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "150",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 249.2007,
+      "motor_surrogate_gap_mm": 119.2007,
+      "flange_gap_mm": 55.0007,
+      "inner_sidewall_gap_mm": 47,
+      "inner_topbottom_gap_mm": 17,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "150",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 249.2007,
+      "motor_surrogate_gap_mm": 79.2007,
+      "flange_gap_mm": 55.0007,
+      "inner_sidewall_gap_mm": 47,
+      "inner_topbottom_gap_mm": 17,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "150",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 249.2007,
+      "motor_surrogate_gap_mm": 44.2007,
+      "flange_gap_mm": 55.0007,
+      "inner_sidewall_gap_mm": 47,
+      "inner_topbottom_gap_mm": 17,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "150",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 248.8232,
+      "motor_surrogate_gap_mm": 118.8232,
+      "flange_gap_mm": 54.6232,
+      "inner_sidewall_gap_mm": 45,
+      "inner_topbottom_gap_mm": 15,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "150",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 248.8232,
+      "motor_surrogate_gap_mm": 78.8232,
+      "flange_gap_mm": 54.6232,
+      "inner_sidewall_gap_mm": 45,
+      "inner_topbottom_gap_mm": 15,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "150",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 248.8232,
+      "motor_surrogate_gap_mm": 43.8232,
+      "flange_gap_mm": 54.6232,
+      "inner_sidewall_gap_mm": 45,
+      "inner_topbottom_gap_mm": 15,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "150",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 246.4001,
+      "motor_surrogate_gap_mm": 116.4001,
+      "flange_gap_mm": 52.2001,
+      "inner_sidewall_gap_mm": 49,
+      "inner_topbottom_gap_mm": 15,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "150",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 246.4001,
+      "motor_surrogate_gap_mm": 76.4001,
+      "flange_gap_mm": 52.2001,
+      "inner_sidewall_gap_mm": 49,
+      "inner_topbottom_gap_mm": 15,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "150",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 246.4001,
+      "motor_surrogate_gap_mm": 41.4001,
+      "flange_gap_mm": 52.2001,
+      "inner_sidewall_gap_mm": 49,
+      "inner_topbottom_gap_mm": 15,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "150",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 245,
+      "motor_surrogate_gap_mm": 115,
+      "flange_gap_mm": 50.8,
+      "inner_sidewall_gap_mm": 44,
+      "inner_topbottom_gap_mm": 14,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "150",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 245,
+      "motor_surrogate_gap_mm": 75,
+      "flange_gap_mm": 50.8,
+      "inner_sidewall_gap_mm": 44,
+      "inner_topbottom_gap_mm": 14,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "150",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 245,
+      "motor_surrogate_gap_mm": 40,
+      "flange_gap_mm": 50.8,
+      "inner_sidewall_gap_mm": 44,
+      "inner_topbottom_gap_mm": 14,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "150",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 244.616,
+      "motor_surrogate_gap_mm": 114.616,
+      "flange_gap_mm": 50.416,
+      "inner_sidewall_gap_mm": 42,
+      "inner_topbottom_gap_mm": 12,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "150",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 244.616,
+      "motor_surrogate_gap_mm": 74.616,
+      "flange_gap_mm": 50.416,
+      "inner_sidewall_gap_mm": 42,
+      "inner_topbottom_gap_mm": 12,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "150",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 244.616,
+      "motor_surrogate_gap_mm": 39.616,
+      "flange_gap_mm": 50.416,
+      "inner_sidewall_gap_mm": 42,
+      "inner_topbottom_gap_mm": 12,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "150",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 242.2003,
+      "motor_surrogate_gap_mm": 112.2003,
+      "flange_gap_mm": 48.0003,
+      "inner_sidewall_gap_mm": 46,
+      "inner_topbottom_gap_mm": 12,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "150",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 242.2003,
+      "motor_surrogate_gap_mm": 72.2003,
+      "flange_gap_mm": 48.0003,
+      "inner_sidewall_gap_mm": 46,
+      "inner_topbottom_gap_mm": 12,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "150",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 242.2003,
+      "motor_surrogate_gap_mm": 37.2003,
+      "flange_gap_mm": 48.0003,
+      "inner_sidewall_gap_mm": 46,
+      "inner_topbottom_gap_mm": 12,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "150",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 240.8007,
+      "motor_surrogate_gap_mm": 110.8007,
+      "flange_gap_mm": 46.6007,
+      "inner_sidewall_gap_mm": 41,
+      "inner_topbottom_gap_mm": 11,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "150",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 240.8007,
+      "motor_surrogate_gap_mm": 70.8007,
+      "flange_gap_mm": 46.6007,
+      "inner_sidewall_gap_mm": 41,
+      "inner_topbottom_gap_mm": 11,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "150",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 240.8007,
+      "motor_surrogate_gap_mm": 35.8007,
+      "flange_gap_mm": 46.6007,
+      "inner_sidewall_gap_mm": 41,
+      "inner_topbottom_gap_mm": 11,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "150",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 240.4101,
+      "motor_surrogate_gap_mm": 110.4101,
+      "flange_gap_mm": 46.2101,
+      "inner_sidewall_gap_mm": 39,
+      "inner_topbottom_gap_mm": 9,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "150",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 240.4101,
+      "motor_surrogate_gap_mm": 70.4101,
+      "flange_gap_mm": 46.2101,
+      "inner_sidewall_gap_mm": 39,
+      "inner_topbottom_gap_mm": 9,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "150",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 240.4101,
+      "motor_surrogate_gap_mm": 35.4101,
+      "flange_gap_mm": 46.2101,
+      "inner_sidewall_gap_mm": 39,
+      "inner_topbottom_gap_mm": 9,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "150",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 238.0021,
+      "motor_surrogate_gap_mm": 108.0021,
+      "flange_gap_mm": 43.8021,
+      "inner_sidewall_gap_mm": 43,
+      "inner_topbottom_gap_mm": 9,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "150",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 238.0021,
+      "motor_surrogate_gap_mm": 68.0021,
+      "flange_gap_mm": 43.8021,
+      "inner_sidewall_gap_mm": 43,
+      "inner_topbottom_gap_mm": 9,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "carrier4",
+      "state": "150",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 238.0021,
+      "motor_surrogate_gap_mm": 33.0021,
+      "flange_gap_mm": 43.8021,
+      "inner_sidewall_gap_mm": 43,
+      "inner_topbottom_gap_mm": 9,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "100",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 212.7205,
+      "motor_surrogate_gap_mm": 82.7205,
+      "flange_gap_mm": 18.5205,
+      "inner_sidewall_gap_mm": 148,
+      "inner_topbottom_gap_mm": 9,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "100",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 212.7205,
+      "motor_surrogate_gap_mm": 42.7205,
+      "flange_gap_mm": 18.5205,
+      "inner_sidewall_gap_mm": 148,
+      "inner_topbottom_gap_mm": 9,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "100",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 212.7205,
+      "motor_surrogate_gap_mm": 7.7205,
+      "flange_gap_mm": 18.5205,
+      "inner_sidewall_gap_mm": 148,
+      "inner_topbottom_gap_mm": 9,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "100",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 210.3188,
+      "motor_surrogate_gap_mm": 80.3188,
+      "flange_gap_mm": 16.1188,
+      "inner_sidewall_gap_mm": 146,
+      "inner_topbottom_gap_mm": 7,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "100",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 210.3188,
+      "motor_surrogate_gap_mm": 40.3188,
+      "flange_gap_mm": 16.1188,
+      "inner_sidewall_gap_mm": 146,
+      "inner_topbottom_gap_mm": 7,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "100",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 210.3188,
+      "motor_surrogate_gap_mm": 5.3188,
+      "flange_gap_mm": 16.1188,
+      "inner_sidewall_gap_mm": 146,
+      "inner_topbottom_gap_mm": 7,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "100",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 210.3188,
+      "motor_surrogate_gap_mm": 80.3188,
+      "flange_gap_mm": 16.1188,
+      "inner_sidewall_gap_mm": 150,
+      "inner_topbottom_gap_mm": 7,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "100",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 210.3188,
+      "motor_surrogate_gap_mm": 40.3188,
+      "flange_gap_mm": 16.1188,
+      "inner_sidewall_gap_mm": 150,
+      "inner_topbottom_gap_mm": 7,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "100",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 210.3188,
+      "motor_surrogate_gap_mm": 5.3188,
+      "flange_gap_mm": 16.1188,
+      "inner_sidewall_gap_mm": 150,
+      "inner_topbottom_gap_mm": 7,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "100",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 209.122,
+      "motor_surrogate_gap_mm": 79.122,
+      "flange_gap_mm": 14.922,
+      "inner_sidewall_gap_mm": 145,
+      "inner_topbottom_gap_mm": 6,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "100",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 209.122,
+      "motor_surrogate_gap_mm": 39.122,
+      "flange_gap_mm": 14.922,
+      "inner_sidewall_gap_mm": 145,
+      "inner_topbottom_gap_mm": 6,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "100",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 209.122,
+      "motor_surrogate_gap_mm": 4.122,
+      "flange_gap_mm": 14.922,
+      "inner_sidewall_gap_mm": 145,
+      "inner_topbottom_gap_mm": 6,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "100",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 206.7365,
+      "motor_surrogate_gap_mm": 76.7365,
+      "flange_gap_mm": 12.5365,
+      "inner_sidewall_gap_mm": 143,
+      "inner_topbottom_gap_mm": 4,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "100",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 206.7365,
+      "motor_surrogate_gap_mm": 36.7365,
+      "flange_gap_mm": 12.5365,
+      "inner_sidewall_gap_mm": 143,
+      "inner_topbottom_gap_mm": 4,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "100",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 206.7365,
+      "motor_surrogate_gap_mm": 1.7365,
+      "flange_gap_mm": 12.5365,
+      "inner_sidewall_gap_mm": 143,
+      "inner_topbottom_gap_mm": 4,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "100",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 206.7365,
+      "motor_surrogate_gap_mm": 76.7365,
+      "flange_gap_mm": 12.5365,
+      "inner_sidewall_gap_mm": 147,
+      "inner_topbottom_gap_mm": 4,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "100",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 206.7365,
+      "motor_surrogate_gap_mm": 36.7365,
+      "flange_gap_mm": 12.5365,
+      "inner_sidewall_gap_mm": 147,
+      "inner_topbottom_gap_mm": 4,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "100",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 206.7365,
+      "motor_surrogate_gap_mm": 1.7365,
+      "flange_gap_mm": 12.5365,
+      "inner_sidewall_gap_mm": 147,
+      "inner_topbottom_gap_mm": 4,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "100",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 205.548,
+      "motor_surrogate_gap_mm": 75.548,
+      "flange_gap_mm": 11.348,
+      "inner_sidewall_gap_mm": 142,
+      "inner_topbottom_gap_mm": 3,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "100",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 205.548,
+      "motor_surrogate_gap_mm": 35.548,
+      "flange_gap_mm": 11.348,
+      "inner_sidewall_gap_mm": 142,
+      "inner_topbottom_gap_mm": 3,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "100",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 205.548,
+      "motor_surrogate_gap_mm": 0.548,
+      "flange_gap_mm": 11.348,
+      "inner_sidewall_gap_mm": 142,
+      "inner_topbottom_gap_mm": 3,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "100",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 203.1797,
+      "motor_surrogate_gap_mm": 73.1797,
+      "flange_gap_mm": 8.9797,
+      "inner_sidewall_gap_mm": 140,
+      "inner_topbottom_gap_mm": 1,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "100",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 203.1797,
+      "motor_surrogate_gap_mm": 33.1797,
+      "flange_gap_mm": 8.9797,
+      "inner_sidewall_gap_mm": 140,
+      "inner_topbottom_gap_mm": 1,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "100",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 203.1797,
+      "motor_surrogate_gap_mm": -1.8203,
+      "flange_gap_mm": 8.9797,
+      "inner_sidewall_gap_mm": 140,
+      "inner_topbottom_gap_mm": 1,
+      "passes_tested_envelopes": false
+    },
+    {
+      "layout": "rails4",
+      "state": "100",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 203.1797,
+      "motor_surrogate_gap_mm": 73.1797,
+      "flange_gap_mm": 8.9797,
+      "inner_sidewall_gap_mm": 144,
+      "inner_topbottom_gap_mm": 1,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "100",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 203.1797,
+      "motor_surrogate_gap_mm": 33.1797,
+      "flange_gap_mm": 8.9797,
+      "inner_sidewall_gap_mm": 144,
+      "inner_topbottom_gap_mm": 1,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "100",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 203.1797,
+      "motor_surrogate_gap_mm": -1.8203,
+      "flange_gap_mm": 8.9797,
+      "inner_sidewall_gap_mm": 144,
+      "inner_topbottom_gap_mm": 1,
+      "passes_tested_envelopes": false
+    },
+    {
+      "layout": "rails4",
+      "state": "120",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 212.7205,
+      "motor_surrogate_gap_mm": 82.7205,
+      "flange_gap_mm": 18.5205,
+      "inner_sidewall_gap_mm": 148,
+      "inner_topbottom_gap_mm": 9,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "120",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 212.7205,
+      "motor_surrogate_gap_mm": 42.7205,
+      "flange_gap_mm": 18.5205,
+      "inner_sidewall_gap_mm": 148,
+      "inner_topbottom_gap_mm": 9,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "120",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 212.7205,
+      "motor_surrogate_gap_mm": 7.7205,
+      "flange_gap_mm": 18.5205,
+      "inner_sidewall_gap_mm": 148,
+      "inner_topbottom_gap_mm": 9,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "120",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 210.3188,
+      "motor_surrogate_gap_mm": 80.3188,
+      "flange_gap_mm": 16.1188,
+      "inner_sidewall_gap_mm": 146,
+      "inner_topbottom_gap_mm": 7,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "120",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 210.3188,
+      "motor_surrogate_gap_mm": 40.3188,
+      "flange_gap_mm": 16.1188,
+      "inner_sidewall_gap_mm": 146,
+      "inner_topbottom_gap_mm": 7,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "120",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 210.3188,
+      "motor_surrogate_gap_mm": 5.3188,
+      "flange_gap_mm": 16.1188,
+      "inner_sidewall_gap_mm": 146,
+      "inner_topbottom_gap_mm": 7,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "120",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 210.3188,
+      "motor_surrogate_gap_mm": 80.3188,
+      "flange_gap_mm": 16.1188,
+      "inner_sidewall_gap_mm": 150,
+      "inner_topbottom_gap_mm": 7,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "120",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 210.3188,
+      "motor_surrogate_gap_mm": 40.3188,
+      "flange_gap_mm": 16.1188,
+      "inner_sidewall_gap_mm": 150,
+      "inner_topbottom_gap_mm": 7,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "120",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 210.3188,
+      "motor_surrogate_gap_mm": 5.3188,
+      "flange_gap_mm": 16.1188,
+      "inner_sidewall_gap_mm": 150,
+      "inner_topbottom_gap_mm": 7,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "120",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 209.122,
+      "motor_surrogate_gap_mm": 79.122,
+      "flange_gap_mm": 14.922,
+      "inner_sidewall_gap_mm": 145,
+      "inner_topbottom_gap_mm": 6,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "120",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 209.122,
+      "motor_surrogate_gap_mm": 39.122,
+      "flange_gap_mm": 14.922,
+      "inner_sidewall_gap_mm": 145,
+      "inner_topbottom_gap_mm": 6,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "120",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 209.122,
+      "motor_surrogate_gap_mm": 4.122,
+      "flange_gap_mm": 14.922,
+      "inner_sidewall_gap_mm": 145,
+      "inner_topbottom_gap_mm": 6,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "120",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 206.7365,
+      "motor_surrogate_gap_mm": 76.7365,
+      "flange_gap_mm": 12.5365,
+      "inner_sidewall_gap_mm": 143,
+      "inner_topbottom_gap_mm": 4,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "120",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 206.7365,
+      "motor_surrogate_gap_mm": 36.7365,
+      "flange_gap_mm": 12.5365,
+      "inner_sidewall_gap_mm": 143,
+      "inner_topbottom_gap_mm": 4,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "120",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 206.7365,
+      "motor_surrogate_gap_mm": 1.7365,
+      "flange_gap_mm": 12.5365,
+      "inner_sidewall_gap_mm": 143,
+      "inner_topbottom_gap_mm": 4,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "120",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 206.7365,
+      "motor_surrogate_gap_mm": 76.7365,
+      "flange_gap_mm": 12.5365,
+      "inner_sidewall_gap_mm": 147,
+      "inner_topbottom_gap_mm": 4,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "120",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 206.7365,
+      "motor_surrogate_gap_mm": 36.7365,
+      "flange_gap_mm": 12.5365,
+      "inner_sidewall_gap_mm": 147,
+      "inner_topbottom_gap_mm": 4,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "120",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 206.7365,
+      "motor_surrogate_gap_mm": 1.7365,
+      "flange_gap_mm": 12.5365,
+      "inner_sidewall_gap_mm": 147,
+      "inner_topbottom_gap_mm": 4,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "120",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 205.548,
+      "motor_surrogate_gap_mm": 75.548,
+      "flange_gap_mm": 11.348,
+      "inner_sidewall_gap_mm": 142,
+      "inner_topbottom_gap_mm": 3,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "120",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 205.548,
+      "motor_surrogate_gap_mm": 35.548,
+      "flange_gap_mm": 11.348,
+      "inner_sidewall_gap_mm": 142,
+      "inner_topbottom_gap_mm": 3,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "120",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 205.548,
+      "motor_surrogate_gap_mm": 0.548,
+      "flange_gap_mm": 11.348,
+      "inner_sidewall_gap_mm": 142,
+      "inner_topbottom_gap_mm": 3,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "120",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 203.1797,
+      "motor_surrogate_gap_mm": 73.1797,
+      "flange_gap_mm": 8.9797,
+      "inner_sidewall_gap_mm": 140,
+      "inner_topbottom_gap_mm": 1,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "120",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 203.1797,
+      "motor_surrogate_gap_mm": 33.1797,
+      "flange_gap_mm": 8.9797,
+      "inner_sidewall_gap_mm": 140,
+      "inner_topbottom_gap_mm": 1,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "120",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 203.1797,
+      "motor_surrogate_gap_mm": -1.8203,
+      "flange_gap_mm": 8.9797,
+      "inner_sidewall_gap_mm": 140,
+      "inner_topbottom_gap_mm": 1,
+      "passes_tested_envelopes": false
+    },
+    {
+      "layout": "rails4",
+      "state": "120",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 203.1797,
+      "motor_surrogate_gap_mm": 73.1797,
+      "flange_gap_mm": 8.9797,
+      "inner_sidewall_gap_mm": 144,
+      "inner_topbottom_gap_mm": 1,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "120",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 203.1797,
+      "motor_surrogate_gap_mm": 33.1797,
+      "flange_gap_mm": 8.9797,
+      "inner_sidewall_gap_mm": 144,
+      "inner_topbottom_gap_mm": 1,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "120",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 203.1797,
+      "motor_surrogate_gap_mm": -1.8203,
+      "flange_gap_mm": 8.9797,
+      "inner_sidewall_gap_mm": 144,
+      "inner_topbottom_gap_mm": 1,
+      "passes_tested_envelopes": false
+    },
+    {
+      "layout": "rails4",
+      "state": "150",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 212.7205,
+      "motor_surrogate_gap_mm": 82.7205,
+      "flange_gap_mm": 18.5205,
+      "inner_sidewall_gap_mm": 148,
+      "inner_topbottom_gap_mm": 9,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "150",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 212.7205,
+      "motor_surrogate_gap_mm": 42.7205,
+      "flange_gap_mm": 18.5205,
+      "inner_sidewall_gap_mm": 148,
+      "inner_topbottom_gap_mm": 9,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "150",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 212.7205,
+      "motor_surrogate_gap_mm": 7.7205,
+      "flange_gap_mm": 18.5205,
+      "inner_sidewall_gap_mm": 148,
+      "inner_topbottom_gap_mm": 9,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "150",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 210.3188,
+      "motor_surrogate_gap_mm": 80.3188,
+      "flange_gap_mm": 16.1188,
+      "inner_sidewall_gap_mm": 146,
+      "inner_topbottom_gap_mm": 7,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "150",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 210.3188,
+      "motor_surrogate_gap_mm": 40.3188,
+      "flange_gap_mm": 16.1188,
+      "inner_sidewall_gap_mm": 146,
+      "inner_topbottom_gap_mm": 7,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "150",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 210.3188,
+      "motor_surrogate_gap_mm": 5.3188,
+      "flange_gap_mm": 16.1188,
+      "inner_sidewall_gap_mm": 146,
+      "inner_topbottom_gap_mm": 7,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "150",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 210.3188,
+      "motor_surrogate_gap_mm": 80.3188,
+      "flange_gap_mm": 16.1188,
+      "inner_sidewall_gap_mm": 150,
+      "inner_topbottom_gap_mm": 7,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "150",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 210.3188,
+      "motor_surrogate_gap_mm": 40.3188,
+      "flange_gap_mm": 16.1188,
+      "inner_sidewall_gap_mm": 150,
+      "inner_topbottom_gap_mm": 7,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "150",
+      "halfwidth_mm": 6,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 210.3188,
+      "motor_surrogate_gap_mm": 5.3188,
+      "flange_gap_mm": 16.1188,
+      "inner_sidewall_gap_mm": 150,
+      "inner_topbottom_gap_mm": 7,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "150",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 209.122,
+      "motor_surrogate_gap_mm": 79.122,
+      "flange_gap_mm": 14.922,
+      "inner_sidewall_gap_mm": 145,
+      "inner_topbottom_gap_mm": 6,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "150",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 209.122,
+      "motor_surrogate_gap_mm": 39.122,
+      "flange_gap_mm": 14.922,
+      "inner_sidewall_gap_mm": 145,
+      "inner_topbottom_gap_mm": 6,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "150",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 209.122,
+      "motor_surrogate_gap_mm": 4.122,
+      "flange_gap_mm": 14.922,
+      "inner_sidewall_gap_mm": 145,
+      "inner_topbottom_gap_mm": 6,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "150",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 206.7365,
+      "motor_surrogate_gap_mm": 76.7365,
+      "flange_gap_mm": 12.5365,
+      "inner_sidewall_gap_mm": 143,
+      "inner_topbottom_gap_mm": 4,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "150",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 206.7365,
+      "motor_surrogate_gap_mm": 36.7365,
+      "flange_gap_mm": 12.5365,
+      "inner_sidewall_gap_mm": 143,
+      "inner_topbottom_gap_mm": 4,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "150",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 206.7365,
+      "motor_surrogate_gap_mm": 1.7365,
+      "flange_gap_mm": 12.5365,
+      "inner_sidewall_gap_mm": 143,
+      "inner_topbottom_gap_mm": 4,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "150",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 206.7365,
+      "motor_surrogate_gap_mm": 76.7365,
+      "flange_gap_mm": 12.5365,
+      "inner_sidewall_gap_mm": 147,
+      "inner_topbottom_gap_mm": 4,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "150",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 206.7365,
+      "motor_surrogate_gap_mm": 36.7365,
+      "flange_gap_mm": 12.5365,
+      "inner_sidewall_gap_mm": 147,
+      "inner_topbottom_gap_mm": 4,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "150",
+      "halfwidth_mm": 9,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 206.7365,
+      "motor_surrogate_gap_mm": 1.7365,
+      "flange_gap_mm": 12.5365,
+      "inner_sidewall_gap_mm": 147,
+      "inner_topbottom_gap_mm": 4,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "150",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 205.548,
+      "motor_surrogate_gap_mm": 75.548,
+      "flange_gap_mm": 11.348,
+      "inner_sidewall_gap_mm": 142,
+      "inner_topbottom_gap_mm": 3,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "150",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 205.548,
+      "motor_surrogate_gap_mm": 35.548,
+      "flange_gap_mm": 11.348,
+      "inner_sidewall_gap_mm": 142,
+      "inner_topbottom_gap_mm": 3,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "150",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        0,
+        0
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 205.548,
+      "motor_surrogate_gap_mm": 0.548,
+      "flange_gap_mm": 11.348,
+      "inner_sidewall_gap_mm": 142,
+      "inner_topbottom_gap_mm": 3,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "150",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 203.1797,
+      "motor_surrogate_gap_mm": 73.1797,
+      "flange_gap_mm": 8.9797,
+      "inner_sidewall_gap_mm": 140,
+      "inner_topbottom_gap_mm": 1,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "150",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 203.1797,
+      "motor_surrogate_gap_mm": 33.1797,
+      "flange_gap_mm": 8.9797,
+      "inner_sidewall_gap_mm": 140,
+      "inner_topbottom_gap_mm": 1,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "150",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        -2,
+        -2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 203.1797,
+      "motor_surrogate_gap_mm": -1.8203,
+      "flange_gap_mm": 8.9797,
+      "inner_sidewall_gap_mm": 140,
+      "inner_topbottom_gap_mm": 1,
+      "passes_tested_envelopes": false
+    },
+    {
+      "layout": "rails4",
+      "state": "150",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 130,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 203.1797,
+      "motor_surrogate_gap_mm": 73.1797,
+      "flange_gap_mm": 8.9797,
+      "inner_sidewall_gap_mm": 144,
+      "inner_topbottom_gap_mm": 1,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "150",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 170,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 203.1797,
+      "motor_surrogate_gap_mm": 33.1797,
+      "flange_gap_mm": 8.9797,
+      "inner_sidewall_gap_mm": 144,
+      "inner_topbottom_gap_mm": 1,
+      "passes_tested_envelopes": true
+    },
+    {
+      "layout": "rails4",
+      "state": "150",
+      "halfwidth_mm": 12,
+      "shift_ext_mm": [
+        2,
+        2
+      ],
+      "motor_surrogate_radius_mm": 205,
+      "module_brace_aabb_collisions": 0,
+      "min_radial_to_center_mm": 203.1797,
+      "motor_surrogate_gap_mm": -1.8203,
+      "flange_gap_mm": 8.9797,
+      "inner_sidewall_gap_mm": 144,
+      "inner_topbottom_gap_mm": 1,
+      "passes_tested_envelopes": false
+    }
+  ],
+  "warnings": [
+    "The physical Dayton basket is not represented; 205mm is a hypothetical stress-test motor radius NOT a measured specification.",
+    "P34B block shapes and braces are approximate. Exact flange-to-carrier and flange-to-rail connecting struts, brackets, bolts and access tools are OMITTED.",
+    "AABB non-overlap alone cannot qualify exact 3D curved parts, tolerance, static strength or manufacturing.",
+    "A rail or pad has no specified load path into real MDF/brace joints; no strain or contact assessment."
+  ]
+}
