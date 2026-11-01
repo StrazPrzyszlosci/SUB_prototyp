@@ -1,0 +1,26 @@
+name: P43 – trasy 2D i jedna utracona podpora
+on:
+  push:
+    paths:
+      - 'skrypty/p43_trasy_i_awarie_podpor.js'
+      - 'wyniki/p43*.csv'
+      - 'wyniki/p43_podsumowanie_20261101.json'
+      - '.github/workflows/p43-trasy-i-awarie.yml'
+  pull_request:
+    paths:
+      - 'skrypty/p43_trasy_i_awarie_podpor.js'
+      - 'wyniki/p43*.csv'
+      - 'wyniki/p43_podsumowanie_20261101.json'
+      - '.github/workflows/p43-trasy-i-awarie.yml'
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Reproduce full P43 numerical results
+        run: node skrypty/p43_trasy_i_awarie_podpor.js
+      - name: Verify committed results
+        run: git diff --exit-code -- wyniki/p43a_trasy_144.csv wyniki/p43b_awarie_1620.csv wyniki/p43_podsumowanie_20261101.json
