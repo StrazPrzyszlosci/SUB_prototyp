@@ -99,8 +99,6 @@ Skróty wyjaśniamy w [krótkim słowniku](#slownik).
 
 ### Czy najkrótsze łączniki nie przechodzą przez wycięcie?
 
-![P42C: rzut prostych połączeń z ośmiu punktów kołnierza](wyniki/p42c_8_lacznikow_szkic.svg)
-
 *48 testów rzutu wykazało, że dwa proste połączenia do belek B przecinają obszar otworu Ø355,8, a w ramie A jeden łącznik o szerokości 10mm ma podobny problem. To **kontrola 2D**, nie gotowy projekt mocowania. [Raport 108](raporty/108_P42C_laczniki_i_koncepcje_3D.md) · [Model OpenSCAD](dokumentacja/P42D_dwie_sciezki_REFERENCYJNE_NIE_CNC.scad).*
 
 ## P40 — czy osiem śrub utrzyma głośnik i czy pierścień daje miejsce na montaż?
