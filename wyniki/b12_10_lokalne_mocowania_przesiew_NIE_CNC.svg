@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 510" role="img" aria-label="B12-10: radialna geometria wkładek i wyniki przesiewu 3D, nie do CNC">
+<rect width="980" height="510" fill="#fbfcfd"/>
+<text x="34" y="37" fill="#172635" font-family="sans-serif" font-size="22" font-weight="700">B12-10: lokalne mocowania Daytona — model, NIE CNC</text>
+<text x="34" y="63" fill="#405466" font-family="sans-serif" font-size="13">Dane wymiarowe producenta + umowne obwiednie kosza i wręg; wyniki nie są pomiarami.</text>
+<rect x="27" y="86" width="454" height="375" rx="12" fill="#fff" stroke="#d2dbe2"/>
+<text x="46" y="114" fill="#172635" font-family="sans-serif" font-size="16" font-weight="700">Przekrój promieniowy: oś śruby r=184 mm</text>
+<text x="46" y="137" fill="#405466" font-family="sans-serif" font-size="12">Przykład: klocek r=178,9–205 mm; widok wzdłuż frontu</text>
+<rect x="84" y="178" width="346" height="82" fill="#f4d4b1" opacity="0.74" stroke="#ac845a"/>
+<rect x="84" y="188" width="109.2" height="62" fill="#c6e3f0" stroke="#4d91b1"/>
+<text x="92" y="231" fill="#21475c" font-family="sans-serif" font-size="12">Wycięcie</text>
+<rect x="201" y="188" width="208.8" height="62" fill="#99c5a2" opacity="0.75" stroke="#438457"/>
+<text x="281" y="231" fill="#214b2b" font-family="sans-serif" font-size="12">Klocek (model)</text>
+<line x1="237" y1="170" x2="237" y2="277" stroke="#172635" stroke-width="3"/>
+<circle cx="237" cy="206" r="24" fill="none" stroke="#b24537" stroke-width="3"/>
+<text x="212" y="165" fill="#172635" font-family="sans-serif" font-size="12">r=184</text>
+<line x1="193" y1="148" x2="193" y2="279" stroke="#388eb2" stroke-dasharray="5 4"/>
+<text x="165" y="301" fill="#215875" font-family="sans-serif" font-size="12">177,9</text>
+<line x1="201" y1="148" x2="201" y2="279" stroke="#438457" stroke-dasharray="5 4"/>
+<text x="205" y="322" fill="#256b42" font-family="sans-serif" font-size="12">178,9</text>
+<text x="278" y="164" fill="#a53b2e" font-family="sans-serif" font-size="12">Ø8 → pas 1,1 mm</text>
+<text x="47" y="367" fill="#172635" font-family="sans-serif" font-size="14" font-weight="700">Kluczowy warunek łączny:</text>
+<text x="47" y="391" fill="#405466" font-family="sans-serif" font-size="13">odstęp od kosza + pas przy wkładce</text>
+<text x="47" y="412" fill="#405466" font-family="sans-serif" font-size="13">+ brak kolizji ze strukturą obudowy.</text>
+<text x="47" y="438" fill="#a53b2e" font-family="sans-serif" font-size="12">Rzeczywistego promienia kosza za frontem nie znamy.</text>
+<rect x="500" y="86" width="452" height="375" rx="12" fill="#fff" stroke="#d2dbe2"/>
+<text x="522" y="114" fill="#172635" font-family="sans-serif" font-size="16" font-weight="700">Przesiew brył 3D: brak kolizji</text>
+<text x="522" y="137" fill="#405466" font-family="sans-serif" font-size="12">Dla promienia zewnętrznego klocka, 108 wariantów każdy</text>
+<text x="520" y="174" fill="#172635" font-family="sans-serif" font-size="12">205 mm</text>
+<rect x="602" y="159" width="288" height="20" rx="4" fill="#e4eaee"/>
+<rect x="602" y="159" width="288" height="20" rx="4" fill="#267f6a"/>
+<text x="898" y="175" fill="#172635" font-family="sans-serif" font-size="12">108</text>
+<text x="520" y="215" fill="#172635" font-family="sans-serif" font-size="12">211 mm</text>
+<rect x="602" y="200" width="288" height="20" rx="4" fill="#e4eaee"/>
+<rect x="602" y="200" width="216" height="20" rx="4" fill="#267f6a"/>
+<text x="898" y="216" fill="#172635" font-family="sans-serif" font-size="12">81</text>
+<text x="520" y="256" fill="#172635" font-family="sans-serif" font-size="12">217 mm</text>
+<rect x="602" y="241" width="288" height="20" rx="4" fill="#e4eaee"/>
+<rect x="602" y="241" width="120" height="20" rx="4" fill="#267f6a"/>
+<text x="898" y="257" fill="#172635" font-family="sans-serif" font-size="12">45</text>
+<line x1="522" y1="281" x2="930" y2="281" stroke="#d2dbe2"/>
+<text x="522" y="305" fill="#172635" font-family="sans-serif" font-size="16" font-weight="700">Wkładka + min. 2 mm pasa (model)</text>
+<text x="522" y="330" fill="#405466" font-family="sans-serif" font-size="13">Ø6 mm: 390 przypadków spełnia cały ekran</text>
+<text x="522" y="354" fill="#405466" font-family="sans-serif" font-size="13">Ø8 mm: 156 przypadków spełnia cały ekran</text>
+<text x="522" y="378" fill="#a53b2e" font-family="sans-serif" font-size="13">Ø10 mm: 0 przypadków w badanej siatce</text>
+<text x="522" y="423" fill="#405466" font-family="sans-serif" font-size="12">Nie oznacza to dopuszczenia Ø6 ani Ø8.</text>
+<text x="34" y="492" fill="#596f81" font-family="sans-serif" font-size="12">Obwiednie kosza R=170/175/177,9/180 mm są scenariuszami. Nie używać jako szablonu wiercenia.</text>
+</svg>

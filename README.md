@@ -134,6 +134,18 @@ Badanie **B12-09** sprawdza wstępną możliwość mocowania Daytona przez osiem
 
 **Wniosek:** proste lokalne wzmocnienia są warte dalszego porównania z ramą A; nie zatwierdzono żadnego wariantu do frezowania. [Raport B12-09](raporty/B12-09_lokalne_mocowania_RSS390HF4_vs_rama_A.md) · [kod Python](skrypty/b12_09_lokalne_mocowania.py).
 
+### 4c. B12-10 — jak sprawdzamy prawdziwą przestrzeń na mocowanie za frontem?
+
+W B12-09 było widać jedynie rzut ośmiu klocków. Nowy etap B12-10 policzył **324 modelowe warianty brył 3D** w uproszczonej obudowie oraz **7776 hipotetycznych kombinacji** luzu do kosza, średnicy wkładki i pasa drewna. Spośród 324 wariantów **234 nie przecinały zastępczych ścian i wręg**. Po uwzględnieniu dodatkowych, założonych ograniczeń promieniowych **1716/7776** kombinacji przeszło *przesiew* — nie oznacza to, że mają odpowiednią nośność ani pasują do rzeczywistego kosza.
+
+![B12-10: ekran kolizji i szerokości drewna przy wkładce — schemat, NIE CNC](wyniki/b12_10_lokalne_mocowania_przesiew_NIE_CNC.svg)
+
+*Najprościej: średnica śruby i średnica zewnętrzna wkładki to dwie różne rzeczy. Przy wewnętrznej krawędzi modelowego klocka R=178,9 mm wkładka Ø8 mm zostawia **1,1 mm** drewna do tej krawędzi, a Ø10 mm — tylko **0,1 mm**. Nadal nie znamy dokładnego obrysu kosza w miejscu klejenia. To nie są zalecane wymiary otworów ani śrub.*
+
+Dodatkowo **36 hipotetycznych stosów** kołnierz–MDF–klocek pokazało, że długość śruby wymaga kontroli razem z głębokością klocka i minimalnym zazębieniem gwintu. **Rzeczywistej drogi wkrętaka, śruby, połączenia i serwisowania nie zweryfikowano.** Na tym etapie nie wiemy, czy prostsze osiem klocków będzie wystarczające; rama A również nie jest zatwierdzona.
+
+[Raport B12-10 i warunki badań](raporty/B12-10_przestrzenny_przesiew_mocowan_i_stosu_srub.md) · [Python do odtworzenia](skrypty/b12_10_przesiew_3d_mocowan.py).
+
 ### 5. Co oznaczają wykresy DSP i temperatury?
 
 Przyjęte **40 V RMS / 12 A RMS** to założenia symulacji, **nie parametry zakupionego wzmacniacza**. Model ogranicznika może ujawnić ryzyko wychylenia, grzania i przesterowania, ale nie jest jeszcze sprawdzonym presetem. Potrzebny jest fizyczny napęd, zasilanie, chłodzenie i walidacja zabezpieczeń. [Filtry](#filtry) · [Ochrona](#ochrona).
