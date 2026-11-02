@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="460" viewBox="0 0 920 460" role="img" aria-label="P43A: budżet radialny tras od środka śruby">
+<rect width="920" height="460" fill="#fcfcfb"/><text x="45" y="48" font-family="Arial,sans-serif" font-weight="bold" font-size="26" fill="#182330">P43A · Prześwit od środka śruby do wycięcia</text>
+<text x="45" y="81" font-family="Arial,sans-serif" font-size="17" fill="#536274">BCDr=184 mm − wycięcie r=177,9 mm = 6,1 mm</text>
+<line x1="63" y1="116" x2="63" y2="362" stroke="#bbc3c8"/><line x1="63" y1="362" x2="850" y2="362" stroke="#bbc3c8"/>
+<text x="45" y="140" font-family="Arial" font-size="17" fill="#182330">Łącznik 4 mm + odstęp 2 mm</text><rect x="390" y="118" width="264" height="33" fill="#2e8b83"/><text x="674" y="141" font-family="Arial" font-size="16" fill="#182330">wymaga 4,0 mm</text>
+<text x="45" y="218" font-family="Arial" font-size="17" fill="#182330">Łącznik 8 mm + odstęp 2 mm</text><rect x="390" y="195" width="396" height="33" fill="#2e8b83"/><text x="800" y="218" font-family="Arial" font-size="16" fill="#182330">6,0</text>
+<text x="45" y="296" font-family="Arial" font-size="17" fill="#182330">Łącznik 10 mm + odstęp 2 mm</text><rect x="390" y="273" width="462" height="33" fill="#c26d53"/><text x="781" y="330" font-family="Arial" font-size="15" fill="#aa4f36">7,0 &gt; 6,1</text>
+<line x1="793" y1="105" x2="793" y2="318" stroke="#1c3551" stroke-width="2" stroke-dasharray="7 5"/><text x="737" y="100" font-family="Arial" font-size="16" fill="#1c3551">limit 6,1 mm</text>
+<text x="45" y="407" font-family="Arial" font-size="16" fill="#384957">Odległości wyłącznie w rzucie 2D; nie rozstrzygają docisku,</text>
+<text x="45" y="429" font-family="Arial" font-size="16" fill="#384957">wytrzymałości MDF, śrub ani prowadzenia przestrzennego.</text></svg>

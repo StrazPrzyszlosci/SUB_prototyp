@@ -1402,3 +1402,18 @@ dwa C05 izobarycznie równolegle 91,9100dB (2pi/1m, nie SPL pokoju).
 Przy połączeniu 4-ohm równolegle powstaje nominalnie 2-ohm obciążenie:
 nie kwalifikować bez rzeczywistych możliwości końcówki mocy.
 Nie wydawać CNC; konieczny nowy front, usztywnienia i tolerancje koszy.
+
+## Integracja 2026-11-02 — archiwalne badania konstrukcyjne P43-K i P44-K
+
+Wprowadzono również wyniki odrębnej gałęzi konstrukcyjnej (dawne P43 i P44).
+**Nie utożsamiać** P43-K z programem akustycznym P43 o dwóch tanich głośnikach i parze izobarycznej.
+Unikalna numeracja raportów: 110 i 111 dla P43-K, 112 i 113 dla P44-K.
+Źródła odtwarzalne: `skrypty/p43_trasy_i_awarie_podpor.js` oraz `skrypty/p44_kontakt_docisk_tarcie.js`.
+Ponowne włączenie gałęzi nie zmienia 39 modeli / 40 konfiguracji bazowych, obliczeń P43 akustycznych, ani kwalifikacji CNC.
+### Archiwalny zapis P43-K (2026-11-01)
+
+- Badanie P43A: 576 analitycznych dróg 2D od 8 otworów Dayton do 4 podpór A/B przy szerokościach 4/8/10 mm i marginesach 0/1/2 mm; wybrano 144 najkrótsze rozwiązania. Raport 111, skrypt `skrypty/p43_trasy_i_awarie_podpor.js`, CSV/JSON i wykres. **Wniosek:** 10 mm szerokości + 2 mm marginesu jest geometrycznie sprzeczne z promieniem BCD184 mm i wycięciem r177,9 mm w płaszczyźnie frontu; to nie wyklucza łączników przestrzennych.
+- Badanie P43B: 1620 rozwiązań sztywnego interfejsu na czterech lub trzech aktywnych sprężynach, dla dwóch topologii, trzech kierunków/poziomów g/mimośrodów/rozkładów k i dwóch mas. Raport 111. Wybiórczy wzrost maksymalnej reakcji przy X: A 202,29→319,11 N, B 400,42→761,24 N (13,61 kg/5g/e120/hipotetyczne k=1000 N/mm). Warunek wstępnego docisku wyłącznie matematyczny, nie moment dokręcenia ani ocena nośności.
+- **Bramka:** brak pełnej geometrii kosza i łącznika 3D, właściwości MDF/spoin, kontaktu, rzeczywistych śrub i pomiarów; żadnego pliku nie wydawać jako CNC. Zachowano poprzednie dane/raporty P41–P42 i nie przywracano usuniętego obrazka P42C.
+- **Następny krok:** P44 — skojarzyć fizyczną geometrię ośmiu śrub, obwód kosza, porty wentylacyjne i model jednostronnego kontaktu z realną ścieżką sił (po uzyskaniu brakujących danych); do tego czasu pogłębiać tylko warunkowe granice analityczne i walidację ich numerów.
+
