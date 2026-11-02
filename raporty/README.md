@@ -140,3 +140,5 @@ Historyczne identyfikatory P43/P44 w kodzie konstrukcyjnym są odrębne od akust
 - [Raport 114 — P45: dwa tanie 12″, 12 870 liniowych punktów, połączenia, odporność i ceny](114_P45_dwa_tanie_12_odpornosc_naped_koszt.md).
 
 - [Badanie B12-01 — 3584 porównania dwóch tanich 12″ z Daytonem, limity X/Pcu, objętość, geometria frontu i koszt](B12-01_tanie_dwie_12_przeciw_Daytonowi_20261102.md).
+
+- [Badanie B12-02 — sześć jednoczesnych tonów, 144 scenariusze i 256 testów odporności idealnej korekcji, Dayton kontra dwa tanie STX 12″](B12-02_szesciotonowy_test_DSP_i_odpornosc.md).
