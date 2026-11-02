@@ -1,0 +1,906 @@
+{
+  "schema": "B12-05-rectilinear-swept-3d-geometry-research",
+  "date": "2026-11-02",
+  "count": 20,
+  "chosen": {
+    "W": 1020,
+    "D": 450,
+    "inside_mm": [
+      976,
+      384,
+      456
+    ],
+    "gross_l": 170.901504,
+    "brace_l": 0.66176,
+    "solid_mat_l": 0.3189129275362319,
+    "nominal_empty_l": 159.74583107246377,
+    "stress_empty_l": [
+      153.39884849230765,
+      166.06565348571428
+    ],
+    "slot_l": 3.68,
+    "max_fine_l": 3.06,
+    "routes": 16,
+    "trim_routes": 2,
+    "fails": [],
+    "front": {
+      "side_mm": 89,
+      "top_mm": 84,
+      "between_flange_mm": 178,
+      "bolt_to_cutout_wood_mm": 13.25
+    },
+    "geometrical_ok": true,
+    "full_depth_range_mm": [
+      479.5,
+      499.5
+    ],
+    "full_depth_ok": true,
+    "targets": [
+      {
+        "target_l": 150,
+        "options": [
+          {
+            "n_large": 2,
+            "fine_l": 2.385831072463759
+          }
+        ]
+      },
+      {
+        "target_l": 120,
+        "options": [
+          {
+            "n_large": 10,
+            "fine_l": 2.9458310724637613
+          }
+        ]
+      },
+      {
+        "target_l": 100,
+        "options": [
+          {
+            "n_large": 16,
+            "fine_l": 0.8658310724637772
+          }
+        ]
+      }
+    ],
+    "step_data": {
+      "stage_y_mm": 127,
+      "slot_y_mm": [
+        211,
+        371
+      ],
+      "mat_y_mm": [
+        378,
+        428
+      ],
+      "mat_clearance_mm": 7,
+      "driver_rear_assumed_mm": 177,
+      "driver_to_modules_mm": 34,
+      "center_x_mm": [
+        255,
+        765
+      ],
+      "bolt_pcd_mm": 316,
+      "bolt_hole_mm": 5.5,
+      "flange_od_mm": 332,
+      "cutout_mm": 284
+    },
+    "slots": [
+      {
+        "side": "L",
+        "lo": [
+          27,
+          211,
+          31
+        ],
+        "hi": [
+          257,
+          371,
+          131
+        ]
+      },
+      {
+        "side": "L",
+        "lo": [
+          27,
+          211,
+          143
+        ],
+        "hi": [
+          257,
+          371,
+          243
+        ]
+      },
+      {
+        "side": "L",
+        "lo": [
+          27,
+          211,
+          255
+        ],
+        "hi": [
+          257,
+          371,
+          355
+        ]
+      },
+      {
+        "side": "L",
+        "lo": [
+          27,
+          211,
+          367
+        ],
+        "hi": [
+          257,
+          371,
+          467
+        ]
+      },
+      {
+        "side": "L",
+        "lo": [
+          264,
+          211,
+          31
+        ],
+        "hi": [
+          494,
+          371,
+          131
+        ]
+      },
+      {
+        "side": "L",
+        "lo": [
+          264,
+          211,
+          143
+        ],
+        "hi": [
+          494,
+          371,
+          243
+        ]
+      },
+      {
+        "side": "L",
+        "lo": [
+          264,
+          211,
+          255
+        ],
+        "hi": [
+          494,
+          371,
+          355
+        ]
+      },
+      {
+        "side": "L",
+        "lo": [
+          264,
+          211,
+          367
+        ],
+        "hi": [
+          494,
+          371,
+          467
+        ]
+      },
+      {
+        "side": "R",
+        "lo": [
+          526,
+          211,
+          31
+        ],
+        "hi": [
+          756,
+          371,
+          131
+        ]
+      },
+      {
+        "side": "R",
+        "lo": [
+          526,
+          211,
+          143
+        ],
+        "hi": [
+          756,
+          371,
+          243
+        ]
+      },
+      {
+        "side": "R",
+        "lo": [
+          526,
+          211,
+          255
+        ],
+        "hi": [
+          756,
+          371,
+          355
+        ]
+      },
+      {
+        "side": "R",
+        "lo": [
+          526,
+          211,
+          367
+        ],
+        "hi": [
+          756,
+          371,
+          467
+        ]
+      },
+      {
+        "side": "R",
+        "lo": [
+          763,
+          211,
+          31
+        ],
+        "hi": [
+          993,
+          371,
+          131
+        ]
+      },
+      {
+        "side": "R",
+        "lo": [
+          763,
+          211,
+          143
+        ],
+        "hi": [
+          993,
+          371,
+          243
+        ]
+      },
+      {
+        "side": "R",
+        "lo": [
+          763,
+          211,
+          255
+        ],
+        "hi": [
+          993,
+          371,
+          355
+        ]
+      },
+      {
+        "side": "R",
+        "lo": [
+          763,
+          211,
+          367
+        ],
+        "hi": [
+          993,
+          371,
+          467
+        ]
+      }
+    ],
+    "trim_bays": [
+      {
+        "lo": [
+          27,
+          55,
+          30
+        ],
+        "hi": [
+          112,
+          175,
+          180
+        ]
+      },
+      {
+        "lo": [
+          908,
+          55,
+          30
+        ],
+        "hi": [
+          993,
+          175,
+          180
+        ]
+      }
+    ]
+  },
+  "qualified": [
+    {
+      "W": 1020,
+      "D": 450,
+      "net_l": 159.74583107246377,
+      "depth_worst": 499.5
+    }
+  ],
+  "other_cases": [
+    {
+      "W": 980,
+      "D": 440,
+      "geometry": false,
+      "depth_ok": true,
+      "base_l": 148.4964084637681,
+      "stress": [
+        142.15773864615383,
+        154.80904377142858
+      ],
+      "targets": [
+        {
+          "l": 150,
+          "feasible": false
+        },
+        {
+          "l": 120,
+          "feasible": true
+        },
+        {
+          "l": 100,
+          "feasible": true
+        }
+      ],
+      "fails": [
+        "too_narrow_for_2x230mm_columns_in_each_bay"
+      ]
+    },
+    {
+      "W": 980,
+      "D": 445,
+      "geometry": false,
+      "depth_ok": true,
+      "base_l": 150.62564846376807,
+      "stress": [
+        144.28673664615383,
+        156.93852577142854
+      ],
+      "targets": [
+        {
+          "l": 150,
+          "feasible": true
+        },
+        {
+          "l": 120,
+          "feasible": true
+        },
+        {
+          "l": 100,
+          "feasible": true
+        }
+      ],
+      "fails": [
+        "too_narrow_for_2x230mm_columns_in_each_bay"
+      ]
+    },
+    {
+      "W": 980,
+      "D": 448,
+      "geometry": false,
+      "depth_ok": true,
+      "base_l": 151.9031924637681,
+      "stress": [
+        145.5641354461538,
+        158.21621497142857
+      ],
+      "targets": [
+        {
+          "l": 150,
+          "feasible": true
+        },
+        {
+          "l": 120,
+          "feasible": true
+        },
+        {
+          "l": 100,
+          "feasible": true
+        }
+      ],
+      "fails": [
+        "too_narrow_for_2x230mm_columns_in_each_bay"
+      ]
+    },
+    {
+      "W": 980,
+      "D": 450,
+      "geometry": false,
+      "depth_ok": true,
+      "base_l": 152.7548884637681,
+      "stress": [
+        146.41573464615382,
+        159.06800777142857
+      ],
+      "targets": [
+        {
+          "l": 150,
+          "feasible": true
+        },
+        {
+          "l": 120,
+          "feasible": false
+        },
+        {
+          "l": 100,
+          "feasible": true
+        }
+      ],
+      "fails": [
+        "too_narrow_for_2x230mm_columns_in_each_bay"
+      ]
+    },
+    {
+      "W": 980,
+      "D": 455,
+      "geometry": false,
+      "depth_ok": false,
+      "base_l": 154.8841284637681,
+      "stress": [
+        148.54473264615382,
+        161.19748977142854
+      ],
+      "targets": [
+        {
+          "l": 150,
+          "feasible": true
+        },
+        {
+          "l": 120,
+          "feasible": true
+        },
+        {
+          "l": 100,
+          "feasible": false
+        }
+      ],
+      "fails": [
+        "too_narrow_for_2x230mm_columns_in_each_bay"
+      ]
+    },
+    {
+      "W": 1000,
+      "D": 440,
+      "geometry": false,
+      "depth_ok": true,
+      "base_l": 151.9006797681159,
+      "stress": [
+        145.55809556923074,
+        158.21666662857143
+      ],
+      "targets": [
+        {
+          "l": 150,
+          "feasible": true
+        },
+        {
+          "l": 120,
+          "feasible": true
+        },
+        {
+          "l": 100,
+          "feasible": true
+        }
+      ],
+      "fails": [
+        "too_narrow_for_2x230mm_columns_in_each_bay"
+      ]
+    },
+    {
+      "W": 1000,
+      "D": 445,
+      "geometry": false,
+      "depth_ok": true,
+      "base_l": 154.0755197681159,
+      "stress": [
+        147.73269356923075,
+        160.3917486285714
+      ],
+      "targets": [
+        {
+          "l": 150,
+          "feasible": true
+        },
+        {
+          "l": 120,
+          "feasible": true
+        },
+        {
+          "l": 100,
+          "feasible": true
+        }
+      ],
+      "fails": [
+        "too_narrow_for_2x230mm_columns_in_each_bay"
+      ]
+    },
+    {
+      "W": 1000,
+      "D": 448,
+      "geometry": false,
+      "depth_ok": true,
+      "base_l": 155.38042376811592,
+      "stress": [
+        149.03745236923072,
+        161.69679782857142
+      ],
+      "targets": [
+        {
+          "l": 150,
+          "feasible": true
+        },
+        {
+          "l": 120,
+          "feasible": true
+        },
+        {
+          "l": 100,
+          "feasible": true
+        }
+      ],
+      "fails": [
+        "too_narrow_for_2x230mm_columns_in_each_bay"
+      ]
+    },
+    {
+      "W": 1000,
+      "D": 450,
+      "geometry": false,
+      "depth_ok": true,
+      "base_l": 156.25035976811594,
+      "stress": [
+        149.90729156923075,
+        162.56683062857144
+      ],
+      "targets": [
+        {
+          "l": 150,
+          "feasible": true
+        },
+        {
+          "l": 120,
+          "feasible": false
+        },
+        {
+          "l": 100,
+          "feasible": true
+        }
+      ],
+      "fails": [
+        "too_narrow_for_2x230mm_columns_in_each_bay"
+      ]
+    },
+    {
+      "W": 1000,
+      "D": 455,
+      "geometry": false,
+      "depth_ok": false,
+      "base_l": 158.42519976811593,
+      "stress": [
+        152.08188956923075,
+        164.7419126285714
+      ],
+      "targets": [
+        {
+          "l": 150,
+          "feasible": true
+        },
+        {
+          "l": 120,
+          "feasible": true
+        },
+        {
+          "l": 100,
+          "feasible": false
+        }
+      ],
+      "fails": [
+        "too_narrow_for_2x230mm_columns_in_each_bay"
+      ]
+    },
+    {
+      "W": 1020,
+      "D": 440,
+      "geometry": false,
+      "depth_ok": true,
+      "base_l": 155.30495107246372,
+      "stress": [
+        148.95845249230766,
+        161.62428948571429
+      ],
+      "targets": [
+        {
+          "l": 150,
+          "feasible": true
+        },
+        {
+          "l": 120,
+          "feasible": true
+        },
+        {
+          "l": 100,
+          "feasible": true
+        }
+      ],
+      "fails": [
+        "large_0_hit_mat-envelope",
+        "large_1_hit_mat-envelope"
+      ]
+    },
+    {
+      "W": 1020,
+      "D": 445,
+      "geometry": false,
+      "depth_ok": true,
+      "base_l": 157.52539107246372,
+      "stress": [
+        151.17865049230767,
+        163.84497148571427
+      ],
+      "targets": [
+        {
+          "l": 150,
+          "feasible": true
+        },
+        {
+          "l": 120,
+          "feasible": true
+        },
+        {
+          "l": 100,
+          "feasible": true
+        }
+      ],
+      "fails": [
+        "large_0_hit_mat-envelope",
+        "large_1_hit_mat-envelope"
+      ]
+    },
+    {
+      "W": 1020,
+      "D": 448,
+      "geometry": true,
+      "depth_ok": true,
+      "base_l": 158.85765507246379,
+      "stress": [
+        152.51076929230766,
+        165.1773806857143
+      ],
+      "targets": [
+        {
+          "l": 150,
+          "feasible": true
+        },
+        {
+          "l": 120,
+          "feasible": true
+        },
+        {
+          "l": 100,
+          "feasible": false
+        }
+      ],
+      "fails": []
+    },
+    {
+      "W": 1020,
+      "D": 455,
+      "geometry": true,
+      "depth_ok": false,
+      "base_l": 161.96627107246377,
+      "stress": [
+        155.61904649230766,
+        168.28633548571426
+      ],
+      "targets": [
+        {
+          "l": 150,
+          "feasible": true
+        },
+        {
+          "l": 120,
+          "feasible": true
+        },
+        {
+          "l": 100,
+          "feasible": false
+        }
+      ],
+      "fails": []
+    },
+    {
+      "W": 1040,
+      "D": 440,
+      "geometry": false,
+      "depth_ok": true,
+      "base_l": 158.7092223768116,
+      "stress": [
+        152.3588094153846,
+        165.03191234285714
+      ],
+      "targets": [
+        {
+          "l": 150,
+          "feasible": true
+        },
+        {
+          "l": 120,
+          "feasible": true
+        },
+        {
+          "l": 100,
+          "feasible": false
+        }
+      ],
+      "fails": [
+        "large_0_hit_mat-envelope",
+        "large_1_hit_mat-envelope"
+      ]
+    },
+    {
+      "W": 1040,
+      "D": 445,
+      "geometry": false,
+      "depth_ok": true,
+      "base_l": 160.97526237681157,
+      "stress": [
+        154.6246074153846,
+        167.2981943428571
+      ],
+      "targets": [
+        {
+          "l": 150,
+          "feasible": false
+        },
+        {
+          "l": 120,
+          "feasible": true
+        },
+        {
+          "l": 100,
+          "feasible": true
+        }
+      ],
+      "fails": [
+        "large_0_hit_mat-envelope",
+        "large_1_hit_mat-envelope"
+      ]
+    },
+    {
+      "W": 1040,
+      "D": 448,
+      "geometry": true,
+      "depth_ok": true,
+      "base_l": 162.3348863768116,
+      "stress": [
+        155.98408621538456,
+        168.65796354285712
+      ],
+      "targets": [
+        {
+          "l": 150,
+          "feasible": true
+        },
+        {
+          "l": 120,
+          "feasible": true
+        },
+        {
+          "l": 100,
+          "feasible": false
+        }
+      ],
+      "fails": []
+    },
+    {
+      "W": 1040,
+      "D": 450,
+      "geometry": true,
+      "depth_ok": true,
+      "base_l": 163.2413023768116,
+      "stress": [
+        156.89040541538458,
+        169.56447634285712
+      ],
+      "targets": [
+        {
+          "l": 150,
+          "feasible": true
+        },
+        {
+          "l": 120,
+          "feasible": true
+        },
+        {
+          "l": 100,
+          "feasible": false
+        }
+      ],
+      "fails": []
+    },
+    {
+      "W": 1040,
+      "D": 455,
+      "geometry": true,
+      "depth_ok": false,
+      "base_l": 165.5073423768116,
+      "stress": [
+        159.1562034153846,
+        171.8307583428571
+      ],
+      "targets": [
+        {
+          "l": 150,
+          "feasible": true
+        },
+        {
+          "l": 120,
+          "feasible": true
+        },
+        {
+          "l": 100,
+          "feasible": false
+        }
+      ],
+      "fails": []
+    }
+  ],
+  "parameters": {
+    "large_module_mm": [
+      230,
+      160,
+      100
+    ],
+    "trim_block_max_mm": [
+      85,
+      120,
+      150
+    ],
+    "driver_reference": {
+      "model": "STX W.32.500.8.MC_v2",
+      "outer_mm": 332,
+      "cutout_mm": 284,
+      "bolt_pcd_mm": 316,
+      "bolt_hole_mm": 5.5,
+      "depth_mm": 133
+    },
+    "outside_H_mm": 500,
+    "front_mm": 44,
+    "other_wall_mm": 22,
+    "material": "MDF - no stiffness proof",
+    "rear_mat_envelope_mm": 50,
+    "nominal_mat_solid_fraction": 0.014492753623188406,
+    "total_depth_formula": "D + static_front(10-22) + catalog_xmax(7.5) + gap(5) + grille_deflection(2) + grille_skin(3) + rear(0-8) + tolerance(2)",
+    "effective_displacement_per_driver_scenarios_l": [
+      2,
+      5,
+      8
+    ],
+    "bracing_volume_stress_fraction": 0.05,
+    "trim_and_module_models": "Not approved pieces; designed research geometry, not existing P20D parts"
+  },
+  "limitations": [
+    "Full translation corridors are proven only for ideal AABBs with 2 mm collision allowance, both drivers removed during insertion, no hands/tools/wiring/fasteners modeled",
+    "Motor cylinder is conservatively bounded by STX 284mm cutout and 133mm advertised total depth, not a measured body or cooling envelope",
+    "Central 22mm window brace has 10mm front depth edge and is NOT strength/deflection/FEA validated",
+    "Fine trim blocks are continuous-volume conceptual spacers with no approved locking, fitting, adhesive or sealing",
+    "Nominal 100/120/150 L is not robust under the considered effective driver displacement range; need per-unit calibration and alternative module inventory",
+    "Rear mat dry-fiber body volume approximate, porosity acoustical effects not included",
+    "Full depth worst-case leaves only 0.5mm margin and projections are hypothetical; do not approve 500mm construction/CNC",
+    "No real 3D speaker CAD, no measured driver displacement, no installation fixtures, no gravity load in 2 orientations, no cost or FEA test"
+  ]
+}
