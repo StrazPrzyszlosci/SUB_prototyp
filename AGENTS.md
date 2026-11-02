@@ -1539,3 +1539,39 @@ wariancie. Nie składać obietnicy gotowości konstrukcji.
 Cały raport: raporty/B12-05_podwojny_STX_geometry_montaz_netto.md
 Skrypt: node skrypty/b12_05_dwa_stx_przestrzen_i_wklady.js
 Źródło wymiarów: https://stx.pl/w-32-500-8-mc.html.
+
+
+## B12-06 (2026-11-02): nadrzędna bramka briefu, ważniejsza od oszczędności STX
+
+Pierwotny brief `brief_system_audio_DIY_v0.6.md` i macierz
+`WYMAGANIA.md` pozostają nadrzędne. Cel: wysokiej jakości bas z niskim
+szumem, THD/IMD i kompresją, czystym headroomem 20–40 Hz; odsłuch
+2.5–3 m w jednym sweet spocie w pokoju 4.6×3.7×2.5m (42.55m3),
+docelowo 2 niezależne subwoofery + 2 aktywne monitory 3-drożne,
+łącznie 8 wyjść DSP (6 monitorowych + 2 sub). Orientacyjne
+referencje ADAM Sub12/Sub15; progi nie zatwierdzone, więc nie
+deklarować równoważności. Wymogi W13/W24: jeden głośnik w jednej
+skrzyni jest bazą, 2×STX 12″ w jednej skrzyni jest wyłącznie
+opcją porównawczą, wymagającą odstępstwa i nowej walidacji.
+Dwa docelowe subwoofery z 2×STX w każdej skrzyni to CZTERY
+przetworniki, 2 osobne obudowy i 2 kanały DSP; nie mylić z dwiema
+membranami w jednym źródle.
+
+W B12-06 wykonano modelowy przesiew 36 przypadków Ritz izolowanej
+płyty/frontu i 8 kontroli podstawy/kwadratury, plus bramkę w pokoju.
+Przy nominalnych 2.1GPa/44mm/Kbrace1MN/m i testowym 100Pa
+wyszło ok. 3.58 µm ugięcia C02 i 3.59 µm 2×C05.
+Model gładkich globalnych funkcji nie spełnia wiernie warunków na
+krawędziach okrągłych otworów, nie daje lokalnych naprężeń przy
+śrubach, rzeczywistych rezonansów korpusu ani nośności kleju.
+Nie używać do CNC ani twierdzenia, że konstrukcja STX jest
+sztywniejsza lub lepsza akustycznie. Katalogowe Sd×Xmax 2 subów
+Dayton=2322.88cm3, 2 subów z parami STX=1473cm3, ale nie
+jest to clean SPL. Wymagane realne układy źródeł przy monitorach,
+mierzalny headroom w 20–40Hz, THD/IMD, kompresja, 500mm pełnego
+obrysu oraz powtarzalność w innych pokojach. Nie kupować ani
+nie zwalniać do produkcji.
+
+Raport: `raporty/B12-06_mechanika_frontow_i_weryfikacja_briefu.md`.
+Dane: `wyniki/b12_06_front_ritz_i_brief_20261102.json`.
+Kod: `node skrypty/b12_06_ritz_front_podwojny_i_brief.js`.
