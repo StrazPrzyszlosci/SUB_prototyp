@@ -505,6 +505,41 @@ Nie są to pomiary, zweryfikowane THD ani dowód bezpieczeństwa.
 · [26+2 scenariusze JSON](wyniki/b12_04_dynamika_termika_20261102.json)
 · [odtwarzalny model i bilans energii](skrypty/b12_04_dynamika_limity_i_termika.js).
 
+### B12-05 — dwie dwunastki STX: obudowa i regulacja litrów naprawdę się mieszczą?
+
+Po wcześniejszych badaniach elektroakustycznych przeprowadziliśmy
+**20 badań gabarytów** oraz sprawdzenie niekolidujących prostoliniowych
+tras wkładania elementów przez **dwa otwory Ø284 mm**. Oceniono
+sztywno niezaprojektowane *na razie* wręgi, wkłady i 50-mm tylną matę
+wyłącznie geometrycznie. **Nie jest to jeszcze zweryfikowana konstrukcja.**
+
+![B12-05: dwa otwory STX i centralna wręga](wyniki/b12_05_dwa_stx_front.svg)
+
+W modelu nominalnym wyróżniły się **dwa warianty**:
+**1020×450×500 mm** oraz **1040×448×500 mm**.
+Dla pierwszego wewnętrzna objętość bez wkładów to **159,75 l netto**
+przy założonej wyporności po 5 l na kosz, bez potwierdzenia
+rzeczywistej objętości silników.
+
+![B12-05: 16 wkładów, strojenie i przekrój głębokości](wyniki/b12_05_wklady_przekroj.svg)
+
+Model pokazuje **16/16** hipotetycznie bezkolizyjnych dróg włożenia
+dużych wkładów i **2/2** małych regulatorów. Wariant nominalny można
+stroić do **150 l (2 duże wkłady), 120 l (10)** i **100 l (16)**,
+dodatkowo regulując małe wkładki. Nie gwarantuje to tych litrów dla
+każdej rzeczywistej wyporności głośników. **Zewnętrzna głębokość**
+po doliczeniu osłony i wystawania wynosi w scenariuszach
+**479,5–499,5 mm**: zapas zaledwie **0,5 mm**.
+Front MDF44 i cienka przednia część wręgi nadal wymagają MES,
+pomiaru wyparcia koszy, kontroli zacisków i narzędzi, zamków,
+wiarygodnego dostępu montażowego i zabezpieczenia wkładów.
+**Nie wykonywać CNC.**
+
+[Raport konstrukcyjny B12-05](raporty/B12-05_podwojny_STX_geometry_montaz_netto.md)
+· [20 przypadków i komplet obwiedni](wyniki/b12_05_uklad_2x12_20261102.json)
+· [skrypt odtwarzający test tras i objętości](skrypty/b12_05_dwa_stx_przestrzen_i_wklady.js).
+
+
 
 
 

@@ -1511,3 +1511,31 @@ zabezpieczeń końcówki, rzeczywistych BL(x), Cms(x), Le(x,f),
 THD/IMD i zatwierdzonego limitera, brak CNC i wyboru przetwornika.
 Raport `raporty/B12-04_dynamika_impulsy_ochrona_termika.md`,
 skrypt `skrypty/b12_04_dynamika_limity_i_termika.js`.
+
+
+## B12-05: geometria pary dwóch STX 12″, bez kwalifikacji do CNC (2026-11-02)
+
+Kolejny etap B12-05 sprawdza 20 korpusów W980/1000/1020/1040 ×
+D440/445/448/450/455 × H500 mm, front MDF44 mm, reszta MDF22 mm.
+Szkic referencyjny 1020×450×500: dwa kosze STX W.32.500.8.MC_v2,
+centra X255/765, Z250, Ø332/Ø284/BCD316/5.5, centralna wręga
+okienna x499–521, cienki pas frontowy 10 mm (mechanika NIE
+sprawdzona). Nowe wkłady są INNE niż w P20D: 16×230×100×160 mm,
+po 3.68 l, i 2× do 98×150×120 mm na strojenie (do 3.528 l).
+Nominalnie Vnet bez modułów = 159.745831 l przy wyparciu
+5 l na kosz oraz modelowanych osprzęcie i ciele maty.
+Po uwzględnieniu strojenia: 150 l z 2 dużymi, 120 l z 10,
+100 l z 16; dodatkowo trzeba skalibrować dwa małe.
+16/16 dużych i 2/2 małych czysto translacyjne trasy przesuwu
+AABB omijają w modelu już umieszczone obiekty; brak narzędzi,
+przewodów, uszczelek, zapięć, realnego CAD kosza, grawitacji
+obu orientacji i statyki nośności.
+Dcałość w scenariuszu STX wynosi 479.5–499.5 mm: zaledwie
+0.5 mm zapasu, nie kwalifikuje wykonania do 500mm.
+Alternatywa 1040×448×500 nominalnie geometrycznie także przeszła.
+Wrażliwość wyporności kosza 2–8 l powoduje brak gwarancji,
+że osiągniemy dokładnie 100 l w najkorzystniejszym wyporowo
+wariancie. Nie składać obietnicy gotowości konstrukcji.
+Cały raport: raporty/B12-05_podwojny_STX_geometry_montaz_netto.md
+Skrypt: node skrypty/b12_05_dwa_stx_przestrzen_i_wklady.js
+Źródło wymiarów: https://stx.pl/w-32-500-8-mc.html.

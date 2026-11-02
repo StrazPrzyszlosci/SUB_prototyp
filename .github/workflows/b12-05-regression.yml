@@ -1,0 +1,21 @@
+name: B12-05 two-STX mechanical-envelope regression
+on:
+  pull_request:
+    paths:
+      - 'skrypty/b12_05_dwa_stx_przestrzen_i_wklady.js'
+      - 'wyniki/b12_05_*'
+      - '.github/workflows/b12-05-regression.yml'
+  push:
+    paths:
+      - 'skrypty/b12_05_dwa_stx_przestrzen_i_wklady.js'
+      - 'wyniki/b12_05_*'
+      - '.github/workflows/b12-05-regression.yml'
+jobs:
+  nominal-geometry:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify 20 envelopes, swept-insertion routes and three net-volume targets
+        run: node skrypty/b12_05_dwa_stx_przestrzen_i_wklady.js
