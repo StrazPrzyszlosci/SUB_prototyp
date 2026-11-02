@@ -1605,3 +1605,51 @@ Następne kroki: gęstsza siatka P26, potwierdzenie rzeczywistych
 położeń i prześwitów przy monitorach, testy odchyłek słuchacza,
 pomiary X/THD/IMD/kompresji oraz kontrola pełnego 8-kanałowego
 toru, bez wdrażania DSP/CNC i zakupu.
+
+
+## B12-08 (2026-11-02) — audyt wszystkich linii decyzyjnych i priorytet pierwszego C02
+
+Wykonano inwentaryzację kompletnego drzewa main (3791 plików;
+124 dokumentów raportowych pod raporty/ poza indeksem) oraz
+krytyczny audyt tekstów źródłowych P29A–D, P30E/F, P38–P45,
+B12-01…07. Pełna inwentaryzacja nie znaczy, że odtworzono
+fizykę wszystkich 3791 plików. Wybór warunkowy:
+C02 Dayton RSS390HF-4. P29C: przecięcie wyboru
+C02/C11 przy hipotetycznym Pcu 86,813 W NIE jest
+zmierzonym progiem termicznym. C11 HE-22 i C06 STX pozostają
+kontrkandydatami; tania para C05 12″ to ścieżka ekonomiczna,
+nie automatyczny prototyp. Reguła użytkownika W13/W24:
+jeden kosz w jednej obudowie, docelowo dwa niezależne suby.
+
+P30E/P30F: proponowany BADAWCZY korpus C02
+1020x425x500mm (W/D/H), MDF front44, reszta22, mata50,
+nominalne 100.119/119.919/150.159l z wkładami
+16 dużych+4 małe / 12 dużych / 1 duży. P38A:
+otwór Ø355,8, kołnierz Ø388,4, BCD Ø368 i 8×Ø6,5;
+rzeczywisty kosz nadal wymaga STEP / rzeczywistego szablonu.
+Nowe 2232 badania pierścienia/osi/otworu: dla arbitralnych
+10mm projekcyjnego marginesu do panelu i wręgi,
+1mm radialnego luzu pierścienia do wycięcia,
+2mm metalu przy otworze i ±0/1/2mm niepewności osi,
+Ø6,5 pierścienia nie daje żadnego pozytywnego zestawienia.
+To NIE jest normatywny test bezpieczeństwa ani dowód
+niewykonalności Daytona. Kontrwariant otworu NOŚNIKA Ø5,5
+wciąż bez doboru rzeczywistego gwintu, materiału i docisku.
+Hipotetyczne X235 zamiast X231 wymaga pełnego przeliczenia
+wręg, modułów i wszystkich kolizji P38–P44. W żadnym
+razie nie podawać takiej osi jako zatwierdzonej do CNC.
+
+160 zestawień modelu głębokości 420–440mm + front
+30/40/50/60mm + tył 0/10/20/30mm + tolerancje 0/5;
+P30E deklarował 19mm zapasu na innych założeniach.
+Nie mieszać różnych budżetów i nie liczyć projekcji
+dwukrotnie. 81 przypadków czułości przy Vb100/120/150
+daje nominalne przy 120l Qtc0.71368, F3 32.14568Hz,
+małosygnałowe 20Hz −8.93575dB bez EQ. Nie jest to
+rzeczywisty pomiar SPL w pokoju/THD ani bezpieczny
+preset DSP. Dane i odtwarzanie:
+`raporty/B12-08_audyt_wyboru_i_konstrukcja_pierwszego_C02.md`,
+`node skrypty/b12_08_audyt_rysunku_pierwszego_prototypu.js`.
+Kolejna główna linia: B12-09 projekt pełnej drogi obciążenia
+nośnik A i serwis 3D; nie kontynuować ślepo optymalizacji
+dwóch tanich STX kosztem briefu. CNC/ZAKUPY: NIE.
