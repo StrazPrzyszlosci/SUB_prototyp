@@ -539,6 +539,40 @@ wiarygodnego dostępu montażowego i zabezpieczenia wkładów.
 · [20 przypadków i komplet obwiedni](wyniki/b12_05_uklad_2x12_20261102.json)
 · [skrypt odtwarzający test tras i objętości](skrypty/b12_05_dwa_stx_przestrzen_i_wklady.js).
 
+### B12-06 — czy badania pary tanich 12″ nadal prowadzą do celu z pierwotnego briefu?
+
+**Najpierw punkt odniesienia:** system ma zapewnić neutralny, bardzo czysty,
+niskoszumowy bas o dużym zapasie 20–40 Hz w pokoju **4,6×3,7×2,5 m**,
+z odsłuchem **2,5–3 m w jednym sweet spocie**. Plan to **dwie niezależne
+obudowy subwooferowe** plus dwa aktywne monitory 3-drożne (8 kanałów DSP).
+Na dziś W13/W24 wymagają **jednego głośnika na każdą obudowę**.
+Dwa STX w jednej skrzyni są tylko porównawczym wariantem ekonomicznym,
+**nie zastępują dwóch osobnych subwooferów**.
+
+![B12-06: wymagania przestrzenne dwóch subwooferów i monitorów](wyniki/b12_06_plan_pokoju.svg)
+
+Wykonano **36 prób modelu mechanicznego Ritz** dwóch frontów (1× Dayton
+vs 2× STX) oraz 8 kontroli wrażliwości na bazę i siatkę całkowania.
+Przesiew nie jest dopasowanym do otworów MES — **nie przewiduje
+naprężeń przy śrubach**, sztywności spoin ani drgań całej obudowy.
+
+![B12-06: wrażliwość ugięcia frontu na hipotetyczne podparcie](wyniki/b12_06_front_porownanie.svg)
+
+W jednym z wariantów (front 44mm, E 2,1GPa, ksprężyny 1MN/m),
+przy umownym obciążeniu 100 Pa uzyskano **3,58 µm (Dayton)** i
+**3,59 µm (dwa STX)**. Nie oznacza to takiej samej jakości ani
+faktycznej sztywności obu konstrukcji. Przy dwóch fizycznych
+subwooferach katalogowe Vd wynosi odpowiednio **2323 cm³** dla
+dwóch Daytonów i **1473 cm³** dla czterech STX w dwóch skrzyniach,
+ale nie jest to pomiar SPL/THD. Należy wyznaczyć rzeczywiste
+pozycje przy monitorach, przebadać pobudzenie modów pokoju,
+integrację i kompresję w docelowym sweet spocie. **Bez decyzji CNC.**
+
+[Raport B12-06: mechanika i bramka zgodności z briefem](raporty/B12-06_mechanika_frontow_i_weryfikacja_briefu.md)
+· [36 modeli i 8 kontroli JSON](wyniki/b12_06_front_ritz_i_brief_20261102.json)
+· [kod odtwarzania](skrypty/b12_06_ritz_front_podwojny_i_brief.js).
+
+
 
 
 
