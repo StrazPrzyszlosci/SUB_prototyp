@@ -98,7 +98,7 @@
     "no_radial_overlap_parameter_cells": 180,
     "radially_overlapping_parameter_cells": 252
   },
-  "observed": "manufacturer rear drawing visually shows 4 principal ribs; specification states 8 mounting holes; their relative angular phase is fixed and not dimensioned",
+  "observed": "Verified official manufacturer rear and side drawings: four broad tapered main ribs, eight mounting holes, four hole axes visually collinear with ribs, four between; relative phase fixed, nominal approximately 0 degrees. Exact rib profile r(y,theta), terminal envelope and tolerance not dimensioned.",
   "assumptions": {
     "rib_halfwidth_deg": [
       5,
@@ -135,5 +135,17 @@
     "rotating entire driver does not change internal hole-to-rib phase",
     "safe phase counts are mathematical counterfactuals, not manufacturing probabilities",
     "no fastener strength or service access verified"
-  ]
+  ],
+  "manufacturer_rear_view_verification": {
+    "official_pdf": "https://www.daytonaudio.com/images/resources/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf",
+    "main_ribs_visually": 4,
+    "flange_holes_dimensioned": 8,
+    "visually_rib_aligned_hole_axes": 4,
+    "visually_inter_rib_hole_axes": 4,
+    "phase_hole_rib_degrees_nominal_approx": 0,
+    "phase_is_measured": false,
+    "rib_radius_at_rear_of_44mm_front_known": false,
+    "screw_alignment_obstacle_conclusion": "NOT established, radial rib taper and y-depth must be checked",
+    "theoretical_phase_22_5_is_installation_setting": false
+  }
 }
