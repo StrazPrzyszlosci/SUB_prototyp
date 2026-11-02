@@ -1,0 +1,1705 @@
+{
+  "schema": "b12_04_time_domain_ode_with_thermal_uncertainty",
+  "date": "2026-11-02",
+  "method": {
+    "f_dsp_hz": 96000,
+    "f_mechanical_hz": 9600,
+    "simulation_s": 8,
+    "box_l": 120,
+    "reference_40hz_sine_db": 103,
+    "volume_excursion_limit_fraction": 0.7,
+    "amp_voltage_peak_v": 53.27764,
+    "amp_current_peak_screen_a": 16.97056,
+    "thermal_hypotheses": {
+      "cool": {
+        "rth": 1.2,
+        "cth": 35
+      },
+      "hot": {
+        "rth": 2.4,
+        "cth": 15
+      }
+    },
+    "coil_temp_coefficient_re_per_k": 0.0039,
+    "one_channel_parallel_pair": true,
+    "nominal_hp_hz": 18,
+    "algorithms": [
+      "RK2 electro-mechanical and coil RC coupled pressure",
+      "five RBJ IIR sections 96 kHz from B12-03",
+      "hard-voltage-rail amp, no current clamp",
+      "unqualified controller using true x and v with 6 ms forecast, 1 ms attack, 180 ms release",
+      "electrical energy vs copper heat, body cooling, stored thermal+mechanical+inductor energy"
+    ]
+  },
+  "counts": {
+    "scenarios": 26,
+    "convergence": 2,
+    "per_run_mechanical_samples": 76800
+  },
+  "screens": {
+    "C02": [
+      {
+        "mode": "none",
+        "xpeak_fraction": 1.16389,
+        "over70_percent": 18.875,
+        "temp_c": 41.3404,
+        "clip_percent": 0.75
+      },
+      {
+        "mode": "derate",
+        "xpeak_fraction": 0.58737,
+        "over70_percent": 0,
+        "temp_c": 29.06443,
+        "clip_percent": 0
+      },
+      {
+        "mode": "feedback",
+        "xpeak_fraction": 0.82209,
+        "over70_percent": 4.36458,
+        "temp_c": 32.89181,
+        "clip_percent": 0
+      }
+    ],
+    "C05": [
+      {
+        "mode": "none",
+        "xpeak_fraction": 1.91417,
+        "over70_percent": 39.90885,
+        "temp_c": 40.89202,
+        "clip_percent": 0
+      },
+      {
+        "mode": "derate",
+        "xpeak_fraction": 0.95895,
+        "over70_percent": 11.09115,
+        "temp_c": 28.97795,
+        "clip_percent": 0
+      },
+      {
+        "mode": "feedback",
+        "xpeak_fraction": 0.98969,
+        "over70_percent": 15.19271,
+        "temp_c": 29.89141,
+        "clip_percent": 0
+      }
+    ]
+  },
+  "convergence": [
+    {
+      "id": "C02",
+      "base_hz": 9600,
+      "refined_hz": 19200,
+      "base_max_x": 1.16389,
+      "refined_max_x": 1.16398,
+      "relative_difference_percent": 0.00773,
+      "base_temp": 41.3404,
+      "refined_temp": 41.34387
+    },
+    {
+      "id": "C05",
+      "base_hz": 9600,
+      "refined_hz": 19200,
+      "base_max_x": 1.91417,
+      "refined_max_x": 1.91431,
+      "relative_difference_percent": 0.00731,
+      "base_temp": 40.89202,
+      "refined_temp": 40.89309
+    }
+  ],
+  "results": [
+    {
+      "id": "C02",
+      "type": "sustained",
+      "mode": "none",
+      "heat": "cool",
+      "mismatch": false,
+      "mechHz": 9600,
+      "target_ref_40hz_db": 103,
+      "max_catalog_x_fraction": 1.16524,
+      "time_over_70pct_x_percent": 19.14063,
+      "time_over_current_peak_percent": 0,
+      "time_clipped_percent": 0.75,
+      "highest_coil_temp_c": 32.06944,
+      "total_copper_energy_j": 271.83428,
+      "energy_residual": 0.00226,
+      "minimum_gain": 1,
+      "max_current_a": 8.34279,
+      "max_voltage_v": 53.27764,
+      "trace": [
+        {
+          "s": 0,
+          "temperature_c": 25,
+          "limit_gain": 1
+        },
+        {
+          "s": 1,
+          "temperature_c": 25.83863,
+          "limit_gain": 1
+        },
+        {
+          "s": 2,
+          "temperature_c": 26.79023,
+          "limit_gain": 1
+        },
+        {
+          "s": 3,
+          "temperature_c": 27.72057,
+          "limit_gain": 1
+        },
+        {
+          "s": 4,
+          "temperature_c": 28.63009,
+          "limit_gain": 1
+        },
+        {
+          "s": 5,
+          "temperature_c": 29.51927,
+          "limit_gain": 1
+        },
+        {
+          "s": 6,
+          "temperature_c": 30.38855,
+          "limit_gain": 1
+        },
+        {
+          "s": 7,
+          "temperature_c": 31.23836,
+          "limit_gain": 1
+        }
+      ]
+    },
+    {
+      "id": "C02",
+      "type": "sustained",
+      "mode": "none",
+      "heat": "hot",
+      "mismatch": false,
+      "mechHz": 9600,
+      "target_ref_40hz_db": 103,
+      "max_catalog_x_fraction": 1.16389,
+      "time_over_70pct_x_percent": 18.875,
+      "time_over_current_peak_percent": 0,
+      "time_clipped_percent": 0.75,
+      "highest_coil_temp_c": 41.3404,
+      "total_copper_energy_j": 273.32043,
+      "energy_residual": 0.00223,
+      "minimum_gain": 1,
+      "max_current_a": 8.33357,
+      "max_voltage_v": 53.27764,
+      "trace": [
+        {
+          "s": 0,
+          "temperature_c": 25,
+          "limit_gain": 1
+        },
+        {
+          "s": 1,
+          "temperature_c": 26.95448,
+          "limit_gain": 1
+        },
+        {
+          "s": 2,
+          "temperature_c": 29.16734,
+          "limit_gain": 1
+        },
+        {
+          "s": 3,
+          "temperature_c": 31.3255,
+          "limit_gain": 1
+        },
+        {
+          "s": 4,
+          "temperature_c": 33.43017,
+          "limit_gain": 1
+        },
+        {
+          "s": 5,
+          "temperature_c": 35.48257,
+          "limit_gain": 1
+        },
+        {
+          "s": 6,
+          "temperature_c": 37.48388,
+          "limit_gain": 1
+        },
+        {
+          "s": 7,
+          "temperature_c": 39.43526,
+          "limit_gain": 1
+        }
+      ]
+    },
+    {
+      "id": "C02",
+      "type": "sustained",
+      "mode": "derate",
+      "heat": "cool",
+      "mismatch": false,
+      "mechHz": 9600,
+      "target_ref_40hz_db": 103,
+      "max_catalog_x_fraction": 0.58755,
+      "time_over_70pct_x_percent": 0,
+      "time_over_current_peak_percent": 0,
+      "time_clipped_percent": 0,
+      "highest_coil_temp_c": 26.76576,
+      "total_copper_energy_j": 67.90414,
+      "energy_residual": 0.00227,
+      "minimum_gain": 0.5,
+      "max_current_a": 4.17396,
+      "max_voltage_v": 28.35223,
+      "trace": [
+        {
+          "s": 0,
+          "temperature_c": 25,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 1,
+          "temperature_c": 25.21017,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 2,
+          "temperature_c": 25.44836,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 3,
+          "temperature_c": 25.68102,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 4,
+          "temperature_c": 25.90827,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 5,
+          "temperature_c": 26.13024,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 6,
+          "temperature_c": 26.34705,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 7,
+          "temperature_c": 26.55883,
+          "limit_gain": 0.5
+        }
+      ]
+    },
+    {
+      "id": "C02",
+      "type": "sustained",
+      "mode": "derate",
+      "heat": "hot",
+      "mismatch": false,
+      "mechHz": 9600,
+      "target_ref_40hz_db": 103,
+      "max_catalog_x_fraction": 0.58737,
+      "time_over_70pct_x_percent": 0,
+      "time_over_current_peak_percent": 0,
+      "time_clipped_percent": 0,
+      "highest_coil_temp_c": 29.06443,
+      "total_copper_energy_j": 68.00266,
+      "energy_residual": 0.00227,
+      "minimum_gain": 0.5,
+      "max_current_a": 4.17281,
+      "max_voltage_v": 28.35223,
+      "trace": [
+        {
+          "s": 0,
+          "temperature_c": 25,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 1,
+          "temperature_c": 25.48958,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 2,
+          "temperature_c": 26.04259,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 3,
+          "temperature_c": 26.58083,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 4,
+          "temperature_c": 27.10469,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 5,
+          "temperature_c": 27.61456,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 6,
+          "temperature_c": 28.11081,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 7,
+          "temperature_c": 28.5938,
+          "limit_gain": 0.5
+        }
+      ]
+    },
+    {
+      "id": "C02",
+      "type": "sustained",
+      "mode": "feedback",
+      "heat": "cool",
+      "mismatch": false,
+      "mechHz": 9600,
+      "target_ref_40hz_db": 103,
+      "max_catalog_x_fraction": 0.82223,
+      "time_over_70pct_x_percent": 4.46875,
+      "time_over_current_peak_percent": 0,
+      "time_clipped_percent": 0,
+      "highest_coil_temp_c": 28.41637,
+      "total_copper_energy_j": 131.38513,
+      "energy_residual": 0.00183,
+      "minimum_gain": 0.58192,
+      "max_current_a": 5.87357,
+      "max_voltage_v": 43.6503,
+      "trace": [
+        {
+          "s": 0,
+          "temperature_c": 25,
+          "limit_gain": 1
+        },
+        {
+          "s": 1,
+          "temperature_c": 25.41759,
+          "limit_gain": 0.80323
+        },
+        {
+          "s": 2,
+          "temperature_c": 25.87576,
+          "limit_gain": 0.80341
+        },
+        {
+          "s": 3,
+          "temperature_c": 26.32362,
+          "limit_gain": 0.80358
+        },
+        {
+          "s": 4,
+          "temperature_c": 26.76141,
+          "limit_gain": 0.80375
+        },
+        {
+          "s": 5,
+          "temperature_c": 27.18935,
+          "limit_gain": 0.80391
+        },
+        {
+          "s": 6,
+          "temperature_c": 27.60766,
+          "limit_gain": 0.80408
+        },
+        {
+          "s": 7,
+          "temperature_c": 28.01656,
+          "limit_gain": 0.80423
+        }
+      ]
+    },
+    {
+      "id": "C02",
+      "type": "sustained",
+      "mode": "feedback",
+      "heat": "hot",
+      "mismatch": false,
+      "mechHz": 9600,
+      "target_ref_40hz_db": 103,
+      "max_catalog_x_fraction": 0.82209,
+      "time_over_70pct_x_percent": 4.36458,
+      "time_over_current_peak_percent": 0,
+      "time_clipped_percent": 0,
+      "highest_coil_temp_c": 32.89181,
+      "total_copper_energy_j": 132.04562,
+      "energy_residual": 0.00182,
+      "minimum_gain": 0.58205,
+      "max_current_a": 5.8693,
+      "max_voltage_v": 43.89729,
+      "trace": [
+        {
+          "s": 0,
+          "temperature_c": 25,
+          "limit_gain": 1
+        },
+        {
+          "s": 1,
+          "temperature_c": 25.97312,
+          "limit_gain": 0.80343
+        },
+        {
+          "s": 2,
+          "temperature_c": 27.03821,
+          "limit_gain": 0.80384
+        },
+        {
+          "s": 3,
+          "temperature_c": 28.07667,
+          "limit_gain": 0.80424
+        },
+        {
+          "s": 4,
+          "temperature_c": 29.08913,
+          "limit_gain": 0.80463
+        },
+        {
+          "s": 5,
+          "temperature_c": 30.07622,
+          "limit_gain": 0.80501
+        },
+        {
+          "s": 6,
+          "temperature_c": 31.03857,
+          "limit_gain": 0.80537
+        },
+        {
+          "s": 7,
+          "temperature_c": 31.97678,
+          "limit_gain": 0.80573
+        }
+      ]
+    },
+    {
+      "id": "C02",
+      "type": "bursts",
+      "mode": "none",
+      "heat": "cool",
+      "mismatch": false,
+      "mechHz": 9600,
+      "target_ref_40hz_db": 103,
+      "max_catalog_x_fraction": 0.84664,
+      "time_over_70pct_x_percent": 0.92708,
+      "time_over_current_peak_percent": 0,
+      "time_clipped_percent": 0,
+      "highest_coil_temp_c": 25.47982,
+      "total_copper_energy_j": 18.12195,
+      "energy_residual": 0.00127,
+      "minimum_gain": 1,
+      "max_current_a": 5.71034,
+      "max_voltage_v": 40.34019,
+      "trace": [
+        {
+          "s": 0,
+          "temperature_c": 25,
+          "limit_gain": 1
+        },
+        {
+          "s": 1,
+          "temperature_c": 25.12713,
+          "limit_gain": 1
+        },
+        {
+          "s": 2,
+          "temperature_c": 25.12414,
+          "limit_gain": 1
+        },
+        {
+          "s": 3,
+          "temperature_c": 25.24838,
+          "limit_gain": 1
+        },
+        {
+          "s": 4,
+          "temperature_c": 25.24253,
+          "limit_gain": 1
+        },
+        {
+          "s": 5,
+          "temperature_c": 25.36401,
+          "limit_gain": 1
+        },
+        {
+          "s": 6,
+          "temperature_c": 25.35545,
+          "limit_gain": 1
+        },
+        {
+          "s": 7,
+          "temperature_c": 25.47429,
+          "limit_gain": 1
+        }
+      ]
+    },
+    {
+      "id": "C02",
+      "type": "bursts",
+      "mode": "none",
+      "heat": "hot",
+      "mismatch": false,
+      "mechHz": 9600,
+      "target_ref_40hz_db": 103,
+      "max_catalog_x_fraction": 0.84658,
+      "time_over_70pct_x_percent": 0.92578,
+      "time_over_current_peak_percent": 0,
+      "time_clipped_percent": 0,
+      "highest_coil_temp_c": 26.10668,
+      "total_copper_energy_j": 18.13196,
+      "energy_residual": 0.00127,
+      "minimum_gain": 1,
+      "max_current_a": 5.70979,
+      "max_voltage_v": 40.34019,
+      "trace": [
+        {
+          "s": 0,
+          "temperature_c": 25,
+          "limit_gain": 1
+        },
+        {
+          "s": 1,
+          "temperature_c": 25.29584,
+          "limit_gain": 1
+        },
+        {
+          "s": 2,
+          "temperature_c": 25.28774,
+          "limit_gain": 1
+        },
+        {
+          "s": 3,
+          "temperature_c": 25.57584,
+          "limit_gain": 1
+        },
+        {
+          "s": 4,
+          "temperature_c": 25.56007,
+          "limit_gain": 1
+        },
+        {
+          "s": 5,
+          "temperature_c": 25.84086,
+          "limit_gain": 1
+        },
+        {
+          "s": 6,
+          "temperature_c": 25.81782,
+          "limit_gain": 1
+        },
+        {
+          "s": 7,
+          "temperature_c": 26.09168,
+          "limit_gain": 1
+        }
+      ]
+    },
+    {
+      "id": "C02",
+      "type": "bursts",
+      "mode": "derate",
+      "heat": "cool",
+      "mismatch": false,
+      "mechHz": 9600,
+      "target_ref_40hz_db": 103,
+      "max_catalog_x_fraction": 0.42334,
+      "time_over_70pct_x_percent": 0,
+      "time_over_current_peak_percent": 0,
+      "time_clipped_percent": 0,
+      "highest_coil_temp_c": 25.11992,
+      "total_copper_energy_j": 4.52905,
+      "energy_residual": 0.00127,
+      "minimum_gain": 0.5,
+      "max_current_a": 2.85532,
+      "max_voltage_v": 20.17009,
+      "trace": [
+        {
+          "s": 0,
+          "temperature_c": 25,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 1,
+          "temperature_c": 25.03178,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 2,
+          "temperature_c": 25.03103,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 3,
+          "temperature_c": 25.06208,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 4,
+          "temperature_c": 25.06062,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 5,
+          "temperature_c": 25.09098,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 6,
+          "temperature_c": 25.08884,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 7,
+          "temperature_c": 25.11853,
+          "limit_gain": 0.5
+        }
+      ]
+    },
+    {
+      "id": "C02",
+      "type": "bursts",
+      "mode": "derate",
+      "heat": "hot",
+      "mismatch": false,
+      "mechHz": 9600,
+      "target_ref_40hz_db": 103,
+      "max_catalog_x_fraction": 0.42333,
+      "time_over_70pct_x_percent": 0,
+      "time_over_current_peak_percent": 0,
+      "time_clipped_percent": 0,
+      "highest_coil_temp_c": 25.27646,
+      "total_copper_energy_j": 4.52968,
+      "energy_residual": 0.00127,
+      "minimum_gain": 0.5,
+      "max_current_a": 2.85526,
+      "max_voltage_v": 20.17009,
+      "trace": [
+        {
+          "s": 0,
+          "temperature_c": 25,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 1,
+          "temperature_c": 25.07395,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 2,
+          "temperature_c": 25.07192,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 3,
+          "temperature_c": 25.14391,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 4,
+          "temperature_c": 25.13996,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 5,
+          "temperature_c": 25.21009,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 6,
+          "temperature_c": 25.20434,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 7,
+          "temperature_c": 25.27271,
+          "limit_gain": 0.5
+        }
+      ]
+    },
+    {
+      "id": "C02",
+      "type": "bursts",
+      "mode": "feedback",
+      "heat": "cool",
+      "mismatch": false,
+      "mechHz": 9600,
+      "target_ref_40hz_db": 103,
+      "max_catalog_x_fraction": 0.63166,
+      "time_over_70pct_x_percent": 0,
+      "time_over_current_peak_percent": 0,
+      "time_clipped_percent": 0,
+      "highest_coil_temp_c": 25.31645,
+      "total_copper_energy_j": 11.9558,
+      "energy_residual": 0.00126,
+      "minimum_gain": 0.73167,
+      "max_current_a": 4.52921,
+      "max_voltage_v": 32.43121,
+      "trace": [
+        {
+          "s": 0,
+          "temperature_c": 25,
+          "limit_gain": 1
+        },
+        {
+          "s": 1,
+          "temperature_c": 25.08386,
+          "limit_gain": 0.99229
+        },
+        {
+          "s": 2,
+          "temperature_c": 25.08188,
+          "limit_gain": 0.99997
+        },
+        {
+          "s": 3,
+          "temperature_c": 25.16383,
+          "limit_gain": 0.99229
+        },
+        {
+          "s": 4,
+          "temperature_c": 25.15997,
+          "limit_gain": 0.99997
+        },
+        {
+          "s": 5,
+          "temperature_c": 25.2401,
+          "limit_gain": 0.99229
+        },
+        {
+          "s": 6,
+          "temperature_c": 25.23445,
+          "limit_gain": 0.99997
+        },
+        {
+          "s": 7,
+          "temperature_c": 25.31284,
+          "limit_gain": 0.99229
+        }
+      ]
+    },
+    {
+      "id": "C02",
+      "type": "bursts",
+      "mode": "feedback",
+      "heat": "hot",
+      "mismatch": false,
+      "mechHz": 9600,
+      "target_ref_40hz_db": 103,
+      "max_catalog_x_fraction": 0.63162,
+      "time_over_70pct_x_percent": 0,
+      "time_over_current_peak_percent": 0,
+      "time_clipped_percent": 0,
+      "highest_coil_temp_c": 25.72981,
+      "total_copper_energy_j": 11.96201,
+      "energy_residual": 0.00126,
+      "minimum_gain": 0.73169,
+      "max_current_a": 4.52896,
+      "max_voltage_v": 32.43303,
+      "trace": [
+        {
+          "s": 0,
+          "temperature_c": 25,
+          "limit_gain": 1
+        },
+        {
+          "s": 1,
+          "temperature_c": 25.19513,
+          "limit_gain": 0.99229
+        },
+        {
+          "s": 2,
+          "temperature_c": 25.18978,
+          "limit_gain": 0.99997
+        },
+        {
+          "s": 3,
+          "temperature_c": 25.3798,
+          "limit_gain": 0.99229
+        },
+        {
+          "s": 4,
+          "temperature_c": 25.3694,
+          "limit_gain": 0.99997
+        },
+        {
+          "s": 5,
+          "temperature_c": 25.55458,
+          "limit_gain": 0.99229
+        },
+        {
+          "s": 6,
+          "temperature_c": 25.53939,
+          "limit_gain": 0.99997
+        },
+        {
+          "s": 7,
+          "temperature_c": 25.72,
+          "limit_gain": 0.99229
+        }
+      ]
+    },
+    {
+      "id": "C05",
+      "type": "sustained",
+      "mode": "none",
+      "heat": "cool",
+      "mismatch": false,
+      "mechHz": 9600,
+      "target_ref_40hz_db": 103,
+      "max_catalog_x_fraction": 1.91701,
+      "time_over_70pct_x_percent": 40.26432,
+      "time_over_current_peak_percent": 0,
+      "time_clipped_percent": 0,
+      "highest_coil_temp_c": 31.92175,
+      "total_copper_energy_j": 534.13805,
+      "energy_residual": 0.00702,
+      "minimum_gain": 1,
+      "max_current_a": 10.40527,
+      "max_voltage_v": 51.61618,
+      "trace": [
+        {
+          "s": 0,
+          "temperature_c": 25,
+          "limit_gain": 1
+        },
+        {
+          "s": 1,
+          "temperature_c": 25.81825,
+          "limit_gain": 1
+        },
+        {
+          "s": 2,
+          "temperature_c": 26.75394,
+          "limit_gain": 1
+        },
+        {
+          "s": 3,
+          "temperature_c": 27.66749,
+          "limit_gain": 1
+        },
+        {
+          "s": 4,
+          "temperature_c": 28.55941,
+          "limit_gain": 1
+        },
+        {
+          "s": 5,
+          "temperature_c": 29.43022,
+          "limit_gain": 1
+        },
+        {
+          "s": 6,
+          "temperature_c": 30.28039,
+          "limit_gain": 1
+        },
+        {
+          "s": 7,
+          "temperature_c": 31.11042,
+          "limit_gain": 1
+        }
+      ]
+    },
+    {
+      "id": "C05",
+      "type": "sustained",
+      "mode": "none",
+      "heat": "hot",
+      "mismatch": false,
+      "mechHz": 9600,
+      "target_ref_40hz_db": 103,
+      "max_catalog_x_fraction": 1.91417,
+      "time_over_70pct_x_percent": 39.90885,
+      "time_over_current_peak_percent": 0,
+      "time_clipped_percent": 0,
+      "highest_coil_temp_c": 40.89202,
+      "total_copper_energy_j": 533.64729,
+      "energy_residual": 0.00692,
+      "minimum_gain": 1,
+      "max_current_a": 10.39504,
+      "max_voltage_v": 51.61618,
+      "trace": [
+        {
+          "s": 0,
+          "temperature_c": 25,
+          "limit_gain": 1
+        },
+        {
+          "s": 1,
+          "temperature_c": 26.90566,
+          "limit_gain": 1
+        },
+        {
+          "s": 2,
+          "temperature_c": 29.07644,
+          "limit_gain": 1
+        },
+        {
+          "s": 3,
+          "temperature_c": 31.18695,
+          "limit_gain": 1
+        },
+        {
+          "s": 4,
+          "temperature_c": 33.23877,
+          "limit_gain": 1
+        },
+        {
+          "s": 5,
+          "temperature_c": 35.23341,
+          "limit_gain": 1
+        },
+        {
+          "s": 6,
+          "temperature_c": 37.17239,
+          "limit_gain": 1
+        },
+        {
+          "s": 7,
+          "temperature_c": 39.05717,
+          "limit_gain": 1
+        }
+      ]
+    },
+    {
+      "id": "C05",
+      "type": "sustained",
+      "mode": "derate",
+      "heat": "cool",
+      "mismatch": false,
+      "mechHz": 9600,
+      "target_ref_40hz_db": 103,
+      "max_catalog_x_fraction": 0.95931,
+      "time_over_70pct_x_percent": 11.13281,
+      "time_over_current_peak_percent": 0,
+      "time_clipped_percent": 0,
+      "highest_coil_temp_c": 26.73116,
+      "total_copper_energy_j": 133.58595,
+      "energy_residual": 0.00707,
+      "minimum_gain": 0.5,
+      "max_current_a": 5.20552,
+      "max_voltage_v": 25.80809,
+      "trace": [
+        {
+          "s": 0,
+          "temperature_c": 25,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 1,
+          "temperature_c": 25.20457,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 2,
+          "temperature_c": 25.43852,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 3,
+          "temperature_c": 25.66696,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 4,
+          "temperature_c": 25.89002,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 5,
+          "temperature_c": 26.10782,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 6,
+          "temperature_c": 26.32049,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 7,
+          "temperature_c": 26.52815,
+          "limit_gain": 0.5
+        }
+      ]
+    },
+    {
+      "id": "C05",
+      "type": "sustained",
+      "mode": "derate",
+      "heat": "hot",
+      "mismatch": false,
+      "mechHz": 9600,
+      "target_ref_40hz_db": 103,
+      "max_catalog_x_fraction": 0.95895,
+      "time_over_70pct_x_percent": 11.09115,
+      "time_over_current_peak_percent": 0,
+      "time_clipped_percent": 0,
+      "highest_coil_temp_c": 28.97795,
+      "total_copper_energy_j": 133.56527,
+      "energy_residual": 0.00705,
+      "minimum_gain": 0.5,
+      "max_current_a": 5.20424,
+      "max_voltage_v": 25.80809,
+      "trace": [
+        {
+          "s": 0,
+          "temperature_c": 25,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 1,
+          "temperature_c": 25.47645,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 2,
+          "temperature_c": 26.01932,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 3,
+          "temperature_c": 26.54727,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 4,
+          "temperature_c": 27.06072,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 5,
+          "temperature_c": 27.56007,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 6,
+          "temperature_c": 28.04569,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 7,
+          "temperature_c": 28.51797,
+          "limit_gain": 0.5
+        }
+      ]
+    },
+    {
+      "id": "C05",
+      "type": "sustained",
+      "mode": "feedback",
+      "heat": "cool",
+      "mismatch": false,
+      "mechHz": 9600,
+      "target_ref_40hz_db": 103,
+      "max_catalog_x_fraction": 0.99004,
+      "time_over_70pct_x_percent": 15.2513,
+      "time_over_current_peak_percent": 0,
+      "time_clipped_percent": 0,
+      "highest_coil_temp_c": 27.12408,
+      "total_copper_energy_j": 163.97572,
+      "energy_residual": 0.00709,
+      "minimum_gain": 0.48436,
+      "max_current_a": 5.76695,
+      "max_voltage_v": 26.97799,
+      "trace": [
+        {
+          "s": 0,
+          "temperature_c": 25,
+          "limit_gain": 1
+        },
+        {
+          "s": 1,
+          "temperature_c": 25.25926,
+          "limit_gain": 0.7025
+        },
+        {
+          "s": 2,
+          "temperature_c": 25.54468,
+          "limit_gain": 0.70259
+        },
+        {
+          "s": 3,
+          "temperature_c": 25.8235,
+          "limit_gain": 0.70267
+        },
+        {
+          "s": 4,
+          "temperature_c": 26.09587,
+          "limit_gain": 0.70274
+        },
+        {
+          "s": 5,
+          "temperature_c": 26.36194,
+          "limit_gain": 0.70282
+        },
+        {
+          "s": 6,
+          "temperature_c": 26.62186,
+          "limit_gain": 0.7029
+        },
+        {
+          "s": 7,
+          "temperature_c": 26.87578,
+          "limit_gain": 0.70297
+        }
+      ]
+    },
+    {
+      "id": "C05",
+      "type": "sustained",
+      "mode": "feedback",
+      "heat": "hot",
+      "mismatch": false,
+      "mechHz": 9600,
+      "target_ref_40hz_db": 103,
+      "max_catalog_x_fraction": 0.98969,
+      "time_over_70pct_x_percent": 15.19271,
+      "time_over_current_peak_percent": 0,
+      "time_clipped_percent": 0,
+      "highest_coil_temp_c": 29.89141,
+      "total_copper_energy_j": 164.30462,
+      "energy_residual": 0.00706,
+      "minimum_gain": 0.48442,
+      "max_current_a": 5.76377,
+      "max_voltage_v": 27.00585,
+      "trace": [
+        {
+          "s": 0,
+          "temperature_c": 25,
+          "limit_gain": 1
+        },
+        {
+          "s": 1,
+          "temperature_c": 25.60394,
+          "limit_gain": 0.7026
+        },
+        {
+          "s": 2,
+          "temperature_c": 26.26667,
+          "limit_gain": 0.70279
+        },
+        {
+          "s": 3,
+          "temperature_c": 26.91187,
+          "limit_gain": 0.70297
+        },
+        {
+          "s": 4,
+          "temperature_c": 27.54001,
+          "limit_gain": 0.70315
+        },
+        {
+          "s": 5,
+          "temperature_c": 28.15152,
+          "limit_gain": 0.70333
+        },
+        {
+          "s": 6,
+          "temperature_c": 28.74685,
+          "limit_gain": 0.7035
+        },
+        {
+          "s": 7,
+          "temperature_c": 29.32643,
+          "limit_gain": 0.70367
+        }
+      ]
+    },
+    {
+      "id": "C05",
+      "type": "bursts",
+      "mode": "none",
+      "heat": "cool",
+      "mismatch": false,
+      "mechHz": 9600,
+      "target_ref_40hz_db": 103,
+      "max_catalog_x_fraction": 1.35446,
+      "time_over_70pct_x_percent": 3.9388,
+      "time_over_current_peak_percent": 0,
+      "time_clipped_percent": 0,
+      "highest_coil_temp_c": 25.51244,
+      "total_copper_energy_j": 38.90817,
+      "energy_residual": 0.00854,
+      "minimum_gain": 1,
+      "max_current_a": 6.95646,
+      "max_voltage_v": 36.29057,
+      "trace": [
+        {
+          "s": 0,
+          "temperature_c": 25,
+          "limit_gain": 1
+        },
+        {
+          "s": 1,
+          "temperature_c": 25.13582,
+          "limit_gain": 1
+        },
+        {
+          "s": 2,
+          "temperature_c": 25.13262,
+          "limit_gain": 1
+        },
+        {
+          "s": 3,
+          "temperature_c": 25.26532,
+          "limit_gain": 1
+        },
+        {
+          "s": 4,
+          "temperature_c": 25.25908,
+          "limit_gain": 1
+        },
+        {
+          "s": 5,
+          "temperature_c": 25.38882,
+          "limit_gain": 1
+        },
+        {
+          "s": 6,
+          "temperature_c": 25.37967,
+          "limit_gain": 1
+        },
+        {
+          "s": 7,
+          "temperature_c": 25.50657,
+          "limit_gain": 1
+        }
+      ]
+    },
+    {
+      "id": "C05",
+      "type": "bursts",
+      "mode": "none",
+      "heat": "hot",
+      "mismatch": false,
+      "mechHz": 9600,
+      "target_ref_40hz_db": 103,
+      "max_catalog_x_fraction": 1.35429,
+      "time_over_70pct_x_percent": 3.93359,
+      "time_over_current_peak_percent": 0,
+      "time_clipped_percent": 0,
+      "highest_coil_temp_c": 26.18135,
+      "total_copper_energy_j": 38.91387,
+      "energy_residual": 0.00853,
+      "minimum_gain": 1,
+      "max_current_a": 6.95551,
+      "max_voltage_v": 36.29057,
+      "trace": [
+        {
+          "s": 0,
+          "temperature_c": 25,
+          "limit_gain": 1
+        },
+        {
+          "s": 1,
+          "temperature_c": 25.31603,
+          "limit_gain": 1
+        },
+        {
+          "s": 2,
+          "temperature_c": 25.30737,
+          "limit_gain": 1
+        },
+        {
+          "s": 3,
+          "temperature_c": 25.61503,
+          "limit_gain": 1
+        },
+        {
+          "s": 4,
+          "temperature_c": 25.59818,
+          "limit_gain": 1
+        },
+        {
+          "s": 5,
+          "temperature_c": 25.8979,
+          "limit_gain": 1
+        },
+        {
+          "s": 6,
+          "temperature_c": 25.87331,
+          "limit_gain": 1
+        },
+        {
+          "s": 7,
+          "temperature_c": 26.16553,
+          "limit_gain": 1
+        }
+      ]
+    },
+    {
+      "id": "C05",
+      "type": "bursts",
+      "mode": "derate",
+      "heat": "cool",
+      "mismatch": false,
+      "mechHz": 9600,
+      "target_ref_40hz_db": 103,
+      "max_catalog_x_fraction": 0.67728,
+      "time_over_70pct_x_percent": 0,
+      "time_over_current_peak_percent": 0,
+      "time_clipped_percent": 0,
+      "highest_coil_temp_c": 25.1281,
+      "total_copper_energy_j": 9.72622,
+      "energy_residual": 0.00855,
+      "minimum_gain": 0.5,
+      "max_current_a": 3.47849,
+      "max_voltage_v": 18.14528,
+      "trace": [
+        {
+          "s": 0,
+          "temperature_c": 25,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 1,
+          "temperature_c": 25.03395,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 2,
+          "temperature_c": 25.03315,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 3,
+          "temperature_c": 25.06633,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 4,
+          "temperature_c": 25.06477,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 5,
+          "temperature_c": 25.0972,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 6,
+          "temperature_c": 25.09491,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 7,
+          "temperature_c": 25.12663,
+          "limit_gain": 0.5
+        }
+      ]
+    },
+    {
+      "id": "C05",
+      "type": "bursts",
+      "mode": "derate",
+      "heat": "hot",
+      "mismatch": false,
+      "mechHz": 9600,
+      "target_ref_40hz_db": 103,
+      "max_catalog_x_fraction": 0.67725,
+      "time_over_70pct_x_percent": 0,
+      "time_over_current_peak_percent": 0,
+      "time_clipped_percent": 0,
+      "highest_coil_temp_c": 25.29528,
+      "total_copper_energy_j": 9.72658,
+      "energy_residual": 0.00855,
+      "minimum_gain": 0.5,
+      "max_current_a": 3.47838,
+      "max_voltage_v": 18.14528,
+      "trace": [
+        {
+          "s": 0,
+          "temperature_c": 25,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 1,
+          "temperature_c": 25.079,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 2,
+          "temperature_c": 25.07684,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 3,
+          "temperature_c": 25.15374,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 4,
+          "temperature_c": 25.14953,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 5,
+          "temperature_c": 25.22444,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 6,
+          "temperature_c": 25.21829,
+          "limit_gain": 0.5
+        },
+        {
+          "s": 7,
+          "temperature_c": 25.29133,
+          "limit_gain": 0.5
+        }
+      ]
+    },
+    {
+      "id": "C05",
+      "type": "bursts",
+      "mode": "feedback",
+      "heat": "cool",
+      "mismatch": false,
+      "mechHz": 9600,
+      "target_ref_40hz_db": 103,
+      "max_catalog_x_fraction": 0.79696,
+      "time_over_70pct_x_percent": 1.02083,
+      "time_over_current_peak_percent": 0,
+      "time_clipped_percent": 0,
+      "highest_coil_temp_c": 25.22484,
+      "total_copper_energy_j": 17.07816,
+      "energy_residual": 0.00849,
+      "minimum_gain": 0.57766,
+      "max_current_a": 4.19352,
+      "max_voltage_v": 22.87687,
+      "trace": [
+        {
+          "s": 0,
+          "temperature_c": 25,
+          "limit_gain": 1
+        },
+        {
+          "s": 1,
+          "temperature_c": 25.0596,
+          "limit_gain": 0.98757
+        },
+        {
+          "s": 2,
+          "temperature_c": 25.0582,
+          "limit_gain": 0.99995
+        },
+        {
+          "s": 3,
+          "temperature_c": 25.11643,
+          "limit_gain": 0.98758
+        },
+        {
+          "s": 4,
+          "temperature_c": 25.11369,
+          "limit_gain": 0.99995
+        },
+        {
+          "s": 5,
+          "temperature_c": 25.17063,
+          "limit_gain": 0.98758
+        },
+        {
+          "s": 6,
+          "temperature_c": 25.16661,
+          "limit_gain": 0.99995
+        },
+        {
+          "s": 7,
+          "temperature_c": 25.22231,
+          "limit_gain": 0.98758
+        }
+      ]
+    },
+    {
+      "id": "C05",
+      "type": "bursts",
+      "mode": "feedback",
+      "heat": "hot",
+      "mismatch": false,
+      "mechHz": 9600,
+      "target_ref_40hz_db": 103,
+      "max_catalog_x_fraction": 0.79693,
+      "time_over_70pct_x_percent": 1.01823,
+      "time_over_current_peak_percent": 0,
+      "time_clipped_percent": 0,
+      "highest_coil_temp_c": 25.51837,
+      "total_copper_energy_j": 17.0822,
+      "energy_residual": 0.00849,
+      "minimum_gain": 0.57768,
+      "max_current_a": 4.1934,
+      "max_voltage_v": 22.88082,
+      "trace": [
+        {
+          "s": 0,
+          "temperature_c": 25,
+          "limit_gain": 1
+        },
+        {
+          "s": 1,
+          "temperature_c": 25.13868,
+          "limit_gain": 0.98758
+        },
+        {
+          "s": 2,
+          "temperature_c": 25.13488,
+          "limit_gain": 0.99995
+        },
+        {
+          "s": 3,
+          "temperature_c": 25.26989,
+          "limit_gain": 0.98758
+        },
+        {
+          "s": 4,
+          "temperature_c": 25.2625,
+          "limit_gain": 0.99995
+        },
+        {
+          "s": 5,
+          "temperature_c": 25.39404,
+          "limit_gain": 0.98758
+        },
+        {
+          "s": 6,
+          "temperature_c": 25.38325,
+          "limit_gain": 0.99995
+        },
+        {
+          "s": 7,
+          "temperature_c": 25.51151,
+          "limit_gain": 0.98758
+        }
+      ]
+    },
+    {
+      "id": "C05",
+      "type": "sustained",
+      "mode": "none",
+      "heat": "hot",
+      "mismatch": true,
+      "mechHz": 9600,
+      "target_ref_40hz_db": 103,
+      "max_catalog_x_fraction": 1.94515,
+      "time_over_70pct_x_percent": 47.6875,
+      "time_over_current_peak_percent": 0,
+      "time_clipped_percent": 0,
+      "highest_coil_temp_c": 44.98292,
+      "total_copper_energy_j": 527.3042,
+      "energy_residual": 0.00626,
+      "minimum_gain": 1,
+      "max_current_a": 9.73275,
+      "max_voltage_v": 51.61618,
+      "trace": [
+        {
+          "s": 0,
+          "temperature_c": 25,
+          "limit_gain": 1
+        },
+        {
+          "s": 1,
+          "temperature_c": 27.39773,
+          "limit_gain": 1
+        },
+        {
+          "s": 2,
+          "temperature_c": 30.12827,
+          "limit_gain": 1
+        },
+        {
+          "s": 3,
+          "temperature_c": 32.78265,
+          "limit_gain": 1
+        },
+        {
+          "s": 4,
+          "temperature_c": 35.36282,
+          "limit_gain": 1
+        },
+        {
+          "s": 5,
+          "temperature_c": 37.87069,
+          "limit_gain": 1
+        },
+        {
+          "s": 6,
+          "temperature_c": 40.30812,
+          "limit_gain": 1
+        },
+        {
+          "s": 7,
+          "temperature_c": 42.67695,
+          "limit_gain": 1
+        }
+      ]
+    },
+    {
+      "id": "C05",
+      "type": "sustained",
+      "mode": "feedback",
+      "heat": "hot",
+      "mismatch": true,
+      "mechHz": 9600,
+      "target_ref_40hz_db": 103,
+      "max_catalog_x_fraction": 1.01832,
+      "time_over_70pct_x_percent": 17.63542,
+      "time_over_current_peak_percent": 0,
+      "time_clipped_percent": 0,
+      "highest_coil_temp_c": 30.94168,
+      "total_copper_energy_j": 157.3208,
+      "energy_residual": 0.0064,
+      "minimum_gain": 0.46848,
+      "max_current_a": 5.34975,
+      "max_voltage_v": 26.19202,
+      "trace": [
+        {
+          "s": 0,
+          "temperature_c": 25,
+          "limit_gain": 1
+        },
+        {
+          "s": 1,
+          "temperature_c": 25.73469,
+          "limit_gain": 0.69227
+        },
+        {
+          "s": 2,
+          "temperature_c": 26.53987,
+          "limit_gain": 0.69258
+        },
+        {
+          "s": 3,
+          "temperature_c": 27.32364,
+          "limit_gain": 0.69288
+        },
+        {
+          "s": 4,
+          "temperature_c": 28.08657,
+          "limit_gain": 0.69318
+        },
+        {
+          "s": 5,
+          "temperature_c": 28.82921,
+          "limit_gain": 0.69346
+        },
+        {
+          "s": 6,
+          "temperature_c": 29.55209,
+          "limit_gain": 0.69374
+        },
+        {
+          "s": 7,
+          "temperature_c": 30.25574,
+          "limit_gain": 0.69401
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "No BL(x), Cms(x), Le(x,f), THD/IMD and no physical damage modeling",
+    "Rth and Cth are invented scenario axes, not catalog or measured thermal properties; temperatures cannot certify safe operation",
+    "The feedback example requires true x and v unavailable from a normal DSP; it FAILS the 70% excursion target in tested scenarios and is NOT a recommended protective algorithm",
+    "Music-like and bursts synthetic input, no real track or certification signal",
+    "Hard voltage clipping only, no model of amplifier's current-limit behavior, SMPS sag or fault protection",
+    "No measured room SPL, no validated DSP preset or mechanical 3D design; 103 dB is arbitrary equal-40Hz calibration"
+  ]
+}
