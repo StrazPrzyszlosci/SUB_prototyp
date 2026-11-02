@@ -1,0 +1,21 @@
+name: B12-06 structural screening and original brief gate
+on:
+  pull_request:
+    paths:
+      - "skrypty/b12_06_ritz_front_podwojny_i_brief.js"
+      - "wyniki/b12_06_*"
+      - ".github/workflows/b12-06-regression.yml"
+  push:
+    paths:
+      - "skrypty/b12_06_ritz_front_podwojny_i_brief.js"
+      - "wyniki/b12_06_*"
+      - ".github/workflows/b12-06-regression.yml"
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reproduce 36 structural calculations and 8 quadrature studies
+        run: node skrypty/b12_06_ritz_front_podwojny_i_brief.js
