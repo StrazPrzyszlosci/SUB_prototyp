@@ -138,3 +138,5 @@ Historyczne identyfikatory P43/P44 w kodzie konstrukcyjnym są odrębne od akust
 - [Raport 113 — P44-K/B: 16 200 warunków tarcia](113_P44B_tarcie_i_wrazliwosc_16200.md).
 
 - [Raport 114 — P45: dwa tanie 12″, 12 870 liniowych punktów, połączenia, odporność i ceny](114_P45_dwa_tanie_12_odpornosc_naped_koszt.md).
+
+- [Badanie B12-01 — 3584 porównania dwóch tanich 12″ z Daytonem, limity X/Pcu, objętość, geometria frontu i koszt](B12-01_tanie_dwie_12_przeciw_Daytonowi_20261102.md).
