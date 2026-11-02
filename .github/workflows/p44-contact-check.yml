@@ -1,0 +1,24 @@
+name: P44 contact model regression
+on:
+  push:
+    paths:
+      - 'skrypty/p44_kontakt_docisk_tarcie.js'
+      - 'wyniki/p44*'
+      - '.github/workflows/p44-contact-check.yml'
+  pull_request:
+    paths:
+      - 'skrypty/p44_kontakt_docisk_tarcie.js'
+      - 'wyniki/p44*'
+      - '.github/workflows/p44-contact-check.yml'
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Regenerate published P44 data and plots
+        run: |
+          node skrypty/p44_kontakt_docisk_tarcie.js
+          git diff --exit-code -- wyniki/p44_kontakt_5400.csv wyniki/p44_podsumowanie_20261101.json wyniki/p44a_pelny_kontakt.svg wyniki/p44b_wymagany_wspolczynnik_tarcia.svg

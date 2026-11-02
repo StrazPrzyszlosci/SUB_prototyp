@@ -128,3 +128,6 @@ bieżący zakres sprawdzaj w [programie 30 pakietów](../PROGRAM_30_BADAN.md).
 
 - [Raport 109 — P43A: trasy śrub do podpór z obejściem wycięcia, 576 zestawień i 144 optymalizacje geometrii 2D](109_P43A_trasy_omijajace_wyciecie.md).
 - [Raport 110 — P43B: 1620 scenariuszy utraty jednej z czterech podpór i docisk matematyczny](110_P43B_awaria_jednej_podpory.md).
+
+- [Raport 111 — P44A: 5400 przypadków jednostronnego kontaktu i docisku](111_P44A_jednostronny_kontakt_5400.md).
+- [Raport 112 — P44B: 16 200 kontroli warunkowego tarcia](112_P44B_tarcie_i_wrazliwosc_16200.md).

@@ -11,7 +11,7 @@ nie jest kandydatem na konstrukcję końcową.*
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 110 raportów · Python/JavaScript**
+**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 112 raportów · Python/JavaScript**
 
 Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie. Aktualna pula obejmuje także dwa przypadki wstrzymane w nowym audycie źródeł (EMS i SUPRAVOX), a ponadto nie każda konfiguracja ma jeszcze pełny komplet badań nieliniowych i termicznych.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
@@ -116,6 +116,22 @@ Skróty wyjaśniamy w [krótkim słowniku](#slownik).
 *W **1620 modelowych przypadkach** porównano pełne cztery podpory z wyłączeniem jednej. Przy 13,61 kg, 5g, mimośrodzie 120 mm i poziomej sile X maksymalna obliczona reakcja wzrasta w ramie A z **202,3 do 319,1 N**, a w belkach B z **400,4 do 761,2 N**. Sprężyny mają założoną sztywność, a prawdziwych połączeń nadal nie ma: nie jest to dowód bezpieczeństwa ani ugięcia gotowej konstrukcji. [Raport 110](raporty/110_P43B_awaria_jednej_podpory.md) · [pełne dane CSV](wyniki/p43b_awarie_1620.csv) · [kod odtwarzania](skrypty/p43_trasy_i_awarie_podpor.js).*
 
 **Wniosek:** szeroka rama A pozostaje kandydatem do badań konstrukcyjnych, ale żaden wariant nie jest zatwierdzony do CNC bez rzeczywistych złączy, geometrii kosza oraz weryfikacji kontaktu i materiałów.
+
+## P44 — jednostronny kontakt i warunkowe tarcie mocowania
+
+### Czy rama utrzymuje kontakt po przeciążeniu lub utracie jednej podpory?
+
+![P44A: 5400 przypadków kontaktu i wstępnego docisku](wyniki/p44a_pelny_kontakt.svg)
+
+*W badaniu P44A sprężyny normalne nie mogą już przenosić rozciągania. Przeprowadzono **5400 analiz** dla trzech kierunków, dwóch mas, trzech przyspieszeń, różnych mimośrodów, stanów utraty podpory i pięciu hipotetycznych docisków. Przy 500 N/punkt pełny kontakt zachowuje model A w **500/540**, a B w **412/540** przypadków. Nie jest to rekomendowany docisk śrub ani ocena nośności. [Raport 111](raporty/111_P44A_jednostronny_kontakt_5400.md) · [CSV](wyniki/p44_kontakt_5400.csv).*
+
+### Dlaczego brak rozwarcia nie oznacza odporności na poślizg?
+
+![P44B: warunkowe progi współczynnika tarcia](wyniki/p44b_wymagany_wspolczynnik_tarcia.svg)
+
+*P44B sprawdza **16 200 nierówności tarcia** przy μ=0,2/0,4/0,6, zakładając rozdzielenie sił stycznych proporcjonalnie do sztywności hipotetycznych podpór. To badanie przesiewowe, **nie pełny model stick/slip**. Nadal brakuje realnego kosza, podkładek, docisku, złącza, pomiarów MDF i MES kontaktowego 3D. [Raport 112](raporty/112_P44B_tarcie_i_wrazliwosc_16200.md) · [kod](skrypty/p44_kontakt_docisk_tarcie.js) · [agregaty](wyniki/p44_podsumowanie_20261101.json).*
+
+**Wniosek P44:** szeroka rama A pozostaje warunkową ścieżką badań. **Brama CNC pozostaje zamknięta.**
 
 ## P40 — czy osiem śrub utrzyma głośnik i czy pierścień daje miejsce na montaż?
 
