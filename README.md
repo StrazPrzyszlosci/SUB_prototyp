@@ -158,6 +158,18 @@ W osobnym badaniu długości śruby uwzględniono **hipotetyczne przedziały** g
 
 **Praktyczny wniosek:** przygotowaliśmy mierzalny warunek dla rzeczywistego kosza. Zanim wybierzemy wkładkę lub ramę A, potrzebujemy geometrii kosza z zaciskami i prób mechanicznych MDF/kleju. [Pełny raport B12-11](raporty/B12-11_przedzialowa_geometria_mocowan_i_stos_srub.md) · [kod Python](skrypty/b12_11_budzet_mocowan.py).
 
+### 4e. B12-12: jak naprawdę wyglądają żebra kosza RSS390HF-4?
+
+**Sprawdziliśmy oficjalny rysunek techniczny Daytona, nie tylko hipotetyczne obwiednie kosza.** Rzut od tyłu pokazuje **cztery szerokie żebra odlewanego kosza**, z którymi w rzucie pokrywają się osie **czterech z ośmiu otworów kołnierza**. Pozostałe cztery otwory są w przestrzeniach między żebrami. Przekrój boczny pokazuje, że **żebra zwężają się w stronę magnesu**.
+
+![Własny schemat układu osi żeber i mocowań, odtworzony poglądowo z rysunku producenta; NIE CNC](wyniki/b12_12_faza_zeber_producent_NIE_CNC.svg)
+
+*Uwaga: zgodność osi w rzucie NIE oznacza, że klocek przyklejony **44 mm za przednią powierzchnią frontu MDF** zderzy się z żebrem. Musimy poznać jego **rzeczywistą obwiednię przestrzenną** na głębokości klocka. Śruby wprowadza się od strony czoła kołnierza — nie ma podstaw, by uznać je za zablokowane przez żebro z tyłu.*
+
+Matematyczna analiza **78 192 scenariuszy kątowych B12-12** wyznacza granice dla hipotetycznych faz, szerokości i zasięgu żeber. **W rzeczywistym koszu faza żeber względem śrub jest fabrycznie stała, na rysunku w przybliżeniu 0°**. Nie da się uzyskać fazy 22,5° przez obrót głośnika. Pozostałe ograniczenia (wymiary i wytrzymałość wkładki, grubość MDF, terminale, dostęp klucza i regulacja 100/120/150 l) nie zostały tym samym rozstrzygnięte.
+
+[Raport B12-12](raporty/B12-12_cztery_zebra_osiem_srub_niepewnosc_fazy.md) · [Weryfikacja rzeczywistej budowy i źródła producenta](dokumentacja/B12-12_weryfikacja_rzeczywistej_budowy_RSS390HF4_producent.md) · [Pełna specyfikacja Daytona (PDF)](https://www.daytonaudio.com/images/resources/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf).
+
 ### 5. Co oznaczają wykresy DSP i temperatury?
 
 Przyjęte **40 V RMS / 12 A RMS** to założenia symulacji, **nie parametry zakupionego wzmacniacza**. Model ogranicznika może ujawnić ryzyko wychylenia, grzania i przesterowania, ale nie jest jeszcze sprawdzonym presetem. Potrzebny jest fizyczny napęd, zasilanie, chłodzenie i walidacja zabezpieczeń. [Filtry](#filtry) · [Ochrona](#ochrona).

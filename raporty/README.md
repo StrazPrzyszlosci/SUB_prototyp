@@ -160,3 +160,5 @@ Historyczne identyfikatory P43/P44 w kodzie konstrukcyjnym są odrębne od akust
 - [B12-10 — przestrzenny przesiew 324 klocków, 7776 kombinacji kosz/wkładka, 36 stosów śrub](B12-10_przestrzenny_przesiew_mocowan_i_stosu_srub.md).
 
 - [B12-11 — przedziałowa geometria wkładek, kosza i długości śrub; 324+576+11664+252 scenariuszy](B12-11_przedzialowa_geometria_mocowan_i_stos_srub.md).
+
+- [B12-12 — cztery żebra kosza wobec ośmiu śrub: 78 192 modeli faz i weryfikacja oficjalnego rysunku](B12-12_cztery_zebra_osiem_srub_niepewnosc_fazy.md).
