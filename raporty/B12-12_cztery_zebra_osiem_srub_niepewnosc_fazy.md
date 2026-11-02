@@ -2,6 +2,16 @@
 
 **2 listopada 2026 · badanie teoretyczno-numeryczne · 78 192 przesiewy kątowe · bez pomiarów, NIE CNC.**
 
+## Weryfikacja rysunku producenta — ważna korekta fazy (B12-12W)
+
+Po bezpośrednim obejrzeniu oficjalnego rzutu od tyłu i przekroju bocznego Daytona stwierdzono, że **cztery z ośmiu otworów mocujących leżą wizualnie na osiach czterech głównych żeber kosza**, a cztery pozostałe **w przerwach między nimi**. Realna względna faza osi otworów i żeber na rysunku jest więc **w przybliżeniu 0°**, nie 22,5°. Odczyt dotyczy nominalnej geometrii wizualnej — producent nie podaje tolerancji fazy ani ilościowych profili żeber.
+
+**Następstwo:** najlepsza faza 22,5° z analizy matematycznej jest wyłącznie kontrfaktycznym przypadkiem porównawczym, niedostępnym przez obrót tego głośnika. Gdy żebro znajduje się w tej samej płaszczyźnie głębokości i zachodzi promieniowo na klocek, cztery lokalizacje śrub przy osiach żeber wymagają osobnego rozpatrzenia. **Nie ma jednak dowodu, że żebra sięgają do wnętrza klocków w Y=44–74 mm**: boczny rysunek pokazuje zwężanie żebra do środka ku magnesowi. Zatem wyrównanie osi **nie jest równoznaczne z kolizją 3D ani z utrudnieniem prowadzenia śruby od przodu.**
+
+![Własny schemat nominalnej orientacji z rysunku producenta — nie CNC](../wyniki/b12_12_faza_zeber_producent_NIE_CNC.svg)
+
+[Pełna weryfikacja rzeczywistej budowy z dokumentów Dayton Audio](../dokumentacja/B12-12_weryfikacja_rzeczywistej_budowy_RSS390HF4_producent.md). W pierwotnym B12-12 wszystkie liczby dotyczą **modelowych alternatywnych faz**, nie pomierzonej konstrukcji kosza.
+
 ## Dlaczego to nowe badanie?
 
 Oficjalny [rysunek Dayton RSS390HF-4](https://www.daytonaudio.com/images/resources/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf) zawiera osiem otworów montażowych na okręgu Ø368 mm (Ø6,5 mm w kołnierzu); od tyłu widoczne są **cztery główne promieniowe żebra kosza**. Pozostałe źródłowe wymiary: kołnierz Ø388,4 mm, wycięcie Ø355,8 mm, głębokość całkowita 178 mm. Producent nie podaje w tym PDF kompletnej powierzchni R_b(Y,θ), szerokości sektorów żeber, ich obwiedni na każdej głębokości ani zmierzonej fazy żeber względem osi śrub.
@@ -18,7 +28,7 @@ W modelu **czterech równomiernie położonych żeber co 90°** i **ośmiu osi �
 d_{\min}(\varphi)=\min(\varphi,45^\circ-\varphi).
 \]
 
-Dlatego największy możliwy minimalny odstęp wynosi **22,5°** (dla fazy teoretycznej 22,5°). To **twierdzenie dla modelu symetrycznego**, nie zmierzony prześwit prawdziwego kosza.
+Dlatego największy możliwy minimalny odstęp wynosi **22,5°** (dla fazy teoretycznej 22,5°). To **twierdzenie dla modelu symetrycznego**, nie zmierzony prześwit prawdziwego kosza. Nominalny rysunek producenta wskazuje **fazę bliską 0° i cztery osie otworów współliniowe z żebrami**; matematyczne maksimum 22,5° nie jest fizycznie regulowane.
 
 **Uwaga zasadnicza:** faza żeber *względem otworów tego samego kosza* jest fabrycznie stała. Obrócenie całego przetwornika **NIE zmienia** jej. Analiza faz φ stanowi matematyczne porównanie scenariuszy, NIE propozycję regulacji kosza podczas montażu. Na rysunku producenta widać wizualnie układ żeber i otworów, ale nie wolno przypisywać mu fazy z dokładnością wymaganą do wykonania połączenia.
 
