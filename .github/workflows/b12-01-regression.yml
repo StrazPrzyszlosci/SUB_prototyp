@@ -1,0 +1,25 @@
+name: B12-01 - cheap dual 12-inch research regression
+on:
+  pull_request:
+    paths:
+      - "skrypty/b12_01_dwie_12_ekonomiczne.js"
+      - "dane/przetworniki/b12_01_rozszerzenie_20261102.json"
+      - "dane/przetworniki/pula_rozszerzona.json"
+      - "wyniki/b12_01_*"
+      - ".github/workflows/b12-01-regression.yml"
+  push:
+    paths:
+      - "skrypty/b12_01_dwie_12_ekonomiczne.js"
+      - "dane/przetworniki/b12_01_rozszerzenie_20261102.json"
+      - "dane/przetworniki/pula_rozszerzona.json"
+      - "wyniki/b12_01_*"
+      - ".github/workflows/b12-01-regression.yml"
+jobs:
+  regenerate-and-verify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reproduce 3584 scenarios and 112 aggregates
+        run: node skrypty/b12_01_dwie_12_ekonomiczne.js
