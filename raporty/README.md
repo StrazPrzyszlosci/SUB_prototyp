@@ -150,3 +150,5 @@ Historyczne identyfikatory P43/P44 w kodzie konstrukcyjnym są odrębne od akust
 - [Badanie B12-05 — 20 geometrii dwóch STX 12″, 16+2 trasy montażu, 100/120/150 l nominalnie i pełna głębokość urządzenia](B12-05_podwojny_STX_geometry_montaz_netto.md).
 
 - [B12-06 — mechaniczny przesiew 36 frontów i 8 kontroli oraz nadrzędna weryfikacja zgodności z pierwotnym briefem, pomieszczeniem i dwoma niezależnymi subwooferami](B12-06_mechanika_frontow_i_weryfikacja_briefu.md).
+
+- [B12-07 — dwa niezależne subwoofery w pokoju 4,6×3,7×2,5 m; 27 scenariuszy, 7 punktów odbioru, modalny przesiew pozycji i krytyczne referencje ADAM Sub12/Sub15](B12-07_dwa_suby_w_pokoju_i_referencje_ADAM.md).
