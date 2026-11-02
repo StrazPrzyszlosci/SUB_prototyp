@@ -1,0 +1,53 @@
+name: B12-14 unilateral contact and friction regression
+on:
+  pull_request:
+    paths:
+      - "skrypty/b12_14_kontakt_docisk_tarcie.py"
+      - "wyniki/b12_14_*"
+      - ".github/workflows/b12-14-regression.yml"
+  push:
+    branches: [main]
+    paths:
+      - "skrypty/b12_14_kontakt_docisk_tarcie.py"
+      - "wyniki/b12_14_*"
+      - ".github/workflows/b12-14-regression.yml"
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Execute B12-14 equilibrium, symmetry and unilateral checks
+        run: python3 skrypty/b12_14_kontakt_docisk_tarcie.py > /tmp/b12-14.log
+      - name: Compare reproducible data to separately validated aggregates
+        run: |
+          python3 - <<'PY'
+          import json
+          p=json.load(open('wyniki/b12_14_manifest_odtworzony.json'))
+          ref=json.load(open('wyniki/b12_14_podsumowanie.json'))
+          x=p['summary']; y=ref['calculations']
+          assert x['normal_cases']==y['normal_cases']==1152
+          assert x['friction_inequalities']==y['coulomb_checks']==4608
+          assert x['contact_open_cases']==y['contact_open_cases']==886
+          assert x['slack_bolt_cases']==y['slack_bolt_cases']==876
+          assert x['max_iterations']<=55
+          assert all(x['stick_capacity_pass_by_mu'][m]==n for m,n in
+              [('0.15',240),('0.3',480),('0.5',576),('0.7',720)])
+          for k,v in y['normal_example_5g_120mm_ratio1']['by_preload_N'].items():
+              a=x['by_preload_at_5g_e120_rho1'][k]
+              assert a['contact_open_points']==v['contact_open_points']
+              assert abs(a['contact_sum_N']-v['contact_sum_N'])<0.001
+              assert abs(a['max_bolt_total_tension_N']-v['bolt_max_total_N'])<0.001
+              assert abs(a['mu_required']-v['mu_required'])<0.0001
+          print('B12-14 PASS: all 1152 contact solves, 4608 friction inequalities')
+          PY
+      - name: Archive computed JSON (not physical measurement)
+        uses: actions/upload-artifact@v4
+        with:
+          name: b12-14-generated-hypothetical-contact-results
+          path: |
+            wyniki/b12_14_contact_full.json
+            wyniki/b12_14_manifest_odtworzony.json
+          retention-days: 14

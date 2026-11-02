@@ -184,6 +184,27 @@ Na nowej siatce wykonano **2160 obliczeń** z dwiema masami (13,61 kg z karty pr
 
 [Raport B12-13](raporty/B12-13_sztywnosc_4plus4_i_awaria_mocowan_RSS390HF4.md) · [Odtwarzalny skrypt Python](skrypty/b12_13_nierowna_sztywnosc_4plus4.py) · [Podsumowanie liczb i założeń](wyniki/b12_13_podsumowanie.json). **Prototyp i próby mechaniczne: jeszcze nie wykonane; CNC: HOLD.**
 
+### 4g. B12-14 — docisk śrub a odrywanie się kołnierza od MDF
+
+W B12-13 poznaliśmy skutki nierównej sztywności ośmiu mocowań Daytona. Teraz rozróżniamy dwa zupełnie inne mechanizmy: **rozciąganie śruby** i **ściskanie MDF przez kołnierz**. Śruba nie przenosi ściskania między elementami, a otwarty styk nie przenosi nacisku. Rozwiązaliśmy **1152 hipotetyczne scenariusze jednostronnego kontaktu** i sprawdziliśmy **4608 globalnych warunków tarcia**. Wykonaliśmy również niezależne kontrole numeryczne.
+
+![B12-14: jak początkowy docisk wpływa na otwarcie kontaktu i górne oszacowanie tarcia; NIE CNC](wyniki/b12_14_docisk_kontakt_tarcie_NIE_CNC.svg)
+
+W przykładzie dla masy katalogowej **13,61 kg** oraz umownego obciążenia **5g z ramieniem 120 mm** przyjmujemy modelowe sztywności śruby i kontaktu **200 i 500 N/mm**:
+
+| Docisk wstępny jednej śruby (założenie) | Liczba otwartych punktów kontaktu | Wymagane µ w globalnej nierówności tarcia |
+|---|---:|---:|
+| 0 N | 5/8 | 2,362 |
+| 100 N | 0/8 | 0,834 |
+| 300 N | 0/8 | 0,278 |
+| 600 N | 0/8 | 0,139 |
+
+*Prosto mówiąc:* większy docisk może ograniczać odrywanie i zwiększać potencjalny opór tarcia. Ale **zbyt duży docisk może uszkodzić MDF, wkładkę lub śrubę**, a ich wytrzymałości nie znamy. **To nie jest instrukcja dokręcania.** Wartości µ są wynikiem równania dla umownego modelu; bez pomiarów nie wiemy, czy rzeczywista para materiałów ma takie tarcie.
+
+B12-14 wprowadza osobne sprężyny pracujące jednostronnie i kontroluje statyczną równowagę. **Nadal nie wykonuje** rzeczywistego modelu ciągłego kontaktu kołnierza, mikroprzesunięć i uszkodzeń gwintu, kleju i MDF. Nie wybieramy jeszcze pomiędzy ośmioma klockami a ramą A.
+
+[Pełny raport B12-14](raporty/B12-14_jednostronny_kontakt_docisk_tarcie_8_mocowan.md) · [Kod Python](skrypty/b12_14_kontakt_docisk_tarcie.py) · [Protokół potrzebnych pomiarów](dokumentacja/B12-14_protokol_walidacji_docisku_i_zlaczy.md).
+
 ### 5. Co oznaczają wykresy DSP i temperatury?
 
 Przyjęte **40 V RMS / 12 A RMS** to założenia symulacji, **nie parametry zakupionego wzmacniacza**. Model ogranicznika może ujawnić ryzyko wychylenia, grzania i przesterowania, ale nie jest jeszcze sprawdzonym presetem. Potrzebny jest fizyczny napęd, zasilanie, chłodzenie i walidacja zabezpieczeń. [Filtry](#filtry) · [Ochrona](#ochrona).
