@@ -93,7 +93,8 @@ Ponadto w B12-11 i B12-12 nadal nie rozstrzygnięto, czy rzeczywiste żebra kosz
 - [Skrypt Python 3 (stdlib, z asercjami równowagi)](../skrypty/b12_13_nierowna_sztywnosc_4plus4.py), polecenie: `python3 skrypty/b12_13_nierowna_sztywnosc_4plus4.py`.
 - [Wyniki zagregowane i parametry scenariuszy JSON](../wyniki/b12_13_podsumowanie.json).
 - [Własny wykres B12-13, NIE CNC](../wyniki/b12_13_sily_4plus4_NIE_CNC.svg).
-- Pełny JSON z 2160 stanami jest generowany przez skrypt w pliku `wyniki/b12_13_scenariusze_4plus4.json`, a nie jest kopią pomiarów.
+- Pełny JSON z 2160 stanami jest generowany przez skrypt w pliku `wyniki/b12_13_scenariusze_4plus4.json`, wraz z osobnym `wyniki/b12_13_manifest_odtworzony.json`. Zatwierdzony agregat `wyniki/b12_13_podsumowanie.json` nie jest nadpisywany. Żaden z tych plików nie jest kopią pomiarów.
+- [GitHub Actions — automatyczna regresja B12-13](../.github/workflows/b12-13-regression.yml) uruchamia pełny skrypt, sprawdza liczniki i wartości przeciw niezależnie uzyskanym liczbom oraz archiwizuje wygenerowane wyniki; **uruchomienie i przejście CI trzeba potwierdzić w GitHub**.
 - Katalogowy [rysunek producenta](https://www.parts-express.com/pedocs/specs/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf) i [strona produktu](https://www.daytonaudio.com/product/126/rss390hf-4-15-reference-hf-subwoofer-4-ohm).
 - Stan bazowy `main@057f302ed504aab752394ba4368bfc8abc2a6838`. Żadne raporty historyczne ani parametry głośników nie zostały zmienione.
 - **Pomiary złączy: NIE; zwalidowany kontaktowy MES: NIE; zgoda na CNC: NIE; zakup materiałów: NIE.**
