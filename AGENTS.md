@@ -1421,3 +1421,20 @@ Ponowne włączenie gałęzi nie zmienia 39 modeli / 40 konfiguracji bazowych, o
 ## Kontynuacja 2026-11-02 — P45: tańsza para 12 cali
 
 Przeprowadzono 12870 punktów w liniowym modelu źródłowym; 13 układów (w tym osobne 2 kanały), 5 objętości, 11 częstotliwości, 3 limity łącznego Pcu, 2 skoki, 3 stany Re. Dane producentów dziedziczone z puli 24, ceny odrębne i datowane; brak badań pomiarowych THD i termiki. Odróżniać prawdziwe dwa niezależne subwoofery od pary promieniującej z jednego pudła. Raport 114 oraz `skrypty/p45_dwa_tanie_12_robustnosc.js` i JSON/CSV. Limit głębokości całej konstrukcji 500 mm oraz bramka CNC niezmienione.
+
+
+## B12-01 2026-11-02 — kontrola ekonomiczna dwóch 12″ po P45
+
+Addytywnie C32 STX W.30.200.8.MC 12″ (nowa pula 40 modeli/41 konfiguracji bazowych),
+bez zmiany historycznych kart C01–C31. Wykonano 3584 ograniczone liniowe
+sinusy 20–80 Hz dla C02 i par C05/C06/C32 przy 80/100/120/150 l,
+połączeniach 4/16 Ω (dla dwóch 8 Ω), Pcu=50/100 W *łącznie* oraz
+Xpeak=0,7/1,0 katalogowego Xmax. Model nie zna krzywych BL(x)/Cms(x),
+THD/kompresji/termiki, rozpraszania dwóch punktów ani rzeczywistej geometrii.
+Przy 120 l, 20 Hz i Pcu=50 W C05×2 daje 97,30163 dB, C02 99,61515 dB;
+wyrównanie do Dayton wymagałoby ±9,10518 mm na kosz przy katalogowym ±7,5 mm.
+Nie dopuszczać wycinania frontu CNC ani deklarować identycznego czystego SPL.
+Raport `raporty/B12-01_tanie_dwie_12_przeciw_Daytonowi_20261102.md`;
+kod i kontrola plików `skrypty/b12_01_dwie_12_ekonomiczne.js`, pełne CSV/JSON w `wyniki/b12_01_*`.
+Istniejący raport P45 (`114_P45_dwa_tanie_12_odpornosc_naped_koszt.md`)
+pozostaje niezmieniony; B12-01 bada gęściej częstotliwości i trzeci model kontrolny.
