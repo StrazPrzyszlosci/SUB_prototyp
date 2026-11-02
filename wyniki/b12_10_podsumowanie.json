@@ -1,0 +1,65 @@
+{
+  "schema": "B12-10-P39C-conditional",
+  "date": "2026-11-02",
+  "source_python": "skrypty/b12_10_przesiew_3d_mocowan.py",
+  "generated_json": "wyniki/b12_10_przesiew_3d.json",
+  "base_b12_09": "538b2b1cbdd26fdfb32ae9def516d64765bb3b09",
+  "summary": {
+    "footprint_cases": 324,
+    "footprint_clear": 234,
+    "footprint_clear_by_x": {
+      "231": 99,
+      "235": 135
+    },
+    "footprint_clear_by_outer": {
+      "205": 108,
+      "211": 81,
+      "217": 45
+    },
+    "basket_insert_cases": 7776,
+    "basket_insert_pass": 1716,
+    "by_insert_web": {
+      "d6_web1": 624,
+      "d6_web2": 390,
+      "d8_web1": 390,
+      "d8_web2": 156,
+      "d10_web1": 156,
+      "d10_web2": 0
+    },
+    "by_basket_radius": {
+      "170.0": 702,
+      "175.0": 702,
+      "177.9": 312,
+      "180.0": 0
+    },
+    "screw_stacks": 36,
+    "stack_pass": 13,
+    "by_depth_screw": {
+      "10": [],
+      "20": [
+        65,
+        70
+      ],
+      "30": [
+        65,
+        70,
+        75
+      ]
+    },
+    "sample_insert_inner_web": {
+      "6": 2.1,
+      "8": 1.1,
+      "10": 0.1
+    },
+    "outer_flange_max_radial_head_radius_mm": 10.2,
+    "bolt_axis_to_cutout_mm": 6.1
+  },
+  "critical_limitations": [
+    "Basket radius 170/175/177.9/180 mm is scenario, not a measurement or CAD reproduction",
+    "Obstacles are surrogate from P39C, not final project",
+    "Counts are Cartesian grid results, not safety/reliability probabilities",
+    "No contact/friction/wood strength/thread or motor ventilation test",
+    "No full tool sweep or verified bolt hardware",
+    "Not for CNC"
+  ]
+}
