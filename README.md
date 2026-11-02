@@ -146,6 +146,18 @@ Dodatkowo **36 hipotetycznych stosów** kołnierz–MDF–klocek pokazało, że 
 
 [Raport B12-10 i warunki badań](raporty/B12-10_przestrzenny_przesiew_mocowan_i_stosu_srub.md) · [Python do odtworzenia](skrypty/b12_10_przesiew_3d_mocowan.py).
 
+### 4d. B12-11 — najpierw zmierz kosz, dopiero potem dobieraj wkładkę i śrubę
+
+B12-11 sprawdza, **jak nieznany przestrzenny obrys żeber kosza** ogranicza możliwość wykorzystania lokalnych klocków zamiast szerokiej ramy A. To kolejne badanie symulacyjne **przed budową**, a nie model gotowego prototypu. W pełnym sprzężonym przesiewie **2175 z 11 664 hipotetycznych wariantów** spełniło jednocześnie warunki na obrys klocka, kosz, wkładkę i uproszczone przeszkody obudowy. Nie jest to prawdopodobieństwo powodzenia ani potwierdzenie nośności.
+
+![B12-11: maksymalny promień kosza przy różnych wkładkach i wyniki przesiewu — NIE CNC](wyniki/b12_11_budzet_geometryczny_NIE_CNC.svg)
+
+*Przykład: jeśli żądamy 1 mm luzu do kosza i 2 mm pasa drewna, wkładka o **zewnętrznej średnicy Ø8 mm** wymaga, aby rzeczywisty kosz na głębokości mocowania miał promień nie większy niż **177 mm** (przed uwzględnieniem dodatkowej niepewności). Rysunek katalogowy podaje Ø355,8 mm **wycięcia**, ale to nie jest pomiar maksymalnego promienia żeber za frontem.*
+
+W osobnym badaniu długości śruby uwzględniono **hipotetyczne przedziały** grubości kołnierza, MDF, uszczelki i podkładki: **62/252** warianty spełniły założone ograniczenia w całym przedziale, wobec 93/252 dla samych wymiarów nominalnych. To nie są długości do zakupu ani zweryfikowana konstrukcja połączenia.
+
+**Praktyczny wniosek:** przygotowaliśmy mierzalny warunek dla rzeczywistego kosza. Zanim wybierzemy wkładkę lub ramę A, potrzebujemy geometrii kosza z zaciskami i prób mechanicznych MDF/kleju. [Pełny raport B12-11](raporty/B12-11_przedzialowa_geometria_mocowan_i_stos_srub.md) · [kod Python](skrypty/b12_11_budzet_mocowan.py).
+
 ### 5. Co oznaczają wykresy DSP i temperatury?
 
 Przyjęte **40 V RMS / 12 A RMS** to założenia symulacji, **nie parametry zakupionego wzmacniacza**. Model ogranicznika może ujawnić ryzyko wychylenia, grzania i przesterowania, ale nie jest jeszcze sprawdzonym presetem. Potrzebny jest fizyczny napęd, zasilanie, chłodzenie i walidacja zabezpieczeń. [Filtry](#filtry) · [Ochrona](#ochrona).

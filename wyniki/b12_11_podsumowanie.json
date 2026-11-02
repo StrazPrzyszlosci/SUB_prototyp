@@ -1,0 +1,79 @@
+{
+  "id": "B12-11",
+  "date": "2026-11-02",
+  "type": "deterministic scenario screen NOT measurements",
+  "base_main": "c1932840d3b2ea02a5cb599593e9854bd6118975",
+  "source_code": "skrypty/b12_11_budzet_mocowan.py",
+  "generated_full_json": "wyniki/b12_11_pelne_obliczenia.json",
+  "verified_full_data_sha256": "f53d134c9df83938c27ad4797284352057b32b77b6e7b9eb710aba4fb5f86b35",
+  "summary": {
+    "obstacle": {
+      "total": 324,
+      "pass_by_clearance_mm": {
+        "0": 234,
+        "1": 234,
+        "2": 225
+      }
+    },
+    "radial": {
+      "total": 576,
+      "robust_pass": 303,
+      "max_basket_radius_for_1mm_gap_and_2mm_web": {
+        "4": 179,
+        "6": 178,
+        "8": 177,
+        "10": 176
+      }
+    },
+    "coupled": {
+      "total": 11664,
+      "pass_count": 2175,
+      "pass_by_basket_radius": {
+        "175": 1800,
+        "180": 0,
+        "177.9": 375
+      },
+      "pass_by_uncertainty": {
+        "0": 900,
+        "1": 675,
+        "2": 600
+      }
+    },
+    "axial": {
+      "total": 252,
+      "nominal_pass": 93,
+      "robust_pass": 62,
+      "robust_lengths_with_min8_by_block": {
+        "10": [],
+        "20": [
+          66,
+          67,
+          68,
+          69
+        ],
+        "30": [
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79
+        ]
+      }
+    }
+  },
+  "notes": [
+    "Hypothetical max basket radial silhouette not verified in product CAD",
+    "Hypothetical flange/wood/gasket/washer thickness envelopes not manufacturing tolerances",
+    "The P39C geometry is a research surrogate, not the final cabinet",
+    "No strength, tool sweep, thread engagement certification, or CNC clearance"
+  ]
+}

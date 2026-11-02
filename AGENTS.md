@@ -1681,3 +1681,11 @@ z pełnym testem nośności, nie uznawać żadnego za sprawdzony.
 - Wyniki sumaryczne, kod Python i wykres NIE-CNC: `wyniki/b12_10_podsumowanie.json`, `skrypty/b12_10_przesiew_3d_mocowan.py` oraz `wyniki/b12_10_lokalne_mocowania_przesiew_NIE_CNC.svg`.
 - Otwarte: rzeczywiste r(y,θ) kosza i terminale, narzędzie i dostęp serwisowy, nośność klejonej wkładki i frontu oraz obwód <=500 mm. CNC pozostaje zablokowane.
 - Następny krok: pozyskanie pełnej geometrii kosza i protokół badań mechanicznych połączeń (B12-11), bez uznawania przesiewu za kwalifikację.
+
+
+## 2026-11-02 — B12-11: geometryczny budżet kosza i tolerancji połączeń
+
+- B12-09 (PR #57) i B12-10 (PR #58) scalono do main. Nowy etap: 324 przesiewy brył z luzem 0/1/2 mm (234/234/225 przejść), 576 warunków przedziałowych kosz/wkładka, 11 664 sprzężone kombinacje (2175 przejść), 252 warianty stosów śrub (62 odporne na zadane przedziały). Kod z asercjami, manifest oraz raport: skrypty/b12_11_budzet_mocowan.py, wyniki/b12_11_podsumowanie.json, raporty/B12-11_przedzialowa_geometria_mocowan_i_stos_srub.md.
+- Krytyczny wynik: dla w=2 mm, c=1 mm i wkładki zewnętrznej Ø8 mm musi być R_b,max + niepewność <= 177 mm. To warunek konieczny dla modelowego lokalnego klocka, nie pomiar kosza ani dopuszczenie śruby.
+- Nadal nie znamy pełnego r(y,theta), zacisków, dostępu narzędzia ani nośności MDF/spoin. Bramka CNC nadal zamknięta. Historia badań bez zmian.
+- Następny krok B12-12: pozyskanie dokładnej bryły kosza i protokół prawdziwych prób złączy albo dalszy jawnie warunkowy model kontaktowy bez sfabrykowanych wyników pomiarowych.
