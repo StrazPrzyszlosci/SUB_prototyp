@@ -124,6 +124,16 @@ Poniższe trzy przykłady pochodzą z **cudzych konstrukcji** udokumentowanych n
 
 [Pełne opisy autorów, źródeł fotografii i praw do ich wykorzystania](dokumentacja/inspiracje_zewnetrznych_konstruktorow_mocowanie_RSS390HF4.md) · [Raport konstrukcyjny B12-08](raporty/B12-08_audyt_wyboru_i_konstrukcja_pierwszego_C02.md).
 
+### 4b. Nowe badanie B12-09: osiem lokalnych wzmocnień czy duża rama?
+
+Badanie **B12-09** sprawdza wstępną możliwość mocowania Daytona przez osiem oddzielnych klocków przyklejonych od tyłu MDF, a nie automatycznie przez rozbudowaną metalową ramę. Spośród **108 hipotetycznych rzutów 2D** 67 spełniło założone odstępy od paneli i projekcji wręgi. Przy modelowym **15 kg × 5g** największa idealna reakcja na punkt zwiększa się po wyłączeniu jednej z ośmiu śrub z ok. **151 N do 195 N** w porównanych scenariuszach. To obliczenia, **nie pomiary i nie ocena nośności MDF/kleju**.
+
+![B12-09: szerokość materiału przy otworze i wrażliwość uproszczonej spoiny — NIE CNC](wyniki/b12_09_geometria_i_naprezenia_NIE_CNC.svg)
+
+*Wykres pokazuje warunkową geometrię i hipotetyczne wymagania wobec spoiny, nie zalecany rozmiar śrub ani wytrzymałość kleju. Rzeczywiste żebra kosza, zaciski i dostęp do narzędzi nadal trzeba zbadać w 3D.*
+
+**Wniosek:** proste lokalne wzmocnienia są warte dalszego porównania z ramą A; nie zatwierdzono żadnego wariantu do frezowania. [Raport B12-09](raporty/B12-09_lokalne_mocowania_RSS390HF4_vs_rama_A.md) · [kod Python](skrypty/b12_09_lokalne_mocowania.py).
+
 ### 5. Co oznaczają wykresy DSP i temperatury?
 
 Przyjęte **40 V RMS / 12 A RMS** to założenia symulacji, **nie parametry zakupionego wzmacniacza**. Model ogranicznika może ujawnić ryzyko wychylenia, grzania i przesterowania, ale nie jest jeszcze sprawdzonym presetem. Potrzebny jest fizyczny napęd, zasilanie, chłodzenie i walidacja zabezpieczeń. [Filtry](#filtry) · [Ochrona](#ochrona).
@@ -164,7 +174,7 @@ Dla każdego wykresu sprawdzaj kolejno: **co obliczono**, **co to zmienia w proj
 
 ![P38A: oficjalna geometria kosza, wycięcia i ośmiu otworów](wyniki/p38a_front_NIE_CNC.svg)
 
-*Według rysunku producenta kosz ma Ø388,4mm, wycięcie Ø355,8mm, a osiem otworów Ø6,5mm leży na okręgu Ø368mm. Po odjęciu promienia otworu kołnierza od odległości do wycięcia zostaje tylko **2,85mm MDF**. To istotny problem dla projektowania mocowania, nie pozwolenie na frezowanie. [Raport 096](raporty/096_P38A_front_Dayton_otwory_i_mocowania.md) · [szkic DXF — NIE CNC](wyniki/p38a_front_NIE_CNC.dxf).*
+*Według rysunku producenta kosz ma Ø388,4mm, wycięcie Ø355,8mm, a osiem otworów Ø6,5mm leży na okręgu Ø368mm. **Tylko jeśli w MDF również wywiercimy otwór Ø6,5 mm**, po odjęciu jego promienia pozostaje **2,85mm MDF**. Otwór Ø6,5 mm w koszu nie narzuca tej średnicy otworu w MDF. To istotny problem dla projektowania mocowania, nie pozwolenie na frezowanie. [Raport 096](raporty/096_P38A_front_Dayton_otwory_i_mocowania.md) · [szkic DXF — NIE CNC](wyniki/p38a_front_NIE_CNC.dxf).*
 
 ### W którym miejscu naprawdę jest głośnik we wnętrzu?
 
