@@ -1,0 +1,1008 @@
+{
+  "schema": "B12-06_Ritz_front_screen_and_original_brief_gate",
+  "date": "2026-11-02",
+  "method": {
+    "front_width_m": 1.02,
+    "front_height_m": 0.5,
+    "MDF_density_assumed_kg_m3": 730,
+    "Poisson_assumed": 0.3,
+    "Young_moduli_test_GPa": [
+      1.5,
+      2.1,
+      3
+    ],
+    "thicknesses_mm": [
+      22,
+      44
+    ],
+    "brace_springs_total_N_per_m": [
+      0,
+      1000000,
+      10000000
+    ],
+    "solver": "Kirchhoff-Love Ritz 5x4 smooth sine trial functions, pressure and bolt rim loads, quadrature excluding circular hole interiors; simply supported outer edges; central hypothetical spring line; NOT validated conformal FE solution nor whole-box modal model",
+    "forcing": "100 Pa front panel; front-horizontal gravity normal forces per speaker; uniform common 100 N force on circular bolt locations",
+    "reference_mass": "Dayton listed manufacturer weight 30 lb (~13.61kg) is an uncertain item/package proxy; STX per driver 4kg net. Do not infer actual C02 net mass without weighing.",
+    "STX_bolt_count_assumption": 8
+  },
+  "n": 36,
+  "results": [
+    {
+      "model": "Dayton_C02",
+      "E_GPa": 1.5,
+      "t_mm": 22,
+      "kbrace_N_m": 0,
+      "panel_area_m2": 0.4105442,
+      "panel_mass_kg": 6.5933401,
+      "driver_mass_proxy_kg": 13.6078,
+      "modal_frequency_Ritz_hz": 32.8916161,
+      "pressure100": {
+        "peak_mm": 0.0468745,
+        "work_Nm": 0.0007177
+      },
+      "gravity": {
+        "peak_mm": 0.2827316,
+        "work_Nm": 0.0222609
+      },
+      "common100N": {
+        "peak_mm": 0.2117959,
+        "work_Nm": 0.0124919
+      }
+    },
+    {
+      "model": "Dayton_C02",
+      "E_GPa": 1.5,
+      "t_mm": 22,
+      "kbrace_N_m": 1000000,
+      "panel_area_m2": 0.4105442,
+      "panel_mass_kg": 6.5933401,
+      "driver_mass_proxy_kg": 13.6078,
+      "modal_frequency_Ritz_hz": 43.7054136,
+      "pressure100": {
+        "peak_mm": 0.0214114,
+        "work_Nm": 0.0003522
+      },
+      "gravity": {
+        "peak_mm": 0.1449935,
+        "work_Nm": 0.0151232
+      },
+      "common100N": {
+        "peak_mm": 0.1086154,
+        "work_Nm": 0.0084865
+      }
+    },
+    {
+      "model": "Dayton_C02",
+      "E_GPa": 1.5,
+      "t_mm": 22,
+      "kbrace_N_m": 10000000,
+      "panel_area_m2": 0.4105442,
+      "panel_mass_kg": 6.5933401,
+      "driver_mass_proxy_kg": 13.6078,
+      "modal_frequency_Ritz_hz": 51.2636026,
+      "pressure100": {
+        "peak_mm": 0.0151488,
+        "work_Nm": 0.00018
+      },
+      "gravity": {
+        "peak_mm": 0.093088,
+        "work_Nm": 0.0117659
+      },
+      "common100N": {
+        "peak_mm": 0.0697327,
+        "work_Nm": 0.0066026
+      }
+    },
+    {
+      "model": "Dayton_C02",
+      "E_GPa": 1.5,
+      "t_mm": 44,
+      "kbrace_N_m": 0,
+      "panel_area_m2": 0.4105442,
+      "panel_mass_kg": 13.1866803,
+      "driver_mass_proxy_kg": 13.6078,
+      "modal_frequency_Ritz_hz": 86.8252314,
+      "pressure100": {
+        "peak_mm": 0.0058593,
+        "work_Nm": 0.0000897
+      },
+      "gravity": {
+        "peak_mm": 0.0353415,
+        "work_Nm": 0.0027826
+      },
+      "common100N": {
+        "peak_mm": 0.0264745,
+        "work_Nm": 0.0015615
+      }
+    },
+    {
+      "model": "Dayton_C02",
+      "E_GPa": 1.5,
+      "t_mm": 44,
+      "kbrace_N_m": 1000000,
+      "panel_area_m2": 0.4105442,
+      "panel_mass_kg": 13.1866803,
+      "driver_mass_proxy_kg": 13.6078,
+      "modal_frequency_Ritz_hz": 93.7042665,
+      "pressure100": {
+        "peak_mm": 0.0047427,
+        "work_Nm": 0.0000766
+      },
+      "gravity": {
+        "peak_mm": 0.0304052,
+        "work_Nm": 0.0025268
+      },
+      "common100N": {
+        "peak_mm": 0.0227767,
+        "work_Nm": 0.001418
+      }
+    },
+    {
+      "model": "Dayton_C02",
+      "E_GPa": 1.5,
+      "t_mm": 44,
+      "kbrace_N_m": 10000000,
+      "panel_area_m2": 0.4105442,
+      "panel_mass_kg": 13.1866803,
+      "driver_mass_proxy_kg": 13.6078,
+      "modal_frequency_Ritz_hz": 122.5103983,
+      "pressure100": {
+        "peak_mm": 0.0025278,
+        "work_Nm": 0.0000405
+      },
+      "gravity": {
+        "peak_mm": 0.0168067,
+        "work_Nm": 0.0018221
+      },
+      "common100N": {
+        "peak_mm": 0.01259,
+        "work_Nm": 0.0010225
+      }
+    },
+    {
+      "model": "Dayton_C02",
+      "E_GPa": 2.1,
+      "t_mm": 22,
+      "kbrace_N_m": 0,
+      "panel_area_m2": 0.4105442,
+      "panel_mass_kg": 6.5933401,
+      "driver_mass_proxy_kg": 13.6078,
+      "modal_frequency_Ritz_hz": 38.917885,
+      "pressure100": {
+        "peak_mm": 0.0334818,
+        "work_Nm": 0.0005126
+      },
+      "gravity": {
+        "peak_mm": 0.2019512,
+        "work_Nm": 0.0159007
+      },
+      "common100N": {
+        "peak_mm": 0.1512828,
+        "work_Nm": 0.0089228
+      }
+    },
+    {
+      "model": "Dayton_C02",
+      "E_GPa": 2.1,
+      "t_mm": 22,
+      "kbrace_N_m": 1000000,
+      "panel_area_m2": 0.4105442,
+      "panel_mass_kg": 6.5933401,
+      "driver_mass_proxy_kg": 13.6078,
+      "modal_frequency_Ritz_hz": 49.6027763,
+      "pressure100": {
+        "peak_mm": 0.0166752,
+        "work_Nm": 0.0002841
+      },
+      "gravity": {
+        "peak_mm": 0.1158125,
+        "work_Nm": 0.0114369
+      },
+      "common100N": {
+        "peak_mm": 0.0867558,
+        "work_Nm": 0.0064179
+      }
+    },
+    {
+      "model": "Dayton_C02",
+      "E_GPa": 2.1,
+      "t_mm": 22,
+      "kbrace_N_m": 10000000,
+      "panel_area_m2": 0.4105442,
+      "panel_mass_kg": 6.5933401,
+      "driver_mass_proxy_kg": 13.6078,
+      "modal_frequency_Ritz_hz": 60.0809272,
+      "pressure100": {
+        "peak_mm": 0.0110966,
+        "work_Nm": 0.0001365
+      },
+      "gravity": {
+        "peak_mm": 0.0675607,
+        "work_Nm": 0.0085577
+      },
+      "common100N": {
+        "peak_mm": 0.0506101,
+        "work_Nm": 0.0048023
+      }
+    },
+    {
+      "model": "Dayton_C02",
+      "E_GPa": 2.1,
+      "t_mm": 44,
+      "kbrace_N_m": 0,
+      "panel_area_m2": 0.4105442,
+      "panel_mass_kg": 13.1866803,
+      "driver_mass_proxy_kg": 13.6078,
+      "modal_frequency_Ritz_hz": 102.7329993,
+      "pressure100": {
+        "peak_mm": 0.0041852,
+        "work_Nm": 0.0000641
+      },
+      "gravity": {
+        "peak_mm": 0.0252439,
+        "work_Nm": 0.0019876
+      },
+      "common100N": {
+        "peak_mm": 0.0189103,
+        "work_Nm": 0.0011154
+      }
+    },
+    {
+      "model": "Dayton_C02",
+      "E_GPa": 2.1,
+      "t_mm": 44,
+      "kbrace_N_m": 1000000,
+      "panel_area_m2": 0.4105442,
+      "panel_mass_kg": 13.1866803,
+      "driver_mass_proxy_kg": 13.6078,
+      "modal_frequency_Ritz_hz": 108.7094806,
+      "pressure100": {
+        "peak_mm": 0.0035837,
+        "work_Nm": 0.000057
+      },
+      "gravity": {
+        "peak_mm": 0.022585,
+        "work_Nm": 0.0018498
+      },
+      "common100N": {
+        "peak_mm": 0.0169186,
+        "work_Nm": 0.001038
+      }
+    },
+    {
+      "model": "Dayton_C02",
+      "E_GPa": 2.1,
+      "t_mm": 44,
+      "kbrace_N_m": 10000000,
+      "panel_area_m2": 0.4105442,
+      "panel_mass_kg": 13.1866803,
+      "driver_mass_proxy_kg": 13.6078,
+      "modal_frequency_Ritz_hz": 138.6470291,
+      "pressure100": {
+        "peak_mm": 0.0019685,
+        "work_Nm": 0.0000328
+      },
+      "gravity": {
+        "peak_mm": 0.0134489,
+        "work_Nm": 0.0013764
+      },
+      "common100N": {
+        "peak_mm": 0.0100746,
+        "work_Nm": 0.0007724
+      }
+    },
+    {
+      "model": "Dayton_C02",
+      "E_GPa": 3,
+      "t_mm": 22,
+      "kbrace_N_m": 0,
+      "panel_area_m2": 0.4105442,
+      "panel_mass_kg": 6.5933401,
+      "driver_mass_proxy_kg": 13.6078,
+      "modal_frequency_Ritz_hz": 46.5157696,
+      "pressure100": {
+        "peak_mm": 0.0234372,
+        "work_Nm": 0.0003588
+      },
+      "gravity": {
+        "peak_mm": 0.1413658,
+        "work_Nm": 0.0111305
+      },
+      "common100N": {
+        "peak_mm": 0.1058979,
+        "work_Nm": 0.006246
+      }
+    },
+    {
+      "model": "Dayton_C02",
+      "E_GPa": 3,
+      "t_mm": 22,
+      "kbrace_N_m": 1000000,
+      "panel_area_m2": 0.4105442,
+      "panel_mass_kg": 6.5933401,
+      "driver_mass_proxy_kg": 13.6078,
+      "modal_frequency_Ritz_hz": 56.7240781,
+      "pressure100": {
+        "peak_mm": 0.0127586,
+        "work_Nm": 0.000224
+      },
+      "gravity": {
+        "peak_mm": 0.0905554,
+        "work_Nm": 0.0084975
+      },
+      "common100N": {
+        "peak_mm": 0.0678356,
+        "work_Nm": 0.0047684
+      }
+    },
+    {
+      "model": "Dayton_C02",
+      "E_GPa": 3,
+      "t_mm": 22,
+      "kbrace_N_m": 10000000,
+      "panel_area_m2": 0.4105442,
+      "panel_mass_kg": 6.5933401,
+      "driver_mass_proxy_kg": 13.6078,
+      "modal_frequency_Ritz_hz": 70.8193285,
+      "pressure100": {
+        "peak_mm": 0.0080425,
+        "work_Nm": 0.0001034
+      },
+      "gravity": {
+        "peak_mm": 0.0483591,
+        "work_Nm": 0.0061436
+      },
+      "common100N": {
+        "peak_mm": 0.0362261,
+        "work_Nm": 0.0034475
+      }
+    },
+    {
+      "model": "Dayton_C02",
+      "E_GPa": 3,
+      "t_mm": 44,
+      "kbrace_N_m": 0,
+      "panel_area_m2": 0.4105442,
+      "panel_mass_kg": 13.1866803,
+      "driver_mass_proxy_kg": 13.6078,
+      "modal_frequency_Ritz_hz": 122.7894199,
+      "pressure100": {
+        "peak_mm": 0.0029297,
+        "work_Nm": 0.0000449
+      },
+      "gravity": {
+        "peak_mm": 0.0176707,
+        "work_Nm": 0.0013913
+      },
+      "common100N": {
+        "peak_mm": 0.0132372,
+        "work_Nm": 0.0007807
+      }
+    },
+    {
+      "model": "Dayton_C02",
+      "E_GPa": 3,
+      "t_mm": 44,
+      "kbrace_N_m": 1000000,
+      "panel_area_m2": 0.4105442,
+      "panel_mass_kg": 13.1866803,
+      "driver_mass_proxy_kg": 13.6078,
+      "modal_frequency_Ritz_hz": 127.896565,
+      "pressure100": {
+        "peak_mm": 0.0026221,
+        "work_Nm": 0.0000412
+      },
+      "gravity": {
+        "peak_mm": 0.016311,
+        "work_Nm": 0.0013209
+      },
+      "common100N": {
+        "peak_mm": 0.0122187,
+        "work_Nm": 0.0007412
+      }
+    },
+    {
+      "model": "Dayton_C02",
+      "E_GPa": 3,
+      "t_mm": 44,
+      "kbrace_N_m": 10000000,
+      "panel_area_m2": 0.4105442,
+      "panel_mass_kg": 13.1866803,
+      "driver_mass_proxy_kg": 13.6078,
+      "modal_frequency_Ritz_hz": 157.6541699,
+      "pressure100": {
+        "peak_mm": 0.0015089,
+        "work_Nm": 0.000026
+      },
+      "gravity": {
+        "peak_mm": 0.0105752,
+        "work_Nm": 0.0010236
+      },
+      "common100N": {
+        "peak_mm": 0.0079219,
+        "work_Nm": 0.0005744
+      }
+    },
+    {
+      "model": "STX_2C05",
+      "E_GPa": 1.5,
+      "t_mm": 22,
+      "kbrace_N_m": 0,
+      "panel_area_m2": 0.3827891,
+      "panel_mass_kg": 6.1475932,
+      "driver_mass_proxy_kg": 8,
+      "modal_frequency_Ritz_hz": 41.08403,
+      "pressure100": {
+        "peak_mm": 0.0471025,
+        "work_Nm": 0.0006344
+      },
+      "gravity": {
+        "peak_mm": 0.1511601,
+        "work_Nm": 0.0071872
+      },
+      "common100N": {
+        "peak_mm": 0.1926097,
+        "work_Nm": 0.0116692
+      }
+    },
+    {
+      "model": "STX_2C05",
+      "E_GPa": 1.5,
+      "t_mm": 22,
+      "kbrace_N_m": 1000000,
+      "panel_area_m2": 0.3827891,
+      "panel_mass_kg": 6.1475932,
+      "driver_mass_proxy_kg": 8,
+      "modal_frequency_Ritz_hz": 61.8473683,
+      "pressure100": {
+        "peak_mm": 0.0170096,
+        "work_Nm": 0.0002736
+      },
+      "gravity": {
+        "peak_mm": 0.0583363,
+        "work_Nm": 0.0037578
+      },
+      "common100N": {
+        "peak_mm": 0.0743327,
+        "work_Nm": 0.0061012
+      }
+    },
+    {
+      "model": "STX_2C05",
+      "E_GPa": 1.5,
+      "t_mm": 22,
+      "kbrace_N_m": 10000000,
+      "panel_area_m2": 0.3827891,
+      "panel_mass_kg": 6.1475932,
+      "driver_mass_proxy_kg": 8,
+      "modal_frequency_Ritz_hz": 67.6249055,
+      "pressure100": {
+        "peak_mm": 0.0080074,
+        "work_Nm": 0.0001195
+      },
+      "gravity": {
+        "peak_mm": 0.0359537,
+        "work_Nm": 0.0022969
+      },
+      "common100N": {
+        "peak_mm": 0.0458125,
+        "work_Nm": 0.0037292
+      }
+    },
+    {
+      "model": "STX_2C05",
+      "E_GPa": 1.5,
+      "t_mm": 44,
+      "kbrace_N_m": 0,
+      "panel_area_m2": 0.3827891,
+      "panel_mass_kg": 12.2951864,
+      "driver_mass_proxy_kg": 8,
+      "modal_frequency_Ritz_hz": 101.834746,
+      "pressure100": {
+        "peak_mm": 0.0058878,
+        "work_Nm": 0.0000793
+      },
+      "gravity": {
+        "peak_mm": 0.018895,
+        "work_Nm": 0.0008984
+      },
+      "common100N": {
+        "peak_mm": 0.0240762,
+        "work_Nm": 0.0014587
+      }
+    },
+    {
+      "model": "STX_2C05",
+      "E_GPa": 1.5,
+      "t_mm": 44,
+      "kbrace_N_m": 1000000,
+      "panel_area_m2": 0.3827891,
+      "panel_mass_kg": 12.2951864,
+      "driver_mass_proxy_kg": 8,
+      "modal_frequency_Ritz_hz": 112.2460801,
+      "pressure100": {
+        "peak_mm": 0.0047557,
+        "work_Nm": 0.0000657
+      },
+      "gravity": {
+        "peak_mm": 0.0154036,
+        "work_Nm": 0.0007694
+      },
+      "common100N": {
+        "peak_mm": 0.0196275,
+        "work_Nm": 0.0012492
+      }
+    },
+    {
+      "model": "STX_2C05",
+      "E_GPa": 1.5,
+      "t_mm": 44,
+      "kbrace_N_m": 10000000,
+      "panel_area_m2": 0.3827891,
+      "panel_mass_kg": 12.2951864,
+      "driver_mass_proxy_kg": 8,
+      "modal_frequency_Ritz_hz": 163.818663,
+      "pressure100": {
+        "peak_mm": 0.001859,
+        "work_Nm": 0.000031
+      },
+      "gravity": {
+        "peak_mm": 0.0065961,
+        "work_Nm": 0.0004392
+      },
+      "common100N": {
+        "peak_mm": 0.0084048,
+        "work_Nm": 0.0007132
+      }
+    },
+    {
+      "model": "STX_2C05",
+      "E_GPa": 2.1,
+      "t_mm": 22,
+      "kbrace_N_m": 0,
+      "panel_area_m2": 0.3827891,
+      "panel_mass_kg": 6.1475932,
+      "driver_mass_proxy_kg": 8,
+      "modal_frequency_Ritz_hz": 48.6112799,
+      "pressure100": {
+        "peak_mm": 0.0336446,
+        "work_Nm": 0.0004531
+      },
+      "gravity": {
+        "peak_mm": 0.1079715,
+        "work_Nm": 0.0051337
+      },
+      "common100N": {
+        "peak_mm": 0.1375783,
+        "work_Nm": 0.0083351
+      }
+    },
+    {
+      "model": "STX_2C05",
+      "E_GPa": 2.1,
+      "t_mm": 22,
+      "kbrace_N_m": 1000000,
+      "panel_area_m2": 0.3827891,
+      "panel_mass_kg": 6.1475932,
+      "driver_mass_proxy_kg": 8,
+      "modal_frequency_Ritz_hz": 68.5180782,
+      "pressure100": {
+        "peak_mm": 0.0146676,
+        "work_Nm": 0.0002256
+      },
+      "gravity": {
+        "peak_mm": 0.0494392,
+        "work_Nm": 0.0029713
+      },
+      "common100N": {
+        "peak_mm": 0.0629959,
+        "work_Nm": 0.0048242
+      }
+    },
+    {
+      "model": "STX_2C05",
+      "E_GPa": 2.1,
+      "t_mm": 22,
+      "kbrace_N_m": 10000000,
+      "panel_area_m2": 0.3827891,
+      "panel_mass_kg": 6.1475932,
+      "driver_mass_proxy_kg": 8,
+      "modal_frequency_Ritz_hz": 80.0148672,
+      "pressure100": {
+        "peak_mm": 0.0058749,
+        "work_Nm": 0.0000922
+      },
+      "gravity": {
+        "peak_mm": 0.026155,
+        "work_Nm": 0.0017056
+      },
+      "common100N": {
+        "peak_mm": 0.0333269,
+        "work_Nm": 0.0027692
+      }
+    },
+    {
+      "model": "STX_2C05",
+      "E_GPa": 2.1,
+      "t_mm": 44,
+      "kbrace_N_m": 0,
+      "panel_area_m2": 0.3827891,
+      "panel_mass_kg": 12.2951864,
+      "driver_mass_proxy_kg": 8,
+      "modal_frequency_Ritz_hz": 120.4924964,
+      "pressure100": {
+        "peak_mm": 0.0042056,
+        "work_Nm": 0.0000566
+      },
+      "gravity": {
+        "peak_mm": 0.0134964,
+        "work_Nm": 0.0006417
+      },
+      "common100N": {
+        "peak_mm": 0.0171973,
+        "work_Nm": 0.0010419
+      }
+    },
+    {
+      "model": "STX_2C05",
+      "E_GPa": 2.1,
+      "t_mm": 44,
+      "kbrace_N_m": 1000000,
+      "panel_area_m2": 0.3827891,
+      "panel_mass_kg": 12.2951864,
+      "driver_mass_proxy_kg": 8,
+      "modal_frequency_Ritz_hz": 129.4929481,
+      "pressure100": {
+        "peak_mm": 0.0035928,
+        "work_Nm": 0.0000493
+      },
+      "gravity": {
+        "peak_mm": 0.0116066,
+        "work_Nm": 0.0005719
+      },
+      "common100N": {
+        "peak_mm": 0.0147892,
+        "work_Nm": 0.0009285
+      }
+    },
+    {
+      "model": "STX_2C05",
+      "E_GPa": 2.1,
+      "t_mm": 44,
+      "kbrace_N_m": 10000000,
+      "panel_area_m2": 0.3827891,
+      "panel_mass_kg": 12.2951864,
+      "driver_mass_proxy_kg": 8,
+      "modal_frequency_Ritz_hz": 180.6551504,
+      "pressure100": {
+        "peak_mm": 0.0016216,
+        "work_Nm": 0.0000257
+      },
+      "gravity": {
+        "peak_mm": 0.005526,
+        "work_Nm": 0.0003472
+      },
+      "common100N": {
+        "peak_mm": 0.0070413,
+        "work_Nm": 0.0005638
+      }
+    },
+    {
+      "model": "STX_2C05",
+      "E_GPa": 3,
+      "t_mm": 22,
+      "kbrace_N_m": 0,
+      "panel_area_m2": 0.3827891,
+      "panel_mass_kg": 6.1475932,
+      "driver_mass_proxy_kg": 8,
+      "modal_frequency_Ritz_hz": 58.1015925,
+      "pressure100": {
+        "peak_mm": 0.0235513,
+        "work_Nm": 0.0003172
+      },
+      "gravity": {
+        "peak_mm": 0.07558,
+        "work_Nm": 0.0035936
+      },
+      "common100N": {
+        "peak_mm": 0.0963048,
+        "work_Nm": 0.0058346
+      }
+    },
+    {
+      "model": "STX_2C05",
+      "E_GPa": 3,
+      "t_mm": 22,
+      "kbrace_N_m": 1000000,
+      "panel_area_m2": 0.3827891,
+      "panel_mass_kg": 6.1475932,
+      "driver_mass_proxy_kg": 8,
+      "modal_frequency_Ritz_hz": 76.6055286,
+      "pressure100": {
+        "peak_mm": 0.0122529,
+        "work_Nm": 0.0001818
+      },
+      "gravity": {
+        "peak_mm": 0.0407335,
+        "work_Nm": 0.0023062
+      },
+      "common100N": {
+        "peak_mm": 0.051903,
+        "work_Nm": 0.0037444
+      }
+    },
+    {
+      "model": "STX_2C05",
+      "E_GPa": 3,
+      "t_mm": 22,
+      "kbrace_N_m": 10000000,
+      "panel_area_m2": 0.3827891,
+      "panel_mass_kg": 6.1475932,
+      "driver_mass_proxy_kg": 8,
+      "modal_frequency_Ritz_hz": 95.6360585,
+      "pressure100": {
+        "peak_mm": 0.0042674,
+        "work_Nm": 0.0000715
+      },
+      "gravity": {
+        "peak_mm": 0.0187832,
+        "work_Nm": 0.001259
+      },
+      "common100N": {
+        "peak_mm": 0.0239337,
+        "work_Nm": 0.0020441
+      }
+    },
+    {
+      "model": "STX_2C05",
+      "E_GPa": 3,
+      "t_mm": 44,
+      "kbrace_N_m": 0,
+      "panel_area_m2": 0.3827891,
+      "panel_mass_kg": 12.2951864,
+      "driver_mass_proxy_kg": 8,
+      "modal_frequency_Ritz_hz": 144.016079,
+      "pressure100": {
+        "peak_mm": 0.0029439,
+        "work_Nm": 0.0000396
+      },
+      "gravity": {
+        "peak_mm": 0.0094475,
+        "work_Nm": 0.0004492
+      },
+      "common100N": {
+        "peak_mm": 0.0120381,
+        "work_Nm": 0.0007293
+      }
+    },
+    {
+      "model": "STX_2C05",
+      "E_GPa": 3,
+      "t_mm": 44,
+      "kbrace_N_m": 1000000,
+      "panel_area_m2": 0.3827891,
+      "panel_mass_kg": 12.2951864,
+      "driver_mass_proxy_kg": 8,
+      "modal_frequency_Ritz_hz": 151.6790248,
+      "pressure100": {
+        "peak_mm": 0.0026292,
+        "work_Nm": 0.0000359
+      },
+      "gravity": {
+        "peak_mm": 0.0084771,
+        "work_Nm": 0.0004134
+      },
+      "common100N": {
+        "peak_mm": 0.0108016,
+        "work_Nm": 0.0006711
+      }
+    },
+    {
+      "model": "STX_2C05",
+      "E_GPa": 3,
+      "t_mm": 44,
+      "kbrace_N_m": 10000000,
+      "panel_area_m2": 0.3827891,
+      "panel_mass_kg": 12.2951864,
+      "driver_mass_proxy_kg": 8,
+      "modal_frequency_Ritz_hz": 200.5582215,
+      "pressure100": {
+        "peak_mm": 0.0013753,
+        "work_Nm": 0.0000208
+      },
+      "gravity": {
+        "peak_mm": 0.0046094,
+        "work_Nm": 0.0002705
+      },
+      "common100N": {
+        "peak_mm": 0.0058734,
+        "work_Nm": 0.0004391
+      }
+    }
+  ],
+  "convergence": [
+    {
+      "model": "Dayton_C02",
+      "basis": "3x3",
+      "integration_grid": "64x32",
+      "pressure100_peak_mm": 0.0034194,
+      "gravity_peak_mm": 0.0223621,
+      "mode_Ritz_hz": 111.1108821
+    },
+    {
+      "model": "Dayton_C02",
+      "basis": "4x3",
+      "integration_grid": "84x42",
+      "pressure100_peak_mm": 0.0034492,
+      "gravity_peak_mm": 0.0216357,
+      "mode_Ritz_hz": 111.3147441
+    },
+    {
+      "model": "Dayton_C02",
+      "basis": "5x4",
+      "integration_grid": "84x42",
+      "pressure100_peak_mm": 0.0035837,
+      "gravity_peak_mm": 0.022585,
+      "mode_Ritz_hz": 108.7094806
+    },
+    {
+      "model": "Dayton_C02",
+      "basis": "5x4",
+      "integration_grid": "126x63",
+      "pressure100_peak_mm": 0.0035712,
+      "gravity_peak_mm": 0.0225404,
+      "mode_Ritz_hz": 108.7714051
+    },
+    {
+      "model": "STX_2C05",
+      "basis": "3x3",
+      "integration_grid": "64x32",
+      "pressure100_peak_mm": 0.0033454,
+      "gravity_peak_mm": 0.0106236,
+      "mode_Ritz_hz": 134.9694891
+    },
+    {
+      "model": "STX_2C05",
+      "basis": "4x3",
+      "integration_grid": "84x42",
+      "pressure100_peak_mm": 0.0033338,
+      "gravity_peak_mm": 0.0105486,
+      "mode_Ritz_hz": 135.2058008
+    },
+    {
+      "model": "STX_2C05",
+      "basis": "5x4",
+      "integration_grid": "84x42",
+      "pressure100_peak_mm": 0.0035928,
+      "gravity_peak_mm": 0.0116066,
+      "mode_Ritz_hz": 129.4929481
+    },
+    {
+      "model": "STX_2C05",
+      "basis": "5x4",
+      "integration_grid": "126x63",
+      "pressure100_peak_mm": 0.0036002,
+      "gravity_peak_mm": 0.0116148,
+      "mode_Ritz_hz": 129.4390517
+    }
+  ],
+  "representative": [
+    {
+      "model": "Dayton_C02",
+      "E_GPa": 2.1,
+      "t_mm": 44,
+      "kbrace_N_m": 1000000,
+      "panel_area_m2": 0.4105442,
+      "panel_mass_kg": 13.1866803,
+      "driver_mass_proxy_kg": 13.6078,
+      "modal_frequency_Ritz_hz": 108.7094806,
+      "pressure100": {
+        "peak_mm": 0.0035837,
+        "work_Nm": 0.000057
+      },
+      "gravity": {
+        "peak_mm": 0.022585,
+        "work_Nm": 0.0018498
+      },
+      "common100N": {
+        "peak_mm": 0.0169186,
+        "work_Nm": 0.001038
+      }
+    },
+    {
+      "model": "STX_2C05",
+      "E_GPa": 2.1,
+      "t_mm": 44,
+      "kbrace_N_m": 1000000,
+      "panel_area_m2": 0.3827891,
+      "panel_mass_kg": 12.2951864,
+      "driver_mass_proxy_kg": 8,
+      "modal_frequency_Ritz_hz": 129.4929481,
+      "pressure100": {
+        "peak_mm": 0.0035928,
+        "work_Nm": 0.0000493
+      },
+      "gravity": {
+        "peak_mm": 0.0116066,
+        "work_Nm": 0.0005719
+      },
+      "common100N": {
+        "peak_mm": 0.0147892,
+        "work_Nm": 0.0009285
+      }
+    }
+  ],
+  "room": {
+    "length_m": 4.6,
+    "width_m": 3.7,
+    "height_m": 2.5,
+    "volume_m3": 42.55,
+    "one_sweet_spot": true,
+    "listening_distance_m": [
+      2.5,
+      3
+    ],
+    "axial_modes_hz": {
+      "length": 37.2826087,
+      "width": 46.3513514,
+      "height": 68.6
+    },
+    "two_cabinets_width_m": 2.04,
+    "front_wall_remaining_width_m": 1.66,
+    "reference_2_cabinets": [
+      "Dayton_C02",
+      "Dayton_C02"
+    ],
+    "alternate_2_cabinets": [
+      "STX_2C05",
+      "STX_2C05"
+    ],
+    "driver_count_per_two_cabinets": {
+      "Dayton": 2,
+      "STX": 4
+    },
+    "nominal_Vd_cm3_per_cabinet": {
+      "Dayton": 1161.44,
+      "STX_pair": 736.5
+    },
+    "all_in_room_Vd_cm3": {
+      "Dayton_2subs": 2322.88,
+      "STX_2subs": 1473
+    },
+    "limits": "No actual placement, monitor cabinet dimensions, room damping, response or distorted clean SPL are measured."
+  },
+  "brief_gate": {
+    "reference": "brief_system_audio_DIY_v0.6.md + WYMAGANIA.md + dane/konfiguracje/pokoj_odsluchowy.json",
+    "hard_requirements": [
+      "sealed adjustable net volume initial prototype",
+      "single driver per cabinet remains W24 design baseline; dual STX an alternative, not automatic selection",
+      "two independent subwoofers physically placeable near active 3-way monitors in 3.7m front room",
+      "two sub DSP independent outputs 7 and 8 (six monitor channels 1..6)",
+      "full depth with front grille ≤500mm",
+      "clean useful bass 20-40Hz, headroom, low THD, IMD, noise and compression",
+      "one sweet spot 2.5-3m, no reliance on unrealistic front/rear source placement",
+      "benchmark ADAM Sub12 and Sub15; acceptance numbers not yet approved",
+      "no enforced budget ceiling but compare total-system cost",
+      "repeatable calibration in other 17-20m² rooms"
+    ],
+    "open": [
+      "measured THD/IMD and compression at equal listening SPL",
+      "actual dual-sub placement and monitor/furniture floor plan",
+      "factory driver basket and mechanical fastener details",
+      "MDF elastic moduli and glue-joint rotational stiffness",
+      "full 3D FE modal/stress and panel radiation after buckling-free verified mesh",
+      "real net displacement, depth including grille/terminal and calibration 100/120/150l",
+      "headroom/delay crossover for two cabinets at the listening position"
+    ],
+    "decision": "Neither design can be certified against original brief. Dayton remains preliminary performance leader; two-STX remains cost counterfactual, not the primary objective. No CNC, no orders."
+  },
+  "warnings": [
+    "Ritz smooth basis does not reproduce free circular hole edges or fastener-local stress and likely underestimates local flexibility",
+    "Global front-only frequencies are not whole-box resonances or acoustic radiated response",
+    "MDF E, support k and density are artificial parameter scenarios; no validated stiffness or fatigue",
+    "Pressure and force are explicit comparison loads, not real measured subwoofer forces",
+    "Front-horizontal weight loading assumes source normal to panel; vertical orientation needs basket center-of-gravity moment and screws analysis",
+    "Room axial frequencies are theoretical geometry, not measured modes or decay",
+    "Cannot rank sound quality or clean SPL from structural screening"
+  ]
+}

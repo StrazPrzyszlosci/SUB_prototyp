@@ -35,6 +35,10 @@ O = otwarte. Akceptacja briefu nie oznacza akceptacji dowolnych liczb modelu.
 | W28 | Rozszerzenie badań: pojedynczy duży głośnik vs 2 × 10″ lub 2 × 12″ w jednej zamkniętej obudowie, także para izobaryczna | U-2026-11-02, badanie alternatyw | Raport 109, 3168 scenariuszy i audyt 60 l izobarycznie / 120 l pojedynczo; nie zastępuje jeszcze W13/W24 w finalnej konstrukcji | P43/P29/P18–P21 |
 | W29 | Analiza ceny dwóch koszy w odniesieniu do Daytona oraz pełnego kosztu dwóch docelowych subwooferów | U-2026-11-02, kryterium dodatkowe | Ceny jednostkowe z datą i URL; oddzielnie BOM wzmacniacza, DSP, frontów, sprzęgającej komory izobarycznej i montażu; bez automatycznego uznania najtańszego kosza | P43/P29 |
 
+| W30 | **Bramka pierwotnego briefu:** neutralność, niski szum, czysty headroom i niskie THD/IMD 20–40 Hz w pokoju 4,6×3,7×2,5 m, jeden sweet spot w odległości 2,5–3 m. Cena jest kryterium WTÓRNYM; odniesienie do ADAM Sub12/Sub15. | U, progi O | B12-06: audyt zgodności; do wykonania pomiary THD/kompresji oraz model i kalibracja 2 subów z monitorami | P26–P30/B12-06 |
+| W31 | **W13/W24 pozostają bazową architekturą: jeden głośnik i jedna obudowa; finalnie dwa osobne subwoofery i 6 kanałów monitorów.** Para 2×STX w jednej skrzyni to wyjątek porównawczy; przy docelowych dwóch skrzyniach oznacza 4 kosze, nie 2. | U, wariant C05 w badaniu | B12-06: porównanie Vd, footprint, fizycznych kanałów, założeń pokojowych; brak kwalifikacji akustycznej | B12-06/P29 |
+| W32 | Wymóg 500 mm głębokości dotyczy pełnego urządzenia z maskownicą i terminalem; geometria 2×STX z B12-05 ma tylko hipotetyczne 0,5–2,5 mm zapasu. | U, mechanika O | B12-05 i B12-06; przed CNC rzeczywisty kosz, złącza, przegląd FEM spoin, grawitacja w obu orientacjach | B12-06/P18–P21 |
+
 ## Specyfikacja odbiorowa do uzupełnienia
 
 | Wielkość | Zdefiniowane warunki | Próg |
