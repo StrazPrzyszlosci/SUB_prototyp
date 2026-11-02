@@ -1,0 +1,25 @@
+name: B12-04 electrothermal transient and limiter regression
+on:
+  pull_request:
+    paths:
+      - 'skrypty/b12_04_dynamika_limity_i_termika.js'
+      - 'wyniki/b12_04_*'
+      - '.github/workflows/b12-04-regression.yml'
+      - 'wyniki/b12_03_iir_i_rozrzut_20261102.json'
+      - 'dane/przetworniki/pula_rozszerzona.json'
+  push:
+    paths:
+      - 'skrypty/b12_04_dynamika_limity_i_termika.js'
+      - 'wyniki/b12_04_*'
+      - '.github/workflows/b12-04-regression.yml'
+      - 'wyniki/b12_03_iir_i_rozrzut_20261102.json'
+      - 'dane/przetworniki/pula_rozszerzona.json'
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Repeat 26 electrothermal transients plus 2 timestep checks
+        run: node skrypty/b12_04_dynamika_limity_i_termika.js
