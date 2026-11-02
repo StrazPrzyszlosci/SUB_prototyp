@@ -1412,8 +1412,12 @@ Unikalna numeracja raportów: 110 i 111 dla P43-K, 112 i 113 dla P44-K.
 Ponowne włączenie gałęzi nie zmienia 39 modeli / 40 konfiguracji bazowych, obliczeń P43 akustycznych, ani kwalifikacji CNC.
 ### Archiwalny zapis P43-K (2026-11-01)
 
-- Badanie P43A: 576 analitycznych dróg 2D od 8 otworów Dayton do 4 podpór A/B przy szerokościach 4/8/10 mm i marginesach 0/1/2 mm; wybrano 144 najkrótsze rozwiązania. Raport 111, skrypt `skrypty/p43_trasy_i_awarie_podpor.js`, CSV/JSON i wykres. **Wniosek:** 10 mm szerokości + 2 mm marginesu jest geometrycznie sprzeczne z promieniem BCD184 mm i wycięciem r177,9 mm w płaszczyźnie frontu; to nie wyklucza łączników przestrzennych.
+- Badanie P43A: 576 analitycznych dróg 2D od 8 otworów Dayton do 4 podpór A/B przy szerokościach 4/8/10 mm i marginesach 0/1/2 mm; wybrano 144 najkrótsze rozwiązania. Raport 110, skrypt `skrypty/p43_trasy_i_awarie_podpor.js`, CSV/JSON i wykres. **Wniosek:** 10 mm szerokości + 2 mm marginesu jest geometrycznie sprzeczne z promieniem BCD184 mm i wycięciem r177,9 mm w płaszczyźnie frontu; to nie wyklucza łączników przestrzennych.
 - Badanie P43B: 1620 rozwiązań sztywnego interfejsu na czterech lub trzech aktywnych sprężynach, dla dwóch topologii, trzech kierunków/poziomów g/mimośrodów/rozkładów k i dwóch mas. Raport 111. Wybiórczy wzrost maksymalnej reakcji przy X: A 202,29→319,11 N, B 400,42→761,24 N (13,61 kg/5g/e120/hipotetyczne k=1000 N/mm). Warunek wstępnego docisku wyłącznie matematyczny, nie moment dokręcenia ani ocena nośności.
 - **Bramka:** brak pełnej geometrii kosza i łącznika 3D, właściwości MDF/spoin, kontaktu, rzeczywistych śrub i pomiarów; żadnego pliku nie wydawać jako CNC. Zachowano poprzednie dane/raporty P41–P42 i nie przywracano usuniętego obrazka P42C.
 - **Następny krok:** P44 — skojarzyć fizyczną geometrię ośmiu śrub, obwód kosza, porty wentylacyjne i model jednostronnego kontaktu z realną ścieżką sił (po uzyskaniu brakujących danych); do tego czasu pogłębiać tylko warunkowe granice analityczne i walidację ich numerów.
 
+
+## Kontynuacja 2026-11-02 — P45: tańsza para 12 cali
+
+Przeprowadzono 12870 punktów w liniowym modelu źródłowym; 13 układów (w tym osobne 2 kanały), 5 objętości, 11 częstotliwości, 3 limity łącznego Pcu, 2 skoki, 3 stany Re. Dane producentów dziedziczone z puli 24, ceny odrębne i datowane; brak badań pomiarowych THD i termiki. Odróżniać prawdziwe dwa niezależne subwoofery od pary promieniującej z jednego pudła. Raport 114 oraz `skrypty/p45_dwa_tanie_12_robustnosc.js` i JSON/CSV. Limit głębokości całej konstrukcji 500 mm oraz bramka CNC niezmienione.

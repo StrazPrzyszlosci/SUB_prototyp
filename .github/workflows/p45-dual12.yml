@@ -1,0 +1,24 @@
+name: P45 dual 12in sensitivity and reproducibility
+on:
+  push:
+    paths:
+      - 'skrypty/p45_dwa_tanie_12_robustnosc.js'
+      - 'dane/konfiguracje/p45_dual12_20261102.json'
+      - 'wyniki/p45_dual12_*'
+      - '.github/workflows/p45-dual12.yml'
+  pull_request:
+    paths:
+      - 'skrypty/p45_dwa_tanie_12_robustnosc.js'
+      - 'dane/konfiguracje/p45_dual12_20261102.json'
+      - 'wyniki/p45_dual12_*'
+      - '.github/workflows/p45-dual12.yml'
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Reproduce published P45 aggregated data
+        run: node skrypty/p45_dwa_tanie_12_robustnosc.js --check

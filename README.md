@@ -9,7 +9,7 @@
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**39 modeli głośników · 40 konfiguracji podstawowych · 19 producentów · 113 raportów · Python/JavaScript**
+**39 modeli głośników · 40 konfiguracji podstawowych · 19 producentów · 114 raportów · Python/JavaScript**
 
 Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie. Aktualna pula obejmuje także dwa przypadki wstrzymane w nowym audycie źródeł (EMS i SUPRAVOX), a ponadto nie każda konfiguracja ma jeszcze pełny komplet badań nieliniowych i termicznych.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
@@ -407,6 +407,17 @@ nie oznacza tego samego zapasu poziomu ani zweryfikowanej geometrii.
 · [3168 wyników CSV](wyniki/p43_wspolne_scenariusze_3168_20261102.csv)
 · [odtwarzalny skrypt](skrypty/p43_dwa_glosniki_i_isobaric.js).
 
+
+
+### P45 — czy para tanich 12″ pozostaje opłacalna przy realnych ograniczeniach napędu?
+
+**Kontynuacja P43 (02.11.2026).** Dodatkowa kampania zawiera **12 870** obliczeń modelu liniowego dla 13 układów, pięciu objętości (75–150 l), 11 częstotliwości, trzech budżetów strat miedzi, dwóch progów katalogowego wychylenia i trzech umownych mnożników oporu cewki. Rozróżniono szeregowe, równoległe i dwa niezależne kanały zasilania; izobaryczny pozostał próbą kontrolną.
+
+Przy **120 l, 20 Hz, 50 W łącznych strat w cewkach, 40 V RMS / 12 A RMS i pełnym katalogowym Xmax** para STX W.32.500.8.MC_v2 w połączeniu równoległym uzyskała modelowe **97.30 dB**, a pojedynczy Dayton RSS390HF-4 **99.62 dB**. Różnica wynosi **2.31 dB**. W ostrożniejszym wariancie 0,7× katalogowego Xmax i przy Re×1,4 para STX osiągnęła **94.83 dB** — to nie jest wyznaczony próg niskiego THD ani temperatura cewki.
+
+Koszt samych przetworników: **430 zł za dwa STX** wobec **1613,33 zł za jeden Dayton** (ceny ofertowe, bez reszty urządzenia). Para STX ma nominalnie **4 Ω równolegle** lub **16 Ω szeregowo**; wersja z oddzielnymi wzmacniaczami wymaga dwóch kanałów. Wstępny układ dwóch kołnierzy Ø332 mm na froncie 1020 × 500 mm mieści się w rzucie 2D, ale nie zweryfikowano kolizji wręg, dwóch koszy, połączeń z frontem i montażu.
+
+**Wniosek:** to mocny wariant ekonomiczny, lecz nie ma podstaw do tezy o równoważnych zniekształceniach, niezawodności czy wydajności dwóch osobnych subwooferów w pokoju. [Raport 114](raporty/114_P45_dwa_tanie_12_odpornosc_naped_koszt.md) · [715 porównywalnych punktów CSV](wyniki/p45_dual12_bazowe_715.csv) · [pełne agregaty kampanii](wyniki/p45_dual12_odpornosc_20261102.json) · [kod odtwarzania](skrypty/p45_dwa_tanie_12_robustnosc.js).
 
 **Rozszerzenie warunków badawczych (31.10.2026):** Dayton RSS390HF-4 jest
 **wstępnym faworytem, a nie ostatecznym wyborem**. Na tamtym etapie pula liczyła
