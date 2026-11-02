@@ -1485,3 +1485,29 @@ Bez pomiarów THD/IMD, BL(x), Cms(x), Le(x,f), Re(T), bez fizycznego
 prototypu i pełnego mechanicznego modelu pod dwa kosze: brak decyzji
 o CNC. Raport: raporty/B12-03_rzeczywiste_filtry_IIR_i_rozrzut_2x12.md.
 Regresja: node skrypty/b12_03_biquad_i_sprzezone_12.js.
+
+
+## B12-04 2026-11-02 — ochrona i termika wyłącznie jako analiza warunkowa
+
+Wykonano 26 symulacji czasowych po 8 s (C02 Dayton 15″ i normalna para
+C05 2× STX 12″ 4 Ω) z 5 filtrami IIR B12-03 (96 kHz), 120 l,
+elektromechanicznym RK2 9600 Hz, dynamicznym Re(T) z alfa=0.0039/K
+i hipotetycznymi Rth/Cth na kosz: 1.2 K/W/35 J/K lub 2.4 K/W/15 J/K.
+Dodatkowo dwie próby z dwukrotnie mniejszym krokiem mechanicznym.
+Porównanie: brak limitera, −6 dB static oraz testowy feedback 1ms
+attack/180ms release, prognoza x na 6ms. Testowy feedback czyta
+doskonałe x/v, których planowany DSP nie zna, i mimo to nie
+utrzymuje 70% Xmax. Nie przenosić go do sprzętu!
+
+Przy 120 l, wysokim syntetycznym sygnale 20/25/40/63 Hz,
+termice „hot” i wspólnej kalibracji osobnego 40Hz/103dB modelu
+Dayton max X/Xmax 1.16389 bez, 0.58737 static, 0.82209 feedback;
+STX 1.91417, 0.95895, 0.98969. Wyniki ponad Xmax
+ekstrapolują liniową mechanikę, więc nie są przewidywaniem realnego
+maksimum. Hypotetyczne temperatury nie są kwalifikacją cieplną.
+Sprawdzono bilans pełnej energii i zgodność X z krokiem 19200Hz
+(zmiana <0.01% testowanych szczytów). Brak modelu prądowych
+zabezpieczeń końcówki, rzeczywistych BL(x), Cms(x), Le(x,f),
+THD/IMD i zatwierdzonego limitera, brak CNC i wyboru przetwornika.
+Raport `raporty/B12-04_dynamika_impulsy_ochrona_termika.md`,
+skrypt `skrypty/b12_04_dynamika_limity_i_termika.js`.

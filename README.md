@@ -479,6 +479,33 @@ termika i kolizje dwóch koszy z wręgami pozostają **niezweryfikowane**.
 · [filtry, współczynniki i 336 scenariuszy JSON](wyniki/b12_03_iir_i_rozrzut_20261102.json)
 · [kod kontroli i odtwarzania](skrypty/b12_03_biquad_i_sprzezone_12.js).
 
+### B12-04 — co robią impulsy, twardy clipping i ograniczniki?
+
+Zastąpiliśmy jednoczęstotliwościowe szczyty i obwiednie B12-03
+**symulacją czasową ruchu i prądu**: 26 przypadków po 8 sekund
+oraz dwie kontrole zagęszczenia kroku całkowania. Model zawiera
+dotychczasowe 5 sekcji IIR, wspólne ciśnienie w 120 l, 2 modele
+hipotetycznej termiki cewki i jawne, syntetyczne sygnały
+wielotonowe oraz paczki impulsowe.
+
+![B12-04: przekroczenia wychylenia przy różnych ogranicznikach](wyniki/b12_04_wychylenie_i_ograniczniki.svg)
+
+**Wykryto zawodność uproszczonej ochrony**: w teście sustained,
+przy arbitralnym celu 70% katalogowego Xmax, obliczony
+szczyt dla dwóch STX wyniósł 191% Xmax bez limitera,
+96% Xmax ze stałą redukcją −6 dB oraz 99% Xmax z
+testowym regulatorem mającym nawet niedostępną w praktyce
+idealną znajomość x/v. Dayton odpowiednio: 116%, 59%, 82%.
+Wyniki ponad Xmax to ekstrapolacja liniowa poza
+wiarygodną dziedzinę modelu, a wartości temperatury
+zależą od **niezmierzonych scenariuszy Rth/Cth**.
+Nie są to pomiary, zweryfikowane THD ani dowód bezpieczeństwa.
+
+[Raport B12-04 — pełna metodologia i wnioski](raporty/B12-04_dynamika_impulsy_ochrona_termika.md)
+· [26+2 scenariusze JSON](wyniki/b12_04_dynamika_termika_20261102.json)
+· [odtwarzalny model i bilans energii](skrypty/b12_04_dynamika_limity_i_termika.js).
+
+
 
 
 
