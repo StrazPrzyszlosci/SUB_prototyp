@@ -1438,3 +1438,23 @@ Raport `raporty/B12-01_tanie_dwie_12_przeciw_Daytonowi_20261102.md`;
 kod i kontrola plików `skrypty/b12_01_dwie_12_ekonomiczne.js`, pełne CSV/JSON w `wyniki/b12_01_*`.
 Istniejący raport P45 (`114_P45_dwa_tanie_12_odpornosc_naped_koszt.md`)
 pozostaje niezmieniony; B12-01 bada gęściej częstotliwości i trzeci model kontrolny.
+
+
+## B12-02 (2026-11-02): sześciotonowa kontrola po P45 i B12-01
+
+Dwa warianty: C02 Dayton 15″ i C05 2× STX 12″ połączone równolegle 4 Ω
+w jednej skrzyni. 144 nominalne scenariusze sześciu jednoczesnych tonów:
+20/25/31,5/40/63/80 Hz, Vb=100/120/150 l, trzy docelowe widma,
+dwie fazy testowe, Xpeak=0,7/1,0 katalogu i hipotetyczne Pcu=50/100 W.
+Dodatkowo 16 kombinacji Fs/Vas/Qes/Re na 16 testów = 256 analiz
+odporności tego samego idealnego, nieprzestrojonego korektora.
+W 120 l / balanced / ciśnienie w zgodnej fazie / Pcu 50 W / 1,0 Xmax:
+limit skoku daje 94,253507 dB składowej 40 Hz C02 oraz 90,297026 dB C05.
+Korektor idealny w sześciu zespolonych punktach nie jest fizycznym filtrem
+miniDSP ani procedurą poprawnego ustawienia limitera. Wartości są
+przesiewowymi pułapami liniowymi w 2π/1 m; nie podawać ich jako sumy SPL,
+THD, pomiarów w pokoju, progów termicznych ani bezpieczeństwa.
+Stan 40 modeli / 41 podstawowych wariantów po C32; starych danych
+i raportów nie nadpisywać. Weryfikacja programowa GitHub Actions:
+`skrypty/b12_02_multitone_eq_6tonow.js`; raport:
+`raporty/B12-02_szesciotonowy_test_DSP_i_odpornosc.md`.
