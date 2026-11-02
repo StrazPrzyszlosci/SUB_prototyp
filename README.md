@@ -9,7 +9,7 @@
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**39 modeli głośników · 40 konfiguracji podstawowych · 19 producentów · 114 raportów · Python/JavaScript**
+**40 modeli głośników · 41 konfiguracji podstawowych · 19 producentów · 114 raportów · Python/JavaScript**
 
 Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie. Aktualna pula obejmuje także dwa przypadki wstrzymane w nowym audycie źródeł (EMS i SUPRAVOX), a ponadto nie każda konfiguracja ma jeszcze pełny komplet badań nieliniowych i termicznych.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
@@ -429,6 +429,32 @@ frontu wymagają przeprojektowania. To nie są pomiary THD ani SPL w pokoju.
 [Raport B12-01](raporty/B12-01_tanie_dwie_12_przeciw_Daytonowi_20261102.md)
 · [3584 scenariusze CSV](wyniki/b12_01_wspolne_scenariusze_3584.csv)
 · [kod i test reprodukcji](skrypty/b12_01_dwie_12_ekonomiczne.js).
+
+### B12-02 — sześć częstotliwości jednocześnie: ile naprawdę wymaga korekcja?
+
+Dotychczasowe pułapy SPL liczone dla **osobnych sinusów** nie pokazują, jak
+sumuje się chwilowy skok membrany, gdy muzyczny sygnał zawiera kilka składowych.
+Nowy etap B12-02 bada jednoczesne **20/25/31,5/40/63/80 Hz** w 100/120/150 l,
+trzy zadane widma, dwa przebiegi fazowe, 50/100 W hipotetycznych strat łącznych
+oraz 70%/100% Xmax. Zrealizowano **144 nominalne scenariusze i 256 testów
+hipotetycznej zmienności parametrów** z zachowaniem pierwotnych nastaw korekcji.
+
+![B12-02: sześć jednoczesnych składowych a wymagana korekcja](wyniki/b12_02_koszt_dsp_40hz.svg)
+
+Przy 120 l i sześciu tonach w wariancie o jednakowym ciśnieniu 20–40 Hz
+obliczony pułap *samej składowej 40 Hz* to **94,25 dB dla Daytona 15″**
+oraz **90,30 dB dla dwóch tanich STX 12″**. Ogranicza go wychylenie;
+różnica **3,96 dB** wynika z katalogowego `Sd·Xmax`. Mocne ograniczenie
+20 Hz może podnieść te liczby, ale kosztem najniższego basu.
+To **idealne wyrównanie sześciu punktów amplitudowo i fazowo**, bez
+rzeczywiście obliczonego filtra miniDSP. Nie są to pomiary ani wyniki THD.
+Bramka CNC i weryfikacja ochrony DSP pozostają otwarte.
+
+[Raport B12-02 i ograniczenia](raporty/B12-02_szesciotonowy_test_DSP_i_odpornosc.md)
+· [pełne wyniki JSON](wyniki/b12_02_multitone_20261102.json)
+· [porównanie CSV](wyniki/b12_02_porownanie_120l.csv)
+· [skrypt odtwarzający obliczenia](skrypty/b12_02_multitone_eq_6tonow.js).
+
 
 
 

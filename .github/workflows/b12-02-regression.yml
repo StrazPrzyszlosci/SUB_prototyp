@@ -1,0 +1,23 @@
+name: B12-02 six-tone regression
+on:
+  pull_request:
+    paths:
+      - "skrypty/b12_02_multitone_eq_6tonow.js"
+      - "wyniki/b12_02_*"
+      - ".github/workflows/b12-02-regression.yml"
+      - "dane/przetworniki/pula_rozszerzona.json"
+  push:
+    paths:
+      - "skrypty/b12_02_multitone_eq_6tonow.js"
+      - "wyniki/b12_02_*"
+      - ".github/workflows/b12-02-regression.yml"
+      - "dane/przetworniki/pula_rozszerzona.json"
+jobs:
+  six-tone-check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check six-tone results and deterministic corner sensitivity
+        run: node skrypty/b12_02_multitone_eq_6tonow.js
