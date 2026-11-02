@@ -1,0 +1,109 @@
+{
+  "id": "B12-14",
+  "date": "2026-11-02",
+  "base_main": "69c64ab6617dda3ad2d94f4ec55cc027ca47c2dd",
+  "evidence_type": "NUMERICAL HYPOTHETICAL, no measurements, NOT CNC",
+  "source": "skrypty/b12_14_kontakt_docisk_tarcie.py",
+  "generated_full_results": "wyniki/b12_14_contact_full.json",
+  "source_nominal": {
+    "driver": "Dayton RSS390HF-4",
+    "mass_kg": 13.6077711,
+    "bolt_circle_radius_mm": 184
+  },
+  "scenarios": {
+    "bolt_axial_stiffness_N_per_mm": 200,
+    "contact_patch_stiffness_N_per_mm": 500,
+    "preload_N_per_active_bolt": [
+      0,
+      100,
+      300,
+      600
+    ],
+    "stiffness_ratio_rib_to_interrib": [
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "acceleration_g": [
+      1,
+      3,
+      5,
+      10
+    ],
+    "moment_arm_mm": [
+      80,
+      120,
+      160
+    ],
+    "load_direction": [
+      "x",
+      "z"
+    ],
+    "removed_bolt": [
+      null,
+      0,
+      1
+    ],
+    "friction_mu": [
+      0.15,
+      0.3,
+      0.5,
+      0.7
+    ]
+  },
+  "calculations": {
+    "normal_cases": 1152,
+    "coulomb_checks": 4608,
+    "equilibrium_all_pass": true,
+    "independently_checked_scipy_root_cases": 100,
+    "max_newton_iterations": 4,
+    "contact_open_cases": 886,
+    "slack_bolt_cases": 876,
+    "normal_example_5g_120mm_ratio1": {
+      "force_N": 667.2332,
+      "by_preload_N": {
+        "0": {
+          "contact_sum_N": 282.459,
+          "contact_open_points": 5,
+          "bolt_max_total_N": 94.3084,
+          "mu_required": 2.3622
+        },
+        "100": {
+          "contact_sum_N": 800,
+          "contact_open_points": 0,
+          "bolt_max_total_N": 131.0823,
+          "mu_required": 0.834
+        },
+        "300": {
+          "contact_sum_N": 2400,
+          "contact_open_points": 0,
+          "bolt_max_total_N": 331.0823,
+          "mu_required": 0.278
+        },
+        "600": {
+          "contact_sum_N": 4800,
+          "contact_open_points": 0,
+          "bolt_max_total_N": 631.0823,
+          "mu_required": 0.139
+        }
+      }
+    },
+    "pass_counts_at_mu": {
+      "0.15": 240,
+      "0.3": 480,
+      "0.5": 576,
+      "0.7": 720
+    }
+  },
+  "model": "RIGID flange, eight collocated two-way preloaded spring pairs (tension-only bolt, compression-only contact); global Coulomb capacity check is necessary, not sufficient for local stick.",
+  "caveats": [
+    "Preload, coefficient of friction and stiffnesses are hypothetical.",
+    "No measured screw tightening torque, adhesion, insert strength, actual MDF or continuous contact pressure.",
+    "The postulated 5g and 120 mm are not standards or known loads.",
+    "A passed Coulomb sum bound does NOT certify no slip, torque or fastener strength.",
+    "Model cannot qualify local pads or frame A, which have not been meshed and physically tested.",
+    "No geometry verified at all terminals/ribs, and no CNC authorization."
+  ],
+  "next": "B12-15 measured contact patches and actual preload/relaxation, screw/insert/wood tests; then distributed contact FE model and load paths."
+}
