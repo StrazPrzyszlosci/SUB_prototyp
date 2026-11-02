@@ -1,0 +1,21 @@
+name: B12-08 audit prototype geometry and design gates
+on:
+  pull_request:
+    paths:
+      - "skrypty/b12_08_audyt_rysunku_pierwszego_prototypu.js"
+      - "wyniki/b12_08_*"
+      - ".github/workflows/b12-08-regression.yml"
+  push:
+    paths:
+      - "skrypty/b12_08_audyt_rysunku_pierwszego_prototypu.js"
+      - "wyniki/b12_08_*"
+      - ".github/workflows/b12-08-regression.yml"
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Recheck 2232 annulus screens, 160 depth stacks and 81 sealed alignments
+        run: node skrypty/b12_08_audyt_rysunku_pierwszego_prototypu.js
