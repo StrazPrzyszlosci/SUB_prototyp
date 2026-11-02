@@ -1,4 +1,4 @@
-# Raport 112 — P44B: warunkowa nierówność tarcia i ryzyko poślizgu
+# Raport 113 — P44B: warunkowa nierówność tarcia i ryzyko poślizgu
 
 **Data:** 1 listopada 2026 r. · **Status:** przesiewowe obliczenia 16 200 nierówności Coulomba dla przypadków P44A · **CNC: NIE**.
 

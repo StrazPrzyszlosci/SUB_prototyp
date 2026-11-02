@@ -1,4 +1,4 @@
-# Raport 109 — P43A: trasy omijające wycięcie przy ośmiu mocowaniach
+# Raport 110 — P43A: trasy omijające wycięcie przy ośmiu mocowaniach
 
 **Data:** 2026-11-01. **Rodzaj dowodu:** geometryczne obliczenie analityczne 2D na hipotetycznych podparciach P42. **Nie jest to projekt złącza ani CAD do CNC.**
 

@@ -32,6 +32,8 @@ O = otwarte. Akceptacja briefu nie oznacza akceptacji dowolnych liczb modelu.
 | W25 | Końcowy PDF po badaniach możliwych bez sprzętu | U | [Macierz 30 pakietów](PROGRAM_30_BADAN.md); nie zastępować braków wynikami fikcyjnymi | P30 |
 | W26 | Ustawienie pionowo lub poziomo w zabudowie | U-026 | Sprawdzić dostęp,mocowanie,podparcie i prześwity w obu orientacjach | P18–P21/P27 |
 | W27 | Głośnik może być przesunięty;preferowany środek jednej z połów frontu | U-026,preferencja | Położenie uzgodnić z koszem,wzmocnieniami i regulacją;nie zakładać centralnego otworu | P18/P21/P29 |
+| W28 | Rozszerzenie badań: pojedynczy duży głośnik vs 2 × 10″ lub 2 × 12″ w jednej zamkniętej obudowie, także para izobaryczna | U-2026-11-02, badanie alternatyw | Raport 109, 3168 scenariuszy i audyt 60 l izobarycznie / 120 l pojedynczo; nie zastępuje jeszcze W13/W24 w finalnej konstrukcji | P43/P29/P18–P21 |
+| W29 | Analiza ceny dwóch koszy w odniesieniu do Daytona oraz pełnego kosztu dwóch docelowych subwooferów | U-2026-11-02, kryterium dodatkowe | Ceny jednostkowe z datą i URL; oddzielnie BOM wzmacniacza, DSP, frontów, sprzęgającej komory izobarycznej i montażu; bez automatycznego uznania najtańszego kosza | P43/P29 |
 
 ## Specyfikacja odbiorowa do uzupełnienia
 

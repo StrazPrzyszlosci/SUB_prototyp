@@ -1,4 +1,4 @@
-# Raport 111 — P44A: jednostronny kontakt i utrata docisku podpór
+# Raport 112 — P44A: jednostronny kontakt i utrata docisku podpór
 
 **Data:** 1 listopada 2026 r. · **Status:** obliczenia numeryczne, model koncepcyjny 3DOF · **CNC: NIE**.
 

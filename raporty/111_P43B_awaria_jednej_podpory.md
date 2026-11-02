@@ -1,4 +1,4 @@
-# Raport 110 — P43B: utrata jednej z czterech podpór i granice docisku
+# Raport 111 — P43B: utrata jednej z czterech podpór i granice docisku
 
 **Data:** 2026-11-01. **Rodzaj dowodu:** model 3DOF sztywnego interfejsu na liniowych dwustronnych sprężynach normalnych; kontynuacja P42A. **Nie jest to MES, ocena nośności ani bezpieczny limit obciążeń.**
 

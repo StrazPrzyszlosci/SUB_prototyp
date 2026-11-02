@@ -125,9 +125,14 @@ bieżący zakres sprawdzaj w [programie 30 pakietów](../PROGRAM_30_BADAN.md).
 - [Raport 106 — P42A: 1458 modeli z czterema odległymi podporami, kontrola uzupełniająca P41](106_P42A_podpory_1458.md).
 - [Raport 107 — P42B: 162 testy uproszczonych obwiedni 3D nośników i wkładów](107_P42B_obwiednie_3D_dwoch_wariantow.md).
 - [Raport 108 — P42C: 48 kontroli prostych łączników względem wycięcia kosza](108_P42C_laczniki_i_koncepcje_3D.md).
+- [Raport 109 — P43: SB WO34HC/SB42, dwa głośniki 10/12″ i układ izobaryczny; 3168 scenariuszy](109_P43_nowe_SB_podwojne_10_12_i_izobaryczny.md).
 
-- [Raport 109 — P43A: trasy śrub do podpór z obejściem wycięcia, 576 zestawień i 144 optymalizacje geometrii 2D](109_P43A_trasy_omijajace_wyciecie.md).
-- [Raport 110 — P43B: 1620 scenariuszy utraty jednej z czterech podpór i docisk matematyczny](110_P43B_awaria_jednej_podpory.md).
 
-- [Raport 111 — P44A: 5400 przypadków jednostronnego kontaktu i docisku](111_P44A_jednostronny_kontakt_5400.md).
-- [Raport 112 — P44B: 16 200 kontroli warunkowego tarcia](112_P44B_tarcie_i_wrazliwosc_16200.md).
+## Równoległa linia konstrukcyjna P43-K/P44-K (01.11.2026)
+
+Historyczne identyfikatory P43/P44 w kodzie konstrukcyjnym są odrębne od akustycznego P43 (dwa głośniki / izobaryczny). Numery raportów przy scaleniu dostosowano dla zachowania unikalności.
+
+- [Raport 110 — P43-K/A: 576 tras 2D i 144 wybrane ścieżki](110_P43A_trasy_omijajace_wyciecie.md).
+- [Raport 111 — P43-K/B: 1620 modeli utraty jednej podpory](111_P43B_awaria_jednej_podpory.md).
+- [Raport 112 — P44-K/A: 5400 modeli kontaktu jednostronnego](112_P44A_jednostronny_kontakt_5400.md).
+- [Raport 113 — P44-K/B: 16 200 warunków tarcia](113_P44B_tarcie_i_wrazliwosc_16200.md).

@@ -1,0 +1,2786 @@
+{
+  "version": "P43",
+  "date": "2026-11-02",
+  "source": "dane/przetworniki/rozszerzenie_FB_20261102_i_pary.json",
+  "source_base": "dane/przetworniki/pula_rozszerzona.json",
+  "status": "screening_0D_not_verified",
+  "configurations": 44,
+  "scenarios": 3168,
+  "alignment_scenarios": 176,
+  "model": {
+    "rho_kg_m3": 1.2041,
+    "c_m_s": 343,
+    "pressure_ref_pa": 0.00002,
+    "field": "2pi_1m_ideal_monopole",
+    "pair": "two identical actively powered drivers in one physical cabinet, coherent air motion",
+    "normal_pair": "two outward radiators; effective Sd=2Sd, Vas=2Vas",
+    "isobaric": "ideal zero-volume tight mechanical coupling; radiating Sd=Sd; Vas=Vas/2; same one-way Xmax",
+    "electric": "series and parallel on one power channel, total V/I/Pcu caps",
+    "limitations": [
+      "one sinus at a time, no DSP transfer to target, no THD, no overheating model, no leakage, no cavity modes, no real impedance validation",
+      "no cabinet structural redesign or room modal optimization",
+      "hypothetical copper budgets 50/100 W not component ratings",
+      "two motors in one sub not two separately positioned subwoofers"
+    ]
+  },
+  "benchmark_price_pln": 1613.33,
+  "price_records": [
+    {
+      "id": "C02",
+      "unit_pln": 1613.33,
+      "url": "https://loudspeakershop.eu/glosnik-dayton-audio-rss390hf-4-15-reference-sub-p-7660.html",
+      "availability": "website contradictory stock notices"
+    },
+    {
+      "id": "C30",
+      "unit_pln": 120,
+      "url": "https://stx.pl/w-25-200-8-mc.html",
+      "availability": "manufacturer page currently listed"
+    },
+    {
+      "id": "C31",
+      "unit_pln": 886.4,
+      "url": "https://www.poweraudio.pl/subniskotonowe-c-8_177_200.html",
+      "availability": "current listing, live inventory unverified"
+    },
+    {
+      "id": "C05",
+      "unit_pln": 215,
+      "url": "https://stx.pl/w-32-500-8-mc.html",
+      "availability": "manufacturer page currently listed"
+    },
+    {
+      "id": "C06",
+      "unit_pln": 990,
+      "url": "https://stx.pl/manufacturer/stx/w-32-800-8-fcx.html",
+      "availability": "manufacturer page currently listed"
+    },
+    {
+      "id": "C04",
+      "unit_pln": 1196.58,
+      "url": "https://zap-audio.pl/glosnik-sb-acoustics-sb34swpl76-4-p-507.html",
+      "availability": "currently shown unavailable"
+    },
+    {
+      "id": "C01",
+      "unit_pln": 1298.49,
+      "url": "https://loudspeakershop.eu/glosnik-dayton-audio-rss315hf-4-12-reference-sub-p-7658.html",
+      "availability": "currently shown order/no stock"
+    },
+    {
+      "id": "C12",
+      "unit_pln": 2532.76,
+      "url": "https://blackdotaudio.eu/seas-extreme--woofer--xm004-04--%28-l26ro4y-%29%2C266%2C10113.html",
+      "availability": "currently shown unavailable"
+    }
+  ],
+  "volumes_l": [
+    80,
+    100,
+    120,
+    150
+  ],
+  "frequencies_hz": [
+    20,
+    25,
+    31.5,
+    40,
+    63,
+    80
+  ],
+  "selected_120l_50w_20_40_80": [
+    {
+      "id": "C02",
+      "topology": "single",
+      "connection": "single",
+      "nominal_pair_ohm": 4,
+      "vd_catalog_l": 1.1614,
+      "spl_db": [
+        99.6151,
+        112.4623,
+        105.5458
+      ],
+      "lim": [
+        "Pcu_assumed",
+        "Pcu_assumed",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C01",
+      "topology": "single",
+      "connection": "single",
+      "nominal_pair_ohm": 4,
+      "vd_catalog_l": 0.736,
+      "spl_db": [
+        97.925,
+        109.4531,
+        104.6823
+      ],
+      "lim": [
+        "Xpeak",
+        "V_rms",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C27",
+      "topology": "single",
+      "connection": "single",
+      "nominal_pair_ohm": 4,
+      "vd_catalog_l": 0.4856,
+      "spl_db": [
+        94.3118,
+        106.353,
+        109.528
+      ],
+      "lim": [
+        "Xpeak",
+        "Xpeak",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C28",
+      "topology": "single",
+      "connection": "single",
+      "nominal_pair_ohm": 8,
+      "vd_catalog_l": 0.4856,
+      "spl_db": [
+        94.3118,
+        106.353,
+        109.0246
+      ],
+      "lim": [
+        "Xpeak",
+        "Xpeak",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C29",
+      "topology": "single",
+      "connection": "single",
+      "nominal_pair_ohm": 6,
+      "vd_catalog_l": 0.9775,
+      "spl_db": [
+        98.7428,
+        112.4307,
+        111.1587
+      ],
+      "lim": [
+        "Pcu_assumed",
+        "Xpeak",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C30",
+      "topology": "single",
+      "connection": "single",
+      "nominal_pair_ohm": 8,
+      "vd_catalog_l": 0.1553,
+      "spl_db": [
+        84.4078,
+        96.449,
+        108.1872
+      ],
+      "lim": [
+        "Xpeak",
+        "Xpeak",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C31",
+      "topology": "single",
+      "connection": "single",
+      "nominal_pair_ohm": 6,
+      "vd_catalog_l": 0.351,
+      "spl_db": [
+        91.4933,
+        103.5345,
+        102.233
+      ],
+      "lim": [
+        "Xpeak",
+        "Xpeak",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C05",
+      "topology": "single",
+      "connection": "single",
+      "nominal_pair_ohm": 8,
+      "vd_catalog_l": 0.3683,
+      "spl_db": [
+        91.91,
+        103.9512,
+        110.942
+      ],
+      "lim": [
+        "Xpeak",
+        "Xpeak",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C06",
+      "topology": "single",
+      "connection": "single",
+      "nominal_pair_ohm": 8,
+      "vd_catalog_l": 0.7365,
+      "spl_db": [
+        97.9306,
+        107.7829,
+        105.2341
+      ],
+      "lim": [
+        "Xpeak",
+        "V_rms",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C04",
+      "topology": "single",
+      "connection": "single",
+      "nominal_pair_ohm": 4,
+      "vd_catalog_l": 0.687,
+      "spl_db": [
+        97.3263,
+        105.2341,
+        102.0534
+      ],
+      "lim": [
+        "Xpeak",
+        "Pcu_assumed",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C12",
+      "topology": "single",
+      "connection": "single",
+      "nominal_pair_ohm": 4,
+      "vd_catalog_l": 0.513,
+      "spl_db": [
+        94.7895,
+        104.9803,
+        104.1761
+      ],
+      "lim": [
+        "Xpeak",
+        "V_rms",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C18",
+      "topology": "single",
+      "connection": "single",
+      "nominal_pair_ohm": 4,
+      "vd_catalog_l": 0.531,
+      "spl_db": [
+        95.089,
+        107.1302,
+        105.5645
+      ],
+      "lim": [
+        "Xpeak",
+        "Xpeak",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C30",
+      "topology": "normal",
+      "connection": "series",
+      "nominal_pair_ohm": 16,
+      "vd_catalog_l": 0.3105,
+      "spl_db": [
+        90.4284,
+        102.4696,
+        112.3256
+      ],
+      "lim": [
+        "Xpeak",
+        "Xpeak",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C30",
+      "topology": "normal",
+      "connection": "parallel",
+      "nominal_pair_ohm": 4,
+      "vd_catalog_l": 0.3105,
+      "spl_db": [
+        90.4284,
+        102.4696,
+        112.3256
+      ],
+      "lim": [
+        "Xpeak",
+        "Xpeak",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C30",
+      "topology": "isobaric",
+      "connection": "series",
+      "nominal_pair_ohm": 16,
+      "vd_catalog_l": 0.1553,
+      "spl_db": [
+        84.4078,
+        96.449,
+        104.6625
+      ],
+      "lim": [
+        "Xpeak",
+        "Xpeak",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C30",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "nominal_pair_ohm": 4,
+      "vd_catalog_l": 0.1553,
+      "spl_db": [
+        84.4078,
+        96.449,
+        104.6625
+      ],
+      "lim": [
+        "Xpeak",
+        "Xpeak",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C31",
+      "topology": "normal",
+      "connection": "series",
+      "nominal_pair_ohm": 12,
+      "vd_catalog_l": 0.702,
+      "spl_db": [
+        97.5139,
+        105.1888,
+        105.579
+      ],
+      "lim": [
+        "Xpeak",
+        "V_rms",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C31",
+      "topology": "normal",
+      "connection": "parallel",
+      "nominal_pair_ohm": 3,
+      "vd_catalog_l": 0.702,
+      "spl_db": [
+        97.5139,
+        109.5551,
+        105.579
+      ],
+      "lim": [
+        "Xpeak",
+        "Xpeak",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C31",
+      "topology": "isobaric",
+      "connection": "series",
+      "nominal_pair_ohm": 12,
+      "vd_catalog_l": 0.351,
+      "spl_db": [
+        91.4933,
+        98.9755,
+        99.0596
+      ],
+      "lim": [
+        "Xpeak",
+        "V_rms",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C31",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "nominal_pair_ohm": 3,
+      "vd_catalog_l": 0.351,
+      "spl_db": [
+        91.4933,
+        101.5739,
+        99.0596
+      ],
+      "lim": [
+        "Xpeak",
+        "Pcu_assumed",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C05",
+      "topology": "normal",
+      "connection": "series",
+      "nominal_pair_ohm": 16,
+      "vd_catalog_l": 0.7365,
+      "spl_db": [
+        97.3016,
+        108.8724,
+        114.4952
+      ],
+      "lim": [
+        "Pcu_assumed",
+        "V_rms",
+        "V_rms"
+      ]
+    },
+    {
+      "id": "C05",
+      "topology": "normal",
+      "connection": "parallel",
+      "nominal_pair_ohm": 4,
+      "vd_catalog_l": 0.7365,
+      "spl_db": [
+        97.3016,
+        109.9718,
+        115.791
+      ],
+      "lim": [
+        "Pcu_assumed",
+        "Xpeak",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C05",
+      "topology": "isobaric",
+      "connection": "series",
+      "nominal_pair_ohm": 16,
+      "vd_catalog_l": 0.3683,
+      "spl_db": [
+        91.91,
+        103.178,
+        107.1372
+      ],
+      "lim": [
+        "Xpeak",
+        "V_rms",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C05",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "nominal_pair_ohm": 4,
+      "vd_catalog_l": 0.3683,
+      "spl_db": [
+        91.91,
+        103.9512,
+        107.1372
+      ],
+      "lim": [
+        "Xpeak",
+        "Xpeak",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C06",
+      "topology": "normal",
+      "connection": "series",
+      "nominal_pair_ohm": 16,
+      "vd_catalog_l": 1.473,
+      "spl_db": [
+        97.9174,
+        107.8967,
+        109.015
+      ],
+      "lim": [
+        "Pcu_assumed",
+        "V_rms",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C06",
+      "topology": "normal",
+      "connection": "parallel",
+      "nominal_pair_ohm": 4,
+      "vd_catalog_l": 1.473,
+      "spl_db": [
+        97.9174,
+        113.9173,
+        109.015
+      ],
+      "lim": [
+        "Pcu_assumed",
+        "V_rms",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C06",
+      "topology": "isobaric",
+      "connection": "series",
+      "nominal_pair_ohm": 16,
+      "vd_catalog_l": 0.7365,
+      "spl_db": [
+        95.2843,
+        101.5934,
+        101.8624
+      ],
+      "lim": [
+        "V_rms",
+        "V_rms",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C06",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "nominal_pair_ohm": 4,
+      "vd_catalog_l": 0.7365,
+      "spl_db": [
+        97.9306,
+        106.2933,
+        101.8624
+      ],
+      "lim": [
+        "Xpeak",
+        "Pcu_assumed",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C04",
+      "topology": "normal",
+      "connection": "series",
+      "nominal_pair_ohm": 8,
+      "vd_catalog_l": 1.374,
+      "spl_db": [
+        100.2314,
+        107.824,
+        105.4266
+      ],
+      "lim": [
+        "V_rms",
+        "V_rms",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C04",
+      "topology": "normal",
+      "connection": "parallel",
+      "nominal_pair_ohm": 2,
+      "vd_catalog_l": 1.374,
+      "spl_db": [
+        103.3469,
+        110.5679,
+        105.4266
+      ],
+      "lim": [
+        "Xpeak",
+        "Pcu_assumed",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C04",
+      "topology": "isobaric",
+      "connection": "series",
+      "nominal_pair_ohm": 8,
+      "vd_catalog_l": 0.687,
+      "spl_db": [
+        95.1232,
+        101.2582,
+        98.8672
+      ],
+      "lim": [
+        "V_rms",
+        "Pcu_assumed",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C04",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "nominal_pair_ohm": 2,
+      "vd_catalog_l": 0.687,
+      "spl_db": [
+        97.3263,
+        101.2582,
+        98.8672
+      ],
+      "lim": [
+        "Xpeak",
+        "Pcu_assumed",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C01",
+      "topology": "normal",
+      "connection": "series",
+      "nominal_pair_ohm": 8,
+      "vd_catalog_l": 1.472,
+      "spl_db": [
+        98.1534,
+        109.5857,
+        108.367
+      ],
+      "lim": [
+        "Pcu_assumed",
+        "V_rms",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C01",
+      "topology": "normal",
+      "connection": "parallel",
+      "nominal_pair_ohm": 2,
+      "vd_catalog_l": 1.472,
+      "spl_db": [
+        98.1534,
+        115.6063,
+        108.367
+      ],
+      "lim": [
+        "Pcu_assumed",
+        "V_rms",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C01",
+      "topology": "isobaric",
+      "connection": "series",
+      "nominal_pair_ohm": 8,
+      "vd_catalog_l": 0.736,
+      "spl_db": [
+        97.0356,
+        103.2834,
+        101.3532
+      ],
+      "lim": [
+        "V_rms",
+        "V_rms",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C01",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "nominal_pair_ohm": 2,
+      "vd_catalog_l": 0.736,
+      "spl_db": [
+        97.925,
+        105.4795,
+        101.3532
+      ],
+      "lim": [
+        "Xpeak",
+        "Pcu_assumed",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C12",
+      "topology": "normal",
+      "connection": "series",
+      "nominal_pair_ohm": 8,
+      "vd_catalog_l": 1.026,
+      "spl_db": [
+        98.0602,
+        104.9806,
+        107.5463
+      ],
+      "lim": [
+        "V_rms",
+        "V_rms",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C12",
+      "topology": "normal",
+      "connection": "parallel",
+      "nominal_pair_ohm": 2,
+      "vd_catalog_l": 1.026,
+      "spl_db": [
+        100.5813,
+        111.0012,
+        107.5463
+      ],
+      "lim": [
+        "Pcu_assumed",
+        "V_rms",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C12",
+      "topology": "isobaric",
+      "connection": "series",
+      "nominal_pair_ohm": 8,
+      "vd_catalog_l": 0.513,
+      "spl_db": [
+        92.5357,
+        98.9478,
+        100.9912
+      ],
+      "lim": [
+        "V_rms",
+        "V_rms",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C12",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "nominal_pair_ohm": 2,
+      "vd_catalog_l": 0.513,
+      "spl_db": [
+        94.7895,
+        104.9684,
+        100.9912
+      ],
+      "lim": [
+        "Xpeak",
+        "V_rms",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C18",
+      "topology": "normal",
+      "connection": "series",
+      "nominal_pair_ohm": 8,
+      "vd_catalog_l": 1.062,
+      "spl_db": [
+        99.4971,
+        108.0766,
+        109.2254
+      ],
+      "lim": [
+        "Pcu_assumed",
+        "V_rms",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C18",
+      "topology": "normal",
+      "connection": "parallel",
+      "nominal_pair_ohm": 2,
+      "vd_catalog_l": 1.062,
+      "spl_db": [
+        99.4971,
+        113.1508,
+        109.2254
+      ],
+      "lim": [
+        "Pcu_assumed",
+        "Xpeak",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C18",
+      "topology": "isobaric",
+      "connection": "series",
+      "nominal_pair_ohm": 8,
+      "vd_catalog_l": 0.531,
+      "spl_db": [
+        95.089,
+        101.8083,
+        102.2462
+      ],
+      "lim": [
+        "Xpeak",
+        "V_rms",
+        "Pcu_assumed"
+      ]
+    },
+    {
+      "id": "C18",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "nominal_pair_ohm": 2,
+      "vd_catalog_l": 0.531,
+      "spl_db": [
+        95.089,
+        106.6861,
+        102.2462
+      ],
+      "lim": [
+        "Xpeak",
+        "Pcu_assumed",
+        "Pcu_assumed"
+      ]
+    }
+  ],
+  "alignments": [
+    {
+      "candidate_id": "C02",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 80,
+      "fc_hz": 37.2547,
+      "qtc": 0.8196,
+      "f3_Le0_hz": 32.8296,
+      "vd_catalog_l": 1.1614,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C02",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 100,
+      "fc_hz": 34.4439,
+      "qtc": 0.7577,
+      "f3_Le0_hz": 32.2958,
+      "vd_catalog_l": 1.1614,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C02",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 120,
+      "fc_hz": 32.4349,
+      "qtc": 0.7135,
+      "f3_Le0_hz": 32.1455,
+      "vd_catalog_l": 1.1614,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C02",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 150,
+      "fc_hz": 30.2931,
+      "qtc": 0.6664,
+      "f3_Le0_hz": 32.2553,
+      "vd_catalog_l": 1.1614,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C01",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 80,
+      "fc_hz": 34.6597,
+      "qtc": 0.5561,
+      "f3_Le0_hz": 46.3971,
+      "vd_catalog_l": 0.736,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C01",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 100,
+      "fc_hz": 32.8354,
+      "qtc": 0.5268,
+      "f3_Le0_hz": 47.3932,
+      "vd_catalog_l": 0.736,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C01",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 120,
+      "fc_hz": 31.5607,
+      "qtc": 0.5064,
+      "f3_Le0_hz": 48.17,
+      "vd_catalog_l": 0.736,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C01",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 150,
+      "fc_hz": 30.2322,
+      "qtc": 0.485,
+      "f3_Le0_hz": 49.0344,
+      "vd_catalog_l": 0.736,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C27",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 80,
+      "fc_hz": 39.5601,
+      "qtc": 0.4731,
+      "f3_Le0_hz": 66.4554,
+      "vd_catalog_l": 0.4856,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C27",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 100,
+      "fc_hz": 36.4966,
+      "qtc": 0.4365,
+      "f3_Le0_hz": 68.5919,
+      "vd_catalog_l": 0.4856,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C27",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 120,
+      "fc_hz": 34.3026,
+      "qtc": 0.4102,
+      "f3_Le0_hz": 70.1415,
+      "vd_catalog_l": 0.4856,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C27",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 150,
+      "fc_hz": 31.9583,
+      "qtc": 0.3822,
+      "f3_Le0_hz": 71.7744,
+      "vd_catalog_l": 0.4856,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C28",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 80,
+      "fc_hz": 40.2736,
+      "qtc": 0.5665,
+      "f3_Le0_hz": 52.5622,
+      "vd_catalog_l": 0.4856,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C28",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 100,
+      "fc_hz": 37.1372,
+      "qtc": 0.5224,
+      "f3_Le0_hz": 54.2454,
+      "vd_catalog_l": 0.4856,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C28",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 120,
+      "fc_hz": 34.8901,
+      "qtc": 0.4908,
+      "f3_Le0_hz": 55.6611,
+      "vd_catalog_l": 0.4856,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C28",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 150,
+      "fc_hz": 32.4879,
+      "qtc": 0.457,
+      "f3_Le0_hz": 57.2966,
+      "vd_catalog_l": 0.4856,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C29",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 80,
+      "fc_hz": 47.893,
+      "qtc": 0.7984,
+      "f3_Le0_hz": 43.0337,
+      "vd_catalog_l": 0.9775,
+      "nominal_pair_ohm": 6
+    },
+    {
+      "candidate_id": "C29",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 100,
+      "fc_hz": 43.62,
+      "qtc": 0.7272,
+      "f3_Le0_hz": 42.45,
+      "vd_catalog_l": 0.9775,
+      "nominal_pair_ohm": 6
+    },
+    {
+      "candidate_id": "C29",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 120,
+      "fc_hz": 40.5218,
+      "qtc": 0.6755,
+      "f3_Le0_hz": 42.5052,
+      "vd_catalog_l": 0.9775,
+      "nominal_pair_ohm": 6
+    },
+    {
+      "candidate_id": "C29",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 150,
+      "fc_hz": 37.1662,
+      "qtc": 0.6196,
+      "f3_Le0_hz": 43.1394,
+      "vd_catalog_l": 0.9775,
+      "nominal_pair_ohm": 6
+    },
+    {
+      "candidate_id": "C30",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 80,
+      "fc_hz": 41.4126,
+      "qtc": 0.5388,
+      "f3_Le0_hz": 57.9115,
+      "vd_catalog_l": 0.1553,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C30",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 100,
+      "fc_hz": 39.0999,
+      "qtc": 0.5087,
+      "f3_Le0_hz": 59.2809,
+      "vd_catalog_l": 0.1553,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C30",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 120,
+      "fc_hz": 37.4789,
+      "qtc": 0.4877,
+      "f3_Le0_hz": 60.3286,
+      "vd_catalog_l": 0.1553,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C30",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 150,
+      "fc_hz": 35.7845,
+      "qtc": 0.4656,
+      "f3_Le0_hz": 61.4779,
+      "vd_catalog_l": 0.1553,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C31",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 80,
+      "fc_hz": 27.0185,
+      "qtc": 0.3918,
+      "f3_Le0_hz": 58.7369,
+      "vd_catalog_l": 0.351,
+      "nominal_pair_ohm": 6
+    },
+    {
+      "candidate_id": "C31",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 100,
+      "fc_hz": 25.7682,
+      "qtc": 0.3737,
+      "f3_Le0_hz": 59.5961,
+      "vd_catalog_l": 0.351,
+      "nominal_pair_ohm": 6
+    },
+    {
+      "candidate_id": "C31",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 120,
+      "fc_hz": 24.8998,
+      "qtc": 0.3611,
+      "f3_Le0_hz": 60.1806,
+      "vd_catalog_l": 0.351,
+      "nominal_pair_ohm": 6
+    },
+    {
+      "candidate_id": "C31",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 150,
+      "fc_hz": 24,
+      "qtc": 0.348,
+      "f3_Le0_hz": 60.7733,
+      "vd_catalog_l": 0.351,
+      "nominal_pair_ohm": 6
+    },
+    {
+      "candidate_id": "C05",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 80,
+      "fc_hz": 44.8196,
+      "qtc": 0.4998,
+      "f3_Le0_hz": 69.6815,
+      "vd_catalog_l": 0.3683,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C05",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 100,
+      "fc_hz": 41.4999,
+      "qtc": 0.4628,
+      "f3_Le0_hz": 71.9107,
+      "vd_catalog_l": 0.3683,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C05",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 120,
+      "fc_hz": 39.1306,
+      "qtc": 0.4363,
+      "f3_Le0_hz": 73.5717,
+      "vd_catalog_l": 0.3683,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C05",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 150,
+      "fc_hz": 36.6082,
+      "qtc": 0.4082,
+      "f3_Le0_hz": 75.3527,
+      "vd_catalog_l": 0.3683,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C06",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 80,
+      "fc_hz": 35.5978,
+      "qtc": 0.5882,
+      "f3_Le0_hz": 44.1718,
+      "vd_catalog_l": 0.7365,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C06",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 100,
+      "fc_hz": 33.6,
+      "qtc": 0.5552,
+      "f3_Le0_hz": 45.0766,
+      "vd_catalog_l": 0.7365,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C06",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 120,
+      "fc_hz": 32.1994,
+      "qtc": 0.5321,
+      "f3_Le0_hz": 45.833,
+      "vd_catalog_l": 0.7365,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C06",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 150,
+      "fc_hz": 30.735,
+      "qtc": 0.5079,
+      "f3_Le0_hz": 46.7139,
+      "vd_catalog_l": 0.7365,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C04",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 80,
+      "fc_hz": 26.786,
+      "qtc": 0.4461,
+      "f3_Le0_hz": 48.8465,
+      "vd_catalog_l": 0.687,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C04",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 100,
+      "fc_hz": 25.4203,
+      "qtc": 0.4234,
+      "f3_Le0_hz": 49.8108,
+      "vd_catalog_l": 0.687,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C04",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 120,
+      "fc_hz": 24.4675,
+      "qtc": 0.4075,
+      "f3_Le0_hz": 50.4828,
+      "vd_catalog_l": 0.687,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C04",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 150,
+      "fc_hz": 23.4761,
+      "qtc": 0.391,
+      "f3_Le0_hz": 51.1754,
+      "vd_catalog_l": 0.687,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C12",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 80,
+      "fc_hz": 31.8434,
+      "qtc": 0.3308,
+      "f3_Le0_hz": 85.8851,
+      "vd_catalog_l": 0.513,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C12",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 100,
+      "fc_hz": 30.7636,
+      "qtc": 0.3196,
+      "f3_Le0_hz": 86.5541,
+      "vd_catalog_l": 0.513,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C12",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 120,
+      "fc_hz": 30.0222,
+      "qtc": 0.3119,
+      "f3_Le0_hz": 87.003,
+      "vd_catalog_l": 0.513,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C12",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 150,
+      "fc_hz": 29.262,
+      "qtc": 0.304,
+      "f3_Le0_hz": 87.454,
+      "vd_catalog_l": 0.513,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C18",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 80,
+      "fc_hz": 34.1526,
+      "qtc": 0.4683,
+      "f3_Le0_hz": 58.2087,
+      "vd_catalog_l": 0.531,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C18",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 100,
+      "fc_hz": 32.3778,
+      "qtc": 0.4439,
+      "f3_Le0_hz": 59.4463,
+      "vd_catalog_l": 0.531,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C18",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 120,
+      "fc_hz": 31.1384,
+      "qtc": 0.4269,
+      "f3_Le0_hz": 60.3216,
+      "vd_catalog_l": 0.531,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C18",
+      "topology": "single",
+      "connection": "single",
+      "volume_l": 150,
+      "fc_hz": 29.8476,
+      "qtc": 0.4092,
+      "f3_Le0_hz": 61.2327,
+      "vd_catalog_l": 0.531,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C30",
+      "topology": "normal",
+      "connection": "series",
+      "volume_l": 80,
+      "fc_hz": 51.4393,
+      "qtc": 0.6693,
+      "f3_Le0_hz": 54.5084,
+      "vd_catalog_l": 0.3105,
+      "nominal_pair_ohm": 16
+    },
+    {
+      "candidate_id": "C30",
+      "topology": "normal",
+      "connection": "series",
+      "volume_l": 100,
+      "fc_hz": 47.6823,
+      "qtc": 0.6204,
+      "f3_Le0_hz": 55.2523,
+      "vd_catalog_l": 0.3105,
+      "nominal_pair_ohm": 16
+    },
+    {
+      "candidate_id": "C30",
+      "topology": "normal",
+      "connection": "series",
+      "volume_l": 120,
+      "fc_hz": 45.0037,
+      "qtc": 0.5856,
+      "f3_Le0_hz": 56.1772,
+      "vd_catalog_l": 0.3105,
+      "nominal_pair_ohm": 16
+    },
+    {
+      "candidate_id": "C30",
+      "topology": "normal",
+      "connection": "series",
+      "volume_l": 150,
+      "fc_hz": 42.1553,
+      "qtc": 0.5485,
+      "f3_Le0_hz": 57.5102,
+      "vd_catalog_l": 0.3105,
+      "nominal_pair_ohm": 16
+    },
+    {
+      "candidate_id": "C30",
+      "topology": "normal",
+      "connection": "parallel",
+      "volume_l": 80,
+      "fc_hz": 51.4393,
+      "qtc": 0.6693,
+      "f3_Le0_hz": 54.5084,
+      "vd_catalog_l": 0.3105,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C30",
+      "topology": "normal",
+      "connection": "parallel",
+      "volume_l": 100,
+      "fc_hz": 47.6823,
+      "qtc": 0.6204,
+      "f3_Le0_hz": 55.2523,
+      "vd_catalog_l": 0.3105,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C30",
+      "topology": "normal",
+      "connection": "parallel",
+      "volume_l": 120,
+      "fc_hz": 45.0037,
+      "qtc": 0.5856,
+      "f3_Le0_hz": 56.1772,
+      "vd_catalog_l": 0.3105,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C30",
+      "topology": "normal",
+      "connection": "parallel",
+      "volume_l": 150,
+      "fc_hz": 42.1553,
+      "qtc": 0.5485,
+      "f3_Le0_hz": 57.5102,
+      "vd_catalog_l": 0.3105,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C30",
+      "topology": "isobaric",
+      "connection": "series",
+      "volume_l": 80,
+      "fc_hz": 35.3483,
+      "qtc": 0.4599,
+      "f3_Le0_hz": 61.7802,
+      "vd_catalog_l": 0.1553,
+      "nominal_pair_ohm": 16
+    },
+    {
+      "candidate_id": "C30",
+      "topology": "isobaric",
+      "connection": "series",
+      "volume_l": 100,
+      "fc_hz": 34.0059,
+      "qtc": 0.4425,
+      "f3_Le0_hz": 62.7207,
+      "vd_catalog_l": 0.1553,
+      "nominal_pair_ohm": 16
+    },
+    {
+      "candidate_id": "C30",
+      "topology": "isobaric",
+      "connection": "series",
+      "volume_l": 120,
+      "fc_hz": 33.0807,
+      "qtc": 0.4304,
+      "f3_Le0_hz": 63.374,
+      "vd_catalog_l": 0.1553,
+      "nominal_pair_ohm": 16
+    },
+    {
+      "candidate_id": "C30",
+      "topology": "isobaric",
+      "connection": "series",
+      "volume_l": 150,
+      "fc_hz": 32.1289,
+      "qtc": 0.418,
+      "f3_Le0_hz": 64.0467,
+      "vd_catalog_l": 0.1553,
+      "nominal_pair_ohm": 16
+    },
+    {
+      "candidate_id": "C30",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "volume_l": 80,
+      "fc_hz": 35.3483,
+      "qtc": 0.4599,
+      "f3_Le0_hz": 61.7802,
+      "vd_catalog_l": 0.1553,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C30",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "volume_l": 100,
+      "fc_hz": 34.0059,
+      "qtc": 0.4425,
+      "f3_Le0_hz": 62.7207,
+      "vd_catalog_l": 0.1553,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C30",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "volume_l": 120,
+      "fc_hz": 33.0807,
+      "qtc": 0.4304,
+      "f3_Le0_hz": 63.374,
+      "vd_catalog_l": 0.1553,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C30",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "volume_l": 150,
+      "fc_hz": 32.1289,
+      "qtc": 0.418,
+      "f3_Le0_hz": 64.0467,
+      "vd_catalog_l": 0.1553,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C31",
+      "topology": "normal",
+      "connection": "series",
+      "volume_l": 80,
+      "fc_hz": 32.5576,
+      "qtc": 0.4721,
+      "f3_Le0_hz": 54.8541,
+      "vd_catalog_l": 0.702,
+      "nominal_pair_ohm": 12
+    },
+    {
+      "candidate_id": "C31",
+      "topology": "normal",
+      "connection": "series",
+      "volume_l": 100,
+      "fc_hz": 30.4631,
+      "qtc": 0.4417,
+      "f3_Le0_hz": 56.3128,
+      "vd_catalog_l": 0.702,
+      "nominal_pair_ohm": 12
+    },
+    {
+      "candidate_id": "C31",
+      "topology": "normal",
+      "connection": "series",
+      "volume_l": 120,
+      "fc_hz": 28.9828,
+      "qtc": 0.4203,
+      "f3_Le0_hz": 57.3588,
+      "vd_catalog_l": 0.702,
+      "nominal_pair_ohm": 12
+    },
+    {
+      "candidate_id": "C31",
+      "topology": "normal",
+      "connection": "series",
+      "volume_l": 150,
+      "fc_hz": 27.4226,
+      "qtc": 0.3977,
+      "f3_Le0_hz": 58.4556,
+      "vd_catalog_l": 0.702,
+      "nominal_pair_ohm": 12
+    },
+    {
+      "candidate_id": "C31",
+      "topology": "normal",
+      "connection": "parallel",
+      "volume_l": 80,
+      "fc_hz": 32.5576,
+      "qtc": 0.4721,
+      "f3_Le0_hz": 54.8541,
+      "vd_catalog_l": 0.702,
+      "nominal_pair_ohm": 3
+    },
+    {
+      "candidate_id": "C31",
+      "topology": "normal",
+      "connection": "parallel",
+      "volume_l": 100,
+      "fc_hz": 30.4631,
+      "qtc": 0.4417,
+      "f3_Le0_hz": 56.3128,
+      "vd_catalog_l": 0.702,
+      "nominal_pair_ohm": 3
+    },
+    {
+      "candidate_id": "C31",
+      "topology": "normal",
+      "connection": "parallel",
+      "volume_l": 120,
+      "fc_hz": 28.9828,
+      "qtc": 0.4203,
+      "f3_Le0_hz": 57.3588,
+      "vd_catalog_l": 0.702,
+      "nominal_pair_ohm": 3
+    },
+    {
+      "candidate_id": "C31",
+      "topology": "normal",
+      "connection": "parallel",
+      "volume_l": 150,
+      "fc_hz": 27.4226,
+      "qtc": 0.3977,
+      "f3_Le0_hz": 58.4556,
+      "vd_catalog_l": 0.702,
+      "nominal_pair_ohm": 3
+    },
+    {
+      "candidate_id": "C31",
+      "topology": "isobaric",
+      "connection": "series",
+      "volume_l": 80,
+      "fc_hz": 23.7697,
+      "qtc": 0.3447,
+      "f3_Le0_hz": 60.9226,
+      "vd_catalog_l": 0.351,
+      "nominal_pair_ohm": 12
+    },
+    {
+      "candidate_id": "C31",
+      "topology": "isobaric",
+      "connection": "series",
+      "volume_l": 100,
+      "fc_hz": 23.0651,
+      "qtc": 0.3345,
+      "f3_Le0_hz": 61.3734,
+      "vd_catalog_l": 0.351,
+      "nominal_pair_ohm": 12
+    },
+    {
+      "candidate_id": "C31",
+      "topology": "isobaric",
+      "connection": "series",
+      "volume_l": 120,
+      "fc_hz": 22.5832,
+      "qtc": 0.3275,
+      "f3_Le0_hz": 61.6761,
+      "vd_catalog_l": 0.351,
+      "nominal_pair_ohm": 12
+    },
+    {
+      "candidate_id": "C31",
+      "topology": "isobaric",
+      "connection": "series",
+      "volume_l": 150,
+      "fc_hz": 22.0907,
+      "qtc": 0.3203,
+      "f3_Le0_hz": 61.9803,
+      "vd_catalog_l": 0.351,
+      "nominal_pair_ohm": 12
+    },
+    {
+      "candidate_id": "C31",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "volume_l": 80,
+      "fc_hz": 23.7697,
+      "qtc": 0.3447,
+      "f3_Le0_hz": 60.9226,
+      "vd_catalog_l": 0.351,
+      "nominal_pair_ohm": 3
+    },
+    {
+      "candidate_id": "C31",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "volume_l": 100,
+      "fc_hz": 23.0651,
+      "qtc": 0.3345,
+      "f3_Le0_hz": 61.3734,
+      "vd_catalog_l": 0.351,
+      "nominal_pair_ohm": 3
+    },
+    {
+      "candidate_id": "C31",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "volume_l": 120,
+      "fc_hz": 22.5832,
+      "qtc": 0.3275,
+      "f3_Le0_hz": 61.6761,
+      "vd_catalog_l": 0.351,
+      "nominal_pair_ohm": 3
+    },
+    {
+      "candidate_id": "C31",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "volume_l": 150,
+      "fc_hz": 22.0907,
+      "qtc": 0.3203,
+      "f3_Le0_hz": 61.9803,
+      "vd_catalog_l": 0.351,
+      "nominal_pair_ohm": 3
+    },
+    {
+      "candidate_id": "C05",
+      "topology": "normal",
+      "connection": "series",
+      "volume_l": 80,
+      "fc_hz": 58.6652,
+      "qtc": 0.6542,
+      "f3_Le0_hz": 63.7923,
+      "vd_catalog_l": 0.7365,
+      "nominal_pair_ohm": 16
+    },
+    {
+      "candidate_id": "C05",
+      "topology": "normal",
+      "connection": "series",
+      "volume_l": 100,
+      "fc_hz": 53.5582,
+      "qtc": 0.5972,
+      "f3_Le0_hz": 65.1452,
+      "vd_catalog_l": 0.7365,
+      "nominal_pair_ohm": 16
+    },
+    {
+      "candidate_id": "C05",
+      "topology": "normal",
+      "connection": "series",
+      "volume_l": 120,
+      "fc_hz": 49.8638,
+      "qtc": 0.556,
+      "f3_Le0_hz": 66.7568,
+      "vd_catalog_l": 0.7365,
+      "nominal_pair_ohm": 16
+    },
+    {
+      "candidate_id": "C05",
+      "topology": "normal",
+      "connection": "series",
+      "volume_l": 150,
+      "fc_hz": 45.8729,
+      "qtc": 0.5115,
+      "f3_Le0_hz": 69.0151,
+      "vd_catalog_l": 0.7365,
+      "nominal_pair_ohm": 16
+    },
+    {
+      "candidate_id": "C05",
+      "topology": "normal",
+      "connection": "parallel",
+      "volume_l": 80,
+      "fc_hz": 58.6652,
+      "qtc": 0.6542,
+      "f3_Le0_hz": 63.7923,
+      "vd_catalog_l": 0.7365,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C05",
+      "topology": "normal",
+      "connection": "parallel",
+      "volume_l": 100,
+      "fc_hz": 53.5582,
+      "qtc": 0.5972,
+      "f3_Le0_hz": 65.1452,
+      "vd_catalog_l": 0.7365,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C05",
+      "topology": "normal",
+      "connection": "parallel",
+      "volume_l": 120,
+      "fc_hz": 49.8638,
+      "qtc": 0.556,
+      "f3_Le0_hz": 66.7568,
+      "vd_catalog_l": 0.7365,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C05",
+      "topology": "normal",
+      "connection": "parallel",
+      "volume_l": 150,
+      "fc_hz": 45.8729,
+      "qtc": 0.5115,
+      "f3_Le0_hz": 69.0151,
+      "vd_catalog_l": 0.7365,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C05",
+      "topology": "isobaric",
+      "connection": "series",
+      "volume_l": 80,
+      "fc_hz": 35.95,
+      "qtc": 0.4009,
+      "f3_Le0_hz": 75.8145,
+      "vd_catalog_l": 0.3683,
+      "nominal_pair_ohm": 16
+    },
+    {
+      "candidate_id": "C05",
+      "topology": "isobaric",
+      "connection": "series",
+      "volume_l": 100,
+      "fc_hz": 33.8987,
+      "qtc": 0.378,
+      "f3_Le0_hz": 77.2345,
+      "vd_catalog_l": 0.3683,
+      "nominal_pair_ohm": 16
+    },
+    {
+      "candidate_id": "C05",
+      "topology": "isobaric",
+      "connection": "series",
+      "volume_l": 120,
+      "fc_hz": 32.4592,
+      "qtc": 0.362,
+      "f3_Le0_hz": 78.207,
+      "vd_catalog_l": 0.3683,
+      "nominal_pair_ohm": 16
+    },
+    {
+      "candidate_id": "C05",
+      "topology": "isobaric",
+      "connection": "series",
+      "volume_l": 150,
+      "fc_hz": 30.9529,
+      "qtc": 0.3452,
+      "f3_Le0_hz": 79.1974,
+      "vd_catalog_l": 0.3683,
+      "nominal_pair_ohm": 16
+    },
+    {
+      "candidate_id": "C05",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "volume_l": 80,
+      "fc_hz": 35.95,
+      "qtc": 0.4009,
+      "f3_Le0_hz": 75.8145,
+      "vd_catalog_l": 0.3683,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C05",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "volume_l": 100,
+      "fc_hz": 33.8987,
+      "qtc": 0.378,
+      "f3_Le0_hz": 77.2345,
+      "vd_catalog_l": 0.3683,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C05",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "volume_l": 120,
+      "fc_hz": 32.4592,
+      "qtc": 0.362,
+      "f3_Le0_hz": 78.207,
+      "vd_catalog_l": 0.3683,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C05",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "volume_l": 150,
+      "fc_hz": 30.9529,
+      "qtc": 0.3452,
+      "f3_Le0_hz": 79.1974,
+      "vd_catalog_l": 0.3683,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C06",
+      "topology": "normal",
+      "connection": "series",
+      "volume_l": 80,
+      "fc_hz": 44.2538,
+      "qtc": 0.7312,
+      "f3_Le0_hz": 42.8415,
+      "vd_catalog_l": 1.473,
+      "nominal_pair_ohm": 16
+    },
+    {
+      "candidate_id": "C06",
+      "topology": "normal",
+      "connection": "series",
+      "volume_l": 100,
+      "fc_hz": 41.0112,
+      "qtc": 0.6777,
+      "f3_Le0_hz": 42.8706,
+      "vd_catalog_l": 1.473,
+      "nominal_pair_ohm": 16
+    },
+    {
+      "candidate_id": "C06",
+      "topology": "normal",
+      "connection": "series",
+      "volume_l": 120,
+      "fc_hz": 38.6988,
+      "qtc": 0.6394,
+      "f3_Le0_hz": 43.2203,
+      "vd_catalog_l": 1.473,
+      "nominal_pair_ohm": 16
+    },
+    {
+      "candidate_id": "C06",
+      "topology": "normal",
+      "connection": "series",
+      "volume_l": 150,
+      "fc_hz": 36.2392,
+      "qtc": 0.5988,
+      "f3_Le0_hz": 43.9288,
+      "vd_catalog_l": 1.473,
+      "nominal_pair_ohm": 16
+    },
+    {
+      "candidate_id": "C06",
+      "topology": "normal",
+      "connection": "parallel",
+      "volume_l": 80,
+      "fc_hz": 44.2538,
+      "qtc": 0.7312,
+      "f3_Le0_hz": 42.8415,
+      "vd_catalog_l": 1.473,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C06",
+      "topology": "normal",
+      "connection": "parallel",
+      "volume_l": 100,
+      "fc_hz": 41.0112,
+      "qtc": 0.6777,
+      "f3_Le0_hz": 42.8706,
+      "vd_catalog_l": 1.473,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C06",
+      "topology": "normal",
+      "connection": "parallel",
+      "volume_l": 120,
+      "fc_hz": 38.6988,
+      "qtc": 0.6394,
+      "f3_Le0_hz": 43.2203,
+      "vd_catalog_l": 1.473,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C06",
+      "topology": "normal",
+      "connection": "parallel",
+      "volume_l": 150,
+      "fc_hz": 36.2392,
+      "qtc": 0.5988,
+      "f3_Le0_hz": 43.9288,
+      "vd_catalog_l": 1.473,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C06",
+      "topology": "isobaric",
+      "connection": "series",
+      "volume_l": 80,
+      "fc_hz": 30.3579,
+      "qtc": 0.5016,
+      "f3_Le0_hz": 46.9532,
+      "vd_catalog_l": 0.7365,
+      "nominal_pair_ohm": 16
+    },
+    {
+      "candidate_id": "C06",
+      "topology": "isobaric",
+      "connection": "series",
+      "volume_l": 100,
+      "fc_hz": 29.1973,
+      "qtc": 0.4824,
+      "f3_Le0_hz": 47.7156,
+      "vd_catalog_l": 0.7365,
+      "nominal_pair_ohm": 16
+    },
+    {
+      "candidate_id": "C06",
+      "topology": "isobaric",
+      "connection": "series",
+      "volume_l": 120,
+      "fc_hz": 28.3972,
+      "qtc": 0.4692,
+      "f3_Le0_hz": 48.2593,
+      "vd_catalog_l": 0.7365,
+      "nominal_pair_ohm": 16
+    },
+    {
+      "candidate_id": "C06",
+      "topology": "isobaric",
+      "connection": "series",
+      "volume_l": 150,
+      "fc_hz": 27.5739,
+      "qtc": 0.4556,
+      "f3_Le0_hz": 48.8299,
+      "vd_catalog_l": 0.7365,
+      "nominal_pair_ohm": 16
+    },
+    {
+      "candidate_id": "C06",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "volume_l": 80,
+      "fc_hz": 30.3579,
+      "qtc": 0.5016,
+      "f3_Le0_hz": 46.9532,
+      "vd_catalog_l": 0.7365,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C06",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "volume_l": 100,
+      "fc_hz": 29.1973,
+      "qtc": 0.4824,
+      "f3_Le0_hz": 47.7156,
+      "vd_catalog_l": 0.7365,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C06",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "volume_l": 120,
+      "fc_hz": 28.3972,
+      "qtc": 0.4692,
+      "f3_Le0_hz": 48.2593,
+      "vd_catalog_l": 0.7365,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C06",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "volume_l": 150,
+      "fc_hz": 27.5739,
+      "qtc": 0.4556,
+      "f3_Le0_hz": 48.8299,
+      "vd_catalog_l": 0.7365,
+      "nominal_pair_ohm": 4
+    },
+    {
+      "candidate_id": "C04",
+      "topology": "normal",
+      "connection": "series",
+      "volume_l": 80,
+      "fc_hz": 32.7716,
+      "qtc": 0.5458,
+      "f3_Le0_hz": 45.0159,
+      "vd_catalog_l": 1.374,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C04",
+      "topology": "normal",
+      "connection": "series",
+      "volume_l": 100,
+      "fc_hz": 30.5185,
+      "qtc": 0.5083,
+      "f3_Le0_hz": 46.331,
+      "vd_catalog_l": 1.374,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C04",
+      "topology": "normal",
+      "connection": "series",
+      "volume_l": 120,
+      "fc_hz": 28.9191,
+      "qtc": 0.4816,
+      "f3_Le0_hz": 47.3732,
+      "vd_catalog_l": 1.374,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C04",
+      "topology": "normal",
+      "connection": "series",
+      "volume_l": 150,
+      "fc_hz": 27.226,
+      "qtc": 0.4534,
+      "f3_Le0_hz": 48.5378,
+      "vd_catalog_l": 1.374,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C04",
+      "topology": "normal",
+      "connection": "parallel",
+      "volume_l": 80,
+      "fc_hz": 32.7716,
+      "qtc": 0.5458,
+      "f3_Le0_hz": 45.0159,
+      "vd_catalog_l": 1.374,
+      "nominal_pair_ohm": 2
+    },
+    {
+      "candidate_id": "C04",
+      "topology": "normal",
+      "connection": "parallel",
+      "volume_l": 100,
+      "fc_hz": 30.5185,
+      "qtc": 0.5083,
+      "f3_Le0_hz": 46.331,
+      "vd_catalog_l": 1.374,
+      "nominal_pair_ohm": 2
+    },
+    {
+      "candidate_id": "C04",
+      "topology": "normal",
+      "connection": "parallel",
+      "volume_l": 120,
+      "fc_hz": 28.9191,
+      "qtc": 0.4816,
+      "f3_Le0_hz": 47.3732,
+      "vd_catalog_l": 1.374,
+      "nominal_pair_ohm": 2
+    },
+    {
+      "candidate_id": "C04",
+      "topology": "normal",
+      "connection": "parallel",
+      "volume_l": 150,
+      "fc_hz": 27.226,
+      "qtc": 0.4534,
+      "f3_Le0_hz": 48.5378,
+      "vd_catalog_l": 1.374,
+      "nominal_pair_ohm": 2
+    },
+    {
+      "candidate_id": "C04",
+      "topology": "isobaric",
+      "connection": "series",
+      "volume_l": 80,
+      "fc_hz": 23.2216,
+      "qtc": 0.3867,
+      "f3_Le0_hz": 51.3515,
+      "vd_catalog_l": 0.687,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C04",
+      "topology": "isobaric",
+      "connection": "series",
+      "volume_l": 100,
+      "fc_hz": 22.4409,
+      "qtc": 0.3737,
+      "f3_Le0_hz": 51.8865,
+      "vd_catalog_l": 0.687,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C04",
+      "topology": "isobaric",
+      "connection": "series",
+      "volume_l": 120,
+      "fc_hz": 21.905,
+      "qtc": 0.3648,
+      "f3_Le0_hz": 52.2482,
+      "vd_catalog_l": 0.687,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C04",
+      "topology": "isobaric",
+      "connection": "series",
+      "volume_l": 150,
+      "fc_hz": 21.3556,
+      "qtc": 0.3557,
+      "f3_Le0_hz": 52.6137,
+      "vd_catalog_l": 0.687,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C04",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "volume_l": 80,
+      "fc_hz": 23.2216,
+      "qtc": 0.3867,
+      "f3_Le0_hz": 51.3515,
+      "vd_catalog_l": 0.687,
+      "nominal_pair_ohm": 2
+    },
+    {
+      "candidate_id": "C04",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "volume_l": 100,
+      "fc_hz": 22.4409,
+      "qtc": 0.3737,
+      "f3_Le0_hz": 51.8865,
+      "vd_catalog_l": 0.687,
+      "nominal_pair_ohm": 2
+    },
+    {
+      "candidate_id": "C04",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "volume_l": 120,
+      "fc_hz": 21.905,
+      "qtc": 0.3648,
+      "f3_Le0_hz": 52.2482,
+      "vd_catalog_l": 0.687,
+      "nominal_pair_ohm": 2
+    },
+    {
+      "candidate_id": "C04",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "volume_l": 150,
+      "fc_hz": 21.3556,
+      "qtc": 0.3557,
+      "f3_Le0_hz": 52.6137,
+      "vd_catalog_l": 0.687,
+      "nominal_pair_ohm": 2
+    },
+    {
+      "candidate_id": "C01",
+      "topology": "normal",
+      "connection": "series",
+      "volume_l": 80,
+      "fc_hz": 42.6257,
+      "qtc": 0.6839,
+      "f3_Le0_hz": 44.1224,
+      "vd_catalog_l": 1.472,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C01",
+      "topology": "normal",
+      "connection": "series",
+      "volume_l": 100,
+      "fc_hz": 39.6319,
+      "qtc": 0.6358,
+      "f3_Le0_hz": 44.5629,
+      "vd_catalog_l": 1.472,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C01",
+      "topology": "normal",
+      "connection": "series",
+      "volume_l": 120,
+      "fc_hz": 37.5035,
+      "qtc": 0.6017,
+      "f3_Le0_hz": 45.1786,
+      "vd_catalog_l": 1.472,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C01",
+      "topology": "normal",
+      "connection": "series",
+      "volume_l": 150,
+      "fc_hz": 35.2468,
+      "qtc": 0.5655,
+      "f3_Le0_hz": 46.1102,
+      "vd_catalog_l": 1.472,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C01",
+      "topology": "normal",
+      "connection": "parallel",
+      "volume_l": 80,
+      "fc_hz": 42.6257,
+      "qtc": 0.6839,
+      "f3_Le0_hz": 44.1224,
+      "vd_catalog_l": 1.472,
+      "nominal_pair_ohm": 2
+    },
+    {
+      "candidate_id": "C01",
+      "topology": "normal",
+      "connection": "parallel",
+      "volume_l": 100,
+      "fc_hz": 39.6319,
+      "qtc": 0.6358,
+      "f3_Le0_hz": 44.5629,
+      "vd_catalog_l": 1.472,
+      "nominal_pair_ohm": 2
+    },
+    {
+      "candidate_id": "C01",
+      "topology": "normal",
+      "connection": "parallel",
+      "volume_l": 120,
+      "fc_hz": 37.5035,
+      "qtc": 0.6017,
+      "f3_Le0_hz": 45.1786,
+      "vd_catalog_l": 1.472,
+      "nominal_pair_ohm": 2
+    },
+    {
+      "candidate_id": "C01",
+      "topology": "normal",
+      "connection": "parallel",
+      "volume_l": 150,
+      "fc_hz": 35.2468,
+      "qtc": 0.5655,
+      "f3_Le0_hz": 46.1102,
+      "vd_catalog_l": 1.472,
+      "nominal_pair_ohm": 2
+    },
+    {
+      "candidate_id": "C01",
+      "topology": "isobaric",
+      "connection": "series",
+      "volume_l": 80,
+      "fc_hz": 29.8909,
+      "qtc": 0.4796,
+      "f3_Le0_hz": 49.2636,
+      "vd_catalog_l": 0.736,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C01",
+      "topology": "isobaric",
+      "connection": "series",
+      "volume_l": 100,
+      "fc_hz": 28.8427,
+      "qtc": 0.4627,
+      "f3_Le0_hz": 49.9813,
+      "vd_catalog_l": 0.736,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C01",
+      "topology": "isobaric",
+      "connection": "series",
+      "volume_l": 120,
+      "fc_hz": 28.1222,
+      "qtc": 0.4512,
+      "f3_Le0_hz": 50.4837,
+      "vd_catalog_l": 0.736,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C01",
+      "topology": "isobaric",
+      "connection": "series",
+      "volume_l": 150,
+      "fc_hz": 27.3827,
+      "qtc": 0.4393,
+      "f3_Le0_hz": 51.0039,
+      "vd_catalog_l": 0.736,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C01",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "volume_l": 80,
+      "fc_hz": 29.8909,
+      "qtc": 0.4796,
+      "f3_Le0_hz": 49.2636,
+      "vd_catalog_l": 0.736,
+      "nominal_pair_ohm": 2
+    },
+    {
+      "candidate_id": "C01",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "volume_l": 100,
+      "fc_hz": 28.8427,
+      "qtc": 0.4627,
+      "f3_Le0_hz": 49.9813,
+      "vd_catalog_l": 0.736,
+      "nominal_pair_ohm": 2
+    },
+    {
+      "candidate_id": "C01",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "volume_l": 120,
+      "fc_hz": 28.1222,
+      "qtc": 0.4512,
+      "f3_Le0_hz": 50.4837,
+      "vd_catalog_l": 0.736,
+      "nominal_pair_ohm": 2
+    },
+    {
+      "candidate_id": "C01",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "volume_l": 150,
+      "fc_hz": 27.3827,
+      "qtc": 0.4393,
+      "f3_Le0_hz": 51.0039,
+      "vd_catalog_l": 0.736,
+      "nominal_pair_ohm": 2
+    },
+    {
+      "candidate_id": "C12",
+      "topology": "normal",
+      "connection": "series",
+      "volume_l": 80,
+      "fc_hz": 36.7696,
+      "qtc": 0.382,
+      "f3_Le0_hz": 82.635,
+      "vd_catalog_l": 1.026,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C12",
+      "topology": "normal",
+      "connection": "series",
+      "volume_l": 100,
+      "fc_hz": 34.8827,
+      "qtc": 0.3624,
+      "f3_Le0_hz": 83.9138,
+      "vd_catalog_l": 1.026,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C12",
+      "topology": "normal",
+      "connection": "series",
+      "volume_l": 120,
+      "fc_hz": 33.5659,
+      "qtc": 0.3487,
+      "f3_Le0_hz": 84.7828,
+      "vd_catalog_l": 1.026,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C12",
+      "topology": "normal",
+      "connection": "series",
+      "volume_l": 150,
+      "fc_hz": 32.1952,
+      "qtc": 0.3345,
+      "f3_Le0_hz": 85.6633,
+      "vd_catalog_l": 1.026,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C12",
+      "topology": "normal",
+      "connection": "parallel",
+      "volume_l": 80,
+      "fc_hz": 36.7696,
+      "qtc": 0.382,
+      "f3_Le0_hz": 82.635,
+      "vd_catalog_l": 1.026,
+      "nominal_pair_ohm": 2
+    },
+    {
+      "candidate_id": "C12",
+      "topology": "normal",
+      "connection": "parallel",
+      "volume_l": 100,
+      "fc_hz": 34.8827,
+      "qtc": 0.3624,
+      "f3_Le0_hz": 83.9138,
+      "vd_catalog_l": 1.026,
+      "nominal_pair_ohm": 2
+    },
+    {
+      "candidate_id": "C12",
+      "topology": "normal",
+      "connection": "parallel",
+      "volume_l": 120,
+      "fc_hz": 33.5659,
+      "qtc": 0.3487,
+      "f3_Le0_hz": 84.7828,
+      "vd_catalog_l": 1.026,
+      "nominal_pair_ohm": 2
+    },
+    {
+      "candidate_id": "C12",
+      "topology": "normal",
+      "connection": "parallel",
+      "volume_l": 150,
+      "fc_hz": 32.1952,
+      "qtc": 0.3345,
+      "f3_Le0_hz": 85.6633,
+      "vd_catalog_l": 1.026,
+      "nominal_pair_ohm": 2
+    },
+    {
+      "candidate_id": "C12",
+      "topology": "isobaric",
+      "connection": "series",
+      "volume_l": 80,
+      "fc_hz": 29.0689,
+      "qtc": 0.302,
+      "f3_Le0_hz": 87.567,
+      "vd_catalog_l": 0.513,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C12",
+      "topology": "isobaric",
+      "connection": "series",
+      "volume_l": 100,
+      "fc_hz": 28.4816,
+      "qtc": 0.2959,
+      "f3_Le0_hz": 87.9069,
+      "vd_catalog_l": 0.513,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C12",
+      "topology": "isobaric",
+      "connection": "series",
+      "volume_l": 120,
+      "fc_hz": 28.0832,
+      "qtc": 0.2918,
+      "f3_Le0_hz": 88.134,
+      "vd_catalog_l": 0.513,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C12",
+      "topology": "isobaric",
+      "connection": "series",
+      "volume_l": 150,
+      "fc_hz": 27.6791,
+      "qtc": 0.2876,
+      "f3_Le0_hz": 88.3616,
+      "vd_catalog_l": 0.513,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C12",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "volume_l": 80,
+      "fc_hz": 29.0689,
+      "qtc": 0.302,
+      "f3_Le0_hz": 87.567,
+      "vd_catalog_l": 0.513,
+      "nominal_pair_ohm": 2
+    },
+    {
+      "candidate_id": "C12",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "volume_l": 100,
+      "fc_hz": 28.4816,
+      "qtc": 0.2959,
+      "f3_Le0_hz": 87.9069,
+      "vd_catalog_l": 0.513,
+      "nominal_pair_ohm": 2
+    },
+    {
+      "candidate_id": "C12",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "volume_l": 120,
+      "fc_hz": 28.0832,
+      "qtc": 0.2918,
+      "f3_Le0_hz": 88.134,
+      "vd_catalog_l": 0.513,
+      "nominal_pair_ohm": 2
+    },
+    {
+      "candidate_id": "C12",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "volume_l": 150,
+      "fc_hz": 27.6791,
+      "qtc": 0.2876,
+      "f3_Le0_hz": 88.3616,
+      "vd_catalog_l": 0.513,
+      "nominal_pair_ohm": 2
+    },
+    {
+      "candidate_id": "C18",
+      "topology": "normal",
+      "connection": "series",
+      "volume_l": 80,
+      "fc_hz": 41.9142,
+      "qtc": 0.5747,
+      "f3_Le0_hz": 53.6491,
+      "vd_catalog_l": 1.062,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C18",
+      "topology": "normal",
+      "connection": "series",
+      "volume_l": 100,
+      "fc_hz": 38.9954,
+      "qtc": 0.5347,
+      "f3_Le0_hz": 55.1281,
+      "vd_catalog_l": 1.062,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C18",
+      "topology": "normal",
+      "connection": "series",
+      "volume_l": 120,
+      "fc_hz": 36.9215,
+      "qtc": 0.5062,
+      "f3_Le0_hz": 56.3728,
+      "vd_catalog_l": 1.062,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C18",
+      "topology": "normal",
+      "connection": "series",
+      "volume_l": 150,
+      "fc_hz": 34.7241,
+      "qtc": 0.4761,
+      "f3_Le0_hz": 57.8179,
+      "vd_catalog_l": 1.062,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C18",
+      "topology": "normal",
+      "connection": "parallel",
+      "volume_l": 80,
+      "fc_hz": 41.9142,
+      "qtc": 0.5747,
+      "f3_Le0_hz": 53.6491,
+      "vd_catalog_l": 1.062,
+      "nominal_pair_ohm": 2
+    },
+    {
+      "candidate_id": "C18",
+      "topology": "normal",
+      "connection": "parallel",
+      "volume_l": 100,
+      "fc_hz": 38.9954,
+      "qtc": 0.5347,
+      "f3_Le0_hz": 55.1281,
+      "vd_catalog_l": 1.062,
+      "nominal_pair_ohm": 2
+    },
+    {
+      "candidate_id": "C18",
+      "topology": "normal",
+      "connection": "parallel",
+      "volume_l": 120,
+      "fc_hz": 36.9215,
+      "qtc": 0.5062,
+      "f3_Le0_hz": 56.3728,
+      "vd_catalog_l": 1.062,
+      "nominal_pair_ohm": 2
+    },
+    {
+      "candidate_id": "C18",
+      "topology": "normal",
+      "connection": "parallel",
+      "volume_l": 150,
+      "fc_hz": 34.7241,
+      "qtc": 0.4761,
+      "f3_Le0_hz": 57.8179,
+      "vd_catalog_l": 1.062,
+      "nominal_pair_ohm": 2
+    },
+    {
+      "candidate_id": "C18",
+      "topology": "isobaric",
+      "connection": "series",
+      "volume_l": 80,
+      "fc_hz": 29.5161,
+      "qtc": 0.4047,
+      "f3_Le0_hz": 61.4656,
+      "vd_catalog_l": 0.531,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C18",
+      "topology": "isobaric",
+      "connection": "series",
+      "volume_l": 100,
+      "fc_hz": 28.4984,
+      "qtc": 0.3907,
+      "f3_Le0_hz": 62.1758,
+      "vd_catalog_l": 0.531,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C18",
+      "topology": "isobaric",
+      "connection": "series",
+      "volume_l": 120,
+      "fc_hz": 27.7993,
+      "qtc": 0.3812,
+      "f3_Le0_hz": 62.6581,
+      "vd_catalog_l": 0.531,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C18",
+      "topology": "isobaric",
+      "connection": "series",
+      "volume_l": 150,
+      "fc_hz": 27.0821,
+      "qtc": 0.3713,
+      "f3_Le0_hz": 63.147,
+      "vd_catalog_l": 0.531,
+      "nominal_pair_ohm": 8
+    },
+    {
+      "candidate_id": "C18",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "volume_l": 80,
+      "fc_hz": 29.5161,
+      "qtc": 0.4047,
+      "f3_Le0_hz": 61.4656,
+      "vd_catalog_l": 0.531,
+      "nominal_pair_ohm": 2
+    },
+    {
+      "candidate_id": "C18",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "volume_l": 100,
+      "fc_hz": 28.4984,
+      "qtc": 0.3907,
+      "f3_Le0_hz": 62.1758,
+      "vd_catalog_l": 0.531,
+      "nominal_pair_ohm": 2
+    },
+    {
+      "candidate_id": "C18",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "volume_l": 120,
+      "fc_hz": 27.7993,
+      "qtc": 0.3812,
+      "f3_Le0_hz": 62.6581,
+      "vd_catalog_l": 0.531,
+      "nominal_pair_ohm": 2
+    },
+    {
+      "candidate_id": "C18",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "volume_l": 150,
+      "fc_hz": 27.0821,
+      "qtc": 0.3713,
+      "f3_Le0_hz": 63.147,
+      "vd_catalog_l": 0.531,
+      "nominal_pair_ohm": 2
+    }
+  ],
+  "checks": {
+    "energy_balance": "checked all sinus solutions for lossless electrical-mechanical power conservation",
+    "limits": "checked all 3168 voltage,current,peak-displacement,copper-caps",
+    "isobaric_vas_and_vd": "checked 16 isobaric configuration identities (Vas half, Vd unchanged)"
+  },
+  "results_csv": "wyniki/p43_wspolne_scenariusze_3168_20261102.csv",
+  "warning": "Price coverage partial; a good loudspeaker price is not the full electronics/cabinet two-unit BOM."
+}

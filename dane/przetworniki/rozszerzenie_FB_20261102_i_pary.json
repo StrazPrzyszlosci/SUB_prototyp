@@ -1,0 +1,304 @@
+{
+  "schema": "p43_candidates_v1",
+  "date": "2026-11-02",
+  "research_status": "screening_only_not_final_selection",
+  "previous_product_count": 34,
+  "previous_electrical_configuration_count": 35,
+  "new_candidate_count": 5,
+  "new_candidates": [
+    {
+      "candidate_id": "C27",
+      "manufacturer": "SB Acoustics / SATORI",
+      "nominal_size_class_in": 13.5,
+      "model": {
+        "name": "SATORI WO34HC-4",
+        "fs_hz": 20,
+        "qes": 0.25,
+        "qms": 5.53,
+        "vas_l": 233,
+        "sd_cm2": 585,
+        "re_ohm": 3.5,
+        "le_mh": 0.7,
+        "xmax_mm": 8.3,
+        "nominal_ohm": 4,
+        "rated_w": 200
+      },
+      "catalog_extra": {
+        "qts": 0.23,
+        "mms_g": 132,
+        "cms_mm_n": 0.48,
+        "bl_tm": 15.1
+      },
+      "geometry": {
+        "outer_diameter_mm": 341,
+        "mounting_cutout_mm": 311.3,
+        "bolt_circle_mm": 325.5,
+        "bolt_count": 9,
+        "overall_depth_mm": 172.8
+      },
+      "xmax_definition": "Linear coil travel p-p 16.6 mm / 2 -> 8.3 mm one-way peak (geometric, not THD threshold).",
+      "source": {
+        "url": "https://sbacoustics.com/wp-content/uploads/2026/03/13.5-inch-SATORI-WO34HC-4.pdf",
+        "product_url": "https://sbacoustics.com/product/satori-wo34hc-4/",
+        "revision": "REV. 0 21.01.2026",
+        "status": "manufacturer_preliminary_sheet"
+      },
+      "role": "NOWY_POJEDYNCZY_KANDYDAT",
+      "price_pln": null
+    },
+    {
+      "candidate_id": "C28",
+      "manufacturer": "SB Acoustics / SATORI",
+      "nominal_size_class_in": 13.5,
+      "model": {
+        "name": "SATORI WO34HC-8",
+        "fs_hz": 20.2,
+        "qes": 0.3,
+        "qms": 5.37,
+        "vas_l": 238,
+        "sd_cm2": 585,
+        "re_ohm": 6.8,
+        "le_mh": 1,
+        "xmax_mm": 8.3,
+        "nominal_ohm": 8,
+        "rated_w": 200
+      },
+      "catalog_extra": {
+        "qts": 0.29,
+        "mms_g": 127,
+        "cms_mm_n": 0.49,
+        "bl_tm": 19
+      },
+      "geometry": {
+        "outer_diameter_mm": 341,
+        "mounting_cutout_mm": 311.3,
+        "bolt_circle_mm": 325.5,
+        "bolt_count": 9,
+        "overall_depth_mm": 172.8
+      },
+      "xmax_definition": "Linear coil travel p-p 16.6 mm / 2 -> 8.3 mm one-way peak; 8-ohm variant not conflated with WO34HC-4.",
+      "source": {
+        "url": "https://sbacoustics.com/wp-content/uploads/2026/03/13.5-inch-SATORI-WO34HC-8.pdf",
+        "revision": "REV. 0 21.01.2026",
+        "status": "manufacturer_preliminary_sheet"
+      },
+      "role": "NOWY_POJEDYNCZY_KANDYDAT",
+      "price_pln": null
+    },
+    {
+      "candidate_id": "C29",
+      "manufacturer": "SB Acoustics",
+      "nominal_size_class_in": 15,
+      "model": {
+        "name": "SB Acoustics SB42FHCL75-6",
+        "fs_hz": 18.4,
+        "qes": 0.32,
+        "qms": 7.4,
+        "vas_l": 462,
+        "sd_cm2": 850,
+        "re_ohm": 4.6,
+        "le_mh": 2.1,
+        "xmax_mm": 11.5,
+        "nominal_ohm": 6,
+        "rated_w": 300
+      },
+      "catalog_extra": {
+        "qts": 0.31,
+        "mms_g": 166,
+        "cms_mm_n": 0.45,
+        "bl_tm": 16.7
+      },
+      "geometry": {
+        "outer_diameter_mm": 417,
+        "mounting_cutout_mm": 377,
+        "bolt_circle_mm": 395,
+        "bolt_count": 8,
+        "overall_depth_mm": 188.7
+      },
+      "xmax_definition": "Linear coil travel p-p 23 mm / 2 -> 11.5 mm one-way peak.",
+      "source": {
+        "url": "https://sbacoustics.com/wp-content/uploads/2020/03/15in-SB42FHCL75-6.pdf",
+        "revision": "REV. 1 11.03.2016",
+        "status": "manufacturer_datasheet"
+      },
+      "role": "NOWY_POJEDYNCZY_KANDYDAT",
+      "price_pln": null
+    },
+    {
+      "candidate_id": "C30",
+      "manufacturer": "STX",
+      "nominal_size_class_in": 10,
+      "model": {
+        "name": "STX W.25.200.8.MC",
+        "fs_hz": 28,
+        "qes": 0.41,
+        "qms": 3.27,
+        "vas_l": 95,
+        "sd_cm2": 345,
+        "re_ohm": 5.3,
+        "le_mh": 1.9,
+        "xmax_mm": 4.5,
+        "nominal_ohm": 8,
+        "rated_w": 100
+      },
+      "catalog_extra": {
+        "qts": 0.36,
+        "mms_g": 54,
+        "cms_mm_n": 0.57,
+        "bl_tm": 11.2
+      },
+      "geometry": {
+        "outer_diameter_mm": 255,
+        "mounting_cutout_mm": 231,
+        "bolt_circle_mm": 245,
+        "overall_depth_mm": 115
+      },
+      "xmax_definition": "Maximum linear coil travel 9mm p-p -> 4.5mm one-way peak; not 31mm damage excursion.",
+      "source": {
+        "url": "https://stx.pl/w-25-200-8-mc.html",
+        "status": "manufacturer_product_table"
+      },
+      "role": "KONTROLNY_BUDZETOWY_10_CALOWY",
+      "price_pln": 120
+    },
+    {
+      "candidate_id": "C31",
+      "manufacturer": "SB Acoustics",
+      "nominal_size_class_in": 10,
+      "model": {
+        "name": "SB Acoustics SB29SWNRX-S75-6",
+        "fs_hz": 20,
+        "qes": 0.31,
+        "qms": 4.5,
+        "vas_l": 66,
+        "sd_cm2": 312,
+        "re_ohm": 4.5,
+        "le_mh": 3,
+        "xmax_mm": 11.25,
+        "nominal_ohm": 6,
+        "rated_w": 200
+      },
+      "catalog_extra": {
+        "qts": 0.29,
+        "mms_g": 132,
+        "cms_mm_n": 0.48,
+        "bl_tm": 15.4
+      },
+      "geometry": {
+        "outer_diameter_mm": 290,
+        "mounting_cutout_mm": 249,
+        "bolt_circle_mm": 268,
+        "bolt_count": 8,
+        "overall_depth_mm": 133.1
+      },
+      "xmax_definition": "Linear coil travel 22.5mm p-p -> 11.25mm one-way peak.",
+      "source": {
+        "url": "https://sbacoustics.com/wp-content/uploads/2020/11/10in-SB29SWNRX-S75-6.pdf",
+        "revision": "manufacturer sheet 115",
+        "status": "manufacturer_datasheet"
+      },
+      "role": "KONTROLNY_DLUGOSKOKOWY_10_CALOWY",
+      "price_pln": 886.4
+    }
+  ],
+  "baseline_driver_id": "C02",
+  "pair_candidates": [
+    "C30",
+    "C31",
+    "C05",
+    "C06",
+    "C04",
+    "C12",
+    "C18"
+  ],
+  "reference_price_pln": 1613.33,
+  "reference_price_note": "One retail offer only, not market minimum and not guaranteed available; product page has conflicting stock labels; 2026-11-02.",
+  "sources_prices": [
+    {
+      "id": "C02",
+      "unit_pln": 1613.33,
+      "url": "https://loudspeakershop.eu/glosnik-dayton-audio-rss390hf-4-15-reference-sub-p-7660.html",
+      "availability": "website contradictory stock notices"
+    },
+    {
+      "id": "C30",
+      "unit_pln": 120,
+      "url": "https://stx.pl/w-25-200-8-mc.html",
+      "availability": "manufacturer page currently listed"
+    },
+    {
+      "id": "C31",
+      "unit_pln": 886.4,
+      "url": "https://www.poweraudio.pl/subniskotonowe-c-8_177_200.html",
+      "availability": "current listing, live inventory unverified"
+    },
+    {
+      "id": "C05",
+      "unit_pln": 215,
+      "url": "https://stx.pl/w-32-500-8-mc.html",
+      "availability": "manufacturer page currently listed"
+    },
+    {
+      "id": "C06",
+      "unit_pln": 990,
+      "url": "https://stx.pl/manufacturer/stx/w-32-800-8-fcx.html",
+      "availability": "manufacturer page currently listed"
+    },
+    {
+      "id": "C04",
+      "unit_pln": 1196.58,
+      "url": "https://zap-audio.pl/glosnik-sb-acoustics-sb34swpl76-4-p-507.html",
+      "availability": "currently shown unavailable"
+    },
+    {
+      "id": "C01",
+      "unit_pln": 1298.49,
+      "url": "https://loudspeakershop.eu/glosnik-dayton-audio-rss315hf-4-12-reference-sub-p-7658.html",
+      "availability": "currently shown order/no stock"
+    },
+    {
+      "id": "C12",
+      "unit_pln": 2532.76,
+      "url": "https://blackdotaudio.eu/seas-extreme--woofer--xm004-04--%28-l26ro4y-%29%2C266%2C10113.html",
+      "availability": "currently shown unavailable"
+    }
+  ],
+  "comparison": {
+    "volumes_net_air_l": [
+      80,
+      100,
+      120,
+      150
+    ],
+    "frequencies_hz": [
+      20,
+      25,
+      31.5,
+      40,
+      63,
+      80
+    ],
+    "amp_max_v_rms": 40,
+    "amp_max_i_rms": 12,
+    "copper_power_caps_total_w": [
+      null,
+      50,
+      100
+    ],
+    "room_m": [
+      4.6,
+      3.7,
+      2.5
+    ],
+    "ideal_radiation": "2pi hemisphere 1m",
+    "thermal_caps_are": "hypothetical and applied to sum of coils, not manufacturer thermal qualification"
+  },
+  "warnings": [
+    "WO34HC-4/8 preliminary documents. No verified price for WO34HC variants or SB42.",
+    "Pair price is 2*unit only: excludes amp(s), DSP, chamber, cabinet, labor, transport, taxes if retail list already contains VAT.",
+    "Ideal isobaric coupling: negligible cavity and no leakage or mechanical interference; both motors powered, displaced external volume only one Sd*X.",
+    "Pair in same cabinet, not two separately positioned room subwoofers; room response not modeled.",
+    "Price listings as of 2026-11-02 are not full market or enforceable quotes.",
+    "Existing source pools and historic experiments are not overwritten."
+  ]
+}
