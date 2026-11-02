@@ -1,0 +1,47 @@
+name: B12-13 research reproducibility (4+4 mounting stiffness)
+on:
+  pull_request:
+    paths:
+      - "skrypty/b12_13_nierowna_sztywnosc_4plus4.py"
+      - "wyniki/b12_13_*"
+      - ".github/workflows/b12-13-regression.yml"
+  push:
+    branches: [main]
+    paths:
+      - "skrypty/b12_13_nierowna_sztywnosc_4plus4.py"
+      - "wyniki/b12_13_*"
+      - ".github/workflows/b12-13-regression.yml"
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Recreate all 2160 statics and equilibrium checks
+        run: python3 skrypty/b12_13_nierowna_sztywnosc_4plus4.py > /tmp/b12_13_generated.log
+      - name: Verify model baselines against independently computed reference
+        run: |
+          python3 - <<'PY'
+          import json
+          generated=json.load(open("wyniki/b12_13_manifest_odtworzony.json",encoding="utf8"))
+          source=json.load(open("wyniki/b12_13_podsumowanie.json",encoding="utf8"))
+          r=generated["summary"]["by_rib_to_interrib_stiffness_ratio_at_5g_120mm"]
+          example=source["example"]["ratios"]
+          assert len(example)==5 and generated["summary"]["cases"]==2160
+          for row in example:
+              case=r[str(float(row["ratio"]))]
+              assert abs(case["intact"]["max_bolt_tension_plus_shear_proxy_N"]-row["intact_combined_N"])<0.00011
+              assert abs(case["single_bolt_loss_worst"]["max_bolt_tension_plus_shear_proxy_N"]-row["worst_single_loss_combined_N"])<0.00011
+          assert abs(generated["summary"]["mass_kg"]["catalog_30lb"]-13.6077711)<0.000001
+          print("B12-13 audit PASS: 2160 scenarios, 5 stiffness ratios, catalog mass")
+          PY
+      - name: Archive generated scenario data
+        uses: actions/upload-artifact@v4
+        with:
+          name: b12-13-generated-scenarios
+          path: |
+            wyniki/b12_13_scenariusze_4plus4.json
+            wyniki/b12_13_manifest_odtworzony.json
+          retention-days: 14

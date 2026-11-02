@@ -1,0 +1,126 @@
+{
+  "id": "B12-13",
+  "date": "2026-11-02",
+  "type": "reproducible hypothetical mechanics, NOT physical measurements",
+  "base_main": "057f302ed504aab752394ba4368bfc8abc2a6838",
+  "source_code": "skrypty/b12_13_nierowna_sztywnosc_4plus4.py",
+  "generated_full_json": "wyniki/b12_13_scenariusze_4plus4.json",
+  "method": "rigid plate; weighted signed linear normal springs; weighted in-plane shear; eight mounting points on R=184 mm; even indices at rib axes; point loss modeled by removing spring",
+  "manufacturer": {
+    "product": "RSS390HF-4",
+    "nominal_weight_lb": 30,
+    "nominal_weight_kg": 13.6077711,
+    "design_pc_diameter_mm": 368,
+    "main_ribs_visually": 4,
+    "source": "https://www.daytonaudio.com/product/126/rss390hf-4-15-reference-hf-subwoofer-4-ohm"
+  },
+  "grid": {
+    "mass_kg": [
+      13.6077711,
+      15
+    ],
+    "accel_g": [
+      1,
+      3,
+      5,
+      10
+    ],
+    "hypothetical_centre_of_mass_offset_mm": [
+      80,
+      120,
+      160
+    ],
+    "rib_to_interrib_stiffness_ratio": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "lateral_directions": [
+      "x",
+      "z"
+    ],
+    "lost_bolt_index": [
+      null,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "cases": 2160
+  },
+  "example": {
+    "accel_g": 5,
+    "eccentricity_mm": 120,
+    "mass_kg": 13.6077711,
+    "net_lateral_force_N": 667.23324,
+    "units": "N",
+    "ratios": [
+      {
+        "ratio": 0.25,
+        "intact_combined_N": 181.53952,
+        "worst_single_loss_combined_N": 248.81587,
+        "percentage_increase": 37.059,
+        "lost_bolt": 1,
+        "peak_normal_N": 123.0796,
+        "peak_shear_N": 133.44665
+      },
+      {
+        "ratio": 0.5,
+        "intact_combined_N": 151.28293,
+        "worst_single_loss_combined_N": 191.07582,
+        "percentage_increase": 26.304,
+        "lost_bolt": 1,
+        "peak_normal_N": 102.56634,
+        "peak_shear_N": 111.20554
+      },
+      {
+        "ratio": 1,
+        "intact_combined_N": 137.08059,
+        "worst_single_loss_combined_N": 174.30277,
+        "percentage_increase": 27.154,
+        "lost_bolt": 1,
+        "peak_normal_N": 108.78803,
+        "peak_shear_N": 83.40416
+      },
+      {
+        "ratio": 2,
+        "intact_combined_N": 182.77412,
+        "worst_single_loss_combined_N": 234.97219,
+        "percentage_increase": 28.559,
+        "lost_bolt": 4,
+        "peak_normal_N": 145.0507,
+        "peak_shear_N": 111.20554
+      },
+      {
+        "ratio": 4,
+        "intact_combined_N": 219.32894,
+        "worst_single_loss_combined_N": 309.82844,
+        "percentage_increase": 41.262,
+        "lost_bolt": 4,
+        "peak_normal_N": 174.06085,
+        "peak_shear_N": 133.44665
+      }
+    ]
+  },
+  "validation": {
+    "independent_numpy_oracle": "2026-11-02",
+    "cases": 2160,
+    "static_equilibrium": "verified for 2160 cases in independent numpy implementation",
+    "published_script_includes_asserts": true,
+    "source_SHA256": null,
+    "full_json_SHA256": null
+  },
+  "important_limitations": [
+    "No actual fastener stiffness data; ratio scan is hypothetical.",
+    "Signed spring compression is not physical flange contact; this is NOT a nonlinear joint finite element model.",
+    "The point load share and hypothetical 5g loading are NOT standards, strength limits, or measurements.",
+    "Adhesive/MDF strength, screw preload, loosening, fatigue, humidity, terminal and 3D basket geometry not verified.",
+    "No CNC approval and no purchase recommendation."
+  ]
+}

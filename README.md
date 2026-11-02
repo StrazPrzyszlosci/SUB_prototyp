@@ -170,6 +170,20 @@ Matematyczna analiza **78 192 scenariuszy kątowych B12-12** wyznacza granice dl
 
 [Raport B12-12](raporty/B12-12_cztery_zebra_osiem_srub_niepewnosc_fazy.md) · [Weryfikacja rzeczywistej budowy i źródła producenta](dokumentacja/B12-12_weryfikacja_rzeczywistej_budowy_RSS390HF4_producent.md) · [Pełna specyfikacja Daytona (PDF)](https://www.daytonaudio.com/images/resources/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf).
 
+### 4f. B12-13 — czy wszystkie osiem mocowań powinno być równie sztywne?
+
+Poprzednie badanie B12-12 rozdzieliło osiem otworów Dayton RSS390HF-4 na cztery położone w rzucie na osiach żeber kosza i cztery pomiędzy nimi. **B12-13 bada skutki tego, że ich rzeczywista sztywność może być różna.**
+
+![B12-13: wpływ nierównej sztywności ośmiu mocowań i utraty jednej śruby — NIE CNC](wyniki/b12_13_sily_4plus4_NIE_CNC.svg)
+
+Na nowej siatce wykonano **2160 obliczeń** z dwiema masami (13,61 kg z karty producenta oraz wcześniejsze 15 kg), przyspieszeniami 1/3/5/10g, umownymi ramionami 80/120/160 mm, pięcioma stosunkami sztywności czterech punktów przy żebrach do czterech pozostałych oraz utratą dowolnego jednego z ośmiu mocowań.
+
+*Prosty przykład:* dla masy katalogowej 13,61 kg, 5g i hipotetycznego ramienia 120 mm, **osiem jednakowo sztywnych mocowań** daje wskaźnik obciążenia najbardziej obciążonego punktu **137 N**. Jeśli cztery mocowania przy żebrach są **cztery razy sztywniejsze**, ten sam wskaźnik wynosi **219 N**; po utracie jednego mocowania nawet **310 N** w najgorszym modelowym przypadku. Są to *wyniki idealizowanego modelu*, a nie siły zmierzone na zbudowanym subwooferze i **nie są to wartości dopuszczalne wytrzymałościowo**.
+
+**Praktyczny sens:** sztywniejsze połączenie może przejmować więcej siły. Dlatego połączeń nie wolno optymalizować tylko przez powiększanie klocków czy dodawanie sztywnej ramy. Trzeba zmierzyć **rzeczywiste sztywności i nośności wszystkich punktów** oraz sprawdzić kontakt kołnierza z frontem MDF. B12-13 nie przesądza, że rozwiązanie lokalne jest lepsze od ramy A.
+
+[Raport B12-13](raporty/B12-13_sztywnosc_4plus4_i_awaria_mocowan_RSS390HF4.md) · [Odtwarzalny skrypt Python](skrypty/b12_13_nierowna_sztywnosc_4plus4.py) · [Podsumowanie liczb i założeń](wyniki/b12_13_podsumowanie.json). **Prototyp i próby mechaniczne: jeszcze nie wykonane; CNC: HOLD.**
+
 ### 5. Co oznaczają wykresy DSP i temperatury?
 
 Przyjęte **40 V RMS / 12 A RMS** to założenia symulacji, **nie parametry zakupionego wzmacniacza**. Model ogranicznika może ujawnić ryzyko wychylenia, grzania i przesterowania, ale nie jest jeszcze sprawdzonym presetem. Potrzebny jest fizyczny napęd, zasilanie, chłodzenie i walidacja zabezpieczeń. [Filtry](#filtry) · [Ochrona](#ochrona).
