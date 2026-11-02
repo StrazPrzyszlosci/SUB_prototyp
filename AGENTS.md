@@ -1675,3 +1675,9 @@ ta liczba powstaje gdy i w MDF przyjmiemy otwór Ø6,5mm,
 nie jest to narzucony wymiar przez producenta.
 Najpierw porównywać lokalne łączniki z pierścieniem/rama A
 z pełnym testem nośności, nie uznawać żadnego za sprawdzony.
+
+## 2026-11-02 — B12-10, po B12-09 (zależny PR)
+- Wykonano 324 testy bryłek za frontem wobec uproszczonych brył P39C, 7776 warunkowych scenariuszy promienia kosza/wkładki oraz 36 prób długości śruby. Raport: `raporty/B12-10_przestrzenny_przesiew_mocowan_i_stosu_srub.md`.
+- Wyniki sumaryczne, kod Python i wykres NIE-CNC: `wyniki/b12_10_podsumowanie.json`, `skrypty/b12_10_przesiew_3d_mocowan.py` oraz `wyniki/b12_10_lokalne_mocowania_przesiew_NIE_CNC.svg`.
+- Otwarte: rzeczywiste r(y,θ) kosza i terminale, narzędzie i dostęp serwisowy, nośność klejonej wkładki i frontu oraz obwód <=500 mm. CNC pozostaje zablokowane.
+- Następny krok: pozyskanie pełnej geometrii kosza i protokół badań mechanicznych połączeń (B12-11), bez uznawania przesiewu za kwalifikację.
