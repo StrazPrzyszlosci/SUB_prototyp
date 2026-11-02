@@ -1653,3 +1653,25 @@ preset DSP. Dane i odtwarzanie:
 Kolejna główna linia: B12-09 projekt pełnej drogi obciążenia
 nośnik A i serwis 3D; nie kontynuować ślepo optymalizacji
 dwóch tanich STX kosztem briefu. CNC/ZAKUPY: NIE.
+
+
+## Inspiracje montażowe z forów — nie prototyp Fundacji (02.11.2026)
+
+Przewodnik README sekcja 4a ma źródła zewnętrznych konstruktorów
+RSS390HF-4: Francis (TechTalk 2016, threaded inserts w klejonych
+klockach), hoppaz (AVForums 2012, T-nut + zdjęcia `sub_*`,
+`cab_*`, `assem_*`) oraz Warren Hagan (Parts Express Project
+Gallery 2020, hurricane nuts i 1/4-20, obudowa bass-reflex).
+Wszystkie obrazy widoczne bezpośrednio w README to
+**NOWE ORYGINALNE POGLĄDOWE SVG**, nie zdjęcia z forum,
+nie prototyp Fundacji. Fotografie cudzych autorów dostępne
+są tylko przez linki do ich oryginalnych postów/galerii.
+AVForums Terms §2 zabraniają nieautoryzowanej reprodukcji,
+inline linking i framing, więc nie kopiować/nie osadzać tamtych
+fotografii bez uprzedniej zgody odpowiedniego właściciela.
+Patrz `dokumentacja/inspiracje_zewnetrznych_konstruktorow_mocowanie_RSS390HF4.md`.
+Skorygowano nadmiernie kategoryczny opis MDF 2,85mm:
+ta liczba powstaje gdy i w MDF przyjmiemy otwór Ø6,5mm,
+nie jest to narzucony wymiar przez producenta.
+Najpierw porównywać lokalne łączniki z pierścieniem/rama A
+z pełnym testem nośności, nie uznawać żadnego za sprawdzony.
