@@ -9,12 +9,12 @@
 > Głośnik może być przesunięty; preferowany jest środek lewej lub prawej
 > połowy frontu. Nowe wymiary i rozmieszczenie będą wynikiem obliczeń.
 
-**34 modele głośników · 35 konfiguracji elektrycznych · 19 producentów · 108 raportów · Python/JavaScript**
+**39 modeli głośników · 40 konfiguracji podstawowych · 19 producentów · 109 raportów · Python/JavaScript**
 
 Publiczny projekt dla osób, które chcą zrozumieć, co decyduje o dobrym basie. Aktualna pula obejmuje także dwa przypadki wstrzymane w nowym audycie źródeł (EMS i SUPRAVOX), a ponadto nie każda konfiguracja ma jeszcze pełny komplet badań nieliniowych i termicznych.
 Porównujemy głośniki, liczymy obudowę i sprawdzamy, jak wpływają na nią
 wypełnienie, wzmocnienia, klej, wzmacniacz i ustawienie w pokoju.
-Celem jest **jeden konkretny głośnik i jedna konstrukcja prototypu**
+Celem jest **jedna docelowa konfiguracja głośników i jedna konstrukcja prototypu**
 subwoofera zamkniętego z regulacją objętości. Szukamy możliwie
 **najtańszego przetwornika spełniającego wszystkie wymagania jednocześnie**,
 a nie „najlepszego głośnika w ogóle”. Koszt będzie kryterium końcowego
@@ -22,7 +22,7 @@ porównania, a dane cenowe obejmują obecnie tylko część modeli; nadal brakuj
 
 > **Uwaga P33C (31.10.2026):** Audyt elementu powłokowego wykazał dwa nadmiarowe mechanizmy numeryczne (*hourglass*) w P33B. Liczb z raportu 084 nie traktujemy jako potwierdzonych ugięć i częstotliwości skrzyni. [Sprostowanie i 26 testów](raporty/085_P33C_audyt_hourglass_elementu_Q4.md).
 
-> **Stan projektu: badania przed budową.** Wykresy przedstawiają obliczenia i symulacje, nie pomiary gotowego prototypu. Nie ma jeszcze ostatecznego zwycięzcy ani projektu zatwierdzonego do CNC.
+> **Stan projektu: badania przed budową; P43 rozszerza porównanie o dwie membrany i układ izobaryczny.** Wykresy przedstawiają obliczenia i symulacje, nie pomiary gotowego prototypu. Nie ma jeszcze ostatecznego zwycięzcy ani projektu zatwierdzonego do CNC.
 
 ## Wybierz temat
 
@@ -330,8 +330,52 @@ Dla każdego wykresu sprawdzaj kolejno: **co obliczono**, **co to zmienia w proj
 <a id="glosniki"></a>
 ## Głośniki: porównanie w tych samych warunkach
 
+### P43 — czy dwa mniejsze głośniki albo izobaryczny mogą zastąpić jednego Daytona? (02.11.2026)
+
+**Badania nadal trwają: nie wybrano ostatecznego głośnika.** Do zbioru dołączyły
+SATORI **WO34HC-4 i WO34HC-8**, **SB42FHCL75-6** oraz dwa 10-calowe modele do
+testów par: **STX W.25.200.8.MC** i **SB29SWNRX-S75-6**.
+Aktualnie **39 modeli i 40 podstawowych konfiguracji elektrycznych**;
+dodatkowe układy dwóch identycznych głośników to *scenariusze konstrukcyjne*,
+a nie kolejne osobne modele w katalogu.
+
+Sprawdziliśmy **3168 liniowych przypadków** w 80/100/120/150 l, z jedną
+membraną, dwoma niezależnie promieniującymi membranami **w jednej skrzyni** i
+parą **izobaryczną** (połączenia szeregowe/równoległe).
+Pod uwagę wzięliśmy 40 V RMS / 12 A RMS, wychylenie szczytowe, a jako
+*hipotetyczny* wariant również 50 W łącznych strat miedzi. To **nie są**
+wyniki THD ani symulacja dwóch subwooferów rozmieszczonych w pokoju.
+
+![P43: ile modelowego basu przy 20 Hz daje duży głośnik, dwa mniejsze lub para izobaryczna](wyniki/p43_porownanie_20hz_20261102.svg)
+
+**Praktyczny przykład:** dwa tanie **STX W.32.500.8.MC_v2 (12″)** kosztują według
+aktualnego cennika producenta **430 zł za dwa kosze** wobec znalezionej oferty
+**1613,33 zł** za jeden Dayton RSS390HF-4. W tym samym modelu 120 l, 20 Hz,
+z budżetem 50 W łącznych strat miedzi i pozostałymi limitami, zwykła para STX
+uzyskuje **97,30 dB**, a Dayton **99,62 dB** (2π/1 m; tylko pojedynczy sinus).
+To zachęca do dalszych badań opłacalności, **nie jest dowodem jednakowej
+jakości ani dopuszczalnego ciągłego poziomu dźwięku**. Ceny nie zawierają
+budowy dwóch gotowych subwooferów, dodatkowego mocowania i torów mocy.
+
+**Izobaryczny nie daje dwóch promieniujących membran.** Pozwala ograniczyć
+ekwiwalentną podatność głośników (Vas pary do połowy Vas jednego głośnika),
+przez co podobne strojenie można uzyskać w mniejszej komorze; nie oznacza
+podwojenia Sd·Xmax. Potrzebne są szczelna komora sprzęgająca, chłodzenie,
+nowa geometria koszy i weryfikacja obciążenia wzmacniacza (w tym 2 Ω).
+
+**Kontrola litrażu:** w idealnym modelu **60 l izobarycznie** daje to samo
+małosygnałowe Fc/Qtc/F3 co **jeden taki sam przetwornik w 120 l**;
+nie oznacza tego samego zapasu poziomu ani zweryfikowanej geometrii.
+[Audyt T/S i sprawdzenie 60/120 l](wyniki/p43_audyt_TS_i_izobaryczne_60_na_120_20261102.json).
+
+[Pełny raport 109, tabela porównawcza i cenniki](raporty/109_P43_nowe_SB_podwojne_10_12_i_izobaryczny.md)
+· [karty nowych kandydatów i źródła](dane/przetworniki/rozszerzenie_FB_20261102_i_pary.json)
+· [3168 wyników CSV](wyniki/p43_wspolne_scenariusze_3168_20261102.csv)
+· [odtwarzalny skrypt](skrypty/p43_dwa_glosniki_i_isobaric.js).
+
+
 **Rozszerzenie warunków badawczych (31.10.2026):** Dayton RSS390HF-4 jest
-**wstępnym faworytem, a nie ostatecznym wyborem**. Aktualna pula liczy
+**wstępnym faworytem, a nie ostatecznym wyborem**. Na tamtym etapie pula liczyła
 **34 modele głośników (35 konfiguracji elektrycznych)**. Po wcześniejszym
 porównaniu 26 modeli rozszerzyliśmy zestaw i przeprowadziliśmy audyt
 dokumentacji dziewięciu kolejnych marek:
@@ -410,7 +454,7 @@ i wydajności; dopóki progi i ceny nie są ustalone, wybór jest warunkowy.
 
 We wcześniejszym porównaniu **26 przetworników / 27 konfiguracji elektrycznych**
 wstępnym faworytem został **Dayton Audio RSS390HF-4 (15″, 4 Ω)**.
-Aktualna pula **34 modeli / 35 konfiguracji elektrycznych** została objęta
+Pula z 31.10.2026 (**34 modele / 35 konfiguracji elektrycznych**) została objęta
 szerszą analizą przesiewową, ale nie wszystkie modele mają jeszcze kompletny
 zestaw badań nieliniowości, termiki i kosztów.
 W modelu osobnych sinusów 20–80 Hz, przy 120 l, napędzie 40 V RMS /

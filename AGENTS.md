@@ -1375,3 +1375,30 @@ skrypt Python i konfiguracja P24B.
 ## Zasada redakcyjna — nazewnictwo badań
 
 W README, raportach i nowych plikach opisuj aktualizacje zakresu jako **„rozszerzenie warunków badawczych”** lub „aktualizacja założeń projektu badawczego”. Nie przedstawiaj prac jako zlecenia handlowego. Stosuj terminy „uczestnik projektu”, „użytkownik”, „odbiorca” wyłącznie w uzasadnionym kontekście. Zachowaj archiwa, identyfikatory i stare ścieżki dla odtwarzalności.
+
+## Postęp 2026-11-02 — P43: porównanie dwóch głośników i układu izobarycznego
+
+Nowe źródłowe T/S: C27 SATORI WO34HC-4, C28 WO34HC-8 (oba PDF producenta
+oznaczone "Preliminary Data"), C29 SB42FHCL75-6, C30 STX W.25.200.8.MC
+(10"), C31 SB29SWNRX-S75-6 (10"). Addytywne wejście:
+`dane/przetworniki/rozszerzenie_FB_20261102_i_pary.json`.
+Stan podstawowych kandydatów 34/35 -> 39/40. Pula historyczna 24 i jej
+eksperymenty pozostają bez zmian.
+
+Zrealizowano 3168 niezależnych sinusów: 44 konfiguracje topologiczne (12
+singli oraz 8 modeli x 2 topologie x 2 połączenia), 80/100/120/150 l,
+20/25/31.5/40/63/80 Hz, Pcu=bez/50/100 W. Kontrole V/I/Xpk/Pcu, bilans
+energii oraz prawa Vas/Vd dla idealnej pary izobarycznej.
+Skrypt: `skrypty/p43_dwa_glosniki_i_isobaric.js`;
+wyniki: `wyniki/p43_wspolne_scenariusze_3168_20261102.csv`,
+`wyniki/p43_duze_vs_para_i_isobaric_20261102.json`.
+Raport: `raporty/109_P43_nowe_SB_podwojne_10_12_i_izobaryczny.md`.
+Nie mylić dwóch membran w jednym subwooferze z dwoma oddzielnymi subwooferami
+w pomieszczeniu. Para izobaryczna ma jedno promieniujące Sd i połowę Vas
+jednego przetwornika przy idealnym sprzężeniu; nie dopisywać +6dB.
+Brak symulacji komory izobarycznej, nieliniowości, termiki i pełnego BOM.
+Przy 120l/20Hz/Pcu<=50W: C02 99,6151dB, dwa C05 równolegle 97,3016dB,
+dwa C05 izobarycznie równolegle 91,9100dB (2pi/1m, nie SPL pokoju).
+Przy połączeniu 4-ohm równolegle powstaje nominalnie 2-ohm obciążenie:
+nie kwalifikować bez rzeczywistych możliwości końcówki mocy.
+Nie wydawać CNC; konieczny nowy front, usztywnienia i tolerancje koszy.

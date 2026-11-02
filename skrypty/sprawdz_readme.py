@@ -39,7 +39,7 @@ for item in set(images):
                 if not element.tag.endswith("svg") or not element.attrib.get("viewBox"):
                     bad.append("Bledny SVG: "+p)
         except Exception as exc:bad.append("Nieczytelny obraz "+p+": "+str(exc))
-for label in ("34 modele głośników","35 konfiguracji elektrycznych","19 producentów","108 raportów"):
+for label in ("39 modeli głośników","40 konfiguracji podstawowych","19 producentów","109 raportów"):
     if label not in readme:bad.append("Nieaktualny naglowek: "+label)
 if len(images)<101:bad.append("Brak diagramow wymaganych przez test P42: "+str(len(images)))
 if re.search(r'\bklient\w*\b',readme,re.I):bad.append("Niedozwolony termin klient")

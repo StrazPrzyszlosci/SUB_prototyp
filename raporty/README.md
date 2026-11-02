@@ -125,3 +125,4 @@ bieżący zakres sprawdzaj w [programie 30 pakietów](../PROGRAM_30_BADAN.md).
 - [Raport 106 — P42A: 1458 modeli z czterema odległymi podporami, kontrola uzupełniająca P41](106_P42A_podpory_1458.md).
 - [Raport 107 — P42B: 162 testy uproszczonych obwiedni 3D nośników i wkładów](107_P42B_obwiednie_3D_dwoch_wariantow.md).
 - [Raport 108 — P42C: 48 kontroli prostych łączników względem wycięcia kosza](108_P42C_laczniki_i_koncepcje_3D.md).
+- [Raport 109 — P43: SB WO34HC/SB42, dwa głośniki 10/12″ i układ izobaryczny; 3168 scenariuszy](109_P43_nowe_SB_podwojne_10_12_i_izobaryczny.md).
