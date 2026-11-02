@@ -162,3 +162,5 @@ Historyczne identyfikatory P43/P44 w kodzie konstrukcyjnym są odrębne od akust
 - [B12-11 — przedziałowa geometria wkładek, kosza i długości śrub; 324+576+11664+252 scenariuszy](B12-11_przedzialowa_geometria_mocowan_i_stos_srub.md).
 
 - [B12-12 — cztery żebra kosza wobec ośmiu śrub: 78 192 modeli faz i weryfikacja oficjalnego rysunku](B12-12_cztery_zebra_osiem_srub_niepewnosc_fazy.md).
+
+- [B12-13 — rzeczywisty podział mocowań kosza 4+4, 2160 scenariuszy nierównej sztywności i utraty śruby](B12-13_sztywnosc_4plus4_i_awaria_mocowan_RSS390HF4.md).
