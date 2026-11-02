@@ -363,6 +363,11 @@ przez co podobne strojenie można uzyskać w mniejszej komorze; nie oznacza
 podwojenia Sd·Xmax. Potrzebne są szczelna komora sprzęgająca, chłodzenie,
 nowa geometria koszy i weryfikacja obciążenia wzmacniacza (w tym 2 Ω).
 
+**Kontrola litrażu:** w idealnym modelu **60 l izobarycznie** daje to samo
+małosygnałowe Fc/Qtc/F3 co **jeden taki sam przetwornik w 120 l**;
+nie oznacza tego samego zapasu poziomu ani zweryfikowanej geometrii.
+[Audyt T/S i sprawdzenie 60/120 l](wyniki/p43_audyt_TS_i_izobaryczne_60_na_120_20261102.json).
+
 [Pełny raport 109, tabela porównawcza i cenniki](raporty/109_P43_nowe_SB_podwojne_10_12_i_izobaryczny.md)
 · [karty nowych kandydatów i źródła](dane/przetworniki/rozszerzenie_FB_20261102_i_pary.json)
 · [3168 wyników CSV](wyniki/p43_wspolne_scenariusze_3168_20261102.csv)
