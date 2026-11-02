@@ -19,7 +19,7 @@
       166.06565348571428
     ],
     "slot_l": 3.68,
-    "max_fine_l": 3.06,
+    "max_fine_l": 3.528,
     "routes": 16,
     "trim_routes": 2,
     "fails": [],
@@ -304,14 +304,14 @@
           30
         ],
         "hi": [
-          112,
+          125,
           175,
           180
         ]
       },
       {
         "lo": [
-          908,
+          895,
           55,
           30
         ],
@@ -433,7 +433,7 @@
         },
         {
           "l": 120,
-          "feasible": false
+          "feasible": true
         },
         {
           "l": 100,
@@ -465,7 +465,7 @@
         },
         {
           "l": 100,
-          "feasible": false
+          "feasible": true
         }
       ],
       "fails": [
@@ -573,7 +573,7 @@
         },
         {
           "l": 120,
-          "feasible": false
+          "feasible": true
         },
         {
           "l": 100,
@@ -605,7 +605,7 @@
         },
         {
           "l": 100,
-          "feasible": false
+          "feasible": true
         }
       ],
       "fails": [
@@ -717,7 +717,7 @@
         },
         {
           "l": 100,
-          "feasible": false
+          "feasible": true
         }
       ],
       "fails": []
@@ -743,7 +743,7 @@
         },
         {
           "l": 100,
-          "feasible": false
+          "feasible": true
         }
       ],
       "fails": [
@@ -801,7 +801,7 @@
         },
         {
           "l": 100,
-          "feasible": false
+          "feasible": true
         }
       ],
       "fails": []
@@ -866,7 +866,7 @@
       100
     ],
     "trim_block_max_mm": [
-      85,
+      98,
       120,
       150
     ],
