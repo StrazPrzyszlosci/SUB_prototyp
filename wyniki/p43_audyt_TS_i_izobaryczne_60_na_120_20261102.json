@@ -1,0 +1,248 @@
+{
+  "version": "P43B_audit",
+  "date": "2026-11-02",
+  "catalog_derived_T_S_audit": [
+    {
+      "candidate_id": "C27",
+      "name": "SATORI WO34HC-4",
+      "metrics": {
+        "qts": {
+          "catalog": 0.23,
+          "derived": 0.2391868512110727
+        },
+        "mms_g": {
+          "catalog": 132,
+          "derived": 131.7609991875367
+        },
+        "cms_mm_n": {
+          "catalog": 0.48,
+          "derived": 0.4806106523701219
+        },
+        "bl_tm": {
+          "catalog": 15.1,
+          "derived": 15.225178381984264
+        }
+      },
+      "deviations_pct": {
+        "qts": 3.994,
+        "mms_g": -0.181,
+        "cms_mm_n": 0.127,
+        "bl_tm": 0.829
+      },
+      "max_abs_deviation_pct": 3.994,
+      "flag_over_5pct": false,
+      "method": "Derive Mms/Cms/BL from primary Fs,Qes,Qms,Vas,Sd,Re without mixing rounded additional values."
+    },
+    {
+      "candidate_id": "C28",
+      "name": "SATORI WO34HC-8",
+      "metrics": {
+        "qts": {
+          "catalog": 0.29,
+          "derived": 0.2841269841269841
+        },
+        "mms_g": {
+          "catalog": 127,
+          "derived": 126.45124102471439
+        },
+        "cms_mm_n": {
+          "catalog": 0.49,
+          "derived": 0.49092418568278545
+        },
+        "bl_tm": {
+          "catalog": 19,
+          "derived": 19.073087268452134
+        }
+      },
+      "deviations_pct": {
+        "qts": -2.025,
+        "mms_g": -0.432,
+        "cms_mm_n": 0.189,
+        "bl_tm": 0.385
+      },
+      "max_abs_deviation_pct": 2.025,
+      "flag_over_5pct": false,
+      "method": "Derive Mms/Cms/BL from primary Fs,Qes,Qms,Vas,Sd,Re without mixing rounded additional values."
+    },
+    {
+      "candidate_id": "C29",
+      "name": "SB Acoustics SB42FHCL75-6",
+      "metrics": {
+        "qts": {
+          "catalog": 0.31,
+          "derived": 0.3067357512953368
+        },
+        "mms_g": {
+          "catalog": 166,
+          "derived": 165.7491422513178
+        },
+        "cms_mm_n": {
+          "catalog": 0.45,
+          "derived": 0.4513914489472511
+        },
+        "bl_tm": {
+          "catalog": 16.7,
+          "derived": 16.596955026727215
+        }
+      },
+      "deviations_pct": {
+        "qts": -1.053,
+        "mms_g": -0.151,
+        "cms_mm_n": 0.309,
+        "bl_tm": -0.617
+      },
+      "max_abs_deviation_pct": 1.053,
+      "flag_over_5pct": false,
+      "method": "Derive Mms/Cms/BL from primary Fs,Qes,Qms,Vas,Sd,Re without mixing rounded additional values."
+    },
+    {
+      "candidate_id": "C30",
+      "name": "STX W.25.200.8.MC",
+      "metrics": {
+        "qts": {
+          "catalog": 0.36,
+          "derived": 0.364320652173913
+        },
+        "mms_g": {
+          "catalog": 54,
+          "derived": 57.34421103780235
+        },
+        "cms_mm_n": {
+          "catalog": 0.57,
+          "derived": 0.5634230608746016
+        },
+        "bl_tm": {
+          "catalog": 11.2,
+          "derived": 11.419832849774942
+        }
+      },
+      "deviations_pct": {
+        "qts": 1.2,
+        "mms_g": 6.193,
+        "cms_mm_n": -1.154,
+        "bl_tm": 1.963
+      },
+      "max_abs_deviation_pct": 6.193,
+      "flag_over_5pct": true,
+      "method": "Derive Mms/Cms/BL from primary Fs,Qes,Qms,Vas,Sd,Re without mixing rounded additional values."
+    },
+    {
+      "candidate_id": "C31",
+      "name": "SB Acoustics SB29SWNRX-S75-6",
+      "metrics": {
+        "qts": {
+          "catalog": 0.29,
+          "derived": 0.29002079002079
+        },
+        "mms_g": {
+          "catalog": 132,
+          "derived": 132.3111124501378
+        },
+        "cms_mm_n": {
+          "catalog": 0.48,
+          "derived": 0.4786124052907934
+        },
+        "bl_tm": {
+          "catalog": 15.4,
+          "derived": 15.535616872113085
+        }
+      },
+      "deviations_pct": {
+        "qts": 0.007,
+        "mms_g": 0.236,
+        "cms_mm_n": -0.289,
+        "bl_tm": 0.881
+      },
+      "max_abs_deviation_pct": 0.881,
+      "flag_over_5pct": false,
+      "method": "Derive Mms/Cms/BL from primary Fs,Qes,Qms,Vas,Sd,Re without mixing rounded additional values."
+    }
+  ],
+  "isobaric_volume_halving_analytic_check": [
+    {
+      "id": "C30",
+      "name": "STX W.25.200.8.MC",
+      "single_120l": {
+        "fc": 37.47888294315436,
+        "qtc": 0.4876546813071336,
+        "f3": 60.32860713406303
+      },
+      "isobaric_60l": {
+        "fc": 37.47888294315436,
+        "qtc": 0.4876546813071336,
+        "f3": 60.32860713406303
+      },
+      "max_abs_alignment_error": 0,
+      "warning": "Matching small-signal alignment not matching maximum SPL or electric drive voltage; real coupling cavity occupies volume."
+    },
+    {
+      "id": "C31",
+      "name": "SB Acoustics SB29SWNRX-S75-6",
+      "single_120l": {
+        "fc": 24.899799195977465,
+        "qtc": 0.3610729717088208,
+        "f3": 60.18055111796194
+      },
+      "isobaric_60l": {
+        "fc": 24.899799195977465,
+        "qtc": 0.3610729717088208,
+        "f3": 60.18055111796194
+      },
+      "max_abs_alignment_error": 0,
+      "warning": "Matching small-signal alignment not matching maximum SPL or electric drive voltage; real coupling cavity occupies volume."
+    },
+    {
+      "id": "C05",
+      "name": "STX W.32.500.8.MC_v2",
+      "single_120l": {
+        "fc": 39.13055072446591,
+        "qtc": 0.43634786779080686,
+        "f3": 73.57169012366872
+      },
+      "isobaric_60l": {
+        "fc": 39.13055072446591,
+        "qtc": 0.43634786779080686,
+        "f3": 73.57169012366872
+      },
+      "max_abs_alignment_error": 0,
+      "warning": "Matching small-signal alignment not matching maximum SPL or electric drive voltage; real coupling cavity occupies volume."
+    },
+    {
+      "id": "C06",
+      "name": "STX W.32.800.8.FCX",
+      "single_120l": {
+        "fc": 32.19937887599697,
+        "qtc": 0.5320543805037758,
+        "f3": 45.83301823615703
+      },
+      "isobaric_60l": {
+        "fc": 32.19937887599697,
+        "qtc": 0.5320543805037758,
+        "f3": 45.83301823615703
+      },
+      "max_abs_alignment_error": 0,
+      "warning": "Matching small-signal alignment not matching maximum SPL or electric drive voltage; real coupling cavity occupies volume."
+    },
+    {
+      "id": "C04",
+      "name": "SB Acoustics SB34SWPL76-4",
+      "single_120l": {
+        "fc": 24.467495444637017,
+        "qtc": 0.4074975809452885,
+        "f3": 50.48275044618045
+      },
+      "isobaric_60l": {
+        "fc": 24.467495444637017,
+        "qtc": 0.4074975809452885,
+        "f3": 50.48275044618045
+      },
+      "max_abs_alignment_error": 0,
+      "warning": "Matching small-signal alignment not matching maximum SPL or electric drive voltage; real coupling cavity occupies volume."
+    }
+  ],
+  "limitations": [
+    "No empirical distribution of T/S parameters, source revisions may change.",
+    "Publisher's 0D model uses coherent rounded fundamental data; differences to rounded catalog extras are not treated as a manufacturer's error.",
+    "The 60l/120l check is alignment only, not total loudspeaker-plus-amplifier performance."
+  ]
+}
