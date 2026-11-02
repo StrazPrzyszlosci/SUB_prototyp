@@ -182,7 +182,7 @@
   },
   "drivers_tonal_normalized": {
     "C02": {
-      "q40_m3s_per_vrms": 0.004151114193003153,
+      "q40_m3s_per_vrms": 0.004151114193,
       "relative_complex": [
         {
           "re": -1.00772,
@@ -227,7 +227,7 @@
       ]
     },
     "C05": {
-      "q40_m3s_per_vrms": 0.005237786915833669,
+      "q40_m3s_per_vrms": 0.00523778691583,
       "relative_complex": [
         {
           "re": -0.95635,
@@ -295,11 +295,11 @@
             ]
           },
           "robust_grid": {
-            "right_gain": 0.8,
+            "right_gain": 1,
             "right_delay_ms": 0,
             "span_db": 31.46655,
             "neighbor_max_abs_db": 8.74142,
-            "relative_40_level_change_db": -0.91515,
+            "relative_40_level_change_db": 0,
             "response_20_to_100_relative_40_db": [
               1.42458,
               2.87147,
@@ -330,11 +330,11 @@
             ]
           },
           "robust_grid": {
-            "right_gain": 0.8,
+            "right_gain": 1,
             "right_delay_ms": 0,
             "span_db": 31.5439,
             "neighbor_max_abs_db": 8.74142,
-            "relative_40_level_change_db": -0.91515,
+            "relative_40_level_change_db": 0,
             "response_20_to_100_relative_40_db": [
               1.96972,
               3.09997,
@@ -372,11 +372,11 @@
             ]
           },
           "robust_grid": {
-            "right_gain": 0.8,
+            "right_gain": 1,
             "right_delay_ms": 0,
             "span_db": 30.99623,
             "neighbor_max_abs_db": 8.11691,
-            "relative_40_level_change_db": -0.91515,
+            "relative_40_level_change_db": 0,
             "response_20_to_100_relative_40_db": [
               1.58898,
               2.86369,
@@ -407,11 +407,11 @@
             ]
           },
           "robust_grid": {
-            "right_gain": 0.8,
+            "right_gain": 1,
             "right_delay_ms": 0,
             "span_db": 31.07359,
             "neighbor_max_abs_db": 8.11691,
-            "relative_40_level_change_db": -0.91515,
+            "relative_40_level_change_db": 0,
             "response_20_to_100_relative_40_db": [
               2.13413,
               3.09218,
@@ -449,11 +449,11 @@
             ]
           },
           "robust_grid": {
-            "right_gain": 0.8,
+            "right_gain": 1,
             "right_delay_ms": 0,
             "span_db": 30.93771,
             "neighbor_max_abs_db": 8.04939,
-            "relative_40_level_change_db": -0.91515,
+            "relative_40_level_change_db": 0,
             "response_20_to_100_relative_40_db": [
               1.55262,
               2.83178,
@@ -484,11 +484,11 @@
             ]
           },
           "robust_grid": {
-            "right_gain": 0.8,
+            "right_gain": 1,
             "right_delay_ms": 0,
             "span_db": 31.01507,
             "neighbor_max_abs_db": 8.04939,
-            "relative_40_level_change_db": -0.91515,
+            "relative_40_level_change_db": 0,
             "response_20_to_100_relative_40_db": [
               2.09776,
               3.06027,
@@ -526,11 +526,11 @@
             ]
           },
           "robust_grid": {
-            "right_gain": 1.2,
+            "right_gain": 1,
             "right_delay_ms": 0,
             "span_db": 37.09599,
             "neighbor_max_abs_db": 11.06977,
-            "relative_40_level_change_db": 0.82785,
+            "relative_40_level_change_db": 0,
             "response_20_to_100_relative_40_db": [
               -2.34298,
               -0.67496,
@@ -561,11 +561,11 @@
             ]
           },
           "robust_grid": {
-            "right_gain": 0.8,
+            "right_gain": 1,
             "right_delay_ms": 0,
             "span_db": 37.17335,
             "neighbor_max_abs_db": 11.06977,
-            "relative_40_level_change_db": -0.91515,
+            "relative_40_level_change_db": 0,
             "response_20_to_100_relative_40_db": [
               -1.79784,
               -0.44646,
@@ -638,11 +638,11 @@
             ]
           },
           "robust_grid": {
-            "right_gain": 1.2,
+            "right_gain": 1,
             "right_delay_ms": 0,
             "span_db": 42.99574,
             "neighbor_max_abs_db": 15.86571,
-            "relative_40_level_change_db": 0.82785,
+            "relative_40_level_change_db": 0,
             "response_20_to_100_relative_40_db": [
               -1.41246,
               -0.26996,
@@ -680,11 +680,11 @@
             ]
           },
           "robust_grid": {
-            "right_gain": 0.8,
+            "right_gain": 1,
             "right_delay_ms": 0,
             "span_db": 43.75443,
             "neighbor_max_abs_db": 16.64923,
-            "relative_40_level_change_db": -0.91515,
+            "relative_40_level_change_db": 0,
             "response_20_to_100_relative_40_db": [
               -1.97539,
               -0.51521,
@@ -757,11 +757,11 @@
             ]
           },
           "robust_grid": {
-            "right_gain": 1.2,
+            "right_gain": 1,
             "right_delay_ms": 0,
             "span_db": 35.29677,
             "neighbor_max_abs_db": 10.28977,
-            "relative_40_level_change_db": 0.82785,
+            "relative_40_level_change_db": 0,
             "response_20_to_100_relative_40_db": [
               -4.49078,
               -2.75214,
@@ -792,11 +792,11 @@
             ]
           },
           "robust_grid": {
-            "right_gain": 0.8,
+            "right_gain": 1,
             "right_delay_ms": 0,
             "span_db": 35.37413,
             "neighbor_max_abs_db": 10.28977,
-            "relative_40_level_change_db": -0.91515,
+            "relative_40_level_change_db": 0,
             "response_20_to_100_relative_40_db": [
               -3.94564,
               -2.52365,
@@ -834,11 +834,11 @@
             ]
           },
           "robust_grid": {
-            "right_gain": 0.8,
+            "right_gain": 1,
             "right_delay_ms": 0,
             "span_db": 38.17375,
             "neighbor_max_abs_db": 12.61377,
-            "relative_40_level_change_db": -0.91515,
+            "relative_40_level_change_db": 0,
             "response_20_to_100_relative_40_db": [
               -3.9802,
               -2.46943,
@@ -869,11 +869,11 @@
             ]
           },
           "robust_grid": {
-            "right_gain": 0.8,
+            "right_gain": 1,
             "right_delay_ms": 0,
             "span_db": 38.25111,
             "neighbor_max_abs_db": 12.61377,
-            "relative_40_level_change_db": -0.91515,
+            "relative_40_level_change_db": 0,
             "response_20_to_100_relative_40_db": [
               -3.43506,
               -2.24094,
@@ -911,11 +911,11 @@
             ]
           },
           "robust_grid": {
-            "right_gain": 0.8,
+            "right_gain": 1,
             "right_delay_ms": 0,
             "span_db": 38.40136,
             "neighbor_max_abs_db": 12.81435,
-            "relative_40_level_change_db": -0.91515,
+            "relative_40_level_change_db": 0,
             "response_20_to_100_relative_40_db": [
               -3.98608,
               -2.47615,
@@ -946,11 +946,11 @@
             ]
           },
           "robust_grid": {
-            "right_gain": 0.8,
+            "right_gain": 1,
             "right_delay_ms": 0,
             "span_db": 38.47872,
             "neighbor_max_abs_db": 12.81435,
-            "relative_40_level_change_db": -0.91515,
+            "relative_40_level_change_db": 0,
             "response_20_to_100_relative_40_db": [
               -3.44094,
               -2.24766,
@@ -1023,11 +1023,11 @@
             ]
           },
           "robust_grid": {
-            "right_gain": 0.8,
+            "right_gain": 1,
             "right_delay_ms": 0,
             "span_db": 30.45414,
             "neighbor_max_abs_db": 8.87925,
-            "relative_40_level_change_db": -0.91515,
+            "relative_40_level_change_db": 0,
             "response_20_to_100_relative_40_db": [
               1.38167,
               2.60037,
@@ -1254,11 +1254,11 @@
             ]
           },
           "robust_grid": {
-            "right_gain": 0.8,
+            "right_gain": 1,
             "right_delay_ms": 0,
             "span_db": 42.6374,
             "neighbor_max_abs_db": 16.84837,
-            "relative_40_level_change_db": -0.91515,
+            "relative_40_level_change_db": 0,
             "response_20_to_100_relative_40_db": [
               -2.4296,
               -0.98486,
@@ -1331,11 +1331,11 @@
             ]
           },
           "robust_grid": {
-            "right_gain": 0.8,
+            "right_gain": 1,
             "right_delay_ms": 0,
             "span_db": 49.80241,
             "neighbor_max_abs_db": 23.9028,
-            "relative_40_level_change_db": -0.91515,
+            "relative_40_level_change_db": 0,
             "response_20_to_100_relative_40_db": [
               -2.02016,
               -0.78624,
@@ -1450,11 +1450,11 @@
             ]
           },
           "robust_grid": {
-            "right_gain": 0.8,
+            "right_gain": 1,
             "right_delay_ms": 0,
             "span_db": 39.02801,
             "neighbor_max_abs_db": 13.92057,
-            "relative_40_level_change_db": -0.91515,
+            "relative_40_level_change_db": 0,
             "response_20_to_100_relative_40_db": [
               -5.1241,
               -3.29107,
@@ -1485,11 +1485,11 @@
             ]
           },
           "robust_grid": {
-            "right_gain": 0.8,
+            "right_gain": 1,
             "right_delay_ms": 0,
             "span_db": 39.09179,
             "neighbor_max_abs_db": 13.92057,
-            "relative_40_level_change_db": -0.91515,
+            "relative_40_level_change_db": 0,
             "response_20_to_100_relative_40_db": [
               -4.57896,
               -3.06258,
@@ -1527,11 +1527,11 @@
             ]
           },
           "robust_grid": {
-            "right_gain": 0.8,
+            "right_gain": 1,
             "right_delay_ms": 0,
             "span_db": 43.35139,
             "neighbor_max_abs_db": 17.87895,
-            "relative_40_level_change_db": -0.91515,
+            "relative_40_level_change_db": 0,
             "response_20_to_100_relative_40_db": [
               -4.60631,
               -3.00274,
@@ -1562,11 +1562,11 @@
             ]
           },
           "robust_grid": {
-            "right_gain": 0.8,
+            "right_gain": 1,
             "right_delay_ms": 0,
             "span_db": 43.41517,
             "neighbor_max_abs_db": 17.87895,
-            "relative_40_level_change_db": -0.91515,
+            "relative_40_level_change_db": 0,
             "response_20_to_100_relative_40_db": [
               -4.06117,
               -2.77424,
@@ -1604,11 +1604,11 @@
             ]
           },
           "robust_grid": {
-            "right_gain": 0.8,
+            "right_gain": 1,
             "right_delay_ms": 0,
             "span_db": 43.68206,
             "neighbor_max_abs_db": 18.18375,
-            "relative_40_level_change_db": -0.91515,
+            "relative_40_level_change_db": 0,
             "response_20_to_100_relative_40_db": [
               -4.61057,
               -3.00789,
@@ -1639,11 +1639,11 @@
             ]
           },
           "robust_grid": {
-            "right_gain": 0.8,
+            "right_gain": 1,
             "right_delay_ms": 0,
             "span_db": 43.74584,
             "neighbor_max_abs_db": 18.18375,
-            "relative_40_level_change_db": -0.91515,
+            "relative_40_level_change_db": 0,
             "response_20_to_100_relative_40_db": [
               -4.06543,
               -2.77939,
@@ -2502,11 +2502,11 @@
             ]
           },
           "robust_grid": {
-            "right_gain": 1.2,
+            "right_gain": 1,
             "right_delay_ms": 0,
             "span_db": 42.99574,
             "neighbor_max_abs_db": 15.86571,
-            "relative_40_level_change_db": 0.82785,
+            "relative_40_level_change_db": 0,
             "response_20_to_100_relative_40_db": [
               -1.41246,
               -0.26996,
@@ -2579,11 +2579,11 @@
             ]
           },
           "robust_grid": {
-            "right_gain": 0.8,
+            "right_gain": 1,
             "right_delay_ms": 0,
             "span_db": 49.80241,
             "neighbor_max_abs_db": 23.9028,
-            "relative_40_level_change_db": -0.91515,
+            "relative_40_level_change_db": 0,
             "response_20_to_100_relative_40_db": [
               -2.02016,
               -0.78624,
@@ -2696,7 +2696,7 @@
     }
   },
   "controls": {
-    "mirror_symmetry_relative": 7.987725054246257e-15,
+    "mirror_symmetry_relative": 0,
     "room_model_source": "P26 preexisting methods",
     "selectivity": "No user-verified cabinet coordinates; optimization not installation recommendation",
     "comparative_headroom": "not assessed; normalized at 40Hz; consult B12-04 and measured driver THD/compression"
