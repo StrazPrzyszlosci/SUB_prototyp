@@ -1,0 +1,56 @@
+{
+  "schema": "b12_01_additive_screening_v1",
+  "date": "2026-11-02",
+  "base_candidates": 39,
+  "base_electrical_configs": 40,
+  "added_candidate": {
+    "candidate_id": "C32",
+    "manufacturer": "STX",
+    "nominal_size_class_in": 12,
+    "model": {
+      "name": "STX W.30.200.8.MC",
+      "fs_hz": 29,
+      "qes": 0.64,
+      "qms": 4.21,
+      "vas_l": 166,
+      "sd_cm2": 510,
+      "re_ohm": 5.2,
+      "le_mh": 1.93,
+      "xmax_mm": 4,
+      "nominal_ohm": 8,
+      "rated_w": 100
+    },
+    "xmax_definition": "Max linear excursion 8 mm p-p -> Xpeak ±4 mm; mechanical 34 mm p-p is NOT linear excursion",
+    "geometry": {
+      "outer_diameter_mm": 305,
+      "mounting_cutout_mm": 285,
+      "bolt_circle_mm": 293,
+      "overall_depth_mm": 130
+    },
+    "source_url": "https://stx.pl/w-30-200-8-mc.html",
+    "price_pln": 140,
+    "price_url": "https://stx.pl/category/glosniki-niskotonowe",
+    "price_status": "listing; reconfirm at checkout",
+    "role": "budget_negative_control_not_qualified_for_20Hz"
+  },
+  "prices_pln": {
+    "C02": {
+      "unit": 1613.33,
+      "url": "https://loudspeakershop.eu/glosnik-dayton-audio-rss390hf-4-15-reference-sub-p-7660.html",
+      "caveat": "offer contains inconsistent stock messages"
+    },
+    "C05": {
+      "unit": 215,
+      "url": "https://stx.pl/w-32-500-8-mc.html"
+    },
+    "C06": {
+      "unit": 990,
+      "url": "https://stx.pl/manufacturer/stx/w-32-800-8-fcx.html"
+    },
+    "C32": {
+      "unit": 140,
+      "url": "https://stx.pl/category/glosniki-niskotonowe"
+    }
+  },
+  "scope": "Shared sealed cabinet, 1x C02 vs two normal drivers C05/C06/C32; two identical 8-ohm units one channel series/parallel. No physical or in-room validation."
+}
