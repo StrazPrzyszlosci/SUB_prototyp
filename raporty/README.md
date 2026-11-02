@@ -136,3 +136,5 @@ Historyczne identyfikatory P43/P44 w kodzie konstrukcyjnym są odrębne od akust
 - [Raport 111 — P43-K/B: 1620 modeli utraty jednej podpory](111_P43B_awaria_jednej_podpory.md).
 - [Raport 112 — P44-K/A: 5400 modeli kontaktu jednostronnego](112_P44A_jednostronny_kontakt_5400.md).
 - [Raport 113 — P44-K/B: 16 200 warunków tarcia](113_P44B_tarcie_i_wrazliwosc_16200.md).
+
+- [Raport 114 — P45: dwa tanie 12″, 12 870 liniowych punktów, połączenia, odporność i ceny](114_P45_dwa_tanie_12_odpornosc_naped_koszt.md).

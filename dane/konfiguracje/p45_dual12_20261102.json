@@ -1,0 +1,188 @@
+{
+  "study": "P45",
+  "date": "2026-11-02",
+  "description": "Dwa tanie 12-calowe głośniki kontra Dayton RSS390HF-4: granice V/I/X/Pcu, seria/równoległe, oddzielne kanały, isobaric-kontrola",
+  "source_catalog": "dane/przetworniki/pula_rozszerzona.json",
+  "producer_prices": [
+    {
+      "id": "C02",
+      "price_pln": 1613.33,
+      "url": "https://loudspeakershop.eu/glosnik-dayton-audio-rss390hf-4-15-reference-sub-p-7660.html",
+      "source": "Oferta detaliczna; może się zmienić",
+      "qty": 1
+    },
+    {
+      "id": "C05",
+      "price_pln": 215,
+      "url": "https://stx.pl/w-32-500-8-mc.html",
+      "source": "Oficjalny sklep producenta; 2026-11-02",
+      "qty": 2
+    },
+    {
+      "id": "C06",
+      "price_pln": 990,
+      "url": "https://stx.pl/category/glosniki-niskotonowe",
+      "source": "Oficjalny cennik STX; 2026-11-02",
+      "qty": 2
+    }
+  ],
+  "amp": {
+    "voltage_v_rms": 40,
+    "total_current_a_rms": 12,
+    "separate_amp_each_current_a_rms": 12
+  },
+  "room": {
+    "dimensions_m": [
+      4.6,
+      3.7,
+      2.5
+    ],
+    "mode": "pomieszczenie nie jest symulowane, tylko geometryczne miejsce na baffle"
+  },
+  "baffle_mm": {
+    "width": 1020,
+    "height": 500,
+    "depth": 425,
+    "front_thickness": 44
+  },
+  "stx_500_mount_mm": {
+    "outer_diameter": 332,
+    "cutout_diameter": 284,
+    "bcd": 316,
+    "depth": 133,
+    "centres_x": [
+      245,
+      775
+    ],
+    "centre_z": 250
+  },
+  "volumes_net_air_l": [
+    75,
+    80,
+    100,
+    120,
+    150
+  ],
+  "frequencies_hz": [
+    20,
+    22.5,
+    25,
+    28,
+    31.5,
+    35,
+    40,
+    50,
+    63,
+    80,
+    100
+  ],
+  "aggregate_copper_w": [
+    50,
+    100,
+    200
+  ],
+  "xmax_catalog_fraction": [
+    0.7,
+    1
+  ],
+  "re_multiplier_hot_sensitivity": [
+    1,
+    1.2,
+    1.4
+  ],
+  "variants": [
+    {
+      "key": "D15_C02",
+      "driver_id": "C02",
+      "topology": "single",
+      "connection": "single",
+      "channels": 1
+    },
+    {
+      "key": "STX500_SINGLE_C05",
+      "driver_id": "C05",
+      "topology": "single",
+      "connection": "single",
+      "channels": 1
+    },
+    {
+      "key": "STX500_2_PAR",
+      "driver_id": "C05",
+      "topology": "normal",
+      "connection": "parallel",
+      "channels": 1
+    },
+    {
+      "key": "STX500_2_SER",
+      "driver_id": "C05",
+      "topology": "normal",
+      "connection": "series",
+      "channels": 1
+    },
+    {
+      "key": "STX500_2_DUALAMP",
+      "driver_id": "C05",
+      "topology": "normal",
+      "connection": "separate",
+      "channels": 2
+    },
+    {
+      "key": "STX500_2_ISOBARIC_PAR",
+      "driver_id": "C05",
+      "topology": "isobaric",
+      "connection": "parallel",
+      "channels": 1
+    },
+    {
+      "key": "STX800_2_PAR",
+      "driver_id": "C06",
+      "topology": "normal",
+      "connection": "parallel",
+      "channels": 1
+    },
+    {
+      "key": "STX800_2_SER",
+      "driver_id": "C06",
+      "topology": "normal",
+      "connection": "series",
+      "channels": 1
+    },
+    {
+      "key": "SB34SWPL76_2_PAR_LOW2OHM",
+      "driver_id": "C04",
+      "topology": "normal",
+      "connection": "parallel",
+      "channels": 1
+    },
+    {
+      "key": "LAB12_2_PAR_LOW3OHM",
+      "driver_id": "C23",
+      "topology": "normal",
+      "connection": "parallel",
+      "channels": 1
+    },
+    {
+      "key": "LAB12_2_SER",
+      "driver_id": "C23",
+      "topology": "normal",
+      "connection": "series",
+      "channels": 1
+    },
+    {
+      "key": "DAYTON12HF_2_PAR_LOW2OHM",
+      "driver_id": "C01",
+      "topology": "normal",
+      "connection": "parallel",
+      "channels": 1
+    },
+    {
+      "key": "DAYTON12HFA_2_PAR",
+      "driver_id": "C03",
+      "topology": "normal",
+      "connection": "parallel",
+      "channels": 1
+    }
+  ],
+  "limits": "Peak katalogowy Xmax; całkowity limit strat Cu pary, nie moc bezpieczna; bez termicznego modelu czasowego, pokoju i THD",
+  "evidence": "symulacja liniowa przy założeniu identycznych napędów i synchronicznego ruchu, bez weryfikacji w fizycznej skrzyni"
+}
