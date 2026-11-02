@@ -607,6 +607,51 @@ SPL ani integracji z nieznanymi monitorami.
 · [pełne scenariusze modalne](wyniki/b12_07_dwa_suby_pokoj_20261102.json)
 · [odtwarzalny model](skrypty/b12_07_dwa_suby_brief_pokoj.js).
 
+### B12-08 — wracamy do projektu *pierwszego* prototypu z jednym Daytonem
+
+Przegląd linii P29A–D, P30E/F, P38–P45 i B12-01–07
+potwierdził **warunkowy wybór Dayton Audio RSS390HF-4 (C02)**
+jako przetwornika pierwszej platformy pomiarowej. Pojedyncza
+zamknięta skrzynia z korpusem **1020×425×500 mm**, MDF 22 mm
+i klejonym frontem 44 mm, pozostaje punktem konstrukcyjnym.
+W modelu P30E zdejmowana mata 50 mm i wkłady dają
+**100,119 / 119,919 / 150,159 l netto**; są to wartości
+modelowe, **nie wykonany i zmierzony prototyp**.
+
+![B12-08: front jednego Daytona i przesiew pierścienia, NIE CNC](wyniki/b12_08_front_i_pierscien_NIE_CNC.svg)
+
+Nowe B12-08 policzyło **2232 połączenia wymiarów
+pierścienia, położenia kosza i hipotetycznych tolerancji**.
+Przy przyjętych wymaganiach 1 mm luzu od otworu Ø355,8
+i 2 mm materiału między otworem mocującym a wewnętrzną
+krawędzią prostego pierścienia **żaden z wariantów otworu
+nośnika Ø6,5 mm nie przeszedł**. To nie jest dowód wadliwości
+produktu, ale sygnał, że trzeba zdefiniować rzeczywiste
+**mocowanie 8 śrub → nośnik → wręgi/MDF**, a nie sam pierścień.
+Nowa hipotetyczna oś **X235 mm** zamiast starego X231 mm
+lepiej równoważy odstępy w rzucie, lecz **nie jest zatwierdzona**.
+
+![B12-08: warianty pełnej głębokości przy korpusie 425 mm](wyniki/b12_08_budget_glebokosci.svg)
+
+W **160 scenariuszach pełnej głębokości** widać, że obietnica
+19 mm zapasu z P30E zależy od faktycznej maskownicy i
+terminala. Dodatkowe **81 scenariuszy** modelu F3/Qtc pokazuje
+dla 120 l orientacyjne **Qtc≈0,714 i F3≈32,15 Hz**,
+ale **20 Hz bez EQ jest około −8,94 dB** w małosygnałowym
+modelu zamkniętej skrzyni. Kryterium końcowym jest czysty
+20–40 Hz w pokoju, nie samo F3, więc potrzebna pozostaje
+walidacja wychylenia, THD, termiki i dwóch subwooferów.
+
+**Następny etap: nośna rama kosza A, pełny CAD 3D i sprawdzenie
+wkładów dla obu orientacji.** Żaden element nie został
+zatwierdzony do CNC; nie zamawiamy głośnika, wzmacniacza
+ani osłony na podstawie tych rysunków.
+
+[Raport i mapa dowodów B12-08](raporty/B12-08_audyt_wyboru_i_konstrukcja_pierwszego_C02.md)
+· [dane 2232+160+81](wyniki/b12_08_audyt_konstrukcji_pierwszego_prototypu.json)
+· [kod odtwarzania](skrypty/b12_08_audyt_rysunku_pierwszego_prototypu.js).
+
+
 
 
 
