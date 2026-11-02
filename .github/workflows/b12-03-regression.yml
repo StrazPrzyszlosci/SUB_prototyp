@@ -1,0 +1,23 @@
+name: B12-03 limited IIR DSP and mismatched pair regression
+on:
+  pull_request:
+    paths:
+      - 'skrypty/b12_03_biquad_i_sprzezone_12.js'
+      - 'wyniki/b12_03_*'
+      - 'dane/przetworniki/pula_rozszerzona.json'
+      - '.github/workflows/b12-03-regression.yml'
+  push:
+    paths:
+      - 'skrypty/b12_03_biquad_i_sprzezone_12.js'
+      - 'wyniki/b12_03_*'
+      - 'dane/przetworniki/pula_rozszerzona.json'
+      - '.github/workflows/b12-03-regression.yml'
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Recompute 12 IIR configurations, 144 nominal and 192 mismatch cases
+        run: node skrypty/b12_03_biquad_i_sprzezone_12.js

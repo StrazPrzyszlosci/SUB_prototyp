@@ -1,0 +1,13 @@
+hp,profile,limit,dayton_db40,dual_stx_db40,gap_db,dayton_rel20_db,stx_rel20_db,limit_dayton,limit_stx
+18,balanced,conservative,93.22891,89.0244,4.20451,-4.43476,-3.8896,excursion_0,excursion_0
+18,balanced,catalog_limit,96.32695,92.12244,4.20451,-4.43476,-3.8896,excursion_0,excursion_0
+18,bassheavy,conservative,91.38645,87.1565,4.22995,-1.5122,-0.96704,excursion_0,excursion_0
+18,bassheavy,catalog_limit,94.48449,90.25454,4.22995,-1.5122,-0.96704,excursion_0,excursion_0
+18,reduced20,conservative,95.69652,91.56026,4.13626,-11.37051,-10.82535,excursion_0,excursion_0
+18,reduced20,catalog_limit,98.79456,94.6583,4.13626,-11.37051,-10.82535,excursion_0,excursion_0
+25,balanced,conservative,94.58896,90.41023,4.17873,-7.16904,-6.62389,excursion_0,excursion_0
+25,balanced,catalog_limit,97.687,93.50826,4.17874,-7.16904,-6.62389,excursion_0,excursion_0
+25,bassheavy,conservative,92.87524,88.67096,4.20428,-4.24648,-3.70133,excursion_0,excursion_0
+25,bassheavy,catalog_limit,95.97328,91.769,4.20428,-4.24648,-3.70133,excursion_0,excursion_0
+25,reduced20,conservative,96.75132,92.63608,4.11524,-14.10479,-13.55964,excursion_0,excursion_0
+25,reduced20,catalog_limit,99.66768,95.73412,3.93356,-14.10479,-13.55964,peak_voltage,excursion_0

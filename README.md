@@ -455,6 +455,31 @@ Bramka CNC i weryfikacja ochrony DSP pozostają otwarte.
 · [porównanie CSV](wyniki/b12_02_porownanie_120l.csv)
 · [skrypt odtwarzający obliczenia](skrypty/b12_02_multitone_eq_6tonow.js).
 
+### B12-03 — dwa tanie 12″ z ograniczoną korekcją DSP i rozrzutem parametrów
+
+Zastąpiliśmy idealną niezależną korekcję sześciu częstotliwości **kaskadą
+pięciu rzeczywistych matematycznie filtrów IIR**: HP Butterworth 2 przy
+18 lub 25 Hz, LP Linkwitz-Riley 4 przy 80 Hz oraz dwiema korekcjami:
+półkową i PEQ. Przebadano **1000 kombinacji nastaw korektora** na
+każdą optymalizowaną konfigurację, 12 zestawów filtrów, **144 ograniczone
+przypadki sześciotonowe** i **192 próby z rozbieżnymi parametrami obu STX**.
+
+![B12-03: model DSP i różnica poziomu składowej 40 Hz](wyniki/b12_03_40hz_dsp.svg)
+
+W zamkniętej 120 l, przy profilu z jednakowymi składowymi 20–40 Hz,
+limicie 70% katalogowego Xmax i 50 W łącznych strat miedzi:
+**Dayton 15″ 93,23 dB**, **para STX 12″ 89,02 dB** dla HP 18 Hz
+(modelowa składowa 40 Hz; nie suma SPL ani pomiar w pokoju).
+Przy HP 25 Hz odpowiednio **94,59 dB** i **90,41 dB**.
+STX wymagają w badaniu większego podbicia EQ (+8,06 dB maksimum,
+wobec +5,33 dB Daytona). Przeciwdziałanie przeciążeniom, THD, rzeczywista
+termika i kolizje dwóch koszy z wręgami pozostają **niezweryfikowane**.
+
+[Rozszerzony raport B12-03](raporty/B12-03_rzeczywiste_filtry_IIR_i_rozrzut_2x12.md)
+· [filtry, współczynniki i 336 scenariuszy JSON](wyniki/b12_03_iir_i_rozrzut_20261102.json)
+· [kod kontroli i odtwarzania](skrypty/b12_03_biquad_i_sprzezone_12.js).
+
+
 
 
 

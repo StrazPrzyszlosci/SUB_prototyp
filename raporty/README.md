@@ -142,3 +142,5 @@ Historyczne identyfikatory P43/P44 w kodzie konstrukcyjnym są odrębne od akust
 - [Badanie B12-01 — 3584 porównania dwóch tanich 12″ z Daytonem, limity X/Pcu, objętość, geometria frontu i koszt](B12-01_tanie_dwie_12_przeciw_Daytonowi_20261102.md).
 
 - [Badanie B12-02 — sześć jednoczesnych tonów, 144 scenariusze i 256 testów odporności idealnej korekcji, Dayton kontra dwa tanie STX 12″](B12-02_szesciotonowy_test_DSP_i_odpornosc.md).
+
+- [Badanie B12-03 — skończona liczba filtrów IIR, 12 konfiguracji DSP, 144 próby sześciotonowe, 192 scenariusze różnic dwóch koszy STX](B12-03_rzeczywiste_filtry_IIR_i_rozrzut_2x12.md).
