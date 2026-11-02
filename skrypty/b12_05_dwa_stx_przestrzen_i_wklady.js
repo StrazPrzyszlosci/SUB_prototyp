@@ -3,7 +3,7 @@
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
 const model=function model(){
  const widths=[980,1000,1020,1040],depths=[440,445,448,450,455],H=500,t=22,front=44,gap=2,cutout=284,outer=332,pcd=316,bolt=5.5;
- const large=[230,160,100],trim=[85,120,150];
+ const large=[230,160,100],trim=[98,120,150];
  const B=(lo,hi,kind)=>({lo,hi,kind});
  const V=b=>b.lo.reduce((a,x,i)=>a*(b.hi[i]-x),1)/1e6;
  const intersection=(a,b)=>a.lo.map((x,i)=>Math.max(0,Math.min(a.hi[i],b.hi[i])-Math.max(a.lo[i],b.lo[i]))).reduce((a,b)=>a*b,1)/1e6;
@@ -42,7 +42,7 @@ const model=function model(){
       if(problem)fails.push(`large_${k}_${problem}`);else {routes++;placed.push(it.bb);}
     }
   }
-  const trimBoxes=[B([27,55,30],[112,175,180],"trim-L"),B([W-112,55,30],[W-27,175,180],"trim-R")];
+  const trimBoxes=[B([27,55,30],[125,175,180],"trim-L"),B([W-125,55,30],[W-27,175,180],"trim-R")];
   for(let k=0;k<2;k++){
     const target=center(trimBoxes[k]),cx=k===0?W/4:3*W/4,stage=[cx,front+trim[1]/2+3,250],
       steps=[stage,[target[0],stage[1],250],[target[0],stage[1],target[2]],target];
@@ -78,6 +78,13 @@ const model=function model(){
  const chosen=cases.find(c=>c.W===1020&&c.D===450);
  const qualified=cases.filter(c=>c.geometrical_ok&&c.full_depth_ok&&c.targets.every(t=>t.options.length));
  if(!chosen.geometrical_ok||!chosen.full_depth_ok||!chosen.targets.every(t=>t.options.length))throw Error("Chosen check failed "+JSON.stringify({fails:chosen.fails,targets:chosen.targets}));
+ // Conservative whole-depth cutout-radius cylinder vs maximum fine-tuning inserts.
+ const motorCenters=[chosen.W/4,3*chosen.W/4];
+ for(let k=0;k<chosen.trim_bays.length;k++){
+  const b=chosen.trim_bays[k],xc=motorCenters[k],zc=250;
+  const dx=Math.max(b.lo[0]-xc,xc-b.hi[0],0),dz=Math.max(b.lo[2]-zc,zc-b.hi[2],0);
+  if(Math.hypot(dx,dz)<chosen.step_data.cutout_mm/2+2)throw Error("trim collides with driver reference cylinder");
+ }
  if(chosen.front.bolt_to_cutout_wood_mm<10||chosen.step_data.mat_clearance_mm<4)throw Error("geometry gate");
  if(chosen.nominal_empty_l-chosen.targets.find(t=>t.target_l===100).options[0].n_large*chosen.slot_l-chosen.targets.find(t=>t.target_l===100).options[0].fine_l-100>1e-7)throw Error("Volume identity fail");
  return{schema:"B12-05-rectilinear-swept-3d-geometry-research",date:"2026-11-02",count:cases.length,
