@@ -164,3 +164,5 @@ Historyczne identyfikatory P43/P44 w kodzie konstrukcyjnym są odrębne od akust
 - [B12-12 — cztery żebra kosza wobec ośmiu śrub: 78 192 modeli faz i weryfikacja oficjalnego rysunku](B12-12_cztery_zebra_osiem_srub_niepewnosc_fazy.md).
 
 - [B12-13 — rzeczywisty podział mocowań kosza 4+4, 2160 scenariuszy nierównej sztywności i utraty śruby](B12-13_sztywnosc_4plus4_i_awaria_mocowan_RSS390HF4.md).
+
+- [B12-14 — rozdzielenie rozciągania śrub i jednostronnego kontaktu kołnierza, 1152 stanów + 4608 testów tarcia](B12-14_jednostronny_kontakt_docisk_tarcie_8_mocowan.md).
