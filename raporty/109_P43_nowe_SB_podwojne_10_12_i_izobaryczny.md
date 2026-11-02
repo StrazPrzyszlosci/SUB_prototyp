@@ -83,6 +83,14 @@ Dla par normalnych konieczne są **dwa otwory**, odległości śrub i koszy, sum
 
 Powyższe dwa głośniki pracują w **jednej obudowie**. To nie jest to samo co planowane **dwa osobne subwoofery w pokoju** 4,6×3,7×2,5 m, które mają osobne wyjścia DSP i których rozmieszczenie ma zmniejszać nierówności modalne. Porównanie pełnej instalacji wymaga konsekwentnego liczenia *jednego vs dwóch fizycznych urządzeń* oraz kosztów par przetworników mnożonych przez liczbę obudów.
 
+## 6a. Dodatkowa kontrola 60 l izobarycznie vs 120 l pojedynczo
+
+**Przeliczono analitycznie** pięć modeli (STX 10″, SB29 10″, STX 12″ C05/C06 oraz SB34SWPL76-4): idealna para izobaryczna o **60 l** daje **identyczne Fc, Qtc i F3 w przyjętym wzorcu T/S bez Le** jak **jeden taki sam głośnik w 120 l**; największa reszta liczbowa równa **0**. To dokładna konsekwencja `Vas_iso=Vas/2`, a nie osobny pomiar ani dowód takiego samego SPL przy wspólnych ograniczeniach elektrycznych. Celem jest **oszczędność objętości**, ale szczelna komora między koszami i same przetworniki odbierają realny litraż.
+
+Audyt spójności T/S pięciu nowo wpisanych modeli porównał wartości wyprowadzone `Mms/Cms/BL/Qts` z dodatkowymi wartościami z kart. Największa odchyłka to **+6,193% dla wyprowadzonego Mms STX W.25.200.8.MC** względem 54 g w tabeli producenta. Liczb tych nie poprawiono arbitralnie, a wyniki przeliczeń z wejściowych Fs/Qes/Qms/Vas/Sd/Re pozostają jednoznaczne. Pozostałe nowe modele nie przekroczyły 5% w tym audycie.
+
+[Wyniki audytu i równoważności objętości 60/120 l](../wyniki/p43_audyt_TS_i_izobaryczne_60_na_120_20261102.json).
+
 ## 7. Decyzje i kolejne bramki
 
 **Pozostawić Daytona C02 jako wstępny faworyt**, jednocześnie przeznaczyć do pełniejszego badania nową gałąź:
