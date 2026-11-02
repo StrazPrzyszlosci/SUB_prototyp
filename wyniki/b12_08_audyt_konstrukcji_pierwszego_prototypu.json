@@ -1,0 +1,2000 @@
+{
+  "schema": "B12_08_C02_first_prototype_geometry_study",
+  "date": "2026-11-02",
+  "controls": {
+    "chassis_WDH_mm": [
+      1020,
+      425,
+      500
+    ],
+    "front_MDF_mm": 44,
+    "other_MDF_mm": 22,
+    "cutout_mm": 355.8,
+    "flange_OD_mm": 388.4,
+    "bolt_pcd_mm": 368,
+    "basket_hole_mm": 6.5,
+    "legacy_x_mm": 231,
+    "source_brace_x_mm": 448,
+    "room_xyz_m": [
+      3.7,
+      4.6,
+      2.5
+    ]
+  },
+  "mounting": {
+    "n": 2232,
+    "passed": 108,
+    "passed_basket_hole_6_5": 0,
+    "passed_hypothetical_hole_5_5": 108,
+    "thresholds": {
+      "side_brace_mm": 10,
+      "ID_cutout_radial_mm": 1,
+      "metal_web_inner_mm": 2,
+      "axis_uncertainty_mm": [
+        0,
+        1,
+        2
+      ]
+    },
+    "range": {
+      "x": [
+        225,
+        255,
+        1
+      ],
+      "OD": [
+        392,
+        400,
+        408
+      ],
+      "ID": [
+        356,
+        357.8,
+        358,
+        360
+      ],
+      "hole": [
+        5.5,
+        6.5
+      ]
+    },
+    "example_at_old_x": {
+      "x": 231,
+      "od": 400,
+      "id": 356,
+      "hole": 6.5,
+      "err": 2,
+      "wall": 9,
+      "brace": 17,
+      "vertical": 28,
+      "gap": 0.1,
+      "innerWeb": 2.75,
+      "outerWeb": 12.75,
+      "position": false,
+      "radial": false,
+      "pass": false
+    },
+    "example_unqualified_fastener": {
+      "x": 235,
+      "od": 392,
+      "id": 358,
+      "hole": 5.5,
+      "err": 2,
+      "wall": 17,
+      "brace": 17,
+      "vertical": 32,
+      "gap": 1.1,
+      "innerWeb": 2.25,
+      "outerWeb": 9.25,
+      "position": true,
+      "radial": true,
+      "pass": true
+    },
+    "example_6_5": {
+      "x": 235,
+      "od": 400,
+      "id": 358,
+      "hole": 6.5,
+      "err": 2,
+      "wall": 13,
+      "brace": 13,
+      "vertical": 28,
+      "gap": 1.1,
+      "innerWeb": 1.75,
+      "outerWeb": 12.75,
+      "position": true,
+      "radial": false,
+      "pass": false
+    },
+    "geometry_proof": "For 6.5mm rear ring fastener through-hole, radial gap>=1mm forces ID>=357.8mm while inner web>=2mm forces ID<=357.5mm, so no such simple concentric annulus satisfies both ASSUMED thresholds.",
+    "warning": "Basket flange hole Ø6.5mm does not dictate the bolt or hole Ø of an independently designed load carrier. The 5.5mm alternative is hypothetical and NOT approved; XZ obstacles are projected, not 3D structural validation."
+  },
+  "depth": {
+    "n": 160,
+    "front_budget_min_assumed_mm": 31.5,
+    "design_reserve_mm": 10,
+    "all": [
+      {
+        "body": 420,
+        "front": 30,
+        "rear": 0,
+        "error": 0,
+        "full": 450,
+        "margin": 50,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 420,
+        "front": 30,
+        "rear": 0,
+        "error": 5,
+        "full": 455,
+        "margin": 45,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 420,
+        "front": 30,
+        "rear": 10,
+        "error": 0,
+        "full": 460,
+        "margin": 40,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 420,
+        "front": 30,
+        "rear": 10,
+        "error": 5,
+        "full": 465,
+        "margin": 35,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 420,
+        "front": 30,
+        "rear": 20,
+        "error": 0,
+        "full": 470,
+        "margin": 30,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 420,
+        "front": 30,
+        "rear": 20,
+        "error": 5,
+        "full": 475,
+        "margin": 25,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 420,
+        "front": 30,
+        "rear": 30,
+        "error": 0,
+        "full": 480,
+        "margin": 20,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 420,
+        "front": 30,
+        "rear": 30,
+        "error": 5,
+        "full": 485,
+        "margin": 15,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 420,
+        "front": 40,
+        "rear": 0,
+        "error": 0,
+        "full": 460,
+        "margin": 40,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 420,
+        "front": 40,
+        "rear": 0,
+        "error": 5,
+        "full": 465,
+        "margin": 35,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 420,
+        "front": 40,
+        "rear": 10,
+        "error": 0,
+        "full": 470,
+        "margin": 30,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 420,
+        "front": 40,
+        "rear": 10,
+        "error": 5,
+        "full": 475,
+        "margin": 25,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 420,
+        "front": 40,
+        "rear": 20,
+        "error": 0,
+        "full": 480,
+        "margin": 20,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 420,
+        "front": 40,
+        "rear": 20,
+        "error": 5,
+        "full": 485,
+        "margin": 15,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 420,
+        "front": 40,
+        "rear": 30,
+        "error": 0,
+        "full": 490,
+        "margin": 10,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 420,
+        "front": 40,
+        "rear": 30,
+        "error": 5,
+        "full": 495,
+        "margin": 5,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 420,
+        "front": 50,
+        "rear": 0,
+        "error": 0,
+        "full": 470,
+        "margin": 30,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 420,
+        "front": 50,
+        "rear": 0,
+        "error": 5,
+        "full": 475,
+        "margin": 25,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 420,
+        "front": 50,
+        "rear": 10,
+        "error": 0,
+        "full": 480,
+        "margin": 20,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 420,
+        "front": 50,
+        "rear": 10,
+        "error": 5,
+        "full": 485,
+        "margin": 15,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 420,
+        "front": 50,
+        "rear": 20,
+        "error": 0,
+        "full": 490,
+        "margin": 10,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 420,
+        "front": 50,
+        "rear": 20,
+        "error": 5,
+        "full": 495,
+        "margin": 5,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 420,
+        "front": 50,
+        "rear": 30,
+        "error": 0,
+        "full": 500,
+        "margin": 0,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 420,
+        "front": 50,
+        "rear": 30,
+        "error": 5,
+        "full": 505,
+        "margin": -5,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 420,
+        "front": 60,
+        "rear": 0,
+        "error": 0,
+        "full": 480,
+        "margin": 20,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 420,
+        "front": 60,
+        "rear": 0,
+        "error": 5,
+        "full": 485,
+        "margin": 15,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 420,
+        "front": 60,
+        "rear": 10,
+        "error": 0,
+        "full": 490,
+        "margin": 10,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 420,
+        "front": 60,
+        "rear": 10,
+        "error": 5,
+        "full": 495,
+        "margin": 5,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 420,
+        "front": 60,
+        "rear": 20,
+        "error": 0,
+        "full": 500,
+        "margin": 0,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 420,
+        "front": 60,
+        "rear": 20,
+        "error": 5,
+        "full": 505,
+        "margin": -5,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 420,
+        "front": 60,
+        "rear": 30,
+        "error": 0,
+        "full": 510,
+        "margin": -10,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 420,
+        "front": 60,
+        "rear": 30,
+        "error": 5,
+        "full": 515,
+        "margin": -15,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 425,
+        "front": 30,
+        "rear": 0,
+        "error": 0,
+        "full": 455,
+        "margin": 45,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 425,
+        "front": 30,
+        "rear": 0,
+        "error": 5,
+        "full": 460,
+        "margin": 40,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 425,
+        "front": 30,
+        "rear": 10,
+        "error": 0,
+        "full": 465,
+        "margin": 35,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 425,
+        "front": 30,
+        "rear": 10,
+        "error": 5,
+        "full": 470,
+        "margin": 30,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 425,
+        "front": 30,
+        "rear": 20,
+        "error": 0,
+        "full": 475,
+        "margin": 25,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 425,
+        "front": 30,
+        "rear": 20,
+        "error": 5,
+        "full": 480,
+        "margin": 20,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 425,
+        "front": 30,
+        "rear": 30,
+        "error": 0,
+        "full": 485,
+        "margin": 15,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 425,
+        "front": 30,
+        "rear": 30,
+        "error": 5,
+        "full": 490,
+        "margin": 10,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 425,
+        "front": 40,
+        "rear": 0,
+        "error": 0,
+        "full": 465,
+        "margin": 35,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 425,
+        "front": 40,
+        "rear": 0,
+        "error": 5,
+        "full": 470,
+        "margin": 30,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 425,
+        "front": 40,
+        "rear": 10,
+        "error": 0,
+        "full": 475,
+        "margin": 25,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 425,
+        "front": 40,
+        "rear": 10,
+        "error": 5,
+        "full": 480,
+        "margin": 20,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 425,
+        "front": 40,
+        "rear": 20,
+        "error": 0,
+        "full": 485,
+        "margin": 15,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 425,
+        "front": 40,
+        "rear": 20,
+        "error": 5,
+        "full": 490,
+        "margin": 10,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 425,
+        "front": 40,
+        "rear": 30,
+        "error": 0,
+        "full": 495,
+        "margin": 5,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 425,
+        "front": 40,
+        "rear": 30,
+        "error": 5,
+        "full": 500,
+        "margin": 0,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 425,
+        "front": 50,
+        "rear": 0,
+        "error": 0,
+        "full": 475,
+        "margin": 25,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 425,
+        "front": 50,
+        "rear": 0,
+        "error": 5,
+        "full": 480,
+        "margin": 20,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 425,
+        "front": 50,
+        "rear": 10,
+        "error": 0,
+        "full": 485,
+        "margin": 15,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 425,
+        "front": 50,
+        "rear": 10,
+        "error": 5,
+        "full": 490,
+        "margin": 10,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 425,
+        "front": 50,
+        "rear": 20,
+        "error": 0,
+        "full": 495,
+        "margin": 5,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 425,
+        "front": 50,
+        "rear": 20,
+        "error": 5,
+        "full": 500,
+        "margin": 0,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 425,
+        "front": 50,
+        "rear": 30,
+        "error": 0,
+        "full": 505,
+        "margin": -5,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 425,
+        "front": 50,
+        "rear": 30,
+        "error": 5,
+        "full": 510,
+        "margin": -10,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 425,
+        "front": 60,
+        "rear": 0,
+        "error": 0,
+        "full": 485,
+        "margin": 15,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 425,
+        "front": 60,
+        "rear": 0,
+        "error": 5,
+        "full": 490,
+        "margin": 10,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 425,
+        "front": 60,
+        "rear": 10,
+        "error": 0,
+        "full": 495,
+        "margin": 5,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 425,
+        "front": 60,
+        "rear": 10,
+        "error": 5,
+        "full": 500,
+        "margin": 0,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 425,
+        "front": 60,
+        "rear": 20,
+        "error": 0,
+        "full": 505,
+        "margin": -5,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 425,
+        "front": 60,
+        "rear": 20,
+        "error": 5,
+        "full": 510,
+        "margin": -10,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 425,
+        "front": 60,
+        "rear": 30,
+        "error": 0,
+        "full": 515,
+        "margin": -15,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 425,
+        "front": 60,
+        "rear": 30,
+        "error": 5,
+        "full": 520,
+        "margin": -20,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 430,
+        "front": 30,
+        "rear": 0,
+        "error": 0,
+        "full": 460,
+        "margin": 40,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 430,
+        "front": 30,
+        "rear": 0,
+        "error": 5,
+        "full": 465,
+        "margin": 35,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 430,
+        "front": 30,
+        "rear": 10,
+        "error": 0,
+        "full": 470,
+        "margin": 30,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 430,
+        "front": 30,
+        "rear": 10,
+        "error": 5,
+        "full": 475,
+        "margin": 25,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 430,
+        "front": 30,
+        "rear": 20,
+        "error": 0,
+        "full": 480,
+        "margin": 20,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 430,
+        "front": 30,
+        "rear": 20,
+        "error": 5,
+        "full": 485,
+        "margin": 15,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 430,
+        "front": 30,
+        "rear": 30,
+        "error": 0,
+        "full": 490,
+        "margin": 10,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 430,
+        "front": 30,
+        "rear": 30,
+        "error": 5,
+        "full": 495,
+        "margin": 5,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 430,
+        "front": 40,
+        "rear": 0,
+        "error": 0,
+        "full": 470,
+        "margin": 30,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 430,
+        "front": 40,
+        "rear": 0,
+        "error": 5,
+        "full": 475,
+        "margin": 25,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 430,
+        "front": 40,
+        "rear": 10,
+        "error": 0,
+        "full": 480,
+        "margin": 20,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 430,
+        "front": 40,
+        "rear": 10,
+        "error": 5,
+        "full": 485,
+        "margin": 15,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 430,
+        "front": 40,
+        "rear": 20,
+        "error": 0,
+        "full": 490,
+        "margin": 10,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 430,
+        "front": 40,
+        "rear": 20,
+        "error": 5,
+        "full": 495,
+        "margin": 5,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 430,
+        "front": 40,
+        "rear": 30,
+        "error": 0,
+        "full": 500,
+        "margin": 0,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 430,
+        "front": 40,
+        "rear": 30,
+        "error": 5,
+        "full": 505,
+        "margin": -5,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 430,
+        "front": 50,
+        "rear": 0,
+        "error": 0,
+        "full": 480,
+        "margin": 20,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 430,
+        "front": 50,
+        "rear": 0,
+        "error": 5,
+        "full": 485,
+        "margin": 15,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 430,
+        "front": 50,
+        "rear": 10,
+        "error": 0,
+        "full": 490,
+        "margin": 10,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 430,
+        "front": 50,
+        "rear": 10,
+        "error": 5,
+        "full": 495,
+        "margin": 5,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 430,
+        "front": 50,
+        "rear": 20,
+        "error": 0,
+        "full": 500,
+        "margin": 0,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 430,
+        "front": 50,
+        "rear": 20,
+        "error": 5,
+        "full": 505,
+        "margin": -5,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 430,
+        "front": 50,
+        "rear": 30,
+        "error": 0,
+        "full": 510,
+        "margin": -10,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 430,
+        "front": 50,
+        "rear": 30,
+        "error": 5,
+        "full": 515,
+        "margin": -15,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 430,
+        "front": 60,
+        "rear": 0,
+        "error": 0,
+        "full": 490,
+        "margin": 10,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 430,
+        "front": 60,
+        "rear": 0,
+        "error": 5,
+        "full": 495,
+        "margin": 5,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 430,
+        "front": 60,
+        "rear": 10,
+        "error": 0,
+        "full": 500,
+        "margin": 0,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 430,
+        "front": 60,
+        "rear": 10,
+        "error": 5,
+        "full": 505,
+        "margin": -5,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 430,
+        "front": 60,
+        "rear": 20,
+        "error": 0,
+        "full": 510,
+        "margin": -10,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 430,
+        "front": 60,
+        "rear": 20,
+        "error": 5,
+        "full": 515,
+        "margin": -15,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 430,
+        "front": 60,
+        "rear": 30,
+        "error": 0,
+        "full": 520,
+        "margin": -20,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 430,
+        "front": 60,
+        "rear": 30,
+        "error": 5,
+        "full": 525,
+        "margin": -25,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 435,
+        "front": 30,
+        "rear": 0,
+        "error": 0,
+        "full": 465,
+        "margin": 35,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 435,
+        "front": 30,
+        "rear": 0,
+        "error": 5,
+        "full": 470,
+        "margin": 30,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 435,
+        "front": 30,
+        "rear": 10,
+        "error": 0,
+        "full": 475,
+        "margin": 25,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 435,
+        "front": 30,
+        "rear": 10,
+        "error": 5,
+        "full": 480,
+        "margin": 20,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 435,
+        "front": 30,
+        "rear": 20,
+        "error": 0,
+        "full": 485,
+        "margin": 15,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 435,
+        "front": 30,
+        "rear": 20,
+        "error": 5,
+        "full": 490,
+        "margin": 10,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 435,
+        "front": 30,
+        "rear": 30,
+        "error": 0,
+        "full": 495,
+        "margin": 5,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 435,
+        "front": 30,
+        "rear": 30,
+        "error": 5,
+        "full": 500,
+        "margin": 0,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 435,
+        "front": 40,
+        "rear": 0,
+        "error": 0,
+        "full": 475,
+        "margin": 25,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 435,
+        "front": 40,
+        "rear": 0,
+        "error": 5,
+        "full": 480,
+        "margin": 20,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 435,
+        "front": 40,
+        "rear": 10,
+        "error": 0,
+        "full": 485,
+        "margin": 15,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 435,
+        "front": 40,
+        "rear": 10,
+        "error": 5,
+        "full": 490,
+        "margin": 10,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 435,
+        "front": 40,
+        "rear": 20,
+        "error": 0,
+        "full": 495,
+        "margin": 5,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 435,
+        "front": 40,
+        "rear": 20,
+        "error": 5,
+        "full": 500,
+        "margin": 0,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 435,
+        "front": 40,
+        "rear": 30,
+        "error": 0,
+        "full": 505,
+        "margin": -5,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 435,
+        "front": 40,
+        "rear": 30,
+        "error": 5,
+        "full": 510,
+        "margin": -10,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 435,
+        "front": 50,
+        "rear": 0,
+        "error": 0,
+        "full": 485,
+        "margin": 15,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 435,
+        "front": 50,
+        "rear": 0,
+        "error": 5,
+        "full": 490,
+        "margin": 10,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 435,
+        "front": 50,
+        "rear": 10,
+        "error": 0,
+        "full": 495,
+        "margin": 5,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 435,
+        "front": 50,
+        "rear": 10,
+        "error": 5,
+        "full": 500,
+        "margin": 0,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 435,
+        "front": 50,
+        "rear": 20,
+        "error": 0,
+        "full": 505,
+        "margin": -5,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 435,
+        "front": 50,
+        "rear": 20,
+        "error": 5,
+        "full": 510,
+        "margin": -10,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 435,
+        "front": 50,
+        "rear": 30,
+        "error": 0,
+        "full": 515,
+        "margin": -15,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 435,
+        "front": 50,
+        "rear": 30,
+        "error": 5,
+        "full": 520,
+        "margin": -20,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 435,
+        "front": 60,
+        "rear": 0,
+        "error": 0,
+        "full": 495,
+        "margin": 5,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 435,
+        "front": 60,
+        "rear": 0,
+        "error": 5,
+        "full": 500,
+        "margin": 0,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 435,
+        "front": 60,
+        "rear": 10,
+        "error": 0,
+        "full": 505,
+        "margin": -5,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 435,
+        "front": 60,
+        "rear": 10,
+        "error": 5,
+        "full": 510,
+        "margin": -10,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 435,
+        "front": 60,
+        "rear": 20,
+        "error": 0,
+        "full": 515,
+        "margin": -15,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 435,
+        "front": 60,
+        "rear": 20,
+        "error": 5,
+        "full": 520,
+        "margin": -20,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 435,
+        "front": 60,
+        "rear": 30,
+        "error": 0,
+        "full": 525,
+        "margin": -25,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 435,
+        "front": 60,
+        "rear": 30,
+        "error": 5,
+        "full": 530,
+        "margin": -30,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 440,
+        "front": 30,
+        "rear": 0,
+        "error": 0,
+        "full": 470,
+        "margin": 30,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 440,
+        "front": 30,
+        "rear": 0,
+        "error": 5,
+        "full": 475,
+        "margin": 25,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 440,
+        "front": 30,
+        "rear": 10,
+        "error": 0,
+        "full": 480,
+        "margin": 20,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 440,
+        "front": 30,
+        "rear": 10,
+        "error": 5,
+        "full": 485,
+        "margin": 15,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 440,
+        "front": 30,
+        "rear": 20,
+        "error": 0,
+        "full": 490,
+        "margin": 10,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 440,
+        "front": 30,
+        "rear": 20,
+        "error": 5,
+        "full": 495,
+        "margin": 5,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 440,
+        "front": 30,
+        "rear": 30,
+        "error": 0,
+        "full": 500,
+        "margin": 0,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 440,
+        "front": 30,
+        "rear": 30,
+        "error": 5,
+        "full": 505,
+        "margin": -5,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 440,
+        "front": 40,
+        "rear": 0,
+        "error": 0,
+        "full": 480,
+        "margin": 20,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 440,
+        "front": 40,
+        "rear": 0,
+        "error": 5,
+        "full": 485,
+        "margin": 15,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 440,
+        "front": 40,
+        "rear": 10,
+        "error": 0,
+        "full": 490,
+        "margin": 10,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 440,
+        "front": 40,
+        "rear": 10,
+        "error": 5,
+        "full": 495,
+        "margin": 5,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 440,
+        "front": 40,
+        "rear": 20,
+        "error": 0,
+        "full": 500,
+        "margin": 0,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 440,
+        "front": 40,
+        "rear": 20,
+        "error": 5,
+        "full": 505,
+        "margin": -5,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 440,
+        "front": 40,
+        "rear": 30,
+        "error": 0,
+        "full": 510,
+        "margin": -10,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 440,
+        "front": 40,
+        "rear": 30,
+        "error": 5,
+        "full": 515,
+        "margin": -15,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 440,
+        "front": 50,
+        "rear": 0,
+        "error": 0,
+        "full": 490,
+        "margin": 10,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 440,
+        "front": 50,
+        "rear": 0,
+        "error": 5,
+        "full": 495,
+        "margin": 5,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 440,
+        "front": 50,
+        "rear": 10,
+        "error": 0,
+        "full": 500,
+        "margin": 0,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 440,
+        "front": 50,
+        "rear": 10,
+        "error": 5,
+        "full": 505,
+        "margin": -5,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 440,
+        "front": 50,
+        "rear": 20,
+        "error": 0,
+        "full": 510,
+        "margin": -10,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 440,
+        "front": 50,
+        "rear": 20,
+        "error": 5,
+        "full": 515,
+        "margin": -15,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 440,
+        "front": 50,
+        "rear": 30,
+        "error": 0,
+        "full": 520,
+        "margin": -20,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 440,
+        "front": 50,
+        "rear": 30,
+        "error": 5,
+        "full": 525,
+        "margin": -25,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 440,
+        "front": 60,
+        "rear": 0,
+        "error": 0,
+        "full": 500,
+        "margin": 0,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 440,
+        "front": 60,
+        "rear": 0,
+        "error": 5,
+        "full": 505,
+        "margin": -5,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 440,
+        "front": 60,
+        "rear": 10,
+        "error": 0,
+        "full": 510,
+        "margin": -10,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 440,
+        "front": 60,
+        "rear": 10,
+        "error": 5,
+        "full": 515,
+        "margin": -15,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 440,
+        "front": 60,
+        "rear": 20,
+        "error": 0,
+        "full": 520,
+        "margin": -20,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 440,
+        "front": 60,
+        "rear": 20,
+        "error": 5,
+        "full": 525,
+        "margin": -25,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 440,
+        "front": 60,
+        "rear": 30,
+        "error": 0,
+        "full": 530,
+        "margin": -30,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 440,
+        "front": 60,
+        "rear": 30,
+        "error": 5,
+        "full": 535,
+        "margin": -35,
+        "nominalOk": false,
+        "screen10mm": false
+      }
+    ],
+    "D425_worst5": [
+      {
+        "body": 425,
+        "front": 30,
+        "rear": 0,
+        "error": 5,
+        "full": 460,
+        "margin": 40,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 425,
+        "front": 30,
+        "rear": 10,
+        "error": 5,
+        "full": 470,
+        "margin": 30,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 425,
+        "front": 30,
+        "rear": 20,
+        "error": 5,
+        "full": 480,
+        "margin": 20,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 425,
+        "front": 30,
+        "rear": 30,
+        "error": 5,
+        "full": 490,
+        "margin": 10,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 425,
+        "front": 40,
+        "rear": 0,
+        "error": 5,
+        "full": 470,
+        "margin": 30,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 425,
+        "front": 40,
+        "rear": 10,
+        "error": 5,
+        "full": 480,
+        "margin": 20,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 425,
+        "front": 40,
+        "rear": 20,
+        "error": 5,
+        "full": 490,
+        "margin": 10,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 425,
+        "front": 40,
+        "rear": 30,
+        "error": 5,
+        "full": 500,
+        "margin": 0,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 425,
+        "front": 50,
+        "rear": 0,
+        "error": 5,
+        "full": 480,
+        "margin": 20,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 425,
+        "front": 50,
+        "rear": 10,
+        "error": 5,
+        "full": 490,
+        "margin": 10,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 425,
+        "front": 50,
+        "rear": 20,
+        "error": 5,
+        "full": 500,
+        "margin": 0,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 425,
+        "front": 50,
+        "rear": 30,
+        "error": 5,
+        "full": 510,
+        "margin": -10,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 425,
+        "front": 60,
+        "rear": 0,
+        "error": 5,
+        "full": 490,
+        "margin": 10,
+        "nominalOk": true,
+        "screen10mm": true
+      },
+      {
+        "body": 425,
+        "front": 60,
+        "rear": 10,
+        "error": 5,
+        "full": 500,
+        "margin": 0,
+        "nominalOk": true,
+        "screen10mm": false
+      },
+      {
+        "body": 425,
+        "front": 60,
+        "rear": 20,
+        "error": 5,
+        "full": 510,
+        "margin": -10,
+        "nominalOk": false,
+        "screen10mm": false
+      },
+      {
+        "body": 425,
+        "front": 60,
+        "rear": 30,
+        "error": 5,
+        "full": 520,
+        "margin": -20,
+        "nominalOk": false,
+        "screen10mm": false
+      }
+    ],
+    "status": "The aggregate P30E 56mm projection estimate is not added again; front/rear/tolerance are total, alternative assumptions. Grille and rear connector are unverified."
+  },
+  "net": {
+    "nominal_Qts": 0.42898,
+    "Fs_hz": 19.5,
+    "Vas_l": 212,
+    "scenarios": [
+      {
+        "target": 100,
+        "nominal": 100.119,
+        "min": 94.22,
+        "max": 106,
+        "blocks": "16 large + 4 small",
+        "nominalAlignment": {
+          "Qtc": 0.75742,
+          "fcHz": 34.42996,
+          "F3Hz": 32.29404,
+          "dB20": -9.55273,
+          "dB40": -1.33091
+        },
+        "sensitivityRanges": {
+          "Qtc": [
+            0.635,
+            0.89588
+          ],
+          "F3Hz": [
+            29.17608,
+            36.69883
+          ],
+          "dB20": [
+            -10.76514,
+            -8.36552
+          ]
+        },
+        "cases": 27
+      },
+      {
+        "target": 120,
+        "nominal": 119.919,
+        "min": 114.25,
+        "max": 125.57,
+        "blocks": "12 large",
+        "nominalAlignment": {
+          "Qtc": 0.71368,
+          "fcHz": 32.44193,
+          "F3Hz": 32.14568,
+          "dB20": -8.93575,
+          "dB40": -1.48776
+        },
+        "sensitivityRanges": {
+          "Qtc": [
+            0.6024,
+            0.83803
+          ],
+          "F3Hz": [
+            28.87997,
+            37.18315
+          ],
+          "dB20": [
+            -10.07931,
+            -7.82139
+          ]
+        },
+        "cases": 27
+      },
+      {
+        "target": 150,
+        "nominal": 150.159,
+        "min": 144.83,
+        "max": 155.48,
+        "blocks": "1 large",
+        "nominalAlignment": {
+          "Qtc": 0.66621,
+          "fcHz": 30.28367,
+          "F3Hz": 32.25651,
+          "dB20": -8.34868,
+          "dB40": -1.68388
+        },
+        "sensitivityRanges": {
+          "Qtc": [
+            0.56645,
+            0.77631
+          ],
+          "F3Hz": [
+            28.73022,
+            37.93972
+          ],
+          "dB20": [
+            -9.44141,
+            -7.29425
+          ]
+        },
+        "cases": 27
+      }
+    ],
+    "sensitivity_cases": 81,
+    "source": "P30E 1020×425×500mm after 50mm rear polyester, modules 100/120/150l. Vas190/212/234 and Qts 0.38/0.43/0.48 are hypothetical.",
+    "model": "ideal sealed 2nd order, no room, damping losses, DSP or THD"
+  },
+  "room": {
+    "two_width_1020mm_m": 2.04,
+    "front_wall_m": 3.7,
+    "remaining_front_wall_m": 1.66,
+    "monitor_clearances_unmeasured": true
+  },
+  "conclusion": {
+    "selected": "C02 Dayton RSS390HF-4 remains provisional first prototype; B12-08 examines 1020×425×500mm body / nominal 119.919l sealed (12 large modules) and 100/150l settings",
+    "mounting_gate": "STOP. Ring alone cannot be certified; need true basket geometry and tested path 8 bolts -> carrier/frame -> front/brace + leakage and real tool access.",
+    "candidates": "C11 RSS390HE-22 thermal countercandidate, C06 STX W.32.800.8.FCX 12in; 2x C05 per sub is a cost-only alternative not baseline",
+    "limitations": [
+      "AABB/projected x margins do not prove clearance from baskets, tools or wires",
+      "No measured mounting joint stiffness/preload/pullout/shear/fatigue",
+      "No verified full grille/terminal and nominal 19mm P30E margin is conditional",
+      "Volume extremes are arbitrary model perturbations, not production tolerance",
+      "No measured THD/IMD, compression, coil cooling or distortion spectra",
+      "No exact placed cabinets+monitors in listening room"
+    ],
+    "CNC": "BLOCKED",
+    "purchase": "BLOCKED"
+  }
+}
