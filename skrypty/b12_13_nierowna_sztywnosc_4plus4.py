@@ -171,7 +171,7 @@ def main():
               "full_file":"wyniki/b12_13_scenariusze_4plus4.json",
               "sha256":hashlib.sha256(p.read_bytes()).hexdigest(),
               "summary":summary}
-    (OUT/"b12_13_podsumowanie.json").write_text(
+    (OUT/"b12_13_manifest_odtworzony.json").write_text(
          json.dumps(manifest,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(json.dumps(summary,ensure_ascii=False,indent=2))
 
