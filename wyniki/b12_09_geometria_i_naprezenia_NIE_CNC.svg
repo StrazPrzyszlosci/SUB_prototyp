@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 390" role="img" aria-label="B12-09. Badania geometryczne i naprężeń. Nie dokumentacja CNC.">
+<rect width="880" height="390" fill="#fff"/>
+<text x="22" y="30" font-family="sans-serif" font-size="19" fill="#19232d">B12-09 | Mocowanie lokalne — badania scenariuszowe, NIE CNC</text>
+<text x="22" y="65" font-family="sans-serif" font-size="14" fill="#19232d">Promieniowy pas MDF przy osi śruby (bez tolerancji), mm</text>
+<text x="25" y="108" font-family="sans-serif" font-size="12" fill="#19232d">Ø4</text>
+<rect x="95" y="93" width="319.80" height="20" fill="#136f63"/>
+<text x="429.79999999999956" y="108" font-family="sans-serif" font-size="12" fill="#19232d">4.10 mm</text>
+<text x="25" y="141" font-family="sans-serif" font-size="12" fill="#19232d">Ø4.5</text>
+<rect x="95" y="126" width="300.30" height="20" fill="#136f63"/>
+<text x="410.29999999999956" y="141" font-family="sans-serif" font-size="12" fill="#19232d">3.85 mm</text>
+<text x="25" y="174" font-family="sans-serif" font-size="12" fill="#19232d">Ø5</text>
+<rect x="95" y="159" width="280.80" height="20" fill="#136f63"/>
+<text x="390.79999999999956" y="174" font-family="sans-serif" font-size="12" fill="#19232d">3.60 mm</text>
+<text x="25" y="207" font-family="sans-serif" font-size="12" fill="#19232d">Ø5.5</text>
+<rect x="95" y="192" width="261.30" height="20" fill="#136f63"/>
+<text x="371.29999999999956" y="207" font-family="sans-serif" font-size="12" fill="#19232d">3.35 mm</text>
+<text x="25" y="240" font-family="sans-serif" font-size="12" fill="#19232d">Ø6.5</text>
+<rect x="95" y="225" width="222.30" height="20" fill="#136f63"/>
+<text x="332.29999999999956" y="240" font-family="sans-serif" font-size="12" fill="#19232d">2.85 mm</text>
+<text x="25" y="273" font-family="sans-serif" font-size="12" fill="#19232d">Ø8</text>
+<rect x="95" y="258" width="163.80" height="20" fill="#136f63"/>
+<text x="273.79999999999956" y="273" font-family="sans-serif" font-size="12" fill="#19232d">2.10 mm</text>
+<text x="25" y="306" font-family="sans-serif" font-size="12" fill="#19232d">Ø10</text>
+<rect x="95" y="291" width="85.80" height="20" fill="#136f63"/>
+<text x="195.79999999999956" y="306" font-family="sans-serif" font-size="12" fill="#19232d">1.10 mm</text>
+<text x="25" y="339" font-family="sans-serif" font-size="12" fill="#19232d">Ø12</text>
+<rect x="95" y="324" width="78.00" height="20" fill="#b04437"/>
+<text x="188" y="339" font-family="sans-serif" font-size="12" fill="#19232d">0.10 mm</text>
+<text x="490" y="65" font-family="sans-serif" font-size="14" fill="#19232d">Pole klejenia vs koncentracja naprężeń</text>
+<text x="494" y="96" font-family="sans-serif" font-size="12" fill="#19232d">h=0 mm; k=1:</text>
+<text x="680" y="96" font-family="sans-serif" font-size="12" fill="#19232d">0.135 MPa</text>
+<text x="494" y="135" font-family="sans-serif" font-size="12" fill="#19232d">h=0 mm; k=3:</text>
+<text x="680" y="135" font-family="sans-serif" font-size="12" fill="#19232d">0.405 MPa</text>
+<text x="494" y="174" font-family="sans-serif" font-size="12" fill="#19232d">h=10 mm; k=1:</text>
+<text x="680" y="174" font-family="sans-serif" font-size="12" fill="#19232d">0.360 MPa</text>
+<text x="494" y="213" font-family="sans-serif" font-size="12" fill="#19232d">h=10 mm; k=3:</text>
+<text x="680" y="213" font-family="sans-serif" font-size="12" fill="#19232d">1.079 MPa</text>
+<text x="494" y="252" font-family="sans-serif" font-size="12" fill="#19232d">h=20 mm; k=1:</text>
+<text x="680" y="252" font-family="sans-serif" font-size="12" fill="#19232d">0.585 MPa</text>
+<text x="494" y="291" font-family="sans-serif" font-size="12" fill="#19232d">h=20 mm; k=3:</text>
+<text x="680" y="291" font-family="sans-serif" font-size="12" fill="#19232d">1.754 MPa</text>
+<text x="490" y="350" font-family="sans-serif" font-size="12" fill="#19232d">Uwaga: k=3 to MNOŻNIK PORÓWNAWCZY,</text>
+<text x="490" y="367" font-family="sans-serif" font-size="12" fill="#19232d">nie norma, wytrzymałość lub certyfikat.</text>
+</svg>
