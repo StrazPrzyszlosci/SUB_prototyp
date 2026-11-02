@@ -54,12 +54,28 @@ def calculate():
         t=beta+pad_halfwidth(178.9,width)
         assert clear(phase,178.9,width,beta,184,unc)==independent_check(phase,t,unc)
     assert max(map(nearest_rib_angle,PHASES))==22.5
+    # Manufacturer's *drawn* rear view: four rib axes appear collinear with
+    # four of the eight mounting-hole axes. This is an approximate visual
+    # construction observation, NOT a measured angular phase/tolerance.
+    as_drawn_bolt_separations_deg=[
+        min(abs(((45*b-90*k+180)%360)-180) for k in range(4))
+        for b in range(8)]
+    assert as_drawn_bolt_separations_deg == [0,45,0,45,0,45,0,45]
+    # Two families of fasteners must therefore be checked independently.
+
     reference=[x for x in cases if x["inner_radius_mm"]==178.9 and x["rib_reach_mm"]==184]
     phase_counts={str(w):{str(b):{str(u):next(c["safe_phases"] for c in reference
            if c["pad_width_mm"]==w and c["rib_half_angle_deg"]==b and c["clocking_error_deg"]==u)
            for u in UNCERTAINTIES} for b in RIB_HALFS} for w in WIDTHS}
     summary={"parameter_cells":432,"angular_phase_screens":78192,"phase_step_deg":.25,
       "optimal_theoretical_min_angle_deg":22.5,
+      "manufacturer_drawing_observation":{
+          "nominal_relative_phase_deg":0,
+          "phase_precision":"VISUAL ONLY, unmeasured",
+          "bolt_rib_axis_distances_deg":as_drawn_bolt_separations_deg,
+          "rib_aligned_bolts":4,"inter_rib_bolts":4,
+          "cannot_rotate_driver_to_modify_relative_phase":True,
+          "physical_collision_unresolved_without_rib_y_theta_profile":True},
       "max_rib_half_angle_at_ri_178_9":{str(w):round(22.5-pad_halfwidth(178.9,w),4) for w in WIDTHS},
       "phase_counts_if_reach_184_and_ri_178_9":phase_counts,
       "maximum_pad_width_for_beta":{str(b):round(2*178.9*math.tan(math.radians(22.5-b)),4) for b in RIB_HALFS},
@@ -70,7 +86,7 @@ def calculate():
       "evidence":"four principal spokes visually visible in the official manufacturer rear view; eight fastener holes and PCD from specification",
       "dimensions_mm":{"bolt_pcd":368,"cutout_diameter":355.8,"flange_diameter":388.4},
       "condition":"Conservative angular sector model ONLY WHEN four hypothetical ribs extend radially to the pad and occupy the same depth. Actual rib profile and phase are unmeasured.",
-      "important":"Relative bolt-to-rib phase is fixed by the real basket. Rotating the WHOLE driver cannot change this phase. Swept phases are mathematical counterfactuals, not assembly adjustment.",
+      "important":"Official rear technical drawing shows four of eight flange hole axes visually aligned with the four main rib axes (nominal phase approximately 0 degrees), the others between them. Rotating the WHOLE driver does not change this. Actual rib radial reach at rear of MDF 44 mm is unknown. Swept phases are mathematical counterfactuals, not assembly adjustment.",
       "limitations":["no verified STEP or measured rib angular width, radial reach or depth profile",
         "rectangular pad angular envelope approximated conservatively by inner-edge corner",
         "unknown terminals and rear-side access path",
