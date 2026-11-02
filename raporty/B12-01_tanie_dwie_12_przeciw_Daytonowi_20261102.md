@@ -1,6 +1,6 @@
 # B12-01 — Czy dwa tanie głośniki 12″ mogą zastąpić Dayton RSS390HF-4?
 
-**Stan:** 2 listopada 2026 r. Przeprowadzono **3584 obliczenia** małosygnałowego modelu liniowego, 112 agregacji, niezależne kontrole ograniczeń i bilansu mocy. **Badania przed budową; brak pomiarów urządzenia, THD i identyfikacji termiki.** Jest to addytywne rozszerzenie [P43](109_P43_nowe_SB_podwojne_10_12_i_izobaryczny.md), nie zastąpienie jego danych. Para normalna to **dwie membrany promieniujące w tej samej skrzyni** — nie para izobaryczna, nie dwa oddzielne subwoofery w pomieszczeniu.
+**Stan:** 2 listopada 2026 r. Przeprowadzono **3584 obliczenia** małosygnałowego modelu liniowego, 112 agregacji, niezależne kontrole ograniczeń i bilansu mocy. **Badania przed budową; brak pomiarów urządzenia, THD i identyfikacji termiki.** Jest to addytywne uzupełnienie [P43](109_P43_nowe_SB_podwojne_10_12_i_izobaryczny.md) oraz [P45 (raport 114)](114_P45_dwa_tanie_12_odpornosc_naped_koszt.md), nie zastąpienie ich danych. P45 zawiera odrębną kampanię 12 870 przypadków z testem zmian Re i dwóch kanałów napędu; B12-01 zagęszcza próbki w paśmie 20–80 Hz i dodaje tani negatywny model kontrolny C32. Para normalna to **dwie membrany promieniujące w tej samej skrzyni** — nie para izobaryczna, nie dwa oddzielne subwoofery w pomieszczeniu.
 
 ## Po co badać parę tańszych 12-calowych?
 
