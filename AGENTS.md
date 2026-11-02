@@ -1458,3 +1458,30 @@ Stan 40 modeli / 41 podstawowych wariantów po C32; starych danych
 i raportów nie nadpisywać. Weryfikacja programowa GitHub Actions:
 `skrypty/b12_02_multitone_eq_6tonow.js`; raport:
 `raporty/B12-02_szesciotonowy_test_DSP_i_odpornosc.md`.
+
+
+## Badanie B12-03 (2026-11-02): fizycznie ograniczona korekcja IIR i model dwóch koszy
+
+Wykonano 1000 przeszukiwanych ustawień dla 2 PEQ (półka+peak),
+12 kaskad 5 sekcji IIR RBJ przy 96 kHz, HP Butterworth 18/25 Hz,
+LP LR4 80 Hz, 144 przypadki 6 jednoczesnych tonów z ograniczeniami
+Pcu i Xmax oraz 192 scenariusze przeciwstawnych odchyleń parametrów
+dwóch STX w tej samej komorze. Dane C02 i C05 z wcześniejszego
+rejestru; pozostałych plików wejściowych nie zmieniono.
+
+Katalogowy Xmax nie jest granicą THD, Pcu 50/100 W nie jest
+zweryfikowanym limitem cieplnym. Szczyty obliczono jako konserwatywną
+granicę sumy modułów (nie implementację rzeczywistego limitera).
+Na 120 l, balanced, 70% Xmax i 50 W miedzi: Dayton 93,22891 dB
+składowej 40 Hz i dwa STX 89,02440 dB (HP 18 Hz), bez pokoju.
+Dla przykładowego toru przyjęto 2 V RMS z DSP i 25,5 dB wzmocnienia,
+bez potwierdzenia konkretnej końcówki dla 20 Hz.
+
+Parametry i współczynniki IIR mają standardową konwencję RBJ,
+NIE są zatwierdzonym presetem do urządzenia. Przed przeniesieniem
+należy sprawdzić sposób zapisu mianownika, próbki 96/48k, gain staging,
+filtry HP/LP i zabezpieczenia w rzeczywistym procesorze.
+Bez pomiarów THD/IMD, BL(x), Cms(x), Le(x,f), Re(T), bez fizycznego
+prototypu i pełnego mechanicznego modelu pod dwa kosze: brak decyzji
+o CNC. Raport: raporty/B12-03_rzeczywiste_filtry_IIR_i_rozrzut_2x12.md.
+Regresja: node skrypty/b12_03_biquad_i_sprzezone_12.js.
