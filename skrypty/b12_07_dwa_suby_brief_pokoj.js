@@ -11,7 +11,7 @@ const run=function run(cfg,room,drivers,presets) {
   const Ze=cz(a.re_ohm,w*a.le_mh/1000),Zm=cz(rms,w*mms-1/(w*cms)-n*rho*c*c*sd*sd/(w*Vb));
   return cs(cm(cd(cz(BL),ca(cm(Ze,Zm),cz(BL*BL))),hIir(id,f)),n*sd);
  }
- const tonal={};for(const id of ["C02","C05"]){const q=F.map(f=>volpervolt(id,f)),ref=q[3];tonal[id]={q40_m3s_per_vrms:cc(ref),relative_complex:q.map(x=>{let v=cd(x,ref);return{re:round(v.r),im:round(v.i),rel_db:round(20*Math.log10(cc(v)))}})};}
+ const tonal={};for(const id of ["C02","C05"]){const q=F.map(f=>volpervolt(id,f)),ref=q[3];tonal[id]={q40_m3s_per_vrms:Number(cc(ref).toPrecision(12)),relative_complex:q.map(x=>{let v=cd(x,ref);return{re:round(v.r),im:round(v.i),rel_db:round(20*Math.log10(cc(v)))}})};}
  const kcut=12,modes=[];
  for(let nx=0;nx<=Math.floor(kcut*dim[0]/pi);nx++)for(let ny=0;ny<=Math.floor(kcut*dim[1]/pi);ny++)for(let nz=0;nz<=Math.floor(kcut*dim[2]/pi);nz++){
   let ksq=(pi*nx/dim[0])**2+(pi*ny/dim[1])**2+(pi*nz/dim[2])**2;if(ksq>kcut*kcut)continue;
@@ -54,7 +54,7 @@ const run=function run(cfg,room,drivers,presets) {
      const permissible=relative40>=-3&&neighborChange<=3;
      if(permissible)sorted.push({...tr,room40_vs_equal_db:relative40,neighbor_increase_db:neighborChange,score:tr.span_db+Math.max(0,neighborChange)*.1});
     }
-    sorted.sort((x,y)=>x.score-y.score);
+    sorted.sort((x,y)=>Math.abs(x.score-y.score)<1e-7 ? (Math.abs(x.g-1)-Math.abs(y.g-1) || x.delay_ms-y.delay_ms) : x.score-y.score);
     const best=sorted[0]||{...base,room40_vs_equal_db:0,neighbor_increase_db:0};
     by.push({id,unity:{span_db:round(base.span_db),neighbor_max_abs_db:round(base.max_neighbor_db),response_20_to_100_relative_40_db:base.relative_db.map(round)},
       robust_grid:{right_gain:best.g,right_delay_ms:best.delay_ms,span_db:round(best.span_db),neighbor_max_abs_db:round(best.max_neighbor_db),relative_40_level_change_db:round(best.room40_vs_equal_db),response_20_to_100_relative_40_db:best.relative_db.map(round)},valid_trials:sorted.length});
@@ -87,7 +87,7 @@ const run=function run(cfg,room,drivers,presets) {
   room_axes_hz:{x_width:round(c/(2*dim[0])),y_length:round(c/(2*dim[1])),z_height:round(c/(2*dim[2]))},
   drivers_tonal_normalized:tonal,profiles:cases,summary,central_cases:nominal,
   adamaudio_specs:{Sub12:{freq_from_hz:22,freq_to_hz:150,max_peak_spl_1m_gte_db:115,thd_above_60hz_lte_percent:1,depth_mm:450,source:"https://www.adam-audio.com/en/subwoofers/sub12/"},Sub15:{freq_from_hz:20,freq_to_hz:150,max_spl_1m_gte_db:120,thd_above_60hz_lte_percent:1,depth_mm:525,source:"https://www.adam-audio.com/en/subwoofers/sub15/"}},
-  controls:{mirror_symmetry_relative:mirrorError,room_model_source:"P26 preexisting methods",selectivity:"No user-verified cabinet coordinates; optimization not installation recommendation",
+  controls:{mirror_symmetry_relative:round(mirrorError),room_model_source:"P26 preexisting methods",selectivity:"No user-verified cabinet coordinates; optimization not installation recommendation",
     comparative_headroom:"not assessed; normalized at 40Hz; consult B12-04 and measured driver THD/compression"},
   limitations:["Even 30-50dB modal troughs are artifacts of unverified rectangular rigid-room damping and null locations, NOT guaranteed real measured equalization","T60 and uniform mode relaxation are artificial independent scenarios, no absorption boundaries or openings","Room transfer normalized by 40Hz; no absolute SPL in room, no measured room gain and no benchmarking clean 20Hz SPL against ADAM official 1m maximum","No measured monitor/sub crossover phase, no 8-channel integrated-system tuning, no geometry of furniture or confirmed exact source positions","A-C symmetric source placement may be impractical; C excluded for cabinet width; source points represent diaphragm face, not exact cabinet center","Two STX in one sealed sub not the user's baseline one-driver per-sub; two sub cabinets require four STX and two amplifiers","DSP protection not evaluated, mathematical gain/delay is a screening grid only; NEVER import into miniDSP without measurements","ADAM Sub15 525mm depth exceeds 500mm prototype limit but serves as performance reference"]};
 };
