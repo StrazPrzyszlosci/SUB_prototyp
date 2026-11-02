@@ -144,3 +144,5 @@ Historyczne identyfikatory P43/P44 w kodzie konstrukcyjnym są odrębne od akust
 - [Badanie B12-02 — sześć jednoczesnych tonów, 144 scenariusze i 256 testów odporności idealnej korekcji, Dayton kontra dwa tanie STX 12″](B12-02_szesciotonowy_test_DSP_i_odpornosc.md).
 
 - [Badanie B12-03 — skończona liczba filtrów IIR, 12 konfiguracji DSP, 144 próby sześciotonowe, 192 scenariusze różnic dwóch koszy STX](B12-03_rzeczywiste_filtry_IIR_i_rozrzut_2x12.md).
+
+- [Badanie B12-04 — 26 ośmiosekundowych symulacji dynamiki, clippingu i hipotetycznej termiki oraz 2 kontrole kroku; wykazane przekroczenia Xmax mimo testowego regulatora](B12-04_dynamika_impulsy_ochrona_termika.md).
