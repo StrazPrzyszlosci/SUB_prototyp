@@ -1689,3 +1689,10 @@ z pełnym testem nośności, nie uznawać żadnego za sprawdzony.
 - Krytyczny wynik: dla w=2 mm, c=1 mm i wkładki zewnętrznej Ø8 mm musi być R_b,max + niepewność <= 177 mm. To warunek konieczny dla modelowego lokalnego klocka, nie pomiar kosza ani dopuszczenie śruby.
 - Nadal nie znamy pełnego r(y,theta), zacisków, dostępu narzędzia ani nośności MDF/spoin. Bramka CNC nadal zamknięta. Historia badań bez zmian.
 - Następny krok B12-12: pozyskanie dokładnej bryły kosza i protokół prawdziwych prób złączy albo dalszy jawnie warunkowy model kontaktowy bez sfabrykowanych wyników pomiarowych.
+
+## 2026-11-02 — B12-12: geometria kosza potwierdzona z producentem
+- Weryfikacja rysunku RSS390HF-4: 4 główne żebra kosza; 8 otworów BCD Ø368; cztery osie otworów wizualnie zbieżne z żebrami, cztery między nimi. Nominalna faza około 0°, nie 22,5°. Dokładnej fazy i funkcji R_b(Y,theta) nie zwymiarowano.
+- Wykonano 432 scenariusze parametrów i 78 192 testów faz w skrypty/b12_12_katy_zeber_i_mocowan.py. Optimum 22,5° to granica matematyczna faz hipotetycznych, a nie położenie dostępne przez obrót przetwornika.
+- Zapisano weryfikację źródeł i protokół w dokumentacja/B12-12_weryfikacja_rzeczywistej_budowy_RSS390HF4_producent.md i dokumentacja/B12-12_protokol_pomiaru_kosza_i_mocowan.md oraz własny rysunek w wyniki/b12_12_faza_zeber_producent_NIE_CNC.svg.
+- Niezmierzona pozostaje pełna przestrzenna obwiednia żeber, terminali i narzędzia; NIE potwierdzono kolizji klocków ani bezpieczeństwa złączy. Etap CNC nadal zablokowany.
+- Następny krok: pozyskanie prawdziwego profilu kosza na głębokości frontu MDF44 i próby nośności MDF/kleju/wkładek.
