@@ -1696,3 +1696,9 @@ z pełnym testem nośności, nie uznawać żadnego za sprawdzony.
 - Zapisano weryfikację źródeł i protokół w dokumentacja/B12-12_weryfikacja_rzeczywistej_budowy_RSS390HF4_producent.md i dokumentacja/B12-12_protokol_pomiaru_kosza_i_mocowan.md oraz własny rysunek w wyniki/b12_12_faza_zeber_producent_NIE_CNC.svg.
 - Niezmierzona pozostaje pełna przestrzenna obwiednia żeber, terminali i narzędzia; NIE potwierdzono kolizji klocków ani bezpieczeństwa złączy. Etap CNC nadal zablokowany.
 - Następny krok: pozyskanie prawdziwego profilu kosza na głębokości frontu MDF44 i próby nośności MDF/kleju/wkładek.
+
+## 2026-11-02 — B12-13: cztery punkty na osiach żeber, cztery między żebrami
+- Wykonano 2160 modeli statycznych grupy ośmiu połączeń (w tym dwa warianty masy, cztery przyspieszenia, trzy ramiona momentu, pięć względnych sztywności, dwa kierunki i dziewięć stanów utraty śruby). Potwierdzono równowagę sił i momentów dla całej siatki w niezależnym kodzie NumPy; repozytoryjny Python 3 stdlib zawiera własne testy.
+- Przy masie katalogowej Dayton 30 lb (~13,61 kg), 5g i ramieniu 120 mm: wskaźnik maksymalnego łącznego obciążenia śruba/ścinanie wynosi 137,08 N dla równych sztywności i 219,33 N dla stosunku sztywności 4:1. Po utracie śruby odpowiednio 174,30/309,83 N. To scenariusze, NIE dopuszczalne obciążenia i nie pomiary.
+- Kod: skrypty/b12_13_nierowna_sztywnosc_4plus4.py, raport: raporty/B12-13_sztywnosc_4plus4_i_awaria_mocowan_RSS390HF4.md, wyniki/b12_13_podsumowanie.json, wykres: wyniki/b12_13_sily_4plus4_NIE_CNC.svg.
+- Nadal brak rzeczywistej sztywności, docisku, nośności, kontaktowego MES, dokładnego CAD żeber i geometrii terminali. Następny B12-14: model jednostronnego kontaktu plus projekt badania próbek. CNC bez zgody; zakupy wstrzymane.
