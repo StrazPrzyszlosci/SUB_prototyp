@@ -146,3 +146,5 @@ Historyczne identyfikatory P43/P44 w kodzie konstrukcyjnym są odrębne od akust
 - [Badanie B12-03 — skończona liczba filtrów IIR, 12 konfiguracji DSP, 144 próby sześciotonowe, 192 scenariusze różnic dwóch koszy STX](B12-03_rzeczywiste_filtry_IIR_i_rozrzut_2x12.md).
 
 - [Badanie B12-04 — 26 ośmiosekundowych symulacji dynamiki, clippingu i hipotetycznej termiki oraz 2 kontrole kroku; wykazane przekroczenia Xmax mimo testowego regulatora](B12-04_dynamika_impulsy_ochrona_termika.md).
+
+- [Badanie B12-05 — 20 geometrii dwóch STX 12″, 16+2 trasy montażu, 100/120/150 l nominalnie i pełna głębokość urządzenia](B12-05_podwojny_STX_geometry_montaz_netto.md).
