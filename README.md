@@ -407,6 +407,30 @@ nie oznacza tego samego zapasu poziomu ani zweryfikowanej geometrii.
 · [3168 wyników CSV](wyniki/p43_wspolne_scenariusze_3168_20261102.csv)
 · [odtwarzalny skrypt](skrypty/p43_dwa_glosniki_i_isobaric.js).
 
+### B12-01 — czy dopłata do dużego przetwornika ma sens przy dwóch tanich 12″?
+
+**Dodatkowa kontrola po P43 i P45:** 3584 obliczenia na gęstszej siatce 20–80 Hz,
+w tym porównanie dwóch **STX W.32.500.8.MC_v2** z Daytonem RSS390HF-4,
+w dwóch połączeniach cewek, z 70% lub 100% katalogowego Xmax i
+budżetami 50/100 W łącznych strat miedzi. Dodano kontrolny 12-calowy
+STX W.30.200.8.MC (C32): **40 modeli / 41 konfiguracji podstawowych**.
+
+![B12-01: pułap 20 Hz przy różnych objętościach](wyniki/b12_01_20hz_objetosc.svg)
+
+W 120 l, przy 20 Hz i hipotetycznym 50 W strat: **2× STX 97,30 dB** wobec
+**Dayton 99,62 dB** w idealnym modelu półprzestrzeni 2π/1 m. Aby osiągnąć
+poziom Daytona, tania para musiałaby osiągnąć około **±9,1 mm** na głośnik,
+podczas gdy producent podaje **±7,5 mm** liniowego wychylenia geometrycznego.
+Dwa STX kosztują obecnie według wskazanego cennika **430 zł** wobec
+**1613,33 zł** za Daytona — bez kosztu obudowy, elektroniki i montażu.
+Rzut dwóch koszy na froncie 1020×500 mm jest możliwy, ale kolizje i sztywność
+frontu wymagają przeprojektowania. To nie są pomiary THD ani SPL w pokoju.
+
+[Raport B12-01](raporty/B12-01_tanie_dwie_12_przeciw_Daytonowi_20261102.md)
+· [3584 scenariusze CSV](wyniki/b12_01_wspolne_scenariusze_3584.csv)
+· [kod i test reprodukcji](skrypty/b12_01_dwie_12_ekonomiczne.js).
+
+
 
 
 ### P45 — czy para tanich 12″ pozostaje opłacalna przy realnych ograniczeniach napędu?
