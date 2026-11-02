@@ -152,3 +152,5 @@ Historyczne identyfikatory P43/P44 w kodzie konstrukcyjnym są odrębne od akust
 - [B12-06 — mechaniczny przesiew 36 frontów i 8 kontroli oraz nadrzędna weryfikacja zgodności z pierwotnym briefem, pomieszczeniem i dwoma niezależnymi subwooferami](B12-06_mechanika_frontow_i_weryfikacja_briefu.md).
 
 - [B12-07 — dwa niezależne subwoofery w pokoju 4,6×3,7×2,5 m; 27 scenariuszy, 7 punktów odbioru, modalny przesiew pozycji i krytyczne referencje ADAM Sub12/Sub15](B12-07_dwa_suby_w_pokoju_i_referencje_ADAM.md).
+
+- [B12-08 — audyt linii wyłonienia Daytona RSS390HF-4 i konstrukcji pierwszego prototypu; 2232 warianty mocowania, 160 pełnej głębokości i 81 Qtc/F3, otwarta bramka CNC](B12-08_audyt_wyboru_i_konstrukcja_pierwszego_C02.md).
