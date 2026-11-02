@@ -56,15 +56,19 @@ def case(mass,accel,ecc,ratio,direction,lost):
     # Signed spring reaction: N_i=k_i(a+b*x_i+c*z_i).
     # Equivalent moment axis convention: external load along x -> Mz;
     # external load along z -> Mx. Signs reversed do not change peak magnitudes.
-    Mx=F*ecc if direction=="x" else 0.
-    Mz=F*ecc if direction=="z" else 0.
-    a,b,c=solve([[sx,sX,sZ],[sX,sXX,sXZ],[sZ,sXZ,sZZ]],[0,Mx,Mz])
+    # For lateral x load, the overturning moment is around z, balanced
+    # by sum(x*N_y); for lateral z load it is around x, balanced by
+    # sum(z*N_y). Required sums below are unsigned magnitudes.
+    moment_about_z_balance=F*ecc if direction=="x" else 0.
+    moment_about_x_balance=F*ecc if direction=="z" else 0.
+    a,b,c=solve([[sx,sX,sZ],[sX,sXX,sXZ],[sZ,sXZ,sZZ]],
+                [0,moment_about_z_balance,moment_about_x_balance])
     normals={i:k[i]*(a+b*POINTS[i][0]+c*POINTS[i][1]) for i in k}
     shears={i:F*k[i]/sx for i in k}
     tol=max(1e-8,F*ecc*1e-10)
     assert abs(sum(normals.values())) < tol
-    assert abs(sum(normals[i]*POINTS[i][0] for i in k)-Mx) < tol
-    assert abs(sum(normals[i]*POINTS[i][1] for i in k)-Mz) < tol
+    assert abs(sum(normals[i]*POINTS[i][0] for i in k)-moment_about_z_balance) < tol
+    assert abs(sum(normals[i]*POINTS[i][1] for i in k)-moment_about_x_balance) < tol
     assert abs(sum(shears.values())-F) < 1e-8
     tensile=max(max(0.0,n) for n in normals.values())
     compressive=max(max(0.0,-n) for n in normals.values())
