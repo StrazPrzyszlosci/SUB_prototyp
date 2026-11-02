@@ -92,11 +92,37 @@ Zmniejszenie wolnej objętości zmienia sprężystość powietrza i ruch membran
 
 ### 4. Dlaczego samo pogrubienie MDF lub dodanie metalowego pierścienia nie wystarcza?
 
-W badanej geometrii Dayton RSS390HF-4 wycięcie **Ø355,8 mm**, okrąg śrub **Ø368 mm** i otwory kołnierza **Ø6,5 mm** pozostawiają przy śrubie tylko **2,85 mm lokalnego materiału na promieniu**. Jest to **alarm o kolizji/nośności, a nie dopuszczalny zapas MDF**. Porównano drogę sił przez szeroką ramę A oraz szyny B, ale nie wykazano rzeczywistej nośności żadnej z nich.
+W badanej geometrii Dayton RSS390HF-4 wycięcie **Ø355,8 mm**, okrąg śrub **Ø368 mm** i otwory **Ø6,5 mm w metalowym kołnierzu kosza** dają **2,85 mm drewna** pomiędzy krawędziami **wyłącznie wtedy, gdy w MDF wiercimy również pełny otwór Ø6,5 mm**. Nie jest to obowiązkowy wymiar otworu w drewnie ani średnica wybranego łącznika. Historyczne badania P38–P42 badały m.in. prosty pierścień i szyny, ale **nie dowiodły, że standardowe mocowanie do lokalnie wzmocnionego MDF jest niewystarczające**. Osiem oddzielnych punktów zakotwienia i rozwiązania stosowane przez innych konstruktorów należy porównać z pełnym pierścieniem przed rozstrzygnięciem.
 
 ![Front Dayton — średnice, wycięcie, osiem otworów; szkic badawczy](wyniki/p38a_front_NIE_CNC.svg)
 
 *Co trzeba zrobić? Zmierzyć dokładny kosz, terminale i przestrzeń na wkrętak, zaprojektować rzeczywiste połączenia i sprawdzić ich nośność na docelowym MDF. [Raport 096](raporty/096_P38A_front_Dayton_otwory_i_mocowania.md) · [Raport 108](raporty/108_P42C_laczniki_i_koncepcje_3D.md).*
+
+### 4a. Inspiracje montażowe RSS390HF-4 od innych konstruktorów — **to nie nasz prototyp**
+
+Poniższe trzy przykłady pochodzą z **cudzych konstrukcji** udokumentowanych na forach i w galerii Parts Express. **Nie są naszym zbudowanym prototypem, pomiarami Fundacji ani zaakceptowaną konstrukcją mocowania.** Podpisujemy autorów, podajemy linki do **oryginalnych zdjęć na ich stronach**, a w README pokazujemy **wyłącznie własne schematy poglądowe**. Zdjęć autorów nie skopiowano do repozytorium; szczególnie AVForums nie dopuszcza takiego wykorzystania ani osadzania bez zgody właściciela praw.
+
+**A. Wkładka gwintowana w przyklejonym klocku drewnianym**
+
+![Autorski schemat mocowania RSS390HF-4 wkładką gwintowaną w dodatkowym klocku; inspiracja zewnętrzna, nie prototyp Fundacji](grafika/inspiracje_montazu_RSS390HF4_wkladka_klocek.svg)
+
+**Autor relacji: Francis**, [Parts Express TechTalk — „Threaded inserts for subs in MDF… from behind or?”](https://techtalk.parts-express.com/forum/tech-talk-forum/1305709-threaded-inserts-for-subs-in-mdf-from-behind-or), **odpowiedź #15 z 7.11.2016**. Autor opisuje przykręcanie swoich **RSS390HF-4** do wkładek gwintowanych osadzonych w oddzielnych klockach przyklejonych za frontem. Przy wejściu do wątku dostępne jest [zdjęcie typu wkładki dodane przez użytkownika **mortron** w poście #1](https://techtalk.parts-express.com/forum/tech-talk-forum/1305709-threaded-inserts-for-subs-in-mdf-from-behind-or). **Nie przypisujemy tej fotografii Francisowi ani nie twierdzimy, że pokazuje ona jego gotowy montaż.** Do zbadania u nas: nośność klocka i spoiny, średnica zewnętrzna wkładki, dostęp przy stałym froncie MDF 44 mm.
+
+**B. Nakrętki pazurkowe T-nut od strony wnętrza frontu**
+
+![Autorski schemat nakrętki T-nut i śruby maszynowej; inspiracja zewnętrzna, nie prototyp Fundacji](grafika/inspiracje_montazu_RSS390HF4_tnut.svg)
+
+**Autor relacji i fotografii: „hoppaz”**, [AVForums — „Dual Opposed Dayton RSS390HF-4 15″ Subwoofers Build”](https://www.avforums.com/threads/dual-opposed-dayton-rss390hf-4-15-subwoofers-build.1650437/), lipiec 2012. W [poście #7](https://www.avforums.com/threads/dual-opposed-dayton-rss390hf-4-15-subwoofers-build.1650437/post-17248214) deklaruje zamówienie T-nut. **Oryginalne zdjęcia na forum:** [#8 — `sub_001.jpg` do `sub_008.jpg`, zdjęcia przetwornika](https://www.avforums.com/threads/dual-opposed-dayton-rss390hf-4-15-subwoofers-build.1650437/post-17266993), [#9 — `cab_001.jpg` do `cab_008.jpg`, przygotowane płyty obudowy](https://www.avforums.com/threads/dual-opposed-dayton-rss390hf-4-15-subwoofers-build.1650437/post-17273327) oraz [#15 — `assem_001.jpg` i `assem_002.jpg`, montaż skrzyni](https://www.avforums.com/threads/dual-opposed-dayton-rss390hf-4-15-subwoofers-build.1650437/post-17295905). **Te zdjęcia nie są potwierdzonym zbliżeniem osadzonej T-nut.** Do zbadania u nas: ryzyko obracania się nakrętki przy serwisie i możliwość jej odzyskania po sklejeniu skrzyni.
+
+**C. Nakrętki typu hurricane i równomierne dociąganie kosza**
+
+![Autorski schemat nakrętki hurricane osadzanej od tyłu; inspiracja zewnętrzna, nie prototyp Fundacji](grafika/inspiracje_montazu_RSS390HF4_hurricane.svg)
+
+**Projektant: Warren Hagan**, [Parts Express Project Gallery — „DAYTON SUBWOOFERS”, 30.09.2020](https://projectgallery.parts-express.com/speaker-projects/dayton-subwoofers/). Autor zbudował **obudowy bass-reflex** z RSS390HF-4, stosując zestaw mocowania z gwintem **1/4″-20** (inny niż M6). Opisuje osadzanie nakrętek od tyłu ściskiem stolarskim, ręczne rozpoczęcie wkręcania i naprzemienne dociąganie śrub. **[Zobacz oryginalną galerię zdjęć konstrukcji Warrena Hagana](https://projectgallery.parts-express.com/speaker-projects/dayton-subwoofers/).** Fotografia nie stanowi potwierdzenia każdego etapu mocowania w zbliżeniu. Do zbadania u nas: trwałość osadzenia nakrętki, docisk i kolejność dokręcania; nie mieszać gwintów M6 i 1/4″-20.
+
+**Wniosek dla naszego projektu:** obok szerokiej ramy nośnej powinniśmy ocenić także **osiem lokalnych punktów z wkładkami w dodatkowych klockach**, **T-nut** i **hurricane nuts**. Żaden z tych wariantów nie ma jeszcze wyznaczonej nośności dla naszej geometrii; ich stosowanie przez innych autorów jest inspiracją, nie dowodem bezpieczeństwa.
+
+[Pełne opisy autorów, źródeł fotografii i praw do ich wykorzystania](dokumentacja/inspiracje_zewnetrznych_konstruktorow_mocowanie_RSS390HF4.md) · [Raport konstrukcyjny B12-08](raporty/B12-08_audyt_wyboru_i_konstrukcja_pierwszego_C02.md).
 
 ### 5. Co oznaczają wykresy DSP i temperatury?
 
