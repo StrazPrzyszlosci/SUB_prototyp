@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 480" role="img" aria-label="B12-13 modelowe siły na punkt mocowania, w zależności od stosunku sztywności, dla 5g 120 mm i masy katalogowej 13.61 kg — NIE CNC">
+<rect width="980" height="480" fill="#f8fafc"/>
+<text x="32" y="39" font-family="sans-serif" font-weight="700" font-size="22" fill="#1b3040">B12-13 — osiem punktów, dwie grupy sztywności (4+4)</text>
+<text x="32" y="64" font-family="sans-serif" font-size="13" fill="#496072">Scenariusz: masa katalogowa 13,61 kg, 5g, ramię 120 mm. Jednostka: N. Model idealizowany, NIE CNC.</text>
+<rect x="25" y="85" width="930" height="348" rx="12" fill="white" stroke="#d0dce4"/>
+<text x="47" y="123" font-family="sans-serif" font-size="14" fill="#1b3040">Sztywność 4 punktów przy żebrach / 4 między żebrami</text>
+<rect x="587" y="110" width="16" height="16" fill="#2a8176"/><text x="611" y="123" font-family="sans-serif" font-size="12" fill="#496072">8 czynnych</text>
+<rect x="735" y="110" width="16" height="16" fill="#bd6b54"/><text x="759" y="123" font-family="sans-serif" font-size="12" fill="#496072">po utracie 1</text>
+<text x="48" y="180" font-family="sans-serif" font-size="16" fill="#1b3040">k = 0.25</text>
+<rect x="200" y="152" width="371.2" height="17" rx="4" fill="#2a8176"/>
+<rect x="200" y="173" width="508.8" height="17" rx="4" fill="#bd6b54"/>
+<text x="578.2" y="165" font-family="sans-serif" font-size="12" fill="#233a46">181.5</text>
+<text x="715.8" y="186" font-family="sans-serif" font-size="12" fill="#233a46">248.8</text>
+<text x="48" y="232" font-family="sans-serif" font-size="16" fill="#1b3040">k = 0.50</text>
+<rect x="200" y="204" width="309.3" height="17" rx="4" fill="#2a8176"/>
+<rect x="200" y="225" width="390.7" height="17" rx="4" fill="#bd6b54"/>
+<text x="516.3" y="217" font-family="sans-serif" font-size="12" fill="#233a46">151.3</text>
+<text x="597.7" y="238" font-family="sans-serif" font-size="12" fill="#233a46">191.1</text>
+<text x="48" y="284" font-family="sans-serif" font-size="16" fill="#1b3040">k = 1.00</text>
+<rect x="200" y="256" width="280.3" height="17" rx="4" fill="#2a8176"/>
+<rect x="200" y="277" width="356.4" height="17" rx="4" fill="#bd6b54"/>
+<text x="487.3" y="269" font-family="sans-serif" font-size="12" fill="#233a46">137.1</text>
+<text x="563.4" y="290" font-family="sans-serif" font-size="12" fill="#233a46">174.3</text>
+<text x="48" y="336" font-family="sans-serif" font-size="16" fill="#1b3040">k = 2.00</text>
+<rect x="200" y="308" width="373.7" height="17" rx="4" fill="#2a8176"/>
+<rect x="200" y="329" width="480.5" height="17" rx="4" fill="#bd6b54"/>
+<text x="580.7" y="321" font-family="sans-serif" font-size="12" fill="#233a46">182.8</text>
+<text x="687.5" y="342" font-family="sans-serif" font-size="12" fill="#233a46">235.0</text>
+<text x="48" y="388" font-family="sans-serif" font-size="16" fill="#1b3040">k = 4.00</text>
+<rect x="200" y="360" width="448.5" height="17" rx="4" fill="#2a8176"/>
+<rect x="200" y="381" width="633.5" height="17" rx="4" fill="#bd6b54"/>
+<text x="655.5" y="373" font-family="sans-serif" font-size="12" fill="#233a46">219.3</text>
+<text x="840.5" y="394" font-family="sans-serif" font-size="12" fill="#233a46">309.8</text>
+<text x="32" y="458" font-family="sans-serif" font-size="12" fill="#735044">To są modelowe proxy obciążenia śruba-ścinanie; siła rzeczywista, kontakt, MDF i klej nie są zweryfikowane.</text>
+</svg>
