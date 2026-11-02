@@ -1,0 +1,25 @@
+name: B12-07 original-room two-sub regression
+on:
+  pull_request:
+    paths:
+      - 'skrypty/b12_07_dwa_suby_brief_pokoj.js'
+      - 'wyniki/b12_07_*'
+      - '.github/workflows/b12-07-regression.yml'
+      - 'dane/konfiguracje/pokoj_odsluchowy.json'
+      - 'dane/konfiguracje/p26_scenariusze.json'
+      - 'dane/przetworniki/pula_rozszerzona.json'
+      - 'wyniki/b12_03_iir_i_rozrzut_20261102.json'
+  push:
+    paths:
+      - 'skrypty/b12_07_dwa_suby_brief_pokoj.js'
+      - 'wyniki/b12_07_*'
+      - '.github/workflows/b12-07-regression.yml'
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reproduce two-cabinet room scenarios and source-fit gate
+        run: node skrypty/b12_07_dwa_suby_brief_pokoj.js

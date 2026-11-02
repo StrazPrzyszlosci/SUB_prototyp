@@ -39,6 +39,9 @@ O = otwarte. Akceptacja briefu nie oznacza akceptacji dowolnych liczb modelu.
 | W31 | **W13/W24 pozostają bazową architekturą: jeden głośnik i jedna obudowa; finalnie dwa osobne subwoofery i 6 kanałów monitorów.** Para 2×STX w jednej skrzyni to wyjątek porównawczy; przy docelowych dwóch skrzyniach oznacza 4 kosze, nie 2. | U, wariant C05 w badaniu | B12-06: porównanie Vd, footprint, fizycznych kanałów, założeń pokojowych; brak kwalifikacji akustycznej | B12-06/P29 |
 | W32 | Wymóg 500 mm głębokości dotyczy pełnego urządzenia z maskownicą i terminalem; geometria 2×STX z B12-05 ma tylko hipotetyczne 0,5–2,5 mm zapasu. | U, mechanika O | B12-05 i B12-06; przed CNC rzeczywisty kosz, złącza, przegląd FEM spoin, grawitacja w obu orientacjach | B12-06/P18–P21 |
 
+| W33 | B12-07: **dwie fizyczne skrzynie** ze sterowaniem niezależnym przy monitorach w docelowym 4,6×3,7×2,5 m, a nie dwa kosze we wspólnej obudowie; odrzucać nominalnie kolidujące pozycje źródeł. | U, pozycje O | 27 modelowych wariantów A/B/D; hipotetyczne C przecina ściany. Przed wyborem wymagane wymiary mebli/monitorów oraz pomiar i model w sweet spocie | P26/B12-07 |
+| W34 | Porównanie z ADAM Sub12/Sub15 musi dotyczyć tych samych pasm, dystansu, THD, czasu trwania i maksymalnego poziomu; katalogowy globalny SPL nie dowodzi 20-Hz parytetu. | U, progi O | Zweryfikowano deklaracje producenta 22/20 Hz, ≥115/≥120 dB; brak równoważnych danych 20–40Hz. Sub15 głębokość 525 mm, jako wzorzec klasy. | B12-07/P29 |
+
 ## Specyfikacja odbiorowa do uzupełnienia
 
 | Wielkość | Zdefiniowane warunki | Próg |

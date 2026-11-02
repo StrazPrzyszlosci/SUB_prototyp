@@ -572,6 +572,42 @@ integrację i kompresję w docelowym sweet spocie. **Bez decyzji CNC.**
 · [36 modeli i 8 kontroli JSON](wyniki/b12_06_front_ritz_i_brief_20261102.json)
 · [kod odtwarzania](skrypty/b12_06_ritz_front_podwojny_i_brief.js).
 
+### B12-07 — dwa gotowe subwoofery przy monitorach, a nie tylko dwie membrany
+
+Powrót do **pierwotnego briefu**: pokój **3,7×4,6×2,5 m**,
+jeden sweet spot 2,5–3 m, dwa **osobne subwoofery** i dwa
+aktywne monitory trójdrożne (8 kanałów DSP). Porównano
+dwie skrzynie po jednym Daytonie RSS390HF-4 z alternatywą
+dwóch skrzyń po **dwa** STX W.32.500.8.MC_v2 (czyli 4 STX łącznie).
+Wyposażenie jest tylko modelowane. **Nie ma pomiarów w pokoju.**
+
+![B12-07: wpływ pozycji i strojenia dwóch skrzyń](wyniki/b12_07_rozpietosc_pokoju.svg)
+
+Wykorzystano wcześniejszy model modalny P26, sześć punktów
+diagnostycznych wokół głównego miejsca i rzeczywiste matematycznie
+filtry B12-03. **27 wariantów pokojowych** przeszło wstępny
+przesiew obrysu obudów dla położeń A/B/D; wariant **C** odpadł,
+ponieważ szerokie 1020-mm skrzynie przecinały ściany przy
+założonych osiach źródeł. Uproszczone symulacje wskazują
+dużą wrażliwość na tłumienie i miejsce odsłuchu, więc nie wolno
+poprawiać niezmierzonych dołków ogromnym podbiciem DSP.
+Regulację kanałów badano pod warunkiem zachowania w granicy
+3 dB poziomu 40 Hz i braku pogorszenia punktów sąsiednich o
+więcej niż 3 dB.
+
+**Punkt odniesienia ADAM:** Sub12 22–150 Hz i ≥115 dB
+szczytowo/1 m; Sub15 20–150 Hz i ≥120 dB/1 m.
+**Nie są to porównywalne wyniki czystego SPL przy 20 Hz**
+ani dowód parytetu naszych wariantów. Sub15 ma 525 mm głębokości
+i służy jako wzorzec klasy, nie jako projekt obudowy ≤500 mm.
+Badanie nie zawiera jeszcze rzeczywistych THD/IMD, maksymalnego
+SPL ani integracji z nieznanymi monitorami.
+
+[Raport B12-07 i bramka jakości](raporty/B12-07_dwa_suby_w_pokoju_i_referencje_ADAM.md)
+· [pełne scenariusze modalne](wyniki/b12_07_dwa_suby_pokoj_20261102.json)
+· [odtwarzalny model](skrypty/b12_07_dwa_suby_brief_pokoj.js).
+
+
 
 
 

@@ -1575,3 +1575,33 @@ nie zwalniać do produkcji.
 Raport: `raporty/B12-06_mechanika_frontow_i_weryfikacja_briefu.md`.
 Dane: `wyniki/b12_06_front_ritz_i_brief_20261102.json`.
 Kod: `node skrypty/b12_06_ritz_front_podwojny_i_brief.js`.
+
+
+## B12-07 — 2 kompletne subwoofery i oryginalny pokój (2026-11-02)
+
+Priorytet badawczy to pierwotny brief: 2 osobne sealed-suby,
+2 aktywne monitory 3drożne, 8 wyjść DSP, jeden sweet spot
+2.5–3m w 3.7×4.6×2.5m. NIE utożsamiać pary STX w jednej
+obudowie z dwoma niezależnymi źródłami. W badanej alternatywie
+dwa subwoofery to razem 4 przetworniki STX.
+Przesiew: 4 pozycje P26 × 3 T60 ×3 relaksacje -> 28
+poziomów, z czego 27 nominalnie dopuszczone w geometrii;
+pozycja C koliduje z bocznymi ścianami przy kabinach 1020mm.
+Model modalny Neumanna z 1471 składowymi, 7 punktów słuchacza,
+8 próbek 20–100Hz i B12-03 IIR dla T/S C02/C05; źródła
+normalizowane zespolonym Q(40Hz), czyli BEZ absolutnego SPL i
+bez badania Xmax/termiki. Bardzo głębokie teoretyczne dołki
+nie są przewidywaniem realnego pokoju. Zmienność T60/zerowego
+modu z założenia, bez danych o meblach i sufitowej absorpcji.
+Test strojenia gain 0.8/1/1.2 i delay 0/2/5/10ms ma warunki:
+40Hz nie gorsze niż -3dB, wzrost odchyłki sąsiednich punktów
+max +3dB. To NIE jest proponowany preset ani potwierdzona pozycja.
+ADAM Sub12 ≥115dB peak/1m, Sub15 ≥120dB/1m nie są
+porównywalnymi miarami czystego basu 20Hz; Sub15 ma 525mm
+zewnętrznej głębokości, więcej niż limit prototypu. Raport:
+`raporty/B12-07_dwa_suby_w_pokoju_i_referencje_ADAM.md`.
+Test: `node skrypty/b12_07_dwa_suby_brief_pokoj.js`.
+Następne kroki: gęstsza siatka P26, potwierdzenie rzeczywistych
+położeń i prześwitów przy monitorach, testy odchyłek słuchacza,
+pomiary X/THD/IMD/kompresji oraz kontrola pełnego 8-kanałowego
+toru, bez wdrażania DSP/CNC i zakupu.
