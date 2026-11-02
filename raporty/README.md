@@ -148,3 +148,5 @@ Historyczne identyfikatory P43/P44 w kodzie konstrukcyjnym są odrębne od akust
 - [Badanie B12-04 — 26 ośmiosekundowych symulacji dynamiki, clippingu i hipotetycznej termiki oraz 2 kontrole kroku; wykazane przekroczenia Xmax mimo testowego regulatora](B12-04_dynamika_impulsy_ochrona_termika.md).
 
 - [Badanie B12-05 — 20 geometrii dwóch STX 12″, 16+2 trasy montażu, 100/120/150 l nominalnie i pełna głębokość urządzenia](B12-05_podwojny_STX_geometry_montaz_netto.md).
+
+- [B12-06 — mechaniczny przesiew 36 frontów i 8 kontroli oraz nadrzędna weryfikacja zgodności z pierwotnym briefem, pomieszczeniem i dwoma niezależnymi subwooferami](B12-06_mechanika_frontow_i_weryfikacja_briefu.md).
