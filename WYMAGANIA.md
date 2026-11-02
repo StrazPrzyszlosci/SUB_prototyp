@@ -42,6 +42,10 @@ O = otwarte. Akceptacja briefu nie oznacza akceptacji dowolnych liczb modelu.
 | W33 | B12-07: **dwie fizyczne skrzynie** ze sterowaniem niezależnym przy monitorach w docelowym 4,6×3,7×2,5 m, a nie dwa kosze we wspólnej obudowie; odrzucać nominalnie kolidujące pozycje źródeł. | U, pozycje O | 27 modelowych wariantów A/B/D; hipotetyczne C przecina ściany. Przed wyborem wymagane wymiary mebli/monitorów oraz pomiar i model w sweet spocie | P26/B12-07 |
 | W34 | Porównanie z ADAM Sub12/Sub15 musi dotyczyć tych samych pasm, dystansu, THD, czasu trwania i maksymalnego poziomu; katalogowy globalny SPL nie dowodzi 20-Hz parytetu. | U, progi O | Zweryfikowano deklaracje producenta 22/20 Hz, ≥115/≥120 dB; brak równoważnych danych 20–40Hz. Sub15 głębokość 525 mm, jako wzorzec klasy. | B12-07/P29 |
 
+| W35 | Podstawa konstrukcji pierwszego prototypu C02 to korpus P30E 1020×425×500 mm z matą 50 mm i regulacją 100/120/150 l; korpus nie jest pełnym gabarytem urządzenia. | U, obwód O | B12-08: 160 scenariuszy wystawania; bez pomiaru maskownicy i terminala brak dopuszczenia CNC. | B12-08 |
+| W36 | Prawdziwy tor siły 8 śrub Daytona → nośnik/ramę → MDF i wręgi musi być projektowalny, serwisowalny i kwalifikowalny materiałowo; sam cienki pierścień nie jest dowodem nośności. | U, złącze O | B12-08: 2232 przesiewy, brak przecięcia przy hipotetycznym luzie 1 mm i mostku 2 mm dla Ø6,5; konieczny CAD kosza + próby złączy. | B12-08/09 |
+| W37 | Dobór kandydata nadal jest uzależniony od rzeczywistych THD/IMD, chłodzenia i czystego SPL 20–40 Hz w pokoju; C11 ma alternatywną przewagę w odmiennym scenariuszu Pcu. | U, pomiary O | Audyt P29A–D/B12-08: C02 wstępnym faworytem platformy, nie ostatecznym zwycięzcą. | B12-08/P29 |
+
 ## Specyfikacja odbiorowa do uzupełnienia
 
 | Wielkość | Zdefiniowane warunki | Próg |
