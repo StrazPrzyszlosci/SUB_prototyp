@@ -48,8 +48,14 @@ def swept(start,end,half):
     return p.segment_box(np.asarray(start,dtype=float),
                          np.asarray(end,dtype=float),half)
 
+def pad_aabb_boxes(pads):
+    return [p.box([min(x for x,z in poly),PAD_Y[0],min(z for x,z in poly)],
+                  [max(x for x,z in poly),PAD_Y[1],max(z for x,z in poly)])
+            for poly in pads]
+
 def check_state(label, indices, clearance, pads):
     L,br,mods,mat=e.build(SELECTED)
+    pad_boxes=pad_aabb_boxes(pads)
     placed=[]
     paths=[]
     reasons=[]
@@ -78,7 +84,23 @@ def check_state(label, indices, clearance, pads):
         else:
             route_hits=sorted(set(hit for a,b in zip(route,route[1:])
                                for hit in collision_with_pads(swept(a,b,half),pads)))
-            if route_hits:reason.append("P30E route hits K01 pads "+str(route_hits))
+            # Old P30E path is not automatically valid after new hardware!
+            # Re-plan against conservative axis-aligned *envelopes* of all
+            # eight pads if any original swept segment hits the actual polygon.
+            detoured=False
+            original_pad_hits=list(route_hits)
+            if route_hits:
+                alternative=p.path_to(m.mean(axis=0),L,
+                          br+placed+[mat]+pad_boxes,half)
+                if alternative:
+                    exact=sorted(set(h for a,b in zip(alternative,alternative[1:])
+                          for h in collision_with_pads(swept(a,b,half),pads)))
+                    if not exact:
+                        route=alternative
+                        route_hits=[]
+                        detoured=True
+                if route_hits:
+                    reason.append("No certified detour around K01 pads; original hits "+str(original_pad_hits))
             segments=len(route)-1
             for a,b in zip(route,route[1:]):
                 assert not any(p.intersect(swept(a,b,half),o)
@@ -93,6 +115,8 @@ def check_state(label, indices, clearance, pads):
            "entry_from_outside_verified":not (pad_entry or other_entry or opening_margin<=0),
            "route_waypoints":len(route) if route else 0,
            "route_segments":segments,
+           "used_pad_aware_detour":detoured if route is not None else False,
+           "original_P30E_route_hit_pads":original_pad_hits if route is not None else [],
            "intersects_K01_pads":bool(route_hits or target_hits),
            "model_pass":not reason,"problems":reason})
         if reason:
@@ -108,6 +132,7 @@ def check_state(label, indices, clearance, pads):
        "passed_full_sequence":len(placed)==len(indices),
        "minimum_cutout_margin_mm":round(min(v["aperture_margin_mm"] for v in paths),4),
        "total_path_segments":sum(v["route_segments"] for v in paths),
+       "pad_aware_detours":sum(v["used_pad_aware_detour"] for v in paths),
        "failures":reasons,"individual":paths}
 
 def main():
@@ -127,6 +152,7 @@ def main():
        "complete":row["completed_modules"],"requested":row["requested_modules"],
        "pass":row["passed_full_sequence"],"min_aperture_margin_mm":row["minimum_cutout_margin_mm"],
        "segments":row["total_path_segments"],
+       "pad_aware_detours":row["pad_aware_detours"],
        "failures":row["failures"]} for row in rows}
     summary={
        "assembly_sequences":len(rows),
