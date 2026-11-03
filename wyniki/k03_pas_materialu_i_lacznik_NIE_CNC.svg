@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 480" role="img" aria-label="K03: 6.1 millimeter radial space between Dayton speaker cutout and bolt axis, compared with external insert diameter and nominal and tolerant MDF wood webs">
+<rect width="1040" height="480" fill="#f7f9fb"/>
+<text x="26" y="38" font-size="23" font-weight="bold" font-family="sans-serif" fill="#20384a">K03 — krytyczny pas materiału przy śrubie RSS390HF-4</text>
+<text x="26" y="64" font-size="13" font-family="sans-serif" fill="#587083">Widok promieniowy w miejscu jednej śruby. Wymiary producenta: R_otworu = 177,9 mm, R_osi = 184 mm.</text>
+<rect x="25" y="89" width="987" height="326" rx="13" fill="#fff" stroke="#d4e0e6"/>
+<text x="46" y="124" font-family="sans-serif" font-weight="bold" font-size="16" fill="#213746">Mamy tylko 6,1 mm od krawędzi otworu do osi śruby.</text>
+<line x1="175" y1="167" x2="820" y2="167" stroke="#9db0bc" stroke-width="2"/>
+<line x1="175" y1="151" x2="175" y2="183" stroke="#425b6a" stroke-width="2"/>
+<line x1="780" y1="151" x2="780" y2="183" stroke="#425b6a" stroke-width="2"/>
+<text x="125" y="201" font-family="sans-serif" font-size="13" fill="#2b4354">R177,9: otwór</text>
+<text x="728" y="201" font-family="sans-serif" font-size="13" fill="#2b4354">R184: oś śruby</text>
+<rect x="175" y="221" width="605" height="44" fill="#e5d4ae"/>
+<rect x="175" y="221" width="99" height="44" fill="#e4eaf0"/>
+<text x="178" y="250" font-family="sans-serif" font-size="13" fill="#4a5f6c">1 mm</text>
+<rect x="274" y="221" width="109" height="44" fill="#3c8d7b"/>
+<text x="286" y="250" font-family="sans-serif" font-size="13" fill="#fff">1,1 mm</text>
+<rect x="383" y="221" width="397" height="44" fill="#b97b5f"/>
+<text x="425" y="248" font-family="sans-serif" font-size="14" fill="#fff">Ø8: promieniowy zasięg = 4 mm</text>
+<text x="46" y="306" font-family="sans-serif" font-size="14" fill="#223c4b">Przy modelowym klocku R_wew.=178,9 i gnieździe Ø8 zostaje 1,1 mm drewna.</text>
+<text x="46" y="334" font-family="sans-serif" font-size="14" fill="#223c4b">Po doliczeniu 0,5 mm umownej niepewności położenia: 0,6 mm.</text>
+<text x="46" y="366" font-family="sans-serif" font-size="14" font-weight="bold" fill="#a9503c">Aby zachować 1 mm luzu, 2 mm drewna i 0,5 mm zapasu, gniazdo musi mieć najwyżej Ø5,2 mm.</text>
+<text x="46" y="397" font-family="sans-serif" font-size="12" fill="#61798a">To warunek geometryczny dla zadanych założeń, nie norma ani dobór łącznika. Ø6,5 mm dotyczy otworu w kołnierzu.</text>
+<text x="26" y="455" font-family="sans-serif" font-size="13" fill="#8c4d3f">Wniosek: nie montować dużej wkładki w ciemno. Sprawdzić śrubę przelotową z nośnikiem rozkładającym siły i testy MDF. NIE CNC.</text>
+</svg>

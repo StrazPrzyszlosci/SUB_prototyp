@@ -1,0 +1,87 @@
+{
+  "study": "K03",
+  "date": "2026-11-03",
+  "evidence": "manufacturer geometric source + European Panel Federation MDF fixing guidance + hypothetical tolerance/wood web screen; NO physical measurements",
+  "manufacturer": {
+    "driver": "Dayton Audio RSS390HF-4",
+    "outer_flange_d_mm": 388.4,
+    "cutout_d_mm": 355.8,
+    "bolt_PCD_mm": 368,
+    "flange_hole_d_mm": 6.5,
+    "flange_thickness_mm": 10.5,
+    "bolt_axis_radial_clearance_to_cutout_mm": 6.1
+  },
+  "engineering_screen": {
+    "total": 162,
+    "scenario_grid": {
+      "required_cutout_to_pad_clearance_mm": [
+        0.5,
+        1,
+        2
+      ],
+      "required_wood_web_mm": [
+        1,
+        2,
+        3
+      ],
+      "radial_uncertainty_mm": [
+        0,
+        0.5,
+        1
+      ],
+      "external_opening_d_mm": [
+        5,
+        5.5,
+        6,
+        6.5,
+        8,
+        10
+      ]
+    },
+    "passes_by_external_d_mm": {
+      "5.0": 14,
+      "5.5": 10,
+      "6.0": 10,
+      "6.5": 6,
+      "8.0": 3,
+      "10.0": 0
+    },
+    "reference_assumptions": {
+      "cutout_gap_mm": 1,
+      "required_wood_web_mm": 2,
+      "radial_uncertainty_mm": 0.5
+    },
+    "limit_external_d_mm": 5.2,
+    "maximum_possible_web_at_external_d8_mm": 0.6,
+    "maximum_possible_web_at_external_d5_mm": 2.1,
+    "K02_rear_pad_inner_radius_mm": 178.9,
+    "K02_wood_web_at_d8_nominal_mm": 1.1,
+    "inequality": "(PCD-cutout_d)/2 >= g_cutout + d_outer_cavity/2 + radial_tolerance + required_web"
+  },
+  "separate_panel_bore_geometry": {
+    "nominal_axis_to_cutout_center_distance_mm": 6.1,
+    "nominal_wood_to_edge_after_hole_d5_5_mm": 3.35,
+    "nominal_wood_to_edge_after_hole_d6_5_mm": 2.85
+  },
+  "MDF_guidance": {
+    "source": "https://mdf-info.eu/using-mdf/fixing/screwing",
+    "general_screw_face_distance_to_panel_edge_mm": 12,
+    "applicability": "general recommendation, NOT a certification or direct rule for a reinforced speaker flange with preloaded fasteners; 6.1mm axis distance to curved cutout is nevertheless a clear risk flag"
+  },
+  "axial_nominal_stack_mm": 74.5,
+  "axial_stack_caveat": "10.5mm flange + 44mm MDF front + 20mm pad; excludes head, washer, gasket, nut, real insert engagement and tolerances",
+  "engineering_choice": "K02 20mm local pad remains geometry candidate for module access, but no insert or thread selected. Prioritize physical comparison of captive through-bolt/metal load spreader and wood screw with measured MDF coupon; if rear access impossible, design alternate load path.",
+  "CNC": "HOLD",
+  "caveats": [
+    "d_outer is the FULL cavity diameter in rear pad in XZ cross-section, not the nominal metal flange hole nor the screw pilot bore",
+    "minimum wood web 1/2/3mm is hypothetical and not verified allowable in MDF",
+    "face-screw guidance does not replace actual testing of reinforced joint",
+    "no actual manufacturer 3D basket, terminal, nut service access or 20-module replay with bolt hardware",
+    "no strength or recommended torque can be computed from these geometry results"
+  ],
+  "sources": {
+    "official_drawing": "https://www.daytonaudio.com/images/resources/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf",
+    "mdf_guide": "https://mdf-info.eu/using-mdf/fixing/screwing"
+  },
+  "next": "Concrete coupon/dry mockup: verify 8 axes + rear fastener access on physical driver, record head/washers/nuts/captive plate geometry, test MDF44 plus 20mm block and reinforcements; recheck 20 real modules with handles."
+}
