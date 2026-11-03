@@ -98,112 +98,13 @@ W badanej geometrii Dayton RSS390HF-4 wycięcie **Ø355,8 mm**, okrąg śrub **�
 
 *Co trzeba zrobić? Zmierzyć dokładny kosz, terminale i przestrzeń na wkrętak, zaprojektować rzeczywiste połączenia i sprawdzić ich nośność na docelowym MDF. [Raport 096](raporty/096_P38A_front_Dayton_otwory_i_mocowania.md) · [Raport 108](raporty/108_P42C_laczniki_i_koncepcje_3D.md).*
 
-### 4a. Inspiracje montażowe RSS390HF-4 od innych konstruktorów — **to nie nasz prototyp**
+### 4a. Jak przejść od kosza do rzeczywistego mocowania?
 
-Poniższe trzy przykłady pochodzą z **cudzych konstrukcji** udokumentowanych na forach i w galerii Parts Express. **Nie są naszym zbudowanym prototypem, pomiarami Fundacji ani zaakceptowaną konstrukcją mocowania.** Podpisujemy autorów, podajemy linki do **oryginalnych zdjęć na ich stronach**, a w README pokazujemy **wyłącznie własne schematy poglądowe**. Zdjęć autorów nie skopiowano do repozytorium; szczególnie AVForums nie dopuszcza takiego wykorzystania ani osadzania bez zgody właściciela praw.
+**Pierwszy kandydat do weryfikacji to osiem lokalnych wzmocnień za frontem MDF**, a alternatywa to rama rozprowadzająca obciążenia. Rysunek Daytona pokazuje cztery główne żebra i osiem otworów; cztery otwory są w rzucie na osiach żeber, cztery między nimi. Sam rzut nie mówi, ile miejsca zostaje na klocek, wkładkę i narzędzie za frontem **44 mm**.
 
-**A. Wkładka gwintowana w przyklejonym klocku drewnianym**
+![Osiem punktów mocowania oraz cztery główne żebra kosza — szkic własny, NIE CNC](wyniki/b12_12_faza_zeber_producent_NIE_CNC.svg)
 
-![Autorski schemat mocowania RSS390HF-4 wkładką gwintowaną w dodatkowym klocku; inspiracja zewnętrzna, nie prototyp Fundacji](grafika/inspiracje_montazu_RSS390HF4_wkladka_klocek.svg)
-
-**Autor relacji: Francis**, [Parts Express TechTalk — „Threaded inserts for subs in MDF… from behind or?”](https://techtalk.parts-express.com/forum/tech-talk-forum/1305709-threaded-inserts-for-subs-in-mdf-from-behind-or), **odpowiedź #15 z 7.11.2016**. Autor opisuje przykręcanie swoich **RSS390HF-4** do wkładek gwintowanych osadzonych w oddzielnych klockach przyklejonych za frontem. Przy wejściu do wątku dostępne jest [zdjęcie typu wkładki dodane przez użytkownika **mortron** w poście #1](https://techtalk.parts-express.com/forum/tech-talk-forum/1305709-threaded-inserts-for-subs-in-mdf-from-behind-or). **Nie przypisujemy tej fotografii Francisowi ani nie twierdzimy, że pokazuje ona jego gotowy montaż.** Do zbadania u nas: nośność klocka i spoiny, średnica zewnętrzna wkładki, dostęp przy stałym froncie MDF 44 mm.
-
-**B. Nakrętki pazurkowe T-nut od strony wnętrza frontu**
-
-![Autorski schemat nakrętki T-nut i śruby maszynowej; inspiracja zewnętrzna, nie prototyp Fundacji](grafika/inspiracje_montazu_RSS390HF4_tnut.svg)
-
-**Autor relacji i fotografii: „hoppaz”**, [AVForums — „Dual Opposed Dayton RSS390HF-4 15″ Subwoofers Build”](https://www.avforums.com/threads/dual-opposed-dayton-rss390hf-4-15-subwoofers-build.1650437/), lipiec 2012. W [poście #7](https://www.avforums.com/threads/dual-opposed-dayton-rss390hf-4-15-subwoofers-build.1650437/post-17248214) deklaruje zamówienie T-nut. **Oryginalne zdjęcia na forum:** [#8 — `sub_001.jpg` do `sub_008.jpg`, zdjęcia przetwornika](https://www.avforums.com/threads/dual-opposed-dayton-rss390hf-4-15-subwoofers-build.1650437/post-17266993), [#9 — `cab_001.jpg` do `cab_008.jpg`, przygotowane płyty obudowy](https://www.avforums.com/threads/dual-opposed-dayton-rss390hf-4-15-subwoofers-build.1650437/post-17273327) oraz [#15 — `assem_001.jpg` i `assem_002.jpg`, montaż skrzyni](https://www.avforums.com/threads/dual-opposed-dayton-rss390hf-4-15-subwoofers-build.1650437/post-17295905). **Te zdjęcia nie są potwierdzonym zbliżeniem osadzonej T-nut.** Do zbadania u nas: ryzyko obracania się nakrętki przy serwisie i możliwość jej odzyskania po sklejeniu skrzyni.
-
-**C. Nakrętki typu hurricane i równomierne dociąganie kosza**
-
-![Autorski schemat nakrętki hurricane osadzanej od tyłu; inspiracja zewnętrzna, nie prototyp Fundacji](grafika/inspiracje_montazu_RSS390HF4_hurricane.svg)
-
-**Projektant: Warren Hagan**, [Parts Express Project Gallery — „DAYTON SUBWOOFERS”, 30.09.2020](https://projectgallery.parts-express.com/speaker-projects/dayton-subwoofers/). Autor zbudował **obudowy bass-reflex** z RSS390HF-4, stosując zestaw mocowania z gwintem **1/4″-20** (inny niż M6). Opisuje osadzanie nakrętek od tyłu ściskiem stolarskim, ręczne rozpoczęcie wkręcania i naprzemienne dociąganie śrub. **[Zobacz oryginalną galerię zdjęć konstrukcji Warrena Hagana](https://projectgallery.parts-express.com/speaker-projects/dayton-subwoofers/).** Fotografia nie stanowi potwierdzenia każdego etapu mocowania w zbliżeniu. Do zbadania u nas: trwałość osadzenia nakrętki, docisk i kolejność dokręcania; nie mieszać gwintów M6 i 1/4″-20.
-
-**Wniosek dla naszego projektu:** obok szerokiej ramy nośnej powinniśmy ocenić także **osiem lokalnych punktów z wkładkami w dodatkowych klockach**, **T-nut** i **hurricane nuts**. Żaden z tych wariantów nie ma jeszcze wyznaczonej nośności dla naszej geometrii; ich stosowanie przez innych autorów jest inspiracją, nie dowodem bezpieczeństwa.
-
-[Pełne opisy autorów, źródeł fotografii i praw do ich wykorzystania](dokumentacja/inspiracje_zewnetrznych_konstruktorow_mocowanie_RSS390HF4.md) · [Raport konstrukcyjny B12-08](raporty/B12-08_audyt_wyboru_i_konstrukcja_pierwszego_C02.md).
-
-### 4b. Nowe badanie B12-09: osiem lokalnych wzmocnień czy duża rama?
-
-Badanie **B12-09** sprawdza wstępną możliwość mocowania Daytona przez osiem oddzielnych klocków przyklejonych od tyłu MDF, a nie automatycznie przez rozbudowaną metalową ramę. Spośród **108 hipotetycznych rzutów 2D** 67 spełniło założone odstępy od paneli i projekcji wręgi. Przy modelowym **15 kg × 5g** największa idealna reakcja na punkt zwiększa się po wyłączeniu jednej z ośmiu śrub z ok. **151 N do 195 N** w porównanych scenariuszach. To obliczenia, **nie pomiary i nie ocena nośności MDF/kleju**.
-
-![B12-09: szerokość materiału przy otworze i wrażliwość uproszczonej spoiny — NIE CNC](wyniki/b12_09_geometria_i_naprezenia_NIE_CNC.svg)
-
-*Wykres pokazuje warunkową geometrię i hipotetyczne wymagania wobec spoiny, nie zalecany rozmiar śrub ani wytrzymałość kleju. Rzeczywiste żebra kosza, zaciski i dostęp do narzędzi nadal trzeba zbadać w 3D.*
-
-**Wniosek:** proste lokalne wzmocnienia są warte dalszego porównania z ramą A; nie zatwierdzono żadnego wariantu do frezowania. [Raport B12-09](raporty/B12-09_lokalne_mocowania_RSS390HF4_vs_rama_A.md) · [kod Python](skrypty/b12_09_lokalne_mocowania.py).
-
-### 4c. B12-10 — jak sprawdzamy prawdziwą przestrzeń na mocowanie za frontem?
-
-W B12-09 było widać jedynie rzut ośmiu klocków. Nowy etap B12-10 policzył **324 modelowe warianty brył 3D** w uproszczonej obudowie oraz **7776 hipotetycznych kombinacji** luzu do kosza, średnicy wkładki i pasa drewna. Spośród 324 wariantów **234 nie przecinały zastępczych ścian i wręg**. Po uwzględnieniu dodatkowych, założonych ograniczeń promieniowych **1716/7776** kombinacji przeszło *przesiew* — nie oznacza to, że mają odpowiednią nośność ani pasują do rzeczywistego kosza.
-
-![B12-10: ekran kolizji i szerokości drewna przy wkładce — schemat, NIE CNC](wyniki/b12_10_lokalne_mocowania_przesiew_NIE_CNC.svg)
-
-*Najprościej: średnica śruby i średnica zewnętrzna wkładki to dwie różne rzeczy. Przy wewnętrznej krawędzi modelowego klocka R=178,9 mm wkładka Ø8 mm zostawia **1,1 mm** drewna do tej krawędzi, a Ø10 mm — tylko **0,1 mm**. Nadal nie znamy dokładnego obrysu kosza w miejscu klejenia. To nie są zalecane wymiary otworów ani śrub.*
-
-Dodatkowo **36 hipotetycznych stosów** kołnierz–MDF–klocek pokazało, że długość śruby wymaga kontroli razem z głębokością klocka i minimalnym zazębieniem gwintu. **Rzeczywistej drogi wkrętaka, śruby, połączenia i serwisowania nie zweryfikowano.** Na tym etapie nie wiemy, czy prostsze osiem klocków będzie wystarczające; rama A również nie jest zatwierdzona.
-
-[Raport B12-10 i warunki badań](raporty/B12-10_przestrzenny_przesiew_mocowan_i_stosu_srub.md) · [Python do odtworzenia](skrypty/b12_10_przesiew_3d_mocowan.py).
-
-### 4d. B12-11 — najpierw zmierz kosz, dopiero potem dobieraj wkładkę i śrubę
-
-B12-11 sprawdza, **jak nieznany przestrzenny obrys żeber kosza** ogranicza możliwość wykorzystania lokalnych klocków zamiast szerokiej ramy A. To kolejne badanie symulacyjne **przed budową**, a nie model gotowego prototypu. W pełnym sprzężonym przesiewie **2175 z 11 664 hipotetycznych wariantów** spełniło jednocześnie warunki na obrys klocka, kosz, wkładkę i uproszczone przeszkody obudowy. Nie jest to prawdopodobieństwo powodzenia ani potwierdzenie nośności.
-
-![B12-11: maksymalny promień kosza przy różnych wkładkach i wyniki przesiewu — NIE CNC](wyniki/b12_11_budzet_geometryczny_NIE_CNC.svg)
-
-*Przykład: jeśli żądamy 1 mm luzu do kosza i 2 mm pasa drewna, wkładka o **zewnętrznej średnicy Ø8 mm** wymaga, aby rzeczywisty kosz na głębokości mocowania miał promień nie większy niż **177 mm** (przed uwzględnieniem dodatkowej niepewności). Rysunek katalogowy podaje Ø355,8 mm **wycięcia**, ale to nie jest pomiar maksymalnego promienia żeber za frontem.*
-
-W osobnym badaniu długości śruby uwzględniono **hipotetyczne przedziały** grubości kołnierza, MDF, uszczelki i podkładki: **62/252** warianty spełniły założone ograniczenia w całym przedziale, wobec 93/252 dla samych wymiarów nominalnych. To nie są długości do zakupu ani zweryfikowana konstrukcja połączenia.
-
-**Praktyczny wniosek:** przygotowaliśmy mierzalny warunek dla rzeczywistego kosza. Zanim wybierzemy wkładkę lub ramę A, potrzebujemy geometrii kosza z zaciskami i prób mechanicznych MDF/kleju. [Pełny raport B12-11](raporty/B12-11_przedzialowa_geometria_mocowan_i_stos_srub.md) · [kod Python](skrypty/b12_11_budzet_mocowan.py).
-
-### 4e. B12-12: jak naprawdę wyglądają żebra kosza RSS390HF-4?
-
-**Sprawdziliśmy oficjalny rysunek techniczny Daytona, nie tylko hipotetyczne obwiednie kosza.** Rzut od tyłu pokazuje **cztery szerokie żebra odlewanego kosza**, z którymi w rzucie pokrywają się osie **czterech z ośmiu otworów kołnierza**. Pozostałe cztery otwory są w przestrzeniach między żebrami. Przekrój boczny pokazuje, że **żebra zwężają się w stronę magnesu**.
-
-![Własny schemat układu osi żeber i mocowań, odtworzony poglądowo z rysunku producenta; NIE CNC](wyniki/b12_12_faza_zeber_producent_NIE_CNC.svg)
-
-*Uwaga: zgodność osi w rzucie NIE oznacza, że klocek przyklejony **44 mm za przednią powierzchnią frontu MDF** zderzy się z żebrem. Musimy poznać jego **rzeczywistą obwiednię przestrzenną** na głębokości klocka. Śruby wprowadza się od strony czoła kołnierza — nie ma podstaw, by uznać je za zablokowane przez żebro z tyłu.*
-
-Matematyczna analiza **78 192 scenariuszy kątowych B12-12** wyznacza granice dla hipotetycznych faz, szerokości i zasięgu żeber. **W rzeczywistym koszu faza żeber względem śrub jest fabrycznie stała, na rysunku w przybliżeniu 0°**. Nie da się uzyskać fazy 22,5° przez obrót głośnika. Pozostałe ograniczenia (wymiary i wytrzymałość wkładki, grubość MDF, terminale, dostęp klucza i regulacja 100/120/150 l) nie zostały tym samym rozstrzygnięte.
-
-[Raport B12-12](raporty/B12-12_cztery_zebra_osiem_srub_niepewnosc_fazy.md) · [Weryfikacja rzeczywistej budowy i źródła producenta](dokumentacja/B12-12_weryfikacja_rzeczywistej_budowy_RSS390HF4_producent.md) · [Pełna specyfikacja Daytona (PDF)](https://www.daytonaudio.com/images/resources/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf).
-
-### 4f. B12-13 — czy wszystkie osiem mocowań powinno być równie sztywne?
-
-Poprzednie badanie B12-12 rozdzieliło osiem otworów Dayton RSS390HF-4 na cztery położone w rzucie na osiach żeber kosza i cztery pomiędzy nimi. **B12-13 bada skutki tego, że ich rzeczywista sztywność może być różna.**
-
-![B12-13: wpływ nierównej sztywności ośmiu mocowań i utraty jednej śruby — NIE CNC](wyniki/b12_13_sily_4plus4_NIE_CNC.svg)
-
-Na nowej siatce wykonano **2160 obliczeń** z dwiema masami (13,61 kg z karty producenta oraz wcześniejsze 15 kg), przyspieszeniami 1/3/5/10g, umownymi ramionami 80/120/160 mm, pięcioma stosunkami sztywności czterech punktów przy żebrach do czterech pozostałych oraz utratą dowolnego jednego z ośmiu mocowań.
-
-*Prosty przykład:* dla masy katalogowej 13,61 kg, 5g i hipotetycznego ramienia 120 mm, **osiem jednakowo sztywnych mocowań** daje wskaźnik obciążenia najbardziej obciążonego punktu **137 N**. Jeśli cztery mocowania przy żebrach są **cztery razy sztywniejsze**, ten sam wskaźnik wynosi **219 N**; po utracie jednego mocowania nawet **310 N** w najgorszym modelowym przypadku. Są to *wyniki idealizowanego modelu*, a nie siły zmierzone na zbudowanym subwooferze i **nie są to wartości dopuszczalne wytrzymałościowo**.
-
-**Praktyczny sens:** sztywniejsze połączenie może przejmować więcej siły. Dlatego połączeń nie wolno optymalizować tylko przez powiększanie klocków czy dodawanie sztywnej ramy. Trzeba zmierzyć **rzeczywiste sztywności i nośności wszystkich punktów** oraz sprawdzić kontakt kołnierza z frontem MDF. B12-13 nie przesądza, że rozwiązanie lokalne jest lepsze od ramy A.
-
-[Raport B12-13](raporty/B12-13_sztywnosc_4plus4_i_awaria_mocowan_RSS390HF4.md) · [Odtwarzalny skrypt Python](skrypty/b12_13_nierowna_sztywnosc_4plus4.py) · [Podsumowanie liczb i założeń](wyniki/b12_13_podsumowanie.json). **Prototyp i próby mechaniczne: jeszcze nie wykonane; CNC: HOLD.**
-
-### 4g. B12-14 — docisk śrub a odrywanie się kołnierza od MDF
-
-W B12-13 poznaliśmy skutki nierównej sztywności ośmiu mocowań Daytona. Teraz rozróżniamy dwa zupełnie inne mechanizmy: **rozciąganie śruby** i **ściskanie MDF przez kołnierz**. Śruba nie przenosi ściskania między elementami, a otwarty styk nie przenosi nacisku. Rozwiązaliśmy **1152 hipotetyczne scenariusze jednostronnego kontaktu** i sprawdziliśmy **4608 globalnych warunków tarcia**. Wykonaliśmy również niezależne kontrole numeryczne.
-
-![B12-14: jak początkowy docisk wpływa na otwarcie kontaktu i górne oszacowanie tarcia; NIE CNC](wyniki/b12_14_docisk_kontakt_tarcie_NIE_CNC.svg)
-
-W przykładzie dla masy katalogowej **13,61 kg** oraz umownego obciążenia **5g z ramieniem 120 mm** przyjmujemy modelowe sztywności śruby i kontaktu **200 i 500 N/mm**:
-
-| Docisk wstępny jednej śruby (założenie) | Liczba otwartych punktów kontaktu | Wymagane µ w globalnej nierówności tarcia |
-|---|---:|---:|
-| 0 N | 5/8 | 2,362 |
-| 100 N | 0/8 | 0,834 |
-| 300 N | 0/8 | 0,278 |
-| 600 N | 0/8 | 0,139 |
-
-*Prosto mówiąc:* większy docisk może ograniczać odrywanie i zwiększać potencjalny opór tarcia. Ale **zbyt duży docisk może uszkodzić MDF, wkładkę lub śrubę**, a ich wytrzymałości nie znamy. **To nie jest instrukcja dokręcania.** Wartości µ są wynikiem równania dla umownego modelu; bez pomiarów nie wiemy, czy rzeczywista para materiałów ma takie tarcie.
-
-B12-14 wprowadza osobne sprężyny pracujące jednostronnie i kontroluje statyczną równowagę. **Nadal nie wykonuje** rzeczywistego modelu ciągłego kontaktu kołnierza, mikroprzesunięć i uszkodzeń gwintu, kleju i MDF. Nie wybieramy jeszcze pomiędzy ośmioma klockami a ramą A.
-
-[Pełny raport B12-14](raporty/B12-14_jednostronny_kontakt_docisk_tarcie_8_mocowan.md) · [Kod Python](skrypty/b12_14_kontakt_docisk_tarcie.py) · [Protokół potrzebnych pomiarów](dokumentacja/B12-14_protokol_walidacji_docisku_i_zlaczy.md).
+**Droga do rozstrzygnięcia:** potwierdzić wymiary prawdziwego kosza i terminali, wybrać wykonalny wariant mocowania, sprawdzić nośność śrub, wkładek, MDF i spoin, zabezpieczyć uszczelnienie oraz serwis, a dopiero potem zatwierdzić rysunki do wykonania. Żaden wariant nie uzyskał jeszcze zgody na CNC. [Oryginalne inspiracje z innych konstrukcji i analizy szczegółowe B12-09–B12-15 znajdują się w aneksie na końcu przewodnika](#aneks-mocowania).
 
 ### 5. Co oznaczają wykresy DSP i temperatury?
 
@@ -2168,3 +2069,128 @@ Repozytorium ma już badania P41A–C dotyczące ośmiu kotew ramy i szyn. **P42
 **Nie można jeszcze wybrać fizycznie bezpiecznego rozwiązania A/B ani wydawać CNC**: nieznane są rzeczywiste bryły kosza, przekroje, materiały i nośność łączników. Model sprężynowy nie jest sprawdzonym MES kontaktowym, a modele P41 i P42 stosują różne rozmieszczenia punktów.
 
 </details>
+
+<a id="aneks-mocowania"></a>
+## Aneks techniczny — inspiracje montażowe i analizy szczegółowe B12-09–B12-15
+
+Ten dział dokumentuje **jak sprawdzaliśmy poszczególne warianty**, a nie kolejny obowiązkowy krok praktycznego przewodnika. Zachowuje ilustracje, atrybucje autorów z forów i odniesienia do historycznych wyników. Wnioski konstrukcyjne i to, czego jeszcze brakuje do zatwierdzenia, są opisane wcześniej w podręczniku.
+
+<details>
+<summary><strong>Rozwiń inspiracje, warianty mocowań i wyniki B12-09–B12-14</strong></summary>
+
+### A1. Inspiracje montażowe RSS390HF-4 od innych konstruktorów — **to nie nasz prototyp**
+
+Poniższe trzy przykłady pochodzą z **cudzych konstrukcji** udokumentowanych na forach i w galerii Parts Express. **Nie są naszym zbudowanym prototypem, pomiarami Fundacji ani zaakceptowaną konstrukcją mocowania.** Podpisujemy autorów, podajemy linki do **oryginalnych zdjęć na ich stronach**, a w README pokazujemy **wyłącznie własne schematy poglądowe**. Zdjęć autorów nie skopiowano do repozytorium; szczególnie AVForums nie dopuszcza takiego wykorzystania ani osadzania bez zgody właściciela praw.
+
+**A. Wkładka gwintowana w przyklejonym klocku drewnianym**
+
+![Autorski schemat mocowania RSS390HF-4 wkładką gwintowaną w dodatkowym klocku; inspiracja zewnętrzna, nie prototyp Fundacji](grafika/inspiracje_montazu_RSS390HF4_wkladka_klocek.svg)
+
+**Autor relacji: Francis**, [Parts Express TechTalk — „Threaded inserts for subs in MDF… from behind or?”](https://techtalk.parts-express.com/forum/tech-talk-forum/1305709-threaded-inserts-for-subs-in-mdf-from-behind-or), **odpowiedź #15 z 7.11.2016**. Autor opisuje przykręcanie swoich **RSS390HF-4** do wkładek gwintowanych osadzonych w oddzielnych klockach przyklejonych za frontem. Przy wejściu do wątku dostępne jest [zdjęcie typu wkładki dodane przez użytkownika **mortron** w poście #1](https://techtalk.parts-express.com/forum/tech-talk-forum/1305709-threaded-inserts-for-subs-in-mdf-from-behind-or). **Nie przypisujemy tej fotografii Francisowi ani nie twierdzimy, że pokazuje ona jego gotowy montaż.** Do zbadania u nas: nośność klocka i spoiny, średnica zewnętrzna wkładki, dostęp przy stałym froncie MDF 44 mm.
+
+**B. Nakrętki pazurkowe T-nut od strony wnętrza frontu**
+
+![Autorski schemat nakrętki T-nut i śruby maszynowej; inspiracja zewnętrzna, nie prototyp Fundacji](grafika/inspiracje_montazu_RSS390HF4_tnut.svg)
+
+**Autor relacji i fotografii: „hoppaz”**, [AVForums — „Dual Opposed Dayton RSS390HF-4 15″ Subwoofers Build”](https://www.avforums.com/threads/dual-opposed-dayton-rss390hf-4-15-subwoofers-build.1650437/), lipiec 2012. W [poście #7](https://www.avforums.com/threads/dual-opposed-dayton-rss390hf-4-15-subwoofers-build.1650437/post-17248214) deklaruje zamówienie T-nut. **Oryginalne zdjęcia na forum:** [#8 — `sub_001.jpg` do `sub_008.jpg`, zdjęcia przetwornika](https://www.avforums.com/threads/dual-opposed-dayton-rss390hf-4-15-subwoofers-build.1650437/post-17266993), [#9 — `cab_001.jpg` do `cab_008.jpg`, przygotowane płyty obudowy](https://www.avforums.com/threads/dual-opposed-dayton-rss390hf-4-15-subwoofers-build.1650437/post-17273327) oraz [#15 — `assem_001.jpg` i `assem_002.jpg`, montaż skrzyni](https://www.avforums.com/threads/dual-opposed-dayton-rss390hf-4-15-subwoofers-build.1650437/post-17295905). **Te zdjęcia nie są potwierdzonym zbliżeniem osadzonej T-nut.** Do zbadania u nas: ryzyko obracania się nakrętki przy serwisie i możliwość jej odzyskania po sklejeniu skrzyni.
+
+**C. Nakrętki typu hurricane i równomierne dociąganie kosza**
+
+![Autorski schemat nakrętki hurricane osadzanej od tyłu; inspiracja zewnętrzna, nie prototyp Fundacji](grafika/inspiracje_montazu_RSS390HF4_hurricane.svg)
+
+**Projektant: Warren Hagan**, [Parts Express Project Gallery — „DAYTON SUBWOOFERS”, 30.09.2020](https://projectgallery.parts-express.com/speaker-projects/dayton-subwoofers/). Autor zbudował **obudowy bass-reflex** z RSS390HF-4, stosując zestaw mocowania z gwintem **1/4″-20** (inny niż M6). Opisuje osadzanie nakrętek od tyłu ściskiem stolarskim, ręczne rozpoczęcie wkręcania i naprzemienne dociąganie śrub. **[Zobacz oryginalną galerię zdjęć konstrukcji Warrena Hagana](https://projectgallery.parts-express.com/speaker-projects/dayton-subwoofers/).** Fotografia nie stanowi potwierdzenia każdego etapu mocowania w zbliżeniu. Do zbadania u nas: trwałość osadzenia nakrętki, docisk i kolejność dokręcania; nie mieszać gwintów M6 i 1/4″-20.
+
+**Wniosek dla naszego projektu:** obok szerokiej ramy nośnej powinniśmy ocenić także **osiem lokalnych punktów z wkładkami w dodatkowych klockach**, **T-nut** i **hurricane nuts**. Żaden z tych wariantów nie ma jeszcze wyznaczonej nośności dla naszej geometrii; ich stosowanie przez innych autorów jest inspiracją, nie dowodem bezpieczeństwa.
+
+[Pełne opisy autorów, źródeł fotografii i praw do ich wykorzystania](dokumentacja/inspiracje_zewnetrznych_konstruktorow_mocowanie_RSS390HF4.md) · [Raport konstrukcyjny B12-08](raporty/B12-08_audyt_wyboru_i_konstrukcja_pierwszego_C02.md).
+
+### A2. Nowe badanie B12-09: osiem lokalnych wzmocnień czy duża rama?
+
+Badanie **B12-09** sprawdza wstępną możliwość mocowania Daytona przez osiem oddzielnych klocków przyklejonych od tyłu MDF, a nie automatycznie przez rozbudowaną metalową ramę. Spośród **108 hipotetycznych rzutów 2D** 67 spełniło założone odstępy od paneli i projekcji wręgi. Przy modelowym **15 kg × 5g** największa idealna reakcja na punkt zwiększa się po wyłączeniu jednej z ośmiu śrub z ok. **151 N do 195 N** w porównanych scenariuszach. To obliczenia, **nie pomiary i nie ocena nośności MDF/kleju**.
+
+![B12-09: szerokość materiału przy otworze i wrażliwość uproszczonej spoiny — NIE CNC](wyniki/b12_09_geometria_i_naprezenia_NIE_CNC.svg)
+
+*Wykres pokazuje warunkową geometrię i hipotetyczne wymagania wobec spoiny, nie zalecany rozmiar śrub ani wytrzymałość kleju. Rzeczywiste żebra kosza, zaciski i dostęp do narzędzi nadal trzeba zbadać w 3D.*
+
+**Wniosek:** proste lokalne wzmocnienia są warte dalszego porównania z ramą A; nie zatwierdzono żadnego wariantu do frezowania. [Raport B12-09](raporty/B12-09_lokalne_mocowania_RSS390HF4_vs_rama_A.md) · [kod Python](skrypty/b12_09_lokalne_mocowania.py).
+
+### A3. B12-10 — jak sprawdzamy prawdziwą przestrzeń na mocowanie za frontem?
+
+W B12-09 było widać jedynie rzut ośmiu klocków. Nowy etap B12-10 policzył **324 modelowe warianty brył 3D** w uproszczonej obudowie oraz **7776 hipotetycznych kombinacji** luzu do kosza, średnicy wkładki i pasa drewna. Spośród 324 wariantów **234 nie przecinały zastępczych ścian i wręg**. Po uwzględnieniu dodatkowych, założonych ograniczeń promieniowych **1716/7776** kombinacji przeszło *przesiew* — nie oznacza to, że mają odpowiednią nośność ani pasują do rzeczywistego kosza.
+
+![B12-10: ekran kolizji i szerokości drewna przy wkładce — schemat, NIE CNC](wyniki/b12_10_lokalne_mocowania_przesiew_NIE_CNC.svg)
+
+*Najprościej: średnica śruby i średnica zewnętrzna wkładki to dwie różne rzeczy. Przy wewnętrznej krawędzi modelowego klocka R=178,9 mm wkładka Ø8 mm zostawia **1,1 mm** drewna do tej krawędzi, a Ø10 mm — tylko **0,1 mm**. Nadal nie znamy dokładnego obrysu kosza w miejscu klejenia. To nie są zalecane wymiary otworów ani śrub.*
+
+Dodatkowo **36 hipotetycznych stosów** kołnierz–MDF–klocek pokazało, że długość śruby wymaga kontroli razem z głębokością klocka i minimalnym zazębieniem gwintu. **Rzeczywistej drogi wkrętaka, śruby, połączenia i serwisowania nie zweryfikowano.** Na tym etapie nie wiemy, czy prostsze osiem klocków będzie wystarczające; rama A również nie jest zatwierdzona.
+
+[Raport B12-10 i warunki badań](raporty/B12-10_przestrzenny_przesiew_mocowan_i_stosu_srub.md) · [Python do odtworzenia](skrypty/b12_10_przesiew_3d_mocowan.py).
+
+### A4. B12-11 — najpierw zmierz kosz, dopiero potem dobieraj wkładkę i śrubę
+
+B12-11 sprawdza, **jak nieznany przestrzenny obrys żeber kosza** ogranicza możliwość wykorzystania lokalnych klocków zamiast szerokiej ramy A. To kolejne badanie symulacyjne **przed budową**, a nie model gotowego prototypu. W pełnym sprzężonym przesiewie **2175 z 11 664 hipotetycznych wariantów** spełniło jednocześnie warunki na obrys klocka, kosz, wkładkę i uproszczone przeszkody obudowy. Nie jest to prawdopodobieństwo powodzenia ani potwierdzenie nośności.
+
+![B12-11: maksymalny promień kosza przy różnych wkładkach i wyniki przesiewu — NIE CNC](wyniki/b12_11_budzet_geometryczny_NIE_CNC.svg)
+
+*Przykład: jeśli żądamy 1 mm luzu do kosza i 2 mm pasa drewna, wkładka o **zewnętrznej średnicy Ø8 mm** wymaga, aby rzeczywisty kosz na głębokości mocowania miał promień nie większy niż **177 mm** (przed uwzględnieniem dodatkowej niepewności). Rysunek katalogowy podaje Ø355,8 mm **wycięcia**, ale to nie jest pomiar maksymalnego promienia żeber za frontem.*
+
+W osobnym badaniu długości śruby uwzględniono **hipotetyczne przedziały** grubości kołnierza, MDF, uszczelki i podkładki: **62/252** warianty spełniły założone ograniczenia w całym przedziale, wobec 93/252 dla samych wymiarów nominalnych. To nie są długości do zakupu ani zweryfikowana konstrukcja połączenia.
+
+**Praktyczny wniosek:** przygotowaliśmy mierzalny warunek dla rzeczywistego kosza. Zanim wybierzemy wkładkę lub ramę A, potrzebujemy geometrii kosza z zaciskami i prób mechanicznych MDF/kleju. [Pełny raport B12-11](raporty/B12-11_przedzialowa_geometria_mocowan_i_stos_srub.md) · [kod Python](skrypty/b12_11_budzet_mocowan.py).
+
+### A5. B12-12: jak naprawdę wyglądają żebra kosza RSS390HF-4?
+
+**Sprawdziliśmy oficjalny rysunek techniczny Daytona, nie tylko hipotetyczne obwiednie kosza.** Rzut od tyłu pokazuje **cztery szerokie żebra odlewanego kosza**, z którymi w rzucie pokrywają się osie **czterech z ośmiu otworów kołnierza**. Pozostałe cztery otwory są w przestrzeniach między żebrami. Przekrój boczny pokazuje, że **żebra zwężają się w stronę magnesu**.
+
+![Własny schemat układu osi żeber i mocowań, odtworzony poglądowo z rysunku producenta; NIE CNC](wyniki/b12_12_faza_zeber_producent_NIE_CNC.svg)
+
+*Uwaga: zgodność osi w rzucie NIE oznacza, że klocek przyklejony **44 mm za przednią powierzchnią frontu MDF** zderzy się z żebrem. Musimy poznać jego **rzeczywistą obwiednię przestrzenną** na głębokości klocka. Śruby wprowadza się od strony czoła kołnierza — nie ma podstaw, by uznać je za zablokowane przez żebro z tyłu.*
+
+Matematyczna analiza **78 192 scenariuszy kątowych B12-12** wyznacza granice dla hipotetycznych faz, szerokości i zasięgu żeber. **W rzeczywistym koszu faza żeber względem śrub jest fabrycznie stała, na rysunku w przybliżeniu 0°**. Nie da się uzyskać fazy 22,5° przez obrót głośnika. Pozostałe ograniczenia (wymiary i wytrzymałość wkładki, grubość MDF, terminale, dostęp klucza i regulacja 100/120/150 l) nie zostały tym samym rozstrzygnięte.
+
+[Raport B12-12](raporty/B12-12_cztery_zebra_osiem_srub_niepewnosc_fazy.md) · [Weryfikacja rzeczywistej budowy i źródła producenta](dokumentacja/B12-12_weryfikacja_rzeczywistej_budowy_RSS390HF4_producent.md) · [Pełna specyfikacja Daytona (PDF)](https://www.daytonaudio.com/images/resources/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf).
+
+### A6. B12-13 — czy wszystkie osiem mocowań powinno być równie sztywne?
+
+Poprzednie badanie B12-12 rozdzieliło osiem otworów Dayton RSS390HF-4 na cztery położone w rzucie na osiach żeber kosza i cztery pomiędzy nimi. **B12-13 bada skutki tego, że ich rzeczywista sztywność może być różna.**
+
+![B12-13: wpływ nierównej sztywności ośmiu mocowań i utraty jednej śruby — NIE CNC](wyniki/b12_13_sily_4plus4_NIE_CNC.svg)
+
+Na nowej siatce wykonano **2160 obliczeń** z dwiema masami (13,61 kg z karty producenta oraz wcześniejsze 15 kg), przyspieszeniami 1/3/5/10g, umownymi ramionami 80/120/160 mm, pięcioma stosunkami sztywności czterech punktów przy żebrach do czterech pozostałych oraz utratą dowolnego jednego z ośmiu mocowań.
+
+*Prosty przykład:* dla masy katalogowej 13,61 kg, 5g i hipotetycznego ramienia 120 mm, **osiem jednakowo sztywnych mocowań** daje wskaźnik obciążenia najbardziej obciążonego punktu **137 N**. Jeśli cztery mocowania przy żebrach są **cztery razy sztywniejsze**, ten sam wskaźnik wynosi **219 N**; po utracie jednego mocowania nawet **310 N** w najgorszym modelowym przypadku. Są to *wyniki idealizowanego modelu*, a nie siły zmierzone na zbudowanym subwooferze i **nie są to wartości dopuszczalne wytrzymałościowo**.
+
+**Praktyczny sens:** sztywniejsze połączenie może przejmować więcej siły. Dlatego połączeń nie wolno optymalizować tylko przez powiększanie klocków czy dodawanie sztywnej ramy. Trzeba zmierzyć **rzeczywiste sztywności i nośności wszystkich punktów** oraz sprawdzić kontakt kołnierza z frontem MDF. B12-13 nie przesądza, że rozwiązanie lokalne jest lepsze od ramy A.
+
+[Raport B12-13](raporty/B12-13_sztywnosc_4plus4_i_awaria_mocowan_RSS390HF4.md) · [Odtwarzalny skrypt Python](skrypty/b12_13_nierowna_sztywnosc_4plus4.py) · [Podsumowanie liczb i założeń](wyniki/b12_13_podsumowanie.json). **Prototyp i próby mechaniczne: jeszcze nie wykonane; CNC: HOLD.**
+
+### A7. B12-14 — docisk śrub a odrywanie się kołnierza od MDF
+
+W B12-13 poznaliśmy skutki nierównej sztywności ośmiu mocowań Daytona. Teraz rozróżniamy dwa zupełnie inne mechanizmy: **rozciąganie śruby** i **ściskanie MDF przez kołnierz**. Śruba nie przenosi ściskania między elementami, a otwarty styk nie przenosi nacisku. Rozwiązaliśmy **1152 hipotetyczne scenariusze jednostronnego kontaktu** i sprawdziliśmy **4608 globalnych warunków tarcia**. Wykonaliśmy również niezależne kontrole numeryczne.
+
+![B12-14: jak początkowy docisk wpływa na otwarcie kontaktu i górne oszacowanie tarcia; NIE CNC](wyniki/b12_14_docisk_kontakt_tarcie_NIE_CNC.svg)
+
+W przykładzie dla masy katalogowej **13,61 kg** oraz umownego obciążenia **5g z ramieniem 120 mm** przyjmujemy modelowe sztywności śruby i kontaktu **200 i 500 N/mm**:
+
+| Docisk wstępny jednej śruby (założenie) | Liczba otwartych punktów kontaktu | Wymagane µ w globalnej nierówności tarcia |
+|---|---:|---:|
+| 0 N | 5/8 | 2,362 |
+| 100 N | 0/8 | 0,834 |
+| 300 N | 0/8 | 0,278 |
+| 600 N | 0/8 | 0,139 |
+
+*Prosto mówiąc:* większy docisk może ograniczać odrywanie i zwiększać potencjalny opór tarcia. Ale **zbyt duży docisk może uszkodzić MDF, wkładkę lub śrubę**, a ich wytrzymałości nie znamy. **To nie jest instrukcja dokręcania.** Wartości µ są wynikiem równania dla umownego modelu; bez pomiarów nie wiemy, czy rzeczywista para materiałów ma takie tarcie.
+
+B12-14 wprowadza osobne sprężyny pracujące jednostronnie i kontroluje statyczną równowagę. **Nadal nie wykonuje** rzeczywistego modelu ciągłego kontaktu kołnierza, mikroprzesunięć i uszkodzeń gwintu, kleju i MDF. Nie wybieramy jeszcze pomiędzy ośmioma klockami a ramą A.
+
+[Pełny raport B12-14](raporty/B12-14_jednostronny_kontakt_docisk_tarcie_8_mocowan.md) · [Kod Python](skrypty/b12_14_kontakt_docisk_tarcie.py) · [Protokół potrzebnych pomiarów](dokumentacja/B12-14_protokol_walidacji_docisku_i_zlaczy.md).
+
+
+</details>
+
+### A8. B12-15 — rozkład nacisku i hipotetyczna utrata wstępnego docisku
+
+Przeliczono **2916 scenariuszy zastępczego nacisku pierścieniowego** przy 8, 16 i 32 obszarach, różnej lokalizacji obciążeń, podatności kontaktu oraz zachowaniu 100%, 75% lub 50% docisku. W przykładzie 5g i ramienia 120 mm redukcja modelowego docisku z 300 do 150 N na śrubę podnosi wymagany globalny próg tarcia z **0,278 do 0,556**. To badanie nie jest pomiarem rzeczywistej relaksacji uszczelki ani MES pola kontaktu — nie wyznacza momentu dokręcenia i nie dopuszcza obudowy do CNC.
+
+[Raport B12-15](raporty/B12-15_rozklad_nacisku_i_relaksacja_docisku.md) · [Python do odtworzenia](skrypty/b12_15_nacisk_rozproszony.py) · [Wyniki zbiorcze](wyniki/b12_15_podsumowanie.json) · [Wykres](wyniki/b12_15_relaksacja_nacisku_NIE_CNC.svg).
+
