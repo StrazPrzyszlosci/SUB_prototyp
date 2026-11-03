@@ -20,8 +20,6 @@ subwoofera zamkniętego z regulacją objętości. Szukamy możliwie
 a nie „najlepszego głośnika w ogóle”. Koszt będzie kryterium końcowego
 porównania, a dane cenowe obejmują obecnie tylko część modeli; nadal brakuje pełnego kosztorysu dwóch gotowych urządzeń.
 
-> **Uwaga P33C (31.10.2026):** Audyt elementu powłokowego wykazał dwa nadmiarowe mechanizmy numeryczne (*hourglass*) w P33B. Liczb z raportu 084 nie traktujemy jako potwierdzonych ugięć i częstotliwości skrzyni. [Sprostowanie i 26 testów](raporty/085_P33C_audyt_hourglass_elementu_Q4.md).
-
 > **Stan projektu: badania przed budową; P43 rozszerza porównanie o dwie membrany i układ izobaryczny.** Wykresy przedstawiają obliczenia i symulacje, nie pomiary gotowego prototypu. Nie ma jeszcze ostatecznego zwycięzcy ani projektu zatwierdzonego do CNC.
 
 ## Wybierz temat
@@ -108,7 +106,7 @@ W badanej geometrii Dayton RSS390HF-4 wycięcie **Ø355,8 mm**, okrąg śrub **�
 
 ### 4a. Jak przejść od kosza do rzeczywistego mocowania?
 
-**Konstrukcja bazowa:** Dayton RSS390HF-4, front MDF **44 mm**, osiem otworów montażowych i cztery żebra kosza. Osiem lokalnych wzmocnień jest wariantem pierwszego wyboru **do prób**, rama pozostaje alternatywą.
+**Pierwszy wariant do prób:** RSS390HF-4 w froncie MDF **44 mm**; osiem wkładek gwintowanych osadzonych w **doklejonych klockach 20 mm** — rozwiązanie udokumentowane przez Francisa dla tego przetwornika. [Opis, autorzy i schematy](dokumentacja/inspiracje_zewnetrznych_konstruktorow_mocowanie_RSS390HF4.md). **T-nut/hurricane** są wariantami rezerwowymi. Nie znamy jeszcze nośności ani wymiaru wybranej wkładki.
 
 ![Osiem otworów i żebra Dayton — autorski schemat, NIE CNC](wyniki/b12_12_faza_zeber_producent_NIE_CNC.svg)
 
@@ -116,7 +114,7 @@ W badanej geometrii Dayton RSS390HF-4 wycięcie **Ø355,8 mm**, okrąg śrub **�
 
 **Łącznik (K03–K04):** oś śruby znajduje się tylko **6,1 mm** od wycięcia. Nominalna nakrętka i podkładka M6 mogą wystawać poza drewniany klocek; wraz z płytką hipotetyczny osprzęt ma **28,8 mm** głębokości za frontem. Po uwzględnieniu jego celowo powiększonej obwiedni planer K04 wprowadza **16 kolejnych modułów**, zatrzymuje się na siedemnastym (ID 16) i kończy próbę. Wszystkie 20 pozycji końcowych pozostaje niekolidujących — problem dotyczy *drogi wkładania*, nie miejsca docelowego. Nie dowodzi to niemożliwości montażu rzeczywistych części. [Raport K04](raporty/K04_pelne_gabaryty_nakretki_podkladki_i_montaz_20_modulow.md).
 
-**K05–K06, kolejność montażu:** najpierw można wprowadzić 20 wkładów (wynik modelu 20/20), a później próbować instalować osiem mocowań. W K06 pokazano **8/8 ciągłych dróg dla swobodnych sond kulistych**, ale **nie dla rzeczywistej nakrętki i klucza**. W [próbie zmiany litrażu K07](raporty/K07_serwis_wkladow_i_audyt_mocowan.md) same klocki pozwoliły przejść z 150 przez 120 do 100 l bez wyjmowania wspólnych wkładów. Z pełną obwiednią 28,8 mm osiągnięto 120 l. Następna jest próba serwisowa 1:1; **CNC HOLD**. [Raport K05](raporty/K05_etapowanie_20_modulow_i_dostep_do_mocowan.md) · [K06](raporty/K06_dostep_do_8_mocowan_po_20_wkladach.md) · [szczegóły w aneksie](#aneks-mocowania).
+**Serwis K05–K07:** przy samych klockach planowana regulacja **150 → 120 → 100 l** jest dostępna w modelu. Przy zastępczym pełnym mocowaniu **28,8 mm** planer zatrzymuje się przed 100 l (wkład ID16). W K06 sondy osiągają **8/8 osi śrub**, ale **nie dowodzi to dostępu klucza**. [K05](raporty/K05_etapowanie_20_modulow_i_dostep_do_mocowan.md) · [K06](raporty/K06_dostep_do_8_mocowan_po_20_wkladach.md) · [K07](raporty/K07_serwis_wkladow_i_audyt_mocowan.md). **CNC HOLD.**
 
 ### 5. Co oznaczają wykresy DSP i temperatury?
 
