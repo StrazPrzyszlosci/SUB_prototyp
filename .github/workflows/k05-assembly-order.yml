@@ -1,0 +1,47 @@
+name: K05 assembly order and front-entry bounds
+on:
+  pull_request:
+    paths:
+      - "skrypty/k05_kolejnosc_montazu_i_dostep.py"
+      - "wyniki/k05_podsumowanie.json"
+      - "raporty/K05_etapowanie_20_modulow_i_dostep_do_mocowan.md"
+      - "README.md"
+      - ".github/workflows/k05-assembly-order.yml"
+  workflow_dispatch:
+jobs:
+  k05:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Verify K05 numerical evidence and versioned output
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp wyniki/k05_podsumowanie.json /tmp/k05-expected.json
+          python3 skrypty/k05_kolejnosc_montazu_i_dostep.py
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          expected = json.loads(Path("/tmp/k05-expected.json").read_text(encoding="utf-8"))
+          actual = json.loads(Path("wyniki/k05_podsumowanie.json").read_text(encoding="utf-8"))
+          assert actual == expected, "K05 versioned results diverge from computation"
+          assert actual["modules_before_rear_hardware"]["complete_real_sequence_verified"] is False
+          assert actual["order_before_modules"]["modules_reached"] == [16,16]
+          assert actual["modules_before_rear_hardware"]["modules_reached_with_bare_pads"] == [20,20]
+          assert actual["modules_before_rear_hardware"]["static_final_module_positions_colliding_with_full_M6_envelope"] == 0
+          assert actual["cnc"] == "HOLD"
+          print("K05 PASS: stored result reproduced, physical-install status remains UNKNOWN")
+          PY
+      - name: Guide stays brief, details only in final technical appendix
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          readme=Path("README.md").read_text(encoding="utf-8")
+          assert "### A13. K05" in readme
+          assert readme.index("### A13. K05") > readme.index("### A12. K04")
+          assert "[Raport K05](raporty/K05_etapowanie_20_modulow_i_dostep_do_mocowan.md)" in readme
+          assert "CNC HOLD" in readme
+          PY
