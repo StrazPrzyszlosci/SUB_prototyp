@@ -41,6 +41,14 @@ module brace_local(x){
      translate([x+22,front+359-22,22+22])cube([22,22,456-44]);
   }
 }
+module extra_U_local(){
+  // Third short support from original P30A/P30E geometry.
+  color([.22,.44,.67,.23]){
+    translate([198+22,220+front,22])cube([22,359-220,22]);
+    translate([198+22,220+front,22+456-22])cube([22,359-220,22]);
+    translate([198+22,359-22+front,22+22])cube([22,22,456-44]);
+  }
+}
 module local_pad(i){
   // rotation about y=-theta to match K01 polygon (radial + tangential in XZ)
   color([.16,.56,.43,.94])
@@ -83,7 +91,7 @@ module generic_basket(){
       rotate([90,0,0])cylinder(d=260,h=130,center=true);
 }
 if(show_shell){shell();front_pan();}
-if(show_braces){brace_local(426);brace_local(701);}
+if(show_braces){brace_local(426);brace_local(701);extra_U_local();}
 if(show_pads)for(i=[0:7])local_pad(i);
 if(show_modules)for(i=[0:19])included(i);
 if(show_driver_envelope)generic_basket();
