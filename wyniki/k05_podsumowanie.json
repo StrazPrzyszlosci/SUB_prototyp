@@ -1,0 +1,89 @@
+{
+  "study": "K05",
+  "date": "2026-11-03",
+  "source_file": "wyniki/k04_podsumowanie.json",
+  "source_actions_run": 41678874591,
+  "status": "RESEARCH, no physical assembly, no proven rear-fastener installation",
+  "configuration": {
+    "driver": "RSS390HF-4",
+    "baffle_mdf_mm": 44,
+    "local_pad_depth_mm": 20,
+    "modules_for_100_l": 20,
+    "full_fastener_rear_envelope_mm": 28.8,
+    "number_of_bolt_axes": 8
+  },
+  "order_before_modules": {
+    "description": "Complete nominal M6 rear stack preinstalled; conservative full-pad prism, existing K04/K02 route planner",
+    "clearances_mm": [
+      3,
+      6
+    ],
+    "modules_reached": [
+      16,
+      16
+    ],
+    "complete_sequence": false,
+    "interpretation": "No path found in this surrogate, not proof of real impossibility"
+  },
+  "modules_before_rear_hardware": {
+    "description": "Move all 20 modules with bare 20mm pads; only then hypothesize installing rear M6 hardware",
+    "clearances_mm": [
+      3,
+      6
+    ],
+    "modules_reached_with_bare_pads": [
+      20,
+      20
+    ],
+    "static_final_module_positions_colliding_with_full_M6_envelope": 0,
+    "final_module_count": 20,
+    "final_position_clearance_mm": 6,
+    "large_module_axis_gap_after_clearance_mm": 49.5,
+    "small_module_axis_gap_after_clearance_mm": 168.2,
+    "hardware_delivery_behind_baffle_verified": false,
+    "tool_and_hand_access_verified": false,
+    "captive_nut_retention_verified": false,
+    "joint_strength_verified": false,
+    "complete_real_sequence_verified": false,
+    "interpretation": "Two necessary geometric checks passed separately; no complete post-install hardware path was computed"
+  },
+  "front_aperture_necessary_entry_bounds": {
+    "opening_radius_mm": 177.9,
+    "bolt_circle_radius_mm": 184,
+    "bolt_axis_outside_opening_radius_mm": 6.1,
+    "perpendicular_ingress_to_bolt_circle": [
+      {
+        "part": "podkladka_M5_OD10",
+        "nominal_bounding_radius_mm": 5,
+        "maximum_center_radius_during_straight_front_ingress_mm": 172.9,
+        "necessary_radial_repositioning_for_bolt_circle_mm": 11.1,
+        "note": "2D necessary condition for an ideal perpendicular entry; not a collision-free 3D route"
+      },
+      {
+        "part": "podkladka_M6_OD12",
+        "nominal_bounding_radius_mm": 6,
+        "maximum_center_radius_during_straight_front_ingress_mm": 171.9,
+        "necessary_radial_repositioning_for_bolt_circle_mm": 12.1,
+        "note": "2D necessary condition for an ideal perpendicular entry; not a collision-free 3D route"
+      },
+      {
+        "part": "idealny_naroznik_nakretki_M6_AF10",
+        "nominal_bounding_radius_mm": 5.7735,
+        "maximum_center_radius_during_straight_front_ingress_mm": 172.1265,
+        "necessary_radial_repositioning_for_bolt_circle_mm": 11.8735,
+        "note": "2D necessary condition for an ideal perpendicular entry; not a collision-free 3D route"
+      }
+    ],
+    "note": "Does not establish any real 3D route or tool reach for a washer, nut, or clamping plate"
+  },
+  "next_gates": [
+    "Verify actual basket ribs/terminals and accessible installation positions at all 8 axes",
+    "Prove hardware can be delivered and captured from the speaker aperture AFTER 20 real volume modules are installed",
+    "Prove front-only disassembly/reassembly with hands and actual tools",
+    "Make at least 3 comparable real MDF44 + pad20 coupons per joint/condition and measure strength and relaxation",
+    "Dry-fit 20 real modules including closures, latches, clearances and two cabinet orientations",
+    "Only after those gates update net volume and real <=500mm full external depth"
+  ],
+  "decision": "Test stage order as a physical mockup hypothesis, not a release of N1, a new material strength claim or CNC permission",
+  "cnc": "HOLD"
+}
