@@ -98,17 +98,17 @@ W badanej geometrii Dayton RSS390HF-4 wycięcie **Ø355,8 mm**, okrąg śrub **�
 
 *Co trzeba zrobić? Zmierzyć dokładny kosz, terminale i przestrzeń na wkrętak, zaprojektować rzeczywiste połączenia i sprawdzić ich nośność na docelowym MDF. [Raport 096](raporty/096_P38A_front_Dayton_otwory_i_mocowania.md) · [Raport 108](raporty/108_P42C_laczniki_i_koncepcje_3D.md).*
 
-### 4a. Jak przejść od kosza do rzeczywistego mocowania?
+### 4a. Jak zbudować mocowanie bez utraty regulacji objętości?
 
-**Pierwszy kandydat do weryfikacji to osiem lokalnych wzmocnień za frontem MDF**, a alternatywa to rama rozprowadzająca obciążenia. Rysunek Daytona pokazuje cztery główne żebra i osiem otworów; cztery otwory są w rzucie na osiach żeber, cztery między nimi. Sam rzut nie mówi, ile miejsca zostaje na klocek, wkładkę i narzędzie za frontem **44 mm**.
+**Konstrukcja bazowa:** Dayton RSS390HF-4, front MDF **44 mm**, osiem otworów montażowych i cztery żebra kosza. Osiem lokalnych wzmocnień jest wariantem pierwszego wyboru **do prób**, rama pozostaje alternatywą.
 
-![Osiem punktów mocowania oraz cztery główne żebra kosza — szkic własny, NIE CNC](wyniki/b12_12_faza_zeber_producent_NIE_CNC.svg)
+![Osiem otworów i żebra Dayton — autorski schemat, NIE CNC](wyniki/b12_12_faza_zeber_producent_NIE_CNC.svg)
 
-**Montaż wkładów (K02):** osiem modelowych wzmocnień o głębokości **20 mm** pozwoliło przeprowadzić wkłady **20/20 (100 l), 12/12 (120 l) i 1/1 (150 l)**; wariant 30 mm zatrzymał się na 16/20 w sprawdzonej kolejności 100 l. To trasy geometryczne bez rzeczywistych okuć i narzędzi. [K02 — przejścia modułów](raporty/K02_przejscie_20_modulow_obok_8_mocowan.md).
+**Montaż (K02):** przy samych klockach **20 mm** model pozwolił wprowadzić 20/20 modułów regulacji 100 l; 30 mm zatrzymało dotychczasową kolejność na 16/20. [Badanie K02](raporty/K02_przejscie_20_modulow_obok_8_mocowan.md).
 
-**Mocowanie (K03–K04):** osie śrub leżą tylko **6,1 mm od wycięcia**. Nawet przy klockach 20 mm kompletna tylna nakrętka i podkładka **mogą wystawać poza drewno i blokować drogę wkładów**. Dla nominalnego M6 podkładka Ø12 mm wystaje w rzucie o 0,9 mm poza wewnętrzny brzeg klocka, a z tylną płytką i nakrętką przykładowy stos osiąga **28,8 mm**, nie 20 mm. To **wariant badawczy, nie dobrany łącznik**. Przed wyborem konstrukcji trzeba sprawdzić 20 modułów z pełnymi gabarytami osprzętu i przeprowadzić próby MDF. [Raport K04](raporty/K04_pelne_gabaryty_nakretki_podkladki_i_montaz_20_modulow.md).
+**Łącznik (K03–K04):** oś śruby znajduje się tylko **6,1 mm** od wycięcia. Nominalna nakrętka i podkładka M6 mogą wystawać poza drewniany klocek; wraz z płytką hipotetyczny osprzęt ma **28,8 mm** głębokości za frontem. Po uwzględnieniu jego celowo powiększonej obwiedni model K04 znajduje trasę tylko dla **16/20 modułów** stanu 100 l. Wszystkie 20 pozycji końcowych pozostaje niekolidujących — problem dotyczy *drogi wkładania*, nie miejsca docelowego. Nie dowodzi to niemożliwości montażu rzeczywistych części. [Raport K04](raporty/K04_pelne_gabaryty_nakretki_podkladki_i_montaz_20_modulow.md).
 
-**Droga do rozstrzygnięcia:** potwierdzić wymiary prawdziwego kosza i terminali, wybrać wykonalny wariant mocowania, sprawdzić nośność śrub, wkładek, MDF i spoin, zabezpieczyć uszczelnienie oraz serwis, a dopiero potem zatwierdzić rysunki do wykonania. Żaden wariant nie uzyskał jeszcze zgody na CNC. [Inspiracje z innych konstrukcji oraz szczegółowe analizy B12-09–B12-15 oraz K01–K04 są w aneksie na końcu przewodnika](#aneks-mocowania).
+**Następny krok:** zmierzyć rzeczywisty kosz i terminale; sprawdzić kompaktowy, serwisowalny łącznik z rzeczywistymi narzędziami, odtworzyć wszystkie 20 tras oraz wykonać próbki MDF/kleju. Bez potwierdzenia pełnej ścieżki sił i montażu **nie zatwierdza się CNC**. Szczegóły K01–K04 i inspiracje innych konstruktorów są [w aneksie końcowym](#aneks-mocowania).
 
 ### 5. Co oznaczają wykresy DSP i temperatury?
 
@@ -2233,6 +2233,6 @@ Wymiarowa karta Daytona potwierdza **6,1 mm** pomiędzy kołową krawędzią wyc
 
 ![K04 — M6, nakrętka, podkładka i dodatkowa głębokość za frontem, NIE CNC](wyniki/k04_nakretka_podkladka_osie_20_vs_28_8_NIE_CNC.svg)
 
-K02 dopuściło w modelu 20 wkładów przy samym drewnianym klocku 20 mm. **K04 dodaje brakujące elementy:** nominalną nakrętkę M5/M6, podkładkę i umowną metalową płytkę. Przy M6 narożnik idealnej nakrętki AF10 może sięgać **0,674 mm poza drewniany klocek**, a standardowa podkładka Ø12 — o **0,9 mm**. Po dodaniu płytki 2 mm, podkładki 1,6 mm i nakrętki 5,2 mm całkowity osprzęt może wystawać na **28,8 mm** za front, więc dawna trasa 20/20 **nie jest automatycznie gwarantowana**. Parametry pochodzą z wymiarów normowych, ale nie są wyborem śruby do zakupu. Model K04 ponownie sprawdza trasy K02 z celowo zawyżonym obrysem osprzętu; nieudana trasa nie stanowi dowodu niemożliwości innego rzeczywistego złącza.
+K02 dopuściło w modelu 20 wkładów przy samym drewnianym klocku 20 mm. **K04 dodaje brakujące elementy:** nominalną nakrętkę M5/M6, podkładkę i umowną metalową płytkę. Przy M6 narożnik idealnej nakrętki AF10 może sięgać **0,674 mm poza drewniany klocek**, a standardowa podkładka Ø12 — o **0,9 mm**. Po dodaniu płytki 2 mm, podkładki 1,6 mm i nakrętki 5,2 mm całkowity osprzęt może wystawać na **28,8 mm** za front, więc dawna trasa 20/20 **nie jest automatycznie gwarantowana**. Parametry pochodzą z wymiarów normowych, ale nie są wyborem śruby do zakupu. Wykonana regresja K04 objęła **22 próby tras**. Sam klocek20: 20/20 przy 3 i 6 mm luzu; klocek20+płytka2+nakrętka M5 lub M6: **16/20** w sprawdzonej kolejności dla 100 l. Kontrole 120 l (12/12) i 150 l (1/1) z nakrętką M6 bez dodatkowej podkładki przeszły. **Wszystkie 20 pozycji docelowych jest wolnych od kolizji statycznych.** Planer używa zawyżonej obwiedni osprzętu; nieudana trasa nie dowodzi niemożliwości innego rzeczywistego złącza.
 
 **Przed wykonaniem:** pomiar kosza, zabezpieczonej nakrętki/nośnika i narzędzia w 3D, a potem fizyczna próba łącznika na MDF44 i ponowny suchy montaż 20 modułów. [Raport K04](raporty/K04_pelne_gabaryty_nakretki_podkladki_i_montaz_20_modulow.md) · [Python](skrypty/k04_nakretki_i_przejscie_modulow.py) · [Dane referencyjne](wyniki/k04_podsumowanie.json). CNC HOLD.
