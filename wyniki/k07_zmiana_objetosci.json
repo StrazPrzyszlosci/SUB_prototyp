@@ -1,0 +1,79 @@
+{
+  "kolejnosc_id_od_zera": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    0,
+    1,
+    2,
+    3,
+    16,
+    17,
+    18,
+    19
+  ],
+  "proby": [
+    {
+      "glebokosc_mm": 20.0,
+      "luz_mm": 3.0,
+      "wlozone_kolejno": 20,
+      "osiagniete_stany_l": [
+        150,
+        120,
+        100
+      ],
+      "pierwszy_problem": null
+    },
+    {
+      "glebokosc_mm": 20.0,
+      "luz_mm": 6.0,
+      "wlozone_kolejno": 20,
+      "osiagniete_stany_l": [
+        150,
+        120,
+        100
+      ],
+      "pierwszy_problem": null
+    },
+    {
+      "glebokosc_mm": 28.8,
+      "luz_mm": 3.0,
+      "wlozone_kolejno": 16,
+      "osiagniete_stany_l": [
+        150,
+        120
+      ],
+      "pierwszy_problem": {
+        "module": 16,
+        "problems": [
+          "No certified detour around K01 pads; original hits [0]"
+        ]
+      }
+    },
+    {
+      "glebokosc_mm": 28.8,
+      "luz_mm": 6.0,
+      "wlozone_kolejno": 16,
+      "osiagniete_stany_l": [
+        150,
+        120
+      ],
+      "pierwszy_problem": {
+        "module": 16,
+        "problems": [
+          "No certified detour around K01 pads; original hits [0]"
+        ]
+      }
+    }
+  ],
+  "proba_fizyczna": false
+}

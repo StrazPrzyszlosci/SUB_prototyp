@@ -79,7 +79,11 @@ def self_tests():
         samples = a[None,:] + np.linspace(0, 1, 1001)[:,None] * (b-a)[None,:]
         delta = np.maximum(np.maximum(cube[0]-samples, samples-cube[1]),0.)
         sampled = float(np.min(np.sum(delta*delta, axis=1)))
-        assert exact >= -1e-10 and exact <= sampled + 1e-8
+        # Distance to a closed box is 1-Lipschitz. The closest grid
+        # sample is at most half a sampling interval from the minimizer.
+        step = np.linalg.norm(b - a) / 1000
+        assert exact >= 0 and exact <= sampled + 1e-8
+        assert math.sqrt(sampled) - math.sqrt(exact) <= step / 2 + 1e-8
         assert abs(square_distance_segment_aabb(a,b,cube) - square_distance_segment_aabb(b,a,cube)) < 1e-8
 
 def run():
@@ -113,8 +117,10 @@ def run():
                 # through the circular opening: max radial extent = Rcut-1.
                 assert entry_r + radius <= R_CUT - ENTRY_GAP + 1e-8
                 # Interior side/bottom/top walls; x/z are monotone for radial leg.
-                wall_space = min(float(seated[0]), float(L[0]-seated[0]),
-                                 float(seated[2]), float(L[2]-seated[2]))
+                wall_space = min(
+                    min(point[0], L[0] - point[0], point[2], L[2] - point[2])
+                    for point in (entry, shifted)
+                )
                 if wall_space + 1e-8 < radius:
                     continue
                 points = [start,entry,shifted,seated]
