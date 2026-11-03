@@ -106,7 +106,7 @@ W badanej geometrii Dayton RSS390HF-4 wycięcie **Ø355,8 mm**, okrąg śrub **�
 
 ### 4a. Jak przejść od kosza do rzeczywistego mocowania?
 
-**Pierwszy wariant do prób:** RSS390HF-4 w froncie MDF **44 mm**; osiem wkładek gwintowanych osadzonych w **doklejonych klockach 20 mm** — rozwiązanie udokumentowane przez Francisa dla tego przetwornika. [Opis, autorzy i schematy](dokumentacja/inspiracje_zewnetrznych_konstruktorow_mocowanie_RSS390HF4.md). **T-nut/hurricane** są wariantami rezerwowymi. Nie znamy jeszcze nośności ani wymiaru wybranej wkładki.
+**K11 — wkładki w klockach:** sposób Francisa pozostaje do prób, ale **M5 Ø10** zostawia **0,1 mm** drewna w modelowym klocku K01, a **M6 Ø12** wystaje poza niego o **0,9 mm**. Zmiana gatunku drewna lub kleju nie naprawi geometrii. [Raport K11](raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md) · [Inspiracje](dokumentacja/inspiracje_zewnetrznych_konstruktorow_mocowanie_RSS390HF4.md). **CNC HOLD.**
 
 ![Osiem otworów i żebra Dayton — autorski schemat, NIE CNC](wyniki/b12_12_faza_zeber_producent_NIE_CNC.svg)
 
@@ -2276,3 +2276,13 @@ W przesiewie porównano MDF22, MDF25 i kierunkowe dane sklejki brzozowej21. Wska
 **Decyzja praktyczna:** na razie zachowujemy bazę MDF22/MDF44/MDF8 wyłącznie jako **referencję badawczą**. Dla frontu, wręg i klocków mocujących porównujemy osobno wymaganą sztywność, pełzanie spoin i wyrywanie. Dla ryglów, EPDM, stopek, osłony i maty dobieramy karty konkretnych produktów i przeliczamy warunki pracy. Dopiero po tych kontrolach wolno zmienić materiał z jednoczesnym przeliczeniem 100/120/150 l i całkowitego limitu 500 mm. **CNC HOLD.**
 
 [Raport z macierzą 35 części](raporty/K10_paszport_materialowy_wszystkich_czesci.md) · [Paszporty materiałowe JSON](dane/k10_rejestr_materialow_czesci_obudowy.json) · [Obliczenia porównawcze](wyniki/k10_wyniki_przesiewu_materialow.json) · [Skrypt](skrypty/k10_audyt_materialow_obudowy.py) · [Wymaganie W38](WYMAGANIA.md).
+
+### A17. K11 — zwymiarowane wkładki i wpływ materiału ścian
+
+![K11 — średnice rzeczywistych wkładek RAMPA na tle klocka K01, własny schemat NIE CNC](wyniki/k11_rzeczywiste_wkladki_w_klocku_NIE_CNC.svg)
+
+W modelu K01 oś śruby leży na promieniu **184 mm**, wewnętrzna krawędź drewnianego klocka — na **178,9 mm**, a krawędź wycięcia głośnika — na **177,9 mm**. Wobec tego dla zewnętrznych średnic wkładek katalogowych RAMPA SKD30: **M4 Ø8 / M5 Ø10 / M6 Ø12** wewnętrzny pas drewna klocka wynosi odpowiednio **1,1 / 0,1 / −0,9 mm**. Ujemna liczba oznacza wychodzenie poza obrys klocka. Źródło rozmiarów: [karta RAMPA do MDF](https://www.rampa.com/media/e2/ed/d4/1699524202/RAMPA_Produktdatenblatt_MDF-EN.pdf). Przed doborem materiału klocków trzeba opracować lepszą drogę sił i geometrię osadzenia; wzmacnianie samego kleju nie rozwiąże konfliktu. Katalogowy moment wkręcenia wkładki **nie jest momentem śruby kosza**.
+
+W osobnym, warunkowym przesiewie pięciu ścian (zachowany front MDF44 i gabaryty 1020×425×500 mm): **MDF25 wobec MDF22 zmniejsza wolną objętość wewnętrzną brutto o 4,381 l i zwiększa masę stałej struktury o 3,198 kg**; dla sklejki brzozowej21 wyniki to **+1,478 l i −2,700 kg** przy masie powierzchniowej WISA. Nie są to nowe objętości użytkowe 100/120/150 l ani certyfikowany wynik ortotropowego MES. Wymagana ponowna weryfikacja połączeń, ułożenia wręg i dróg wyjmowania wkładów. **CNC HOLD**.
+
+[Pełny raport K11](raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md) · [Dane katalogowe i scenariusze](dane/k11_źródłowe_wkładki_i_warianty_skrzyni.json) · [Skrypt](skrypty/k11_realne_wkladki_i_materialy_nosne.py) · [Wyniki](wyniki/k11_przesiew_materialow_i_wkladek.json) · [Paszport K10](dane/k10_rejestr_materialow_czesci_obudowy.json).
