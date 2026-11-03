@@ -30,7 +30,7 @@ jobs:
           a=json.loads(Path("/tmp/k06-expected.json").read_text(encoding="utf-8"))
           b=json.loads(Path("wyniki/k06_podsumowanie.json").read_text(encoding="utf-8"))
           assert a==b, "Versioned K06 results do not match freshly executed K06"
-          assert len(b["routes"])==24
+          assert len(b["results"])==3
           assert all(row["passed_axes"]==8 for row in b["results"].values())
           assert b["physical_testing"] is False and b["cnc"]=="HOLD"
           guide=Path("README.md").read_text(encoding="utf-8")
@@ -38,3 +38,9 @@ jobs:
           assert "K06 — dostęp do osprzętu" in guide
           print("K06 PASS: all path checks agree, no unsupported physical clearance claim")
           PY
+      - name: Archive generated full trajectories (not fabrication dimensions)
+        uses: actions/upload-artifact@v4
+        with:
+          name: k06-model-24-three-segment-probe-routes
+          path: wyniki/k06_pelne_trasy_wygenerowane.json
+          retention-days: 30
