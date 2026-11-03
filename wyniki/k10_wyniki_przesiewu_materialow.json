@@ -109,18 +109,18 @@
   },
   "state_masses": [
     {
-      "nominal_litre_state": 100,
+      "nominal_litre_state": 150,
       "counts": {
-        "rear_large": 8,
-        "front_large": 8,
-        "small": 4
+        "rear_large": 1,
+        "front_large": 0,
+        "small": 0
       },
-      "insert_shell_MDF8_kg": 12.3397,
-      "insert_shell_birch9_kg_same_outer_dimensions": 12.7543,
-      "insert_mass_delta_if_birch9_kg": 0.4146,
+      "insert_shell_MDF8_kg": 0.6024,
+      "insert_shell_birch9_kg_same_outer_dimensions": 0.6225,
+      "insert_mass_delta_if_birch9_kg": 0.0201,
       "P30E_shell_plus_braces_MDF22_kg": 39.5727,
-      "P30E_original_MDF_shell_braces_inserts_kg": 51.9124,
-      "plus_hypothetical_8_glued_wood_pads_at_700kg_m3_kg": 52.0176
+      "P30E_original_MDF_shell_braces_inserts_kg": 40.1751,
+      "plus_hypothetical_8_glued_wood_pads_at_700kg_m3_kg": 40.2804
     },
     {
       "nominal_litre_state": 120,
@@ -137,18 +137,18 @@
       "plus_hypothetical_8_glued_wood_pads_at_700kg_m3_kg": 47.3189
     },
     {
-      "nominal_litre_state": 150,
+      "nominal_litre_state": 100,
       "counts": {
-        "rear_large": 1,
-        "front_large": 0,
-        "small": 0
+        "rear_large": 8,
+        "front_large": 8,
+        "small": 4
       },
-      "insert_shell_MDF8_kg": 0.6024,
-      "insert_shell_birch9_kg_same_outer_dimensions": 0.6225,
-      "insert_mass_delta_if_birch9_kg": 0.0201,
+      "insert_shell_MDF8_kg": 12.3397,
+      "insert_shell_birch9_kg_same_outer_dimensions": 12.7543,
+      "insert_mass_delta_if_birch9_kg": 0.4146,
       "P30E_shell_plus_braces_MDF22_kg": 39.5727,
-      "P30E_original_MDF_shell_braces_inserts_kg": 40.1751,
-      "plus_hypothetical_8_glued_wood_pads_at_700kg_m3_kg": 40.2804
+      "P30E_original_MDF_shell_braces_inserts_kg": 51.9124,
+      "plus_hypothetical_8_glued_wood_pads_at_700kg_m3_kg": 52.0176
     }
   ],
   "unqualified_material_gates": [
