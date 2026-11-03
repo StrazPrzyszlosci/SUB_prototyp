@@ -30,6 +30,7 @@ FRONT=44.
 AF={"M5":8.0,"M6":10.0}
 NUT_H={"M5":4.7,"M6":5.2} # source-specific nominal ISO4032 examples
 WASHER_OD={"M5":10.0,"M6":12.0}
+WASHER_T={"M5":1.0,"M6":1.6} # nominal normal ISO7089 example, NOT a selected washer
 
 def inward_hex_projection(across_flats,orientation_deg):
     r=across_flats/math.sqrt(3)
@@ -83,9 +84,10 @@ def passage():
     cases=[
        ("C20_no_fastener",20.,178.9),
        ("C20_plus_plate_2",22.,178.0),
-       ("C20_plate2_nutM5",20.+2.+NUT_H["M5"],178.0),
-       ("C20_plate2_nutM6",20.+2.+NUT_H["M6"],178.0),
-       ("C20_plate4_nutM6",20.+4.+NUT_H["M6"],178.0),
+       ("C20_plate2_washer_nutM5",20.+2.+WASHER_T["M5"]+NUT_H["M5"],178.0),
+       ("C20_plate2_nutM6_no_washer",20.+2.+NUT_H["M6"],178.0),
+       ("C20_plate2_washer_nutM6",20.+2.+WASHER_T["M6"]+NUT_H["M6"],178.0),
+       ("C20_plate4_washer_nutM6",20.+4.+WASHER_T["M6"]+NUT_H["M6"],178.0),
        ("C30_no_fastener",30.,178.9),
     ]
     configs=[]
@@ -108,7 +110,7 @@ def passage():
                       "first_failure":r["failures"][0] if r["failures"] else None})
                 print("K04_ROUTE",name,clearance,r["completed_modules"],"/",
                       r["requested_modules"],flush=True)
-    assert len(configs)==12
+    assert len(configs)==14
     bare=[x for x in configs if x["case"]=="C20_no_fastener"]
     assert all(x["modules_completed"]==20 for x in bare)
     for state,indices in (("120L",list(range(4,16))),("150L",[4])):
@@ -127,7 +129,7 @@ def passage():
                       "first_failure":r["failures"][0] if r["failures"] else None})
                 print("K04_ROUTE",name,clearance,state,r["completed_modules"],
                       "/",r["requested_modules"],flush=True)
-    assert len(configs)==20
+    assert len(configs)==22
     return configs
 
 def main():
@@ -141,6 +143,7 @@ def main():
        "radial_distance_axis_to_K02_pad_inner_mm":round(RB-RPAD,4),
        "ideal_hex_nut_size_by_flats_mm":AF,
        "ideal_hex_nut_height_model_mm":NUT_H,
+       "nominal_normal_washer_thickness_mm":WASHER_T,
        "nut_rotations_checked":7,
        "ideal_hex_cases":len(rows),
        "nominal_hex_0deg_vs30deg":[x for x in rows if x["radial_uncertainty_mm"]==0 and x["orientation_deg"] in (0,30)],
