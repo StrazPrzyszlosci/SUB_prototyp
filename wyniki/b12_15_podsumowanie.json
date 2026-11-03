@@ -1,0 +1,127 @@
+{
+  "study": "B12-15",
+  "date": "2026-11-03",
+  "kind": "Hypothetical engineering sensitivity: not a physical gasket measurement or contact FEM",
+  "base_main": "d6d9c3a1af0ce3f2a118438005bdcb9d00d38d53",
+  "inputs_from_manufacturer": {
+    "model": "Dayton RSS390HF-4",
+    "mass_catalog_kg": 13.6077711,
+    "flange_OD_mm": 388.4,
+    "cutout_D_mm": 355.8,
+    "bolt_PCD_mm": 368
+  },
+  "hypotheses": {
+    "ring_radii_mm": [
+      177.9,
+      194.2
+    ],
+    "ideal_annulus_area_mm2": 19054.482,
+    "annulus_contact_patch_count": [
+      8,
+      16,
+      32
+    ],
+    "angular_preload_concentration_parameter_kappa": [
+      0,
+      3,
+      12
+    ],
+    "contact_stiffness_multiplier": [
+      0.5,
+      1,
+      2
+    ],
+    "bolt_spring_N_per_mm": 200,
+    "contact_spring_per_8th_N_per_mm": 500,
+    "preload_initial_per_bolt_N": [
+      100,
+      300,
+      600
+    ],
+    "remaining_preload_fraction": [
+      1,
+      0.75,
+      0.5
+    ],
+    "accel_g": [
+      1,
+      5,
+      10
+    ],
+    "moment_arm_mm": [
+      80,
+      120
+    ],
+    "load_direction": [
+      "x",
+      "z"
+    ]
+  },
+  "results": {
+    "case_count": 2916,
+    "cases_with_open_contact_patches": 468,
+    "all_equilibria_passed": true,
+    "independent_scipy_root_checks": 100,
+    "independent_max_displacement_difference_mm": 1.1195758253512574e-13,
+    "reference_5g_120mm_initial300N_kappa0_contact_multiplier1_ring32": [
+      {
+        "retained_preload_fraction": 1,
+        "open_patches": 0,
+        "sum_contact_N": 2400,
+        "mu_required_global": 0.278014,
+        "maximum_pressure_proxy_N_mm2": 0.158423,
+        "max_bolt_tension_N": 330.592664
+      },
+      {
+        "retained_preload_fraction": 0.75,
+        "open_patches": 0,
+        "sum_contact_N": 1800,
+        "mu_required_global": 0.370685,
+        "maximum_pressure_proxy_N_mm2": 0.126934,
+        "max_bolt_tension_N": 255.592664
+      },
+      {
+        "retained_preload_fraction": 0.5,
+        "open_patches": 0,
+        "sum_contact_N": 1200,
+        "mu_required_global": 0.556028,
+        "maximum_pressure_proxy_N_mm2": 0.095446,
+        "max_bolt_tension_N": 180.592664
+      }
+    ],
+    "reference_preload100N_retention0_5_5g_120mm_kappa0_contact_multiplier1": [
+      {
+        "ring_patches": 8,
+        "open_patches": 3,
+        "model_open_fraction": 0.375,
+        "mu_global": 1.554968
+      },
+      {
+        "ring_patches": 16,
+        "open_patches": 5,
+        "model_open_fraction": 0.3125,
+        "mu_global": 1.565997
+      },
+      {
+        "ring_patches": 32,
+        "open_patches": 11,
+        "model_open_fraction": 0.34375,
+        "mu_global": 1.565267
+      }
+    ]
+  },
+  "reproduction": {
+    "python": "skrypty/b12_15_nacisk_rozproszony.py",
+    "generated_file": "wyniki/b12_15_pelne_rozklady.json",
+    "generated_manifest": "wyniki/b12_15_generated_manifest.json"
+  },
+  "limitations": [
+    "Remaining preload fractions are NOT a time-dependent viscoelastic/aging calculation.",
+    "The full nominal ring area used for a pressure indicator is not the actual gasket/MDF contact area.",
+    "Concentrated preload angular profile is a scenario, not manufacturer distribution.",
+    "Global mu_required is a necessary friction-only upper-bound condition, not local stick/slip.",
+    "The real basket's ribs, terminals, screws, insert and joint strength remain unmeasured.",
+    "No choice between local eight pads and frame A and no CNC approval."
+  ],
+  "methodology": "Rigid flange, eight bolt tension-only springs, 8/16/32 annular compression-only patches; refinement area-normalized contact stiffness, analytic closed-contact reference and independent SciPy root verification."
+}
