@@ -174,3 +174,5 @@ Historyczne identyfikatory P43/P44 w kodzie konstrukcyjnym są odrębne od akust
 - [K02 — zintegrowane ścieżki 20 modułów P30E z ośmioma lokalnymi mocowaniami K01: porównanie 30 i 20 mm, sprawdzenie wejścia od zewnątrz](K02_przejscie_20_modulow_obok_8_mocowan.md).
 
 - [K03 — dobór toru siły mocowania: 6,1 mm od osi śruby do otworu, 162 scenariusze pasa MDF i dwa realne warianty połączeń do prób](K03_wezel_mocowania_waski_pas_MDF_i_sciezka_sily.md).
+
+- [K04 — rzeczywista geometria nakrętek M5/M6, podkładek i dodatkowej głębokości osprzętu w modelu montażu 20 modułów](K04_pelne_gabaryty_nakretki_podkladki_i_montaz_20_modulow.md).
