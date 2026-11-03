@@ -1762,3 +1762,7 @@ z pełnym testem nośności, nie uznawać żadnego za sprawdzony.
 - Dla Ø12/Ø24/Ø48 mm uzyskano modelowo 8/8 trajektorii, przy umownym 1 mm marginesie w otworze i 0,5 mm odstępie w głębokości za klockiem. Najbardziej lewa oś jest tylko 25 mm od wewnętrznej ściany, więc Ø48 ma przy niej 1 mm modelowego zapasu.
 - Skrypt skrypty/k06_korytarz_kulisty_8_mocowan.py używa dokładnej analitycznej minimalizacji odległości od odcinka do AABB i testów analitycznych/losowych; GitHub Actions odtwarza zapisany JSON, a pełne trajektorie generowane są jako wynik obliczeń. Raport raporty/K06_dostep_do_8_mocowan_po_20_wkladach.md, źródłowy rysunek SVG i aneks A14 w README.
 - Wniosek: K06 zmniejsza niepewność geometryczną H-K05, ALE NIC nie potwierdza o złączach, nośności MDF/kleju, dostępie rzeczywistych kluczy/rąk, 3D kosza i ścieżce montażu. Kolejny krok to rzeczywista makieta ośmiu osi przy 20 wkładach, porównanie N-late/S-front na próbkach. Nadal CNC HOLD; nie zamawiano materiałów.
+
+## 2026-11-03 — K07. Zmiana objętości i audyt K01–K06
+
+Odtworzono K04–K06. W czterech próbach K07 dla obu luzów kolejność 4–15, 0–3, 16–19 osiąga 100 l przy klockach 20 mm. Przy obwiedni 28,8 mm pierwsze niepowodzenie wypada na ID 16 przy klocku nr 0. Skorygowano opis 16/20 oraz kontrolę geometrii i regresję K06. Dowód i kryteria dalszych prób: [K07](raporty/K07_serwis_wkladow_i_audyt_mocowan.md). Najbliższy krok: pomiar kosza i konkretnego łącznika na ośmiu osiach przed makietą serwisową. CNC HOLD.
