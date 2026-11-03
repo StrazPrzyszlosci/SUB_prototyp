@@ -10,6 +10,10 @@ K10 przypisało kandydatów materiałowych do 35 części, ale samo przypisanie 
 
 Model K01 przewiduje klocek o promieniu wewnętrznym **178,9 mm**, promieniu zewnętrznym **205 mm**, szerokości stycznej **36 mm**, głębokości **20 mm**. Na każdej z ośmiu pozycji śruba znajduje się w promieniu **184 mm**. Odległość osi do *wewnętrznej krawędzi samego klocka* to **5,1 mm**, natomiast do wycięcia kołowego we froncie **6,1 mm**. Tych odległości nie wolno utożsamiać.
 
+![K11 — porównanie wymiarów katalogowych RAMPA z wąskim pasem drewna K01, oryginalny schemat badawczy NIE CNC](../wyniki/k11_rzeczywiste_wkladki_w_klocku_NIE_CNC.svg)
+
+*Rysunek wykonany na podstawie wymiarów producentów; nie jest fotografią zmontowanego głośnika, wizualizacją rzeczywistego gwintu ani dokumentacją frezarską.*
+
 Odczytałem wymiary z **oryginalnej [karty wkładek RAMPA SKD30 do MDF](https://www.rampa.com/media/e2/ed/d4/1699524202/RAMPA_Produktdatenblatt_MDF-EN.pdf)** (str. 3, tabela z kodami produktów) oraz [katalogu Type D Fastenright](https://www.fastenright.com/general-fixings/insert-nuts-for-wood-type-d/ff13). To **rzeczywiste katalogowe rozmiary danych rodzin wkładek**, a nie gabaryty zamontowanego złącza w naszym klocku.
 
 | Przykład katalogowy, nie wybrany do montażu | D zewnętrzna / długość [mm] | Najwęższy pas przy wycięciu we froncie [mm] | Pas do wewnętrznej krawędzi klocka K01 [mm] |
