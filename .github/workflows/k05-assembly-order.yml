@@ -42,6 +42,6 @@ jobs:
           readme=Path("README.md").read_text(encoding="utf-8")
           assert "### A13. K05" in readme
           assert readme.index("### A13. K05") > readme.index("### A12. K04")
-          assert "[Raport K05](raporty/K05_etapowanie_20_modulow_i_dostep_do_mocowan.md)" in readme
+          assert "(raporty/K05_etapowanie_20_modulow_i_dostep_do_mocowan.md)" in readme[:readme.index("## Aneks techniczny — inspiracje montażowe")]
           assert "CNC HOLD" in readme
           PY
