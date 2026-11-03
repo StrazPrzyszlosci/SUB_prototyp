@@ -21,7 +21,7 @@ CUT_RADIUS=177.9
 BOLT_RADIUS=184.0
 BASKET_XZ_GLOBAL=(231.,250.)
 FRONT_THICK=44.
-PAD_Y=(0.,30.)  # interior y=0..30; global y=44..74
+PAD_DEPTHS=(30.,20.)  # baseline K01, and assembly-focused shorter pads
 START=np.array([209.,105.,228.])  # P30A start in INTERIOR coordinates
 SELECTED=e.CANDIDATES[2]
 assert list(SELECTED)==[1020,425,50,120,15]
@@ -37,9 +37,9 @@ def rect_xz(b):
     x1,z1=float(b[1,0]),float(b[1,2])
     return [(x0,z0),(x1,z0),(x1,z1),(x0,z1)]
 
-def collision_with_pads(swept, pads):
+def collision_with_pads(swept, pads, pad_depth):
     # Different Y bands do not collide even for overlapping X/Z.
-    if min(float(swept[1,1]),PAD_Y[1])-max(float(swept[0,1]),PAD_Y[0])<=1e-10:
+    if min(float(swept[1,1]),pad_depth)-max(float(swept[0,1]),0.)<=1e-10:
         return []
     r=rect_xz(swept)
     return [i for i,poly in enumerate(pads) if k.overlap(poly,r)]
@@ -48,14 +48,14 @@ def swept(start,end,half):
     return p.segment_box(np.asarray(start,dtype=float),
                          np.asarray(end,dtype=float),half)
 
-def pad_aabb_boxes(pads):
-    return [p.box([min(x for x,z in poly),PAD_Y[0],min(z for x,z in poly)],
-                  [max(x for x,z in poly),PAD_Y[1],max(z for x,z in poly)])
+def pad_aabb_boxes(pads, pad_depth):
+    return [p.box([min(x for x,z in poly),0.,min(z for x,z in poly)],
+                  [max(x for x,z in poly),pad_depth,max(z for x,z in poly)])
             for poly in pads]
 
-def check_state(label, indices, clearance, pads):
+def check_state(label, indices, clearance, pads, pad_depth):
     L,br,mods,mat=e.build(SELECTED)
-    pad_boxes=pad_aabb_boxes(pads)
+    pad_boxes=pad_aabb_boxes(pads,pad_depth)
     placed=[]
     paths=[]
     reasons=[]
@@ -68,7 +68,7 @@ def check_state(label, indices, clearance, pads):
         opening_radius=math.hypot(half[0],half[2])
         opening_margin=CUT_RADIUS-opening_radius
         entry=swept(exterior,START,half)
-        pad_entry=collision_with_pads(entry,pads)
+        pad_entry=collision_with_pads(entry,pads,pad_depth)
         # The front panel is intentionally represented by a circular opening
         # instead of its full (and blocking) MDF AABB.
         other_entry=[j for j,b in enumerate(br+placed+[mat]) if p.intersect(entry,b)]
@@ -83,7 +83,7 @@ def check_state(label, indices, clearance, pads):
             segments=0
         else:
             route_hits=sorted(set(hit for a,b in zip(route,route[1:])
-                               for hit in collision_with_pads(swept(a,b,half),pads)))
+                               for hit in collision_with_pads(swept(a,b,half),pads,pad_depth)))
             # Old P30E path is not automatically valid after new hardware!
             # Re-plan against conservative axis-aligned *envelopes* of all
             # eight pads if any original swept segment hits the actual polygon.
@@ -106,7 +106,7 @@ def check_state(label, indices, clearance, pads):
                 assert not any(p.intersect(swept(a,b,half),o)
                                for o in br+placed+[mat])
         target_box=p.box(m[0]-clearance,m[1]+clearance)
-        target_hits=collision_with_pads(target_box,pads)
+        target_hits=collision_with_pads(target_box,pads,pad_depth)
         if target_hits:reason.append("installed module hits pads "+str(target_hits))
         paths.append({
            "module":i,"sequence_position":order,
@@ -126,7 +126,7 @@ def check_state(label, indices, clearance, pads):
             # Subsequent states are not physically reachable in this order.
             break
         placed.append(m)
-    return {"state":label,"clearance_mm":clearance,
+    return {"state":label,"clearance_mm":clearance,"pad_depth_mm":pad_depth,
        "requested_modules":len(indices),"routed_modules":len(paths),
        "completed_modules":len(placed),
        "passed_full_sequence":len(placed)==len(indices),
@@ -143,12 +143,12 @@ def main():
        "150L": [4],                       # P30E: one large
     }
     rows=[]
-    for state,cl in itertools.product(states,(3.,6.)):
-        rows.append(check_state(state,states[state],cl,pads))
-    # Re-test most crowded state at intermediate clearance, diagnostic.
-    rows.append(check_state("100L",states["100L"],5.,pads))
-    assert len(rows)==7
-    by_state={row["state"]+"_"+str(int(row["clearance_mm"]))+"mm":{
+    for depth,state,cl in itertools.product(PAD_DEPTHS,states,(3.,6.)):
+        rows.append(check_state(state,states[state],cl,pads,depth))
+    for depth in PAD_DEPTHS:
+        rows.append(check_state("100L",states["100L"],5.,pads,depth))
+    assert len(rows)==14
+    by_state={str(int(row["pad_depth_mm"]))+"mmPad_"+row["state"]+"_"+str(int(row["clearance_mm"]))+"mm":{
        "complete":row["completed_modules"],"requested":row["requested_modules"],
        "pass":row["passed_full_sequence"],"min_aperture_margin_mm":row["minimum_cutout_margin_mm"],
        "segments":row["total_path_segments"],
@@ -156,12 +156,15 @@ def main():
        "failures":row["failures"]} for row in rows}
     summary={
        "assembly_sequences":len(rows),
+       "successful_sequences":sum(r["passed_full_sequence"] for r in rows),
+       "successful_20mm_sequences":sum(r["passed_full_sequence"] for r in rows if r["pad_depth_mm"]==20.),
+       "failed_30mm_sequences":sum(not r["passed_full_sequence"] for r in rows if r["pad_depth_mm"]==30.),
        "total_module_translations_checked":sum(row["completed_modules"] for row in rows),
        "all_sequences_completed":all(row["passed_full_sequence"] for row in rows),
        "cases_by_state_clearance":by_state,
        "entry_pose_local_xyz_mm":START.tolist(),
        "exterior_entry_requires_speaker_removed":True,
-       "pad_prisms_eight_at_interior_y_mm":list(PAD_Y),
+       "tested_pad_depths_mm":PAD_DEPTHS,
        "manufacturer_baffle_cutout_radius_mm":CUT_RADIUS,
        "known_limits":["P30E old AABB braces and boxes, not final shop drawings",
           "K01 pad projected profile only; real ribs, terminals, hardware unknown",
@@ -180,6 +183,6 @@ def main():
        "generator":"skrypty/k02_dostep_modulow_i_klocki.py"},
        ensure_ascii=False,indent=2)+"\n",encoding="utf8")
     print(json.dumps(summary,ensure_ascii=False,indent=2))
-    if not summary["all_sequences_completed"]:
-        raise SystemExit("K02: route found blocked; see generated full report")
+    if not all(r["passed_full_sequence"] for r in rows if r["pad_depth_mm"]==20.):
+        raise SystemExit("K02: 20mm assembly candidate blocked; see generated report")
 if __name__=="__main__":main()
