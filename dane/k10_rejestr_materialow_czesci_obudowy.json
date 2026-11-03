@@ -78,13 +78,14 @@
         "sklejka brzozowa laminowana 2x21 mm – wymaga nowego CAD i bilansu"
       ],
       "controlling_requirements": "masa kosza 8 mocowań; cienki pas drewna przy wycięciu; szczelność",
-      "quantitative_evidence": "K10 rozdziela granice złącza 2x22 (niezwiązane vs idealnie zespolone); P38–P42 obciążenia, bez rzeczywistej nośności",
+      "quantitative_evidence": "K10 rozdziela granice złącza 2x22 (niezwiązane vs idealnie zespolone); P38–P42 obciążenia, bez rzeczywistej nośności; K11: utrzymano referencyjne MDF44/front i MDF22/wręgi; rzeczywiste nośności spoin, ortotropia i modalne pola nadal niezamknięte.",
       "qualification_gate": "próby łączenia warstw i odrywania 8 punktów; rysunek kosza i warstwy kleju; pomiar dynamiki pełnego frontu",
       "evidence_paths": [
         "raporty/091_P36A_grubosc_MDF_podatnosc_i_wregi.md",
         "raporty/095_P37B_czulosc_MDF_spoiny.md",
         "raporty/030_P19A_obliczenia_spoin_i_material_kleju.md",
-        "raporty/K07_serwis_wkladow_i_audyt_mocowan.md"
+        "raporty/K07_serwis_wkladow_i_audyt_mocowan.md",
+        "raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md"
       ],
       "priority": "I",
       "material_status": "CANDIDATE_NOT_QUALIFIED"
@@ -99,12 +100,13 @@
         "MDF 25 mm — dodatkowa masa"
       ],
       "controlling_requirements": "ugięcie/rezonans płyty, masa, grubość ograniczająca litraż",
-      "quantitative_evidence": "K10: E*h³/[12(1−ν²)], kg/m² i wskaźniki porównawcze; P36A 324 scenariusze",
+      "quantitative_evidence": "K10: E*h³/[12(1−ν²)], kg/m² i wskaźniki porównawcze; P36A 324 scenariusze; K11 niezależna zmiana pięciu ścian: MDF25 −4,381104 l brutto i +3,198206 kg względem MDF22; WISA-Birch21 +1,477536 l brutto i −2,699986 kg; bez sprawdzenia przestawienia wręg i wkładów.",
       "qualification_gate": "karta konkretnej partii (E,ρ, wilgoć, emisje); MES P33C/P37; próby złącza, szczelność",
       "evidence_paths": [
         "raporty/078_P30E_mata50_montaz_robustnosc.md",
         "raporty/091_P36A_grubosc_MDF_podatnosc_i_wregi.md",
-        "raporty/095_P37B_czulosc_MDF_spoiny.md"
+        "raporty/095_P37B_czulosc_MDF_spoiny.md",
+        "raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md"
       ],
       "priority": "I",
       "material_status": "CANDIDATE_NOT_QUALIFIED"
@@ -119,12 +121,13 @@
         "MDF 25 mm — dodatkowa masa"
       ],
       "controlling_requirements": "ugięcie/rezonans płyty, masa, grubość ograniczająca litraż",
-      "quantitative_evidence": "K10: E*h³/[12(1−ν²)], kg/m² i wskaźniki porównawcze; P36A 324 scenariusze",
+      "quantitative_evidence": "K10: E*h³/[12(1−ν²)], kg/m² i wskaźniki porównawcze; P36A 324 scenariusze; K11 niezależna zmiana pięciu ścian: MDF25 −4,381104 l brutto i +3,198206 kg względem MDF22; WISA-Birch21 +1,477536 l brutto i −2,699986 kg; bez sprawdzenia przestawienia wręg i wkładów.",
       "qualification_gate": "karta konkretnej partii (E,ρ, wilgoć, emisje); MES P33C/P37; próby złącza, szczelność",
       "evidence_paths": [
         "raporty/078_P30E_mata50_montaz_robustnosc.md",
         "raporty/091_P36A_grubosc_MDF_podatnosc_i_wregi.md",
-        "raporty/095_P37B_czulosc_MDF_spoiny.md"
+        "raporty/095_P37B_czulosc_MDF_spoiny.md",
+        "raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md"
       ],
       "priority": "I",
       "material_status": "CANDIDATE_NOT_QUALIFIED"
@@ -139,12 +142,13 @@
         "MDF 25 mm — dodatkowa masa"
       ],
       "controlling_requirements": "ugięcie/rezonans płyty, masa, grubość ograniczająca litraż",
-      "quantitative_evidence": "K10: E*h³/[12(1−ν²)], kg/m² i wskaźniki porównawcze; P36A 324 scenariusze",
+      "quantitative_evidence": "K10: E*h³/[12(1−ν²)], kg/m² i wskaźniki porównawcze; P36A 324 scenariusze; K11 niezależna zmiana pięciu ścian: MDF25 −4,381104 l brutto i +3,198206 kg względem MDF22; WISA-Birch21 +1,477536 l brutto i −2,699986 kg; bez sprawdzenia przestawienia wręg i wkładów.",
       "qualification_gate": "karta konkretnej partii (E,ρ, wilgoć, emisje); MES P33C/P37; próby złącza, szczelność",
       "evidence_paths": [
         "raporty/078_P30E_mata50_montaz_robustnosc.md",
         "raporty/091_P36A_grubosc_MDF_podatnosc_i_wregi.md",
-        "raporty/095_P37B_czulosc_MDF_spoiny.md"
+        "raporty/095_P37B_czulosc_MDF_spoiny.md",
+        "raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md"
       ],
       "priority": "I",
       "material_status": "CANDIDATE_NOT_QUALIFIED"
@@ -159,12 +163,13 @@
         "MDF 25 mm — dodatkowa masa"
       ],
       "controlling_requirements": "ugięcie/rezonans płyty, masa, grubość ograniczająca litraż",
-      "quantitative_evidence": "K10: E*h³/[12(1−ν²)], kg/m² i wskaźniki porównawcze; P36A 324 scenariusze",
+      "quantitative_evidence": "K10: E*h³/[12(1−ν²)], kg/m² i wskaźniki porównawcze; P36A 324 scenariusze; K11 niezależna zmiana pięciu ścian: MDF25 −4,381104 l brutto i +3,198206 kg względem MDF22; WISA-Birch21 +1,477536 l brutto i −2,699986 kg; bez sprawdzenia przestawienia wręg i wkładów.",
       "qualification_gate": "karta konkretnej partii (E,ρ, wilgoć, emisje); MES P33C/P37; próby złącza, szczelność",
       "evidence_paths": [
         "raporty/078_P30E_mata50_montaz_robustnosc.md",
         "raporty/091_P36A_grubosc_MDF_podatnosc_i_wregi.md",
-        "raporty/095_P37B_czulosc_MDF_spoiny.md"
+        "raporty/095_P37B_czulosc_MDF_spoiny.md",
+        "raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md"
       ],
       "priority": "I",
       "material_status": "CANDIDATE_NOT_QUALIFIED"
@@ -179,12 +184,13 @@
         "MDF 25 mm — dodatkowa masa"
       ],
       "controlling_requirements": "ugięcie/rezonans płyty, masa, grubość ograniczająca litraż",
-      "quantitative_evidence": "K10: E*h³/[12(1−ν²)], kg/m² i wskaźniki porównawcze; P36A 324 scenariusze",
+      "quantitative_evidence": "K10: E*h³/[12(1−ν²)], kg/m² i wskaźniki porównawcze; P36A 324 scenariusze; K11 niezależna zmiana pięciu ścian: MDF25 −4,381104 l brutto i +3,198206 kg względem MDF22; WISA-Birch21 +1,477536 l brutto i −2,699986 kg; bez sprawdzenia przestawienia wręg i wkładów.",
       "qualification_gate": "karta konkretnej partii (E,ρ, wilgoć, emisje); MES P33C/P37; próby złącza, szczelność",
       "evidence_paths": [
         "raporty/078_P30E_mata50_montaz_robustnosc.md",
         "raporty/091_P36A_grubosc_MDF_podatnosc_i_wregi.md",
-        "raporty/095_P37B_czulosc_MDF_spoiny.md"
+        "raporty/095_P37B_czulosc_MDF_spoiny.md",
+        "raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md"
       ],
       "priority": "I",
       "material_status": "CANDIDATE_NOT_QUALIFIED"
@@ -198,13 +204,14 @@
         "sklejka brzozowa 21 mm ze sprawdzonym kierunkiem włókien"
       ],
       "controlling_requirements": "sztywność i masa; siły od ścian, spoin",
-      "quantitative_evidence": "K10: suma objętości 11 brył wręg P30A 1,60908 l i masa 1,175 kg przy 730 kg/m³; P36A/P37",
+      "quantitative_evidence": "K10: suma objętości 11 brył wręg P30A 1,60908 l i masa 1,175 kg przy 730 kg/m³; P36A/P37; K11: utrzymano referencyjne MDF44/front i MDF22/wręgi; rzeczywiste nośności spoin, ortotropia i modalne pola nadal niezamknięte.",
       "qualification_gate": "wytrzymałość osiowo/na wyboczenie; złącza, klej, frezy; kierunkowość sklejki i pełen MAC",
       "evidence_paths": [
         "raporty/078_P30E_mata50_montaz_robustnosc.md",
         "raporty/091_P36A_grubosc_MDF_podatnosc_i_wregi.md",
         "raporty/095_P37B_czulosc_MDF_spoiny.md",
-        "raporty/030_P19A_obliczenia_spoin_i_material_kleju.md"
+        "raporty/030_P19A_obliczenia_spoin_i_material_kleju.md",
+        "raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md"
       ],
       "priority": "I",
       "material_status": "CANDIDATE_NOT_QUALIFIED"
@@ -218,13 +225,14 @@
         "sklejka brzozowa 21 mm ze sprawdzonym kierunkiem włókien"
       ],
       "controlling_requirements": "sztywność i masa; siły od ścian, spoin",
-      "quantitative_evidence": "K10: suma objętości 11 brył wręg P30A 1,60908 l i masa 1,175 kg przy 730 kg/m³; P36A/P37",
+      "quantitative_evidence": "K10: suma objętości 11 brył wręg P30A 1,60908 l i masa 1,175 kg przy 730 kg/m³; P36A/P37; K11: utrzymano referencyjne MDF44/front i MDF22/wręgi; rzeczywiste nośności spoin, ortotropia i modalne pola nadal niezamknięte.",
       "qualification_gate": "wytrzymałość osiowo/na wyboczenie; złącza, klej, frezy; kierunkowość sklejki i pełen MAC",
       "evidence_paths": [
         "raporty/078_P30E_mata50_montaz_robustnosc.md",
         "raporty/091_P36A_grubosc_MDF_podatnosc_i_wregi.md",
         "raporty/095_P37B_czulosc_MDF_spoiny.md",
-        "raporty/030_P19A_obliczenia_spoin_i_material_kleju.md"
+        "raporty/030_P19A_obliczenia_spoin_i_material_kleju.md",
+        "raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md"
       ],
       "priority": "I",
       "material_status": "CANDIDATE_NOT_QUALIFIED"
@@ -238,13 +246,14 @@
         "sklejka brzozowa 21 mm ze sprawdzonym kierunkiem włókien"
       ],
       "controlling_requirements": "sztywność i masa; siły od ścian, spoin",
-      "quantitative_evidence": "K10: suma objętości 11 brył wręg P30A 1,60908 l i masa 1,175 kg przy 730 kg/m³; P36A/P37",
+      "quantitative_evidence": "K10: suma objętości 11 brył wręg P30A 1,60908 l i masa 1,175 kg przy 730 kg/m³; P36A/P37; K11: utrzymano referencyjne MDF44/front i MDF22/wręgi; rzeczywiste nośności spoin, ortotropia i modalne pola nadal niezamknięte.",
       "qualification_gate": "wytrzymałość osiowo/na wyboczenie; złącza, klej, frezy; kierunkowość sklejki i pełen MAC",
       "evidence_paths": [
         "raporty/078_P30E_mata50_montaz_robustnosc.md",
         "raporty/091_P36A_grubosc_MDF_podatnosc_i_wregi.md",
         "raporty/095_P37B_czulosc_MDF_spoiny.md",
-        "raporty/030_P19A_obliczenia_spoin_i_material_kleju.md"
+        "raporty/030_P19A_obliczenia_spoin_i_material_kleju.md",
+        "raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md"
       ],
       "priority": "I",
       "material_status": "CANDIDATE_NOT_QUALIFIED"
@@ -258,12 +267,13 @@
         "sklejka brzozowa 21 mm — wymaga aktualizacji bryły i testu"
       ],
       "controlling_requirements": "wyrywanie wkładki, rozłupywanie, odspojenie od MDF, cykle serwisowe",
-      "quantitative_evidence": "K10: dla 8 klocków K01 ri=178,9 ro=205, szer.36 i t=20, 0,150336 l modelowe; ρ drewna NIE zidentyfikowane",
-      "qualification_gate": "wybrać kartę drewna i rzeczywistą wkładkę; min 3 próbki na wariant; połączenie klejowe i tolerancje",
+      "quantitative_evidence": "K10: dla 8 klocków K01 ri=178,9 ro=205, szer.36 i t=20, 0,150336 l modelowe; ρ drewna NIE zidentyfikowane; K11: przy osi R184 i r_wew_klocka178,9 rzeczywiste wkładki RAMPA: M4 OD8 → 1,1 mm, M5 OD10 → 0,1 mm, M6 OD12 → −0,9 mm pasa drewna przy wewnętrznej krawędzi. Dotychczasowy klocek nie jest zatwierdzony.",
+      "qualification_gate": "wybrać kartę drewna i rzeczywistą wkładkę; min 3 próbki na wariant; połączenie klejowe i tolerancje; Zanim wybrać drewno/wkładkę: rozwiązać deficyt promieniowego pasa nośnego, wyznaczyć rzeczywistą nośność układu blok + klej + MDF44, odróżnić moment wkręcenia wkładki RAMPA od momentu śruby kosza.",
       "evidence_paths": [
         "raporty/030_P19A_obliczenia_spoin_i_material_kleju.md",
         "raporty/K07_serwis_wkladow_i_audyt_mocowan.md",
-        "dokumentacja/inspiracje_zewnetrznych_konstruktorow_mocowanie_RSS390HF4.md"
+        "dokumentacja/inspiracje_zewnetrznych_konstruktorow_mocowanie_RSS390HF4.md",
+        "raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md"
       ],
       "priority": "I",
       "material_status": "CANDIDATE_NOT_QUALIFIED"
@@ -403,11 +413,12 @@
         "epoksyd 2K EA9466 przy wymaganej grubości szczeliny"
       ],
       "controlling_requirements": "sztywność, ścinanie, peel, pełzanie, szczelność",
-      "quantitative_evidence": "P19A: 656 statycznych modeli i karta kleju; P37: wrażliwość na sztywność spoin",
+      "quantitative_evidence": "P19A: 656 statycznych modeli i karta kleju; P37: wrażliwość na sztywność spoin; K11: pad K01 939,6 mm² i tylko umowne F/A=0,1607 MPa dla F151N z P40, nie wytrzymałość spoiny.",
       "qualification_gate": "próbki konkretnych krawędzi MDF44/22, rozwarstwienie i pełzanie 2 orientacje",
       "evidence_paths": [
         "raporty/030_P19A_obliczenia_spoin_i_material_kleju.md",
-        "raporty/095_P37B_czulosc_MDF_spoiny.md"
+        "raporty/095_P37B_czulosc_MDF_spoiny.md",
+        "raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md"
       ],
       "priority": "I",
       "material_status": "CANDIDATE_NOT_QUALIFIED"
@@ -421,12 +432,13 @@
         "PVAc KLEIBERIT 303.0 przy dociskanej szczelinie"
       ],
       "controlling_requirements": "odrywanie, skręcanie, krytyczne punktowe przenoszenie sił",
-      "quantitative_evidence": "P19A liczy 10/100/1718MPa jako hipotezy, nie nośność tego złącza",
+      "quantitative_evidence": "P19A liczy 10/100/1718MPa jako hipotezy, nie nośność tego złącza; K11: pad K01 939,6 mm² i tylko umowne F/A=0,1607 MPa dla F151N z P40, nie wytrzymałość spoiny.",
       "qualification_gate": "rzeczywista szczelina, nośność w peel+shear, zmęczenie i creep",
       "evidence_paths": [
         "raporty/030_P19A_obliczenia_spoin_i_material_kleju.md",
         "raporty/095_P37B_czulosc_MDF_spoiny.md",
-        "raporty/K07_serwis_wkladow_i_audyt_mocowan.md"
+        "raporty/K07_serwis_wkladow_i_audyt_mocowan.md",
+        "raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md"
       ],
       "priority": "I",
       "material_status": "CANDIDATE_NOT_QUALIFIED"
@@ -476,11 +488,12 @@
         "mosiężna wkładka gwintowana z kartą nośności"
       ],
       "controlling_requirements": "wyrywanie, obrót, dylatacja drewna, wąski pas przy wycięciu",
-      "quantitative_evidence": "K01/K03 bilans geometr.; katalog brak — NO TECHNICAL SIGNOFF",
-      "qualification_gate": "potwierdzić zewnętrzne Ø i L, gniazdo, nośność po cyklach",
+      "quantitative_evidence": "K01/K03 bilans geometr.; katalog brak — NO TECHNICAL SIGNOFF; K11 odczyt katalogów RAMPA SKD30 M4 OD8/L12, M5 OD10/L12, M6 OD12/L12 i Fastenright Type D M5 OD10,5; pełna obwiednia kołnierza oraz nośność niezidentyfikowane.",
+      "qualification_gate": "potwierdzić zewnętrzne Ø i L, gniazdo, nośność po cyklach; Nie przenosić katalogowego momentu instalacji w MDF16 na 20mm klejonkę, ani na moment dokręcania kosza.",
       "evidence_paths": [
         "raporty/K07_serwis_wkladow_i_audyt_mocowan.md",
-        "dokumentacja/inspiracje_zewnetrznych_konstruktorow_mocowanie_RSS390HF4.md"
+        "dokumentacja/inspiracje_zewnetrznych_konstruktorow_mocowanie_RSS390HF4.md",
+        "raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md"
       ],
       "priority": "I",
       "material_status": "CANDIDATE_NOT_QUALIFIED"
