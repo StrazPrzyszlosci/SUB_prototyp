@@ -24,7 +24,7 @@
       "rho_kg_m3": 730,
       "nu_assumed": 0.3,
       "thickness_mm": 22,
-      "E_source": "https://www.egger.com/get_download/1850d441-43b8-4bb6-bc27-54822733e626/Technical_datasheet_E1_TSCA_ST_CE_TD-501_English.pdf?country=AZ",
+      "E_source": "https://www.egger.com/get_download/8a07fd0a-3b33-4452-b872-43f2c2ae41c4/Technical_datasheet_E1E05_TSCA_ST_CE_TD-504_Polish.pdf?country=PL",
       "rho_source": "P30E reference assumption, NOT EGGER declared density"
     },
     "MDF25_reference": {
@@ -33,17 +33,17 @@
       "rho_kg_m3": 730,
       "nu_assumed": 0.3,
       "thickness_mm": 25,
-      "E_source": "https://www.egger.com/get_download/1850d441-43b8-4bb6-bc27-54822733e626/Technical_datasheet_E1_TSCA_ST_CE_TD-501_English.pdf?country=AZ",
+      "E_source": "https://www.egger.com/get_download/8a07fd0a-3b33-4452-b872-43f2c2ae41c4/Technical_datasheet_E1E05_TSCA_ST_CE_TD-504_Polish.pdf?country=PL",
       "rho_source": "P30E scenario"
     },
     "WISA_birch21_weak_proxy": {
-      "name": "WISA-Birch 21 mm, weaker bending axis, NOT isotropic plate",
+      "name": "WISA-Form Birch 21mm 7.642GPa weak axis + uncoated WISA-Birch 21mm areal mass: MIXED PRODUCT PROXY",
       "E_bending_GPa": 7.642,
       "rho_kg_m3": 680.952380952381,
       "nu_assumed": 0.3,
       "thickness_mm": 21,
-      "E_source": "https://www.specifiedby.com/upm/wisa-birch/UPM_UPM_WISA-Birch_Technical_Fact-Sheet.pdf",
-      "rho_source": "WISA data: 14.3 kg/m² at 21 mm; average derived"
+      "E_source": "https://www.wisaplywood.com/siteassets/documents/brochures/wisa_concrete-forming-plywood-en.pdf",
+      "rho_source": "WISA uncoated Birch factsheet 14.3 kg/m² /21mm; DIFFERENT PRODUCT than WISA-Form, illustrative mass only"
     },
     "WISA_birch21_strong_proxy": {
       "name": "WISA-Birch 21 mm, stronger bending axis, NOT isotropic plate",
@@ -60,7 +60,7 @@
       "rho_kg_m3": 730,
       "nu_assumed": 0.3,
       "thickness_mm": 8,
-      "E_source": "https://www.egger.com/get_download/1850d441-43b8-4bb6-bc27-54822733e626/Technical_datasheet_E1_TSCA_ST_CE_TD-501_English.pdf?country=AZ",
+      "E_source": "https://www.egger.com/get_download/8a07fd0a-3b33-4452-b872-43f2c2ae41c4/Technical_datasheet_E1E05_TSCA_ST_CE_TD-504_Polish.pdf?country=PL",
       "rho_source": "P34C / P30E reference assumption"
     }
   },
