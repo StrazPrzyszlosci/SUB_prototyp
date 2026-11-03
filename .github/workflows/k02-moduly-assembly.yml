@@ -33,15 +33,17 @@ jobs:
           import json
           v=json.load(open("wyniki/k02_moduly_manifest_odtworzony.json",encoding="utf8"))
           x=v["summary"]
-          assert x["assembly_sequences"]==7
-          assert x["all_sequences_completed"]
-          assert x["cases_by_state_clearance"]["100L_3mm"]["complete"]==20
-          assert x["cases_by_state_clearance"]["100L_6mm"]["complete"]==20
-          assert x["cases_by_state_clearance"]["120L_3mm"]["complete"]==12
-          assert x["cases_by_state_clearance"]["150L_6mm"]["complete"]==1
+          assert x["assembly_sequences"]==14
+          assert x["successful_20mm_sequences"]==7
+          assert x["cases_by_state_clearance"]["20mmPad_100L_3mm"]["complete"]==20
+          assert x["cases_by_state_clearance"]["20mmPad_100L_6mm"]["complete"]==20
+          assert x["cases_by_state_clearance"]["20mmPad_120L_3mm"]["complete"]==12
+          assert x["cases_by_state_clearance"]["20mmPad_150L_6mm"]["complete"]==1
+          assert x["cases_by_state_clearance"]["30mmPad_100L_3mm"]["complete"]==16
+          assert x["cases_by_state_clearance"]["30mmPad_120L_3mm"]["complete"]==12
+          assert x["failed_30mm_sequences"]>=1
           assert all(row["min_aperture_margin_mm"]>0 for row in x["cases_by_state_clearance"].values())
-          assert x["total_module_translations_checked"]==86
-          print("K02 verified:",x["total_module_translations_checked"],"paths, entrance + pads")
+          print("K02: 20-mm pads pass all 7 scenarios; 30-mm pads fail one assembly state")
           PY
       - name: Publish full paths and collision diagnostics
         uses: actions/upload-artifact@v4
