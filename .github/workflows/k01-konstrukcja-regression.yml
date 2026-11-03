@@ -1,0 +1,85 @@
+name: K01 - constructive mounting and whole-device dimensions regression
+on:
+  pull_request:
+    paths:
+      - "skrypty/k01_mocowanie_bilans.py"
+      - "wyniki/k01_*"
+      - "raporty/K01_*"
+      - "README.md"
+      - ".github/workflows/k01-konstrukcja-regression.yml"
+  push:
+    branches: [main]
+    paths:
+      - "skrypty/k01_mocowanie_bilans.py"
+      - "wyniki/k01_*"
+      - "README.md"
+      - ".github/workflows/k01-konstrukcja-regression.yml"
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reproduce 480 geometry and 48 external depth scenarios
+        run: python3 skrypty/k01_mocowanie_bilans.py > /tmp/k01.log
+      - name: Compare generated numerical research with reviewed reference
+        run: |
+          python3 - <<'PY'
+          import json
+          x=json.load(open('wyniki/k01_manifest_odtworzony.json',encoding='utf8'))['summary']
+          y=json.load(open('wyniki/k01_podsumowanie.json',encoding='utf8'))
+          assert x['geometry_cases']==y['geometry_screen']['cases']==480
+          assert x['pass_by_margin_mm']==y['geometry_screen']['pass_at_margin_mm']
+          assert x['pass_by_margin_mm']=={'0':108,'2':108,'4':84,'6':72}
+          assert x['pass_cx_231_2mm']==48 and x['pass_cx_235_2mm']==60
+          assert x['conditional_geometry_witness']['pass_surrogate']
+          assert x['conditional_geometry_witness']['left_wall_clearance_mm']==4
+          assert x['conditional_geometry_witness']['block_total_displacement_L']==0.225504
+          assert x['depth_cases']==48 and x['positive_margin_cases']==26
+          assert x['depth_reference']=={'grille_projection_mm':36,
+             'terminal_projection_mm':20,'unallocated_mm':0,
+             'total_mm':481,'positive_margin_mm':19}
+          s=open('README.md',encoding='utf8').read()
+          pos=s.index('### 4a. Jak przejść od kosza do rzeczywistego mocowania?')
+          nxt=s.index('### 5. Co oznaczają wykresy DSP i temperatury?')
+          appendix=s.index('## Aneks techniczny — inspiracje montażowe')
+          assert 0<nxt-pos<2000
+          assert appendix>nxt and '### A9. K01' in s[appendix:]
+          assert 'inspiracje montażowe' in s.lower()
+          print('K01 reference counts and guide structure PASS')
+          PY
+      - name: Install independent polygon geometry checker
+        run: python3 -m pip install "shapely==2.1.2"
+      - name: Independent geometry check on every case
+        run: |
+          python3 - <<'PY'
+          import itertools
+          from shapely.geometry import Polygon,box
+          from skrypty import k01_mocowanie_bilans as k
+          checked=0
+          for v in itertools.product([231,235],[178.9,180.0],
+                    [200,203,205,207,211],[24,36,48],[20,30],[0,2,4,6]):
+              cx,ri,ro,w,depth,margin=v
+              pads=[Polygon(k.polygon(cx,45*i,ri,ro,w)) for i in range(8)]
+              external=set()
+              for name, (x0,x1,y0,y1,z0,z1) in k.OBSTACLES.items():
+                  if 44+depth<=y0+1e-10 or 44>=y1-1e-10:continue
+                  b=box(x0-margin,z0-margin,x1+margin,z1+margin)
+                  if any(p.intersection(b).area>1e-8 for p in pads):
+                      external.add(name)
+              actual=set(k.evaluate(*v)['intersections'])
+              assert actual==external,(v,actual,external)
+              checked+=1
+          assert checked==480
+          print('Independent Shapely/SAT 480x8 polygon collision verification PASS')
+          PY
+      - name: Archive complete generated non-CNC scenarios
+        uses: actions/upload-artifact@v4
+        with:
+          name: k01-construction-screen-480-geometry-48-depth
+          path: |
+            wyniki/k01_pelne_scenariusze.json
+            wyniki/k01_manifest_odtworzony.json
+          retention-days: 14
