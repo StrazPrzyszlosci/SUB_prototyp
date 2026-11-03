@@ -21,8 +21,13 @@ jobs:
     permissions: {contents: read}
     steps:
       - uses: actions/checkout@v4
-      - name: Recompute K04 hardware dimensions and 20 K02 path tests
-        run: python3 skrypty/k04_nakretki_i_przejscie_modulow.py | tee /tmp/k04.log
+      - name: Install the required P30E/K02 route-planner dependency
+        run: python3 -m pip install 'numpy>=1.24,<3'
+      - name: Recompute K04 hardware dimensions and 22 K02 path tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 skrypty/k04_nakretki_i_przejscie_modulow.py | tee /tmp/k04.log
       - name: Independent source formula and proof integrity audit
         run: |
           python3 - <<'PY'
