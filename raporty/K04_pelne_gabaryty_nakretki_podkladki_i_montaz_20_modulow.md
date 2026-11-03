@@ -62,6 +62,12 @@ Dlaczego K02 dał wynik 20/20 dla drewnianego klocka o głębokości 20 mm? Poni
 
 To **górna obwiednia uproszczona**; rzeczywisty detal mógłby schować nakrętkę w kontrolowanej wnęce albo mieć zewnętrzny kształt mniejszy niż klocek. Jednak wówczas trzeba policzyć **ubytek przekroju i nośność** oraz dostęp do serwisu. Nie wolno przenosić sukcesu z 20 mm na kompletny zestaw 28,8 mm.
 
+### Ważne rozróżnienie: ustawienie końcowe nie jest problemem, problemem jest droga
+
+Dla **końcowych lokalizacji** 20 modułów P30E i hipotetycznego pełnego obrysu osprzętu o promieniu do R205 i głębokości 28,8 mm policzono niezależne separacje: duże moduły (nr 4–19) zaczynają się w lokalnej osi X od **469,5 mm**, natomiast obrys wzmocnienia osiąga najwyżej **414 mm**, czyli **55,5 mm** odstępu bez dodatkowej obwiedni (**49,5 mm po 6-mm obwiedni modułu**). Cztery małe moduły (nr 0–3) zaczynają się w osi Y dopiero od **203 mm**, a zestaw mocowania kończy się na Y=28,8 mm, co daje **174,2 mm** (lub **168,2 mm po 6-mm obwiedni**). Nawet dla nowej płytki o promieniu wewnętrznym R178,0 **żaden z 20 modułów nie przecina osprzętu w docelowym położeniu** w tym modelu.
+
+**To nie jest potwierdzenie montażu:** moduły mogą mimo to zderzać się z osprzętem podczas przemieszczania przez otwór. Dlatego K04 osobno szuka całej korytarzowej sekwencji tras, z osprzętem wstawionym *przed* próbą wkładania modułów. Całościowe przejście 20 modułów nie zostało dotąd fizycznie potwierdzone.
+
 ### Wykonane sprawdzenie korytarzy P30E/K02
 
 [Skrypt K04](../skrypty/k04_nakretki_i_przejscie_modulow.py) importuje **bez modyfikacji oryginalny planer K02** i ponawia przesiew dla konfiguracji z szerszą obwiednią zespołu. Dla bezpieczeństwa matematycznego wypełnia *całą* powierzchnię lokalnego klocka od Y44 do najbardziej wystającej części osprzętu; w przypadku stalowej płytki przyjmuje także promień wewnętrzny R=178,0, zamiast R178,9 dla samego MDF. Oznacza to **celowo zbyt duży wirtualny obiekt**.
