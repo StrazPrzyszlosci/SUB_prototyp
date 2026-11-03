@@ -46,7 +46,7 @@ def analyze(src):
             "nominal_bounding_radius_mm": round(radius, 5),
             "maximum_center_radius_during_straight_front_ingress_mm": round(max_center_at_aperture, 5),
             "necessary_radial_repositioning_for_bolt_circle_mm": round(shift, 5),
-            "note": "2D necessary condition for an ideal perpendicular entry; not a collision-free 3D route"
+            "note": ("Conservative circumscribed-circle sufficiency bound for ideal hex; NOT a necessary hexagon minimum" if "nakretki" in name else "Necessary 2D radial repositioning for a circular disk entering perpendicular to the front, no tilt; NOT a collision-free 3D route")
         })
     # All 8 axes share the same theoretical circular opening bound; actual
     # access is anisotropic because of basket ribs, braces and the cabinet.
