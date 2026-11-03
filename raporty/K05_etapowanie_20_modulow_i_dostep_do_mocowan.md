@@ -28,9 +28,9 @@ Z oficjalnych wymiarów Daytona: promień wycięcia **177,9 mm**, promień osi �
 
 - Modelowa podkładka M5 Ø10: **11,1 mm** koniecznego przesunięcia.
 - Modelowa podkładka M6 Ø12: **12,1 mm** koniecznego przesunięcia.
-- Idealna nakrętka M6 AF10 zabezpieczona okręgiem opisanym (promień 10/√3): **11,87 mm** koniecznego przesunięcia.
+- Idealna nakrętka M6 AF10 **zastąpiona konserwatywnie okręgiem opisanym** (promień 10/√3): **11,87 mm** przesunięcia dla tej okrągłej obwiedni. **Dla faktycznego sześciokąta to nie jest konieczne minimum** — orientacja może umożliwić inny tor.
 
-To **jedynie dolne ograniczenie dla umówionego sposobu wejścia**, a nie dowód wolnego miejsca. Metalowy nośnik o innej sylwetce wymaga osobnej analizy, a położenia rzeczywistych żeber kosza, zacisków i narzędzia są nieznane. Dla każdej z ośmiu śrub ograniczenie promieniowe jest identyczne; rzeczywisty dostęp ze względu na ścianę, wręgi i kosz — nie.
+Dla **okrągłych podkładek** są to dolne granice przesunięcia przy prostopadłym wejściu bez pochylenia. Dla sześciokąta podana liczba opisuje jedynie umowną, ostrożną obwiednię kołową. Żadna z tych liczb nie dowodzi wolnego miejsca. Metalowy nośnik o innej sylwetce wymaga osobnej analizy, a położenia rzeczywistych żeber kosza, zacisków i narzędzia są nieznane. Dla każdej z ośmiu śrub ograniczenie promieniowe jest identyczne; rzeczywisty dostęp ze względu na ścianę, wręgi i kosz — nie.
 
 ## 4. Dwa wykonalne do przetestowania tory, bez fikcyjnych danych wytrzymałości
 
