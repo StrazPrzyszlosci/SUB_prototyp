@@ -1,0 +1,45 @@
+name: K08 manufacturer-basket and axial-fastener geometry check
+on:
+  pull_request:
+    paths:
+      - "skrypty/k08_nominalne_mocowania_dayton.py"
+      - "wyniki/k08_nominalne_mocowania_dayton.json"
+      - "raporty/K08_zlacza_i_rysunki_dayton.md"
+      - "README.md"
+      - ".github/workflows/k08-fastener-geometry.yml"
+  workflow_dispatch:
+jobs:
+  k08:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Recompute nominal dimensions; compare reviewed data
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp wyniki/k08_nominalne_mocowania_dayton.json /tmp/k08-expected.json
+          python skrypty/k08_nominalne_mocowania_dayton.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          old=json.loads(Path("/tmp/k08-expected.json").read_text(encoding="utf-8"))
+          new=json.loads(Path("wyniki/k08_nominalne_mocowania_dayton.json").read_text(encoding="utf-8"))
+          assert old == new, "K08 stored and recomputed values disagree"
+          assert new["manufacturer_data_mm"]["radial_inside_web_to_bolt_axis"] == 6.1
+          assert new["required_lengths_for_illustrative_full_nut_engagement"]["20"]["required_under_head_for_5mm_nut_engagement_mm"] == 81.1
+          assert new["illustrative_M6x85_rear_of_pad_projection"]["shank_projection_beyond_MDF_front_back_mm"] == 28.9
+          assert len(new["axial_M6_stacks"]) == 14
+          assert len(new["head_and_washer_radial_margins"]) == 5
+          assert "CNC HOLD" in new["design_status"]
+          guide=Path("README.md").read_text(encoding="utf-8")
+          assert "### A15. K08" in guide
+          assert "295-468_3.jpg" in guide
+          assert "raporty/K08_zlacza_i_rysunki_dayton.md" in guide
+          a=guide.index("### 4a. Jak przejść od kosza")
+          b=guide.index("### 5. Co oznaczają wykresy",a)
+          assert b-a<2000,"README practical step too long"
+          print("K08 verified: nominal manufacturer vs own fastening hypotheses, README A15 and drawing link")
+          PY

@@ -1766,3 +1766,9 @@ z pełnym testem nośności, nie uznawać żadnego za sprawdzony.
 ## 2026-11-03 — K07. Zmiana objętości i audyt K01–K06
 
 Odtworzono K04–K06. W czterech próbach K07 dla obu luzów kolejność 4–15, 0–3, 16–19 osiąga 100 l przy klockach 20 mm. Przy obwiedni 28,8 mm pierwsze niepowodzenie wypada na ID 16 przy klocku nr 0. Skorygowano opis 16/20 oraz kontrolę geometrii i regresję K06. Dowód i kryteria dalszych prób: [K07](raporty/K07_serwis_wkladow_i_audyt_mocowan.md). Najbliższy krok: pomiar kosza i konkretnego łącznika na ośmiu osiach przed makietą serwisową. CNC HOLD.
+
+## 2026-11-03 — K08 — głośnik Dayton: oryginalny rysunek i nominalne łączniki
+
+- Dodano do **głównej części** README osadzony bezpośrednio z serwera dystrybutora oryginalny widok boczny z wymiarami Dayton RSS390HF-4 oraz dokładną atrybucję, link do **pełnego dwurzutowego PDF producenta** (z widokiem tylnym 8 otworów). To zewnętrznie serwowany oryginał, nie kopia przechowywana na GitHubie i nie nasza grafika. Oddzielnie oryginalna lokalna grafika K08 ma wyraźny napis NIE CNC.
+- K08: fabryczne wycięcie Ø355,8, PCD Ø368, kołnierz Ø388,4 i 10,5 mm. Łeb ISO4762 M6 Ø10 zostawia 1,1 mm nominalnie do wycięcia, podkładka Ø12 tylko 0,1 mm, bez marginesu na produkcyjne niedokładności. MDF44 + kołnierz10,5 + podkładka1,6 + klocek20 + hipotetyczna nakrętka5 => 81,1 mm długości pod łbem. Hipotetyczna M6×85 wystaje 28,9 mm za frontem MDF44, zbliżone do K04 28,8 mm, ale nie jest rzeczywistą zweryfikowaną bryłą.
+- Następne: specyfikacje prawdziwych elementów S-front/N-late i próbki, uwzględnić 0° ID16 / 180° dostęp narzędzia; **CNC HOLD**. Nie kupowano i nie mierzyło się niczego.

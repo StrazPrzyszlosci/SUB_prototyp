@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="470" viewBox="0 0 1180 470" role="img" aria-label="K08 autorski schemat porównawczy śruby M6 x 85, kołnierza Dayton, frontu MDF44, klocka 20 i nakrętki. NIE CNC.">
+<rect width="1180" height="470" fill="#fff"/>
+<text x="38" y="41" fill="#1d3a59" font-family="DejaVu Sans,Arial" font-size="25" font-weight="bold">K08 — skąd się bierze głębokość mocowania?</text>
+<text x="38" y="70" fill="#526982" font-family="DejaVu Sans,Arial" font-size="15">Autorski schemat obliczeniowy z wymiarów producenta i hipotetycznego M6 • nie rysunek producenta • NIE CNC</text>
+<g transform="translate(45 104)">
+<rect x="250" y="40" width="440" height="202" fill="#d1bc9e" stroke="#876b4b" stroke-width="2"/>
+<rect x="690" y="40" width="200" height="202" fill="#bcd8d6" stroke="#397f7f" stroke-width="2"/>
+<rect x="145" y="40" width="105" height="202" fill="#9db1cc" stroke="#365a85" stroke-width="2"/>
+<rect x="129" y="40" width="16" height="202" fill="#efdd9c" stroke="#a88a28" stroke-width="2"/>
+<rect x="105" y="109" width="852" height="38" fill="#737f97" stroke="#334558"/>
+<rect x="95" y="80" width="38" height="96" rx="6" fill="#354f72"/>
+<rect x="890" y="92" width="50" height="75" fill="#d1a96b" stroke="#88582a" stroke-width="2"/>
+<line x1="940" y1="128" x2="955" y2="128" stroke="#354f72" stroke-width="14"/>
+<text x="90" y="19" fill="#24415f" font-family="DejaVu Sans,Arial" font-size="15">Łeb ISO 4762 M6</text>
+<text x="151" y="275" fill="#24415f" font-family="DejaVu Sans,Arial" font-size="16">Kołnierz 10,5</text>
+<text x="290" y="275" fill="#24415f" font-family="DejaVu Sans,Arial" font-size="16">Front MDF 44</text>
+<text x="708" y="275" fill="#24415f" font-family="DejaVu Sans,Arial" font-size="16">Klocek 20</text>
+<text x="859" y="19" fill="#24415f" font-family="DejaVu Sans,Arial" font-size="16">Nakrętka 5</text>
+<text x="535" y="323" fill="#a34b38" font-family="DejaVu Sans,Arial" font-size="18">+ podkładka 1,6 → do końca nakrętki 81,1 mm</text>
+</g>
+<text x="40" y="444" fill="#28425f" font-family="DejaVu Sans,Arial" font-size="17">Dla przykładowej M6×85 mm wystaje 28,9 mm za MDF44, lecz dostęp, nośność i serwis niezweryfikowane.</text>
+</svg>

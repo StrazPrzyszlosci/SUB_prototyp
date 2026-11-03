@@ -1,0 +1,271 @@
+{
+  "study": "K08",
+  "design_status": "CONDITIONAL DIMENSIONAL SCREEN; NO PURCHASES; CNC HOLD",
+  "sources": {
+    "dayton_manufacturer": "https://www.daytonaudio.com/images/resources/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf",
+    "iso_4762_head_dimensions": "https://tengtoolsusa.com/blogs/news/socket-capscrews-dimensions-chart",
+    "m6_nut_nominal": "https://hudsonfasteners.blob.core.windows.net/specs/MetDin934.pdf"
+  },
+  "manufacturer_data_mm": {
+    "overall_flange_diameter": 388.4,
+    "cutout_diameter": 355.8,
+    "bolt_PCD": 368,
+    "basket_hole_diameter": 6.5,
+    "flange_thickness": 10.5,
+    "overall_driver_depth": 178,
+    "number_of_basket_holes": 8,
+    "radial_inside_web_to_bolt_axis": 6.1,
+    "radial_outside_web_from_bolt_axis": 10.2
+  },
+  "hypotheses": {
+    "front_MDF_mm": 44,
+    "local_pad_mm": 20,
+    "illustrative_M6_washer_thickness_mm": 1.6,
+    "illustrative_M6_rear_nut_thickness_mm": 5,
+    "note": "The nut starts BEHIND either the 44mm MDF or a 44+20mm front/pad stack. This assumes neither an embedded insert nor a thinner/hidden nut. Washer and nut sizes are not specified by Dayton."
+  },
+  "iso_4762_nominal_heads": {
+    "M5": {
+      "head_od_mm": 8.5,
+      "key_af_mm": 4,
+      "head_height_mm": 5
+    },
+    "M6": {
+      "head_od_mm": 10,
+      "key_af_mm": 5,
+      "head_height_mm": 6
+    }
+  },
+  "head_and_washer_radial_margins": [
+    {
+      "item": "head_M5_ISO4762",
+      "diameter_mm": 8.5,
+      "radial_gap_to_cutout_mm": 1.85,
+      "radial_gap_to_outer_flange_edge_mm": 5.95,
+      "overlaps_nominal_cutout_radially": false
+    },
+    {
+      "item": "head_M6_ISO4762",
+      "diameter_mm": 10,
+      "radial_gap_to_cutout_mm": 1.1,
+      "radial_gap_to_outer_flange_edge_mm": 5.2,
+      "overlaps_nominal_cutout_radially": false
+    },
+    {
+      "item": "nominal_M5_washer_OD10",
+      "diameter_mm": 10,
+      "radial_gap_to_cutout_mm": 1.1,
+      "radial_gap_to_outer_flange_edge_mm": 5.2,
+      "overlaps_nominal_cutout_radially": false
+    },
+    {
+      "item": "nominal_M6_washer_OD12",
+      "diameter_mm": 12,
+      "radial_gap_to_cutout_mm": 0.1,
+      "radial_gap_to_outer_flange_edge_mm": 4.2,
+      "overlaps_nominal_cutout_radially": false
+    },
+    {
+      "item": "hypothetical_washer_OD14",
+      "diameter_mm": 14,
+      "radial_gap_to_cutout_mm": -0.9,
+      "radial_gap_to_outer_flange_edge_mm": 3.2,
+      "overlaps_nominal_cutout_radially": true
+    }
+  ],
+  "wood_web_examples": [
+    {
+      "mdf_hole_dia_mm": 5,
+      "nominal_web_to_cutout_mm": 3.6
+    },
+    {
+      "mdf_hole_dia_mm": 5.5,
+      "nominal_web_to_cutout_mm": 3.35
+    },
+    {
+      "mdf_hole_dia_mm": 6,
+      "nominal_web_to_cutout_mm": 3.1
+    },
+    {
+      "mdf_hole_dia_mm": 6.4,
+      "nominal_web_to_cutout_mm": 2.9
+    },
+    {
+      "mdf_hole_dia_mm": 6.5,
+      "nominal_web_to_cutout_mm": 2.85
+    },
+    {
+      "mdf_hole_dia_mm": 6.6,
+      "nominal_web_to_cutout_mm": 2.8
+    }
+  ],
+  "axial_M6_stacks": [
+    {
+      "rear_pad_thickness_mm": 0,
+      "shank_under_head_mm": 38.1,
+      "stack_to_rear_nut_face_mm": 56.1,
+      "engagement_into_rear_nut_mm": 0,
+      "reaches_rear_nut_face": false,
+      "illustrative_full_nut_5mm_engaged": false,
+      "shank_projection_beyond_MDF_front_back_mm": -18,
+      "projection_beyond_nominal_nut_back_mm": 0
+    },
+    {
+      "rear_pad_thickness_mm": 0,
+      "shank_under_head_mm": 60,
+      "stack_to_rear_nut_face_mm": 56.1,
+      "engagement_into_rear_nut_mm": 3.9,
+      "reaches_rear_nut_face": true,
+      "illustrative_full_nut_5mm_engaged": false,
+      "shank_projection_beyond_MDF_front_back_mm": 3.9,
+      "projection_beyond_nominal_nut_back_mm": 0
+    },
+    {
+      "rear_pad_thickness_mm": 0,
+      "shank_under_head_mm": 65,
+      "stack_to_rear_nut_face_mm": 56.1,
+      "engagement_into_rear_nut_mm": 8.9,
+      "reaches_rear_nut_face": true,
+      "illustrative_full_nut_5mm_engaged": true,
+      "shank_projection_beyond_MDF_front_back_mm": 8.9,
+      "projection_beyond_nominal_nut_back_mm": 3.9
+    },
+    {
+      "rear_pad_thickness_mm": 0,
+      "shank_under_head_mm": 75,
+      "stack_to_rear_nut_face_mm": 56.1,
+      "engagement_into_rear_nut_mm": 18.9,
+      "reaches_rear_nut_face": true,
+      "illustrative_full_nut_5mm_engaged": true,
+      "shank_projection_beyond_MDF_front_back_mm": 18.9,
+      "projection_beyond_nominal_nut_back_mm": 13.9
+    },
+    {
+      "rear_pad_thickness_mm": 0,
+      "shank_under_head_mm": 80,
+      "stack_to_rear_nut_face_mm": 56.1,
+      "engagement_into_rear_nut_mm": 23.9,
+      "reaches_rear_nut_face": true,
+      "illustrative_full_nut_5mm_engaged": true,
+      "shank_projection_beyond_MDF_front_back_mm": 23.9,
+      "projection_beyond_nominal_nut_back_mm": 18.9
+    },
+    {
+      "rear_pad_thickness_mm": 0,
+      "shank_under_head_mm": 85,
+      "stack_to_rear_nut_face_mm": 56.1,
+      "engagement_into_rear_nut_mm": 28.9,
+      "reaches_rear_nut_face": true,
+      "illustrative_full_nut_5mm_engaged": true,
+      "shank_projection_beyond_MDF_front_back_mm": 28.9,
+      "projection_beyond_nominal_nut_back_mm": 23.9
+    },
+    {
+      "rear_pad_thickness_mm": 0,
+      "shank_under_head_mm": 90,
+      "stack_to_rear_nut_face_mm": 56.1,
+      "engagement_into_rear_nut_mm": 33.9,
+      "reaches_rear_nut_face": true,
+      "illustrative_full_nut_5mm_engaged": true,
+      "shank_projection_beyond_MDF_front_back_mm": 33.9,
+      "projection_beyond_nominal_nut_back_mm": 28.9
+    },
+    {
+      "rear_pad_thickness_mm": 20,
+      "shank_under_head_mm": 38.1,
+      "stack_to_rear_nut_face_mm": 76.1,
+      "engagement_into_rear_nut_mm": 0,
+      "reaches_rear_nut_face": false,
+      "illustrative_full_nut_5mm_engaged": false,
+      "shank_projection_beyond_MDF_front_back_mm": -18,
+      "projection_beyond_nominal_nut_back_mm": 0
+    },
+    {
+      "rear_pad_thickness_mm": 20,
+      "shank_under_head_mm": 60,
+      "stack_to_rear_nut_face_mm": 76.1,
+      "engagement_into_rear_nut_mm": 0,
+      "reaches_rear_nut_face": false,
+      "illustrative_full_nut_5mm_engaged": false,
+      "shank_projection_beyond_MDF_front_back_mm": 3.9,
+      "projection_beyond_nominal_nut_back_mm": 0
+    },
+    {
+      "rear_pad_thickness_mm": 20,
+      "shank_under_head_mm": 65,
+      "stack_to_rear_nut_face_mm": 76.1,
+      "engagement_into_rear_nut_mm": 0,
+      "reaches_rear_nut_face": false,
+      "illustrative_full_nut_5mm_engaged": false,
+      "shank_projection_beyond_MDF_front_back_mm": 8.9,
+      "projection_beyond_nominal_nut_back_mm": 0
+    },
+    {
+      "rear_pad_thickness_mm": 20,
+      "shank_under_head_mm": 75,
+      "stack_to_rear_nut_face_mm": 76.1,
+      "engagement_into_rear_nut_mm": 0,
+      "reaches_rear_nut_face": false,
+      "illustrative_full_nut_5mm_engaged": false,
+      "shank_projection_beyond_MDF_front_back_mm": 18.9,
+      "projection_beyond_nominal_nut_back_mm": 0
+    },
+    {
+      "rear_pad_thickness_mm": 20,
+      "shank_under_head_mm": 80,
+      "stack_to_rear_nut_face_mm": 76.1,
+      "engagement_into_rear_nut_mm": 3.9,
+      "reaches_rear_nut_face": true,
+      "illustrative_full_nut_5mm_engaged": false,
+      "shank_projection_beyond_MDF_front_back_mm": 23.9,
+      "projection_beyond_nominal_nut_back_mm": 0
+    },
+    {
+      "rear_pad_thickness_mm": 20,
+      "shank_under_head_mm": 85,
+      "stack_to_rear_nut_face_mm": 76.1,
+      "engagement_into_rear_nut_mm": 8.9,
+      "reaches_rear_nut_face": true,
+      "illustrative_full_nut_5mm_engaged": true,
+      "shank_projection_beyond_MDF_front_back_mm": 28.9,
+      "projection_beyond_nominal_nut_back_mm": 3.9
+    },
+    {
+      "rear_pad_thickness_mm": 20,
+      "shank_under_head_mm": 90,
+      "stack_to_rear_nut_face_mm": 76.1,
+      "engagement_into_rear_nut_mm": 13.9,
+      "reaches_rear_nut_face": true,
+      "illustrative_full_nut_5mm_engaged": true,
+      "shank_projection_beyond_MDF_front_back_mm": 33.9,
+      "projection_beyond_nominal_nut_back_mm": 8.9
+    }
+  ],
+  "required_lengths_for_illustrative_full_nut_engagement": {
+    "0": {
+      "required_under_head_for_5mm_nut_engagement_mm": 61.1
+    },
+    "20": {
+      "required_under_head_for_5mm_nut_engagement_mm": 81.1
+    }
+  },
+  "illustrative_M6x85_rear_of_pad_projection": {
+    "rear_pad_thickness_mm": 20,
+    "shank_under_head_mm": 85,
+    "stack_to_rear_nut_face_mm": 76.1,
+    "engagement_into_rear_nut_mm": 8.9,
+    "reaches_rear_nut_face": true,
+    "illustrative_full_nut_5mm_engaged": true,
+    "shank_projection_beyond_MDF_front_back_mm": 28.9,
+    "projection_beyond_nominal_nut_back_mm": 3.9
+  },
+  "not_verified": [
+    "Face/head counterbore and overhanging washer tolerances",
+    "Actual thread engagement requirements and bolt grip length",
+    "Strength and creep of MDF, glue and retained T-nut",
+    "Ability to place and capture the nut after 20 inserts",
+    "Real basket ribs, terminals and tool envelope",
+    "Real assembly depth or module-service outcome",
+    "Any CNC or mounting torque signoff"
+  ]
+}

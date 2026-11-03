@@ -98,6 +98,14 @@ W badanej geometrii Dayton RSS390HF-4 wycięcie **Ø355,8 mm**, okrąg śrub **�
 
 *Co trzeba zrobić?* **Nie trzeba ponownie ustalać fabrycznych wymiarów:** rysunek Daytona podaje także kołnierz **10,5 mm**, głębokość **178 mm** i otwory w koszu **8 × Ø6,5 mm**. Dopiero niezwymiarowane żebra, terminale, wybrany łącznik, gniazdo MDF i dostęp narzędzi wymagają doprecyzowania; do CNC konieczna będzie kontrola tolerancji i nośności. [Arkusz producenta](https://www.daytonaudio.com/images/resources/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf) · [Weryfikacja źródeł w K07](raporty/K07_serwis_wkladow_i_audyt_mocowan.md). [Raport 096](raporty/096_P38A_front_Dayton_otwory_i_mocowania.md) · [Raport 108](raporty/108_P42C_laczniki_i_koncepcje_3D.md).
 
+**Rysunek producenta — RSS390HF-4 (widok boczny):**
+
+![Oryginalny rysunek wymiarowy producenta Dayton Audio RSS390HF-4: średnica 388,4 mm, wycięcie 355,8 mm, głębokość 178 mm, kołnierz 10,5 mm — reprodukcja Speaker&Co](https://www.speakerenco.nl/images/uploaded/295-468_3.jpg)
+
+*Źródło ilustracji: **Dayton Audio**, [oryginalny PDF z oboma rzutami, w tym koszem od tyłu, PCD Ø368 i 8×Ø6,5](https://www.daytonaudio.com/images/resources/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf). Obraz producenta osadzony z serwera [Speaker&Co](https://www.speakerenco.nl/dayton-rss390hf-4), nie jest zdjęciem naszego prototypu. Pełna dokumentacja producenta jest ważniejsza niż ten podgląd. Rysunek nie pokazuje doboru kotew MDF.*
+
+**Wniosek K08 dla mocowania:** nominalna podkładka M6 Ø12 zostawia tylko **0,1 mm** od krawędzi wycięcia; śruba M6×85 z tylną nakrętką *za dodatkowym klockiem 20 mm* wystawałaby modelowo **28,9 mm za MDF44** (podkładka 1,6 i nakrętka 5 mm jako hipotezy). To niemal dokładnie głębokość zastępczego mocowania K04, ale nie dowód identycznej bryły ani nośności. Rozważamy złącze dostępne od frontu, bez wystającej nakrętki. [Raport i dokładne założenia K08](raporty/K08_zlacza_i_rysunki_dayton.md). **CNC HOLD.**
+
 ### 4a. Jak przejść od kosza do rzeczywistego mocowania?
 
 **Konstrukcja bazowa:** Dayton RSS390HF-4, front MDF **44 mm**, osiem otworów montażowych i cztery żebra kosza. Osiem lokalnych wzmocnień jest wariantem pierwszego wyboru **do prób**, rama pozostaje alternatywą.
@@ -2252,3 +2260,11 @@ W stanie 100 l **wcześniej zamontowany modelowy zestaw M6 daje 16/20 tras** (K0
 W odróżnieniu od K05, które potwierdziło wyłącznie brak kolizji końcowych, **K06 przeprowadza ciągłą, trzyodcinkową trasę** małej *kulistej sondy* przez otwór głośnika i za tylną powierzchnię klocka 20 mm. Sprawdzono obliczeniowo wszystkie 8 osi przy **wszystkich 20 wkładach** w ich docelowych położeniach P30E; wyniki to **8/8 dla sond Ø12, Ø24 i Ø48 mm**. Najciaśniejszy punkt przy lewej ścianie pozostawia sondzie Ø48 tylko **1 mm**. Sonda może swobodnie zmieniać kierunek ruchu, dlatego **nie odpowiada rzeczywistemu sztywnemu kluczowi, nakrętce lub dłoni**. Bez testu rzeczywistego połączenia nie rozstrzygamy typu łącznika ani CNC.
 
 [Raport K06](raporty/K06_dostep_do_8_mocowan_po_20_wkladach.md) · [Odtwarzalny skrypt](skrypty/k06_korytarz_kulisty_8_mocowan.py) · [Zapisane wyniki](wyniki/k06_podsumowanie.json) · [Regresja](.github/workflows/k06-fastener-gauge.yml).
+
+### A15. K08 — główka, podkładka i długość śruby: co już można policzyć?
+
+![K08 — przekrój autorski złącza M6 obliczony z wymiarów producenta, schemat NIE CNC](wyniki/k08_przekroj_zlacze_M6_NIE_CNC.svg)
+
+Oryginalny rysunek producenta Daytona RSS390HF-4 osadzono wcześniej w **praktycznym przewodniku**; [kompletny arkusz producenta](https://www.daytonaudio.com/images/resources/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf) zawiera również rzut kosza od tyłu i osiem otworów mocujących. Rysunek przekroju powyżej jest **opracowaniem własnym**, nie producenta i nie prototypem. Oś każdego otworu w kołnierzu jest oddalona o **6,1 mm** od krawędzi wycięcia i **10,2 mm** od zewnętrznej krawędzi kołnierza. Dla hipotetycznej podkładki M6 Ø12 pozostaje nominalnie tylko **0,1 mm** do wycięcia. Jeśli nakrętka o grubości 5 mm jest **za frontem MDF44 i klockiem20**, a nad kołnierzem 10,5 mm znajduje się podkładka 1,6 mm, to nominalne wymaganie pełnego 5-mm przejścia przez nakrętkę to **81,1 mm pod łbem śruby**. Przykładowa długość **85 mm** daje ok. **28,9 mm** wystawania za MDF44 — nieznaczną różnicę w stosunku do obwiedni K04 (28,8 mm). To hipoteza konkretnej konfiguracji, **nie osprzęt zadeklarowany przez Dayton**. Wymagania na rzeczywiste gwinty, wkładkę, uszczelkę, blokadę nakrętki i nośność pozostają otwarte. **Nie projektować na CNC na podstawie tych liczb.**
+
+[Raport K08](raporty/K08_zlacza_i_rysunki_dayton.md) · [Kod obliczeń](skrypty/k08_nominalne_mocowania_dayton.py) · [JSON](wyniki/k08_nominalne_mocowania_dayton.json) · [CI](.github/workflows/k08-fastener-geometry.yml).
