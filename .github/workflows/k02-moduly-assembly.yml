@@ -26,7 +26,7 @@ jobs:
       - name: Install NumPy used by existing P30A/P30E construction model
         run: python3 -m pip install "numpy>=1.26,<3"
       - name: Reproduce complete 100, 120 and 150 liter assembly sequences
-        run: python3 skrypty/k02_dostep_modulow_i_klocki.py > /tmp/k02_results.log
+        run: python3 skrypty/k02_dostep_modulow_i_klocki.py
       - name: Inspect full numerical summary and invariants
         run: |
           python3 - <<'PY'
