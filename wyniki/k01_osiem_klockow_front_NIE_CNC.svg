@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1170 620" role="img" aria-label="K01: wstepna koncepcja montazu osmiu klockow za frontem 1020x500, nie dokumentacja CNC">
+<rect width="1170" height="620" fill="#f8fafc"/>
+<text x="35" y="39" font-family="sans-serif" font-size="23" font-weight="bold" fill="#1c3547">K01 — osiem lokalnych wzmocnień w realnym froncie P30E</text>
+<text x="35" y="65" font-family="sans-serif" font-size="13" fill="#567082">Geometryczny przykład do dalszej weryfikacji: X=231, Z=250 mm, front MDF44, NIE CNC.</text>
+<rect x="42" y="133" width="754.8" height="370" fill="#e9d6b4" stroke="#947b55" stroke-width="2"/>
+<rect x="58.28" y="149.28" width="722.24" height="337.44" fill="none" stroke="#a38f71" stroke-dasharray="8 5"/>
+<line x1="373.52" x2="373.52" y1="149.28" y2="486.71999999999997" stroke="#6b879d" stroke-width="4" stroke-dasharray="8 8"/>
+<circle cx="212.94" cy="318" r="143.708" stroke="#304f67" stroke-width="3" fill="none"/>
+<circle cx="212.94" cy="318" r="131.64600000000002" stroke="#52738b" stroke-width="2" stroke-dasharray="5 5" fill="#f8fafc"/>
+<circle cx="212.94" cy="318" r="136.16" stroke="#557e95" stroke-width="1" stroke-dasharray="2 4" fill="none"/>
+<polygon points="345.33,304.68 364.64,304.68 364.64,331.32 345.33,331.32" fill="#2b8575" fill-opacity=".83" stroke="#14594d" stroke-width="1.2"/>
+<circle cx="349.10" cy="318.00" r="3.2" fill="#fdfefe" stroke="#153e45"/>
+<polygon points="315.97,402.19 329.63,415.85 310.79,434.69 297.13,421.03" fill="#2b8575" fill-opacity=".83" stroke="#14594d" stroke-width="1.2"/>
+<circle cx="309.22" cy="414.28" r="3.2" fill="#fdfefe" stroke="#153e45"/>
+<polygon points="226.26,450.39 226.26,469.70 199.62,469.70 199.62,450.39" fill="#2b8575" fill-opacity=".83" stroke="#14594d" stroke-width="1.2"/>
+<circle cx="212.94" cy="454.16" r="3.2" fill="#fdfefe" stroke="#153e45"/>
+<polygon points="128.75,421.03 115.09,434.69 96.25,415.85 109.91,402.19" fill="#2b8575" fill-opacity=".83" stroke="#14594d" stroke-width="1.2"/>
+<circle cx="116.66" cy="414.28" r="3.2" fill="#fdfefe" stroke="#153e45"/>
+<polygon points="80.55,331.32 61.24,331.32 61.24,304.68 80.55,304.68" fill="#2b8575" fill-opacity=".83" stroke="#14594d" stroke-width="1.2"/>
+<circle cx="76.78" cy="318.00" r="3.2" fill="#fdfefe" stroke="#153e45"/>
+<polygon points="109.91,233.81 96.25,220.15 115.09,201.31 128.75,214.97" fill="#2b8575" fill-opacity=".83" stroke="#14594d" stroke-width="1.2"/>
+<circle cx="116.66" cy="221.72" r="3.2" fill="#fdfefe" stroke="#153e45"/>
+<polygon points="199.62,185.61 199.62,166.30 226.26,166.30 226.26,185.61" fill="#2b8575" fill-opacity=".83" stroke="#14594d" stroke-width="1.2"/>
+<circle cx="212.94" cy="181.84" r="3.2" fill="#fdfefe" stroke="#153e45"/>
+<polygon points="297.13,214.97 310.79,201.31 329.63,220.15 315.97,233.81" fill="#2b8575" fill-opacity=".83" stroke="#14594d" stroke-width="1.2"/>
+<circle cx="309.22" cy="221.72" r="3.2" fill="#fdfefe" stroke="#153e45"/>
+<text x="50" y="545" font-family="sans-serif" font-size="13" fill="#6b5942">Wymiar czoła: 1020 × 500 mm. Linia przerywana: wnętrze odległe 22 mm od brzegów.</text>
+<rect x="830" y="117" width="315" height="400" rx="11" fill="#fff" stroke="#d3e1e9"/>
+<text x="849" y="149" font-family="sans-serif" font-size="16" font-weight="bold" fill="#1c3547">Dla wariantu warunkowego</text>
+<text x="849" y="182" font-family="sans-serif" font-size="14" fill="#1c3547">Kołnierz Dayton: Ø388,4 mm</text>
+<text x="849" y="208" font-family="sans-serif" font-size="14" fill="#1c3547">Otwór MDF: Ø355,8 mm</text>
+<text x="849" y="234" font-family="sans-serif" font-size="14" fill="#1c3547">Osiem śrub na Ø368 mm</text>
+<text x="849" y="271" font-family="sans-serif" font-size="14" fill="#1c3547">8 klocków: 26,1 × 36 × 30 mm</text>
+<text x="849" y="297" font-family="sans-serif" font-size="14" fill="#1c3547">Promień klocków: 178,9–205 mm</text>
+<text x="849" y="333" font-family="sans-serif" font-size="14" fill="#24675b">Lewa ściana: luz 4 mm</text>
+<text x="849" y="359" font-family="sans-serif" font-size="14" fill="#24675b">Przesiew P39C: bez kolizji</text>
+<text x="849" y="396" font-family="sans-serif" font-size="13" fill="#914b37">KOSZ za frontem: niezmierzony</text>
+<text x="849" y="420" font-family="sans-serif" font-size="13" fill="#914b37">Śruby i wkładki: nie wybrane</text>
+<text x="849" y="444" font-family="sans-serif" font-size="13" fill="#914b37">Nośność MDF i kleju: niebadana</text>
+<text x="849" y="480" font-family="sans-serif" font-size="13" font-weight="bold" fill="#914b37">WARIANT DO PRÓB — NIE CNC</text>
+<text x="36" y="595" font-family="sans-serif" font-size="13" fill="#567082">Rysunek autorstwa projektu, na podstawie wymiarów Dayton i zastępczych brył P39C. Nie jest fotografią gotowego prototypu.</text>
+</svg>
