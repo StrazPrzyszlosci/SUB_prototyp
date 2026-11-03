@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="525" viewBox="0 0 1140 525" role="img" aria-label="K06: 8 punktów montażu oraz droga od otworu przez przesunięcie radialne za frontem. Nie jest to rysunek CNC.">
+<rect width="1140" height="525" fill="#fff"/>
+<text x="36" y="44" font-family="DejaVu Sans,Arial" font-size="25" font-weight="bold" fill="#23354e">K06 — przejście po wstawieniu wszystkich 20 wkładów</text>
+<text x="36" y="72" font-family="DejaVu Sans,Arial" font-size="15" fill="#5b6c7e">Schemat modelu • kula translacyjna, nie klucz ani rzeczywisty łącznik • NIE CNC</text>
+<rect x="35" y="96" width="502" height="335" rx="12" fill="#f6f9fd" stroke="#cfd9e5"/>
+<text x="59" y="124" font-size="17" font-family="DejaVu Sans,Arial" font-weight="bold" fill="#253952">Widok od frontu — PCD Ø368</text>
+<circle cx="284" cy="275" r="129" fill="#e8f5fb" stroke="#277a95" stroke-width="2.2"/>
+<circle cx="284" cy="275" r="133.5" fill="none" stroke="#c77739" stroke-dasharray="5,6" stroke-width="2"/>
+<circle cx="284" cy="275" r="143" fill="none" stroke="#b5c4d2" stroke-width="2"/>
+<g fill="#385b88" stroke="#fff" stroke-width="1.5">
+<circle cx="417.5" cy="275" r="6"/><circle cx="378.4" cy="369.4" r="6"/><circle cx="284" cy="408.5" r="6"/><circle cx="189.6" cy="369.4" r="6"/>
+<circle cx="150.5" cy="275" r="6"/><circle cx="189.6" cy="180.6" r="6"/><circle cx="284" cy="141.5" r="6"/><circle cx="378.4" cy="180.6" r="6"/>
+</g>
+<path d="M284 275L407 275" stroke="#c56a34" stroke-width="3" stroke-dasharray="9,6"/>
+<text x="60" y="450" font-size="15" font-family="DejaVu Sans,Arial" fill="#273b52">8/8 punktów: modelowe sondy Ø12 / Ø24 / Ø48</text>
+<rect x="565" y="96" width="540" height="335" rx="12" fill="#f6f9fd" stroke="#cfd9e5"/>
+<text x="591" y="124" font-size="17" font-family="DejaVu Sans,Arial" font-weight="bold" fill="#253952">Przekrój ideowy — najpierw wzdłuż, potem w bok</text>
+<rect x="640" y="168" width="55" height="204" fill="#d9dfeb" stroke="#aebccc"/>
+<rect x="695" y="153" width="90" height="38" fill="#e7cda8" stroke="#b38b5c"/>
+<rect x="695" y="346" width="90" height="26" fill="#e7cda8" stroke="#b38b5c"/>
+<rect x="805" y="196" width="223" height="146" fill="#e7ede8" stroke="#c5d7c9" stroke-dasharray="4,6"/>
+<text x="824" y="222" font-size="14" font-family="DejaVu Sans,Arial" fill="#506b5b">wkłady, pozycje końcowe</text>
+<path d="M605 269 H735 V230 H787" fill="none" stroke="#21778c" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="787" cy="230" r="18" fill="#aadce5" stroke="#21778c" stroke-width="2.5"/>
+<path d="M787 230 L787 194" stroke="#21778c" stroke-width="5" stroke-dasharray="6,5"/>
+<text x="605" y="403" font-size="14" font-family="DejaVu Sans,Arial" fill="#273b52">Otwarte miejsce w modelu ≠ narzędzie z uchwytem</text>
+<rect x="35" y="452" width="1070" height="50" rx="10" fill="#eff2f6"/>
+<text x="58" y="483" font-size="17" font-family="DejaVu Sans,Arial" fill="#2d4058">Najbliższa bramka: realne nakrętki, kosz, dłonie, narzędzia i próby MDF • CNC HOLD</text>
+</svg>

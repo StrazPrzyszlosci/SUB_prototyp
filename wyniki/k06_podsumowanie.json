@@ -1,0 +1,33 @@
+{
+  "study": "K06",
+  "date": "2026-11-03",
+  "source_model": "P30E with all 20 volume inserts and nominal K02 pads",
+  "physical_testing": false,
+  "cnc": "HOLD",
+  "gauge_diameters_mm": [
+    12,
+    24,
+    48
+  ],
+  "results": {
+    "6": {
+      "passed_axes": 8,
+      "out_of_axes": 8,
+      "minimum_model_wall_margin_mm": 19
+    },
+    "12": {
+      "passed_axes": 8,
+      "out_of_axes": 8,
+      "minimum_model_wall_margin_mm": 13
+    },
+    "24": {
+      "passed_axes": 8,
+      "out_of_axes": 8,
+      "minimum_model_wall_margin_mm": 1
+    }
+  },
+  "leftmost_bolt_axis_distance_to_inside_wall_mm": 25,
+  "maximum_ideal_spherical_radius_at_leftmost_bolt_axis_mm": 25,
+  "full_real_fastener_assembly_verified": false,
+  "routes_generated_not_committed": "wyniki/k06_pelne_trasy_wygenerowane.json"
+}

@@ -108,7 +108,7 @@ W badanej geometrii Dayton RSS390HF-4 wycięcie **Ø355,8 mm**, okrąg śrub **�
 
 **Łącznik (K03–K04):** oś śruby znajduje się tylko **6,1 mm** od wycięcia. Nominalna nakrętka i podkładka M6 mogą wystawać poza drewniany klocek; wraz z płytką hipotetyczny osprzęt ma **28,8 mm** głębokości za frontem. Po uwzględnieniu jego celowo powiększonej obwiedni model K04 znajduje trasę tylko dla **16/20 modułów** stanu 100 l. Wszystkie 20 pozycji końcowych pozostaje niekolidujących — problem dotyczy *drogi wkładania*, nie miejsca docelowego. Nie dowodzi to niemożliwości montażu rzeczywistych części. [Raport K04](raporty/K04_pelne_gabaryty_nakretki_podkladki_i_montaz_20_modulow.md).
 
-**Praktyczny trop K05:** można najpierw wprowadzić 20 wkładów przy samych klockach 20 mm (model 20/20), a dopiero potem spróbować zainstalować osprzęt mocowania. Końcowe pozycje wkładów nie kolidują z jego uproszczoną bryłą, ale **drogi wkładania nakrętek i dostęp narzędzi nadal NIE są sprawdzone**. **Następny krok:** rzeczywisty kosz i terminale, sucha makieta 1:1, dwa typy próbek mocowania i ponowny montaż wszystkich wkładów. Bez potwierdzenia nośności, serwisu i montażu **nie zatwierdza się CNC**. [Raport K05](raporty/K05_etapowanie_20_modulow_i_dostep_do_mocowan.md) · Szczegóły i inspiracje innych konstruktorów w [aneksie końcowym](#aneks-mocowania).
+**K05–K06, kolejność montażu:** najpierw można wprowadzić 20 wkładów (wynik modelu 20/20), a później próbować instalować osiem mocowań. W K06 pokazano **8/8 ciągłych dróg dla swobodnych sond kulistych**, ale **nie dla rzeczywistej nakrętki i klucza**. Konieczna jest makieta 1:1, pomiar kosza i próbki MDF; **CNC HOLD**. [Raport K05](raporty/K05_etapowanie_20_modulow_i_dostep_do_mocowan.md) · [K06](raporty/K06_dostep_do_8_mocowan_po_20_wkladach.md) · [szczegóły w aneksie](#aneks-mocowania).
 
 ### 5. Co oznaczają wykresy DSP i temperatury?
 
@@ -2244,3 +2244,11 @@ K02 dopuściło w modelu 20 wkładów przy samym drewnianym klocku 20 mm. **K04 
 W stanie 100 l **wcześniej zamontowany modelowy zestaw M6 daje 16/20 tras** (K04), natomiast **sam klocek 20 mm pozwala wprowadzić 20/20 wkładów** (K02/K04). **Wszystkie 20 pozycji końcowych są niekolidujące** nawet z zastępczym osprzętem wystającym 28,8 mm. Wariant „wkłady pierwsze” **nie ma jednak potwierdzonej drogi wniesienia nakrętek/nośników ani dostępu klucza** po ich wstawieniu. To pomysł do sprawdzenia na makiecie, a nie gotowa sekwencja wykonawcza. Dla elementu Ø12 wprowadzanego na wprost przez otwór, przed dojściem do osi śruby za frontem konieczne jest **co najmniej 12,1 mm** ruchu radialnego w uproszczonym rzucie; nie jest to zweryfikowana trasa 3D.
 
 [Pełny raport K05](raporty/K05_etapowanie_20_modulow_i_dostep_do_mocowan.md) · [Kod](skrypty/k05_kolejnosc_montazu_i_dostep.py) · [JSON](wyniki/k05_podsumowanie.json) · [Regresja](.github/workflows/k05-assembly-order.yml). **Bez pomiaru kosza, dostępu narzędzi i prób mechanicznych nadal CNC HOLD.**
+
+### A14. K06 — czy po zamontowaniu 20 wkładów dotrzemy do wszystkich ośmiu śrub?
+
+![K06 — modelowa droga kuli do ośmiu punktów; nie oznacza możliwości użycia narzędzi, NIE CNC](wyniki/k06_dostep_kulisty_po_20_wkladach_NIE_CNC.svg)
+
+W odróżnieniu od K05, które potwierdziło wyłącznie brak kolizji końcowych, **K06 przeprowadza ciągłą, trzyodcinkową trasę** małej *kulistej sondy* przez otwór głośnika i za tylną powierzchnię klocka 20 mm. Sprawdzono obliczeniowo wszystkie 8 osi przy **wszystkich 20 wkładach** w ich docelowych położeniach P30E; wyniki to **8/8 dla sond Ø12, Ø24 i Ø48 mm**. Najciaśniejszy punkt przy lewej ścianie pozostawia sondzie Ø48 tylko **1 mm**. Sonda może swobodnie zmieniać kierunek ruchu, dlatego **nie odpowiada rzeczywistemu sztywnemu kluczowi, nakrętce lub dłoni**. Bez testu rzeczywistego połączenia nie rozstrzygamy typu łącznika ani CNC.
+
+[Raport K06](raporty/K06_dostep_do_8_mocowan_po_20_wkladach.md) · [Odtwarzalny skrypt](skrypty/k06_korytarz_kulisty_8_mocowan.py) · [Zapisane wyniki](wyniki/k06_podsumowanie.json) · [Regresja](.github/workflows/k06-fastener-gauge.yml).
