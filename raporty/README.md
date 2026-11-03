@@ -172,3 +172,5 @@ Historyczne identyfikatory P43/P44 w kodzie konstrukcyjnym są odrębne od akust
 - [K01 — kandydat konstrukcyjny ośmiu lokalnych mocowań, bilans 100/120/150 l i pełne 500 mm, 480+48 obliczeń](K01_koncepcja_konstrukcyjna_8_mocowan_i_bilans_gabarytu.md).
 
 - [K02 — zintegrowane ścieżki 20 modułów P30E z ośmioma lokalnymi mocowaniami K01: porównanie 30 i 20 mm, sprawdzenie wejścia od zewnątrz](K02_przejscie_20_modulow_obok_8_mocowan.md).
+
+- [K03 — dobór toru siły mocowania: 6,1 mm od osi śruby do otworu, 162 scenariusze pasa MDF i dwa realne warianty połączeń do prób](K03_wezel_mocowania_waski_pas_MDF_i_sciezka_sily.md).
