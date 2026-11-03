@@ -104,7 +104,9 @@ W badanej geometrii Dayton RSS390HF-4 wycięcie **Ø355,8 mm**, okrąg śrub **�
 
 ![Osiem punktów mocowania oraz cztery główne żebra kosza — szkic własny, NIE CNC](wyniki/b12_12_faza_zeber_producent_NIE_CNC.svg)
 
-**Droga do rozstrzygnięcia:** potwierdzić wymiary prawdziwego kosza i terminali, wybrać wykonalny wariant mocowania, sprawdzić nośność śrub, wkładek, MDF i spoin, zabezpieczyć uszczelnienie oraz serwis, a dopiero potem zatwierdzić rysunki do wykonania. Żaden wariant nie uzyskał jeszcze zgody na CNC. [Oryginalne inspiracje z innych konstrukcji i analizy szczegółowe B12-09–B12-15 znajdują się w aneksie na końcu przewodnika](#aneks-mocowania).
+**Sprawdzony kierunek konstrukcyjny K01:** przy zachowaniu obecnej osi głośnika X=231 mm osiem modelowych klocków 26,1 × 36 × 30 mm nie koliduje z uproszczonymi ścianami i wręgami. Zostaje jednak **tylko 4 mm do lewej ściany**, a prawdziwego obrysu kosza i nośności mocowania nie znamy. To kandydat do sprawdzenia na rzeczywistych częściach, **nie wymiary do CNC**. [Zobacz szkic K01](wyniki/k01_osiem_klockow_front_NIE_CNC.svg) i [pełny raport](raporty/K01_koncepcja_konstrukcyjna_8_mocowan_i_bilans_gabarytu.md).
+
+**Droga do rozstrzygnięcia:** potwierdzić wymiary prawdziwego kosza i terminali, wybrać wykonalny wariant mocowania, sprawdzić nośność śrub, wkładek, MDF i spoin, zabezpieczyć uszczelnienie oraz serwis, a dopiero potem zatwierdzić rysunki do wykonania. Żaden wariant nie uzyskał jeszcze zgody na CNC. [Inspiracje z innych konstrukcji oraz szczegółowe analizy B12-09–B12-15 i K01 są w aneksie na końcu przewodnika](#aneks-mocowania).
 
 ### 5. Co oznaczają wykresy DSP i temperatury?
 
@@ -2194,3 +2196,13 @@ Przeliczono **2916 scenariuszy zastępczego nacisku pierścieniowego** przy 8, 1
 
 [Raport B12-15](raporty/B12-15_rozklad_nacisku_i_relaksacja_docisku.md) · [Python do odtworzenia](skrypty/b12_15_nacisk_rozproszony.py) · [Wyniki zbiorcze](wyniki/b12_15_podsumowanie.json) · [Wykres](wyniki/b12_15_relaksacja_nacisku_NIE_CNC.svg).
 
+
+### A9. K01 — kandydat konstrukcyjny ośmiu wzmocnień, bilans litrażu i pełnej głębokości
+
+W odróżnieniu od kolejnych analiz samego kontaktu, **K01 wiąże dotychczasowe wyniki z jedną konkretną obudową P30E**: osiem modelowych klocków bez zmian osi głośnika X231, wymiary korpusu 1020×425×500 mm i wymagane 100/120/150 l. Wykonano **480 badań kolizji** oraz **48 bilansów całkowitej głębokości**. Przesiew geometryczny potwierdza przykładowy układ ośmiu klocków (26,1×36×30 mm) z **4 mm** do lewej ściany, ale nie dowodzi braku zderzenia z rzeczywistym koszem. Dodają one modelowo **0,2255 l wyporności**, jeśli nie ujęto ich wcześniej w bilansie P30E.
+
+![K01 — modelowe rozmieszczenie ośmiu lokalnych wzmocnień za frontem, NIE CNC](wyniki/k01_osiem_klockow_front_NIE_CNC.svg)
+
+![K01 — jak liczyć pełne 500 mm z osłoną i terminalem, NIE CNC](wyniki/k01_pelna_glebokosc_500_NIE_CNC.svg)
+
+**Wniosek decyzyjny:** najpierw fizycznie zweryfikować prześwity i połączenia lokalnych wzmocnień; rama A pozostaje alternatywą, jeśli ich nośność, montaż lub serwis nie przejdą prób. **Nie uruchamiać kolejnej serii hipotetycznych sprężyn bez nowych danych.** Zmianę objętości trzeba uzgodnić z końcową listą brył i 20 modułami P30E. [Raport K01](raporty/K01_koncepcja_konstrukcyjna_8_mocowan_i_bilans_gabarytu.md) · [Kod obliczeń](skrypty/k01_mocowanie_bilans.py) · [Dane](wyniki/k01_podsumowanie.json). **CNC HOLD.**
