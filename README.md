@@ -110,6 +110,8 @@ W badanej geometrii Dayton RSS390HF-4 wycięcie **Ø355,8 mm**, okrąg śrub **�
 
 **Praktyczny trop K05:** można najpierw wprowadzić 20 wkładów przy samych klockach 20 mm (model 20/20), a dopiero potem spróbować zainstalować osprzęt mocowania. Końcowe pozycje wkładów nie kolidują z jego uproszczoną bryłą, ale **drogi wkładania nakrętek i dostęp narzędzi nadal NIE są sprawdzone**. **Następny krok:** rzeczywisty kosz i terminale, sucha makieta 1:1, dwa typy próbek mocowania i ponowny montaż wszystkich wkładów. Bez potwierdzenia nośności, serwisu i montażu **nie zatwierdza się CNC**. [Raport K05](raporty/K05_etapowanie_20_modulow_i_dostep_do_mocowan.md) · Szczegóły i inspiracje innych konstruktorów w [aneksie końcowym](#aneks-mocowania).
 
+**Weryfikacja K06:** w istniejącym modelu skrzyni odnaleziono pełne trzyodcinkowe drogi do **wszystkich 8 osi mocowań** nawet po umieszczeniu 20 wkładów, dla swobodnych sond kulistych Ø12, Ø24 i Ø48 mm. **To nie oznacza, że rzeczywista nakrętka, nośnik, narzędzie i dłoń przejdą oraz pozwolą na zamocowanie śruby.** Najbardziej lewa oś śruby ma tylko 25 mm od wewnętrznej ściany. Następnym krokiem jest makieta z prawdziwym zestawem osprzętu; nadal **CNC HOLD**. [Raport K06](raporty/K06_dostep_do_8_mocowan_po_20_wkladach.md).
+
 ### 5. Co oznaczają wykresy DSP i temperatury?
 
 Przyjęte **40 V RMS / 12 A RMS** to założenia symulacji, **nie parametry zakupionego wzmacniacza**. Model ogranicznika może ujawnić ryzyko wychylenia, grzania i przesterowania, ale nie jest jeszcze sprawdzonym presetem. Potrzebny jest fizyczny napęd, zasilanie, chłodzenie i walidacja zabezpieczeń. [Filtry](#filtry) · [Ochrona](#ochrona).
@@ -2244,3 +2246,11 @@ K02 dopuściło w modelu 20 wkładów przy samym drewnianym klocku 20 mm. **K04 
 W stanie 100 l **wcześniej zamontowany modelowy zestaw M6 daje 16/20 tras** (K04), natomiast **sam klocek 20 mm pozwala wprowadzić 20/20 wkładów** (K02/K04). **Wszystkie 20 pozycji końcowych są niekolidujące** nawet z zastępczym osprzętem wystającym 28,8 mm. Wariant „wkłady pierwsze” **nie ma jednak potwierdzonej drogi wniesienia nakrętek/nośników ani dostępu klucza** po ich wstawieniu. To pomysł do sprawdzenia na makiecie, a nie gotowa sekwencja wykonawcza. Dla elementu Ø12 wprowadzanego na wprost przez otwór, przed dojściem do osi śruby za frontem konieczne jest **co najmniej 12,1 mm** ruchu radialnego w uproszczonym rzucie; nie jest to zweryfikowana trasa 3D.
 
 [Pełny raport K05](raporty/K05_etapowanie_20_modulow_i_dostep_do_mocowan.md) · [Kod](skrypty/k05_kolejnosc_montazu_i_dostep.py) · [JSON](wyniki/k05_podsumowanie.json) · [Regresja](.github/workflows/k05-assembly-order.yml). **Bez pomiaru kosza, dostępu narzędzi i prób mechanicznych nadal CNC HOLD.**
+
+### A14. K06 — czy po zamontowaniu 20 wkładów dotrzemy do wszystkich ośmiu śrub?
+
+![K06 — modelowa droga kuli do ośmiu punktów; nie oznacza możliwości użycia narzędzi, NIE CNC](wyniki/k06_dostep_kulisty_po_20_wkladach_NIE_CNC.svg)
+
+W odróżnieniu od K05, które potwierdziło wyłącznie brak kolizji końcowych, **K06 przeprowadza ciągłą, trzyodcinkową trasę** małej *kulistej sondy* przez otwór głośnika i za tylną powierzchnię klocka 20 mm. Sprawdzono obliczeniowo wszystkie 8 osi przy **wszystkich 20 wkładach** w ich docelowych położeniach P30E; wyniki to **8/8 dla sond Ø12, Ø24 i Ø48 mm**. Najciaśniejszy punkt przy lewej ścianie pozostawia sondzie Ø48 tylko **1 mm**. Sonda może swobodnie zmieniać kierunek ruchu, dlatego **nie odpowiada rzeczywistemu sztywnemu kluczowi, nakrętce lub dłoni**. Bez testu rzeczywistego połączenia nie rozstrzygamy typu łącznika ani CNC.
+
+[Raport K06](raporty/K06_dostep_do_8_mocowan_po_20_wkladach.md) · [Odtwarzalny skrypt](skrypty/k06_korytarz_kulisty_8_mocowan.py) · [Zapisane wyniki](wyniki/k06_podsumowanie.json) · [Regresja](.github/workflows/k06-fastener-gauge.yml).
