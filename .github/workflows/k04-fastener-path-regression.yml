@@ -46,7 +46,19 @@ jobs:
           assert all(a['modules_completed']==20 for a in x['module_path_results']
                      if a['case']=='C20_no_fastener' and a['state']=='100L')
           assert x['metal_spreader_conditional_hypothesis']['nominal_gap_from_spreader_inner_edge_to_cutout_mm']==.1
-          print('K04 nominal source geometry + independent hex reference + path summary verified')
+          ref=json.load(open('wyniki/k04_podsumowanie.json',encoding='utf8'))['assembly_research']['verified_from_actions']
+          for state,expected in (("100L",ref['completions_100L_by_clearance_3_6']),
+                                 ("120L",ref['completions_120L_3_6']),
+                                 ("150L",ref['completions_150L_3_6'])):
+              for name,want in expected.items():
+                  actual=[next(v['modules_completed'] for v in x['module_path_results']
+                               if v['state']==state and v['case']==name and v['assumed_clearance_mm']==c)
+                          for c in (3.,6.)]
+                  assert actual==want,(state,name,actual,want)
+          z=x['static_positions_final_100L_check']
+          assert z['collisions_with_fastener_full_pad_prism']==ref['static_final_module_positions_100L']['collisions']==0
+          assert z['modules_in_final_100L_positions']==ref['static_final_module_positions_100L']['module_count']==20
+          print('K04 nominal fastener geometry, 22 envelope cases and published summary PASS')
           PY
       - name: Archive detailed routes and nut geometries, not physical measurements
         uses: actions/upload-artifact@v4
