@@ -104,9 +104,9 @@ W badanej geometrii Dayton RSS390HF-4 wycięcie **Ø355,8 mm**, okrąg śrub **�
 
 ![Osiem punktów mocowania oraz cztery główne żebra kosza — szkic własny, NIE CNC](wyniki/b12_12_faza_zeber_producent_NIE_CNC.svg)
 
-**Sprawdzony kierunek konstrukcyjny K01:** przy zachowaniu obecnej osi głośnika X=231 mm osiem modelowych klocków 26,1 × 36 × 30 mm nie koliduje z uproszczonymi ścianami i wręgami. Zostaje jednak **tylko 4 mm do lewej ściany**, a prawdziwego obrysu kosza i nośności mocowania nie znamy. To kandydat do sprawdzenia na rzeczywistych częściach, **nie wymiary do CNC**. [Zobacz szkic K01](wyniki/k01_osiem_klockow_front_NIE_CNC.svg) i [pełny raport](raporty/K01_koncepcja_konstrukcyjna_8_mocowan_i_bilans_gabarytu.md).
+**Kierunek konstrukcyjny po K02:** bazowa obudowa i położenie głośnika pozostają bez zmian. Osiem lokalnych wzmocnień nadal jest pierwszym wariantem do sprawdzenia, ale **głębokość 30 mm utrudnia dostęp do pełnej regulacji objętości**. W modelu P30E po skróceniu ich do **20 mm** przeszły trasy **20/20 modułów (100 l), 12/12 (120 l) i 1/1 (150 l)**, przy luzie 3–6 mm. To wynik symulacji geometrycznej, a nie próba rzeczywistej skrzyni: **kosz Daytona, wkładki gwintowane i nośność połączeń pozostają do zweryfikowania**. [Zobacz porównanie 20/30 mm](wyniki/k02_trasy_20_vs_30_moduly_NIE_CNC.svg) oraz [szczegóły badania K02](raporty/K02_przejscie_20_modulow_obok_8_mocowan.md).
 
-**Droga do rozstrzygnięcia:** potwierdzić wymiary prawdziwego kosza i terminali, wybrać wykonalny wariant mocowania, sprawdzić nośność śrub, wkładek, MDF i spoin, zabezpieczyć uszczelnienie oraz serwis, a dopiero potem zatwierdzić rysunki do wykonania. Żaden wariant nie uzyskał jeszcze zgody na CNC. [Inspiracje z innych konstrukcji oraz szczegółowe analizy B12-09–B12-15 i K01 są w aneksie na końcu przewodnika](#aneks-mocowania).
+**Droga do rozstrzygnięcia:** potwierdzić wymiary prawdziwego kosza i terminali, wybrać wykonalny wariant mocowania, sprawdzić nośność śrub, wkładek, MDF i spoin, zabezpieczyć uszczelnienie oraz serwis, a dopiero potem zatwierdzić rysunki do wykonania. Żaden wariant nie uzyskał jeszcze zgody na CNC. [Inspiracje z innych konstrukcji oraz szczegółowe analizy B12-09–B12-15 oraz K01–K02 są w aneksie na końcu przewodnika](#aneks-mocowania).
 
 ### 5. Co oznaczają wykresy DSP i temperatury?
 
@@ -2206,3 +2206,15 @@ W odróżnieniu od kolejnych analiz samego kontaktu, **K01 wiąże dotychczasowe
 ![K01 — jak liczyć pełne 500 mm z osłoną i terminalem, NIE CNC](wyniki/k01_pelna_glebokosc_500_NIE_CNC.svg)
 
 **Wniosek decyzyjny:** najpierw fizycznie zweryfikować prześwity i połączenia lokalnych wzmocnień; rama A pozostaje alternatywą, jeśli ich nośność, montaż lub serwis nie przejdą prób. **Nie uruchamiać kolejnej serii hipotetycznych sprężyn bez nowych danych.** Zmianę objętości trzeba uzgodnić z końcową listą brył i 20 modułami P30E. [Raport K01](raporty/K01_koncepcja_konstrukcyjna_8_mocowan_i_bilans_gabarytu.md) · [Kod obliczeń](skrypty/k01_mocowanie_bilans.py) · [Dane](wyniki/k01_podsumowanie.json). **CNC HOLD.**
+
+### A10. K02 — weryfikacja montażu 20 wkładów objętości przy ośmiu wzmocnieniach
+
+**K02 weryfikuje rzeczywistą kolejność czynności w zastępczym modelu P30E**, a nie wprowadza kolejnych abstrakcyjnych badań. P30E zaczynał trasy modułów już za frontem. Nowa kontrola rozpoczyna je **przed kołowym otworem Ø355,8 mm**, sprawdza przejście przez front, dotychczas ustawione moduły i nowe wzmocnienia K01.
+
+![K02 — kompletność tras wkładów z wzmocnieniami 30 i 20 mm (symulacja, NIE CNC)](wyniki/k02_trasy_20_vs_30_moduly_NIE_CNC.svg)
+
+W pierwszym teście wzmocnienia **30 mm** blokowały wcześniejszą trasę modułu nr 8. Po dopuszczeniu ponownego planowania trasy zdołano wprowadzić 12/12 modułów dla ustawienia 120 l, lecz dla 100 l odtworzona kolejność nadal zatrzymywała się na **16/20**. **Wzmocnienia 20 mm przeszły 20/20, 12/12 i 1/1** we wszystkich odpowiednich próbach z luzami 3 i 6 mm, a 100 l także przy 5 mm. Inna kolejność montażu mogłaby ułatwić wariant 30 mm — nie udowodniono globalnej niemożliwości.
+
+Skrócenie klocków zmniejsza ich zastępczą wyporność z **0,225504 do 0,150336 l**, ale **nie poprawia cienkiego pasa drewna przy wkładce** i może ograniczać długość zakotwienia. Dlatego nie ma decyzji o rodzaju gwintu ani o zatwierdzeniu konstrukcji.
+
+[Pełny raport K02](raporty/K02_przejscie_20_modulow_obok_8_mocowan.md) · [Odtwarzalny Python](skrypty/k02_dostep_modulow_i_klocki.py) · [Makieta parametryczna OpenSCAD (100/120/150 l, 20/30 mm)](dokumentacja/K02_p30e_moduly_8_klockow_REFERENCYJNE_NIE_CNC.scad) · [Karta pomiarów i prób złączy](dokumentacja/K02_protokol_pomiarow_kosza_i_probek_zlacz.md). **Prace nadal przed budową, CNC HOLD.**
