@@ -72,9 +72,27 @@ Dla **końcowych lokalizacji** 20 modułów P30E i hipotetycznego pełnego obrys
 
 [Skrypt K04](../skrypty/k04_nakretki_i_przejscie_modulow.py) importuje **bez modyfikacji oryginalny planer K02** i ponawia przesiew dla konfiguracji z szerszą obwiednią zespołu. Dla bezpieczeństwa matematycznego wypełnia *całą* powierzchnię lokalnego klocka od Y44 do najbardziej wystającej części osprzętu; w przypadku stalowej płytki przyjmuje także promień wewnętrzny R=178,0, zamiast R178,9 dla samego MDF. Oznacza to **celowo zbyt duży wirtualny obiekt**.
 
-Skrypt definiuje **22 konfiguracyjne testy tras** (uruchomienie w GitHub Actions wymaga potwierdzenia zakończenia): po siedem wariantów dla krytycznego stanu **100 l / 20 modułów** przy 3 i 6 mm luzu, a także stan 120/150 l dla kontrolnego K02 i z nakrętką M6 przy dwóch marginesach. Każda próba ponownie rozpoczyna przejście modułu przed czołem obudowy z wymontowanym głośnikiem, a następnie wyszukuje translacyjną trasę z 20-modułowego planu P30E. **Wynik dodatni** dotyczy dokładnie tego zastępczego modelu, **wynik ujemny** nie dowodzi niewykonalności rzeczywistego złącza, które może mieć znacznie mniejszy obrys, być częściowo zagłębione albo wymagać innej kolejności montażu.
+Skrypt **wykonał wszystkie 22 scenariusze** w GitHub Actions K04, wraz z niezależnymi kontrolami geometrii nakrętki i bilansem końcowego położenia modułów. Każda próba prowadzi wkład od zewnętrznej strony frontu przy wyjętym głośniku; w ruchu dopuszcza wyłącznie translacje prostopadłe w uproszczonym modelu P30E/K02.
 
-Pełne wyniki poszczególnych korytarzy będą dostępne po pomyślnym uruchomieniu skryptu jako generowany JSON. Odsyłacz do [kodu generatora](../skrypty/k04_nakretki_i_przejscie_modulow.py) przez regresję K04 i archiwizowane jako artefakt GitHub Actions. Wartości konkretnych sekwencji należy sprawdzić w automatycznej regeneracji, nie przyjmować „20/20” dla rzeczywistego osprzętu bez walidacji.
+| Zastępczy zestaw z tyłu frontu | Całkowita głębokość [mm] | 100 l: 3 mm luzu | 100 l: 6 mm luzu |
+|---|---:|---:|---:|
+| Klocek bez osprzętu | 20 | **20/20** | **20/20** |
+| Klocek + płytka 2 mm | 22 | **20/20** | **16/20** |
+| Klocek + płytka 2 mm + podkładka M5 1 mm + nakrętka M5 4,7 mm | 27,7 | **16/20** | **16/20** |
+| Klocek + płytka 2 mm + nakrętka M6 5,2 mm (bez osobnej podkładki) | 27,2 | **16/20** | **16/20** |
+| Klocek + płytka 2 mm + podkładka M6 1,6 mm + nakrętka M6 5,2 mm | 28,8 | **16/20** | **16/20** |
+| Klocek + płytka 4 mm + podkładka M6 1,6 mm + nakrętka M6 5,2 mm | 30,8 | **16/20** | **16/20** |
+| Wcześniejszy klocek K01 bez osprzętu | 30 | **16/20** | **16/20** |
+
+**Zależność krytyczna:** sam klocek o 20 mm zapewniał w K02 trasy do wszystkich 20 modułów, ale kompletne hipotetyczne mocowanie M5/M6 ponownie zatrzymuje poszukiwanie ścieżki na **16/20**. Nawet płytka 2 mm jest w tym modelu wystarczająca, by przy wymaganym luzie 6 mm utracić pełną trasę. Nie dowodzi to, że w rzeczywistym montażu moduł 16 jest fizycznie niewkładalny. Algorytm używa celowo zawyżonego **całego prostokątnego pryzmatu** dla osprzętu; rzeczywisty kształt nakrętki, fazowanie, zagłębienie lub nowa kolejność mogą uwolnić przejście.
+
+Dla stanów **120 l / 12 modułów** oraz **150 l / 1 moduł** zarówno czysty klocek 20 mm, jak i hipotetyczna płytka2 + nakrętka M6 bez osobnej podkładki (27,2 mm) przechodzą **12/12 i 1/1** przy luzach 3 i 6 mm. Stanów tych nie sprawdzono w K04 z każdą możliwą podkładką, główką, zatrzaskiem i narzędziem.
+
+**Wynik uzupełniający ważny dla projektu:** osobny audyt końcowych pozycji potwierdził **0/20 kolizji statycznych**, przy modelowym luzie 6 mm, pomiędzy wzmocnieniami o głębokości 28,8 mm a docelowymi pozycjami modułów. Średniowieczne przeszkody pojawiają się więc **w trajektorii wstawiania**, a nie wynikają z niewłaściwego ostatecznego rozłożenia modułów. To kieruje następną iterację do projektowania *ścieżki przejścia* (rzeczywisty obrys, kolejność, obrót albo zagłębienie nakrętki), nie do zmiany całej objętości komory.
+
+**Wniosek:** nie zatwierdzać jeszcze konstrukcji N1. Dla 100 l trzeba najpierw znaleźć rzeczywistą, dostępną serwisowo konfigurację osprzętu i wykazać przejście wszystkich 20 wkładów z narzędziami. Pierwszą próbą powinna być sucha makieta 1:1 dla kosza i węzła z tylną nakrętką oraz dwie próbki MDF, a nie dalsze różniczkowanie hipotetycznych sztywności.
+
+[Skrypt](../skrypty/k04_nakretki_i_przejscie_modulow.py) · [zbiorcze dane K04](../wyniki/k04_podsumowanie.json) · [regresja z pełnym artefaktem 22 testów](../.github/workflows/k04-fastener-path-regression.yml).
 
 ## 5. Czy wykonanie złącza jest bezpieczne? Nie można tego jeszcze stwierdzić
 
