@@ -170,3 +170,5 @@ Historyczne identyfikatory P43/P44 w kodzie konstrukcyjnym są odrębne od akust
 - [B12-15 — hipotetyczny rozkład docisku pierścieniowego, 2916 scenariuszy i 100 niezależnych kontroli, część aneksu technicznego](B12-15_rozklad_nacisku_i_relaksacja_docisku.md).
 
 - [K01 — kandydat konstrukcyjny ośmiu lokalnych mocowań, bilans 100/120/150 l i pełne 500 mm, 480+48 obliczeń](K01_koncepcja_konstrukcyjna_8_mocowan_i_bilans_gabarytu.md).
+
+- [K02 — zintegrowane ścieżki 20 modułów P30E z ośmioma lokalnymi mocowaniami K01: porównanie 30 i 20 mm, sprawdzenie wejścia od zewnątrz](K02_przejscie_20_modulow_obok_8_mocowan.md).

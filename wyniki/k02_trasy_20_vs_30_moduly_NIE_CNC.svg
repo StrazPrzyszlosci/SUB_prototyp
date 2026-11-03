@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 485" role="img" aria-label="K02: porównanie dróg montażowych modułów przy lokalnych wzmocnieniach 20 i 30 mm; symulacja 3D NIE CNC">
+<rect width="1000" height="485" fill="#f8fafc"/>
+<text x="28" y="43" font-family="sans-serif" font-size="22" font-weight="bold" fill="#193647">K02 — które wzmocnienia umożliwiają montaż wkładów?</text>
+<text x="28" y="69" font-family="sans-serif" font-size="13" fill="#526b7c">Odtworzony układ P30E + 8 klocków K01. Otwór Ø355,8 mm, tylko translacje, badany luz 3–6 mm.</text>
+<rect x="22" y="96" width="956" height="335" rx="11" fill="white" stroke="#d5e1e8"/>
+<text x="44" y="138" font-family="sans-serif" font-size="15" font-weight="bold" fill="#193647">Stan docelowy</text>
+<text x="270" y="138" font-family="sans-serif" font-size="15" font-weight="bold" fill="#193647">Klocki 30 mm</text>
+<text x="644" y="138" font-family="sans-serif" font-size="15" font-weight="bold" fill="#193647">Klocki 20 mm</text>
+<text x="47" y="190" font-family="sans-serif" font-size="16" fill="#274354">100 l</text>
+<rect x="275" y="168" width="260" height="28" rx="5" fill="#e6edf0"/>
+<rect x="275" y="168" width="208" height="28" rx="5" fill="#b96d52"/>
+<text x="545" y="189" font-family="sans-serif" font-size="15" fill="#274354">16/20</text>
+<rect x="648" y="168" width="260" height="28" rx="5" fill="#e6edf0"/>
+<rect x="648" y="168" width="260" height="28" rx="5" fill="#3b8271"/>
+<text x="918" y="189" font-family="sans-serif" font-size="15" fill="#274354">20/20</text>
+<text x="47" y="273" font-family="sans-serif" font-size="16" fill="#274354">120 l</text>
+<rect x="275" y="251" width="260" height="28" rx="5" fill="#e6edf0"/>
+<rect x="275" y="251" width="260" height="28" rx="5" fill="#3b8271"/>
+<text x="545" y="272" font-family="sans-serif" font-size="15" fill="#274354">12/12</text>
+<rect x="648" y="251" width="260" height="28" rx="5" fill="#e6edf0"/>
+<rect x="648" y="251" width="260" height="28" rx="5" fill="#3b8271"/>
+<text x="918" y="272" font-family="sans-serif" font-size="15" fill="#274354">12/12</text>
+<text x="47" y="356" font-family="sans-serif" font-size="16" fill="#274354">150 l</text>
+<rect x="275" y="334" width="260" height="28" rx="5" fill="#e6edf0"/>
+<rect x="275" y="334" width="260" height="28" rx="5" fill="#3b8271"/>
+<text x="545" y="355" font-family="sans-serif" font-size="15" fill="#274354">1/1</text>
+<rect x="648" y="334" width="260" height="28" rx="5" fill="#e6edf0"/>
+<rect x="648" y="334" width="260" height="28" rx="5" fill="#3b8271"/>
+<text x="918" y="355" font-family="sans-serif" font-size="15" fill="#274354">1/1</text>
+<text x="42" y="415" font-family="sans-serif" font-size="12" fill="#7b4b3b">Przy 30 mm pierwotna kolejność 100 l traci zweryfikowaną trasę od modułu 16; inna sekwencja nie została wykluczona.</text>
+<text x="27" y="458" font-family="sans-serif" font-size="13" fill="#8e4c38">20 mm to kandydat geometryczny. Brak prawdziwego kosza 3D, śrub, wkładek, blokad i prób nośności MDF. NIE CNC.</text>
+</svg>
