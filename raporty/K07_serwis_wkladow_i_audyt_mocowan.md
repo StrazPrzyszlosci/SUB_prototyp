@@ -2,6 +2,26 @@
 
 **3 listopada 2026 · Audyt K01–K06, nowa symulacja kolejności obsługi.** Najbliższa decyzja dotyczy tylnego osprzętu głośnika. Przy samych klockach 20 mm model pozwala przejść przez trzy nastawy, pozostawiając wspólne wkłady na miejscu. Osprzęt zamontowany na stałe wymaga osobnej próby.
 
+## Audyt danych producenta — co JEST już zwymiarowane, a czego nie ma w karcie
+
+**Źródło pierwotne:** [Dayton Audio RSS390HF-4, arkusz producenta 295-468](https://www.daytonaudio.com/images/resources/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf) (ten sam rysunek: [kopia PDF w Parts Express](https://www.parts-express.com/pedocs/specs/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf)). **Dane nominalne producenta, nie pomiary wykonanego prototypu.**
+
+| Właściwość przetwornika | Wartość z rysunku | Status dla projektu |
+|---|---:|---|
+| Średnica zewnętrzna kołnierza | Ø388,4 mm | **DANA** |
+| Minimalny wymiar wycięcia pod kosz oznaczony na rysunku | Ø355,8 mm | **DANA** (otwór obudowy; tolerancja wykonania niepodana) |
+| Średnica okręgu osi ośmiu otworów (PCD) | Ø368 mm | **DANA** |
+| Liczba otworów i średnica **w kołnierzu głośnika** | 8 × Ø6,5 mm | **DANA**; to NIE otwory do wiercenia w MDF |
+| Grubość kołnierza | 10,5 mm | **DANA** |
+| Całkowita głębokość przetwornika | 178 mm | **DANA** |
+| Średnica zespołu napędowego/magnesu | Ø190 mm | **DANA** |
+
+Z tych danych otrzymujemy bez mierzenia głośnika: **6,1 mm** promieniowo od osi śruby do krawędzi wycięcia; **2,85 mm** nominalnego pasa drewna tylko w przypadku wykonania w MDF otworu **Ø6,5 mm** na tej samej osi; **10,2 mm** od osi śruby do zewnętrznej krawędzi kołnierza. Otwór pod rzeczywisty łącznik, gniazdo i wkładkę muszą być określone osobno; nie utożsamiamy ich z otworem w koszu. Producent nie podał tolerancji pozycji otworów, pełnego wymiarowego modelu trójwymiarowego żeber i zacisków, obrysu klucza ani konkretnego połączenia do MDF44.
+
+**Zewnętrzne przykłady, nie wytyczne fabryczne:** tabela wymiarów dystrybutora [Solen](https://www.solen.ca/en/driver-dimensions) wymienia **8×M6 na PCD 368 mm** jako wzorzec dopasowania; otwór **Ø6,5 nie nakazuje gwintu M6**. W [projekcie z tym samym głośnikiem w galerii Parts Express](https://projectgallery.parts-express.com/speaker-projects/dayton-subwoofers/) opisano mocowanie śrubami **1/4″-20 (Ø nominalne 6,35 mm)** z zestawu Parts Express 260-778 i nakrętkami pazurkowymi. Zestaw ma osiem śrub o długości gwintu **1½ cala = 38,1 mm** i osiem nakrętek typu T ([specyfikacja zestawu](https://3dmakerworld.com/products/parts-express-cast-frame-1-4-20-speaker-mounting-kit)). Takie śruby są **zbyt krótkie dla projektowanego frontu MDF44 mm nawet przed doliczeniem grubości kołnierza 10,5 mm i zazębienia w nakrętce**. Zestaw to **inspiracja montażowa, nie zweryfikowany osprzęt tego projektu**.
+
+**Konieczna korekta planu:** nie powtarzać od zera pomiarów danych nominalnych, które już istnieją w dokumentacji. Najpierw zakotwiczyć CAD/układ odniesienia do parametrów z powyższej tabeli. Jeśli potrzebne jest wykonanie lub sprawdzenie tolerancji rzeczywistej partii, kontrolować je dopiero na konkretnym egzemplarzu. Brakujące dane to **rzeczywisty obrys i sposób zakotwienia wybranego nośnika**, kształt żeber w pobliżu osi, rozmiar gniazda, dostęp i ruch klucza, miejsce na dłoń, niezawodność nakrętki, szczelność oraz siły niszczące. Badana w K04 obwiednia **28,8 mm za frontem jest hipotezą własnego mocowania M6, a nie wymiarem fabrycznego głośnika**. CNC HOLD.
+
 ## Co faktycznie sprawdzały poprzednie etapy
 
 - K01–K03. Osiem klocków musi jednocześnie zmieścić się obok kosza i przenieść siłę z kołnierza przez front na skrzynię. Odległość osi od wycięcia wynosi nominalnie 6,1 mm. Dla otworu w MDF o średnicy d pozostaje 6,1 − d/2 mm materiału po stronie wycięcia przed tolerancjami. Otwór w koszu, otwór przelotowy w MDF i gniazdo wkładki należy wymiarować oddzielnie. Sama szerokość pasa nie rozstrzyga o wytrzymałości.
@@ -27,7 +47,7 @@ W idealnym modelu sztywne bryły można wyjąć, odwracając znalezione ruchy w 
 
 | Kolejność | Wykonanie i zapis | Decyzja po próbie |
 |---|---|---|
-| 1. Pomiary geometrii | Zapisać rewizję kosza RSS390HF-4 i wspólną bazę pomiarową. Na wszystkich 8 osiach zmierzyć otwór kołnierza, położenie żeber i zacisków, odsadzenie kosza, wymiary nośnika i rzeczywistego narzędzia. Zapisać orientację, niepewność oraz zdjęcia ze skalą. | Wyznaczyć najmniejszy prześwit po odjęciu niepewności i tolerancji montażu. Brak dodatniego zapasu wymaga zmiany obrysu lub dodatkowego pomiaru. |
+| 1. Dokumentacja producenta i brakująca geometria osprzętu | Przyjąć z rysunku Daytona nominalnie Ø388,4 / Ø355,8 / PCD Ø368 / 8×Ø6,5 / kołnierz 10,5 / głębokość 178 mm. Bez zamawiania głośnika określić dwa konkretne warianty łącznika i potrzebne wymiary nośnika, gwintu, gniazda oraz narzędzia. Zidentyfikować niezwymiarowane żebra, terminale i tolerancje, które wymagają danych uzupełniających od producenta lub późniejszej kontroli egzemplarza. | Otrzymać model nominalny oparty na źródle; prześwity w miejscach niewymiarowanych pozostają przedziałami/nieznanymi, a nie zmyślonymi pomiarami. Nie używać hipotezy K04 28,8 mm jako wymiaru fabrycznego. |
 | 2. Makieta serwisowa 1:1 | Front 44 mm, klocki 20 mm, pozycje ścian i wręg, 20 wkładów z uchwytami i zamkami. Sprawdzić ID 16 przy 0°, potem operowanie przy 180°. Po ułożeniu wkładów zamontować osiem tylnych nośników, unieruchomić nakrętki i założyć kosz. | Zdjąć głośnik i wykonać pełen cykl 100 → 120 → 150 → 120 → 100 l od frontu. Zanotować każdą część wymagającą wyjęcia, dostęp narzędzia i obrót lub wypadnięcie nakrętki. Powtórzyć w obu przewidzianych orientacjach obudowy. |
 | 3. Próbki połączenia | Z tego samego MDF, drewna i kleju wykonać co najmniej trzy porównywalne próbki pilotażowe na wariant i warunek. Odwzorować odległość do wycięcia, układ włókien klocka i grubości. Porównać śrubę przelotową z osadzoną nakrętką oraz wkręt obsługiwany od frontu. Zmierzyć zależność siła–przemieszczenie, rodzaj uszkodzenia i utratę docisku po cyklach serwisowych. | Przed kwalifikacją ustalić obciążenie projektowe, wymagany docisk uszczelki i zapas. Rozrzut i tryb zniszczenia wyznaczają dalsze próby. Sama średnia z pilotażu nie wystarcza do ustalenia momentu dokręcania. |
 | 4. Zamknięcie geometrii | Dla rozwiązania, które przejdzie próby, zaktualizować trzy bilanse objętości o rzeczywiste wyporności. Zmierzyć pełną głębokość z osłoną, terminalem i przewodem w przewidzianej zabudowie. Na prototypie sprawdzić szczelność po ponownym montażu i grzechotanie wkładów. | Przed wydaniem wymiarów do wykonania potwierdzić serwis, nośność i całkowity gabaryt ≤500 mm. Wyniki szczelności i odsłuchu uzupełnić po budowie. |
