@@ -94,7 +94,7 @@ def check_state(label, indices, clearance, pads, pad_depth):
                           br+placed+[mat]+pad_boxes,half)
                 if alternative:
                     exact=sorted(set(h for a,b in zip(alternative,alternative[1:])
-                          for h in collision_with_pads(swept(a,b,half),pads)))
+                          for h in collision_with_pads(swept(a,b,half),pads,pad_depth)))
                     if not exact:
                         route=alternative
                         route_hits=[]
