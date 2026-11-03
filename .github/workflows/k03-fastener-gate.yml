@@ -50,7 +50,7 @@ jobs:
           assert gpos<nxt<annex
           assert nxt-gpos<2600
           assert s.index('### A11. K03')>annex
-          assert 'K03' in s[gpos:nxt] and 'Ø8' in s[gpos:nxt]
+          assert 'K03' in s[gpos:nxt] and '6,1 mm' in s[gpos:nxt]
           print('K03 PASS: source radial geometry, 162 cases, independent bounds, guide integrity')
           PY
       - name: Archive generated research matrix (not physical measurements)
