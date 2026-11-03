@@ -1,0 +1,70 @@
+name: K04 - physical fastener envelope and real module-path obstruction
+on:
+  pull_request:
+    paths:
+      - "skrypty/k04_nakretki_i_przejscie_modulow.py"
+      - "wyniki/k04_*"
+      - "raporty/K04_*"
+      - "README.md"
+      - ".github/workflows/k04-fastener-path-regression.yml"
+  push:
+    branches: [main]
+    paths:
+      - "skrypty/k04_nakretki_i_przejscie_modulow.py"
+      - "wyniki/k04_*"
+      - "README.md"
+      - ".github/workflows/k04-fastener-path-regression.yml"
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    permissions: {contents: read}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install the required P30E/K02 route-planner dependency
+        run: python3 -m pip install 'numpy>=1.24,<3'
+      - name: Recompute K04 hardware dimensions and 22 K02 path tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 skrypty/k04_nakretki_i_przejscie_modulow.py | tee /tmp/k04.log
+      - name: Independent source formula and proof integrity audit
+        run: |
+          python3 - <<'PY'
+          import math,json
+          x=json.load(open('wyniki/k04_manifest_odtworzony.json',encoding='utf8'))['summary']
+          assert x['ideal_hex_cases']==42
+          assert x['route_checks']==22
+          assert x['radial_distance_axis_to_K02_pad_inner_mm']==5.1
+          assert x['radial_distance_axis_to_cutout_mm']==6.1
+          for z,af in x['ideal_hex_nut_size_by_flats_mm'].items():
+              h=x['nominal_hex_0deg_vs30deg']
+              corner=next(v for v in h if v['size']==z and v['orientation_deg']==0)
+              flat=next(v for v in h if v['size']==z and v['orientation_deg']==30)
+              assert abs(corner['inward_projection_mm']-af/math.sqrt(3))<1e-5
+              assert abs(flat['inward_projection_mm']-af/2)<1e-5
+          assert all(a['modules_completed']==20 for a in x['module_path_results']
+                     if a['case']=='C20_no_fastener' and a['state']=='100L')
+          assert x['metal_spreader_conditional_hypothesis']['nominal_gap_from_spreader_inner_edge_to_cutout_mm']==.1
+          ref=json.load(open('wyniki/k04_podsumowanie.json',encoding='utf8'))['assembly_research']['verified_from_actions']
+          for state,expected in (("100L",ref['completions_100L_by_clearance_3_6']),
+                                 ("120L",ref['completions_120L_3_6']),
+                                 ("150L",ref['completions_150L_3_6'])):
+              for name,want in expected.items():
+                  actual=[next(v['modules_completed'] for v in x['module_path_results']
+                               if v['state']==state and v['case']==name and v['assumed_clearance_mm']==c)
+                          for c in (3.,6.)]
+                  assert actual==want,(state,name,actual,want)
+          z=x['static_positions_final_100L_check']
+          assert z['collisions_with_fastener_full_pad_prism']==ref['static_final_module_positions_100L']['collisions']==0
+          assert z['modules_in_final_100L_positions']==ref['static_final_module_positions_100L']['module_count']==20
+          print('K04 nominal fastener geometry, 22 envelope cases and published summary PASS')
+          PY
+      - name: Archive detailed routes and nut geometries, not physical measurements
+        uses: actions/upload-artifact@v4
+        with:
+          name: k04-hardware-envelope-and-p30e-routes
+          path: |
+            wyniki/k04_pelne_analizy_geometryczne.json
+            wyniki/k04_manifest_odtworzony.json
+          retention-days: 14
