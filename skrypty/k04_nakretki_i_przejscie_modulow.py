@@ -132,8 +132,41 @@ def passage():
     assert len(configs)==22
     return configs
 
+def installed_module_static_check():
+    """Independent of route planner: all FINAL box positions after inserting 20.
+    This says nothing about the swept entry corridor, tools or real fasteners.
+    """
+    L,br,mods,mat=k02.e.build(k02.SELECTED)
+    assert len(mods)==20
+    pads=[[(x-22,z-22) for x,z in k01.polygon(231,45*i,178.0,205.,36.)]
+          for i in range(8)]
+    clearance=6.
+    failures=[i for i,m in enumerate(mods) if k02.collision_with_pads(
+       k02.p.box(m[0]-clearance,m[1]+clearance),pads,28.8)]
+    assert not failures,failures
+    # Independent axial/normal bounding separation witnesses:
+    # large modules (indices 4-19) are at x >= 469.5 mm; pad <= 414 mm.
+    # small modules (indices 0-3) are at y >= 203 mm; hardware <=28.8 mm.
+    min_big_x=min(float(m[0,0]) for m in mods[4:])
+    min_small_y=min(float(m[0,1]) for m in mods[:4])
+    assert abs(min_big_x-469.5)<1e-6
+    assert abs(min_small_y-203.)<1e-6
+    assert abs((min_big_x-6)-(209+205)-49.5)<1e-6
+    assert abs((min_small_y-6)-28.8-168.2)<1e-6
+    return {"modules_in_final_100L_positions":20,
+      "model_clearance_mm":6.,
+      "collisions_with_fastener_full_pad_prism":0,
+      "lowest_large_module_x_mm":min_big_x,
+      "highest_pad_x_mm":414.,
+      "lowest_small_module_y_mm":min_small_y,
+      "highest_fastener_y_mm":28.8,
+      "minimum_axis_box_gap_large_modules_with_6mm_mm":49.5,
+      "minimum_axis_box_gap_small_modules_with_6mm_mm":168.2,
+      "interpretation":"STATIC TARGET ONLY, NOT MODULE INSERTION OR REAL TOOL ACCESS"}
+
 def main():
     rows,washers,spreader=geometry()
+    static=installed_module_static_check()
     passage_tests=passage()
     summary={
        "study":"K04","date":"2026-11-03",
@@ -149,6 +182,7 @@ def main():
        "nominal_hex_0deg_vs30deg":[x for x in rows if x["radial_uncertainty_mm"]==0 and x["orientation_deg"] in (0,30)],
        "washer_budgets":washers,
        "metal_spreader_conditional_hypothesis":spreader,
+       "static_positions_final_100L_check":static,
        "route_checks":len(passage_tests),
        "module_path_results":passage_tests,
        "hard_constraints":[
