@@ -1,0 +1,104 @@
+{
+  "study": "K02",
+  "date": "2026-11-03",
+  "evidence": "numerical translation-only assembly in surrogate P30E/K01 geometry; NOT physical CAD/CNC",
+  "source_scripts": [
+    "skrypty/p30a_robust_geometry.py",
+    "skrypty/p30e_mat50_geometria_montaz.py",
+    "skrypty/k01_mocowanie_bilans.py",
+    "skrypty/k02_dostep_modulow_i_klocki.py"
+  ],
+  "actual_manufacturer": "https://www.daytonaudio.com/images/resources/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf",
+  "known_dimensions_mm": {
+    "front_wood_thickness": 44,
+    "driver_cutout_d": 355.8,
+    "bolt_circle_d": 368,
+    "outer_flange_d": 388.4
+  },
+  "tests": {
+    "cases": 14,
+    "success": 11,
+    "success_20mm": 7,
+    "fail_30mm": 3,
+    "verified_module_entries": 160,
+    "clearances_mm": [
+      3,
+      5,
+      6
+    ],
+    "radius_entry_margin_mm_at6": 53.5738,
+    "module_counts_by_volume_L": {
+      "100": 20,
+      "120": 12,
+      "150": 1
+    }
+  },
+  "paths": {
+    "30mm_100L": {
+      "completed": 16,
+      "required": 20,
+      "blocking_model_module": 16,
+      "original_route_earlier_hit_module": 8,
+      "other_orders_unstudied": true
+    },
+    "30mm_120L": {
+      "completed": 12,
+      "required": 12,
+      "reroutes": 4
+    },
+    "30mm_150L": {
+      "completed": 1,
+      "required": 1
+    },
+    "20mm_100L": {
+      "completed": 20,
+      "required": 20,
+      "reroutes": 1
+    },
+    "20mm_120L": {
+      "completed": 12,
+      "required": 12,
+      "reroutes": 0
+    },
+    "20mm_150L": {
+      "completed": 1,
+      "required": 1,
+      "reroutes": 0
+    }
+  },
+  "mechanics": {
+    "pad_base_radial_length_mm": 26.1,
+    "pad_tangential_width_mm": 36,
+    "pad_inner_radius_mm": 178.9,
+    "driver_axis_x_mm": 231,
+    "driver_axis_z_mm": 250,
+    "pads": 8,
+    "pad_depth_old_mm": 30,
+    "pad_depth_recommended_for_physical_validation_mm": 20,
+    "total_pad_displacement_L_30mm": 0.225504,
+    "total_pad_displacement_L_20mm": 0.150336,
+    "volume_relief_L": 0.075168,
+    "available_leftwall_gap_mm_surrogate": 4,
+    "diameter_8mm_insert_wood_web_mm": 1.1,
+    "insert_strength_verified": false
+  },
+  "constraints": [
+    "The 20mm pad geometry is only a candidate, not approved fastener system; shorter thread engagement may make it unacceptable.",
+    "Manufacturer does not provide full 3D basket, rib, terminal, cable and tool volumes in cited datasheet.",
+    "New route solver checks exterior ingress with driver removed plus conservative pad AABB detours; axes-only translation, not arbitrary rotations.",
+    "Real latches, handles and fastening of 20 modules not modeled.",
+    "Never claim 30mm impossible: different insertion order or redesign can pass.",
+    "No physical MDF/adhesive tests or screw torque; CNC HOLD."
+  ],
+  "artifacts": {
+    "report": "raporty/K02_przejscie_20_modulow_obok_8_mocowan.md",
+    "drawing": "wyniki/k02_trasy_20_vs_30_moduly_NIE_CNC.svg",
+    "openSCAD": "dokumentacja/K02_p30e_moduly_8_klockow_REFERENCYJNE_NIE_CNC.scad",
+    "coupon_protocol": "dokumentacja/K02_protokol_pomiarow_kosza_i_probek_zlacz.md"
+  },
+  "approval": {
+    "CNC": "HOLD",
+    "prototype": "not built",
+    "metrology": "not performed"
+  }
+}
