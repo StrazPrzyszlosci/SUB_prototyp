@@ -1,0 +1,121 @@
+{
+  "study": "K01",
+  "date": "2026-11-03",
+  "type": "construction-facing conditional envelope evidence, NOT driver CAD, strength test or CNC",
+  "sources": {
+    "manufacturer": "https://www.daytonaudio.com/images/resources/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf",
+    "existing_cabinet_model": "dokumentacja/P39C_front_korpus_pierscien_REFERENCYJNY_NIE_CNC.scad",
+    "existing_volume": "raporty/078_P30E_mata50_montaz_robustnosc.md"
+  },
+  "actual_catalog_dimensions_mm": {
+    "flange_d": 388.4,
+    "cutout_d": 355.8,
+    "pcd": 368,
+    "flange_thickness": 10.5,
+    "driver_depth": 178
+  },
+  "design_references_mm": {
+    "W": 1020,
+    "D": 425,
+    "H": 500,
+    "front": 44,
+    "sides": 22,
+    "driver_axis_x": 231,
+    "driver_axis_z": 250,
+    "first_brace_starts_x": 448
+  },
+  "geometry_screen": {
+    "cases": 480,
+    "pass_at_margin_mm": {
+      "0": 108,
+      "2": 108,
+      "4": 84,
+      "6": 72
+    },
+    "pass_x231_at_2mm": 48,
+    "pass_x235_at_2mm": 60,
+    "pass_by_outer_radius_at_2mm": {
+      "200": 24,
+      "203": 24,
+      "205": 24,
+      "207": 24,
+      "211": 12
+    },
+    "independently_checked": "Shapely 2.1.2 exact polygon vs inflated rectangle: 480/480 configurations agree with own SAT"
+  },
+  "conditional_witness": {
+    "eight_pads": true,
+    "cx": 231,
+    "cz": 250,
+    "inner_radius_mm": 178.9,
+    "outer_radius_mm": 205,
+    "width_tangential_mm": 36,
+    "depth_from_y44_mm": 30,
+    "pad_radial_length_mm": 26.1,
+    "measured_in_surrogate_left_clearance_mm": 4,
+    "assumed_required_clearance_mm": 2,
+    "contact_inner_to_cutout_min_mm": 1,
+    "collision_free_vs_P39C": true,
+    "pad_displacement_L_total": 0.225504,
+    "does_not_prove_real_basket_clearance": true,
+    "does_not_prove_joint_strength": true
+  },
+  "hypothetical_insert_screens": [
+    {
+      "outer_d_mm": 6,
+      "inner_radial_wood_web_mm": 2.1,
+      "pass_hypothetical_min2mm": true
+    },
+    {
+      "outer_d_mm": 8,
+      "inner_radial_wood_web_mm": 1.1,
+      "pass_hypothetical_min2mm": false
+    },
+    {
+      "outer_d_mm": 10,
+      "inner_radial_wood_web_mm": 0.1,
+      "pass_hypothetical_min2mm": false
+    }
+  ],
+  "net_volumes": {
+    "P30E_existing_nominal_L": [
+      100.12,
+      119.92,
+      150.16
+    ],
+    "if_new_pads_not_previously_included_L": [
+      99.8945,
+      119.6945,
+      149.9345
+    ],
+    "ring_P39C_displacement_L": 0.104502,
+    "net_difference_if_ring_replaced_with_pads_L": 0.121002,
+    "warning": "Do not double-count ring and pads; P30E and P39C are not a unified BOM"
+  },
+  "external_depth_screen": {
+    "cases": 48,
+    "positive_margin_cases": 26,
+    "reference": {
+      "cabinet_depth_mm": 425,
+      "assumed_grille_projection_mm": 36,
+      "assumed_rear_terminal_projection_mm": 20,
+      "total_mm": 481,
+      "margin_to_500_mm": 19
+    },
+    "warning": "Grille, terminal and stack allowances are scenarios, not manufacturer measurements"
+  },
+  "remaining_decisions": [
+    "Dimension real 3D basket ribs, terminal, gasket and rear clearance at y=44..74 mm",
+    "Choose actual insert, bolt head, pilot and screw thread, then test MDF and glue tensile/shear/peel strength",
+    "Verify assembly sequencing, including 20 P30E volume modules after adding pads and tool swept volumes",
+    "Ensure whole device including front grille rear terminal tolerances remains under 500mm",
+    "Reconcile P30E net volumes with final exact solid BOM, no double counting",
+    "Compare serviceable local pads to full frame A with proven load paths rather than global stiffness proxy"
+  ],
+  "approval": {
+    "geometry_research": "conditional witness",
+    "CNC": "HOLD",
+    "physical_prototype": "NOT BUILT",
+    "purchase": "NO"
+  }
+}

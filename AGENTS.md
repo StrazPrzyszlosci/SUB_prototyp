@@ -1718,3 +1718,11 @@ z pełnym testem nośności, nie uznawać żadnego za sprawdzony.
 - Przeniesiono siedem sekcji szczegółowych o mocowaniach B12-09–14, wraz z linkami, schematami i atrybucją inspiracji z forów, z głównego przewodnika README do aneksu na jego końcu. W głównej ścieżce pozostał krótki krok konstrukcyjny. B12-15 umieszczono wyłącznie w aneksie; raport zawiera pełną metodologię.
 - Kod skrypty/b12_15_nacisk_rozproszony.py; wyniki wyniki/b12_15_podsumowanie.json; raport raporty/B12-15_rozklad_nacisku_i_relaksacja_docisku.md; wykres wyniki/b12_15_relaksacja_nacisku_NIE_CNC.svg.
 - Następny KROK KONSTRUKCYJNY, nie bezcelowa seria B12-16: pomiar rzeczywistego kosza i nośności połączeń, a następnie konkretny wybór lokalnych klocków lub ramy, uszczelnienia i pełnej geometrii obudowy. Nadal CNC HOLD.
+
+## 2026-11-03 — K01: rzeczywisty postęp konstrukcyjny, nie kolejne abstrakcyjne doprecyzowanie
+
+- Wykonano konstrukcyjny przesiew 480 wariantów ośmiu lokalnych wzmocnień względem zastępczej bryły P39C oraz 48 scenariuszy pełnej głębokości urządzenia. Niezależna kontrola Shapely 2.1.2 potwierdziła zgodność przecięć 480/480 z SAT. Kod w skrypty/k01_mocowanie_bilans.py, raport w raporty/K01_koncepcja_konstrukcyjna_8_mocowan_i_bilans_gabarytu.md.
+- Wariant do WERYFIKACJI: zachowujemy oś C02 X=231, Z=250 mm; osiem brył R_i178,9/R_o205, szerokość36, grubość30 mm za stałym frontem 44 mm; 4 mm odstępu do lewej ściany, modelowo bez kolizji przy wymaganym 2-mm marginesie. W rzeczywistości niezweryfikowane pozostają żebra i zaciski kosza oraz nośność MDF, spoin, wkładek i dróg montażowych.
+- Dodatkowa modelowa wyporność tych ośmiu klocków 0,225504 l, o ile nie była ujęta w P30E; nie wolno jednocześnie liczyć zastępczego pierścienia P39C i wybranej alternatywy. Dla umownych projekcji 36+20 mm i D=425 suma 481 mm, 19 mm do limitu 500; 26/48 scenariuszy całego obrysu mają dodatni margines.
+- README: w głównym podręczniku wyłącznie krótki wynik decyzyjny; pełne obliczenia i dwa autorskie szkice w aneksie A9, bez rozwadniania kolejności prowadzącej do konstrukcji.
+- Następny etap: konkretny złącze do fizycznej próbki i rzeczywisty pomiar/STEP kosza oraz terminali, potem ponowna weryfikacja przejścia 20 wkładów P30E z narzędziami, nośność i kompletna głębokość. Nie generować kolejnych badań hipotetycznych sprężyn bez nowych danych. CNC HOLD, brak zakupów.

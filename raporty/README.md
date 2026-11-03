@@ -168,3 +168,5 @@ Historyczne identyfikatory P43/P44 w kodzie konstrukcyjnym są odrębne od akust
 - [B12-14 — rozdzielenie rozciągania śrub i jednostronnego kontaktu kołnierza, 1152 stanów + 4608 testów tarcia](B12-14_jednostronny_kontakt_docisk_tarcie_8_mocowan.md).
 
 - [B12-15 — hipotetyczny rozkład docisku pierścieniowego, 2916 scenariuszy i 100 niezależnych kontroli, część aneksu technicznego](B12-15_rozklad_nacisku_i_relaksacja_docisku.md).
+
+- [K01 — kandydat konstrukcyjny ośmiu lokalnych mocowań, bilans 100/120/150 l i pełne 500 mm, 480+48 obliczeń](K01_koncepcja_konstrukcyjna_8_mocowan_i_bilans_gabarytu.md).
