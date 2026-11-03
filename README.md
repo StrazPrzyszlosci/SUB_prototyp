@@ -114,7 +114,7 @@ W badanej geometrii Dayton RSS390HF-4 wycięcie **Ø355,8 mm**, okrąg śrub **�
 
 **Łącznik (K03–K04):** oś śruby znajduje się tylko **6,1 mm** od wycięcia. Nominalna nakrętka i podkładka M6 mogą wystawać poza drewniany klocek; wraz z płytką hipotetyczny osprzęt ma **28,8 mm** głębokości za frontem. Po uwzględnieniu jego celowo powiększonej obwiedni planer K04 wprowadza **16 kolejnych modułów**, zatrzymuje się na siedemnastym (ID 16) i kończy próbę. Wszystkie 20 pozycji końcowych pozostaje niekolidujących — problem dotyczy *drogi wkładania*, nie miejsca docelowego. Nie dowodzi to niemożliwości montażu rzeczywistych części. [Raport K04](raporty/K04_pelne_gabaryty_nakretki_podkladki_i_montaz_20_modulow.md).
 
-**Serwis K05–K07:** przy samych klockach planowana regulacja **150 → 120 → 100 l** jest dostępna w modelu. Przy zastępczym pełnym mocowaniu **28,8 mm** planer zatrzymuje się przed 100 l (wkład ID16). W K06 sondy osiągają **8/8 osi śrub**, ale **nie dowodzi to dostępu klucza**. [K05](raporty/K05_etapowanie_20_modulow_i_dostep_do_mocowan.md) · [K06](raporty/K06_dostep_do_8_mocowan_po_20_wkladach.md) · [K07](raporty/K07_serwis_wkladow_i_audyt_mocowan.md). **CNC HOLD.**
+**Serwis K05–K07:** przy samych klockach planowana regulacja **150 → 120 → 100 l** jest dostępna w modelu. Przy zastępczym pełnym mocowaniu **28,8 mm** planer zatrzymuje się przed 100 l (wkład ID16). W K06 sondy osiągają **8/8 osi śrub**, ale **nie dowodzi to dostępu klucza**. [Raport K05](raporty/K05_etapowanie_20_modulow_i_dostep_do_mocowan.md) · [K06](raporty/K06_dostep_do_8_mocowan_po_20_wkladach.md) · [K07](raporty/K07_serwis_wkladow_i_audyt_mocowan.md). **CNC HOLD.**
 
 ### 5. Co oznaczają wykresy DSP i temperatury?
 
