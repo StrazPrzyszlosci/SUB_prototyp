@@ -57,21 +57,21 @@
         "nominal_bounding_radius_mm": 5,
         "maximum_center_radius_during_straight_front_ingress_mm": 172.9,
         "necessary_radial_repositioning_for_bolt_circle_mm": 11.1,
-        "note": "2D necessary condition for an ideal perpendicular entry; not a collision-free 3D route"
+        "note": "Necessary 2D radial repositioning for a circular disk entering perpendicular to the front, no tilt; NOT a collision-free 3D route"
       },
       {
         "part": "podkladka_M6_OD12",
         "nominal_bounding_radius_mm": 6,
         "maximum_center_radius_during_straight_front_ingress_mm": 171.9,
         "necessary_radial_repositioning_for_bolt_circle_mm": 12.1,
-        "note": "2D necessary condition for an ideal perpendicular entry; not a collision-free 3D route"
+        "note": "Necessary 2D radial repositioning for a circular disk entering perpendicular to the front, no tilt; NOT a collision-free 3D route"
       },
       {
         "part": "idealny_naroznik_nakretki_M6_AF10",
         "nominal_bounding_radius_mm": 5.7735,
         "maximum_center_radius_during_straight_front_ingress_mm": 172.1265,
         "necessary_radial_repositioning_for_bolt_circle_mm": 11.8735,
-        "note": "2D necessary condition for an ideal perpendicular entry; not a collision-free 3D route"
+        "note": "Conservative circumscribed-circle sufficiency bound for ideal hex; NOT a necessary hexagon minimum"
       }
     ],
     "note": "Does not establish any real 3D route or tool reach for a washer, nut, or clamping plate"
