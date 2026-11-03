@@ -96,7 +96,7 @@ W badanej geometrii Dayton RSS390HF-4 wycięcie **Ø355,8 mm**, okrąg śrub **�
 
 ![Front Dayton — średnice, wycięcie, osiem otworów; szkic badawczy](wyniki/p38a_front_NIE_CNC.svg)
 
-*Co trzeba zrobić? Zmierzyć dokładny kosz, terminale i przestrzeń na wkrętak, zaprojektować rzeczywiste połączenia i sprawdzić ich nośność na docelowym MDF. [Raport 096](raporty/096_P38A_front_Dayton_otwory_i_mocowania.md) · [Raport 108](raporty/108_P42C_laczniki_i_koncepcje_3D.md).*
+*Co trzeba zrobić?* **Nie trzeba ponownie ustalać fabrycznych wymiarów:** rysunek Daytona podaje także kołnierz **10,5 mm**, głębokość **178 mm** i otwory w koszu **8 × Ø6,5 mm**. Dopiero niezwymiarowane żebra, terminale, wybrany łącznik, gniazdo MDF i dostęp narzędzi wymagają doprecyzowania; do CNC konieczna będzie kontrola tolerancji i nośności. [Arkusz producenta](https://www.daytonaudio.com/images/resources/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf) · [Weryfikacja źródeł w K07](raporty/K07_serwis_wkladow_i_audyt_mocowan.md). [Raport 096](raporty/096_P38A_front_Dayton_otwory_i_mocowania.md) · [Raport 108](raporty/108_P42C_laczniki_i_koncepcje_3D.md).
 
 ### 4a. Jak przejść od kosza do rzeczywistego mocowania?
 
