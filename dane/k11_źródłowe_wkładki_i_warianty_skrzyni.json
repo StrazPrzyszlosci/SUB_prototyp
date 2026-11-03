@@ -1,0 +1,185 @@
+{
+  "study": "K11",
+  "date": "2026-11-03",
+  "status": "SOURCE-BOUND GEOMETRY SCREEN, NOT QUALIFIED FASTENER OR MDF JOINT",
+  "sources": {
+    "dayton": "https://www.daytonaudio.com/images/resources/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf",
+    "rampa_SKD30_MDF": "https://www.rampa.com/media/e2/ed/d4/1699524202/RAMPA_Produktdatenblatt_MDF-EN.pdf",
+    "fastenright_Type_D": "https://www.fastenright.com/general-fixings/insert-nuts-for-wood-type-d/ff13",
+    "existing_P40": "raporty/101_P40A_reakcje_8_mocowan.md",
+    "existing_K01": "skrypty/k01_mocowanie_bilans.py",
+    "existing_K10": "dane/k10_rejestr_materialow_czesci_obudowy.json"
+  },
+  "geometry": {
+    "outer_mm": [
+      1020,
+      425,
+      500
+    ],
+    "front_mm": 44,
+    "original_wall_mm": 22,
+    "driver_flange_d_mm": 388.4,
+    "driver_cutout_d_mm": 355.8,
+    "driver_mount_pcd_d_mm": 368,
+    "mount_axis_radius_mm": 184,
+    "pad_radial_inner_mm": 178.9,
+    "pad_radial_outer_mm": 205,
+    "pad_tangential_width_mm": 36,
+    "pad_depth_mm": 20,
+    "user_defined_screen_radial_ligament_mm": 2,
+    "disclaimer": "The 2mm minimum ligament is only an exploratory screening criterion, NOT a code minimum or proven safe."
+  },
+  "insert_catalog_examples": [
+    {
+      "id": "RAMPA_SKD30_M4_12",
+      "manufacturer": "RAMPA",
+      "sku": "439412001",
+      "internal_thread": "M4",
+      "outer_diameter_mm": 8,
+      "length_mm": 12,
+      "predrill_mm": 6.5,
+      "source": "rampa_SKD30_MDF",
+      "manufacturer_tested_board_mm": 16,
+      "manufacturer_assembly_torque_Nm": 3.2,
+      "notice": "Manufacturer torque is for INSERT INSTALLATION into specified MDF, NOT torque for speaker mounting screw or 20mm solid wood block."
+    },
+    {
+      "id": "RAMPA_SKD30_M5_12",
+      "manufacturer": "RAMPA",
+      "sku": "439512001",
+      "internal_thread": "M5",
+      "outer_diameter_mm": 10,
+      "length_mm": 12,
+      "predrill_mm": 9,
+      "source": "rampa_SKD30_MDF",
+      "manufacturer_tested_board_mm": 16,
+      "manufacturer_assembly_torque_Nm": 3.2,
+      "notice": "Manufacturer torque is for INSERT INSTALLATION into specified MDF, NOT torque for speaker mounting screw or 20mm solid wood block."
+    },
+    {
+      "id": "RAMPA_SKD30_M6_12",
+      "manufacturer": "RAMPA",
+      "sku": "439612001",
+      "internal_thread": "M6",
+      "outer_diameter_mm": 12,
+      "length_mm": 12,
+      "predrill_mm": 10,
+      "source": "rampa_SKD30_MDF",
+      "manufacturer_tested_board_mm": 16,
+      "manufacturer_assembly_torque_Nm": 6.5,
+      "notice": "Manufacturer torque is for INSERT INSTALLATION into specified MDF, NOT torque for speaker mounting screw or 20mm solid wood block."
+    },
+    {
+      "id": "RAMPA_SKD30_M6_15",
+      "manufacturer": "RAMPA",
+      "sku": "439615001",
+      "internal_thread": "M6",
+      "outer_diameter_mm": 12,
+      "length_mm": 15,
+      "predrill_mm": 10,
+      "source": "rampa_SKD30_MDF",
+      "manufacturer_tested_board_mm": 19,
+      "manufacturer_assembly_torque_Nm": 7.5,
+      "notice": "Manufacturer torque is for INSERT INSTALLATION into specified MDF, NOT torque for speaker mounting screw or 20mm solid wood block."
+    },
+    {
+      "id": "FASTENRIGHT_TYPE_D_M5_13",
+      "manufacturer": "Fastenright",
+      "sku": "FF13",
+      "internal_thread": "M5",
+      "outer_diameter_mm": 10.5,
+      "length_mm": 13,
+      "predrill_range_mm": [
+        7.5,
+        7.9
+      ],
+      "source": "fastenright_Type_D",
+      "manufacturer_tested_board_mm": null,
+      "notice": "Type D wood-body nominal D1 as catalog, flange/drive may require larger clearance; not a verified 3D installed envelope or tested MDF tensile load."
+    },
+    {
+      "id": "FASTENRIGHT_TYPE_D_M6_16",
+      "manufacturer": "Fastenright",
+      "sku": "FF13",
+      "internal_thread": "M6",
+      "outer_diameter_mm": 12.5,
+      "length_mm": 16,
+      "predrill_range_mm": [
+        8.7,
+        9.1
+      ],
+      "source": "fastenright_Type_D",
+      "manufacturer_tested_board_mm": null,
+      "notice": "Type D wood-body nominal D1 as catalog, flange/drive may require larger clearance; not a verified 3D installed envelope or tested MDF tensile load."
+    }
+  ],
+  "independent_pad_variants": [
+    {
+      "id": "K01_baseline",
+      "ri_mm": 178.9,
+      "ro_mm": 205,
+      "tangent_mm": 36,
+      "depth_mm": 20
+    },
+    {
+      "id": "wider_tangential_48",
+      "ri_mm": 178.9,
+      "ro_mm": 205,
+      "tangent_mm": 48,
+      "depth_mm": 20
+    },
+    {
+      "id": "extend_radially_outward",
+      "ri_mm": 178.9,
+      "ro_mm": 211,
+      "tangent_mm": 36,
+      "depth_mm": 20
+    },
+    {
+      "id": "tight_0_1mm_cutout_gap",
+      "ri_mm": 178,
+      "ro_mm": 205,
+      "tangent_mm": 36,
+      "depth_mm": 20
+    },
+    {
+      "id": "depth_30_K02_path_risk",
+      "ri_mm": 178.9,
+      "ro_mm": 205,
+      "tangent_mm": 36,
+      "depth_mm": 30
+    }
+  ],
+  "wall_scenarios": [
+    {
+      "id": "MDF22",
+      "thickness_mm": 22,
+      "rho_kg_m3": 730,
+      "E_bending_GPa": 2.1,
+      "nu_screen": 0.3,
+      "description": "P30E baseline MDF; density as model assumption, not measured"
+    },
+    {
+      "id": "MDF25",
+      "thickness_mm": 25,
+      "rho_kg_m3": 730,
+      "E_bending_GPa": 2.1,
+      "nu_screen": 0.3,
+      "description": "EGGER 19–30 mm bending modulus, density P30E assumption; braces remain MDF22 for separation"
+    },
+    {
+      "id": "WISA_BIRCH21_DIRECTIONAL_SCREEN",
+      "thickness_mm": 21,
+      "rho_kg_m3": 680.952380952381,
+      "E_bending_GPa": null,
+      "nu_screen": null,
+      "description": "WISA Birch 21mm areal mass 14.3kg/m2; no 2D orthotropic plate result, only gross wall mass and volume"
+    }
+  ],
+  "load_screen": {
+    "one_mount_reference_force_N": 151,
+    "lever_for_hypothetical_bond_rotation_mm": 20,
+    "reason": "P40A 15kg 5g 120mm side-load proxy reports 151N at one bolt. Here apply this force hypothetically to full pad face: not actual joint tractions.",
+    "no_strength_allowables": true
+  }
+}
