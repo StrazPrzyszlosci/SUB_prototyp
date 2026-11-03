@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 385" role="img" aria-label="K01 depth budget including front grille and rear terminal, comparison 481 to 500 mm limit">
+<rect width="1080" height="385" fill="#f8fafc"/>
+<text x="28" y="36" font-family="sans-serif" font-size="22" font-weight="bold" fill="#20394c">K01 — głębokość całego urządzenia, nie samej skrzyni</text>
+<text x="28" y="62" font-family="sans-serif" font-size="13" fill="#546f7d">Założenia przykładowe P30E: korpus 425 mm + osłona 36 mm + terminal tylny 20 mm = 481 mm.</text>
+<rect x="38" y="109" width="994" height="152" rx="12" fill="#fff" stroke="#cfdce4"/>
+<rect x="68" y="138" width="64.8" height="80" fill="#5a8f9b" stroke="#2c677c" stroke-width="2"/>
+<rect x="132.8" y="138" width="765" height="80" fill="#d6bd97" stroke="#95744a" stroke-width="2"/>
+<rect x="897.8000000000001" y="138" width="36" height="80" fill="#bd8062" stroke="#915f45" stroke-width="2"/>
+<line x1="968" x2="968" y1="99" y2="261" stroke="#ba4b42" stroke-width="3" stroke-dasharray="7 5"/>
+<text x="940" y="91" font-family="sans-serif" font-size="13" fill="#a64133">LIMIT 500 mm</text>
+<text x="65" y="277" font-family="sans-serif" font-size="12" fill="#516b77">Osłona 36 mm</text>
+<text x="441" y="277" font-family="sans-serif" font-size="12" fill="#516b77">Korpus 425 mm</text>
+<text x="850" y="277" font-family="sans-serif" font-size="12" fill="#516b77">Złącze 20 mm</text>
+<text x="29" y="318" font-family="sans-serif" font-size="14" fill="#20394c">Pozostaje 19 mm modelowej rezerwy — trzeba jeszcze zweryfikować rzeczywiste części, tolerancje i przewody.</text>
+<text x="29" y="354" font-family="sans-serif" font-size="12" fill="#8b4f39">Schemat wymiarowy warunkowy, NIE CNC. W siatce 48 wariantów 22 nie zachowały dodatniej rezerwy.</text>
+</svg>
