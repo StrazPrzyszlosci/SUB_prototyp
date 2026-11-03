@@ -79,6 +79,9 @@ Zmiana około 0,12–0,23 l jest niewielka wobec dotychczasowego stresu objęto�
 
 ## 4. Bilans pełnej głębokości, nie tylko skrzyni
 
+![K01 — pełna głębokość urządzenia z hipotetyczną osłoną i terminalem, NIE CNC](../wyniki/k01_pelna_glebokosc_500_NIE_CNC.svg)
+
+
 Korpus ma D=425 mm; limit **500 mm dotyczy całego urządzenia**, razem z osłoną, tylnymi złączami, przewodem i tolerancjami. Zbadano **48 scenariuszy** wystawania osłony z przodu 25/36/45/55 mm, tylnego osprzętu 10/20/30/40 mm oraz nieprzydzielonej rezerwy 0/5/10 mm.
 
 | Umowna osłona przód + terminal tył + rezerwa | Łączny obrys | Zapas do 500 mm |
