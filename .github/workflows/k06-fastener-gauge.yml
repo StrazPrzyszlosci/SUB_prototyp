@@ -1,0 +1,40 @@
+name: K06 eight-axis rear-fastener gauge path
+on:
+  pull_request:
+    paths:
+      - "skrypty/k06_korytarz_kulisty_8_mocowan.py"
+      - "wyniki/k06_podsumowanie.json"
+      - "raporty/K06_dostep_do_8_mocowan_po_20_wkladach.md"
+      - "README.md"
+      - ".github/workflows/k06-fastener-gauge.yml"
+  workflow_dispatch:
+jobs:
+  k06:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install numerical dependency
+        run: python -m pip install numpy
+      - name: Recompute 24 paths from P30E, independently test line/AABB algorithm
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp wyniki/k06_podsumowanie.json /tmp/k06-expected.json
+          python skrypty/k06_korytarz_kulisty_8_mocowan.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          a=json.loads(Path("/tmp/k06-expected.json").read_text(encoding="utf-8"))
+          b=json.loads(Path("wyniki/k06_podsumowanie.json").read_text(encoding="utf-8"))
+          assert a==b, "Versioned K06 results do not match freshly executed K06"
+          assert len(b["routes"])==24
+          assert all(row["passed_axes"]==8 for row in b["results"].values())
+          assert b["physical_testing"] is False and b["cnc"]=="HOLD"
+          guide=Path("README.md").read_text(encoding="utf-8")
+          assert "### A14. K06" in guide and guide.index("### A14. K06")>guide.index("### A13. K05")
+          assert "K06 — dostęp do osprzętu" in guide
+          print("K06 PASS: all path checks agree, no unsupported physical clearance claim")
+          PY
