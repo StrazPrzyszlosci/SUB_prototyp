@@ -46,6 +46,8 @@ O = otwarte. Akceptacja briefu nie oznacza akceptacji dowolnych liczb modelu.
 | W36 | Prawdziwy tor siły 8 śrub Daytona → nośnik/ramę → MDF i wręgi musi być projektowalny, serwisowalny i kwalifikowalny materiałowo; sam cienki pierścień nie jest dowodem nośności. | U, złącze O | B12-08: 2232 przesiewy, brak przecięcia przy hipotetycznym luzie 1 mm i mostku 2 mm dla Ø6,5; konieczny CAD kosza + próby złączy. | B12-08/09 |
 | W37 | Dobór kandydata nadal jest uzależniony od rzeczywistych THD/IMD, chłodzenia i czystego SPL 20–40 Hz w pokoju; C11 ma alternatywną przewagę w odmiennym scenariuszu Pcu. | U, pomiary O | Audyt P29A–D/B12-08: C02 wstępnym faworytem platformy, nie ostatecznym zwycięzcą. | B12-08/P29 |
 
+| W38 | **Każdy element konstrukcji i osprzętu subwoofera ma własny paszport materiałowy:** zastosowanie, materiał bazowy i warianty, dane z kart lub hipotezy, obciążenia, masa/sztywność/nośność, powiązanie z bilansem netto i statusem kwalifikacji. Nie zastępować nieznanych parametrów fikcyjnymi wynikami. | U-2026-11-03; spełniono ewidencję 35/35, NIE kwalifikację wytrzymałościową | [K10 rejestr 35 części](dane/k10_rejestr_materialow_czesci_obudowy.json), [raport materiałowy](raporty/K10_paszport_materialowy_wszystkich_czesci.md), [obliczenia K10](wyniki/k10_wyniki_przesiewu_materialow.json); 0/35 zatwierdzonych do wykonania. Zmiana materiału/grubości wymaga ponownego P30E/K07 i MES, doboru kleju, spoin, ognioodporności i akustyki. | K10/P19/P30E/P34/P36/P37 |
+
 ## Specyfikacja odbiorowa do uzupełnienia
 
 | Wielkość | Zdefiniowane warunki | Próg |
