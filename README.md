@@ -106,7 +106,9 @@ W badanej geometrii Dayton RSS390HF-4 wycięcie **Ø355,8 mm**, okrąg śrub **�
 
 **Kierunek konstrukcyjny po K02:** bazowa obudowa i położenie głośnika pozostają bez zmian. Osiem lokalnych wzmocnień nadal jest pierwszym wariantem do sprawdzenia, ale **głębokość 30 mm utrudnia dostęp do pełnej regulacji objętości**. W modelu P30E po skróceniu ich do **20 mm** przeszły trasy **20/20 modułów (100 l), 12/12 (120 l) i 1/1 (150 l)**, przy luzie 3–6 mm. To wynik symulacji geometrycznej, a nie próba rzeczywistej skrzyni: **kosz Daytona, wkładki gwintowane i nośność połączeń pozostają do zweryfikowania**. [Zobacz porównanie 20/30 mm](wyniki/k02_trasy_20_vs_30_moduly_NIE_CNC.svg) oraz [szczegóły badania K02](raporty/K02_przejscie_20_modulow_obok_8_mocowan.md).
 
-**Droga do rozstrzygnięcia:** potwierdzić wymiary prawdziwego kosza i terminali, wybrać wykonalny wariant mocowania, sprawdzić nośność śrub, wkładek, MDF i spoin, zabezpieczyć uszczelnienie oraz serwis, a dopiero potem zatwierdzić rysunki do wykonania. Żaden wariant nie uzyskał jeszcze zgody na CNC. [Inspiracje z innych konstrukcji oraz szczegółowe analizy B12-09–B12-15 oraz K01–K02 są w aneksie na końcu przewodnika](#aneks-mocowania).
+**Ważny wybór po K03:** pomiędzy krawędzią wycięcia Daytona a osią śruby pozostaje tylko **6,1 mm**. W modelowym klocku 20 mm duża wkładka gwintowana jest problemem: dla zewnętrznego Ø8 mm, 1 mm luzu do otworu i 0,5 mm niepewności położenia zostaje jedynie **0,6 mm drewna**, mniej niż hipotetyczne wymagane 2 mm. Pierwszy wariant **do fizycznego sprawdzenia** to śruba przelotowa z tylnym elementem rozkładającym siły; alternatywy to wkręt w odpowiednio wzmocnionym MDF albo rama. **Żaden wariant nie ma potwierdzonej nośności**. [Raport i plan prób K03](raporty/K03_wezel_mocowania_waski_pas_MDF_i_sciezka_sily.md).
+
+**Droga do rozstrzygnięcia:** potwierdzić wymiary prawdziwego kosza i terminali, wybrać wykonalny wariant mocowania, sprawdzić nośność śrub, wkładek, MDF i spoin, zabezpieczyć uszczelnienie oraz serwis, a dopiero potem zatwierdzić rysunki do wykonania. Żaden wariant nie uzyskał jeszcze zgody na CNC. [Inspiracje z innych konstrukcji oraz szczegółowe analizy B12-09–B12-15 oraz K01–K03 są w aneksie na końcu przewodnika](#aneks-mocowania).
 
 ### 5. Co oznaczają wykresy DSP i temperatury?
 
@@ -2218,3 +2220,11 @@ W pierwszym teście wzmocnienia **30 mm** blokowały wcześniejszą trasę modu�
 Skrócenie klocków zmniejsza ich zastępczą wyporność z **0,225504 do 0,150336 l**, ale **nie poprawia cienkiego pasa drewna przy wkładce** i może ograniczać długość zakotwienia. Dlatego nie ma decyzji o rodzaju gwintu ani o zatwierdzeniu konstrukcji.
 
 [Pełny raport K02](raporty/K02_przejscie_20_modulow_obok_8_mocowan.md) · [Odtwarzalny Python](skrypty/k02_dostep_modulow_i_klocki.py) · [Makieta parametryczna OpenSCAD (100/120/150 l, 20/30 mm)](dokumentacja/K02_p30e_moduly_8_klockow_REFERENCYJNE_NIE_CNC.scad) · [Karta pomiarów i prób złączy](dokumentacja/K02_protokol_pomiarow_kosza_i_probek_zlacz.md). **Prace nadal przed budową, CNC HOLD.**
+
+### A11. K03 — pas drewna przy śrubie i konkretna droga dalszych prób
+
+![K03 — promieniowy budżet na gniazdo wkładki w MDF i niepewności, NIE CNC](wyniki/k03_pas_materialu_i_lacznik_NIE_CNC.svg)
+
+Wymiarowa karta Daytona potwierdza **6,1 mm** pomiędzy kołową krawędzią wycięcia Ø355,8 a osią śruby na PCD Ø368. Model K03 obejmuje **162 warunkowe układy** średnicy gniazda, minimalnego pasa MDF, luzu i niepewności położenia. Dla jawnych *hipotetycznych* warunków 1 mm luzu, 2 mm drewna i 0,5 mm tolerancji maksymalna dopuszczalna geometrycznie średnica wybranego materiału to **Ø5,2 mm**. Nie jest to norma i nie dowodzi, że mniejsze gniazdo będzie wytrzymałe. EPF zaleca ostrożność przy wkrętach w powierzchnie MDF blisko krawędzi — ogólna wskazówka nie stanowi certyfikatu połączenia subwoofera.
+
+**Dalszy etap ma być fizycznym porównaniem pełnych dróg sił:** śruba przelotowa z zabezpieczoną nakrętką i rozkładem obciążenia, wkręt w lokalnie wzmocnione MDF oraz rezerwowy nośnik. Trzeba zweryfikować kosz i przestrzeń na tylny osprzęt oraz powtórzyć montaż 20 modułów K02 **z rzeczywistymi narzędziami**. [Raport K03](raporty/K03_wezel_mocowania_waski_pas_MDF_i_sciezka_sily.md) · [Skrypt](skrypty/k03_budzet_lacznika_i_sciezka_sily.py) · [JSON](wyniki/k03_podsumowanie.json). CNC HOLD.
