@@ -1,0 +1,59 @@
+name: K10 all-part material register and P30E mass audit
+on:
+  pull_request:
+    paths:
+      - "dane/k10_rejestr_materialow_czesci_obudowy.json"
+      - "skrypty/k10_audyt_materialow_obudowy.py"
+      - "wyniki/k10_wyniki_przesiewu_materialow.json"
+      - "raporty/K10_paszport_materialowy_wszystkich_czesci.md"
+      - "WYMAGANIA.md"
+      - "README.md"
+      - ".github/workflows/k10-material-register.yml"
+  workflow_dispatch:
+jobs:
+  k10:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Compute K10 independently and compare reviewed numerical result
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp wyniki/k10_wyniki_przesiewu_materialow.json /tmp/k10-reviewed.json
+          python skrypty/k10_audyt_materialow_obudowy.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          a=json.loads(Path("/tmp/k10-reviewed.json").read_text(encoding="utf-8"))
+          b=json.loads(Path("wyniki/k10_wyniki_przesiewu_materialow.json").read_text(encoding="utf-8"))
+          assert a==b, "K10 computed numerical output diverges from reviewed JSON"
+          reg=json.loads(Path("dane/k10_rejestr_materialow_czesci_obudowy.json").read_text(encoding="utf-8"))
+          assert len(reg["parts"]) == 35
+          assert b["part_count"] == b["parts_with_provisional_material"] == 35
+          assert b["parts_physically_qualified"] == 0
+          assert b["front_2x22_hypothetical"]["perfect_to_unbonded_D_ratio"]==4
+          assert len(b["plate_proxy"]["comparison"])==5
+          assert [r["nominal_litre_state"] for r in b["state_masses"]]==[150,120,100]
+          assert 51.8<b["state_masses"][2]["P30E_original_MDF_shell_braces_inserts_kg"]<52.
+          assert abs(b["geometry_p30e_decomposition"]["shell_wood_nominal_L"]-52.600134)<.000001
+          assert "CNC QUALIFICATION" in b["status"]
+          print("K10 PASS: 35/35 candidate roles, numerical models reproducible; 0 physical qualifications")
+          PY
+      - name: Keep practical README compact and detailed material selection at the end
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          r=Path("README.md").read_text(encoding="utf-8")
+          assert "### A16. K10" in r
+          assert r.index("### A16. K10") > r.index("### A15. K08")
+          assert "(raporty/K10_paszport_materialowy_wszystkich_czesci.md)" in r[:r.index("## Aneks techniczny — inspiracje montażowe")]
+          assert "W38" in Path("WYMAGANIA.md").read_text(encoding="utf-8")
+          assert "35" in Path("raporty/K10_paszport_materialowy_wszystkich_czesci.md").read_text(encoding="utf-8")
+          assert "CNC HOLD" in r
+          print("K10 PASS: guide materials concise, report in last annex, requirement tracked")
+          PY
