@@ -1,0 +1,61 @@
+name: B12-15 - annular contact sensitivity and README structure
+on:
+  pull_request:
+    paths:
+      - "skrypty/b12_15_nacisk_rozproszony.py"
+      - "wyniki/b12_15_*"
+      - "README.md"
+      - ".github/workflows/b12-15-regression.yml"
+  push:
+    branches: [main]
+    paths:
+      - "skrypty/b12_15_nacisk_rozproszony.py"
+      - "wyniki/b12_15_*"
+      - "README.md"
+      - ".github/workflows/b12-15-regression.yml"
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reproduce 2916 contact cases and closed-contact formula
+        run: python3 skrypty/b12_15_nacisk_rozproszony.py > /tmp/b12-15-results.txt
+      - name: Check independent numerical reference and guide/appendix position
+        run: |
+          python3 - <<'PY'
+          import json
+          x=json.load(open('wyniki/b12_15_generated_manifest.json',encoding='utf8'))['summary']
+          r=json.load(open('wyniki/b12_15_podsumowanie.json',encoding='utf8'))
+          assert x['cases']==r['results']['case_count']==2916
+          assert x['contact_open_cases']==r['results']['cases_with_open_contact_patches']==468
+          s=[a for a in x['examples'] if a['ring_nodes']==32 and a['concentration_kappa']==0]
+          assert len(s)==3
+          for a in s:
+              v=next(v for v in r['results']['reference_5g_120mm_initial300N_kappa0_contact_multiplier1_ring32']
+                     if v['retained_preload_fraction']==a['residual_fraction'])
+              assert abs(a['mu_required_global']-v['mu_required_global'])<2e-6
+              assert a['open_contact_patches']==v['open_patches']
+              assert abs(a['sum_contact_N']-v['sum_contact_N'])<1e-6
+              assert abs(a['max_bolt_tension_N']-v['max_bolt_tension_N'])<2e-6
+          s=open('README.md',encoding='utf8').read()
+          main=s.index('### 4a. Jak przejść od kosza do rzeczywistego mocowania?')
+          later=s.index('### 5. Co oznaczają wykresy DSP i temperatury?')
+          appendix=s.index('## Aneks techniczny — inspiracje montażowe')
+          assert main<later<appendix
+          assert s.index('### A1. Inspiracje montażowe')>appendix
+          assert s.index('### A8. B12-15')>appendix
+          assert '### 4g. B12-14' not in s[:later]
+          assert 'klocek' in s[main:later]
+          print('B12-15 PASS: model counts, external reference, guide structure')
+          PY
+      - name: Upload full scenarios as reproducibility artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: b12-15-generated-conditional-contact-results
+          path: |
+            wyniki/b12_15_pelne_rozklady.json
+            wyniki/b12_15_generated_manifest.json
+          retention-days: 14

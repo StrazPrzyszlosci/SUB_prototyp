@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 490" role="img" aria-label="B12-15 conditional pressure/relaxation results and global friction threshold, NOT CNC">
+<rect width="1050" height="490" fill="#f9fbfc"/>
+<text x="26" y="40" font-family="sans-serif" font-size="23" font-weight="700" fill="#183342">B12-15 — co zmienia utrata części docisku?</text>
+<text x="26" y="66" font-family="sans-serif" font-size="13" fill="#557080">Założenie: 13,61 kg; 5g; ramię 120 mm; docisk początkowy 300 N/śrubę; 32 strefy nacisku.</text>
+<rect x="24" y="88" width="492" height="346" rx="12" fill="#fff" stroke="#d4dee6"/>
+<rect x="534" y="88" width="492" height="346" rx="12" fill="#fff" stroke="#d4dee6"/>
+<text x="43" y="119" font-family="sans-serif" font-size="17" font-weight="700" fill="#223746">Suma nacisków kontaktowych [N]</text>
+<text x="552" y="119" font-family="sans-serif" font-size="17" font-weight="700" fill="#223746">Wymagane μ — warunek konieczny</text>
+<text x="43" y="148" font-family="sans-serif" font-size="12" fill="#557080">Docisk rzeczywisty nie został zmierzony</text>
+<text x="552" y="148" font-family="sans-serif" font-size="12" fill="#557080">Nie oznacza lokalnego braku poślizgu</text>
+<text x="44" y="205" font-family="sans-serif" font-size="14" fill="#203745">100%</text>
+<rect x="122" y="183" width="276" height="29" rx="4" fill="#ebf0f3"/>
+<rect x="122" y="183" width="276.0" height="29" rx="4" fill="#378578"/>
+<text x="414" y="204" font-family="sans-serif" font-size="15" fill="#203745">2400</text>
+<text x="552" y="205" font-family="sans-serif" font-size="14" fill="#203745">100%</text>
+<rect x="631" y="183" width="276" height="29" rx="4" fill="#ebf0f3"/>
+<rect x="631" y="183" width="127.9" height="29" rx="4" fill="#ba7456"/>
+<text x="914" y="204" font-family="sans-serif" font-size="15" fill="#203745">0.278</text>
+<text x="44" y="283" font-family="sans-serif" font-size="14" fill="#203745">75%</text>
+<rect x="122" y="261" width="276" height="29" rx="4" fill="#ebf0f3"/>
+<rect x="122" y="261" width="207.0" height="29" rx="4" fill="#378578"/>
+<text x="414" y="282" font-family="sans-serif" font-size="15" fill="#203745">1800</text>
+<text x="552" y="283" font-family="sans-serif" font-size="14" fill="#203745">75%</text>
+<rect x="631" y="261" width="276" height="29" rx="4" fill="#ebf0f3"/>
+<rect x="631" y="261" width="170.5" height="29" rx="4" fill="#ba7456"/>
+<text x="914" y="282" font-family="sans-serif" font-size="15" fill="#203745">0.371</text>
+<text x="44" y="361" font-family="sans-serif" font-size="14" fill="#203745">50%</text>
+<rect x="122" y="339" width="276" height="29" rx="4" fill="#ebf0f3"/>
+<rect x="122" y="339" width="138.0" height="29" rx="4" fill="#378578"/>
+<text x="414" y="360" font-family="sans-serif" font-size="15" fill="#203745">1200</text>
+<text x="552" y="361" font-family="sans-serif" font-size="14" fill="#203745">50%</text>
+<rect x="631" y="339" width="276" height="29" rx="4" fill="#ebf0f3"/>
+<rect x="631" y="339" width="255.8" height="29" rx="4" fill="#ba7456"/>
+<text x="914" y="360" font-family="sans-serif" font-size="15" fill="#203745">0.556</text>
+<text x="43" y="411" font-family="sans-serif" font-size="12" fill="#667888">Zestawienie dotyczy wyłącznie hipotetycznego modelu sprężyn.</text>
+<text x="552" y="411" font-family="sans-serif" font-size="12" fill="#667888">Słabszy docisk może obniżać górną zdolność tarcia.</text>
+<text x="26" y="461" font-family="sans-serif" font-size="13" fill="#8d4e3d">Uwaga: brak danych o relaksacji uszczelki, wytrzymałości MDF i realnym polu styku. Bez decyzji CNC.</text>
+</svg>

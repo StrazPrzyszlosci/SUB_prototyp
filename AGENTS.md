@@ -14,6 +14,10 @@ być przesunięty,a preferowany jest środek jednej z połów frontu.
 
 ## Zasady pracy
 
+## Zasada redakcyjna README — 3 listopada 2026
+
+**README jest przystępnym podręcznikiem prowadzącym do wyboru i zbudowania pierwszego prototypu.** Rozdziały główne mają być prowadzone według realnych decyzji: przetwornik → warunki akustyczne → geometria i regulowana obudowa → wykonanie mocowań i skrzyni → DSP/napęd → walidacja. Każda nowa istotna analiza wnosi krótką odpowiedź: *co wiemy, co z tego wynika konstrukcyjnie, czego brakuje, co robimy dalej*. **Nie dodawaj kolejnych numerowanych podrozdziałów do głównego toku tylko dlatego, że pojawiło się nowe badanie pomocnicze lub siatka parametrów.** Rozbudowane analizy, warianty hipotetyczne i inspiracje z atrybucją trafią do końcowego aneksu technicznego, a pełne obliczenia do raportów/skryptów. Zachowuj istniejące rysunki i linki. Kolejne badania mają zmierzać do domknięcia konkretnej konstrukcji — nie mnożyć symulacje o malejącej wartości decyzyjnej bez nowych danych.
+
 1. Przed pracą przeczytaj ten plik, README.md, PLAN_B_R.md i ostatni raport.
 2. Nie zmieniaj briefu ani danych surowych. Dopisuj nowe wersje i raporty.
 3. Każdą tezę oznacz odpowiednio: wymaganie z briefu, dane producenta,
@@ -1708,3 +1712,9 @@ z pełnym testem nośności, nie uznawać żadnego za sprawdzony.
 - Przykład katalogowa masa 13,6078 kg, 5g, ramię 120 mm, sztywności hipotetyczne kb=200/kc=500 N/mm: dla P=0 N 5/8 styków otwartych, przy P=100/300/600 N w tej konfiguracji żaden. Globalny próg µ_req: 2,362/0,834/0,278/0,139. NIE oznacza to certyfikacji tarcia albo zalecanego dokręcenia.
 - Kod skrypty/b12_14_kontakt_docisk_tarcie.py, raport raporty/B12-14_jednostronny_kontakt_docisk_tarcie_8_mocowan.md, manifest wyniki/b12_14_podsumowanie.json, wykres wyniki/b12_14_docisk_kontakt_tarcie_NIE_CNC.svg, protokół dokumentacja/B12-14_protokol_walidacji_docisku_i_zlaczy.md, regresja .github/workflows/b12-14-regression.yml.
 - Nadal nie ma danych eksperymentalnych o docisku, tarciu, MDF, kleju, wkładkach ani ciągłego kontaktowego MES, więc nie wolno porównywać nośności lokalnych klocków i ramy A jako faktu. CNC pozostaje HOLD. Następny etap B12-15: pomiary próbek lub jawnie hipotetyczny model rozkładu kontaktu i jego niepewności.
+
+## 2026-11-03 — B12-15 i uporządkowanie praktycznego README
+- Wykonano 2916 analiz sprężynowego modelu zastępczego kontaktu kołnierza (8/16/32 sektory), parametrycznych rozkładów docisku, podatności i jego hipotetycznej redukcji o 25%/50%; 468 scenariuszy z modelowymi otwartymi obszarami. Równowaga wszystkich rozwiązań sprawdzona, dodatkowo 100 kontroli niezależnych SciPy z błędem przemieszczenia < 1,2e-13 mm. Badania nie stanowią pomiaru relaksacji ani MES 3D.
+- Przeniesiono siedem sekcji szczegółowych o mocowaniach B12-09–14, wraz z linkami, schematami i atrybucją inspiracji z forów, z głównego przewodnika README do aneksu na jego końcu. W głównej ścieżce pozostał krótki krok konstrukcyjny. B12-15 umieszczono wyłącznie w aneksie; raport zawiera pełną metodologię.
+- Kod skrypty/b12_15_nacisk_rozproszony.py; wyniki wyniki/b12_15_podsumowanie.json; raport raporty/B12-15_rozklad_nacisku_i_relaksacja_docisku.md; wykres wyniki/b12_15_relaksacja_nacisku_NIE_CNC.svg.
+- Następny KROK KONSTRUKCYJNY, nie bezcelowa seria B12-16: pomiar rzeczywistego kosza i nośności połączeń, a następnie konkretny wybór lokalnych klocków lub ramy, uszczelnienia i pełnej geometrii obudowy. Nadal CNC HOLD.
