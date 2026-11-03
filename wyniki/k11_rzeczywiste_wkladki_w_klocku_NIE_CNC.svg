@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1410" height="500" viewBox="0 0 1410 500" role="img" aria-label="K11 badanie radialnego pasa drewna: M4 zewnętrzne 8 mm pozostawia 1,1 mm; M5 10 mm 0,1 mm; M6 12 mm przekracza obrys klocka o 0,9 mm. Schemat nie-CNC.">
+<rect width="1410" height="500" fill="#ffffff"/>
+<text x="32" y="40" font-family="DejaVu Sans,Arial" font-size="24" font-weight="bold" fill="#183752">K11 · Czy wkładka gwintowana mieści się w klocku K01?</text>
+<text x="32" y="70" font-family="DejaVu Sans,Arial" font-size="16" fill="#4b5f75">Geometria nominalna w płaszczyźnie frontu, 3 przekroje; równa skala radialna · własne opracowanie · NIE CNC</text>
+<defs>
+<g id="panel">
+<rect x="0" y="0" width="429" height="342" rx="12" fill="#f5f8fb" stroke="#c9d5e2" stroke-width="1.5"/>
+<rect x="70" y="90" width="256" height="156" fill="#e5cda6" stroke="#bd9a63" stroke-width="2"/>
+<rect x="10" y="90" width="50" height="156" fill="#e7f5ff" stroke="#77accb"/>
+<path d="M60 90V246" stroke="#3183a8" stroke-width="3" stroke-dasharray="7 6"/>
+<path d="M70 90V246" stroke="#a36a35" stroke-width="3" stroke-dasharray="7 5"/>
+<path d="M121 90V246" stroke="#344d73" stroke-width="2" stroke-dasharray="4 5"/>
+<text x="18" y="265" font-size="11" font-family="DejaVu Sans,Arial" fill="#28698c">Otwór</text>
+<text x="73" y="284" font-size="12" font-family="DejaVu Sans,Arial" fill="#9b632d">R178,9</text>
+<text x="125" y="284" font-size="12" font-family="DejaVu Sans,Arial" fill="#365572">Oś R184</text>
+<text x="150" y="318" font-size="13" font-family="DejaVu Sans,Arial" fill="#53677d">Klocek aż do R205</text>
+</g></defs>
+<g transform="translate(23 94)">
+<use href="#panel"/>
+<text x="22" y="37" font-size="19" font-family="DejaVu Sans,Arial" fill="#183752" font-weight="bold">M4 · Ø8 mm, L12</text>
+<circle cx="121" cy="168" r="40" fill="#c8eada" fill-opacity=".85" stroke="#1e8468" stroke-width="2.5"/>
+<circle cx="121" cy="168" r="4" fill="#184960"/>
+<path d="M70 228H81" stroke="#16845b" stroke-width="4"/><text x="200" y="57" font-size="17" font-family="DejaVu Sans,Arial" fill="#16845b" font-weight="bold">pas: +1,1 mm</text>
+</g>
+<g transform="translate(490 94)">
+<use href="#panel"/>
+<text x="22" y="37" font-size="19" font-family="DejaVu Sans,Arial" fill="#183752" font-weight="bold">M5 · Ø10 mm, L12</text>
+<circle cx="121" cy="168" r="50" fill="#f4e9a8" fill-opacity=".86" stroke="#b48a22" stroke-width="2.5"/>
+<circle cx="121" cy="168" r="4" fill="#184960"/>
+<text x="200" y="57" font-size="17" font-family="DejaVu Sans,Arial" fill="#aa7a08" font-weight="bold">pas: +0,1 mm</text>
+</g>
+<g transform="translate(957 94)">
+<use href="#panel"/>
+<text x="22" y="37" font-size="19" font-family="DejaVu Sans,Arial" fill="#183752" font-weight="bold">M6 · Ø12 mm, L12</text>
+<circle cx="121" cy="168" r="60" fill="#f2c2b7" fill-opacity=".83" stroke="#bd4f3b" stroke-width="2.5"/>
+<circle cx="121" cy="168" r="4" fill="#184960"/>
+<text x="200" y="57" font-size="17" font-family="DejaVu Sans,Arial" fill="#bd4f3b" font-weight="bold">pas: −0,9 mm</text>
+</g>
+<rect x="23" y="444" width="1363" height="42" rx="8" fill="#f0f3f7"/>
+<text x="41" y="470" font-family="DejaVu Sans,Arial" font-size="16" fill="#334c65">Katalog RAMPA SKD30 × model K01. Kolizja geometryczna ≠ wynik próby wyrwania. Widok kosza i tolerancje nie są tu odwzorowane.</text>
+</svg>
