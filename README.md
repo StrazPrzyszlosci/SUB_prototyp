@@ -98,7 +98,7 @@ W badanej geometrii Dayton RSS390HF-4 wycięcie **Ø355,8 mm**, okrąg śrub **�
 
 *Co trzeba zrobić? Zmierzyć dokładny kosz, terminale i przestrzeń na wkrętak, zaprojektować rzeczywiste połączenia i sprawdzić ich nośność na docelowym MDF. [Raport 096](raporty/096_P38A_front_Dayton_otwory_i_mocowania.md) · [Raport 108](raporty/108_P42C_laczniki_i_koncepcje_3D.md).*
 
-### 4a. Jak zbudować mocowanie bez utraty regulacji objętości?
+### 4a. Jak przejść od kosza do rzeczywistego mocowania?
 
 **Konstrukcja bazowa:** Dayton RSS390HF-4, front MDF **44 mm**, osiem otworów montażowych i cztery żebra kosza. Osiem lokalnych wzmocnień jest wariantem pierwszego wyboru **do prób**, rama pozostaje alternatywą.
 
