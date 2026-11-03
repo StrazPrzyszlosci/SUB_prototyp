@@ -60,7 +60,7 @@ Skróty wyjaśniamy w [krótkim słowniku](#slownik). Najpierw warto przejść d
 | Przetwornik | **Dayton Audio RSS390HF-4** — wstępny faworyt | Pełny audyt 34 modeli, rzeczywiste THD/IMD, termika, dostępność i ceny |
 | Korpus | **1020 × 425 × 500 mm** (szerokość × głębokość × wysokość), projekt P30E | Obrys całego urządzenia z maskownicą, stopkami, terminalami i tolerancjami do **500 mm głębokości** |
 | Objętość | około **100 / 120 / 150 l netto**, z punktem eksperymentalnym 120 l | Bilans wyporności, montaż i szczelność ruchomych wkładów |
-| Mechanika | modelowo MDF 22 mm, front 44 mm, wręgi i wzmocnienia | Nośność śrub, MDF, kleju i spoin oraz poprawne obliczenia MES |
+| Mechanika i materiały | modelowo MDF 22 mm, front 44 mm, skrzynki MDF 8 mm; [materiały 35 części — K10](raporty/K10_paszport_materialowy_wszystkich_czesci.md) | Wybór dla każdej części: płyty, wręgi, klocki, kleje, uszczelki, wkłady, okucia i osłona. **To kandydaci, nie zatwierdzona lista produkcyjna.** |
 | Wypełnienie | planowana mata 50 mm przy tylnej ścianie | Parametry i montaż realnego materiału |
 | Elektronika | zewnętrzny **płytkowy wzmacniacz klasy D** i DSP; modelowe limity 40 V RMS / 12 A RMS | Konkretny wzmacniacz, zasilacz, chłodzenie i sprawdzone zabezpieczenia |
 | Integracja | docelowo co najmniej **8 wyjść DSP** | Routing, opóźnienia, filtry, rzeczywiste działanie ochrony |
@@ -133,7 +133,7 @@ Przybliżone wymiary pomieszczenia pozwalają wyliczyć częstotliwości *idealn
 - [ ] **Głębokość:** całe urządzenie z osprzętem nie przekracza **500 mm** w docelowym ustawieniu.
 - [ ] **Kosz:** wszystkie osiem mocowań, zaciski, śruby, narzędzia i wręgi mają zweryfikowane prześwity oraz wytrzymałość.
 - [ ] **Netto:** objętość dla 100/120/150 l zawiera faktyczne wyporności, a wkłady dają się zamontować, uszczelnić i wyjąć.
-- [ ] **Materiały:** zbadano parametry MDF, kleju i spoin; nie przyjęto hipotetycznej sztywności za pomiar.
+- [ ] **Materiały każdej części:** [paszport K10 — 35 pozycji](raporty/K10_paszport_materialowy_wszystkich_czesci.md) ma zweryfikowane karty, mechanikę, masę, szczelność i wytrzymałość połączeń; nie przyjęto hipotetycznej sztywności za pomiar.
 - [ ] **Model:** wyniki MES są wolne od problemu *hourglass* P33B i dotyczą aktualnego CAD; akustyka uwzględnia rzeczywistą pozycję źródła.
 - [ ] **Elektronika:** dobrano zasilanie, moduł klasy D, chłodzenie i sprawdzono zabezpieczenia DSP.
 - [ ] **Odbiór:** istnieje plan pomiarów impedancji, szczelności, wychylenia, drgań paneli, THD/IMD i odpowiedzi w pokoju.
@@ -2266,3 +2266,13 @@ W odróżnieniu od K05, które potwierdziło wyłącznie brak kolizji końcowych
 Oryginalny rysunek producenta Daytona RSS390HF-4 osadzono wcześniej w **praktycznym przewodniku**; [kompletny arkusz producenta](https://www.daytonaudio.com/images/resources/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf) zawiera również rzut kosza od tyłu i osiem otworów mocujących. Rysunek przekroju powyżej jest **opracowaniem własnym**, nie producenta i nie prototypem. Oś każdego otworu w kołnierzu jest oddalona o **6,1 mm** od krawędzi wycięcia i **10,2 mm** od zewnętrznej krawędzi kołnierza. Dla hipotetycznej podkładki M6 Ø12 pozostaje nominalnie tylko **0,1 mm** do wycięcia. Jeśli nakrętka o grubości 5 mm jest **za frontem MDF44 i klockiem20**, a nad kołnierzem 10,5 mm znajduje się podkładka 1,6 mm, to nominalne wymaganie pełnego 5-mm przejścia przez nakrętkę to **81,1 mm pod łbem śruby**. Przykładowa długość **85 mm** daje ok. **28,9 mm** wystawania za MDF44 — nieznaczną różnicę w stosunku do obwiedni K04 (28,8 mm). To hipoteza konkretnej konfiguracji, **nie osprzęt zadeklarowany przez Dayton**. Wymagania na rzeczywiste gwinty, wkładkę, uszczelkę, blokadę nakrętki i nośność pozostają otwarte. **Nie projektować na CNC na podstawie tych liczb.**
 
 [Raport K08](raporty/K08_zlacza_i_rysunki_dayton.md) · [Kod obliczeń](skrypty/k08_nominalne_mocowania_dayton.py) · [JSON](wyniki/k08_nominalne_mocowania_dayton.json) · [CI](.github/workflows/k08-fastener-geometry.yml).
+
+### A16. K10 — z czego wykonać KAŻDĄ część obudowy?
+
+Opracowaliśmy **rejestr 35 pozycji**: front, pięć ścian, wręgi i rygle, osiem klocków pod wkładki gwintowane, trzy rodzaje wkładów regulacji, kleje, rygle, uszczelki, uchwyty, śruby i wkładki metalowe, grill, stopy, terminal, tłumienie, wykończenie i okablowanie. **Każda pozycja ma materiał-kandydata, wymaganą funkcję, istniejące obliczenie (lub jawny jego brak) i kryteria rzeczywistej kwalifikacji.** Rejestr nie jest zamrożonym BOM do zamówienia. **0/35 jest obecnie w pełni zweryfikowanych na fizycznych próbkach**.
+
+W przesiewie porównano MDF22, MDF25 i kierunkowe dane sklejki brzozowej21. Wskaźnik sztywności zginania MDF25 względem MDF22 wynosi modelowo **1,47×** przy wzroście masy powierzchniowej 16,06 → 18,25 kg/m². Sklejka może być znacznie sztywniejsza, ale wymaga **modelu ortotropowego i nowego CAD**; podanych wskaźników z jednego kierunku nie wolno uznać za wyniki pełnego MES. Osobno przeliczono masy skrzynek: w stanie 100 l **20 wkładów MDF8 ≈12,34 kg**, a w wariancie sklejka9 przy tym samym obrysie ≈**12,75 kg**. Należy ponownie sprawdzić ich przejście przez otwór i szczelność.
+
+**Decyzja praktyczna:** na razie zachowujemy bazę MDF22/MDF44/MDF8 wyłącznie jako **referencję badawczą**. Dla frontu, wręg i klocków mocujących porównujemy osobno wymaganą sztywność, pełzanie spoin i wyrywanie. Dla ryglów, EPDM, stopek, osłony i maty dobieramy karty konkretnych produktów i przeliczamy warunki pracy. Dopiero po tych kontrolach wolno zmienić materiał z jednoczesnym przeliczeniem 100/120/150 l i całkowitego limitu 500 mm. **CNC HOLD.**
+
+[Raport z macierzą 35 części](raporty/K10_paszport_materialowy_wszystkich_czesci.md) · [Paszporty materiałowe JSON](dane/k10_rejestr_materialow_czesci_obudowy.json) · [Obliczenia porównawcze](wyniki/k10_wyniki_przesiewu_materialow.json) · [Skrypt](skrypty/k10_audyt_materialow_obudowy.py) · [Wymaganie W38](WYMAGANIA.md).

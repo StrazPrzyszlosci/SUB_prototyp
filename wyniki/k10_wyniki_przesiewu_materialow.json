@@ -1,0 +1,165 @@
+{
+  "study": "K10",
+  "status": "HYPOTHESES AND ANALYTICAL SCREENS ONLY — NO MATERIAL OR CNC QUALIFICATION",
+  "register": "dane/k10_rejestr_materialow_czesci_obudowy.json",
+  "part_count": 35,
+  "parts_with_provisional_material": 35,
+  "parts_physically_qualified": 0,
+  "P30E_reference_outer_mm": [
+    1020,
+    425,
+    500
+  ],
+  "selected_materials": "Not selected for fabrication; baseline E01–E09 MDF as P30E, other parts have provisional candidates",
+  "plate_proxy": {
+    "definition": "D=Eh^3/[12(1-nu^2)], mu=rho*h, deflection ratio D0/D, f ratio sqrt((D/mu)/(D0/mu0)). P30E SSSS unperforated 426x359mm 1000Pa reference w45um/f235.4Hz; plywood ONE-DIRECTION numbers NOT actual two-dimensional plate response.",
+    "reference_E_GPa": 2.1,
+    "reference_nu_assumed": 0.3,
+    "reference_rho_assumed_kg_m3": 730,
+    "reference_D_Nm": 2047.692,
+    "comparison": [
+      {
+        "scenario": "MDF22_reference",
+        "E_bending_GPa": 2.1,
+        "thickness_mm": 22,
+        "rho_assumed_or_derived_kg_m3": 730,
+        "areal_mass_kg_m2": 16.06,
+        "isotropic_D_for_screen_Nm": 2047.692,
+        "relative_isotropic_D_to_MDF22": 1,
+        "same_geometry_static_deflection_proxy_um_at_1000Pa": 45,
+        "same_geometry_f11_proxy_Hz": 235.4,
+        "limitation": "Plywood direction is NOT a plate solution; E and nu scenario, different thickness changes box geometry; SSSS unperforated bay ONLY"
+      },
+      {
+        "scenario": "MDF25_reference",
+        "E_bending_GPa": 2.1,
+        "thickness_mm": 25,
+        "rho_assumed_or_derived_kg_m3": 730,
+        "areal_mass_kg_m2": 18.25,
+        "isotropic_D_for_screen_Nm": 3004.808,
+        "relative_isotropic_D_to_MDF22": 1.4674,
+        "same_geometry_static_deflection_proxy_um_at_1000Pa": 30.666,
+        "same_geometry_f11_proxy_Hz": 267.5,
+        "limitation": "Plywood direction is NOT a plate solution; E and nu scenario, different thickness changes box geometry; SSSS unperforated bay ONLY"
+      },
+      {
+        "scenario": "WISA_birch21_weak_proxy",
+        "E_bending_GPa": 7.642,
+        "thickness_mm": 21,
+        "rho_assumed_or_derived_kg_m3": 680.952,
+        "areal_mass_kg_m2": 14.3,
+        "isotropic_D_for_screen_Nm": 6481.004,
+        "relative_isotropic_D_to_MDF22": 3.165,
+        "same_geometry_static_deflection_proxy_um_at_1000Pa": 14.218,
+        "same_geometry_f11_proxy_Hz": 443.813,
+        "limitation": "Plywood direction is NOT a plate solution; E and nu scenario, different thickness changes box geometry; SSSS unperforated bay ONLY"
+      },
+      {
+        "scenario": "WISA_birch21_strong_proxy",
+        "E_bending_GPa": 9.858,
+        "thickness_mm": 21,
+        "rho_assumed_or_derived_kg_m3": 680.952,
+        "areal_mass_kg_m2": 14.3,
+        "isotropic_D_for_screen_Nm": 8360.342,
+        "relative_isotropic_D_to_MDF22": 4.0828,
+        "same_geometry_static_deflection_proxy_um_at_1000Pa": 11.022,
+        "same_geometry_f11_proxy_Hz": 504.07,
+        "limitation": "Plywood direction is NOT a plate solution; E and nu scenario, different thickness changes box geometry; SSSS unperforated bay ONLY"
+      },
+      {
+        "scenario": "MDF8_reference",
+        "E_bending_GPa": 2.7,
+        "thickness_mm": 8,
+        "rho_assumed_or_derived_kg_m3": 730,
+        "areal_mass_kg_m2": 5.84,
+        "isotropic_D_for_screen_Nm": 126.593,
+        "relative_isotropic_D_to_MDF22": 0.0618,
+        "same_geometry_static_deflection_proxy_um_at_1000Pa": 727.891,
+        "same_geometry_f11_proxy_Hz": 97.061,
+        "limitation": "Plywood direction is NOT a plate solution; E and nu scenario, different thickness changes box geometry; SSSS unperforated bay ONLY"
+      }
+    ]
+  },
+  "front_2x22_hypothetical": {
+    "two_separate_22mm_layers_D_Nm": 4095.385,
+    "perfectly_bonded_44mm_isotropic_D_Nm": 16381.538,
+    "perfect_to_unbonded_D_ratio": 4,
+    "caveat": "Neither bound is perforated front 3D response; real adhesive rotational/composite action, cutout and 8 clamps need independent testing."
+  },
+  "geometry_p30e_decomposition": {
+    "front_cutout_cylindrical_simplification_mm": 355.8,
+    "shell_wood_nominal_L": 52.600134,
+    "braces_nominal_L": 1.60908,
+    "8_pad_envelope_nominal_L_excluded_from_P30E_baseline": 0.150336,
+    "base_MDF_rho_kg_m3": 730,
+    "pad_rho_scenario_kg_m3_not_datasheet": 700,
+    "note": "Shell & braces from P30A/P30E idealized 11-box geometry, not manufacturing CAD; previous P30E mass excludes pads, gasket, finish, grille, cables, hardware and driver."
+  },
+  "module_shell_volumes_L_by_wall_mm": {
+    "8": {
+      "rear_large": 0.825216,
+      "front_large": 0.966336,
+      "small": 0.642816
+    },
+    "9": {
+      "rear_large": 0.914112,
+      "front_large": 1.071792,
+      "small": 0.710712
+    }
+  },
+  "state_masses": [
+    {
+      "nominal_litre_state": 150,
+      "counts": {
+        "rear_large": 1,
+        "front_large": 0,
+        "small": 0
+      },
+      "insert_shell_MDF8_kg": 0.6024,
+      "insert_shell_birch9_kg_same_outer_dimensions": 0.6225,
+      "insert_mass_delta_if_birch9_kg": 0.0201,
+      "P30E_shell_plus_braces_MDF22_kg": 39.5727,
+      "P30E_original_MDF_shell_braces_inserts_kg": 40.1751,
+      "plus_hypothetical_8_glued_wood_pads_at_700kg_m3_kg": 40.2804
+    },
+    {
+      "nominal_litre_state": 120,
+      "counts": {
+        "rear_large": 8,
+        "front_large": 4,
+        "small": 0
+      },
+      "insert_shell_MDF8_kg": 7.641,
+      "insert_shell_birch9_kg_same_outer_dimensions": 7.8991,
+      "insert_mass_delta_if_birch9_kg": 0.2581,
+      "P30E_shell_plus_braces_MDF22_kg": 39.5727,
+      "P30E_original_MDF_shell_braces_inserts_kg": 47.2137,
+      "plus_hypothetical_8_glued_wood_pads_at_700kg_m3_kg": 47.3189
+    },
+    {
+      "nominal_litre_state": 100,
+      "counts": {
+        "rear_large": 8,
+        "front_large": 8,
+        "small": 4
+      },
+      "insert_shell_MDF8_kg": 12.3397,
+      "insert_shell_birch9_kg_same_outer_dimensions": 12.7543,
+      "insert_mass_delta_if_birch9_kg": 0.4146,
+      "P30E_shell_plus_braces_MDF22_kg": 39.5727,
+      "P30E_original_MDF_shell_braces_inserts_kg": 51.9124,
+      "plus_hypothetical_8_glued_wood_pads_at_700kg_m3_kg": 52.0176
+    }
+  ],
+  "unqualified_material_gates": [
+    "MDF board source and actual properties for 8/22/44mm with thickness and density tolerances",
+    "Plywood orthotropic EL/ET/GLT and actual manufactured thickness instead of scalar screen",
+    "Panel/brace/insert geometry rerun whenever thickness, joint shape or material changes",
+    "Glue creep/peel and delamination measurements, no generic bond allowable",
+    "Klocki 20mm wood species and 8 real insert anchor pullout measurements",
+    "Seals: compression curve and compression set, air leakage after repeated cycles",
+    "Acoustic mat airflow resistivity/absorption and retention; 50mm thickness alone inadequate",
+    "Feet: mass and tipping in both orientations; grille: strength and total depth <=500mm",
+    "Full modal, pressure and contact FEM with P33C safeguards and prototype measurement"
+  ]
+}

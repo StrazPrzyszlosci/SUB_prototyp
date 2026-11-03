@@ -1,0 +1,711 @@
+{
+  "study": "K10",
+  "date": "2026-11-03",
+  "status": "RESEARCH_CANDIDATES_NOT_CNC",
+  "definition": "Each part has a provisional material, design requirements, existing quantitative evidence or expressly NO MATERIAL CALCULATION, and qualification gate. Candidate is NOT a manufacturer-qualified part.",
+  "general_limits": {
+    "max_total_depth_mm": 500,
+    "outer_enclosure_mm": [
+      1020,
+      425,
+      500
+    ],
+    "front_mm": 44,
+    "wall_mm": 22,
+    "brace_mm": 22,
+    "inserts_wall_mm": 8,
+    "nominal_pad_mm": 20,
+    "rear_mat_mm": 50
+  },
+  "raw_material_library": {
+    "MDF22_reference": {
+      "name": "EGGER Raw MDF, 19–30 mm band",
+      "E_bending_GPa": 2.1,
+      "rho_kg_m3": 730,
+      "nu_assumed": 0.3,
+      "thickness_mm": 22,
+      "E_source": "https://www.egger.com/get_download/8a07fd0a-3b33-4452-b872-43f2c2ae41c4/Technical_datasheet_E1E05_TSCA_ST_CE_TD-504_Polish.pdf?country=PL",
+      "rho_source": "P30E reference assumption, NOT EGGER declared density"
+    },
+    "MDF25_reference": {
+      "name": "MDF 25, EGGER band",
+      "E_bending_GPa": 2.1,
+      "rho_kg_m3": 730,
+      "nu_assumed": 0.3,
+      "thickness_mm": 25,
+      "E_source": "https://www.egger.com/get_download/8a07fd0a-3b33-4452-b872-43f2c2ae41c4/Technical_datasheet_E1E05_TSCA_ST_CE_TD-504_Polish.pdf?country=PL",
+      "rho_source": "P30E scenario"
+    },
+    "WISA_birch21_weak_proxy": {
+      "name": "WISA-Form Birch 21mm 7.642GPa weak axis + uncoated WISA-Birch 21mm areal mass: MIXED PRODUCT PROXY",
+      "E_bending_GPa": 7.642,
+      "rho_kg_m3": 680.952380952381,
+      "nu_assumed": 0.3,
+      "thickness_mm": 21,
+      "E_source": "https://www.wisaplywood.com/siteassets/documents/brochures/wisa_concrete-forming-plywood-en.pdf",
+      "rho_source": "WISA uncoated Birch factsheet 14.3 kg/m² /21mm; DIFFERENT PRODUCT than WISA-Form, illustrative mass only"
+    },
+    "WISA_birch21_strong_proxy": {
+      "name": "WISA-Birch 21 mm, stronger bending axis, NOT isotropic plate",
+      "E_bending_GPa": 9.858,
+      "rho_kg_m3": 680.952380952381,
+      "nu_assumed": 0.3,
+      "thickness_mm": 21,
+      "E_source": "https://www.specifiedby.com/upm/wisa-birch/UPM_UPM_WISA-Birch_Technical_Fact-Sheet.pdf",
+      "rho_source": "WISA average 14.3 kg/m² at 21 mm"
+    },
+    "MDF8_reference": {
+      "name": "EGGER Raw MDF, 6–9 mm band; density is P34C scenario",
+      "E_bending_GPa": 2.7,
+      "rho_kg_m3": 730,
+      "nu_assumed": 0.3,
+      "thickness_mm": 8,
+      "E_source": "https://www.egger.com/get_download/8a07fd0a-3b33-4452-b872-43f2c2ae41c4/Technical_datasheet_E1E05_TSCA_ST_CE_TD-504_Polish.pdf?country=PL",
+      "rho_source": "P34C / P30E reference assumption"
+    }
+  },
+  "wood_glue_sources": [
+    "https://www.kleiberit.com/fileadmin/Content_new/Produktinformationen/303.0/dbe3030_KSE.pdf",
+    "raporty/030_P19A_obliczenia_spoin_i_material_kleju.md"
+  ],
+  "parts": [
+    {
+      "id": "E01",
+      "part": "Front nośny z wycięciem Ø355,8",
+      "category": "shell",
+      "provisional_material": "dwie warstwy MDF po 22 mm klejone do 44 mm",
+      "alternative_materials": [
+        "sklejka brzozowa laminowana 2x21 mm – wymaga nowego CAD i bilansu"
+      ],
+      "controlling_requirements": "masa kosza 8 mocowań; cienki pas drewna przy wycięciu; szczelność",
+      "quantitative_evidence": "K10 rozdziela granice złącza 2x22 (niezwiązane vs idealnie zespolone); P38–P42 obciążenia, bez rzeczywistej nośności",
+      "qualification_gate": "próby łączenia warstw i odrywania 8 punktów; rysunek kosza i warstwy kleju; pomiar dynamiki pełnego frontu",
+      "evidence_paths": [
+        "raporty/091_P36A_grubosc_MDF_podatnosc_i_wregi.md",
+        "raporty/095_P37B_czulosc_MDF_spoiny.md",
+        "raporty/030_P19A_obliczenia_spoin_i_material_kleju.md",
+        "raporty/K07_serwis_wkladow_i_audyt_mocowan.md"
+      ],
+      "priority": "I",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "id": "E02",
+      "part": "Ściana lewa korpusu",
+      "category": "shell",
+      "provisional_material": "MDF 22 mm (EGGER jako karta referencyjna, ρ=730 model P30E)",
+      "alternative_materials": [
+        "sklejka brzozowa WISA 21 mm — różna grubość, rerun CAD",
+        "MDF 25 mm — dodatkowa masa"
+      ],
+      "controlling_requirements": "ugięcie/rezonans płyty, masa, grubość ograniczająca litraż",
+      "quantitative_evidence": "K10: E*h³/[12(1−ν²)], kg/m² i wskaźniki porównawcze; P36A 324 scenariusze",
+      "qualification_gate": "karta konkretnej partii (E,ρ, wilgoć, emisje); MES P33C/P37; próby złącza, szczelność",
+      "evidence_paths": [
+        "raporty/078_P30E_mata50_montaz_robustnosc.md",
+        "raporty/091_P36A_grubosc_MDF_podatnosc_i_wregi.md",
+        "raporty/095_P37B_czulosc_MDF_spoiny.md"
+      ],
+      "priority": "I",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "id": "E03",
+      "part": "Ściana prawa korpusu",
+      "category": "shell",
+      "provisional_material": "MDF 22 mm (EGGER jako karta referencyjna, ρ=730 model P30E)",
+      "alternative_materials": [
+        "sklejka brzozowa WISA 21 mm — różna grubość, rerun CAD",
+        "MDF 25 mm — dodatkowa masa"
+      ],
+      "controlling_requirements": "ugięcie/rezonans płyty, masa, grubość ograniczająca litraż",
+      "quantitative_evidence": "K10: E*h³/[12(1−ν²)], kg/m² i wskaźniki porównawcze; P36A 324 scenariusze",
+      "qualification_gate": "karta konkretnej partii (E,ρ, wilgoć, emisje); MES P33C/P37; próby złącza, szczelność",
+      "evidence_paths": [
+        "raporty/078_P30E_mata50_montaz_robustnosc.md",
+        "raporty/091_P36A_grubosc_MDF_podatnosc_i_wregi.md",
+        "raporty/095_P37B_czulosc_MDF_spoiny.md"
+      ],
+      "priority": "I",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "id": "E04",
+      "part": "Ściana górna",
+      "category": "shell",
+      "provisional_material": "MDF 22 mm (EGGER jako karta referencyjna, ρ=730 model P30E)",
+      "alternative_materials": [
+        "sklejka brzozowa WISA 21 mm — różna grubość, rerun CAD",
+        "MDF 25 mm — dodatkowa masa"
+      ],
+      "controlling_requirements": "ugięcie/rezonans płyty, masa, grubość ograniczająca litraż",
+      "quantitative_evidence": "K10: E*h³/[12(1−ν²)], kg/m² i wskaźniki porównawcze; P36A 324 scenariusze",
+      "qualification_gate": "karta konkretnej partii (E,ρ, wilgoć, emisje); MES P33C/P37; próby złącza, szczelność",
+      "evidence_paths": [
+        "raporty/078_P30E_mata50_montaz_robustnosc.md",
+        "raporty/091_P36A_grubosc_MDF_podatnosc_i_wregi.md",
+        "raporty/095_P37B_czulosc_MDF_spoiny.md"
+      ],
+      "priority": "I",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "id": "E05",
+      "part": "Ściana dolna",
+      "category": "shell",
+      "provisional_material": "MDF 22 mm (EGGER jako karta referencyjna, ρ=730 model P30E)",
+      "alternative_materials": [
+        "sklejka brzozowa WISA 21 mm — różna grubość, rerun CAD",
+        "MDF 25 mm — dodatkowa masa"
+      ],
+      "controlling_requirements": "ugięcie/rezonans płyty, masa, grubość ograniczająca litraż",
+      "quantitative_evidence": "K10: E*h³/[12(1−ν²)], kg/m² i wskaźniki porównawcze; P36A 324 scenariusze",
+      "qualification_gate": "karta konkretnej partii (E,ρ, wilgoć, emisje); MES P33C/P37; próby złącza, szczelność",
+      "evidence_paths": [
+        "raporty/078_P30E_mata50_montaz_robustnosc.md",
+        "raporty/091_P36A_grubosc_MDF_podatnosc_i_wregi.md",
+        "raporty/095_P37B_czulosc_MDF_spoiny.md"
+      ],
+      "priority": "I",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "id": "E06",
+      "part": "Ściana tylna",
+      "category": "shell",
+      "provisional_material": "MDF 22 mm (EGGER jako karta referencyjna, ρ=730 model P30E)",
+      "alternative_materials": [
+        "sklejka brzozowa WISA 21 mm — różna grubość, rerun CAD",
+        "MDF 25 mm — dodatkowa masa"
+      ],
+      "controlling_requirements": "ugięcie/rezonans płyty, masa, grubość ograniczająca litraż",
+      "quantitative_evidence": "K10: E*h³/[12(1−ν²)], kg/m² i wskaźniki porównawcze; P36A 324 scenariusze",
+      "qualification_gate": "karta konkretnej partii (E,ρ, wilgoć, emisje); MES P33C/P37; próby złącza, szczelność",
+      "evidence_paths": [
+        "raporty/078_P30E_mata50_montaz_robustnosc.md",
+        "raporty/091_P36A_grubosc_MDF_podatnosc_i_wregi.md",
+        "raporty/095_P37B_czulosc_MDF_spoiny.md"
+      ],
+      "priority": "I",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "id": "E07",
+      "part": "Wręgi pionowe i obwody przy X=426/701",
+      "category": "braces",
+      "provisional_material": "MDF 22 mm (hipoteza P30E)",
+      "alternative_materials": [
+        "sklejka brzozowa 21 mm ze sprawdzonym kierunkiem włókien"
+      ],
+      "controlling_requirements": "sztywność i masa; siły od ścian, spoin",
+      "quantitative_evidence": "K10: suma objętości 11 brył wręg P30A 1,60908 l i masa 1,175 kg przy 730 kg/m³; P36A/P37",
+      "qualification_gate": "wytrzymałość osiowo/na wyboczenie; złącza, klej, frezy; kierunkowość sklejki i pełen MAC",
+      "evidence_paths": [
+        "raporty/078_P30E_mata50_montaz_robustnosc.md",
+        "raporty/091_P36A_grubosc_MDF_podatnosc_i_wregi.md",
+        "raporty/095_P37B_czulosc_MDF_spoiny.md",
+        "raporty/030_P19A_obliczenia_spoin_i_material_kleju.md"
+      ],
+      "priority": "I",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "id": "E08",
+      "part": "Rygle górne i dolne wręg",
+      "category": "braces",
+      "provisional_material": "MDF 22 mm (hipoteza P30E)",
+      "alternative_materials": [
+        "sklejka brzozowa 21 mm ze sprawdzonym kierunkiem włókien"
+      ],
+      "controlling_requirements": "sztywność i masa; siły od ścian, spoin",
+      "quantitative_evidence": "K10: suma objętości 11 brył wręg P30A 1,60908 l i masa 1,175 kg przy 730 kg/m³; P36A/P37",
+      "qualification_gate": "wytrzymałość osiowo/na wyboczenie; złącza, klej, frezy; kierunkowość sklejki i pełen MAC",
+      "evidence_paths": [
+        "raporty/078_P30E_mata50_montaz_robustnosc.md",
+        "raporty/091_P36A_grubosc_MDF_podatnosc_i_wregi.md",
+        "raporty/095_P37B_czulosc_MDF_spoiny.md",
+        "raporty/030_P19A_obliczenia_spoin_i_material_kleju.md"
+      ],
+      "priority": "I",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "id": "E09",
+      "part": "Dodatkowe żebra poprzeczne i tylne",
+      "category": "braces",
+      "provisional_material": "MDF 22 mm (hipoteza P30E)",
+      "alternative_materials": [
+        "sklejka brzozowa 21 mm ze sprawdzonym kierunkiem włókien"
+      ],
+      "controlling_requirements": "sztywność i masa; siły od ścian, spoin",
+      "quantitative_evidence": "K10: suma objętości 11 brył wręg P30A 1,60908 l i masa 1,175 kg przy 730 kg/m³; P36A/P37",
+      "qualification_gate": "wytrzymałość osiowo/na wyboczenie; złącza, klej, frezy; kierunkowość sklejki i pełen MAC",
+      "evidence_paths": [
+        "raporty/078_P30E_mata50_montaz_robustnosc.md",
+        "raporty/091_P36A_grubosc_MDF_podatnosc_i_wregi.md",
+        "raporty/095_P37B_czulosc_MDF_spoiny.md",
+        "raporty/030_P19A_obliczenia_spoin_i_material_kleju.md"
+      ],
+      "priority": "I",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "id": "E10",
+      "part": "Osiem klocków pod wkładki gwintowane",
+      "category": "mounting",
+      "provisional_material": "klejonka bukowa 20 mm lub drewno klejone warstwowo o udokumentowanym gatunku",
+      "alternative_materials": [
+        "sklejka brzozowa 21 mm — wymaga aktualizacji bryły i testu"
+      ],
+      "controlling_requirements": "wyrywanie wkładki, rozłupywanie, odspojenie od MDF, cykle serwisowe",
+      "quantitative_evidence": "K10: dla 8 klocków K01 ri=178,9 ro=205, szer.36 i t=20, 0,150336 l modelowe; ρ drewna NIE zidentyfikowane",
+      "qualification_gate": "wybrać kartę drewna i rzeczywistą wkładkę; min 3 próbki na wariant; połączenie klejowe i tolerancje",
+      "evidence_paths": [
+        "raporty/030_P19A_obliczenia_spoin_i_material_kleju.md",
+        "raporty/K07_serwis_wkladow_i_audyt_mocowan.md",
+        "dokumentacja/inspiracje_zewnetrznych_konstruktorow_mocowanie_RSS390HF4.md"
+      ],
+      "priority": "I",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "id": "E11",
+      "part": "Osiem tylnych dużych wkładów regulacji 210×120×100",
+      "category": "inserts",
+      "provisional_material": "płyta MDF 8 mm (zamknięta skrzynka)",
+      "alternative_materials": [
+        "sklejka brzozowa 9 mm — nowe masy, nowa geometria"
+      ],
+      "controlling_requirements": "sztywność przegród, nieszczelność, masa w ruchu, mocowanie",
+      "quantitative_evidence": "K10: analityczna objętość powłoki z 8 mm; P34C 324 scenariusze",
+      "qualification_gate": "próby drgań, szczelność i rozwarstwienie w narożach; porównanie orientacji sklejki",
+      "evidence_paths": [
+        "raporty/088_P34C_obciazenia_i_blokowanie_wkladow.md",
+        "raporty/078_P30E_mata50_montaz_robustnosc.md"
+      ],
+      "priority": "I",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "id": "E12",
+      "part": "Osiem przednich dużych wkładów regulacji 210×150×100",
+      "category": "inserts",
+      "provisional_material": "płyta MDF 8 mm (zamknięta skrzynka)",
+      "alternative_materials": [
+        "sklejka brzozowa 9 mm"
+      ],
+      "controlling_requirements": "sztywność, masa, przewóz i siły w ryglu",
+      "quantitative_evidence": "K10 powłoka 8 mm; P34C obciążenia do 10g",
+      "qualification_gate": "szczelność 8 szt., obciążenia z rzeczywistymi zatrzaskami",
+      "evidence_paths": [
+        "raporty/088_P34C_obciazenia_i_blokowanie_wkladow.md",
+        "raporty/078_P30E_mata50_montaz_robustnosc.md"
+      ],
+      "priority": "I",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "id": "E13",
+      "part": "Cztery małe wkłady regulacji 180×100×100",
+      "category": "inserts",
+      "provisional_material": "płyta MDF 8 mm (zamknięta skrzynka)",
+      "alternative_materials": [
+        "sklejka brzozowa 9 mm"
+      ],
+      "controlling_requirements": "masa w ruchu, małe promienie i tor montażu",
+      "quantitative_evidence": "K10 powłoka 8 mm, zmiana grubości na 9 mm jako oddzielny wariant",
+      "qualification_gate": "test chwytania i zamknięcia, szczelności, powtarzanego transportu",
+      "evidence_paths": [
+        "raporty/088_P34C_obciazenia_i_blokowanie_wkladow.md",
+        "raporty/K07_serwis_wkladow_i_audyt_mocowan.md"
+      ],
+      "priority": "I",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "id": "E14",
+      "part": "Klejenie narożne zamkniętych wkładów",
+      "category": "joints",
+      "provisional_material": "klej PVAc D3 KLEIBERIT 303.0 – kandydat technologiczny",
+      "alternative_materials": [
+        "epoksyd LOCTITE EA9466 do badania sztywności"
+      ],
+      "controlling_requirements": "szczelność przy cyklach i pękaniu MDF8",
+      "quantitative_evidence": "P19A zestawienie modułów klejów; brak modelu konkretnej spoiny MDF8",
+      "qualification_gate": "próba z wodą/ciśnieniem, peel, zginanie, pełzanie i cykle serwisowe",
+      "evidence_paths": [
+        "raporty/030_P19A_obliczenia_spoin_i_material_kleju.md",
+        "raporty/088_P34C_obciazenia_i_blokowanie_wkladow.md"
+      ],
+      "priority": "I",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "id": "E15",
+      "part": "Dodatnie rygle / zatrzaski wkładów",
+      "category": "service",
+      "provisional_material": "stal sprężynowa ocynkowana z elementem tłumiącym EPDM",
+      "alternative_materials": [
+        "poliamid wzmacniany włóknem — tylko po kwalifikacji ugięć i pełzania"
+      ],
+      "controlling_requirements": "5–10 g i Δp w P34C, 170,9 N w najgorszym modelowym scenariuszu na punkt",
+      "quantitative_evidence": "P34C: siły, ale NIE nośność zatrzasku; materiał i grubość nieustalone",
+      "qualification_gate": "katalogowy rygiel, obliczenie przekroju i zmęczenia, 20 kompletów, test blokady w 2 orientacjach",
+      "evidence_paths": [
+        "raporty/088_P34C_obciazenia_i_blokowanie_wkladow.md",
+        "raporty/K07_serwis_wkladow_i_audyt_mocowan.md"
+      ],
+      "priority": "I",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "id": "E16",
+      "part": "Uszczelnienie obwodu wkładów",
+      "category": "seals",
+      "provisional_material": "zamkniętokomórkowa pianka EPDM",
+      "alternative_materials": [
+        "pianka silikonowa o udokumentowanej kompresji"
+      ],
+      "controlling_requirements": "utrzymanie szczelności po wielokrotnej zmianie litrażu",
+      "quantitative_evidence": "brak zmierzonej krzywej σ–ε i compression set; potrzebny docisk",
+      "qualification_gate": "karta materiałowa, siła domknięcia, przepuszczalność, próba 100→120→150",
+      "evidence_paths": [
+        "raporty/088_P34C_obciazenia_i_blokowanie_wkladow.md",
+        "raporty/K07_serwis_wkladow_i_audyt_mocowan.md"
+      ],
+      "priority": "I",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "id": "E17",
+      "part": "Uchwyty / pętle do wyjmowania wkładów",
+      "category": "service",
+      "provisional_material": "taśma poliestrowa z metalowymi kotwami",
+      "alternative_materials": [
+        "listwa poliamidowa o określonej wytrzymałości"
+      ],
+      "controlling_requirements": "masa i chwyt przez Ø355,8, nacisk przy transporcie",
+      "quantitative_evidence": "masa pojedynczego wkładu policzona K10/P34C, uchwyt nie ma modelu",
+      "qualification_gate": "wytrzymałość mocowania, kolizje, osie 0/180°, odporność na rozdarcie",
+      "evidence_paths": [
+        "raporty/088_P34C_obciazenia_i_blokowanie_wkladow.md",
+        "raporty/K07_serwis_wkladow_i_audyt_mocowan.md"
+      ],
+      "priority": "II",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "id": "E18",
+      "part": "Klej ściana–ściana i front–korpus",
+      "category": "joints",
+      "provisional_material": "PVAc KLEIBERIT 303.0 D3 (lub D4 po utwardzaczu) jako kandydat",
+      "alternative_materials": [
+        "epoksyd 2K EA9466 przy wymaganej grubości szczeliny"
+      ],
+      "controlling_requirements": "sztywność, ścinanie, peel, pełzanie, szczelność",
+      "quantitative_evidence": "P19A: 656 statycznych modeli i karta kleju; P37: wrażliwość na sztywność spoin",
+      "qualification_gate": "próbki konkretnych krawędzi MDF44/22, rozwarstwienie i pełzanie 2 orientacje",
+      "evidence_paths": [
+        "raporty/030_P19A_obliczenia_spoin_i_material_kleju.md",
+        "raporty/095_P37B_czulosc_MDF_spoiny.md"
+      ],
+      "priority": "I",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "id": "E19",
+      "part": "Klej osiem klocków–front MDF44",
+      "category": "joints",
+      "provisional_material": "epoksyd dwuskładnikowy LOCTITE EA9466 jako referencja modelowa",
+      "alternative_materials": [
+        "PVAc KLEIBERIT 303.0 przy dociskanej szczelinie"
+      ],
+      "controlling_requirements": "odrywanie, skręcanie, krytyczne punktowe przenoszenie sił",
+      "quantitative_evidence": "P19A liczy 10/100/1718MPa jako hipotezy, nie nośność tego złącza",
+      "qualification_gate": "rzeczywista szczelina, nośność w peel+shear, zmęczenie i creep",
+      "evidence_paths": [
+        "raporty/030_P19A_obliczenia_spoin_i_material_kleju.md",
+        "raporty/095_P37B_czulosc_MDF_spoiny.md",
+        "raporty/K07_serwis_wkladow_i_audyt_mocowan.md"
+      ],
+      "priority": "I",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "id": "E20",
+      "part": "Uszczelka pod kołnierzem głośnika",
+      "category": "seals",
+      "provisional_material": "komórkowa pianka EPDM z kartą compression set",
+      "alternative_materials": [
+        "uszczelka OEM przetwornika — o ile producent potwierdzi parametry"
+      ],
+      "controlling_requirements": "szczelność pod ośmioma śrubami, nierówny docisk",
+      "quantitative_evidence": "P44 kontakt jednostronny; brak wymaganego σ–ε/siły ściśnięcia",
+      "qualification_gate": "karta σ–ε, siła docisku, sprężyste osiadanie, próba szczelności po serwisie",
+      "evidence_paths": [
+        "raporty/K08_zlacza_i_rysunki_dayton.md"
+      ],
+      "priority": "I",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "id": "E21",
+      "part": "Osiem śrub montażowych przetwornika",
+      "category": "hardware",
+      "provisional_material": "stalowa śruba M5 ISO 4762, klasa 8.8 (HIPOTEZA bez doboru gwintu)",
+      "alternative_materials": [
+        "M6 ISO 4762 w zależności od rzeczywistej wkładki",
+        "1/4″-20 niezamienne z M6"
+      ],
+      "controlling_requirements": "ścinanie, zmęczenie, docisk kołnierza, utrata momentu",
+      "quantitative_evidence": "K08: tylko gabaryty łbów M5/M6 i długości, P40: reakcje śrub",
+      "qualification_gate": "wybrany gwint, przekrój, min długość zakotwienia, korozja, moment z pomiaru",
+      "evidence_paths": [
+        "raporty/K07_serwis_wkladow_i_audyt_mocowan.md",
+        "raporty/K08_zlacza_i_rysunki_dayton.md"
+      ],
+      "priority": "I",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "id": "E22",
+      "part": "Osiem osadzonych wkładek gwintowanych",
+      "category": "hardware",
+      "provisional_material": "stal ocynkowana wkładka gwintowana w drewnie — typ i wymiar do wyboru",
+      "alternative_materials": [
+        "mosiężna wkładka gwintowana z kartą nośności"
+      ],
+      "controlling_requirements": "wyrywanie, obrót, dylatacja drewna, wąski pas przy wycięciu",
+      "quantitative_evidence": "K01/K03 bilans geometr.; katalog brak — NO TECHNICAL SIGNOFF",
+      "qualification_gate": "potwierdzić zewnętrzne Ø i L, gniazdo, nośność po cyklach",
+      "evidence_paths": [
+        "raporty/K07_serwis_wkladow_i_audyt_mocowan.md",
+        "dokumentacja/inspiracje_zewnetrznych_konstruktorow_mocowanie_RSS390HF4.md"
+      ],
+      "priority": "I",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "id": "E23",
+      "part": "Rama osłony membrany / grill",
+      "category": "grille",
+      "provisional_material": "stal malowana proszkowo – hipotetyczny profil",
+      "alternative_materials": [
+        "aluminium 6061 / 6082 profil"
+      ],
+      "controlling_requirements": "uderzenie/odkształcenie, prześwit, dodatkowa głębokość ≤500",
+      "quantitative_evidence": "K01: 36mm projekcja grilla jest tylko założeniem",
+      "qualification_gate": "geometria, nośność na nacisk, bezpieczny prześwit, przewiew, mocowania",
+      "evidence_paths": [
+        "raporty/078_P30E_mata50_montaz_robustnosc.md"
+      ],
+      "priority": "II",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "id": "E24",
+      "part": "Siatka ochronna membrany",
+      "category": "grille",
+      "provisional_material": "blacha stalowa perforowana z wykończeniem antykorozyjnym",
+      "alternative_materials": [
+        "siatka aluminiowa o podanej średnicy drutu"
+      ],
+      "controlling_requirements": "sztywność na punktowe uderzenie, przepuszczalność akustyczna",
+      "quantitative_evidence": "brak modelu perforacji i ciężaru",
+      "qualification_gate": "wyznaczyć procent otwarcia, promień perforacji, test uderzenia i wibracji",
+      "evidence_paths": [
+        "raporty/078_P30E_mata50_montaz_robustnosc.md"
+      ],
+      "priority": "II",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "id": "E25",
+      "part": "Dystanse i łączniki grilla",
+      "category": "grille",
+      "provisional_material": "stal nierdzewna / poliamid z metalowym gwintem",
+      "alternative_materials": [
+        "aluminium anodowane"
+      ],
+      "controlling_requirements": "reakcje od osłony, demontaż, rezonans i prześwit ≤500",
+      "quantitative_evidence": "K01 modeluje 36 mm projekcję, bez prawdziwej geometrii",
+      "qualification_gate": "wybór średnicy, ściąg, moment dokręcenia, pomiar rattle",
+      "evidence_paths": [
+        "raporty/078_P30E_mata50_montaz_robustnosc.md"
+      ],
+      "priority": "II",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "id": "E26",
+      "part": "Cztery stopy lub listwy podparcia",
+      "category": "feet",
+      "provisional_material": "elastomer EPDM z płytką stalową",
+      "alternative_materials": [
+        "kauczuk silikonowy i podstawa stalowa"
+      ],
+      "controlling_requirements": "masa 50kg+kosz, przesuw, obrót skrzyni w dwóch orientacjach",
+      "quantitative_evidence": "P30F stateczność 324 scenariusze; brak krzywej sztywności stopy",
+      "qualification_gate": "karta Shore/tłumienia, siła–ugięcie, tarcie, odporność na przewrócenie",
+      "evidence_paths": [
+        "raporty/078_P30E_mata50_montaz_robustnosc.md"
+      ],
+      "priority": "I",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "id": "E27",
+      "part": "Płytka terminala z tyłu",
+      "category": "terminal",
+      "provisional_material": "aluminium 2 mm jako kandydat do uszczelnianej płytki",
+      "alternative_materials": [
+        "sztywne tworzywo PA-GF z potwierdzoną palnością"
+      ],
+      "controlling_requirements": "szczelność, otwory terminali, przewód, sztywność, głębokość",
+      "quantitative_evidence": "P30E modeluje jedynie obwiednię 0,175L osprzętu łącznie",
+      "qualification_gate": "sztywność uszczelnianego wycięcia, prześwit i objętość netto",
+      "evidence_paths": [
+        "raporty/078_P30E_mata50_montaz_robustnosc.md"
+      ],
+      "priority": "II",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "id": "E28",
+      "part": "Uszczelka płytki terminala",
+      "category": "seals",
+      "provisional_material": "EPDM zamkniętokomórkowy",
+      "alternative_materials": [
+        "silikon o znanym compression set"
+      ],
+      "controlling_requirements": "odporność na nieszczelność przy ciśnieniu i starzeniu",
+      "quantitative_evidence": "brak wymiaru i siły docisku",
+      "qualification_gate": "dobór z karty, test nieszczelności w 20–80Hz",
+      "evidence_paths": [
+        "raporty/078_P30E_mata50_montaz_robustnosc.md"
+      ],
+      "priority": "II",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "id": "E29",
+      "part": "Mata tłumiąca przy tylnej ścianie",
+      "category": "acoustic",
+      "provisional_material": "włóknina poliestrowa 50mm, nominalnie 20kg/m³ jako HIPOTEZA",
+      "alternative_materials": [
+        "wełna poliestrowa o pomierzonym oporze przepływu",
+        "wełna mineralna tylko po kwalifikacji pylenia"
+      ],
+      "controlling_requirements": "absorpcja i opór przepływu, masa ciała stałego, temperatury/pylenie",
+      "quantitative_evidence": "P30E 50 mm i modelowa gęstość 20/1380; P21 – niezakwalifikowana akustyka",
+      "qualification_gate": "opór przepływu vs f, masa, grubość, odporność ogniowa i mocowanie",
+      "evidence_paths": [
+        "raporty/078_P30E_mata50_montaz_robustnosc.md"
+      ],
+      "priority": "I",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "id": "E30",
+      "part": "Mocowanie i osłona maty tłumiącej",
+      "category": "acoustic",
+      "provisional_material": "taśma/siatka poliestrowa i punktowe mocowania PA",
+      "alternative_materials": [
+        "klej montażowy tylko z potwierdzoną kompatybilnością i emisją"
+      ],
+      "controlling_requirements": "brak kontaktu z cewką/głośnikiem, brak szelestów i wypadania",
+      "quantitative_evidence": "geometria P30E nie liczy osprzętu maty",
+      "qualification_gate": "test wibracji, odpadania, bezpieczeństwo temperaturowe",
+      "evidence_paths": [
+        "raporty/078_P30E_mata50_montaz_robustnosc.md"
+      ],
+      "priority": "II",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "id": "E31",
+      "part": "Prowadnice i opaski okablowania",
+      "category": "wiring",
+      "provisional_material": "poliamid PA66 z odpowiednią odpornością termiczną",
+      "alternative_materials": [
+        "POM z kartą mechaniki"
+      ],
+      "controlling_requirements": "utrzymanie przewodu poza koszem, odporny na drgania montaż",
+      "quantitative_evidence": "brak modelu w P30E, tylko wymóg dostępu",
+      "qualification_gate": "karta temperatury, mocowania, promienie gięcia, brak tarcia",
+      "evidence_paths": [
+        "raporty/K07_serwis_wkladow_i_audyt_mocowan.md"
+      ],
+      "priority": "II",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "id": "E32",
+      "part": "Przewody wewnętrzne i izolacja",
+      "category": "wiring",
+      "provisional_material": "przewód miedziany wielodrutowy z izolacją odporną termicznie",
+      "alternative_materials": [
+        "inny przewód z potwierdzonym przekrojem i izolacją"
+      ],
+      "controlling_requirements": "dopuszczalny prąd, spadek napięcia, nagrzewanie, trasy",
+      "quantitative_evidence": "limity symulacyjne 40V rms 12A rms nie wystarczą do doboru przewodu",
+      "qualification_gate": "obliczenie I²R, temperatura, terminal, normy instalacyjne, odporność na wibracje",
+      "evidence_paths": [
+        "raporty/078_P30E_mata50_montaz_robustnosc.md"
+      ],
+      "priority": "II",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "id": "E33",
+      "part": "Wewnętrzne uszczelnienie szczelin korpusu",
+      "category": "seals",
+      "provisional_material": "elastyczny uszczelniacz neutralny silikonowy kompatybilny z MDF",
+      "alternative_materials": [
+        "taśma uszczelniająca EPDM"
+      ],
+      "controlling_requirements": "szczelność i zachowanie przy ugięciach, kompatybilność z klejem",
+      "quantitative_evidence": "P19A połączenie strukturalne ≠ uszczelniacz",
+      "qualification_gate": "test adhezji do podkładu i szczelności, brak lotnych emisji szkodliwych",
+      "evidence_paths": [
+        "raporty/030_P19A_obliczenia_spoin_i_material_kleju.md"
+      ],
+      "priority": "II",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "id": "E34",
+      "part": "Wykończenie ochronne płyt / krawędzi",
+      "category": "finish",
+      "provisional_material": "wodna powłoka uszczelniająca do MDF + lakier",
+      "alternative_materials": [
+        "okleina drewniana z uszczelnionymi krawędziami"
+      ],
+      "controlling_requirements": "wilgotność, masa i estetyka, szczelność i utrzymanie warunków MDF",
+      "quantitative_evidence": "P37 analizuje wilgotność jako brak parametru, nie powłokę",
+      "qualification_gate": "karta absorpcji wilgoci, masa, kompatybilność kleju",
+      "evidence_paths": [
+        "raporty/095_P37B_czulosc_MDF_spoiny.md"
+      ],
+      "priority": "II",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "id": "E35",
+      "part": "Elementy opcjonalnej metalowej ramy",
+      "category": "alternative",
+      "provisional_material": "stal konstrukcyjna o udokumentowanej granicy plastyczności",
+      "alternative_materials": [
+        "aluminium 6082 z katalogową nośnością"
+      ],
+      "controlling_requirements": "nośność jeśli lokalne klocki nie wystarczą",
+      "quantitative_evidence": "P41/P42 tylko idealizowane siły; rama NIE wybrana",
+      "qualification_gate": "CAD, masa/akustyka, analiza połączeń, dopuszczenie wyłącznie po porównaniu",
+      "evidence_paths": [
+        "raporty/K07_serwis_wkladow_i_audyt_mocowan.md"
+      ],
+      "priority": "III",
+      "material_status": "CANDIDATE_NOT_QUALIFIED"
+    }
+  ]
+}
