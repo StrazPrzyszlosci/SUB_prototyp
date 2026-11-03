@@ -39,8 +39,8 @@ jobs:
                 for d in (5.,5.5,6.,6.5,8.,10.)}
           assert ref==g['geometry_pass_counts_by_d']
           assert abs(2*(6.1-1-.5-2)-5.2)<1e-10
-          assert g['benchmark_hypothesis']['maximum_allowed_external_d_mm']==5.2
-          assert g['benchmark_hypothesis']['achievable_wood_web_mm']==.6
+          assert g['benchmark_hypothesis']['max_external_diameter_that_passes_mm']==5.2
+          assert g['benchmark_hypothesis']['d8_result_wood_web_mm']==.6
           assert abs(184-178.9-8/2-1.1)<1e-10
           assert r['engineering_screen']['K02_wood_web_at_d8_nominal_mm']==1.1
           s=open('README.md',encoding='utf8').read()
