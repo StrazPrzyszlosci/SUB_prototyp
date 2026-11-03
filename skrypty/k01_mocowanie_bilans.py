@@ -66,9 +66,9 @@ def run():
  assert witness['pass_surrogate'] and witness['left_wall_clearance_mm']==4.0
  assert witness['hole_footprint_clearance_mm']==1.0
  assert witness['block_total_displacement_L']==0.225504
- assert all(not overlap(polygon(231,i*45,178.9,205,36),
-                        [(0,-1),(1,-1),(1,1),(0,1)])
-            for i in range(8))
+ # No pad vertex may project into the manufacturer's circular front opening.
+ assert all(math.hypot(x-231,z-250)>=CUT_R-1e-9
+            for i in range(8) for x,z in polygon(231,i*45,178.9,205,36))
  inserts=[{'insert_external_d_mm':d,
            'web_inner_mm':round(BOLT_R-d/2-178.9,2),
            'web_min_2mm_hypothesis':BOLT_R-d/2-178.9>=2-1e-10}
