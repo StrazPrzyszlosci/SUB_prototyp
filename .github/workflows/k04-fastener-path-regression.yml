@@ -29,7 +29,7 @@ jobs:
           import math,json
           x=json.load(open('wyniki/k04_manifest_odtworzony.json',encoding='utf8'))['summary']
           assert x['ideal_hex_cases']==42
-          assert x['route_checks']==20
+          assert x['route_checks']==22
           assert x['radial_distance_axis_to_K02_pad_inner_mm']==5.1
           assert x['radial_distance_axis_to_cutout_mm']==6.1
           for z,af in x['ideal_hex_nut_size_by_flats_mm'].items():
