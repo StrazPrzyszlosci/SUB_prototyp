@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="430" viewBox="0 0 1100 430" role="img" aria-label="K05: dwie rozważane kolejności montażu, brak rozstrzygnięcia dostępu do nakrętek">
+<rect width="1100" height="430" fill="#ffffff"/>
+<text x="45" y="49" font-family="DejaVu Sans,Arial" font-size="27" fill="#19283b" font-weight="bold">K05 — kolejność montażu, nie projekt CNC</text>
+<text x="45" y="79" font-family="DejaVu Sans,Arial" font-size="16" fill="#536477">Dane K02/K04: model P30E, 100 l, 20 wkładów, osiem lokalnych mocowań; wszystkie wartości to symulacje.</text>
+<rect x="45" y="112" width="480" height="212" rx="14" fill="#f6f7fa" stroke="#d7dee8"/>
+<rect x="570" y="112" width="480" height="212" rx="14" fill="#f6f7fa" stroke="#d7dee8"/>
+<text x="70" y="149" font-family="DejaVu Sans,Arial" font-size="21" font-weight="bold" fill="#26374e">A. Najpierw tylny osprzęt M6</text>
+<rect x="70" y="170" width="195" height="52" rx="9" fill="#dfe9f5"/>
+<rect x="300" y="170" width="195" height="52" rx="9" fill="#f9e4db"/>
+<text x="167" y="202" text-anchor="middle" font-family="DejaVu Sans,Arial" font-size="17" fill="#193350">Mocowania 28,8 mm</text>
+<text x="398" y="202" text-anchor="middle" font-family="DejaVu Sans,Arial" font-size="17" fill="#74321f">16/20 modułów</text>
+<path d="M266 196 L294 196" stroke="#64748b" stroke-width="2.5"/>
+<path d="M288 190 L295 196 L288 202" fill="none" stroke="#64748b" stroke-width="2.5"/>
+<text x="70" y="260" font-family="DejaVu Sans,Arial" font-size="15" fill="#26374e">Nie znaleziono pełnej drogi w uproszczonym</text>
+<text x="70" y="282" font-family="DejaVu Sans,Arial" font-size="15" fill="#26374e">modelu K04 przy luzie 3 i 6 mm.</text>
+<text x="595" y="149" font-family="DejaVu Sans,Arial" font-size="21" font-weight="bold" fill="#26374e">B. Najpierw wkłady, później osprzęt</text>
+<rect x="595" y="170" width="180" height="52" rx="9" fill="#ddf1e6"/>
+<rect x="810" y="170" width="215" height="52" rx="9" fill="#fff0d6"/>
+<text x="685" y="202" text-anchor="middle" font-family="DejaVu Sans,Arial" font-size="17" fill="#23573d">20/20 modułów</text>
+<text x="917" y="202" text-anchor="middle" font-family="DejaVu Sans,Arial" font-size="16" fill="#704d1b">Osprzęt: dostęp ?</text>
+<path d="M776 196 L804 196" stroke="#64748b" stroke-width="2.5"/>
+<path d="M798 190 L805 196 L798 202" fill="none" stroke="#64748b" stroke-width="2.5"/>
+<text x="595" y="260" font-family="DejaVu Sans,Arial" font-size="15" fill="#26374e">0/20 kolizji w pozycjach końcowych,</text>
+<text x="595" y="282" font-family="DejaVu Sans,Arial" font-size="15" fill="#26374e">ale brak dowodu włożenia i dokręcenia osprzętu.</text>
+<rect x="45" y="345" width="1005" height="53" rx="10" fill="#edf1f6"/>
+<text x="65" y="377" font-family="DejaVu Sans,Arial" font-size="17" fill="#243850">Wniosek: niezbędna makieta 1:1 z rzeczywistymi elementami i narzędziami. CNC HOLD.</text>
+</svg>
