@@ -57,6 +57,12 @@ Dla P_eff=300 N, 5g, 120 mm model daje **330,592664 N** dla N=8/16/32. Test jest
 
 [Program odtwarzający 2916 przypadków](../skrypty/b12_15_nacisk_rozproszony.py) · [manifest i wyniki referencyjne](../wyniki/b12_15_podsumowanie.json) · [wykres](../wyniki/b12_15_relaksacja_nacisku_NIE_CNC.svg) · [regresja automatyczna](../.github/workflows/b12-15-regression.yml). Program generuje pełny JSON scenariuszy i manifest SHA-256; duży JSON nie jest pomiarem i nie musi być przechowywany na stałe w git.
 
+## Źródła metodologiczne i interpretacja niepewności
+
+- [NASA-STD-5020B, revalidated edition — threaded fasteners](https://standards.nasa.gov/system/files/tmp/2025%20-01-05%20NASA-STD-5020B%20Final%20-Revalidated.pdf), załączniki o docisku, krótkotrwałej relaksacji i pełzaniu. W połączeniach z częściami **niemetalicznymi** standard wskazuje konieczność danych uzyskanych z badań dla osiadania/relaksacji; **nie stosujemy norm kosmicznych jako limitu MDF subwoofera**.
+- [Nelson, Prasad, Sekhar (2023), przegląd uszczelnienia i relaksacji w połączeniach kołnierzowych](https://doi.org/10.1016/j.ijpvp.2023.104975): uzasadnia potrzebę charakterystyki nieliniowych uszczelek, pełzania i rzeczywistego rozkładu nacisku.
+- [Marshall, Lewis, Dwyer-Joyce (2006), pomiar kontaktowego rozkładu nacisku](https://doi.org/10.1111/j.1475-1305.2006.00247.x): analityczne uproszczenia nie muszą odzwierciedlać rzeczywistego pola kontaktu. B12-15 stosuje tylko model zastępczy i wprost ogranicza fizyczną interpretację wskaźnika nacisku.
+
 ## Co naprawdę przybliża pierwszą budowę?
 
 **Nie rekomenduję automatycznego uruchamiania B12-16 jako kolejnej serii abstrakcyjnych sprężyn.** B12-09–15 już pokazują, jak niepewność geometrii, sztywności i docisku wpływa na model, ale **bez fizycznych danych nie sposób zweryfikować wyboru nośnika mocowania**.
