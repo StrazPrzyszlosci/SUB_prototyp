@@ -173,8 +173,21 @@ def run():
           "Real removable module latches, fastener retention, MDF/adhesive pullout strength, gasket and front-only service",
           "No production signoff, no CAD/cutting file"]
     }
-    target=ROOT/"wyniki"/"k06_podsumowanie.json"
+    target=ROOT/"wyniki"/"k06_pelne_trasy_wygenerowane.json"
     target.write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    compact = {
+      "study":"K06", "date":"2026-11-03",
+      "source_model":"P30E with all 20 volume inserts and nominal K02 pads",
+      "physical_testing":False,"cnc":"HOLD",
+      "gauge_diameters_mm":[12,24,48],
+      "results":by_radius,
+      "leftmost_bolt_axis_distance_to_inside_wall_mm":left_bolt_wall_distance,
+      "maximum_ideal_spherical_radius_at_leftmost_bolt_axis_mm":left_bolt_wall_distance,
+      "full_real_fastener_assembly_verified":False,
+      "routes_generated_not_committed":"wyniki/k06_pelne_trasy_wygenerowane.json"
+    }
+    (ROOT/"wyniki"/"k06_podsumowanie.json").write_text(
+        json.dumps(compact,ensure_ascii=False,indent=2)+"\n", encoding="utf-8")
     print("K06_RESULTS", json.dumps({
         "gauges":by_radius,
         "left_wall_bolt_axis_mm":left_bolt_wall_distance,
