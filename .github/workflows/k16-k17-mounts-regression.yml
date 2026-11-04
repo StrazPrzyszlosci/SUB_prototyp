@@ -1,0 +1,106 @@
+name: K16 K17 removable inserts must have supported mount interfaces
+on:
+  pull_request:
+    paths:
+      - "README.md"
+      - "WYMAGANIA.md"
+      - "skrypty/k16_*"
+      - "skrypty/k17_*"
+      - "wyniki/k16_*"
+      - "wyniki/k17_*"
+      - "raporty/K16_*"
+      - "raporty/K17_*"
+      - "dokumentacja/K16_*"
+      - "dokumentacja/K17_*"
+      - ".github/workflows/k16-k17-mounts-regression.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  reproduce-mounts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Regenerate two reference models and compare exact files
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --check skrypty/k16_podparcie_modulow.js
+          node --check skrypty/k17_prowadnice_wkladow.js
+          cp wyniki/k16_model_podparcia_20_wkladow.json /tmp/k16-orig.json
+          cp wyniki/k16_80_stykow_modulow_REFERENCYJNE_NIE_CNC.csv /tmp/k16-orig.csv
+          cp dokumentacja/K16_p30e_z_mocowaniami_modulow_NIE_CNC.scad /tmp/k16-orig.scad
+          cp wyniki/k17_prowadnice_boczne_wkladow.json /tmp/k17-orig.json
+          cp dokumentacja/K17_p30e_prowadnice_i_zabezpieczenia_NIE_CNC.scad /tmp/k17-orig.scad
+          node skrypty/k16_podparcie_modulow.js
+          node skrypty/k17_prowadnice_wkladow.js
+          cmp /tmp/k16-orig.json wyniki/k16_model_podparcia_20_wkladow.json
+          cmp /tmp/k16-orig.csv wyniki/k16_80_stykow_modulow_REFERENCYJNE_NIE_CNC.csv
+          cmp /tmp/k16-orig.scad dokumentacja/K16_p30e_z_mocowaniami_modulow_NIE_CNC.scad
+          cmp /tmp/k17-orig.json wyniki/k17_prowadnice_boczne_wkladow.json
+          cmp /tmp/k17-orig.scad dokumentacja/K17_p30e_prowadnice_i_zabezpieczenia_NIE_CNC.scad
+      - name: Check independently modules, interfaces, K16 mat clash and K17 mat-safe reference
+        shell: bash
+        run: |
+          node - <<'NODE'
+          const fs=require('node:fs'), assert=require('node:assert/strict');
+          const k16=JSON.parse(fs.readFileSync('wyniki/k16_model_podparcia_20_wkladow.json','utf8'));
+          const k17=JSON.parse(fs.readFileSync('wyniki/k17_prowadnice_boczne_wkladow.json','utf8'));
+          const k15=JSON.parse(fs.readFileSync('wyniki/k15_p30e_przed_CNC_zestawienie.json','utf8'));
+          assert.equal(k15.module_positions.length,20);
+          assert.equal(k16.support_count,80);
+          assert.equal(k16.supports_per_module,4);
+          assert.equal(k16.front_fixed_wall_slots,8);
+          assert.equal(k16.rear_fixed_wall_slots,12);
+          assert.equal(k16.mat_penetration_count,48);
+          assert.equal(k16.mat_envelope_displaced_by_supports_l,0.3072);
+          assert.equal(k16.bracket_total_nominal_displacement_l,0.499712);
+          assert.equal(k16.no_positive_AABB_intersections_with_138_k15_MDF_parts,true);
+          assert.equal(k16.no_positive_AABB_support_support_intersections,true);
+          assert.equal(k16.mount_envelopes.length,80);
+          assert.equal(k16.state_audits['100'].installed_modules,20);
+          assert.equal(k16.state_audits['120'].installed_modules,12);
+          assert.equal(k16.state_audits['150'].installed_modules,1);
+          assert.equal(k17.spine_count,12);
+          assert.equal(k17.integrated_contact_lips_count,80);
+          assert.equal(k17.no_clashes_with_k15_reference_parts,true);
+          assert.equal(k17.no_clashes_between_12_spines_or_80_lips,true);
+          assert.equal(k17.no_overlap_with_50mm_rear_mat,true);
+          assert.equal(k17.no_overlap_with_CONSERVATIVE_P30A_basket_AABB,true);
+          assert.equal(k17.fixed_support_volume_l,1.020928);
+          assert.equal(k17.potential_nominal_reference_state_volumes_if_ALL_rails_present['100'],99.098366);
+          assert.equal(k17.potential_nominal_reference_state_volumes_if_ALL_rails_present['120'],118.898366);
+          assert.equal(k17.potential_nominal_reference_state_volumes_if_ALL_rails_present['150'],149.138366);
+          const model=fs.readFileSync('dokumentacja/K17_p30e_prowadnice_i_zabezpieczenia_NIE_CNC.scad','utf8');
+          assert(model.includes('include <K15_p30e_zlozenie_parametryczne_NIE_CNC.scad>'));
+          assert(model.includes('if(show_K17_lips)for(c=K17_CONTACTS)color('));
+          assert(!model.includes('if(panel_enabled(c[0]))'), 'Integrated clips cannot disappear when a module is removed');
+          assert(!model.includes('cylinder(d=6.5'), 'MDF drilled holes must NOT inherit factory 6.5mm basket holes');
+          assert(k17.expected_issues.some(s=>s.includes('latches')));
+          console.log('PASS K16/K17: 20 modules, 80 reference fixing interfaces, 48 rear mat K16 conflicts, 0 K17 mat overlaps; NO CNC');
+          NODE
+      - name: README original guide ordering and 2 appendices only
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import subprocess
+          original=subprocess.check_output(['git','show','origin/main:README.md'],text=True)
+          current=Path('README.md').read_text(encoding='utf-8')
+          assert current.startswith(original), 'Existing guide was modified, not simply extended'
+          assert current.count('### A21. K16')==1
+          assert current.count('### A22. K17')==1
+          assert current.index('### A21. K16')>current.index('### A20. K15')
+          assert current.index('### A22. K17')>current.index('### A21. K16')
+          assert current.index('## Głośniki: porównanie w tych samych warunkach')<current.index('## Praktyczny przewodnik')
+          assert 'CNC HOLD' in current[-2500:]
+          report=Path('raporty/K17_prowadnice_nośne_bez_kolizji_z_mata.md').read_text(encoding='utf-8')
+          assert '1,020928' in report and 'CNC HOLD' in report
+          assert Path('dokumentacja/K16_p30e_z_mocowaniami_modulow_NIE_CNC.scad').exists()
+          print('PASS README: full existing loudspeaker-first guide preserved, append-only A21/A22; no manufacturing release')
+          PY

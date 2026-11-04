@@ -1,0 +1,2681 @@
+{
+  "study": "K16",
+  "date": "2026-11-04",
+  "status": "GEOMETRIC REFERENCE SUPPORT/RETAINER INTERFACES ONLY; NO FASTENER, BRACKET OR CNC VALIDATION",
+  "source": "K15 P30E module positions and conservative four-contact front/rear wall docking concept",
+  "support_count": 80,
+  "modules_total": 20,
+  "supports_per_module": 4,
+  "front_fixed_wall_slots": 8,
+  "rear_fixed_wall_slots": 12,
+  "support_section_hypothesis_mm": {
+    "width": 16,
+    "thickness": 8,
+    "overlap_under_module": 12
+  },
+  "support_connectivity_model": "2 bottom shelves and 2 opposing anti-inversion top retainers per module, touching an inner MDF wall at y=44 or y=403; actual screws, brackets, sliding latches, mounting clips and strength NOT modelled",
+  "bracket_total_nominal_displacement_l": 0.499712,
+  "mat_penetration_count": 48,
+  "mat_envelope_displaced_by_supports_l": 0.3072,
+  "min_wall_gap_mm": 8,
+  "max_wall_gap_mm": 56,
+  "material_screen_hypothesis": {
+    "module_shell_thickness_mm": 8,
+    "module_density_kg_m3": 730,
+    "gravity_m_s2": 9.81,
+    "comparison_acceleration_g": 5
+  },
+  "module_mass_kg": {
+    "small": 0.469256,
+    "large_rear": 0.602408,
+    "large_front": 0.705425
+  },
+  "examples": {
+    "largest_rear_cantilever_MPa": 4.84773,
+    "largest_front_cantilever_MPa": 0.81096
+  },
+  "no_positive_AABB_intersections_with_138_k15_MDF_parts": true,
+  "no_positive_AABB_support_support_intersections": true,
+  "state_audits": {
+    "100": {
+      "installed_modules": 20,
+      "module_shell_mass_kg": 12.33969,
+      "brackets_if_removable_with_module": 0.499712,
+      "fixed_brackets_if_all_remain_l": 0.499712
+    },
+    "120": {
+      "installed_modules": 12,
+      "module_shell_mass_kg": 7.64096,
+      "brackets_if_removable_with_module": 0.319488,
+      "fixed_brackets_if_all_remain_l": 0.499712
+    },
+    "150": {
+      "installed_modules": 1,
+      "module_shell_mass_kg": 0.60241,
+      "brackets_if_removable_with_module": 0.034816,
+      "fixed_brackets_if_all_remain_l": 0.499712
+    }
+  },
+  "critical_problems": [
+    "K15 20 modules are unsupported; K16 introduces only 80 reference docking arms touching cabinet walls and module undersides/tops. Physical attachment not designed.",
+    "48 rear braces would penetrate the 50 mm rear mat envelope; must redesign anchors or cut mat and redo acoustic/volume calculation.",
+    "Two bottom supports may be stressed in cantilever bending; hypothesis 5 g is NOT an acceptance load, and nominal thickness 8mm is NOT certified.",
+    "Four-point preload, clamping, pull-out, joint creep and vibrational fatigue of MDF, acoustic sealing and rattle-free removable locks not modelled.",
+    "Routes and screwdriver/hand access with supports and physically removable sliders not verified; do not assume K02/K07 20-of-20 remains true.",
+    "Supports left installed for 150L and those removed with modules require different volume and mass balances; both are only exploratory.",
+    "Gravity orientation: need 180-degree inversion and transport cases; no module can be unrestrained even when inverted.",
+    "Fasteners, service access and manufacturing drawing must be defined before CNC — hold all brackets and MDF panels."
+  ],
+  "mount_envelopes": [
+    {
+      "id": "K16_SLOT_00_SHELF_1",
+      "module_index": 0,
+      "position": "bottom",
+      "o": [
+        49,
+        335,
+        54
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.46926,
+      "five_g_force_module_N": 23.017,
+      "test_force_per_loaded_rail_N": 11.5085,
+      "cantilever_bending_stress_screen_MPa": 3.77623,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_00_SHELF_2",
+      "module_index": 0,
+      "position": "bottom",
+      "o": [
+        177,
+        335,
+        54
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.46926,
+      "five_g_force_module_N": 23.017,
+      "test_force_per_loaded_rail_N": 11.5085,
+      "cantilever_bending_stress_screen_MPa": 3.77623,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_00_RETAINER_1",
+      "module_index": 0,
+      "position": "top",
+      "o": [
+        49,
+        335,
+        162
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.46926,
+      "five_g_force_module_N": 23.017,
+      "test_force_per_loaded_rail_N": 11.5085,
+      "cantilever_bending_stress_screen_MPa": 3.77623,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_00_RETAINER_2",
+      "module_index": 0,
+      "position": "top",
+      "o": [
+        177,
+        335,
+        162
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.46926,
+      "five_g_force_module_N": 23.017,
+      "test_force_per_loaded_rail_N": 11.5085,
+      "cantilever_bending_stress_screen_MPa": 3.77623,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_01_SHELF_1",
+      "module_index": 1,
+      "position": "bottom",
+      "o": [
+        81,
+        335,
+        330
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.46926,
+      "five_g_force_module_N": 23.017,
+      "test_force_per_loaded_rail_N": 11.5085,
+      "cantilever_bending_stress_screen_MPa": 3.77623,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_01_SHELF_2",
+      "module_index": 1,
+      "position": "bottom",
+      "o": [
+        145,
+        335,
+        330
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.46926,
+      "five_g_force_module_N": 23.017,
+      "test_force_per_loaded_rail_N": 11.5085,
+      "cantilever_bending_stress_screen_MPa": 3.77623,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_01_RETAINER_1",
+      "module_index": 1,
+      "position": "top",
+      "o": [
+        81,
+        335,
+        438
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.46926,
+      "five_g_force_module_N": 23.017,
+      "test_force_per_loaded_rail_N": 11.5085,
+      "cantilever_bending_stress_screen_MPa": 3.77623,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_01_RETAINER_2",
+      "module_index": 1,
+      "position": "top",
+      "o": [
+        145,
+        335,
+        438
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.46926,
+      "five_g_force_module_N": 23.017,
+      "test_force_per_loaded_rail_N": 11.5085,
+      "cantilever_bending_stress_screen_MPa": 3.77623,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_02_SHELF_1",
+      "module_index": 2,
+      "position": "bottom",
+      "o": [
+        273,
+        335,
+        54
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.46926,
+      "five_g_force_module_N": 23.017,
+      "test_force_per_loaded_rail_N": 11.5085,
+      "cantilever_bending_stress_screen_MPa": 3.77623,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_02_SHELF_2",
+      "module_index": 2,
+      "position": "bottom",
+      "o": [
+        401,
+        335,
+        54
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.46926,
+      "five_g_force_module_N": 23.017,
+      "test_force_per_loaded_rail_N": 11.5085,
+      "cantilever_bending_stress_screen_MPa": 3.77623,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_02_RETAINER_1",
+      "module_index": 2,
+      "position": "top",
+      "o": [
+        273,
+        335,
+        162
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.46926,
+      "five_g_force_module_N": 23.017,
+      "test_force_per_loaded_rail_N": 11.5085,
+      "cantilever_bending_stress_screen_MPa": 3.77623,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_02_RETAINER_2",
+      "module_index": 2,
+      "position": "top",
+      "o": [
+        401,
+        335,
+        162
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.46926,
+      "five_g_force_module_N": 23.017,
+      "test_force_per_loaded_rail_N": 11.5085,
+      "cantilever_bending_stress_screen_MPa": 3.77623,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_03_SHELF_1",
+      "module_index": 3,
+      "position": "bottom",
+      "o": [
+        305,
+        335,
+        330
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.46926,
+      "five_g_force_module_N": 23.017,
+      "test_force_per_loaded_rail_N": 11.5085,
+      "cantilever_bending_stress_screen_MPa": 3.77623,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_03_SHELF_2",
+      "module_index": 3,
+      "position": "bottom",
+      "o": [
+        369,
+        335,
+        330
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.46926,
+      "five_g_force_module_N": 23.017,
+      "test_force_per_loaded_rail_N": 11.5085,
+      "cantilever_bending_stress_screen_MPa": 3.77623,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_03_RETAINER_1",
+      "module_index": 3,
+      "position": "top",
+      "o": [
+        305,
+        335,
+        438
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.46926,
+      "five_g_force_module_N": 23.017,
+      "test_force_per_loaded_rail_N": 11.5085,
+      "cantilever_bending_stress_screen_MPa": 3.77623,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_03_RETAINER_2",
+      "module_index": 3,
+      "position": "top",
+      "o": [
+        369,
+        335,
+        438
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.46926,
+      "five_g_force_module_N": 23.017,
+      "test_force_per_loaded_rail_N": 11.5085,
+      "cantilever_bending_stress_screen_MPa": 3.77623,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_04_SHELF_1",
+      "module_index": 4,
+      "position": "bottom",
+      "o": [
+        784.5,
+        335,
+        26
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.60241,
+      "five_g_force_module_N": 29.5481,
+      "test_force_per_loaded_rail_N": 14.774,
+      "cantilever_bending_stress_screen_MPa": 4.84773,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_04_SHELF_2",
+      "module_index": 4,
+      "position": "bottom",
+      "o": [
+        942.5,
+        335,
+        26
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.60241,
+      "five_g_force_module_N": 29.5481,
+      "test_force_per_loaded_rail_N": 14.774,
+      "cantilever_bending_stress_screen_MPa": 4.84773,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_04_RETAINER_1",
+      "module_index": 4,
+      "position": "top",
+      "o": [
+        784.5,
+        335,
+        134
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.60241,
+      "five_g_force_module_N": 29.5481,
+      "test_force_per_loaded_rail_N": 14.774,
+      "cantilever_bending_stress_screen_MPa": 4.84773,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_04_RETAINER_2",
+      "module_index": 4,
+      "position": "top",
+      "o": [
+        942.5,
+        335,
+        134
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.60241,
+      "five_g_force_module_N": 29.5481,
+      "test_force_per_loaded_rail_N": 14.774,
+      "cantilever_bending_stress_screen_MPa": 4.84773,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_05_SHELF_1",
+      "module_index": 5,
+      "position": "bottom",
+      "o": [
+        816.5,
+        335,
+        356
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.60241,
+      "five_g_force_module_N": 29.5481,
+      "test_force_per_loaded_rail_N": 14.774,
+      "cantilever_bending_stress_screen_MPa": 4.84773,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_05_SHELF_2",
+      "module_index": 5,
+      "position": "bottom",
+      "o": [
+        910.5,
+        335,
+        356
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.60241,
+      "five_g_force_module_N": 29.5481,
+      "test_force_per_loaded_rail_N": 14.774,
+      "cantilever_bending_stress_screen_MPa": 4.84773,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_05_RETAINER_1",
+      "module_index": 5,
+      "position": "top",
+      "o": [
+        816.5,
+        335,
+        464
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.60241,
+      "five_g_force_module_N": 29.5481,
+      "test_force_per_loaded_rail_N": 14.774,
+      "cantilever_bending_stress_screen_MPa": 4.84773,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_05_RETAINER_2",
+      "module_index": 5,
+      "position": "top",
+      "o": [
+        910.5,
+        335,
+        464
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.60241,
+      "five_g_force_module_N": 29.5481,
+      "test_force_per_loaded_rail_N": 14.774,
+      "cantilever_bending_stress_screen_MPa": 4.84773,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_06_SHELF_1",
+      "module_index": 6,
+      "position": "bottom",
+      "o": [
+        816.5,
+        335,
+        136
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.60241,
+      "five_g_force_module_N": 29.5481,
+      "test_force_per_loaded_rail_N": 14.774,
+      "cantilever_bending_stress_screen_MPa": 4.84773,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_06_SHELF_2",
+      "module_index": 6,
+      "position": "bottom",
+      "o": [
+        910.5,
+        335,
+        136
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.60241,
+      "five_g_force_module_N": 29.5481,
+      "test_force_per_loaded_rail_N": 14.774,
+      "cantilever_bending_stress_screen_MPa": 4.84773,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_06_RETAINER_1",
+      "module_index": 6,
+      "position": "top",
+      "o": [
+        816.5,
+        335,
+        244
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.60241,
+      "five_g_force_module_N": 29.5481,
+      "test_force_per_loaded_rail_N": 14.774,
+      "cantilever_bending_stress_screen_MPa": 4.84773,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_06_RETAINER_2",
+      "module_index": 6,
+      "position": "top",
+      "o": [
+        910.5,
+        335,
+        244
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.60241,
+      "five_g_force_module_N": 29.5481,
+      "test_force_per_loaded_rail_N": 14.774,
+      "cantilever_bending_stress_screen_MPa": 4.84773,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_07_SHELF_1",
+      "module_index": 7,
+      "position": "bottom",
+      "o": [
+        784.5,
+        335,
+        246
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.60241,
+      "five_g_force_module_N": 29.5481,
+      "test_force_per_loaded_rail_N": 14.774,
+      "cantilever_bending_stress_screen_MPa": 4.84773,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_07_SHELF_2",
+      "module_index": 7,
+      "position": "bottom",
+      "o": [
+        942.5,
+        335,
+        246
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.60241,
+      "five_g_force_module_N": 29.5481,
+      "test_force_per_loaded_rail_N": 14.774,
+      "cantilever_bending_stress_screen_MPa": 4.84773,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_07_RETAINER_1",
+      "module_index": 7,
+      "position": "top",
+      "o": [
+        784.5,
+        335,
+        354
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.60241,
+      "five_g_force_module_N": 29.5481,
+      "test_force_per_loaded_rail_N": 14.774,
+      "cantilever_bending_stress_screen_MPa": 4.84773,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_07_RETAINER_2",
+      "module_index": 7,
+      "position": "top",
+      "o": [
+        942.5,
+        335,
+        354
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.60241,
+      "five_g_force_module_N": 29.5481,
+      "test_force_per_loaded_rail_N": 14.774,
+      "cantilever_bending_stress_screen_MPa": 4.84773,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_08_SHELF_1",
+      "module_index": 8,
+      "position": "bottom",
+      "o": [
+        784.5,
+        44,
+        26
+      ],
+      "s": [
+        16,
+        20,
+        8
+      ],
+      "bound_wall_y_mm": 44,
+      "bound_module_face_y_mm": 52,
+      "wall_face": "front",
+      "unsupported_reach_mm": 8,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.70543,
+      "five_g_force_module_N": 34.6011,
+      "test_force_per_loaded_rail_N": 17.3006,
+      "cantilever_bending_stress_screen_MPa": 0.81096,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 2560
+    },
+    {
+      "id": "K16_SLOT_08_SHELF_2",
+      "module_index": 8,
+      "position": "bottom",
+      "o": [
+        942.5,
+        44,
+        26
+      ],
+      "s": [
+        16,
+        20,
+        8
+      ],
+      "bound_wall_y_mm": 44,
+      "bound_module_face_y_mm": 52,
+      "wall_face": "front",
+      "unsupported_reach_mm": 8,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.70543,
+      "five_g_force_module_N": 34.6011,
+      "test_force_per_loaded_rail_N": 17.3006,
+      "cantilever_bending_stress_screen_MPa": 0.81096,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 2560
+    },
+    {
+      "id": "K16_SLOT_08_RETAINER_1",
+      "module_index": 8,
+      "position": "top",
+      "o": [
+        784.5,
+        44,
+        134
+      ],
+      "s": [
+        16,
+        20,
+        8
+      ],
+      "bound_wall_y_mm": 44,
+      "bound_module_face_y_mm": 52,
+      "wall_face": "front",
+      "unsupported_reach_mm": 8,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.70543,
+      "five_g_force_module_N": 34.6011,
+      "test_force_per_loaded_rail_N": 17.3006,
+      "cantilever_bending_stress_screen_MPa": 0.81096,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 2560
+    },
+    {
+      "id": "K16_SLOT_08_RETAINER_2",
+      "module_index": 8,
+      "position": "top",
+      "o": [
+        942.5,
+        44,
+        134
+      ],
+      "s": [
+        16,
+        20,
+        8
+      ],
+      "bound_wall_y_mm": 44,
+      "bound_module_face_y_mm": 52,
+      "wall_face": "front",
+      "unsupported_reach_mm": 8,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.70543,
+      "five_g_force_module_N": 34.6011,
+      "test_force_per_loaded_rail_N": 17.3006,
+      "cantilever_bending_stress_screen_MPa": 0.81096,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 2560
+    },
+    {
+      "id": "K16_SLOT_09_SHELF_1",
+      "module_index": 9,
+      "position": "bottom",
+      "o": [
+        816.5,
+        44,
+        356
+      ],
+      "s": [
+        16,
+        20,
+        8
+      ],
+      "bound_wall_y_mm": 44,
+      "bound_module_face_y_mm": 52,
+      "wall_face": "front",
+      "unsupported_reach_mm": 8,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.70543,
+      "five_g_force_module_N": 34.6011,
+      "test_force_per_loaded_rail_N": 17.3006,
+      "cantilever_bending_stress_screen_MPa": 0.81096,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 2560
+    },
+    {
+      "id": "K16_SLOT_09_SHELF_2",
+      "module_index": 9,
+      "position": "bottom",
+      "o": [
+        910.5,
+        44,
+        356
+      ],
+      "s": [
+        16,
+        20,
+        8
+      ],
+      "bound_wall_y_mm": 44,
+      "bound_module_face_y_mm": 52,
+      "wall_face": "front",
+      "unsupported_reach_mm": 8,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.70543,
+      "five_g_force_module_N": 34.6011,
+      "test_force_per_loaded_rail_N": 17.3006,
+      "cantilever_bending_stress_screen_MPa": 0.81096,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 2560
+    },
+    {
+      "id": "K16_SLOT_09_RETAINER_1",
+      "module_index": 9,
+      "position": "top",
+      "o": [
+        816.5,
+        44,
+        464
+      ],
+      "s": [
+        16,
+        20,
+        8
+      ],
+      "bound_wall_y_mm": 44,
+      "bound_module_face_y_mm": 52,
+      "wall_face": "front",
+      "unsupported_reach_mm": 8,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.70543,
+      "five_g_force_module_N": 34.6011,
+      "test_force_per_loaded_rail_N": 17.3006,
+      "cantilever_bending_stress_screen_MPa": 0.81096,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 2560
+    },
+    {
+      "id": "K16_SLOT_09_RETAINER_2",
+      "module_index": 9,
+      "position": "top",
+      "o": [
+        910.5,
+        44,
+        464
+      ],
+      "s": [
+        16,
+        20,
+        8
+      ],
+      "bound_wall_y_mm": 44,
+      "bound_module_face_y_mm": 52,
+      "wall_face": "front",
+      "unsupported_reach_mm": 8,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.70543,
+      "five_g_force_module_N": 34.6011,
+      "test_force_per_loaded_rail_N": 17.3006,
+      "cantilever_bending_stress_screen_MPa": 0.81096,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 2560
+    },
+    {
+      "id": "K16_SLOT_10_SHELF_1",
+      "module_index": 10,
+      "position": "bottom",
+      "o": [
+        816.5,
+        44,
+        136
+      ],
+      "s": [
+        16,
+        20,
+        8
+      ],
+      "bound_wall_y_mm": 44,
+      "bound_module_face_y_mm": 52,
+      "wall_face": "front",
+      "unsupported_reach_mm": 8,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.70543,
+      "five_g_force_module_N": 34.6011,
+      "test_force_per_loaded_rail_N": 17.3006,
+      "cantilever_bending_stress_screen_MPa": 0.81096,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 2560
+    },
+    {
+      "id": "K16_SLOT_10_SHELF_2",
+      "module_index": 10,
+      "position": "bottom",
+      "o": [
+        910.5,
+        44,
+        136
+      ],
+      "s": [
+        16,
+        20,
+        8
+      ],
+      "bound_wall_y_mm": 44,
+      "bound_module_face_y_mm": 52,
+      "wall_face": "front",
+      "unsupported_reach_mm": 8,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.70543,
+      "five_g_force_module_N": 34.6011,
+      "test_force_per_loaded_rail_N": 17.3006,
+      "cantilever_bending_stress_screen_MPa": 0.81096,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 2560
+    },
+    {
+      "id": "K16_SLOT_10_RETAINER_1",
+      "module_index": 10,
+      "position": "top",
+      "o": [
+        816.5,
+        44,
+        244
+      ],
+      "s": [
+        16,
+        20,
+        8
+      ],
+      "bound_wall_y_mm": 44,
+      "bound_module_face_y_mm": 52,
+      "wall_face": "front",
+      "unsupported_reach_mm": 8,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.70543,
+      "five_g_force_module_N": 34.6011,
+      "test_force_per_loaded_rail_N": 17.3006,
+      "cantilever_bending_stress_screen_MPa": 0.81096,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 2560
+    },
+    {
+      "id": "K16_SLOT_10_RETAINER_2",
+      "module_index": 10,
+      "position": "top",
+      "o": [
+        910.5,
+        44,
+        244
+      ],
+      "s": [
+        16,
+        20,
+        8
+      ],
+      "bound_wall_y_mm": 44,
+      "bound_module_face_y_mm": 52,
+      "wall_face": "front",
+      "unsupported_reach_mm": 8,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.70543,
+      "five_g_force_module_N": 34.6011,
+      "test_force_per_loaded_rail_N": 17.3006,
+      "cantilever_bending_stress_screen_MPa": 0.81096,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 2560
+    },
+    {
+      "id": "K16_SLOT_11_SHELF_1",
+      "module_index": 11,
+      "position": "bottom",
+      "o": [
+        784.5,
+        44,
+        246
+      ],
+      "s": [
+        16,
+        20,
+        8
+      ],
+      "bound_wall_y_mm": 44,
+      "bound_module_face_y_mm": 52,
+      "wall_face": "front",
+      "unsupported_reach_mm": 8,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.70543,
+      "five_g_force_module_N": 34.6011,
+      "test_force_per_loaded_rail_N": 17.3006,
+      "cantilever_bending_stress_screen_MPa": 0.81096,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 2560
+    },
+    {
+      "id": "K16_SLOT_11_SHELF_2",
+      "module_index": 11,
+      "position": "bottom",
+      "o": [
+        942.5,
+        44,
+        246
+      ],
+      "s": [
+        16,
+        20,
+        8
+      ],
+      "bound_wall_y_mm": 44,
+      "bound_module_face_y_mm": 52,
+      "wall_face": "front",
+      "unsupported_reach_mm": 8,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.70543,
+      "five_g_force_module_N": 34.6011,
+      "test_force_per_loaded_rail_N": 17.3006,
+      "cantilever_bending_stress_screen_MPa": 0.81096,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 2560
+    },
+    {
+      "id": "K16_SLOT_11_RETAINER_1",
+      "module_index": 11,
+      "position": "top",
+      "o": [
+        784.5,
+        44,
+        354
+      ],
+      "s": [
+        16,
+        20,
+        8
+      ],
+      "bound_wall_y_mm": 44,
+      "bound_module_face_y_mm": 52,
+      "wall_face": "front",
+      "unsupported_reach_mm": 8,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.70543,
+      "five_g_force_module_N": 34.6011,
+      "test_force_per_loaded_rail_N": 17.3006,
+      "cantilever_bending_stress_screen_MPa": 0.81096,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 2560
+    },
+    {
+      "id": "K16_SLOT_11_RETAINER_2",
+      "module_index": 11,
+      "position": "top",
+      "o": [
+        942.5,
+        44,
+        354
+      ],
+      "s": [
+        16,
+        20,
+        8
+      ],
+      "bound_wall_y_mm": 44,
+      "bound_module_face_y_mm": 52,
+      "wall_face": "front",
+      "unsupported_reach_mm": 8,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.70543,
+      "five_g_force_module_N": 34.6011,
+      "test_force_per_loaded_rail_N": 17.3006,
+      "cantilever_bending_stress_screen_MPa": 0.81096,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 2560
+    },
+    {
+      "id": "K16_SLOT_12_SHELF_1",
+      "module_index": 12,
+      "position": "bottom",
+      "o": [
+        509.5,
+        335,
+        26
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.60241,
+      "five_g_force_module_N": 29.5481,
+      "test_force_per_loaded_rail_N": 14.774,
+      "cantilever_bending_stress_screen_MPa": 4.84773,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_12_SHELF_2",
+      "module_index": 12,
+      "position": "bottom",
+      "o": [
+        667.5,
+        335,
+        26
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.60241,
+      "five_g_force_module_N": 29.5481,
+      "test_force_per_loaded_rail_N": 14.774,
+      "cantilever_bending_stress_screen_MPa": 4.84773,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_12_RETAINER_1",
+      "module_index": 12,
+      "position": "top",
+      "o": [
+        509.5,
+        335,
+        134
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.60241,
+      "five_g_force_module_N": 29.5481,
+      "test_force_per_loaded_rail_N": 14.774,
+      "cantilever_bending_stress_screen_MPa": 4.84773,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_12_RETAINER_2",
+      "module_index": 12,
+      "position": "top",
+      "o": [
+        667.5,
+        335,
+        134
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.60241,
+      "five_g_force_module_N": 29.5481,
+      "test_force_per_loaded_rail_N": 14.774,
+      "cantilever_bending_stress_screen_MPa": 4.84773,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_13_SHELF_1",
+      "module_index": 13,
+      "position": "bottom",
+      "o": [
+        541.5,
+        335,
+        356
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.60241,
+      "five_g_force_module_N": 29.5481,
+      "test_force_per_loaded_rail_N": 14.774,
+      "cantilever_bending_stress_screen_MPa": 4.84773,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_13_SHELF_2",
+      "module_index": 13,
+      "position": "bottom",
+      "o": [
+        635.5,
+        335,
+        356
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.60241,
+      "five_g_force_module_N": 29.5481,
+      "test_force_per_loaded_rail_N": 14.774,
+      "cantilever_bending_stress_screen_MPa": 4.84773,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_13_RETAINER_1",
+      "module_index": 13,
+      "position": "top",
+      "o": [
+        541.5,
+        335,
+        464
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.60241,
+      "five_g_force_module_N": 29.5481,
+      "test_force_per_loaded_rail_N": 14.774,
+      "cantilever_bending_stress_screen_MPa": 4.84773,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_13_RETAINER_2",
+      "module_index": 13,
+      "position": "top",
+      "o": [
+        635.5,
+        335,
+        464
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.60241,
+      "five_g_force_module_N": 29.5481,
+      "test_force_per_loaded_rail_N": 14.774,
+      "cantilever_bending_stress_screen_MPa": 4.84773,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_14_SHELF_1",
+      "module_index": 14,
+      "position": "bottom",
+      "o": [
+        541.5,
+        335,
+        136
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.60241,
+      "five_g_force_module_N": 29.5481,
+      "test_force_per_loaded_rail_N": 14.774,
+      "cantilever_bending_stress_screen_MPa": 4.84773,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_14_SHELF_2",
+      "module_index": 14,
+      "position": "bottom",
+      "o": [
+        635.5,
+        335,
+        136
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.60241,
+      "five_g_force_module_N": 29.5481,
+      "test_force_per_loaded_rail_N": 14.774,
+      "cantilever_bending_stress_screen_MPa": 4.84773,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_14_RETAINER_1",
+      "module_index": 14,
+      "position": "top",
+      "o": [
+        541.5,
+        335,
+        244
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.60241,
+      "five_g_force_module_N": 29.5481,
+      "test_force_per_loaded_rail_N": 14.774,
+      "cantilever_bending_stress_screen_MPa": 4.84773,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_14_RETAINER_2",
+      "module_index": 14,
+      "position": "top",
+      "o": [
+        635.5,
+        335,
+        244
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.60241,
+      "five_g_force_module_N": 29.5481,
+      "test_force_per_loaded_rail_N": 14.774,
+      "cantilever_bending_stress_screen_MPa": 4.84773,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_15_SHELF_1",
+      "module_index": 15,
+      "position": "bottom",
+      "o": [
+        509.5,
+        335,
+        246
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.60241,
+      "five_g_force_module_N": 29.5481,
+      "test_force_per_loaded_rail_N": 14.774,
+      "cantilever_bending_stress_screen_MPa": 4.84773,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_15_SHELF_2",
+      "module_index": 15,
+      "position": "bottom",
+      "o": [
+        667.5,
+        335,
+        246
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.60241,
+      "five_g_force_module_N": 29.5481,
+      "test_force_per_loaded_rail_N": 14.774,
+      "cantilever_bending_stress_screen_MPa": 4.84773,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_15_RETAINER_1",
+      "module_index": 15,
+      "position": "top",
+      "o": [
+        509.5,
+        335,
+        354
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.60241,
+      "five_g_force_module_N": 29.5481,
+      "test_force_per_loaded_rail_N": 14.774,
+      "cantilever_bending_stress_screen_MPa": 4.84773,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_15_RETAINER_2",
+      "module_index": 15,
+      "position": "top",
+      "o": [
+        667.5,
+        335,
+        354
+      ],
+      "s": [
+        16,
+        68,
+        8
+      ],
+      "bound_wall_y_mm": 403,
+      "bound_module_face_y_mm": 347,
+      "wall_face": "rear",
+      "unsupported_reach_mm": 56,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.60241,
+      "five_g_force_module_N": 29.5481,
+      "test_force_per_loaded_rail_N": 14.774,
+      "cantilever_bending_stress_screen_MPa": 4.84773,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 8704
+    },
+    {
+      "id": "K16_SLOT_16_SHELF_1",
+      "module_index": 16,
+      "position": "bottom",
+      "o": [
+        509.5,
+        44,
+        26
+      ],
+      "s": [
+        16,
+        20,
+        8
+      ],
+      "bound_wall_y_mm": 44,
+      "bound_module_face_y_mm": 52,
+      "wall_face": "front",
+      "unsupported_reach_mm": 8,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.70543,
+      "five_g_force_module_N": 34.6011,
+      "test_force_per_loaded_rail_N": 17.3006,
+      "cantilever_bending_stress_screen_MPa": 0.81096,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 2560
+    },
+    {
+      "id": "K16_SLOT_16_SHELF_2",
+      "module_index": 16,
+      "position": "bottom",
+      "o": [
+        667.5,
+        44,
+        26
+      ],
+      "s": [
+        16,
+        20,
+        8
+      ],
+      "bound_wall_y_mm": 44,
+      "bound_module_face_y_mm": 52,
+      "wall_face": "front",
+      "unsupported_reach_mm": 8,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.70543,
+      "five_g_force_module_N": 34.6011,
+      "test_force_per_loaded_rail_N": 17.3006,
+      "cantilever_bending_stress_screen_MPa": 0.81096,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 2560
+    },
+    {
+      "id": "K16_SLOT_16_RETAINER_1",
+      "module_index": 16,
+      "position": "top",
+      "o": [
+        509.5,
+        44,
+        134
+      ],
+      "s": [
+        16,
+        20,
+        8
+      ],
+      "bound_wall_y_mm": 44,
+      "bound_module_face_y_mm": 52,
+      "wall_face": "front",
+      "unsupported_reach_mm": 8,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.70543,
+      "five_g_force_module_N": 34.6011,
+      "test_force_per_loaded_rail_N": 17.3006,
+      "cantilever_bending_stress_screen_MPa": 0.81096,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 2560
+    },
+    {
+      "id": "K16_SLOT_16_RETAINER_2",
+      "module_index": 16,
+      "position": "top",
+      "o": [
+        667.5,
+        44,
+        134
+      ],
+      "s": [
+        16,
+        20,
+        8
+      ],
+      "bound_wall_y_mm": 44,
+      "bound_module_face_y_mm": 52,
+      "wall_face": "front",
+      "unsupported_reach_mm": 8,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.70543,
+      "five_g_force_module_N": 34.6011,
+      "test_force_per_loaded_rail_N": 17.3006,
+      "cantilever_bending_stress_screen_MPa": 0.81096,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 2560
+    },
+    {
+      "id": "K16_SLOT_17_SHELF_1",
+      "module_index": 17,
+      "position": "bottom",
+      "o": [
+        541.5,
+        44,
+        356
+      ],
+      "s": [
+        16,
+        20,
+        8
+      ],
+      "bound_wall_y_mm": 44,
+      "bound_module_face_y_mm": 52,
+      "wall_face": "front",
+      "unsupported_reach_mm": 8,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.70543,
+      "five_g_force_module_N": 34.6011,
+      "test_force_per_loaded_rail_N": 17.3006,
+      "cantilever_bending_stress_screen_MPa": 0.81096,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 2560
+    },
+    {
+      "id": "K16_SLOT_17_SHELF_2",
+      "module_index": 17,
+      "position": "bottom",
+      "o": [
+        635.5,
+        44,
+        356
+      ],
+      "s": [
+        16,
+        20,
+        8
+      ],
+      "bound_wall_y_mm": 44,
+      "bound_module_face_y_mm": 52,
+      "wall_face": "front",
+      "unsupported_reach_mm": 8,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.70543,
+      "five_g_force_module_N": 34.6011,
+      "test_force_per_loaded_rail_N": 17.3006,
+      "cantilever_bending_stress_screen_MPa": 0.81096,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 2560
+    },
+    {
+      "id": "K16_SLOT_17_RETAINER_1",
+      "module_index": 17,
+      "position": "top",
+      "o": [
+        541.5,
+        44,
+        464
+      ],
+      "s": [
+        16,
+        20,
+        8
+      ],
+      "bound_wall_y_mm": 44,
+      "bound_module_face_y_mm": 52,
+      "wall_face": "front",
+      "unsupported_reach_mm": 8,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.70543,
+      "five_g_force_module_N": 34.6011,
+      "test_force_per_loaded_rail_N": 17.3006,
+      "cantilever_bending_stress_screen_MPa": 0.81096,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 2560
+    },
+    {
+      "id": "K16_SLOT_17_RETAINER_2",
+      "module_index": 17,
+      "position": "top",
+      "o": [
+        635.5,
+        44,
+        464
+      ],
+      "s": [
+        16,
+        20,
+        8
+      ],
+      "bound_wall_y_mm": 44,
+      "bound_module_face_y_mm": 52,
+      "wall_face": "front",
+      "unsupported_reach_mm": 8,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.70543,
+      "five_g_force_module_N": 34.6011,
+      "test_force_per_loaded_rail_N": 17.3006,
+      "cantilever_bending_stress_screen_MPa": 0.81096,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 2560
+    },
+    {
+      "id": "K16_SLOT_18_SHELF_1",
+      "module_index": 18,
+      "position": "bottom",
+      "o": [
+        541.5,
+        44,
+        136
+      ],
+      "s": [
+        16,
+        20,
+        8
+      ],
+      "bound_wall_y_mm": 44,
+      "bound_module_face_y_mm": 52,
+      "wall_face": "front",
+      "unsupported_reach_mm": 8,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.70543,
+      "five_g_force_module_N": 34.6011,
+      "test_force_per_loaded_rail_N": 17.3006,
+      "cantilever_bending_stress_screen_MPa": 0.81096,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 2560
+    },
+    {
+      "id": "K16_SLOT_18_SHELF_2",
+      "module_index": 18,
+      "position": "bottom",
+      "o": [
+        635.5,
+        44,
+        136
+      ],
+      "s": [
+        16,
+        20,
+        8
+      ],
+      "bound_wall_y_mm": 44,
+      "bound_module_face_y_mm": 52,
+      "wall_face": "front",
+      "unsupported_reach_mm": 8,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.70543,
+      "five_g_force_module_N": 34.6011,
+      "test_force_per_loaded_rail_N": 17.3006,
+      "cantilever_bending_stress_screen_MPa": 0.81096,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 2560
+    },
+    {
+      "id": "K16_SLOT_18_RETAINER_1",
+      "module_index": 18,
+      "position": "top",
+      "o": [
+        541.5,
+        44,
+        244
+      ],
+      "s": [
+        16,
+        20,
+        8
+      ],
+      "bound_wall_y_mm": 44,
+      "bound_module_face_y_mm": 52,
+      "wall_face": "front",
+      "unsupported_reach_mm": 8,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.70543,
+      "five_g_force_module_N": 34.6011,
+      "test_force_per_loaded_rail_N": 17.3006,
+      "cantilever_bending_stress_screen_MPa": 0.81096,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 2560
+    },
+    {
+      "id": "K16_SLOT_18_RETAINER_2",
+      "module_index": 18,
+      "position": "top",
+      "o": [
+        635.5,
+        44,
+        244
+      ],
+      "s": [
+        16,
+        20,
+        8
+      ],
+      "bound_wall_y_mm": 44,
+      "bound_module_face_y_mm": 52,
+      "wall_face": "front",
+      "unsupported_reach_mm": 8,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.70543,
+      "five_g_force_module_N": 34.6011,
+      "test_force_per_loaded_rail_N": 17.3006,
+      "cantilever_bending_stress_screen_MPa": 0.81096,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 2560
+    },
+    {
+      "id": "K16_SLOT_19_SHELF_1",
+      "module_index": 19,
+      "position": "bottom",
+      "o": [
+        509.5,
+        44,
+        246
+      ],
+      "s": [
+        16,
+        20,
+        8
+      ],
+      "bound_wall_y_mm": 44,
+      "bound_module_face_y_mm": 52,
+      "wall_face": "front",
+      "unsupported_reach_mm": 8,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.70543,
+      "five_g_force_module_N": 34.6011,
+      "test_force_per_loaded_rail_N": 17.3006,
+      "cantilever_bending_stress_screen_MPa": 0.81096,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 2560
+    },
+    {
+      "id": "K16_SLOT_19_SHELF_2",
+      "module_index": 19,
+      "position": "bottom",
+      "o": [
+        667.5,
+        44,
+        246
+      ],
+      "s": [
+        16,
+        20,
+        8
+      ],
+      "bound_wall_y_mm": 44,
+      "bound_module_face_y_mm": 52,
+      "wall_face": "front",
+      "unsupported_reach_mm": 8,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.70543,
+      "five_g_force_module_N": 34.6011,
+      "test_force_per_loaded_rail_N": 17.3006,
+      "cantilever_bending_stress_screen_MPa": 0.81096,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 2560
+    },
+    {
+      "id": "K16_SLOT_19_RETAINER_1",
+      "module_index": 19,
+      "position": "top",
+      "o": [
+        509.5,
+        44,
+        354
+      ],
+      "s": [
+        16,
+        20,
+        8
+      ],
+      "bound_wall_y_mm": 44,
+      "bound_module_face_y_mm": 52,
+      "wall_face": "front",
+      "unsupported_reach_mm": 8,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.70543,
+      "five_g_force_module_N": 34.6011,
+      "test_force_per_loaded_rail_N": 17.3006,
+      "cantilever_bending_stress_screen_MPa": 0.81096,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 2560
+    },
+    {
+      "id": "K16_SLOT_19_RETAINER_2",
+      "module_index": 19,
+      "position": "top",
+      "o": [
+        667.5,
+        44,
+        354
+      ],
+      "s": [
+        16,
+        20,
+        8
+      ],
+      "bound_wall_y_mm": 44,
+      "bound_module_face_y_mm": 52,
+      "wall_face": "front",
+      "unsupported_reach_mm": 8,
+      "seat_overlap_under_module_mm": 12,
+      "supports_z_contact_from_below_or_above": true,
+      "load_assumption": "two of four support elements carry 100% of hypothetical 5g inertial force in worst vertical orientation",
+      "module_mdf8_mass_kg": 0.70543,
+      "five_g_force_module_N": 34.6011,
+      "test_force_per_loaded_rail_N": 17.3006,
+      "cantilever_bending_stress_screen_MPa": 0.81096,
+      "adhesive_or_fastener_qualified": false,
+      "service_reachable": false,
+      "volume_displacement_mm3": 2560
+    }
+  ],
+  "mat_overlap_details": [
+    {
+      "id": "K16_SLOT_00_SHELF_1",
+      "module_index": 0,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_00_SHELF_2",
+      "module_index": 0,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_00_RETAINER_1",
+      "module_index": 0,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_00_RETAINER_2",
+      "module_index": 0,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_01_SHELF_1",
+      "module_index": 1,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_01_SHELF_2",
+      "module_index": 1,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_01_RETAINER_1",
+      "module_index": 1,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_01_RETAINER_2",
+      "module_index": 1,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_02_SHELF_1",
+      "module_index": 2,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_02_SHELF_2",
+      "module_index": 2,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_02_RETAINER_1",
+      "module_index": 2,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_02_RETAINER_2",
+      "module_index": 2,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_03_SHELF_1",
+      "module_index": 3,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_03_SHELF_2",
+      "module_index": 3,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_03_RETAINER_1",
+      "module_index": 3,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_03_RETAINER_2",
+      "module_index": 3,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_04_SHELF_1",
+      "module_index": 4,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_04_SHELF_2",
+      "module_index": 4,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_04_RETAINER_1",
+      "module_index": 4,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_04_RETAINER_2",
+      "module_index": 4,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_05_SHELF_1",
+      "module_index": 5,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_05_SHELF_2",
+      "module_index": 5,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_05_RETAINER_1",
+      "module_index": 5,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_05_RETAINER_2",
+      "module_index": 5,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_06_SHELF_1",
+      "module_index": 6,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_06_SHELF_2",
+      "module_index": 6,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_06_RETAINER_1",
+      "module_index": 6,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_06_RETAINER_2",
+      "module_index": 6,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_07_SHELF_1",
+      "module_index": 7,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_07_SHELF_2",
+      "module_index": 7,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_07_RETAINER_1",
+      "module_index": 7,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_07_RETAINER_2",
+      "module_index": 7,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_12_SHELF_1",
+      "module_index": 12,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_12_SHELF_2",
+      "module_index": 12,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_12_RETAINER_1",
+      "module_index": 12,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_12_RETAINER_2",
+      "module_index": 12,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_13_SHELF_1",
+      "module_index": 13,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_13_SHELF_2",
+      "module_index": 13,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_13_RETAINER_1",
+      "module_index": 13,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_13_RETAINER_2",
+      "module_index": 13,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_14_SHELF_1",
+      "module_index": 14,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_14_SHELF_2",
+      "module_index": 14,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_14_RETAINER_1",
+      "module_index": 14,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_14_RETAINER_2",
+      "module_index": 14,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_15_SHELF_1",
+      "module_index": 15,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_15_SHELF_2",
+      "module_index": 15,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_15_RETAINER_1",
+      "module_index": 15,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    },
+    {
+      "id": "K16_SLOT_15_RETAINER_2",
+      "module_index": 15,
+      "mat_overlap_y_mm": 50,
+      "intersected_mat_envelope_mm3": 6400
+    }
+  ]
+}
