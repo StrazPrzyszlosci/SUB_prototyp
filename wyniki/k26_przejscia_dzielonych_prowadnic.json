@@ -1,0 +1,1806 @@
+{
+  "study": "K26",
+  "date": "2026-11-04",
+  "status": "CNC HOLD — independently swept segment motions pass in ideal 0mm translational model; physical fastening/clearance still unqualified",
+  "model": "Six cabinet-facing axes XYZ (X width, Y depth, Z vertical); each 16×12×172/228/284mm rail half is translated without rotation. Finite 3D critical-plane grid BFS expanded by segment half-size, continuous swept AABB verified for every route leg.",
+  "input_versions": "K15/K17 full solids and module positions; K25 verified lip-free split windows and actual tool-access obstruction",
+  "front_hole": "Nominal driver D355.8, centered X231/Z250, actual driver absent; front two baffle solids represented by aperture projection at initial crossing only; all other MDF supports and rear 50mm mat included",
+  "excluded": [
+    "Original K17 top/bottom integrated shelves and K20 upper keeper hardware",
+    "K25 hypothetical 2mm plates, real positive metal splice and screws",
+    "Full 6DOF rotation, gluing, tolerances, practical hand/tool access, positive anti-rotation fixings and material batch strength",
+    "Installer supporting the boxes while rail detached, electrical wiring and compressed acoustic damping"
+  ],
+  "zero_margin_rule": "Exact face tangencies allowed. Rail halves nominally touch each other at the split and touch cabinet bottom/top at Z22 or478. A uniformly expanded 1mm target is intrinsically incompatible with this face-seated reference geometry; this does NOT measure free service-throat clearance.",
+  "configurations": {
+    "full100": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "core120": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "single150": [
+      4
+    ]
+  },
+  "segment_sweeps": [
+    {
+      "id": "rail02_service_release_at_100",
+      "rail": "G17_COLUMN_02",
+      "state": "full100",
+      "split_global_z_mm": 250,
+      "segment_original_unfastened_boxes": [
+        {
+          "id": "G17_COLUMN_02_LOW",
+          "o": [
+            175,
+            224,
+            22
+          ],
+          "s": [
+            16,
+            12,
+            228
+          ]
+        },
+        {
+          "id": "G17_COLUMN_02_UP",
+          "o": [
+            175,
+            224,
+            250
+          ],
+          "s": [
+            16,
+            12,
+            228
+          ]
+        }
+      ],
+      "other_installed_modules": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "order_tests": [
+        {
+          "install_order": [
+            "G17_COLUMN_02_LOW",
+            "G17_COLUMN_02_UP"
+          ],
+          "first": {
+            "pass": true,
+            "expanded_nodes": 9921,
+            "grid_shape_xyz": [
+              61,
+              31,
+              19
+            ],
+            "aperture_margin_mm": 63.62,
+            "path_global_center_xyz_from_driver_to_rail": [
+              [
+                231,
+                50,
+                250
+              ],
+              [
+                183,
+                50,
+                250
+              ],
+              [
+                183,
+                50,
+                136
+              ],
+              [
+                183,
+                230,
+                136
+              ]
+            ],
+            "all_continuous_swept_AABBs_rechecked": true,
+            "segment_count": 3
+          },
+          "second": {
+            "pass": true,
+            "expanded_nodes": 10614,
+            "grid_shape_xyz": [
+              65,
+              31,
+              19
+            ],
+            "aperture_margin_mm": 63.62,
+            "path_global_center_xyz_from_driver_to_rail": [
+              [
+                231,
+                50,
+                250
+              ],
+              [
+                183,
+                50,
+                250
+              ],
+              [
+                183,
+                50,
+                364
+              ],
+              [
+                183,
+                230,
+                364
+              ]
+            ],
+            "all_continuous_swept_AABBs_rechecked": true,
+            "segment_count": 3
+          },
+          "all_segments_installable": true,
+          "removal_feasible_in_reverse_order_without_latches": true
+        },
+        {
+          "install_order": [
+            "G17_COLUMN_02_UP",
+            "G17_COLUMN_02_LOW"
+          ],
+          "first": {
+            "pass": true,
+            "expanded_nodes": 9252,
+            "grid_shape_xyz": [
+              61,
+              31,
+              19
+            ],
+            "aperture_margin_mm": 63.62,
+            "path_global_center_xyz_from_driver_to_rail": [
+              [
+                231,
+                50,
+                250
+              ],
+              [
+                183,
+                50,
+                250
+              ],
+              [
+                183,
+                50,
+                364
+              ],
+              [
+                183,
+                230,
+                364
+              ]
+            ],
+            "all_continuous_swept_AABBs_rechecked": true,
+            "segment_count": 3
+          },
+          "second": {
+            "pass": true,
+            "expanded_nodes": 11234,
+            "grid_shape_xyz": [
+              65,
+              31,
+              19
+            ],
+            "aperture_margin_mm": 63.62,
+            "path_global_center_xyz_from_driver_to_rail": [
+              [
+                231,
+                50,
+                250
+              ],
+              [
+                183,
+                50,
+                250
+              ],
+              [
+                183,
+                50,
+                136
+              ],
+              [
+                183,
+                230,
+                136
+              ]
+            ],
+            "all_continuous_swept_AABBs_rechecked": true,
+            "segment_count": 3
+          },
+          "all_segments_installable": true,
+          "removal_feasible_in_reverse_order_without_latches": true
+        }
+      ],
+      "zero_to_one_mm_uniform_clearance_sensitivity": [
+        {
+          "id": "G17_COLUMN_02_LOW",
+          "zero_mm": true,
+          "one_mm": {
+            "pass": false,
+            "reason": "end-cap/cabinet clearance incompatible with exact seated end",
+            "aperture_margin_mm": 62.548
+          }
+        },
+        {
+          "id": "G17_COLUMN_02_UP",
+          "zero_mm": true,
+          "one_mm": {
+            "pass": false,
+            "reason": "end-cap/cabinet clearance incompatible with exact seated end",
+            "aperture_margin_mm": 62.548
+          }
+        }
+      ],
+      "valid_in_both_orders": true,
+      "tool_access_assumed": false,
+      "splice_strength_verified": false,
+      "own_integrated_lips_present": false
+    },
+    {
+      "id": "rail02_reinstall_at_120",
+      "rail": "G17_COLUMN_02",
+      "state": "core120",
+      "split_global_z_mm": 250,
+      "segment_original_unfastened_boxes": [
+        {
+          "id": "G17_COLUMN_02_LOW",
+          "o": [
+            175,
+            224,
+            22
+          ],
+          "s": [
+            16,
+            12,
+            228
+          ]
+        },
+        {
+          "id": "G17_COLUMN_02_UP",
+          "o": [
+            175,
+            224,
+            250
+          ],
+          "s": [
+            16,
+            12,
+            228
+          ]
+        }
+      ],
+      "other_installed_modules": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "order_tests": [
+        {
+          "install_order": [
+            "G17_COLUMN_02_LOW",
+            "G17_COLUMN_02_UP"
+          ],
+          "first": {
+            "pass": true,
+            "expanded_nodes": 6741,
+            "grid_shape_xyz": [
+              55,
+              29,
+              15
+            ],
+            "aperture_margin_mm": 63.62,
+            "path_global_center_xyz_from_driver_to_rail": [
+              [
+                231,
+                50,
+                250
+              ],
+              [
+                183,
+                50,
+                250
+              ],
+              [
+                183,
+                50,
+                136
+              ],
+              [
+                183,
+                230,
+                136
+              ]
+            ],
+            "all_continuous_swept_AABBs_rechecked": true,
+            "segment_count": 3
+          },
+          "second": {
+            "pass": true,
+            "expanded_nodes": 7244,
+            "grid_shape_xyz": [
+              59,
+              29,
+              15
+            ],
+            "aperture_margin_mm": 63.62,
+            "path_global_center_xyz_from_driver_to_rail": [
+              [
+                231,
+                50,
+                250
+              ],
+              [
+                183,
+                50,
+                250
+              ],
+              [
+                183,
+                50,
+                364
+              ],
+              [
+                183,
+                230,
+                364
+              ]
+            ],
+            "all_continuous_swept_AABBs_rechecked": true,
+            "segment_count": 3
+          },
+          "all_segments_installable": true,
+          "removal_feasible_in_reverse_order_without_latches": true
+        },
+        {
+          "install_order": [
+            "G17_COLUMN_02_UP",
+            "G17_COLUMN_02_LOW"
+          ],
+          "first": {
+            "pass": true,
+            "expanded_nodes": 5924,
+            "grid_shape_xyz": [
+              55,
+              29,
+              15
+            ],
+            "aperture_margin_mm": 63.62,
+            "path_global_center_xyz_from_driver_to_rail": [
+              [
+                231,
+                50,
+                250
+              ],
+              [
+                183,
+                50,
+                250
+              ],
+              [
+                183,
+                50,
+                364
+              ],
+              [
+                183,
+                230,
+                364
+              ]
+            ],
+            "all_continuous_swept_AABBs_rechecked": true,
+            "segment_count": 3
+          },
+          "second": {
+            "pass": true,
+            "expanded_nodes": 8147,
+            "grid_shape_xyz": [
+              59,
+              29,
+              15
+            ],
+            "aperture_margin_mm": 63.62,
+            "path_global_center_xyz_from_driver_to_rail": [
+              [
+                231,
+                50,
+                250
+              ],
+              [
+                183,
+                50,
+                250
+              ],
+              [
+                183,
+                50,
+                136
+              ],
+              [
+                183,
+                230,
+                136
+              ]
+            ],
+            "all_continuous_swept_AABBs_rechecked": true,
+            "segment_count": 3
+          },
+          "all_segments_installable": true,
+          "removal_feasible_in_reverse_order_without_latches": true
+        }
+      ],
+      "zero_to_one_mm_uniform_clearance_sensitivity": [
+        {
+          "id": "G17_COLUMN_02_LOW",
+          "zero_mm": true,
+          "one_mm": {
+            "pass": false,
+            "reason": "end-cap/cabinet clearance incompatible with exact seated end",
+            "aperture_margin_mm": 62.548
+          }
+        },
+        {
+          "id": "G17_COLUMN_02_UP",
+          "zero_mm": true,
+          "one_mm": {
+            "pass": false,
+            "reason": "end-cap/cabinet clearance incompatible with exact seated end",
+            "aperture_margin_mm": 62.548
+          }
+        }
+      ],
+      "valid_in_both_orders": true,
+      "tool_access_assumed": false,
+      "splice_strength_verified": false,
+      "own_integrated_lips_present": false
+    },
+    {
+      "id": "rail10_service_release_at_120",
+      "rail": "G17_COLUMN_10",
+      "state": "core120",
+      "split_global_z_mm": 194,
+      "segment_original_unfastened_boxes": [
+        {
+          "id": "G17_COLUMN_10_LOW",
+          "o": [
+            661.5,
+            208,
+            22
+          ],
+          "s": [
+            16,
+            12,
+            172
+          ]
+        },
+        {
+          "id": "G17_COLUMN_10_UP",
+          "o": [
+            661.5,
+            208,
+            194
+          ],
+          "s": [
+            16,
+            12,
+            284
+          ]
+        }
+      ],
+      "other_installed_modules": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "order_tests": [
+        {
+          "install_order": [
+            "G17_COLUMN_10_LOW",
+            "G17_COLUMN_10_UP"
+          ],
+          "first": {
+            "pass": true,
+            "expanded_nodes": 13647,
+            "grid_shape_xyz": [
+              59,
+              29,
+              17
+            ],
+            "aperture_margin_mm": 91.529,
+            "path_global_center_xyz_from_driver_to_rail": [
+              [
+                231,
+                50,
+                250
+              ],
+              [
+                440,
+                50,
+                250
+              ],
+              [
+                440,
+                50,
+                130
+              ],
+              [
+                440,
+                60,
+                130
+              ],
+              [
+                669.5,
+                60,
+                130
+              ],
+              [
+                669.5,
+                60,
+                108
+              ],
+              [
+                669.5,
+                214,
+                108
+              ]
+            ],
+            "all_continuous_swept_AABBs_rechecked": true,
+            "segment_count": 6
+          },
+          "second": {
+            "pass": true,
+            "expanded_nodes": 10102,
+            "grid_shape_xyz": [
+              59,
+              29,
+              13
+            ],
+            "aperture_margin_mm": 35.675,
+            "path_global_center_xyz_from_driver_to_rail": [
+              [
+                231,
+                50,
+                250
+              ],
+              [
+                440,
+                50,
+                250
+              ],
+              [
+                440,
+                50,
+                314
+              ],
+              [
+                440,
+                60,
+                314
+              ],
+              [
+                669.5,
+                60,
+                314
+              ],
+              [
+                669.5,
+                60,
+                336
+              ],
+              [
+                669.5,
+                214,
+                336
+              ]
+            ],
+            "all_continuous_swept_AABBs_rechecked": true,
+            "segment_count": 6
+          },
+          "all_segments_installable": true,
+          "removal_feasible_in_reverse_order_without_latches": true
+        },
+        {
+          "install_order": [
+            "G17_COLUMN_10_UP",
+            "G17_COLUMN_10_LOW"
+          ],
+          "first": {
+            "pass": true,
+            "expanded_nodes": 10330,
+            "grid_shape_xyz": [
+              59,
+              29,
+              13
+            ],
+            "aperture_margin_mm": 35.675,
+            "path_global_center_xyz_from_driver_to_rail": [
+              [
+                231,
+                50,
+                250
+              ],
+              [
+                440,
+                50,
+                250
+              ],
+              [
+                440,
+                50,
+                314
+              ],
+              [
+                440,
+                60,
+                314
+              ],
+              [
+                669.5,
+                60,
+                314
+              ],
+              [
+                669.5,
+                60,
+                336
+              ],
+              [
+                669.5,
+                214,
+                336
+              ]
+            ],
+            "all_continuous_swept_AABBs_rechecked": true,
+            "segment_count": 6
+          },
+          "second": {
+            "pass": true,
+            "expanded_nodes": 13338,
+            "grid_shape_xyz": [
+              59,
+              29,
+              17
+            ],
+            "aperture_margin_mm": 91.529,
+            "path_global_center_xyz_from_driver_to_rail": [
+              [
+                231,
+                50,
+                250
+              ],
+              [
+                440,
+                50,
+                250
+              ],
+              [
+                440,
+                50,
+                130
+              ],
+              [
+                440,
+                60,
+                130
+              ],
+              [
+                669.5,
+                60,
+                130
+              ],
+              [
+                669.5,
+                60,
+                108
+              ],
+              [
+                669.5,
+                214,
+                108
+              ]
+            ],
+            "all_continuous_swept_AABBs_rechecked": true,
+            "segment_count": 6
+          },
+          "all_segments_installable": true,
+          "removal_feasible_in_reverse_order_without_latches": true
+        }
+      ],
+      "zero_to_one_mm_uniform_clearance_sensitivity": [
+        {
+          "id": "G17_COLUMN_10_LOW",
+          "zero_mm": true,
+          "one_mm": {
+            "pass": false,
+            "reason": "end-cap/cabinet clearance incompatible with exact seated end",
+            "aperture_margin_mm": 90.436
+          }
+        },
+        {
+          "id": "G17_COLUMN_10_UP",
+          "zero_mm": true,
+          "one_mm": {
+            "pass": false,
+            "reason": "end-cap/cabinet clearance incompatible with exact seated end",
+            "aperture_margin_mm": 34.617
+          }
+        }
+      ],
+      "valid_in_both_orders": true,
+      "tool_access_assumed": false,
+      "splice_strength_verified": false,
+      "own_integrated_lips_present": false
+    },
+    {
+      "id": "rail10_reinstall_at_150",
+      "rail": "G17_COLUMN_10",
+      "state": "single150",
+      "split_global_z_mm": 194,
+      "segment_original_unfastened_boxes": [
+        {
+          "id": "G17_COLUMN_10_LOW",
+          "o": [
+            661.5,
+            208,
+            22
+          ],
+          "s": [
+            16,
+            12,
+            172
+          ]
+        },
+        {
+          "id": "G17_COLUMN_10_UP",
+          "o": [
+            661.5,
+            208,
+            194
+          ],
+          "s": [
+            16,
+            12,
+            284
+          ]
+        }
+      ],
+      "other_installed_modules": [
+        4
+      ],
+      "order_tests": [
+        {
+          "install_order": [
+            "G17_COLUMN_10_LOW",
+            "G17_COLUMN_10_UP"
+          ],
+          "first": {
+            "pass": true,
+            "expanded_nodes": 7403,
+            "grid_shape_xyz": [
+              55,
+              27,
+              11
+            ],
+            "aperture_margin_mm": 91.529,
+            "path_global_center_xyz_from_driver_to_rail": [
+              [
+                231,
+                50,
+                250
+              ],
+              [
+                440,
+                50,
+                250
+              ],
+              [
+                440,
+                50,
+                130
+              ],
+              [
+                440,
+                60,
+                130
+              ],
+              [
+                669.5,
+                60,
+                130
+              ],
+              [
+                669.5,
+                60,
+                108
+              ],
+              [
+                669.5,
+                214,
+                108
+              ]
+            ],
+            "all_continuous_swept_AABBs_rechecked": true,
+            "segment_count": 6
+          },
+          "second": {
+            "pass": true,
+            "expanded_nodes": 7332,
+            "grid_shape_xyz": [
+              55,
+              27,
+              11
+            ],
+            "aperture_margin_mm": 35.675,
+            "path_global_center_xyz_from_driver_to_rail": [
+              [
+                231,
+                50,
+                250
+              ],
+              [
+                440,
+                50,
+                250
+              ],
+              [
+                440,
+                50,
+                314
+              ],
+              [
+                440,
+                60,
+                314
+              ],
+              [
+                669.5,
+                60,
+                314
+              ],
+              [
+                669.5,
+                60,
+                336
+              ],
+              [
+                669.5,
+                214,
+                336
+              ]
+            ],
+            "all_continuous_swept_AABBs_rechecked": true,
+            "segment_count": 6
+          },
+          "all_segments_installable": true,
+          "removal_feasible_in_reverse_order_without_latches": true
+        },
+        {
+          "install_order": [
+            "G17_COLUMN_10_UP",
+            "G17_COLUMN_10_LOW"
+          ],
+          "first": {
+            "pass": true,
+            "expanded_nodes": 7479,
+            "grid_shape_xyz": [
+              55,
+              27,
+              11
+            ],
+            "aperture_margin_mm": 35.675,
+            "path_global_center_xyz_from_driver_to_rail": [
+              [
+                231,
+                50,
+                250
+              ],
+              [
+                440,
+                50,
+                250
+              ],
+              [
+                440,
+                50,
+                314
+              ],
+              [
+                440,
+                60,
+                314
+              ],
+              [
+                669.5,
+                60,
+                314
+              ],
+              [
+                669.5,
+                60,
+                336
+              ],
+              [
+                669.5,
+                214,
+                336
+              ]
+            ],
+            "all_continuous_swept_AABBs_rechecked": true,
+            "segment_count": 6
+          },
+          "second": {
+            "pass": true,
+            "expanded_nodes": 7267,
+            "grid_shape_xyz": [
+              55,
+              27,
+              11
+            ],
+            "aperture_margin_mm": 91.529,
+            "path_global_center_xyz_from_driver_to_rail": [
+              [
+                231,
+                50,
+                250
+              ],
+              [
+                440,
+                50,
+                250
+              ],
+              [
+                440,
+                50,
+                130
+              ],
+              [
+                440,
+                60,
+                130
+              ],
+              [
+                669.5,
+                60,
+                130
+              ],
+              [
+                669.5,
+                60,
+                108
+              ],
+              [
+                669.5,
+                214,
+                108
+              ]
+            ],
+            "all_continuous_swept_AABBs_rechecked": true,
+            "segment_count": 6
+          },
+          "all_segments_installable": true,
+          "removal_feasible_in_reverse_order_without_latches": true
+        }
+      ],
+      "zero_to_one_mm_uniform_clearance_sensitivity": [
+        {
+          "id": "G17_COLUMN_10_LOW",
+          "zero_mm": true,
+          "one_mm": {
+            "pass": false,
+            "reason": "end-cap/cabinet clearance incompatible with exact seated end",
+            "aperture_margin_mm": 90.436
+          }
+        },
+        {
+          "id": "G17_COLUMN_10_UP",
+          "zero_mm": true,
+          "one_mm": {
+            "pass": false,
+            "reason": "end-cap/cabinet clearance incompatible with exact seated end",
+            "aperture_margin_mm": 34.617
+          }
+        }
+      ],
+      "valid_in_both_orders": true,
+      "tool_access_assumed": false,
+      "splice_strength_verified": false,
+      "own_integrated_lips_present": false
+    },
+    {
+      "id": "rail10_out_of_order_attempt_at_100",
+      "rail": "G17_COLUMN_10",
+      "state": "full100",
+      "split_global_z_mm": 194,
+      "segment_original_unfastened_boxes": [
+        {
+          "id": "G17_COLUMN_10_LOW",
+          "o": [
+            661.5,
+            208,
+            22
+          ],
+          "s": [
+            16,
+            12,
+            172
+          ]
+        },
+        {
+          "id": "G17_COLUMN_10_UP",
+          "o": [
+            661.5,
+            208,
+            194
+          ],
+          "s": [
+            16,
+            12,
+            284
+          ]
+        }
+      ],
+      "other_installed_modules": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "order_tests": [
+        {
+          "install_order": [
+            "G17_COLUMN_10_LOW",
+            "G17_COLUMN_10_UP"
+          ],
+          "first": {
+            "pass": false,
+            "expanded_nodes": 15225,
+            "grid_shape_xyz": [
+              65,
+              31,
+              21
+            ],
+            "aperture_margin_mm": 91.529
+          },
+          "second": {
+            "pass": false,
+            "expanded_nodes": 11683,
+            "grid_shape_xyz": [
+              65,
+              31,
+              17
+            ],
+            "aperture_margin_mm": 35.675
+          },
+          "all_segments_installable": false,
+          "removal_feasible_in_reverse_order_without_latches": false
+        },
+        {
+          "install_order": [
+            "G17_COLUMN_10_UP",
+            "G17_COLUMN_10_LOW"
+          ],
+          "first": {
+            "pass": false,
+            "expanded_nodes": 11683,
+            "grid_shape_xyz": [
+              65,
+              31,
+              17
+            ],
+            "aperture_margin_mm": 35.675
+          },
+          "second": {
+            "pass": false,
+            "expanded_nodes": 15225,
+            "grid_shape_xyz": [
+              65,
+              31,
+              21
+            ],
+            "aperture_margin_mm": 91.529
+          },
+          "all_segments_installable": false,
+          "removal_feasible_in_reverse_order_without_latches": false
+        }
+      ],
+      "zero_to_one_mm_uniform_clearance_sensitivity": [
+        {
+          "id": "G17_COLUMN_10_LOW",
+          "zero_mm": false,
+          "one_mm": {
+            "pass": false,
+            "reason": "end-cap/cabinet clearance incompatible with exact seated end",
+            "aperture_margin_mm": 90.436
+          }
+        },
+        {
+          "id": "G17_COLUMN_10_UP",
+          "zero_mm": false,
+          "one_mm": {
+            "pass": false,
+            "reason": "end-cap/cabinet clearance incompatible with exact seated end",
+            "aperture_margin_mm": 34.617
+          }
+        }
+      ],
+      "valid_in_both_orders": false,
+      "tool_access_assumed": false,
+      "splice_strength_verified": false,
+      "own_integrated_lips_present": false
+    },
+    {
+      "id": "rail10_alternative_Z300_at_120",
+      "rail": "G17_COLUMN_10",
+      "state": "core120",
+      "split_global_z_mm": 300,
+      "segment_original_unfastened_boxes": [
+        {
+          "id": "G17_COLUMN_10_LOW",
+          "o": [
+            661.5,
+            208,
+            22
+          ],
+          "s": [
+            16,
+            12,
+            278
+          ]
+        },
+        {
+          "id": "G17_COLUMN_10_UP",
+          "o": [
+            661.5,
+            208,
+            300
+          ],
+          "s": [
+            16,
+            12,
+            178
+          ]
+        }
+      ],
+      "other_installed_modules": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "order_tests": [
+        {
+          "install_order": [
+            "G17_COLUMN_10_LOW",
+            "G17_COLUMN_10_UP"
+          ],
+          "first": {
+            "pass": true,
+            "expanded_nodes": 10233,
+            "grid_shape_xyz": [
+              59,
+              29,
+              13
+            ],
+            "aperture_margin_mm": 38.67,
+            "path_global_center_xyz_from_driver_to_rail": [
+              [
+                231,
+                50,
+                250
+              ],
+              [
+                440,
+                50,
+                250
+              ],
+              [
+                440,
+                50,
+                183
+              ],
+              [
+                440,
+                60,
+                183
+              ],
+              [
+                669.5,
+                60,
+                183
+              ],
+              [
+                669.5,
+                60,
+                161
+              ],
+              [
+                669.5,
+                214,
+                161
+              ]
+            ],
+            "all_continuous_swept_AABBs_rechecked": true,
+            "segment_count": 6
+          },
+          "second": {
+            "pass": true,
+            "expanded_nodes": 13442,
+            "grid_shape_xyz": [
+              59,
+              29,
+              17
+            ],
+            "aperture_margin_mm": 88.541,
+            "path_global_center_xyz_from_driver_to_rail": [
+              [
+                231,
+                50,
+                250
+              ],
+              [
+                440,
+                50,
+                250
+              ],
+              [
+                440,
+                50,
+                367
+              ],
+              [
+                440,
+                60,
+                367
+              ],
+              [
+                669.5,
+                60,
+                367
+              ],
+              [
+                669.5,
+                60,
+                389
+              ],
+              [
+                669.5,
+                214,
+                389
+              ]
+            ],
+            "all_continuous_swept_AABBs_rechecked": true,
+            "segment_count": 6
+          },
+          "all_segments_installable": true,
+          "removal_feasible_in_reverse_order_without_latches": true
+        },
+        {
+          "install_order": [
+            "G17_COLUMN_10_UP",
+            "G17_COLUMN_10_LOW"
+          ],
+          "first": {
+            "pass": true,
+            "expanded_nodes": 13766,
+            "grid_shape_xyz": [
+              59,
+              29,
+              17
+            ],
+            "aperture_margin_mm": 88.541,
+            "path_global_center_xyz_from_driver_to_rail": [
+              [
+                231,
+                50,
+                250
+              ],
+              [
+                440,
+                50,
+                250
+              ],
+              [
+                440,
+                50,
+                367
+              ],
+              [
+                440,
+                60,
+                367
+              ],
+              [
+                669.5,
+                60,
+                367
+              ],
+              [
+                669.5,
+                60,
+                389
+              ],
+              [
+                669.5,
+                214,
+                389
+              ]
+            ],
+            "all_continuous_swept_AABBs_rechecked": true,
+            "segment_count": 6
+          },
+          "second": {
+            "pass": true,
+            "expanded_nodes": 10020,
+            "grid_shape_xyz": [
+              59,
+              29,
+              13
+            ],
+            "aperture_margin_mm": 38.67,
+            "path_global_center_xyz_from_driver_to_rail": [
+              [
+                231,
+                50,
+                250
+              ],
+              [
+                440,
+                50,
+                250
+              ],
+              [
+                440,
+                50,
+                183
+              ],
+              [
+                440,
+                60,
+                183
+              ],
+              [
+                669.5,
+                60,
+                183
+              ],
+              [
+                669.5,
+                60,
+                161
+              ],
+              [
+                669.5,
+                214,
+                161
+              ]
+            ],
+            "all_continuous_swept_AABBs_rechecked": true,
+            "segment_count": 6
+          },
+          "all_segments_installable": true,
+          "removal_feasible_in_reverse_order_without_latches": true
+        }
+      ],
+      "zero_to_one_mm_uniform_clearance_sensitivity": [
+        {
+          "id": "G17_COLUMN_10_LOW",
+          "zero_mm": true,
+          "one_mm": {
+            "pass": false,
+            "reason": "end-cap/cabinet clearance incompatible with exact seated end",
+            "aperture_margin_mm": 37.611
+          }
+        },
+        {
+          "id": "G17_COLUMN_10_UP",
+          "zero_mm": true,
+          "one_mm": {
+            "pass": false,
+            "reason": "end-cap/cabinet clearance incompatible with exact seated end",
+            "aperture_margin_mm": 87.451
+          }
+        }
+      ],
+      "valid_in_both_orders": true,
+      "tool_access_assumed": false,
+      "splice_strength_verified": false,
+      "own_integrated_lips_present": false
+    },
+    {
+      "id": "rail10_alternative_Z300_at_150",
+      "rail": "G17_COLUMN_10",
+      "state": "single150",
+      "split_global_z_mm": 300,
+      "segment_original_unfastened_boxes": [
+        {
+          "id": "G17_COLUMN_10_LOW",
+          "o": [
+            661.5,
+            208,
+            22
+          ],
+          "s": [
+            16,
+            12,
+            278
+          ]
+        },
+        {
+          "id": "G17_COLUMN_10_UP",
+          "o": [
+            661.5,
+            208,
+            300
+          ],
+          "s": [
+            16,
+            12,
+            178
+          ]
+        }
+      ],
+      "other_installed_modules": [
+        4
+      ],
+      "order_tests": [
+        {
+          "install_order": [
+            "G17_COLUMN_10_LOW",
+            "G17_COLUMN_10_UP"
+          ],
+          "first": {
+            "pass": true,
+            "expanded_nodes": 6965,
+            "grid_shape_xyz": [
+              55,
+              27,
+              11
+            ],
+            "aperture_margin_mm": 38.67,
+            "path_global_center_xyz_from_driver_to_rail": [
+              [
+                231,
+                50,
+                250
+              ],
+              [
+                440,
+                50,
+                250
+              ],
+              [
+                440,
+                50,
+                183
+              ],
+              [
+                440,
+                60,
+                183
+              ],
+              [
+                669.5,
+                60,
+                183
+              ],
+              [
+                669.5,
+                60,
+                161
+              ],
+              [
+                669.5,
+                214,
+                161
+              ]
+            ],
+            "all_continuous_swept_AABBs_rechecked": true,
+            "segment_count": 6
+          },
+          "second": {
+            "pass": true,
+            "expanded_nodes": 6978,
+            "grid_shape_xyz": [
+              55,
+              27,
+              11
+            ],
+            "aperture_margin_mm": 88.541,
+            "path_global_center_xyz_from_driver_to_rail": [
+              [
+                231,
+                50,
+                250
+              ],
+              [
+                440,
+                50,
+                250
+              ],
+              [
+                440,
+                50,
+                367
+              ],
+              [
+                440,
+                60,
+                367
+              ],
+              [
+                669.5,
+                60,
+                367
+              ],
+              [
+                669.5,
+                60,
+                389
+              ],
+              [
+                669.5,
+                214,
+                389
+              ]
+            ],
+            "all_continuous_swept_AABBs_rechecked": true,
+            "segment_count": 6
+          },
+          "all_segments_installable": true,
+          "removal_feasible_in_reverse_order_without_latches": true
+        },
+        {
+          "install_order": [
+            "G17_COLUMN_10_UP",
+            "G17_COLUMN_10_LOW"
+          ],
+          "first": {
+            "pass": true,
+            "expanded_nodes": 7068,
+            "grid_shape_xyz": [
+              55,
+              27,
+              11
+            ],
+            "aperture_margin_mm": 88.541,
+            "path_global_center_xyz_from_driver_to_rail": [
+              [
+                231,
+                50,
+                250
+              ],
+              [
+                440,
+                50,
+                250
+              ],
+              [
+                440,
+                50,
+                367
+              ],
+              [
+                440,
+                60,
+                367
+              ],
+              [
+                669.5,
+                60,
+                367
+              ],
+              [
+                669.5,
+                60,
+                389
+              ],
+              [
+                669.5,
+                214,
+                389
+              ]
+            ],
+            "all_continuous_swept_AABBs_rechecked": true,
+            "segment_count": 6
+          },
+          "second": {
+            "pass": true,
+            "expanded_nodes": 6890,
+            "grid_shape_xyz": [
+              55,
+              27,
+              11
+            ],
+            "aperture_margin_mm": 38.67,
+            "path_global_center_xyz_from_driver_to_rail": [
+              [
+                231,
+                50,
+                250
+              ],
+              [
+                440,
+                50,
+                250
+              ],
+              [
+                440,
+                50,
+                183
+              ],
+              [
+                440,
+                60,
+                183
+              ],
+              [
+                669.5,
+                60,
+                183
+              ],
+              [
+                669.5,
+                60,
+                161
+              ],
+              [
+                669.5,
+                214,
+                161
+              ]
+            ],
+            "all_continuous_swept_AABBs_rechecked": true,
+            "segment_count": 6
+          },
+          "all_segments_installable": true,
+          "removal_feasible_in_reverse_order_without_latches": true
+        }
+      ],
+      "zero_to_one_mm_uniform_clearance_sensitivity": [
+        {
+          "id": "G17_COLUMN_10_LOW",
+          "zero_mm": true,
+          "one_mm": {
+            "pass": false,
+            "reason": "end-cap/cabinet clearance incompatible with exact seated end",
+            "aperture_margin_mm": 37.611
+          }
+        },
+        {
+          "id": "G17_COLUMN_10_UP",
+          "zero_mm": true,
+          "one_mm": {
+            "pass": false,
+            "reason": "end-cap/cabinet clearance incompatible with exact seated end",
+            "aperture_margin_mm": 87.451
+          }
+        }
+      ],
+      "valid_in_both_orders": true,
+      "tool_access_assumed": false,
+      "splice_strength_verified": false,
+      "own_integrated_lips_present": false
+    }
+  ],
+  "k25_tool_access_crosscheck": {
+    "guide02_split250_front_tool_nominal_clear": true,
+    "guide10_split194_front_tool_nominal_clear": false,
+    "guide10_face_plate_nominal_front_rear_Y_gaps_mm": [
+      4,
+      5
+    ],
+    "guide10_straight_front_tool_blocked_by_baffle_cutout": true,
+    "guide10_tool_fastening_or_remote_latch_still_missing": true,
+    "projection_is_not_mechanical_approval": true
+  },
+  "operational_conclusion": {
+    "can_remove_and_reinstall_rail02_half_shapes_with_all20_modules_in_the_nominal_unfastened_model": true,
+    "can_remove_and_reinstall_rail02_half_shapes_at_core120": true,
+    "can_remove_and_reinstall_rail10_half_shapes_at_core120": true,
+    "can_remove_and_reinstall_rail10_half_shapes_at_single150": true,
+    "can_remove_and_reinstall_rail10_half_shapes_at_all20": false,
+    "correct_staging_order_required": "100->120 with guide02 only; restore it; then 120->150 with guide10 only; restore it. Invert these stages for reverse capacity changes, with physically serviceable fixtures still to design.",
+    "full_joint_design_approved": false,
+    "CNC_ready": false
+  },
+  "next_engineering_gates": [
+    "Design physically releasable, load-rated guide02/guide10 connectors and safe temporary box support.",
+    "Resolve guide10 remote/tool-free locking from Ø355.8 driver aperture: K25 straight face tool cannot reach.",
+    "Rerun complete 100↔120↔150 installation/removal *with actual joint metal, locks, shelves, fasteners and tool envelope as solids*.",
+    "Qualify shelf and MDF+metal joint bearing, fatigue, creep, shear, pullout, safe 5g/operational scenarios with measured material and calibrated fixtures.",
+    "Recompute real air volumes with hardware & damping and FEM/acoustics; then produce tolerance/kerf/radii/datum specified CNC drawings."
+  ]
+}

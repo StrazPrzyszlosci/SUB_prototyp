@@ -1,0 +1,54 @@
+name: K26 segmented-rail 3D translational sweep — CNC HOLD
+on:
+  push:
+    branches: [main]
+    paths:
+      - "skrypty/k26_*"
+      - "wyniki/k26_*"
+      - "wyniki/k15_p30e_przed_CNC_zestawienie.json"
+      - "wyniki/k17_prowadnice_boczne_wkladow.json"
+      - "wyniki/k25_zlacza_prowadnic_i_dostep.json"
+      - ".github/workflows/k26-segmented-rail-insertion.yml"
+  pull_request:
+    paths:
+      - "skrypty/k26_*"
+      - "wyniki/k26_*"
+      - "wyniki/k15_p30e_przed_CNC_zestawienie.json"
+      - "wyniki/k17_prowadnice_boczne_wkladow.json"
+      - "wyniki/k25_zlacza_prowadnic_i_dostep.json"
+      - ".github/workflows/k26-segmented-rail-insertion.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  rail-sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Reproduce K26 segment routes
+        run: |
+          set -euo pipefail
+          node --check skrypty/k26_trasy_dzielonych_prowadnic.js
+          node skrypty/k26_trasy_dzielonych_prowadnic.js
+          git diff --exit-code -- wyniki/k26_przejscia_dzielonych_prowadnic.json
+      - name: Keep manufacturing explicitly blocked
+        run: |
+          node - <<'NODE'
+          const fs=require('node:fs'),a=require('node:assert/strict');
+          const k=JSON.parse(fs.readFileSync('wyniki/k26_przejscia_dzielonych_prowadnic.json','utf8'));
+          a.match(k.status,/CNC HOLD/);
+          const by=id=>k.segment_sweeps.find(x=>x.id===id);
+          for(const name of ['rail02_service_release_at_100','rail02_reinstall_at_120','rail10_service_release_at_120','rail10_reinstall_at_150'])
+            a.equal(by(name).valid_in_both_orders,true,name);
+          a.equal(by('rail10_out_of_order_attempt_at_100').valid_in_both_orders,false);
+          a.equal(by('rail10_alternative_Z300_at_120').valid_in_both_orders,true);
+          a.equal(k.k25_tool_access_crosscheck.guide02_split250_front_tool_nominal_clear,true);
+          a.equal(k.k25_tool_access_crosscheck.guide10_split194_front_tool_nominal_clear,false);
+          a.equal(k.operational_conclusion.CNC_ready,false);
+          a.equal(k.operational_conclusion.full_joint_design_approved,false);
+          console.log('K26 PASS geometry; guide10 tool access/real positive connector unqualified; CNC HOLD');
+          NODE
