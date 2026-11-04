@@ -1,0 +1,81 @@
+{
+  "study": "K19",
+  "date": "2026-11-04",
+  "status": "CNC HOLD",
+  "method": "independent K15 MDF panel volumes and K17 rail/contact coordinates, ideal concentrated far-tip load; all loads/material properties hypothetical",
+  "reference_model": {
+    "MDF_density_kg_m3": 730,
+    "elastic_modulus_MPa": 2700,
+    "test_inertial_acceleration_g": 5,
+    "width_mm": 16,
+    "lip_height_mm": 4,
+    "two_loaded_supports": true
+  },
+  "groups": [
+    {
+      "family": "small_rear",
+      "module_count": 4,
+      "near_mm": 11,
+      "far_tip_mm": 23,
+      "mass_kg": 0.469256,
+      "force_per_lip_N": 11.508496,
+      "stress_nominal_4mm_MPa": 6.203798,
+      "deflection_nominal_4mm_mm": 0.202581,
+      "stress_if_lip_3_5mm_MPa": 8.10292,
+      "deflection_if_lip_3_5mm_mm": 0.302395,
+      "stress_multiplier_vs_K18_L12": 1.916667,
+      "deflection_multiplier_vs_K18_L12": 7.041088
+    },
+    {
+      "family": "large_rear",
+      "module_count": 8,
+      "near_mm": 7,
+      "far_tip_mm": 19,
+      "mass_kg": 0.602408,
+      "force_per_lip_N": 14.774048,
+      "stress_nominal_4mm_MPa": 6.579068,
+      "deflection_nominal_4mm_mm": 0.146608,
+      "stress_if_lip_3_5mm_MPa": 8.593069,
+      "deflection_if_lip_3_5mm_mm": 0.218843,
+      "stress_multiplier_vs_K18_L12": 1.583333,
+      "deflection_multiplier_vs_K18_L12": 3.969329
+    },
+    {
+      "family": "large_front",
+      "module_count": 8,
+      "near_mm": 0,
+      "far_tip_mm": 12,
+      "mass_kg": 0.705425,
+      "force_per_lip_N": 17.300555,
+      "stress_nominal_4mm_MPa": 4.865781,
+      "deflection_nominal_4mm_mm": 0.043251,
+      "stress_if_lip_3_5mm_MPa": 6.355306,
+      "deflection_if_lip_3_5mm_mm": 0.064562,
+      "stress_multiplier_vs_K18_L12": 1,
+      "deflection_multiplier_vs_K18_L12": 1
+    }
+  ],
+  "critical_fit_assumption": {
+    "stock_8mm_each_range_mm": [
+      7.7,
+      8.3
+    ],
+    "pocket_16_5mm_range_mm": [
+      16.3,
+      16.7
+    ],
+    "possible_clearance_mm": [
+      -0.3,
+      1.3
+    ],
+    "supplier_tolerances_known": false
+  },
+  "unresolved": [
+    "actual load centroid and 3D basket",
+    "positive removable anti-inversion keeper; zero nominal insert vertical fitting clearance",
+    "4mm tongue root strength/adhesive bending and fatigue",
+    "physical rail socket depth and load transfer",
+    "full insertion/exit sweep through speaker hole",
+    "machine cutter, radii, material thickness, fixtures, holes, terminal, 500mm full depth"
+  ]
+}

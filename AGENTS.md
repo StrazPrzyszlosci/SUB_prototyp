@@ -1854,3 +1854,11 @@ Odtworzono K04–K06. W czterech próbach K07 dla obu luzów kolejność 4–15,
 - K17 nominal permanent displacement 1.020928 l changes P30E baseline to approx 99.0984 / 118.8984 / 149.1384l before K01 or real hardware. Optional 3mm tenons extend into MDF pockets; no automatic extra free-air displacement.
 - Evidence: raporty/K18_projekt_CNC_mocowania_wkladow.md; dokumentacja/cnc/README.md; skrypty/k18_cnc_kontury.js; wyniki/k18_mocowania_i_CNC_podsumowanie.json.
 - NEXT: physically installable removable upper keepers and detailed full 20-box and 12-rail assembly trajectory, real MDF/laminate/adhesive coupon qualification, complete cutter/tolerance/terminal/grille design. CNC HOLD.
+
+## 2026-11-04 — K19: independent CNC DXF geometry and cantilever reach correction
+
+- Detected K18 12mm cantilever assumption omitted K17 front-of-box gap. Independent far-tip lever reaches: small rear23mm, large rear19mm, large front12mm. A real contact resultant is unknown; values are intentionally conservative tip-load comparisons.
+- Recomputed mass for all 20 K15 six-face boxes, stress and displacement of 4mm and hypothetical 3.5mm lips at 5g, density 730, E2700. Small rear example: approx 6.20 MPa / 0.203mm nominal far-tip idealized (not an approval).
+- Independent Python DXF/BOM QA verifies 162 reference closed profiles, 24 hypothetical pockets, 20×4 contacts, and mandatory CNC HOLD; workflow and human-readable K19 report added.
+- Hypothetical socket fit with stock tolerance 8±0.3mm and pocket16.5±0.2mm yields -0.3mm..+1.3mm clearance range. Real material and machining tolerance not known.
+- NEXT: develop removable upper positive keeper, 3D assembly/disassembly trajectory, test actual joins, material coupons and full DSP+acoustic volume. CNC HOLD.

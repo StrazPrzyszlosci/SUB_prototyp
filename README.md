@@ -121,6 +121,8 @@ Dla badanych przetworników sprawdzamy kolejno typ obudowy, potrzebny litraż, p
 
 **K18 — rzeczywisty krok do CNC:** przygotowano [162 kontury kontrolne](dokumentacja/cnc/README.md), pełne zestawienie płyt i 24 referencyjne gniazda prowadnic. Modele wykazują, że sztywne górne języki K17 nadal nie zapewniają sprawdzonej drogi montażu. [Obliczenia i rekomendacje K18](raporty/K18_projekt_CNC_mocowania_wkladow.md). **DXF to przegląd geometrii, nie zlecenie frezowania (CNC HOLD).**
 
+**K19 — korekta mechaniki przed CNC:** niezależny audyt obliczył rzeczywiste maksymalne wysięgi języków prowadnic w modelu K17: **12 / 19 / 23 mm**. Wcześniejszy test K18 zakładał wszędzie 12 mm, przez co mógł zaniżać obciążenia zginające tylnych podpór. Odtworzono niezależnie 162 kontury DXF i 24 gniazda oraz udokumentowano niezakończone testy montażu i tolerancji. [K19 — raport i wyniki](raporty/K19_audyt_CNC_i_korekta_wysiegu_wspornikow.md). **CNC HOLD.**
+
 ### 3. Badania materiałów, ścian, wręg i połączeń
 
 Najpierw sprawdzamy **sztywność i masę ścian, wręg oraz frontu**, a także materiał i trwałość klejów. Nie zakładamy, że dodatkowy MDF lub metalowy pierścień zawsze są lepsze niż prawidłowo zaprojektowane wzmocnienie. W K10 utworzono **paszporty materiałowe 35 części**. K11 porównuje przy niezmienionym obrysie: ściany MDF25 zmniejszają modelową *geometryczną objętość wnętrza brutto* o **4,381 l** względem MDF22; sklejka brzozowa21 ją zwiększa o **1,478 l**. **Nie są to jeszcze zmiany pojemności netto ani wyniki całego MES**.

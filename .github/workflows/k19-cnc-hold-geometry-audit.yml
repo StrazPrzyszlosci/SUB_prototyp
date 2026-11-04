@@ -1,0 +1,30 @@
+name: K19 independent DXF and insert support audit
+on:
+  push:
+    branches: [main]
+    paths:
+      - "skrypty/k19_*"
+      - "wyniki/k19_*"
+      - "dokumentacja/cnc/**"
+      - ".github/workflows/k19-cnc-hold-geometry-audit.yml"
+  pull_request:
+    paths:
+      - "skrypty/k19_*"
+      - "wyniki/k19_*"
+      - "dokumentacja/cnc/**"
+      - ".github/workflows/k19-cnc-hold-geometry-audit.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check code and independent CNC preview model
+        run: |
+          python -m py_compile skrypty/k19_audyt_DXF_i_wspornikow.py
+          python skrypty/k19_audyt_DXF_i_wspornikow.py
