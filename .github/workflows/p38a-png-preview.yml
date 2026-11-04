@@ -2,7 +2,7 @@ name: P38A render accompanying PNG preview from own SVG
 on:
   push:
     branches:
-      - research/p38a-eccentric-contact-and-tolerance-20261104
+      - research/k14-eccentric-contact-and-tolerance-20261104
     paths:
       - "wyniki/p38a_front_NIE_CNC.svg"
       - "skrypty/render_svg_png.py"
