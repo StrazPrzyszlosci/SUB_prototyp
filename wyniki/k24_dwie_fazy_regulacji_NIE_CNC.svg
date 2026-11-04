@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1070" height="395" viewBox="0 0 1070 395">
+<rect width="1070" height="395" fill="#f8fafc"/><text x="22" y="32" font-size="23" font-weight="bold" fill="#273d4b">K24 – nominal two-stage cabinet-volume servicing (NOT CNC)</text>
+<text x="22" y="54" font-size="13" fill="#506575">3D orthogonal motion only; zero clearance, lower/upper retainers absent. Existing K18 drawings remain CNC HOLD.</text>
+<rect x="22" y="91" width="297" height="121" rx="8" fill="#e7eff6" stroke="#7892a9"/><text x="42" y="124" font-size="19" font-weight="bold">100 L – 20 boxes</text><text x="42" y="162" font-size="14">Remove 0,1,2,3,16–19</text>
+<rect x="387" y="91" width="297" height="121" rx="8" fill="#e4f2e9" stroke="#7aa58a"/><text x="407" y="124" font-size="19" font-weight="bold">120 L – 12 boxes</text><text x="407" y="162" font-size="14">Remove 11 more, leave id 4</text>
+<rect x="752" y="91" width="297" height="121" rx="8" fill="#efe8f6" stroke="#a18aae"/><text x="772" y="124" font-size="19" font-weight="bold">150 L – 1 box</text><text x="772" y="162" font-size="14">Core box id 4 retained</text>
+<path d="M320 151 H384 M365 144 L384 151 L365 158 M685 151 H749 M730 144 L749 151 L730 158" fill="none" stroke="#3e857a" stroke-width="3"/>
+<text x="354" y="238" font-size="13" font-weight="bold" text-anchor="middle" fill="#356953">Release rail 02</text>
+<text x="719" y="238" font-size="13" font-weight="bold" text-anchor="middle" fill="#356953">Release rail 10</text>
+<text x="22" y="277" font-size="15" font-weight="bold" fill="#a1443b">Both transitions FAIL with all guides fixed in the translational model.</text>
+<text x="22" y="309" font-size="14" fill="#506575">Removing a guide loses one load-bearing path for nearby modules. No safe temporary hold has been engineered.</text>
+<text x="22" y="339" font-size="14" fill="#506575">Split segment's fit through the front opening is only a projection; joint, screws, tools and 6DOF motion remain unproven.</text>
+<text x="22" y="372" font-size="19" font-weight="bold" fill="#a1443b">PRE-FABRICATION RESEARCH — CNC HOLD</text>
+</svg>

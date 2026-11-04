@@ -1,0 +1,2545 @@
+{
+  "study": "K24",
+  "date": "2026-11-04",
+  "status": "CNC HOLD — nominal reversible state topology exists only if structural guide and shelf hardware can be removed and resecured",
+  "model": "Critical-plane Minkowski AABB decomposition; Cartesian orthogonal graph BFS with boundary planes and midpoints, 1 micrometre rounded grid, no box rotation; reconstructed paths checked as continuous swept AABB segments; exact nominal face contacts allowed.",
+  "inputs": "K15, K17, K23",
+  "entry": "All rigid boxes enter/leave through nominal centred Ø355.8 opening with driver removed, at X231/Z250; front two panels replaced by circular entry check. Front module 210x100 projected rectangle corner <177.9mm. Cabinet cavity [X22,998],[Y44,403],[Z22,478].",
+  "excluded": "ALL removable lower ledges and upper keepers, fastening screws, real basket, hand/tool access, full 6DOF, tolerances, rail segment attachment; all material, mechanical and CNC approvals absent.",
+  "targetStates": {
+    "state100_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "state120_ids": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "state150_ids": [
+      4
+    ]
+  },
+  "releasePhase100to120": {
+    "name": "100 to 120: temporary release of small guide 02",
+    "missing_spines": [
+      "G17_COLUMN_02"
+    ],
+    "clearance_mm": 0,
+    "completed": true,
+    "removed": [
+      0,
+      1,
+      2,
+      3,
+      16,
+      17,
+      18,
+      19
+    ],
+    "remaining": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "actions": [
+      {
+        "id": 0,
+        "available_to_remove_before_selection": [
+          0,
+          1,
+          2,
+          3,
+          16,
+          17,
+          18,
+          19
+        ],
+        "reverse_for_extract": [
+          [
+            231,
+            94,
+            250
+          ],
+          [
+            157,
+            94,
+            250
+          ],
+          [
+            157,
+            94,
+            112
+          ],
+          [
+            157,
+            286,
+            112
+          ],
+          [
+            121,
+            286,
+            112
+          ],
+          [
+            121,
+            297,
+            112
+          ]
+        ],
+        "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+      },
+      {
+        "id": 1,
+        "available_to_remove_before_selection": [
+          1,
+          2,
+          3,
+          16,
+          17,
+          18,
+          19
+        ],
+        "reverse_for_extract": [
+          [
+            231,
+            94,
+            250
+          ],
+          [
+            157,
+            94,
+            250
+          ],
+          [
+            157,
+            94,
+            388
+          ],
+          [
+            157,
+            286,
+            388
+          ],
+          [
+            121,
+            286,
+            388
+          ],
+          [
+            121,
+            297,
+            388
+          ]
+        ],
+        "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+      },
+      {
+        "id": 2,
+        "available_to_remove_before_selection": [
+          2,
+          3,
+          16,
+          17,
+          18,
+          19
+        ],
+        "reverse_for_extract": [
+          [
+            231,
+            94,
+            250
+          ],
+          [
+            185,
+            94,
+            250
+          ],
+          [
+            185,
+            94,
+            112
+          ],
+          [
+            185,
+            286,
+            112
+          ],
+          [
+            345,
+            286,
+            112
+          ],
+          [
+            345,
+            297,
+            112
+          ]
+        ],
+        "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+      },
+      {
+        "id": 3,
+        "available_to_remove_before_selection": [
+          3,
+          16,
+          17,
+          18,
+          19
+        ],
+        "reverse_for_extract": [
+          [
+            231,
+            94,
+            250
+          ],
+          [
+            185,
+            94,
+            250
+          ],
+          [
+            185,
+            94,
+            388
+          ],
+          [
+            185,
+            286,
+            388
+          ],
+          [
+            345,
+            286,
+            388
+          ],
+          [
+            345,
+            297,
+            388
+          ]
+        ],
+        "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+      },
+      {
+        "id": 16,
+        "available_to_remove_before_selection": [
+          16,
+          17,
+          18,
+          19
+        ],
+        "reverse_for_extract": [
+          [
+            231,
+            119,
+            250
+          ],
+          [
+            343,
+            119,
+            250
+          ],
+          [
+            343,
+            119,
+            94
+          ],
+          [
+            343,
+            129,
+            94
+          ],
+          [
+            596.5,
+            129,
+            94
+          ],
+          [
+            596.5,
+            127,
+            94
+          ],
+          [
+            596.5,
+            127,
+            84
+          ]
+        ],
+        "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+      },
+      {
+        "id": 17,
+        "available_to_remove_before_selection": [
+          17,
+          18,
+          19
+        ],
+        "reverse_for_extract": [
+          [
+            231,
+            119,
+            250
+          ],
+          [
+            343,
+            119,
+            250
+          ],
+          [
+            343,
+            119,
+            406
+          ],
+          [
+            343,
+            129,
+            406
+          ],
+          [
+            596.5,
+            129,
+            406
+          ],
+          [
+            596.5,
+            127,
+            406
+          ],
+          [
+            596.5,
+            127,
+            414
+          ]
+        ],
+        "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+      },
+      {
+        "id": 18,
+        "available_to_remove_before_selection": [
+          18,
+          19
+        ],
+        "reverse_for_extract": [
+          [
+            231,
+            119,
+            250
+          ],
+          [
+            343,
+            119,
+            250
+          ],
+          [
+            343,
+            119,
+            194
+          ],
+          [
+            343,
+            129,
+            194
+          ],
+          [
+            596.5,
+            129,
+            194
+          ],
+          [
+            596.5,
+            127,
+            194
+          ]
+        ],
+        "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+      },
+      {
+        "id": 19,
+        "available_to_remove_before_selection": [
+          19
+        ],
+        "reverse_for_extract": [
+          [
+            231,
+            119,
+            250
+          ],
+          [
+            343,
+            119,
+            250
+          ],
+          [
+            343,
+            119,
+            304
+          ],
+          [
+            343,
+            129,
+            304
+          ],
+          [
+            596.5,
+            129,
+            304
+          ],
+          [
+            596.5,
+            127,
+            304
+          ]
+        ],
+        "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+      }
+    ]
+  },
+  "releasePhase120to150": {
+    "name": "120 to 150: temporary release of large rear guide 10",
+    "missing_spines": [
+      "G17_COLUMN_10"
+    ],
+    "clearance_mm": 0,
+    "completed": true,
+    "removed": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      5,
+      7,
+      6,
+      14,
+      15
+    ],
+    "remaining": [
+      4
+    ],
+    "actions": [
+      {
+        "id": 8,
+        "available_to_remove_before_selection": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "reverse_for_extract": [
+          [
+            231,
+            119,
+            250
+          ],
+          [
+            343,
+            119,
+            250
+          ],
+          [
+            343,
+            119,
+            94
+          ],
+          [
+            343,
+            129,
+            94
+          ],
+          [
+            871.5,
+            129,
+            94
+          ],
+          [
+            871.5,
+            127,
+            94
+          ],
+          [
+            871.5,
+            127,
+            84
+          ]
+        ],
+        "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+      },
+      {
+        "id": 9,
+        "available_to_remove_before_selection": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "reverse_for_extract": [
+          [
+            231,
+            119,
+            250
+          ],
+          [
+            343,
+            119,
+            250
+          ],
+          [
+            343,
+            119,
+            406
+          ],
+          [
+            343,
+            129,
+            406
+          ],
+          [
+            871.5,
+            129,
+            406
+          ],
+          [
+            871.5,
+            127,
+            406
+          ],
+          [
+            871.5,
+            127,
+            414
+          ]
+        ],
+        "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+      },
+      {
+        "id": 10,
+        "available_to_remove_before_selection": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "reverse_for_extract": [
+          [
+            231,
+            119,
+            250
+          ],
+          [
+            343,
+            119,
+            250
+          ],
+          [
+            343,
+            119,
+            194
+          ],
+          [
+            343,
+            129,
+            194
+          ],
+          [
+            871.5,
+            129,
+            194
+          ],
+          [
+            871.5,
+            127,
+            194
+          ]
+        ],
+        "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+      },
+      {
+        "id": 11,
+        "available_to_remove_before_selection": [
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "reverse_for_extract": [
+          [
+            231,
+            119,
+            250
+          ],
+          [
+            343,
+            119,
+            250
+          ],
+          [
+            343,
+            119,
+            304
+          ],
+          [
+            343,
+            129,
+            304
+          ],
+          [
+            871.5,
+            129,
+            304
+          ],
+          [
+            871.5,
+            127,
+            304
+          ]
+        ],
+        "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+      },
+      {
+        "id": 12,
+        "available_to_remove_before_selection": [
+          12,
+          13,
+          14,
+          15
+        ],
+        "reverse_for_extract": [
+          [
+            231,
+            104,
+            250
+          ],
+          [
+            343,
+            104,
+            250
+          ],
+          [
+            343,
+            104,
+            94
+          ],
+          [
+            343,
+            114,
+            94
+          ],
+          [
+            636.5,
+            114,
+            94
+          ],
+          [
+            636.5,
+            280,
+            94
+          ],
+          [
+            596.5,
+            280,
+            94
+          ],
+          [
+            596.5,
+            280,
+            84
+          ],
+          [
+            596.5,
+            287,
+            84
+          ]
+        ],
+        "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+      },
+      {
+        "id": 13,
+        "available_to_remove_before_selection": [
+          13,
+          14,
+          15
+        ],
+        "reverse_for_extract": [
+          [
+            231,
+            104,
+            250
+          ],
+          [
+            343,
+            104,
+            250
+          ],
+          [
+            343,
+            104,
+            406
+          ],
+          [
+            343,
+            114,
+            406
+          ],
+          [
+            636.5,
+            114,
+            406
+          ],
+          [
+            636.5,
+            280,
+            406
+          ],
+          [
+            596.5,
+            280,
+            406
+          ],
+          [
+            596.5,
+            280,
+            414
+          ],
+          [
+            596.5,
+            287,
+            414
+          ]
+        ],
+        "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+      },
+      {
+        "id": 5,
+        "available_to_remove_before_selection": [
+          5,
+          14,
+          15
+        ],
+        "reverse_for_extract": [
+          [
+            231,
+            104,
+            250
+          ],
+          [
+            343,
+            104,
+            250
+          ],
+          [
+            343,
+            104,
+            406
+          ],
+          [
+            343,
+            114,
+            406
+          ],
+          [
+            685.5,
+            114,
+            406
+          ],
+          [
+            685.5,
+            280,
+            406
+          ],
+          [
+            871.5,
+            280,
+            406
+          ],
+          [
+            871.5,
+            280,
+            414
+          ],
+          [
+            871.5,
+            287,
+            414
+          ]
+        ],
+        "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+      },
+      {
+        "id": 7,
+        "available_to_remove_before_selection": [
+          7,
+          14,
+          15
+        ],
+        "reverse_for_extract": [
+          [
+            231,
+            104,
+            250
+          ],
+          [
+            343,
+            104,
+            250
+          ],
+          [
+            343,
+            104,
+            404
+          ],
+          [
+            343,
+            114,
+            404
+          ],
+          [
+            685.5,
+            114,
+            404
+          ],
+          [
+            685.5,
+            280,
+            404
+          ],
+          [
+            871.5,
+            280,
+            404
+          ],
+          [
+            871.5,
+            280,
+            304
+          ],
+          [
+            871.5,
+            287,
+            304
+          ]
+        ],
+        "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+      },
+      {
+        "id": 6,
+        "available_to_remove_before_selection": [
+          6,
+          14,
+          15
+        ],
+        "reverse_for_extract": [
+          [
+            231,
+            104,
+            250
+          ],
+          [
+            343,
+            104,
+            250
+          ],
+          [
+            343,
+            104,
+            404
+          ],
+          [
+            343,
+            114,
+            404
+          ],
+          [
+            685.5,
+            114,
+            404
+          ],
+          [
+            685.5,
+            280,
+            404
+          ],
+          [
+            871.5,
+            280,
+            404
+          ],
+          [
+            871.5,
+            280,
+            194
+          ],
+          [
+            871.5,
+            287,
+            194
+          ]
+        ],
+        "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+      },
+      {
+        "id": 14,
+        "available_to_remove_before_selection": [
+          14,
+          15
+        ],
+        "reverse_for_extract": [
+          [
+            231,
+            104,
+            250
+          ],
+          [
+            343,
+            104,
+            250
+          ],
+          [
+            343,
+            104,
+            194
+          ],
+          [
+            343,
+            114,
+            194
+          ],
+          [
+            636.5,
+            114,
+            194
+          ],
+          [
+            636.5,
+            280,
+            194
+          ],
+          [
+            596.5,
+            280,
+            194
+          ],
+          [
+            596.5,
+            287,
+            194
+          ]
+        ],
+        "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+      },
+      {
+        "id": 15,
+        "available_to_remove_before_selection": [
+          15
+        ],
+        "reverse_for_extract": [
+          [
+            231,
+            104,
+            250
+          ],
+          [
+            343,
+            104,
+            250
+          ],
+          [
+            343,
+            104,
+            304
+          ],
+          [
+            343,
+            114,
+            304
+          ],
+          [
+            636.5,
+            114,
+            304
+          ],
+          [
+            636.5,
+            280,
+            304
+          ],
+          [
+            596.5,
+            280,
+            304
+          ],
+          [
+            596.5,
+            287,
+            304
+          ]
+        ],
+        "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+      }
+    ]
+  },
+  "unremovedRailControls": {
+    "attempt100to120": {
+      "name": "100 to 120: all rails present",
+      "missing_spines": [],
+      "clearance_mm": 0,
+      "completed": false,
+      "removed": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "remaining": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "actions": [
+        {
+          "id": 16,
+          "available_to_remove_before_selection": [
+            16,
+            17,
+            18,
+            19
+          ],
+          "reverse_for_extract": [
+            [
+              231,
+              119,
+              250
+            ],
+            [
+              343,
+              119,
+              250
+            ],
+            [
+              343,
+              119,
+              94
+            ],
+            [
+              343,
+              129,
+              94
+            ],
+            [
+              596.5,
+              129,
+              94
+            ],
+            [
+              596.5,
+              127,
+              94
+            ],
+            [
+              596.5,
+              127,
+              84
+            ]
+          ],
+          "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+        },
+        {
+          "id": 17,
+          "available_to_remove_before_selection": [
+            17,
+            18,
+            19
+          ],
+          "reverse_for_extract": [
+            [
+              231,
+              119,
+              250
+            ],
+            [
+              343,
+              119,
+              250
+            ],
+            [
+              343,
+              119,
+              406
+            ],
+            [
+              343,
+              129,
+              406
+            ],
+            [
+              596.5,
+              129,
+              406
+            ],
+            [
+              596.5,
+              127,
+              406
+            ],
+            [
+              596.5,
+              127,
+              414
+            ]
+          ],
+          "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+        },
+        {
+          "id": 18,
+          "available_to_remove_before_selection": [
+            18,
+            19
+          ],
+          "reverse_for_extract": [
+            [
+              231,
+              119,
+              250
+            ],
+            [
+              343,
+              119,
+              250
+            ],
+            [
+              343,
+              119,
+              194
+            ],
+            [
+              343,
+              129,
+              194
+            ],
+            [
+              596.5,
+              129,
+              194
+            ],
+            [
+              596.5,
+              127,
+              194
+            ]
+          ],
+          "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+        },
+        {
+          "id": 19,
+          "available_to_remove_before_selection": [
+            19
+          ],
+          "reverse_for_extract": [
+            [
+              231,
+              119,
+              250
+            ],
+            [
+              343,
+              119,
+              250
+            ],
+            [
+              343,
+              119,
+              304
+            ],
+            [
+              343,
+              129,
+              304
+            ],
+            [
+              596.5,
+              129,
+              304
+            ],
+            [
+              596.5,
+              127,
+              304
+            ]
+          ],
+          "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+        }
+      ],
+      "first_stalled_step": 4
+    },
+    "attempt120to150": {
+      "name": "120 to 150: all rails present",
+      "missing_spines": [],
+      "clearance_mm": 0,
+      "completed": false,
+      "removed": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "remaining": [
+        4,
+        5,
+        6,
+        7,
+        12,
+        13,
+        14,
+        15
+      ],
+      "actions": [
+        {
+          "id": 8,
+          "available_to_remove_before_selection": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "reverse_for_extract": [
+            [
+              231,
+              119,
+              250
+            ],
+            [
+              343,
+              119,
+              250
+            ],
+            [
+              343,
+              119,
+              94
+            ],
+            [
+              343,
+              129,
+              94
+            ],
+            [
+              871.5,
+              129,
+              94
+            ],
+            [
+              871.5,
+              127,
+              94
+            ],
+            [
+              871.5,
+              127,
+              84
+            ]
+          ],
+          "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+        },
+        {
+          "id": 9,
+          "available_to_remove_before_selection": [
+            9,
+            10,
+            11
+          ],
+          "reverse_for_extract": [
+            [
+              231,
+              119,
+              250
+            ],
+            [
+              343,
+              119,
+              250
+            ],
+            [
+              343,
+              119,
+              406
+            ],
+            [
+              343,
+              129,
+              406
+            ],
+            [
+              871.5,
+              129,
+              406
+            ],
+            [
+              871.5,
+              127,
+              406
+            ],
+            [
+              871.5,
+              127,
+              414
+            ]
+          ],
+          "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+        },
+        {
+          "id": 10,
+          "available_to_remove_before_selection": [
+            10,
+            11
+          ],
+          "reverse_for_extract": [
+            [
+              231,
+              119,
+              250
+            ],
+            [
+              343,
+              119,
+              250
+            ],
+            [
+              343,
+              119,
+              194
+            ],
+            [
+              343,
+              129,
+              194
+            ],
+            [
+              871.5,
+              129,
+              194
+            ],
+            [
+              871.5,
+              127,
+              194
+            ]
+          ],
+          "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+        },
+        {
+          "id": 11,
+          "available_to_remove_before_selection": [
+            11
+          ],
+          "reverse_for_extract": [
+            [
+              231,
+              119,
+              250
+            ],
+            [
+              343,
+              119,
+              250
+            ],
+            [
+              343,
+              119,
+              304
+            ],
+            [
+              343,
+              129,
+              304
+            ],
+            [
+              871.5,
+              129,
+              304
+            ],
+            [
+              871.5,
+              127,
+              304
+            ]
+          ],
+          "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+        }
+      ],
+      "first_stalled_step": 4
+    }
+  },
+  "alternativeSmallGuideIds": {
+    "guide03": true,
+    "guide04": true
+  },
+  "full16maskSmallGuideStudy": [
+    {
+      "missing_small_guides": [],
+      "accessible_small_modules": [
+        {
+          "id": 0,
+          "ok": false
+        },
+        {
+          "id": 1,
+          "ok": false
+        },
+        {
+          "id": 2,
+          "ok": false
+        },
+        {
+          "id": 3,
+          "ok": false
+        }
+      ],
+      "all4": false
+    },
+    {
+      "missing_small_guides": [
+        "G17_COLUMN_01"
+      ],
+      "accessible_small_modules": [
+        {
+          "id": 0,
+          "ok": false
+        },
+        {
+          "id": 1,
+          "ok": false
+        },
+        {
+          "id": 2,
+          "ok": false
+        },
+        {
+          "id": 3,
+          "ok": false
+        }
+      ],
+      "all4": false
+    },
+    {
+      "missing_small_guides": [
+        "G17_COLUMN_02"
+      ],
+      "accessible_small_modules": [
+        {
+          "id": 0,
+          "ok": true
+        },
+        {
+          "id": 1,
+          "ok": true
+        },
+        {
+          "id": 2,
+          "ok": true
+        },
+        {
+          "id": 3,
+          "ok": true
+        }
+      ],
+      "all4": true
+    },
+    {
+      "missing_small_guides": [
+        "G17_COLUMN_01",
+        "G17_COLUMN_02"
+      ],
+      "accessible_small_modules": [
+        {
+          "id": 0,
+          "ok": true
+        },
+        {
+          "id": 1,
+          "ok": true
+        },
+        {
+          "id": 2,
+          "ok": true
+        },
+        {
+          "id": 3,
+          "ok": true
+        }
+      ],
+      "all4": true
+    },
+    {
+      "missing_small_guides": [
+        "G17_COLUMN_03"
+      ],
+      "accessible_small_modules": [
+        {
+          "id": 0,
+          "ok": true
+        },
+        {
+          "id": 1,
+          "ok": true
+        },
+        {
+          "id": 2,
+          "ok": true
+        },
+        {
+          "id": 3,
+          "ok": true
+        }
+      ],
+      "all4": true
+    },
+    {
+      "missing_small_guides": [
+        "G17_COLUMN_01",
+        "G17_COLUMN_03"
+      ],
+      "accessible_small_modules": [
+        {
+          "id": 0,
+          "ok": true
+        },
+        {
+          "id": 1,
+          "ok": true
+        },
+        {
+          "id": 2,
+          "ok": true
+        },
+        {
+          "id": 3,
+          "ok": true
+        }
+      ],
+      "all4": true
+    },
+    {
+      "missing_small_guides": [
+        "G17_COLUMN_02",
+        "G17_COLUMN_03"
+      ],
+      "accessible_small_modules": [
+        {
+          "id": 0,
+          "ok": true
+        },
+        {
+          "id": 1,
+          "ok": true
+        },
+        {
+          "id": 2,
+          "ok": true
+        },
+        {
+          "id": 3,
+          "ok": true
+        }
+      ],
+      "all4": true
+    },
+    {
+      "missing_small_guides": [
+        "G17_COLUMN_01",
+        "G17_COLUMN_02",
+        "G17_COLUMN_03"
+      ],
+      "accessible_small_modules": [
+        {
+          "id": 0,
+          "ok": true
+        },
+        {
+          "id": 1,
+          "ok": true
+        },
+        {
+          "id": 2,
+          "ok": true
+        },
+        {
+          "id": 3,
+          "ok": true
+        }
+      ],
+      "all4": true
+    },
+    {
+      "missing_small_guides": [
+        "G17_COLUMN_04"
+      ],
+      "accessible_small_modules": [
+        {
+          "id": 0,
+          "ok": true
+        },
+        {
+          "id": 1,
+          "ok": true
+        },
+        {
+          "id": 2,
+          "ok": true
+        },
+        {
+          "id": 3,
+          "ok": true
+        }
+      ],
+      "all4": true
+    },
+    {
+      "missing_small_guides": [
+        "G17_COLUMN_01",
+        "G17_COLUMN_04"
+      ],
+      "accessible_small_modules": [
+        {
+          "id": 0,
+          "ok": true
+        },
+        {
+          "id": 1,
+          "ok": true
+        },
+        {
+          "id": 2,
+          "ok": true
+        },
+        {
+          "id": 3,
+          "ok": true
+        }
+      ],
+      "all4": true
+    },
+    {
+      "missing_small_guides": [
+        "G17_COLUMN_02",
+        "G17_COLUMN_04"
+      ],
+      "accessible_small_modules": [
+        {
+          "id": 0,
+          "ok": true
+        },
+        {
+          "id": 1,
+          "ok": true
+        },
+        {
+          "id": 2,
+          "ok": true
+        },
+        {
+          "id": 3,
+          "ok": true
+        }
+      ],
+      "all4": true
+    },
+    {
+      "missing_small_guides": [
+        "G17_COLUMN_01",
+        "G17_COLUMN_02",
+        "G17_COLUMN_04"
+      ],
+      "accessible_small_modules": [
+        {
+          "id": 0,
+          "ok": true
+        },
+        {
+          "id": 1,
+          "ok": true
+        },
+        {
+          "id": 2,
+          "ok": true
+        },
+        {
+          "id": 3,
+          "ok": true
+        }
+      ],
+      "all4": true
+    },
+    {
+      "missing_small_guides": [
+        "G17_COLUMN_03",
+        "G17_COLUMN_04"
+      ],
+      "accessible_small_modules": [
+        {
+          "id": 0,
+          "ok": true
+        },
+        {
+          "id": 1,
+          "ok": true
+        },
+        {
+          "id": 2,
+          "ok": true
+        },
+        {
+          "id": 3,
+          "ok": true
+        }
+      ],
+      "all4": true
+    },
+    {
+      "missing_small_guides": [
+        "G17_COLUMN_01",
+        "G17_COLUMN_03",
+        "G17_COLUMN_04"
+      ],
+      "accessible_small_modules": [
+        {
+          "id": 0,
+          "ok": true
+        },
+        {
+          "id": 1,
+          "ok": true
+        },
+        {
+          "id": 2,
+          "ok": true
+        },
+        {
+          "id": 3,
+          "ok": true
+        }
+      ],
+      "all4": true
+    },
+    {
+      "missing_small_guides": [
+        "G17_COLUMN_02",
+        "G17_COLUMN_03",
+        "G17_COLUMN_04"
+      ],
+      "accessible_small_modules": [
+        {
+          "id": 0,
+          "ok": true
+        },
+        {
+          "id": 1,
+          "ok": true
+        },
+        {
+          "id": 2,
+          "ok": true
+        },
+        {
+          "id": 3,
+          "ok": true
+        }
+      ],
+      "all4": true
+    },
+    {
+      "missing_small_guides": [
+        "G17_COLUMN_01",
+        "G17_COLUMN_02",
+        "G17_COLUMN_03",
+        "G17_COLUMN_04"
+      ],
+      "accessible_small_modules": [
+        {
+          "id": 0,
+          "ok": true
+        },
+        {
+          "id": 1,
+          "ok": true
+        },
+        {
+          "id": 2,
+          "ok": true
+        },
+        {
+          "id": 3,
+          "ok": true
+        }
+      ],
+      "all4": true
+    }
+  ],
+  "uniformOneMillimetreMarginScreens": {
+    "attempt100to120": {
+      "name": "100 to 120: guide 02 with 1mm uniform clearance",
+      "missing_spines": [
+        "G17_COLUMN_02"
+      ],
+      "clearance_mm": 1,
+      "completed": false,
+      "removed": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "remaining": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "actions": [
+        {
+          "id": 0,
+          "available_to_remove_before_selection": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "reverse_for_extract": [
+            [
+              231,
+              95,
+              250
+            ],
+            [
+              158,
+              95,
+              250
+            ],
+            [
+              158,
+              95,
+              112
+            ],
+            [
+              158,
+              287,
+              112
+            ],
+            [
+              121,
+              287,
+              112
+            ],
+            [
+              121,
+              297,
+              112
+            ]
+          ],
+          "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+        },
+        {
+          "id": 1,
+          "available_to_remove_before_selection": [
+            1,
+            2,
+            3
+          ],
+          "reverse_for_extract": [
+            [
+              231,
+              95,
+              250
+            ],
+            [
+              158,
+              95,
+              250
+            ],
+            [
+              158,
+              95,
+              388
+            ],
+            [
+              158,
+              287,
+              388
+            ],
+            [
+              121,
+              287,
+              388
+            ],
+            [
+              121,
+              297,
+              388
+            ]
+          ],
+          "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+        },
+        {
+          "id": 2,
+          "available_to_remove_before_selection": [
+            2,
+            3
+          ],
+          "reverse_for_extract": [
+            [
+              231,
+              95,
+              250
+            ],
+            [
+              184,
+              95,
+              250
+            ],
+            [
+              184,
+              95,
+              112
+            ],
+            [
+              184,
+              287,
+              112
+            ],
+            [
+              345,
+              287,
+              112
+            ],
+            [
+              345,
+              297,
+              112
+            ]
+          ],
+          "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+        },
+        {
+          "id": 3,
+          "available_to_remove_before_selection": [
+            3
+          ],
+          "reverse_for_extract": [
+            [
+              231,
+              95,
+              250
+            ],
+            [
+              184,
+              95,
+              250
+            ],
+            [
+              184,
+              95,
+              388
+            ],
+            [
+              184,
+              287,
+              388
+            ],
+            [
+              345,
+              287,
+              388
+            ],
+            [
+              345,
+              297,
+              388
+            ]
+          ],
+          "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+        }
+      ],
+      "first_stalled_step": 4
+    },
+    "attempt120to150": {
+      "name": "120 to 150: guide 10 with 1mm uniform clearance",
+      "missing_spines": [
+        "G17_COLUMN_10"
+      ],
+      "clearance_mm": 1,
+      "completed": false,
+      "removed": [
+        13,
+        5,
+        7,
+        6,
+        14,
+        12,
+        15
+      ],
+      "remaining": [
+        4,
+        8,
+        9,
+        10,
+        11
+      ],
+      "actions": [
+        {
+          "id": 13,
+          "available_to_remove_before_selection": [
+            13,
+            14,
+            15
+          ],
+          "reverse_for_extract": [
+            [
+              231,
+              105,
+              250
+            ],
+            [
+              342,
+              105,
+              250
+            ],
+            [
+              342,
+              105,
+              405
+            ],
+            [
+              342,
+              115,
+              405
+            ],
+            [
+              637.5,
+              115,
+              405
+            ],
+            [
+              637.5,
+              281,
+              405
+            ],
+            [
+              596.5,
+              281,
+              405
+            ],
+            [
+              596.5,
+              281,
+              414
+            ],
+            [
+              596.5,
+              287,
+              414
+            ]
+          ],
+          "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+        },
+        {
+          "id": 5,
+          "available_to_remove_before_selection": [
+            5,
+            14,
+            15
+          ],
+          "reverse_for_extract": [
+            [
+              231,
+              105,
+              250
+            ],
+            [
+              342,
+              105,
+              250
+            ],
+            [
+              342,
+              105,
+              405
+            ],
+            [
+              342,
+              115,
+              405
+            ],
+            [
+              660.5,
+              115,
+              405
+            ],
+            [
+              660.5,
+              263,
+              405
+            ],
+            [
+              684.5,
+              263,
+              405
+            ],
+            [
+              684.5,
+              281,
+              405
+            ],
+            [
+              871.5,
+              281,
+              405
+            ],
+            [
+              871.5,
+              281,
+              414
+            ],
+            [
+              871.5,
+              287,
+              414
+            ]
+          ],
+          "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+        },
+        {
+          "id": 7,
+          "available_to_remove_before_selection": [
+            7,
+            14,
+            15
+          ],
+          "reverse_for_extract": [
+            [
+              231,
+              105,
+              250
+            ],
+            [
+              342,
+              105,
+              250
+            ],
+            [
+              342,
+              105,
+              405
+            ],
+            [
+              342,
+              115,
+              405
+            ],
+            [
+              660.5,
+              115,
+              405
+            ],
+            [
+              660.5,
+              263,
+              405
+            ],
+            [
+              684.5,
+              263,
+              405
+            ],
+            [
+              684.5,
+              281,
+              405
+            ],
+            [
+              871.5,
+              281,
+              405
+            ],
+            [
+              871.5,
+              281,
+              304
+            ],
+            [
+              871.5,
+              287,
+              304
+            ]
+          ],
+          "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+        },
+        {
+          "id": 6,
+          "available_to_remove_before_selection": [
+            6,
+            14,
+            15
+          ],
+          "reverse_for_extract": [
+            [
+              231,
+              105,
+              250
+            ],
+            [
+              342,
+              105,
+              250
+            ],
+            [
+              342,
+              105,
+              405
+            ],
+            [
+              342,
+              115,
+              405
+            ],
+            [
+              660.5,
+              115,
+              405
+            ],
+            [
+              660.5,
+              263,
+              405
+            ],
+            [
+              684.5,
+              263,
+              405
+            ],
+            [
+              684.5,
+              281,
+              405
+            ],
+            [
+              871.5,
+              281,
+              405
+            ],
+            [
+              871.5,
+              281,
+              194
+            ],
+            [
+              871.5,
+              287,
+              194
+            ]
+          ],
+          "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+        },
+        {
+          "id": 14,
+          "available_to_remove_before_selection": [
+            14,
+            15
+          ],
+          "reverse_for_extract": [
+            [
+              231,
+              105,
+              250
+            ],
+            [
+              342,
+              105,
+              250
+            ],
+            [
+              342,
+              105,
+              194
+            ],
+            [
+              342,
+              115,
+              194
+            ],
+            [
+              637.5,
+              115,
+              194
+            ],
+            [
+              637.5,
+              281,
+              194
+            ],
+            [
+              596.5,
+              281,
+              194
+            ],
+            [
+              596.5,
+              287,
+              194
+            ]
+          ],
+          "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+        },
+        {
+          "id": 12,
+          "available_to_remove_before_selection": [
+            12,
+            15
+          ],
+          "reverse_for_extract": [
+            [
+              231,
+              105,
+              250
+            ],
+            [
+              342,
+              105,
+              250
+            ],
+            [
+              342,
+              105,
+              95
+            ],
+            [
+              342,
+              115,
+              95
+            ],
+            [
+              637.5,
+              115,
+              95
+            ],
+            [
+              637.5,
+              281,
+              95
+            ],
+            [
+              596.5,
+              281,
+              95
+            ],
+            [
+              596.5,
+              281,
+              84
+            ],
+            [
+              596.5,
+              287,
+              84
+            ]
+          ],
+          "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+        },
+        {
+          "id": 15,
+          "available_to_remove_before_selection": [
+            15
+          ],
+          "reverse_for_extract": [
+            [
+              231,
+              105,
+              250
+            ],
+            [
+              342,
+              105,
+              250
+            ],
+            [
+              342,
+              105,
+              304
+            ],
+            [
+              342,
+              115,
+              304
+            ],
+            [
+              637.5,
+              115,
+              304
+            ],
+            [
+              637.5,
+              281,
+              304
+            ],
+            [
+              596.5,
+              281,
+              304
+            ],
+            [
+              596.5,
+              287,
+              304
+            ]
+          ],
+          "note": "The listed route runs aperture→box. Reverse its segments to extract the box."
+        }
+      ],
+      "first_stalled_step": 7
+    }
+  },
+  "reverseTransition": "Under identical absent-shelf and temporary-guide conditions, reverse the saved removal order and each saved path to model 150→120 and 120→100. Reinsertion of guides, mechanical supports and locks is NOT verified.",
+  "supportRiskScreen": {
+    "split_guide02_at_z250_existing_contact_lips": [],
+    "split_guide10_at_z250_existing_contact_lips": [
+      {
+        "id": "G17_15_shelf_2",
+        "z_span": [
+          250,
+          254
+        ]
+      }
+    ],
+    "each_guide_full_height_mm": 456,
+    "proposed_unjoined_segments_mm": [
+      228,
+      228
+    ],
+    "half_guide_16mm_by228mm_aperture_projection_corner_plus6mm_margin": 120.814,
+    "reference_aperture_radius_mm": 177.9,
+    "hypothetical_material_density_kg_m3": 730,
+    "hypothetical_transport_acceleration_g": 5,
+    "structural_demand_if_one_side_support_removed": [
+      {
+        "name": "small_rear_guide02",
+        "id": 0,
+        "L": 23,
+        "rail": "G17_COLUMN_02",
+        "affected": [
+          0,
+          1
+        ],
+        "shell_mass_kg": 0.469,
+        "two_support_share_each_N": 11.508,
+        "one_remaining_support_if_unassisted_N": 23.017,
+        "nominal_far_tip_single_support_moment_Nmm": 529.391,
+        "hypothetical_elastic_stress_single_support_MPa": 12.408,
+        "strength_qualified": false
+      },
+      {
+        "name": "large_rear_guide10",
+        "id": 12,
+        "L": 19,
+        "rail": "G17_COLUMN_10",
+        "affected": [
+          12,
+          13,
+          14,
+          15
+        ],
+        "shell_mass_kg": 0.602,
+        "two_support_share_each_N": 14.774,
+        "one_remaining_support_if_unassisted_N": 29.548,
+        "nominal_far_tip_single_support_moment_Nmm": 561.414,
+        "hypothetical_elastic_stress_single_support_MPa": 13.158,
+        "strength_qualified": false
+      }
+    ],
+    "gap_from_rear_small_rail_to_box_front_mm": 11,
+    "gap_from_rear_large_rail_to_box_front_mm": 7,
+    "gap_from_front_rail_to_front_box_mm": 0,
+    "front_large_box_back_to_large_rear_rail_front_mm": 6,
+    "hypothetical_tool_diameter_mm": 10,
+    "hypothetical_tool_clearance_per_side_mm": 1,
+    "needed_tool_envelope_mm": 12,
+    "actual_hardware_designed": false,
+    "ability_to_remove_rail_after_all_boxes_installed_proven": false
+  },
+  "releaseFlags": {
+    "cnc_approved": false,
+    "all_dynamic_collision_sweeps_of_saved_ideal_paths_verified": true,
+    "true_fastener_bearing_pullout_and_fatigue_verified": false,
+    "actual_module_service_and_rail_reattachment_verified": false,
+    "no_nominal_clearance_claimed_as_production_tolerance": true
+  }
+}

@@ -1,0 +1,55 @@
+name: K24 two-stage service graph and support-load regression — CNC HOLD
+on:
+  push:
+    branches: [main]
+    paths:
+      - "skrypty/k24_*"
+      - "wyniki/k24_*"
+      - "wyniki/k15_p30e_przed_CNC_zestawienie.json"
+      - "wyniki/k17_prowadnice_boczne_wkladow.json"
+      - ".github/workflows/k24-service-sequence-search.yml"
+  pull_request:
+    paths:
+      - "skrypty/k24_*"
+      - "wyniki/k24_*"
+      - "wyniki/k15_p30e_przed_CNC_zestawienie.json"
+      - "wyniki/k17_prowadnice_boczne_wkladow.json"
+      - ".github/workflows/k24-service-sequence-search.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  service-graph:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Repeat full nominal 3D orthogonal cell BFS and swept-box verification
+        run: |
+          set -euo pipefail
+          node --check skrypty/k24_dwuetapowe_trasy_serwisowe.js
+          node skrypty/k24_dwuetapowe_trasy_serwisowe.js
+          git diff --exit-code -- wyniki/k24_drogi_serwisowe_i_podpory.json
+      - name: Guard conditional geometry and unqualified joints
+        run: |
+          node - <<'NODE'
+          const fs=require("node:fs"),a=require("node:assert/strict");
+          const o=JSON.parse(fs.readFileSync("wyniki/k24_drogi_serwisowe_i_podpory.json","utf8"));
+          a.match(o.status,/CNC HOLD/);
+          a.deepEqual(o.releasePhase100to120.removed,[0,1,2,3,16,17,18,19]);
+          a.equal(o.releasePhase100to120.completed,true);
+          a.equal(o.releasePhase120to150.completed,true);
+          a.equal(o.releasePhase120to150.removed.length,11);
+          a.equal(o.unremovedRailControls.attempt100to120.completed,false);
+          a.equal(o.unremovedRailControls.attempt120to150.completed,false);
+          a.equal(o.full16maskSmallGuideStudy.length,16);
+          a.equal(o.full16maskSmallGuideStudy.filter(x=>!x.all4).length,2);
+          a.deepEqual(o.supportRiskScreen.split_guide02_at_z250_existing_contact_lips,[]);
+          a.equal(o.supportRiskScreen.split_guide10_at_z250_existing_contact_lips.length,1);
+          a.equal(o.releaseFlags.cnc_approved,false);
+          a.equal(o.releaseFlags.true_fastener_bearing_pullout_and_fatigue_verified,false);
+          console.log("PASS K24: conditional 100↔120↔150 graph, no physical support/fastener release; CNC HOLD");
+          NODE
