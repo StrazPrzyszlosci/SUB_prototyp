@@ -33,6 +33,22 @@ def run():
     minwood=geo["user_defined_screen_radial_ligament_mm"]
     assert minwood==2.0
 
+    # Three different cylindrical holes (different layers and purposes):
+    # 1) manufacturer basket Ø6.5, 2) chosen screw clearance through front MDF,
+    # 3) pilot for external insert thread in rear local pad. Do not conflate them.
+    wood_clearance=[]
+    for fastener in src["screw_to_front_clearance_scenarios"]:
+        dia=fastener["front_wood_clearance_d_mm"]
+        wood_clearance.append({
+          "thread":fastener["thread"],
+          "nominal_screw_shank_d_mm":fastener["nominal_shank_d_mm"],
+          "example_front_wood_clearance_d_mm":dia,
+          "manufacturer_basket_d_mm":geo["driver_flange_d_mm"]*0+6.5,
+          "nominal_front_wood_ligament_to_cutout_mm":r(x_bolt-r_cut-dia/2),
+          "manufacturer_specifies_wood_hole_diameter":False,
+          "is_final_fastener_selection":False
+        })
+    assert [x["nominal_front_wood_ligament_to_cutout_mm"] for x in wood_clearance]==[3.85,3.35,2.8]
     ins=[]
     for p in src["insert_catalog_examples"]:
         d=p["outer_diameter_mm"]
@@ -155,7 +171,7 @@ def run():
       }
     }
     OUT.write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\n",encoding="utf8")
-    print("K11: catalog 6, pad variants 5, wall 3; 0/6 insert cases meet hypothetical 2mm screen; CNC HOLD")
+    print("K11: catalog 6, pad variants 5, walls 3, screw-specific clearance examples 3; 0/6 insert cases meet hypothetical 2mm screen; CNC HOLD")
     print(json.dumps({"M5_OD10_pad_inner_web_mm":ins[1]["pad_radial_inner_ligament_mm"],
       "M6_OD12_pad_inner_web_mm":ins[2]["pad_radial_inner_ligament_mm"],
       "wall_gross_deltas_L":{p["id"]:p["gross_cavity_delta_vs_MDF22_l"] for p in wall}},ensure_ascii=False))
