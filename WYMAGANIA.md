@@ -48,6 +48,9 @@ O = otwarte. Akceptacja briefu nie oznacza akceptacji dowolnych liczb modelu.
 
 | W38 | **Każdy element konstrukcji i osprzętu subwoofera ma własny paszport materiałowy:** zastosowanie, materiał bazowy i warianty, dane z kart lub hipotezy, obciążenia, masa/sztywność/nośność, powiązanie z bilansem netto i statusem kwalifikacji. Nie zastępować nieznanych parametrów fikcyjnymi wynikami. | U-2026-11-03; spełniono ewidencję 35/35, NIE kwalifikację wytrzymałościową | [K10 rejestr 35 części](dane/k10_rejestr_materialow_czesci_obudowy.json), [raport materiałowy](raporty/K10_paszport_materialowy_wszystkich_czesci.md), [obliczenia K10](wyniki/k10_wyniki_przesiewu_materialow.json); 0/35 zatwierdzonych do wykonania. Zmiana materiału/grubości wymaga ponownego P30E/K07 i MES, doboru kleju, spoin, ognioodporności i akustyki. | K10/P19/P30E/P34/P36/P37 |
 
+
+| **W39** | **Przygotowanie dokumentacji dla przyszłego CNC wymaga wspólnego parametrycznego modelu 3D oraz listy każdej formatki z materiałem, numerem, położeniem i statusem kwalifikacji.** Fabryczne Ø6,5 mm w koszu Daytona nie określa średnicy otworów w MDF. Ostateczne rysunki CNC/DXF wolno wydać dopiero po zatwierdzeniu złączy, montażu, zamków, tolerancji, grilla, osprzętu i nośności. | U-2026-11-04; referencyjna ewidencja 138/138 spełniona, **produkcja 0/138**, brak zwolnienia do CNC | [K15: generator złożenia](skrypty/k15_pre_cnc_model.js) · [model 3D](dokumentacja/K15_p30e_zlozenie_parametryczne_NIE_CNC.scad) · [138 formatek CSV](wyniki/k15_p30e_przed_CNC_138_elementow.csv) · [raport i bramki](raporty/K15_parametryczne_zlozenie_i_zestawienie_przed_CNC.md). 7+11+120 elementów, trzy stany objętości; brak łączników i ścieżek narzędzi. | K15/P30E/K02/K14 |
+
 ## Specyfikacja odbiorowa do uzupełnienia
 
 | Wielkość | Zdefiniowane warunki | Próg |

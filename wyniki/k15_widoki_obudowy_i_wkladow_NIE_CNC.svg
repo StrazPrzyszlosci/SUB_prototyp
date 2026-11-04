@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="680" viewBox="0 0 1400 680">
+  <rect width="1400" height="680" fill="#f4f7fa"/>
+  <text x="52" y="52" fill="#1f4058" font-size="30" font-weight="bold" font-family="DejaVu Sans, Arial">K15 — spójny model obudowy i modułów</text>
+  <text x="52" y="82" fill="#50677a" font-size="19" font-weight="normal" font-family="DejaVu Sans, Arial">P30E: 1020 × 425 × 500 mm • model numeryczny, nie zweryfikowany projekt CNC</text>
+  <rect x="35.00" y="110.00" width="595.00" height="430.00" fill="#fff" fill-opacity="1" stroke="#dae1e5" stroke-width="1"/>
+  <rect x="706.00" y="110.00" width="660.00" height="430.00" fill="#fff" fill-opacity="1" stroke="#dae1e5" stroke-width="1"/>
+  <rect x="52.00" y="160.00" width="550.80" height="270.00" fill="#e2cdb5" fill-opacity="1" stroke="#97765d" stroke-width="1.5"/>
+<circle cx="176.74" cy="295" r="104.87" fill="none" stroke="#49647d" stroke-width="3"/>
+<circle cx="176.74" cy="295" r="96.07" fill="#fbfcfe" stroke="#374d60" stroke-width="3"/>
+<circle cx="176.74" cy="295" r="99.36" fill="none" stroke="#c37328" stroke-width="1.5" stroke-dasharray="6 6"/>
+<circle cx="276.10" cy="295.00" r="4" fill="#b14538"/>
+<circle cx="247.00" cy="224.74" r="4" fill="#b14538"/>
+<circle cx="176.74" cy="195.64" r="4" fill="#b14538"/>
+<circle cx="106.48" cy="224.74" r="4" fill="#b14538"/>
+<circle cx="77.38" cy="295.00" r="4" fill="#b14538"/>
+<circle cx="106.48" cy="365.26" r="4" fill="#b14538"/>
+<circle cx="176.74" cy="394.36" r="4" fill="#b14538"/>
+<circle cx="247.00" cy="365.26" r="4" fill="#b14538"/>
+<text x="62" y="455" fill="#203a51" font-size="17" font-weight="normal" font-family="DejaVu Sans, Arial">A — Front MDF44, oś (231,250), PCD Ø368</text>
+<text x="62" y="479" fill="#a34532" font-size="14" font-weight="bold" font-family="DejaVu Sans, Arial">Ø6,5 mm = tylko metalowy KOSZ</text>
+<text x="62" y="500" fill="#203a51" font-size="14" font-weight="normal" font-family="DejaVu Sans, Arial">Brak wybranych otworów pod śruby w MDF</text>
+  <rect x="728.00" y="160.00" width="550.80" height="229.50" fill="#e2cdb5" fill-opacity="1" stroke="#97765d" stroke-width="1.5"/>
+<rect x="739.88" y="183.76" width="527.04" height="193.86" fill="#f9fbfd" fill-opacity="1" stroke="#acb6bb" stroke-width="1.5"/>
+<rect x="744.74" y="293.38" width="97.20" height="54.00" fill="#78a5c9" fill-opacity="0.25" stroke="#42698f" stroke-width="1"/>
+<rect x="744.74" y="293.38" width="97.20" height="54.00" fill="#78a5c9" fill-opacity="0.25" stroke="#42698f" stroke-width="1"/>
+<rect x="865.70" y="293.38" width="97.20" height="54.00" fill="#78a5c9" fill-opacity="0.25" stroke="#42698f" stroke-width="1"/>
+<rect x="865.70" y="293.38" width="97.20" height="54.00" fill="#78a5c9" fill-opacity="0.25" stroke="#42698f" stroke-width="1"/>
+<rect x="1141.91" y="282.58" width="113.40" height="64.80" fill="#78a5c9" fill-opacity="0.25" stroke="#42698f" stroke-width="1"/>
+<rect x="1141.91" y="282.58" width="113.40" height="64.80" fill="#78a5c9" fill-opacity="0.25" stroke="#42698f" stroke-width="1"/>
+<rect x="1141.91" y="282.58" width="113.40" height="64.80" fill="#78a5c9" fill-opacity="0.25" stroke="#42698f" stroke-width="1"/>
+<rect x="1141.91" y="282.58" width="113.40" height="64.80" fill="#78a5c9" fill-opacity="0.25" stroke="#42698f" stroke-width="1"/>
+<rect x="1141.91" y="188.08" width="113.40" height="81.00" fill="#78a5c9" fill-opacity="0.25" stroke="#42698f" stroke-width="1"/>
+<rect x="1141.91" y="188.08" width="113.40" height="81.00" fill="#78a5c9" fill-opacity="0.25" stroke="#42698f" stroke-width="1"/>
+<rect x="1141.91" y="188.08" width="113.40" height="81.00" fill="#78a5c9" fill-opacity="0.25" stroke="#42698f" stroke-width="1"/>
+<rect x="1141.91" y="188.08" width="113.40" height="81.00" fill="#78a5c9" fill-opacity="0.25" stroke="#42698f" stroke-width="1"/>
+<rect x="993.41" y="282.58" width="113.40" height="64.80" fill="#78a5c9" fill-opacity="0.25" stroke="#42698f" stroke-width="1"/>
+<rect x="993.41" y="282.58" width="113.40" height="64.80" fill="#78a5c9" fill-opacity="0.25" stroke="#42698f" stroke-width="1"/>
+<rect x="993.41" y="282.58" width="113.40" height="64.80" fill="#78a5c9" fill-opacity="0.25" stroke="#42698f" stroke-width="1"/>
+<rect x="993.41" y="282.58" width="113.40" height="64.80" fill="#78a5c9" fill-opacity="0.25" stroke="#42698f" stroke-width="1"/>
+<rect x="993.41" y="188.08" width="113.40" height="81.00" fill="#78a5c9" fill-opacity="0.25" stroke="#42698f" stroke-width="1"/>
+<rect x="993.41" y="188.08" width="113.40" height="81.00" fill="#78a5c9" fill-opacity="0.25" stroke="#42698f" stroke-width="1"/>
+<rect x="993.41" y="188.08" width="113.40" height="81.00" fill="#78a5c9" fill-opacity="0.25" stroke="#42698f" stroke-width="1"/>
+<rect x="993.41" y="188.08" width="113.40" height="81.00" fill="#78a5c9" fill-opacity="0.25" stroke="#42698f" stroke-width="1"/>
+<rect x="846.80" y="183.76" width="11.88" height="193.86" fill="#347f9c" fill-opacity="0.45" stroke="#254a60" stroke-width="1.5"/>
+<rect x="969.92" y="183.76" width="11.88" height="193.86" fill="#347f9c" fill-opacity="0.45" stroke="#254a60" stroke-width="1.5"/>
+<rect x="1118.42" y="183.76" width="11.88" height="193.86" fill="#347f9c" fill-opacity="0.45" stroke="#254a60" stroke-width="1.5"/>
+<rect x="739.88" y="350.62" width="527.04" height="27.00" fill="#c5d8a7" fill-opacity="0.23" stroke="#5e8b51" stroke-width="1.5"/>
+<text x="740" y="430" fill="#203a51" font-size="17" font-weight="normal" font-family="DejaVu Sans, Arial">B — Widok z góry: wręgi + 20 modułów</text>
+<text x="740" y="454" fill="#203a51" font-size="14" font-weight="normal" font-family="DejaVu Sans, Arial">Bryły AABB / położenia z modelu P30E</text>
+<text x="740" y="475" fill="#203a51" font-size="14" font-weight="normal" font-family="DejaVu Sans, Arial">Szablon regulacji: 100/120/150 l</text>
+  <text x="52" y="585" fill="#1b4560" font-size="19" font-weight="bold" font-family="DejaVu Sans, Arial">7 płatów korpusu  +  11 usztywnień  +  120 płatów modułów  =  138 formatek nominalnych</text>
+  <text x="52" y="619" fill="#a04a34" font-size="16" font-weight="normal" font-family="DejaVu Sans, Arial">Szablony montażu, łączniki, tolerancje frezu, złącza i szczelność NIE są jeszcze zaprojektowane.</text>
+  <text x="52" y="651" fill="#50677a" font-size="15" font-weight="normal" font-family="DejaVu Sans, Arial">Źródła: P30E/P30A; generator: skrypty/k15_pre_cnc_model.js. Materiały i liczba płatów: do kwalifikacji. CNC HOLD.</text>
+</svg>
