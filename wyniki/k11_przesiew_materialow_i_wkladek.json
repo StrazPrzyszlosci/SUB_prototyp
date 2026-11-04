@@ -8,7 +8,9 @@
     "fastenright_Type_D": "https://www.fastenright.com/general-fixings/insert-nuts-for-wood-type-d/ff13",
     "existing_P40": "raporty/101_P40A_reakcje_8_mocowan.md",
     "existing_K01": "skrypty/k01_mocowanie_bilans.py",
-    "existing_K10": "dane/k10_rejestr_materialow_czesci_obudowy.json"
+    "existing_K10": "dane/k10_rejestr_materialow_czesci_obudowy.json",
+    "rampa_hardwood": "https://www.rampa.com/media/7e/76/df/1699524009/RAMPA_Produktdatenblatt_Laubholz-Hardwood_EN.pdf",
+    "fastener_clearance_examples": "Exploratory M4=4.5 / M5=5.5 / M6=6.6 mm; not selected standard or CNC dimension."
   },
   "K10_covered_roles": [
     "E01",
@@ -153,7 +155,37 @@
         "is_pullout_strength_qualified": false,
         "manufacturer_board_conditions_transferable_to_20mm_pad": false
       }
-    ]
+    ],
+    "wood_clearance_for_screw_examples": [
+      {
+        "thread": "M4",
+        "nominal_screw_shank_d_mm": 4,
+        "example_front_wood_clearance_d_mm": 4.5,
+        "manufacturer_basket_d_mm": 6.5,
+        "nominal_front_wood_ligament_to_cutout_mm": 3.85,
+        "manufacturer_specifies_wood_hole_diameter": false,
+        "is_final_fastener_selection": false
+      },
+      {
+        "thread": "M5",
+        "nominal_screw_shank_d_mm": 5,
+        "example_front_wood_clearance_d_mm": 5.5,
+        "manufacturer_basket_d_mm": 6.5,
+        "nominal_front_wood_ligament_to_cutout_mm": 3.35,
+        "manufacturer_specifies_wood_hole_diameter": false,
+        "is_final_fastener_selection": false
+      },
+      {
+        "thread": "M6",
+        "nominal_screw_shank_d_mm": 6,
+        "example_front_wood_clearance_d_mm": 6.6,
+        "manufacturer_basket_d_mm": 6.5,
+        "nominal_front_wood_ligament_to_cutout_mm": 2.8,
+        "manufacturer_specifies_wood_hole_diameter": false,
+        "is_final_fastener_selection": false
+      }
+    ],
+    "three_separate_holes": "Manufacturer Dayton 8×Ø6.5 is in METAL BASKET. Choose FRONT MDF clearance hole from actual bolt shaft/head/washer or counterbore and fit, then choose a separate REAR INSERT pilot hole from insert maker, and check concentricity and weakest webs. Dimensions are not copied between these three different layers."
   },
   "pad_variants": [
     {
