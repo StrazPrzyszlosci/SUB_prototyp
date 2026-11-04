@@ -7,8 +7,8 @@
     "k13_results": "wyniki/k13_przesiew_plytki_w_klocku20.json",
     "p40a": "raporty/101_P40A_reakcje_8_mocowan.md",
     "p19a": "raporty/030_P19A_obliczenia_spoin_i_material_kleju.md",
-    "nasa_torque_standard": "https://www.nasa.gov/wp-content/uploads/2018/01/nasa-std-5020a_w-chg_1_nasa_fastener_standards.pdf",
-    "nasa_torque_section": "Appendix A.2, p.46, Eq.24: Ppi-nom=T/(Knom*D), with explicit preload variation; SPACEFLIGHT standard only cited as physics/research reference, NOT binding audio cabinet requirements."
+    "nasa_torque_standard": "https://standards.nasa.gov/sites/default/files/standards/NASA/B/0/2021-08-06-nasa-std-5020b_final.pdf",
+    "nasa_torque_section": "NASA-STD-5020B (2021), Appendix A.2, PDF page 46 of 114, Eq.24: nominal Ppi=T/(Knom D); spaceflight-only engineering reference for torque/preload uncertainty, NOT subwoofer mandatory standard"
   },
   "key_conservation": {
     "axis_to_pad_inner_mm": 5.1,
