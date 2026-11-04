@@ -2304,3 +2304,18 @@ W osobnym, warunkowym przesiewie pięciu ścian (zachowany front MDF44 i gabaryt
 Wcześniejsza wkładka Ø10 mm w drewnie pozostawiała przy wewnętrznej krawędzi klocka tylko **0,1 mm**. Zamiast niej K13 bada **stalową płytkę z gwintem M5**, zagłębioną w tym samym klocku. Przy wariancie płytki **6 mm**, drewna **14 mm**, umownej uszczelki **1 mm** i śruby **M5×75** zostaje nominalnie **2,1 mm pasa stali**, **5,5 mm zazębienia gwintu** i brak wystawania za klocek 20 mm. Masa ośmiu zespołów rośnie modelowo o **0,302 kg**. Dwa małe wkręty zabezpieczające płytkę nie są automatycznie główną drogą siły osiowej — należy zweryfikować docisk płytki do drewna, kruszenie, wyrwanie, obrót i naprawę po zerwaniu gwintu. Geometria zbliżona do K02 **nie potwierdza jeszcze prawdziwych torów wkładania ani obsługi narzędzi**. Żadnego połączenia ani materiału nie zatwierdzono do wykonania. **CNC HOLD.**
 
 [Założenia K13](dane/k13_plytka_m5_w_klocku20_zalozenia.json) · [45 sprawdzonych kombinacji](wyniki/k13_przesiew_plytki_w_klocku20.json) · [skrypt](skrypty/k13_plytka_stalowa_w_klocku20.py) · [karta materiałowa 35 części](dane/k10_rejestr_materialow_czesci_obudowy.json).
+
+
+### A19. K14 — czy stalowa płytka M5 naprawdę przeniesie nacisk?
+
+![K14 — PNG do podglądu: podział miejsca między drewno i stal oraz wskaźnik mimośrodowego docisku, autorski schemat NIE CNC](wyniki/k14_pasy_i_docisk_NIE_CNC.png)
+
+[Ten sam rysunek w SVG](wyniki/k14_pasy_i_docisk_NIE_CNC.svg) · [pełne badania K14](raporty/K14_docisk_tolerancje_plytki_M5_w_klocku20.md).
+
+Dotychczasowa płytka K13 miała **2,1 mm stali** przy gwincie M5 i **tylko 0,5 mm drewna** przy krawędzi kieszeni. K14 wykazał, że w klocku K01 do podziału między te pasy jest **łącznie zaledwie 2,6 mm**, więc samą zmianą kształtu kieszeni nie uzyskamy naraz po hipotetyczne 2 mm w każdej części. To przesiew geometrii, **nie prognoza rzeczywistej nośności**.
+
+Zbadaliśmy też idealizowany mimośrodowy nacisk (przykładowo **4,14 MPa** szczytowego wskaźnika modelu przy **1000 N** osiowo), **12 wariantów wstępnego docisku śruby** i **64 skrajne kombinacje syntetycznych tolerancji**. W tych ostatnich tylko **24/64** spełniły wcześniejszy umowny warunek 5 mm zazębienia M5 bez wystawania śruby; najkrótsze zazębienie wyniosło **3,3 mm**, a wystawanie sięgało **1,5 mm**. Założone zakresy nie są tolerancjami producentów ani wymiarami do wiercenia.
+
+**Wniosek praktyczny:** nie zwiększamy arbitralnie momentu dokręcania ani grubości stali. Trzeba porównać inne **podparcie płytki i klocka**, zweryfikować rzeczywistą wytrzymałość drewna, spoiny, gwintu i retencji oraz dopiero potem odtworzyć dostęp do wszystkich 20 wkładów objętościowych. **Nie określono momentu dokręcania ani zatwierdzonej konstrukcji — CNC HOLD.**
+
+[Założenia K14](dane/k14_scieranie_styku_tolerancje_i_docisk.json) · [64 kombinacje i wyniki](wyniki/k14_docisk_tolerancje_64.json) · [skrypt](skrypty/k14_docisk_plytki_tolerancje.py) · [poprzedni K13](raporty/K13_plytka_stalowa_M5_w_klocku20.md).
