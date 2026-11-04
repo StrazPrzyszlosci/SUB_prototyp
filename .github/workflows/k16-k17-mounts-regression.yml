@@ -101,6 +101,6 @@ jobs:
           assert 'CNC HOLD' in current[-2500:]
           report=Path('raporty/K17_prowadnice_nośne_bez_kolizji_z_mata.md').read_text(encoding='utf-8')
           assert '1,020928' in report and 'CNC HOLD' in report
-          assert 'wkladow' in Path('dokumentacja/K16_p30e_z_mocowaniami_modulow_NIE_CNC.scad').name
+          assert Path('dokumentacja/K16_p30e_z_mocowaniami_modulow_NIE_CNC.scad').exists()
           print('PASS README: full existing loudspeaker-first guide preserved, append-only A21/A22; no manufacturing release')
           PY
