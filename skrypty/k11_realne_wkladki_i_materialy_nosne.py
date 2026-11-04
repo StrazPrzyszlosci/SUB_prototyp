@@ -157,7 +157,9 @@ def run():
          "bolt_axis_radius_mm":x_bolt,
          "user_screen_2mm_is_NOT_a_strength_rule":True,
          "max_outer_insert_diameter_for_2mm_inner_pad_ligament_mm":r(limit_for_2mm),
-         "catalog_examples":ins
+         "catalog_examples":ins,
+         "wood_clearance_for_screw_examples":wood_clearance,
+         "three_separate_holes":src["hole_interpretation"]
       },
       "pad_variants":pad_variants,
       "wall_substitution_with_outer_size_fixed":{
