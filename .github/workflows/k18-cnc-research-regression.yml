@@ -1,0 +1,68 @@
+name: K18 CNC research preview reproducibility (NOT fabrication approval)
+on:
+  push:
+    branches: [main]
+    paths:
+      - "skrypty/k18_cnc_kontury.js"
+      - "wyniki/k15_p30e_przed_CNC_zestawienie.json"
+      - "wyniki/k17_prowadnice_boczne_wkladow.json"
+      - "wyniki/k18_*"
+      - "raporty/K18_*"
+      - "dokumentacja/cnc/**"
+      - ".github/workflows/k18-cnc-research-regression.yml"
+  pull_request:
+    paths:
+      - "skrypty/k18_cnc_kontury.js"
+      - "wyniki/k15_p30e_przed_CNC_zestawienie.json"
+      - "wyniki/k17_prowadnice_boczne_wkladow.json"
+      - "wyniki/k18_*"
+      - "raporty/K18_*"
+      - "dokumentacja/cnc/**"
+      - ".github/workflows/k18-cnc-research-regression.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect-reference-geometry:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Verify generator parses and reproduces tracked outputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --check skrypty/k18_cnc_kontury.js
+          node skrypty/k18_cnc_kontury.js
+          git diff --exit-code -- dokumentacja/cnc/K18_korpus_i_wregi_MDF22_NIE_CNC.dxf dokumentacja/cnc/K18_skrzynki_regulacji_MDF8_NIE_CNC.dxf dokumentacja/cnc/K18_prowadnice_laminat_MDF8_NIE_CNC.dxf dokumentacja/cnc/README.md raporty/K18_projekt_CNC_mocowania_wkladow.md wyniki/k18_lista_162_konturow_CNC_HOLD.csv wyniki/k18_mocowania_i_CNC_podsumowanie.json
+      - name: Independent invariants; HOLD must survive
+        shell: bash
+        run: |
+          node - <<'NODE'
+          const fs=require('node:fs'), assert=require('node:assert/strict');
+          const j=JSON.parse(fs.readFileSync('wyniki/k18_mocowania_i_CNC_podsumowanie.json','utf8'));
+          assert.equal(j.total_dxf_profiles,162);
+          assert.equal(j.mdf22_contours,18);
+          assert.equal(j.mdf8_module_contours,120);
+          assert.equal(j.mdf8_rail_lamina_contours,24);
+          assert.equal(j.socket_outlines,24);
+          assert.equal(j.rail_displacement_in_air_l,1.020928);
+          assert.equal(j.nominal_module_clearance_with_rigid_top_bottom_lips_mm,0);
+          assert.equal(j.M5_wood_fastener_holes_defined,false);
+          assert.equal(j.actual_CNC_toolpaths,false);
+          assert.equal(j.release,'CNC_HOLD_RESEARCH_CONTOURS_ONLY');
+          const get=p=>fs.readFileSync(p,'utf8');
+          const shell=get('dokumentacja/cnc/K18_korpus_i_wregi_MDF22_NIE_CNC.dxf');
+          const boxes=get('dokumentacja/cnc/K18_skrzynki_regulacji_MDF8_NIE_CNC.dxf');
+          const rails=get('dokumentacja/cnc/K18_prowadnice_laminat_MDF8_NIE_CNC.dxf');
+          const occurrences=(s,needle)=>s.split(needle).length-1;
+          assert.equal(occurrences(shell,'\nLWPOLYLINE\n'),42); // 18 outlines + 24 socket research boxes
+          assert.equal(occurrences(boxes,'\nLWPOLYLINE\n'),120);
+          assert.equal(occurrences(rails,'\nLWPOLYLINE\n'),24);
+          assert.equal(occurrences(shell,'\nCIRCLE\n'),2); // two factory cutout references
+          assert.equal(occurrences(shell,'POCKET_3MM_CONCEPT_HOLD'),24);
+          for (const d of [shell,boxes,rails]) assert(d.endsWith('0\nEOF\n'));
+          console.log('PASS K18: 162 research contours, 24 unqualified pockets, CNC HOLD.');
+          NODE
