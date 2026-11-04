@@ -97,7 +97,9 @@ Dla wybranego przetwornika wracamy do rysunku kosza. Dayton podaje **8 otworów 
 |---|---|---|
 | **W koszu głośnika** | Fabryczne **Ø6,5 mm** | Jedynie zgodność trzpienia i łba z metalowym kołnierzem |
 | **W froncie MDF44** | Średnica przelotowa **pod wybraną śrubę**: przykładowo M4 → Ø4,5; M5 → Ø5,5; M6 → Ø6,6 mm | Dobór jest warunkowy; wynika z trzpienia, luzu i tolerancji, **nie z Ø6,5 kosza** |
-| **W klocku za frontem** | Otwór wstępny **pod wybraną wkładkę**: np. RAMPA SKD30 M4 → Ø6,5; M5 → Ø9; M6 → Ø10 mm według karty dla MDF | Osobny otwór pod zewnętrzny gwint wkładki; nie jest przelotem śruby przez front |
+| **W klocku za frontem** | Średnica otworu wstępnego pod wkładkę **zależna także od materiału klocka**: np. RAMPA SKD30 M5 → Ø9 mm w MDF, ale **Ø8 mm w drewnie twardym** według odrębnych kart producenta | Osobny otwór do osadzenia wkładki; nie jest przelotem śruby przez front, a karta nie kwalifikuje jeszcze naszej klejonki |
+
+[Karta RAMPA dla MDF](https://www.rampa.com/media/e2/ed/d4/1699524202/RAMPA_Produktdatenblatt_MDF-EN.pdf) i [osobna karta dla drewna twardego](https://www.rampa.com/media/7e/76/df/1699524009/RAMPA_Produktdatenblatt_Laubholz-Hardwood_EN.pdf) mają różne zalecenia dla M5; ostateczny otwór wymaga sprawdzenia gatunku, gęstości i odległości od krawędzi.
 
 Na przykład **M5 z umownym otworem przelotowym Ø5,5 mm we froncie** pozostawia nominalnie `6,1 − 2,75 = 3,35 mm` drewna między otworem a wycięciem — **nie 2,85 mm**, które wyliczono tylko dla hipotetycznego wiercenia Ø6,5 mm także w MDF. Wkładka Ø10 mm ma jednak inną, osobną geometrię za frontem i może kolidować z klockiem. Średnice otworów frontu są **wariantami do dalszego wymiarowania**, a nie dyspozycją CNC.
 
