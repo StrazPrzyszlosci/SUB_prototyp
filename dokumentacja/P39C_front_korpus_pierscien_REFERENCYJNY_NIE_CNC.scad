@@ -7,7 +7,13 @@ $fn=96;
 W=1020; D=425; H=500;
 wall=22; front=44;
 cx=231; cz=250;
-cutout_d=355.8; flange_od=388.4; bolt_pcd=368; bolt_d=6.5;
+cutout_d=355.8; flange_od=388.4; bolt_pcd=368;
+// Ø6.5 is manufacturer METAL BASKET HOLE, NOT a wood drill size.
+factory_basket_hole_d=6.5;
+// Reference backer RING holes coincidentally use Ø6.5 as a separate unverified scenario.
+ring_hole_d_scenario=6.5;
+// A front MDF hole would be chosen for a real screw: example M5 Ø5.5 only, not cut here.
+mdf_through_hole_M5_example_d=5.5;
 bolt_clocking_deg=0; // VERIFY PHYSICAL DRIVER BEFORE USING
 ring_od=400; ring_id=356; ring_t=4;
 grille_projection=40; terminal_projection=20;
@@ -25,7 +31,8 @@ assert(D+max(grille_projection,10.5)+terminal_projection<=500,
        "Hypothetical external front/rear envelopes exceed 500 mm");
 echo("Ring-to-sidewall nominal clearance",cx-ring_od/2-wall);
 echo("Ring-to-first-brace X-projection",448-cx-ring_od/2);
-echo("MDF web at 6.5mm flange hole",bolt_pcd/2-bolt_d/2-cutout_d/2);
+echo("Basket flange Ø6.5 projection ONLY; not MDF drill",bolt_pcd/2-factory_basket_hole_d/2-cutout_d/2);
+echo("Conditional MDF web if bored for M5 Ø5.5 (not modeled)",bolt_pcd/2-mdf_through_hole_M5_example_d/2-cutout_d/2);
 echo("Total external depth, hypothetical",D+max(grille_projection,10.5)+terminal_projection);
 
 // Cylinder normal to front, along y; surfaces centered on given y.
@@ -62,7 +69,7 @@ module backer_ring(){
   ycyl(ring_id,ring_t+1,cx,front+ring_t/2,cz);
   for(i=[0:7]) {
    ang=bolt_clocking_deg+45*i;
-   ycyl(bolt_d,ring_t+1,cx+(bolt_pcd/2)*cos(ang),front+ring_t/2,
+   ycyl(ring_hole_d_scenario,ring_t+1,cx+(bolt_pcd/2)*cos(ang),front+ring_t/2,
         cz+(bolt_pcd/2)*sin(ang));
   }
  }
