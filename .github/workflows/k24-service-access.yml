@@ -1,0 +1,38 @@
+name: K24 service C-space and support-gap screening
+on:
+  push:
+    branches: [main]
+    paths: ['skrypty/k24_*','wyniki/k24_*','.github/workflows/k24-service-access.yml']
+  pull_request:
+    paths: ['skrypty/k24_*','wyniki/k24_*','.github/workflows/k24-service-access.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Replay exact rigid XYZ C-space access tests and check reproducibility
+        run: |
+          set -euo pipefail
+          node --check skrypty/k24_serwis_CSPACE.js
+          node skrypty/k24_serwis_CSPACE.js
+          git diff --exit-code -- wyniki/k24_serwis_CSPACE_wyniki.json
+      - name: Guard no fabricated CNC claims
+        run: |
+          node - <<'NODE'
+          const fs=require('fs'),assert=require('assert/strict');
+          const x=JSON.parse(fs.readFileSync('wyniki/k24_serwis_CSPACE_wyniki.json','utf8'));
+          assert.equal(x.release,'CNC_HOLD');
+          assert.equal(x.tool_access.large_module_direct_below_access_failures,16);
+          assert.equal(x.fastener_screen.rails_passing_assumed_rule,0);
+          assert.equal(x.cspace.tests.filter(t=>t.scenario==='retained_120'&&t.clearance_mm===1&&t.status==='NO_FRONT_PATH').length,4);
+          assert.equal(x.cspace.tests.filter(t=>t.scenario==='only_four_small'&&t.clearance_mm===1&&t.status==='EXIT_CIRCLE').length,4);
+          assert.equal(x.nominal_step_combinatorics.exact_solutions.length,2);
+          assert.ok(x.nominal_step_combinatorics.exact_solutions.every(t=>t.small===4));
+          console.log('K24 geometry passed, still CNC HOLD');
+          NODE

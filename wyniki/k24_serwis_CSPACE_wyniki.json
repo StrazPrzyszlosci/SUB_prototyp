@@ -1,0 +1,1146 @@
+{
+  "study": "K24",
+  "date": "2026-11-04",
+  "release": "CNC_HOLD",
+  "kind": "Numerical screening, not validated hardware or physical 6DOF service",
+  "source": "K15 module/cabinet solids; K17 spines and lips; K23 nominal assembly",
+  "tool_access": {
+    "hypothetical_tool_diameter_mm": 12,
+    "hypothetical_required_each_side_mm": 1,
+    "reference_original_shelf_z_mm": 4,
+    "gap_by_module": [
+      {
+        "module": 0,
+        "gap_below_mm": 40,
+        "after_original_4mm_shelf_mm": 36,
+        "straight_14mm_tool_envelope_pass": true
+      },
+      {
+        "module": 1,
+        "gap_below_mm": 176,
+        "after_original_4mm_shelf_mm": 172,
+        "straight_14mm_tool_envelope_pass": true
+      },
+      {
+        "module": 2,
+        "gap_below_mm": 40,
+        "after_original_4mm_shelf_mm": 36,
+        "straight_14mm_tool_envelope_pass": true
+      },
+      {
+        "module": 3,
+        "gap_below_mm": 176,
+        "after_original_4mm_shelf_mm": 172,
+        "straight_14mm_tool_envelope_pass": true
+      },
+      {
+        "module": 4,
+        "gap_below_mm": 12,
+        "after_original_4mm_shelf_mm": 8,
+        "straight_14mm_tool_envelope_pass": false
+      },
+      {
+        "module": 5,
+        "gap_below_mm": 10,
+        "after_original_4mm_shelf_mm": 6,
+        "straight_14mm_tool_envelope_pass": false
+      },
+      {
+        "module": 6,
+        "gap_below_mm": 10,
+        "after_original_4mm_shelf_mm": 6,
+        "straight_14mm_tool_envelope_pass": false
+      },
+      {
+        "module": 7,
+        "gap_below_mm": 10,
+        "after_original_4mm_shelf_mm": 6,
+        "straight_14mm_tool_envelope_pass": false
+      },
+      {
+        "module": 8,
+        "gap_below_mm": 12,
+        "after_original_4mm_shelf_mm": 8,
+        "straight_14mm_tool_envelope_pass": false
+      },
+      {
+        "module": 9,
+        "gap_below_mm": 10,
+        "after_original_4mm_shelf_mm": 6,
+        "straight_14mm_tool_envelope_pass": false
+      },
+      {
+        "module": 10,
+        "gap_below_mm": 10,
+        "after_original_4mm_shelf_mm": 6,
+        "straight_14mm_tool_envelope_pass": false
+      },
+      {
+        "module": 11,
+        "gap_below_mm": 10,
+        "after_original_4mm_shelf_mm": 6,
+        "straight_14mm_tool_envelope_pass": false
+      },
+      {
+        "module": 12,
+        "gap_below_mm": 12,
+        "after_original_4mm_shelf_mm": 8,
+        "straight_14mm_tool_envelope_pass": false
+      },
+      {
+        "module": 13,
+        "gap_below_mm": 10,
+        "after_original_4mm_shelf_mm": 6,
+        "straight_14mm_tool_envelope_pass": false
+      },
+      {
+        "module": 14,
+        "gap_below_mm": 10,
+        "after_original_4mm_shelf_mm": 6,
+        "straight_14mm_tool_envelope_pass": false
+      },
+      {
+        "module": 15,
+        "gap_below_mm": 10,
+        "after_original_4mm_shelf_mm": 6,
+        "straight_14mm_tool_envelope_pass": false
+      },
+      {
+        "module": 16,
+        "gap_below_mm": 12,
+        "after_original_4mm_shelf_mm": 8,
+        "straight_14mm_tool_envelope_pass": false
+      },
+      {
+        "module": 17,
+        "gap_below_mm": 10,
+        "after_original_4mm_shelf_mm": 6,
+        "straight_14mm_tool_envelope_pass": false
+      },
+      {
+        "module": 18,
+        "gap_below_mm": 10,
+        "after_original_4mm_shelf_mm": 6,
+        "straight_14mm_tool_envelope_pass": false
+      },
+      {
+        "module": 19,
+        "gap_below_mm": 10,
+        "after_original_4mm_shelf_mm": 6,
+        "straight_14mm_tool_envelope_pass": false
+      }
+    ],
+    "large_module_direct_below_access_failures": 16,
+    "caution": "One straight Z tool approach only; remote/angled/side access not tested"
+  },
+  "fastener_screen": {
+    "hypothetical_hole_d_mm": 4.5,
+    "assumed_min_center_edge_factor": 1.5,
+    "rail_geometry": [
+      {
+        "rail": "G17_COLUMN_01",
+        "y_depth_mm": 12,
+        "trial_hole_d_mm": 4.5,
+        "residual_edge_ligament_mm": 3.75,
+        "center_to_edge_mm": 6,
+        "passes_assumed_1_5d_rule": false
+      },
+      {
+        "rail": "G17_COLUMN_02",
+        "y_depth_mm": 12,
+        "trial_hole_d_mm": 4.5,
+        "residual_edge_ligament_mm": 3.75,
+        "center_to_edge_mm": 6,
+        "passes_assumed_1_5d_rule": false
+      },
+      {
+        "rail": "G17_COLUMN_03",
+        "y_depth_mm": 12,
+        "trial_hole_d_mm": 4.5,
+        "residual_edge_ligament_mm": 3.75,
+        "center_to_edge_mm": 6,
+        "passes_assumed_1_5d_rule": false
+      },
+      {
+        "rail": "G17_COLUMN_04",
+        "y_depth_mm": 12,
+        "trial_hole_d_mm": 4.5,
+        "residual_edge_ligament_mm": 3.75,
+        "center_to_edge_mm": 6,
+        "passes_assumed_1_5d_rule": false
+      },
+      {
+        "rail": "G17_COLUMN_05",
+        "y_depth_mm": 12,
+        "trial_hole_d_mm": 4.5,
+        "residual_edge_ligament_mm": 3.75,
+        "center_to_edge_mm": 6,
+        "passes_assumed_1_5d_rule": false
+      },
+      {
+        "rail": "G17_COLUMN_06",
+        "y_depth_mm": 12,
+        "trial_hole_d_mm": 4.5,
+        "residual_edge_ligament_mm": 3.75,
+        "center_to_edge_mm": 6,
+        "passes_assumed_1_5d_rule": false
+      },
+      {
+        "rail": "G17_COLUMN_07",
+        "y_depth_mm": 8,
+        "trial_hole_d_mm": 4.5,
+        "residual_edge_ligament_mm": 1.75,
+        "center_to_edge_mm": 4,
+        "passes_assumed_1_5d_rule": false
+      },
+      {
+        "rail": "G17_COLUMN_08",
+        "y_depth_mm": 8,
+        "trial_hole_d_mm": 4.5,
+        "residual_edge_ligament_mm": 1.75,
+        "center_to_edge_mm": 4,
+        "passes_assumed_1_5d_rule": false
+      },
+      {
+        "rail": "G17_COLUMN_09",
+        "y_depth_mm": 12,
+        "trial_hole_d_mm": 4.5,
+        "residual_edge_ligament_mm": 3.75,
+        "center_to_edge_mm": 6,
+        "passes_assumed_1_5d_rule": false
+      },
+      {
+        "rail": "G17_COLUMN_10",
+        "y_depth_mm": 12,
+        "trial_hole_d_mm": 4.5,
+        "residual_edge_ligament_mm": 3.75,
+        "center_to_edge_mm": 6,
+        "passes_assumed_1_5d_rule": false
+      },
+      {
+        "rail": "G17_COLUMN_11",
+        "y_depth_mm": 8,
+        "trial_hole_d_mm": 4.5,
+        "residual_edge_ligament_mm": 1.75,
+        "center_to_edge_mm": 4,
+        "passes_assumed_1_5d_rule": false
+      },
+      {
+        "rail": "G17_COLUMN_12",
+        "y_depth_mm": 8,
+        "trial_hole_d_mm": 4.5,
+        "residual_edge_ligament_mm": 1.75,
+        "center_to_edge_mm": 4,
+        "passes_assumed_1_5d_rule": false
+      }
+    ],
+    "rails_passing_assumed_rule": 0,
+    "caution": "Screening heuristic, not MDF material design allowable or fastener qualification"
+  },
+  "support_load": {
+    "assumed_density_kg_m3": 730,
+    "hypothetical_additional_mass_per_box_kg": 0.2,
+    "hypothetical_inertial_g": 5,
+    "hypothetical_one_surviving_support": true,
+    "original_4mm_MDF_section_reference_only": true,
+    "per_module": [
+      {
+        "module": 0,
+        "dry_shell_mass_kg": 0.469256,
+        "single_support_force_with_extra_0_2kg_at_5g_N": 32.826991,
+        "old_tab_lever_mm": 23,
+        "ideal_4mm_root_stress_MPa": 17.6958
+      },
+      {
+        "module": 1,
+        "dry_shell_mass_kg": 0.469256,
+        "single_support_force_with_extra_0_2kg_at_5g_N": 32.826991,
+        "old_tab_lever_mm": 23,
+        "ideal_4mm_root_stress_MPa": 17.6958
+      },
+      {
+        "module": 2,
+        "dry_shell_mass_kg": 0.469256,
+        "single_support_force_with_extra_0_2kg_at_5g_N": 32.826991,
+        "old_tab_lever_mm": 23,
+        "ideal_4mm_root_stress_MPa": 17.6958
+      },
+      {
+        "module": 3,
+        "dry_shell_mass_kg": 0.469256,
+        "single_support_force_with_extra_0_2kg_at_5g_N": 32.826991,
+        "old_tab_lever_mm": 23,
+        "ideal_4mm_root_stress_MPa": 17.6958
+      },
+      {
+        "module": 4,
+        "dry_shell_mass_kg": 0.602408,
+        "single_support_force_with_extra_0_2kg_at_5g_N": 39.358097,
+        "old_tab_lever_mm": 19,
+        "ideal_4mm_root_stress_MPa": 17.526652
+      },
+      {
+        "module": 5,
+        "dry_shell_mass_kg": 0.602408,
+        "single_support_force_with_extra_0_2kg_at_5g_N": 39.358097,
+        "old_tab_lever_mm": 19,
+        "ideal_4mm_root_stress_MPa": 17.526652
+      },
+      {
+        "module": 6,
+        "dry_shell_mass_kg": 0.602408,
+        "single_support_force_with_extra_0_2kg_at_5g_N": 39.358097,
+        "old_tab_lever_mm": 19,
+        "ideal_4mm_root_stress_MPa": 17.526652
+      },
+      {
+        "module": 7,
+        "dry_shell_mass_kg": 0.602408,
+        "single_support_force_with_extra_0_2kg_at_5g_N": 39.358097,
+        "old_tab_lever_mm": 19,
+        "ideal_4mm_root_stress_MPa": 17.526652
+      },
+      {
+        "module": 8,
+        "dry_shell_mass_kg": 0.705425,
+        "single_support_force_with_extra_0_2kg_at_5g_N": 44.41111,
+        "old_tab_lever_mm": 12,
+        "ideal_4mm_root_stress_MPa": 12.490625
+      },
+      {
+        "module": 9,
+        "dry_shell_mass_kg": 0.705425,
+        "single_support_force_with_extra_0_2kg_at_5g_N": 44.41111,
+        "old_tab_lever_mm": 12,
+        "ideal_4mm_root_stress_MPa": 12.490625
+      },
+      {
+        "module": 10,
+        "dry_shell_mass_kg": 0.705425,
+        "single_support_force_with_extra_0_2kg_at_5g_N": 44.41111,
+        "old_tab_lever_mm": 12,
+        "ideal_4mm_root_stress_MPa": 12.490625
+      },
+      {
+        "module": 11,
+        "dry_shell_mass_kg": 0.705425,
+        "single_support_force_with_extra_0_2kg_at_5g_N": 44.41111,
+        "old_tab_lever_mm": 12,
+        "ideal_4mm_root_stress_MPa": 12.490625
+      },
+      {
+        "module": 12,
+        "dry_shell_mass_kg": 0.602408,
+        "single_support_force_with_extra_0_2kg_at_5g_N": 39.358097,
+        "old_tab_lever_mm": 19,
+        "ideal_4mm_root_stress_MPa": 17.526652
+      },
+      {
+        "module": 13,
+        "dry_shell_mass_kg": 0.602408,
+        "single_support_force_with_extra_0_2kg_at_5g_N": 39.358097,
+        "old_tab_lever_mm": 19,
+        "ideal_4mm_root_stress_MPa": 17.526652
+      },
+      {
+        "module": 14,
+        "dry_shell_mass_kg": 0.602408,
+        "single_support_force_with_extra_0_2kg_at_5g_N": 39.358097,
+        "old_tab_lever_mm": 19,
+        "ideal_4mm_root_stress_MPa": 17.526652
+      },
+      {
+        "module": 15,
+        "dry_shell_mass_kg": 0.602408,
+        "single_support_force_with_extra_0_2kg_at_5g_N": 39.358097,
+        "old_tab_lever_mm": 19,
+        "ideal_4mm_root_stress_MPa": 17.526652
+      },
+      {
+        "module": 16,
+        "dry_shell_mass_kg": 0.705425,
+        "single_support_force_with_extra_0_2kg_at_5g_N": 44.41111,
+        "old_tab_lever_mm": 12,
+        "ideal_4mm_root_stress_MPa": 12.490625
+      },
+      {
+        "module": 17,
+        "dry_shell_mass_kg": 0.705425,
+        "single_support_force_with_extra_0_2kg_at_5g_N": 44.41111,
+        "old_tab_lever_mm": 12,
+        "ideal_4mm_root_stress_MPa": 12.490625
+      },
+      {
+        "module": 18,
+        "dry_shell_mass_kg": 0.705425,
+        "single_support_force_with_extra_0_2kg_at_5g_N": 44.41111,
+        "old_tab_lever_mm": 12,
+        "ideal_4mm_root_stress_MPa": 12.490625
+      },
+      {
+        "module": 19,
+        "dry_shell_mass_kg": 0.705425,
+        "single_support_force_with_extra_0_2kg_at_5g_N": 44.41111,
+        "old_tab_lever_mm": 12,
+        "ideal_4mm_root_stress_MPa": 12.490625
+      }
+    ],
+    "strength_capacity_tested": false
+  },
+  "cspace": {
+    "method": "Rectangular obstacle face configuration-space partition, open-free-cell 6-neighbor exhaustive BFS. Only rigid fixed XYZ orientation translations; zero-width passage and any 3D rotation untested.",
+    "absent_spine": "G17_COLUMN_10",
+    "intentionally_absent_shelves_and_keepers": true,
+    "rear_mat_limit_y_mm": 353,
+    "clearances_screened_mm": [
+      0,
+      1,
+      3
+    ],
+    "tests": [
+      {
+        "scenario": "full_100",
+        "module": 0,
+        "clearance_mm": 0,
+        "status": "NO_FRONT_PATH",
+        "cells": 2860,
+        "visited": 21,
+        "front_cells": 0,
+        "grid": [
+          26,
+          11,
+          10
+        ]
+      },
+      {
+        "scenario": "full_100",
+        "module": 1,
+        "clearance_mm": 0,
+        "status": "NO_FRONT_PATH",
+        "cells": 2860,
+        "visited": 24,
+        "front_cells": 0,
+        "grid": [
+          26,
+          11,
+          10
+        ]
+      },
+      {
+        "scenario": "full_100",
+        "module": 2,
+        "clearance_mm": 0,
+        "status": "NO_FRONT_PATH",
+        "cells": 2860,
+        "visited": 27,
+        "front_cells": 0,
+        "grid": [
+          26,
+          11,
+          10
+        ]
+      },
+      {
+        "scenario": "full_100",
+        "module": 3,
+        "clearance_mm": 0,
+        "status": "NO_FRONT_PATH",
+        "cells": 2860,
+        "visited": 32,
+        "front_cells": 0,
+        "grid": [
+          26,
+          11,
+          10
+        ]
+      },
+      {
+        "scenario": "retained_120",
+        "module": 0,
+        "clearance_mm": 0,
+        "status": "NO_FRONT_PATH",
+        "cells": 1840,
+        "visited": 58,
+        "front_cells": 0,
+        "grid": [
+          23,
+          10,
+          8
+        ]
+      },
+      {
+        "scenario": "retained_120",
+        "module": 1,
+        "clearance_mm": 0,
+        "status": "NO_FRONT_PATH",
+        "cells": 1840,
+        "visited": 58,
+        "front_cells": 0,
+        "grid": [
+          23,
+          10,
+          8
+        ]
+      },
+      {
+        "scenario": "retained_120",
+        "module": 2,
+        "clearance_mm": 0,
+        "status": "NO_FRONT_PATH",
+        "cells": 1840,
+        "visited": 58,
+        "front_cells": 0,
+        "grid": [
+          23,
+          10,
+          8
+        ]
+      },
+      {
+        "scenario": "retained_120",
+        "module": 3,
+        "clearance_mm": 0,
+        "status": "NO_FRONT_PATH",
+        "cells": 1840,
+        "visited": 58,
+        "front_cells": 0,
+        "grid": [
+          23,
+          10,
+          8
+        ]
+      },
+      {
+        "scenario": "only_four_small",
+        "module": 0,
+        "clearance_mm": 0,
+        "status": "EXIT_CIRCLE",
+        "cells": 1035,
+        "visited": 268,
+        "front_cells": 5,
+        "grid": [
+          23,
+          9,
+          5
+        ]
+      },
+      {
+        "scenario": "only_four_small",
+        "module": 1,
+        "clearance_mm": 0,
+        "status": "EXIT_CIRCLE",
+        "cells": 1035,
+        "visited": 268,
+        "front_cells": 5,
+        "grid": [
+          23,
+          9,
+          5
+        ]
+      },
+      {
+        "scenario": "only_four_small",
+        "module": 2,
+        "clearance_mm": 0,
+        "status": "EXIT_CIRCLE",
+        "cells": 1035,
+        "visited": 294,
+        "front_cells": 10,
+        "grid": [
+          23,
+          9,
+          5
+        ]
+      },
+      {
+        "scenario": "only_four_small",
+        "module": 3,
+        "clearance_mm": 0,
+        "status": "EXIT_CIRCLE",
+        "cells": 1035,
+        "visited": 295,
+        "front_cells": 11,
+        "grid": [
+          23,
+          9,
+          5
+        ]
+      },
+      {
+        "scenario": "retained_120_without_12_14",
+        "module": 0,
+        "clearance_mm": 0,
+        "status": "EXIT_CIRCLE",
+        "cells": 1840,
+        "visited": 323,
+        "front_cells": 15,
+        "grid": [
+          23,
+          10,
+          8
+        ]
+      },
+      {
+        "scenario": "retained_120_without_12_14",
+        "module": 1,
+        "clearance_mm": 0,
+        "status": "EXIT_CIRCLE",
+        "cells": 1840,
+        "visited": 302,
+        "front_cells": 10,
+        "grid": [
+          23,
+          10,
+          8
+        ]
+      },
+      {
+        "scenario": "retained_120_without_12_14",
+        "module": 2,
+        "clearance_mm": 0,
+        "status": "EXIT_CIRCLE",
+        "cells": 1840,
+        "visited": 323,
+        "front_cells": 15,
+        "grid": [
+          23,
+          10,
+          8
+        ]
+      },
+      {
+        "scenario": "retained_120_without_12_14",
+        "module": 3,
+        "clearance_mm": 0,
+        "status": "EXIT_CIRCLE",
+        "cells": 1840,
+        "visited": 302,
+        "front_cells": 10,
+        "grid": [
+          23,
+          10,
+          8
+        ]
+      },
+      {
+        "scenario": "full_100",
+        "module": 0,
+        "clearance_mm": 1,
+        "status": "NO_FRONT_PATH",
+        "cells": 2860,
+        "visited": 22,
+        "front_cells": 0,
+        "grid": [
+          26,
+          11,
+          10
+        ]
+      },
+      {
+        "scenario": "full_100",
+        "module": 1,
+        "clearance_mm": 1,
+        "status": "NO_FRONT_PATH",
+        "cells": 2860,
+        "visited": 21,
+        "front_cells": 0,
+        "grid": [
+          26,
+          11,
+          10
+        ]
+      },
+      {
+        "scenario": "full_100",
+        "module": 2,
+        "clearance_mm": 1,
+        "status": "NO_FRONT_PATH",
+        "cells": 2860,
+        "visited": 28,
+        "front_cells": 0,
+        "grid": [
+          26,
+          11,
+          10
+        ]
+      },
+      {
+        "scenario": "full_100",
+        "module": 3,
+        "clearance_mm": 1,
+        "status": "NO_FRONT_PATH",
+        "cells": 2860,
+        "visited": 27,
+        "front_cells": 0,
+        "grid": [
+          26,
+          11,
+          10
+        ]
+      },
+      {
+        "scenario": "retained_120",
+        "module": 0,
+        "clearance_mm": 1,
+        "status": "NO_FRONT_PATH",
+        "cells": 1840,
+        "visited": 51,
+        "front_cells": 0,
+        "grid": [
+          23,
+          10,
+          8
+        ]
+      },
+      {
+        "scenario": "retained_120",
+        "module": 1,
+        "clearance_mm": 1,
+        "status": "NO_FRONT_PATH",
+        "cells": 1840,
+        "visited": 51,
+        "front_cells": 0,
+        "grid": [
+          23,
+          10,
+          8
+        ]
+      },
+      {
+        "scenario": "retained_120",
+        "module": 2,
+        "clearance_mm": 1,
+        "status": "NO_FRONT_PATH",
+        "cells": 1840,
+        "visited": 51,
+        "front_cells": 0,
+        "grid": [
+          23,
+          10,
+          8
+        ]
+      },
+      {
+        "scenario": "retained_120",
+        "module": 3,
+        "clearance_mm": 1,
+        "status": "NO_FRONT_PATH",
+        "cells": 1840,
+        "visited": 51,
+        "front_cells": 0,
+        "grid": [
+          23,
+          10,
+          8
+        ]
+      },
+      {
+        "scenario": "only_four_small",
+        "module": 0,
+        "clearance_mm": 1,
+        "status": "EXIT_CIRCLE",
+        "cells": 1035,
+        "visited": 268,
+        "front_cells": 5,
+        "grid": [
+          23,
+          9,
+          5
+        ]
+      },
+      {
+        "scenario": "only_four_small",
+        "module": 1,
+        "clearance_mm": 1,
+        "status": "EXIT_CIRCLE",
+        "cells": 1035,
+        "visited": 268,
+        "front_cells": 5,
+        "grid": [
+          23,
+          9,
+          5
+        ]
+      },
+      {
+        "scenario": "only_four_small",
+        "module": 2,
+        "clearance_mm": 1,
+        "status": "EXIT_CIRCLE",
+        "cells": 1035,
+        "visited": 294,
+        "front_cells": 10,
+        "grid": [
+          23,
+          9,
+          5
+        ]
+      },
+      {
+        "scenario": "only_four_small",
+        "module": 3,
+        "clearance_mm": 1,
+        "status": "EXIT_CIRCLE",
+        "cells": 1035,
+        "visited": 295,
+        "front_cells": 11,
+        "grid": [
+          23,
+          9,
+          5
+        ]
+      },
+      {
+        "scenario": "retained_120_without_12_14",
+        "module": 0,
+        "clearance_mm": 1,
+        "status": "EXIT_CIRCLE",
+        "cells": 1840,
+        "visited": 328,
+        "front_cells": 17,
+        "grid": [
+          23,
+          10,
+          8
+        ]
+      },
+      {
+        "scenario": "retained_120_without_12_14",
+        "module": 1,
+        "clearance_mm": 1,
+        "status": "EXIT_CIRCLE",
+        "cells": 1840,
+        "visited": 297,
+        "front_cells": 10,
+        "grid": [
+          23,
+          10,
+          8
+        ]
+      },
+      {
+        "scenario": "retained_120_without_12_14",
+        "module": 2,
+        "clearance_mm": 1,
+        "status": "EXIT_CIRCLE",
+        "cells": 1840,
+        "visited": 328,
+        "front_cells": 17,
+        "grid": [
+          23,
+          10,
+          8
+        ]
+      },
+      {
+        "scenario": "retained_120_without_12_14",
+        "module": 3,
+        "clearance_mm": 1,
+        "status": "EXIT_CIRCLE",
+        "cells": 1840,
+        "visited": 297,
+        "front_cells": 10,
+        "grid": [
+          23,
+          10,
+          8
+        ]
+      },
+      {
+        "scenario": "full_100",
+        "module": 0,
+        "clearance_mm": 3,
+        "status": "NO_FRONT_PATH",
+        "cells": 3146,
+        "visited": 22,
+        "front_cells": 0,
+        "grid": [
+          26,
+          11,
+          11
+        ]
+      },
+      {
+        "scenario": "full_100",
+        "module": 1,
+        "clearance_mm": 3,
+        "status": "NO_FRONT_PATH",
+        "cells": 3146,
+        "visited": 22,
+        "front_cells": 0,
+        "grid": [
+          26,
+          11,
+          11
+        ]
+      },
+      {
+        "scenario": "full_100",
+        "module": 2,
+        "clearance_mm": 3,
+        "status": "NO_FRONT_PATH",
+        "cells": 3146,
+        "visited": 28,
+        "front_cells": 0,
+        "grid": [
+          26,
+          11,
+          11
+        ]
+      },
+      {
+        "scenario": "full_100",
+        "module": 3,
+        "clearance_mm": 3,
+        "status": "NO_FRONT_PATH",
+        "cells": 3146,
+        "visited": 28,
+        "front_cells": 0,
+        "grid": [
+          26,
+          11,
+          11
+        ]
+      },
+      {
+        "scenario": "retained_120",
+        "module": 0,
+        "clearance_mm": 3,
+        "status": "NO_FRONT_PATH",
+        "cells": 2070,
+        "visited": 53,
+        "front_cells": 0,
+        "grid": [
+          23,
+          10,
+          9
+        ]
+      },
+      {
+        "scenario": "retained_120",
+        "module": 1,
+        "clearance_mm": 3,
+        "status": "NO_FRONT_PATH",
+        "cells": 2070,
+        "visited": 53,
+        "front_cells": 0,
+        "grid": [
+          23,
+          10,
+          9
+        ]
+      },
+      {
+        "scenario": "retained_120",
+        "module": 2,
+        "clearance_mm": 3,
+        "status": "NO_FRONT_PATH",
+        "cells": 2070,
+        "visited": 53,
+        "front_cells": 0,
+        "grid": [
+          23,
+          10,
+          9
+        ]
+      },
+      {
+        "scenario": "retained_120",
+        "module": 3,
+        "clearance_mm": 3,
+        "status": "NO_FRONT_PATH",
+        "cells": 2070,
+        "visited": 53,
+        "front_cells": 0,
+        "grid": [
+          23,
+          10,
+          9
+        ]
+      },
+      {
+        "scenario": "only_four_small",
+        "module": 0,
+        "clearance_mm": 3,
+        "status": "EXIT_CIRCLE",
+        "cells": 1035,
+        "visited": 268,
+        "front_cells": 5,
+        "grid": [
+          23,
+          9,
+          5
+        ]
+      },
+      {
+        "scenario": "only_four_small",
+        "module": 1,
+        "clearance_mm": 3,
+        "status": "EXIT_CIRCLE",
+        "cells": 1035,
+        "visited": 268,
+        "front_cells": 5,
+        "grid": [
+          23,
+          9,
+          5
+        ]
+      },
+      {
+        "scenario": "only_four_small",
+        "module": 2,
+        "clearance_mm": 3,
+        "status": "EXIT_CIRCLE",
+        "cells": 1035,
+        "visited": 294,
+        "front_cells": 10,
+        "grid": [
+          23,
+          9,
+          5
+        ]
+      },
+      {
+        "scenario": "only_four_small",
+        "module": 3,
+        "clearance_mm": 3,
+        "status": "EXIT_CIRCLE",
+        "cells": 1035,
+        "visited": 295,
+        "front_cells": 11,
+        "grid": [
+          23,
+          9,
+          5
+        ]
+      },
+      {
+        "scenario": "retained_120_without_12_14",
+        "module": 0,
+        "clearance_mm": 3,
+        "status": "EXIT_CIRCLE",
+        "cells": 2070,
+        "visited": 338,
+        "front_cells": 17,
+        "grid": [
+          23,
+          10,
+          9
+        ]
+      },
+      {
+        "scenario": "retained_120_without_12_14",
+        "module": 1,
+        "clearance_mm": 3,
+        "status": "EXIT_CIRCLE",
+        "cells": 2070,
+        "visited": 307,
+        "front_cells": 10,
+        "grid": [
+          23,
+          10,
+          9
+        ]
+      },
+      {
+        "scenario": "retained_120_without_12_14",
+        "module": 2,
+        "clearance_mm": 3,
+        "status": "EXIT_CIRCLE",
+        "cells": 2070,
+        "visited": 338,
+        "front_cells": 17,
+        "grid": [
+          23,
+          10,
+          9
+        ]
+      },
+      {
+        "scenario": "retained_120_without_12_14",
+        "module": 3,
+        "clearance_mm": 3,
+        "status": "EXIT_CIRCLE",
+        "cells": 2070,
+        "visited": 307,
+        "front_cells": 10,
+        "grid": [
+          23,
+          10,
+          9
+        ]
+      }
+    ],
+    "caveat": "No genuine 6DOF rotation, hands, real driver basket, fasteners or motion under load verified."
+  },
+  "nominal_step_combinatorics": {
+    "baseline_100_to120_l": 19.8,
+    "external_modules_l": {
+      "small": 1.8,
+      "rear": 2.52,
+      "front": 3.15
+    },
+    "exact_solutions": [
+      {
+        "small": 4,
+        "rear": 0,
+        "front": 4,
+        "displacement_l": 19.8,
+        "error_l": 0,
+        "abs_error_l": 0
+      },
+      {
+        "small": 4,
+        "rear": 5,
+        "front": 0,
+        "displacement_l": 19.8,
+        "error_l": 0,
+        "abs_error_l": 0
+      }
+    ],
+    "nearest_no_small": [
+      {
+        "small": 0,
+        "rear": 4,
+        "front": 3,
+        "displacement_l": 19.53,
+        "error_l": -0.27,
+        "abs_error_l": 0.27
+      },
+      {
+        "small": 0,
+        "rear": 3,
+        "front": 4,
+        "displacement_l": 20.16,
+        "error_l": 0.36,
+        "abs_error_l": 0.36
+      },
+      {
+        "small": 0,
+        "rear": 8,
+        "front": 0,
+        "displacement_l": 20.16,
+        "error_l": 0.36,
+        "abs_error_l": 0.36
+      },
+      {
+        "small": 0,
+        "rear": 0,
+        "front": 6,
+        "displacement_l": 18.9,
+        "error_l": -0.9,
+        "abs_error_l": 0.9
+      },
+      {
+        "small": 0,
+        "rear": 5,
+        "front": 2,
+        "displacement_l": 18.9,
+        "error_l": -0.9,
+        "abs_error_l": 0.9
+      }
+    ],
+    "caveat": "Only ideal modular external displacement sums, no new mounts, hardware or measured acoustics"
+  },
+  "engineering_decision": "Prior K18 profile DXFs not machinable; redesign serviceable volume carrier/locations or controlled access hatch, then 6DOF service and structural material qualification."
+}
