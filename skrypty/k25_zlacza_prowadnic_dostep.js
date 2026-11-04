@@ -100,7 +100,7 @@ function buildK25(K15,K17,K24) {
  for(const [id,v]of Object.entries(selected))if(v.hypothetical_2mm_face_plates.some(p=>p.static_unintentional_solid_overlaps.length!==0))throw Error("Plate overlap "+id);
  assert(selected[candidateIds[1]].hypothetical_2mm_face_plates[0].available_front_back_normal_Y_gap_mm===4&&selected[candidateIds[1]].hypothetical_2mm_face_plates[1].available_front_back_normal_Y_gap_mm===5,"Guide10 near-box gap mismatch");
  const load=K24.supportRiskScreen.structural_demand_if_one_side_support_removed.map(x=>{
-  const part=A.parts.filter(v=>v.module_index===x.id);
+  const part=K15.parts.filter(v=>v.module_index===x.id);
   const mass=part.reduce((s,p)=>s+p.box_size_xyz_mm.reduce((t,z)=>t*z,1),0)*730/1e9;
   const F=(mass+.2)*5*9.81;
   return {rail:x.rail,example_module:x.id,assumed_shell_mass_kg:round(mass),hypothetical_extra_hardware_kg:0.2,
