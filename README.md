@@ -2319,3 +2319,18 @@ Zbadaliśmy też idealizowany mimośrodowy nacisk (przykładowo **4,14 MPa** szc
 **Wniosek praktyczny:** nie zwiększamy arbitralnie momentu dokręcania ani grubości stali. Trzeba porównać inne **podparcie płytki i klocka**, zweryfikować rzeczywistą wytrzymałość drewna, spoiny, gwintu i retencji oraz dopiero potem odtworzyć dostęp do wszystkich 20 wkładów objętościowych. **Nie określono momentu dokręcania ani zatwierdzonej konstrukcji — CNC HOLD.**
 
 [Założenia K14](dane/k14_scieranie_styku_tolerancje_i_docisk.json) · [64 kombinacje i wyniki](wyniki/k14_docisk_tolerancje_64.json) · [skrypt](skrypty/k14_docisk_plytki_tolerancje.py) · [poprzedni K13](raporty/K13_plytka_stalowa_M5_w_klocku20.md).
+
+
+### A20. K15 — pierwszy spójny model 3D obudowy i wykaz elementów do przyszłego CNC
+
+![K15 — PNG autorskiego schematu obudowy z widokiem frontu i rozmieszczeniem modułów. Model badawczy NIE CNC](wyniki/k15_widoki_obudowy_i_wkladow_NIE_CNC.png)
+
+[Wersja wektorowa SVG](wyniki/k15_widoki_obudowy_i_wkladow_NIE_CNC.svg) · [edytowalny model OpenSCAD](dokumentacja/K15_p30e_zlozenie_parametryczne_NIE_CNC.scad) · [pełny raport](raporty/K15_parametryczne_zlozenie_i_zestawienie_przed_CNC.md).
+
+**Wreszcie mamy jedno źródło parametrów obudowy, z którego powstaje model 3D i lista płyt.** K15 odtwarza korpus **1020×425×500 mm**, front z dwóch płyt MDF22 (nominalnie 44 mm), **11 elementów usztywnień** oraz **20 wymiennych skrzynek** regulujących objętość. Generator wylicza **138 nominalnych formatek MDF**: 7 płatów obudowy, 11 wręg oraz 120 płatów 20 skrzynek. W każdym wariancie w modelu można pokazać odpowiednie skrzynki: **100 l — 20**, **120 l — 12**, **150 l — 1**.
+
+Przy zachowaniu dawnych założeń P30E obliczenia odtwarzają **100,12 / 119,92 / 150,16 l**. Dodanie ośmiu nowych, modelowych klocków K01, jeśli wcześniej nie zostały odliczone, warunkowo obniża te wartości o **0,150336 l**. Te liczby **nie są realnym pomiarem gotowej obudowy**. W modelu narysowano też **fabryczne otwory Ø6,5 mm wyłącznie jako znaczniki w metalowym koszu** — nie wykonujemy takich otworów w MDF. Średnica otworów pod śruby w MDF wymaga osobnego, zweryfikowanego doboru.
+
+**Co jeszcze przed CNC?** Prawdziwe łączenia i klejenie MDF, poprawa niekwalifikowanego mocowania K14, zamki i uszczelki 20 skrzynek, sprawdzenie montażu narzędziami, obrys maskownicy/terminala oraz tolerancje materiału i frezu. Szczególnie cienkie **10-mm pasy wręg** są tylko elementami modelu, nie zaakceptowanymi częściami do wycięcia.
+
+[Model 3D OpenSCAD](dokumentacja/K15_p30e_zlozenie_parametryczne_NIE_CNC.scad) · [138 elementów CSV — **NIE ZAMAWIAĆ CIĘCIA**](wyniki/k15_p30e_przed_CNC_138_elementow.csv) · [kontrola geometrii i objętości JSON](wyniki/k15_p30e_przed_CNC_zestawienie.json) · [generator](skrypty/k15_pre_cnc_model.js). **CNC HOLD.**
