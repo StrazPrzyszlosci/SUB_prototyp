@@ -1,0 +1,91 @@
+name: K13 captive M5 plate – research regression and paired PNG/SVG
+on:
+  pull_request:
+    paths:
+      - "README.md"
+      - "dane/k10_rejestr_materialow_czesci_obudowy.json"
+      - "dane/k13_plytka_m5_w_klocku20_zalozenia.json"
+      - "skrypty/k13_plytka_stalowa_w_klocku20.py"
+      - "skrypty/render_svg_png.py"
+      - "wyniki/k13_przesiew_plytki_w_klocku20.json"
+      - "wyniki/k13_plytka_M5_w_klocku20_NIE_CNC.svg"
+      - "wyniki/k13_plytka_M5_w_klocku20_NIE_CNC.png"
+      - "raporty/K13_plytka_stalowa_M5_w_klocku20.md"
+      - ".github/workflows/k13-research-regression.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  k13:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Reproduce 45 fastening variants and geometry from declared source values
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp wyniki/k13_przesiew_plytki_w_klocku20.json /tmp/k13-reviewed.json
+          python skrypty/k13_plytka_stalowa_w_klocku20.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          reviewed=json.loads(Path("/tmp/k13-reviewed.json").read_text(encoding="utf-8"))
+          actual=json.loads(Path("wyniki/k13_przesiew_plytki_w_klocku20.json").read_text(encoding="utf-8"))
+          assert reviewed==actual, "K13 source-derived output differs from saved research data"
+          assert len(actual["axial_45_combinations"])==45
+          assert len(actual["recessed_steel_plate_scenarios"])==5
+          assert len([x for x in actual["axial_45_combinations"] if x["conditional_1d_screen_and_zero_rear_projection"]])==9
+          p=actual["position_and_margin_screen"]
+          assert p["front_M5_wood_ligament_to_cutout_mm"]==3.35
+          assert p["plate_inner_metal_ligament_to_M5_major_thread_mm"]==2.1
+          chosen=actual["illustrative_preferred_6mm_plate_1mm_gasket_M5x75"]
+          assert chosen["idealized_axial_thread_engagement_mm"]==5.5
+          assert chosen["bolt_rear_protrusion_beyond_pad_mm"]==0
+          assert actual["P40A_reference_load"]["actual_load_path_known"] is False
+          assert actual["P40A_reference_load"]["material_capacity_approved"] is False
+          assert actual["cnc"]=="HOLD"
+          print("K13: reproducible 45 scenarios, 9 illustrative screens, NO manufacturing signoff")
+          PY
+      - name: Check mobile PNG source pair and guide order
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check --quiet cairosvg pillow
+          python - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+          svg=Path("wyniki/k13_plytka_M5_w_klocku20_NIE_CNC.svg")
+          png=svg.with_suffix(".png")
+          assert svg.is_file() and png.is_file(), "new SVG must always include same-name PNG"
+          with png.open("rb") as f:
+              assert f.read(8)==bytes((137,80,78,71,13,10,26,10))
+          im=Image.open(png)
+          im.verify()
+          im=Image.open(png)
+          assert im.width==1000 and im.height>=400
+          assert len(im.convert("RGB").getcolors(maxcolors=1_000_000) or []) > 12, "PNG preview looks blank"
+          guide=Path("README.md").read_text(encoding="utf-8")
+          report=Path("raporty/K13_plytka_stalowa_M5_w_klocku20.md").read_text(encoding="utf-8")
+          ids=["## Głośniki: porównanie w tych samych warunkach",
+               "## Praktyczny przewodnik",
+               "### 1. Wybór przetwornika",
+               "### 2. Badania akustyczne",
+               "### 3. Badania materiałów",
+               "### 4. Dopiero po projekcie"]
+          positions=[guide.index(x) for x in ids]
+          assert positions==sorted(positions), "research and driver selection must precede cabinet and mounting"
+          assert guide.count('<a id="glosniki"></a>')==1
+          assert guide.index("## Głośniki: porównanie w tych samych warunkach")<guide.index("## Co już wynika z badań")
+          assert "### A18. K13" in guide
+          assert "wyniki/k13_plytka_M5_w_klocku20_NIE_CNC.png" in guide
+          assert "wyniki/k13_plytka_M5_w_klocku20_NIE_CNC.svg" in guide
+          assert "../wyniki/k13_plytka_M5_w_klocku20_NIE_CNC.png" in report
+          start=guide.index("### 4a. Jak przejść")
+          end=guide.index("### 5. Co oznaczają",start)
+          assert end-start < 2000
+          assert "Ø5,5 mm we froncie" in guide
+          print("K13: confirmed paired readable PNG/SVG, loudspeaker studies FIRST, readable guide")
+          PY
