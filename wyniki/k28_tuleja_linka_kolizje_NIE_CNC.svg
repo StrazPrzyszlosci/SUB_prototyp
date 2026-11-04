@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1110" height="420" viewBox="0 0 1110 420"><rect width="1110" height="420" fill="#f8fafb"/>
+<text x="22" y="33" font-size="23" font-weight="bold" fill="#294255">K28 — guide10 sleeve vs flexible cable: final section at X≈669, Z194</text>
+<text x="22" y="57" font-size="13" fill="#53697a">Horizontal axis = global Y (cabinet front at left); drawing not to physical scale. Research only.</text>
+<rect x="78" y="107" width="520" height="65" fill="#eef2f5" stroke="#9dacb7"/>
+<rect x="78" y="107" width="220" height="65" fill="#d0dfe8"/><text x="120" y="139" font-size="15">front box (100 L only)</text><text x="120" y="158" font-size="12">ends Y202</text>
+<rect x="385" y="107" width="160" height="65" fill="#c67e73" fill-opacity=".8" stroke="#a75049"/><text x="408" y="145" font-size="14" fill="white">sleeve face</text>
+<text x="388" y="98" font-size="12">Y205.5 to 207.5</text>
+<rect x="545" y="107" width="53" height="65" fill="#617d91"/><text x="545" y="190" font-size="11">rail Y208</text>
+<rect x="285" y="218" width="170" height="23" fill="#d47d70"/><text x="462" y="236" font-size="12" fill="#91473a">old centered Y205: 4mm intersects sleeve</text>
+<rect x="208" y="266" width="145" height="23" fill="#76b6a0"/><text x="462" y="285" font-size="12" fill="#286b58">shifted Y202: 4mm can clear in state 120/150</text>
+<rect x="685" y="108" width="390" height="175" rx="8" fill="#edf2f5" stroke="#a0b6c5"/>
+<text x="703" y="140" font-size="17" font-weight="bold" fill="#2b4b5d">Geometry-only results</text>
+<text x="703" y="172" font-size="14" fill="#3d5b70">Old centered cable: interference 1.5mm</text>
+<text x="703" y="200" font-size="14" fill="#3d5b70">Shifted envelope: 1.5mm face gap</text>
+<text x="703" y="228" font-size="14" fill="#3d5b70">No connector bridging 3.5mm to sleeve</text>
+<text x="703" y="258" font-size="14" font-weight="bold" fill="#a24339">No positive lock or support</text>
+<text x="22" y="344" font-size="15" fill="#465e70">Model excludes cable ferrule, sheath hardware, lock force, spring return, material tolerances and hand access.</text>
+<text x="22" y="383" font-size="20" font-weight="bold" fill="#a24339">NO MANUFACTURING APPROVAL — ALL K18 CNC DXFs ON HOLD</text></svg>

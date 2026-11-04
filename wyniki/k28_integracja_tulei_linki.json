@@ -1,0 +1,1415 @@
+{
+  "study": "K28",
+  "date": "2026-11-04",
+  "status": "CNC HOLD — integrated K27 sleeve/cable geometry: old centered cable clashes; service-state forward-offset route nominally clears but has NO end coupling or positive lock",
+  "sources": [
+    "K15 20 sealed modules and fixed cabinet",
+    "K17 12 guide rails and reference tabs",
+    "K25 hypothetical guide10 2mm front face plate",
+    "K27 preloaded 21×17×50mm sleeve",
+    "K27 4mm square remote line route"
+  ],
+  "comparisons": {
+    "rail": "G17_COLUMN_10",
+    "guide_split_z_mm": 194,
+    "selected_service_states": [
+      "120",
+      "150"
+    ],
+    "remote_bend_radius_hypothesis_mm": 15,
+    "remote_bend_sample_count": 32,
+    "lateral_cable_end_x_mm": 669.5,
+    "lateral_cable_end_z_mm": 194,
+    "tested_nominal_outer_square_widths_mm": [
+      3,
+      4,
+      6,
+      14
+    ],
+    "tested_lateral_end_center_y_mm": [
+      198,
+      202,
+      203,
+      203.5,
+      203.75,
+      205
+    ],
+    "sleeve_front_wall_y_span_mm": [
+      205.5,
+      207.5
+    ],
+    "old_wire_center_y_mm": 205,
+    "service_route_revised_centre_y_mm": 202,
+    "normal_facing_plate_intersection_with_closed_sleeve_mm3": [
+      {
+        "wall": "FRONT_Y",
+        "intersection_mm3": 1200
+      },
+      {
+        "wall": "BACK_Y",
+        "intersection_mm3": 0
+      },
+      {
+        "wall": "LEFT_X",
+        "intersection_mm3": 0
+      },
+      {
+        "wall": "RIGHT_X",
+        "intersection_mm3": 0
+      }
+    ],
+    "front_large_box_18_y_back_mm": 202,
+    "rail10_front_face_y_mm": 208,
+    "nominal_preexisting_6mm_gap_of_old_route_mm": 6,
+    "now_occupied_sleeve_front_face_y_start_mm": 205.5
+  },
+  "complete_polyline_swept_square_tests": [
+    {
+      "state": "100",
+      "outer_square_width_mm": 3,
+      "lateral_end_center_y_mm": 198,
+      "front_aperture_margin_mm": 120.3804,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "BOX_18"
+          ],
+          "largest_overlap_volume_mm3": 1615.5
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 6,
+      "end_centre_to_sleeve_front_face_mm": 7.5,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "100",
+      "outer_square_width_mm": 3,
+      "lateral_end_center_y_mm": 202,
+      "front_aperture_margin_mm": 120.3804,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "BOX_18"
+          ],
+          "largest_overlap_volume_mm3": 807.75
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 2,
+      "end_centre_to_sleeve_front_face_mm": 3.5,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "100",
+      "outer_square_width_mm": 3,
+      "lateral_end_center_y_mm": 203,
+      "front_aperture_margin_mm": 120.3804,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "BOX_18"
+          ],
+          "largest_overlap_volume_mm3": 269.25
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 1,
+      "end_centre_to_sleeve_front_face_mm": 2.5,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "100",
+      "outer_square_width_mm": 3,
+      "lateral_end_center_y_mm": 203.5,
+      "front_aperture_margin_mm": 120.3804,
+      "checked_swept_segments": 34,
+      "pass_nominal": true,
+      "first_positive_intersections": [],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 0.5,
+      "end_centre_to_sleeve_front_face_mm": 2,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "100",
+      "outer_square_width_mm": 3,
+      "lateral_end_center_y_mm": 203.75,
+      "front_aperture_margin_mm": 120.3804,
+      "checked_swept_segments": 34,
+      "pass_nominal": true,
+      "first_positive_intersections": [],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 0.25,
+      "end_centre_to_sleeve_front_face_mm": 1.75,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "100",
+      "outer_square_width_mm": 3,
+      "lateral_end_center_y_mm": 205,
+      "front_aperture_margin_mm": 120.3804,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "FRONT_Y"
+          ],
+          "largest_overlap_volume_mm3": 36
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -1,
+      "end_centre_to_sleeve_front_face_mm": 0.5,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "100",
+      "outer_square_width_mm": 4,
+      "lateral_end_center_y_mm": 198,
+      "front_aperture_margin_mm": 119.8655,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "BOX_18"
+          ],
+          "largest_overlap_volume_mm3": 2880
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 5.5,
+      "end_centre_to_sleeve_front_face_mm": 7.5,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "100",
+      "outer_square_width_mm": 4,
+      "lateral_end_center_y_mm": 202,
+      "front_aperture_margin_mm": 119.8655,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "BOX_18"
+          ],
+          "largest_overlap_volume_mm3": 1440
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 1.5,
+      "end_centre_to_sleeve_front_face_mm": 3.5,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "100",
+      "outer_square_width_mm": 4,
+      "lateral_end_center_y_mm": 203,
+      "front_aperture_margin_mm": 119.8655,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "BOX_18"
+          ],
+          "largest_overlap_volume_mm3": 720
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 0.5,
+      "end_centre_to_sleeve_front_face_mm": 2.5,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "100",
+      "outer_square_width_mm": 4,
+      "lateral_end_center_y_mm": 203.5,
+      "front_aperture_margin_mm": 119.8655,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "BOX_18"
+          ],
+          "largest_overlap_volume_mm3": 360
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 0,
+      "end_centre_to_sleeve_front_face_mm": 2,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "100",
+      "outer_square_width_mm": 4,
+      "lateral_end_center_y_mm": 203.75,
+      "front_aperture_margin_mm": 119.8655,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "BOX_18",
+            "FRONT_Y"
+          ],
+          "largest_overlap_volume_mm3": 180
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -0.25,
+      "end_centre_to_sleeve_front_face_mm": 1.75,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "100",
+      "outer_square_width_mm": 4,
+      "lateral_end_center_y_mm": 205,
+      "front_aperture_margin_mm": 119.8655,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "FRONT_Y"
+          ],
+          "largest_overlap_volume_mm3": 75
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -1.5,
+      "end_centre_to_sleeve_front_face_mm": 0.5,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "100",
+      "outer_square_width_mm": 6,
+      "lateral_end_center_y_mm": 198,
+      "front_aperture_margin_mm": 118.8238,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "BOX_18"
+          ],
+          "largest_overlap_volume_mm3": 6516
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 4.5,
+      "end_centre_to_sleeve_front_face_mm": 7.5,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "100",
+      "outer_square_width_mm": 6,
+      "lateral_end_center_y_mm": 202,
+      "front_aperture_margin_mm": 118.8238,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "BOX_18"
+          ],
+          "largest_overlap_volume_mm3": 3258
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 0.5,
+      "end_centre_to_sleeve_front_face_mm": 3.5,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "100",
+      "outer_square_width_mm": 6,
+      "lateral_end_center_y_mm": 203,
+      "front_aperture_margin_mm": 118.8238,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "BOX_18",
+            "FRONT_Y"
+          ],
+          "largest_overlap_volume_mm3": 2172
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -0.5,
+      "end_centre_to_sleeve_front_face_mm": 2.5,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "100",
+      "outer_square_width_mm": 6,
+      "lateral_end_center_y_mm": 203.5,
+      "front_aperture_margin_mm": 118.8238,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "BOX_18",
+            "FRONT_Y"
+          ],
+          "largest_overlap_volume_mm3": 1629
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -1,
+      "end_centre_to_sleeve_front_face_mm": 2,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "100",
+      "outer_square_width_mm": 6,
+      "lateral_end_center_y_mm": 203.75,
+      "front_aperture_margin_mm": 118.8238,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "BOX_18",
+            "FRONT_Y"
+          ],
+          "largest_overlap_volume_mm3": 1357.5
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -1.25,
+      "end_centre_to_sleeve_front_face_mm": 1.75,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "100",
+      "outer_square_width_mm": 6,
+      "lateral_end_center_y_mm": 205,
+      "front_aperture_margin_mm": 118.8238,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "FRONT_Y",
+            "LEFT_X"
+          ],
+          "largest_overlap_volume_mm3": 162
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -2.5,
+      "end_centre_to_sleeve_front_face_mm": 0.5,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "100",
+      "outer_square_width_mm": 14,
+      "lateral_end_center_y_mm": 198,
+      "front_aperture_margin_mm": 114.5123,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "BOX_18"
+          ],
+          "largest_overlap_volume_mm3": 28490
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 0.5,
+      "end_centre_to_sleeve_front_face_mm": 7.5,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "100",
+      "outer_square_width_mm": 14,
+      "lateral_end_center_y_mm": 202,
+      "front_aperture_margin_mm": 114.5123,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "G17_COLUMN_09",
+            "G17_COLUMN_10",
+            "BOX_18",
+            "FRONT_Y",
+            "LEFT_X"
+          ],
+          "largest_overlap_volume_mm3": 18130
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -3.5,
+      "end_centre_to_sleeve_front_face_mm": 3.5,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "100",
+      "outer_square_width_mm": 14,
+      "lateral_end_center_y_mm": 203,
+      "front_aperture_margin_mm": 114.5123,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "G17_COLUMN_09",
+            "G17_COLUMN_10",
+            "BOX_18",
+            "FRONT_Y",
+            "LEFT_X"
+          ],
+          "largest_overlap_volume_mm3": 15540
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -4.5,
+      "end_centre_to_sleeve_front_face_mm": 2.5,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "100",
+      "outer_square_width_mm": 14,
+      "lateral_end_center_y_mm": 203.5,
+      "front_aperture_margin_mm": 114.5123,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "G17_COLUMN_09",
+            "G17_COLUMN_10",
+            "BOX_18",
+            "FRONT_Y",
+            "LEFT_X"
+          ],
+          "largest_overlap_volume_mm3": 14245
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -5,
+      "end_centre_to_sleeve_front_face_mm": 2,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "100",
+      "outer_square_width_mm": 14,
+      "lateral_end_center_y_mm": 203.75,
+      "front_aperture_margin_mm": 114.5123,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "G17_COLUMN_09",
+            "G17_COLUMN_10",
+            "BOX_18",
+            "FRONT_Y",
+            "LEFT_X"
+          ],
+          "largest_overlap_volume_mm3": 13597.5
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -5.25,
+      "end_centre_to_sleeve_front_face_mm": 1.75,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "100",
+      "outer_square_width_mm": 14,
+      "lateral_end_center_y_mm": 205,
+      "front_aperture_margin_mm": 114.5123,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "G17_COLUMN_09",
+            "G17_COLUMN_10",
+            "BOX_18",
+            "FRONT_Y",
+            "LEFT_X"
+          ],
+          "largest_overlap_volume_mm3": 10360
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -6.5,
+      "end_centre_to_sleeve_front_face_mm": 0.5,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "120",
+      "outer_square_width_mm": 3,
+      "lateral_end_center_y_mm": 198,
+      "front_aperture_margin_mm": 120.3804,
+      "checked_swept_segments": 34,
+      "pass_nominal": true,
+      "first_positive_intersections": [],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 6,
+      "end_centre_to_sleeve_front_face_mm": 7.5,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "120",
+      "outer_square_width_mm": 3,
+      "lateral_end_center_y_mm": 202,
+      "front_aperture_margin_mm": 120.3804,
+      "checked_swept_segments": 34,
+      "pass_nominal": true,
+      "first_positive_intersections": [],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 2,
+      "end_centre_to_sleeve_front_face_mm": 3.5,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "120",
+      "outer_square_width_mm": 3,
+      "lateral_end_center_y_mm": 203,
+      "front_aperture_margin_mm": 120.3804,
+      "checked_swept_segments": 34,
+      "pass_nominal": true,
+      "first_positive_intersections": [],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 1,
+      "end_centre_to_sleeve_front_face_mm": 2.5,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "120",
+      "outer_square_width_mm": 3,
+      "lateral_end_center_y_mm": 203.5,
+      "front_aperture_margin_mm": 120.3804,
+      "checked_swept_segments": 34,
+      "pass_nominal": true,
+      "first_positive_intersections": [],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 0.5,
+      "end_centre_to_sleeve_front_face_mm": 2,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "120",
+      "outer_square_width_mm": 3,
+      "lateral_end_center_y_mm": 203.75,
+      "front_aperture_margin_mm": 120.3804,
+      "checked_swept_segments": 34,
+      "pass_nominal": true,
+      "first_positive_intersections": [],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 0.25,
+      "end_centre_to_sleeve_front_face_mm": 1.75,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "120",
+      "outer_square_width_mm": 3,
+      "lateral_end_center_y_mm": 205,
+      "front_aperture_margin_mm": 120.3804,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "FRONT_Y"
+          ],
+          "largest_overlap_volume_mm3": 36
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -1,
+      "end_centre_to_sleeve_front_face_mm": 0.5,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "120",
+      "outer_square_width_mm": 4,
+      "lateral_end_center_y_mm": 198,
+      "front_aperture_margin_mm": 119.8655,
+      "checked_swept_segments": 34,
+      "pass_nominal": true,
+      "first_positive_intersections": [],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 5.5,
+      "end_centre_to_sleeve_front_face_mm": 7.5,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "120",
+      "outer_square_width_mm": 4,
+      "lateral_end_center_y_mm": 202,
+      "front_aperture_margin_mm": 119.8655,
+      "checked_swept_segments": 34,
+      "pass_nominal": true,
+      "first_positive_intersections": [],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 1.5,
+      "end_centre_to_sleeve_front_face_mm": 3.5,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "120",
+      "outer_square_width_mm": 4,
+      "lateral_end_center_y_mm": 203,
+      "front_aperture_margin_mm": 119.8655,
+      "checked_swept_segments": 34,
+      "pass_nominal": true,
+      "first_positive_intersections": [],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 0.5,
+      "end_centre_to_sleeve_front_face_mm": 2.5,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "120",
+      "outer_square_width_mm": 4,
+      "lateral_end_center_y_mm": 203.5,
+      "front_aperture_margin_mm": 119.8655,
+      "checked_swept_segments": 34,
+      "pass_nominal": true,
+      "first_positive_intersections": [],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 0,
+      "end_centre_to_sleeve_front_face_mm": 2,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "120",
+      "outer_square_width_mm": 4,
+      "lateral_end_center_y_mm": 203.75,
+      "front_aperture_margin_mm": 119.8655,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "FRONT_Y"
+          ],
+          "largest_overlap_volume_mm3": 12.5
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -0.25,
+      "end_centre_to_sleeve_front_face_mm": 1.75,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "120",
+      "outer_square_width_mm": 4,
+      "lateral_end_center_y_mm": 205,
+      "front_aperture_margin_mm": 119.8655,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "FRONT_Y"
+          ],
+          "largest_overlap_volume_mm3": 75
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -1.5,
+      "end_centre_to_sleeve_front_face_mm": 0.5,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "120",
+      "outer_square_width_mm": 6,
+      "lateral_end_center_y_mm": 198,
+      "front_aperture_margin_mm": 118.8238,
+      "checked_swept_segments": 34,
+      "pass_nominal": true,
+      "first_positive_intersections": [],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 4.5,
+      "end_centre_to_sleeve_front_face_mm": 7.5,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "120",
+      "outer_square_width_mm": 6,
+      "lateral_end_center_y_mm": 202,
+      "front_aperture_margin_mm": 118.8238,
+      "checked_swept_segments": 34,
+      "pass_nominal": true,
+      "first_positive_intersections": [],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 0.5,
+      "end_centre_to_sleeve_front_face_mm": 3.5,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "120",
+      "outer_square_width_mm": 6,
+      "lateral_end_center_y_mm": 203,
+      "front_aperture_margin_mm": 118.8238,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "FRONT_Y"
+          ],
+          "largest_overlap_volume_mm3": 40.5
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -0.5,
+      "end_centre_to_sleeve_front_face_mm": 2.5,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "120",
+      "outer_square_width_mm": 6,
+      "lateral_end_center_y_mm": 203.5,
+      "front_aperture_margin_mm": 118.8238,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "FRONT_Y"
+          ],
+          "largest_overlap_volume_mm3": 81
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -1,
+      "end_centre_to_sleeve_front_face_mm": 2,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "120",
+      "outer_square_width_mm": 6,
+      "lateral_end_center_y_mm": 203.75,
+      "front_aperture_margin_mm": 118.8238,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "FRONT_Y"
+          ],
+          "largest_overlap_volume_mm3": 101.25
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -1.25,
+      "end_centre_to_sleeve_front_face_mm": 1.75,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "120",
+      "outer_square_width_mm": 6,
+      "lateral_end_center_y_mm": 205,
+      "front_aperture_margin_mm": 118.8238,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "FRONT_Y",
+            "LEFT_X"
+          ],
+          "largest_overlap_volume_mm3": 162
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -2.5,
+      "end_centre_to_sleeve_front_face_mm": 0.5,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "120",
+      "outer_square_width_mm": 14,
+      "lateral_end_center_y_mm": 198,
+      "front_aperture_margin_mm": 114.5123,
+      "checked_swept_segments": 34,
+      "pass_nominal": true,
+      "first_positive_intersections": [],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 0.5,
+      "end_centre_to_sleeve_front_face_mm": 7.5,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "120",
+      "outer_square_width_mm": 14,
+      "lateral_end_center_y_mm": 202,
+      "front_aperture_margin_mm": 114.5123,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "G17_COLUMN_09",
+            "G17_COLUMN_10",
+            "FRONT_Y",
+            "LEFT_X"
+          ],
+          "largest_overlap_volume_mm3": 490
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -3.5,
+      "end_centre_to_sleeve_front_face_mm": 3.5,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "120",
+      "outer_square_width_mm": 14,
+      "lateral_end_center_y_mm": 203,
+      "front_aperture_margin_mm": 114.5123,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "G17_COLUMN_09",
+            "G17_COLUMN_10",
+            "FRONT_Y",
+            "LEFT_X"
+          ],
+          "largest_overlap_volume_mm3": 490
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -4.5,
+      "end_centre_to_sleeve_front_face_mm": 2.5,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "120",
+      "outer_square_width_mm": 14,
+      "lateral_end_center_y_mm": 203.5,
+      "front_aperture_margin_mm": 114.5123,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "G17_COLUMN_09",
+            "G17_COLUMN_10",
+            "FRONT_Y",
+            "LEFT_X"
+          ],
+          "largest_overlap_volume_mm3": 560
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -5,
+      "end_centre_to_sleeve_front_face_mm": 2,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "120",
+      "outer_square_width_mm": 14,
+      "lateral_end_center_y_mm": 203.75,
+      "front_aperture_margin_mm": 114.5123,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "G17_COLUMN_09",
+            "G17_COLUMN_10",
+            "FRONT_Y",
+            "LEFT_X"
+          ],
+          "largest_overlap_volume_mm3": 616
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -5.25,
+      "end_centre_to_sleeve_front_face_mm": 1.75,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "120",
+      "outer_square_width_mm": 14,
+      "lateral_end_center_y_mm": 205,
+      "front_aperture_margin_mm": 114.5123,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "G17_COLUMN_09",
+            "G17_COLUMN_10",
+            "FRONT_Y",
+            "LEFT_X"
+          ],
+          "largest_overlap_volume_mm3": 896
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -6.5,
+      "end_centre_to_sleeve_front_face_mm": 0.5,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "150",
+      "outer_square_width_mm": 3,
+      "lateral_end_center_y_mm": 198,
+      "front_aperture_margin_mm": 120.3804,
+      "checked_swept_segments": 34,
+      "pass_nominal": true,
+      "first_positive_intersections": [],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 6,
+      "end_centre_to_sleeve_front_face_mm": 7.5,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "150",
+      "outer_square_width_mm": 3,
+      "lateral_end_center_y_mm": 202,
+      "front_aperture_margin_mm": 120.3804,
+      "checked_swept_segments": 34,
+      "pass_nominal": true,
+      "first_positive_intersections": [],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 2,
+      "end_centre_to_sleeve_front_face_mm": 3.5,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "150",
+      "outer_square_width_mm": 3,
+      "lateral_end_center_y_mm": 203,
+      "front_aperture_margin_mm": 120.3804,
+      "checked_swept_segments": 34,
+      "pass_nominal": true,
+      "first_positive_intersections": [],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 1,
+      "end_centre_to_sleeve_front_face_mm": 2.5,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "150",
+      "outer_square_width_mm": 3,
+      "lateral_end_center_y_mm": 203.5,
+      "front_aperture_margin_mm": 120.3804,
+      "checked_swept_segments": 34,
+      "pass_nominal": true,
+      "first_positive_intersections": [],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 0.5,
+      "end_centre_to_sleeve_front_face_mm": 2,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "150",
+      "outer_square_width_mm": 3,
+      "lateral_end_center_y_mm": 203.75,
+      "front_aperture_margin_mm": 120.3804,
+      "checked_swept_segments": 34,
+      "pass_nominal": true,
+      "first_positive_intersections": [],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 0.25,
+      "end_centre_to_sleeve_front_face_mm": 1.75,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "150",
+      "outer_square_width_mm": 3,
+      "lateral_end_center_y_mm": 205,
+      "front_aperture_margin_mm": 120.3804,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "FRONT_Y"
+          ],
+          "largest_overlap_volume_mm3": 36
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -1,
+      "end_centre_to_sleeve_front_face_mm": 0.5,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "150",
+      "outer_square_width_mm": 4,
+      "lateral_end_center_y_mm": 198,
+      "front_aperture_margin_mm": 119.8655,
+      "checked_swept_segments": 34,
+      "pass_nominal": true,
+      "first_positive_intersections": [],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 5.5,
+      "end_centre_to_sleeve_front_face_mm": 7.5,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "150",
+      "outer_square_width_mm": 4,
+      "lateral_end_center_y_mm": 202,
+      "front_aperture_margin_mm": 119.8655,
+      "checked_swept_segments": 34,
+      "pass_nominal": true,
+      "first_positive_intersections": [],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 1.5,
+      "end_centre_to_sleeve_front_face_mm": 3.5,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "150",
+      "outer_square_width_mm": 4,
+      "lateral_end_center_y_mm": 203,
+      "front_aperture_margin_mm": 119.8655,
+      "checked_swept_segments": 34,
+      "pass_nominal": true,
+      "first_positive_intersections": [],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 0.5,
+      "end_centre_to_sleeve_front_face_mm": 2.5,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "150",
+      "outer_square_width_mm": 4,
+      "lateral_end_center_y_mm": 203.5,
+      "front_aperture_margin_mm": 119.8655,
+      "checked_swept_segments": 34,
+      "pass_nominal": true,
+      "first_positive_intersections": [],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 0,
+      "end_centre_to_sleeve_front_face_mm": 2,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "150",
+      "outer_square_width_mm": 4,
+      "lateral_end_center_y_mm": 203.75,
+      "front_aperture_margin_mm": 119.8655,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "FRONT_Y"
+          ],
+          "largest_overlap_volume_mm3": 12.5
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -0.25,
+      "end_centre_to_sleeve_front_face_mm": 1.75,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "150",
+      "outer_square_width_mm": 4,
+      "lateral_end_center_y_mm": 205,
+      "front_aperture_margin_mm": 119.8655,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "FRONT_Y"
+          ],
+          "largest_overlap_volume_mm3": 75
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -1.5,
+      "end_centre_to_sleeve_front_face_mm": 0.5,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "150",
+      "outer_square_width_mm": 6,
+      "lateral_end_center_y_mm": 198,
+      "front_aperture_margin_mm": 118.8238,
+      "checked_swept_segments": 34,
+      "pass_nominal": true,
+      "first_positive_intersections": [],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 4.5,
+      "end_centre_to_sleeve_front_face_mm": 7.5,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "150",
+      "outer_square_width_mm": 6,
+      "lateral_end_center_y_mm": 202,
+      "front_aperture_margin_mm": 118.8238,
+      "checked_swept_segments": 34,
+      "pass_nominal": true,
+      "first_positive_intersections": [],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 0.5,
+      "end_centre_to_sleeve_front_face_mm": 3.5,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "150",
+      "outer_square_width_mm": 6,
+      "lateral_end_center_y_mm": 203,
+      "front_aperture_margin_mm": 118.8238,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "FRONT_Y"
+          ],
+          "largest_overlap_volume_mm3": 40.5
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -0.5,
+      "end_centre_to_sleeve_front_face_mm": 2.5,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "150",
+      "outer_square_width_mm": 6,
+      "lateral_end_center_y_mm": 203.5,
+      "front_aperture_margin_mm": 118.8238,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "FRONT_Y"
+          ],
+          "largest_overlap_volume_mm3": 81
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -1,
+      "end_centre_to_sleeve_front_face_mm": 2,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "150",
+      "outer_square_width_mm": 6,
+      "lateral_end_center_y_mm": 203.75,
+      "front_aperture_margin_mm": 118.8238,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "FRONT_Y"
+          ],
+          "largest_overlap_volume_mm3": 101.25
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -1.25,
+      "end_centre_to_sleeve_front_face_mm": 1.75,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "150",
+      "outer_square_width_mm": 6,
+      "lateral_end_center_y_mm": 205,
+      "front_aperture_margin_mm": 118.8238,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "FRONT_Y",
+            "LEFT_X"
+          ],
+          "largest_overlap_volume_mm3": 162
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -2.5,
+      "end_centre_to_sleeve_front_face_mm": 0.5,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "150",
+      "outer_square_width_mm": 14,
+      "lateral_end_center_y_mm": 198,
+      "front_aperture_margin_mm": 114.5123,
+      "checked_swept_segments": 34,
+      "pass_nominal": true,
+      "first_positive_intersections": [],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": 0.5,
+      "end_centre_to_sleeve_front_face_mm": 7.5,
+      "final_segment_AABB_intersects_sleeve_front": false
+    },
+    {
+      "state": "150",
+      "outer_square_width_mm": 14,
+      "lateral_end_center_y_mm": 202,
+      "front_aperture_margin_mm": 114.5123,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "G17_COLUMN_09",
+            "G17_COLUMN_10",
+            "FRONT_Y",
+            "LEFT_X"
+          ],
+          "largest_overlap_volume_mm3": 490
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -3.5,
+      "end_centre_to_sleeve_front_face_mm": 3.5,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "150",
+      "outer_square_width_mm": 14,
+      "lateral_end_center_y_mm": 203,
+      "front_aperture_margin_mm": 114.5123,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "G17_COLUMN_09",
+            "G17_COLUMN_10",
+            "FRONT_Y",
+            "LEFT_X"
+          ],
+          "largest_overlap_volume_mm3": 490
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -4.5,
+      "end_centre_to_sleeve_front_face_mm": 2.5,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "150",
+      "outer_square_width_mm": 14,
+      "lateral_end_center_y_mm": 203.5,
+      "front_aperture_margin_mm": 114.5123,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "G17_COLUMN_09",
+            "G17_COLUMN_10",
+            "FRONT_Y",
+            "LEFT_X"
+          ],
+          "largest_overlap_volume_mm3": 560
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -5,
+      "end_centre_to_sleeve_front_face_mm": 2,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "150",
+      "outer_square_width_mm": 14,
+      "lateral_end_center_y_mm": 203.75,
+      "front_aperture_margin_mm": 114.5123,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "G17_COLUMN_09",
+            "G17_COLUMN_10",
+            "FRONT_Y",
+            "LEFT_X"
+          ],
+          "largest_overlap_volume_mm3": 616
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -5.25,
+      "end_centre_to_sleeve_front_face_mm": 1.75,
+      "final_segment_AABB_intersects_sleeve_front": true
+    },
+    {
+      "state": "150",
+      "outer_square_width_mm": 14,
+      "lateral_end_center_y_mm": 205,
+      "front_aperture_margin_mm": 114.5123,
+      "checked_swept_segments": 34,
+      "pass_nominal": false,
+      "first_positive_intersections": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "G17_COLUMN_09",
+            "G17_COLUMN_10",
+            "FRONT_Y",
+            "LEFT_X"
+          ],
+          "largest_overlap_volume_mm3": 896
+        }
+      ],
+      "near_sleeve_front_face_separation_of_square_envelope_mm": -6.5,
+      "end_centre_to_sleeve_front_face_mm": 0.5,
+      "final_segment_AABB_intersects_sleeve_front": true
+    }
+  ],
+  "cable_present_during_sleeve_Z_stroke_wall_sweeps": [
+    {
+      "state": "120",
+      "width_mm": 4,
+      "y_mm": 205,
+      "collides_during_sleeve_preload_to_bridge_stroke": true,
+      "first_hits": [
+        {
+          "segment": 33,
+          "colliding_sleeve_walls": [
+            "FRONT_Y"
+          ]
+        }
+      ]
+    },
+    {
+      "state": "120",
+      "width_mm": 4,
+      "y_mm": 202,
+      "collides_during_sleeve_preload_to_bridge_stroke": false,
+      "first_hits": []
+    },
+    {
+      "state": "150",
+      "width_mm": 4,
+      "y_mm": 202,
+      "collides_during_sleeve_preload_to_bridge_stroke": false,
+      "first_hits": []
+    }
+  ],
+  "operational_interpretation": {
+    "original_4mm_cable_centerY205_plus_closed_sleeve_is_collision_free": false,
+    "full100_4mm_Y202_with_all_20_boxes_can_pass": false,
+    "core120_4mm_Y202_with_closed_sleeve_can_pass_nominally": true,
+    "single150_4mm_Y202_with_closed_sleeve_can_pass_nominally": true,
+    "core120_14mm_Y198_bent_envelope_can_pass_nominally": true,
+    "does_14mm_bent_envelope_imply_a_rigid_driver_can_turn_corner": false,
+    "actual_cable_termination_at_sleeve_with_4mm_width_and_Y202_is_attached": false,
+    "nominal_Y202_4mm_envelope_to_sleeve_face_min_edge_gap_mm": 1.5,
+    "Y202_4mm_center_to_sleeve_face_distance_mm": 3.5,
+    "will_a_positive_sleeve_lock_or_actuator_meet_this_geometry": "NOT TESTED",
+    "old_K17_guide10_integral_lip_slide_conflicts_persist": true,
+    "sleeve_and_K25_front_faceplate_cannot_coexist_in_unchanged_geometries": true,
+    "sleeve_without_axial_lock_is_rejected": true,
+    "positive_temporary_module_support_required": true,
+    "needs_measured_tol_and_actual_cross_sections": true,
+    "ready_for_CNC": false
+  },
+  "limitations": [
+    "Square AABB sweeps are intentionally conservative envelopes of a hypothetical flexible line, not a real routed cable or a rigid 14mm screwdriver.",
+    "No remote connector at the termination, no stroke, attachment, positive locking force, ferrule, sheath, bend limit, friction or return spring exists.",
+    "Sleeve itself still cannot positively retain two MDF rails axially; original K17 integrated lower/upper lips block sleeve sliding until replaced.",
+    "The 120L/150L route works only with absent front100-only boxes16–19; attaching this cable permanently across 100L state is NOT demonstrated.",
+    "All three installed nominal configurations can geometrically include sleeve walls at final pose, but full100 rail10 service entry is blocked and current geometry no physical fasteners.",
+    "Two full MDF front sheets are modeled only as the factory speaker hole entry; cables and connector are not included in calculated air displacement.",
+    "No impact, strength, fatigue, humidity, material supplier, CNC tolerance, actual engine, assembly access or sealed housing tested."
+  ],
+  "next_experiment": "Choose a real positive axial rail stop/captive lock and a real flex/actuator termination at sleeve face, preserving 120L/150L tool access. Compute multi-part swept 3D and remote force/stroke, then safe temporary module support and material coupon testing. Avoid claiming a bare ring+line is a structural mechanism."
+}

@@ -1,0 +1,54 @@
+name: K28 integrated sleeve plus cable swept-envelope collision audit
+on:
+  push:
+    branches: [main]
+    paths:
+      - "skrypty/k28_*"
+      - "wyniki/k28_*"
+      - "wyniki/k27_tuleja_przesuwna_i_trasy.json"
+      - "wyniki/k27_zdalne_sterowanie_przekroje.json"
+      - ".github/workflows/k28-sleeve-cable-integration.yml"
+  pull_request:
+    paths:
+      - "skrypty/k28_*"
+      - "wyniki/k28_*"
+      - "wyniki/k27_tuleja_przesuwna_i_trasy.json"
+      - "wyniki/k27_zdalne_sterowanie_przekroje.json"
+      - ".github/workflows/k28-sleeve-cable-integration.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  integration-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Regenerate integrated K27 cross-check and require deterministic output
+        run: |
+          set -euo pipefail
+          node --check skrypty/k28_integracja_tulei_i_sterowania.js
+          node skrypty/k28_integracja_tulei_i_sterowania.js
+          git diff --exit-code -- wyniki/k28_integracja_tulei_linki.json
+      - name: Guard interaction results and no false mechanical release
+        run: |
+          node - <<'NODE'
+          const fs=require("node:fs"),assert=require("node:assert/strict");
+          const o=JSON.parse(fs.readFileSync("wyniki/k28_integracja_tulei_linki.json","utf8"));
+          const row=(state,width,y)=>o.complete_polyline_swept_square_tests.find(t=>t.state===state&&t.outer_square_width_mm===width&&t.lateral_end_center_y_mm===y);
+          assert.match(o.status,/CNC HOLD/);
+          assert.equal(row("120",4,205).pass_nominal,false);
+          assert.equal(row("120",4,202).pass_nominal,true);
+          assert.equal(row("150",4,202).pass_nominal,true);
+          assert.equal(row("100",4,202).pass_nominal,false);
+          assert.equal(row("120",3,203.75).pass_nominal,true);
+          assert.equal(row("120",4,203.75).pass_nominal,false);
+          assert.equal(row("120",14,198).pass_nominal,true);
+          assert.equal(o.comparisons.normal_facing_plate_intersection_with_closed_sleeve_mm3.find(v=>v.wall==="FRONT_Y").intersection_mm3,1200);
+          assert.equal(o.operational_interpretation.actual_cable_termination_at_sleeve_with_4mm_width_and_Y202_is_attached,false);
+          assert.equal(o.operational_interpretation.ready_for_CNC,false);
+          console.log("K28 nominal compatibility only; no load-bearing actuator or CNC release");
+          NODE
