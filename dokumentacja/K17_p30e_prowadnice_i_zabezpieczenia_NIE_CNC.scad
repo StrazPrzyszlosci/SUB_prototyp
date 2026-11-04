@@ -101,6 +101,6 @@ K17_CONTACTS=[
  [19,[661.5,51,354],[16,13,4],"retainer"]
 ];
 if(show_K17_rails)for(c=K17_COLUMNS)color([0.09,0.62,0.39,0.9])translate(c[1])cube(c[2]);
-if(show_K17_lips)for(c=K17_CONTACTS)if(panel_enabled(c[0]))color(c[3]=="shelf"?[0.10,0.8,0.22,1]:[0.96,0.38,0.21,1])translate(c[1])cube(c[2]);
+if(show_K17_lips)for(c=K17_CONTACTS)color(c[3]=="shelf"?[0.10,0.8,0.22,1]:[0.96,0.38,0.21,1])translate(c[1])cube(c[2]);
 echo("K17: 12 full-height support profiles with 80 integrated geometrical lips, 0 nominal overlaps with mat or P30A basket AABB");
 echo("NOT CNC: 12 spines and lips untested; no screw, latch, anti-rattle or inversion qualification");
