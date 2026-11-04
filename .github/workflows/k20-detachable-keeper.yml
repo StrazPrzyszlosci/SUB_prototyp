@@ -1,0 +1,51 @@
+name: K20 detachable keeper research regression (NOT CNC)
+on:
+  push:
+    branches: [main]
+    paths:
+      - "skrypty/k20_*"
+      - "wyniki/k20_*"
+      - "dokumentacja/K20_*"
+      - ".github/workflows/k20-detachable-keeper.yml"
+  pull_request:
+    paths:
+      - "skrypty/k20_*"
+      - "wyniki/k20_*"
+      - "dokumentacja/K20_*"
+      - ".github/workflows/k20-detachable-keeper.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Recalculate K20 and require deterministic output
+        run: |
+          set -euo pipefail
+          node --check skrypty/k20_rozbieralne_rygle_i_bilans.js
+          node skrypty/k20_rozbieralne_rygle_i_bilans.js
+          git diff --exit-code -- wyniki/k20_rozbieralne_rygle_audyt.json dokumentacja/K20_p30e_rozbieralne_zabezpieczenia_NIE_CNC.scad
+      - name: Guard fundamental design limitations
+        run: |
+          node - <<'NODE'
+          const fs=require('fs'),assert=require('assert/strict');
+          const r=JSON.parse(fs.readFileSync('wyniki/k20_rozbieralne_rygle_audyt.json','utf8'));
+          const c=r.reference_counts;
+          assert.match(r.status,/CNC HOLD/);
+          assert.equal(c.fixed_spines,12);
+          assert.equal(c.fixed_bottom_lips,40);
+          assert.equal(c.detachable_upper_envelopes,40);
+          assert.equal(c.positive_static_AABB_collisions,0);
+          assert.equal(c.mat_envelope_positive_collisions,0);
+          assert.equal(c.edge_breaking_pockets_top_and_bottom_total,8);
+          assert.equal(r.detachable_keeper_force_path_proved,false);
+          assert.equal(r.assembly_path_3D_proved,false);
+          assert.equal(r.verified_keeper_fastener_count,0);
+          assert.equal(r.conditional_volume_states['150'].conditional_net_l_before_actual_hardware,149.179454);
+          console.log('PASS K20 reference-only static envelope and volume checks. CNC HOLD.');
+          NODE

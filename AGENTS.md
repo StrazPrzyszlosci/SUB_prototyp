@@ -1862,3 +1862,12 @@ Odtworzono K04–K06. W czterech próbach K07 dla obu luzów kolejność 4–15,
 - Independent Python DXF/BOM QA verifies 162 reference closed profiles, 24 hypothetical pockets, 20×4 contacts, and mandatory CNC HOLD; workflow and human-readable K19 report added.
 - Hypothetical socket fit with stock tolerance 8±0.3mm and pocket16.5±0.2mm yields -0.3mm..+1.3mm clearance range. Real material and machining tolerance not known.
 - NEXT: develop removable upper positive keeper, 3D assembly/disassembly trajectory, test actual joins, material coupons and full DSP+acoustic volume. CNC HOLD.
+
+## 2026-11-04 — K20 removable keeper research, still CNC HOLD
+
+- Based on K15 (138 solids), K17 (12 rails, 40 bottom + 40 upper tongues), K19 (corrected support arms), designed a geometry-only alternative: keep 12 rails and 40 bottom lips fixed, replace 40 integral top lips with 40 *detachable envelopes* shown only with installed insert boxes.
+- Corrected the attachment issue: each detachable envelope starts at the external rail face and has nominal 2 mm unloaded clearance to the box; there is only an unqualified 16×4 mm butt-contact face, NO screw or positive lock. Hence these are not finished load-bearing parts and the model is not an installability proof.
+- Strict-positive endpoint AABB checks: 0 intersections with reference K15 MDF, 12 rails, 40 bottom lips, other upper envelope solids and the rear damping-mat envelope. No true 3D swept assembly path performed. K18 integrated-upper DXF is NOT this alternative.
+- Permanent K20 rail/lower displacement 0.977408 L. Modeled net 100/120/150 L states with present detachable envelopes = 99.098366 / 118.916286 / 149.179454 L; NO real fastener, preload or measured basket accounted.
+- Audited proposed 24 K18 rail pockets: 4 in top and 4 in bottom reach the FRONT EDGE (open grooves), not enclosed blind pockets. Joint never qualified.
+- Artifacts: skrypty/k20_rozbieralne_rygle_i_bilans.js, wyniki/k20_rozbieralne_rygle_audyt.json, dokumentacja/K20_p30e_rozbieralne_zabezpieczenia_NIE_CNC.scad, raporty/K20_serwisowe_rygle_i_analiza_montazu.md. NEXT: real fastening joint and complete 3D sequential assembly sweep, then update manufacturable parts. No CNC release.

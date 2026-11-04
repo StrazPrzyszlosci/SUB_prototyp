@@ -7,3 +7,6 @@ All dimensions in **mm**. These three AutoCAD-2015 DXF files are **shape-referen
 - [MDF8 hypothetical laminated rail profiles](K18_prowadnice_laminat_MDF8_NIE_CNC.dxf): 24 faces of 12 two-ply rails, with 3mm extra tongue at each end. Upper solid retainer lips are **NOT ASSEMBLY QUALIFIED** and should be redesigned.
 
 Profiles are placed apart **for viewing only**, not on stock sheets; cutter diameter, radii, tool compensation, machine, part tabs, glue, material tolerances, sealing and fit are unselected. Mounting screws, locking clips, MDF inserts, terminals, grille, cable fixtures and gasket details do not exist in this package. Full [K18 report](../../raporty/K18_projekt_CNC_mocowania_wkladow.md) and [numerical audit](../../wyniki/k18_mocowania_i_CNC_podsumowanie.json). Regenerate from repo root: `node skrypty/k18_cnc_kontury.js`. **CNC HOLD.**
+
+
+**K20 UPDATE / FABRICATION VETO:** Existing K18 guide profile DXF contains 40 *permanent integral* upper tongues; these are NOT the detachable keepers in the K20 geometry concept. Four K18 pocket sketches per TOP/BOTTOM panel are open at the forward edge (8 total), not enclosed blind sockets. Do not send K18 to manufacturing. See [K20 research and blockers](../../raporty/K20_serwisowe_rygle_i_analiza_montazu.md).

@@ -1,0 +1,820 @@
+{
+  "study": "K20",
+  "date": "2026-11-04",
+  "status": "CNC HOLD — geometry-only proposed removable keeper, no real attachment or swept path",
+  "upstream": "K15 shell, K17 spines/tabs, K19 lever corrections",
+  "reference_counts": {
+    "fixed_spines": 12,
+    "fixed_bottom_lips": 40,
+    "detachable_upper_envelopes": 40,
+    "modules": 20,
+    "positive_static_AABB_collisions": 0,
+    "mat_envelope_positive_collisions": 0,
+    "edge_breaking_pockets_top_and_bottom_total": 8
+  },
+  "nominal_unloaded_keeper_to_box_gap_mm": 2,
+  "verified_keeper_fastener_count": 0,
+  "detachable_keeper_force_path_proved": false,
+  "assembly_path_3D_proved": false,
+  "K18_integral_upper_rail_DXF_superseded_for_this_concept": true,
+  "baseline_K17_all_fixed_support_l": 1.020928,
+  "baseline_K17_upper_integral_l": 0.04352,
+  "permanent_spine_and_lower_lip_displacement_l": 0.977408,
+  "conditional_volume_states": {
+    "100": {
+      "box_count": 20,
+      "upper_keeper_envelopes": 40,
+      "fixed_fixture_displacement_l": 0.977408,
+      "removable_envelope_displacement_l": 0.04352,
+      "total_fixture_displacement_l": 1.020928,
+      "conditional_net_l_before_actual_hardware": 99.098366
+    },
+    "120": {
+      "box_count": 12,
+      "upper_keeper_envelopes": 24,
+      "fixed_fixture_displacement_l": 0.977408,
+      "removable_envelope_displacement_l": 0.0256,
+      "total_fixture_displacement_l": 1.003008,
+      "conditional_net_l_before_actual_hardware": 118.916286
+    },
+    "150": {
+      "box_count": 1,
+      "upper_keeper_envelopes": 2,
+      "fixed_fixture_displacement_l": 0.977408,
+      "removable_envelope_displacement_l": 0.002432,
+      "total_fixture_displacement_l": 0.97984,
+      "conditional_net_l_before_actual_hardware": 149.179454
+    }
+  },
+  "isolated_centered_aperture_screen": [
+    {
+      "module_width_mm": 180,
+      "reference_circle_radius_mm": 177.9,
+      "hypothetical_clearance_per_side_mm": 6,
+      "centered_individual_entry_margin_mm": 66.760448
+    },
+    {
+      "module_width_mm": 210,
+      "reference_circle_radius_mm": 177.9,
+      "hypothetical_clearance_per_side_mm": 6,
+      "centered_individual_entry_margin_mm": 53.573816
+    }
+  ],
+  "individual_keeper_envelopes": [
+    {
+      "id": "K20_UPPER_G17_0_retainer_1",
+      "module_index": 0,
+      "parent_spine": "G17_COLUMN_01",
+      "o": [
+        51,
+        236,
+        164
+      ],
+      "s": [
+        16,
+        23,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_1_retainer_1",
+      "module_index": 1,
+      "parent_spine": "G17_COLUMN_01",
+      "o": [
+        51,
+        236,
+        440
+      ],
+      "s": [
+        16,
+        23,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_0_retainer_2",
+      "module_index": 0,
+      "parent_spine": "G17_COLUMN_02",
+      "o": [
+        175,
+        236,
+        164
+      ],
+      "s": [
+        16,
+        23,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_1_retainer_2",
+      "module_index": 1,
+      "parent_spine": "G17_COLUMN_02",
+      "o": [
+        175,
+        236,
+        440
+      ],
+      "s": [
+        16,
+        23,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_2_retainer_1",
+      "module_index": 2,
+      "parent_spine": "G17_COLUMN_03",
+      "o": [
+        275,
+        236,
+        164
+      ],
+      "s": [
+        16,
+        23,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_3_retainer_1",
+      "module_index": 3,
+      "parent_spine": "G17_COLUMN_03",
+      "o": [
+        275,
+        236,
+        440
+      ],
+      "s": [
+        16,
+        23,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_2_retainer_2",
+      "module_index": 2,
+      "parent_spine": "G17_COLUMN_04",
+      "o": [
+        399,
+        236,
+        164
+      ],
+      "s": [
+        16,
+        23,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_3_retainer_2",
+      "module_index": 3,
+      "parent_spine": "G17_COLUMN_04",
+      "o": [
+        399,
+        236,
+        440
+      ],
+      "s": [
+        16,
+        23,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_4_retainer_1",
+      "module_index": 4,
+      "parent_spine": "G17_COLUMN_05",
+      "o": [
+        790.5,
+        220,
+        136
+      ],
+      "s": [
+        16,
+        19,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_5_retainer_1",
+      "module_index": 5,
+      "parent_spine": "G17_COLUMN_05",
+      "o": [
+        790.5,
+        220,
+        466
+      ],
+      "s": [
+        16,
+        19,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_6_retainer_1",
+      "module_index": 6,
+      "parent_spine": "G17_COLUMN_05",
+      "o": [
+        790.5,
+        220,
+        246
+      ],
+      "s": [
+        16,
+        19,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_7_retainer_1",
+      "module_index": 7,
+      "parent_spine": "G17_COLUMN_05",
+      "o": [
+        790.5,
+        220,
+        356
+      ],
+      "s": [
+        16,
+        19,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_4_retainer_2",
+      "module_index": 4,
+      "parent_spine": "G17_COLUMN_06",
+      "o": [
+        936.5,
+        220,
+        136
+      ],
+      "s": [
+        16,
+        19,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_5_retainer_2",
+      "module_index": 5,
+      "parent_spine": "G17_COLUMN_06",
+      "o": [
+        936.5,
+        220,
+        466
+      ],
+      "s": [
+        16,
+        19,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_6_retainer_2",
+      "module_index": 6,
+      "parent_spine": "G17_COLUMN_06",
+      "o": [
+        936.5,
+        220,
+        246
+      ],
+      "s": [
+        16,
+        19,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_7_retainer_2",
+      "module_index": 7,
+      "parent_spine": "G17_COLUMN_06",
+      "o": [
+        936.5,
+        220,
+        356
+      ],
+      "s": [
+        16,
+        19,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_8_retainer_1",
+      "module_index": 8,
+      "parent_spine": "G17_COLUMN_07",
+      "o": [
+        790.5,
+        52,
+        136
+      ],
+      "s": [
+        16,
+        12,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_9_retainer_1",
+      "module_index": 9,
+      "parent_spine": "G17_COLUMN_07",
+      "o": [
+        790.5,
+        52,
+        466
+      ],
+      "s": [
+        16,
+        12,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_10_retainer_1",
+      "module_index": 10,
+      "parent_spine": "G17_COLUMN_07",
+      "o": [
+        790.5,
+        52,
+        246
+      ],
+      "s": [
+        16,
+        12,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_11_retainer_1",
+      "module_index": 11,
+      "parent_spine": "G17_COLUMN_07",
+      "o": [
+        790.5,
+        52,
+        356
+      ],
+      "s": [
+        16,
+        12,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_8_retainer_2",
+      "module_index": 8,
+      "parent_spine": "G17_COLUMN_08",
+      "o": [
+        936.5,
+        52,
+        136
+      ],
+      "s": [
+        16,
+        12,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_9_retainer_2",
+      "module_index": 9,
+      "parent_spine": "G17_COLUMN_08",
+      "o": [
+        936.5,
+        52,
+        466
+      ],
+      "s": [
+        16,
+        12,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_10_retainer_2",
+      "module_index": 10,
+      "parent_spine": "G17_COLUMN_08",
+      "o": [
+        936.5,
+        52,
+        246
+      ],
+      "s": [
+        16,
+        12,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_11_retainer_2",
+      "module_index": 11,
+      "parent_spine": "G17_COLUMN_08",
+      "o": [
+        936.5,
+        52,
+        356
+      ],
+      "s": [
+        16,
+        12,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_12_retainer_1",
+      "module_index": 12,
+      "parent_spine": "G17_COLUMN_09",
+      "o": [
+        515.5,
+        220,
+        136
+      ],
+      "s": [
+        16,
+        19,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_13_retainer_1",
+      "module_index": 13,
+      "parent_spine": "G17_COLUMN_09",
+      "o": [
+        515.5,
+        220,
+        466
+      ],
+      "s": [
+        16,
+        19,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_14_retainer_1",
+      "module_index": 14,
+      "parent_spine": "G17_COLUMN_09",
+      "o": [
+        515.5,
+        220,
+        246
+      ],
+      "s": [
+        16,
+        19,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_15_retainer_1",
+      "module_index": 15,
+      "parent_spine": "G17_COLUMN_09",
+      "o": [
+        515.5,
+        220,
+        356
+      ],
+      "s": [
+        16,
+        19,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_12_retainer_2",
+      "module_index": 12,
+      "parent_spine": "G17_COLUMN_10",
+      "o": [
+        661.5,
+        220,
+        136
+      ],
+      "s": [
+        16,
+        19,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_13_retainer_2",
+      "module_index": 13,
+      "parent_spine": "G17_COLUMN_10",
+      "o": [
+        661.5,
+        220,
+        466
+      ],
+      "s": [
+        16,
+        19,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_14_retainer_2",
+      "module_index": 14,
+      "parent_spine": "G17_COLUMN_10",
+      "o": [
+        661.5,
+        220,
+        246
+      ],
+      "s": [
+        16,
+        19,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_15_retainer_2",
+      "module_index": 15,
+      "parent_spine": "G17_COLUMN_10",
+      "o": [
+        661.5,
+        220,
+        356
+      ],
+      "s": [
+        16,
+        19,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_16_retainer_1",
+      "module_index": 16,
+      "parent_spine": "G17_COLUMN_11",
+      "o": [
+        515.5,
+        52,
+        136
+      ],
+      "s": [
+        16,
+        12,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_17_retainer_1",
+      "module_index": 17,
+      "parent_spine": "G17_COLUMN_11",
+      "o": [
+        515.5,
+        52,
+        466
+      ],
+      "s": [
+        16,
+        12,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_18_retainer_1",
+      "module_index": 18,
+      "parent_spine": "G17_COLUMN_11",
+      "o": [
+        515.5,
+        52,
+        246
+      ],
+      "s": [
+        16,
+        12,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_19_retainer_1",
+      "module_index": 19,
+      "parent_spine": "G17_COLUMN_11",
+      "o": [
+        515.5,
+        52,
+        356
+      ],
+      "s": [
+        16,
+        12,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_16_retainer_2",
+      "module_index": 16,
+      "parent_spine": "G17_COLUMN_12",
+      "o": [
+        661.5,
+        52,
+        136
+      ],
+      "s": [
+        16,
+        12,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_17_retainer_2",
+      "module_index": 17,
+      "parent_spine": "G17_COLUMN_12",
+      "o": [
+        661.5,
+        52,
+        466
+      ],
+      "s": [
+        16,
+        12,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_18_retainer_2",
+      "module_index": 18,
+      "parent_spine": "G17_COLUMN_12",
+      "o": [
+        661.5,
+        52,
+        246
+      ],
+      "s": [
+        16,
+        12,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    },
+    {
+      "id": "K20_UPPER_G17_19_retainer_2",
+      "module_index": 19,
+      "parent_spine": "G17_COLUMN_12",
+      "o": [
+        661.5,
+        52,
+        356
+      ],
+      "s": [
+        16,
+        12,
+        4
+      ],
+      "nominal_box_top_gap_mm": 2,
+      "mounting_method": "UNRESOLVED BUTT JOINT ONLY — NOT A FASTENER",
+      "cnc_approved": false
+    }
+  ],
+  "detected_front_edge_pocket_rows": [
+    {
+      "id": "G17_COLUMN_07",
+      "row": "front",
+      "cut_y0": 44,
+      "opens_at_y44": true
+    },
+    {
+      "id": "G17_COLUMN_08",
+      "row": "front",
+      "cut_y0": 44,
+      "opens_at_y44": true
+    },
+    {
+      "id": "G17_COLUMN_11",
+      "row": "front",
+      "cut_y0": 44,
+      "opens_at_y44": true
+    },
+    {
+      "id": "G17_COLUMN_12",
+      "row": "front",
+      "cut_y0": 44,
+      "opens_at_y44": true
+    }
+  ],
+  "unresolved": [
+    "Butt-end of keeper contacts spine with nominal 16x4mm area; unfastened part CANNOT retain an inverted box.",
+    "2 mm gap requires compressible pad, captive screw and tested preload; geometric clearance alone has no anti-rattle force.",
+    "K18 integral upper lips are not detachable and their DXFs cannot be machined for this architecture.",
+    "8 reference top/bottom pockets open at the front MDF edge, and are not enclosed blind grooves.",
+    "AABB static endpoint checks do not demonstrate through-cutout insertion, hand access or driver basket clearance.",
+    "No real corner-tool-radius, structural strength, fatigue, adhesive or press-fit validation.",
+    "Nominal volume accounting omits actual keeper screws, adhesive, seals, gasket and tested displacement."
+  ]
+}

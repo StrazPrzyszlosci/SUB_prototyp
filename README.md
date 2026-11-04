@@ -123,6 +123,8 @@ Dla badanych przetworników sprawdzamy kolejno typ obudowy, potrzebny litraż, p
 
 **K19 — korekta mechaniki przed CNC:** niezależny audyt obliczył rzeczywiste maksymalne wysięgi języków prowadnic w modelu K17: **12 / 19 / 23 mm**. Wcześniejszy test K18 zakładał wszędzie 12 mm, przez co mógł zaniżać obciążenia zginające tylnych podpór. Odtworzono niezależnie 162 kontury DXF i 24 gniazda oraz udokumentowano niezakończone testy montażu i tolerancji. [K19 — raport i wyniki](raporty/K19_audyt_CNC_i_korekta_wysiegu_wspornikow.md). **CNC HOLD.**
 
+**K20 — rozbieralne zabezpieczenia wkładów:** wariant 12 stałych prowadnic, 40 dolnych podpór i **40 zdejmowanych górnych zabezpieczeń**. Weryfikacja statycznej geometrii nie ujawniła kolizji z K15/K17, ale **nie istnieje jeszcze realne zakotwienie ani udowodniona droga montażu 20 wkładów**. Osiem proponowanych kieszeni K18 otwiera się na przednią krawędź płyty. [Raport K20](raporty/K20_serwisowe_rygle_i_analiza_montazu.md) · [Model OpenSCAD K20](dokumentacja/K20_p30e_rozbieralne_zabezpieczenia_NIE_CNC.scad). **K18 DXF pozostają bez dopuszczenia CNC.**
+
 ### 3. Badania materiałów, ścian, wręg i połączeń
 
 Najpierw sprawdzamy **sztywność i masę ścian, wręg oraz frontu**, a także materiał i trwałość klejów. Nie zakładamy, że dodatkowy MDF lub metalowy pierścień zawsze są lepsze niż prawidłowo zaprojektowane wzmocnienie. W K10 utworzono **paszporty materiałowe 35 części**. K11 porównuje przy niezmienionym obrysie: ściany MDF25 zmniejszają modelową *geometryczną objętość wnętrza brutto* o **4,381 l** względem MDF22; sklejka brzozowa21 ją zwiększa o **1,478 l**. **Nie są to jeszcze zmiany pojemności netto ani wyniki całego MES**.
