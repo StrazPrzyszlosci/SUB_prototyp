@@ -1,0 +1,1398 @@
+{
+  "study": "K23",
+  "date": "2026-11-04",
+  "status": "CNC HOLD — swept AABB axial movement only; no physically approved support or regulation",
+  "inputs": "K15 138 nominal solids, K17 12 spines and 40 lower tongues, K22 temporary G17_COLUMN_10 omission, K20 no upper keepers while inserting",
+  "model": {
+    "cabinet_obstacles_without_two_front_plates": 16,
+    "remaining_full_height_rails": 11,
+    "fixed_lower_lips_for_first_variant": 36,
+    "mat_envelope": 1,
+    "opening_radius_mm": 177.9,
+    "entry_center_xz_mm": [
+      231,
+      250
+    ],
+    "method": "Exact union swept AABB for each continuous purely axis-aligned translated rigid cuboid along all waypoints. Zero-clearance face touching permitted.",
+    "omitted_geometry": "Two front baffles replaced by nominal centered circle at entry; no actual Dayton driver basket, pads, wires, hardware, glue, human reach, rotations or fit tolerance.",
+    "absence_note": "36 lower lips omitted in staged variant ONLY as a hypothesis; physical post-insertion attachment is NOT designed."
+  },
+  "sequences": {
+    "construct": [
+      0,
+      2,
+      1,
+      3,
+      4,
+      12,
+      6,
+      14,
+      7,
+      15,
+      5,
+      13,
+      8,
+      16,
+      10,
+      18,
+      11,
+      19,
+      9,
+      17
+    ],
+    "nested_target_150_120_100": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      0,
+      1,
+      2,
+      3,
+      16,
+      17,
+      18,
+      19
+    ]
+  },
+  "results": {
+    "with_integral_lower_lips_isolated": 12,
+    "with_lower_lips_omitted_isolated": 20,
+    "with_integral_lower_lips_constructed_before_failure": 4,
+    "with_lower_lips_omitted_full_construction": 20,
+    "reversed_exact_full_construction": 20,
+    "nested_150_to120_to100_before_failure": 12,
+    "small_rear_one_by_one_extraction_from_full_box_state_passes": 0,
+    "front_lateral_necessary_symmetric_clearance_mm": 2,
+    "lateral_collision_test_nominal_plus_expansion_mm": [
+      {
+        "mm": 0,
+        "passes": true,
+        "hits": []
+      },
+      {
+        "mm": 1,
+        "passes": true,
+        "hits": []
+      },
+      {
+        "mm": 2,
+        "passes": true,
+        "hits": []
+      },
+      {
+        "mm": 3,
+        "passes": false,
+        "hits": [
+          "B1_FRONT_WEB",
+          "B2_FRONT_WEB",
+          "G17_COLUMN_05",
+          "G17_COLUMN_06",
+          "G17_COLUMN_09"
+        ]
+      }
+    ]
+  },
+  "isolated_with_lips_blockers": [
+    {
+      "id": 4,
+      "first_collision": {
+        "segment_index": 5,
+        "from": [
+          650,
+          287,
+          100
+        ],
+        "to": [
+          871.5,
+          287,
+          100
+        ],
+        "obstacles": [
+          "G17_6_shelf_1",
+          "G17_6_shelf_2"
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "first_collision": {
+        "segment_index": 5,
+        "from": [
+          650,
+          287,
+          405
+        ],
+        "to": [
+          871.5,
+          287,
+          405
+        ],
+        "obstacles": [
+          "G17_5_shelf_1",
+          "G17_5_shelf_2"
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "first_collision": {
+        "segment_index": 3,
+        "from": [
+          231,
+          131,
+          100
+        ],
+        "to": [
+          871.5,
+          131,
+          100
+        ],
+        "obstacles": [
+          "G17_10_shelf_1",
+          "G17_10_shelf_2",
+          "G17_18_shelf_1",
+          "G17_18_shelf_2"
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "first_collision": {
+        "segment_index": 3,
+        "from": [
+          231,
+          131,
+          405
+        ],
+        "to": [
+          871.5,
+          131,
+          405
+        ],
+        "obstacles": [
+          "G17_9_shelf_1",
+          "G17_9_shelf_2",
+          "G17_17_shelf_1",
+          "G17_17_shelf_2"
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "first_collision": {
+        "segment_index": 5,
+        "from": [
+          650,
+          287,
+          100
+        ],
+        "to": [
+          596.5,
+          287,
+          100
+        ],
+        "obstacles": [
+          "G17_14_shelf_1"
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "first_collision": {
+        "segment_index": 5,
+        "from": [
+          650,
+          287,
+          405
+        ],
+        "to": [
+          596.5,
+          287,
+          405
+        ],
+        "obstacles": [
+          "G17_13_shelf_1"
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "first_collision": {
+        "segment_index": 3,
+        "from": [
+          231,
+          131,
+          100
+        ],
+        "to": [
+          596.5,
+          131,
+          100
+        ],
+        "obstacles": [
+          "G17_18_shelf_1",
+          "G17_18_shelf_2"
+        ]
+      }
+    },
+    {
+      "id": 17,
+      "first_collision": {
+        "segment_index": 3,
+        "from": [
+          231,
+          131,
+          405
+        ],
+        "to": [
+          596.5,
+          131,
+          405
+        ],
+        "obstacles": [
+          "G17_17_shelf_1",
+          "G17_17_shelf_2"
+        ]
+      }
+    }
+  ],
+  "construction_complete_nominal_routes": [
+    {
+      "module": 0,
+      "passed": true,
+      "first_collision": null,
+      "waypoints": [
+        [
+          231,
+          -51,
+          250
+        ],
+        [
+          231,
+          94,
+          250
+        ],
+        [
+          231,
+          125,
+          250
+        ],
+        [
+          231,
+          125,
+          112
+        ],
+        [
+          650,
+          125,
+          112
+        ],
+        [
+          650,
+          297,
+          112
+        ],
+        [
+          121,
+          297,
+          112
+        ]
+      ],
+      "aperture_corner_margin_mm": 74.943699,
+      "staging": {
+        "z": 112,
+        "y": 125,
+        "x": 650
+      }
+    },
+    {
+      "module": 2,
+      "passed": true,
+      "first_collision": null,
+      "waypoints": [
+        [
+          231,
+          -51,
+          250
+        ],
+        [
+          231,
+          94,
+          250
+        ],
+        [
+          231,
+          125,
+          250
+        ],
+        [
+          231,
+          125,
+          112
+        ],
+        [
+          650,
+          125,
+          112
+        ],
+        [
+          650,
+          297,
+          112
+        ],
+        [
+          345,
+          297,
+          112
+        ]
+      ],
+      "aperture_corner_margin_mm": 74.943699,
+      "staging": {
+        "z": 112,
+        "y": 125,
+        "x": 650
+      }
+    },
+    {
+      "module": 1,
+      "passed": true,
+      "first_collision": null,
+      "waypoints": [
+        [
+          231,
+          -51,
+          250
+        ],
+        [
+          231,
+          94,
+          250
+        ],
+        [
+          231,
+          125,
+          250
+        ],
+        [
+          231,
+          125,
+          388
+        ],
+        [
+          650,
+          125,
+          388
+        ],
+        [
+          650,
+          297,
+          388
+        ],
+        [
+          121,
+          297,
+          388
+        ]
+      ],
+      "aperture_corner_margin_mm": 74.943699,
+      "staging": {
+        "z": 388,
+        "y": 125,
+        "x": 650
+      }
+    },
+    {
+      "module": 3,
+      "passed": true,
+      "first_collision": null,
+      "waypoints": [
+        [
+          231,
+          -51,
+          250
+        ],
+        [
+          231,
+          94,
+          250
+        ],
+        [
+          231,
+          125,
+          250
+        ],
+        [
+          231,
+          125,
+          388
+        ],
+        [
+          650,
+          125,
+          388
+        ],
+        [
+          650,
+          297,
+          388
+        ],
+        [
+          345,
+          297,
+          388
+        ]
+      ],
+      "aperture_corner_margin_mm": 74.943699,
+      "staging": {
+        "z": 388,
+        "y": 125,
+        "x": 650
+      }
+    },
+    {
+      "module": 4,
+      "passed": true,
+      "first_collision": null,
+      "waypoints": [
+        [
+          231,
+          -61,
+          250
+        ],
+        [
+          231,
+          104,
+          250
+        ],
+        [
+          231,
+          125,
+          250
+        ],
+        [
+          231,
+          125,
+          100
+        ],
+        [
+          650,
+          125,
+          100
+        ],
+        [
+          650,
+          287,
+          100
+        ],
+        [
+          871.5,
+          287,
+          100
+        ],
+        [
+          871.5,
+          287,
+          84
+        ]
+      ],
+      "aperture_corner_margin_mm": 61.602967,
+      "staging": {
+        "z": 100,
+        "y": 125,
+        "x": 650
+      }
+    },
+    {
+      "module": 12,
+      "passed": true,
+      "first_collision": null,
+      "waypoints": [
+        [
+          231,
+          -61,
+          250
+        ],
+        [
+          231,
+          104,
+          250
+        ],
+        [
+          231,
+          125,
+          250
+        ],
+        [
+          231,
+          125,
+          100
+        ],
+        [
+          650,
+          125,
+          100
+        ],
+        [
+          650,
+          287,
+          100
+        ],
+        [
+          596.5,
+          287,
+          100
+        ],
+        [
+          596.5,
+          287,
+          84
+        ]
+      ],
+      "aperture_corner_margin_mm": 61.602967,
+      "staging": {
+        "z": 100,
+        "y": 125,
+        "x": 650
+      }
+    },
+    {
+      "module": 6,
+      "passed": true,
+      "first_collision": null,
+      "waypoints": [
+        [
+          231,
+          -61,
+          250
+        ],
+        [
+          231,
+          104,
+          250
+        ],
+        [
+          231,
+          125,
+          250
+        ],
+        [
+          231,
+          125,
+          194
+        ],
+        [
+          650,
+          125,
+          194
+        ],
+        [
+          650,
+          287,
+          194
+        ],
+        [
+          871.5,
+          287,
+          194
+        ]
+      ],
+      "aperture_corner_margin_mm": 61.602967,
+      "staging": {
+        "z": 194,
+        "y": 125,
+        "x": 650
+      }
+    },
+    {
+      "module": 14,
+      "passed": true,
+      "first_collision": null,
+      "waypoints": [
+        [
+          231,
+          -61,
+          250
+        ],
+        [
+          231,
+          104,
+          250
+        ],
+        [
+          231,
+          125,
+          250
+        ],
+        [
+          231,
+          125,
+          194
+        ],
+        [
+          650,
+          125,
+          194
+        ],
+        [
+          650,
+          287,
+          194
+        ],
+        [
+          596.5,
+          287,
+          194
+        ]
+      ],
+      "aperture_corner_margin_mm": 61.602967,
+      "staging": {
+        "z": 194,
+        "y": 125,
+        "x": 650
+      }
+    },
+    {
+      "module": 7,
+      "passed": true,
+      "first_collision": null,
+      "waypoints": [
+        [
+          231,
+          -61,
+          250
+        ],
+        [
+          231,
+          104,
+          250
+        ],
+        [
+          231,
+          125,
+          250
+        ],
+        [
+          231,
+          125,
+          304
+        ],
+        [
+          650,
+          125,
+          304
+        ],
+        [
+          650,
+          287,
+          304
+        ],
+        [
+          871.5,
+          287,
+          304
+        ]
+      ],
+      "aperture_corner_margin_mm": 61.602967,
+      "staging": {
+        "z": 304,
+        "y": 125,
+        "x": 650
+      }
+    },
+    {
+      "module": 15,
+      "passed": true,
+      "first_collision": null,
+      "waypoints": [
+        [
+          231,
+          -61,
+          250
+        ],
+        [
+          231,
+          104,
+          250
+        ],
+        [
+          231,
+          125,
+          250
+        ],
+        [
+          231,
+          125,
+          304
+        ],
+        [
+          650,
+          125,
+          304
+        ],
+        [
+          650,
+          287,
+          304
+        ],
+        [
+          596.5,
+          287,
+          304
+        ]
+      ],
+      "aperture_corner_margin_mm": 61.602967,
+      "staging": {
+        "z": 304,
+        "y": 125,
+        "x": 650
+      }
+    },
+    {
+      "module": 5,
+      "passed": true,
+      "first_collision": null,
+      "waypoints": [
+        [
+          231,
+          -61,
+          250
+        ],
+        [
+          231,
+          104,
+          250
+        ],
+        [
+          231,
+          125,
+          250
+        ],
+        [
+          231,
+          125,
+          405
+        ],
+        [
+          650,
+          125,
+          405
+        ],
+        [
+          650,
+          287,
+          405
+        ],
+        [
+          871.5,
+          287,
+          405
+        ],
+        [
+          871.5,
+          287,
+          414
+        ]
+      ],
+      "aperture_corner_margin_mm": 61.602967,
+      "staging": {
+        "z": 405,
+        "y": 125,
+        "x": 650
+      }
+    },
+    {
+      "module": 13,
+      "passed": true,
+      "first_collision": null,
+      "waypoints": [
+        [
+          231,
+          -61,
+          250
+        ],
+        [
+          231,
+          104,
+          250
+        ],
+        [
+          231,
+          125,
+          250
+        ],
+        [
+          231,
+          125,
+          405
+        ],
+        [
+          650,
+          125,
+          405
+        ],
+        [
+          650,
+          287,
+          405
+        ],
+        [
+          596.5,
+          287,
+          405
+        ],
+        [
+          596.5,
+          287,
+          414
+        ]
+      ],
+      "aperture_corner_margin_mm": 61.602967,
+      "staging": {
+        "z": 405,
+        "y": 125,
+        "x": 650
+      }
+    },
+    {
+      "module": 8,
+      "passed": true,
+      "first_collision": null,
+      "waypoints": [
+        [
+          231,
+          -76,
+          250
+        ],
+        [
+          231,
+          119,
+          250
+        ],
+        [
+          231,
+          131,
+          250
+        ],
+        [
+          231,
+          131,
+          100
+        ],
+        [
+          871.5,
+          131,
+          100
+        ],
+        [
+          871.5,
+          127,
+          100
+        ],
+        [
+          871.5,
+          127,
+          84
+        ]
+      ],
+      "aperture_corner_margin_mm": 61.602967,
+      "staging": {
+        "z": 100,
+        "y": 131,
+        "x": 871.5
+      }
+    },
+    {
+      "module": 16,
+      "passed": true,
+      "first_collision": null,
+      "waypoints": [
+        [
+          231,
+          -76,
+          250
+        ],
+        [
+          231,
+          119,
+          250
+        ],
+        [
+          231,
+          131,
+          250
+        ],
+        [
+          231,
+          131,
+          100
+        ],
+        [
+          596.5,
+          131,
+          100
+        ],
+        [
+          596.5,
+          127,
+          100
+        ],
+        [
+          596.5,
+          127,
+          84
+        ]
+      ],
+      "aperture_corner_margin_mm": 61.602967,
+      "staging": {
+        "z": 100,
+        "y": 131,
+        "x": 596.5
+      }
+    },
+    {
+      "module": 10,
+      "passed": true,
+      "first_collision": null,
+      "waypoints": [
+        [
+          231,
+          -76,
+          250
+        ],
+        [
+          231,
+          119,
+          250
+        ],
+        [
+          231,
+          131,
+          250
+        ],
+        [
+          231,
+          131,
+          194
+        ],
+        [
+          871.5,
+          131,
+          194
+        ],
+        [
+          871.5,
+          127,
+          194
+        ]
+      ],
+      "aperture_corner_margin_mm": 61.602967,
+      "staging": {
+        "z": 194,
+        "y": 131,
+        "x": 871.5
+      }
+    },
+    {
+      "module": 18,
+      "passed": true,
+      "first_collision": null,
+      "waypoints": [
+        [
+          231,
+          -76,
+          250
+        ],
+        [
+          231,
+          119,
+          250
+        ],
+        [
+          231,
+          131,
+          250
+        ],
+        [
+          231,
+          131,
+          194
+        ],
+        [
+          596.5,
+          131,
+          194
+        ],
+        [
+          596.5,
+          127,
+          194
+        ]
+      ],
+      "aperture_corner_margin_mm": 61.602967,
+      "staging": {
+        "z": 194,
+        "y": 131,
+        "x": 596.5
+      }
+    },
+    {
+      "module": 11,
+      "passed": true,
+      "first_collision": null,
+      "waypoints": [
+        [
+          231,
+          -76,
+          250
+        ],
+        [
+          231,
+          119,
+          250
+        ],
+        [
+          231,
+          131,
+          250
+        ],
+        [
+          231,
+          131,
+          304
+        ],
+        [
+          871.5,
+          131,
+          304
+        ],
+        [
+          871.5,
+          127,
+          304
+        ]
+      ],
+      "aperture_corner_margin_mm": 61.602967,
+      "staging": {
+        "z": 304,
+        "y": 131,
+        "x": 871.5
+      }
+    },
+    {
+      "module": 19,
+      "passed": true,
+      "first_collision": null,
+      "waypoints": [
+        [
+          231,
+          -76,
+          250
+        ],
+        [
+          231,
+          119,
+          250
+        ],
+        [
+          231,
+          131,
+          250
+        ],
+        [
+          231,
+          131,
+          304
+        ],
+        [
+          596.5,
+          131,
+          304
+        ],
+        [
+          596.5,
+          127,
+          304
+        ]
+      ],
+      "aperture_corner_margin_mm": 61.602967,
+      "staging": {
+        "z": 304,
+        "y": 131,
+        "x": 596.5
+      }
+    },
+    {
+      "module": 9,
+      "passed": true,
+      "first_collision": null,
+      "waypoints": [
+        [
+          231,
+          -76,
+          250
+        ],
+        [
+          231,
+          119,
+          250
+        ],
+        [
+          231,
+          131,
+          250
+        ],
+        [
+          231,
+          131,
+          405
+        ],
+        [
+          871.5,
+          131,
+          405
+        ],
+        [
+          871.5,
+          127,
+          405
+        ],
+        [
+          871.5,
+          127,
+          414
+        ]
+      ],
+      "aperture_corner_margin_mm": 61.602967,
+      "staging": {
+        "z": 405,
+        "y": 131,
+        "x": 871.5
+      }
+    },
+    {
+      "module": 17,
+      "passed": true,
+      "first_collision": null,
+      "waypoints": [
+        [
+          231,
+          -76,
+          250
+        ],
+        [
+          231,
+          119,
+          250
+        ],
+        [
+          231,
+          131,
+          250
+        ],
+        [
+          231,
+          131,
+          405
+        ],
+        [
+          596.5,
+          131,
+          405
+        ],
+        [
+          596.5,
+          127,
+          405
+        ],
+        [
+          596.5,
+          127,
+          414
+        ]
+      ],
+      "aperture_corner_margin_mm": 61.602967,
+      "staging": {
+        "z": 405,
+        "y": 131,
+        "x": 596.5
+      }
+    }
+  ],
+  "inverse_construction_order_all_clear": true,
+  "nested_order_failed_step": {
+    "module": 0,
+    "passed": false,
+    "first_collision": {
+      "segment_index": 4,
+      "from": [
+        650,
+        125,
+        112
+      ],
+      "to": [
+        650,
+        297,
+        112
+      ],
+      "obstacles": [
+        "PREVIOUS_MODULE_12",
+        "PREVIOUS_MODULE_14"
+      ]
+    },
+    "waypoints": [
+      [
+        231,
+        -51,
+        250
+      ],
+      [
+        231,
+        94,
+        250
+      ],
+      [
+        231,
+        125,
+        250
+      ],
+      [
+        231,
+        125,
+        112
+      ],
+      [
+        650,
+        125,
+        112
+      ],
+      [
+        650,
+        297,
+        112
+      ],
+      [
+        121,
+        297,
+        112
+      ]
+    ],
+    "aperture_corner_margin_mm": 74.943699,
+    "staging": {
+      "z": 112,
+      "y": 125,
+      "x": 650
+    }
+  },
+  "small_extraction_fixed_other_boxes": [
+    {
+      "id": 0,
+      "passes": false,
+      "first_collision": {
+        "segment_index": 0,
+        "from": [
+          121,
+          297,
+          112
+        ],
+        "to": [
+          650,
+          297,
+          112
+        ],
+        "obstacles": [
+          "PREVIOUS_MODULE_2",
+          "PREVIOUS_MODULE_12",
+          "PREVIOUS_MODULE_14"
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "passes": false,
+      "first_collision": {
+        "segment_index": 0,
+        "from": [
+          121,
+          297,
+          388
+        ],
+        "to": [
+          650,
+          297,
+          388
+        ],
+        "obstacles": [
+          "PREVIOUS_MODULE_3",
+          "PREVIOUS_MODULE_13",
+          "PREVIOUS_MODULE_15"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "passes": false,
+      "first_collision": {
+        "segment_index": 0,
+        "from": [
+          345,
+          297,
+          112
+        ],
+        "to": [
+          650,
+          297,
+          112
+        ],
+        "obstacles": [
+          "PREVIOUS_MODULE_12",
+          "PREVIOUS_MODULE_14"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "passes": false,
+      "first_collision": {
+        "segment_index": 0,
+        "from": [
+          345,
+          297,
+          388
+        ],
+        "to": [
+          650,
+          297,
+          388
+        ],
+        "obstacles": [
+          "PREVIOUS_MODULE_13",
+          "PREVIOUS_MODULE_15"
+        ]
+      }
+    }
+  ],
+  "front_necessary_Y_corridor": {
+    "front_web_end_global_Y_mm": 54,
+    "rear_large_rail_start_Y_mm": 208,
+    "span_mm": 154,
+    "module_depth_mm": 150,
+    "max_symmetric_margin_mm": 2,
+    "proof": "As box travels laterally in X, it overlaps B1 front web X448–470 and rear large rail X515.5–531.5 at some intermediate X. Both span its Z. Thus Ynear≥54 and Yfar≤208 for a 150mm depth; uniform margin≤2mm."
+  },
+  "critical_unresolved": [
+    "The only mathematically complete 20-piece assembly omits 36 presently integral support lips; they need a new certifiable after-insertion fastening and tool access.",
+    "A physically adjustable 150↔120↔100 set of permitted removal/reinsertion sequences is NOT demonstrated. Nested target order stalls after 12/20; tested four small rear removals fail with other boxes in place.",
+    "Upper positive keeper joint, lower shelf support, temporarily missing full rail and segmented splice not structurally designed, measured or qualified.",
+    "Front Y transport corridor maximum nominal symmetric clearance 2 mm, below prior hypothetical 6mm design screening; real tolerances not measured.",
+    "No 6DOF motion, real basket, cables, user reach or structural response. K18 DXF are NOT released for CNC."
+  ]
+}

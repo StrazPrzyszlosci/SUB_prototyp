@@ -1,0 +1,48 @@
+name: K23 swept axis-aligned assembly regression (NOT CNC)
+on:
+  push:
+    branches: [main]
+    paths:
+      - "skrypty/k23_*"
+      - "wyniki/k23_*"
+      - ".github/workflows/k23-swept-insert-assembly.yml"
+  pull_request:
+    paths:
+      - "skrypty/k23_*"
+      - "wyniki/k23_*"
+      - ".github/workflows/k23-swept-insert-assembly.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  swept-aabb:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Compute and reproduce research-only continuous movement tests
+        run: |
+          set -euo pipefail
+          node --check skrypty/k23_swept_montaz_i_zmiana_litrazu.js
+          node skrypty/k23_swept_montaz_i_zmiana_litrazu.js
+          git diff --exit-code -- wyniki/k23_swept_montaz_wkladow.json wyniki/k23_trasa_montazu_modulu_14_NIE_CNC.svg
+      - name: Guard actual volume-state blockers and CNC hold
+        run: |
+          node - <<'NODE'
+          const fs=require("node:fs"),a=require("node:assert/strict");
+          const r=JSON.parse(fs.readFileSync("wyniki/k23_swept_montaz_wkladow.json","utf8"));
+          const n=r.results;a.match(r.status,/CNC HOLD/);
+          a.equal(r.model.remaining_full_height_rails,11);
+          a.equal(r.model.fixed_lower_lips_for_first_variant,36);
+          a.equal(n.with_integral_lower_lips_isolated,12);
+          a.equal(n.with_lower_lips_omitted_isolated,20);
+          a.equal(n.with_lower_lips_omitted_full_construction,20);
+          a.equal(n.reversed_exact_full_construction,20);
+          a.equal(n.nested_150_to120_to100_before_failure,12);
+          a.equal(n.small_rear_one_by_one_extraction_from_full_box_state_passes,0);
+          a.equal(n.front_lateral_necessary_symmetric_clearance_mm,2);
+          a.equal(n.lateral_collision_test_nominal_plus_expansion_mm[3].passes,false);
+          console.log("PASS K23: nominal 20-box assembly; true volume service NOT proven; CNC HOLD");
+          NODE

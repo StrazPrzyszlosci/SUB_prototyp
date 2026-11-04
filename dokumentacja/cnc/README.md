@@ -16,3 +16,6 @@ Profiles are placed apart **for viewing only**, not on stock sheets; cutter diam
 
 
 **K22 research option:** a single selected rear rail G17_COLUMN_10 might have to be temporarily absent to create a 259mm X service throat, later restored through a yet-unengineered two-piece structural splice. A 228mm segment fits the nominal loudspeaker cutout only in a centered front-plane projection; no post-installation path, tensile/bending load transfer or actual fastener has been proven. Current K18 DXF remain CNC HOLD. [Details](../../raporty/K22_dzielona_prowadnica_i_przejscie_montazowe.md).
+
+
+**K23: dynamic candidate path FAIL for adjustable volume.** Explicit continuous swept-AABB nominal geometry with K22's one omitted spine and K15/17 obstacles: 12 of 20 isolated candidate entry routes pass when 36 integral lower lips remain; 20/20 exact axial assembly passes only with all 36 lips mathematically absent. The passing order is *not* a working 150→120→100 L nested state change. In the tested nested order the first 12 insert but the 13th small rear hits retained boxes; the four small-rear inverse candidate extraction paths from full100 fail. Front lateral passage only 2mm nominal symmetric Y clearance. Existing DXFs and joints remain CNC HOLD. [Full analysis](../../raporty/K23_analiza_ruchu_wkladow_i_regulacji.md).
