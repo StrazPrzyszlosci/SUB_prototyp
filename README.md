@@ -2334,3 +2334,14 @@ Przy zachowaniu dawnych założeń P30E obliczenia odtwarzają **100,12 / 119,92
 **Co jeszcze przed CNC?** Prawdziwe łączenia i klejenie MDF, poprawa niekwalifikowanego mocowania K14, zamki i uszczelki 20 skrzynek, sprawdzenie montażu narzędziami, obrys maskownicy/terminala oraz tolerancje materiału i frezu. Szczególnie cienkie **10-mm pasy wręg** są tylko elementami modelu, nie zaakceptowanymi częściami do wycięcia.
 
 [Model 3D OpenSCAD](dokumentacja/K15_p30e_zlozenie_parametryczne_NIE_CNC.scad) · [138 elementów CSV — **NIE ZAMAWIAĆ CIĘCIA**](wyniki/k15_p30e_przed_CNC_138_elementow.csv) · [kontrola geometrii i objętości JSON](wyniki/k15_p30e_przed_CNC_zestawienie.json) · [generator](skrypty/k15_pre_cnc_model.js). **CNC HOLD.**
+
+
+### A21. K16 — moduły litrażu nie mogą wisieć w powietrzu
+
+**Ważna korekta modelu K15:** pokazane tam zamknięte skrzynki regulujące objętość nie mają jeszcze zaprojektowanych mocowań. **Wszystkie 20 wkładów musi mieć rzeczywiste podparcie oraz zabezpieczenie przed przemieszczeniem, stukaniem i wypadnięciem**, również przy obrocie lub przenoszeniu obudowy. Samo umieszczenie brył w modelu 3D nie wystarczy.
+
+W K16 zbadaliśmy modelowy wariant **2 dolnych podpór + 2 górnych zabezpieczeń na wkład**. Powstało **80 referencyjnych elementów**, dołączanych w modelu do przedniej lub tylnej ściany. Obliczenia geometryczne nie wykazały dodatnich kolizji tych brył z 138 dotychczasowymi elementami MDF. Wykazały natomiast **48 przejść podpór tylnych przez matę tłumiącą 50 mm**. Dlatego **nie rekomendujemy tego układu do wykonania** — trzeba zaprojektować mocowania do paneli bocznych lub odpowiednio ukształtowanych wręg, z pominięciem maty.
+
+[Model 3D OpenSCAD z modelowymi podporami](dokumentacja/K16_p30e_z_mocowaniami_modulow_NIE_CNC.scad) · [raport K16](raporty/K16_podparcia_i_zabezpieczenia_20_wkladow.md) · [80 interfejsów CSV](wyniki/k16_80_stykow_modulow_REFERENCYJNE_NIE_CNC.csv) · [obliczenia i kolizje JSON](wyniki/k16_model_podparcia_20_wkladow.json) · [generator](skrypty/k16_podparcie_modulow.js).
+
+**Następne zadanie:** zaprojektować prawdziwe **wyjmowane prowadnice i blokady z torami sił do szkieletu obudowy**, a następnie ponownie sprawdzić możliwość wkładania/wyjmowania modułów, szczelność, obciążenia, stany 100/120/150 l i dostęp narzędzi. **CNC HOLD.**
