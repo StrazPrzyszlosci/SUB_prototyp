@@ -4,6 +4,14 @@
 
 ![K24 conceptual two-phase removable-rail sequence, not approved fabrication](../wyniki/k24_dwie_fazy_regulacji_NIE_CNC.svg)
 
+## Relationship to the independent K24 service-access audit
+
+The repository also contains [K24 — service accessibility, exact volume arithmetic, and fixed-guide C-space](K24_dostep_serwisowy_i_przestrzen_translacji.md). That independent study reports **0/4 extractable small rear modules** even after **only G17_COLUMN_10** is removed. Our fixed-guide controls reproduce the same type of blockage: simply removing the large-rear guide10 does not free the small-rear group. This present study changes the topology by **additionally allowing guide02, 03, or 04 to be detached**, which opens a mathematical route. **These outcomes do not conflict**, but the present geometry has more temporarily removed structural parts; the previously reported service trap is NOT resolved in a physical cabinet.
+
+The prior mechanical screen intentionally includes **+0.2 kg hypothetical mounting hardware per module** in its 5g one-contact example, whereas the present table uses **the MDF8 shell mass only**. Thus the previously reported larger demand figures (e.g. around 32.83 N for a small rear box and 39.36 N for a large rear box) and the smaller shell-only figures here cannot be compared as if they used identical loads. Both are research sensitivities, **neither is a qualified design load**.
+
+The uniform positive-clearance stress screen in the present model completes only **4 of 8 removals** in the 100→120 phase and **7 of 11 removals** in the 120→150 phase at **1 mm additional clearance**. The actual nominal model includes exact contact at front guide interfaces, so the zero-clearance path results must not be described as tolerant or physically reliable.
+
 ## Algorithm and strict domain
 
 A 3D **axis-aligned configuration-space graph** is built by expanding every nominal K15 cabinet obstacle, K17 continuous spine and already installed sealed box by the current module's half dimensions (Minkowski sum). The finite orthogonal cell grid includes the obstacle critical planes and midpoints. Breadth-first search finds connected translations between the nominal centered speaker cutout entry and the box target. Each returned simplified route is independently checked by **continuous full swept AABB** along every X/Y/Z line segment. The proposed speed/ordering result is therefore broader than the single manually chosen K23 route.
