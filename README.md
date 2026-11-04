@@ -2345,3 +2345,12 @@ W K16 zbadaliśmy modelowy wariant **2 dolnych podpór + 2 górnych zabezpiecze�
 [Model 3D OpenSCAD z modelowymi podporami](dokumentacja/K16_p30e_z_mocowaniami_modulow_NIE_CNC.scad) · [raport K16](raporty/K16_podparcia_i_zabezpieczenia_20_wkladow.md) · [80 interfejsów CSV](wyniki/k16_80_stykow_modulow_REFERENCYJNE_NIE_CNC.csv) · [obliczenia i kolizje JSON](wyniki/k16_model_podparcia_20_wkladow.json) · [generator](skrypty/k16_podparcie_modulow.js).
 
 **Następne zadanie:** zaprojektować prawdziwe **wyjmowane prowadnice i blokady z torami sił do szkieletu obudowy**, a następnie ponownie sprawdzić możliwość wkładania/wyjmowania modułów, szczelność, obciążenia, stany 100/120/150 l i dostęp narzędzi. **CNC HOLD.**
+
+
+### A22. K17 — prowadnice podtrzymujące wkłady bez przecinania maty
+
+[K16](raporty/K16_podparcia_i_zabezpieczenia_20_wkladow.md) pokazało, że proste wsporniki do tylnej ściany przecinają tylną matę 50 mm. W kolejnym badaniu [K17](raporty/K17_prowadnice_nośne_bez_kolizji_z_mata.md) zamodelowaliśmy **12 pionowych prowadnic, połączonych geometrycznie z dolną i górną ścianą obudowy**, z **80 integralnymi miejscami podparcia i zabezpieczenia 20 wkładów**. W nominalnym przesiewie te bryły nie przecinają maty ani konserwatywnej obwiedni głośnika P30A.
+
+[**Otwórz model K17 w OpenSCAD**](dokumentacja/K17_p30e_prowadnice_i_zabezpieczenia_NIE_CNC.scad) · [dane geometryczne i obliczenia](wyniki/k17_prowadnice_boczne_wkladow.json) · [generator](skrypty/k17_prowadnice_wkladow.js).
+
+Prowadnice i wszystkie punkty podparcia **pozostają w skrzyni także po wyjęciu modułów**; zmieniają więc rzeczywistą objętość o modelowo około **1,02 l**, czego nie uwzględniało pierwotne P30E. Aby je wykonać, trzeba jeszcze zaprojektować rzeczywiste **połączenia z MDF, demontowalne blokady, luzy montażowe, uszczelki antydrganiowe i dostęp narzędzi**, a następnie ponowić badania K02/K07. To **kierunek dalszej konstrukcji, nie potwierdzony system mocowania. CNC HOLD.**
