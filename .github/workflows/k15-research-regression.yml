@@ -77,7 +77,14 @@ jobs:
           import subprocess
           readme=Path('README.md').read_text(encoding='utf-8')
           base=subprocess.check_output(['git','show','origin/main:README.md'],text=True)
-          assert readme.startswith(base), 'K15 must only append to original README'
+          # Authorized 2026-11-04 editorial reorder: selection of Dayton before cabinet,
+          # supplementary two-STX comparison after it. All technical archives stay unchanged.
+          tail='## Krótki słownik do wykresów'
+          assert readme[readme.index(tail):]==base[base.index(tail):], 'Technical archive must remain byte-identical'
+          assert readme.index('### Jak spośród 40 kandydatów')<readme.index('## Praktyczny przewodnik')
+          assert readme.index('## Praktyczny przewodnik')<readme.index('## Konstrukcja obudowy')
+          assert readme.index('## Konstrukcja obudowy')<readme.index('## Badania uzupełniające')
+          assert readme.index('## Badania uzupełniające')<readme.index('### B12-01')
           assert readme.count('### A20. K15')==1
           assert readme.index('### A20. K15')>readme.index('### A19. K14')
           svg=Path('wyniki/k15_widoki_obudowy_i_wkladow_NIE_CNC.svg')
@@ -89,5 +96,5 @@ jobs:
           assert 'wyniki/k15_widoki_obudowy_i_wkladow_NIE_CNC.png' in readme
           report=Path('raporty/K15_parametryczne_zlozenie_i_zestawienie_przed_CNC.md').read_text(encoding='utf8')
           assert '138' in report and 'CNC HOLD' in report
-          print('K15 PASS: original README unmodified, A20 appended, real original PNG/SVG present, no CNC release')
+          print('K15 PASS: preserved technical archive, ordered Dayton → construction → STX, PNG/SVG and no CNC release')
           PY
