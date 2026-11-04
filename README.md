@@ -34,384 +34,19 @@ porównania, a dane cenowe obejmują obecnie tylko część modeli; nadal brakuj
 | Korekcja cyfrowa i zapas poziomu | [Filtry DSP](#filtry) |
 | Źródła, szczegóły i własne obliczenia | [Mapa raportów](#mapa) · [Kod i odtwarzanie](#odtwarzanie) |
 
-Skróty wyjaśniamy w [krótkim słowniku](#slownik). **Najpierw prześledź poniżej rzeczywiste badania porównawcze przetworników**, które doprowadziły do wstępnego wyboru Daytona, a następnie przejdź do [praktycznego przewodnika](#praktyczny-przewodnik) obejmującego konstrukcję, materiały i mocowanie.
+Skróty wyjaśniamy w [krótkim słowniku](#slownik). **Najpierw poznaj wyłonienie Daytona spośród 40 kandydatów**, następnie przejdź do [praktycznego przewodnika](#praktyczny-przewodnik) i konstrukcji obudowy. Dopiero niżej znajdziesz [dodatkowe badania dwóch STX, innych wariantów i kosztów](#badania-uzupelniajace--dwa-stx-kontra-dayton-inne-warianty-i-koszt).
 
 <a id="wykresy"></a>
 <a id="glosniki"></a>
 ## Głośniki: porównanie w tych samych warunkach
 
-### P43 — czy dwa mniejsze głośniki albo izobaryczny mogą zastąpić jednego Daytona? (02.11.2026)
+### Jak spośród 40 kandydatów wyłoniliśmy Dayton RSS390HF-4?
 
-**Badania nadal trwają: nie wybrano ostatecznego głośnika.** Do zbioru dołączyły
-SATORI **WO34HC-4 i WO34HC-8**, **SB42FHCL75-6** oraz dwa 10-calowe modele do
-testów par: **STX W.25.200.8.MC** i **SB29SWNRX-S75-6**.
-Aktualnie **39 modeli i 40 podstawowych konfiguracji elektrycznych**;
-dodatkowe układy dwóch identycznych głośników to *scenariusze konstrukcyjne*,
-a nie kolejne osobne modele w katalogu.
+**Najpierw wybór przetwornika, potem projekt dopasowanej obudowy.** W programie badań zebraliśmy **40 modeli głośników różnych producentów (19 producentów, 41 bazowych konfiguracji elektrycznych)**. Porównujemy ich parametry elektromechaniczne, charakterystyki basu i wymagane warunki pracy, wykonujemy obliczenia elektroakustyczne i symulacje fizyczne obejmujące wychylenie membrany, obciążenie elektryczne, ogrzewanie cewki i oddziaływanie zamkniętej komory.
 
-Sprawdziliśmy **3168 liniowych przypadków** w 80/100/120/150 l, z jedną
-membraną, dwoma niezależnie promieniującymi membranami **w jednej skrzyni** i
-parą **izobaryczną** (połączenia szeregowe/równoległe).
-Pod uwagę wzięliśmy 40 V RMS / 12 A RMS, wychylenie szczytowe, a jako
-*hipotetyczny* wariant również 50 W łącznych strat miedzi. To **nie są**
-wyniki THD ani symulacja dwóch subwooferów rozmieszczonych w pokoju.
+**Aktualnym faworytem do budowy pierwszego prototypu jest Dayton Audio RSS390HF-4 (15″, 4 Ω)**. Wcześniejsze etapy 26, następnie 34 badanych modeli doprowadziły do tej rekomendacji; rozszerzenie puli do 40 kandydatów pozwala ją dalej krytycznie sprawdzać. To **kierunek badań konstrukcyjnych**, a nie ostateczny ranking jakości, ceny czy zmierzonego THD — nie wszystkie modele mają jeszcze pełne, porównywalne wyniki, a fizyczny prototyp nie został zbadany.
 
-![P43: ile modelowego basu przy 20 Hz daje duży głośnik, dwa mniejsze lub para izobaryczna](wyniki/p43_porownanie_20hz_20261102.svg)
-
-**Praktyczny przykład:** dwa tanie **STX W.32.500.8.MC_v2 (12″)** kosztują według
-aktualnego cennika producenta **430 zł za dwa kosze** wobec znalezionej oferty
-**1613,33 zł** za jeden Dayton RSS390HF-4. W tym samym modelu 120 l, 20 Hz,
-z budżetem 50 W łącznych strat miedzi i pozostałymi limitami, zwykła para STX
-uzyskuje **97,30 dB**, a Dayton **99,62 dB** (2π/1 m; tylko pojedynczy sinus).
-To zachęca do dalszych badań opłacalności, **nie jest dowodem jednakowej
-jakości ani dopuszczalnego ciągłego poziomu dźwięku**. Ceny nie zawierają
-budowy dwóch gotowych subwooferów, dodatkowego mocowania i torów mocy.
-
-**Izobaryczny nie daje dwóch promieniujących membran.** Pozwala ograniczyć
-ekwiwalentną podatność głośników (Vas pary do połowy Vas jednego głośnika),
-przez co podobne strojenie można uzyskać w mniejszej komorze; nie oznacza
-podwojenia Sd·Xmax. Potrzebne są szczelna komora sprzęgająca, chłodzenie,
-nowa geometria koszy i weryfikacja obciążenia wzmacniacza (w tym 2 Ω).
-
-**Kontrola litrażu:** w idealnym modelu **60 l izobarycznie** daje to samo
-małosygnałowe Fc/Qtc/F3 co **jeden taki sam przetwornik w 120 l**;
-nie oznacza tego samego zapasu poziomu ani zweryfikowanej geometrii.
-[Audyt T/S i sprawdzenie 60/120 l](wyniki/p43_audyt_TS_i_izobaryczne_60_na_120_20261102.json).
-
-[Pełny raport 109, tabela porównawcza i cenniki](raporty/109_P43_nowe_SB_podwojne_10_12_i_izobaryczny.md)
-· [karty nowych kandydatów i źródła](dane/przetworniki/rozszerzenie_FB_20261102_i_pary.json)
-· [3168 wyników CSV](wyniki/p43_wspolne_scenariusze_3168_20261102.csv)
-· [odtwarzalny skrypt](skrypty/p43_dwa_glosniki_i_isobaric.js).
-
-### B12-01 — czy dopłata do dużego przetwornika ma sens przy dwóch tanich 12″?
-
-**Dodatkowa kontrola po P43 i P45:** 3584 obliczenia na gęstszej siatce 20–80 Hz,
-w tym porównanie dwóch **STX W.32.500.8.MC_v2** z Daytonem RSS390HF-4,
-w dwóch połączeniach cewek, z 70% lub 100% katalogowego Xmax i
-budżetami 50/100 W łącznych strat miedzi. Dodano kontrolny 12-calowy
-STX W.30.200.8.MC (C32): **40 modeli / 41 konfiguracji podstawowych**.
-
-![B12-01: pułap 20 Hz przy różnych objętościach](wyniki/b12_01_20hz_objetosc.svg)
-
-W 120 l, przy 20 Hz i hipotetycznym 50 W strat: **2× STX 97,30 dB** wobec
-**Dayton 99,62 dB** w idealnym modelu półprzestrzeni 2π/1 m. Aby osiągnąć
-poziom Daytona, tania para musiałaby osiągnąć około **±9,1 mm** na głośnik,
-podczas gdy producent podaje **±7,5 mm** liniowego wychylenia geometrycznego.
-Dwa STX kosztują obecnie według wskazanego cennika **430 zł** wobec
-**1613,33 zł** za Daytona — bez kosztu obudowy, elektroniki i montażu.
-Rzut dwóch koszy na froncie 1020×500 mm jest możliwy, ale kolizje i sztywność
-frontu wymagają przeprojektowania. To nie są pomiary THD ani SPL w pokoju.
-
-[Raport B12-01](raporty/B12-01_tanie_dwie_12_przeciw_Daytonowi_20261102.md)
-· [3584 scenariusze CSV](wyniki/b12_01_wspolne_scenariusze_3584.csv)
-· [kod i test reprodukcji](skrypty/b12_01_dwie_12_ekonomiczne.js).
-
-### B12-02 — sześć częstotliwości jednocześnie: ile naprawdę wymaga korekcja?
-
-Dotychczasowe pułapy SPL liczone dla **osobnych sinusów** nie pokazują, jak
-sumuje się chwilowy skok membrany, gdy muzyczny sygnał zawiera kilka składowych.
-Nowy etap B12-02 bada jednoczesne **20/25/31,5/40/63/80 Hz** w 100/120/150 l,
-trzy zadane widma, dwa przebiegi fazowe, 50/100 W hipotetycznych strat łącznych
-oraz 70%/100% Xmax. Zrealizowano **144 nominalne scenariusze i 256 testów
-hipotetycznej zmienności parametrów** z zachowaniem pierwotnych nastaw korekcji.
-
-![B12-02: sześć jednoczesnych składowych a wymagana korekcja](wyniki/b12_02_koszt_dsp_40hz.svg)
-
-Przy 120 l i sześciu tonach w wariancie o jednakowym ciśnieniu 20–40 Hz
-obliczony pułap *samej składowej 40 Hz* to **94,25 dB dla Daytona 15″**
-oraz **90,30 dB dla dwóch tanich STX 12″**. Ogranicza go wychylenie;
-różnica **3,96 dB** wynika z katalogowego `Sd·Xmax`. Mocne ograniczenie
-20 Hz może podnieść te liczby, ale kosztem najniższego basu.
-To **idealne wyrównanie sześciu punktów amplitudowo i fazowo**, bez
-rzeczywiście obliczonego filtra miniDSP. Nie są to pomiary ani wyniki THD.
-Bramka CNC i weryfikacja ochrony DSP pozostają otwarte.
-
-[Raport B12-02 i ograniczenia](raporty/B12-02_szesciotonowy_test_DSP_i_odpornosc.md)
-· [pełne wyniki JSON](wyniki/b12_02_multitone_20261102.json)
-· [porównanie CSV](wyniki/b12_02_porownanie_120l.csv)
-· [skrypt odtwarzający obliczenia](skrypty/b12_02_multitone_eq_6tonow.js).
-
-### B12-03 — dwa tanie 12″ z ograniczoną korekcją DSP i rozrzutem parametrów
-
-Zastąpiliśmy idealną niezależną korekcję sześciu częstotliwości **kaskadą
-pięciu rzeczywistych matematycznie filtrów IIR**: HP Butterworth 2 przy
-18 lub 25 Hz, LP Linkwitz-Riley 4 przy 80 Hz oraz dwiema korekcjami:
-półkową i PEQ. Przebadano **1000 kombinacji nastaw korektora** na
-każdą optymalizowaną konfigurację, 12 zestawów filtrów, **144 ograniczone
-przypadki sześciotonowe** i **192 próby z rozbieżnymi parametrami obu STX**.
-
-![B12-03: model DSP i różnica poziomu składowej 40 Hz](wyniki/b12_03_40hz_dsp.svg)
-
-W zamkniętej 120 l, przy profilu z jednakowymi składowymi 20–40 Hz,
-limicie 70% katalogowego Xmax i 50 W łącznych strat miedzi:
-**Dayton 15″ 93,23 dB**, **para STX 12″ 89,02 dB** dla HP 18 Hz
-(modelowa składowa 40 Hz; nie suma SPL ani pomiar w pokoju).
-Przy HP 25 Hz odpowiednio **94,59 dB** i **90,41 dB**.
-STX wymagają w badaniu większego podbicia EQ (+8,06 dB maksimum,
-wobec +5,33 dB Daytona). Przeciwdziałanie przeciążeniom, THD, rzeczywista
-termika i kolizje dwóch koszy z wręgami pozostają **niezweryfikowane**.
-
-[Rozszerzony raport B12-03](raporty/B12-03_rzeczywiste_filtry_IIR_i_rozrzut_2x12.md)
-· [filtry, współczynniki i 336 scenariuszy JSON](wyniki/b12_03_iir_i_rozrzut_20261102.json)
-· [kod kontroli i odtwarzania](skrypty/b12_03_biquad_i_sprzezone_12.js).
-
-### B12-04 — co robią impulsy, twardy clipping i ograniczniki?
-
-Zastąpiliśmy jednoczęstotliwościowe szczyty i obwiednie B12-03
-**symulacją czasową ruchu i prądu**: 26 przypadków po 8 sekund
-oraz dwie kontrole zagęszczenia kroku całkowania. Model zawiera
-dotychczasowe 5 sekcji IIR, wspólne ciśnienie w 120 l, 2 modele
-hipotetycznej termiki cewki i jawne, syntetyczne sygnały
-wielotonowe oraz paczki impulsowe.
-
-![B12-04: przekroczenia wychylenia przy różnych ogranicznikach](wyniki/b12_04_wychylenie_i_ograniczniki.svg)
-
-**Wykryto zawodność uproszczonej ochrony**: w teście sustained,
-przy arbitralnym celu 70% katalogowego Xmax, obliczony
-szczyt dla dwóch STX wyniósł 191% Xmax bez limitera,
-96% Xmax ze stałą redukcją −6 dB oraz 99% Xmax z
-testowym regulatorem mającym nawet niedostępną w praktyce
-idealną znajomość x/v. Dayton odpowiednio: 116%, 59%, 82%.
-Wyniki ponad Xmax to ekstrapolacja liniowa poza
-wiarygodną dziedzinę modelu, a wartości temperatury
-zależą od **niezmierzonych scenariuszy Rth/Cth**.
-Nie są to pomiary, zweryfikowane THD ani dowód bezpieczeństwa.
-
-[Raport B12-04 — pełna metodologia i wnioski](raporty/B12-04_dynamika_impulsy_ochrona_termika.md)
-· [26+2 scenariusze JSON](wyniki/b12_04_dynamika_termika_20261102.json)
-· [odtwarzalny model i bilans energii](skrypty/b12_04_dynamika_limity_i_termika.js).
-
-### B12-05 — dwie dwunastki STX: obudowa i regulacja litrów naprawdę się mieszczą?
-
-Po wcześniejszych badaniach elektroakustycznych przeprowadziliśmy
-**20 badań gabarytów** oraz sprawdzenie niekolidujących prostoliniowych
-tras wkładania elementów przez **dwa otwory Ø284 mm**. Oceniono
-sztywno niezaprojektowane *na razie* wręgi, wkłady i 50-mm tylną matę
-wyłącznie geometrycznie. **Nie jest to jeszcze zweryfikowana konstrukcja.**
-
-![B12-05: dwa otwory STX i centralna wręga](wyniki/b12_05_dwa_stx_front.svg)
-
-W modelu nominalnym wyróżniły się **dwa warianty**:
-**1020×450×500 mm** oraz **1040×448×500 mm**.
-Dla pierwszego wewnętrzna objętość bez wkładów to **159,75 l netto**
-przy założonej wyporności po 5 l na kosz, bez potwierdzenia
-rzeczywistej objętości silników.
-
-![B12-05: 16 wkładów, strojenie i przekrój głębokości](wyniki/b12_05_wklady_przekroj.svg)
-
-Model pokazuje **16/16** hipotetycznie bezkolizyjnych dróg włożenia
-dużych wkładów i **2/2** małych regulatorów. Wariant nominalny można
-stroić do **150 l (2 duże wkłady), 120 l (10)** i **100 l (16)**,
-dodatkowo regulując małe wkładki. Nie gwarantuje to tych litrów dla
-każdej rzeczywistej wyporności głośników. **Zewnętrzna głębokość**
-po doliczeniu osłony i wystawania wynosi w scenariuszach
-**479,5–499,5 mm**: zapas zaledwie **0,5 mm**.
-Front MDF44 i cienka przednia część wręgi nadal wymagają MES,
-pomiaru wyparcia koszy, kontroli zacisków i narzędzi, zamków,
-wiarygodnego dostępu montażowego i zabezpieczenia wkładów.
-**Nie wykonywać CNC.**
-
-[Raport konstrukcyjny B12-05](raporty/B12-05_podwojny_STX_geometry_montaz_netto.md)
-· [20 przypadków i komplet obwiedni](wyniki/b12_05_uklad_2x12_20261102.json)
-· [skrypt odtwarzający test tras i objętości](skrypty/b12_05_dwa_stx_przestrzen_i_wklady.js).
-
-### B12-06 — czy badania pary tanich 12″ nadal prowadzą do celu z pierwotnego briefu?
-
-**Najpierw punkt odniesienia:** system ma zapewnić neutralny, bardzo czysty,
-niskoszumowy bas o dużym zapasie 20–40 Hz w pokoju **4,6×3,7×2,5 m**,
-z odsłuchem **2,5–3 m w jednym sweet spocie**. Plan to **dwie niezależne
-obudowy subwooferowe** plus dwa aktywne monitory 3-drożne (8 kanałów DSP).
-Na dziś W13/W24 wymagają **jednego głośnika na każdą obudowę**.
-Dwa STX w jednej skrzyni są tylko porównawczym wariantem ekonomicznym,
-**nie zastępują dwóch osobnych subwooferów**.
-
-![B12-06: wymagania przestrzenne dwóch subwooferów i monitorów](wyniki/b12_06_plan_pokoju.svg)
-
-Wykonano **36 prób modelu mechanicznego Ritz** dwóch frontów (1× Dayton
-vs 2× STX) oraz 8 kontroli wrażliwości na bazę i siatkę całkowania.
-Przesiew nie jest dopasowanym do otworów MES — **nie przewiduje
-naprężeń przy śrubach**, sztywności spoin ani drgań całej obudowy.
-
-![B12-06: wrażliwość ugięcia frontu na hipotetyczne podparcie](wyniki/b12_06_front_porownanie.svg)
-
-W jednym z wariantów (front 44mm, E 2,1GPa, ksprężyny 1MN/m),
-przy umownym obciążeniu 100 Pa uzyskano **3,58 µm (Dayton)** i
-**3,59 µm (dwa STX)**. Nie oznacza to takiej samej jakości ani
-faktycznej sztywności obu konstrukcji. Przy dwóch fizycznych
-subwooferach katalogowe Vd wynosi odpowiednio **2323 cm³** dla
-dwóch Daytonów i **1473 cm³** dla czterech STX w dwóch skrzyniach,
-ale nie jest to pomiar SPL/THD. Należy wyznaczyć rzeczywiste
-pozycje przy monitorach, przebadać pobudzenie modów pokoju,
-integrację i kompresję w docelowym sweet spocie. **Bez decyzji CNC.**
-
-[Raport B12-06: mechanika i bramka zgodności z briefem](raporty/B12-06_mechanika_frontow_i_weryfikacja_briefu.md)
-· [36 modeli i 8 kontroli JSON](wyniki/b12_06_front_ritz_i_brief_20261102.json)
-· [kod odtwarzania](skrypty/b12_06_ritz_front_podwojny_i_brief.js).
-
-### B12-07 — dwa gotowe subwoofery przy monitorach, a nie tylko dwie membrany
-
-Powrót do **pierwotnego briefu**: pokój **3,7×4,6×2,5 m**,
-jeden sweet spot 2,5–3 m, dwa **osobne subwoofery** i dwa
-aktywne monitory trójdrożne (8 kanałów DSP). Porównano
-dwie skrzynie po jednym Daytonie RSS390HF-4 z alternatywą
-dwóch skrzyń po **dwa** STX W.32.500.8.MC_v2 (czyli 4 STX łącznie).
-Wyposażenie jest tylko modelowane. **Nie ma pomiarów w pokoju.**
-
-![B12-07: wpływ pozycji i strojenia dwóch skrzyń](wyniki/b12_07_rozpietosc_pokoju.svg)
-
-Wykorzystano wcześniejszy model modalny P26, sześć punktów
-diagnostycznych wokół głównego miejsca i rzeczywiste matematycznie
-filtry B12-03. **27 wariantów pokojowych** przeszło wstępny
-przesiew obrysu obudów dla położeń A/B/D; wariant **C** odpadł,
-ponieważ szerokie 1020-mm skrzynie przecinały ściany przy
-założonych osiach źródeł. Uproszczone symulacje wskazują
-dużą wrażliwość na tłumienie i miejsce odsłuchu, więc nie wolno
-poprawiać niezmierzonych dołków ogromnym podbiciem DSP.
-Regulację kanałów badano pod warunkiem zachowania w granicy
-3 dB poziomu 40 Hz i braku pogorszenia punktów sąsiednich o
-więcej niż 3 dB.
-
-**Punkt odniesienia ADAM:** Sub12 22–150 Hz i ≥115 dB
-szczytowo/1 m; Sub15 20–150 Hz i ≥120 dB/1 m.
-**Nie są to porównywalne wyniki czystego SPL przy 20 Hz**
-ani dowód parytetu naszych wariantów. Sub15 ma 525 mm głębokości
-i służy jako wzorzec klasy, nie jako projekt obudowy ≤500 mm.
-Badanie nie zawiera jeszcze rzeczywistych THD/IMD, maksymalnego
-SPL ani integracji z nieznanymi monitorami.
-
-[Raport B12-07 i bramka jakości](raporty/B12-07_dwa_suby_w_pokoju_i_referencje_ADAM.md)
-· [pełne scenariusze modalne](wyniki/b12_07_dwa_suby_pokoj_20261102.json)
-· [odtwarzalny model](skrypty/b12_07_dwa_suby_brief_pokoj.js).
-
-### B12-08 — wracamy do projektu *pierwszego* prototypu z jednym Daytonem
-
-Przegląd linii P29A–D, P30E/F, P38–P45 i B12-01–07
-potwierdził **warunkowy wybór Dayton Audio RSS390HF-4 (C02)**
-jako przetwornika pierwszej platformy pomiarowej. Pojedyncza
-zamknięta skrzynia z korpusem **1020×425×500 mm**, MDF 22 mm
-i klejonym frontem 44 mm, pozostaje punktem konstrukcyjnym.
-W modelu P30E zdejmowana mata 50 mm i wkłady dają
-**100,119 / 119,919 / 150,159 l netto**; są to wartości
-modelowe, **nie wykonany i zmierzony prototyp**.
-
-![B12-08: front jednego Daytona i przesiew pierścienia, NIE CNC](wyniki/b12_08_front_i_pierscien_NIE_CNC.svg)
-
-Nowe B12-08 policzyło **2232 połączenia wymiarów
-pierścienia, położenia kosza i hipotetycznych tolerancji**.
-Przy przyjętych wymaganiach 1 mm luzu od otworu Ø355,8
-i 2 mm materiału między otworem mocującym a wewnętrzną
-krawędzią prostego pierścienia **żaden z wariantów otworu
-nośnika Ø6,5 mm nie przeszedł**. To nie jest dowód wadliwości
-produktu, ale sygnał, że trzeba zdefiniować rzeczywiste
-**mocowanie 8 śrub → nośnik → wręgi/MDF**, a nie sam pierścień.
-Nowa hipotetyczna oś **X235 mm** zamiast starego X231 mm
-lepiej równoważy odstępy w rzucie, lecz **nie jest zatwierdzona**.
-
-![B12-08: warianty pełnej głębokości przy korpusie 425 mm](wyniki/b12_08_budget_glebokosci.svg)
-
-W **160 scenariuszach pełnej głębokości** widać, że obietnica
-19 mm zapasu z P30E zależy od faktycznej maskownicy i
-terminala. Dodatkowe **81 scenariuszy** modelu F3/Qtc pokazuje
-dla 120 l orientacyjne **Qtc≈0,714 i F3≈32,15 Hz**,
-ale **20 Hz bez EQ jest około −8,94 dB** w małosygnałowym
-modelu zamkniętej skrzyni. Kryterium końcowym jest czysty
-20–40 Hz w pokoju, nie samo F3, więc potrzebna pozostaje
-walidacja wychylenia, THD, termiki i dwóch subwooferów.
-
-**Następny etap: nośna rama kosza A, pełny CAD 3D i sprawdzenie
-wkładów dla obu orientacji.** Żaden element nie został
-zatwierdzony do CNC; nie zamawiamy głośnika, wzmacniacza
-ani osłony na podstawie tych rysunków.
-
-[Raport i mapa dowodów B12-08](raporty/B12-08_audyt_wyboru_i_konstrukcja_pierwszego_C02.md)
-· [dane 2232+160+81](wyniki/b12_08_audyt_konstrukcji_pierwszego_prototypu.json)
-· [kod odtwarzania](skrypty/b12_08_audyt_rysunku_pierwszego_prototypu.js).
-
-
-
-
-
-
-
-
-
-
-
-### P45 — czy para tanich 12″ pozostaje opłacalna przy realnych ograniczeniach napędu?
-
-**Kontynuacja P43 (02.11.2026).** Dodatkowa kampania zawiera **12 870** obliczeń modelu liniowego dla 13 układów, pięciu objętości (75–150 l), 11 częstotliwości, trzech budżetów strat miedzi, dwóch progów katalogowego wychylenia i trzech umownych mnożników oporu cewki. Rozróżniono szeregowe, równoległe i dwa niezależne kanały zasilania; izobaryczny pozostał próbą kontrolną.
-
-Przy **120 l, 20 Hz, 50 W łącznych strat w cewkach, 40 V RMS / 12 A RMS i pełnym katalogowym Xmax** para STX W.32.500.8.MC_v2 w połączeniu równoległym uzyskała modelowe **97.30 dB**, a pojedynczy Dayton RSS390HF-4 **99.62 dB**. Różnica wynosi **2.31 dB**. W ostrożniejszym wariancie 0,7× katalogowego Xmax i przy Re×1,4 para STX osiągnęła **94.83 dB** — to nie jest wyznaczony próg niskiego THD ani temperatura cewki.
-
-Koszt samych przetworników: **430 zł za dwa STX** wobec **1613,33 zł za jeden Dayton** (ceny ofertowe, bez reszty urządzenia). Para STX ma nominalnie **4 Ω równolegle** lub **16 Ω szeregowo**; wersja z oddzielnymi wzmacniaczami wymaga dwóch kanałów. Wstępny układ dwóch kołnierzy Ø332 mm na froncie 1020 × 500 mm mieści się w rzucie 2D, ale nie zweryfikowano kolizji wręg, dwóch koszy, połączeń z frontem i montażu.
-
-**Wniosek:** to mocny wariant ekonomiczny, lecz nie ma podstaw do tezy o równoważnych zniekształceniach, niezawodności czy wydajności dwóch osobnych subwooferów w pokoju. [Raport 114](raporty/114_P45_dwa_tanie_12_odpornosc_naped_koszt.md) · [715 porównywalnych punktów CSV](wyniki/p45_dual12_bazowe_715.csv) · [pełne agregaty kampanii](wyniki/p45_dual12_odpornosc_20261102.json) · [kod odtwarzania](skrypty/p45_dwa_tanie_12_robustnosc.js).
-
-**Rozszerzenie warunków badawczych (31.10.2026):** Dayton RSS390HF-4 jest
-**wstępnym faworytem, a nie ostatecznym wyborem**. Na tamtym etapie pula liczyła
-**34 modele głośników (35 konfiguracji elektrycznych)**. Po wcześniejszym
-porównaniu 26 modeli rozszerzyliśmy zestaw i przeprowadziliśmy audyt
-dokumentacji dziewięciu kolejnych marek:
-GPA, VOLT, SUPRAVOX, EMS, PURIFI, Kartesian, PHL, ETON i Davis.
-Modele nie przechodzą automatycznie do rankingu tylko dlatego, że
-występują w katalogu: sprawdzamy Xmax, Sd, Vd, zgodność montażu
-i kompletność fabrycznych T/S. **EMS B15EX oczekuje na kompletną
-kartę producenta.**
-
-[Zweryfikowany rejestr parametrów i źródeł](dane/karty_producentow/2026-10-31_9_marek_weryfikacja.json)
-· [pełny raport briefu](raporty/BRIEF_2026-10-31_wzmacniacz_DSP_i_9_marek.md)
-· [odtwarzanie dokumentacji i SHA-256](skrypty/odtworz_dokumentacje_producentow.py).
-Oryginalnych PDF producentów bez potwierdzonych praw do redystrybucji
-nie kopiujemy do repo; zapisujemy weryfikowalne parametry i odnośniki.
-
-**Przeprowadzono 274 725 nowych obliczeń przesiewowych** dla
-35 konfiguracji elektrycznych (34 unikalne produkty), z których
-33 miały komplet spójnych danych. EMS i SUPRAVOX pozostają
-zablokowane z wyjaśnionych w audycie przyczyn.
-[Agregaty i świadkowie dla całej puli](wyniki/brief20261031_pelna_pula_35_wstepna_analiza.json).
-To liniowa wstępna analiza, nie pełne badania nieliniowości, THD,
-termiki i mechaniki gotowej skrzyni dla wszystkich 34 produktów.
-
-
-
-Badamy modele firm BMS, Dayton Audio, Eminence, FaitalPRO, LaVoce,
-PURIFI, Peerless, SB Acoustics, SEAS, STX i Scan-Speak. W puli są także
-mniejsze modele kontrolne — obecność w zestawieniu nie oznacza spełnienia briefu.
-
-Pierwszy wykres obejmuje **pierwotne 24 modele**. Pokazuje granice liniowego
-modelu dla osobnych ustalonych sinusów 10–100 Hz, w geometrii 2π / 1 m,
-przy wspólnych 100 l i napędzie 40 V RMS / 12 A RMS, oraz katalogowy
-zapas ruchu membrany. Warunki poszczególnych porównań są na osiach i w
-[raporcie 010](raporty/010_szeroka_pula_i_kwalifikacja.md).
-Wyższy słupek nie potwierdza jeszcze mniejszych zniekształceń.
-
-![Pierwotne 24 modele: porównanie ograniczeń napędu i ruchu membrany](wyniki/09_szeroka_pula.png)
-
-Później dodaliśmy **SB34SWNRX-S75-6** i **SB34SWPL76-3-DV**.
-To razem 26 produktów i 27 połączeń elektrycznych: model dwucewkowy
-liczymy osobno przy połączeniu szeregowym i równoległym.
-
-![Dodatkowe SB Acoustics: wpływ połączenia cewek, napędu i objętości](wyniki/61_SB_porownanie_i_objetosc.png)
-
-Przykład: przy 100 l, 40 V RMS / 12 A RMS i 80 Hz równoległe połączenie
-SB ogranicza prąd, a szeregowe — napięcie. To oddzielne ustalone sinusy,
-bez kwalifikacji czasu pracy. Nowe modele mają własne dane i obliczenia;
-nie przypisujemy im starszych badań nieliniowości i temperatury.
-
-[Raport 038: dane, oryginalne wykresy, opinie i braki](raporty/038_SB_Acoustics_rozszerzenie_i_porownanie.md).
-
-<details>
-<summary><strong>Rozwiń: jak niepewność parametrów zmienia porównanie głośników</strong></summary>
-
-Parametry z katalogu nie opisują idealnie każdego egzemplarza. Sprawdzamy,
-czy wnioski utrzymają się po zmianie założeń. Przyjęte zakresy są próbą
-odporności modelu, a nie zmierzoną statystyką produkcji.
-
-![Wpływ przyjętej niepewności parametrów na porównanie kandydatów](wyniki/11_niepewnosc_i_kolejnosc.png)
-
-[Raport 015: zakresy, czułość i przykłady zmiany kolejności](raporty/015_niepewnosc_globalna_i_odpornosc.md).
-
-</details>
+[Porównanie i odporność wyboru — 053](raporty/053_porownanie_i_odpornosc_rekomendacji.md) · [konfiguracja prototypu — 054](raporty/054_rekomendowana_konfiguracja_prototypu.md) · [audyt po rozszerzeniu badań B12-08](raporty/B12-08_audyt_wyboru_i_konstrukcja_pierwszego_C02.md).
 
 ### Który głośnik wybrać do pierwszego prototypu?
 
@@ -450,19 +85,6 @@ porównawczym 12″.
 · [wrażliwość rekomendacji — 055](raporty/055_wrazliwosc_wyboru_i_margines_glebokosci.md).
 
 
-## Co już wynika z badań
-
-- **Sam rozmiar głośnika nie rozstrzyga wyboru.** Liczy się także możliwy ruch
-  membrany oraz dostępne napięcie i prąd wzmacniacza.
-- **Włóknina to część projektu.** Jej ilość i położenie zmieniają zachowanie
-  powietrza; nie zastępujemy jej jednym stałym „bonusem litrów”.
-- **Obudowa też pracuje.** Wzmocnienie może pomóc bardziej niż samo
-  pogrubienie płyty. Sposób połączenia i sztywność kleju mają znaczenie.
-- **Pokój jest częścią układu.** Wymiary pozwalają obliczyć częstotliwości
-  możliwych rezonansów, ale ich poziom zależy też od ustawienia i tłumienia.
-
-
-<a id="praktyczny-przewodnik"></a>
 ## Praktyczny przewodnik — co projektujemy i co z tego wynika?
 
 **Cel:** pierwszy prototyp zamkniętego subwoofera, docelowo **dwa urządzenia** do pokoju około **4,6 × 3,7 × 2,5 m**. Projektujemy dla miejsca odsłuchu, a nie maksymalnej mocy na etykiecie. Na razie niczego nie zamawiamy ani nie frezujemy.
@@ -570,122 +192,6 @@ Dla każdego wykresu sprawdzaj kolejno: **co obliczono**, **co to zmienia w proj
 <summary><strong>Rozwiń szczegółowe badania konstrukcyjne P38–P42 (rysunki i historia decyzji)</strong></summary>
 
 > **Ważne:** P38B wykrył przesunięcie źródła względem wnętrza o 22 mm w obu osiach. Nie traktuj starszych map P34B/P35A jako aktualnych. Warianty mocowań nie są dopuszczone do CNC.
-
-## P38 — znamy już rozstaw śrub i błąd układu współrzędnych
-
-### Jak ma wyglądać front z Dayton RSS390HF-4?
-
-![P38A: oficjalna geometria kosza, wycięcia i ośmiu otworów](wyniki/p38a_front_NIE_CNC.svg)
-
-*Według rysunku producenta kosz ma Ø388,4mm, wycięcie Ø355,8mm, a osiem otworów **w metalowym koszu** Ø6,5 mm leży na okręgu Ø368 mm. **Tylko jeśli w MDF również wywiercimy otwór Ø6,5 mm**, po odjęciu jego promienia pozostaje **2,85mm MDF**. Otwór Ø6,5 mm w koszu nie narzuca tej średnicy otworu w MDF. To istotny problem dla projektowania mocowania, nie pozwolenie na frezowanie. [Raport 096](raporty/096_P38A_front_Dayton_otwory_i_mocowania.md) · [szkic DXF — NIE CNC](wyniki/p38a_front_NIE_CNC.dxf).*
-
-### W którym miejscu naprawdę jest głośnik we wnętrzu?
-
-![P38B: wpływ korekty współrzędnych kosza na ciśnienie 80 Hz](wyniki/p38b_audyt_pozycji_zrodla.svg)
-
-*Oś x231/z250mm w P31C jest określona **od zewnętrznych krawędzi obudowy**. Po odjęciu grubości MDF22mm właściwe współrzędne wewnętrzne to **x209/z228mm**. Historyczny model P34B używał x231/z250mm także wewnątrz. W 120l na siatce55mm model RMS przy 80Hz zmienia się z 19,09% do 21,03%. **Oba wyniki to symulacje, nie THD**. [Raport 097](raporty/097_P38B_audyt_wspolrzednych_FV.md).*
-
-## P41 — dwie alternatywy mocowania Dayton zamiast cienkiego pierścienia
-
-### Porównanie nośnika typu A i belek typu B
-
-![P41A: dwie hipotetyczne ścieżki przeniesienia siły z kosza do struktury](wyniki/p41a_punkty_carrier_szyny.svg)
-
-*Dla tego samego przykładu 15kg / 5g / e120mm, sztywności kotew 300N/mm i mnożnika 3×, wariant A daje **223,4N**, a B **221,6N** maksymalnej reakcji na kotwę przy sile X. Oba układy w tym modelu przyjmują idealnie sztywny element przenoszący siły. Nie jest to badanie nośności śrub ani MDF. [Raport 103](raporty/103_P41A_carrier_kontra_szyny_2592.md).*
-
-### Dlaczego sam wybór metalu nie wystarcza?
-
-![P41B: analityczne ugięcia szyn zależne od przekroju i modułu E](wyniki/p41b_ugięcia_szyn.svg)
-
-*W modelu belki długości 380mm pod siłą środkową 200N, hipotetyczny profil 25×4mm ugina się o **0,627mm** przy E=70GPa, a o **0,219mm** przy E=200GPa. Po połączeniu tej podatności z modelem B jego obliczeniowe ugięcie rośnie: **0,325→0,383mm** w wybranym wariancie. Nie dowodzi to bezpieczeństwa ani możliwości wykonania. [Raport 104](raporty/104_P41B_podatnosc_belek_108.md).*
-
-**[Obie koncepcje w edytowalnym modelu OpenSCAD](dokumentacja/P41C_porownanie_nosne_A_B_NIE_CNC.scad)** — ustaw parametr `concept` na `"A"` lub `"B"`. Oba modele mają niezweryfikowane połączenia i zastępczą bryłę kosza. [Raport 105](raporty/105_P41C_koncepcje_3D_A_B.md).
-
-## P42 — audyt uzupełniający do badań P41: cztery podpory i trasy łączników
-
-### Jak dwa nowe układy czterech punktów przenoszą obciążenia?
-
-![P42A: obciążenia modelowej ramy i dwóch belek](wyniki/p42a_reakcje_dwa_uklady.svg)
-
-*W osobnym eksperymencie zbadano 1458 układów **czterech odległych podpór** w szerokiej ramie A lub dwóch belkach B, plus ośmiopunktowy model referencyjny. Przy 13,61kg, 5g i umownym `k=1000 N/mm` rama A korzystniej od B przenosi moment od poziomej siły. **To inna geometria i liczba podpór niż wcześniej w P41 (osiem punktów)**, dlatego wyniki są uzupełnieniem, a nie zamiennikiem P41 ani pomiarem wytrzymałości. [Raport 106](raporty/106_P42A_podpory_1458.md).*
-
-### Czy podpory mieszczą się w uproszczonych obwiedniach 3D?
-
-![P42B: testy AABB dla dwóch układów](wyniki/p42b_obwiednie_porownanie.svg)
-
-*162 próby pokazały brak kolizji niektórych hipotetycznych obwiedni ramy A i sześć odrzuconych przypadków belek B przy **umownym, przesadnie szerokim promieniu silnika 205mm**. Nie sprawdzono jednak całego kosza ani samych połączeń pomiędzy śrubami i podporami. [Raport 107](raporty/107_P42B_obwiednie_3D_dwoch_wariantow.md).*
-
-### Czy najkrótsze łączniki nie przechodzą przez wycięcie?
-
-*48 testów rzutu wykazało, że dwa proste połączenia do belek B przecinają obszar otworu Ø355,8, a w ramie A jeden łącznik o szerokości 10mm ma podobny problem. To **kontrola 2D**, nie gotowy projekt mocowania. [Raport 108](raporty/108_P42C_laczniki_i_koncepcje_3D.md) · [Model OpenSCAD](dokumentacja/P42D_dwie_sciezki_REFERENCYJNE_NIE_CNC.scad).*
-
-> **Uwaga o numeracji:** starsze równoległe badania konstrukcji mają historyczne oznaczenia P43-K/P44-K; odrębny program **P43 (02.11.2026)** dotyczy dwóch głośników 12″ i układu izobarycznego. Numery raportów poniżej skorygowano, aby zachować unikalność.
-
-## P43-K (historyczne oznaczenie konstrukcyjne) — czy łączniki można poprowadzić bezpiecznie wokół wycięcia?
-
-### Dlaczego cienki margines przy śrubach jest ważniejszy niż samo obejście otworu?
-
-![P43A: budżet radialny tras od ośmiu śrub](wyniki/p43a_budzet_radialny_trasy.svg)
-
-*Wykonano **576 analiz par śruba–podpora**, wybierając 144 najkrótsze trasy w uproszczonej płaszczyźnie. Przy 8 mm szerokości i hipotetycznym odstępie 2 mm pozostaje **0,1 mm** radialnego marginesu na osi łącznika; przy 10 mm + 2 mm nie ma już miejsca nawet na jego początek. **To nie jest rzeczywista szerokość drewna przy otworze śruby.** **2,85 mm MDF** wystąpiłoby wyłącznie, gdyby hipotetycznie wywiercono **Ø6,5 mm także w MDF**; fabryczne Ø6,5 mm leży **w metalowym koszu**, a przykładowa śruba M5 z przelotem Ø5,5 mm w MDF pozostawiałaby nominalnie **3,35 mm**. [Raport 110](raporty/110_P43A_trasy_omijajace_wyciecie.md) · [wyniki CSV](wyniki/p43a_trasy_144.csv).*
-
-### Co jeśli jedna z czterech podpór przestaje przenosić obciążenie?
-
-![P43B: maksymalne reakcje po awarii podpory](wyniki/p43b_max_reakcje_po_utracie_podpory.svg)
-
-*W **1620 modelowych przypadkach** porównano pełne cztery podpory z wyłączeniem jednej. Przy 13,61 kg, 5g, mimośrodzie 120 mm i poziomej sile X maksymalna obliczona reakcja wzrasta w ramie A z **202,3 do 319,1 N**, a w belkach B z **400,4 do 761,2 N**. Sprężyny mają założoną sztywność, a prawdziwych połączeń nadal nie ma: nie jest to dowód bezpieczeństwa ani ugięcia gotowej konstrukcji. [Raport 111](raporty/111_P43B_awaria_jednej_podpory.md) · [pełne dane CSV](wyniki/p43b_awarie_1620.csv) · [kod odtwarzania](skrypty/p43_trasy_i_awarie_podpor.js).*
-
-**Wniosek:** szeroka rama A pozostaje kandydatem do badań konstrukcyjnych, ale żaden wariant nie jest zatwierdzony do CNC bez rzeczywistych złączy, geometrii kosza oraz weryfikacji kontaktu i materiałów.
-
-## P44-K (historyczne oznaczenie konstrukcyjne) — jednostronny kontakt i warunkowe tarcie mocowania
-
-### Czy rama utrzymuje kontakt po przeciążeniu lub utracie jednej podpory?
-
-![P44A: 5400 przypadków kontaktu i wstępnego docisku](wyniki/p44a_pelny_kontakt.svg)
-
-*W badaniu P44A sprężyny normalne nie mogą już przenosić rozciągania. Przeprowadzono **5400 analiz** dla trzech kierunków, dwóch mas, trzech przyspieszeń, różnych mimośrodów, stanów utraty podpory i pięciu hipotetycznych docisków. Przy 500 N/punkt pełny kontakt zachowuje model A w **500/540**, a B w **412/540** przypadków. Nie jest to rekomendowany docisk śrub ani ocena nośności. [Raport 112](raporty/112_P44A_jednostronny_kontakt_5400.md) · [CSV](wyniki/p44_kontakt_5400.csv).*
-
-### Dlaczego brak rozwarcia nie oznacza odporności na poślizg?
-
-![P44B: warunkowe progi współczynnika tarcia](wyniki/p44b_wymagany_wspolczynnik_tarcia.svg)
-
-*P44B sprawdza **16 200 nierówności tarcia** przy μ=0,2/0,4/0,6, zakładając rozdzielenie sił stycznych proporcjonalnie do sztywności hipotetycznych podpór. To badanie przesiewowe, **nie pełny model stick/slip**. Nadal brakuje realnego kosza, podkładek, docisku, złącza, pomiarów MDF i MES kontaktowego 3D. [Raport 113](raporty/113_P44B_tarcie_i_wrazliwosc_16200.md) · [kod](skrypty/p44_kontakt_docisk_tarcie.js) · [agregaty](wyniki/p44_podsumowanie_20261101.json).*
-
-**Wniosek P44:** szeroka rama A pozostaje warunkową ścieżką badań. **Brama CNC pozostaje zamknięta.**
-
-## P40 — czy osiem śrub utrzyma głośnik i czy pierścień daje miejsce na montaż?
-
-### Sam ciężar dzielony przez 8 to za mało
-
-![P40A: reakcje mocowań głośnika dla 4–8 czynnych śrub](wyniki/p40a_reakcje_grup_srub.svg)
-
-*Dla 15 kg, hipotetycznego obciążenia 5g i środka masy 120mm za frontem w modelu reakcji ośmiu śrub największe obciążenie pojedynczego punktu przy bocznym działaniu siły wynosi **151 N**, a nie **92 N** z uproszczenia F/8. Jeśli część śrub przestaje pracować, obciążenia mogą wzrosnąć kilkukrotnie. **To nie jest pomiar wytrzymałości śrub ani MDF.** [Raport 101](raporty/101_P40A_reakcje_8_mocowan.md).*
-
-### Ile naprawdę miejsca jest w pierścieniu wzmacniającym?
-
-![P40B: wymiana luzu montażowego na pas metalowego pierścienia przy śrubie](wyniki/p40b_budzet_promieniowy_pierscienia.svg)
-
-*Wycięcie Ø355,8 mm, osie śrub na Ø368 mm i osobny modelowy otwór **Ø6,5 mm w METALOWYM PIERŚCIENIU** dają tylko **2,85 mm budżetu promieniowego samego pierścienia**, a NIE wymiar wiercenia w MDF. Po korekcie P40B do hipotetycznego **M5/Ø5,5 mm w MDF** zbadano ponownie **675 wariantów**: **126** przechodzi podstawowe warunki, **6** dodatkowy próg 1 mm luzu + 1 mm metalu, zaś **żaden** nie przechodzi progu 1 mm + 2 mm. Fabryczne Ø6,5 mm Daytona jest w KOSZU. Progi są badawcze, nie normowe. [Raport 102](raporty/102_P40B_tolerancje_pierscienia_675.md).*
-
-## Nowe badania P39 — ciśnienie, mocowania i edytowalny model 3D
-
-### Co zmieniło się po przeliczeniu nacisków na ściany?
-
-![P39A: porównanie nacisków na 6 ścian przed i po korekcie położenia głośnika](wyniki/p39a_cisnienie_scian_po_korekcie.svg)
-
-*W 36 nowych symulacjach powietrza w komorze zastosowano właściwą oś głośnika **x209/z228 mm w układzie wnętrza**, a wyniki porównano z historycznym P35A. Dla 120l / 80Hz, na siatce 36mm średnie ciśnienie względne na lewej ścianie zmieniło się z 0,773 na **0,735**, na prawej z 1,369 na **1,384**. To **względne pole modelowe**, nie fizyczne SPL ani obciążenie zweryfikowanego MDF. [Raport 098](raporty/098_P39A_naciski_scian_korekta_FV.md).*
-
-### Czy pierścień wzmacniający pod Daytonem zmieści się wewnątrz?
-
-![P39B: pierścień, wnętrze frontu i bramki odległości](wyniki/p39b_pierscien_i_odstepy.svg)
-
-*54 zestawienia średnic i grubości pokazują, że pierścień przykładowy Ø400/Ø356/t4mm geometrycznie pozostawia 9mm do lewego boku oraz 17mm do pierwszej wręgi w projekcji X. Ale **luz promieniowy od wycięcia wynosi zaledwie 0,1mm**, a cienki pasek MDF przy śrubie pozostaje. Taki pierścień **nie jest zatwierdzony wytrzymałościowo**. [Raport 099](raporty/099_P39B_geometria_pierscienia_i_glebokosc.md).*
-
-### Jak wygląda obudowa w edytowalnym modelu trójwymiarowym?
-
-[Model 3D OpenSCAD — **REFERENCYJNY, NIE DO CNC**](dokumentacja/P39C_front_korpus_pierscien_REFERENCYJNY_NIE_CNC.scad) jest parametrycznym złożeniem paneli, wręg, frontu z otworem i pierścienia. Umożliwia dalsze opracowywanie pełnego CAD; **nie jest jeszcze dokładną bryłą kosza Dayton z terminalami, zamkami i realnymi łącznikami**. [Raport 100](raporty/100_P39C_edytowalny_model_3D_OpenSCAD.md).
-
-</details>
 
 ## Konstrukcja w obrazach — od pomysłu do sprawdzalnego prototypu
 
@@ -865,352 +371,6 @@ Temperatury i współczynniki w tym badaniu są założeniami modelu.
 </details>
 
 <a id="filtry"></a>
-## DSP: dobry wzór filtru to początek
-
-**P24F — obserwator U/I w pętli zabezpieczenia (raport 071).**
-W 192 deterministycznych trajektoriach porównano cztery strategie termiczne
-z syntetycznymi pomiarami Z(f) przy 80/150/300 Hz, trzema hipotetycznymi
-sieciami cieplnymi, utratą pomiarów i dryftem rezystancji połączeń.
-Kontur wzrostu temperatury **+80 K jest tylko punktem diagnostycznym**,
-a nie limitem pracy Daytona. Mimo założonego marginesu estymacji 15 K i tempa
-5 K/s strategia predykcyjna przekroczyła ten kontur w 7/48 przypadków.
-Strategia z wcześniejszym progiem 55 K przekroczyła go w 3/48 przypadków,
-co **nie potwierdza jej bezpieczeństwa w rzeczywistym urządzeniu**.
-Nie potwierdzono praktycznej dostępności sygnału diagnostycznego, czujników
-U/I, API miniDSP ani fizycznej skuteczności toru wyciszenia.
-
-[Raport 071 — P24F](raporty/071_P24F_obserwator_w_petli_i_brak_pobudzenia.md)
-· [Kod odtwarzający 192 przebiegi](skrypty/p24f_obserwator_i_ochrona.py)
-· [Wyniki CSV](wyniki/p24f_192_przypadkow.csv)
-· [Pełne trajektorie JSON](wyniki/p24f_192_trajektorii_20261031.json)
-· [Podsumowanie JSON](wyniki/p24f_podsumowanie_20261031.json).
-
-
-
-**Czasowe nagrzewanie cewki (P24B) i dwie niezależne ochrony.**
-W 729 hipotetycznych trajektoriach sprzęgliśmy zespolone Z(f),
-zmienną `Re(T)`, dwie pojemności i opory cieplne, prąd końcówki
-oraz ograniczenie szczytowego wychylenia. Zależy to silnie od
-częstotliwości i czasu trwania sygnału: ogranicznik Xmax nie
-zastępuje temperatury cewki.
-
-![P24B — modelowy przebieg temperatury 80 Hz i zabezpieczenia](wyniki/108_P24B_czasowe_nagrzewanie_80Hz.svg)
-
-[Raport 067 — P24B: cewka, DSP i termika](raporty/067_P24B_czasowa_termika_i_dwie_ochrony.md)
-· [729 trajektorii CSV](wyniki/p24b_kampania_729.csv)
-· [skrypt odtwarzania](skrypty/p24b_czasowa_termika_cewki.py)
-· [założenia cieplne](dane/konfiguracje/p24b_czasowa_termika_20261031.json).
-
-**P24C: obserwowalność temperatury z U/I i audyt miniDSP.** Dla modelu C02
-wykonano 50 000 prób Monte Carlo: błąd estymacji zależy silnie od
-częstotliwości, błędów fazy i zmian BL. Przy 40 Hz w modelu 80 l
-hipotetyczny spadek BL o 3% daje błąd oceny przyrostu T o −53,62 K;
-nie jest to pomiar. Instrukcje Flex Eight/HTx potwierdzają zwrotnice,
-PEQ i kompresor poziomu sygnału, **ale nie potwierdzają** wbudowanego
-pomiaru U/I na zaciskach ani regulacji temperatury cewki.
-
-[Raport 068 — P24C: obserwowalność i wykonalność ochrony](raporty/068_P24C_obserwowalnosc_temperatury_i_wykonalnosc_DSP.md)
-· [wyniki 50 000 prób](wyniki/p24c_obserwowalnosc_20261031.json)
-· [skrypt](skrypty/p24c_obserwowalnosc_ui.py).
-
-**P24D: opóźnienia i awarie ochrony dwóch subwooferów.** Wykonano
-88 modelowych prób (16 scenariuszy podstawowych i 72 kombinacje opóźnienia
-oraz błędu obserwacji) przy 20 i 80 Hz. W 36/72 wariantach siatki
-naruszono **umowny** kontur +80 K. Przy 80 Hz, błędzie −20 K, progu
-testowym 45 K i zwłoce 0,25 s obliczono szczyt +75,095 K; przy zwłoce
-5 s +105,630 K. Awaria aktuatora potrafi pozbawić ochronę skuteczności.
-**To nie są limity bezpieczne, pomiary ani gwarancja implementacji miniDSP.**
-
-[Raport 069 — P24D: opóźnienia, watchdog i awarie](raporty/069_P24D_opoznienia_ochrony_faulty_dwa_kanaly.md)
-· [skrypt odtwarzający](skrypty/p24d_opoznienia_ochrony_dwoch_kanalow.py)
-· [wyniki skrótowe](wyniki/p24d_podsumowanie_20261031.json).
-
-**P24E: kilka częstotliwości zamiast jednego odczytu U/I.** W 120 000
-prób syntetycznych porównano identyfikację Re(T), BL² i Le. Przy modelowym
-spadku BL o 3% pojedynczy pomiar 40 Hz obciążał estymację T błędem
-−53,62 K; dopasowanie parametrów z 80/150/300 Hz uzyskało przy przyjętym
-szumie RMSE 1,241 K, ale tylko gdy struktura modelu jest prawidłowa.
-**Zasadnicza granica:** dodatkowe 0,1 Ω w przewodach jest nieodróżnialne
-od przyrostu Re i odpowiada błędowi +8,48 K nawet przy wielu punktach.
-Nie jest to walidacja hardware, dostępności pasma ani ochrony DSP.
-
-[Raport 070 — P24E: identyfikowalność Re/BL/Le](raporty/070_P24E_wieloczestotliwosciowa_ident_Re_BL_Le.md)
-· [skrypt](skrypty/p24e_wieloczestotliwosciowa_ident.py)
-· [wyniki kontrolne](wyniki/p24e_podsumowanie_20261031.json).
-
-
-
-**Nie wyznaczono temperatury granicznej prawdziwego głośnika.**
-Przyjęte parametry cieplne i kontur przyrostu +80 K to wyłącznie
-warianty badawcze; żaden finalny limiter nie został zatwierdzony.
-
-
-
-Nowy brief porównuje centralny **Flex Eight (RCA 2 Vrms)**
-z **Flex HTx (RCA 2 Vrms, TRS symetryczne 4 Vrms)** oraz
-modułami ICEpower/Hypex. Dla NC500MP przy wzmocnieniu
-25,5 dB wejście 2 Vrms daje modelowo tylko około **355 W/4 Ω**;
-pełne 500 W/4 Ω wymaga około 2,37 Vrms. Ostateczny wzmacniacz
-musi być wybrany na podstawie realnego zespolonego obciążenia,
-temperatury, prądu, zgodności wejścia i kompletnego kosztorysu.
-
-[Porównanie elektroniki i zabezpieczeń](raporty/BRIEF_2026-10-31_wzmacniacz_DSP_i_9_marek.md)
-· [180 kontrolnych obliczeń Dayton](wyniki/brief20261031_180_swiadkow_Dayton.csv)
-· [analiza rzeczywistego napędu i DSP](raporty/P22C_2026-10-31_wzmacniacze_impedancja_DSP_Xpeak.md).
-
-**P22C: policzono zespoloną impedancję i ograniczenia rzeczywistego toru DSP–wzmacniacz.**
-Dla pięciu kandydatów, pięciu objętości, czterech modułów, trzech
-ścieżek DSP i trzech hipotetycznych budżetów strat cewki wykonano
-**99 900 obliczeń**, niezależnie odtworzonych w Pythonie.
-
-**Ważna korekta:** katalogowe Xmax to wychylenie **szczytowe**.
-W poprzednich tabelach 180 i 274 725 przypadków porównano je
-omyłkowo z wychyleniem RMS; oba zbiory **przeliczono ponownie**
-(bez przyznawania zmian w THD, których nie mierzono).
-
-![P22C — częstotliwościowa obwiednia napięcia, Xmax i mocy w 80 l](wyniki/107_P22C_wzmacniacz_DSP_Xmax.svg)
-
-W modelu 80l, C02, 40Hz, przy scenariuszu strat miedzianych
-250W, NC500MP z RCA 2Vrms osiąga modelowo 112,66dB,
-a z TRS 4Vrms 113,90dB (+1,24dB); przy 20Hz **zysk wynosi 0dB**,
-ponieważ ogranicza mechanika. To liniowe wyliczenia półprzestrzeni,
-nie czysty SPL w pokoju i nie końcowy limiter.
-
-[Raport P22C — impedancja, DSP, wzmacniacze i erratum RMS](raporty/P22C_2026-10-31_wzmacniacze_impedancja_DSP_Xpeak.md)
-· [900 grup wyników](wyniki/p22c_napiecie_prad_wychylenie_analiza.json)
-· [świadkowie](wyniki/p22c_swiadkowie_36.csv)
-· [skrypt](skrypty/p22c_naped_dsp_zespolona_impedancja.py)
-· [niezależny audyt](skrypty/p22c_niezalezna_kontrola.py).
-
-
-
-Filtr cyfrowy trzeba zaprojektować dla właściwej częstotliwości próbkowania
-i zapisać z odpowiednią precyzją. Zaokrąglanie może zmienić bas nawet wtedy,
-gdy filtr pozostaje stabilny. W badaniu 27 konfiguracji głośników porównano
-972 projekty i 4860 wariantów zapisu współczynników.
-
-![Filtry DSP: osobny wpływ projektu cyfrowego i zapisu współczynników](wyniki/84_P23A_transformacja_i_zapis_wspolczynnikow.png)
-
-To badanie programu, a nie pomiar konkretnego miniDSP. Scenariusze używają
-48, 96 i 192 kHz; dokumentacja Flex Eight wymaga projektu dla 96 kHz.
-Zaokrąglenie współczynników do `float32` i do sześciu miejsc po kropce
-to osobne eksperymenty, nie opis wnętrza tego urządzenia.
-
-**Zapas dla muzyki i impulsów wymaga osobnego rachunku.** W jednym
-przykładzie filtr wzmacnia najlepszy znaleziony sinus o około 3,72 dB,
-lecz specjalnie skonstruowany sygnał o ograniczonej amplitudzie daje
-7,44 dB. Taki sygnał nie reprezentuje typowej muzyki; pokazuje, dlaczego
-kontrola samych sinusów nie wystarcza do pełnej ochrony przed przesterowaniem.
-
-![DSP: osobne błędy obliczeń oraz zapas dla sygnału w czasie](wyniki/86_P23A_arytmetyka_i_zapas_sygnalu.png)
-
-<details>
-<summary><strong>Rozwiń: jak sprawdzamy bardzo niskie filtry i ich stabilność</strong></summary>
-
-Dodatkowe 300 filtrów kontrolnych obejmuje graniczne częstotliwości
-0,5–80 Hz. Decyzję o stabilności oparto na dokładnych ułamkach zapisanych
-współczynników. Część hipotetycznych reprezentacji traci ścisłą stabilność.
-Nie jest to diagnoza sprzętu, którego arytmetyki nie zidentyfikowaliśmy.
-
-![Bardzo niskie filtry: dokładne warunki stabilności po zapisaniu współczynników](wyniki/85_P23A_dokladna_stabilnosc_i_granice.png)
-
-[Raport 046: modele, faza, opóźnienie, sygnały czasowe i ograniczenia](raporty/046_filtry_cyfrowe_stabilnosc_i_zapas.md)
-· [Wyprowadzenia: stabilność i zapas poziomu](baza_wiedzy/34_cyfrowe_filtry_stabilnosc_i_normy.md).
-Ochrona wychylenia i temperatury oraz integracja z fizycznym modelem
-głośnika pozostają kolejnym etapem.
-
-</details>
-
-### Wzmacniacz i przewody też zmieniają wynik
-
-Rezystancja między źródłem a głośnikiem zmniejsza jego elektryczne
-tłumienie i zużywa część budżetu napięcia. Dla niskiej impedancji głośnika
-ta sama dodatkowa rezystancja ma większe znaczenie względne.
-Porównaliśmy 3240 pasywnych obwodów i 19 440 punktów napędu.
-
-![Rezystancja źródła i przewodów: zmiana tłumienia oraz obwiedni napędu](wyniki/87_P22A_rezystancja_zrodla_i_obwiednia.png)
-
-To obwody przyjęte do badania. Nie opisują konkretnego wzmacniacza.
-Górny wykres upraszcza indukcyjność cewki do zera; dolny zachowuje jej
-dane katalogowe. Osobne sinusy i limity 40 V RMS / 12 A RMS oraz
-katalogowe Xmax nie określają bezpiecznego czasu pracy.
-
-<details>
-<summary><strong>Rozwiń: dlaczego prąd wzmacniacza i cewki mogą być różne</strong></summary>
-
-W modelu z filtrem wyjściowym część prądu płynie przez kondensator.
-Prąd źródła może wtedy różnić się od prądu cewki. Sprawdzamy oba porty
-oraz bilans energii, żeby poprawnie przypisać ograniczenie prądu.
-
-![Model filtru wyjściowego: dwa prądy i podział mocy czynnej](wyniki/88_P22A_dwa_prady_i_bilans_mocy.png)
-
-[Raport 047: równania obwodu, tłumienie, limity i sprawdzenia](raporty/047_port_zrodla_tlumienie_i_bilans.md)
-· [Baza wiedzy: port źródła i wykonalność ochrony](baza_wiedzy/35_port_zrodla_i_wykonalnosc_ochrony.md).
-Clipping i zachowanie pętli prądowej w czasie opisuje kolejny etap poniżej.
-
-</details>
-
-### Ograniczanie prądu nie zastępuje kontroli ruchu
-
-Przeprowadziliśmy także 648 symulacji w czasie z nasyceniem napięcia
-i hipotetyczną pętlą prądową. Zachowaliśmy energię cewki i SEM od ruchu.
-W badanych warunkach pętla zmniejsza największe przekroczenie prądu,
-lecz nie zapewnia twardego limitu ani samodzielnej ochrony wychylenia.
-
-![Nasycenie i pętla prądowa: prąd oraz ruch wymagają oddzielnej kontroli](wyniki/89_P22B_prad_i_brak_ochrony_wychylenia.png)
-
-Wyniki poza katalogowym Xmax są próbami granic matematycznego modelu.
-Nie opisują dokładnie fizycznego głośnika po wyjściu poza zakres liniowy.
-To argument za ochroną opartą także na ruchu i temperaturze,
-a nie ranking zniekształceń produktów.
-
-<details>
-<summary><strong>Rozwiń: napięcie, prąd i ruch w jednym przebiegu</strong></summary>
-
-Przykład pokazuje oddzielnie napięcie zadane, napięcie po ograniczeniach,
-prąd i wychylenie. Próg pętli prądowej nie jest twardym limitem jej wyniku.
-
-![Nasycenie napięcia oraz zachowany stan prądu i ruchu](wyniki/90_P22B_napiecie_prad_i_ruch_w_czasie.png)
-
-Siedem świadków sprawdzono niezależnymi ciągłymi równaniami i czterema
-krokami czasu. [Raport 048](raporty/048_nasycenie_SEM_i_stan_pradu.md)
-opisuje też bilans energii, ograniczenie metody przy Le→0 i przypadki,
-w których SEM utrudnia jednoczesne dotrzymanie granicy napięcia i prądu.
-To badanie hipotetycznego sterownika. Kolejny etap wyznacza wspólny zapas
-także dla zmieniającej się temperatury.
-
-</details>
-
-### Ile kosztuje bardzo konserwatywny zapas
-
-Można też postawić mocniejsze pytanie: jaki stały poziom napięcia utrzyma
-model w granicach ruchu, prądu i temperatury dla dowolnego sygnału
-o ograniczonej amplitudzie? Dla 972 rodzin modeli znaleźliśmy takie
-warunki i sprawdziliśmy je dokładnymi nierównościami.
-
-![Wspólny zapas ruchu, prądu i temperatury oraz jego koszt w osiągach modelu](wyniki/92_P24A_napiecie_i_cena_konserwatyzmu.png)
-
-To punkt odniesienia do dalszego projektu. W przykładzie C02 / 100 l
-stała granica wynosi około 4,99 V peak; osobny sinus w paśmie może
-wykorzystać większą amplitudę. Różnica pokazuje cenę wybranego warunku.
-Nie określa nieuniknionej straty każdego innego zabezpieczenia.
-Założone chłodzenie i granice temperatury wymagają późniejszej identyfikacji.
-
-<details>
-<summary><strong>Rozwiń: co zostało udowodnione w modelu i co pokazują symulacje</strong></summary>
-
-W każdym przypadku znaleziono obszar ruchu i prądu, którego zadany model
-nie opuszcza przy ograniczonym napięciu. Warunki obejmują cały przedział
-temperatury. Sprawdzono 1944 macierze końców przedziałów, a osobne
-36 przebiegów pokazuje przykładowe zachowanie w czasie.
-
-![Wybrany obszar modelu oraz wykorzystanie granic ruchu i prądu](wyniki/93_P24A_obszar_ruch_prad_i_czas.png)
-
-Obwiednia temperatury jest górnym porównaniem dla tego modelu grzania.
-Pokazuje także różnicę między oszacowaniem a wybraną krótką symulacją.
-
-![Temperatura: górne porównanie i wybrane przebiegi przy założonych parametrach](wyniki/94_P24A_temperatura_i_obwiednia_porownawcza.png)
-
-Model ma stałe parametry mechaniczne i indukcyjność oraz zmienne Re(T).
-Nie obejmuje jeszcze wszystkich nieliniowości, wypełnienia, podatnych ścian
-i realnego toru po DSP. Własność matematyczna nie potwierdza przez to
-dokładności danych rzeczywistego produktu.
-
-**Nowa kontrola z sygnałami wielotonowymi:** w 216 scenariuszowych
-przebiegach P25C sam filtr HP 20 Hz i ograniczanie napięcia nie
-utrzymywały zawsze zadanego zapasu ruchu. W jednym teście C02
-model wyznaczył ruch 24,427 mm wobec przyjętego progu 8,4 mm —
-**nie jest to prognoza rzeczywistego wychylenia lub uszkodzenia**,
-gdyż model liniowy opuścił domenę katalogową. Zbadano także
-energetyczną barierę ochronną, której gwarancja dotyczy wyłącznie
-idealnego modelu z obserwacją stanu, nie gotowego miniDSP.
-
-![P25C: sygnały w czasie, napięcie, prąd i ruch](wyniki/p25c_przebiegi.png)
-![P25C: ograniczenia i wpływ ochrony](wyniki/p25c_ograniczenia.png)
-
-[Raport 058 — sygnały czasowe i bariera energii](raporty/058_P25C_sygnaly_czasowe_i_bariera_energii.md).
-
-**Co się zmienia, kiedy limiter działa tylko co kilka milisekund?**
-Bariera z poprzedniego badania zakładała znajomość ruchu, prądu i
-temperatury w każdej chwili. Przy rzeczywistym próbkowaniu napięcie
-jest przez pewien czas utrzymywane bez korekty. W modelu 0D
-**zwykłe próbkowanie bariery punktowej nie gwarantuje ochrony**.
-Nowe wyprowadzenie ogranicza możliwy dopływ energii *między*
-próbkami — również w wariancie z jedną opóźnioną próbką stanu.
-Ceną jest dużo mniejsza dopuszczalna amplituda.
-
-![P25D: największa energia w porównaniu z przyjętym limitem](wyniki/102_P25D_bariera_probkowana.svg)
-
-W 144 symulacjach bezpieczna modelowo granica nie przekroczyła
-progu w żadnym z badanych przypadków. Wykres pokazuje maksimum
-w grupie 12 trajektorii i ma logarytmiczną oś energii.
-**Nie potwierdza to bezpieczeństwa miniDSP ani fizycznego głośnika**:
-brak tu błędów czujników, modelu wzmacniacza i rzeczywistych nieliniowości.
-
-[Raport 062 — dowód granicy ZOH i kontrola zagęszczenia](raporty/062_P25D_probkowana_bariera_energetyczna.md)
-
-**A co, jeśli DSP nie zna dokładnie parametrów głośnika ani jego ruchu?**
-W badaniu P25E przeprowadzono **288 symulacji** z hipotetycznym
-rozrzutem parametrów i ograniczonym błędem odczytu prądu, położenia
-i prędkości membrany. Samo wykorzystanie nominalnej energii nie
-gwarantuje zachowania przyjętego limitu. Konserwatywne oszacowanie
-energii z górnych granic parametrów pozwala wyprowadzić matematyczny
-warunek ochrony zarówno dla bieżącego, jak i opóźnionego o próbkę
-odczytu.
-
-![P25E: jak błędy pomiaru i parametrów zmieniają ochronę energetyczną](wyniki/103_P25E_odpornosc_obserwacji.svg)
-
-W obliczonej próbie naiwna strategia przekroczyła przyjęty limit
-energii w **72/72** przypadków, natomiast dwie wersje z marginesem
-nie przekroczyły go w **0/144**. Nie oznacza to automatycznie
-przekroczenia dopuszczalnego wychylenia — granica energii jest
-celowo zachowawcza. Kosztem odporności jest mniejszy modelowy RMS
-ruchu membrany; nie jest to prognoza utraty głośności w pokoju.
-
-[Raport 063 — model, ścisły warunek ZOH i niepewność](raporty/063_P25E_odporna_bariera_bledy_obserwacji.md)
-· [pełne 288 prób](wyniki/p25e_kampania.csv)
-· [kod i założenia](skrypty/p25e_robustna_bariera.py).
-
-· [agregaty 144 prób](wyniki/p25d_agregaty.csv)
-· [kod odtwarzający eksperyment](skrypty/p25d_probkowana_bariera.py).
-
-[Raport 049: założenia, dowód, koszt i ograniczenia](raporty/049_obszar_niezmienniczy_i_koszt_ochrony.md)
-· [Baza wiedzy: wspólny obszar i granica wejścia](baza_wiedzy/37_wspolny_obszar_i_granica_wejscia.md).
-
-</details>
-
-<a id="pokoj"></a>
-## Pokój: skąd bierze się dudnienie i nierówny bas
-
-Dla idealnego pokoju 4,6 × 3,7 × 2,5 m pierwsze rezonanse wzdłuż trzech osi
-wypadają około 37,3 / 46,4 / 68,6 Hz. Sam wykres częstotliwości nie mówi,
-jak mocno będzie słychać każdy z nich. Znaczenie mają pozycje głośników
-i słuchacza, drzwi, okna oraz straty w pomieszczeniu.
-
-![Możliwe częstotliwości rezonansów osiowych idealnego pokoju](wyniki/02_mody_osiowe_czytelne.svg)
-
-Badamy dwa subwoofery w realnych miejscach przy monitorach. Dokładne
-pozycje nie są jeszcze znane. Wariant rozpatrywany w badaniach zakłada RTV po lewej
-i kanapę po prawej oryginalnego rzutu; dawne scenariusze ustawienia pozostają
-przykładami obliczeń.
-
-W kolejnym modelu P26D/P27D uwzględniono także rzeczywisty
-przesunięty otwór głośnika w dwóch możliwych orientacjach skrzyni
-oraz **wspólny budżet obu źródeł**, zamiast przypisywania każdemu
-pełnej mocy bez ograniczeń. Dla jednego scenariusza poprawa
-nierównomierności w punkcie odsłuchu **33,51 → 31,49 dB** po
-dobraniu gain/delay pogorszyła najgorszy wariant niepewności
-**36,39 → 43,71 dB**. To ostrzeżenie przed dostrajaniem
-do jednego niezmierzonego pokoju, nie prognoza rzeczywistych
-głębokich dołków w pomieszczeniu.
-
-![P26D: orientacja dwóch obudów i scenariusze odpowiedzi pokoju](wyniki/p26d_bryly_i_odpowiedz.png)
-
-[Raport 061 — obudowy, przesunięte źródła i dwa subwoofery](raporty/061_bryly_offset_i_dwa_subwoofery.md)
-· [raport 013 — pomieszczenie](raporty/013_pokoj_i_realne_gabaryty.md)
-· [raport 019 — orientacja pokoju](raporty/019_zamiana_kanapy_i_RTV.md).
-
-<a id="mechanika"></a>
 ## Konstrukcja obudowy: od ścianek do kleju
 
 **Projekt geometryczny jest teraz badany także jako całość.** W scenariuszu
@@ -1603,6 +763,858 @@ ale nie uzyskaliśmy jeszcze ścisłej zbieżności całego pasma.
 Wyniki nie zastępują **pełnego przestrzennego** sprzężenia rzeczywistych podatnych ścian, wręg, wypełnienia i napędu. Status P21G pozostaje otwarty.
 
 <a id="slownik"></a>
+## P38 — znamy już rozstaw śrub i błąd układu współrzędnych
+
+### Jak ma wyglądać front z Dayton RSS390HF-4?
+
+![P38A: oficjalna geometria kosza, wycięcia i ośmiu otworów](wyniki/p38a_front_NIE_CNC.svg)
+
+*Według rysunku producenta kosz ma Ø388,4mm, wycięcie Ø355,8mm, a osiem otworów **w metalowym koszu** Ø6,5 mm leży na okręgu Ø368 mm. **Tylko jeśli w MDF również wywiercimy otwór Ø6,5 mm**, po odjęciu jego promienia pozostaje **2,85mm MDF**. Otwór Ø6,5 mm w koszu nie narzuca tej średnicy otworu w MDF. To istotny problem dla projektowania mocowania, nie pozwolenie na frezowanie. [Raport 096](raporty/096_P38A_front_Dayton_otwory_i_mocowania.md) · [szkic DXF — NIE CNC](wyniki/p38a_front_NIE_CNC.dxf).*
+
+### W którym miejscu naprawdę jest głośnik we wnętrzu?
+
+![P38B: wpływ korekty współrzędnych kosza na ciśnienie 80 Hz](wyniki/p38b_audyt_pozycji_zrodla.svg)
+
+*Oś x231/z250mm w P31C jest określona **od zewnętrznych krawędzi obudowy**. Po odjęciu grubości MDF22mm właściwe współrzędne wewnętrzne to **x209/z228mm**. Historyczny model P34B używał x231/z250mm także wewnątrz. W 120l na siatce55mm model RMS przy 80Hz zmienia się z 19,09% do 21,03%. **Oba wyniki to symulacje, nie THD**. [Raport 097](raporty/097_P38B_audyt_wspolrzednych_FV.md).*
+
+## P41 — dwie alternatywy mocowania Dayton zamiast cienkiego pierścienia
+
+### Porównanie nośnika typu A i belek typu B
+
+![P41A: dwie hipotetyczne ścieżki przeniesienia siły z kosza do struktury](wyniki/p41a_punkty_carrier_szyny.svg)
+
+*Dla tego samego przykładu 15kg / 5g / e120mm, sztywności kotew 300N/mm i mnożnika 3×, wariant A daje **223,4N**, a B **221,6N** maksymalnej reakcji na kotwę przy sile X. Oba układy w tym modelu przyjmują idealnie sztywny element przenoszący siły. Nie jest to badanie nośności śrub ani MDF. [Raport 103](raporty/103_P41A_carrier_kontra_szyny_2592.md).*
+
+### Dlaczego sam wybór metalu nie wystarcza?
+
+![P41B: analityczne ugięcia szyn zależne od przekroju i modułu E](wyniki/p41b_ugięcia_szyn.svg)
+
+*W modelu belki długości 380mm pod siłą środkową 200N, hipotetyczny profil 25×4mm ugina się o **0,627mm** przy E=70GPa, a o **0,219mm** przy E=200GPa. Po połączeniu tej podatności z modelem B jego obliczeniowe ugięcie rośnie: **0,325→0,383mm** w wybranym wariancie. Nie dowodzi to bezpieczeństwa ani możliwości wykonania. [Raport 104](raporty/104_P41B_podatnosc_belek_108.md).*
+
+**[Obie koncepcje w edytowalnym modelu OpenSCAD](dokumentacja/P41C_porownanie_nosne_A_B_NIE_CNC.scad)** — ustaw parametr `concept` na `"A"` lub `"B"`. Oba modele mają niezweryfikowane połączenia i zastępczą bryłę kosza. [Raport 105](raporty/105_P41C_koncepcje_3D_A_B.md).
+
+## P42 — audyt uzupełniający do badań P41: cztery podpory i trasy łączników
+
+### Jak dwa nowe układy czterech punktów przenoszą obciążenia?
+
+![P42A: obciążenia modelowej ramy i dwóch belek](wyniki/p42a_reakcje_dwa_uklady.svg)
+
+*W osobnym eksperymencie zbadano 1458 układów **czterech odległych podpór** w szerokiej ramie A lub dwóch belkach B, plus ośmiopunktowy model referencyjny. Przy 13,61kg, 5g i umownym `k=1000 N/mm` rama A korzystniej od B przenosi moment od poziomej siły. **To inna geometria i liczba podpór niż wcześniej w P41 (osiem punktów)**, dlatego wyniki są uzupełnieniem, a nie zamiennikiem P41 ani pomiarem wytrzymałości. [Raport 106](raporty/106_P42A_podpory_1458.md).*
+
+### Czy podpory mieszczą się w uproszczonych obwiedniach 3D?
+
+![P42B: testy AABB dla dwóch układów](wyniki/p42b_obwiednie_porownanie.svg)
+
+*162 próby pokazały brak kolizji niektórych hipotetycznych obwiedni ramy A i sześć odrzuconych przypadków belek B przy **umownym, przesadnie szerokim promieniu silnika 205mm**. Nie sprawdzono jednak całego kosza ani samych połączeń pomiędzy śrubami i podporami. [Raport 107](raporty/107_P42B_obwiednie_3D_dwoch_wariantow.md).*
+
+### Czy najkrótsze łączniki nie przechodzą przez wycięcie?
+
+*48 testów rzutu wykazało, że dwa proste połączenia do belek B przecinają obszar otworu Ø355,8, a w ramie A jeden łącznik o szerokości 10mm ma podobny problem. To **kontrola 2D**, nie gotowy projekt mocowania. [Raport 108](raporty/108_P42C_laczniki_i_koncepcje_3D.md) · [Model OpenSCAD](dokumentacja/P42D_dwie_sciezki_REFERENCYJNE_NIE_CNC.scad).*
+
+> **Uwaga o numeracji:** starsze równoległe badania konstrukcji mają historyczne oznaczenia P43-K/P44-K; odrębny program **P43 (02.11.2026)** dotyczy dwóch głośników 12″ i układu izobarycznego. Numery raportów poniżej skorygowano, aby zachować unikalność.
+
+## P43-K (historyczne oznaczenie konstrukcyjne) — czy łączniki można poprowadzić bezpiecznie wokół wycięcia?
+
+### Dlaczego cienki margines przy śrubach jest ważniejszy niż samo obejście otworu?
+
+![P43A: budżet radialny tras od ośmiu śrub](wyniki/p43a_budzet_radialny_trasy.svg)
+
+*Wykonano **576 analiz par śruba–podpora**, wybierając 144 najkrótsze trasy w uproszczonej płaszczyźnie. Przy 8 mm szerokości i hipotetycznym odstępie 2 mm pozostaje **0,1 mm** radialnego marginesu na osi łącznika; przy 10 mm + 2 mm nie ma już miejsca nawet na jego początek. **To nie jest rzeczywista szerokość drewna przy otworze śruby.** **2,85 mm MDF** wystąpiłoby wyłącznie, gdyby hipotetycznie wywiercono **Ø6,5 mm także w MDF**; fabryczne Ø6,5 mm leży **w metalowym koszu**, a przykładowa śruba M5 z przelotem Ø5,5 mm w MDF pozostawiałaby nominalnie **3,35 mm**. [Raport 110](raporty/110_P43A_trasy_omijajace_wyciecie.md) · [wyniki CSV](wyniki/p43a_trasy_144.csv).*
+
+### Co jeśli jedna z czterech podpór przestaje przenosić obciążenie?
+
+![P43B: maksymalne reakcje po awarii podpory](wyniki/p43b_max_reakcje_po_utracie_podpory.svg)
+
+*W **1620 modelowych przypadkach** porównano pełne cztery podpory z wyłączeniem jednej. Przy 13,61 kg, 5g, mimośrodzie 120 mm i poziomej sile X maksymalna obliczona reakcja wzrasta w ramie A z **202,3 do 319,1 N**, a w belkach B z **400,4 do 761,2 N**. Sprężyny mają założoną sztywność, a prawdziwych połączeń nadal nie ma: nie jest to dowód bezpieczeństwa ani ugięcia gotowej konstrukcji. [Raport 111](raporty/111_P43B_awaria_jednej_podpory.md) · [pełne dane CSV](wyniki/p43b_awarie_1620.csv) · [kod odtwarzania](skrypty/p43_trasy_i_awarie_podpor.js).*
+
+**Wniosek:** szeroka rama A pozostaje kandydatem do badań konstrukcyjnych, ale żaden wariant nie jest zatwierdzony do CNC bez rzeczywistych złączy, geometrii kosza oraz weryfikacji kontaktu i materiałów.
+
+## P44-K (historyczne oznaczenie konstrukcyjne) — jednostronny kontakt i warunkowe tarcie mocowania
+
+### Czy rama utrzymuje kontakt po przeciążeniu lub utracie jednej podpory?
+
+![P44A: 5400 przypadków kontaktu i wstępnego docisku](wyniki/p44a_pelny_kontakt.svg)
+
+*W badaniu P44A sprężyny normalne nie mogą już przenosić rozciągania. Przeprowadzono **5400 analiz** dla trzech kierunków, dwóch mas, trzech przyspieszeń, różnych mimośrodów, stanów utraty podpory i pięciu hipotetycznych docisków. Przy 500 N/punkt pełny kontakt zachowuje model A w **500/540**, a B w **412/540** przypadków. Nie jest to rekomendowany docisk śrub ani ocena nośności. [Raport 112](raporty/112_P44A_jednostronny_kontakt_5400.md) · [CSV](wyniki/p44_kontakt_5400.csv).*
+
+### Dlaczego brak rozwarcia nie oznacza odporności na poślizg?
+
+![P44B: warunkowe progi współczynnika tarcia](wyniki/p44b_wymagany_wspolczynnik_tarcia.svg)
+
+*P44B sprawdza **16 200 nierówności tarcia** przy μ=0,2/0,4/0,6, zakładając rozdzielenie sił stycznych proporcjonalnie do sztywności hipotetycznych podpór. To badanie przesiewowe, **nie pełny model stick/slip**. Nadal brakuje realnego kosza, podkładek, docisku, złącza, pomiarów MDF i MES kontaktowego 3D. [Raport 113](raporty/113_P44B_tarcie_i_wrazliwosc_16200.md) · [kod](skrypty/p44_kontakt_docisk_tarcie.js) · [agregaty](wyniki/p44_podsumowanie_20261101.json).*
+
+**Wniosek P44:** szeroka rama A pozostaje warunkową ścieżką badań. **Brama CNC pozostaje zamknięta.**
+
+## P40 — czy osiem śrub utrzyma głośnik i czy pierścień daje miejsce na montaż?
+
+### Sam ciężar dzielony przez 8 to za mało
+
+![P40A: reakcje mocowań głośnika dla 4–8 czynnych śrub](wyniki/p40a_reakcje_grup_srub.svg)
+
+*Dla 15 kg, hipotetycznego obciążenia 5g i środka masy 120mm za frontem w modelu reakcji ośmiu śrub największe obciążenie pojedynczego punktu przy bocznym działaniu siły wynosi **151 N**, a nie **92 N** z uproszczenia F/8. Jeśli część śrub przestaje pracować, obciążenia mogą wzrosnąć kilkukrotnie. **To nie jest pomiar wytrzymałości śrub ani MDF.** [Raport 101](raporty/101_P40A_reakcje_8_mocowan.md).*
+
+### Ile naprawdę miejsca jest w pierścieniu wzmacniającym?
+
+![P40B: wymiana luzu montażowego na pas metalowego pierścienia przy śrubie](wyniki/p40b_budzet_promieniowy_pierscienia.svg)
+
+*Wycięcie Ø355,8 mm, osie śrub na Ø368 mm i osobny modelowy otwór **Ø6,5 mm w METALOWYM PIERŚCIENIU** dają tylko **2,85 mm budżetu promieniowego samego pierścienia**, a NIE wymiar wiercenia w MDF. Po korekcie P40B do hipotetycznego **M5/Ø5,5 mm w MDF** zbadano ponownie **675 wariantów**: **126** przechodzi podstawowe warunki, **6** dodatkowy próg 1 mm luzu + 1 mm metalu, zaś **żaden** nie przechodzi progu 1 mm + 2 mm. Fabryczne Ø6,5 mm Daytona jest w KOSZU. Progi są badawcze, nie normowe. [Raport 102](raporty/102_P40B_tolerancje_pierscienia_675.md).*
+
+## Nowe badania P39 — ciśnienie, mocowania i edytowalny model 3D
+
+### Co zmieniło się po przeliczeniu nacisków na ściany?
+
+![P39A: porównanie nacisków na 6 ścian przed i po korekcie położenia głośnika](wyniki/p39a_cisnienie_scian_po_korekcie.svg)
+
+*W 36 nowych symulacjach powietrza w komorze zastosowano właściwą oś głośnika **x209/z228 mm w układzie wnętrza**, a wyniki porównano z historycznym P35A. Dla 120l / 80Hz, na siatce 36mm średnie ciśnienie względne na lewej ścianie zmieniło się z 0,773 na **0,735**, na prawej z 1,369 na **1,384**. To **względne pole modelowe**, nie fizyczne SPL ani obciążenie zweryfikowanego MDF. [Raport 098](raporty/098_P39A_naciski_scian_korekta_FV.md).*
+
+### Czy pierścień wzmacniający pod Daytonem zmieści się wewnątrz?
+
+![P39B: pierścień, wnętrze frontu i bramki odległości](wyniki/p39b_pierscien_i_odstepy.svg)
+
+*54 zestawienia średnic i grubości pokazują, że pierścień przykładowy Ø400/Ø356/t4mm geometrycznie pozostawia 9mm do lewego boku oraz 17mm do pierwszej wręgi w projekcji X. Ale **luz promieniowy od wycięcia wynosi zaledwie 0,1mm**, a cienki pasek MDF przy śrubie pozostaje. Taki pierścień **nie jest zatwierdzony wytrzymałościowo**. [Raport 099](raporty/099_P39B_geometria_pierscienia_i_glebokosc.md).*
+
+### Jak wygląda obudowa w edytowalnym modelu trójwymiarowym?
+
+[Model 3D OpenSCAD — **REFERENCYJNY, NIE DO CNC**](dokumentacja/P39C_front_korpus_pierscien_REFERENCYJNY_NIE_CNC.scad) jest parametrycznym złożeniem paneli, wręg, frontu z otworem i pierścienia. Umożliwia dalsze opracowywanie pełnego CAD; **nie jest jeszcze dokładną bryłą kosza Dayton z terminalami, zamkami i realnymi łącznikami**. [Raport 100](raporty/100_P39C_edytowalny_model_3D_OpenSCAD.md).
+
+</details>
+
+## DSP: dobry wzór filtru to początek
+
+**P24F — obserwator U/I w pętli zabezpieczenia (raport 071).**
+W 192 deterministycznych trajektoriach porównano cztery strategie termiczne
+z syntetycznymi pomiarami Z(f) przy 80/150/300 Hz, trzema hipotetycznymi
+sieciami cieplnymi, utratą pomiarów i dryftem rezystancji połączeń.
+Kontur wzrostu temperatury **+80 K jest tylko punktem diagnostycznym**,
+a nie limitem pracy Daytona. Mimo założonego marginesu estymacji 15 K i tempa
+5 K/s strategia predykcyjna przekroczyła ten kontur w 7/48 przypadków.
+Strategia z wcześniejszym progiem 55 K przekroczyła go w 3/48 przypadków,
+co **nie potwierdza jej bezpieczeństwa w rzeczywistym urządzeniu**.
+Nie potwierdzono praktycznej dostępności sygnału diagnostycznego, czujników
+U/I, API miniDSP ani fizycznej skuteczności toru wyciszenia.
+
+[Raport 071 — P24F](raporty/071_P24F_obserwator_w_petli_i_brak_pobudzenia.md)
+· [Kod odtwarzający 192 przebiegi](skrypty/p24f_obserwator_i_ochrona.py)
+· [Wyniki CSV](wyniki/p24f_192_przypadkow.csv)
+· [Pełne trajektorie JSON](wyniki/p24f_192_trajektorii_20261031.json)
+· [Podsumowanie JSON](wyniki/p24f_podsumowanie_20261031.json).
+
+
+
+**Czasowe nagrzewanie cewki (P24B) i dwie niezależne ochrony.**
+W 729 hipotetycznych trajektoriach sprzęgliśmy zespolone Z(f),
+zmienną `Re(T)`, dwie pojemności i opory cieplne, prąd końcówki
+oraz ograniczenie szczytowego wychylenia. Zależy to silnie od
+częstotliwości i czasu trwania sygnału: ogranicznik Xmax nie
+zastępuje temperatury cewki.
+
+![P24B — modelowy przebieg temperatury 80 Hz i zabezpieczenia](wyniki/108_P24B_czasowe_nagrzewanie_80Hz.svg)
+
+[Raport 067 — P24B: cewka, DSP i termika](raporty/067_P24B_czasowa_termika_i_dwie_ochrony.md)
+· [729 trajektorii CSV](wyniki/p24b_kampania_729.csv)
+· [skrypt odtwarzania](skrypty/p24b_czasowa_termika_cewki.py)
+· [założenia cieplne](dane/konfiguracje/p24b_czasowa_termika_20261031.json).
+
+**P24C: obserwowalność temperatury z U/I i audyt miniDSP.** Dla modelu C02
+wykonano 50 000 prób Monte Carlo: błąd estymacji zależy silnie od
+częstotliwości, błędów fazy i zmian BL. Przy 40 Hz w modelu 80 l
+hipotetyczny spadek BL o 3% daje błąd oceny przyrostu T o −53,62 K;
+nie jest to pomiar. Instrukcje Flex Eight/HTx potwierdzają zwrotnice,
+PEQ i kompresor poziomu sygnału, **ale nie potwierdzają** wbudowanego
+pomiaru U/I na zaciskach ani regulacji temperatury cewki.
+
+[Raport 068 — P24C: obserwowalność i wykonalność ochrony](raporty/068_P24C_obserwowalnosc_temperatury_i_wykonalnosc_DSP.md)
+· [wyniki 50 000 prób](wyniki/p24c_obserwowalnosc_20261031.json)
+· [skrypt](skrypty/p24c_obserwowalnosc_ui.py).
+
+**P24D: opóźnienia i awarie ochrony dwóch subwooferów.** Wykonano
+88 modelowych prób (16 scenariuszy podstawowych i 72 kombinacje opóźnienia
+oraz błędu obserwacji) przy 20 i 80 Hz. W 36/72 wariantach siatki
+naruszono **umowny** kontur +80 K. Przy 80 Hz, błędzie −20 K, progu
+testowym 45 K i zwłoce 0,25 s obliczono szczyt +75,095 K; przy zwłoce
+5 s +105,630 K. Awaria aktuatora potrafi pozbawić ochronę skuteczności.
+**To nie są limity bezpieczne, pomiary ani gwarancja implementacji miniDSP.**
+
+[Raport 069 — P24D: opóźnienia, watchdog i awarie](raporty/069_P24D_opoznienia_ochrony_faulty_dwa_kanaly.md)
+· [skrypt odtwarzający](skrypty/p24d_opoznienia_ochrony_dwoch_kanalow.py)
+· [wyniki skrótowe](wyniki/p24d_podsumowanie_20261031.json).
+
+**P24E: kilka częstotliwości zamiast jednego odczytu U/I.** W 120 000
+prób syntetycznych porównano identyfikację Re(T), BL² i Le. Przy modelowym
+spadku BL o 3% pojedynczy pomiar 40 Hz obciążał estymację T błędem
+−53,62 K; dopasowanie parametrów z 80/150/300 Hz uzyskało przy przyjętym
+szumie RMSE 1,241 K, ale tylko gdy struktura modelu jest prawidłowa.
+**Zasadnicza granica:** dodatkowe 0,1 Ω w przewodach jest nieodróżnialne
+od przyrostu Re i odpowiada błędowi +8,48 K nawet przy wielu punktach.
+Nie jest to walidacja hardware, dostępności pasma ani ochrony DSP.
+
+[Raport 070 — P24E: identyfikowalność Re/BL/Le](raporty/070_P24E_wieloczestotliwosciowa_ident_Re_BL_Le.md)
+· [skrypt](skrypty/p24e_wieloczestotliwosciowa_ident.py)
+· [wyniki kontrolne](wyniki/p24e_podsumowanie_20261031.json).
+
+
+
+**Nie wyznaczono temperatury granicznej prawdziwego głośnika.**
+Przyjęte parametry cieplne i kontur przyrostu +80 K to wyłącznie
+warianty badawcze; żaden finalny limiter nie został zatwierdzony.
+
+
+
+Nowy brief porównuje centralny **Flex Eight (RCA 2 Vrms)**
+z **Flex HTx (RCA 2 Vrms, TRS symetryczne 4 Vrms)** oraz
+modułami ICEpower/Hypex. Dla NC500MP przy wzmocnieniu
+25,5 dB wejście 2 Vrms daje modelowo tylko około **355 W/4 Ω**;
+pełne 500 W/4 Ω wymaga około 2,37 Vrms. Ostateczny wzmacniacz
+musi być wybrany na podstawie realnego zespolonego obciążenia,
+temperatury, prądu, zgodności wejścia i kompletnego kosztorysu.
+
+[Porównanie elektroniki i zabezpieczeń](raporty/BRIEF_2026-10-31_wzmacniacz_DSP_i_9_marek.md)
+· [180 kontrolnych obliczeń Dayton](wyniki/brief20261031_180_swiadkow_Dayton.csv)
+· [analiza rzeczywistego napędu i DSP](raporty/P22C_2026-10-31_wzmacniacze_impedancja_DSP_Xpeak.md).
+
+**P22C: policzono zespoloną impedancję i ograniczenia rzeczywistego toru DSP–wzmacniacz.**
+Dla pięciu kandydatów, pięciu objętości, czterech modułów, trzech
+ścieżek DSP i trzech hipotetycznych budżetów strat cewki wykonano
+**99 900 obliczeń**, niezależnie odtworzonych w Pythonie.
+
+**Ważna korekta:** katalogowe Xmax to wychylenie **szczytowe**.
+W poprzednich tabelach 180 i 274 725 przypadków porównano je
+omyłkowo z wychyleniem RMS; oba zbiory **przeliczono ponownie**
+(bez przyznawania zmian w THD, których nie mierzono).
+
+![P22C — częstotliwościowa obwiednia napięcia, Xmax i mocy w 80 l](wyniki/107_P22C_wzmacniacz_DSP_Xmax.svg)
+
+W modelu 80l, C02, 40Hz, przy scenariuszu strat miedzianych
+250W, NC500MP z RCA 2Vrms osiąga modelowo 112,66dB,
+a z TRS 4Vrms 113,90dB (+1,24dB); przy 20Hz **zysk wynosi 0dB**,
+ponieważ ogranicza mechanika. To liniowe wyliczenia półprzestrzeni,
+nie czysty SPL w pokoju i nie końcowy limiter.
+
+[Raport P22C — impedancja, DSP, wzmacniacze i erratum RMS](raporty/P22C_2026-10-31_wzmacniacze_impedancja_DSP_Xpeak.md)
+· [900 grup wyników](wyniki/p22c_napiecie_prad_wychylenie_analiza.json)
+· [świadkowie](wyniki/p22c_swiadkowie_36.csv)
+· [skrypt](skrypty/p22c_naped_dsp_zespolona_impedancja.py)
+· [niezależny audyt](skrypty/p22c_niezalezna_kontrola.py).
+
+
+
+Filtr cyfrowy trzeba zaprojektować dla właściwej częstotliwości próbkowania
+i zapisać z odpowiednią precyzją. Zaokrąglanie może zmienić bas nawet wtedy,
+gdy filtr pozostaje stabilny. W badaniu 27 konfiguracji głośników porównano
+972 projekty i 4860 wariantów zapisu współczynników.
+
+![Filtry DSP: osobny wpływ projektu cyfrowego i zapisu współczynników](wyniki/84_P23A_transformacja_i_zapis_wspolczynnikow.png)
+
+To badanie programu, a nie pomiar konkretnego miniDSP. Scenariusze używają
+48, 96 i 192 kHz; dokumentacja Flex Eight wymaga projektu dla 96 kHz.
+Zaokrąglenie współczynników do `float32` i do sześciu miejsc po kropce
+to osobne eksperymenty, nie opis wnętrza tego urządzenia.
+
+**Zapas dla muzyki i impulsów wymaga osobnego rachunku.** W jednym
+przykładzie filtr wzmacnia najlepszy znaleziony sinus o około 3,72 dB,
+lecz specjalnie skonstruowany sygnał o ograniczonej amplitudzie daje
+7,44 dB. Taki sygnał nie reprezentuje typowej muzyki; pokazuje, dlaczego
+kontrola samych sinusów nie wystarcza do pełnej ochrony przed przesterowaniem.
+
+![DSP: osobne błędy obliczeń oraz zapas dla sygnału w czasie](wyniki/86_P23A_arytmetyka_i_zapas_sygnalu.png)
+
+<details>
+<summary><strong>Rozwiń: jak sprawdzamy bardzo niskie filtry i ich stabilność</strong></summary>
+
+Dodatkowe 300 filtrów kontrolnych obejmuje graniczne częstotliwości
+0,5–80 Hz. Decyzję o stabilności oparto na dokładnych ułamkach zapisanych
+współczynników. Część hipotetycznych reprezentacji traci ścisłą stabilność.
+Nie jest to diagnoza sprzętu, którego arytmetyki nie zidentyfikowaliśmy.
+
+![Bardzo niskie filtry: dokładne warunki stabilności po zapisaniu współczynników](wyniki/85_P23A_dokladna_stabilnosc_i_granice.png)
+
+[Raport 046: modele, faza, opóźnienie, sygnały czasowe i ograniczenia](raporty/046_filtry_cyfrowe_stabilnosc_i_zapas.md)
+· [Wyprowadzenia: stabilność i zapas poziomu](baza_wiedzy/34_cyfrowe_filtry_stabilnosc_i_normy.md).
+Ochrona wychylenia i temperatury oraz integracja z fizycznym modelem
+głośnika pozostają kolejnym etapem.
+
+</details>
+
+### Wzmacniacz i przewody też zmieniają wynik
+
+Rezystancja między źródłem a głośnikiem zmniejsza jego elektryczne
+tłumienie i zużywa część budżetu napięcia. Dla niskiej impedancji głośnika
+ta sama dodatkowa rezystancja ma większe znaczenie względne.
+Porównaliśmy 3240 pasywnych obwodów i 19 440 punktów napędu.
+
+![Rezystancja źródła i przewodów: zmiana tłumienia oraz obwiedni napędu](wyniki/87_P22A_rezystancja_zrodla_i_obwiednia.png)
+
+To obwody przyjęte do badania. Nie opisują konkretnego wzmacniacza.
+Górny wykres upraszcza indukcyjność cewki do zera; dolny zachowuje jej
+dane katalogowe. Osobne sinusy i limity 40 V RMS / 12 A RMS oraz
+katalogowe Xmax nie określają bezpiecznego czasu pracy.
+
+<details>
+<summary><strong>Rozwiń: dlaczego prąd wzmacniacza i cewki mogą być różne</strong></summary>
+
+W modelu z filtrem wyjściowym część prądu płynie przez kondensator.
+Prąd źródła może wtedy różnić się od prądu cewki. Sprawdzamy oba porty
+oraz bilans energii, żeby poprawnie przypisać ograniczenie prądu.
+
+![Model filtru wyjściowego: dwa prądy i podział mocy czynnej](wyniki/88_P22A_dwa_prady_i_bilans_mocy.png)
+
+[Raport 047: równania obwodu, tłumienie, limity i sprawdzenia](raporty/047_port_zrodla_tlumienie_i_bilans.md)
+· [Baza wiedzy: port źródła i wykonalność ochrony](baza_wiedzy/35_port_zrodla_i_wykonalnosc_ochrony.md).
+Clipping i zachowanie pętli prądowej w czasie opisuje kolejny etap poniżej.
+
+</details>
+
+### Ograniczanie prądu nie zastępuje kontroli ruchu
+
+Przeprowadziliśmy także 648 symulacji w czasie z nasyceniem napięcia
+i hipotetyczną pętlą prądową. Zachowaliśmy energię cewki i SEM od ruchu.
+W badanych warunkach pętla zmniejsza największe przekroczenie prądu,
+lecz nie zapewnia twardego limitu ani samodzielnej ochrony wychylenia.
+
+![Nasycenie i pętla prądowa: prąd oraz ruch wymagają oddzielnej kontroli](wyniki/89_P22B_prad_i_brak_ochrony_wychylenia.png)
+
+Wyniki poza katalogowym Xmax są próbami granic matematycznego modelu.
+Nie opisują dokładnie fizycznego głośnika po wyjściu poza zakres liniowy.
+To argument za ochroną opartą także na ruchu i temperaturze,
+a nie ranking zniekształceń produktów.
+
+<details>
+<summary><strong>Rozwiń: napięcie, prąd i ruch w jednym przebiegu</strong></summary>
+
+Przykład pokazuje oddzielnie napięcie zadane, napięcie po ograniczeniach,
+prąd i wychylenie. Próg pętli prądowej nie jest twardym limitem jej wyniku.
+
+![Nasycenie napięcia oraz zachowany stan prądu i ruchu](wyniki/90_P22B_napiecie_prad_i_ruch_w_czasie.png)
+
+Siedem świadków sprawdzono niezależnymi ciągłymi równaniami i czterema
+krokami czasu. [Raport 048](raporty/048_nasycenie_SEM_i_stan_pradu.md)
+opisuje też bilans energii, ograniczenie metody przy Le→0 i przypadki,
+w których SEM utrudnia jednoczesne dotrzymanie granicy napięcia i prądu.
+To badanie hipotetycznego sterownika. Kolejny etap wyznacza wspólny zapas
+także dla zmieniającej się temperatury.
+
+</details>
+
+### Ile kosztuje bardzo konserwatywny zapas
+
+Można też postawić mocniejsze pytanie: jaki stały poziom napięcia utrzyma
+model w granicach ruchu, prądu i temperatury dla dowolnego sygnału
+o ograniczonej amplitudzie? Dla 972 rodzin modeli znaleźliśmy takie
+warunki i sprawdziliśmy je dokładnymi nierównościami.
+
+![Wspólny zapas ruchu, prądu i temperatury oraz jego koszt w osiągach modelu](wyniki/92_P24A_napiecie_i_cena_konserwatyzmu.png)
+
+To punkt odniesienia do dalszego projektu. W przykładzie C02 / 100 l
+stała granica wynosi około 4,99 V peak; osobny sinus w paśmie może
+wykorzystać większą amplitudę. Różnica pokazuje cenę wybranego warunku.
+Nie określa nieuniknionej straty każdego innego zabezpieczenia.
+Założone chłodzenie i granice temperatury wymagają późniejszej identyfikacji.
+
+<details>
+<summary><strong>Rozwiń: co zostało udowodnione w modelu i co pokazują symulacje</strong></summary>
+
+W każdym przypadku znaleziono obszar ruchu i prądu, którego zadany model
+nie opuszcza przy ograniczonym napięciu. Warunki obejmują cały przedział
+temperatury. Sprawdzono 1944 macierze końców przedziałów, a osobne
+36 przebiegów pokazuje przykładowe zachowanie w czasie.
+
+![Wybrany obszar modelu oraz wykorzystanie granic ruchu i prądu](wyniki/93_P24A_obszar_ruch_prad_i_czas.png)
+
+Obwiednia temperatury jest górnym porównaniem dla tego modelu grzania.
+Pokazuje także różnicę między oszacowaniem a wybraną krótką symulacją.
+
+![Temperatura: górne porównanie i wybrane przebiegi przy założonych parametrach](wyniki/94_P24A_temperatura_i_obwiednia_porownawcza.png)
+
+Model ma stałe parametry mechaniczne i indukcyjność oraz zmienne Re(T).
+Nie obejmuje jeszcze wszystkich nieliniowości, wypełnienia, podatnych ścian
+i realnego toru po DSP. Własność matematyczna nie potwierdza przez to
+dokładności danych rzeczywistego produktu.
+
+**Nowa kontrola z sygnałami wielotonowymi:** w 216 scenariuszowych
+przebiegach P25C sam filtr HP 20 Hz i ograniczanie napięcia nie
+utrzymywały zawsze zadanego zapasu ruchu. W jednym teście C02
+model wyznaczył ruch 24,427 mm wobec przyjętego progu 8,4 mm —
+**nie jest to prognoza rzeczywistego wychylenia lub uszkodzenia**,
+gdyż model liniowy opuścił domenę katalogową. Zbadano także
+energetyczną barierę ochronną, której gwarancja dotyczy wyłącznie
+idealnego modelu z obserwacją stanu, nie gotowego miniDSP.
+
+![P25C: sygnały w czasie, napięcie, prąd i ruch](wyniki/p25c_przebiegi.png)
+![P25C: ograniczenia i wpływ ochrony](wyniki/p25c_ograniczenia.png)
+
+[Raport 058 — sygnały czasowe i bariera energii](raporty/058_P25C_sygnaly_czasowe_i_bariera_energii.md).
+
+**Co się zmienia, kiedy limiter działa tylko co kilka milisekund?**
+Bariera z poprzedniego badania zakładała znajomość ruchu, prądu i
+temperatury w każdej chwili. Przy rzeczywistym próbkowaniu napięcie
+jest przez pewien czas utrzymywane bez korekty. W modelu 0D
+**zwykłe próbkowanie bariery punktowej nie gwarantuje ochrony**.
+Nowe wyprowadzenie ogranicza możliwy dopływ energii *między*
+próbkami — również w wariancie z jedną opóźnioną próbką stanu.
+Ceną jest dużo mniejsza dopuszczalna amplituda.
+
+![P25D: największa energia w porównaniu z przyjętym limitem](wyniki/102_P25D_bariera_probkowana.svg)
+
+W 144 symulacjach bezpieczna modelowo granica nie przekroczyła
+progu w żadnym z badanych przypadków. Wykres pokazuje maksimum
+w grupie 12 trajektorii i ma logarytmiczną oś energii.
+**Nie potwierdza to bezpieczeństwa miniDSP ani fizycznego głośnika**:
+brak tu błędów czujników, modelu wzmacniacza i rzeczywistych nieliniowości.
+
+[Raport 062 — dowód granicy ZOH i kontrola zagęszczenia](raporty/062_P25D_probkowana_bariera_energetyczna.md)
+
+**A co, jeśli DSP nie zna dokładnie parametrów głośnika ani jego ruchu?**
+W badaniu P25E przeprowadzono **288 symulacji** z hipotetycznym
+rozrzutem parametrów i ograniczonym błędem odczytu prądu, położenia
+i prędkości membrany. Samo wykorzystanie nominalnej energii nie
+gwarantuje zachowania przyjętego limitu. Konserwatywne oszacowanie
+energii z górnych granic parametrów pozwala wyprowadzić matematyczny
+warunek ochrony zarówno dla bieżącego, jak i opóźnionego o próbkę
+odczytu.
+
+![P25E: jak błędy pomiaru i parametrów zmieniają ochronę energetyczną](wyniki/103_P25E_odpornosc_obserwacji.svg)
+
+W obliczonej próbie naiwna strategia przekroczyła przyjęty limit
+energii w **72/72** przypadków, natomiast dwie wersje z marginesem
+nie przekroczyły go w **0/144**. Nie oznacza to automatycznie
+przekroczenia dopuszczalnego wychylenia — granica energii jest
+celowo zachowawcza. Kosztem odporności jest mniejszy modelowy RMS
+ruchu membrany; nie jest to prognoza utraty głośności w pokoju.
+
+[Raport 063 — model, ścisły warunek ZOH i niepewność](raporty/063_P25E_odporna_bariera_bledy_obserwacji.md)
+· [pełne 288 prób](wyniki/p25e_kampania.csv)
+· [kod i założenia](skrypty/p25e_robustna_bariera.py).
+
+· [agregaty 144 prób](wyniki/p25d_agregaty.csv)
+· [kod odtwarzający eksperyment](skrypty/p25d_probkowana_bariera.py).
+
+[Raport 049: założenia, dowód, koszt i ograniczenia](raporty/049_obszar_niezmienniczy_i_koszt_ochrony.md)
+· [Baza wiedzy: wspólny obszar i granica wejścia](baza_wiedzy/37_wspolny_obszar_i_granica_wejscia.md).
+
+</details>
+
+<a id="pokoj"></a>
+## Pokój: skąd bierze się dudnienie i nierówny bas
+
+Dla idealnego pokoju 4,6 × 3,7 × 2,5 m pierwsze rezonanse wzdłuż trzech osi
+wypadają około 37,3 / 46,4 / 68,6 Hz. Sam wykres częstotliwości nie mówi,
+jak mocno będzie słychać każdy z nich. Znaczenie mają pozycje głośników
+i słuchacza, drzwi, okna oraz straty w pomieszczeniu.
+
+![Możliwe częstotliwości rezonansów osiowych idealnego pokoju](wyniki/02_mody_osiowe_czytelne.svg)
+
+Badamy dwa subwoofery w realnych miejscach przy monitorach. Dokładne
+pozycje nie są jeszcze znane. Wariant rozpatrywany w badaniach zakłada RTV po lewej
+i kanapę po prawej oryginalnego rzutu; dawne scenariusze ustawienia pozostają
+przykładami obliczeń.
+
+W kolejnym modelu P26D/P27D uwzględniono także rzeczywisty
+przesunięty otwór głośnika w dwóch możliwych orientacjach skrzyni
+oraz **wspólny budżet obu źródeł**, zamiast przypisywania każdemu
+pełnej mocy bez ograniczeń. Dla jednego scenariusza poprawa
+nierównomierności w punkcie odsłuchu **33,51 → 31,49 dB** po
+dobraniu gain/delay pogorszyła najgorszy wariant niepewności
+**36,39 → 43,71 dB**. To ostrzeżenie przed dostrajaniem
+do jednego niezmierzonego pokoju, nie prognoza rzeczywistych
+głębokich dołków w pomieszczeniu.
+
+![P26D: orientacja dwóch obudów i scenariusze odpowiedzi pokoju](wyniki/p26d_bryly_i_odpowiedz.png)
+
+[Raport 061 — obudowy, przesunięte źródła i dwa subwoofery](raporty/061_bryly_offset_i_dwa_subwoofery.md)
+· [raport 013 — pomieszczenie](raporty/013_pokoj_i_realne_gabaryty.md)
+· [raport 019 — orientacja pokoju](raporty/019_zamiana_kanapy_i_RTV.md).
+
+<a id="mechanika"></a>
+## Co już wynika z badań
+
+- **Sam rozmiar głośnika nie rozstrzyga wyboru.** Liczy się także możliwy ruch
+  membrany oraz dostępne napięcie i prąd wzmacniacza.
+- **Włóknina to część projektu.** Jej ilość i położenie zmieniają zachowanie
+  powietrza; nie zastępujemy jej jednym stałym „bonusem litrów”.
+- **Obudowa też pracuje.** Wzmocnienie może pomóc bardziej niż samo
+  pogrubienie płyty. Sposób połączenia i sztywność kleju mają znaczenie.
+- **Pokój jest częścią układu.** Wymiary pozwalają obliczyć częstotliwości
+  możliwych rezonansów, ale ich poziom zależy też od ustawienia i tłumienia.
+
+
+<a id="praktyczny-przewodnik"></a>
+## Badania uzupełniające — dwa STX kontra Dayton, inne warianty i koszt
+
+**To dodatkowe pytania badawcze rozpatrywane po wyłonieniu Daytona i omówieniu jego obudowy.** Sprawdzamy tu, czy dwa tańsze głośniki 12″, układy izobaryczne albo inne konstrukcje mogłyby stanowić alternatywę. Porównania dotyczą określonych założeń i symulacji; nie są pomiarami gotowych urządzeń ani gotowym projektem drugiej obudowy.
+
+### P43 — czy dwa mniejsze głośniki albo izobaryczny mogą zastąpić jednego Daytona? (02.11.2026)
+
+**Badania nadal trwają: nie wybrano ostatecznego głośnika.** Do zbioru dołączyły
+SATORI **WO34HC-4 i WO34HC-8**, **SB42FHCL75-6** oraz dwa 10-calowe modele do
+testów par: **STX W.25.200.8.MC** i **SB29SWNRX-S75-6**.
+Aktualnie **39 modeli i 40 podstawowych konfiguracji elektrycznych**;
+dodatkowe układy dwóch identycznych głośników to *scenariusze konstrukcyjne*,
+a nie kolejne osobne modele w katalogu.
+
+Sprawdziliśmy **3168 liniowych przypadków** w 80/100/120/150 l, z jedną
+membraną, dwoma niezależnie promieniującymi membranami **w jednej skrzyni** i
+parą **izobaryczną** (połączenia szeregowe/równoległe).
+Pod uwagę wzięliśmy 40 V RMS / 12 A RMS, wychylenie szczytowe, a jako
+*hipotetyczny* wariant również 50 W łącznych strat miedzi. To **nie są**
+wyniki THD ani symulacja dwóch subwooferów rozmieszczonych w pokoju.
+
+![P43: ile modelowego basu przy 20 Hz daje duży głośnik, dwa mniejsze lub para izobaryczna](wyniki/p43_porownanie_20hz_20261102.svg)
+
+**Praktyczny przykład:** dwa tanie **STX W.32.500.8.MC_v2 (12″)** kosztują według
+aktualnego cennika producenta **430 zł za dwa kosze** wobec znalezionej oferty
+**1613,33 zł** za jeden Dayton RSS390HF-4. W tym samym modelu 120 l, 20 Hz,
+z budżetem 50 W łącznych strat miedzi i pozostałymi limitami, zwykła para STX
+uzyskuje **97,30 dB**, a Dayton **99,62 dB** (2π/1 m; tylko pojedynczy sinus).
+To zachęca do dalszych badań opłacalności, **nie jest dowodem jednakowej
+jakości ani dopuszczalnego ciągłego poziomu dźwięku**. Ceny nie zawierają
+budowy dwóch gotowych subwooferów, dodatkowego mocowania i torów mocy.
+
+**Izobaryczny nie daje dwóch promieniujących membran.** Pozwala ograniczyć
+ekwiwalentną podatność głośników (Vas pary do połowy Vas jednego głośnika),
+przez co podobne strojenie można uzyskać w mniejszej komorze; nie oznacza
+podwojenia Sd·Xmax. Potrzebne są szczelna komora sprzęgająca, chłodzenie,
+nowa geometria koszy i weryfikacja obciążenia wzmacniacza (w tym 2 Ω).
+
+**Kontrola litrażu:** w idealnym modelu **60 l izobarycznie** daje to samo
+małosygnałowe Fc/Qtc/F3 co **jeden taki sam przetwornik w 120 l**;
+nie oznacza tego samego zapasu poziomu ani zweryfikowanej geometrii.
+[Audyt T/S i sprawdzenie 60/120 l](wyniki/p43_audyt_TS_i_izobaryczne_60_na_120_20261102.json).
+
+[Pełny raport 109, tabela porównawcza i cenniki](raporty/109_P43_nowe_SB_podwojne_10_12_i_izobaryczny.md)
+· [karty nowych kandydatów i źródła](dane/przetworniki/rozszerzenie_FB_20261102_i_pary.json)
+· [3168 wyników CSV](wyniki/p43_wspolne_scenariusze_3168_20261102.csv)
+· [odtwarzalny skrypt](skrypty/p43_dwa_glosniki_i_isobaric.js).
+
+### B12-01 — czy dopłata do dużego przetwornika ma sens przy dwóch tanich 12″?
+
+**Dodatkowa kontrola po P43 i P45:** 3584 obliczenia na gęstszej siatce 20–80 Hz,
+w tym porównanie dwóch **STX W.32.500.8.MC_v2** z Daytonem RSS390HF-4,
+w dwóch połączeniach cewek, z 70% lub 100% katalogowego Xmax i
+budżetami 50/100 W łącznych strat miedzi. Dodano kontrolny 12-calowy
+STX W.30.200.8.MC (C32): **40 modeli / 41 konfiguracji podstawowych**.
+
+![B12-01: pułap 20 Hz przy różnych objętościach](wyniki/b12_01_20hz_objetosc.svg)
+
+W 120 l, przy 20 Hz i hipotetycznym 50 W strat: **2× STX 97,30 dB** wobec
+**Dayton 99,62 dB** w idealnym modelu półprzestrzeni 2π/1 m. Aby osiągnąć
+poziom Daytona, tania para musiałaby osiągnąć około **±9,1 mm** na głośnik,
+podczas gdy producent podaje **±7,5 mm** liniowego wychylenia geometrycznego.
+Dwa STX kosztują obecnie według wskazanego cennika **430 zł** wobec
+**1613,33 zł** za Daytona — bez kosztu obudowy, elektroniki i montażu.
+Rzut dwóch koszy na froncie 1020×500 mm jest możliwy, ale kolizje i sztywność
+frontu wymagają przeprojektowania. To nie są pomiary THD ani SPL w pokoju.
+
+[Raport B12-01](raporty/B12-01_tanie_dwie_12_przeciw_Daytonowi_20261102.md)
+· [3584 scenariusze CSV](wyniki/b12_01_wspolne_scenariusze_3584.csv)
+· [kod i test reprodukcji](skrypty/b12_01_dwie_12_ekonomiczne.js).
+
+### B12-02 — sześć częstotliwości jednocześnie: ile naprawdę wymaga korekcja?
+
+Dotychczasowe pułapy SPL liczone dla **osobnych sinusów** nie pokazują, jak
+sumuje się chwilowy skok membrany, gdy muzyczny sygnał zawiera kilka składowych.
+Nowy etap B12-02 bada jednoczesne **20/25/31,5/40/63/80 Hz** w 100/120/150 l,
+trzy zadane widma, dwa przebiegi fazowe, 50/100 W hipotetycznych strat łącznych
+oraz 70%/100% Xmax. Zrealizowano **144 nominalne scenariusze i 256 testów
+hipotetycznej zmienności parametrów** z zachowaniem pierwotnych nastaw korekcji.
+
+![B12-02: sześć jednoczesnych składowych a wymagana korekcja](wyniki/b12_02_koszt_dsp_40hz.svg)
+
+Przy 120 l i sześciu tonach w wariancie o jednakowym ciśnieniu 20–40 Hz
+obliczony pułap *samej składowej 40 Hz* to **94,25 dB dla Daytona 15″**
+oraz **90,30 dB dla dwóch tanich STX 12″**. Ogranicza go wychylenie;
+różnica **3,96 dB** wynika z katalogowego `Sd·Xmax`. Mocne ograniczenie
+20 Hz może podnieść te liczby, ale kosztem najniższego basu.
+To **idealne wyrównanie sześciu punktów amplitudowo i fazowo**, bez
+rzeczywiście obliczonego filtra miniDSP. Nie są to pomiary ani wyniki THD.
+Bramka CNC i weryfikacja ochrony DSP pozostają otwarte.
+
+[Raport B12-02 i ograniczenia](raporty/B12-02_szesciotonowy_test_DSP_i_odpornosc.md)
+· [pełne wyniki JSON](wyniki/b12_02_multitone_20261102.json)
+· [porównanie CSV](wyniki/b12_02_porownanie_120l.csv)
+· [skrypt odtwarzający obliczenia](skrypty/b12_02_multitone_eq_6tonow.js).
+
+### B12-03 — dwa tanie 12″ z ograniczoną korekcją DSP i rozrzutem parametrów
+
+Zastąpiliśmy idealną niezależną korekcję sześciu częstotliwości **kaskadą
+pięciu rzeczywistych matematycznie filtrów IIR**: HP Butterworth 2 przy
+18 lub 25 Hz, LP Linkwitz-Riley 4 przy 80 Hz oraz dwiema korekcjami:
+półkową i PEQ. Przebadano **1000 kombinacji nastaw korektora** na
+każdą optymalizowaną konfigurację, 12 zestawów filtrów, **144 ograniczone
+przypadki sześciotonowe** i **192 próby z rozbieżnymi parametrami obu STX**.
+
+![B12-03: model DSP i różnica poziomu składowej 40 Hz](wyniki/b12_03_40hz_dsp.svg)
+
+W zamkniętej 120 l, przy profilu z jednakowymi składowymi 20–40 Hz,
+limicie 70% katalogowego Xmax i 50 W łącznych strat miedzi:
+**Dayton 15″ 93,23 dB**, **para STX 12″ 89,02 dB** dla HP 18 Hz
+(modelowa składowa 40 Hz; nie suma SPL ani pomiar w pokoju).
+Przy HP 25 Hz odpowiednio **94,59 dB** i **90,41 dB**.
+STX wymagają w badaniu większego podbicia EQ (+8,06 dB maksimum,
+wobec +5,33 dB Daytona). Przeciwdziałanie przeciążeniom, THD, rzeczywista
+termika i kolizje dwóch koszy z wręgami pozostają **niezweryfikowane**.
+
+[Rozszerzony raport B12-03](raporty/B12-03_rzeczywiste_filtry_IIR_i_rozrzut_2x12.md)
+· [filtry, współczynniki i 336 scenariuszy JSON](wyniki/b12_03_iir_i_rozrzut_20261102.json)
+· [kod kontroli i odtwarzania](skrypty/b12_03_biquad_i_sprzezone_12.js).
+
+### B12-04 — co robią impulsy, twardy clipping i ograniczniki?
+
+Zastąpiliśmy jednoczęstotliwościowe szczyty i obwiednie B12-03
+**symulacją czasową ruchu i prądu**: 26 przypadków po 8 sekund
+oraz dwie kontrole zagęszczenia kroku całkowania. Model zawiera
+dotychczasowe 5 sekcji IIR, wspólne ciśnienie w 120 l, 2 modele
+hipotetycznej termiki cewki i jawne, syntetyczne sygnały
+wielotonowe oraz paczki impulsowe.
+
+![B12-04: przekroczenia wychylenia przy różnych ogranicznikach](wyniki/b12_04_wychylenie_i_ograniczniki.svg)
+
+**Wykryto zawodność uproszczonej ochrony**: w teście sustained,
+przy arbitralnym celu 70% katalogowego Xmax, obliczony
+szczyt dla dwóch STX wyniósł 191% Xmax bez limitera,
+96% Xmax ze stałą redukcją −6 dB oraz 99% Xmax z
+testowym regulatorem mającym nawet niedostępną w praktyce
+idealną znajomość x/v. Dayton odpowiednio: 116%, 59%, 82%.
+Wyniki ponad Xmax to ekstrapolacja liniowa poza
+wiarygodną dziedzinę modelu, a wartości temperatury
+zależą od **niezmierzonych scenariuszy Rth/Cth**.
+Nie są to pomiary, zweryfikowane THD ani dowód bezpieczeństwa.
+
+[Raport B12-04 — pełna metodologia i wnioski](raporty/B12-04_dynamika_impulsy_ochrona_termika.md)
+· [26+2 scenariusze JSON](wyniki/b12_04_dynamika_termika_20261102.json)
+· [odtwarzalny model i bilans energii](skrypty/b12_04_dynamika_limity_i_termika.js).
+
+### B12-05 — dwie dwunastki STX: obudowa i regulacja litrów naprawdę się mieszczą?
+
+Po wcześniejszych badaniach elektroakustycznych przeprowadziliśmy
+**20 badań gabarytów** oraz sprawdzenie niekolidujących prostoliniowych
+tras wkładania elementów przez **dwa otwory Ø284 mm**. Oceniono
+sztywno niezaprojektowane *na razie* wręgi, wkłady i 50-mm tylną matę
+wyłącznie geometrycznie. **Nie jest to jeszcze zweryfikowana konstrukcja.**
+
+![B12-05: dwa otwory STX i centralna wręga](wyniki/b12_05_dwa_stx_front.svg)
+
+W modelu nominalnym wyróżniły się **dwa warianty**:
+**1020×450×500 mm** oraz **1040×448×500 mm**.
+Dla pierwszego wewnętrzna objętość bez wkładów to **159,75 l netto**
+przy założonej wyporności po 5 l na kosz, bez potwierdzenia
+rzeczywistej objętości silników.
+
+![B12-05: 16 wkładów, strojenie i przekrój głębokości](wyniki/b12_05_wklady_przekroj.svg)
+
+Model pokazuje **16/16** hipotetycznie bezkolizyjnych dróg włożenia
+dużych wkładów i **2/2** małych regulatorów. Wariant nominalny można
+stroić do **150 l (2 duże wkłady), 120 l (10)** i **100 l (16)**,
+dodatkowo regulując małe wkładki. Nie gwarantuje to tych litrów dla
+każdej rzeczywistej wyporności głośników. **Zewnętrzna głębokość**
+po doliczeniu osłony i wystawania wynosi w scenariuszach
+**479,5–499,5 mm**: zapas zaledwie **0,5 mm**.
+Front MDF44 i cienka przednia część wręgi nadal wymagają MES,
+pomiaru wyparcia koszy, kontroli zacisków i narzędzi, zamków,
+wiarygodnego dostępu montażowego i zabezpieczenia wkładów.
+**Nie wykonywać CNC.**
+
+[Raport konstrukcyjny B12-05](raporty/B12-05_podwojny_STX_geometry_montaz_netto.md)
+· [20 przypadków i komplet obwiedni](wyniki/b12_05_uklad_2x12_20261102.json)
+· [skrypt odtwarzający test tras i objętości](skrypty/b12_05_dwa_stx_przestrzen_i_wklady.js).
+
+### B12-06 — czy badania pary tanich 12″ nadal prowadzą do celu z pierwotnego briefu?
+
+**Najpierw punkt odniesienia:** system ma zapewnić neutralny, bardzo czysty,
+niskoszumowy bas o dużym zapasie 20–40 Hz w pokoju **4,6×3,7×2,5 m**,
+z odsłuchem **2,5–3 m w jednym sweet spocie**. Plan to **dwie niezależne
+obudowy subwooferowe** plus dwa aktywne monitory 3-drożne (8 kanałów DSP).
+Na dziś W13/W24 wymagają **jednego głośnika na każdą obudowę**.
+Dwa STX w jednej skrzyni są tylko porównawczym wariantem ekonomicznym,
+**nie zastępują dwóch osobnych subwooferów**.
+
+![B12-06: wymagania przestrzenne dwóch subwooferów i monitorów](wyniki/b12_06_plan_pokoju.svg)
+
+Wykonano **36 prób modelu mechanicznego Ritz** dwóch frontów (1× Dayton
+vs 2× STX) oraz 8 kontroli wrażliwości na bazę i siatkę całkowania.
+Przesiew nie jest dopasowanym do otworów MES — **nie przewiduje
+naprężeń przy śrubach**, sztywności spoin ani drgań całej obudowy.
+
+![B12-06: wrażliwość ugięcia frontu na hipotetyczne podparcie](wyniki/b12_06_front_porownanie.svg)
+
+W jednym z wariantów (front 44mm, E 2,1GPa, ksprężyny 1MN/m),
+przy umownym obciążeniu 100 Pa uzyskano **3,58 µm (Dayton)** i
+**3,59 µm (dwa STX)**. Nie oznacza to takiej samej jakości ani
+faktycznej sztywności obu konstrukcji. Przy dwóch fizycznych
+subwooferach katalogowe Vd wynosi odpowiednio **2323 cm³** dla
+dwóch Daytonów i **1473 cm³** dla czterech STX w dwóch skrzyniach,
+ale nie jest to pomiar SPL/THD. Należy wyznaczyć rzeczywiste
+pozycje przy monitorach, przebadać pobudzenie modów pokoju,
+integrację i kompresję w docelowym sweet spocie. **Bez decyzji CNC.**
+
+[Raport B12-06: mechanika i bramka zgodności z briefem](raporty/B12-06_mechanika_frontow_i_weryfikacja_briefu.md)
+· [36 modeli i 8 kontroli JSON](wyniki/b12_06_front_ritz_i_brief_20261102.json)
+· [kod odtwarzania](skrypty/b12_06_ritz_front_podwojny_i_brief.js).
+
+### B12-07 — dwa gotowe subwoofery przy monitorach, a nie tylko dwie membrany
+
+Powrót do **pierwotnego briefu**: pokój **3,7×4,6×2,5 m**,
+jeden sweet spot 2,5–3 m, dwa **osobne subwoofery** i dwa
+aktywne monitory trójdrożne (8 kanałów DSP). Porównano
+dwie skrzynie po jednym Daytonie RSS390HF-4 z alternatywą
+dwóch skrzyń po **dwa** STX W.32.500.8.MC_v2 (czyli 4 STX łącznie).
+Wyposażenie jest tylko modelowane. **Nie ma pomiarów w pokoju.**
+
+![B12-07: wpływ pozycji i strojenia dwóch skrzyń](wyniki/b12_07_rozpietosc_pokoju.svg)
+
+Wykorzystano wcześniejszy model modalny P26, sześć punktów
+diagnostycznych wokół głównego miejsca i rzeczywiste matematycznie
+filtry B12-03. **27 wariantów pokojowych** przeszło wstępny
+przesiew obrysu obudów dla położeń A/B/D; wariant **C** odpadł,
+ponieważ szerokie 1020-mm skrzynie przecinały ściany przy
+założonych osiach źródeł. Uproszczone symulacje wskazują
+dużą wrażliwość na tłumienie i miejsce odsłuchu, więc nie wolno
+poprawiać niezmierzonych dołków ogromnym podbiciem DSP.
+Regulację kanałów badano pod warunkiem zachowania w granicy
+3 dB poziomu 40 Hz i braku pogorszenia punktów sąsiednich o
+więcej niż 3 dB.
+
+**Punkt odniesienia ADAM:** Sub12 22–150 Hz i ≥115 dB
+szczytowo/1 m; Sub15 20–150 Hz i ≥120 dB/1 m.
+**Nie są to porównywalne wyniki czystego SPL przy 20 Hz**
+ani dowód parytetu naszych wariantów. Sub15 ma 525 mm głębokości
+i służy jako wzorzec klasy, nie jako projekt obudowy ≤500 mm.
+Badanie nie zawiera jeszcze rzeczywistych THD/IMD, maksymalnego
+SPL ani integracji z nieznanymi monitorami.
+
+[Raport B12-07 i bramka jakości](raporty/B12-07_dwa_suby_w_pokoju_i_referencje_ADAM.md)
+· [pełne scenariusze modalne](wyniki/b12_07_dwa_suby_pokoj_20261102.json)
+· [odtwarzalny model](skrypty/b12_07_dwa_suby_brief_pokoj.js).
+
+### B12-08 — wracamy do projektu *pierwszego* prototypu z jednym Daytonem
+
+Przegląd linii P29A–D, P30E/F, P38–P45 i B12-01–07
+potwierdził **warunkowy wybór Dayton Audio RSS390HF-4 (C02)**
+jako przetwornika pierwszej platformy pomiarowej. Pojedyncza
+zamknięta skrzynia z korpusem **1020×425×500 mm**, MDF 22 mm
+i klejonym frontem 44 mm, pozostaje punktem konstrukcyjnym.
+W modelu P30E zdejmowana mata 50 mm i wkłady dają
+**100,119 / 119,919 / 150,159 l netto**; są to wartości
+modelowe, **nie wykonany i zmierzony prototyp**.
+
+![B12-08: front jednego Daytona i przesiew pierścienia, NIE CNC](wyniki/b12_08_front_i_pierscien_NIE_CNC.svg)
+
+Nowe B12-08 policzyło **2232 połączenia wymiarów
+pierścienia, położenia kosza i hipotetycznych tolerancji**.
+Przy przyjętych wymaganiach 1 mm luzu od otworu Ø355,8
+i 2 mm materiału między otworem mocującym a wewnętrzną
+krawędzią prostego pierścienia **żaden z wariantów otworu
+nośnika Ø6,5 mm nie przeszedł**. To nie jest dowód wadliwości
+produktu, ale sygnał, że trzeba zdefiniować rzeczywiste
+**mocowanie 8 śrub → nośnik → wręgi/MDF**, a nie sam pierścień.
+Nowa hipotetyczna oś **X235 mm** zamiast starego X231 mm
+lepiej równoważy odstępy w rzucie, lecz **nie jest zatwierdzona**.
+
+![B12-08: warianty pełnej głębokości przy korpusie 425 mm](wyniki/b12_08_budget_glebokosci.svg)
+
+W **160 scenariuszach pełnej głębokości** widać, że obietnica
+19 mm zapasu z P30E zależy od faktycznej maskownicy i
+terminala. Dodatkowe **81 scenariuszy** modelu F3/Qtc pokazuje
+dla 120 l orientacyjne **Qtc≈0,714 i F3≈32,15 Hz**,
+ale **20 Hz bez EQ jest około −8,94 dB** w małosygnałowym
+modelu zamkniętej skrzyni. Kryterium końcowym jest czysty
+20–40 Hz w pokoju, nie samo F3, więc potrzebna pozostaje
+walidacja wychylenia, THD, termiki i dwóch subwooferów.
+
+**Następny etap: nośna rama kosza A, pełny CAD 3D i sprawdzenie
+wkładów dla obu orientacji.** Żaden element nie został
+zatwierdzony do CNC; nie zamawiamy głośnika, wzmacniacza
+ani osłony na podstawie tych rysunków.
+
+[Raport i mapa dowodów B12-08](raporty/B12-08_audyt_wyboru_i_konstrukcja_pierwszego_C02.md)
+· [dane 2232+160+81](wyniki/b12_08_audyt_konstrukcji_pierwszego_prototypu.json)
+· [kod odtwarzania](skrypty/b12_08_audyt_rysunku_pierwszego_prototypu.js).
+
+
+
+
+
+
+
+
+
+
+
+### P45 — czy para tanich 12″ pozostaje opłacalna przy realnych ograniczeniach napędu?
+
+**Kontynuacja P43 (02.11.2026).** Dodatkowa kampania zawiera **12 870** obliczeń modelu liniowego dla 13 układów, pięciu objętości (75–150 l), 11 częstotliwości, trzech budżetów strat miedzi, dwóch progów katalogowego wychylenia i trzech umownych mnożników oporu cewki. Rozróżniono szeregowe, równoległe i dwa niezależne kanały zasilania; izobaryczny pozostał próbą kontrolną.
+
+Przy **120 l, 20 Hz, 50 W łącznych strat w cewkach, 40 V RMS / 12 A RMS i pełnym katalogowym Xmax** para STX W.32.500.8.MC_v2 w połączeniu równoległym uzyskała modelowe **97.30 dB**, a pojedynczy Dayton RSS390HF-4 **99.62 dB**. Różnica wynosi **2.31 dB**. W ostrożniejszym wariancie 0,7× katalogowego Xmax i przy Re×1,4 para STX osiągnęła **94.83 dB** — to nie jest wyznaczony próg niskiego THD ani temperatura cewki.
+
+Koszt samych przetworników: **430 zł za dwa STX** wobec **1613,33 zł za jeden Dayton** (ceny ofertowe, bez reszty urządzenia). Para STX ma nominalnie **4 Ω równolegle** lub **16 Ω szeregowo**; wersja z oddzielnymi wzmacniaczami wymaga dwóch kanałów. Wstępny układ dwóch kołnierzy Ø332 mm na froncie 1020 × 500 mm mieści się w rzucie 2D, ale nie zweryfikowano kolizji wręg, dwóch koszy, połączeń z frontem i montażu.
+
+**Wniosek:** to mocny wariant ekonomiczny, lecz nie ma podstaw do tezy o równoważnych zniekształceniach, niezawodności czy wydajności dwóch osobnych subwooferów w pokoju. [Raport 114](raporty/114_P45_dwa_tanie_12_odpornosc_naped_koszt.md) · [715 porównywalnych punktów CSV](wyniki/p45_dual12_bazowe_715.csv) · [pełne agregaty kampanii](wyniki/p45_dual12_odpornosc_20261102.json) · [kod odtwarzania](skrypty/p45_dwa_tanie_12_robustnosc.js).
+
+**Rozszerzenie warunków badawczych (31.10.2026):** Dayton RSS390HF-4 jest
+**wstępnym faworytem, a nie ostatecznym wyborem**. Na tamtym etapie pula liczyła
+**34 modele głośników (35 konfiguracji elektrycznych)**. Po wcześniejszym
+porównaniu 26 modeli rozszerzyliśmy zestaw i przeprowadziliśmy audyt
+dokumentacji dziewięciu kolejnych marek:
+GPA, VOLT, SUPRAVOX, EMS, PURIFI, Kartesian, PHL, ETON i Davis.
+Modele nie przechodzą automatycznie do rankingu tylko dlatego, że
+występują w katalogu: sprawdzamy Xmax, Sd, Vd, zgodność montażu
+i kompletność fabrycznych T/S. **EMS B15EX oczekuje na kompletną
+kartę producenta.**
+
+[Zweryfikowany rejestr parametrów i źródeł](dane/karty_producentow/2026-10-31_9_marek_weryfikacja.json)
+· [pełny raport briefu](raporty/BRIEF_2026-10-31_wzmacniacz_DSP_i_9_marek.md)
+· [odtwarzanie dokumentacji i SHA-256](skrypty/odtworz_dokumentacje_producentow.py).
+Oryginalnych PDF producentów bez potwierdzonych praw do redystrybucji
+nie kopiujemy do repo; zapisujemy weryfikowalne parametry i odnośniki.
+
+**Przeprowadzono 274 725 nowych obliczeń przesiewowych** dla
+35 konfiguracji elektrycznych (34 unikalne produkty), z których
+33 miały komplet spójnych danych. EMS i SUPRAVOX pozostają
+zablokowane z wyjaśnionych w audycie przyczyn.
+[Agregaty i świadkowie dla całej puli](wyniki/brief20261031_pelna_pula_35_wstepna_analiza.json).
+To liniowa wstępna analiza, nie pełne badania nieliniowości, THD,
+termiki i mechaniki gotowej skrzyni dla wszystkich 34 produktów.
+
+
+
+Badamy modele firm BMS, Dayton Audio, Eminence, FaitalPRO, LaVoce,
+PURIFI, Peerless, SB Acoustics, SEAS, STX i Scan-Speak. W puli są także
+mniejsze modele kontrolne — obecność w zestawieniu nie oznacza spełnienia briefu.
+
+Pierwszy wykres obejmuje **pierwotne 24 modele**. Pokazuje granice liniowego
+modelu dla osobnych ustalonych sinusów 10–100 Hz, w geometrii 2π / 1 m,
+przy wspólnych 100 l i napędzie 40 V RMS / 12 A RMS, oraz katalogowy
+zapas ruchu membrany. Warunki poszczególnych porównań są na osiach i w
+[raporcie 010](raporty/010_szeroka_pula_i_kwalifikacja.md).
+Wyższy słupek nie potwierdza jeszcze mniejszych zniekształceń.
+
+![Pierwotne 24 modele: porównanie ograniczeń napędu i ruchu membrany](wyniki/09_szeroka_pula.png)
+
+Później dodaliśmy **SB34SWNRX-S75-6** i **SB34SWPL76-3-DV**.
+To razem 26 produktów i 27 połączeń elektrycznych: model dwucewkowy
+liczymy osobno przy połączeniu szeregowym i równoległym.
+
+![Dodatkowe SB Acoustics: wpływ połączenia cewek, napędu i objętości](wyniki/61_SB_porownanie_i_objetosc.png)
+
+Przykład: przy 100 l, 40 V RMS / 12 A RMS i 80 Hz równoległe połączenie
+SB ogranicza prąd, a szeregowe — napięcie. To oddzielne ustalone sinusy,
+bez kwalifikacji czasu pracy. Nowe modele mają własne dane i obliczenia;
+nie przypisujemy im starszych badań nieliniowości i temperatury.
+
+[Raport 038: dane, oryginalne wykresy, opinie i braki](raporty/038_SB_Acoustics_rozszerzenie_i_porownanie.md).
+
+<details>
+<summary><strong>Rozwiń: jak niepewność parametrów zmienia porównanie głośników</strong></summary>
+
+Parametry z katalogu nie opisują idealnie każdego egzemplarza. Sprawdzamy,
+czy wnioski utrzymają się po zmianie założeń. Przyjęte zakresy są próbą
+odporności modelu, a nie zmierzoną statystyką produkcji.
+
+![Wpływ przyjętej niepewności parametrów na porównanie kandydatów](wyniki/11_niepewnosc_i_kolejnosc.png)
+
+[Raport 015: zakresy, czułość i przykłady zmiany kolejności](raporty/015_niepewnosc_globalna_i_odpornosc.md).
+
+</details>
+
 ## Krótki słownik do wykresów
 
 | Skrót lub termin | Co oznacza tutaj |
