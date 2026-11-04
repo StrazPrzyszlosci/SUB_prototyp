@@ -113,8 +113,13 @@ def compute():
     assert selected["idealized_axial_thread_engagement_mm"]==5.5
     assert selected["bolt_rear_protrusion_beyond_pad_mm"]==0
     assert selected["conditional_1d_screen_and_zero_rear_projection"]
-    # Reference P40A may have axial, tangential and moment components.
-    # The equal split below is not a model of wood or glue joint strength.
+    # IMPORTANT: force carried from central thread can bear directly from plate
+    # against the 14mm wood shoulder if pulled towards the front. Retention
+    # screws primarily resist rotation/loss; their equal share of 151N is NOT
+    # the force path. Nominal contact pressure is only a lower-bound indicator.
+    nominal_contact_area=A-math.pi*(major/2)**2-2*math.pi*(fastener["steel_clearance_d_mm"]/2)**2
+    mean_bearing_proxy=load["P40A_reference_bolt_reaction_N"]/nominal_contact_area
+    assert 820<nominal_contact_area<850
     test_items=[
        {"check":"retention screws in 14mm wood left behind 6mm steel", "catalog_and_wood_pullout_verified":False},
        {"check":"steel plate thread stripping and fastener fatigue", "actual_joint_strength_verified":False},
@@ -143,6 +148,11 @@ def compute():
       "P40A_reference_load":{
         "one_mount_force_N":load["P40A_reference_bolt_reaction_N"],
         "two_retainer_screws_equal_share_IF_TRUE_N":load["illustrative_equal_split_between_two_retention_screws_only_N"],
+        "ideal_full_plate_face_minus_holes_mm2":rd(nominal_contact_area),
+        "ideal_full_area_average_wood_bearing_proxy_MPa":rd(mean_bearing_proxy),
+        "retention_151N_equal_split_is_not_actual_force_path":True,
+        "plate_should_bear_against_wood_shoulders_under_tension_if_full_contact":True,
+        "local_crushing_and_plate_rocking_unverified":True,
         "actual_load_path_known":False,
         "material_capacity_approved":False
       },
