@@ -34,7 +34,7 @@ porównania, a dane cenowe obejmują obecnie tylko część modeli; nadal brakuj
 | Korekcja cyfrowa i zapas poziomu | [Filtry DSP](#filtry) |
 | Źródła, szczegóły i własne obliczenia | [Mapa raportów](#mapa) · [Kod i odtwarzanie](#odtwarzanie) |
 
-Skróty wyjaśniamy w [krótkim słowniku](#slownik). **Najpierw poznaj wyłonienie Daytona spośród 40 kandydatów**, następnie przejdź do [praktycznego przewodnika](#praktyczny-przewodnik) i konstrukcji obudowy. Dopiero niżej znajdziesz [dodatkowe badania dwóch STX, innych wariantów i kosztów](#badania-uzupelniajace--dwa-stx-kontra-dayton-inne-warianty-i-koszt).
+Skróty wyjaśniamy w [krótkim słowniku](#slownik). **Najpierw poznaj wyłonienie Daytona spośród 40 kandydatów**, następnie przejdź do [praktycznego przewodnika](#praktyczny-przewodnik) i konstrukcji obudowy. Dopiero niżej znajdziesz [dodatkowe badania dwóch STX, innych wariantów i kosztów](#badania-alternatywne).
 
 <a id="wykresy"></a>
 <a id="glosniki"></a>
@@ -1238,6 +1238,7 @@ głębokich dołków w pomieszczeniu.
 
 
 <a id="praktyczny-przewodnik"></a>
+<a id="badania-alternatywne"></a>
 ## Badania uzupełniające — dwa STX kontra Dayton, inne warianty i koszt
 
 **To dodatkowe pytania badawcze rozpatrywane po wyłonieniu Daytona i omówieniu jego obudowy.** Sprawdzamy tu, czy dwa tańsze głośniki 12″, układy izobaryczne albo inne konstrukcje mogłyby stanowić alternatywę. Porównania dotyczą określonych założeń i symulacji; nie są pomiarami gotowych urządzeń ani gotowym projektem drugiej obudowy.
