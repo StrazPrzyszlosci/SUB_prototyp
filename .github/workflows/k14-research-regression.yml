@@ -1,0 +1,85 @@
+name: K14 eccentric plate contact, synthetic tolerances and PNG
+on:
+  pull_request:
+    paths:
+      - "README.md"
+      - "dane/k14_scieranie_styku_tolerancje_i_docisk.json"
+      - "skrypty/k14_docisk_plytki_tolerancje.py"
+      - "wyniki/k14_docisk_tolerancje_64.json"
+      - "raporty/K14_docisk_tolerancje_plytki_M5_w_klocku20.md"
+      - "wyniki/k14_pasy_i_docisk_NIE_CNC.svg"
+      - "wyniki/k14_pasy_i_docisk_NIE_CNC.png"
+      - ".github/workflows/k14-research-regression.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  k14:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Reproduce K14 calculations and evaluate construction decision
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp wyniki/k14_docisk_tolerancje_64.json /tmp/k14-reviewed.json
+          python skrypty/k14_docisk_plytki_tolerancje.py
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          a=json.loads(Path("/tmp/k14-reviewed.json").read_text(encoding="utf-8"))
+          b=json.loads(Path("wyniki/k14_docisk_tolerancje_64.json").read_text(encoding="utf-8"))
+          assert a==b, "K14 reviewed computations differ from script recomputation"
+          k=b["key_conservation"]
+          assert k["total_wood_plus_steel_radial_lip_budget_mm"]==2.6
+          assert k["wood_lip_at_K13_mm"]==0.5 and k["steel_lip_at_K13_mm"]==2.1
+          assert k["two_2mm_lips_with_original_geometry_possible"] is False
+          contact=b["pocket_lip_pressure_comparisons"]
+          assert len(contact)==6
+          assert all(x["two_2mm_hypothesis_passed"] is False for x in contact)
+          assert contact[1]["axial_contact_indicators"]["1000"]["ideal_contact_pmax_MPa_ignoring_holes"]==4.140787
+          assert len(b["torque_scenarios"])==12
+          p=b["P40A_force_decomposition"]
+          assert (p["original_resultant_N"],p["original_axial_component_max_N"],p["original_shear_component_N"])==(151.11,119.92,91.94)
+          stack=b["worst_case_synthetic_axial_stack"]
+          assert len(stack["combinations"])==64
+          assert stack["cases_meeting_only_K13_hypothetical_1xM5_zero_protrusion_screen"]==24
+          assert (stack["min_engagement_mm"],stack["max_rear_protrusion_mm"])==(3.3,1.5)
+          assert stack["nominal_K13_75mm_is_robust_under_these_synthetic_intervals"] is False
+          assert "CNC HOLD" in b["status"]
+          print("K14 PASS: 6 lips / 12 preload probes / 64 tolerance corners; zero construction approvals")
+          PY
+      - name: Verify both image formats and guide ordering
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check --quiet pillow
+          python - <<'PY'
+          from PIL import Image
+          from pathlib import Path
+          svg=Path("wyniki/k14_pasy_i_docisk_NIE_CNC.svg")
+          png=svg.with_suffix(".png")
+          assert svg.exists() and png.exists(), "new SVG must have same-name PNG"
+          assert "<svg" in svg.read_text(encoding="utf-8")
+          im=Image.open(png)
+          assert im.format=="PNG" and im.size[0]==1000 and im.size[1]>=450
+          assert len(im.convert("RGB").getcolors(maxcolors=1_000_000) or [])>12
+          readme=Path("README.md").read_text(encoding="utf-8")
+          anchors=["## Głośniki: porównanie w tych samych warunkach",
+                   "## Praktyczny przewodnik","### 1. Wybór przetwornika",
+                   "### 2. Badania akustyczne", "### 3. Badania materiałów",
+                   "### 4. Dopiero po projekcie", "### A18. K13", "### A19. K14"]
+          positions=[readme.index(a) for a in anchors]
+          assert positions==sorted(positions), "Do not move speaker tests or construction/mounting in guide"
+          assert readme.count("### A19. K14")==1
+          assert readme.index("### A19. K14")>readme.index("### A18. K13")
+          assert "wyniki/k14_pasy_i_docisk_NIE_CNC.png" in readme
+          assert "wyniki/k14_pasy_i_docisk_NIE_CNC.svg" in readme
+          report=Path("raporty/K14_docisk_tolerancje_plytki_M5_w_klocku20.md").read_text(encoding="utf-8")
+          assert "../wyniki/k14_pasy_i_docisk_NIE_CNC.png" in report
+          assert "2,6 mm" in report and "CNC HOLD" in report
+          print("K14 PASS: paired PNG/SVG, K14 at tail, full speaker-research-first handbook")
+          PY
