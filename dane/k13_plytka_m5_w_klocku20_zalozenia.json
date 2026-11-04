@@ -1,0 +1,88 @@
+{
+  "study": "K13",
+  "date": "2026-11-04",
+  "status": "UNVALIDATED CAPTURED STEEL PLATE CONCEPT — CNC HOLD",
+  "sources": {
+    "dayton": "https://www.daytonaudio.com/images/resources/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf",
+    "s235_mill": "https://www.thyssenkrupp-materials-processing-europe.com/en/c-steel/hot-strip/s235jr-s355k2/s235jr",
+    "screw_clearance": "https://engineeredbydesign.co.uk/Pages/Eng_Data/Threadform_table.php",
+    "iso4762_head": "https://roymech.org/Useful_Tables/Screws/cap_screws",
+    "P40A": "raporty/101_P40A_reakcje_8_mocowan.md",
+    "K01": "skrypty/k01_mocowanie_bilans.py",
+    "K02": "raporty/K02_przejscie_20_modulow_obok_8_mocowan.md",
+    "K11": "raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md",
+    "K10": "dane/k10_rejestr_materialow_czesci_obudowy.json"
+  },
+  "manufacturer_dayton": {
+    "basket_cutout_d_mm": 355.8,
+    "mount_pcd_d_mm": 368,
+    "metal_basket_hole_d_mm": 6.5,
+    "flange_thickness_mm": 10.5
+  },
+  "wood_and_pad": {
+    "MDF_front_mm": 44,
+    "pad_radial_inner_radius_mm": 178.9,
+    "pad_radial_outer_radius_mm": 205,
+    "pad_tangential_width_mm": 36,
+    "pad_depth_mm": 20,
+    "eight_pad_baseline_volume_L": 0.150336,
+    "wood_density_assumed_kg_m3": 700,
+    "global_axis_180deg_from_left_wall_mm": 25,
+    "supplier_wood_material": "glued beech lamella candidate: specific certified lot NOT selected; glued seams and grain orientation unknown"
+  },
+  "recessed_plate": {
+    "concept": "One separate plate captured at REAR of each pre-glued wood pad; 2 small retainer screws into wood; plate+heads flush with pad rear face to preserve 20mm external AABB. This is not a manufacturer's ready-made part.",
+    "steel_candidate": "S235JR nominal sheet: not delivered/selected grade",
+    "steel_density_assumed_kg_m3": 7850,
+    "nominal_steel_yield_MPa_source_bound": 235,
+    "tangential_edge_inset_mm": 0.5,
+    "radial_inner_edge_inset_mm": 0.5,
+    "radial_outer_edge_inset_mm": 0.5,
+    "M5_coarse_thread_major_d_mm": 5,
+    "M5_tapping_drill_d_mm": 4.2,
+    "M5_front_screw_clearance_d_mm": 5.5,
+    "M5_socket_head_nominal_d_mm": 8.5,
+    "plate_thickness_scenarios_mm": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "example_retention_two_screws": {
+      "nominal_d_mm": 3,
+      "steel_clearance_d_mm": 3.4,
+      "head_d_assumed_mm": 6,
+      "positions_local_radial_offset_mm": 8,
+      "positions_local_tangent_offset_abs_mm": 12,
+      "under_head_length_mm": 16,
+      "note": "These are conceptual retention fasteners, not a selected real SKU. Two screws in 14mm wood may have insufficient pullout strength; requires testing."
+    }
+  },
+  "screw_scenarios": {
+    "gasket_compressed_thickness_mm": [
+      0.5,
+      1,
+      2
+    ],
+    "under_head_length_options_mm": [
+      70,
+      75,
+      80
+    ],
+    "head_washer_underhead_extra_mm": 0,
+    "preferred_comparison": {
+      "plate_mm": 6,
+      "compressed_gasket_mm": 1,
+      "screw_underhead_length_mm": 75
+    },
+    "thread_engagement_screen_diameter_ratio": 1,
+    "note": "1×M5 thread engagement is solely illustrative screening target, not an engineering code or strength qualification. Real gasket, washer, DIN thread runout, partial lead threads and shank thread length unknown."
+  },
+  "loads": {
+    "P40A_reference_bolt_reaction_N": 151,
+    "illustrative_equal_split_between_two_retention_screws_only_N": 75.5,
+    "no_load_transfer_model": true,
+    "no_MDF_or_retention_screw_strength_allowables": true
+  }
+}
