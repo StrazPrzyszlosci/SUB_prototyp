@@ -1,0 +1,211 @@
+{
+  "study": "K22",
+  "date": "2026-11-04",
+  "status": "CNC HOLD — sectional rail corridor proposal, not physically connected or assembly-verified",
+  "previous_proof": "K21: all twelve rear K15 modules cannot traverse existing 130mm K17 rear rail wall with unrotated translation",
+  "temporary_removed_rail": "G17_COLUMN_10",
+  "affected_modules_losing_one_of_two_supports": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "available_corridor_after_remove": {
+    "x0": 531.5,
+    "x1": 790.5,
+    "opening_width_mm": 259,
+    "original_largest_passage_mm": 130,
+    "selected_clearance_each_side_mm": 6,
+    "axis_aligned_rear_insert_projection_screens": [
+      {
+        "module_index": 0,
+        "module_width_x_mm": 180,
+        "module_depth_y_mm": 100,
+        "nominal_x_clearance_on_each_side_mm": 6,
+        "free_x0_for_module_min_mm": 537.5,
+        "free_x0_for_module_max_mm": 604.5,
+        "available_x_travel_window_width_mm": 67,
+        "corridor_cross_section_condition_passes": true,
+        "full_3d_swept_path_proven": false
+      },
+      {
+        "module_index": 1,
+        "module_width_x_mm": 180,
+        "module_depth_y_mm": 100,
+        "nominal_x_clearance_on_each_side_mm": 6,
+        "free_x0_for_module_min_mm": 537.5,
+        "free_x0_for_module_max_mm": 604.5,
+        "available_x_travel_window_width_mm": 67,
+        "corridor_cross_section_condition_passes": true,
+        "full_3d_swept_path_proven": false
+      },
+      {
+        "module_index": 2,
+        "module_width_x_mm": 180,
+        "module_depth_y_mm": 100,
+        "nominal_x_clearance_on_each_side_mm": 6,
+        "free_x0_for_module_min_mm": 537.5,
+        "free_x0_for_module_max_mm": 604.5,
+        "available_x_travel_window_width_mm": 67,
+        "corridor_cross_section_condition_passes": true,
+        "full_3d_swept_path_proven": false
+      },
+      {
+        "module_index": 3,
+        "module_width_x_mm": 180,
+        "module_depth_y_mm": 100,
+        "nominal_x_clearance_on_each_side_mm": 6,
+        "free_x0_for_module_min_mm": 537.5,
+        "free_x0_for_module_max_mm": 604.5,
+        "available_x_travel_window_width_mm": 67,
+        "corridor_cross_section_condition_passes": true,
+        "full_3d_swept_path_proven": false
+      },
+      {
+        "module_index": 4,
+        "module_width_x_mm": 210,
+        "module_depth_y_mm": 120,
+        "nominal_x_clearance_on_each_side_mm": 6,
+        "free_x0_for_module_min_mm": 537.5,
+        "free_x0_for_module_max_mm": 574.5,
+        "available_x_travel_window_width_mm": 37,
+        "corridor_cross_section_condition_passes": true,
+        "full_3d_swept_path_proven": false
+      },
+      {
+        "module_index": 5,
+        "module_width_x_mm": 210,
+        "module_depth_y_mm": 120,
+        "nominal_x_clearance_on_each_side_mm": 6,
+        "free_x0_for_module_min_mm": 537.5,
+        "free_x0_for_module_max_mm": 574.5,
+        "available_x_travel_window_width_mm": 37,
+        "corridor_cross_section_condition_passes": true,
+        "full_3d_swept_path_proven": false
+      },
+      {
+        "module_index": 6,
+        "module_width_x_mm": 210,
+        "module_depth_y_mm": 120,
+        "nominal_x_clearance_on_each_side_mm": 6,
+        "free_x0_for_module_min_mm": 537.5,
+        "free_x0_for_module_max_mm": 574.5,
+        "available_x_travel_window_width_mm": 37,
+        "corridor_cross_section_condition_passes": true,
+        "full_3d_swept_path_proven": false
+      },
+      {
+        "module_index": 7,
+        "module_width_x_mm": 210,
+        "module_depth_y_mm": 120,
+        "nominal_x_clearance_on_each_side_mm": 6,
+        "free_x0_for_module_min_mm": 537.5,
+        "free_x0_for_module_max_mm": 574.5,
+        "available_x_travel_window_width_mm": 37,
+        "corridor_cross_section_condition_passes": true,
+        "full_3d_swept_path_proven": false
+      },
+      {
+        "module_index": 12,
+        "module_width_x_mm": 210,
+        "module_depth_y_mm": 120,
+        "nominal_x_clearance_on_each_side_mm": 6,
+        "free_x0_for_module_min_mm": 537.5,
+        "free_x0_for_module_max_mm": 574.5,
+        "available_x_travel_window_width_mm": 37,
+        "corridor_cross_section_condition_passes": true,
+        "full_3d_swept_path_proven": false
+      },
+      {
+        "module_index": 13,
+        "module_width_x_mm": 210,
+        "module_depth_y_mm": 120,
+        "nominal_x_clearance_on_each_side_mm": 6,
+        "free_x0_for_module_min_mm": 537.5,
+        "free_x0_for_module_max_mm": 574.5,
+        "available_x_travel_window_width_mm": 37,
+        "corridor_cross_section_condition_passes": true,
+        "full_3d_swept_path_proven": false
+      },
+      {
+        "module_index": 14,
+        "module_width_x_mm": 210,
+        "module_depth_y_mm": 120,
+        "nominal_x_clearance_on_each_side_mm": 6,
+        "free_x0_for_module_min_mm": 537.5,
+        "free_x0_for_module_max_mm": 574.5,
+        "available_x_travel_window_width_mm": 37,
+        "corridor_cross_section_condition_passes": true,
+        "full_3d_swept_path_proven": false
+      },
+      {
+        "module_index": 15,
+        "module_width_x_mm": 210,
+        "module_depth_y_mm": 120,
+        "nominal_x_clearance_on_each_side_mm": 6,
+        "free_x0_for_module_min_mm": 537.5,
+        "free_x0_for_module_max_mm": 574.5,
+        "available_x_travel_window_width_mm": 37,
+        "corridor_cross_section_condition_passes": true,
+        "full_3d_swept_path_proven": false
+      }
+    ],
+    "continuous_y_and_full_route_verified": false
+  },
+  "two_part_spine_entry_screen": {
+    "pieces": 2,
+    "nominal_segment_lengths_z_mm": [
+      228,
+      228
+    ],
+    "split_global_z_mm": 250,
+    "full_spine_z_length_mm": 456,
+    "aperture_radius_mm": 177.9,
+    "assumed_clearance_in_projection_mm": 6,
+    "full_spine_rectangle_projected_radius_mm": 234.418429,
+    "full_spine_fits_direct_upright_presentation": false,
+    "each_segment_rectangle_projected_radius_mm": 120.813906,
+    "each_segment_can_cross_front_opening_upright_if_centered": true,
+    "joining_faces_at_split_have_zero_overlap_and_no_fasteners": true,
+    "splice_detail_verified": false,
+    "bearing_transfer_across_split": false
+  },
+  "spine_target_module_planes": [
+    {
+      "id": 12,
+      "z0": 34,
+      "z1": 134
+    },
+    {
+      "id": 13,
+      "z0": 364,
+      "z1": 464
+    },
+    {
+      "id": 14,
+      "z0": 144,
+      "z1": 244
+    },
+    {
+      "id": 15,
+      "z0": 254,
+      "z1": 354
+    }
+  ],
+  "existing_lips_touched_by_split_plane": [
+    {
+      "id": "G17_15_shelf_2",
+      "z0": 250,
+      "z1": 254
+    }
+  ],
+  "missing_required_connection_design": [
+    "positive rail-to-rail structural splice with bending, buckling, joint torsion, impact and fatigue proof",
+    "resolvable temporary support of four affected rear modules until rail is reconnected",
+    "actual screws/fasteners and tool approach inside finished cavity, with min radii and gluing",
+    "individual 3D path from Ø355.8 opening for both rail pieces AND twelve boxes in a valid temporal order",
+    "full 3D rigidity, 50mm mat and true Dayton frame clearance, cabinet support, 100/120/150l air union",
+    "actual material batch and tolerance test coupons; no CNC instructions"
+  ],
+  "status_of_existing_rail_DXF": "K18 only includes integral upper lips and monolithic rails: invalid for segmented proposal. Do not machine."
+}

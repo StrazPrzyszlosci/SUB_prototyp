@@ -1878,3 +1878,9 @@ Odtworzono K04–K06. W czterech próbach K07 dla obu luzów kolejność 4–15,
 - Even planar rotation to 90° of 8 large rear boxes requires projected 120mm plus hypothetical 6mm margin each side =132mm >130mm. This DOES NOT establish failure of arbitrary 3D tilting/rolling, which remains to be simulated with real fixtures.
 - Source-derived [K21 report, JSON, SVG, reproducible Node and CI] document all nine X gap widths and limited proof assumptions. No fabricated motor/fastener paths. Potential temporary-rail removal opens X gap to 259mm but removes a load-bearing support and does NOT prove installation of that full-height rail afterward.
 - Manufacturing decision: K17/K18/K20 reference assembly cannot be treated as installable; all old DXFs remain CNC HOLD. NEXT: redesign support for a real access passage or validated 3D rotational service, then test fasteners and volume.
+
+## 2026-11-04 — K22: single-rail-service corridor and segmented reassembly hypothesis
+
+- K21 impossibility addressed by temporarily omitting G17_COLUMN_10 [X661.5..677.5]. A purely transverse open X span [531.5..790.5] =259mm results; 12 rear module 180/210 widths each have room with model 6mm each-side margin. Necessary slice only, no actual 3D route or chronology proven.
+- To reinstall that 456mm full-height spine, direct upright presentation to nominal Ø355.8 front cutout with a 6mm margin is blocked (corner radius234.419mm>177.9); 2×228mm segments individually fit in front aperture projection (corner radius120.813mm<177.9) but no structural splice, fastener, buckling load transfer, tool access or 3D placement path.
+- Removing rail loses one of two K17 nominal supports for modules 12–15, requiring temporary support or redesigned load path. Production DXF never altered/released; CNC HOLD. Next discriminating task: physical positive-lock splice and full 3D sequential route, real basket and fasteners.

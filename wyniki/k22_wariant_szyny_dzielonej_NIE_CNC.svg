@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="930" height="380" viewBox="0 0 930 380"><rect width="930" height="380" fill="#f7fafb"/><text x="20" y="30" font-size="20" fill="#253849" font-weight="bold">K22 – removable service corridor (CONCEPT, NOT CNC)</text><text x="20" y="53" font-size="13" fill="#54677a">View along front-to-rear direction, X cross-section. Green corridor opens only with R10 removed.</text>
+<rect x="40" y="100" width="851" height="110" fill="#edf2f5" stroke="#5e7282"/><rect x="65.3" y="100" width="14.0" height="110" fill="#ba5148"/>
+<rect x="173.4" y="100" width="14.0" height="110" fill="#ba5148"/>
+<rect x="260.6" y="100" width="14.0" height="110" fill="#ba5148"/>
+<rect x="368.7" y="100" width="14.0" height="110" fill="#ba5148"/>
+<rect x="470.3" y="100" width="14.0" height="110" fill="#ba5148"/>
+<rect x="710.1" y="100" width="14.0" height="110" fill="#ba5148"/>
+<rect x="837.4" y="100" width="14.0" height="110" fill="#ba5148"/>
+<rect x="484.3" y="112" width="225.8" height="86" fill="#9bd8bd" fill-opacity=".75"/>
+<text x="597.2" y="145" text-anchor="middle" font-size="16" font-weight="bold">259 mm</text>
+<text x="597.2" y="165" text-anchor="middle" font-size="12">210 + 2 × 6 = 222</text>
+<text x="20" y="250" font-size="14" font-weight="bold" fill="#304c5d">Condition met only in a single X-projection at the rear-rail barrier.</text>
+<text x="20" y="278" font-size="13">One candidate 456 mm rail becomes 2 × 228 mm research segments.</text>
+<text x="20" y="305" font-size="13">Physical splice, tool access, support while open, full path and volume: NOT verified.</text>
+<text x="20" y="339" font-size="16" font-weight="bold" fill="#ac3e35">No new production DXF. CNC HOLD.</text></svg>

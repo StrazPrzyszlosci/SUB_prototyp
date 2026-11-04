@@ -13,3 +13,6 @@ Profiles are placed apart **for viewing only**, not on stock sheets; cutter diam
 
 
 **K21 CRITICAL: verified assembly blockage.** Eight permanent full-height rear guide spines leave at most 130 mm unobstructed X gap at a mandatory simultaneous Y crossing; 12/12 rear K15 boxes (180/210 mm X width) cannot pass without rotation. For the 8 rear large boxes, 90° planar yaw (120mm X projection) plus 6mm per side needs 132mm; there is no proven alternate 3D route. K18/K20 DXF remains CNC HOLD. [K21 evidence](../../raporty/K21_przesmyk_i_weryfikacja_montazu_wkladow.md).
+
+
+**K22 research option:** a single selected rear rail G17_COLUMN_10 might have to be temporarily absent to create a 259mm X service throat, later restored through a yet-unengineered two-piece structural splice. A 228mm segment fits the nominal loudspeaker cutout only in a centered front-plane projection; no post-installation path, tensile/bending load transfer or actual fastener has been proven. Current K18 DXF remain CNC HOLD. [Details](../../raporty/K22_dzielona_prowadnica_i_przejscie_montazowe.md).

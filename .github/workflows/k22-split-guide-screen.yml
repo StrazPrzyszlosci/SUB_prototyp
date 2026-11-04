@@ -1,0 +1,46 @@
+name: K22 split guide service throat screening (CNC HOLD)
+on:
+  push:
+    branches: [main]
+    paths:
+      - "skrypty/k22_*"
+      - "wyniki/k22_*"
+      - ".github/workflows/k22-split-guide-screen.yml"
+  pull_request:
+    paths:
+      - "skrypty/k22_*"
+      - "wyniki/k22_*"
+      - ".github/workflows/k22-split-guide-screen.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  screen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Reproduce candidate topological pass screen
+        run: |
+          set -euo pipefail
+          node --check skrypty/k22_analiza_szyny_segmentowej.js
+          node skrypty/k22_analiza_szyny_segmentowej.js
+          git diff --exit-code -- wyniki/k22_dzielona_szyna_przesmyk.json wyniki/k22_wariant_szyny_dzielonej_NIE_CNC.svg
+      - name: Prevent unsupported manufacturing claims
+        run: |
+          node - <<'NODE'
+          const fs=require('fs'),assert=require('assert/strict');
+          const o=JSON.parse(fs.readFileSync('wyniki/k22_dzielona_szyna_przesmyk.json','utf8'));
+          assert.match(o.status,/CNC HOLD/);
+          assert.equal(o.temporary_removed_rail,'G17_COLUMN_10');
+          assert.equal(o.available_corridor_after_remove.opening_width_mm,259);
+          assert.equal(o.available_corridor_after_remove.axis_aligned_rear_insert_projection_screens.length,12);
+          assert.equal(o.available_corridor_after_remove.continuous_y_and_full_route_verified,false);
+          assert.equal(o.two_part_spine_entry_screen.pieces,2);
+          assert.equal(o.two_part_spine_entry_screen.each_segment_can_cross_front_opening_upright_if_centered,true);
+          assert.equal(o.two_part_spine_entry_screen.bearing_transfer_across_split,false);
+          assert.equal(o.two_part_spine_entry_screen.splice_detail_verified,false);
+          console.log('PASS necessary X aperture and divided-spine rectangle screen; physical mount/CNC are NOT approved');
+          NODE
