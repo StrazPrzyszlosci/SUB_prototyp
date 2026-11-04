@@ -1,0 +1,45 @@
+name: K21 necessary-condition assembly corridor proof
+on:
+  push:
+    branches: [main]
+    paths:
+      - "skrypty/k21_*"
+      - "wyniki/k21_*"
+      - ".github/workflows/k21-service-throat-proof.yml"
+  pull_request:
+    paths:
+      - "skrypty/k21_*"
+      - "wyniki/k21_*"
+      - ".github/workflows/k21-service-throat-proof.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  route-blocker-proof:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Reproduce computational geometry
+        run: |
+          set -euo pipefail
+          node --check skrypty/k21_gardziel_montazowa.js
+          node skrypty/k21_gardziel_montazowa.js
+          git diff --exit-code -- wyniki/k21_przesmyk_montazowy.json wyniki/k21_przesmyk_prowadnic_NIE_CNC.svg
+      - name: Require impossibility statement limited to supported domain
+        run: |
+          node - <<'NODE'
+          const fs=require('fs'),assert=require('node:assert/strict');
+          const x=JSON.parse(fs.readFileSync('wyniki/k21_przesmyk_montazowy.json','utf8'));
+          assert.equal(x.max_open_gap_x_mm,130);
+          assert.equal(x.rear_module_count,12);
+          assert.equal(x.global_invariants.all_12_rear_modules_unrotated_axis_aligned_trajectory_BLOCKED,true);
+          assert.equal(x.global_invariants.all_8_large_rear_modules_planar_yaw_with_6mm_clearance_BLOCKED,true);
+          assert.match(x.global_invariants.true_swept_3D_rotation_feasibility,/NOT TESTED/);
+          assert.equal(x.global_invariants.current_K18_K20_reference_DXF_approved_for_CNC,false);
+          assert.equal(x.per_rear_module.filter(m=>m.width_mm===180).length,4);
+          assert.equal(x.per_rear_module.filter(m=>m.width_mm===210).length,8);
+          console.log('PASS 12 rear modules blocked for unrotated rigid translation; no 3D assertion or CNC release');
+          NODE

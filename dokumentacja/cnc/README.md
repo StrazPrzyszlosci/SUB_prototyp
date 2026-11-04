@@ -10,3 +10,6 @@ Profiles are placed apart **for viewing only**, not on stock sheets; cutter diam
 
 
 **K20 UPDATE / FABRICATION VETO:** Existing K18 guide profile DXF contains 40 *permanent integral* upper tongues; these are NOT the detachable keepers in the K20 geometry concept. Four K18 pocket sketches per TOP/BOTTOM panel are open at the forward edge (8 total), not enclosed blind sockets. Do not send K18 to manufacturing. See [K20 research and blockers](../../raporty/K20_serwisowe_rygle_i_analiza_montazu.md).
+
+
+**K21 CRITICAL: verified assembly blockage.** Eight permanent full-height rear guide spines leave at most 130 mm unobstructed X gap at a mandatory simultaneous Y crossing; 12/12 rear K15 boxes (180/210 mm X width) cannot pass without rotation. For the 8 rear large boxes, 90° planar yaw (120mm X projection) plus 6mm per side needs 132mm; there is no proven alternate 3D route. K18/K20 DXF remains CNC HOLD. [K21 evidence](../../raporty/K21_przesmyk_i_weryfikacja_montazu_wkladow.md).

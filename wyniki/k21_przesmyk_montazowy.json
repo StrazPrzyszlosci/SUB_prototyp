@@ -1,0 +1,489 @@
+{
+  "study": "K21",
+  "date": "2026-11-04",
+  "status": "CNC HOLD — impossible rigid unrotated rearward passage for all 12 rear modules under existing full-height K17 guide arrangement",
+  "source": "K15 target volumes and K17 12 full-height rail solids; no assumptions about motor basket beyond source location",
+  "assumptions": {
+    "reference_cabinet_interior_x_mm": [
+      22,
+      998
+    ],
+    "full_height_rails_z_mm": [
+      22,
+      478
+    ],
+    "original_K17_back_rail_count": 8,
+    "critical_box_front_y_mm": 180,
+    "uniform_nominal_clearance_for_planar_yaw_screen_mm": 6,
+    "rectangle_topological_crossing": "A continuous from-front insertion must pass the box near face Y=180 before reaching rear-box final Y>=227. At that point an unrotated box of depth 100/120mm simultaneously overlaps both rear rail bands Y208–220 and Y224–236."
+  },
+  "back_rail_rectangles": [
+    {
+      "id": "G17_COLUMN_01",
+      "row": "rear_small",
+      "module_indices": [
+        0,
+        1
+      ],
+      "x0": 51,
+      "x1": 67,
+      "y0": 224,
+      "y1": 236,
+      "z0": 22,
+      "z1": 478
+    },
+    {
+      "id": "G17_COLUMN_02",
+      "row": "rear_small",
+      "module_indices": [
+        0,
+        1
+      ],
+      "x0": 175,
+      "x1": 191,
+      "y0": 224,
+      "y1": 236,
+      "z0": 22,
+      "z1": 478
+    },
+    {
+      "id": "G17_COLUMN_03",
+      "row": "rear_small",
+      "module_indices": [
+        2,
+        3
+      ],
+      "x0": 275,
+      "x1": 291,
+      "y0": 224,
+      "y1": 236,
+      "z0": 22,
+      "z1": 478
+    },
+    {
+      "id": "G17_COLUMN_04",
+      "row": "rear_small",
+      "module_indices": [
+        2,
+        3
+      ],
+      "x0": 399,
+      "x1": 415,
+      "y0": 224,
+      "y1": 236,
+      "z0": 22,
+      "z1": 478
+    },
+    {
+      "id": "G17_COLUMN_09",
+      "row": "rear_large",
+      "module_indices": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "x0": 515.5,
+      "x1": 531.5,
+      "y0": 208,
+      "y1": 220,
+      "z0": 22,
+      "z1": 478
+    },
+    {
+      "id": "G17_COLUMN_10",
+      "row": "rear_large",
+      "module_indices": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "x0": 661.5,
+      "x1": 677.5,
+      "y0": 208,
+      "y1": 220,
+      "z0": 22,
+      "z1": 478
+    },
+    {
+      "id": "G17_COLUMN_05",
+      "row": "rear_large",
+      "module_indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "x0": 790.5,
+      "x1": 806.5,
+      "y0": 208,
+      "y1": 220,
+      "z0": 22,
+      "z1": 478
+    },
+    {
+      "id": "G17_COLUMN_06",
+      "row": "rear_large",
+      "module_indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "x0": 936.5,
+      "x1": 952.5,
+      "y0": 208,
+      "y1": 220,
+      "z0": 22,
+      "z1": 478
+    }
+  ],
+  "available_x_intervals_at_required_y_crossing": [
+    {
+      "x0": 22,
+      "x1": 51,
+      "width_mm": 29,
+      "left_boundary_rail": "cabinet",
+      "right_boundary_rail": "G17_COLUMN_01"
+    },
+    {
+      "x0": 67,
+      "x1": 175,
+      "width_mm": 108,
+      "left_boundary_rail": "G17_COLUMN_01",
+      "right_boundary_rail": "G17_COLUMN_02"
+    },
+    {
+      "x0": 191,
+      "x1": 275,
+      "width_mm": 84,
+      "left_boundary_rail": "G17_COLUMN_02",
+      "right_boundary_rail": "G17_COLUMN_03"
+    },
+    {
+      "x0": 291,
+      "x1": 399,
+      "width_mm": 108,
+      "left_boundary_rail": "G17_COLUMN_03",
+      "right_boundary_rail": "G17_COLUMN_04"
+    },
+    {
+      "x0": 415,
+      "x1": 515.5,
+      "width_mm": 100.5,
+      "left_boundary_rail": "G17_COLUMN_04",
+      "right_boundary_rail": "G17_COLUMN_09"
+    },
+    {
+      "x0": 531.5,
+      "x1": 661.5,
+      "width_mm": 130,
+      "left_boundary_rail": "G17_COLUMN_09",
+      "right_boundary_rail": "G17_COLUMN_10"
+    },
+    {
+      "x0": 677.5,
+      "x1": 790.5,
+      "width_mm": 113,
+      "left_boundary_rail": "G17_COLUMN_10",
+      "right_boundary_rail": "G17_COLUMN_05"
+    },
+    {
+      "x0": 806.5,
+      "x1": 936.5,
+      "width_mm": 130,
+      "left_boundary_rail": "G17_COLUMN_05",
+      "right_boundary_rail": "G17_COLUMN_06"
+    },
+    {
+      "x0": 952.5,
+      "x1": 998,
+      "width_mm": 45.5,
+      "left_boundary_rail": "G17_COLUMN_06",
+      "right_boundary_rail": "cabinet"
+    }
+  ],
+  "max_open_gap_x_mm": 130,
+  "rear_module_count": 12,
+  "per_rear_module": [
+    {
+      "module": 0,
+      "width_mm": 180,
+      "depth_mm": 100,
+      "height_mm": 100,
+      "final_y0_mm": 247,
+      "mandatory_y0_reference_mm": 180,
+      "simultaneous_8_rail_y_intersection": true,
+      "unchanged_orientation_translation_clearance_without_margin_mm": -50,
+      "axis_aligned_pure_translation_blocked": true,
+      "minimum_x_projection_over_planar_yaw_deg_0_to_90_mm": 100,
+      "planar_yaw_with_6mm_each_side_required_mm": 112,
+      "planar_yaw_with_6mm_each_side_blocked": false,
+      "full_3d_rotation_or_rail_reassembly_validated": false
+    },
+    {
+      "module": 1,
+      "width_mm": 180,
+      "depth_mm": 100,
+      "height_mm": 100,
+      "final_y0_mm": 247,
+      "mandatory_y0_reference_mm": 180,
+      "simultaneous_8_rail_y_intersection": true,
+      "unchanged_orientation_translation_clearance_without_margin_mm": -50,
+      "axis_aligned_pure_translation_blocked": true,
+      "minimum_x_projection_over_planar_yaw_deg_0_to_90_mm": 100,
+      "planar_yaw_with_6mm_each_side_required_mm": 112,
+      "planar_yaw_with_6mm_each_side_blocked": false,
+      "full_3d_rotation_or_rail_reassembly_validated": false
+    },
+    {
+      "module": 2,
+      "width_mm": 180,
+      "depth_mm": 100,
+      "height_mm": 100,
+      "final_y0_mm": 247,
+      "mandatory_y0_reference_mm": 180,
+      "simultaneous_8_rail_y_intersection": true,
+      "unchanged_orientation_translation_clearance_without_margin_mm": -50,
+      "axis_aligned_pure_translation_blocked": true,
+      "minimum_x_projection_over_planar_yaw_deg_0_to_90_mm": 100,
+      "planar_yaw_with_6mm_each_side_required_mm": 112,
+      "planar_yaw_with_6mm_each_side_blocked": false,
+      "full_3d_rotation_or_rail_reassembly_validated": false
+    },
+    {
+      "module": 3,
+      "width_mm": 180,
+      "depth_mm": 100,
+      "height_mm": 100,
+      "final_y0_mm": 247,
+      "mandatory_y0_reference_mm": 180,
+      "simultaneous_8_rail_y_intersection": true,
+      "unchanged_orientation_translation_clearance_without_margin_mm": -50,
+      "axis_aligned_pure_translation_blocked": true,
+      "minimum_x_projection_over_planar_yaw_deg_0_to_90_mm": 100,
+      "planar_yaw_with_6mm_each_side_required_mm": 112,
+      "planar_yaw_with_6mm_each_side_blocked": false,
+      "full_3d_rotation_or_rail_reassembly_validated": false
+    },
+    {
+      "module": 4,
+      "width_mm": 210,
+      "depth_mm": 120,
+      "height_mm": 100,
+      "final_y0_mm": 227,
+      "mandatory_y0_reference_mm": 180,
+      "simultaneous_8_rail_y_intersection": true,
+      "unchanged_orientation_translation_clearance_without_margin_mm": -80,
+      "axis_aligned_pure_translation_blocked": true,
+      "minimum_x_projection_over_planar_yaw_deg_0_to_90_mm": 120,
+      "planar_yaw_with_6mm_each_side_required_mm": 132,
+      "planar_yaw_with_6mm_each_side_blocked": true,
+      "full_3d_rotation_or_rail_reassembly_validated": false
+    },
+    {
+      "module": 5,
+      "width_mm": 210,
+      "depth_mm": 120,
+      "height_mm": 100,
+      "final_y0_mm": 227,
+      "mandatory_y0_reference_mm": 180,
+      "simultaneous_8_rail_y_intersection": true,
+      "unchanged_orientation_translation_clearance_without_margin_mm": -80,
+      "axis_aligned_pure_translation_blocked": true,
+      "minimum_x_projection_over_planar_yaw_deg_0_to_90_mm": 120,
+      "planar_yaw_with_6mm_each_side_required_mm": 132,
+      "planar_yaw_with_6mm_each_side_blocked": true,
+      "full_3d_rotation_or_rail_reassembly_validated": false
+    },
+    {
+      "module": 6,
+      "width_mm": 210,
+      "depth_mm": 120,
+      "height_mm": 100,
+      "final_y0_mm": 227,
+      "mandatory_y0_reference_mm": 180,
+      "simultaneous_8_rail_y_intersection": true,
+      "unchanged_orientation_translation_clearance_without_margin_mm": -80,
+      "axis_aligned_pure_translation_blocked": true,
+      "minimum_x_projection_over_planar_yaw_deg_0_to_90_mm": 120,
+      "planar_yaw_with_6mm_each_side_required_mm": 132,
+      "planar_yaw_with_6mm_each_side_blocked": true,
+      "full_3d_rotation_or_rail_reassembly_validated": false
+    },
+    {
+      "module": 7,
+      "width_mm": 210,
+      "depth_mm": 120,
+      "height_mm": 100,
+      "final_y0_mm": 227,
+      "mandatory_y0_reference_mm": 180,
+      "simultaneous_8_rail_y_intersection": true,
+      "unchanged_orientation_translation_clearance_without_margin_mm": -80,
+      "axis_aligned_pure_translation_blocked": true,
+      "minimum_x_projection_over_planar_yaw_deg_0_to_90_mm": 120,
+      "planar_yaw_with_6mm_each_side_required_mm": 132,
+      "planar_yaw_with_6mm_each_side_blocked": true,
+      "full_3d_rotation_or_rail_reassembly_validated": false
+    },
+    {
+      "module": 12,
+      "width_mm": 210,
+      "depth_mm": 120,
+      "height_mm": 100,
+      "final_y0_mm": 227,
+      "mandatory_y0_reference_mm": 180,
+      "simultaneous_8_rail_y_intersection": true,
+      "unchanged_orientation_translation_clearance_without_margin_mm": -80,
+      "axis_aligned_pure_translation_blocked": true,
+      "minimum_x_projection_over_planar_yaw_deg_0_to_90_mm": 120,
+      "planar_yaw_with_6mm_each_side_required_mm": 132,
+      "planar_yaw_with_6mm_each_side_blocked": true,
+      "full_3d_rotation_or_rail_reassembly_validated": false
+    },
+    {
+      "module": 13,
+      "width_mm": 210,
+      "depth_mm": 120,
+      "height_mm": 100,
+      "final_y0_mm": 227,
+      "mandatory_y0_reference_mm": 180,
+      "simultaneous_8_rail_y_intersection": true,
+      "unchanged_orientation_translation_clearance_without_margin_mm": -80,
+      "axis_aligned_pure_translation_blocked": true,
+      "minimum_x_projection_over_planar_yaw_deg_0_to_90_mm": 120,
+      "planar_yaw_with_6mm_each_side_required_mm": 132,
+      "planar_yaw_with_6mm_each_side_blocked": true,
+      "full_3d_rotation_or_rail_reassembly_validated": false
+    },
+    {
+      "module": 14,
+      "width_mm": 210,
+      "depth_mm": 120,
+      "height_mm": 100,
+      "final_y0_mm": 227,
+      "mandatory_y0_reference_mm": 180,
+      "simultaneous_8_rail_y_intersection": true,
+      "unchanged_orientation_translation_clearance_without_margin_mm": -80,
+      "axis_aligned_pure_translation_blocked": true,
+      "minimum_x_projection_over_planar_yaw_deg_0_to_90_mm": 120,
+      "planar_yaw_with_6mm_each_side_required_mm": 132,
+      "planar_yaw_with_6mm_each_side_blocked": true,
+      "full_3d_rotation_or_rail_reassembly_validated": false
+    },
+    {
+      "module": 15,
+      "width_mm": 210,
+      "depth_mm": 120,
+      "height_mm": 100,
+      "final_y0_mm": 227,
+      "mandatory_y0_reference_mm": 180,
+      "simultaneous_8_rail_y_intersection": true,
+      "unchanged_orientation_translation_clearance_without_margin_mm": -80,
+      "axis_aligned_pure_translation_blocked": true,
+      "minimum_x_projection_over_planar_yaw_deg_0_to_90_mm": 120,
+      "planar_yaw_with_6mm_each_side_required_mm": 132,
+      "planar_yaw_with_6mm_each_side_blocked": true,
+      "full_3d_rotation_or_rail_reassembly_validated": false
+    }
+  ],
+  "global_invariants": {
+    "all_12_rear_modules_unrotated_axis_aligned_trajectory_BLOCKED": true,
+    "all_8_large_rear_modules_planar_yaw_with_6mm_clearance_BLOCKED": true,
+    "small_rear_modules_planar_yaw_with_6mm_clearance_NOT_GEOMETRICALLY_PROVEN_BLOCKED": true,
+    "true_swept_3D_rotation_feasibility": "NOT TESTED; do not claim impossibility of every conceivable 3D motion",
+    "current_K18_K20_reference_DXF_approved_for_CNC": false
+  },
+  "one_spine_removal_gap_screens": [
+    {
+      "removed_spine": "G17_COLUMN_05",
+      "max_gap_after_removal_mm": 259,
+      "unrotated_210mm_box_plus_6mm_each_side_clearance_possible_in_projection": true,
+      "active_box_supports_lost": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "not_an_approved_redesign": true
+    },
+    {
+      "removed_spine": "G17_COLUMN_10",
+      "max_gap_after_removal_mm": 259,
+      "unrotated_210mm_box_plus_6mm_each_side_clearance_possible_in_projection": true,
+      "active_box_supports_lost": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "not_an_approved_redesign": true
+    },
+    {
+      "removed_spine": "G17_COLUMN_09",
+      "max_gap_after_removal_mm": 246.5,
+      "unrotated_210mm_box_plus_6mm_each_side_clearance_possible_in_projection": true,
+      "active_box_supports_lost": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "not_an_approved_redesign": true
+    },
+    {
+      "removed_spine": "G17_COLUMN_04",
+      "max_gap_after_removal_mm": 224.5,
+      "unrotated_210mm_box_plus_6mm_each_side_clearance_possible_in_projection": true,
+      "active_box_supports_lost": [
+        2,
+        3
+      ],
+      "not_an_approved_redesign": true
+    },
+    {
+      "removed_spine": "G17_COLUMN_02",
+      "max_gap_after_removal_mm": 208,
+      "unrotated_210mm_box_plus_6mm_each_side_clearance_possible_in_projection": false,
+      "active_box_supports_lost": [
+        0,
+        1
+      ],
+      "not_an_approved_redesign": true
+    },
+    {
+      "removed_spine": "G17_COLUMN_03",
+      "max_gap_after_removal_mm": 208,
+      "unrotated_210mm_box_plus_6mm_each_side_clearance_possible_in_projection": false,
+      "active_box_supports_lost": [
+        2,
+        3
+      ],
+      "not_an_approved_redesign": true
+    },
+    {
+      "removed_spine": "G17_COLUMN_06",
+      "max_gap_after_removal_mm": 191.5,
+      "unrotated_210mm_box_plus_6mm_each_side_clearance_possible_in_projection": false,
+      "active_box_supports_lost": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "not_an_approved_redesign": true
+    },
+    {
+      "removed_spine": "G17_COLUMN_01",
+      "max_gap_after_removal_mm": 153,
+      "unrotated_210mm_box_plus_6mm_each_side_clearance_possible_in_projection": false,
+      "active_box_supports_lost": [
+        0,
+        1
+      ],
+      "not_an_approved_redesign": true
+    }
+  ],
+  "critical_next_decision": "Redesign support architecture to preserve full-load two-point support and create a proven service corridor, or prove swept 3D rotational insertion. Removing a spine loses part of its associated module support and cannot be treated as approved."
+}

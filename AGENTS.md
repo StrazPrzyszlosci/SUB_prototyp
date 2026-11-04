@@ -1871,3 +1871,10 @@ Odtworzono K04–K06. W czterech próbach K07 dla obu luzów kolejność 4–15,
 - Permanent K20 rail/lower displacement 0.977408 L. Modeled net 100/120/150 L states with present detachable envelopes = 99.098366 / 118.916286 / 149.179454 L; NO real fastener, preload or measured basket accounted.
 - Audited proposed 24 K18 rail pockets: 4 in top and 4 in bottom reach the FRONT EDGE (open grooves), not enclosed blind pockets. Joint never qualified.
 - Artifacts: skrypty/k20_rozbieralne_rygle_i_bilans.js, wyniki/k20_rozbieralne_rygle_audyt.json, dokumentacja/K20_p30e_rozbieralne_zabezpieczenia_NIE_CNC.scad, raporty/K20_serwisowe_rygle_i_analiza_montazu.md. NEXT: real fastening joint and complete 3D sequential assembly sweep, then update manufacturable parts. No CNC release.
+
+## 2026-11-04 — K21: proof of assembly throat blockage in K17/K20, decisive CNC hold
+
+- Cross section of all eight full-height rear rails (X spans from the persisted K17 data, full Z22..478) leaves maximum contiguous unobstructed X width130mm. For every rear K15 box (4x180×100×100 and 8x210×120×100), a continuous from-front unrotated insertion necessarily traverses Yfront=180, when the box intersects both rear guide rows (Y208..220 and Y224..236) simultaneously. Hence all 12 rear boxes are topologically blocked under pure translations, not merely failed by a heuristic pathfinder.
+- Even planar rotation to 90° of 8 large rear boxes requires projected 120mm plus hypothetical 6mm margin each side =132mm >130mm. This DOES NOT establish failure of arbitrary 3D tilting/rolling, which remains to be simulated with real fixtures.
+- Source-derived [K21 report, JSON, SVG, reproducible Node and CI] document all nine X gap widths and limited proof assumptions. No fabricated motor/fastener paths. Potential temporary-rail removal opens X gap to 259mm but removes a load-bearing support and does NOT prove installation of that full-height rail afterward.
+- Manufacturing decision: K17/K18/K20 reference assembly cannot be treated as installable; all old DXFs remain CNC HOLD. NEXT: redesign support for a real access passage or validated 3D rotational service, then test fasteners and volume.
