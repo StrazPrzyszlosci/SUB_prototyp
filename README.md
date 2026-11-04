@@ -53,68 +53,69 @@ Skróty wyjaśniamy w [krótkim słowniku](#slownik). Najpierw warto przejść d
 
 **Cel:** pierwszy prototyp zamkniętego subwoofera, docelowo **dwa urządzenia** do pokoju około **4,6 × 3,7 × 2,5 m**. Projektujemy dla miejsca odsłuchu, a nie maksymalnej mocy na etykiecie. Na razie niczego nie zamawiamy ani nie frezujemy.
 
-### 1. Aktualny wariant konstrukcji
+### 1. Wybór przetwornika — od którego głośnika zaczynamy?
 
-| Element | Wstępne założenie | Warunek, którego jeszcze nie potwierdzono |
+Najpierw porównujemy **przetworniki** pod kątem możliwości czystego odtwarzania 20–40 Hz, wychylenia, zapasu napięcia/prądu, termiki, THD/IMD i kosztów. Sama średnica, moc znamionowa czy niska częstotliwość rezonansowa Fs nie rozstrzygają wyboru. Dopiero po ocenie głośnika projektujemy konkretną obudowę.
+
+| Kandydat | Dotychczasowy wniosek | Warunek ostatecznego wyboru |
 |---|---|---|
-| Przetwornik | **Dayton Audio RSS390HF-4** — wstępny faworyt | Pełny audyt 34 modeli, rzeczywiste THD/IMD, termika, dostępność i ceny |
-| Korpus | **1020 × 425 × 500 mm** (szerokość × głębokość × wysokość), projekt P30E | Obrys całego urządzenia z maskownicą, stopkami, terminalami i tolerancjami do **500 mm głębokości** |
-| Objętość | około **100 / 120 / 150 l netto**, z punktem eksperymentalnym 120 l | Bilans wyporności, montaż i szczelność ruchomych wkładów |
-| Mechanika i materiały | modelowo MDF 22 mm, front 44 mm, skrzynki MDF 8 mm; [materiały 35 części — K10](raporty/K10_paszport_materialowy_wszystkich_czesci.md) | Wybór dla każdej części: płyty, wręgi, klocki, kleje, uszczelki, wkłady, okucia i osłona. **To kandydaci, nie zatwierdzona lista produkcyjna.** |
-| Wypełnienie | planowana mata 50 mm przy tylnej ścianie | Parametry i montaż realnego materiału |
-| Elektronika | zewnętrzny **płytkowy wzmacniacz klasy D** i DSP; modelowe limity 40 V RMS / 12 A RMS | Konkretny wzmacniacz, zasilacz, chłodzenie i sprawdzone zabezpieczenia |
-| Integracja | docelowo co najmniej **8 wyjść DSP** | Routing, opóźnienia, filtry, rzeczywiste działanie ochrony |
+| **Dayton Audio RSS390HF-4 (C02)** | Wstępny faworyt dla części limitów cieplnych i napędu | THD/IMD, realna termika, zapas 20–40 Hz i łączny koszt |
+| **Dayton RSS390HE-22 (C11)** | Może uzyskać przewagę przy innym limicie strat | Bezpośredni test tych samych warunków |
+| **STX W.32.800.8.FCX (C06)** | Istotny kandydat porównawczy 12″ | Wychylenie i SPL w docelowym pokoju |
+| **Pozostałe modele, w tym SB Acoustics** | Pozostają w szerokiej puli badań | Ujednolicenie danych i warunków porównania |
 
-**Praktycznie:** to *punkt wyjścia do opracowania konstrukcji*, nie gotowe wymiary do zamówienia w CNC. W raporcie [P30E](raporty/078_P30E_mata50_montaz_robustnosc.md) stany objętości mają nominalnie 100,12 / 119,92 / 150,16 l, lecz to nadal wielkości modelowe.
+**Decyzja:** RSS390HF-4 jest nadal *faworytem warunkowym*, nie ogłoszonym zwycięzcą. Samo kryterium „najtańszy głośnik” nie zastępuje jakości i wymagań. [Porównanie wszystkich kandydatów](#glosniki) · [Wymagania](WYMAGANIA.md).
 
-![Schemat korpusu i wymiennych wkładów — NIE CNC](dokumentacja/P31C_schemat_konstrukcji_1020_425.svg)
+### 2. Badania akustyczne i dobór konstrukcji obudowy
 
-*Na rysunku sprawdzamy dostęp przez otwór głośnika, a nie tylko liczbę litrów. Blokady, uszczelki i miejsce na narzędzia wymagają pełnego CAD i prób.*
+Dla badanych przetworników sprawdzamy kolejno typ obudowy, potrzebny litraż, poziom i zniekształcenia basu, a następnie projektujemy gabaryty, tłumienie i wręgi. **Model bazowy** dla Daytona przedstawia poniższa tabela; nie jest to jeszcze zatwierdzony projekt do wykonania.
 
-### 2. Wybór głośnika: co naprawdę porównujemy?
-
-**Nie wystarczą średnica, moc znamionowa ani sam niski Fs.** W każdym wariancie trzeba jednocześnie ocenić zapas wychylenia, możliwy poziom 20–40 Hz, napięcie i prąd, rozgrzewanie cewki, pasmo po DSP, montaż i koszt. Test pojedynczych sinusów nie jest testem muzycznym ani pomiarem THD.
-
-| Kandydat | Wniosek użyteczny na dziś | Otwarty warunek |
+| Część konstrukcji | Obecnie analizowany wariant | Co musi zostać zweryfikowane |
 |---|---|---|
-| **Dayton RSS390HF-4 (C02)** | Warunkowy faworyt dla części przyjętych limitów mocy strat cewki | Pełna termika, montaż, zniekształcenia i koszt |
-| **Dayton RSS390HE-22 (C11)** | Może być korzystniejszy przy innym limicie strat | Porównywalne chłodzenie i napęd |
-| **STX W.32.800.8.FCX (C06)** | Ważna alternatywa 12-calowa | Docelowy zapas SPL i wychylenia w tym samym pokoju |
-| **SB Acoustics** | Modele i warianty połączenia cewek są w szerszym porównaniu | Pełna zgodność danych, termiki, THD i kosztów z pozostałą pulą |
+| Korpus | **1020 × 425 × 500 mm** (szer. × gł. × wys.) | Całe urządzenie z grillem, terminalem i przewodami musi mieć **maksymalnie 500 mm głębokości** |
+| Objętość | Trzy nastawy ok. **100 / 120 / 150 l netto**, punkt bazowy 120 l | Rzeczywista wyporność, szczelność i dostęp do wkładów |
+| Materiały | Roboczo MDF **22 mm**, front laminowany **44 mm**, wkłady MDF **8 mm** | Badania i dobór materiału *każdej* części |
+| Usztywnienia | Wręgi i lokalne elementy w modelu P30E | Sztywność, połączenia, drgania, przejścia montażowe |
+| Tłumienie | Mata poliestrowa **50 mm** przy tylnej ściance | Parametry faktycznego materiału i bezpieczne mocowanie |
+| Napęd i sterowanie | Zewnętrzny moduł klasy D i DSP | Zasilacz, chłodzenie, zabezpieczenia i co najmniej osiem wyjść DSP docelowo |
 
-**Wniosek praktyczny:** tańszy model może wygrać, jeżeli spełni *wszystkie* uzgodnione progi. Dopóki progi i ceny nie są kompletne, **nie istnieje uczciwy ranking najtańszego rozwiązania**. [Szczegółowe porównanie](#glosniki) · [wymagania](WYMAGANIA.md).
+![Konstrukcja skrzyni i wkładów regulujących pojemność — model badawczy, NIE CNC](dokumentacja/P31C_schemat_konstrukcji_1020_425.svg)
 
-### 3. Dlaczego trzy litraże nie gwarantują trzech dobrych ustawień?
+**Po co trzy litraże?** Zmiana pojemności zmienia sprężystość powietrza i pracę membrany. Wyniki P30E: **100,12 / 119,92 / 150,16 l** to wartości nominalne modelu; różne nastawy nie są automatycznie trzema prawidłowymi rozwiązaniami akustycznymi. [P30E](raporty/078_P30E_mata50_montaz_robustnosc.md) · [Regulacja](#regulacja).
 
-Zmniejszenie wolnej objętości zmienia sprężystość powietrza i ruch membrany. Wyjmowany wkład musi jednak przejść przez otwór, dać się zamocować bez kolizji, pozostać szczelny oraz nie grzechotać. Dlatego warianty **100/120/150 l** są pozycjami do *porównania*, a nie trzema gotowymi presetami. [Badania regulacji](#regulacja).
+### 3. Badania materiałów, ścian, wręg i połączeń
 
-### 4. Dlaczego samo pogrubienie MDF lub dodanie metalowego pierścienia nie wystarcza?
+Najpierw sprawdzamy **sztywność i masę ścian, wręg oraz frontu**, a także materiał i trwałość klejów. Nie zakładamy, że dodatkowy MDF lub metalowy pierścień zawsze są lepsze niż prawidłowo zaprojektowane wzmocnienie. W K10 utworzono **paszporty materiałowe 35 części**. K11 porównuje przy niezmienionym obrysie: ściany MDF25 zmniejszają modelową *geometryczną objętość wnętrza brutto* o **4,381 l** względem MDF22; sklejka brzozowa21 ją zwiększa o **1,478 l**. **Nie są to jeszcze zmiany pojemności netto ani wyniki całego MES**.
 
-W badanej geometrii Dayton RSS390HF-4 wycięcie **Ø355,8 mm**, okrąg śrub **Ø368 mm** i otwory **Ø6,5 mm w metalowym kołnierzu kosza** dają **2,85 mm drewna** pomiędzy krawędziami **wyłącznie wtedy, gdy w MDF wiercimy również pełny otwór Ø6,5 mm**. Nie jest to obowiązkowy wymiar otworu w drewnie ani średnica wybranego łącznika. Historyczne badania P38–P42 badały m.in. prosty pierścień i szyny, ale **nie dowiodły, że standardowe mocowanie do lokalnie wzmocnionego MDF jest niewystarczające**. Osiem oddzielnych punktów zakotwienia i rozwiązania stosowane przez innych konstruktorów należy porównać z pełnym pierścieniem przed rozstrzygnięciem.
+**Praktycznie:** rodzaj płyty wybieramy wspólnie z geometrią wręg i spoin, a nie według samego modułu E. Brakuje fizycznej kwalifikacji spoin oraz klocków przykręcających kosz. [P36 – sztywność MDF](raporty/091_P36A_grubosc_MDF_podatnosc_i_wregi.md) · [K10 – materiały 35 części](raporty/K10_paszport_materialowy_wszystkich_czesci.md) · [K11 – warianty ścian](raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md).
 
-![Front Dayton — średnice, wycięcie, osiem otworów; szkic badawczy](wyniki/p38a_front_NIE_CNC.svg)
+### 4. Dopiero po projekcie skrzyni — mocowanie głośnika i dobór śrub
 
-*Co trzeba zrobić?* **Nie trzeba ponownie ustalać fabrycznych wymiarów:** rysunek Daytona podaje także kołnierz **10,5 mm**, głębokość **178 mm** i otwory w koszu **8 × Ø6,5 mm**. Dopiero niezwymiarowane żebra, terminale, wybrany łącznik, gniazdo MDF i dostęp narzędzi wymagają doprecyzowania; do CNC konieczna będzie kontrola tolerancji i nośności. [Arkusz producenta](https://www.daytonaudio.com/images/resources/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf) · [Weryfikacja źródeł w K07](raporty/K07_serwis_wkladow_i_audyt_mocowan.md). [Raport 096](raporty/096_P38A_front_Dayton_otwory_i_mocowania.md) · [Raport 108](raporty/108_P42C_laczniki_i_koncepcje_3D.md).
+Dla wybranego przetwornika wracamy do rysunku kosza. Dayton podaje **8 otworów Ø6,5 mm w metalowym kołnierzu**, rozmieszczonych na **PCD Ø368 mm**, oraz wymagane wycięcie **Ø355,8 mm**. Te liczby wyznaczają położenia osi, ale **nie średnicę wiercenia w MDF ani otworu pod metalową wkładkę w klocku**.
 
-**Rysunek producenta — RSS390HF-4 (widok boczny):**
+| Gdzie jest otwór? | Z jakiego wymiaru korzystamy? | Znaczenie |
+|---|---|---|
+| **W koszu głośnika** | Fabryczne **Ø6,5 mm** | Jedynie zgodność trzpienia i łba z metalowym kołnierzem |
+| **W froncie MDF44** | Średnica przelotowa **pod wybraną śrubę**: przykładowo M4 → Ø4,5; M5 → Ø5,5; M6 → Ø6,6 mm | Dobór jest warunkowy; wynika z trzpienia, luzu i tolerancji, **nie z Ø6,5 kosza** |
+| **W klocku za frontem** | Otwór wstępny **pod wybraną wkładkę**: np. RAMPA SKD30 M4 → Ø6,5; M5 → Ø9; M6 → Ø10 mm według karty dla MDF | Osobny otwór pod zewnętrzny gwint wkładki; nie jest przelotem śruby przez front |
 
-![Oryginalny rysunek wymiarowy producenta Dayton Audio RSS390HF-4: średnica 388,4 mm, wycięcie 355,8 mm, głębokość 178 mm, kołnierz 10,5 mm — reprodukcja Speaker&Co](https://www.speakerenco.nl/images/uploaded/295-468_3.jpg)
+Na przykład **M5 z umownym otworem przelotowym Ø5,5 mm we froncie** pozostawia nominalnie `6,1 − 2,75 = 3,35 mm` drewna między otworem a wycięciem — **nie 2,85 mm**, które wyliczono tylko dla hipotetycznego wiercenia Ø6,5 mm także w MDF. Wkładka Ø10 mm ma jednak inną, osobną geometrię za frontem i może kolidować z klockiem. Średnice otworów frontu są **wariantami do dalszego wymiarowania**, a nie dyspozycją CNC.
 
-*Źródło ilustracji: **Dayton Audio**, [oryginalny PDF z oboma rzutami, w tym koszem od tyłu, PCD Ø368 i 8×Ø6,5](https://www.daytonaudio.com/images/resources/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf). Obraz producenta osadzony z serwera [Speaker&Co](https://www.speakerenco.nl/dayton-rss390hf-4), nie jest zdjęciem naszego prototypu. Pełna dokumentacja producenta jest ważniejsza niż ten podgląd. Rysunek nie pokazuje doboru kotew MDF.*
+![Geometria Daytona RSS390HF-4 — oryginalny rysunek producenta, reprodukcja na stronie Speaker&Co](https://www.speakerenco.nl/images/uploaded/295-468_3.jpg)
 
-**Wniosek K08 dla mocowania:** nominalna podkładka M6 Ø12 zostawia tylko **0,1 mm** od krawędzi wycięcia; śruba M6×85 z tylną nakrętką *za dodatkowym klockiem 20 mm* wystawałaby modelowo **28,9 mm za MDF44** (podkładka 1,6 i nakrętka 5 mm jako hipotezy). To niemal dokładnie głębokość zastępczego mocowania K04, ale nie dowód identycznej bryły ani nośności. Rozważamy złącze dostępne od frontu, bez wystającej nakrętki. [Raport i dokładne założenia K08](raporty/K08_zlacza_i_rysunki_dayton.md). **CNC HOLD.**
+*Źródło: **Dayton Audio**, [kompletny rysunek producenta z widokiem tylnego kosza](https://www.daytonaudio.com/images/resources/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf), [reprodukcja Speaker&Co](https://www.speakerenco.nl/dayton-rss390hf-4). To nie jest nasz prototyp. Wartości otworów pod śruby i pod wkładki opisano osobno na podstawie wybranego osprzętu. [K11 – tabela wkładek](raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md).*
 
 ### 4a. Jak przejść od kosza do rzeczywistego mocowania?
 
-**K11 — wkładki w klockach:** sposób Francisa pozostaje do prób, ale **M5 Ø10** zostawia **0,1 mm** drewna w modelowym klocku K01, a **M6 Ø12** wystaje poza niego o **0,9 mm**. Zmiana gatunku drewna lub kleju nie naprawi geometrii. [Raport K11](raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md) · [Inspiracje](dokumentacja/inspiracje_zewnetrznych_konstruktorow_mocowanie_RSS390HF4.md). **CNC HOLD.**
+Najpierw ustalamy średnicę i typ **śruby**, potem średnicę przelotu przez MDF, a osobno sposób jej zakotwienia. [Francis](dokumentacja/inspiracje_zewnetrznych_konstruktorow_mocowanie_RSS390HF4.md) stosował w RSS390HF-4 wkładki gwintowane w doklejonych klockach; to **pierwszy wariant do prób**, a nie zatwierdzony projekt.
 
-![Osiem otworów i żebra Dayton — autorski schemat, NIE CNC](wyniki/b12_12_faza_zeber_producent_NIE_CNC.svg)
+![Osiem mocowań i żebra kosza — schemat badawczy, NIE CNC](wyniki/b12_12_faza_zeber_producent_NIE_CNC.svg)
 
-**Montaż (K02):** przy samych klockach **20 mm** model pozwolił wprowadzić 20/20 modułów regulacji 100 l; 30 mm zatrzymało dotychczasową kolejność na 16/20. [Badanie K02](raporty/K02_przejscie_20_modulow_obok_8_mocowan.md).
+**K11:** w niezmienionym klocku K01 promień otworu wkładki Ø10 mm (typ M5 RAMPA) zostawia nominalnie tylko **0,1 mm** do jego wewnętrznej krawędzi. Wkładka Ø12 mm (typ M6) wystaje poza nią o **0,9 mm**. To nie są średnice otworów przelotowych MDF. Sam mocniejszy gatunek drewna nie naprawia tego ograniczenia. [K11](raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md).
 
-**Łącznik (K03–K04):** oś śruby znajduje się tylko **6,1 mm** od wycięcia. Nominalna nakrętka i podkładka M6 mogą wystawać poza drewniany klocek; wraz z płytką hipotetyczny osprzęt ma **28,8 mm** głębokości za frontem. Po uwzględnieniu jego celowo powiększonej obwiedni planer K04 wprowadza **16 kolejnych modułów**, zatrzymuje się na siedemnastym (ID 16) i kończy próbę. Wszystkie 20 pozycji końcowych pozostaje niekolidujących — problem dotyczy *drogi wkładania*, nie miejsca docelowego. Nie dowodzi to niemożliwości montażu rzeczywistych części. [Raport K04](raporty/K04_pelne_gabaryty_nakretki_podkladki_i_montaz_20_modulow.md).
+**K02–K07:** w symulacji wkładania samych klocków 20 mm osiągnięto **20/20 modułów**; dla większej, zastępczej obwiedni mocowań K04/K07 planer zatrzymuje się na **ID16** przed 100 l. Dostęp sondy K06 nie jest dowodem dostępu prawdziwego narzędzia. [K02](raporty/K02_przejscie_20_modulow_obok_8_mocowan.md) · [K04](raporty/K04_pelne_gabaryty_nakretki_podkladki_i_montaz_20_modulow.md) · [Raport K05](raporty/K05_etapowanie_20_modulow_i_dostep_do_mocowan.md) · [K06](raporty/K06_dostep_do_8_mocowan_po_20_wkladach.md) · [K07](raporty/K07_serwis_wkladow_i_audyt_mocowan.md).
 
-**Serwis K05–K07:** przy samych klockach planowana regulacja **150 → 120 → 100 l** jest dostępna w modelu. Przy zastępczym pełnym mocowaniu **28,8 mm** planer zatrzymuje się przed 100 l (wkład ID16). W K06 sondy osiągają **8/8 osi śrub**, ale **nie dowodzi to dostępu klucza**. [Raport K05](raporty/K05_etapowanie_20_modulow_i_dostep_do_mocowan.md) · [K06](raporty/K06_dostep_do_8_mocowan_po_20_wkladach.md) · [K07](raporty/K07_serwis_wkladow_i_audyt_mocowan.md). **CNC HOLD.**
+**Co dalej?** Sprawdzić konkretny osprzęt, prześwity przy ośmiu punktach, przenoszenie sił przez front i klej, próby wyrwania i cykli demontażu. Nic nie zostało zakwalifikowane do wykonania — **CNC HOLD**.
 
 ### 5. Co oznaczają wykresy DSP i temperatury?
 
