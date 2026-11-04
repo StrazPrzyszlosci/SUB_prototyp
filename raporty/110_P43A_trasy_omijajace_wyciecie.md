@@ -5,10 +5,10 @@
 ![Budżet radialny od środka śruby](../wyniki/p43a_budzet_radialny_trasy.svg)
 
 ## Pytanie
-P42C pokazał kolizję prostych połączeń w rzucie XZ. Czy jest możliwe połączenie od środków ośmiu otworów Ø6,5 mm do czterech podpór A lub B łamaną/łukiem bez wejścia w wycięcie Ø355,8 mm?
+P42C pokazał kolizję prostych połączeń w rzucie XZ. Czy jest możliwe połączenie od środków ośmiu fabrycznych otworów Ø6,5 mm w metalowym KOSZU (nie MDF) do czterech podpór A lub B łamaną/łukiem bez wejścia w wycięcie Ø355,8 mm?
 
 ## Źródła i założenia
-- **Dane producenta:** Dayton Audio RSS390HF-4: wycięcie Ø355,8 mm, BCD Ø368 mm, otwory Ø6,5 mm, obwód kołnierza Ø388,4 mm. Źródło pierwotne: https://www.daytonaudio.com/images/resources/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf (odczyt rysunku, 2026-11-01).
+- **Dane producenta:** Dayton Audio RSS390HF-4: wycięcie Ø355,8 mm, BCD Ø368 mm, otwory Ø6,5 mm w metalowym kołnierzu, obwód kołnierza Ø388,4 mm. Źródło pierwotne: https://www.daytonaudio.com/images/resources/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf (odczyt rysunku, 2026-11-01).
 - **Geometria modelowa:** centrum w (231,250) mm, front zewnętrzny 1020×500 mm. Podpory A: (75,45), (425,45), (75,455), (425,455); B: (176,37), (286,37), (176,463), (286,463) mm, jak P42.
 - **Przypadki badawcze:** szerokości umownych łączników 4/8/10 mm; odstęp od wycięcia 0/1/2 mm. Są to parametry testu, **nie normy ani tolerancje wykonawcze**.
 - W płaszczyźnie frontu środek łącznika musi pozostawać poza dyskiem promienia `R=177.9 + width/2 + margin` mm. Sprawdzono też pozostawanie całej szerokości wewnątrz prostokąta frontu.
@@ -31,7 +31,7 @@ gdzie `delta` to dodatni kąt łuku zgodny z kierunkiem obejścia. Sprawdzono ob
 | 10 mm / 1 mm | 8/8 | 8/8 | 7,2786 mm |
 | **10 mm / 2 mm** | **0/8** | **0/8** | brak możliwego początku w zadanej płaszczyźnie |
 
-Prześwit promieniowy od środka śruby do krawędzi wycięcia to `184 - 177,9 = 6,1 mm`. Dla 10 mm/2 mm wymagamy `5+2 = 7 mm`; zatem **już sam środek początkowy nie spełnia warunku**. Dla 8 mm/2 mm wymagana odległość to 6 mm, czyli *tylko 0,1 mm geometrycznego zapasu* na poziomie abstrakcyjnej linii. To nie jest realny zapas dla śruby Ø6,5 mm: od zewnętrznego obrysu otworu śruby do wycięcia pozostaje zaledwie **2,85 mm MDF**, jak w P38/P40.
+Prześwit promieniowy od środka śruby do krawędzi wycięcia to `184 - 177,9 = 6,1 mm`. Dla 10 mm/2 mm wymagamy `5+2 = 7 mm`; zatem **już sam środek początkowy nie spełnia warunku**. Dla 8 mm/2 mm wymagana odległość to 6 mm, czyli *tylko 0,1 mm geometrycznego zapasu* na poziomie abstrakcyjnej linii. To nie jest pomiar pasa MDF po rzeczywistym wierceniu: **2,85 mm** powstaje wyłącznie dla hipotetycznego otworu **Ø6,5 mm także w MDF**. Fabryczne Ø6,5 mm znajduje się w metalowym koszu i nie narzuca średnicy wiercenia frontu; dla przykładowej śruby M5 z przelotem Ø5,5 mm w MDF pas wyniósłby **3,35 mm** (bez tolerancji).
 
 Przy 8 mm/2 mm oba układy znajdują trasę dla wszystkich śrub, lecz B wymaga dwóch obejść łukowych, A jednego. **Łuk zwiększa długość niewiele**, ale to nie rozwiązuje sposobu mocowania, nośności ani kolizji przestrzennej.
 
