@@ -29,7 +29,8 @@
     "pad_tangential_width_mm": 36,
     "pad_depth_mm": 20,
     "user_defined_screen_radial_ligament_mm": 2,
-    "disclaimer": "The 2mm minimum ligament is only an exploratory screening criterion, NOT a code minimum or proven safe."
+    "disclaimer": "The 2mm minimum ligament is only an exploratory screening criterion, NOT a code minimum or proven safe.",
+    "driver_basket_hole_d_mm": 6.5
   },
   "insert_catalog_examples": [
     {
