@@ -533,6 +533,8 @@ Najpierw ustalamy średnicę i typ **śruby**, potem średnicę przelotu przez M
 
 **K02–K07:** w symulacji wkładania samych klocków 20 mm osiągnięto **20/20 modułów**; dla większej, zastępczej obwiedni mocowań K04/K07 planer zatrzymuje się na **ID16** przed 100 l. Dostęp sondy K06 nie jest dowodem dostępu prawdziwego narzędzia. [K02](raporty/K02_przejscie_20_modulow_obok_8_mocowan.md) · [K04](raporty/K04_pelne_gabaryty_nakretki_podkladki_i_montaz_20_modulow.md) · [Raport K05](raporty/K05_etapowanie_20_modulow_i_dostep_do_mocowan.md) · [K06](raporty/K06_dostep_do_8_mocowan_po_20_wkladach.md) · [K07](raporty/K07_serwis_wkladow_i_audyt_mocowan.md).
 
+[K13 – stalowa płytka M5](raporty/K13_plytka_stalowa_M5_w_klocku20.md).
+
 **Co dalej?** Sprawdzić konkretny osprzęt, prześwity przy ośmiu punktach, przenoszenie sił przez front i klej, próby wyrwania i cykli demontażu. Nic nie zostało zakwalifikowane do wykonania — **CNC HOLD**.
 
 ### 5. Co oznaczają wykresy DSP i temperatury?
@@ -2292,3 +2294,13 @@ W modelu K01 oś śruby leży na promieniu **184 mm**, wewnętrzna krawędź dre
 W osobnym, warunkowym przesiewie pięciu ścian (zachowany front MDF44 i gabaryty 1020×425×500 mm): **MDF25 wobec MDF22 zmniejsza wolną objętość wewnętrzną brutto o 4,381 l i zwiększa masę stałej struktury o 3,198 kg**; dla sklejki brzozowej21 wyniki to **+1,478 l i −2,700 kg** przy masie powierzchniowej WISA. Nie są to nowe objętości użytkowe 100/120/150 l ani certyfikowany wynik ortotropowego MES. Wymagana ponowna weryfikacja połączeń, ułożenia wręg i dróg wyjmowania wkładów. **CNC HOLD**.
 
 [Pełny raport K11](raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md) · [Dane katalogowe i scenariusze](dane/k11_źródłowe_wkładki_i_warianty_skrzyni.json) · [Skrypt](skrypty/k11_realne_wkladki_i_materialy_nosne.py) · [Wyniki](wyniki/k11_przesiew_materialow_i_wkladek.json) · [Paszport K10](dane/k10_rejestr_materialow_czesci_obudowy.json).
+
+### A18. K13 — stalowa płytka M5 schowana w klocku 20 mm: czy to rozwiązuje problem K11?
+
+![K13 — PNG do podglądu: stalowa płytka M5 z gwintem w klocku 20 mm, autorski schemat obliczeniowy, NIE CNC](wyniki/k13_plytka_M5_w_klocku20_NIE_CNC.png)
+
+[Otwórz wersję SVG](wyniki/k13_plytka_M5_w_klocku20_NIE_CNC.svg) · [pełny raport K13](raporty/K13_plytka_stalowa_M5_w_klocku20.md). **Oba formaty obrazują ten sam autorski schemat, nie rysunek fabryczny Dayton i nie wykonany prototyp.**
+
+Wcześniejsza wkładka Ø10 mm w drewnie pozostawiała przy wewnętrznej krawędzi klocka tylko **0,1 mm**. Zamiast niej K13 bada **stalową płytkę z gwintem M5**, zagłębioną w tym samym klocku. Przy wariancie płytki **6 mm**, drewna **14 mm**, umownej uszczelki **1 mm** i śruby **M5×75** zostaje nominalnie **2,1 mm pasa stali**, **5,5 mm zazębienia gwintu** i brak wystawania za klocek 20 mm. Masa ośmiu zespołów rośnie modelowo o **0,302 kg**. Dwa małe wkręty zabezpieczające płytkę nie są automatycznie główną drogą siły osiowej — należy zweryfikować docisk płytki do drewna, kruszenie, wyrwanie, obrót i naprawę po zerwaniu gwintu. Geometria zbliżona do K02 **nie potwierdza jeszcze prawdziwych torów wkładania ani obsługi narzędzi**. Żadnego połączenia ani materiału nie zatwierdzono do wykonania. **CNC HOLD.**
+
+[Założenia K13](dane/k13_plytka_m5_w_klocku20_zalozenia.json) · [45 sprawdzonych kombinacji](wyniki/k13_przesiew_plytki_w_klocku20.json) · [skrypt](skrypty/k13_plytka_stalowa_w_klocku20.py) · [karta materiałowa 35 części](dane/k10_rejestr_materialow_czesci_obudowy.json).
