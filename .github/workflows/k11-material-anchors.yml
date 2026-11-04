@@ -32,6 +32,11 @@ jobs:
           assert reviewed==actual,"K11 source-derived results diverge from reviewed JSON"
           assert len(actual["insert_screener"]["catalog_examples"])==6
           assert len(actual["pad_variants"])==5
+          assert [x["nominal_front_wood_ligament_to_cutout_mm"] for x in actual["insert_screener"]["wood_clearance_for_screw_examples"]]==[3.85,3.35,2.8]
+          assert [x["hardwood_reference_predrill_mm"] for x in actual["insert_screener"]["catalog_examples"][:4]]==[7,8,10,10]
+          assert [x["predrill_diameter_mm"] for x in actual["insert_screener"]["catalog_examples"][:4]]==[6.5,9,10,10]
+          assert all("front_cutout_radial_ligament_mm" not in x for x in actual["insert_screener"]["catalog_examples"])
+          assert all(x["manufacturer_basket_d_mm"]==6.5 for x in actual["insert_screener"]["wood_clearance_for_screw_examples"])
           assert len(actual["wall_substitution_with_outer_size_fixed"]["scenarios"])==3
           assert actual["insert_screener"]["max_outer_insert_diameter_for_2mm_inner_pad_ligament_mm"]==6.2
           i=actual["insert_screener"]["catalog_examples"]
@@ -58,6 +63,11 @@ jobs:
           from pathlib import Path
           readme=Path("README.md").read_text(encoding="utf-8")
           assert "### A17. K11" in readme
+          headings=["### 1. Wybór przetwornika","### 2. Badania akustyczne","### 3. Badania materiałów","### 4. Dopiero po projekcie","### 4a. Jak przejść","### 5. Co oznaczają"]
+          positions=[readme.index(h) for h in headings]
+          assert positions==sorted(positions), "Przewodnik ma prowadzić od głośnika i obudowy do mocowania"
+          assert "Ø5,5 mm we froncie" in readme and "Ø9 mm w MDF" in readme and "Ø8 mm w drewnie twardym" in readme
+          assert "Fabryczne **Ø6,5 mm**" in readme
           assert readme.index("### A17. K11")>readme.index("### A16. K10")
           assert "(raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md)" in readme[:readme.index("## Aneks techniczny — inspiracje montażowe")]
           a=readme.index("### 4a. Jak przejść")
