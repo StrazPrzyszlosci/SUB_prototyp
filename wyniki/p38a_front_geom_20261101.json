@@ -14,7 +14,6 @@
     "OD": 388.4,
     "CUT": 355.8,
     "BCD": 368,
-    "HOLE": 6.5,
     "DEPTH": 178,
     "FLANGE": 10.5,
     "HOLES": 8,
@@ -23,7 +22,9 @@
       723
     ],
     "mat": 50,
-    "maxdepth": 500
+    "maxdepth": 500,
+    "BASKET_FACTORY_HOLE": 6.5,
+    "FRONT_MDF_EXAMPLE_M5": 5.5
   },
   "external_origin": "lower left, x right, z up",
   "local_origin": "inner cavity lower left",
@@ -86,14 +87,15 @@
     }
   ],
   "clearance": {
-    "wood_radial_at_flange_hole_mm": 2.85,
     "outer_flange_land_mm": 6.95,
     "flange_margin_from_side_inner_face_mm": 14.8,
     "flange_x_to_first_brace_external_mm": 22.8,
     "bolt_edge_x_to_first_brace_external_mm": 29.75,
     "projected_total_depth_surface_mount_mm": 435.5,
     "remaining_depth_budget_mm": 64.5,
-    "rear_mat_to_driver_gap_surface_mm": 185.5
+    "rear_mat_to_driver_gap_surface_mm": 185.5,
+    "factory_flange_hole_projected_ligament_NOT_MDF_mm": 2.85,
+    "mdf_ligament_if_hypothetical_M5_clearance_5_5_mm": 3.35
   },
   "insert_OD_scenarios_mm": [
     {
@@ -122,9 +124,9 @@
     }
   ],
   "warnings": [
-    "Frame Ø6.5 holes are NOT specified MDF drill pilots.",
+    "Factory Ø6.5 holes exist ONLY in the metal basket flange. The reference circles are flange projections, NOT holes in MDF.",
     "Assumed eight-hole rotational phase; verify physical speaker before drilling.",
-    "Residual radial ligament 2.85mm requires a separate load-path/fastener study.",
+    "2.85mm is ONLY hypothetical if MDF too were drilled Ø6.5; example M5 clearance Ø5.5 in MDF leaves 3.35mm and is not a CNC approval.",
     "DXF contains visual REFERENCE circles and should never be used unreviewed for machining.",
     "Actual driver basket, countersink, gasket, screws, tool clearance, grille and terminal not modeled."
   ]

@@ -9,7 +9,7 @@
 Oficjalny rysunek Dayton Audio (RSS390HF-4, model C02):
 https://www.daytonaudio.com/images/resources/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf
 
-Wymiar zewnętrzny: **Ø388,4 mm**; średnica wycięcia w froncie: **Ø355,8 mm**; rozstaw śrub na okręgu **Ø368 mm**, **8 otworów Ø6,5 mm**; całkowita głębokość **178 mm**; grubość czoła kosza **10,5 mm**. Przyjęto równomierną fazę osiem otworów co 45°, ale bez potwierdzonego *clockingu* rzeczywistego egzemplarza (położenia pierwszego otworu i zacisków). **Otwór Ø6,5 mm w aluminiowym kołnierzu NIE oznacza zalecanego otworu pilotującego Ø6,5 mm w MDF.**
+Wymiar zewnętrzny: **Ø388,4 mm**; średnica wycięcia w froncie: **Ø355,8 mm**; rozstaw śrub na okręgu **Ø368 mm**, **8 fabrycznych otworów Ø6,5 mm w METALOWYM KOSZU**; całkowita głębokość **178 mm**; grubość czoła kosza **10,5 mm**. Przyjęto równomierną fazę osiem otworów co 45°, ale bez potwierdzonego *clockingu* rzeczywistego egzemplarza (położenia pierwszego otworu i zacisków). **Otwór Ø6,5 mm w aluminiowym kołnierzu NIE oznacza zalecanego otworu pilotującego Ø6,5 mm w MDF.**
 
 ## Jednoznaczne współrzędne
 
@@ -23,9 +23,9 @@ Pionowo oś głośnika wynosi Z=250 mm od zewnętrznego dołu i Z=228 mm w ukła
 
 ## Główne odkrycie: bardzo mało miejsca na mocowanie
 
-Promień otworu MDF: 177,9mm. Promień osi wkrętów: 184mm. Odległość środka otworu od krawędzi wycięcia to **6,1mm**. Dla przezotworu Ø6,5mm promień 3,25mm, więc pomiędzy krawędzią tego otworu a wycięciem MDF pozostaje promieniowo tylko **2,85mm**. Od zewnętrznej krawędzi tego samego otworu do zewnętrznej krawędzi kołnierza pozostaje **6,95mm**.
+Promień otworu MDF: 177,9mm. Promień osi wkrętów: 184mm. Odległość środka otworu od krawędzi wycięcia to **6,1mm**. **Tylko gdyby hipotetycznie w MDF wykonano również przezotwór Ø6,5 mm**, po odjęciu jego promienia 3,25 mm pozostałoby **2,85 mm MDF**; producent tego nie nakazuje. **Dla przykładowego przelotu Ø5,5 mm pod śrubę M5 w MDF** pas od wycięcia wynosi **3,35 mm**. Fabryczne Ø6,5 jest otworem kosza, nie wiertłem do drewna. Od zewnętrznej krawędzi tego samego otworu do zewnętrznej krawędzi kołnierza pozostaje **6,95mm**.
 
-| Modelowa średnica tulei/otworu | Wolny materiał promieniowy między tuleją a wycięciem |
+| Hipotetyczna średnica otworu/obwiedni NA OSI (nie obowiązkowy otwór MDF) | Pozostający pas promieniowy TYLKO w danym wariancie [mm] |
 |---|---:|
 | Ø6,5mm | 2,85mm |
 | Ø8mm | 2,10mm |
@@ -45,13 +45,13 @@ Nominalny korpus ma **425mm głębokości**, a kołnierz wystaje około 10,5mm p
 ## Pliki referencyjne i ograniczenia
 
 - [Parametryczny kod](../skrypty/p38a_front_Dayton_wymiary.js) oblicza 8 współrzędnych, marginesy, poziomy odniesienia i zapisuje SVG, JSON i **wstępny DXF**.
-- [Rysunek SVG — NIE CNC](../wyniki/p38a_front_NIE_CNC.svg)
+- [Podgląd PNG — NIE CNC](../wyniki/p38a_front_NIE_CNC.png) · [Rysunek SVG — NIE CNC](../wyniki/p38a_front_NIE_CNC.svg)
 - [DXF — NIE CNC](../wyniki/p38a_front_NIE_CNC.dxf) — warstwy REFERENCE, nie zweryfikowana dokumentacja frezowania.
 - [JSON wymiarowy](../wyniki/p38a_front_geom_20261101.json)
 
 ## Bramki przed wykonaniem
 
-**G38-1:** porównać kosz z fizycznym szablonem producenta, otworami, zaciskami i realnym położeniem osi.
+**G38-1:** wykorzystać zwymiarowany oryginalny rysunek producenta bez powtórnego zgadywania Ø kołnierza i wycięcia; oddzielnie zweryfikować nieudokumentowaną fazę otworów względem zacisków oraz rzeczywiste tolerancje połączenia.
 
 **G38-2:** rozwiązać połączenie 8 śrub z MDF (wyrywanie, szczelinowanie, grubość 44mm, wkładka, pozycja wręgi) i zaprojektować prawdziwe bryły 3D pierścienia/mocowań.
 

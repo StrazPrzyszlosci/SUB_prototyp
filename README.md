@@ -577,7 +577,7 @@ Dla każdego wykresu sprawdzaj kolejno: **co obliczono**, **co to zmienia w proj
 
 ![P38A: oficjalna geometria kosza, wycięcia i ośmiu otworów](wyniki/p38a_front_NIE_CNC.svg)
 
-*Według rysunku producenta kosz ma Ø388,4mm, wycięcie Ø355,8mm, a osiem otworów Ø6,5mm leży na okręgu Ø368mm. **Tylko jeśli w MDF również wywiercimy otwór Ø6,5 mm**, po odjęciu jego promienia pozostaje **2,85mm MDF**. Otwór Ø6,5 mm w koszu nie narzuca tej średnicy otworu w MDF. To istotny problem dla projektowania mocowania, nie pozwolenie na frezowanie. [Raport 096](raporty/096_P38A_front_Dayton_otwory_i_mocowania.md) · [szkic DXF — NIE CNC](wyniki/p38a_front_NIE_CNC.dxf).*
+*Według rysunku producenta kosz ma Ø388,4mm, wycięcie Ø355,8mm, a osiem otworów **w metalowym koszu** Ø6,5 mm leży na okręgu Ø368 mm. **Tylko jeśli w MDF również wywiercimy otwór Ø6,5 mm**, po odjęciu jego promienia pozostaje **2,85mm MDF**. Otwór Ø6,5 mm w koszu nie narzuca tej średnicy otworu w MDF. To istotny problem dla projektowania mocowania, nie pozwolenie na frezowanie. [Raport 096](raporty/096_P38A_front_Dayton_otwory_i_mocowania.md) · [szkic DXF — NIE CNC](wyniki/p38a_front_NIE_CNC.dxf).*
 
 ### W którym miejscu naprawdę jest głośnik we wnętrzu?
 
@@ -627,7 +627,7 @@ Dla każdego wykresu sprawdzaj kolejno: **co obliczono**, **co to zmienia w proj
 
 ![P43A: budżet radialny tras od ośmiu śrub](wyniki/p43a_budzet_radialny_trasy.svg)
 
-*Wykonano **576 analiz par śruba–podpora**, wybierając 144 najkrótsze trasy w uproszczonej płaszczyźnie. Przy 8 mm szerokości i hipotetycznym odstępie 2 mm pozostaje **0,1 mm** radialnego marginesu na osi łącznika; przy 10 mm + 2 mm nie ma już miejsca nawet na jego początek. To **nie jest** rzeczywista szerokość drewna przy otworze śruby: tam między Ø6,5 mm a wycięciem pozostaje jedynie 2,85 mm MDF. [Raport 110](raporty/110_P43A_trasy_omijajace_wyciecie.md) · [wyniki CSV](wyniki/p43a_trasy_144.csv).*
+*Wykonano **576 analiz par śruba–podpora**, wybierając 144 najkrótsze trasy w uproszczonej płaszczyźnie. Przy 8 mm szerokości i hipotetycznym odstępie 2 mm pozostaje **0,1 mm** radialnego marginesu na osi łącznika; przy 10 mm + 2 mm nie ma już miejsca nawet na jego początek. **To nie jest rzeczywista szerokość drewna przy otworze śruby.** **2,85 mm MDF** wystąpiłoby wyłącznie, gdyby hipotetycznie wywiercono **Ø6,5 mm także w MDF**; fabryczne Ø6,5 mm leży **w metalowym koszu**, a przykładowa śruba M5 z przelotem Ø5,5 mm w MDF pozostawiałaby nominalnie **3,35 mm**. [Raport 110](raporty/110_P43A_trasy_omijajace_wyciecie.md) · [wyniki CSV](wyniki/p43a_trasy_144.csv).*
 
 ### Co jeśli jedna z czterech podpór przestaje przenosić obciążenie?
 
@@ -665,7 +665,7 @@ Dla każdego wykresu sprawdzaj kolejno: **co obliczono**, **co to zmienia w proj
 
 ![P40B: wymiana luzu montażowego na pas metalowego pierścienia przy śrubie](wyniki/p40b_budzet_promieniowy_pierscienia.svg)
 
-*Wycięcie Ø355,8mm i śruby na Ø368mm przy otworze kołnierza Ø6,5mm dają **tylko 2,85mm przestrzeni promieniowej łącznie**. Zbadano **675 wariantów** średnic i przesunięć pierścienia: 171 przechodzi podstawowe warunki geometryczne, ale przy przyjętych *przykładowych* rezerwach **1mm luzu + 2mm metalu żadna zwykła obręcz nie przechodzi**. To warunki badawcze, a nie normy. [Raport 102](raporty/102_P40B_tolerancje_pierscienia_675.md).*
+*Wycięcie Ø355,8 mm, osie śrub na Ø368 mm i osobny modelowy otwór **Ø6,5 mm w METALOWYM PIERŚCIENIU** dają tylko **2,85 mm budżetu promieniowego samego pierścienia**, a NIE wymiar wiercenia w MDF. Po korekcie P40B do hipotetycznego **M5/Ø5,5 mm w MDF** zbadano ponownie **675 wariantów**: **126** przechodzi podstawowe warunki, **6** dodatkowy próg 1 mm luzu + 1 mm metalu, zaś **żaden** nie przechodzi progu 1 mm + 2 mm. Fabryczne Ø6,5 mm Daytona jest w KOSZU. Progi są badawcze, nie normowe. [Raport 102](raporty/102_P40B_tolerancje_pierscienia_675.md).*
 
 ## Nowe badania P39 — ciśnienie, mocowania i edytowalny model 3D
 
@@ -2304,3 +2304,18 @@ W osobnym, warunkowym przesiewie pięciu ścian (zachowany front MDF44 i gabaryt
 Wcześniejsza wkładka Ø10 mm w drewnie pozostawiała przy wewnętrznej krawędzi klocka tylko **0,1 mm**. Zamiast niej K13 bada **stalową płytkę z gwintem M5**, zagłębioną w tym samym klocku. Przy wariancie płytki **6 mm**, drewna **14 mm**, umownej uszczelki **1 mm** i śruby **M5×75** zostaje nominalnie **2,1 mm pasa stali**, **5,5 mm zazębienia gwintu** i brak wystawania za klocek 20 mm. Masa ośmiu zespołów rośnie modelowo o **0,302 kg**. Dwa małe wkręty zabezpieczające płytkę nie są automatycznie główną drogą siły osiowej — należy zweryfikować docisk płytki do drewna, kruszenie, wyrwanie, obrót i naprawę po zerwaniu gwintu. Geometria zbliżona do K02 **nie potwierdza jeszcze prawdziwych torów wkładania ani obsługi narzędzi**. Żadnego połączenia ani materiału nie zatwierdzono do wykonania. **CNC HOLD.**
 
 [Założenia K13](dane/k13_plytka_m5_w_klocku20_zalozenia.json) · [45 sprawdzonych kombinacji](wyniki/k13_przesiew_plytki_w_klocku20.json) · [skrypt](skrypty/k13_plytka_stalowa_w_klocku20.py) · [karta materiałowa 35 części](dane/k10_rejestr_materialow_czesci_obudowy.json).
+
+
+### A19. K14 — czy stalowa płytka M5 naprawdę przeniesie nacisk?
+
+![K14 — PNG do podglądu: podział miejsca między drewno i stal oraz wskaźnik mimośrodowego docisku, autorski schemat NIE CNC](wyniki/k14_pasy_i_docisk_NIE_CNC.png)
+
+[Ten sam rysunek w SVG](wyniki/k14_pasy_i_docisk_NIE_CNC.svg) · [pełne badania K14](raporty/K14_docisk_tolerancje_plytki_M5_w_klocku20.md).
+
+Dotychczasowa płytka K13 miała **2,1 mm stali** przy gwincie M5 i **tylko 0,5 mm drewna** przy krawędzi kieszeni. K14 wykazał, że w klocku K01 do podziału między te pasy jest **łącznie zaledwie 2,6 mm**, więc samą zmianą kształtu kieszeni nie uzyskamy naraz po hipotetyczne 2 mm w każdej części. To przesiew geometrii, **nie prognoza rzeczywistej nośności**.
+
+Zbadaliśmy też idealizowany mimośrodowy nacisk (przykładowo **4,14 MPa** szczytowego wskaźnika modelu przy **1000 N** osiowo), **12 wariantów wstępnego docisku śruby** i **64 skrajne kombinacje syntetycznych tolerancji**. W tych ostatnich tylko **24/64** spełniły wcześniejszy umowny warunek 5 mm zazębienia M5 bez wystawania śruby; najkrótsze zazębienie wyniosło **3,3 mm**, a wystawanie sięgało **1,5 mm**. Założone zakresy nie są tolerancjami producentów ani wymiarami do wiercenia.
+
+**Wniosek praktyczny:** nie zwiększamy arbitralnie momentu dokręcania ani grubości stali. Trzeba porównać inne **podparcie płytki i klocka**, zweryfikować rzeczywistą wytrzymałość drewna, spoiny, gwintu i retencji oraz dopiero potem odtworzyć dostęp do wszystkich 20 wkładów objętościowych. **Nie określono momentu dokręcania ani zatwierdzonej konstrukcji — CNC HOLD.**
+
+[Założenia K14](dane/k14_scieranie_styku_tolerancje_i_docisk.json) · [64 kombinacje i wyniki](wyniki/k14_docisk_tolerancje_64.json) · [skrypt](skrypty/k14_docisk_plytki_tolerancje.py) · [poprzedni K13](raporty/K13_plytka_stalowa_M5_w_klocku20.md).

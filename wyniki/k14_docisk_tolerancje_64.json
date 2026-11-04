@@ -1,0 +1,882 @@
+{
+  "study": "K14",
+  "date": "2026-11-04",
+  "status": "UNCALIBRATED RIGID PLATE / SYNTHETIC TOLERANCE AND PRELOAD SCREENS — CNC HOLD",
+  "sources": {
+    "k13_nominal": "dane/k13_plytka_m5_w_klocku20_zalozenia.json",
+    "k13_results": "wyniki/k13_przesiew_plytki_w_klocku20.json",
+    "p40a": "raporty/101_P40A_reakcje_8_mocowan.md",
+    "p19a": "raporty/030_P19A_obliczenia_spoin_i_material_kleju.md",
+    "nasa_torque_standard": "https://standards.nasa.gov/sites/default/files/standards/NASA/B/0/2021-08-06-nasa-std-5020b_final.pdf",
+    "nasa_torque_section": "NASA-STD-5020B (2021), Appendix A.2, PDF page 46 of 114, Eq.24: nominal Ppi=T/(Knom D); spaceflight-only engineering reference for torque/preload uncertainty, NOT subwoofer mandatory standard"
+  },
+  "key_conservation": {
+    "axis_to_pad_inner_mm": 5.1,
+    "M5_major_thread_radius_mm": 2.5,
+    "total_wood_plus_steel_radial_lip_budget_mm": 2.6,
+    "maximum_equal_wood_and_steel_lips_mm": 1.3,
+    "total_available_even_if_pad_touches_factory_cutout_mm": 3.6,
+    "two_2mm_lips_with_original_geometry_possible": false,
+    "two_2mm_lips_if_pad_inner_at_cutout_possible": false,
+    "wood_lip_at_K13_mm": 0.5,
+    "steel_lip_at_K13_mm": 2.1,
+    "criterion_2mm_is_a_hypothetical_screen_NOT_safety_standard": true
+  },
+  "P40A_force_decomposition": {
+    "original_resultant_N": 151.11,
+    "original_axial_component_max_N": 119.92,
+    "original_shear_component_N": 91.94,
+    "151_11N_is_not_axial_preload": true,
+    "axial_component_still_is_ideal_model_and_not_clamp_force": true
+  },
+  "contact_model": "Assume pressure is linear along radial axis; contact may not sustain tension; screw force at radial axis; width constant; no material compliance, holes, retainer screw stiffness, head or flange preload included.",
+  "pocket_lip_pressure_comparisons": [
+    {
+      "wood_pocket_inner_lip_mm": 0,
+      "steel_thread_inner_lip_mm": 2.6,
+      "two_2mm_hypothesis_passed": false,
+      "plate_inner_edge_radial_mm": 178.9,
+      "plate_radial_span_mm": 25.6,
+      "axial_contact_indicators": {
+        "500": {
+          "mode": "partial_triangular",
+          "span_mm": 15.3,
+          "full_face_average_MPa_ignoring_holes": 0.558036,
+          "ideal_contact_pmax_MPa_ignoring_holes": 1.867414,
+          "pressure_peak_over_full_average": 3.346405
+        },
+        "1000": {
+          "mode": "partial_triangular",
+          "span_mm": 15.3,
+          "full_face_average_MPa_ignoring_holes": 1.116071,
+          "ideal_contact_pmax_MPa_ignoring_holes": 3.734827,
+          "pressure_peak_over_full_average": 3.346405
+        },
+        "2000": {
+          "mode": "partial_triangular",
+          "span_mm": 15.3,
+          "full_face_average_MPa_ignoring_holes": 2.232143,
+          "ideal_contact_pmax_MPa_ignoring_holes": 7.469655,
+          "pressure_peak_over_full_average": 3.346405
+        },
+        "119.92": {
+          "mode": "partial_triangular",
+          "span_mm": 15.3,
+          "full_face_average_MPa_ignoring_holes": 0.133839,
+          "ideal_contact_pmax_MPa_ignoring_holes": 0.44788,
+          "pressure_peak_over_full_average": 3.346405
+        },
+        "151.11": {
+          "mode": "partial_triangular",
+          "span_mm": 15.3,
+          "full_face_average_MPa_ignoring_holes": 0.16865,
+          "ideal_contact_pmax_MPa_ignoring_holes": 0.56437,
+          "pressure_peak_over_full_average": 3.346405
+        }
+      }
+    },
+    {
+      "wood_pocket_inner_lip_mm": 0.5,
+      "steel_thread_inner_lip_mm": 2.1,
+      "two_2mm_hypothesis_passed": false,
+      "plate_inner_edge_radial_mm": 179.4,
+      "plate_radial_span_mm": 25.1,
+      "axial_contact_indicators": {
+        "500": {
+          "mode": "partial_triangular",
+          "span_mm": 13.8,
+          "full_face_average_MPa_ignoring_holes": 0.569152,
+          "ideal_contact_pmax_MPa_ignoring_holes": 2.070393,
+          "pressure_peak_over_full_average": 3.637681
+        },
+        "1000": {
+          "mode": "partial_triangular",
+          "span_mm": 13.8,
+          "full_face_average_MPa_ignoring_holes": 1.138304,
+          "ideal_contact_pmax_MPa_ignoring_holes": 4.140787,
+          "pressure_peak_over_full_average": 3.637681
+        },
+        "2000": {
+          "mode": "partial_triangular",
+          "span_mm": 13.8,
+          "full_face_average_MPa_ignoring_holes": 2.276608,
+          "ideal_contact_pmax_MPa_ignoring_holes": 8.281573,
+          "pressure_peak_over_full_average": 3.637681
+        },
+        "119.92": {
+          "mode": "partial_triangular",
+          "span_mm": 13.8,
+          "full_face_average_MPa_ignoring_holes": 0.136505,
+          "ideal_contact_pmax_MPa_ignoring_holes": 0.496563,
+          "pressure_peak_over_full_average": 3.637681
+        },
+        "151.11": {
+          "mode": "partial_triangular",
+          "span_mm": 13.8,
+          "full_face_average_MPa_ignoring_holes": 0.172009,
+          "ideal_contact_pmax_MPa_ignoring_holes": 0.625714,
+          "pressure_peak_over_full_average": 3.637681
+        }
+      }
+    },
+    {
+      "wood_pocket_inner_lip_mm": 1,
+      "steel_thread_inner_lip_mm": 1.6,
+      "two_2mm_hypothesis_passed": false,
+      "plate_inner_edge_radial_mm": 179.9,
+      "plate_radial_span_mm": 24.6,
+      "axial_contact_indicators": {
+        "500": {
+          "mode": "partial_triangular",
+          "span_mm": 12.3,
+          "full_face_average_MPa_ignoring_holes": 0.58072,
+          "ideal_contact_pmax_MPa_ignoring_holes": 2.32288,
+          "pressure_peak_over_full_average": 4
+        },
+        "1000": {
+          "mode": "partial_triangular",
+          "span_mm": 12.3,
+          "full_face_average_MPa_ignoring_holes": 1.16144,
+          "ideal_contact_pmax_MPa_ignoring_holes": 4.645761,
+          "pressure_peak_over_full_average": 4
+        },
+        "2000": {
+          "mode": "partial_triangular",
+          "span_mm": 12.3,
+          "full_face_average_MPa_ignoring_holes": 2.32288,
+          "ideal_contact_pmax_MPa_ignoring_holes": 9.291521,
+          "pressure_peak_over_full_average": 4
+        },
+        "119.92": {
+          "mode": "partial_triangular",
+          "span_mm": 12.3,
+          "full_face_average_MPa_ignoring_holes": 0.13928,
+          "ideal_contact_pmax_MPa_ignoring_holes": 0.55712,
+          "pressure_peak_over_full_average": 4
+        },
+        "151.11": {
+          "mode": "partial_triangular",
+          "span_mm": 12.3,
+          "full_face_average_MPa_ignoring_holes": 0.175505,
+          "ideal_contact_pmax_MPa_ignoring_holes": 0.702021,
+          "pressure_peak_over_full_average": 4
+        }
+      }
+    },
+    {
+      "wood_pocket_inner_lip_mm": 1.3,
+      "steel_thread_inner_lip_mm": 1.3,
+      "two_2mm_hypothesis_passed": false,
+      "plate_inner_edge_radial_mm": 180.2,
+      "plate_radial_span_mm": 24.3,
+      "axial_contact_indicators": {
+        "500": {
+          "mode": "partial_triangular",
+          "span_mm": 11.4,
+          "full_face_average_MPa_ignoring_holes": 0.587889,
+          "ideal_contact_pmax_MPa_ignoring_holes": 2.506266,
+          "pressure_peak_over_full_average": 4.263158
+        },
+        "1000": {
+          "mode": "partial_triangular",
+          "span_mm": 11.4,
+          "full_face_average_MPa_ignoring_holes": 1.175779,
+          "ideal_contact_pmax_MPa_ignoring_holes": 5.012531,
+          "pressure_peak_over_full_average": 4.263158
+        },
+        "2000": {
+          "mode": "partial_triangular",
+          "span_mm": 11.4,
+          "full_face_average_MPa_ignoring_holes": 2.351558,
+          "ideal_contact_pmax_MPa_ignoring_holes": 10.025063,
+          "pressure_peak_over_full_average": 4.263158
+        },
+        "119.92": {
+          "mode": "partial_triangular",
+          "span_mm": 11.4,
+          "full_face_average_MPa_ignoring_holes": 0.140999,
+          "ideal_contact_pmax_MPa_ignoring_holes": 0.601103,
+          "pressure_peak_over_full_average": 4.263158
+        },
+        "151.11": {
+          "mode": "partial_triangular",
+          "span_mm": 11.4,
+          "full_face_average_MPa_ignoring_holes": 0.177672,
+          "ideal_contact_pmax_MPa_ignoring_holes": 0.757444,
+          "pressure_peak_over_full_average": 4.263158
+        }
+      }
+    },
+    {
+      "wood_pocket_inner_lip_mm": 1.5,
+      "steel_thread_inner_lip_mm": 1.1,
+      "two_2mm_hypothesis_passed": false,
+      "plate_inner_edge_radial_mm": 180.4,
+      "plate_radial_span_mm": 24.1,
+      "axial_contact_indicators": {
+        "500": {
+          "mode": "partial_triangular",
+          "span_mm": 10.8,
+          "full_face_average_MPa_ignoring_holes": 0.592768,
+          "ideal_contact_pmax_MPa_ignoring_holes": 2.645503,
+          "pressure_peak_over_full_average": 4.462963
+        },
+        "1000": {
+          "mode": "partial_triangular",
+          "span_mm": 10.8,
+          "full_face_average_MPa_ignoring_holes": 1.185536,
+          "ideal_contact_pmax_MPa_ignoring_holes": 5.291005,
+          "pressure_peak_over_full_average": 4.462963
+        },
+        "2000": {
+          "mode": "partial_triangular",
+          "span_mm": 10.8,
+          "full_face_average_MPa_ignoring_holes": 2.371073,
+          "ideal_contact_pmax_MPa_ignoring_holes": 10.582011,
+          "pressure_peak_over_full_average": 4.462963
+        },
+        "119.92": {
+          "mode": "partial_triangular",
+          "span_mm": 10.8,
+          "full_face_average_MPa_ignoring_holes": 0.14217,
+          "ideal_contact_pmax_MPa_ignoring_holes": 0.634497,
+          "pressure_peak_over_full_average": 4.462963
+        },
+        "151.11": {
+          "mode": "partial_triangular",
+          "span_mm": 10.8,
+          "full_face_average_MPa_ignoring_holes": 0.179146,
+          "ideal_contact_pmax_MPa_ignoring_holes": 0.799524,
+          "pressure_peak_over_full_average": 4.462963
+        }
+      }
+    },
+    {
+      "wood_pocket_inner_lip_mm": 2,
+      "steel_thread_inner_lip_mm": 0.6,
+      "two_2mm_hypothesis_passed": false,
+      "plate_inner_edge_radial_mm": 180.9,
+      "plate_radial_span_mm": 23.6,
+      "axial_contact_indicators": {
+        "500": {
+          "mode": "partial_triangular",
+          "span_mm": 9.3,
+          "full_face_average_MPa_ignoring_holes": 0.605327,
+          "ideal_contact_pmax_MPa_ignoring_holes": 3.072197,
+          "pressure_peak_over_full_average": 5.075269
+        },
+        "1000": {
+          "mode": "partial_triangular",
+          "span_mm": 9.3,
+          "full_face_average_MPa_ignoring_holes": 1.210654,
+          "ideal_contact_pmax_MPa_ignoring_holes": 6.144393,
+          "pressure_peak_over_full_average": 5.075269
+        },
+        "2000": {
+          "mode": "partial_triangular",
+          "span_mm": 9.3,
+          "full_face_average_MPa_ignoring_holes": 2.421308,
+          "ideal_contact_pmax_MPa_ignoring_holes": 12.288786,
+          "pressure_peak_over_full_average": 5.075269
+        },
+        "119.92": {
+          "mode": "partial_triangular",
+          "span_mm": 9.3,
+          "full_face_average_MPa_ignoring_holes": 0.145182,
+          "ideal_contact_pmax_MPa_ignoring_holes": 0.736836,
+          "pressure_peak_over_full_average": 5.075269
+        },
+        "151.11": {
+          "mode": "partial_triangular",
+          "span_mm": 9.3,
+          "full_face_average_MPa_ignoring_holes": 0.182942,
+          "ideal_contact_pmax_MPa_ignoring_holes": 0.928479,
+          "pressure_peak_over_full_average": 5.075269
+        }
+      }
+    }
+  ],
+  "torque_is_NOT_a_recommended_procedure": "Scenario only, K not measured, torque NOT prescribed. These computed preloads can dominate 119.92N P40 external axial demand. Do not tighten prototype to arbitrary K14 torque without testing.",
+  "torque_scenarios": [
+    {
+      "illustrative_torque_Nm": 0.5,
+      "hypothetical_K": 0.15,
+      "axial_preload_N_from_T_over_Kd_NOT_prescribed": 666.666667,
+      "ratio_to_P40A_axial_external_119_92": 5.559262,
+      "peak_MPa_nominal_K13_rigid_no_tension": 2.760524
+    },
+    {
+      "illustrative_torque_Nm": 0.5,
+      "hypothetical_K": 0.2,
+      "axial_preload_N_from_T_over_Kd_NOT_prescribed": 500,
+      "ratio_to_P40A_axial_external_119_92": 4.169446,
+      "peak_MPa_nominal_K13_rigid_no_tension": 2.070393
+    },
+    {
+      "illustrative_torque_Nm": 0.5,
+      "hypothetical_K": 0.25,
+      "axial_preload_N_from_T_over_Kd_NOT_prescribed": 400,
+      "ratio_to_P40A_axial_external_119_92": 3.335557,
+      "peak_MPa_nominal_K13_rigid_no_tension": 1.656315
+    },
+    {
+      "illustrative_torque_Nm": 1,
+      "hypothetical_K": 0.15,
+      "axial_preload_N_from_T_over_Kd_NOT_prescribed": 1333.333333,
+      "ratio_to_P40A_axial_external_119_92": 11.118523,
+      "peak_MPa_nominal_K13_rigid_no_tension": 5.521049
+    },
+    {
+      "illustrative_torque_Nm": 1,
+      "hypothetical_K": 0.2,
+      "axial_preload_N_from_T_over_Kd_NOT_prescribed": 1000,
+      "ratio_to_P40A_axial_external_119_92": 8.338893,
+      "peak_MPa_nominal_K13_rigid_no_tension": 4.140787
+    },
+    {
+      "illustrative_torque_Nm": 1,
+      "hypothetical_K": 0.25,
+      "axial_preload_N_from_T_over_Kd_NOT_prescribed": 800,
+      "ratio_to_P40A_axial_external_119_92": 6.671114,
+      "peak_MPa_nominal_K13_rigid_no_tension": 3.312629
+    },
+    {
+      "illustrative_torque_Nm": 2,
+      "hypothetical_K": 0.15,
+      "axial_preload_N_from_T_over_Kd_NOT_prescribed": 2666.666667,
+      "ratio_to_P40A_axial_external_119_92": 22.237047,
+      "peak_MPa_nominal_K13_rigid_no_tension": 11.042098
+    },
+    {
+      "illustrative_torque_Nm": 2,
+      "hypothetical_K": 0.2,
+      "axial_preload_N_from_T_over_Kd_NOT_prescribed": 2000,
+      "ratio_to_P40A_axial_external_119_92": 16.677785,
+      "peak_MPa_nominal_K13_rigid_no_tension": 8.281573
+    },
+    {
+      "illustrative_torque_Nm": 2,
+      "hypothetical_K": 0.25,
+      "axial_preload_N_from_T_over_Kd_NOT_prescribed": 1600,
+      "ratio_to_P40A_axial_external_119_92": 13.342228,
+      "peak_MPa_nominal_K13_rigid_no_tension": 6.625259
+    },
+    {
+      "illustrative_torque_Nm": 3,
+      "hypothetical_K": 0.15,
+      "axial_preload_N_from_T_over_Kd_NOT_prescribed": 4000,
+      "ratio_to_P40A_axial_external_119_92": 33.35557,
+      "peak_MPa_nominal_K13_rigid_no_tension": 16.563147
+    },
+    {
+      "illustrative_torque_Nm": 3,
+      "hypothetical_K": 0.2,
+      "axial_preload_N_from_T_over_Kd_NOT_prescribed": 3000,
+      "ratio_to_P40A_axial_external_119_92": 25.016678,
+      "peak_MPa_nominal_K13_rigid_no_tension": 12.42236
+    },
+    {
+      "illustrative_torque_Nm": 3,
+      "hypothetical_K": 0.25,
+      "axial_preload_N_from_T_over_Kd_NOT_prescribed": 2400,
+      "ratio_to_P40A_axial_external_119_92": 20.013342,
+      "peak_MPa_nominal_K13_rigid_no_tension": 9.937888
+    }
+  ],
+  "worst_case_synthetic_axial_stack": {
+    "source_assumptions": {
+      "label": "Synthetic independent two-sided dimensional stress intervals, NOT actual manufacturer tolerances",
+      "nominal_mm": {
+        "bolt_L": 75,
+        "flange": 10.5,
+        "gasket_compressed": 1,
+        "front": 44,
+        "pad": 20,
+        "plate": 6
+      },
+      "perturbation_plus_minus_mm": {
+        "bolt_L": 0.5,
+        "flange": 0.2,
+        "gasket_compressed": 0.5,
+        "front": 0.5,
+        "pad": 0.3,
+        "plate": 0.2
+      },
+      "pass_thread_engagement_ge_5mm_only_screen": true,
+      "pass_rear_protrusion_eq_0mm_only_screen": true,
+      "raw_idealized_thread_leadin_and_runout_ignored": true
+    },
+    "dimension_order": [
+      "bolt_L",
+      "flange",
+      "gasket_compressed",
+      "front",
+      "pad",
+      "plate"
+    ],
+    "combinations": [
+      {
+        "signs": "------",
+        "ideal_thread_engagement_mm": 5.8,
+        "rear_protrusion_mm": 0.5,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "-----+",
+        "ideal_thread_engagement_mm": 6.2,
+        "rear_protrusion_mm": 0.5,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "----+-",
+        "ideal_thread_engagement_mm": 5.7,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": true
+      },
+      {
+        "signs": "----++",
+        "ideal_thread_engagement_mm": 6.1,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": true
+      },
+      {
+        "signs": "---+--",
+        "ideal_thread_engagement_mm": 5.3,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": true
+      },
+      {
+        "signs": "---+-+",
+        "ideal_thread_engagement_mm": 5.7,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": true
+      },
+      {
+        "signs": "---++-",
+        "ideal_thread_engagement_mm": 4.7,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "---+++",
+        "ideal_thread_engagement_mm": 5.1,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": true
+      },
+      {
+        "signs": "--+---",
+        "ideal_thread_engagement_mm": 5.3,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": true
+      },
+      {
+        "signs": "--+--+",
+        "ideal_thread_engagement_mm": 5.7,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": true
+      },
+      {
+        "signs": "--+-+-",
+        "ideal_thread_engagement_mm": 4.7,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "--+-++",
+        "ideal_thread_engagement_mm": 5.1,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": true
+      },
+      {
+        "signs": "--++--",
+        "ideal_thread_engagement_mm": 4.3,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "--++-+",
+        "ideal_thread_engagement_mm": 4.7,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "--+++-",
+        "ideal_thread_engagement_mm": 3.7,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "--++++",
+        "ideal_thread_engagement_mm": 4.1,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "-+----",
+        "ideal_thread_engagement_mm": 5.8,
+        "rear_protrusion_mm": 0.1,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "-+---+",
+        "ideal_thread_engagement_mm": 6.2,
+        "rear_protrusion_mm": 0.1,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "-+--+-",
+        "ideal_thread_engagement_mm": 5.3,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": true
+      },
+      {
+        "signs": "-+--++",
+        "ideal_thread_engagement_mm": 5.7,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": true
+      },
+      {
+        "signs": "-+-+--",
+        "ideal_thread_engagement_mm": 4.9,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "-+-+-+",
+        "ideal_thread_engagement_mm": 5.3,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": true
+      },
+      {
+        "signs": "-+-++-",
+        "ideal_thread_engagement_mm": 4.3,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "-+-+++",
+        "ideal_thread_engagement_mm": 4.7,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "-++---",
+        "ideal_thread_engagement_mm": 4.9,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "-++--+",
+        "ideal_thread_engagement_mm": 5.3,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": true
+      },
+      {
+        "signs": "-++-+-",
+        "ideal_thread_engagement_mm": 4.3,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "-++-++",
+        "ideal_thread_engagement_mm": 4.7,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "-+++--",
+        "ideal_thread_engagement_mm": 3.9,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "-+++-+",
+        "ideal_thread_engagement_mm": 4.3,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "-++++-",
+        "ideal_thread_engagement_mm": 3.3,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "-+++++",
+        "ideal_thread_engagement_mm": 3.7,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "+-----",
+        "ideal_thread_engagement_mm": 5.8,
+        "rear_protrusion_mm": 1.5,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "+----+",
+        "ideal_thread_engagement_mm": 6.2,
+        "rear_protrusion_mm": 1.5,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "+---+-",
+        "ideal_thread_engagement_mm": 5.8,
+        "rear_protrusion_mm": 0.9,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "+---++",
+        "ideal_thread_engagement_mm": 6.2,
+        "rear_protrusion_mm": 0.9,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "+--+--",
+        "ideal_thread_engagement_mm": 5.8,
+        "rear_protrusion_mm": 0.5,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "+--+-+",
+        "ideal_thread_engagement_mm": 6.2,
+        "rear_protrusion_mm": 0.5,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "+--++-",
+        "ideal_thread_engagement_mm": 5.7,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": true
+      },
+      {
+        "signs": "+--+++",
+        "ideal_thread_engagement_mm": 6.1,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": true
+      },
+      {
+        "signs": "+-+---",
+        "ideal_thread_engagement_mm": 5.8,
+        "rear_protrusion_mm": 0.5,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "+-+--+",
+        "ideal_thread_engagement_mm": 6.2,
+        "rear_protrusion_mm": 0.5,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "+-+-+-",
+        "ideal_thread_engagement_mm": 5.7,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": true
+      },
+      {
+        "signs": "+-+-++",
+        "ideal_thread_engagement_mm": 6.1,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": true
+      },
+      {
+        "signs": "+-++--",
+        "ideal_thread_engagement_mm": 5.3,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": true
+      },
+      {
+        "signs": "+-++-+",
+        "ideal_thread_engagement_mm": 5.7,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": true
+      },
+      {
+        "signs": "+-+++-",
+        "ideal_thread_engagement_mm": 4.7,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "+-++++",
+        "ideal_thread_engagement_mm": 5.1,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": true
+      },
+      {
+        "signs": "++----",
+        "ideal_thread_engagement_mm": 5.8,
+        "rear_protrusion_mm": 1.1,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "++---+",
+        "ideal_thread_engagement_mm": 6.2,
+        "rear_protrusion_mm": 1.1,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "++--+-",
+        "ideal_thread_engagement_mm": 5.8,
+        "rear_protrusion_mm": 0.5,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "++--++",
+        "ideal_thread_engagement_mm": 6.2,
+        "rear_protrusion_mm": 0.5,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "++-+--",
+        "ideal_thread_engagement_mm": 5.8,
+        "rear_protrusion_mm": 0.1,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "++-+-+",
+        "ideal_thread_engagement_mm": 6.2,
+        "rear_protrusion_mm": 0.1,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "++-++-",
+        "ideal_thread_engagement_mm": 5.3,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": true
+      },
+      {
+        "signs": "++-+++",
+        "ideal_thread_engagement_mm": 5.7,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": true
+      },
+      {
+        "signs": "+++---",
+        "ideal_thread_engagement_mm": 5.8,
+        "rear_protrusion_mm": 0.1,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "+++--+",
+        "ideal_thread_engagement_mm": 6.2,
+        "rear_protrusion_mm": 0.1,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "+++-+-",
+        "ideal_thread_engagement_mm": 5.3,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": true
+      },
+      {
+        "signs": "+++-++",
+        "ideal_thread_engagement_mm": 5.7,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": true
+      },
+      {
+        "signs": "++++--",
+        "ideal_thread_engagement_mm": 4.9,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "++++-+",
+        "ideal_thread_engagement_mm": 5.3,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": true
+      },
+      {
+        "signs": "+++++-",
+        "ideal_thread_engagement_mm": 4.3,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      },
+      {
+        "signs": "++++++",
+        "ideal_thread_engagement_mm": 4.7,
+        "rear_protrusion_mm": 0,
+        "hypothetical_5mm_engagement_no_rear_projection": false
+      }
+    ],
+    "tested_independent_endpoint_cases": 64,
+    "cases_meeting_only_K13_hypothetical_1xM5_zero_protrusion_screen": 24,
+    "min_engagement_mm": 3.3,
+    "max_rear_protrusion_mm": 1.5,
+    "nominal_K13_75mm_is_robust_under_these_synthetic_intervals": false
+  },
+  "nominal_pocket_edge_adverse_tolerances": [
+    {
+      "assumed_independent_adverse_each_mm": 0,
+      "0_5mm_nominal_pocket_wood_lip_worst_mm": 0.5,
+      "2_1mm_nominal_steel_web_worst_mm": 2.1,
+      "wood_lip_positive_all_adverse_cases": true
+    },
+    {
+      "assumed_independent_adverse_each_mm": 0.1,
+      "0_5mm_nominal_pocket_wood_lip_worst_mm": 0.3,
+      "2_1mm_nominal_steel_web_worst_mm": 1.9,
+      "wood_lip_positive_all_adverse_cases": true
+    },
+    {
+      "assumed_independent_adverse_each_mm": 0.25,
+      "0_5mm_nominal_pocket_wood_lip_worst_mm": 0,
+      "2_1mm_nominal_steel_web_worst_mm": 1.6,
+      "wood_lip_positive_all_adverse_cases": false
+    },
+    {
+      "assumed_independent_adverse_each_mm": 0.5,
+      "0_5mm_nominal_pocket_wood_lip_worst_mm": -0.5,
+      "2_1mm_nominal_steel_web_worst_mm": 1.1,
+      "wood_lip_positive_all_adverse_cases": false
+    }
+  ],
+  "front_M5_wood_hole_vs_axis_registration": [
+    {
+      "example_axis_error_each_x_z_mm": 0,
+      "combined_radial_mm": 0,
+      "nominal_front_screw_radial_clearance_mm": 0.25,
+      "passes_nominal_clearance_in_2D": true,
+      "threaded_plate_coaxiality_and_3D_tool_access_verified": false
+    },
+    {
+      "example_axis_error_each_x_z_mm": 0.1,
+      "combined_radial_mm": 0.141421,
+      "nominal_front_screw_radial_clearance_mm": 0.25,
+      "passes_nominal_clearance_in_2D": true,
+      "threaded_plate_coaxiality_and_3D_tool_access_verified": false
+    },
+    {
+      "example_axis_error_each_x_z_mm": 0.2,
+      "combined_radial_mm": 0.282843,
+      "nominal_front_screw_radial_clearance_mm": 0.25,
+      "passes_nominal_clearance_in_2D": false,
+      "threaded_plate_coaxiality_and_3D_tool_access_verified": false
+    },
+    {
+      "example_axis_error_each_x_z_mm": 0.25,
+      "combined_radial_mm": 0.353553,
+      "nominal_front_screw_radial_clearance_mm": 0.25,
+      "passes_nominal_clearance_in_2D": false,
+      "threaded_plate_coaxiality_and_3D_tool_access_verified": false
+    },
+    {
+      "example_axis_error_each_x_z_mm": 0.3,
+      "combined_radial_mm": 0.424264,
+      "nominal_front_screw_radial_clearance_mm": 0.25,
+      "passes_nominal_clearance_in_2D": false,
+      "threaded_plate_coaxiality_and_3D_tool_access_verified": false
+    }
+  ],
+  "critical_limitations": [
+    "Rigid linear pressure model is not contact FEM, ignores center bore and retainer holes and may understate peak",
+    "Steel thread external edge and beech thin pocket wall cannot both meet arbitrary 2mm screen with original K01 block",
+    "NASA T/(Kd) used only as equation identifying preload significance, NOT applying NASA acceptance standards to subwoofer",
+    "Tightening torque without measured bolt/thread friction and wood bearing must NOT be specified",
+    "Axial stack input ranges are synthetic assumptions, NOT factory or machining tolerances",
+    "P40 151.11 N resultant includes 91.94 N shear and 119.92 N axial; not comparable to preload directly",
+    "Wood interface glue peel/creep, steel thread strip, locally bending plate, retainer screws and access unqualified",
+    "No 3D contact/no real K02 route and no CNC"
+  ]
+}

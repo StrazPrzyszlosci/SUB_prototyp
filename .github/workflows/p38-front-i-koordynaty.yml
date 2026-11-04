@@ -26,7 +26,9 @@ jobs:
           const a=JSON.parse(fs.readFileSync('wyniki/p38a_front_geom_20261101.json'));
           const b=JSON.parse(fs.readFileSync('wyniki/p38b_koordynaty_FV_15_20261101.json'));
           if(a.holes.length!==8)throw Error('Manufacturer mounting holes');
-          if(Math.abs(a.clearance.wood_radial_at_flange_hole_mm-2.85)>1e-6)throw Error('Radial wood ligament');
+          if(Math.abs(a.clearance.factory_flange_hole_projected_ligament_NOT_MDF_mm-2.85)>1e-6)throw Error('Radial wood ligament');
+          if(Math.abs(a.clearance.mdf_ligament_if_hypothetical_M5_clearance_5_5_mm-3.35)>1e-6)throw Error('M5 Ø5.5 sample MDF ligament');
+          if(a.specification.BASKET_FACTORY_HOLE!==6.5||a.specification.FRONT_MDF_EXAMPLE_M5!==5.5)throw Error('Never infer MDF drill from metal flange');
           if(a.local_center_mm[0]!==209||a.local_center_mm[1]!==228)throw Error('Exterior to interior conversion');
           if(b.cases!==15||b.results.length!==15)throw Error('FV pair count');
           const ref=b.results.find(x=>x.state==='120'&&x.frequency_Hz===80&&x.mesh_mm===55);
