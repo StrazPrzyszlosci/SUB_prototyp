@@ -34,354 +34,7 @@ porównania, a dane cenowe obejmują obecnie tylko część modeli; nadal brakuj
 | Korekcja cyfrowa i zapas poziomu | [Filtry DSP](#filtry) |
 | Źródła, szczegóły i własne obliczenia | [Mapa raportów](#mapa) · [Kod i odtwarzanie](#odtwarzanie) |
 
-Skróty wyjaśniamy w [krótkim słowniku](#slownik). Najpierw warto przejść do [praktycznego przewodnika](#praktyczny-przewodnik).
-
-## Co już wynika z badań
-
-- **Sam rozmiar głośnika nie rozstrzyga wyboru.** Liczy się także możliwy ruch
-  membrany oraz dostępne napięcie i prąd wzmacniacza.
-- **Włóknina to część projektu.** Jej ilość i położenie zmieniają zachowanie
-  powietrza; nie zastępujemy jej jednym stałym „bonusem litrów”.
-- **Obudowa też pracuje.** Wzmocnienie może pomóc bardziej niż samo
-  pogrubienie płyty. Sposób połączenia i sztywność kleju mają znaczenie.
-- **Pokój jest częścią układu.** Wymiary pozwalają obliczyć częstotliwości
-  możliwych rezonansów, ale ich poziom zależy też od ustawienia i tłumienia.
-
-
-<a id="praktyczny-przewodnik"></a>
-## Praktyczny przewodnik — co projektujemy i co z tego wynika?
-
-**Cel:** pierwszy prototyp zamkniętego subwoofera, docelowo **dwa urządzenia** do pokoju około **4,6 × 3,7 × 2,5 m**. Projektujemy dla miejsca odsłuchu, a nie maksymalnej mocy na etykiecie. Na razie niczego nie zamawiamy ani nie frezujemy.
-
-### 1. Wybór przetwornika — od którego głośnika zaczynamy?
-
-Najpierw porównujemy **przetworniki** pod kątem możliwości czystego odtwarzania 20–40 Hz, wychylenia, zapasu napięcia/prądu, termiki, THD/IMD i kosztów. Sama średnica, moc znamionowa czy niska częstotliwość rezonansowa Fs nie rozstrzygają wyboru. Dopiero po ocenie głośnika projektujemy konkretną obudowę.
-
-| Kandydat | Dotychczasowy wniosek | Warunek ostatecznego wyboru |
-|---|---|---|
-| **Dayton Audio RSS390HF-4 (C02)** | Wstępny faworyt dla części limitów cieplnych i napędu | THD/IMD, realna termika, zapas 20–40 Hz i łączny koszt |
-| **Dayton RSS390HE-22 (C11)** | Może uzyskać przewagę przy innym limicie strat | Bezpośredni test tych samych warunków |
-| **STX W.32.800.8.FCX (C06)** | Istotny kandydat porównawczy 12″ | Wychylenie i SPL w docelowym pokoju |
-| **Pozostałe modele, w tym SB Acoustics** | Pozostają w szerokiej puli badań | Ujednolicenie danych i warunków porównania |
-
-**Decyzja:** RSS390HF-4 jest nadal *faworytem warunkowym*, nie ogłoszonym zwycięzcą. Samo kryterium „najtańszy głośnik” nie zastępuje jakości i wymagań. [Porównanie wszystkich kandydatów](#glosniki) · [Wymagania](WYMAGANIA.md).
-
-### 2. Badania akustyczne i dobór konstrukcji obudowy
-
-Dla badanych przetworników sprawdzamy kolejno typ obudowy, potrzebny litraż, poziom i zniekształcenia basu, a następnie projektujemy gabaryty, tłumienie i wręgi. **Model bazowy** dla Daytona przedstawia poniższa tabela; nie jest to jeszcze zatwierdzony projekt do wykonania.
-
-| Część konstrukcji | Obecnie analizowany wariant | Co musi zostać zweryfikowane |
-|---|---|---|
-| Korpus | **1020 × 425 × 500 mm** (szer. × gł. × wys.) | Całe urządzenie z grillem, terminalem i przewodami musi mieć **maksymalnie 500 mm głębokości** |
-| Objętość | Trzy nastawy ok. **100 / 120 / 150 l netto**, punkt bazowy 120 l | Rzeczywista wyporność, szczelność i dostęp do wkładów |
-| Materiały | Roboczo MDF **22 mm**, front laminowany **44 mm**, wkłady MDF **8 mm** | Badania i dobór materiału *każdej* części |
-| Usztywnienia | Wręgi i lokalne elementy w modelu P30E | Sztywność, połączenia, drgania, przejścia montażowe |
-| Tłumienie | Mata poliestrowa **50 mm** przy tylnej ściance | Parametry faktycznego materiału i bezpieczne mocowanie |
-| Napęd i sterowanie | Zewnętrzny moduł klasy D i DSP | Zasilacz, chłodzenie, zabezpieczenia i co najmniej osiem wyjść DSP docelowo |
-
-![Konstrukcja skrzyni i wkładów regulujących pojemność — model badawczy, NIE CNC](dokumentacja/P31C_schemat_konstrukcji_1020_425.svg)
-
-**Po co trzy litraże?** Zmiana pojemności zmienia sprężystość powietrza i pracę membrany. Wyniki P30E: **100,12 / 119,92 / 150,16 l** to wartości nominalne modelu; różne nastawy nie są automatycznie trzema prawidłowymi rozwiązaniami akustycznymi. [P30E](raporty/078_P30E_mata50_montaz_robustnosc.md) · [Regulacja](#regulacja).
-
-### 3. Badania materiałów, ścian, wręg i połączeń
-
-Najpierw sprawdzamy **sztywność i masę ścian, wręg oraz frontu**, a także materiał i trwałość klejów. Nie zakładamy, że dodatkowy MDF lub metalowy pierścień zawsze są lepsze niż prawidłowo zaprojektowane wzmocnienie. W K10 utworzono **paszporty materiałowe 35 części**. K11 porównuje przy niezmienionym obrysie: ściany MDF25 zmniejszają modelową *geometryczną objętość wnętrza brutto* o **4,381 l** względem MDF22; sklejka brzozowa21 ją zwiększa o **1,478 l**. **Nie są to jeszcze zmiany pojemności netto ani wyniki całego MES**.
-
-**Praktycznie:** rodzaj płyty wybieramy wspólnie z geometrią wręg i spoin, a nie według samego modułu E. Brakuje fizycznej kwalifikacji spoin oraz klocków przykręcających kosz. [P36 – sztywność MDF](raporty/091_P36A_grubosc_MDF_podatnosc_i_wregi.md) · [K10 – materiały 35 części](raporty/K10_paszport_materialowy_wszystkich_czesci.md) · [K11 – warianty ścian](raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md).
-
-### 4. Dopiero po projekcie skrzyni — mocowanie głośnika i dobór śrub
-
-Dla wybranego przetwornika wracamy do rysunku kosza. Dayton podaje **8 otworów Ø6,5 mm w metalowym kołnierzu**, rozmieszczonych na **PCD Ø368 mm**, oraz wymagane wycięcie **Ø355,8 mm**. Te liczby wyznaczają położenia osi, ale **nie średnicę wiercenia w MDF ani otworu pod metalową wkładkę w klocku**.
-
-| Gdzie jest otwór? | Z jakiego wymiaru korzystamy? | Znaczenie |
-|---|---|---|
-| **W koszu głośnika** | Fabryczne **Ø6,5 mm** | Jedynie zgodność trzpienia i łba z metalowym kołnierzem |
-| **W froncie MDF44** | Średnica przelotowa **pod wybraną śrubę**: przykładowo M4 → Ø4,5; M5 → Ø5,5; M6 → Ø6,6 mm | Dobór jest warunkowy; wynika z trzpienia, luzu i tolerancji, **nie z Ø6,5 kosza** |
-| **W klocku za frontem** | Średnica otworu wstępnego pod wkładkę **zależna także od materiału klocka**: np. RAMPA SKD30 M5 → Ø9 mm w MDF, ale **Ø8 mm w drewnie twardym** według odrębnych kart producenta | Osobny otwór do osadzenia wkładki; nie jest przelotem śruby przez front, a karta nie kwalifikuje jeszcze naszej klejonki |
-
-[Karta RAMPA dla MDF](https://www.rampa.com/media/e2/ed/d4/1699524202/RAMPA_Produktdatenblatt_MDF-EN.pdf) i [osobna karta dla drewna twardego](https://www.rampa.com/media/7e/76/df/1699524009/RAMPA_Produktdatenblatt_Laubholz-Hardwood_EN.pdf) mają różne zalecenia dla M5; ostateczny otwór wymaga sprawdzenia gatunku, gęstości i odległości od krawędzi.
-
-Na przykład **M5 z umownym otworem przelotowym Ø5,5 mm we froncie** pozostawia nominalnie `6,1 − 2,75 = 3,35 mm` drewna między otworem a wycięciem — **nie 2,85 mm**, które wyliczono tylko dla hipotetycznego wiercenia Ø6,5 mm także w MDF. Wkładka Ø10 mm ma jednak inną, osobną geometrię za frontem i może kolidować z klockiem. Średnice otworów frontu są **wariantami do dalszego wymiarowania**, a nie dyspozycją CNC.
-
-![Geometria Daytona RSS390HF-4 — oryginalny rysunek producenta, reprodukcja na stronie Speaker&Co](https://www.speakerenco.nl/images/uploaded/295-468_3.jpg)
-
-*Źródło: **Dayton Audio**, [kompletny rysunek producenta z widokiem tylnego kosza](https://www.daytonaudio.com/images/resources/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf), [reprodukcja Speaker&Co](https://www.speakerenco.nl/dayton-rss390hf-4). To nie jest nasz prototyp. Wartości otworów pod śruby i pod wkładki opisano osobno na podstawie wybranego osprzętu. [K11 – tabela wkładek](raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md).*
-
-### 4a. Jak przejść od kosza do rzeczywistego mocowania?
-
-Najpierw ustalamy średnicę i typ **śruby**, potem średnicę przelotu przez MDF, a osobno sposób jej zakotwienia. [Francis](dokumentacja/inspiracje_zewnetrznych_konstruktorow_mocowanie_RSS390HF4.md) stosował w RSS390HF-4 wkładki gwintowane w doklejonych klockach; to **pierwszy wariant do prób**, a nie zatwierdzony projekt.
-
-![Osiem mocowań i żebra kosza — schemat badawczy, NIE CNC](wyniki/b12_12_faza_zeber_producent_NIE_CNC.svg)
-
-**K03:** oś mocowania jest tylko **6,1 mm** od wycięcia; każdy **klocek** musi przenieść obciążenie przez klej, ale jego nośności nie ocenia się z samego prześwitu. [K03](raporty/K03_wezel_mocowania_waski_pas_MDF_i_sciezka_sily.md).
-
-**K11:** w niezmienionym klocku K01 promień otworu wkładki Ø10 mm (typ M5 RAMPA) zostawia nominalnie tylko **0,1 mm** do jego wewnętrznej krawędzi. Wkładka Ø12 mm (typ M6) wystaje poza nią o **0,9 mm**. To nie są średnice otworów przelotowych MDF. Sam mocniejszy gatunek drewna nie naprawia tego ograniczenia. [K11](raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md).
-
-**K02–K07:** w symulacji wkładania samych klocków 20 mm osiągnięto **20/20 modułów**; dla większej, zastępczej obwiedni mocowań K04/K07 planer zatrzymuje się na **ID16** przed 100 l. Dostęp sondy K06 nie jest dowodem dostępu prawdziwego narzędzia. [K02](raporty/K02_przejscie_20_modulow_obok_8_mocowan.md) · [K04](raporty/K04_pelne_gabaryty_nakretki_podkladki_i_montaz_20_modulow.md) · [Raport K05](raporty/K05_etapowanie_20_modulow_i_dostep_do_mocowan.md) · [K06](raporty/K06_dostep_do_8_mocowan_po_20_wkladach.md) · [K07](raporty/K07_serwis_wkladow_i_audyt_mocowan.md).
-
-**Co dalej?** Sprawdzić konkretny osprzęt, prześwity przy ośmiu punktach, przenoszenie sił przez front i klej, próby wyrwania i cykli demontażu. Nic nie zostało zakwalifikowane do wykonania — **CNC HOLD**.
-
-### 5. Co oznaczają wykresy DSP i temperatury?
-
-Przyjęte **40 V RMS / 12 A RMS** to założenia symulacji, **nie parametry zakupionego wzmacniacza**. Model ogranicznika może ujawnić ryzyko wychylenia, grzania i przesterowania, ale nie jest jeszcze sprawdzonym presetem. Potrzebny jest fizyczny napęd, zasilanie, chłodzenie i walidacja zabezpieczeń. [Filtry](#filtry) · [Ochrona](#ochrona).
-
-### 6. Co pokaże pokój, a czego nie odczytamy z wykresu modów?
-
-Przybliżone wymiary pomieszczenia pozwalają wyliczyć częstotliwości *idealnych modów osiowych*. Nie mówią, jak silny będzie rezonans ani jak długo zaniknie w konkretnym punkcie. Ostateczne ustawienie **dwóch subwooferów** będzie wymagało pomiarów po budowie.
-
-![Osiowe częstotliwości modalne pokoju — bez nakładających się etykiet](wyniki/02_mody_osiowe_czytelne.svg)
-
-*Każdy wiersz pokazuje inną oś pokoju. Pionowe znaczniki to częstotliwości, **nie amplitudy i nie prognoza jakości basu**. [Przejdź do akustyki pokoju](#pokoj).*
-
-### 7. Lista kontroli przed frezowaniem i pierwszym uruchomieniem
-
-- [ ] **Głębokość:** całe urządzenie z osprzętem nie przekracza **500 mm** w docelowym ustawieniu.
-- [ ] **Kosz:** wszystkie osiem mocowań, zaciski, śruby, narzędzia i wręgi mają zweryfikowane prześwity oraz wytrzymałość.
-- [ ] **Netto:** objętość dla 100/120/150 l zawiera faktyczne wyporności, a wkłady dają się zamontować, uszczelnić i wyjąć.
-- [ ] **Materiały każdej części:** [paszport K10 — 35 pozycji](raporty/K10_paszport_materialowy_wszystkich_czesci.md) ma zweryfikowane karty, mechanikę, masę, szczelność i wytrzymałość połączeń; nie przyjęto hipotetycznej sztywności za pomiar.
-- [ ] **Model:** wyniki MES są wolne od problemu *hourglass* P33B i dotyczą aktualnego CAD; akustyka uwzględnia rzeczywistą pozycję źródła.
-- [ ] **Elektronika:** dobrano zasilanie, moduł klasy D, chłodzenie i sprawdzono zabezpieczenia DSP.
-- [ ] **Odbiór:** istnieje plan pomiarów impedancji, szczelności, wychylenia, drgań paneli, THD/IMD i odpowiedzi w pokoju.
-
-**Bramka CNC nadal zamknięta.** [Pełny plan weryfikacji](dokumentacja/P35_plan_walidacji_przed_CNC.md).
-
-### Jak czytać szczegółowe wyniki?
-
-Dla każdego wykresu sprawdzaj kolejno: **co obliczono**, **co to zmienia w projekcie** i **czego jeszcze nie potwierdzono**. Historyczne modele pozostają dostępne dla kontroli rozwoju badań, ale nie mogą być podstawą wykonania konstrukcji, jeśli wykryto w nich błąd. [Mapa raportów i kod](#mapa).
-
----
-<details>
-<summary><strong>Rozwiń szczegółowe badania konstrukcyjne P38–P42 (rysunki i historia decyzji)</strong></summary>
-
-> **Ważne:** P38B wykrył przesunięcie źródła względem wnętrza o 22 mm w obu osiach. Nie traktuj starszych map P34B/P35A jako aktualnych. Warianty mocowań nie są dopuszczone do CNC.
-
-## P38 — znamy już rozstaw śrub i błąd układu współrzędnych
-
-### Jak ma wyglądać front z Dayton RSS390HF-4?
-
-![P38A: oficjalna geometria kosza, wycięcia i ośmiu otworów](wyniki/p38a_front_NIE_CNC.svg)
-
-*Według rysunku producenta kosz ma Ø388,4mm, wycięcie Ø355,8mm, a osiem otworów Ø6,5mm leży na okręgu Ø368mm. **Tylko jeśli w MDF również wywiercimy otwór Ø6,5 mm**, po odjęciu jego promienia pozostaje **2,85mm MDF**. Otwór Ø6,5 mm w koszu nie narzuca tej średnicy otworu w MDF. To istotny problem dla projektowania mocowania, nie pozwolenie na frezowanie. [Raport 096](raporty/096_P38A_front_Dayton_otwory_i_mocowania.md) · [szkic DXF — NIE CNC](wyniki/p38a_front_NIE_CNC.dxf).*
-
-### W którym miejscu naprawdę jest głośnik we wnętrzu?
-
-![P38B: wpływ korekty współrzędnych kosza na ciśnienie 80 Hz](wyniki/p38b_audyt_pozycji_zrodla.svg)
-
-*Oś x231/z250mm w P31C jest określona **od zewnętrznych krawędzi obudowy**. Po odjęciu grubości MDF22mm właściwe współrzędne wewnętrzne to **x209/z228mm**. Historyczny model P34B używał x231/z250mm także wewnątrz. W 120l na siatce55mm model RMS przy 80Hz zmienia się z 19,09% do 21,03%. **Oba wyniki to symulacje, nie THD**. [Raport 097](raporty/097_P38B_audyt_wspolrzednych_FV.md).*
-
-## P41 — dwie alternatywy mocowania Dayton zamiast cienkiego pierścienia
-
-### Porównanie nośnika typu A i belek typu B
-
-![P41A: dwie hipotetyczne ścieżki przeniesienia siły z kosza do struktury](wyniki/p41a_punkty_carrier_szyny.svg)
-
-*Dla tego samego przykładu 15kg / 5g / e120mm, sztywności kotew 300N/mm i mnożnika 3×, wariant A daje **223,4N**, a B **221,6N** maksymalnej reakcji na kotwę przy sile X. Oba układy w tym modelu przyjmują idealnie sztywny element przenoszący siły. Nie jest to badanie nośności śrub ani MDF. [Raport 103](raporty/103_P41A_carrier_kontra_szyny_2592.md).*
-
-### Dlaczego sam wybór metalu nie wystarcza?
-
-![P41B: analityczne ugięcia szyn zależne od przekroju i modułu E](wyniki/p41b_ugięcia_szyn.svg)
-
-*W modelu belki długości 380mm pod siłą środkową 200N, hipotetyczny profil 25×4mm ugina się o **0,627mm** przy E=70GPa, a o **0,219mm** przy E=200GPa. Po połączeniu tej podatności z modelem B jego obliczeniowe ugięcie rośnie: **0,325→0,383mm** w wybranym wariancie. Nie dowodzi to bezpieczeństwa ani możliwości wykonania. [Raport 104](raporty/104_P41B_podatnosc_belek_108.md).*
-
-**[Obie koncepcje w edytowalnym modelu OpenSCAD](dokumentacja/P41C_porownanie_nosne_A_B_NIE_CNC.scad)** — ustaw parametr `concept` na `"A"` lub `"B"`. Oba modele mają niezweryfikowane połączenia i zastępczą bryłę kosza. [Raport 105](raporty/105_P41C_koncepcje_3D_A_B.md).
-
-## P42 — audyt uzupełniający do badań P41: cztery podpory i trasy łączników
-
-### Jak dwa nowe układy czterech punktów przenoszą obciążenia?
-
-![P42A: obciążenia modelowej ramy i dwóch belek](wyniki/p42a_reakcje_dwa_uklady.svg)
-
-*W osobnym eksperymencie zbadano 1458 układów **czterech odległych podpór** w szerokiej ramie A lub dwóch belkach B, plus ośmiopunktowy model referencyjny. Przy 13,61kg, 5g i umownym `k=1000 N/mm` rama A korzystniej od B przenosi moment od poziomej siły. **To inna geometria i liczba podpór niż wcześniej w P41 (osiem punktów)**, dlatego wyniki są uzupełnieniem, a nie zamiennikiem P41 ani pomiarem wytrzymałości. [Raport 106](raporty/106_P42A_podpory_1458.md).*
-
-### Czy podpory mieszczą się w uproszczonych obwiedniach 3D?
-
-![P42B: testy AABB dla dwóch układów](wyniki/p42b_obwiednie_porownanie.svg)
-
-*162 próby pokazały brak kolizji niektórych hipotetycznych obwiedni ramy A i sześć odrzuconych przypadków belek B przy **umownym, przesadnie szerokim promieniu silnika 205mm**. Nie sprawdzono jednak całego kosza ani samych połączeń pomiędzy śrubami i podporami. [Raport 107](raporty/107_P42B_obwiednie_3D_dwoch_wariantow.md).*
-
-### Czy najkrótsze łączniki nie przechodzą przez wycięcie?
-
-*48 testów rzutu wykazało, że dwa proste połączenia do belek B przecinają obszar otworu Ø355,8, a w ramie A jeden łącznik o szerokości 10mm ma podobny problem. To **kontrola 2D**, nie gotowy projekt mocowania. [Raport 108](raporty/108_P42C_laczniki_i_koncepcje_3D.md) · [Model OpenSCAD](dokumentacja/P42D_dwie_sciezki_REFERENCYJNE_NIE_CNC.scad).*
-
-> **Uwaga o numeracji:** starsze równoległe badania konstrukcji mają historyczne oznaczenia P43-K/P44-K; odrębny program **P43 (02.11.2026)** dotyczy dwóch głośników 12″ i układu izobarycznego. Numery raportów poniżej skorygowano, aby zachować unikalność.
-
-## P43-K (historyczne oznaczenie konstrukcyjne) — czy łączniki można poprowadzić bezpiecznie wokół wycięcia?
-
-### Dlaczego cienki margines przy śrubach jest ważniejszy niż samo obejście otworu?
-
-![P43A: budżet radialny tras od ośmiu śrub](wyniki/p43a_budzet_radialny_trasy.svg)
-
-*Wykonano **576 analiz par śruba–podpora**, wybierając 144 najkrótsze trasy w uproszczonej płaszczyźnie. Przy 8 mm szerokości i hipotetycznym odstępie 2 mm pozostaje **0,1 mm** radialnego marginesu na osi łącznika; przy 10 mm + 2 mm nie ma już miejsca nawet na jego początek. To **nie jest** rzeczywista szerokość drewna przy otworze śruby: tam między Ø6,5 mm a wycięciem pozostaje jedynie 2,85 mm MDF. [Raport 110](raporty/110_P43A_trasy_omijajace_wyciecie.md) · [wyniki CSV](wyniki/p43a_trasy_144.csv).*
-
-### Co jeśli jedna z czterech podpór przestaje przenosić obciążenie?
-
-![P43B: maksymalne reakcje po awarii podpory](wyniki/p43b_max_reakcje_po_utracie_podpory.svg)
-
-*W **1620 modelowych przypadkach** porównano pełne cztery podpory z wyłączeniem jednej. Przy 13,61 kg, 5g, mimośrodzie 120 mm i poziomej sile X maksymalna obliczona reakcja wzrasta w ramie A z **202,3 do 319,1 N**, a w belkach B z **400,4 do 761,2 N**. Sprężyny mają założoną sztywność, a prawdziwych połączeń nadal nie ma: nie jest to dowód bezpieczeństwa ani ugięcia gotowej konstrukcji. [Raport 111](raporty/111_P43B_awaria_jednej_podpory.md) · [pełne dane CSV](wyniki/p43b_awarie_1620.csv) · [kod odtwarzania](skrypty/p43_trasy_i_awarie_podpor.js).*
-
-**Wniosek:** szeroka rama A pozostaje kandydatem do badań konstrukcyjnych, ale żaden wariant nie jest zatwierdzony do CNC bez rzeczywistych złączy, geometrii kosza oraz weryfikacji kontaktu i materiałów.
-
-## P44-K (historyczne oznaczenie konstrukcyjne) — jednostronny kontakt i warunkowe tarcie mocowania
-
-### Czy rama utrzymuje kontakt po przeciążeniu lub utracie jednej podpory?
-
-![P44A: 5400 przypadków kontaktu i wstępnego docisku](wyniki/p44a_pelny_kontakt.svg)
-
-*W badaniu P44A sprężyny normalne nie mogą już przenosić rozciągania. Przeprowadzono **5400 analiz** dla trzech kierunków, dwóch mas, trzech przyspieszeń, różnych mimośrodów, stanów utraty podpory i pięciu hipotetycznych docisków. Przy 500 N/punkt pełny kontakt zachowuje model A w **500/540**, a B w **412/540** przypadków. Nie jest to rekomendowany docisk śrub ani ocena nośności. [Raport 112](raporty/112_P44A_jednostronny_kontakt_5400.md) · [CSV](wyniki/p44_kontakt_5400.csv).*
-
-### Dlaczego brak rozwarcia nie oznacza odporności na poślizg?
-
-![P44B: warunkowe progi współczynnika tarcia](wyniki/p44b_wymagany_wspolczynnik_tarcia.svg)
-
-*P44B sprawdza **16 200 nierówności tarcia** przy μ=0,2/0,4/0,6, zakładając rozdzielenie sił stycznych proporcjonalnie do sztywności hipotetycznych podpór. To badanie przesiewowe, **nie pełny model stick/slip**. Nadal brakuje realnego kosza, podkładek, docisku, złącza, pomiarów MDF i MES kontaktowego 3D. [Raport 113](raporty/113_P44B_tarcie_i_wrazliwosc_16200.md) · [kod](skrypty/p44_kontakt_docisk_tarcie.js) · [agregaty](wyniki/p44_podsumowanie_20261101.json).*
-
-**Wniosek P44:** szeroka rama A pozostaje warunkową ścieżką badań. **Brama CNC pozostaje zamknięta.**
-
-## P40 — czy osiem śrub utrzyma głośnik i czy pierścień daje miejsce na montaż?
-
-### Sam ciężar dzielony przez 8 to za mało
-
-![P40A: reakcje mocowań głośnika dla 4–8 czynnych śrub](wyniki/p40a_reakcje_grup_srub.svg)
-
-*Dla 15 kg, hipotetycznego obciążenia 5g i środka masy 120mm za frontem w modelu reakcji ośmiu śrub największe obciążenie pojedynczego punktu przy bocznym działaniu siły wynosi **151 N**, a nie **92 N** z uproszczenia F/8. Jeśli część śrub przestaje pracować, obciążenia mogą wzrosnąć kilkukrotnie. **To nie jest pomiar wytrzymałości śrub ani MDF.** [Raport 101](raporty/101_P40A_reakcje_8_mocowan.md).*
-
-### Ile naprawdę miejsca jest w pierścieniu wzmacniającym?
-
-![P40B: wymiana luzu montażowego na pas metalowego pierścienia przy śrubie](wyniki/p40b_budzet_promieniowy_pierscienia.svg)
-
-*Wycięcie Ø355,8mm i śruby na Ø368mm przy otworze kołnierza Ø6,5mm dają **tylko 2,85mm przestrzeni promieniowej łącznie**. Zbadano **675 wariantów** średnic i przesunięć pierścienia: 171 przechodzi podstawowe warunki geometryczne, ale przy przyjętych *przykładowych* rezerwach **1mm luzu + 2mm metalu żadna zwykła obręcz nie przechodzi**. To warunki badawcze, a nie normy. [Raport 102](raporty/102_P40B_tolerancje_pierscienia_675.md).*
-
-## Nowe badania P39 — ciśnienie, mocowania i edytowalny model 3D
-
-### Co zmieniło się po przeliczeniu nacisków na ściany?
-
-![P39A: porównanie nacisków na 6 ścian przed i po korekcie położenia głośnika](wyniki/p39a_cisnienie_scian_po_korekcie.svg)
-
-*W 36 nowych symulacjach powietrza w komorze zastosowano właściwą oś głośnika **x209/z228 mm w układzie wnętrza**, a wyniki porównano z historycznym P35A. Dla 120l / 80Hz, na siatce 36mm średnie ciśnienie względne na lewej ścianie zmieniło się z 0,773 na **0,735**, na prawej z 1,369 na **1,384**. To **względne pole modelowe**, nie fizyczne SPL ani obciążenie zweryfikowanego MDF. [Raport 098](raporty/098_P39A_naciski_scian_korekta_FV.md).*
-
-### Czy pierścień wzmacniający pod Daytonem zmieści się wewnątrz?
-
-![P39B: pierścień, wnętrze frontu i bramki odległości](wyniki/p39b_pierscien_i_odstepy.svg)
-
-*54 zestawienia średnic i grubości pokazują, że pierścień przykładowy Ø400/Ø356/t4mm geometrycznie pozostawia 9mm do lewego boku oraz 17mm do pierwszej wręgi w projekcji X. Ale **luz promieniowy od wycięcia wynosi zaledwie 0,1mm**, a cienki pasek MDF przy śrubie pozostaje. Taki pierścień **nie jest zatwierdzony wytrzymałościowo**. [Raport 099](raporty/099_P39B_geometria_pierscienia_i_glebokosc.md).*
-
-### Jak wygląda obudowa w edytowalnym modelu trójwymiarowym?
-
-[Model 3D OpenSCAD — **REFERENCYJNY, NIE DO CNC**](dokumentacja/P39C_front_korpus_pierscien_REFERENCYJNY_NIE_CNC.scad) jest parametrycznym złożeniem paneli, wręg, frontu z otworem i pierścienia. Umożliwia dalsze opracowywanie pełnego CAD; **nie jest jeszcze dokładną bryłą kosza Dayton z terminalami, zamkami i realnymi łącznikami**. [Raport 100](raporty/100_P39C_edytowalny_model_3D_OpenSCAD.md).
-
-</details>
-
-## Konstrukcja w obrazach — od pomysłu do sprawdzalnego prototypu
-
-**Zamiast od razu ciąć płyty, najpierw pytamy: czy skrzynia się zmieści, czy da się ją zmontować i czy nie będzie sama grała?** Poniższe ilustracje pokazują etapy symulacji. Kliknięcie obrazu otwiera źródło z wyjaśnieniem. **Żadna ilustracja nie jest dokumentacją CNC** — obciążenia, materiały i wybrane uproszczenia są wyraźnie opisane w raportach.
-
-### 1. Najpierw ustawiamy wymiary i litraż
-
-![Przekrój poglądowy projektu: głośnik, wręgi i regulowane wkłady](dokumentacja/P31C_schemat_konstrukcji_1020_425.svg)
-
-*Obecny kierunek: zamknięta obudowa 1020 × 425 × 500 mm, tylna mata 50 mm i regulacja około 100 / 120 / 150 l. To **schemat koncepcyjny** — brakuje rzeczywistych śrub, zamków, stopek i maskownicy. [Dlaczego ten wariant?](raporty/078_P30E_mata50_montaz_robustnosc.md)*
-
-![Badanie geometrii: skrzynia, tory montażowe i objętości](wyniki/100_P20D_geometria.png)
-
-*Symulacja starszego wariantu P20D pozwoliła opracować sposób badania dojścia modułów przez otwór po głośniku. Dla nowego P30E sprawdzono obwiednię przejścia do 6 mm, lecz montaż narzędziem wciąż nie jest zatwierdzony. [Raport geometrii](raporty/057_P20D_geometria_dostep_i_pelna_glebokosc.md).*
-
-### 2. Jak wzmocnienia zmieniają zachowanie ścian?
-
-![Badanie wpływu grubości MDF i ściągów na ugięcie](wyniki/43_P18A_grubosc_sciagi_i_ugiecie.png)
-
-*Grubsza płyta może pomóc, ale kosztuje więcej i zwiększa masę. O skuteczności decydują również podpory i sposób ich połączenia. [Omówienie badań paneli](raporty/059_podatne_wregi_i_panele.md).*
-
-![Model pola ugięcia i podatnych wręg — starsza geometria](wyniki/p18e_pola.png)
-
-*To nie fotografia rzeczywistej ścianki, lecz model mechaniczny. Pokazuje, dlaczego idealne unieruchomienie wręgi może dawać zbyt optymistyczny wynik. Dla nowego korpusu przeprowadzono osobną analizę P31B.*
-
-![P32A: drgania pojedynczego panelu w zależności od częstotliwości](wyniki/p32a_widmo_drganiowe.svg)
-
-*Nowy przebieg wymuszenia 20–180 Hz na poprawnie zwymiarowanej płycie. Ważny jest nie tylko rezonans, lecz **amplituda ruchu** przy danej częstotliwości. Zasymulowano ciśnienie 1000 Pa peak i hipotetyczne tłumienie; nie jest to pełny MES obudowy. [Raport 082](raporty/082_P32A_dynamika_panelu_wreg_i_tlumienia.md).*
-
-![P32A: porównanie sztywności podpór i tłumienia](wyniki/p32a_wregi_i_tlumienie.svg)
-
-*Dlaczego wzmocnienie nie jest po prostu „mocniejsze/słabsze”? Odpowiedź zależy jednocześnie od podatności podparcia i tłumienia materiału. [Kod badania](skrypty/p32a_dynamika_panelu.js).*
-
-### 3. Front, mocowanie głośnika i trwałość połączeń
-
-![Siatki frontów z otworami i modelowymi wzmocnieniami](wyniki/49_P18B_siatka_frontu_z_otworem.png)
-
-*Wycięcie dużego otworu osłabia front; rama musi przenosić ciężar kosza oraz siły okresowe. Przed wykonaniem potrzebny jest dokładny szablon rzeczywistego głośnika.*
-
-![Zintegrowana rama i połączenia — starszy model porównawczy](wyniki/55_P18C_pelna_rama_i_polaczenia.png)
-
-*Model całej ramy pozwala wyszukiwać słabe miejsca i kierunki pracy spoin. Po zmianie geometrii na 1020 × 425 mm wymaga ponownego przeliczenia.*
-
-### 3a. Co się zmienia, gdy liczymy całą skrzynię jednocześnie?
-
-![P33A: uproszczona globalna siatka ścian, wręg i kosza](wyniki/p33a_siatka_calej_skrzyni.svg)
-
-*Połączono w jednym modelu sześć ścian, naroża, dwa obwody wręg, otwór frontowy, masę kosza i wkładów. **To uproszczony model energetyczny**, a nie jeszcze poprawny pełny MES powłokowy. [Raport 083](raporty/083_P33A_globalna_siatka_obudowy_i_spoin.md).*
-
-![P33C: kontrola stabilizacji elementu, test hourglass i zablokowania ścinania](wyniki/p33c_hourglass_zbieznosc.svg)
-
-*Dlaczego w obliczeniach konstrukcji równie ważny jak liczba elementów jest ich rodzaj? Model ze zbyt słabą stabilizacją ma dodatkowe mechanizmy zerowe, a model ze zbyt silną bywa sztucznie sztywny. **Żaden z tych wariantów nie zastępuje pomiaru.** [Raport 085](raporty/085_P33C_audyt_hourglass_elementu_Q4.md).*
-
-![P33B: dlaczego wyniki zmieniają się wraz z modelem powłokowym](wyniki/p33b_rozbieznosc_modeli.svg)
-
-**ARCHIWALNY WYNIK — NIE UŻYWAĆ DO PROJEKTOWANIA.** W P33C wykryto dwa sztuczne mechanizmy *hourglass* elementu P33B. Wykres ilustruje problem numeryczny; nie wyznacza wiarygodnych ugięć ani częstotliwości skrzyni. [Raport 084 — archiwalny](raporty/084_P33B_globalny_MES_powlokowy_Q4.md) · [sprostowanie P33C](raporty/085_P33C_audyt_hourglass_elementu_Q4.md).
-
-![P33A: zbieżność siatki i wrażliwość na połączenia naroży](wyniki/p33a_zbieznosc_ugiec.svg)
-
-*Im sztywniejsze przyjęte naroża, tym mniejsze ugięcie w tym modelu. Sprawdzono trzy rozmiary siatki i trzy sztywności połączeń, ale nie zmierzono rzeczywistych własności spoin. **Nie jest to zatwierdzenie do CNC**. [Kod do odtworzenia](skrypty/p33a_global_shell_network.py).*
-
-![Lokalne naprężenia przy spoinie — wpływ sztywności i wzmocnienia](wyniki/65_P19F_sztywnosc_i_przeniesienie_naprezen.png)
-
-*Usztywnienie może zmniejszyć ugięcie, jednocześnie przenosząc obciążenie na inny fragment połączenia. [Badania spoin](raporty/030_P19A_obliczenia_spoin_i_material_kleju.md).*
-
-### 4. Wkłady i powietrze wewnątrz skrzyni
-
-### 4b. Liczymy już rzeczywiste rozmieszczenie przeszkód, nie tylko pusty prostopadłościan
-
-![P34B: plan wnętrza skrzyni z wręgami, modułami oraz matą 50 mm](dokumentacja/P34B_przekroj_wkladow_i_maty.svg)
-
-**ARCHIWALNY SCHEMAT P34B:** pokazuje rozmieszczenie przeszkód, a nie geometrię do CNC. Po audycie P38B ujawniono przesunięcie źródła o 22 mm w obu osiach. Nie przenosić wyniku na obecny model. [Raport 087](raporty/087_P34B_przestrzenne_cisnienie_100_120_150.md) · [audyt 097](raporty/097_P38B_audyt_wspolrzednych_FV.md).
-
-![P34B: odchylenia przestrzenne ciśnienia w trzech litrażach](wyniki/p34b_niejednorodnosc_pole_3_litraze.svg)
-
-**ARCHIWALNE DANE P34B:** mapa względnego ciśnienia została policzona w starszym układzie źródła i nie jest wynikiem dla bieżącej geometrii. Nie opisuje THD, SPL ani tłumienia maty. [Dane historyczne](wyniki/p34b_przestrzenne_pole_p30e_20261031.json) · [ponowne obliczenia P39A](raporty/098_P39A_naciski_scian_korekta_FV.md).
-
-![P34B: badanie zgodności obliczeń przy coraz gęstszej siatce](wyniki/p34b_zbieznosc_siatki_80Hz.svg)
-
-**KONTROLA SIATKI W ARCHIWALNYM MODELU P34B:** zagęszczenie komórek nie usuwa błędu współrzędnych. Zachowujemy wykres dla zrozumienia metody, a nie jako potwierdzenie nowej konstrukcji. [Historyczny kod](skrypty/p34b_przestrzenne_pole_p30e.js) · [korekta P38B](raporty/097_P38B_audyt_wspolrzednych_FV.md).
-
-![P34C: modelowe siły działające na zamknięte wkłady](wyniki/p34c_sily_mocowania_wkladow.svg)
-
-*Wyjmowane wkłady muszą mieć dodatnią blokadę mechaniczną. Liczby pokazują umowne obciążenia mocowań przy przyspieszeniu i różnicy ciśnienia; **nie zastępują prób wyrywania śrub ani zmęczenia MDF**. [Raport 088](raporty/088_P34C_obciazenia_i_blokowanie_wkladow.md).*
-
-
-
-![Dostęp przez otwór frontowy i masa wkładów](wyniki/70_P20A_dostep_i_masa_wkladow.png)
-
-*Regulacja litrażu ma sens tylko wtedy, gdy wkłady można faktycznie włożyć, bezpiecznie zamocować i wyjąć. Ich masa i szczelność są częścią konstrukcji.*
-
-![P34A: czy ciśnienie w skrzyni jest równomierne?](wyniki/p34a_modalny_gaz_100_120_150.svg)
-
-*Model sztywnej komory pokazuje, jak nawet poniżej pierwszej fali stojącej lokalne ciśnienie może odróżniać się od prostego modelu T/S. Zbadano 90 przypadków dla trzech objętości. **To prostopadłościany zastępcze, nie rzeczywiste wkłady P30E.** [Raport 086](raporty/086_P34A_gaz_3D_komora_zastepcza_i_niejednorodnosc.md).*
-
-> **P21G — brak dowodów do weryfikacji:** w obecnym repo nie ma raportu 066, skryptu, JSON ani rysunku. Nie można więc traktować tej kampanii jako potwierdzonej. Dostępne częściowe modele: [P21D](raporty/060_P21D_wspolna_geometria_i_port_napedu.md), [P21E](raporty/064_P21E_gaz_podatne_sciany_i_naped.md), [P21F](raporty/065_P21F_wielomody_gazu_i_scian.md).
-
-### 4c. Jak przekazać ciśnienie ze skrzyni do obliczeń jej ścian?
-
-![Względne ciśnienie na każdej z sześciu ścian — P35A](wyniki/p35a_cisnienie_scian_80hz.svg)
-
-**ARCHIWALNA MAPA P35A (błąd położenia źródła wykryty w P38B):** wartości względne służą jedynie za przykład metody. Do interpretacji bieżącej geometrii używaj poprawionego [P39A, raport 098](raporty/098_P39A_naciski_scian_korekta_FV.md). To nie są zmierzone siły ani SPL.
-
-### 4d. Kontrola jakości MES: nie tylko liczba w hercach
-
-![Kontrola siatki i stabilizatora numerycznego Q4 — P35B](wyniki/p35b_stabilizacja_Q4_siatki.svg)
-
-*Audyt P33C ujawnił sztuczne drgania pojedynczego elementu Q4. Powtórzyliśmy 16 symulacji całej skrzyni po dodaniu różnych wariantów stabilizacji. Problem lokalny można ograniczyć numerycznie, ale **nie da się jeszcze uznać konstrukcji za zweryfikowaną** bez dobrego opisu spoin i pełnej geometrii. [Raport 090](raporty/090_P35B_globalna_stabilizacja_hourglass.md).*
-
-**Co dalej?** Pełny CAD kosza, sprawdzenie mocowań, przestrzenna akustyka 100/120/150 l z aktualnym źródłem i podatnością ścian, a potem pomiary pierwszej sztuki. [Bramki przed CNC](dokumentacja/P35_plan_walidacji_przed_CNC.md) · [najnowszy raport 108](raporty/108_P42C_laczniki_i_koncepcje_3D.md).
-
----
+Skróty wyjaśniamy w [krótkim słowniku](#slownik). **Najpierw prześledź poniżej rzeczywiste badania porównawcze przetworników**, które doprowadziły do wstępnego wyboru Daytona, a następnie przejdź do [praktycznego przewodnika](#praktyczny-przewodnik) obejmującego konstrukcję, materiały i mocowanie.
 
 <a id="wykresy"></a>
 <a id="glosniki"></a>
@@ -795,6 +448,354 @@ porównawczym 12″.
 [Porównanie wariantów — 053](raporty/053_porownanie_i_odpornosc_rekomendacji.md)
 · [projekt eksperymentu — 054](raporty/054_rekomendowana_konfiguracja_prototypu.md)
 · [wrażliwość rekomendacji — 055](raporty/055_wrazliwosc_wyboru_i_margines_glebokosci.md).
+
+
+## Co już wynika z badań
+
+- **Sam rozmiar głośnika nie rozstrzyga wyboru.** Liczy się także możliwy ruch
+  membrany oraz dostępne napięcie i prąd wzmacniacza.
+- **Włóknina to część projektu.** Jej ilość i położenie zmieniają zachowanie
+  powietrza; nie zastępujemy jej jednym stałym „bonusem litrów”.
+- **Obudowa też pracuje.** Wzmocnienie może pomóc bardziej niż samo
+  pogrubienie płyty. Sposób połączenia i sztywność kleju mają znaczenie.
+- **Pokój jest częścią układu.** Wymiary pozwalają obliczyć częstotliwości
+  możliwych rezonansów, ale ich poziom zależy też od ustawienia i tłumienia.
+
+
+<a id="praktyczny-przewodnik"></a>
+## Praktyczny przewodnik — co projektujemy i co z tego wynika?
+
+**Cel:** pierwszy prototyp zamkniętego subwoofera, docelowo **dwa urządzenia** do pokoju około **4,6 × 3,7 × 2,5 m**. Projektujemy dla miejsca odsłuchu, a nie maksymalnej mocy na etykiecie. Na razie niczego nie zamawiamy ani nie frezujemy.
+
+### 1. Wybór przetwornika — od którego głośnika zaczynamy?
+
+Najpierw porównujemy **przetworniki** pod kątem możliwości czystego odtwarzania 20–40 Hz, wychylenia, zapasu napięcia/prądu, termiki, THD/IMD i kosztów. Sama średnica, moc znamionowa czy niska częstotliwość rezonansowa Fs nie rozstrzygają wyboru. Dopiero po ocenie głośnika projektujemy konkretną obudowę.
+
+| Kandydat | Dotychczasowy wniosek | Warunek ostatecznego wyboru |
+|---|---|---|
+| **Dayton Audio RSS390HF-4 (C02)** | Wstępny faworyt dla części limitów cieplnych i napędu | THD/IMD, realna termika, zapas 20–40 Hz i łączny koszt |
+| **Dayton RSS390HE-22 (C11)** | Może uzyskać przewagę przy innym limicie strat | Bezpośredni test tych samych warunków |
+| **STX W.32.800.8.FCX (C06)** | Istotny kandydat porównawczy 12″ | Wychylenie i SPL w docelowym pokoju |
+| **Pozostałe modele, w tym SB Acoustics** | Pozostają w szerokiej puli badań | Ujednolicenie danych i warunków porównania |
+
+**Decyzja:** RSS390HF-4 jest nadal *faworytem warunkowym*, nie ogłoszonym zwycięzcą. Samo kryterium „najtańszy głośnik” nie zastępuje jakości i wymagań. [Porównanie wszystkich kandydatów](#glosniki) · [Wymagania](WYMAGANIA.md).
+
+### 2. Badania akustyczne i dobór konstrukcji obudowy
+
+Dla badanych przetworników sprawdzamy kolejno typ obudowy, potrzebny litraż, poziom i zniekształcenia basu, a następnie projektujemy gabaryty, tłumienie i wręgi. **Model bazowy** dla Daytona przedstawia poniższa tabela; nie jest to jeszcze zatwierdzony projekt do wykonania.
+
+| Część konstrukcji | Obecnie analizowany wariant | Co musi zostać zweryfikowane |
+|---|---|---|
+| Korpus | **1020 × 425 × 500 mm** (szer. × gł. × wys.) | Całe urządzenie z grillem, terminalem i przewodami musi mieć **maksymalnie 500 mm głębokości** |
+| Objętość | Trzy nastawy ok. **100 / 120 / 150 l netto**, punkt bazowy 120 l | Rzeczywista wyporność, szczelność i dostęp do wkładów |
+| Materiały | Roboczo MDF **22 mm**, front laminowany **44 mm**, wkłady MDF **8 mm** | Badania i dobór materiału *każdej* części |
+| Usztywnienia | Wręgi i lokalne elementy w modelu P30E | Sztywność, połączenia, drgania, przejścia montażowe |
+| Tłumienie | Mata poliestrowa **50 mm** przy tylnej ściance | Parametry faktycznego materiału i bezpieczne mocowanie |
+| Napęd i sterowanie | Zewnętrzny moduł klasy D i DSP | Zasilacz, chłodzenie, zabezpieczenia i co najmniej osiem wyjść DSP docelowo |
+
+![Konstrukcja skrzyni i wkładów regulujących pojemność — model badawczy, NIE CNC](dokumentacja/P31C_schemat_konstrukcji_1020_425.svg)
+
+**Po co trzy litraże?** Zmiana pojemności zmienia sprężystość powietrza i pracę membrany. Wyniki P30E: **100,12 / 119,92 / 150,16 l** to wartości nominalne modelu; różne nastawy nie są automatycznie trzema prawidłowymi rozwiązaniami akustycznymi. [P30E](raporty/078_P30E_mata50_montaz_robustnosc.md) · [Regulacja](#regulacja).
+
+### 3. Badania materiałów, ścian, wręg i połączeń
+
+Najpierw sprawdzamy **sztywność i masę ścian, wręg oraz frontu**, a także materiał i trwałość klejów. Nie zakładamy, że dodatkowy MDF lub metalowy pierścień zawsze są lepsze niż prawidłowo zaprojektowane wzmocnienie. W K10 utworzono **paszporty materiałowe 35 części**. K11 porównuje przy niezmienionym obrysie: ściany MDF25 zmniejszają modelową *geometryczną objętość wnętrza brutto* o **4,381 l** względem MDF22; sklejka brzozowa21 ją zwiększa o **1,478 l**. **Nie są to jeszcze zmiany pojemności netto ani wyniki całego MES**.
+
+**Praktycznie:** rodzaj płyty wybieramy wspólnie z geometrią wręg i spoin, a nie według samego modułu E. Brakuje fizycznej kwalifikacji spoin oraz klocków przykręcających kosz. [P36 – sztywność MDF](raporty/091_P36A_grubosc_MDF_podatnosc_i_wregi.md) · [K10 – materiały 35 części](raporty/K10_paszport_materialowy_wszystkich_czesci.md) · [K11 – warianty ścian](raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md).
+
+### 4. Dopiero po projekcie skrzyni — mocowanie głośnika i dobór śrub
+
+Dla wybranego przetwornika wracamy do rysunku kosza. Dayton podaje **8 otworów Ø6,5 mm w metalowym kołnierzu**, rozmieszczonych na **PCD Ø368 mm**, oraz wymagane wycięcie **Ø355,8 mm**. Te liczby wyznaczają położenia osi, ale **nie średnicę wiercenia w MDF ani otworu pod metalową wkładkę w klocku**.
+
+| Gdzie jest otwór? | Z jakiego wymiaru korzystamy? | Znaczenie |
+|---|---|---|
+| **W koszu głośnika** | Fabryczne **Ø6,5 mm** | Jedynie zgodność trzpienia i łba z metalowym kołnierzem |
+| **W froncie MDF44** | Średnica przelotowa **pod wybraną śrubę**: przykładowo M4 → Ø4,5; M5 → Ø5,5; M6 → Ø6,6 mm | Dobór jest warunkowy; wynika z trzpienia, luzu i tolerancji, **nie z Ø6,5 kosza** |
+| **W klocku za frontem** | Średnica otworu wstępnego pod wkładkę **zależna także od materiału klocka**: np. RAMPA SKD30 M5 → Ø9 mm w MDF, ale **Ø8 mm w drewnie twardym** według odrębnych kart producenta | Osobny otwór do osadzenia wkładki; nie jest przelotem śruby przez front, a karta nie kwalifikuje jeszcze naszej klejonki |
+
+[Karta RAMPA dla MDF](https://www.rampa.com/media/e2/ed/d4/1699524202/RAMPA_Produktdatenblatt_MDF-EN.pdf) i [osobna karta dla drewna twardego](https://www.rampa.com/media/7e/76/df/1699524009/RAMPA_Produktdatenblatt_Laubholz-Hardwood_EN.pdf) mają różne zalecenia dla M5; ostateczny otwór wymaga sprawdzenia gatunku, gęstości i odległości od krawędzi.
+
+Na przykład **M5 z umownym otworem przelotowym Ø5,5 mm we froncie** pozostawia nominalnie `6,1 − 2,75 = 3,35 mm` drewna między otworem a wycięciem — **nie 2,85 mm**, które wyliczono tylko dla hipotetycznego wiercenia Ø6,5 mm także w MDF. Wkładka Ø10 mm ma jednak inną, osobną geometrię za frontem i może kolidować z klockiem. Średnice otworów frontu są **wariantami do dalszego wymiarowania**, a nie dyspozycją CNC.
+
+![Geometria Daytona RSS390HF-4 — oryginalny rysunek producenta, reprodukcja na stronie Speaker&Co](https://www.speakerenco.nl/images/uploaded/295-468_3.jpg)
+
+*Źródło: **Dayton Audio**, [kompletny rysunek producenta z widokiem tylnego kosza](https://www.daytonaudio.com/images/resources/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf), [reprodukcja Speaker&Co](https://www.speakerenco.nl/dayton-rss390hf-4). To nie jest nasz prototyp. Wartości otworów pod śruby i pod wkładki opisano osobno na podstawie wybranego osprzętu. [K11 – tabela wkładek](raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md).*
+
+### 4a. Jak przejść od kosza do rzeczywistego mocowania?
+
+Najpierw ustalamy średnicę i typ **śruby**, potem średnicę przelotu przez MDF, a osobno sposób jej zakotwienia. [Francis](dokumentacja/inspiracje_zewnetrznych_konstruktorow_mocowanie_RSS390HF4.md) stosował w RSS390HF-4 wkładki gwintowane w doklejonych klockach; to **pierwszy wariant do prób**, a nie zatwierdzony projekt.
+
+![Osiem mocowań i żebra kosza — schemat badawczy, NIE CNC](wyniki/b12_12_faza_zeber_producent_NIE_CNC.svg)
+
+**K03:** oś mocowania jest tylko **6,1 mm** od wycięcia; każdy **klocek** musi przenieść obciążenie przez klej, ale jego nośności nie ocenia się z samego prześwitu. [K03](raporty/K03_wezel_mocowania_waski_pas_MDF_i_sciezka_sily.md).
+
+**K11:** w niezmienionym klocku K01 promień otworu wkładki Ø10 mm (typ M5 RAMPA) zostawia nominalnie tylko **0,1 mm** do jego wewnętrznej krawędzi. Wkładka Ø12 mm (typ M6) wystaje poza nią o **0,9 mm**. To nie są średnice otworów przelotowych MDF. Sam mocniejszy gatunek drewna nie naprawia tego ograniczenia. [K11](raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md).
+
+**K02–K07:** w symulacji wkładania samych klocków 20 mm osiągnięto **20/20 modułów**; dla większej, zastępczej obwiedni mocowań K04/K07 planer zatrzymuje się na **ID16** przed 100 l. Dostęp sondy K06 nie jest dowodem dostępu prawdziwego narzędzia. [K02](raporty/K02_przejscie_20_modulow_obok_8_mocowan.md) · [K04](raporty/K04_pelne_gabaryty_nakretki_podkladki_i_montaz_20_modulow.md) · [Raport K05](raporty/K05_etapowanie_20_modulow_i_dostep_do_mocowan.md) · [K06](raporty/K06_dostep_do_8_mocowan_po_20_wkladach.md) · [K07](raporty/K07_serwis_wkladow_i_audyt_mocowan.md).
+
+**Co dalej?** Sprawdzić konkretny osprzęt, prześwity przy ośmiu punktach, przenoszenie sił przez front i klej, próby wyrwania i cykli demontażu. Nic nie zostało zakwalifikowane do wykonania — **CNC HOLD**.
+
+### 5. Co oznaczają wykresy DSP i temperatury?
+
+Przyjęte **40 V RMS / 12 A RMS** to założenia symulacji, **nie parametry zakupionego wzmacniacza**. Model ogranicznika może ujawnić ryzyko wychylenia, grzania i przesterowania, ale nie jest jeszcze sprawdzonym presetem. Potrzebny jest fizyczny napęd, zasilanie, chłodzenie i walidacja zabezpieczeń. [Filtry](#filtry) · [Ochrona](#ochrona).
+
+### 6. Co pokaże pokój, a czego nie odczytamy z wykresu modów?
+
+Przybliżone wymiary pomieszczenia pozwalają wyliczyć częstotliwości *idealnych modów osiowych*. Nie mówią, jak silny będzie rezonans ani jak długo zaniknie w konkretnym punkcie. Ostateczne ustawienie **dwóch subwooferów** będzie wymagało pomiarów po budowie.
+
+![Osiowe częstotliwości modalne pokoju — bez nakładających się etykiet](wyniki/02_mody_osiowe_czytelne.svg)
+
+*Każdy wiersz pokazuje inną oś pokoju. Pionowe znaczniki to częstotliwości, **nie amplitudy i nie prognoza jakości basu**. [Przejdź do akustyki pokoju](#pokoj).*
+
+### 7. Lista kontroli przed frezowaniem i pierwszym uruchomieniem
+
+- [ ] **Głębokość:** całe urządzenie z osprzętem nie przekracza **500 mm** w docelowym ustawieniu.
+- [ ] **Kosz:** wszystkie osiem mocowań, zaciski, śruby, narzędzia i wręgi mają zweryfikowane prześwity oraz wytrzymałość.
+- [ ] **Netto:** objętość dla 100/120/150 l zawiera faktyczne wyporności, a wkłady dają się zamontować, uszczelnić i wyjąć.
+- [ ] **Materiały każdej części:** [paszport K10 — 35 pozycji](raporty/K10_paszport_materialowy_wszystkich_czesci.md) ma zweryfikowane karty, mechanikę, masę, szczelność i wytrzymałość połączeń; nie przyjęto hipotetycznej sztywności za pomiar.
+- [ ] **Model:** wyniki MES są wolne od problemu *hourglass* P33B i dotyczą aktualnego CAD; akustyka uwzględnia rzeczywistą pozycję źródła.
+- [ ] **Elektronika:** dobrano zasilanie, moduł klasy D, chłodzenie i sprawdzono zabezpieczenia DSP.
+- [ ] **Odbiór:** istnieje plan pomiarów impedancji, szczelności, wychylenia, drgań paneli, THD/IMD i odpowiedzi w pokoju.
+
+**Bramka CNC nadal zamknięta.** [Pełny plan weryfikacji](dokumentacja/P35_plan_walidacji_przed_CNC.md).
+
+### Jak czytać szczegółowe wyniki?
+
+Dla każdego wykresu sprawdzaj kolejno: **co obliczono**, **co to zmienia w projekcie** i **czego jeszcze nie potwierdzono**. Historyczne modele pozostają dostępne dla kontroli rozwoju badań, ale nie mogą być podstawą wykonania konstrukcji, jeśli wykryto w nich błąd. [Mapa raportów i kod](#mapa).
+
+---
+<details>
+<summary><strong>Rozwiń szczegółowe badania konstrukcyjne P38–P42 (rysunki i historia decyzji)</strong></summary>
+
+> **Ważne:** P38B wykrył przesunięcie źródła względem wnętrza o 22 mm w obu osiach. Nie traktuj starszych map P34B/P35A jako aktualnych. Warianty mocowań nie są dopuszczone do CNC.
+
+## P38 — znamy już rozstaw śrub i błąd układu współrzędnych
+
+### Jak ma wyglądać front z Dayton RSS390HF-4?
+
+![P38A: oficjalna geometria kosza, wycięcia i ośmiu otworów](wyniki/p38a_front_NIE_CNC.svg)
+
+*Według rysunku producenta kosz ma Ø388,4mm, wycięcie Ø355,8mm, a osiem otworów Ø6,5mm leży na okręgu Ø368mm. **Tylko jeśli w MDF również wywiercimy otwór Ø6,5 mm**, po odjęciu jego promienia pozostaje **2,85mm MDF**. Otwór Ø6,5 mm w koszu nie narzuca tej średnicy otworu w MDF. To istotny problem dla projektowania mocowania, nie pozwolenie na frezowanie. [Raport 096](raporty/096_P38A_front_Dayton_otwory_i_mocowania.md) · [szkic DXF — NIE CNC](wyniki/p38a_front_NIE_CNC.dxf).*
+
+### W którym miejscu naprawdę jest głośnik we wnętrzu?
+
+![P38B: wpływ korekty współrzędnych kosza na ciśnienie 80 Hz](wyniki/p38b_audyt_pozycji_zrodla.svg)
+
+*Oś x231/z250mm w P31C jest określona **od zewnętrznych krawędzi obudowy**. Po odjęciu grubości MDF22mm właściwe współrzędne wewnętrzne to **x209/z228mm**. Historyczny model P34B używał x231/z250mm także wewnątrz. W 120l na siatce55mm model RMS przy 80Hz zmienia się z 19,09% do 21,03%. **Oba wyniki to symulacje, nie THD**. [Raport 097](raporty/097_P38B_audyt_wspolrzednych_FV.md).*
+
+## P41 — dwie alternatywy mocowania Dayton zamiast cienkiego pierścienia
+
+### Porównanie nośnika typu A i belek typu B
+
+![P41A: dwie hipotetyczne ścieżki przeniesienia siły z kosza do struktury](wyniki/p41a_punkty_carrier_szyny.svg)
+
+*Dla tego samego przykładu 15kg / 5g / e120mm, sztywności kotew 300N/mm i mnożnika 3×, wariant A daje **223,4N**, a B **221,6N** maksymalnej reakcji na kotwę przy sile X. Oba układy w tym modelu przyjmują idealnie sztywny element przenoszący siły. Nie jest to badanie nośności śrub ani MDF. [Raport 103](raporty/103_P41A_carrier_kontra_szyny_2592.md).*
+
+### Dlaczego sam wybór metalu nie wystarcza?
+
+![P41B: analityczne ugięcia szyn zależne od przekroju i modułu E](wyniki/p41b_ugięcia_szyn.svg)
+
+*W modelu belki długości 380mm pod siłą środkową 200N, hipotetyczny profil 25×4mm ugina się o **0,627mm** przy E=70GPa, a o **0,219mm** przy E=200GPa. Po połączeniu tej podatności z modelem B jego obliczeniowe ugięcie rośnie: **0,325→0,383mm** w wybranym wariancie. Nie dowodzi to bezpieczeństwa ani możliwości wykonania. [Raport 104](raporty/104_P41B_podatnosc_belek_108.md).*
+
+**[Obie koncepcje w edytowalnym modelu OpenSCAD](dokumentacja/P41C_porownanie_nosne_A_B_NIE_CNC.scad)** — ustaw parametr `concept` na `"A"` lub `"B"`. Oba modele mają niezweryfikowane połączenia i zastępczą bryłę kosza. [Raport 105](raporty/105_P41C_koncepcje_3D_A_B.md).
+
+## P42 — audyt uzupełniający do badań P41: cztery podpory i trasy łączników
+
+### Jak dwa nowe układy czterech punktów przenoszą obciążenia?
+
+![P42A: obciążenia modelowej ramy i dwóch belek](wyniki/p42a_reakcje_dwa_uklady.svg)
+
+*W osobnym eksperymencie zbadano 1458 układów **czterech odległych podpór** w szerokiej ramie A lub dwóch belkach B, plus ośmiopunktowy model referencyjny. Przy 13,61kg, 5g i umownym `k=1000 N/mm` rama A korzystniej od B przenosi moment od poziomej siły. **To inna geometria i liczba podpór niż wcześniej w P41 (osiem punktów)**, dlatego wyniki są uzupełnieniem, a nie zamiennikiem P41 ani pomiarem wytrzymałości. [Raport 106](raporty/106_P42A_podpory_1458.md).*
+
+### Czy podpory mieszczą się w uproszczonych obwiedniach 3D?
+
+![P42B: testy AABB dla dwóch układów](wyniki/p42b_obwiednie_porownanie.svg)
+
+*162 próby pokazały brak kolizji niektórych hipotetycznych obwiedni ramy A i sześć odrzuconych przypadków belek B przy **umownym, przesadnie szerokim promieniu silnika 205mm**. Nie sprawdzono jednak całego kosza ani samych połączeń pomiędzy śrubami i podporami. [Raport 107](raporty/107_P42B_obwiednie_3D_dwoch_wariantow.md).*
+
+### Czy najkrótsze łączniki nie przechodzą przez wycięcie?
+
+*48 testów rzutu wykazało, że dwa proste połączenia do belek B przecinają obszar otworu Ø355,8, a w ramie A jeden łącznik o szerokości 10mm ma podobny problem. To **kontrola 2D**, nie gotowy projekt mocowania. [Raport 108](raporty/108_P42C_laczniki_i_koncepcje_3D.md) · [Model OpenSCAD](dokumentacja/P42D_dwie_sciezki_REFERENCYJNE_NIE_CNC.scad).*
+
+> **Uwaga o numeracji:** starsze równoległe badania konstrukcji mają historyczne oznaczenia P43-K/P44-K; odrębny program **P43 (02.11.2026)** dotyczy dwóch głośników 12″ i układu izobarycznego. Numery raportów poniżej skorygowano, aby zachować unikalność.
+
+## P43-K (historyczne oznaczenie konstrukcyjne) — czy łączniki można poprowadzić bezpiecznie wokół wycięcia?
+
+### Dlaczego cienki margines przy śrubach jest ważniejszy niż samo obejście otworu?
+
+![P43A: budżet radialny tras od ośmiu śrub](wyniki/p43a_budzet_radialny_trasy.svg)
+
+*Wykonano **576 analiz par śruba–podpora**, wybierając 144 najkrótsze trasy w uproszczonej płaszczyźnie. Przy 8 mm szerokości i hipotetycznym odstępie 2 mm pozostaje **0,1 mm** radialnego marginesu na osi łącznika; przy 10 mm + 2 mm nie ma już miejsca nawet na jego początek. To **nie jest** rzeczywista szerokość drewna przy otworze śruby: tam między Ø6,5 mm a wycięciem pozostaje jedynie 2,85 mm MDF. [Raport 110](raporty/110_P43A_trasy_omijajace_wyciecie.md) · [wyniki CSV](wyniki/p43a_trasy_144.csv).*
+
+### Co jeśli jedna z czterech podpór przestaje przenosić obciążenie?
+
+![P43B: maksymalne reakcje po awarii podpory](wyniki/p43b_max_reakcje_po_utracie_podpory.svg)
+
+*W **1620 modelowych przypadkach** porównano pełne cztery podpory z wyłączeniem jednej. Przy 13,61 kg, 5g, mimośrodzie 120 mm i poziomej sile X maksymalna obliczona reakcja wzrasta w ramie A z **202,3 do 319,1 N**, a w belkach B z **400,4 do 761,2 N**. Sprężyny mają założoną sztywność, a prawdziwych połączeń nadal nie ma: nie jest to dowód bezpieczeństwa ani ugięcia gotowej konstrukcji. [Raport 111](raporty/111_P43B_awaria_jednej_podpory.md) · [pełne dane CSV](wyniki/p43b_awarie_1620.csv) · [kod odtwarzania](skrypty/p43_trasy_i_awarie_podpor.js).*
+
+**Wniosek:** szeroka rama A pozostaje kandydatem do badań konstrukcyjnych, ale żaden wariant nie jest zatwierdzony do CNC bez rzeczywistych złączy, geometrii kosza oraz weryfikacji kontaktu i materiałów.
+
+## P44-K (historyczne oznaczenie konstrukcyjne) — jednostronny kontakt i warunkowe tarcie mocowania
+
+### Czy rama utrzymuje kontakt po przeciążeniu lub utracie jednej podpory?
+
+![P44A: 5400 przypadków kontaktu i wstępnego docisku](wyniki/p44a_pelny_kontakt.svg)
+
+*W badaniu P44A sprężyny normalne nie mogą już przenosić rozciągania. Przeprowadzono **5400 analiz** dla trzech kierunków, dwóch mas, trzech przyspieszeń, różnych mimośrodów, stanów utraty podpory i pięciu hipotetycznych docisków. Przy 500 N/punkt pełny kontakt zachowuje model A w **500/540**, a B w **412/540** przypadków. Nie jest to rekomendowany docisk śrub ani ocena nośności. [Raport 112](raporty/112_P44A_jednostronny_kontakt_5400.md) · [CSV](wyniki/p44_kontakt_5400.csv).*
+
+### Dlaczego brak rozwarcia nie oznacza odporności na poślizg?
+
+![P44B: warunkowe progi współczynnika tarcia](wyniki/p44b_wymagany_wspolczynnik_tarcia.svg)
+
+*P44B sprawdza **16 200 nierówności tarcia** przy μ=0,2/0,4/0,6, zakładając rozdzielenie sił stycznych proporcjonalnie do sztywności hipotetycznych podpór. To badanie przesiewowe, **nie pełny model stick/slip**. Nadal brakuje realnego kosza, podkładek, docisku, złącza, pomiarów MDF i MES kontaktowego 3D. [Raport 113](raporty/113_P44B_tarcie_i_wrazliwosc_16200.md) · [kod](skrypty/p44_kontakt_docisk_tarcie.js) · [agregaty](wyniki/p44_podsumowanie_20261101.json).*
+
+**Wniosek P44:** szeroka rama A pozostaje warunkową ścieżką badań. **Brama CNC pozostaje zamknięta.**
+
+## P40 — czy osiem śrub utrzyma głośnik i czy pierścień daje miejsce na montaż?
+
+### Sam ciężar dzielony przez 8 to za mało
+
+![P40A: reakcje mocowań głośnika dla 4–8 czynnych śrub](wyniki/p40a_reakcje_grup_srub.svg)
+
+*Dla 15 kg, hipotetycznego obciążenia 5g i środka masy 120mm za frontem w modelu reakcji ośmiu śrub największe obciążenie pojedynczego punktu przy bocznym działaniu siły wynosi **151 N**, a nie **92 N** z uproszczenia F/8. Jeśli część śrub przestaje pracować, obciążenia mogą wzrosnąć kilkukrotnie. **To nie jest pomiar wytrzymałości śrub ani MDF.** [Raport 101](raporty/101_P40A_reakcje_8_mocowan.md).*
+
+### Ile naprawdę miejsca jest w pierścieniu wzmacniającym?
+
+![P40B: wymiana luzu montażowego na pas metalowego pierścienia przy śrubie](wyniki/p40b_budzet_promieniowy_pierscienia.svg)
+
+*Wycięcie Ø355,8mm i śruby na Ø368mm przy otworze kołnierza Ø6,5mm dają **tylko 2,85mm przestrzeni promieniowej łącznie**. Zbadano **675 wariantów** średnic i przesunięć pierścienia: 171 przechodzi podstawowe warunki geometryczne, ale przy przyjętych *przykładowych* rezerwach **1mm luzu + 2mm metalu żadna zwykła obręcz nie przechodzi**. To warunki badawcze, a nie normy. [Raport 102](raporty/102_P40B_tolerancje_pierscienia_675.md).*
+
+## Nowe badania P39 — ciśnienie, mocowania i edytowalny model 3D
+
+### Co zmieniło się po przeliczeniu nacisków na ściany?
+
+![P39A: porównanie nacisków na 6 ścian przed i po korekcie położenia głośnika](wyniki/p39a_cisnienie_scian_po_korekcie.svg)
+
+*W 36 nowych symulacjach powietrza w komorze zastosowano właściwą oś głośnika **x209/z228 mm w układzie wnętrza**, a wyniki porównano z historycznym P35A. Dla 120l / 80Hz, na siatce 36mm średnie ciśnienie względne na lewej ścianie zmieniło się z 0,773 na **0,735**, na prawej z 1,369 na **1,384**. To **względne pole modelowe**, nie fizyczne SPL ani obciążenie zweryfikowanego MDF. [Raport 098](raporty/098_P39A_naciski_scian_korekta_FV.md).*
+
+### Czy pierścień wzmacniający pod Daytonem zmieści się wewnątrz?
+
+![P39B: pierścień, wnętrze frontu i bramki odległości](wyniki/p39b_pierscien_i_odstepy.svg)
+
+*54 zestawienia średnic i grubości pokazują, że pierścień przykładowy Ø400/Ø356/t4mm geometrycznie pozostawia 9mm do lewego boku oraz 17mm do pierwszej wręgi w projekcji X. Ale **luz promieniowy od wycięcia wynosi zaledwie 0,1mm**, a cienki pasek MDF przy śrubie pozostaje. Taki pierścień **nie jest zatwierdzony wytrzymałościowo**. [Raport 099](raporty/099_P39B_geometria_pierscienia_i_glebokosc.md).*
+
+### Jak wygląda obudowa w edytowalnym modelu trójwymiarowym?
+
+[Model 3D OpenSCAD — **REFERENCYJNY, NIE DO CNC**](dokumentacja/P39C_front_korpus_pierscien_REFERENCYJNY_NIE_CNC.scad) jest parametrycznym złożeniem paneli, wręg, frontu z otworem i pierścienia. Umożliwia dalsze opracowywanie pełnego CAD; **nie jest jeszcze dokładną bryłą kosza Dayton z terminalami, zamkami i realnymi łącznikami**. [Raport 100](raporty/100_P39C_edytowalny_model_3D_OpenSCAD.md).
+
+</details>
+
+## Konstrukcja w obrazach — od pomysłu do sprawdzalnego prototypu
+
+**Zamiast od razu ciąć płyty, najpierw pytamy: czy skrzynia się zmieści, czy da się ją zmontować i czy nie będzie sama grała?** Poniższe ilustracje pokazują etapy symulacji. Kliknięcie obrazu otwiera źródło z wyjaśnieniem. **Żadna ilustracja nie jest dokumentacją CNC** — obciążenia, materiały i wybrane uproszczenia są wyraźnie opisane w raportach.
+
+### 1. Najpierw ustawiamy wymiary i litraż
+
+![Przekrój poglądowy projektu: głośnik, wręgi i regulowane wkłady](dokumentacja/P31C_schemat_konstrukcji_1020_425.svg)
+
+*Obecny kierunek: zamknięta obudowa 1020 × 425 × 500 mm, tylna mata 50 mm i regulacja około 100 / 120 / 150 l. To **schemat koncepcyjny** — brakuje rzeczywistych śrub, zamków, stopek i maskownicy. [Dlaczego ten wariant?](raporty/078_P30E_mata50_montaz_robustnosc.md)*
+
+![Badanie geometrii: skrzynia, tory montażowe i objętości](wyniki/100_P20D_geometria.png)
+
+*Symulacja starszego wariantu P20D pozwoliła opracować sposób badania dojścia modułów przez otwór po głośniku. Dla nowego P30E sprawdzono obwiednię przejścia do 6 mm, lecz montaż narzędziem wciąż nie jest zatwierdzony. [Raport geometrii](raporty/057_P20D_geometria_dostep_i_pelna_glebokosc.md).*
+
+### 2. Jak wzmocnienia zmieniają zachowanie ścian?
+
+![Badanie wpływu grubości MDF i ściągów na ugięcie](wyniki/43_P18A_grubosc_sciagi_i_ugiecie.png)
+
+*Grubsza płyta może pomóc, ale kosztuje więcej i zwiększa masę. O skuteczności decydują również podpory i sposób ich połączenia. [Omówienie badań paneli](raporty/059_podatne_wregi_i_panele.md).*
+
+![Model pola ugięcia i podatnych wręg — starsza geometria](wyniki/p18e_pola.png)
+
+*To nie fotografia rzeczywistej ścianki, lecz model mechaniczny. Pokazuje, dlaczego idealne unieruchomienie wręgi może dawać zbyt optymistyczny wynik. Dla nowego korpusu przeprowadzono osobną analizę P31B.*
+
+![P32A: drgania pojedynczego panelu w zależności od częstotliwości](wyniki/p32a_widmo_drganiowe.svg)
+
+*Nowy przebieg wymuszenia 20–180 Hz na poprawnie zwymiarowanej płycie. Ważny jest nie tylko rezonans, lecz **amplituda ruchu** przy danej częstotliwości. Zasymulowano ciśnienie 1000 Pa peak i hipotetyczne tłumienie; nie jest to pełny MES obudowy. [Raport 082](raporty/082_P32A_dynamika_panelu_wreg_i_tlumienia.md).*
+
+![P32A: porównanie sztywności podpór i tłumienia](wyniki/p32a_wregi_i_tlumienie.svg)
+
+*Dlaczego wzmocnienie nie jest po prostu „mocniejsze/słabsze”? Odpowiedź zależy jednocześnie od podatności podparcia i tłumienia materiału. [Kod badania](skrypty/p32a_dynamika_panelu.js).*
+
+### 3. Front, mocowanie głośnika i trwałość połączeń
+
+![Siatki frontów z otworami i modelowymi wzmocnieniami](wyniki/49_P18B_siatka_frontu_z_otworem.png)
+
+*Wycięcie dużego otworu osłabia front; rama musi przenosić ciężar kosza oraz siły okresowe. Przed wykonaniem potrzebny jest dokładny szablon rzeczywistego głośnika.*
+
+![Zintegrowana rama i połączenia — starszy model porównawczy](wyniki/55_P18C_pelna_rama_i_polaczenia.png)
+
+*Model całej ramy pozwala wyszukiwać słabe miejsca i kierunki pracy spoin. Po zmianie geometrii na 1020 × 425 mm wymaga ponownego przeliczenia.*
+
+### 3a. Co się zmienia, gdy liczymy całą skrzynię jednocześnie?
+
+![P33A: uproszczona globalna siatka ścian, wręg i kosza](wyniki/p33a_siatka_calej_skrzyni.svg)
+
+*Połączono w jednym modelu sześć ścian, naroża, dwa obwody wręg, otwór frontowy, masę kosza i wkładów. **To uproszczony model energetyczny**, a nie jeszcze poprawny pełny MES powłokowy. [Raport 083](raporty/083_P33A_globalna_siatka_obudowy_i_spoin.md).*
+
+![P33C: kontrola stabilizacji elementu, test hourglass i zablokowania ścinania](wyniki/p33c_hourglass_zbieznosc.svg)
+
+*Dlaczego w obliczeniach konstrukcji równie ważny jak liczba elementów jest ich rodzaj? Model ze zbyt słabą stabilizacją ma dodatkowe mechanizmy zerowe, a model ze zbyt silną bywa sztucznie sztywny. **Żaden z tych wariantów nie zastępuje pomiaru.** [Raport 085](raporty/085_P33C_audyt_hourglass_elementu_Q4.md).*
+
+![P33B: dlaczego wyniki zmieniają się wraz z modelem powłokowym](wyniki/p33b_rozbieznosc_modeli.svg)
+
+**ARCHIWALNY WYNIK — NIE UŻYWAĆ DO PROJEKTOWANIA.** W P33C wykryto dwa sztuczne mechanizmy *hourglass* elementu P33B. Wykres ilustruje problem numeryczny; nie wyznacza wiarygodnych ugięć ani częstotliwości skrzyni. [Raport 084 — archiwalny](raporty/084_P33B_globalny_MES_powlokowy_Q4.md) · [sprostowanie P33C](raporty/085_P33C_audyt_hourglass_elementu_Q4.md).
+
+![P33A: zbieżność siatki i wrażliwość na połączenia naroży](wyniki/p33a_zbieznosc_ugiec.svg)
+
+*Im sztywniejsze przyjęte naroża, tym mniejsze ugięcie w tym modelu. Sprawdzono trzy rozmiary siatki i trzy sztywności połączeń, ale nie zmierzono rzeczywistych własności spoin. **Nie jest to zatwierdzenie do CNC**. [Kod do odtworzenia](skrypty/p33a_global_shell_network.py).*
+
+![Lokalne naprężenia przy spoinie — wpływ sztywności i wzmocnienia](wyniki/65_P19F_sztywnosc_i_przeniesienie_naprezen.png)
+
+*Usztywnienie może zmniejszyć ugięcie, jednocześnie przenosząc obciążenie na inny fragment połączenia. [Badania spoin](raporty/030_P19A_obliczenia_spoin_i_material_kleju.md).*
+
+### 4. Wkłady i powietrze wewnątrz skrzyni
+
+### 4b. Liczymy już rzeczywiste rozmieszczenie przeszkód, nie tylko pusty prostopadłościan
+
+![P34B: plan wnętrza skrzyni z wręgami, modułami oraz matą 50 mm](dokumentacja/P34B_przekroj_wkladow_i_maty.svg)
+
+**ARCHIWALNY SCHEMAT P34B:** pokazuje rozmieszczenie przeszkód, a nie geometrię do CNC. Po audycie P38B ujawniono przesunięcie źródła o 22 mm w obu osiach. Nie przenosić wyniku na obecny model. [Raport 087](raporty/087_P34B_przestrzenne_cisnienie_100_120_150.md) · [audyt 097](raporty/097_P38B_audyt_wspolrzednych_FV.md).
+
+![P34B: odchylenia przestrzenne ciśnienia w trzech litrażach](wyniki/p34b_niejednorodnosc_pole_3_litraze.svg)
+
+**ARCHIWALNE DANE P34B:** mapa względnego ciśnienia została policzona w starszym układzie źródła i nie jest wynikiem dla bieżącej geometrii. Nie opisuje THD, SPL ani tłumienia maty. [Dane historyczne](wyniki/p34b_przestrzenne_pole_p30e_20261031.json) · [ponowne obliczenia P39A](raporty/098_P39A_naciski_scian_korekta_FV.md).
+
+![P34B: badanie zgodności obliczeń przy coraz gęstszej siatce](wyniki/p34b_zbieznosc_siatki_80Hz.svg)
+
+**KONTROLA SIATKI W ARCHIWALNYM MODELU P34B:** zagęszczenie komórek nie usuwa błędu współrzędnych. Zachowujemy wykres dla zrozumienia metody, a nie jako potwierdzenie nowej konstrukcji. [Historyczny kod](skrypty/p34b_przestrzenne_pole_p30e.js) · [korekta P38B](raporty/097_P38B_audyt_wspolrzednych_FV.md).
+
+![P34C: modelowe siły działające na zamknięte wkłady](wyniki/p34c_sily_mocowania_wkladow.svg)
+
+*Wyjmowane wkłady muszą mieć dodatnią blokadę mechaniczną. Liczby pokazują umowne obciążenia mocowań przy przyspieszeniu i różnicy ciśnienia; **nie zastępują prób wyrywania śrub ani zmęczenia MDF**. [Raport 088](raporty/088_P34C_obciazenia_i_blokowanie_wkladow.md).*
+
+
+
+![Dostęp przez otwór frontowy i masa wkładów](wyniki/70_P20A_dostep_i_masa_wkladow.png)
+
+*Regulacja litrażu ma sens tylko wtedy, gdy wkłady można faktycznie włożyć, bezpiecznie zamocować i wyjąć. Ich masa i szczelność są częścią konstrukcji.*
+
+![P34A: czy ciśnienie w skrzyni jest równomierne?](wyniki/p34a_modalny_gaz_100_120_150.svg)
+
+*Model sztywnej komory pokazuje, jak nawet poniżej pierwszej fali stojącej lokalne ciśnienie może odróżniać się od prostego modelu T/S. Zbadano 90 przypadków dla trzech objętości. **To prostopadłościany zastępcze, nie rzeczywiste wkłady P30E.** [Raport 086](raporty/086_P34A_gaz_3D_komora_zastepcza_i_niejednorodnosc.md).*
+
+> **P21G — brak dowodów do weryfikacji:** w obecnym repo nie ma raportu 066, skryptu, JSON ani rysunku. Nie można więc traktować tej kampanii jako potwierdzonej. Dostępne częściowe modele: [P21D](raporty/060_P21D_wspolna_geometria_i_port_napedu.md), [P21E](raporty/064_P21E_gaz_podatne_sciany_i_naped.md), [P21F](raporty/065_P21F_wielomody_gazu_i_scian.md).
+
+### 4c. Jak przekazać ciśnienie ze skrzyni do obliczeń jej ścian?
+
+![Względne ciśnienie na każdej z sześciu ścian — P35A](wyniki/p35a_cisnienie_scian_80hz.svg)
+
+**ARCHIWALNA MAPA P35A (błąd położenia źródła wykryty w P38B):** wartości względne służą jedynie za przykład metody. Do interpretacji bieżącej geometrii używaj poprawionego [P39A, raport 098](raporty/098_P39A_naciski_scian_korekta_FV.md). To nie są zmierzone siły ani SPL.
+
+### 4d. Kontrola jakości MES: nie tylko liczba w hercach
+
+![Kontrola siatki i stabilizatora numerycznego Q4 — P35B](wyniki/p35b_stabilizacja_Q4_siatki.svg)
+
+*Audyt P33C ujawnił sztuczne drgania pojedynczego elementu Q4. Powtórzyliśmy 16 symulacji całej skrzyni po dodaniu różnych wariantów stabilizacji. Problem lokalny można ograniczyć numerycznie, ale **nie da się jeszcze uznać konstrukcji za zweryfikowaną** bez dobrego opisu spoin i pełnej geometrii. [Raport 090](raporty/090_P35B_globalna_stabilizacja_hourglass.md).*
+
+**Co dalej?** Pełny CAD kosza, sprawdzenie mocowań, przestrzenna akustyka 100/120/150 l z aktualnym źródłem i podatnością ścian, a potem pomiary pierwszej sztuki. [Bramki przed CNC](dokumentacja/P35_plan_walidacji_przed_CNC.md) · [najnowszy raport 108](raporty/108_P42C_laczniki_i_koncepcje_3D.md).
+
+---
 
 <a id="akustyka"></a>
 ## Objętość i wypełnienie: więcej litrów nie rozwiązuje wszystkiego
