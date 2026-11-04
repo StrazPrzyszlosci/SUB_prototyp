@@ -16,7 +16,7 @@ Model K01 przewiduje klocek o promieniu wewnętrznym **178,9 mm**, promieniu zew
 
 Odczytałem wymiary z **oryginalnej [karty wkładek RAMPA SKD30 do MDF](https://www.rampa.com/media/e2/ed/d4/1699524202/RAMPA_Produktdatenblatt_MDF-EN.pdf)** (str. 3, tabela z kodami produktów) oraz [katalogu Type D Fastenright](https://www.fastenright.com/general-fixings/insert-nuts-for-wood-type-d/ff13). To **rzeczywiste katalogowe rozmiary danych rodzin wkładek**, a nie gabaryty zamontowanego złącza w naszym klocku.
 
-| Przykład katalogowy, nie wybrany do montażu | D zewnętrzna / długość [mm] | Najwęższy pas przy wycięciu we froncie [mm] | Pas do wewnętrznej krawędzi klocka K01 [mm] |
+| Przykład wkładki osadzanej ZA frontem | Ø zewnętrzna / długość [mm] | Prześwit rzutu wkładki do wycięcia głośnika [mm] — **NIE otwór frontu** | Pas do wewnętrznej krawędzi klocka K01 [mm] |
 |---|---:|---:|---:|
 | RAMPA SKD30 M4, 439412001 | 8 / 12 | 2,10 | **1,10** |
 | RAMPA SKD30 M5, 439512001 | 10 / 12 | 1,10 | **0,10** |
@@ -24,6 +24,22 @@ Odczytałem wymiary z **oryginalnej [karty wkładek RAMPA SKD30 do MDF](https://
 | RAMPA SKD30 M6, 439615001 | 12 / 15 | 0,10 | **−0,90** |
 | Fastenright Type D M5 | 10,5 / 13 | 0,85 | **−0,15** |
 | Fastenright Type D M6 | 12,5 / 16 | **−0,15** | **−1,15** |
+
+**Korekta interpretacyjna:** trzecia kolumna jest **rzutem średnicy ZEWNĘTRZNEJ wkładki na promień wycięcia**, a nie szerokością rzeczywistego drewna we froncie po wierceniu. Wkładka jest osadzana **za** płytą MDF44, w osobnym klocku. Rzeczywisty otwór we froncie przeznaczony jest **na wybraną śrubę**, a nie na cały gwint zewnętrzny wkładki.
+
+### Trzy niezależne otwory — w którym materiale i dlaczego?
+
+| Warstwa | Dobierany wymiar | Przykład M5 do odtworzenia (bez kwalifikacji wykonawczej) |
+|---|---|---|
+| Fabryczny **kosz Daytona** | Producent: **8 × Ø6,5 mm na PCD Ø368 mm** | Fabryczny otwór musi przepuścić trzpień wybranej śruby; jego Ø nie jest wierceniem pod MDF |
+| Front **MDF44** | Wiertło przelotowe dobrane do **śruby i pasowania**, nie do otworu kosza | Przykładowa śruba M5 (Ø trzpienia nominalnie 5) i umowny przelot **Ø5,5 mm**: pas drewna do wycięcia `6,1−5,5/2 = 3,35 mm` |
+| **Tylny klocek** z wkładką RAMPA SKD30 | Otwór wstępny pod jej zewnętrzny gwint, z karty dla **odpowiedniego materiału** | SKD30 M5×12: w [karcie do MDF](https://www.rampa.com/media/e2/ed/d4/1699524202/RAMPA_Produktdatenblatt_MDF-EN.pdf) **Ø9 mm**, ale w [karcie do drewna twardego](https://www.rampa.com/media/7e/76/df/1699524009/RAMPA_Produktdatenblatt_Laubholz-Hardwood_EN.pdf) **Ø8 mm**; średnica zewnętrzna samej wkładki w obu przypadkach **Ø10 mm** |
+
+Dodatkowo: w RAMPA SKD30 **M4×12** wskazano nominalne wiertło **Ø6,5 mm w MDF** i **Ø7 mm w drewnie twardym**; przy **M6×12** oba katalogi podają **Ø10 mm**. Są to wyłącznie dane producenta do orientacyjnego porównania różnych podłoży, a nie parametry zatwierdzone dla naszego klocka. Twarde drewno w tabeli RAMPA nie jest automatycznie identyczne z konkretną klejonką bukową20; w kartach referencyjne próbki mogą mieć też inną grubość.
+
+**Mechanicznie znaczące rozróżnienie:** przy M5 z przelotem Ø5,5 mm w płycie pozostaje **3,35 mm MDF do wycięcia**, natomiast w K01 za frontem wkładka o zewnętrznym Ø10 mm pozostawia **0,1 mm nominalnie przy granicy klocka**. To **dwa oddzielne pasy dwóch różnych części** i nie wolno ich dodawać, zastępować jednym ani porównywać bez geometrii złącza. Wybranie cieńszego wiertła pod gwint zewnętrzny wkładki nie zmienia jej maksymalnej średnicy Ø10.
+
+Ostateczne średnice wierceń wymagają określenia tolerancji rzeczywistej śruby, położenia osi, średnicy łba/podkładki, kierunku wkręcania, grubości klejenia i prób wytrzymałościowych. **Nie są wymiarami CNC.**
 
 Wartość ujemna oznacza **geometryczne przekroczenie nominalnego obrysu**; nie rozstrzyga, jak należy zaprojektować i wykonać **inny** nośnik. Dodatkowo w Type D podany rozmiar `D1` nie jest pełnym przestrzennym obrysem ewentualnego kołnierza i narzędzia.
 
@@ -37,7 +53,7 @@ Wykonano **5 oddzielnych przesiewów geometrii klocka**, bez utrzymywania fałsz
 
 Przesunięcie wewnętrznej granicy klocka z `r=178,9` na `178,0 mm` daje dla wkładki M5 Ø10 **1,0 mm** nominalnego pasa w klocku, ale pozostawia klockowi **tylko 0,1 mm do samego wycięcia głośnika**, bez tolerancji. To również **nie spełnia** umownej bramki 2 mm. Wydłużenie głębokości klocków do **30 mm** nie poprawia pasa promieniowego, a K02 wykazało problemy z trasami wkładów dla tej głębokości.
 
-**Wniosek:** to **nie tylko problem „za słabego drewna”**. Podstawową przeszkodą jest geometra krawędzi i 8 sztywnych osi producenta. Sama zmiana klejonki na sklejkę albo zmiana klasy kleju może zwiększyć sztywność niektórych elementów, **lecz nie odtworzy brakującej geometrii**.
+**Wniosek:** to **nie tylko problem „za słabego drewna”**. Podstawową przeszkodą jest geometria krawędzi i 8 sztywnych osi producenta. Sama zmiana klejonki na sklejkę albo zmiana klasy kleju może zwiększyć sztywność niektórych elementów, **lecz nie odtworzy brakującej geometrii**.
 
 ### Co można obliczyć ze znanego P40A, a czego nie?
 
