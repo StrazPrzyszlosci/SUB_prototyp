@@ -92,7 +92,12 @@ jobs:
           import subprocess
           original=subprocess.check_output(['git','show','origin/main:README.md'],text=True)
           current=Path('README.md').read_text(encoding='utf-8')
-          assert current.startswith(original), 'Existing guide was modified, not simply extended'
+          # Explicit user-authorized guide restructuring; preserve the technical appendix and its data exactly.
+          tail='## Krótki słownik do wykresów'
+          assert current[current.index(tail):]==original[original.index(tail):]
+          assert current.index('### Jak spośród 40 kandydatów')<current.index('## Praktyczny przewodnik')
+          assert current.index('## Konstrukcja obudowy')<current.index('## Badania uzupełniające')
+          assert current.index('## Badania uzupełniające')<current.index('### B12-01')
           assert current.count('### A21. K16')==1
           assert current.count('### A22. K17')==1
           assert current.index('### A21. K16')>current.index('### A20. K15')
@@ -102,5 +107,5 @@ jobs:
           report=Path('raporty/K17_prowadnice_nośne_bez_kolizji_z_mata.md').read_text(encoding='utf-8')
           assert '1,020928' in report and 'CNC HOLD' in report
           assert Path('dokumentacja/K16_p30e_z_mocowaniami_modulow_NIE_CNC.scad').exists()
-          print('PASS README: full existing loudspeaker-first guide preserved, append-only A21/A22; no manufacturing release')
+          print('PASS README: selection of 40 → Dayton → cabinet → STX alternatives; technical appendix preserved')
           PY
