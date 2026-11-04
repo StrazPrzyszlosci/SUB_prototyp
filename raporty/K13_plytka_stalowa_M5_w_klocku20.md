@@ -8,7 +8,9 @@ K11 wykazało geometrię, której nie naprawi sama zmiana gatunku drewna: gdy o�
 
 Żeby nie powtarzać badań „jakie mocowania bywają”, rozpatrzono *konkretną zmianę drogi sił*: zamiast gwintu **zewnętrznego** Ø10 wkręcanego w drewno, rozmieścić **gwint wewnętrzny M5 w stalowej płytce**, przytwierdzonej od tyłu do drewnianego klocka. Płytka musi zostać **wpuszczona i pozostać w obrysie dotychczasowego klocka 20 mm**. To nowe rozwiązanie autorskie, **nie zidentyfikowana część producenta RSS390HF-4 ani faktycznie zamontowany podzespół**.
 
-![K13 — autorski rzut i przekrój hipotetycznej stalowej płytki M5 wpuszczonej w lokalny klocek drewniany. NIE CNC](../wyniki/k13_plytka_M5_w_klocku20_NIE_CNC.svg)
+![K13 — podgląd PNG autorskiego rzutu i przekroju hipotetycznej stalowej płytki M5 wpuszczonej w lokalny klocek drewniany. NIE CNC](../wyniki/k13_plytka_M5_w_klocku20_NIE_CNC.png)
+
+[Wersja wektorowa SVG](../wyniki/k13_plytka_M5_w_klocku20_NIE_CNC.svg) (te same wymiary, schemat, nie CAD).
 
 *Źródła wymiarów: [Dayton](https://www.daytonaudio.com/images/resources/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf) (kołnierz, rozstaw i wycięcie), [ISO 273 / metryczny otwór przelotowy i wiertło pod gwint](https://engineeredbydesign.co.uk/Pages/Eng_Data/Threadform_table.php), [ISO 4762 / wymiary łba](https://roymech.org/Useful_Tables/Screws/cap_screws). Rysunek opracowany na potrzeby badań FSzP; nie jest obrazem fabrycznego mocowania ani dokumentacją CNC.*
 
@@ -79,9 +81,9 @@ Tylko **9 z 45 kombinacji** spełnia umowny screen ≥1×M5 i brak tylnego wysta
 
 Zamiast źle podpartej, dużej wkładki w klocku z tylko 0,1 mm drewna uzyskujemy konstrukcyjnie inną drogę:
 
-**kołnierz Dayton → śruba M5 → gwint w stalowej płytce → 2 hipotetyczne wkręty utrzymujące płytkę w drewnie → klocek bukowy → klej → MDF44 → reszta obudowy.**
+**kołnierz Dayton → śruba M5 → gwint w stalowej płytce → docisk płytki do drewnianego ramienia kieszeni → klocek bukowy → klej → MDF44 → reszta obudowy.** Dwa małe wkręty mają przede wszystkim **zabezpieczać płytkę przed obracaniem i wypadaniem**, a nie automatycznie przenosić całą siłę osiową śruby. Ich własne obciążenie może zależeć od kierunku oddziaływania, odkształceń i strat kontaktu. To wymaga analizy 3D kontaktu.
 
-Jest to **hipoteza o przebiegu sił**, NIE już policzona nośność. Z P40A wzięto jedynie referencyjne maksymalne **151 N na jedną śrubę** dla modelu 15 kg/5g/ramię120 mm. Gdyby **całe** 151 N rozdzieliło się po równo na dwa małe wkręty (założenie, nie fizyka obliczona węzła), każdy przenosiłby **75,5 N**. W realnym złączu siły mogą być nierówne, zmieniać zwrot, wytwarzać moment odrywający i powodować pełzanie/rozwarstwienie. **Sam E stali i deklarowane Re=235 MPa nie rozwiązują problemu wyrwania małych wkrętów z 14 mm drewna.**
+Jest to **hipoteza o przebiegu sił**, NIE już policzona nośność. Z P40A wzięto jedynie referencyjne maksymalne **151 N na jedną śrubę** dla modelu 15 kg/5g/ramię120 mm. W idealnym, nierzeczywistym przypadku pełnego kontaktu płytki z drewnem po odjęciu otworu M5 i dwóch otworów Ø3,4 mm, powierzchnia kontaktu wynosi **840,71 mm²**, a średnie naprężenie od samego **151 N** wyniosłoby zaledwie **0,180 MPa**. **Nie jest to naprężenie maksymalne, dopuszczalne ani dowód wytrzymałości**: kontakt nie musi być równomierny; lokalne ugięcie płytki może doprowadzić do koncentracji nacisków i pęknięcia przy wewnętrznej krawędzi. Gdyby **całe** 151 N rozdzieliło się po równo na dwa małe wkręty (skrajne założenie, a nie realna droga sił), każdy przenosiłby **75,5 N**. W realnym złączu siły mogą być nierówne, zmieniać zwrot, wytwarzać moment odrywający i powodować pełzanie/rozwarstwienie. **Sam E stali i deklarowane Re=235 MPa nie rozwiązują problemu wyrwania małych wkrętów z 14 mm drewna.**
 
 Ważne ryzyko: jeżeli gwint M5 w płytce zostanie zerwany, sam głośnik można odkręcić od frontu, ale **płytki zamocowanej od tyłu klocka niekoniecznie da się wymienić w zamkniętej skrzyni**. Konstrukcja wymaga zdefiniowania bezpiecznej, serwisowalnej retencji, tak aby żadna stalowa część nie wypadła i nie zaczęła grzechotać. To może prowadzić do odrzucenia tego wariantu mimo korzystnej geometrii.
 
