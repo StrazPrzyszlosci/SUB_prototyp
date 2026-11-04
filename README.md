@@ -113,6 +113,8 @@ Najpierw ustalamy średnicę i typ **śruby**, potem średnicę przelotu przez M
 
 ![Osiem mocowań i żebra kosza — schemat badawczy, NIE CNC](wyniki/b12_12_faza_zeber_producent_NIE_CNC.svg)
 
+**K03:** oś mocowania jest tylko **6,1 mm** od wycięcia; każdy **klocek** musi przenieść obciążenie przez klej, ale jego nośności nie ocenia się z samego prześwitu. [K03](raporty/K03_budzet_promieniowy_lacznika_i_sciezka_sily.md).
+
 **K11:** w niezmienionym klocku K01 promień otworu wkładki Ø10 mm (typ M5 RAMPA) zostawia nominalnie tylko **0,1 mm** do jego wewnętrznej krawędzi. Wkładka Ø12 mm (typ M6) wystaje poza nią o **0,9 mm**. To nie są średnice otworów przelotowych MDF. Sam mocniejszy gatunek drewna nie naprawia tego ograniczenia. [K11](raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md).
 
 **K02–K07:** w symulacji wkładania samych klocków 20 mm osiągnięto **20/20 modułów**; dla większej, zastępczej obwiedni mocowań K04/K07 planer zatrzymuje się na **ID16** przed 100 l. Dostęp sondy K06 nie jest dowodem dostępu prawdziwego narzędzia. [K02](raporty/K02_przejscie_20_modulow_obok_8_mocowan.md) · [K04](raporty/K04_pelne_gabaryty_nakretki_podkladki_i_montaz_20_modulow.md) · [Raport K05](raporty/K05_etapowanie_20_modulow_i_dostep_do_mocowan.md) · [K06](raporty/K06_dostep_do_8_mocowan_po_20_wkladach.md) · [K07](raporty/K07_serwis_wkladow_i_audyt_mocowan.md).
