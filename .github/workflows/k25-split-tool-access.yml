@@ -1,0 +1,49 @@
+name: K25 guide splice Z windows and tool-envelope collision regression (NOT CNC)
+on:
+  push:
+    branches: [main]
+    paths:
+      - "skrypty/k25_*"
+      - "wyniki/k25_*"
+      - ".github/workflows/k25-split-tool-access.yml"
+  pull_request:
+    paths:
+      - "skrypty/k25_*"
+      - "wyniki/k25_*"
+      - ".github/workflows/k25-split-tool-access.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  k25-split-and-tool:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Rerun 1mm grid candidate and solid-envelope checks
+        run: |
+          set -euo pipefail
+          node --check skrypty/k25_zlacza_prowadnic_dostep.js
+          node skrypty/k25_zlacza_prowadnic_dostep.js
+          git diff --exit-code -- wyniki/k25_zlacza_prowadnic_i_dostep.json
+      - name: Guard distinct access limits and CNC HOLD
+        run: |
+          node - <<'NODE'
+          const fs=require('node:fs'),a=require('node:assert/strict');
+          const k=JSON.parse(fs.readFileSync('wyniki/k25_zlacza_prowadnic_i_dostep.json','utf8'));
+          const g2=k.selected_guide_studies.G17_COLUMN_02,g10=k.selected_guide_studies.G17_COLUMN_10;
+          a.match(k.status,/CNC HOLD/);
+          a.equal(g2.chosen_research_split_global_z_mm,250);
+          a.equal(g10.chosen_research_split_global_z_mm,194);
+          a.equal(g2.straight_tool_14mm_front_axial_Y_screen.straight_front_normal_access_geometrically_clear_in_reference_model,true);
+          a.equal(g10.straight_tool_14mm_front_axial_Y_screen.straight_front_normal_access_geometrically_clear_in_reference_model,false);
+          a.deepEqual(g10.hypothetical_2mm_face_plates.map(x=>x.available_front_back_normal_Y_gap_mm),[4,5]);
+          a.ok(g2.split_scan.qualifying_integer_mm_count>0);
+          a.ok(g10.split_scan.qualifying_integer_mm_count>0);
+          a.equal(g2.structural_reality.bolt_count,0);
+          a.equal(g10.structural_reality.retention_qualified,false);
+          a.equal(k.release_gates.cnc_release,false);
+          console.log('PASS K25: distinct physical tool-access and split windows; CNC HOLD maintained.');
+          NODE

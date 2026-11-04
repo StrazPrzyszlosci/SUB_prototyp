@@ -1,0 +1,413 @@
+{
+  "study": "K25",
+  "date": "2026-11-04",
+  "status": "CNC HOLD — reference split windows / tool access and structural load demand, no real joinery approved",
+  "source": "Actual K15 MDF solids, K17 rail and lip spans, K24 service phase orders and risk conditions",
+  "hypotheses": {
+    "front_aperture_radius_mm": 177.9,
+    "baseline_rail_width_x_mm": 16,
+    "hypothetical_joint_plate_face_height_mm": 50,
+    "hypothetical_plate_half_height_mm": 25,
+    "hypothetical_minimum_clear_Z_to_original_lip_mm": 8,
+    "hypothetical_front_or_back_plate_y_thickness_mm": 2,
+    "hypothetical_module_tool_envelope_diameter_mm": 12,
+    "hypothetical_tool_margin_each_side_mm": 1,
+    "needed_tool_envelope_width_mm": 14,
+    "hypothetical_segment_entrance_margin_xz_each_side_mm": 6,
+    "scan_grid_z_step_mm": 1,
+    "disclaimer": "None of these are material supplier specifications, fastener dimensions, rated loads, approved machining tolerances or fabrication instructions."
+  },
+  "selected_guide_studies": {
+    "G17_COLUMN_02": {
+      "rail": {
+        "id": "G17_COLUMN_02",
+        "group": "rear_small_31",
+        "box_module_indices": [
+          0,
+          1
+        ],
+        "o": [
+          175,
+          224,
+          22
+        ],
+        "s": [
+          16,
+          12,
+          456
+        ]
+      },
+      "original_lip_spans_z_mm": [
+        {
+          "id": "G17_0_shelf_2",
+          "position": "shelf",
+          "from": 58,
+          "to": 62
+        },
+        {
+          "id": "G17_0_retainer_2",
+          "position": "retainer",
+          "from": 162,
+          "to": 166
+        },
+        {
+          "id": "G17_1_shelf_2",
+          "position": "shelf",
+          "from": 334,
+          "to": 338
+        },
+        {
+          "id": "G17_1_retainer_2",
+          "position": "retainer",
+          "from": 438,
+          "to": 442
+        }
+      ],
+      "split_scan": {
+        "qualifying_integer_mm_intervals": [
+          {
+            "from": 199,
+            "to": 301,
+            "count": 103
+          }
+        ],
+        "qualifying_integer_mm_count": 103,
+        "filters": "Each segmented rail upright XZ projection fits the nominal front opening with hypothetical 6mm margin; 50mm splice zone clears all original lips by >=8mm in Z; no real material tolerance."
+      },
+      "chosen_research_split_global_z_mm": 250,
+      "segment_reference_lengths_mm": [
+        228,
+        228
+      ],
+      "chosen_max_segment_rectangle_corner_radius_in_cutout_projection_mm": 120.813906,
+      "chosen_splice_zone_global_z_mm": [
+        225,
+        275
+      ],
+      "hypothetical_2mm_face_plates": [
+        {
+          "plate": {
+            "id": "G17_COLUMN_02_PLATE_FRONT_2MM_HOLD",
+            "o": [
+              175,
+              222,
+              225
+            ],
+            "s": [
+              16,
+              2,
+              50
+            ],
+            "orientation": "toward smaller Y"
+          },
+          "static_unintentional_solid_overlaps": [],
+          "nearby_modules_in_XZ": [],
+          "available_front_back_normal_Y_gap_mm": null,
+          "hypothetical_14mm_tool_fits_that_local_gap": null
+        },
+        {
+          "plate": {
+            "id": "G17_COLUMN_02_PLATE_REAR_2MM_HOLD",
+            "o": [
+              175,
+              236,
+              225
+            ],
+            "s": [
+              16,
+              2,
+              50
+            ],
+            "orientation": "toward larger Y"
+          },
+          "static_unintentional_solid_overlaps": [],
+          "nearby_modules_in_XZ": [],
+          "available_front_back_normal_Y_gap_mm": null,
+          "hypothetical_14mm_tool_fits_that_local_gap": null
+        }
+      ],
+      "straight_tool_14mm_front_axial_Y_screen": {
+        "tool_centre_xz_mm": [
+          183,
+          250
+        ],
+        "tool_envelope_radius_mm": 7,
+        "straight_tool_projection_outer_radius_from_basket_center_mm": 55,
+        "passes_nominal_D355_8mm_cutout_projection": true,
+        "cylinder_swept_y_from_front_inner_face_to_front_plate_mm": [
+          44,
+          222
+        ],
+        "test_prism": {
+          "o": [
+            176,
+            44,
+            243
+          ],
+          "s": [
+            14,
+            178,
+            14
+          ]
+        },
+        "model_solid_collisions": [],
+        "straight_front_normal_access_geometrically_clear_in_reference_model": true
+      },
+      "structural_reality": {
+        "plate_is_only_a_contact_footprint_with_no_holes": true,
+        "bolt_count": 0,
+        "retention_qualified": false,
+        "plate_root_or_screw_approved": false,
+        "true_two_part_splice_3D_install_route_proven": false,
+        "functional_load_when_one_rail_removed_unqualified": true
+      }
+    },
+    "G17_COLUMN_10": {
+      "rail": {
+        "id": "G17_COLUMN_10",
+        "group": "rear_large_491.5",
+        "box_module_indices": [
+          12,
+          13,
+          14,
+          15
+        ],
+        "o": [
+          661.5,
+          208,
+          22
+        ],
+        "s": [
+          16,
+          12,
+          456
+        ]
+      },
+      "original_lip_spans_z_mm": [
+        {
+          "id": "G17_12_shelf_2",
+          "position": "shelf",
+          "from": 30,
+          "to": 34
+        },
+        {
+          "id": "G17_12_retainer_2",
+          "position": "retainer",
+          "from": 134,
+          "to": 138
+        },
+        {
+          "id": "G17_14_shelf_2",
+          "position": "shelf",
+          "from": 140,
+          "to": 144
+        },
+        {
+          "id": "G17_14_retainer_2",
+          "position": "retainer",
+          "from": 244,
+          "to": 248
+        },
+        {
+          "id": "G17_15_shelf_2",
+          "position": "shelf",
+          "from": 250,
+          "to": 254
+        },
+        {
+          "id": "G17_15_retainer_2",
+          "position": "retainer",
+          "from": 354,
+          "to": 358
+        },
+        {
+          "id": "G17_13_shelf_2",
+          "position": "shelf",
+          "from": 360,
+          "to": 364
+        },
+        {
+          "id": "G17_13_retainer_2",
+          "position": "retainer",
+          "from": 464,
+          "to": 468
+        }
+      ],
+      "split_scan": {
+        "qualifying_integer_mm_intervals": [
+          {
+            "from": 177,
+            "to": 211,
+            "count": 35
+          },
+          {
+            "from": 287,
+            "to": 321,
+            "count": 35
+          }
+        ],
+        "qualifying_integer_mm_count": 70,
+        "filters": "Each segmented rail upright XZ projection fits the nominal front opening with hypothetical 6mm margin; 50mm splice zone clears all original lips by >=8mm in Z; no real material tolerance."
+      },
+      "chosen_research_split_global_z_mm": 194,
+      "segment_reference_lengths_mm": [
+        172,
+        284
+      ],
+      "chosen_max_segment_rectangle_corner_radius_in_cutout_projection_mm": 148.660687,
+      "chosen_splice_zone_global_z_mm": [
+        169,
+        219
+      ],
+      "hypothetical_2mm_face_plates": [
+        {
+          "plate": {
+            "id": "G17_COLUMN_10_PLATE_FRONT_2MM_HOLD",
+            "o": [
+              661.5,
+              206,
+              169
+            ],
+            "s": [
+              16,
+              2,
+              50
+            ],
+            "orientation": "toward smaller Y"
+          },
+          "static_unintentional_solid_overlaps": [],
+          "nearby_modules_in_XZ": [
+            {
+              "module_id": "MODULE_14",
+              "Ygap_mm": 19
+            },
+            {
+              "module_id": "MODULE_18",
+              "Ygap_mm": 4
+            }
+          ],
+          "available_front_back_normal_Y_gap_mm": 4,
+          "hypothetical_14mm_tool_fits_that_local_gap": false
+        },
+        {
+          "plate": {
+            "id": "G17_COLUMN_10_PLATE_REAR_2MM_HOLD",
+            "o": [
+              661.5,
+              220,
+              169
+            ],
+            "s": [
+              16,
+              2,
+              50
+            ],
+            "orientation": "toward larger Y"
+          },
+          "static_unintentional_solid_overlaps": [],
+          "nearby_modules_in_XZ": [
+            {
+              "module_id": "MODULE_14",
+              "Ygap_mm": 5
+            },
+            {
+              "module_id": "MODULE_18",
+              "Ygap_mm": 18
+            }
+          ],
+          "available_front_back_normal_Y_gap_mm": 5,
+          "hypothetical_14mm_tool_fits_that_local_gap": false
+        }
+      ],
+      "straight_tool_14mm_front_axial_Y_screen": {
+        "tool_centre_xz_mm": [
+          669.5,
+          194
+        ],
+        "tool_envelope_radius_mm": 7,
+        "straight_tool_projection_outer_radius_from_basket_center_mm": 449.061365,
+        "passes_nominal_D355_8mm_cutout_projection": false,
+        "cylinder_swept_y_from_front_inner_face_to_front_plate_mm": [
+          44,
+          206
+        ],
+        "test_prism": {
+          "o": [
+            662.5,
+            44,
+            187
+          ],
+          "s": [
+            14,
+            162,
+            14
+          ]
+        },
+        "model_solid_collisions": [
+          {
+            "id": "MODULE_18",
+            "kind": "insert"
+          },
+          {
+            "id": "G17_COLUMN_12",
+            "kind": "rail"
+          }
+        ],
+        "straight_front_normal_access_geometrically_clear_in_reference_model": false
+      },
+      "structural_reality": {
+        "plate_is_only_a_contact_footprint_with_no_holes": true,
+        "bolt_count": 0,
+        "retention_qualified": false,
+        "plate_root_or_screw_approved": false,
+        "true_two_part_splice_3D_install_route_proven": false,
+        "functional_load_when_one_rail_removed_unqualified": true
+      }
+    }
+  },
+  "one_remaining_support_5g_hypothetical_demand_with_0_2kg_allowance": [
+    {
+      "rail": "G17_COLUMN_02",
+      "example_module": 0,
+      "assumed_shell_mass_kg": 0.469256,
+      "hypothetical_extra_hardware_kg": 0.2,
+      "assumed_inertial_load_5g_on_one_surviving_side_N": 32.826991,
+      "corrected_guide_tip_span_mm": 23,
+      "idealized_single_side_4mm_root_MPa": 17.6958,
+      "idealized_single_side_3_5mm_root_MPa": 23.112881,
+      "material_allowable_MPa": null,
+      "safety_factor": null,
+      "real_bearing_and_joint_not_modelled": true
+    },
+    {
+      "rail": "G17_COLUMN_10",
+      "example_module": 12,
+      "assumed_shell_mass_kg": 0.602408,
+      "hypothetical_extra_hardware_kg": 0.2,
+      "assumed_inertial_load_5g_on_one_surviving_side_N": 39.358097,
+      "corrected_guide_tip_span_mm": 19,
+      "idealized_single_side_4mm_root_MPa": 17.526652,
+      "idealized_single_side_3_5mm_root_MPa": 22.891954,
+      "material_allowable_MPa": null,
+      "safety_factor": null,
+      "real_bearing_and_joint_not_modelled": true
+    }
+  ],
+  "key_findings": [
+    "Guide02 split at Z250 has a 50mm nominal plate zone that is clear of all original lips; its front-facing hypothetical 14mm tool envelope is aligned with nominal Ø355.8 driver opening and intersects no other modeled permanent solid or box.",
+    "Guide10 split at Z250 hits lip Z250–254 and is disallowed. Alternative Z194 is in a valid lip-free 50mm band and its segments fit the opening in XZ projection, but local plate-to-front/rear large boxes gaps are only 4mm / 5mm.",
+    "The guide10 tool centre X669.5 is far outside the driver opening centred X231, so a straight front-to-rear (Y-axis) tool path through the driver aperture cannot reach it. A kinematic 6DOF tool route, remote control or alternate access panel remains untested.",
+    "These proposed 2mm plate cuboids are solid-volume KEEP-OUT ENVELOPES only: no bolt threads, shear slip bearing, preload, fatigue, screw pullout, MDF edge distance, anchoring or physical assembly path qualified.",
+    "5g single-side demand with hypothetical extra 0.2kg raises local 4mm ideal stress indicators; no strength allowables, coupon test or safety factor available.",
+    "K24 state-switching passes at zero clearance with all lips/locks removed, but fails to complete at 1mm sensitivity; real CNC must not be ordered from K18 DXF."
+  ],
+  "release_gates": {
+    "guide02_full_contact_joint_approved": false,
+    "guide10_full_contact_joint_approved": false,
+    "guide10_straight_Y_tool_from_front_accessible": false,
+    "release_during_box_supported": false,
+    "full_6dof_insert_guide_and_tool_path_approved": false,
+    "scaled_cutter_fillet_and_stock_tolerances_measured": false,
+    "cnc_release": false
+  }
+}
