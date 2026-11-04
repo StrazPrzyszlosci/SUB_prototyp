@@ -2,7 +2,7 @@ name: K14 render accompanying PNG preview from own SVG
 on:
   push:
     branches:
-      - research/k14-captive-m5-plate-in-20mm-pad-20261104
+      - research/k14-eccentric-contact-and-tolerance-20261104
     paths:
       - "wyniki/k14_pasy_i_docisk_NIE_CNC.svg"
       - "skrypty/render_svg_png.py"
