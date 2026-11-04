@@ -21,6 +21,8 @@ Its nominal XZ presentation is 16×456 mm. The opening Ø355.8mm has radius 177.
 
 Splitting that rail into two 16×12×228mm nominal pieces would give an upright XZ rectangle corner radius of `hypot(16/2+6,228/2+6) = 120.814mm`, fitting the aperture's projection. This does **not** prove the route inside the cabinet or that either segment can be attached after modules are in place.
 
+The generated K22 geometry independently identifies **G17_15_shelf_2 occupying Z=250–254 mm exactly at the proposed split plane Z=250 mm**. This is a direct coincidence with an existing load-support feature, not a free zone for a connector. Any split at that height must relocate the structural joint or **redesign the shelf and its force-transfer detail**, including hardware and the resulting interference envelopes. Do not manufacture two 228mm rail halves on the assumption that this plane is already usable.
+
 The splice would lie at global Z=250mm, with **zero modeled lap/fasteners**. K17's existing lower and upper contact features and the neighboring box stack must be revisited: this rail currently supplies one of the two nominal support paths for **modules 12, 13, 14, 15**. A butt splice alone is **not mechanically sound** and does not restore certified stiffness or retention. A scarf, overlap, metal sister plate, keyed mechanical connector or rail-carrier change will only be selectable after access/clearances, material tests and stress analysis.
 
 ## Conditional release criteria
