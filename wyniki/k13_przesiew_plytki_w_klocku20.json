@@ -724,7 +724,12 @@
     "one_mount_force_N": 151,
     "two_retainer_screws_equal_share_IF_TRUE_N": 75.5,
     "actual_load_path_known": false,
-    "material_capacity_approved": false
+    "material_capacity_approved": false,
+    "ideal_full_plate_face_minus_holes_mm2": 840.70664,
+    "ideal_full_area_average_wood_bearing_proxy_MPa": 0.179611,
+    "retention_151N_equal_split_is_not_actual_force_path": true,
+    "plate_should_bear_against_wood_shoulders_under_tension_if_full_contact": true,
+    "local_crushing_and_plate_rocking_unverified": true
   },
   "unresolved_checks": [
     {
