@@ -264,16 +264,18 @@
       "category": "mounting",
       "provisional_material": "klejonka bukowa 20 mm lub drewno klejone warstwowo o udokumentowanym gatunku",
       "alternative_materials": [
-        "sklejka brzozowa 21 mm — wymaga aktualizacji bryły i testu"
+        "sklejka brzozowa 21 mm — wymaga aktualizacji bryły i testu",
+        "K13: klejonka bukowa z kieszenią na cofniętą stalową płytkę M5 (płytka6, drewno14) z zachowaniem obrysu20 — badanie hipotezy"
       ],
       "controlling_requirements": "wyrywanie wkładki, rozłupywanie, odspojenie od MDF, cykle serwisowe",
-      "quantitative_evidence": "K10: dla 8 klocków K01 ri=178,9 ro=205, szer.36 i t=20, 0,150336 l modelowe; ρ drewna NIE zidentyfikowane; K11: przy osi R184 i r_wew_klocka178,9 rzeczywiste wkładki RAMPA: M4 OD8 → 1,1 mm, M5 OD10 → 0,1 mm, M6 OD12 → −0,9 mm pasa drewna przy wewnętrznej krawędzi. Dotychczasowy klocek nie jest zatwierdzony.",
-      "qualification_gate": "wybrać kartę drewna i rzeczywistą wkładkę; min 3 próbki na wariant; połączenie klejowe i tolerancje; Zanim wybrać drewno/wkładkę: rozwiązać deficyt promieniowego pasa nośnego, wyznaczyć rzeczywistą nośność układu blok + klej + MDF44, odróżnić moment wkręcenia wkładki RAMPA od momentu śruby kosza.",
+      "quantitative_evidence": "K10: dla 8 klocków K01 ri=178,9 ro=205, szer.36 i t=20, 0,150336 l modelowe; ρ drewna NIE zidentyfikowane; K11: przy osi R184 i r_wew_klocka178,9 rzeczywiste wkładki RAMPA: M4 OD8 → 1,1 mm, M5 OD10 → 0,1 mm, M6 OD12 → −0,9 mm pasa drewna przy wewnętrznej krawędzi. Dotychczasowy klocek nie jest zatwierdzony. K13: 8 płytek stalowych6 schowanych w klockach zwiększa masę o ok. 0,3015 kg (hipoteza ρ drewna700 i stali7850 kg/m3).",
+      "qualification_gate": "wybrać kartę drewna i rzeczywistą wkładkę; min 3 próbki na wariant; połączenie klejowe i tolerancje; Zanim wybrać drewno/wkładkę: rozwiązać deficyt promieniowego pasa nośnego, wyznaczyć rzeczywistą nośność układu blok + klej + MDF44, odróżnić moment wkręcenia wkładki RAMPA od momentu śruby kosza. Weryfikacja K13: rozwarstwienie dna kieszeni, wyrywanie 2 wkrętów, masa/serwis płytki i przejście modułów.",
       "evidence_paths": [
         "raporty/030_P19A_obliczenia_spoin_i_material_kleju.md",
         "raporty/K07_serwis_wkladow_i_audyt_mocowan.md",
         "dokumentacja/inspiracje_zewnetrznych_konstruktorow_mocowanie_RSS390HF4.md",
-        "raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md"
+        "raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md",
+        "raporty/K13_plytka_stalowa_M5_w_klocku20.md"
       ],
       "priority": "I",
       "material_status": "CANDIDATE_NOT_QUALIFIED"
@@ -433,12 +435,13 @@
       ],
       "controlling_requirements": "odrywanie, skręcanie, krytyczne punktowe przenoszenie sił",
       "quantitative_evidence": "P19A liczy 10/100/1718MPa jako hipotezy, nie nośność tego złącza; K11: pad K01 939,6 mm² i tylko umowne F/A=0,1607 MPa dla F151N z P40, nie wytrzymałość spoiny.",
-      "qualification_gate": "rzeczywista szczelina, nośność w peel+shear, zmęczenie i creep",
+      "qualification_gate": "rzeczywista szczelina, nośność w peel+shear, zmęczenie i creep K13: zbadać odrywanie i pełzanie z kieszenią i stalową płytką; 151N P40 nie jest siłą rzeczywistej spoiny.",
       "evidence_paths": [
         "raporty/030_P19A_obliczenia_spoin_i_material_kleju.md",
         "raporty/095_P37B_czulosc_MDF_spoiny.md",
         "raporty/K07_serwis_wkladow_i_audyt_mocowan.md",
-        "raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md"
+        "raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md",
+        "raporty/K13_plytka_stalowa_M5_w_klocku20.md"
       ],
       "priority": "I",
       "material_status": "CANDIDATE_NOT_QUALIFIED"
@@ -470,11 +473,12 @@
         "1/4″-20 niezamienne z M6"
       ],
       "controlling_requirements": "ścinanie, zmęczenie, docisk kołnierza, utrata momentu",
-      "quantitative_evidence": "K08: tylko gabaryty łbów M5/M6 i długości, P40: reakcje śrub",
-      "qualification_gate": "wybrany gwint, przekrój, min długość zakotwienia, korozja, moment z pomiaru",
+      "quantitative_evidence": "K08: tylko gabaryty łbów M5/M6 i długości, P40: reakcje śrub K13: 45 kombinacji M5 × (70/75/80 mm), płytka4–8 mm, uszczelka0,5/1/2; dla płytki6/uszczelki1/M5x75 nominalny gwint5,5 mm i 0 mm wysunięcia. Nie jest to potwierdzenie dopuszczalnego zazębienia i nośności.",
+      "qualification_gate": "wybrany gwint, przekrój, min długość zakotwienia, korozja, moment z pomiaru Wyznaczyć rzeczywiste pasowanie, długość gwintowanego odcinka, dopuszczalny docisk uszczelki i parametry materiałowe.",
       "evidence_paths": [
         "raporty/K07_serwis_wkladow_i_audyt_mocowan.md",
-        "raporty/K08_zlacza_i_rysunki_dayton.md"
+        "raporty/K08_zlacza_i_rysunki_dayton.md",
+        "raporty/K13_plytka_stalowa_M5_w_klocku20.md"
       ],
       "priority": "I",
       "material_status": "CANDIDATE_NOT_QUALIFIED"
@@ -485,15 +489,17 @@
       "category": "hardware",
       "provisional_material": "stal ocynkowana wkładka gwintowana w drewnie — typ i wymiar do wyboru",
       "alternative_materials": [
-        "mosiężna wkładka gwintowana z kartą nośności"
+        "mosiężna wkładka gwintowana z kartą nośności",
+        "K13: zamiast zewnętrznej wkładki M5 Ø10, stalowa wpuszczona płytka S235JR z wewnętrznym gwintem M5, wstępnie 6 mm, z dwoma oddzielnymi wkrętami zabezpieczającymi"
       ],
       "controlling_requirements": "wyrywanie, obrót, dylatacja drewna, wąski pas przy wycięciu",
-      "quantitative_evidence": "K01/K03 bilans geometr.; katalog brak — NO TECHNICAL SIGNOFF; K11 odczyt katalogów RAMPA SKD30 M4 OD8/L12, M5 OD10/L12, M6 OD12/L12 i Fastenright Type D M5 OD10,5; pełna obwiednia kołnierza oraz nośność niezidentyfikowane.",
-      "qualification_gate": "potwierdzić zewnętrzne Ø i L, gniazdo, nośność po cyklach; Nie przenosić katalogowego momentu instalacji w MDF16 na 20mm klejonkę, ani na moment dokręcania kosza.",
+      "quantitative_evidence": "K01/K03 bilans geometr.; katalog brak — NO TECHNICAL SIGNOFF; K11 odczyt katalogów RAMPA SKD30 M4 OD8/L12, M5 OD10/L12, M6 OD12/L12 i Fastenright Type D M5 OD10,5; pełna obwiednia kołnierza oraz nośność niezidentyfikowane. K13: nominalny pas metalu M5 2,1 mm; płytka25,1 × 35 × 6 w klocku20, tylny obrys niezmieniony tylko pod warunkiem schowania łbów.",
+      "qualification_gate": "potwierdzić zewnętrzne Ø i L, gniazdo, nośność po cyklach; Nie przenosić katalogowego momentu instalacji w MDF16 na 20mm klejonkę, ani na moment dokręcania kosza. Zidentyfikować realny wyrób stalowy i śruby zabezpieczające, wyrywanie/wykręcanie, stripping M5, przewidywany sposób wymiany po zerwaniu gwintu; brak normowej zgody na 2,1mm pasa.",
       "evidence_paths": [
         "raporty/K07_serwis_wkladow_i_audyt_mocowan.md",
         "dokumentacja/inspiracje_zewnetrznych_konstruktorow_mocowanie_RSS390HF4.md",
-        "raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md"
+        "raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md",
+        "raporty/K13_plytka_stalowa_M5_w_klocku20.md"
       ],
       "priority": "I",
       "material_status": "CANDIDATE_NOT_QUALIFIED"
