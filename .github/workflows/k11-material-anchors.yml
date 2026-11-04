@@ -29,6 +29,22 @@ jobs:
           from pathlib import Path
           reviewed=json.loads(Path("/tmp/k11-reviewed.json").read_text(encoding="utf-8"))
           actual=json.loads(Path("wyniki/k11_przesiew_materialow_i_wkladek.json").read_text(encoding="utf-8"))
+          if reviewed != actual:
+              def differences(a,b,path="result"):
+                  if type(a) is not type(b):
+                      yield (path,a,b)
+                  elif isinstance(a,dict):
+                      for key in sorted(set(a)|set(b)):
+                          if key not in a or key not in b: yield (path+"."+key,a.get(key,"<MISSING>"),b.get(key,"<MISSING>"))
+                          else: yield from differences(a[key],b[key],path+"."+key)
+                  elif isinstance(a,list):
+                      if len(a)!=len(b): yield (path+".length",len(a),len(b))
+                      for i,(x,y) in enumerate(zip(a,b)): yield from differences(x,y,path+"["+str(i)+"]")
+                  elif a!=b:
+                      yield (path,a,b)
+              for i,(path,was,got) in enumerate(differences(reviewed,actual)):
+                  if i>=12: break
+                  print("K11 REVIEW DIFF:",path,repr(was)[:240],repr(got)[:240])
           assert reviewed==actual,"K11 source-derived results diverge from reviewed JSON"
           assert len(actual["insert_screener"]["catalog_examples"])==6
           assert len(actual["pad_variants"])==5
