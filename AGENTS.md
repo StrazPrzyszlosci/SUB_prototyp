@@ -1846,3 +1846,11 @@ Odtworzono K04–K06. W czterech próbach K07 dla obu luzów kolejność 4–15,
 - Przeniesienie wykonać jako czyste przesunięcia istniejących rozdziałów, zachowując wszystkie oryginalne badania, grafiki, liczby i hipotezy. Nowy króciutki wstęp do wyboru 40 + faworyt Daytona może łączyć istniejący P29/053/054/B12-08; nadal trzeba uczciwie pokazać, że rekomendacja jest warunkowa.
 - W README zachowano główny odsyłacz **#glosniki**, praktyczny **#praktyczny-przewodnik** oraz dodano stały **#badania-alternatywne** do porównań z dwoma STX. Główne odnośniki i obrazy nie mogą zniknąć.
 - CI `skrypty/sprawdz_przewodnik_dayton_stx.py` i `readme-integrity.yml` blokują ponowne przeniesienie dwóch STX nad wybór Daytona albo konstrukcję. Starsze testy K15/K16 nie mogą już wymagać `README.startswith(main)` — aktualny użytkownik autoryzował przełożenie rozdziałów. Muszą natomiast chronić niezmienione archiwum techniczne od sekcji `## Krótki słownik do wykresów` do końca, zachować badania A1–A22, weryfikować brak zgody CNC oraz przyjęte ograniczenia Ø6,5 mm w koszu ≠ MDF.
+
+## 2026-11-04 — K18: CNC reference contour package and unresolved keeper interface
+
+- Derived DXF review contours for 18 MDF22 cabinet/bracing parts, 120 MDF8 removable box faces and 24 MDF8 laminates for 12 K17 rails; 24 nominal 3mm joint pocket envelopes for top/bottom. Full list 162, one generated Node script, geometry and beam-demand audit. No real CAM, physical part or purchase.
+- K17 rigid upper/bottom lips give zero nominal module installation clearance. A 4mm 12mm-reach MDF lip is NOT qualified by the hypothetical 5g elastic screen. This design needs a removable accessible upper keeper, tested support bonds/joints and sweep paths.
+- K17 nominal permanent displacement 1.020928 l changes P30E baseline to approx 99.0984 / 118.8984 / 149.1384l before K01 or real hardware. Optional 3mm tenons extend into MDF pockets; no automatic extra free-air displacement.
+- Evidence: raporty/K18_projekt_CNC_mocowania_wkladow.md; dokumentacja/cnc/README.md; skrypty/k18_cnc_kontury.js; wyniki/k18_mocowania_i_CNC_podsumowanie.json.
+- NEXT: physically installable removable upper keepers and detailed full 20-box and 12-rail assembly trajectory, real MDF/laminate/adhesive coupon qualification, complete cutter/tolerance/terminal/grille design. CNC HOLD.

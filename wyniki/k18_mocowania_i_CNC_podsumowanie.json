@@ -1,0 +1,74 @@
+{
+  "study": "K18",
+  "date": "2026-11-04",
+  "release": "CNC_HOLD_RESEARCH_CONTOURS_ONLY",
+  "input_geometry": "K15 + K17; no change to 20 module boxes or 11 initial braces",
+  "mdf22_contours": 18,
+  "mdf8_module_contours": 120,
+  "mdf8_rail_lamina_contours": 24,
+  "rail_count": 12,
+  "assembled_rail_width_x_mm": 16,
+  "assembled_rail_length_z_mm": 462,
+  "proposed_top_and_bottom_socket_depth_mm": 3,
+  "proposed_socket_total_clearance_xy_mm": 0.5,
+  "socket_outlines": 24,
+  "total_dxf_profiles": 162,
+  "M5_wood_fastener_holes_defined": false,
+  "dayton_factory_cutout_diameter_mm": 355.8,
+  "actual_CNC_toolpaths": false,
+  "rail_lip_height_z_mm": 4,
+  "nominal_gap_between_adjacent_modules_z_mm": 10,
+  "nominal_module_clearance_with_rigid_top_bottom_lips_mm": 0,
+  "rail_displacement_in_air_l": 1.020928,
+  "nominal_rail_total_solid_with_extra_socket_tenons_l": 1.033216,
+  "mdf_removed_by_socket_concept_l": 0.013266,
+  "nominal_net_volumes_l": {
+    "100": {
+      "P30E_l": 100.119294,
+      "K17_l": 99.098366,
+      "K17_and_K01_conditional_l": 98.94803
+    },
+    "120": {
+      "P30E_l": 119.919294,
+      "K17_l": 118.898366,
+      "K17_and_K01_conditional_l": 118.74803
+    },
+    "150": {
+      "P30E_l": 150.159294,
+      "K17_l": 149.138366,
+      "K17_and_K01_conditional_l": 148.98803
+    }
+  },
+  "model_5g_lip_demand": [
+    {
+      "module": "small",
+      "shell_mass_kg": 0.469256,
+      "model_5g_support_N": 11.5085,
+      "lip_bending_MPa": 3.23676,
+      "lip_tip_mm": 0.02877
+    },
+    {
+      "module": "rear_large",
+      "shell_mass_kg": 0.602408,
+      "model_5g_support_N": 14.774,
+      "lip_bending_MPa": 4.1552,
+      "lip_tip_mm": 0.03694
+    },
+    {
+      "module": "front_large",
+      "shell_mass_kg": 0.705425,
+      "model_5g_support_N": 17.3006,
+      "lip_bending_MPa": 4.86578,
+      "lip_tip_mm": 0.04325
+    }
+  ],
+  "major_issues": [
+    "No actual serviceable upper latch; K17 rigid lips contact both box faces with zero nominal play",
+    "4mm lips cannot be qualified from ideal beam result; local fracture and joint need tests",
+    "Bare spines simply touching panels do not establish a dependable attachment; proposed 3mm sockets require material and insertion tests",
+    "Full 462mm rails and all twenty boxes must be insertion-proven through Ø355.8 opening with bracing present",
+    "Real driver fastener, actual basket solid, cable, grill and terminal remain absent",
+    "10mm brace web and cutter radii not verified",
+    "DXF sheets are reference display, not material nesting; no CAM release"
+  ]
+}

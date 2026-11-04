@@ -119,6 +119,8 @@ Dla badanych przetworników sprawdzamy kolejno typ obudowy, potrzebny litraż, p
 
 **Po co trzy litraże?** Zmiana pojemności zmienia sprężystość powietrza i pracę membrany. Wyniki P30E: **100,12 / 119,92 / 150,16 l** to wartości nominalne modelu; różne nastawy nie są automatycznie trzema prawidłowymi rozwiązaniami akustycznymi. [P30E](raporty/078_P30E_mata50_montaz_robustnosc.md) · [Regulacja](#regulacja).
 
+**K18 — rzeczywisty krok do CNC:** przygotowano [162 kontury kontrolne](dokumentacja/cnc/README.md), pełne zestawienie płyt i 24 referencyjne gniazda prowadnic. Modele wykazują, że sztywne górne języki K17 nadal nie zapewniają sprawdzonej drogi montażu. [Obliczenia i rekomendacje K18](raporty/K18_projekt_CNC_mocowania_wkladow.md). **DXF to przegląd geometrii, nie zlecenie frezowania (CNC HOLD).**
+
 ### 3. Badania materiałów, ścian, wręg i połączeń
 
 Najpierw sprawdzamy **sztywność i masę ścian, wręg oraz frontu**, a także materiał i trwałość klejów. Nie zakładamy, że dodatkowy MDF lub metalowy pierścień zawsze są lepsze niż prawidłowo zaprojektowane wzmocnienie. W K10 utworzono **paszporty materiałowe 35 części**. K11 porównuje przy niezmienionym obrysie: ściany MDF25 zmniejszają modelową *geometryczną objętość wnętrza brutto* o **4,381 l** względem MDF22; sklejka brzozowa21 ją zwiększa o **1,478 l**. **Nie są to jeszcze zmiany pojemności netto ani wyniki całego MES**.
