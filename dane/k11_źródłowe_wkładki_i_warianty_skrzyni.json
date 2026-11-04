@@ -43,7 +43,10 @@
       "source": "rampa_SKD30_MDF",
       "manufacturer_tested_board_mm": 16,
       "manufacturer_assembly_torque_Nm": 3.2,
-      "notice": "Manufacturer torque is for INSERT INSTALLATION into specified MDF, NOT torque for speaker mounting screw or 20mm solid wood block."
+      "notice": "Manufacturer torque is for INSERT INSTALLATION into specified MDF, NOT torque for speaker mounting screw or 20mm solid wood block. MDF predrill belongs to the MDF datasheet; beech/wood blocks need a separate hardwood manufacturer pilot and actual edge qualification.",
+      "hardwood_example_predrill_mm": 7,
+      "hardwood_example_board_thickness_mm": 15,
+      "hardwood_example_source": "rampa_hardwood"
     },
     {
       "id": "RAMPA_SKD30_M5_12",
@@ -56,7 +59,10 @@
       "source": "rampa_SKD30_MDF",
       "manufacturer_tested_board_mm": 16,
       "manufacturer_assembly_torque_Nm": 3.2,
-      "notice": "Manufacturer torque is for INSERT INSTALLATION into specified MDF, NOT torque for speaker mounting screw or 20mm solid wood block."
+      "notice": "Manufacturer torque is for INSERT INSTALLATION into specified MDF, NOT torque for speaker mounting screw or 20mm solid wood block. MDF predrill belongs to the MDF datasheet; beech/wood blocks need a separate hardwood manufacturer pilot and actual edge qualification.",
+      "hardwood_example_predrill_mm": 8,
+      "hardwood_example_board_thickness_mm": 15,
+      "hardwood_example_source": "rampa_hardwood"
     },
     {
       "id": "RAMPA_SKD30_M6_12",
@@ -69,7 +75,10 @@
       "source": "rampa_SKD30_MDF",
       "manufacturer_tested_board_mm": 16,
       "manufacturer_assembly_torque_Nm": 6.5,
-      "notice": "Manufacturer torque is for INSERT INSTALLATION into specified MDF, NOT torque for speaker mounting screw or 20mm solid wood block."
+      "notice": "Manufacturer torque is for INSERT INSTALLATION into specified MDF, NOT torque for speaker mounting screw or 20mm solid wood block. MDF predrill belongs to the MDF datasheet; beech/wood blocks need a separate hardwood manufacturer pilot and actual edge qualification.",
+      "hardwood_example_predrill_mm": 10,
+      "hardwood_example_board_thickness_mm": 15,
+      "hardwood_example_source": "rampa_hardwood"
     },
     {
       "id": "RAMPA_SKD30_M6_15",
@@ -82,7 +91,10 @@
       "source": "rampa_SKD30_MDF",
       "manufacturer_tested_board_mm": 19,
       "manufacturer_assembly_torque_Nm": 7.5,
-      "notice": "Manufacturer torque is for INSERT INSTALLATION into specified MDF, NOT torque for speaker mounting screw or 20mm solid wood block."
+      "notice": "Manufacturer torque is for INSERT INSTALLATION into specified MDF, NOT torque for speaker mounting screw or 20mm solid wood block. MDF predrill belongs to the MDF datasheet; beech/wood blocks need a separate hardwood manufacturer pilot and actual edge qualification.",
+      "hardwood_example_predrill_mm": 10,
+      "hardwood_example_board_thickness_mm": 18,
+      "hardwood_example_source": "rampa_hardwood"
     },
     {
       "id": "FASTENRIGHT_TYPE_D_M5_13",
@@ -204,5 +216,5 @@
       "note": "Assumed clearance drilling example for M6, final depends on actual fastener/tolerance; basket already has own 6.5 mm factory holes"
     }
   ],
-  "hole_interpretation": "Manufacturer Dayton 8×Ø6.5 is in METAL BASKET. Choose FRONT MDF clearance hole from actual bolt shaft/head/washer or counterbore and fit, then choose a separate REAR INSERT pilot hole from insert maker, and check concentricity and weakest webs. Dimensions are not copied between these three different layers."
+  "hole_interpretation": "Manufacturer Dayton 8×Ø6.5 is in METAL BASKET. Choose FRONT MDF clearance hole from actual bolt shaft/head/washer or counterbore and fit, then choose a separate REAR INSERT pilot hole from insert maker, and check concentricity and weakest webs. Dimensions are not copied between these three different layers. For RAMPA M5x12 SKD30 the MDF catalogue pilot Ø9 differs from the HARDWOOD reference pilot Ø8; neither should be blindly transferred to glued beech 20mm pads without checking species, substrate and edge distances."
 }
