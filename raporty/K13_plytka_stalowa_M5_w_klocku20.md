@@ -100,3 +100,8 @@ Przy osi **180°** obrys płytki jest tylko **4,5 mm od wewnętrznej ściany**, 
 Dalsze priorytety (w tej kolejności): wybrać faktyczny wkręt przytrzymujący z kartą, zwymiarować fazowanie gwintu M5, podkładki i grubość ściśniętej uszczelki; przygotować **3 porównywalne próbki** dla płytki w klocku, **3** dla bezpośredniej wkładki, **3** dla captive T-nut/hurricane (wszystkie w symulowanym froncie MDF44 i z rzeczywistą spoiną); sprawdzić wyrywanie, obrót, odspajanie i cykle ściągania głośnika; dopiero na właściwym złączu zaktualizować 3D geometrię i **przeliczyć K02/K07 w obu orientacjach**. Warunek finalny: każda ze zmiennych musi mieć tolerancję i źródło. **CNC HOLD**.
 
 [Odtwarzalny skrypt K13](../skrypty/k13_plytka_stalowa_w_klocku20.py) · [Wersjonowane założenia](../dane/k13_plytka_m5_w_klocku20_zalozenia.json) · [Wyniki 45 wariantów](../wyniki/k13_przesiew_plytki_w_klocku20.json) · [Regresja CI](../.github/workflows/k13-captive-steel-plate.yml) · [Paszport K10](../dane/k10_rejestr_materialow_czesci_obudowy.json).
+
+
+## Dopisek weryfikacyjny K14 (4.11.2026)
+
+Dalsze obliczenia **nie potwierdziły jeszcze nośności rozwiązania K13**. [K14 — mimośrodowy docisk i tolerancje](K14_docisk_tolerancje_plytki_M5_w_klocku20.md) wykazało, że nominalny zestaw 0,5 mm drewnianego pasa kieszeni i 2,1 mm pasa stali wyczerpuje budżet geometryczny 2,6 mm; przy dokręcaniu siły osiowe mogą być większe niż zewnętrzna normalna reakcja P40A, a M5×75 nie jest odporny na wszystkie syntetyczne skrajne tolerancje K14. K13 pozostaje poprawnym **warunkowym przesiewem obwiedni i długości śruby**, ale **nie projektem mocowania ani potwierdzeniem bezpieczeństwa**. **CNC HOLD.**
