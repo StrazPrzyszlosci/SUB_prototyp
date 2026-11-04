@@ -1,0 +1,3671 @@
+{
+  "study": "K15",
+  "date": "2026-11-04",
+  "status": "NOMINAL PARAMETRIC 3D RESEARCH MODEL + CUTLIST; NOT A FABRICATION RELEASE — CNC HOLD",
+  "source_links": [
+    "raporty/078_P30E_mata50_montaz_robustnosc.md",
+    "skrypty/p30a_robust_geometry.py",
+    "skrypty/p30e_mat50_geometria_montaz.py",
+    "skrypty/k10_audyt_materialow_obudowy.py",
+    "raporty/K14_docisk_tolerancje_plytki_M5_w_klocku20.md"
+  ],
+  "cfg": {
+    "study": "K15",
+    "revision": "2026-11-04",
+    "body_mm": {
+      "W": 1020,
+      "D": 425,
+      "H": 500
+    },
+    "front_mm": 44,
+    "wall_mm": 22,
+    "module_wall_mm": 8,
+    "cutout_factory_reference_d_mm": 355.8,
+    "basket_factory_hole_d_mm": 6.5,
+    "flange_hole_pcd_mm": 368,
+    "driver_axis_xz_mm": [
+      231,
+      250
+    ],
+    "rear_mat_mm": 50,
+    "pad_reference_mm": {
+      "inner_r": 178.9,
+      "outer_r": 205,
+      "tangential": 36,
+      "depth": 20
+    },
+    "total_depth_scenario_max_mm": 481,
+    "driver_displacement_hypothesis_l": 5,
+    "hardware_displacement_hypothesis_l": 0.175
+  },
+  "inside_mm": [
+    976,
+    359,
+    456
+  ],
+  "quantities": {
+    "structural_shell": 7,
+    "braces": 11,
+    "modular_box_panels": 120,
+    "all_reference_blanks": 138,
+    "modules": 20
+  },
+  "nominal_panel_area_m2_by_material_thickness": {
+    "8": 2.11296,
+    "22": 2.662908
+  },
+  "nominal_cavity_enclosure_shell_l": 52.600134,
+  "nominal_11_braces_l": 1.60908,
+  "reference_mdf7plus11_mass_kg_at_730": 39.572726,
+  "nominal_module_shell_mdf8_l": 16.90368,
+  "total_MDF_mass_all_20_modules_kg_ignoring_hardware": 51.912413,
+  "modelled_mat_solid_hypothesis_l": 0.31173,
+  "reference_module_count_by_size": {
+    "small": 4,
+    "rear": 8,
+    "front": 8
+  },
+  "reference_net_l_P30E_no_new_pads": {
+    "100": 100.119294,
+    "120": 119.919294,
+    "150": 150.159294
+  },
+  "exploratory_net_l_if_K01_8pads_NOT_previously_counted": {
+    "100": 99.968958,
+    "120": 119.768958,
+    "150": 150.008958
+  },
+  "pad_displacement_l_only_if_new_and_full_eight_present": 0.150336,
+  "reference_visible_driver_basket_metal_hole_d_mm": 6.5,
+  "front_MDF_mounting_holes_have_NOT_been_defined": true,
+  "example_M5_MDF_through_hole_mm_ONLY_NONAPPROVED": 5.5,
+  "reference_front_large_cutout_d_mm_NOT_MACHINE_PROGRAM": 355.8,
+  "solid_AABB_clashes_in_provisional_nominal_box_elements": [],
+  "module_positions": [
+    {
+      "i": 0,
+      "global_center_xyz_mm": [
+        121,
+        297,
+        112
+      ],
+      "local_center_xyz_mm": [
+        99,
+        253,
+        90
+      ],
+      "dims_xyz_mm": [
+        180,
+        100,
+        100
+      ],
+      "global_origin_xyz_mm": [
+        31,
+        247,
+        62
+      ],
+      "candidate_state_inclusion": [
+        "100"
+      ]
+    },
+    {
+      "i": 1,
+      "global_center_xyz_mm": [
+        121,
+        297,
+        388
+      ],
+      "local_center_xyz_mm": [
+        99,
+        253,
+        366
+      ],
+      "dims_xyz_mm": [
+        180,
+        100,
+        100
+      ],
+      "global_origin_xyz_mm": [
+        31,
+        247,
+        338
+      ],
+      "candidate_state_inclusion": [
+        "100"
+      ]
+    },
+    {
+      "i": 2,
+      "global_center_xyz_mm": [
+        345,
+        297,
+        112
+      ],
+      "local_center_xyz_mm": [
+        323,
+        253,
+        90
+      ],
+      "dims_xyz_mm": [
+        180,
+        100,
+        100
+      ],
+      "global_origin_xyz_mm": [
+        255,
+        247,
+        62
+      ],
+      "candidate_state_inclusion": [
+        "100"
+      ]
+    },
+    {
+      "i": 3,
+      "global_center_xyz_mm": [
+        345,
+        297,
+        388
+      ],
+      "local_center_xyz_mm": [
+        323,
+        253,
+        366
+      ],
+      "dims_xyz_mm": [
+        180,
+        100,
+        100
+      ],
+      "global_origin_xyz_mm": [
+        255,
+        247,
+        338
+      ],
+      "candidate_state_inclusion": [
+        "100"
+      ]
+    },
+    {
+      "i": 4,
+      "global_center_xyz_mm": [
+        871.5,
+        287,
+        84
+      ],
+      "local_center_xyz_mm": [
+        849.5,
+        243,
+        62
+      ],
+      "dims_xyz_mm": [
+        210,
+        120,
+        100
+      ],
+      "global_origin_xyz_mm": [
+        766.5,
+        227,
+        34
+      ],
+      "candidate_state_inclusion": [
+        "100",
+        "120",
+        "150"
+      ]
+    },
+    {
+      "i": 5,
+      "global_center_xyz_mm": [
+        871.5,
+        287,
+        414
+      ],
+      "local_center_xyz_mm": [
+        849.5,
+        243,
+        392
+      ],
+      "dims_xyz_mm": [
+        210,
+        120,
+        100
+      ],
+      "global_origin_xyz_mm": [
+        766.5,
+        227,
+        364
+      ],
+      "candidate_state_inclusion": [
+        "100",
+        "120"
+      ]
+    },
+    {
+      "i": 6,
+      "global_center_xyz_mm": [
+        871.5,
+        287,
+        194
+      ],
+      "local_center_xyz_mm": [
+        849.5,
+        243,
+        172
+      ],
+      "dims_xyz_mm": [
+        210,
+        120,
+        100
+      ],
+      "global_origin_xyz_mm": [
+        766.5,
+        227,
+        144
+      ],
+      "candidate_state_inclusion": [
+        "100",
+        "120"
+      ]
+    },
+    {
+      "i": 7,
+      "global_center_xyz_mm": [
+        871.5,
+        287,
+        304
+      ],
+      "local_center_xyz_mm": [
+        849.5,
+        243,
+        282
+      ],
+      "dims_xyz_mm": [
+        210,
+        120,
+        100
+      ],
+      "global_origin_xyz_mm": [
+        766.5,
+        227,
+        254
+      ],
+      "candidate_state_inclusion": [
+        "100",
+        "120"
+      ]
+    },
+    {
+      "i": 8,
+      "global_center_xyz_mm": [
+        871.5,
+        127,
+        84
+      ],
+      "local_center_xyz_mm": [
+        849.5,
+        83,
+        62
+      ],
+      "dims_xyz_mm": [
+        210,
+        150,
+        100
+      ],
+      "global_origin_xyz_mm": [
+        766.5,
+        52,
+        34
+      ],
+      "candidate_state_inclusion": [
+        "100",
+        "120"
+      ]
+    },
+    {
+      "i": 9,
+      "global_center_xyz_mm": [
+        871.5,
+        127,
+        414
+      ],
+      "local_center_xyz_mm": [
+        849.5,
+        83,
+        392
+      ],
+      "dims_xyz_mm": [
+        210,
+        150,
+        100
+      ],
+      "global_origin_xyz_mm": [
+        766.5,
+        52,
+        364
+      ],
+      "candidate_state_inclusion": [
+        "100",
+        "120"
+      ]
+    },
+    {
+      "i": 10,
+      "global_center_xyz_mm": [
+        871.5,
+        127,
+        194
+      ],
+      "local_center_xyz_mm": [
+        849.5,
+        83,
+        172
+      ],
+      "dims_xyz_mm": [
+        210,
+        150,
+        100
+      ],
+      "global_origin_xyz_mm": [
+        766.5,
+        52,
+        144
+      ],
+      "candidate_state_inclusion": [
+        "100",
+        "120"
+      ]
+    },
+    {
+      "i": 11,
+      "global_center_xyz_mm": [
+        871.5,
+        127,
+        304
+      ],
+      "local_center_xyz_mm": [
+        849.5,
+        83,
+        282
+      ],
+      "dims_xyz_mm": [
+        210,
+        150,
+        100
+      ],
+      "global_origin_xyz_mm": [
+        766.5,
+        52,
+        254
+      ],
+      "candidate_state_inclusion": [
+        "100",
+        "120"
+      ]
+    },
+    {
+      "i": 12,
+      "global_center_xyz_mm": [
+        596.5,
+        287,
+        84
+      ],
+      "local_center_xyz_mm": [
+        574.5,
+        243,
+        62
+      ],
+      "dims_xyz_mm": [
+        210,
+        120,
+        100
+      ],
+      "global_origin_xyz_mm": [
+        491.5,
+        227,
+        34
+      ],
+      "candidate_state_inclusion": [
+        "100",
+        "120"
+      ]
+    },
+    {
+      "i": 13,
+      "global_center_xyz_mm": [
+        596.5,
+        287,
+        414
+      ],
+      "local_center_xyz_mm": [
+        574.5,
+        243,
+        392
+      ],
+      "dims_xyz_mm": [
+        210,
+        120,
+        100
+      ],
+      "global_origin_xyz_mm": [
+        491.5,
+        227,
+        364
+      ],
+      "candidate_state_inclusion": [
+        "100",
+        "120"
+      ]
+    },
+    {
+      "i": 14,
+      "global_center_xyz_mm": [
+        596.5,
+        287,
+        194
+      ],
+      "local_center_xyz_mm": [
+        574.5,
+        243,
+        172
+      ],
+      "dims_xyz_mm": [
+        210,
+        120,
+        100
+      ],
+      "global_origin_xyz_mm": [
+        491.5,
+        227,
+        144
+      ],
+      "candidate_state_inclusion": [
+        "100",
+        "120"
+      ]
+    },
+    {
+      "i": 15,
+      "global_center_xyz_mm": [
+        596.5,
+        287,
+        304
+      ],
+      "local_center_xyz_mm": [
+        574.5,
+        243,
+        282
+      ],
+      "dims_xyz_mm": [
+        210,
+        120,
+        100
+      ],
+      "global_origin_xyz_mm": [
+        491.5,
+        227,
+        254
+      ],
+      "candidate_state_inclusion": [
+        "100",
+        "120"
+      ]
+    },
+    {
+      "i": 16,
+      "global_center_xyz_mm": [
+        596.5,
+        127,
+        84
+      ],
+      "local_center_xyz_mm": [
+        574.5,
+        83,
+        62
+      ],
+      "dims_xyz_mm": [
+        210,
+        150,
+        100
+      ],
+      "global_origin_xyz_mm": [
+        491.5,
+        52,
+        34
+      ],
+      "candidate_state_inclusion": [
+        "100"
+      ]
+    },
+    {
+      "i": 17,
+      "global_center_xyz_mm": [
+        596.5,
+        127,
+        414
+      ],
+      "local_center_xyz_mm": [
+        574.5,
+        83,
+        392
+      ],
+      "dims_xyz_mm": [
+        210,
+        150,
+        100
+      ],
+      "global_origin_xyz_mm": [
+        491.5,
+        52,
+        364
+      ],
+      "candidate_state_inclusion": [
+        "100"
+      ]
+    },
+    {
+      "i": 18,
+      "global_center_xyz_mm": [
+        596.5,
+        127,
+        194
+      ],
+      "local_center_xyz_mm": [
+        574.5,
+        83,
+        172
+      ],
+      "dims_xyz_mm": [
+        210,
+        150,
+        100
+      ],
+      "global_origin_xyz_mm": [
+        491.5,
+        52,
+        144
+      ],
+      "candidate_state_inclusion": [
+        "100"
+      ]
+    },
+    {
+      "i": 19,
+      "global_center_xyz_mm": [
+        596.5,
+        127,
+        304
+      ],
+      "local_center_xyz_mm": [
+        574.5,
+        83,
+        282
+      ],
+      "dims_xyz_mm": [
+        210,
+        150,
+        100
+      ],
+      "global_origin_xyz_mm": [
+        491.5,
+        52,
+        254
+      ],
+      "candidate_state_inclusion": [
+        "100"
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "id": "FR1",
+      "type": "front",
+      "material_candidate": "MDF22_UNVERIFIED",
+      "thickness_mm": 22,
+      "blank_a_mm": 1020,
+      "blank_b_mm": 500,
+      "local_origin_global_xyz_mm": [
+        0,
+        0,
+        0
+      ],
+      "box_size_xyz_mm": [
+        1020,
+        22,
+        500
+      ],
+      "module_index": -1,
+      "notes": "front laminate ply 1; reference cutout; no fastener drilling",
+      "source_id": "P30E",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "FR2",
+      "type": "front",
+      "material_candidate": "MDF22_UNVERIFIED",
+      "thickness_mm": 22,
+      "blank_a_mm": 1020,
+      "blank_b_mm": 500,
+      "local_origin_global_xyz_mm": [
+        0,
+        22,
+        0
+      ],
+      "box_size_xyz_mm": [
+        1020,
+        22,
+        500
+      ],
+      "module_index": -1,
+      "notes": "front laminate ply 2; reference cutout; bond not specified",
+      "source_id": "P30E",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "BACK",
+      "type": "shell",
+      "material_candidate": "MDF22_UNVERIFIED",
+      "thickness_mm": 22,
+      "blank_a_mm": 1020,
+      "blank_b_mm": 500,
+      "local_origin_global_xyz_mm": [
+        0,
+        403,
+        0
+      ],
+      "box_size_xyz_mm": [
+        1020,
+        22,
+        500
+      ],
+      "module_index": -1,
+      "notes": "full width full height back; terminal opening not defined",
+      "source_id": "P30E",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "SIDE_L",
+      "type": "shell",
+      "material_candidate": "MDF22_UNVERIFIED",
+      "thickness_mm": 22,
+      "blank_a_mm": 359,
+      "blank_b_mm": 500,
+      "local_origin_global_xyz_mm": [
+        0,
+        44,
+        0
+      ],
+      "box_size_xyz_mm": [
+        22,
+        359,
+        500
+      ],
+      "module_index": -1,
+      "notes": "full height butt joint; joinery and adhesive not qualified",
+      "source_id": "P30E",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "SIDE_R",
+      "type": "shell",
+      "material_candidate": "MDF22_UNVERIFIED",
+      "thickness_mm": 22,
+      "blank_a_mm": 359,
+      "blank_b_mm": 500,
+      "local_origin_global_xyz_mm": [
+        998,
+        44,
+        0
+      ],
+      "box_size_xyz_mm": [
+        22,
+        359,
+        500
+      ],
+      "module_index": -1,
+      "notes": "full height butt joint; joinery and adhesive not qualified",
+      "source_id": "P30E",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "BOTTOM",
+      "type": "shell",
+      "material_candidate": "MDF22_UNVERIFIED",
+      "thickness_mm": 22,
+      "blank_a_mm": 976,
+      "blank_b_mm": 359,
+      "local_origin_global_xyz_mm": [
+        22,
+        44,
+        0
+      ],
+      "box_size_xyz_mm": [
+        976,
+        359,
+        22
+      ],
+      "module_index": -1,
+      "notes": "between sides",
+      "source_id": "P30E",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "TOP",
+      "type": "shell",
+      "material_candidate": "MDF22_UNVERIFIED",
+      "thickness_mm": 22,
+      "blank_a_mm": 976,
+      "blank_b_mm": 359,
+      "local_origin_global_xyz_mm": [
+        22,
+        44,
+        478
+      ],
+      "box_size_xyz_mm": [
+        976,
+        359,
+        22
+      ],
+      "module_index": -1,
+      "notes": "between sides",
+      "source_id": "P30E",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "B1_LOW",
+      "type": "brace",
+      "material_candidate": "MDF22_UNVERIFIED",
+      "thickness_mm": 22,
+      "blank_a_mm": 359,
+      "blank_b_mm": 22,
+      "local_origin_global_xyz_mm": [
+        448,
+        44,
+        22
+      ],
+      "box_size_xyz_mm": [
+        22,
+        359,
+        22
+      ],
+      "module_index": -1,
+      "notes": "P30A/P30E AABB surrogate; no dado/mitre/joint dimensions",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "B1_UP",
+      "type": "brace",
+      "material_candidate": "MDF22_UNVERIFIED",
+      "thickness_mm": 22,
+      "blank_a_mm": 359,
+      "blank_b_mm": 22,
+      "local_origin_global_xyz_mm": [
+        448,
+        44,
+        456
+      ],
+      "box_size_xyz_mm": [
+        22,
+        359,
+        22
+      ],
+      "module_index": -1,
+      "notes": "P30A/P30E AABB surrogate; no dado/mitre/joint dimensions",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "B1_FRONT_WEB",
+      "type": "brace",
+      "material_candidate": "MDF22_UNVERIFIED",
+      "thickness_mm": 22,
+      "blank_a_mm": 10,
+      "blank_b_mm": 412,
+      "local_origin_global_xyz_mm": [
+        448,
+        44,
+        44
+      ],
+      "box_size_xyz_mm": [
+        22,
+        10,
+        412
+      ],
+      "module_index": -1,
+      "notes": "P30A/P30E AABB surrogate; no dado/mitre/joint dimensions",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "B1_REAR_WEB",
+      "type": "brace",
+      "material_candidate": "MDF22_UNVERIFIED",
+      "thickness_mm": 22,
+      "blank_a_mm": 22,
+      "blank_b_mm": 412,
+      "local_origin_global_xyz_mm": [
+        448,
+        381,
+        44
+      ],
+      "box_size_xyz_mm": [
+        22,
+        22,
+        412
+      ],
+      "module_index": -1,
+      "notes": "P30A/P30E AABB surrogate; no dado/mitre/joint dimensions",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "B2_LOW",
+      "type": "brace",
+      "material_candidate": "MDF22_UNVERIFIED",
+      "thickness_mm": 22,
+      "blank_a_mm": 359,
+      "blank_b_mm": 22,
+      "local_origin_global_xyz_mm": [
+        723,
+        44,
+        22
+      ],
+      "box_size_xyz_mm": [
+        22,
+        359,
+        22
+      ],
+      "module_index": -1,
+      "notes": "P30A/P30E AABB surrogate; no dado/mitre/joint dimensions",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "B2_UP",
+      "type": "brace",
+      "material_candidate": "MDF22_UNVERIFIED",
+      "thickness_mm": 22,
+      "blank_a_mm": 359,
+      "blank_b_mm": 22,
+      "local_origin_global_xyz_mm": [
+        723,
+        44,
+        456
+      ],
+      "box_size_xyz_mm": [
+        22,
+        359,
+        22
+      ],
+      "module_index": -1,
+      "notes": "P30A/P30E AABB surrogate; no dado/mitre/joint dimensions",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "B2_FRONT_WEB",
+      "type": "brace",
+      "material_candidate": "MDF22_UNVERIFIED",
+      "thickness_mm": 22,
+      "blank_a_mm": 10,
+      "blank_b_mm": 412,
+      "local_origin_global_xyz_mm": [
+        723,
+        44,
+        44
+      ],
+      "box_size_xyz_mm": [
+        22,
+        10,
+        412
+      ],
+      "module_index": -1,
+      "notes": "P30A/P30E AABB surrogate; no dado/mitre/joint dimensions",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "B2_REAR_WEB",
+      "type": "brace",
+      "material_candidate": "MDF22_UNVERIFIED",
+      "thickness_mm": 22,
+      "blank_a_mm": 22,
+      "blank_b_mm": 412,
+      "local_origin_global_xyz_mm": [
+        723,
+        381,
+        44
+      ],
+      "box_size_xyz_mm": [
+        22,
+        22,
+        412
+      ],
+      "module_index": -1,
+      "notes": "P30A/P30E AABB surrogate; no dado/mitre/joint dimensions",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "B3_LOW",
+      "type": "brace",
+      "material_candidate": "MDF22_UNVERIFIED",
+      "thickness_mm": 22,
+      "blank_a_mm": 139,
+      "blank_b_mm": 22,
+      "local_origin_global_xyz_mm": [
+        220,
+        264,
+        22
+      ],
+      "box_size_xyz_mm": [
+        22,
+        139,
+        22
+      ],
+      "module_index": -1,
+      "notes": "P30A/P30E AABB surrogate; no dado/mitre/joint dimensions",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "B3_UP",
+      "type": "brace",
+      "material_candidate": "MDF22_UNVERIFIED",
+      "thickness_mm": 22,
+      "blank_a_mm": 139,
+      "blank_b_mm": 22,
+      "local_origin_global_xyz_mm": [
+        220,
+        264,
+        456
+      ],
+      "box_size_xyz_mm": [
+        22,
+        139,
+        22
+      ],
+      "module_index": -1,
+      "notes": "P30A/P30E AABB surrogate; no dado/mitre/joint dimensions",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "B3_REAR_WEB",
+      "type": "brace",
+      "material_candidate": "MDF22_UNVERIFIED",
+      "thickness_mm": 22,
+      "blank_a_mm": 22,
+      "blank_b_mm": 412,
+      "local_origin_global_xyz_mm": [
+        220,
+        381,
+        44
+      ],
+      "box_size_xyz_mm": [
+        22,
+        22,
+        412
+      ],
+      "module_index": -1,
+      "notes": "P30A/P30E AABB surrogate; no dado/mitre/joint dimensions",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M00_XL",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 100,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        31,
+        247,
+        62
+      ],
+      "box_size_xyz_mm": [
+        8,
+        100,
+        100
+      ],
+      "module_index": 0,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M00_XR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 100,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        203,
+        247,
+        62
+      ],
+      "box_size_xyz_mm": [
+        8,
+        100,
+        100
+      ],
+      "module_index": 0,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M00_YF",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 164,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        39,
+        247,
+        62
+      ],
+      "box_size_xyz_mm": [
+        164,
+        8,
+        100
+      ],
+      "module_index": 0,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M00_YR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 164,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        39,
+        339,
+        62
+      ],
+      "box_size_xyz_mm": [
+        164,
+        8,
+        100
+      ],
+      "module_index": 0,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M00_ZB",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 164,
+      "blank_b_mm": 84,
+      "local_origin_global_xyz_mm": [
+        39,
+        255,
+        62
+      ],
+      "box_size_xyz_mm": [
+        164,
+        84,
+        8
+      ],
+      "module_index": 0,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M00_ZT",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 164,
+      "blank_b_mm": 84,
+      "local_origin_global_xyz_mm": [
+        39,
+        255,
+        154
+      ],
+      "box_size_xyz_mm": [
+        164,
+        84,
+        8
+      ],
+      "module_index": 0,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M01_XL",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 100,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        31,
+        247,
+        338
+      ],
+      "box_size_xyz_mm": [
+        8,
+        100,
+        100
+      ],
+      "module_index": 1,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M01_XR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 100,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        203,
+        247,
+        338
+      ],
+      "box_size_xyz_mm": [
+        8,
+        100,
+        100
+      ],
+      "module_index": 1,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M01_YF",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 164,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        39,
+        247,
+        338
+      ],
+      "box_size_xyz_mm": [
+        164,
+        8,
+        100
+      ],
+      "module_index": 1,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M01_YR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 164,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        39,
+        339,
+        338
+      ],
+      "box_size_xyz_mm": [
+        164,
+        8,
+        100
+      ],
+      "module_index": 1,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M01_ZB",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 164,
+      "blank_b_mm": 84,
+      "local_origin_global_xyz_mm": [
+        39,
+        255,
+        338
+      ],
+      "box_size_xyz_mm": [
+        164,
+        84,
+        8
+      ],
+      "module_index": 1,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M01_ZT",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 164,
+      "blank_b_mm": 84,
+      "local_origin_global_xyz_mm": [
+        39,
+        255,
+        430
+      ],
+      "box_size_xyz_mm": [
+        164,
+        84,
+        8
+      ],
+      "module_index": 1,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M02_XL",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 100,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        255,
+        247,
+        62
+      ],
+      "box_size_xyz_mm": [
+        8,
+        100,
+        100
+      ],
+      "module_index": 2,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M02_XR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 100,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        427,
+        247,
+        62
+      ],
+      "box_size_xyz_mm": [
+        8,
+        100,
+        100
+      ],
+      "module_index": 2,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M02_YF",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 164,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        263,
+        247,
+        62
+      ],
+      "box_size_xyz_mm": [
+        164,
+        8,
+        100
+      ],
+      "module_index": 2,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M02_YR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 164,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        263,
+        339,
+        62
+      ],
+      "box_size_xyz_mm": [
+        164,
+        8,
+        100
+      ],
+      "module_index": 2,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M02_ZB",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 164,
+      "blank_b_mm": 84,
+      "local_origin_global_xyz_mm": [
+        263,
+        255,
+        62
+      ],
+      "box_size_xyz_mm": [
+        164,
+        84,
+        8
+      ],
+      "module_index": 2,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M02_ZT",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 164,
+      "blank_b_mm": 84,
+      "local_origin_global_xyz_mm": [
+        263,
+        255,
+        154
+      ],
+      "box_size_xyz_mm": [
+        164,
+        84,
+        8
+      ],
+      "module_index": 2,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M03_XL",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 100,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        255,
+        247,
+        338
+      ],
+      "box_size_xyz_mm": [
+        8,
+        100,
+        100
+      ],
+      "module_index": 3,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M03_XR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 100,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        427,
+        247,
+        338
+      ],
+      "box_size_xyz_mm": [
+        8,
+        100,
+        100
+      ],
+      "module_index": 3,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M03_YF",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 164,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        263,
+        247,
+        338
+      ],
+      "box_size_xyz_mm": [
+        164,
+        8,
+        100
+      ],
+      "module_index": 3,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M03_YR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 164,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        263,
+        339,
+        338
+      ],
+      "box_size_xyz_mm": [
+        164,
+        8,
+        100
+      ],
+      "module_index": 3,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M03_ZB",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 164,
+      "blank_b_mm": 84,
+      "local_origin_global_xyz_mm": [
+        263,
+        255,
+        338
+      ],
+      "box_size_xyz_mm": [
+        164,
+        84,
+        8
+      ],
+      "module_index": 3,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M03_ZT",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 164,
+      "blank_b_mm": 84,
+      "local_origin_global_xyz_mm": [
+        263,
+        255,
+        430
+      ],
+      "box_size_xyz_mm": [
+        164,
+        84,
+        8
+      ],
+      "module_index": 3,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M04_XL",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 120,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        766.5,
+        227,
+        34
+      ],
+      "box_size_xyz_mm": [
+        8,
+        120,
+        100
+      ],
+      "module_index": 4,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M04_XR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 120,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        968.5,
+        227,
+        34
+      ],
+      "box_size_xyz_mm": [
+        8,
+        120,
+        100
+      ],
+      "module_index": 4,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M04_YF",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        774.5,
+        227,
+        34
+      ],
+      "box_size_xyz_mm": [
+        194,
+        8,
+        100
+      ],
+      "module_index": 4,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M04_YR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        774.5,
+        339,
+        34
+      ],
+      "box_size_xyz_mm": [
+        194,
+        8,
+        100
+      ],
+      "module_index": 4,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M04_ZB",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 104,
+      "local_origin_global_xyz_mm": [
+        774.5,
+        235,
+        34
+      ],
+      "box_size_xyz_mm": [
+        194,
+        104,
+        8
+      ],
+      "module_index": 4,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M04_ZT",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 104,
+      "local_origin_global_xyz_mm": [
+        774.5,
+        235,
+        126
+      ],
+      "box_size_xyz_mm": [
+        194,
+        104,
+        8
+      ],
+      "module_index": 4,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M05_XL",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 120,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        766.5,
+        227,
+        364
+      ],
+      "box_size_xyz_mm": [
+        8,
+        120,
+        100
+      ],
+      "module_index": 5,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M05_XR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 120,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        968.5,
+        227,
+        364
+      ],
+      "box_size_xyz_mm": [
+        8,
+        120,
+        100
+      ],
+      "module_index": 5,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M05_YF",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        774.5,
+        227,
+        364
+      ],
+      "box_size_xyz_mm": [
+        194,
+        8,
+        100
+      ],
+      "module_index": 5,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M05_YR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        774.5,
+        339,
+        364
+      ],
+      "box_size_xyz_mm": [
+        194,
+        8,
+        100
+      ],
+      "module_index": 5,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M05_ZB",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 104,
+      "local_origin_global_xyz_mm": [
+        774.5,
+        235,
+        364
+      ],
+      "box_size_xyz_mm": [
+        194,
+        104,
+        8
+      ],
+      "module_index": 5,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M05_ZT",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 104,
+      "local_origin_global_xyz_mm": [
+        774.5,
+        235,
+        456
+      ],
+      "box_size_xyz_mm": [
+        194,
+        104,
+        8
+      ],
+      "module_index": 5,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M06_XL",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 120,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        766.5,
+        227,
+        144
+      ],
+      "box_size_xyz_mm": [
+        8,
+        120,
+        100
+      ],
+      "module_index": 6,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M06_XR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 120,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        968.5,
+        227,
+        144
+      ],
+      "box_size_xyz_mm": [
+        8,
+        120,
+        100
+      ],
+      "module_index": 6,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M06_YF",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        774.5,
+        227,
+        144
+      ],
+      "box_size_xyz_mm": [
+        194,
+        8,
+        100
+      ],
+      "module_index": 6,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M06_YR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        774.5,
+        339,
+        144
+      ],
+      "box_size_xyz_mm": [
+        194,
+        8,
+        100
+      ],
+      "module_index": 6,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M06_ZB",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 104,
+      "local_origin_global_xyz_mm": [
+        774.5,
+        235,
+        144
+      ],
+      "box_size_xyz_mm": [
+        194,
+        104,
+        8
+      ],
+      "module_index": 6,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M06_ZT",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 104,
+      "local_origin_global_xyz_mm": [
+        774.5,
+        235,
+        236
+      ],
+      "box_size_xyz_mm": [
+        194,
+        104,
+        8
+      ],
+      "module_index": 6,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M07_XL",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 120,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        766.5,
+        227,
+        254
+      ],
+      "box_size_xyz_mm": [
+        8,
+        120,
+        100
+      ],
+      "module_index": 7,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M07_XR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 120,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        968.5,
+        227,
+        254
+      ],
+      "box_size_xyz_mm": [
+        8,
+        120,
+        100
+      ],
+      "module_index": 7,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M07_YF",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        774.5,
+        227,
+        254
+      ],
+      "box_size_xyz_mm": [
+        194,
+        8,
+        100
+      ],
+      "module_index": 7,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M07_YR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        774.5,
+        339,
+        254
+      ],
+      "box_size_xyz_mm": [
+        194,
+        8,
+        100
+      ],
+      "module_index": 7,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M07_ZB",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 104,
+      "local_origin_global_xyz_mm": [
+        774.5,
+        235,
+        254
+      ],
+      "box_size_xyz_mm": [
+        194,
+        104,
+        8
+      ],
+      "module_index": 7,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M07_ZT",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 104,
+      "local_origin_global_xyz_mm": [
+        774.5,
+        235,
+        346
+      ],
+      "box_size_xyz_mm": [
+        194,
+        104,
+        8
+      ],
+      "module_index": 7,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M08_XL",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 150,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        766.5,
+        52,
+        34
+      ],
+      "box_size_xyz_mm": [
+        8,
+        150,
+        100
+      ],
+      "module_index": 8,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M08_XR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 150,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        968.5,
+        52,
+        34
+      ],
+      "box_size_xyz_mm": [
+        8,
+        150,
+        100
+      ],
+      "module_index": 8,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M08_YF",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        774.5,
+        52,
+        34
+      ],
+      "box_size_xyz_mm": [
+        194,
+        8,
+        100
+      ],
+      "module_index": 8,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M08_YR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        774.5,
+        194,
+        34
+      ],
+      "box_size_xyz_mm": [
+        194,
+        8,
+        100
+      ],
+      "module_index": 8,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M08_ZB",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 134,
+      "local_origin_global_xyz_mm": [
+        774.5,
+        60,
+        34
+      ],
+      "box_size_xyz_mm": [
+        194,
+        134,
+        8
+      ],
+      "module_index": 8,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M08_ZT",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 134,
+      "local_origin_global_xyz_mm": [
+        774.5,
+        60,
+        126
+      ],
+      "box_size_xyz_mm": [
+        194,
+        134,
+        8
+      ],
+      "module_index": 8,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M09_XL",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 150,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        766.5,
+        52,
+        364
+      ],
+      "box_size_xyz_mm": [
+        8,
+        150,
+        100
+      ],
+      "module_index": 9,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M09_XR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 150,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        968.5,
+        52,
+        364
+      ],
+      "box_size_xyz_mm": [
+        8,
+        150,
+        100
+      ],
+      "module_index": 9,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M09_YF",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        774.5,
+        52,
+        364
+      ],
+      "box_size_xyz_mm": [
+        194,
+        8,
+        100
+      ],
+      "module_index": 9,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M09_YR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        774.5,
+        194,
+        364
+      ],
+      "box_size_xyz_mm": [
+        194,
+        8,
+        100
+      ],
+      "module_index": 9,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M09_ZB",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 134,
+      "local_origin_global_xyz_mm": [
+        774.5,
+        60,
+        364
+      ],
+      "box_size_xyz_mm": [
+        194,
+        134,
+        8
+      ],
+      "module_index": 9,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M09_ZT",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 134,
+      "local_origin_global_xyz_mm": [
+        774.5,
+        60,
+        456
+      ],
+      "box_size_xyz_mm": [
+        194,
+        134,
+        8
+      ],
+      "module_index": 9,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M10_XL",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 150,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        766.5,
+        52,
+        144
+      ],
+      "box_size_xyz_mm": [
+        8,
+        150,
+        100
+      ],
+      "module_index": 10,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M10_XR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 150,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        968.5,
+        52,
+        144
+      ],
+      "box_size_xyz_mm": [
+        8,
+        150,
+        100
+      ],
+      "module_index": 10,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M10_YF",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        774.5,
+        52,
+        144
+      ],
+      "box_size_xyz_mm": [
+        194,
+        8,
+        100
+      ],
+      "module_index": 10,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M10_YR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        774.5,
+        194,
+        144
+      ],
+      "box_size_xyz_mm": [
+        194,
+        8,
+        100
+      ],
+      "module_index": 10,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M10_ZB",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 134,
+      "local_origin_global_xyz_mm": [
+        774.5,
+        60,
+        144
+      ],
+      "box_size_xyz_mm": [
+        194,
+        134,
+        8
+      ],
+      "module_index": 10,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M10_ZT",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 134,
+      "local_origin_global_xyz_mm": [
+        774.5,
+        60,
+        236
+      ],
+      "box_size_xyz_mm": [
+        194,
+        134,
+        8
+      ],
+      "module_index": 10,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M11_XL",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 150,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        766.5,
+        52,
+        254
+      ],
+      "box_size_xyz_mm": [
+        8,
+        150,
+        100
+      ],
+      "module_index": 11,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M11_XR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 150,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        968.5,
+        52,
+        254
+      ],
+      "box_size_xyz_mm": [
+        8,
+        150,
+        100
+      ],
+      "module_index": 11,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M11_YF",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        774.5,
+        52,
+        254
+      ],
+      "box_size_xyz_mm": [
+        194,
+        8,
+        100
+      ],
+      "module_index": 11,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M11_YR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        774.5,
+        194,
+        254
+      ],
+      "box_size_xyz_mm": [
+        194,
+        8,
+        100
+      ],
+      "module_index": 11,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M11_ZB",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 134,
+      "local_origin_global_xyz_mm": [
+        774.5,
+        60,
+        254
+      ],
+      "box_size_xyz_mm": [
+        194,
+        134,
+        8
+      ],
+      "module_index": 11,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M11_ZT",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 134,
+      "local_origin_global_xyz_mm": [
+        774.5,
+        60,
+        346
+      ],
+      "box_size_xyz_mm": [
+        194,
+        134,
+        8
+      ],
+      "module_index": 11,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M12_XL",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 120,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        491.5,
+        227,
+        34
+      ],
+      "box_size_xyz_mm": [
+        8,
+        120,
+        100
+      ],
+      "module_index": 12,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M12_XR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 120,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        693.5,
+        227,
+        34
+      ],
+      "box_size_xyz_mm": [
+        8,
+        120,
+        100
+      ],
+      "module_index": 12,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M12_YF",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        499.5,
+        227,
+        34
+      ],
+      "box_size_xyz_mm": [
+        194,
+        8,
+        100
+      ],
+      "module_index": 12,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M12_YR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        499.5,
+        339,
+        34
+      ],
+      "box_size_xyz_mm": [
+        194,
+        8,
+        100
+      ],
+      "module_index": 12,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M12_ZB",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 104,
+      "local_origin_global_xyz_mm": [
+        499.5,
+        235,
+        34
+      ],
+      "box_size_xyz_mm": [
+        194,
+        104,
+        8
+      ],
+      "module_index": 12,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M12_ZT",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 104,
+      "local_origin_global_xyz_mm": [
+        499.5,
+        235,
+        126
+      ],
+      "box_size_xyz_mm": [
+        194,
+        104,
+        8
+      ],
+      "module_index": 12,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M13_XL",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 120,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        491.5,
+        227,
+        364
+      ],
+      "box_size_xyz_mm": [
+        8,
+        120,
+        100
+      ],
+      "module_index": 13,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M13_XR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 120,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        693.5,
+        227,
+        364
+      ],
+      "box_size_xyz_mm": [
+        8,
+        120,
+        100
+      ],
+      "module_index": 13,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M13_YF",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        499.5,
+        227,
+        364
+      ],
+      "box_size_xyz_mm": [
+        194,
+        8,
+        100
+      ],
+      "module_index": 13,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M13_YR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        499.5,
+        339,
+        364
+      ],
+      "box_size_xyz_mm": [
+        194,
+        8,
+        100
+      ],
+      "module_index": 13,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M13_ZB",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 104,
+      "local_origin_global_xyz_mm": [
+        499.5,
+        235,
+        364
+      ],
+      "box_size_xyz_mm": [
+        194,
+        104,
+        8
+      ],
+      "module_index": 13,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M13_ZT",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 104,
+      "local_origin_global_xyz_mm": [
+        499.5,
+        235,
+        456
+      ],
+      "box_size_xyz_mm": [
+        194,
+        104,
+        8
+      ],
+      "module_index": 13,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M14_XL",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 120,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        491.5,
+        227,
+        144
+      ],
+      "box_size_xyz_mm": [
+        8,
+        120,
+        100
+      ],
+      "module_index": 14,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M14_XR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 120,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        693.5,
+        227,
+        144
+      ],
+      "box_size_xyz_mm": [
+        8,
+        120,
+        100
+      ],
+      "module_index": 14,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M14_YF",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        499.5,
+        227,
+        144
+      ],
+      "box_size_xyz_mm": [
+        194,
+        8,
+        100
+      ],
+      "module_index": 14,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M14_YR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        499.5,
+        339,
+        144
+      ],
+      "box_size_xyz_mm": [
+        194,
+        8,
+        100
+      ],
+      "module_index": 14,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M14_ZB",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 104,
+      "local_origin_global_xyz_mm": [
+        499.5,
+        235,
+        144
+      ],
+      "box_size_xyz_mm": [
+        194,
+        104,
+        8
+      ],
+      "module_index": 14,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M14_ZT",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 104,
+      "local_origin_global_xyz_mm": [
+        499.5,
+        235,
+        236
+      ],
+      "box_size_xyz_mm": [
+        194,
+        104,
+        8
+      ],
+      "module_index": 14,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M15_XL",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 120,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        491.5,
+        227,
+        254
+      ],
+      "box_size_xyz_mm": [
+        8,
+        120,
+        100
+      ],
+      "module_index": 15,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M15_XR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 120,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        693.5,
+        227,
+        254
+      ],
+      "box_size_xyz_mm": [
+        8,
+        120,
+        100
+      ],
+      "module_index": 15,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M15_YF",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        499.5,
+        227,
+        254
+      ],
+      "box_size_xyz_mm": [
+        194,
+        8,
+        100
+      ],
+      "module_index": 15,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M15_YR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        499.5,
+        339,
+        254
+      ],
+      "box_size_xyz_mm": [
+        194,
+        8,
+        100
+      ],
+      "module_index": 15,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M15_ZB",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 104,
+      "local_origin_global_xyz_mm": [
+        499.5,
+        235,
+        254
+      ],
+      "box_size_xyz_mm": [
+        194,
+        104,
+        8
+      ],
+      "module_index": 15,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M15_ZT",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 104,
+      "local_origin_global_xyz_mm": [
+        499.5,
+        235,
+        346
+      ],
+      "box_size_xyz_mm": [
+        194,
+        104,
+        8
+      ],
+      "module_index": 15,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M16_XL",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 150,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        491.5,
+        52,
+        34
+      ],
+      "box_size_xyz_mm": [
+        8,
+        150,
+        100
+      ],
+      "module_index": 16,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M16_XR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 150,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        693.5,
+        52,
+        34
+      ],
+      "box_size_xyz_mm": [
+        8,
+        150,
+        100
+      ],
+      "module_index": 16,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M16_YF",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        499.5,
+        52,
+        34
+      ],
+      "box_size_xyz_mm": [
+        194,
+        8,
+        100
+      ],
+      "module_index": 16,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M16_YR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        499.5,
+        194,
+        34
+      ],
+      "box_size_xyz_mm": [
+        194,
+        8,
+        100
+      ],
+      "module_index": 16,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M16_ZB",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 134,
+      "local_origin_global_xyz_mm": [
+        499.5,
+        60,
+        34
+      ],
+      "box_size_xyz_mm": [
+        194,
+        134,
+        8
+      ],
+      "module_index": 16,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M16_ZT",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 134,
+      "local_origin_global_xyz_mm": [
+        499.5,
+        60,
+        126
+      ],
+      "box_size_xyz_mm": [
+        194,
+        134,
+        8
+      ],
+      "module_index": 16,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M17_XL",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 150,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        491.5,
+        52,
+        364
+      ],
+      "box_size_xyz_mm": [
+        8,
+        150,
+        100
+      ],
+      "module_index": 17,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M17_XR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 150,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        693.5,
+        52,
+        364
+      ],
+      "box_size_xyz_mm": [
+        8,
+        150,
+        100
+      ],
+      "module_index": 17,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M17_YF",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        499.5,
+        52,
+        364
+      ],
+      "box_size_xyz_mm": [
+        194,
+        8,
+        100
+      ],
+      "module_index": 17,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M17_YR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        499.5,
+        194,
+        364
+      ],
+      "box_size_xyz_mm": [
+        194,
+        8,
+        100
+      ],
+      "module_index": 17,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M17_ZB",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 134,
+      "local_origin_global_xyz_mm": [
+        499.5,
+        60,
+        364
+      ],
+      "box_size_xyz_mm": [
+        194,
+        134,
+        8
+      ],
+      "module_index": 17,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M17_ZT",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 134,
+      "local_origin_global_xyz_mm": [
+        499.5,
+        60,
+        456
+      ],
+      "box_size_xyz_mm": [
+        194,
+        134,
+        8
+      ],
+      "module_index": 17,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M18_XL",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 150,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        491.5,
+        52,
+        144
+      ],
+      "box_size_xyz_mm": [
+        8,
+        150,
+        100
+      ],
+      "module_index": 18,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M18_XR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 150,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        693.5,
+        52,
+        144
+      ],
+      "box_size_xyz_mm": [
+        8,
+        150,
+        100
+      ],
+      "module_index": 18,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M18_YF",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        499.5,
+        52,
+        144
+      ],
+      "box_size_xyz_mm": [
+        194,
+        8,
+        100
+      ],
+      "module_index": 18,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M18_YR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        499.5,
+        194,
+        144
+      ],
+      "box_size_xyz_mm": [
+        194,
+        8,
+        100
+      ],
+      "module_index": 18,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M18_ZB",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 134,
+      "local_origin_global_xyz_mm": [
+        499.5,
+        60,
+        144
+      ],
+      "box_size_xyz_mm": [
+        194,
+        134,
+        8
+      ],
+      "module_index": 18,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M18_ZT",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 134,
+      "local_origin_global_xyz_mm": [
+        499.5,
+        60,
+        236
+      ],
+      "box_size_xyz_mm": [
+        194,
+        134,
+        8
+      ],
+      "module_index": 18,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M19_XL",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 150,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        491.5,
+        52,
+        254
+      ],
+      "box_size_xyz_mm": [
+        8,
+        150,
+        100
+      ],
+      "module_index": 19,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M19_XR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 150,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        693.5,
+        52,
+        254
+      ],
+      "box_size_xyz_mm": [
+        8,
+        150,
+        100
+      ],
+      "module_index": 19,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M19_YF",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        499.5,
+        52,
+        254
+      ],
+      "box_size_xyz_mm": [
+        194,
+        8,
+        100
+      ],
+      "module_index": 19,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M19_YR",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 100,
+      "local_origin_global_xyz_mm": [
+        499.5,
+        194,
+        254
+      ],
+      "box_size_xyz_mm": [
+        194,
+        8,
+        100
+      ],
+      "module_index": 19,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M19_ZB",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 134,
+      "local_origin_global_xyz_mm": [
+        499.5,
+        60,
+        254
+      ],
+      "box_size_xyz_mm": [
+        194,
+        134,
+        8
+      ],
+      "module_index": 19,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    },
+    {
+      "id": "M19_ZT",
+      "type": "module_panel",
+      "material_candidate": "MDF8_UNVERIFIED",
+      "thickness_mm": 8,
+      "blank_a_mm": 194,
+      "blank_b_mm": 134,
+      "local_origin_global_xyz_mm": [
+        499.5,
+        60,
+        346
+      ],
+      "box_size_xyz_mm": [
+        194,
+        134,
+        8
+      ],
+      "module_index": 19,
+      "notes": "6-face butt-joint concept; all latches, gaskets, and closure methods unqualified",
+      "source_id": "P30E/P30A",
+      "manufacturing_status": "REFERENCE_ONLY_NOT_CNC"
+    }
+  ],
+  "critical_missing_before_CNC": [
+    "Real driver basket/hole templates, cutout clearance tolerance, phase and terminals",
+    "M5 Ø5.5 is only a scenario, neither Ø6.5 basket nor an approval for MDF drilling",
+    "Qualified driver mounting force-path after K14, gasket size, screw choice, accessible service",
+    "Front bonding 2×MDF22, joinery rabbets/dados/adhesive choice and test coupon",
+    "Brace termination and fasteners: 10-mm thin front strips vulnerable to machining damage",
+    "Module 6-face butt-joint closure, handling, latch, test pressure and retention at every orientation",
+    "Recheck all 20 module insertion/exit paths with latches, screwdrivers, handles, wiring and real driver basket",
+    "Actual material stock and tolerances, cutter diameter, kerf, nesting, grain and machining allowances",
+    "Sealed terminal cutout, plate amp mounting, wiring, grille and full 500mm external allowance",
+    "Geometric tolerances, non-overlap and clash test using true 3D meshes; no actual fastener collision",
+    "Material calibrated strength, adhesive, fatigue and acoustic re-verification for all states",
+    "Before fab release require reviewed 2D DXF/STEP and CNC quotation plus production approval"
+  ]
+}
