@@ -11,3 +11,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Sprawdz odsylacze, PNG, SVG i zakres
         run: python3 skrypty/sprawdz_readme.py
+      - name: Sprawdz kolejność: 40 kandydatów, Dayton, konstrukcja, potem STX
+        run: python3 skrypty/sprawdz_przewodnik_dayton_stx.py
