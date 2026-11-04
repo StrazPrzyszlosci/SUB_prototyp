@@ -6,7 +6,7 @@ const fs=require("node:fs"),path=require("node:path");
 const C={"W":1020,"D":425,"H":500,"wall":22,"front":44,"X":231,"Z":250,"OD":388.4,"CUT":355.8,"BCD":368,"BASKET_FACTORY_HOLE":6.5,"FRONT_MDF_EXAMPLE_M5":5.5,"DEPTH":178,"FLANGE":10.5,"HOLES":8,"ring_x":[448,723],"mat":50,"maxdepth":500};
 function calc(){
  const p=C,r=p.BCD/2;
- const holes=Array.from({length:p.BASKET_FACTORY_HOLES},(_,i)=>({number:i+1,angle_deg:i*45,x_mm:+(p.X+r*Math.cos(i*Math.PI/4)).toFixed(4),z_mm:+(p.Z+r*Math.sin(i*Math.PI/4)).toFixed(4)}));
+ const holes=Array.from({length:p.HOLES},(_,i)=>({number:i+1,angle_deg:i*45,x_mm:+(p.X+r*Math.cos(i*Math.PI/4)).toFixed(4),z_mm:+(p.Z+r*Math.sin(i*Math.PI/4)).toFixed(4)}));
  const clearance={
   factory_flange_hole_projected_ligament_NOT_MDF_mm:+(r-p.CUT/2-p.BASKET_FACTORY_HOLE/2).toFixed(4),
   mdf_ligament_if_hypothetical_M5_clearance_5_5_mm:+(r-p.CUT/2-p.FRONT_MDF_EXAMPLE_M5/2).toFixed(4),
