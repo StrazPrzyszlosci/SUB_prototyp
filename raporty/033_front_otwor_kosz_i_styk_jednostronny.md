@@ -23,7 +23,7 @@ Oryginały rysunków obejrzano, a liczby sprawdzono z tekstem; źródła,
 prywatne ścieżki i SHA-256 są w
 [rejestrze geometrii](../dane/zrodla/P18B_geometria_i_ograniczenia.json).
 
-| Model | Średnica użyta w modelu otworu | Okrąg śrub | Śruby | Masa netto |
+| Model | Średnica wycięcia w froncie | Okrąg osi śrub | Otwory fabryczne W KOSZU (nie wiercenie MDF) | Masa netto |
 |---|---:|---:|---:|---:|
 | RSS390HF-4 / C02 | 355,8 mm | 368 mm | 8 × Ø6,5 mm | Niezidentyfikowana |
 | SB34SWPL76-4 / C04 | 305,2 mm | 324,2 mm | 8 × Ø5,5 mm | 7,68 kg |
@@ -38,7 +38,7 @@ luzu montażowego. To nie średnica gotowa do zlecenia CNC. Dla STX
 całkowitej na stronie. WWW Dayton podaje „Weight 30 lbs.” bez niezależnego
 potwierdzenia masy netto; nie wstawiono tej liczby jako Mnet do modelu.
 
-Średnice otworów śrubowych zapisano jako dane, lecz lokalnych otworów,
+Średnice otworów w metalowych kołnierzach zapisano jako dane producentów, NIE wiertła do MDF; lokalnych otworów,
 podfrezowania i gwintów nie ma w siatce płyty. Analizujemy montaż
 nawierzchniowy i rozpiętość między zadanymi podporami, nie finalną formatkę.
 
