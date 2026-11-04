@@ -34,12 +34,13 @@ jobs:
           const rank=b.statistics;
           const radial=368/2-6.5/2-355.8/2;
           if(Math.abs(radial-2.85)>1e-10||Math.abs(rank.radial_budget_mm-radial)>1e-10)throw Error('Flange geometry identity');
-          if(rank.basic_geometric!==171||rank.target_1_plus_1!==9||rank.target_1_plus_2!==0)throw Error('Tolerance filter regression');
+          if(rank.basic_geometric!==126||rank.target_1_plus_1!==6||rank.target_1_plus_2!==0||rank.shank6_supported!==0)throw Error('Tolerance filter regression');
+          if(b.inputs.factory_basket_hole_D_mm!==6.5||b.inputs.front_hole_D_mm!==5.5||b.inputs.ring_hole_D_mm!==6.5)throw Error('Factory basket hole not to be used as MDF pilot');
           if(rank.nominal_target_infeasibility_margin_mm>=0)throw Error('Impossible 1+2mm constraint');
           const guide=fs.readFileSync('README.md','utf8');
           const count=guide.match(/19 producentów · (\d+) raport(?:y|ów) · Python\/JavaScript/);
           if(!count||Number(count[1])<102||/klient/i.test(guide))throw Error('Report count or research terminology');
           for(const fig of ['p40a_reakcje_grup_srub.svg','p40b_budzet_promieniowy_pierscienia.svg'])if(!guide.includes(fig))throw Error('Missing figure '+fig);
           if((guide.match(/!\[[^\]]*\]\([^)]*\)/g)||[]).length<96)throw Error('Missing guide diagrams');
-          console.log('PASS P40: 432 force equilibria, 675 tolerance cases, independent analytic identity');
+          console.log('PASS P40: 432 force equilibria, 675 independently dimensioned ring and M5 front cases, independent analytic identity');
           NODE
