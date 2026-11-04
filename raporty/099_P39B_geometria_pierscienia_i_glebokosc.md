@@ -21,7 +21,7 @@ Dla jednego wariantu pierścienia **zewn. Ø400 mm, wewn. Ø356 mm, grubości 4 
 
 **Ostatnia pozycja jest ostrzeżeniem:** 0,1 mm promieniowo to niezweryfikowany luz technologiczny. Realny kosz i możliwość demontażu mogą wymagać większej średnicy wewnętrznej pierścienia, kosztem jeszcze mniejszego przekroju w obszarze śrub. W wariancie **ID360** luz od wycięcia wynosi 2,1 mm, ale z kolei promieniowy pas metalu między Ø6,5 a ID360 ma tylko **0,75 mm**. Bez konstrukcji przenoszącej siły poza ten wąski pas nie należy zatwierdzać żadnej alternatywy.
 
-**Uwaga:** 2,85 mm MDF pomiędzy wycięciem Ø355,8 a kołnierzem Ø6,5 z P38A **nie znika** tylko dlatego, że po drugiej stronie frontu pojawia się metalowy pierścień.
+**Uwaga — korekta interpretacji P38A:** **2,85 mm** wynika z projekcji fabrycznego otworu **Ø6,5 mm W KOSZU** na krawędź wycięcia Ø355,8 mm; **nie jest automatycznie pasem MDF po wierceniu**. Dla przykładowego przelotu Ø5,5 mm pod M5 w MDF pas wyniósłby **3,35 mm**. Metalowy pierścień nie usuwa konieczności wyznaczenia prawdziwej geometrii i nośności otworu w MDF.
 
 ## Co to mówi o śrubach?
 
