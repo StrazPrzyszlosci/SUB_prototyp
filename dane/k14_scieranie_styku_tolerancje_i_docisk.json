@@ -1,0 +1,120 @@
+{
+  "study": "K14",
+  "date": "2026-11-04",
+  "status": "SOURCE-BOUND RESEARCH SCREENS / NO RECOMMENDED FASTENER TORQUE / CNC HOLD",
+  "sources": {
+    "k13_nominal": "dane/k13_plytka_m5_w_klocku20_zalozenia.json",
+    "k13_results": "wyniki/k13_przesiew_plytki_w_klocku20.json",
+    "p40a": "raporty/101_P40A_reakcje_8_mocowan.md",
+    "p19a": "raporty/030_P19A_obliczenia_spoin_i_material_kleju.md",
+    "nasa_torque_standard": "https://www.nasa.gov/wp-content/uploads/2018/01/nasa-std-5020a_w-chg_1_nasa_fastener_standards.pdf",
+    "nasa_torque_section": "Appendix A.2, p.46, Eq.24: Ppi-nom=T/(Knom*D), with explicit preload variation; SPACEFLIGHT standard only cited as physics/research reference, NOT binding audio cabinet requirements."
+  },
+  "research_model": {
+    "reference_plate_t_mm": 6,
+    "assumed_retaining_plate_tangential_width_mm": 35,
+    "pad_inner_radius_mm": 178.9,
+    "plate_outer_radius_mm": 204.5,
+    "axis_radius_mm": 184,
+    "metal_thread_major_d_mm": 5,
+    "example_inner_wood_pocket_lips_mm": [
+      0,
+      0.5,
+      1,
+      1.3,
+      1.5,
+      2
+    ],
+    "illustrative_separate_web_screen_mm": 2,
+    "force_probe_axial_N": [
+      119.92,
+      151.11,
+      500,
+      1000,
+      2000
+    ],
+    "reference_P40_resolved_axial_max_N": 119.92,
+    "reference_P40_shear_component_N": 91.94,
+    "reference_P40_resultant_N": 151.11,
+    "note": "151.11 N in P40A is resultant sqrt(119.92^2+91.94^2), NOT axial compression. No actual plate contact pressure or joint preload is measured.",
+    "rectangular_rigid_plate_one_dimensional_model": "Assume pressure is linear along radial axis; contact may not sustain tension; screw force at radial axis; width constant; no material compliance, holes, retainer screw stiffness, head or flange preload included.",
+    "hole_d_mm": {
+      "wood_screw_clearance_front": 5.5,
+      "steel_tap_drill": 4.2,
+      "metal_basket_hole": 6.5
+    }
+  },
+  "torque_probes": {
+    "Nm": [
+      0.5,
+      1,
+      2,
+      3
+    ],
+    "K": [
+      0.15,
+      0.2,
+      0.25
+    ],
+    "bolt_d_m": 0.005,
+    "warning": "Scenario only, K not measured, torque NOT prescribed. These computed preloads can dominate 119.92N P40 external axial demand. Do not tighten prototype to arbitrary K14 torque without testing."
+  },
+  "tolerance_probe": {
+    "label": "Synthetic independent two-sided dimensional stress intervals, NOT actual manufacturer tolerances",
+    "nominal_mm": {
+      "bolt_L": 75,
+      "flange": 10.5,
+      "gasket_compressed": 1,
+      "front": 44,
+      "pad": 20,
+      "plate": 6
+    },
+    "perturbation_plus_minus_mm": {
+      "bolt_L": 0.5,
+      "flange": 0.2,
+      "gasket_compressed": 0.5,
+      "front": 0.5,
+      "pad": 0.3,
+      "plate": 0.2
+    },
+    "pass_thread_engagement_ge_5mm_only_screen": true,
+    "pass_rear_protrusion_eq_0mm_only_screen": true,
+    "raw_idealized_thread_leadin_and_runout_ignored": true
+  },
+  "pocket_tolerance_probe": {
+    "error_mm_each_independently": [
+      0,
+      0.1,
+      0.25,
+      0.5
+    ],
+    "label": "Synthetic pad-inner-edge vs pocket-inner-edge relative offsets in opposite directions, not documented cutter or substrate tolerances",
+    "bolt_to_steel_edge_error_mm": [
+      0,
+      0.1,
+      0.25,
+      0.5
+    ],
+    "note": "Worst pocket inner-wall thickness 0.5−2δ and steel edge web 2.1−2δ for independent adverse shifts of equal magnitude δ."
+  },
+  "coaxiality_screen": {
+    "x_z_center_offsets_each_mm": [
+      0,
+      0.1,
+      0.2,
+      0.25,
+      0.3
+    ],
+    "label": "Independent registration error in x/z from bolt axis; conservative guaranteed through clearance is half of (Ø5.5−Ø5.0)=0.25 mm.",
+    "caution": "Not actual capability of a machining process. Real threaded axis, flange basket and screw straightness are unmeasured."
+  },
+  "unresolved_tests": [
+    "measure real wood block species, moisture, grain orientation and impact of removing 6mm pocket with 0.5mm side rim",
+    "choose steel plate manufacturing and screw screw/fastener sku, examine usable 2.1mm M5 major-to-edge web and stripping",
+    "document gasket thickness and installation clamp force with calibration, without blindly using torque",
+    "test plate/wood pressure distribution and local crushing at eccentric load, cycling and creep",
+    "test structural adhesive bonded beech-to-MDF connection with axial peel and shear, 0/180-degree orientation",
+    "prove real screw retainer resistance to plate rotating/detaching before wood bonded into cabinet",
+    "rerun K02/K07 insertion and actual repair/removal paths once 3D fastener model is selected"
+  ]
+}
