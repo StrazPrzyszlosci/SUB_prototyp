@@ -66,3 +66,7 @@ Kontrola braku kolizji **AABB** dotyczy tylko wspólnej objętości modelowych p
 **Wniosek:** mamy jedno źródło prawdy dla nominalnej geometrii, numerację 138 elementów, trzy ustawienia modułów oraz odtwarzalny model 3D i listę formatek. To znaczny krok w kierunku CNC, **ale ani jedna z 138 formatek nie jest jeszcze zwolniona do frezowania. CNC HOLD.**
 
 **Odtwarzanie:** uruchomić polecenie `node skrypty/k15_pre_cnc_model.js`. Odtwarza ono identyczne pliki SCAD, JSON i CSV.
+
+## Dopisek konstrukcyjny K16/K17 — podparcie 20 modułów
+
+**K15 nie zawierało fizycznych mocowań żadnego z 20 modułów litrażu.** Samo nominalne umieszczenie brył 3D nie wystarcza: każda skrzynka wymaga przeniesienia obciążeń na korpus, blokady odwrócenia i drgań oraz dostępnego demontażu. [K16](K16_podparcia_i_zabezpieczenia_20_wkladow.md) wykazało, że najprostsze 48 podpór tylnych przecinałoby matę 50 mm. [K17](K17_prowadnice_nośne_bez_kolizji_z_mata.md) wprowadza warunkowy wariant 12 prowadnic z 80 integralnymi językami, bez nominalnych przecięć maty, lecz **bez zweryfikowanych mocowań, blokad i tras wkładania**. Do dalszej oceny złożenia należy otwierać [model K17](../dokumentacja/K17_p30e_prowadnice_i_zabezpieczenia_NIE_CNC.scad), a K15 zachować jako geometryczny punkt odniesienia. **Żaden wariant nie został wydany do CNC.**
