@@ -1,0 +1,77 @@
+{
+  "study": "K13",
+  "date": "2026-11-04",
+  "version": 1,
+  "classification": "geometric surrogate, not construction drawing",
+  "status": "CNC HOLD",
+  "references": {
+    "dayton_spec": "https://www.daytonaudio.com/images/resources/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf",
+    "rampa_skd30_mdf": "https://www.rampa.com/media/e2/ed/d4/1699524202/RAMPA_Produktdatenblatt_MDF-EN.pdf",
+    "rampa_skd30_hardwood": "https://www.rampa.com/media/7e/76/df/1699524009/RAMPA_Produktdatenblatt_Laubholz-Hardwood_EN.pdf",
+    "M5_nut_iso4032": "https://www.fasten.it/en/norms/norm/din_en_iso_4032",
+    "prior_K02": "raporty/K02_przejscie_20_modulow_obok_8_mocowan.md",
+    "prior_K11": "raporty/K11_realne_wkladki_pasy_drewna_i_materialy_scian.md",
+    "prior_P42": "raporty/108_P42C_laczniki_i_koncepcje_3D.md",
+    "prior_P40": "raporty/101_P40A_reakcje_8_mocowan.md"
+  },
+  "geometry_mm": {
+    "cutout_radius": 177.9,
+    "basket_mount_radius": 184,
+    "basket_hole_diameter": 6.5,
+    "front_thickness": 44,
+    "pad_inner_radius": 178.9,
+    "pad_outer_radius": 205,
+    "pad_tangential_width": 36,
+    "pad_rear_depth": 20,
+    "speaker_center_x": 231,
+    "left_interior_wall_x": 22,
+    "two_anchor_radius": 196,
+    "tangential_offsets": [
+      -10,
+      10
+    ],
+    "anchor_insert_OD": 10,
+    "anchor_insert_length": 12,
+    "selected_screw_reference_thread": "M5",
+    "screw_front_clearance_diameter_example": 5.5,
+    "steel_bridge_radial_inner": 178.9,
+    "steel_bridge_radial_outer": 205,
+    "steel_bridge_tangential_width": 36,
+    "steel_bridge_thickness": 3,
+    "wood_pad_depth_behind_bridge": 17,
+    "hex_nut_M5_across_flats_max": 8,
+    "hex_nut_M5_height_max": 4.7,
+    "gasket_thickness_hypothesis": 0.8
+  },
+  "assumed_screens": {
+    "wood_edge_min": 2,
+    "center_positional_error_mm": [
+      0,
+      0.5,
+      1
+    ],
+    "steel_beam_effective_width_mm": 20,
+    "steel_plate_thickness_candidates_mm": [
+      2,
+      3,
+      4
+    ],
+    "load_single_fastener_proxy_N": 151,
+    "not_standard": true
+  },
+  "variants": {
+    "A_original_direct_M5_in_pad": "Single SKD30 M5 OD10 at original basket axis r184, radial inner wood web 0.1 mm: no defensible 2mm reserve.",
+    "B_two_remote_anchors": "Rear M5 captive fastener on 3mm steel bridge; two separate SKD30 M5x12 inserts in hardwood at radial r196 and tangential ±10, 17mm local wood behind steel; all parts nominally constrained to original 20mm pad footprint. Assembly and strengths unverified.",
+    "C_insert_with_inner_pad_intruding_into_cutout": "Move pad inside edge to r177.0 for 2mm web around OD10 at r184; intrudes 0.9mm into projected basket cutout, violates K02 footprint; no assertion on real basket clearance."
+  },
+  "key_unknowns": [
+    "Full rear basket and rib silhouette for the specific RSS390HF-4 revision",
+    "Thread capture and positive nut anti-rotation/anti-loss construction",
+    "Shear and peel of steel-to-MDF and steel-to-hardwood joints",
+    "Clamping preload, washer geometry and M5 screw head fit in metal flange",
+    "Strength, splitting and creep of two M5 inserts in chosen beech plywood/glulam",
+    "3D routes, 0deg ID16 and 180deg tool access, all 100/120/150 L changes",
+    "Steel grade, actual plate cross-section / local stress concentrations / fatigue",
+    "Final net volume, mass, grounding / corrosion, full product depth <=500mm"
+  ]
+}
