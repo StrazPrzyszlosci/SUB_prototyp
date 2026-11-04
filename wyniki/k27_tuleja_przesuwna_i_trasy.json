@@ -1,0 +1,1169 @@
+{
+  "study": "K27",
+  "date": "2026-11-04",
+  "status": "CNC HOLD — sliding sleeve geometrically feasible in ideal model but REJECTED as a finished load-bearing lock",
+  "coordinates": "K15 global XYZ in millimetres; X horizontal cabinet, Y depth, Z vertical",
+  "inputs": [
+    "K15 shell+20 sealed box positions",
+    "K17 fixed spines+original integral lips",
+    "K25 split positions and tool access",
+    "K26 nominal service-state rail-half routes"
+  ],
+  "studied_not_selected_hardware": {
+    "sleeve_topology": "one-piece open-through tube around the two butt-jointed 16×12mm MDF guide halves",
+    "wall_thickness_mm": 2,
+    "nominal_radial_sliding_clearance_each_side_mm": 0.5,
+    "axial_length_mm": 50,
+    "outside_cross_section_mm": [
+      21,
+      17
+    ],
+    "inside_cross_section_mm": [
+      17,
+      13
+    ],
+    "cross_section_wall_net_area_mm2": 136,
+    "solid_material_volume_per_collar_l": 0.0068,
+    "both_sleeve_material_volume_l": 0.0136,
+    "material_density_measured": false,
+    "steel_grade_selected": false,
+    "supplier_fitting_available": false,
+    "fasteners_actual_number": 0,
+    "positive_axial_retaining_features": 0,
+    "actual_tooling_approved": false,
+    "user_must_not_manufacture_from_these_envelopes": true
+  },
+  "test_method": "Conservative rigid AABB of entire pre-sleeved lower half is routed from centered factory Ø355.8 front cutout into cabinet with Y,X,Z orthogonal translations via 3D Minkowski critical-plane graph BFS. Upper plain rail then routed with the entire lower bounding AABB installed. Each leg independently swept and collision checked. Four sleeve walls then translated 50mm along Z from preload to bridge the split; sweep checked against all neighboring nominal solids, own rail halves and original integral K17 lips separately.",
+  "cases": [
+    {
+      "rail": "G17_COLUMN_02",
+      "state": "full100",
+      "split_global_z_mm": 250,
+      "geometry": {
+        "original_unfastened_rail_cross_section_mm": [
+          16,
+          12
+        ],
+        "sleeve_outer_cross_section_mm": [
+          21,
+          17
+        ],
+        "sleeve_inner_free_cross_section_mm": [
+          17,
+          13
+        ],
+        "hypothetical_wall_thickness_mm": 2,
+        "nominal_slide_clearance_each_radial_side_mm": 0.5,
+        "sleeve_axial_height_mm": 50,
+        "preload_z_interval_mm": [
+          175,
+          225
+        ],
+        "final_z_interval_mm": [
+          225,
+          275
+        ],
+        "sleeve_slide_distance_upward_z_mm": 50,
+        "sleeve_four_wall_cuboids_final": [
+          {
+            "id": "FRONT_Y",
+            "o": [
+              172.5,
+              221.5,
+              225
+            ],
+            "s": [
+              21,
+              2,
+              50
+            ]
+          },
+          {
+            "id": "BACK_Y",
+            "o": [
+              172.5,
+              236.5,
+              225
+            ],
+            "s": [
+              21,
+              2,
+              50
+            ]
+          },
+          {
+            "id": "LEFT_X",
+            "o": [
+              172.5,
+              223.5,
+              225
+            ],
+            "s": [
+              2,
+              13,
+              50
+            ]
+          },
+          {
+            "id": "RIGHT_X",
+            "o": [
+              191.5,
+              223.5,
+              225
+            ],
+            "s": [
+              2,
+              13,
+              50
+            ]
+          }
+        ],
+        "static_ring_material_net_displacement_l": 0.007
+      },
+      "collision_tests": {
+        "sleeve_final_with_other_cabinet_rails_and_all_modules": [],
+        "sleeve_slide_swept_with_other_cabinet_rails_and_all_modules": [],
+        "sleeve_slide_swept_with_own_two_rail_halves": [],
+        "sleeve_slide_swept_with_original_K17_integral_lips": []
+      },
+      "composite_install_lower_then_upper": {
+        "first_lower_rail_with_preloaded_sleeve": {
+          "passed": true,
+          "aperture_projected_radial_margin_mm": 63.417,
+          "visited_nodes": 9921,
+          "grid_shape_xyz": [
+            61,
+            31,
+            19
+          ],
+          "waypoints_global_centers_xyz_mm": [
+            [
+              231,
+              52.5,
+              250
+            ],
+            [
+              183,
+              52.5,
+              250
+            ],
+            [
+              183,
+              52.5,
+              136
+            ],
+            [
+              183,
+              230,
+              136
+            ]
+          ],
+          "independently_checked_swept_AABB_segments": true
+        },
+        "next_plain_upper_rail_while_lower_installed": {
+          "passed": true,
+          "aperture_projected_radial_margin_mm": 63.62,
+          "visited_nodes": 12051,
+          "grid_shape_xyz": [
+            65,
+            35,
+            19
+          ],
+          "waypoints_global_centers_xyz_mm": [
+            [
+              231,
+              50,
+              250
+            ],
+            [
+              183,
+              50,
+              250
+            ],
+            [
+              183,
+              50,
+              364
+            ],
+            [
+              183,
+              230,
+              364
+            ]
+          ],
+          "independently_checked_swept_AABB_segments": true
+        },
+        "both_halves_fit_nominal_translational_route": true,
+        "sleeve_axial_slide_collision_free_without_integrated_lips": true,
+        "motion_verified_with_integral_original_lips": true
+      },
+      "axial_y_tool_screen": {
+        "rail_front_y_mm": 224,
+        "nominal_front_opening_center_xz_mm": [
+          231,
+          250
+        ],
+        "rail_face_projection_distance_from_driver_axis_mm": 48,
+        "source_K25_direct_face_tool_is_accessible": true,
+        "sleeve_has_real_axial_lock": false,
+        "remote_actuation_or_tool_path_proven": false
+      }
+    },
+    {
+      "rail": "G17_COLUMN_02",
+      "state": "core120",
+      "split_global_z_mm": 250,
+      "geometry": {
+        "original_unfastened_rail_cross_section_mm": [
+          16,
+          12
+        ],
+        "sleeve_outer_cross_section_mm": [
+          21,
+          17
+        ],
+        "sleeve_inner_free_cross_section_mm": [
+          17,
+          13
+        ],
+        "hypothetical_wall_thickness_mm": 2,
+        "nominal_slide_clearance_each_radial_side_mm": 0.5,
+        "sleeve_axial_height_mm": 50,
+        "preload_z_interval_mm": [
+          175,
+          225
+        ],
+        "final_z_interval_mm": [
+          225,
+          275
+        ],
+        "sleeve_slide_distance_upward_z_mm": 50,
+        "sleeve_four_wall_cuboids_final": [
+          {
+            "id": "FRONT_Y",
+            "o": [
+              172.5,
+              221.5,
+              225
+            ],
+            "s": [
+              21,
+              2,
+              50
+            ]
+          },
+          {
+            "id": "BACK_Y",
+            "o": [
+              172.5,
+              236.5,
+              225
+            ],
+            "s": [
+              21,
+              2,
+              50
+            ]
+          },
+          {
+            "id": "LEFT_X",
+            "o": [
+              172.5,
+              223.5,
+              225
+            ],
+            "s": [
+              2,
+              13,
+              50
+            ]
+          },
+          {
+            "id": "RIGHT_X",
+            "o": [
+              191.5,
+              223.5,
+              225
+            ],
+            "s": [
+              2,
+              13,
+              50
+            ]
+          }
+        ],
+        "static_ring_material_net_displacement_l": 0.007
+      },
+      "collision_tests": {
+        "sleeve_final_with_other_cabinet_rails_and_all_modules": [],
+        "sleeve_slide_swept_with_other_cabinet_rails_and_all_modules": [],
+        "sleeve_slide_swept_with_own_two_rail_halves": [],
+        "sleeve_slide_swept_with_original_K17_integral_lips": []
+      },
+      "composite_install_lower_then_upper": {
+        "first_lower_rail_with_preloaded_sleeve": {
+          "passed": true,
+          "aperture_projected_radial_margin_mm": 63.417,
+          "visited_nodes": 6741,
+          "grid_shape_xyz": [
+            55,
+            29,
+            15
+          ],
+          "waypoints_global_centers_xyz_mm": [
+            [
+              231,
+              52.5,
+              250
+            ],
+            [
+              183,
+              52.5,
+              250
+            ],
+            [
+              183,
+              52.5,
+              136
+            ],
+            [
+              183,
+              230,
+              136
+            ]
+          ],
+          "independently_checked_swept_AABB_segments": true
+        },
+        "next_plain_upper_rail_while_lower_installed": {
+          "passed": true,
+          "aperture_projected_radial_margin_mm": 63.62,
+          "visited_nodes": 8358,
+          "grid_shape_xyz": [
+            59,
+            33,
+            15
+          ],
+          "waypoints_global_centers_xyz_mm": [
+            [
+              231,
+              50,
+              250
+            ],
+            [
+              183,
+              50,
+              250
+            ],
+            [
+              183,
+              50,
+              364
+            ],
+            [
+              183,
+              230,
+              364
+            ]
+          ],
+          "independently_checked_swept_AABB_segments": true
+        },
+        "both_halves_fit_nominal_translational_route": true,
+        "sleeve_axial_slide_collision_free_without_integrated_lips": true,
+        "motion_verified_with_integral_original_lips": true
+      },
+      "axial_y_tool_screen": {
+        "rail_front_y_mm": 224,
+        "nominal_front_opening_center_xz_mm": [
+          231,
+          250
+        ],
+        "rail_face_projection_distance_from_driver_axis_mm": 48,
+        "source_K25_direct_face_tool_is_accessible": true,
+        "sleeve_has_real_axial_lock": false,
+        "remote_actuation_or_tool_path_proven": false
+      }
+    },
+    {
+      "rail": "G17_COLUMN_10",
+      "state": "core120",
+      "split_global_z_mm": 194,
+      "geometry": {
+        "original_unfastened_rail_cross_section_mm": [
+          16,
+          12
+        ],
+        "sleeve_outer_cross_section_mm": [
+          21,
+          17
+        ],
+        "sleeve_inner_free_cross_section_mm": [
+          17,
+          13
+        ],
+        "hypothetical_wall_thickness_mm": 2,
+        "nominal_slide_clearance_each_radial_side_mm": 0.5,
+        "sleeve_axial_height_mm": 50,
+        "preload_z_interval_mm": [
+          119,
+          169
+        ],
+        "final_z_interval_mm": [
+          169,
+          219
+        ],
+        "sleeve_slide_distance_upward_z_mm": 50,
+        "sleeve_four_wall_cuboids_final": [
+          {
+            "id": "FRONT_Y",
+            "o": [
+              659,
+              205.5,
+              169
+            ],
+            "s": [
+              21,
+              2,
+              50
+            ]
+          },
+          {
+            "id": "BACK_Y",
+            "o": [
+              659,
+              220.5,
+              169
+            ],
+            "s": [
+              21,
+              2,
+              50
+            ]
+          },
+          {
+            "id": "LEFT_X",
+            "o": [
+              659,
+              207.5,
+              169
+            ],
+            "s": [
+              2,
+              13,
+              50
+            ]
+          },
+          {
+            "id": "RIGHT_X",
+            "o": [
+              678,
+              207.5,
+              169
+            ],
+            "s": [
+              2,
+              13,
+              50
+            ]
+          }
+        ],
+        "static_ring_material_net_displacement_l": 0.007
+      },
+      "collision_tests": {
+        "sleeve_final_with_other_cabinet_rails_and_all_modules": [],
+        "sleeve_slide_swept_with_other_cabinet_rails_and_all_modules": [],
+        "sleeve_slide_swept_with_own_two_rail_halves": [],
+        "sleeve_slide_swept_with_original_K17_integral_lips": [
+          "G17_12_retainer_2",
+          "G17_14_shelf_2"
+        ]
+      },
+      "composite_install_lower_then_upper": {
+        "first_lower_rail_with_preloaded_sleeve": {
+          "passed": true,
+          "aperture_projected_radial_margin_mm": 91.261,
+          "visited_nodes": 13647,
+          "grid_shape_xyz": [
+            59,
+            29,
+            17
+          ],
+          "waypoints_global_centers_xyz_mm": [
+            [
+              231,
+              52.5,
+              250
+            ],
+            [
+              437.5,
+              52.5,
+              250
+            ],
+            [
+              437.5,
+              52.5,
+              130
+            ],
+            [
+              437.5,
+              62.5,
+              130
+            ],
+            [
+              669.5,
+              62.5,
+              130
+            ],
+            [
+              669.5,
+              62.5,
+              108
+            ],
+            [
+              669.5,
+              214,
+              108
+            ]
+          ],
+          "independently_checked_swept_AABB_segments": true
+        },
+        "next_plain_upper_rail_while_lower_installed": {
+          "passed": true,
+          "aperture_projected_radial_margin_mm": 35.675,
+          "visited_nodes": 12051,
+          "grid_shape_xyz": [
+            63,
+            33,
+            13
+          ],
+          "waypoints_global_centers_xyz_mm": [
+            [
+              231,
+              50,
+              250
+            ],
+            [
+              440,
+              50,
+              250
+            ],
+            [
+              440,
+              50,
+              314
+            ],
+            [
+              440,
+              60,
+              314
+            ],
+            [
+              669.5,
+              60,
+              314
+            ],
+            [
+              669.5,
+              60,
+              336
+            ],
+            [
+              669.5,
+              214,
+              336
+            ]
+          ],
+          "independently_checked_swept_AABB_segments": true
+        },
+        "both_halves_fit_nominal_translational_route": true,
+        "sleeve_axial_slide_collision_free_without_integrated_lips": true,
+        "motion_verified_with_integral_original_lips": false
+      },
+      "axial_y_tool_screen": {
+        "rail_front_y_mm": 208,
+        "nominal_front_opening_center_xz_mm": [
+          231,
+          250
+        ],
+        "rail_face_projection_distance_from_driver_axis_mm": 442.061,
+        "source_K25_direct_face_tool_is_accessible": false,
+        "sleeve_has_real_axial_lock": false,
+        "remote_actuation_or_tool_path_proven": false
+      }
+    },
+    {
+      "rail": "G17_COLUMN_10",
+      "state": "single150",
+      "split_global_z_mm": 194,
+      "geometry": {
+        "original_unfastened_rail_cross_section_mm": [
+          16,
+          12
+        ],
+        "sleeve_outer_cross_section_mm": [
+          21,
+          17
+        ],
+        "sleeve_inner_free_cross_section_mm": [
+          17,
+          13
+        ],
+        "hypothetical_wall_thickness_mm": 2,
+        "nominal_slide_clearance_each_radial_side_mm": 0.5,
+        "sleeve_axial_height_mm": 50,
+        "preload_z_interval_mm": [
+          119,
+          169
+        ],
+        "final_z_interval_mm": [
+          169,
+          219
+        ],
+        "sleeve_slide_distance_upward_z_mm": 50,
+        "sleeve_four_wall_cuboids_final": [
+          {
+            "id": "FRONT_Y",
+            "o": [
+              659,
+              205.5,
+              169
+            ],
+            "s": [
+              21,
+              2,
+              50
+            ]
+          },
+          {
+            "id": "BACK_Y",
+            "o": [
+              659,
+              220.5,
+              169
+            ],
+            "s": [
+              21,
+              2,
+              50
+            ]
+          },
+          {
+            "id": "LEFT_X",
+            "o": [
+              659,
+              207.5,
+              169
+            ],
+            "s": [
+              2,
+              13,
+              50
+            ]
+          },
+          {
+            "id": "RIGHT_X",
+            "o": [
+              678,
+              207.5,
+              169
+            ],
+            "s": [
+              2,
+              13,
+              50
+            ]
+          }
+        ],
+        "static_ring_material_net_displacement_l": 0.007
+      },
+      "collision_tests": {
+        "sleeve_final_with_other_cabinet_rails_and_all_modules": [],
+        "sleeve_slide_swept_with_other_cabinet_rails_and_all_modules": [],
+        "sleeve_slide_swept_with_own_two_rail_halves": [],
+        "sleeve_slide_swept_with_original_K17_integral_lips": [
+          "G17_12_retainer_2",
+          "G17_14_shelf_2"
+        ]
+      },
+      "composite_install_lower_then_upper": {
+        "first_lower_rail_with_preloaded_sleeve": {
+          "passed": true,
+          "aperture_projected_radial_margin_mm": 91.261,
+          "visited_nodes": 7403,
+          "grid_shape_xyz": [
+            55,
+            27,
+            11
+          ],
+          "waypoints_global_centers_xyz_mm": [
+            [
+              231,
+              52.5,
+              250
+            ],
+            [
+              437.5,
+              52.5,
+              250
+            ],
+            [
+              437.5,
+              52.5,
+              130
+            ],
+            [
+              437.5,
+              62.5,
+              130
+            ],
+            [
+              669.5,
+              62.5,
+              130
+            ],
+            [
+              669.5,
+              62.5,
+              108
+            ],
+            [
+              669.5,
+              214,
+              108
+            ]
+          ],
+          "independently_checked_swept_AABB_segments": true
+        },
+        "next_plain_upper_rail_while_lower_installed": {
+          "passed": true,
+          "aperture_projected_radial_margin_mm": 35.675,
+          "visited_nodes": 9006,
+          "grid_shape_xyz": [
+            59,
+            31,
+            11
+          ],
+          "waypoints_global_centers_xyz_mm": [
+            [
+              231,
+              50,
+              250
+            ],
+            [
+              440,
+              50,
+              250
+            ],
+            [
+              440,
+              50,
+              314
+            ],
+            [
+              440,
+              60,
+              314
+            ],
+            [
+              669.5,
+              60,
+              314
+            ],
+            [
+              669.5,
+              60,
+              336
+            ],
+            [
+              669.5,
+              214,
+              336
+            ]
+          ],
+          "independently_checked_swept_AABB_segments": true
+        },
+        "both_halves_fit_nominal_translational_route": true,
+        "sleeve_axial_slide_collision_free_without_integrated_lips": true,
+        "motion_verified_with_integral_original_lips": false
+      },
+      "axial_y_tool_screen": {
+        "rail_front_y_mm": 208,
+        "nominal_front_opening_center_xz_mm": [
+          231,
+          250
+        ],
+        "rail_face_projection_distance_from_driver_axis_mm": 442.061,
+        "source_K25_direct_face_tool_is_accessible": false,
+        "sleeve_has_real_axial_lock": false,
+        "remote_actuation_or_tool_path_proven": false
+      }
+    },
+    {
+      "rail": "G17_COLUMN_10",
+      "state": "full100",
+      "split_global_z_mm": 194,
+      "geometry": {
+        "original_unfastened_rail_cross_section_mm": [
+          16,
+          12
+        ],
+        "sleeve_outer_cross_section_mm": [
+          21,
+          17
+        ],
+        "sleeve_inner_free_cross_section_mm": [
+          17,
+          13
+        ],
+        "hypothetical_wall_thickness_mm": 2,
+        "nominal_slide_clearance_each_radial_side_mm": 0.5,
+        "sleeve_axial_height_mm": 50,
+        "preload_z_interval_mm": [
+          119,
+          169
+        ],
+        "final_z_interval_mm": [
+          169,
+          219
+        ],
+        "sleeve_slide_distance_upward_z_mm": 50,
+        "sleeve_four_wall_cuboids_final": [
+          {
+            "id": "FRONT_Y",
+            "o": [
+              659,
+              205.5,
+              169
+            ],
+            "s": [
+              21,
+              2,
+              50
+            ]
+          },
+          {
+            "id": "BACK_Y",
+            "o": [
+              659,
+              220.5,
+              169
+            ],
+            "s": [
+              21,
+              2,
+              50
+            ]
+          },
+          {
+            "id": "LEFT_X",
+            "o": [
+              659,
+              207.5,
+              169
+            ],
+            "s": [
+              2,
+              13,
+              50
+            ]
+          },
+          {
+            "id": "RIGHT_X",
+            "o": [
+              678,
+              207.5,
+              169
+            ],
+            "s": [
+              2,
+              13,
+              50
+            ]
+          }
+        ],
+        "static_ring_material_net_displacement_l": 0.007
+      },
+      "collision_tests": {
+        "sleeve_final_with_other_cabinet_rails_and_all_modules": [],
+        "sleeve_slide_swept_with_other_cabinet_rails_and_all_modules": [],
+        "sleeve_slide_swept_with_own_two_rail_halves": [],
+        "sleeve_slide_swept_with_original_K17_integral_lips": [
+          "G17_12_retainer_2",
+          "G17_14_shelf_2"
+        ]
+      },
+      "composite_install_lower_then_upper": {
+        "first_lower_rail_with_preloaded_sleeve": {
+          "passed": false,
+          "aperture_projected_radial_margin_mm": 91.261,
+          "visited_nodes": 15225,
+          "grid_shape_xyz": [
+            65,
+            31,
+            21
+          ]
+        },
+        "next_plain_upper_rail_while_lower_installed": {
+          "passed": false,
+          "aperture_projected_radial_margin_mm": 35.675,
+          "visited_nodes": 13879,
+          "grid_shape_xyz": [
+            69,
+            35,
+            17
+          ]
+        },
+        "both_halves_fit_nominal_translational_route": false,
+        "sleeve_axial_slide_collision_free_without_integrated_lips": true,
+        "motion_verified_with_integral_original_lips": false
+      },
+      "axial_y_tool_screen": {
+        "rail_front_y_mm": 208,
+        "nominal_front_opening_center_xz_mm": [
+          231,
+          250
+        ],
+        "rail_face_projection_distance_from_driver_axis_mm": 442.061,
+        "source_K25_direct_face_tool_is_accessible": false,
+        "sleeve_has_real_axial_lock": false,
+        "remote_actuation_or_tool_path_proven": false
+      }
+    },
+    {
+      "rail": "G17_COLUMN_10",
+      "state": "core120",
+      "split_global_z_mm": 300,
+      "geometry": {
+        "original_unfastened_rail_cross_section_mm": [
+          16,
+          12
+        ],
+        "sleeve_outer_cross_section_mm": [
+          21,
+          17
+        ],
+        "sleeve_inner_free_cross_section_mm": [
+          17,
+          13
+        ],
+        "hypothetical_wall_thickness_mm": 2,
+        "nominal_slide_clearance_each_radial_side_mm": 0.5,
+        "sleeve_axial_height_mm": 50,
+        "preload_z_interval_mm": [
+          225,
+          275
+        ],
+        "final_z_interval_mm": [
+          275,
+          325
+        ],
+        "sleeve_slide_distance_upward_z_mm": 50,
+        "sleeve_four_wall_cuboids_final": [
+          {
+            "id": "FRONT_Y",
+            "o": [
+              659,
+              205.5,
+              275
+            ],
+            "s": [
+              21,
+              2,
+              50
+            ]
+          },
+          {
+            "id": "BACK_Y",
+            "o": [
+              659,
+              220.5,
+              275
+            ],
+            "s": [
+              21,
+              2,
+              50
+            ]
+          },
+          {
+            "id": "LEFT_X",
+            "o": [
+              659,
+              207.5,
+              275
+            ],
+            "s": [
+              2,
+              13,
+              50
+            ]
+          },
+          {
+            "id": "RIGHT_X",
+            "o": [
+              678,
+              207.5,
+              275
+            ],
+            "s": [
+              2,
+              13,
+              50
+            ]
+          }
+        ],
+        "static_ring_material_net_displacement_l": 0.007
+      },
+      "collision_tests": {
+        "sleeve_final_with_other_cabinet_rails_and_all_modules": [],
+        "sleeve_slide_swept_with_other_cabinet_rails_and_all_modules": [],
+        "sleeve_slide_swept_with_own_two_rail_halves": [],
+        "sleeve_slide_swept_with_original_K17_integral_lips": [
+          "G17_14_retainer_2",
+          "G17_15_shelf_2"
+        ]
+      },
+      "composite_install_lower_then_upper": {
+        "first_lower_rail_with_preloaded_sleeve": {
+          "passed": true,
+          "aperture_projected_radial_margin_mm": 38.504,
+          "visited_nodes": 10233,
+          "grid_shape_xyz": [
+            59,
+            29,
+            13
+          ],
+          "waypoints_global_centers_xyz_mm": [
+            [
+              231,
+              52.5,
+              250
+            ],
+            [
+              437.5,
+              52.5,
+              250
+            ],
+            [
+              437.5,
+              52.5,
+              183
+            ],
+            [
+              437.5,
+              62.5,
+              183
+            ],
+            [
+              669.5,
+              62.5,
+              183
+            ],
+            [
+              669.5,
+              62.5,
+              161
+            ],
+            [
+              669.5,
+              214,
+              161
+            ]
+          ],
+          "independently_checked_swept_AABB_segments": true
+        },
+        "next_plain_upper_rail_while_lower_installed": {
+          "passed": true,
+          "aperture_projected_radial_margin_mm": 88.541,
+          "visited_nodes": 15985,
+          "grid_shape_xyz": [
+            63,
+            33,
+            17
+          ],
+          "waypoints_global_centers_xyz_mm": [
+            [
+              231,
+              50,
+              250
+            ],
+            [
+              440,
+              50,
+              250
+            ],
+            [
+              440,
+              50,
+              367
+            ],
+            [
+              440,
+              60,
+              367
+            ],
+            [
+              669.5,
+              60,
+              367
+            ],
+            [
+              669.5,
+              60,
+              389
+            ],
+            [
+              669.5,
+              214,
+              389
+            ]
+          ],
+          "independently_checked_swept_AABB_segments": true
+        },
+        "both_halves_fit_nominal_translational_route": true,
+        "sleeve_axial_slide_collision_free_without_integrated_lips": true,
+        "motion_verified_with_integral_original_lips": false
+      },
+      "axial_y_tool_screen": {
+        "rail_front_y_mm": 208,
+        "nominal_front_opening_center_xz_mm": [
+          231,
+          250
+        ],
+        "rail_face_projection_distance_from_driver_axis_mm": 441.341,
+        "source_K25_direct_face_tool_is_accessible": false,
+        "sleeve_has_real_axial_lock": false,
+        "remote_actuation_or_tool_path_proven": false
+      }
+    }
+  ],
+  "axial_lock_falsification": {
+    "sleeve_without_holes_pins_captive_stops_or_positive_end_support_can_slide_off_rail": true,
+    "butt_joint_cannot_transfer_positive_axial_tension_by_sleeve_alone": true,
+    "sleeve_0_5mm_clearance_does_not_impose_known_preload_or_bending_stiffness": true,
+    "neither_MDF_bearing_nor_wall_yield_fatigue_or_corrosion_tested": true,
+    "real_joint_design_approved": false
+  },
+  "safe_service_gates": {
+    "guide02_K25_hypothetical_Y_tool_only_geometrically_accessible": true,
+    "guide10_K25_straight_Y_tool_blocked_by_front_opening": true,
+    "guide10_sleeve_cannot_be_operated_and_locked_by_an_assumed_straight_screwdriver": true,
+    "installing_or_removing_rail_requires_positive_temporary_support_for_guide02_modules": [
+      0,
+      1
+    ],
+    "guide10_modules_at_risk": [
+      12,
+      13,
+      14,
+      15
+    ],
+    "necessary_named_fixture_tests": [
+      "Positive axial lock and anti-vibration stop accessible from Ø355.8 hole",
+      "Bending, shear, pullout, torsional retention and cycling qualification with real dimensions",
+      "After-insertion installation of structurally qualified lower support, upper anti-inversion keeper and real tool access",
+      "Full 100↔120↔150 state cycle with every physical latch and screw modeled",
+      "MDF22 anchoring, joint tolerance, tool/CAM radius, cabinet depth, true basket and measured air volume"
+    ],
+    "nominal_CNC_release": false
+  }
+}

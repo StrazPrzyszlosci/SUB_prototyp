@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="480" viewBox="0 0 1100 480"><rect width="1100" height="480" fill="#f8fafb"/>
+<text x="25" y="32" font-size="23" fill="#263d4c" font-weight="bold">K27 — sliding sleeve on split guide: geometrical research, NO CNC</text>
+<text x="25" y="54" font-size="13" fill="#506575">Illustrative section; real MDF joint, preload, axial locking pin, tools and material strength have NOT been qualified.</text>
+<rect x="120" y="105" width="100" height="268" fill="#d5e2e7" stroke="#5d8190" stroke-width="2"/>
+<rect x="120" y="105" width="100" height="145" fill="#aac9b4" stroke="#5d8190"/>
+<rect x="120" y="250" width="100" height="123" fill="#d5e2e7" stroke="#5d8190"/>
+<rect x="101" y="210" width="138" height="82" fill="#7b94a8" fill-opacity=".48" stroke="#55768a" stroke-width="3"/>
+<line x1="85" y1="250" x2="250" y2="250" stroke="#d0594a" stroke-dasharray="7 5" stroke-width="2"/>
+<text x="265" y="255" font-size="14" fill="#91473c">Split plane Z194 or Z250</text>
+<text x="268" y="191" font-size="15" fill="#3b5d70">50 mm sleeve spans both halves, 25 mm each</text>
+<path d="M170 200 V156 M163 165 L170 155 L177 165" fill="none" stroke="#3f8370" stroke-width="4"/>
+<text x="268" y="159" font-size="14" fill="#3b5d70">50 mm upward stroke from preload position</text>
+<rect x="660" y="107" width="416" height="160" rx="12" fill="#edf1f4" stroke="#9aaeb9"/>
+<text x="684" y="138" font-size="18" font-weight="bold" fill="#2e4b5e">Illustrative sleeve dimensions</text>
+<text x="684" y="171" font-size="15" fill="#2f4b5e">Outside: 21 × 17 × 50 mm</text>
+<text x="684" y="199" font-size="15" fill="#2f4b5e">Inside: 17 × 13 mm</text>
+<text x="684" y="227" font-size="15" fill="#2f4b5e">Radial sliding gap: 0.5 mm / side</text>
+<text x="25" y="413" font-size="15" font-weight="bold" fill="#a33e38">Guide10 slide strikes two original K17 integral lips. They MUST be redesigned.</text>
+<text x="25" y="448" font-size="18" font-weight="bold" fill="#a33e38">A floating sleeve is NOT an axial lock. Structural load path unproven. CNC HOLD.</text></svg>

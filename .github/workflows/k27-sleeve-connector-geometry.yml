@@ -1,0 +1,55 @@
+name: K27 sliding preloaded guide sleeve research regression (CNC HOLD)
+on:
+  push:
+    branches: [main]
+    paths:
+      - "skrypty/k27_*"
+      - "wyniki/k27_*"
+      - ".github/workflows/k27-sleeve-connector-geometry.yml"
+      - "wyniki/k15_p30e_przed_CNC_zestawienie.json"
+      - "wyniki/k17_prowadnice_boczne_wkladow.json"
+      - "wyniki/k25_zlacza_prowadnic_i_dostep.json"
+      - "wyniki/k26_przejscia_dzielonych_prowadnic.json"
+  pull_request:
+    paths:
+      - "skrypty/k27_*"
+      - "wyniki/k27_*"
+      - ".github/workflows/k27-sleeve-connector-geometry.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  geometry-regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Reproduce conservative preloaded sleeve motion and exact solid-wall slide
+        run: |
+          set -euo pipefail
+          node --check skrypty/k27_tuleja_przesuwna_i_trasy.js
+          node skrypty/k27_tuleja_przesuwna_i_trasy.js
+          git diff --exit-code -- wyniki/k27_tuleja_przesuwna_i_trasy.json
+      - name: Require K18 original lip veto and absent axial lock
+        run: |
+          node - <<'NODE'
+          const fs=require("node:fs"),a=require("node:assert/strict");
+          const d=JSON.parse(fs.readFileSync("wyniki/k27_tuleja_przesuwna_i_trasy.json","utf8"));
+          a.match(d.status,/CNC HOLD/);
+          a.equal(d.studied_not_selected_hardware.fasteners_actual_number,0);
+          a.equal(d.studied_not_selected_hardware.positive_axial_retaining_features,0);
+          a.equal(d.studied_not_selected_hardware.solid_material_volume_per_collar_l,0.0068);
+          a.equal(d.cases.length,6);
+          for(const v of d.cases.slice(0,4)) {
+            a.equal(v.composite_install_lower_then_upper.both_halves_fit_nominal_translational_route,true);
+            a.equal(v.composite_install_lower_then_upper.sleeve_axial_slide_collision_free_without_integrated_lips,true);
+          }
+          a.equal(d.cases[4].composite_install_lower_then_upper.both_halves_fit_nominal_translational_route,false);
+          a.equal(d.cases[2].collision_tests.sleeve_slide_swept_with_original_K17_integral_lips.length,2);
+          a.equal(d.axial_lock_falsification.real_joint_design_approved,false);
+          a.equal(d.safe_service_gates.nominal_CNC_release,false);
+          console.log("PASS K27 sleeve access geometry; physical positive lock still absent, original K18 tabs obstruct guide10, CNC HOLD");
+          NODE
