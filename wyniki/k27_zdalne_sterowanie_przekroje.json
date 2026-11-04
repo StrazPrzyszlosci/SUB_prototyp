@@ -1,0 +1,464 @@
+{
+  "study": "K27",
+  "date": "2026-11-04",
+  "status": "CNC HOLD — flexible actuation cable corridor only, NO structural remote latch",
+  "source": "K15 cabinet/boxes, all K17 guide rails and all 80 original lips, K25 hypothetical Z194 front faceplate",
+  "modeled_route": {
+    "start_global_xyz_mm": [
+      231,
+      44,
+      194
+    ],
+    "bend_start_global_xyz_mm": [
+      231,
+      190,
+      194
+    ],
+    "bend_end_global_xyz_mm": [
+      246,
+      205,
+      194
+    ],
+    "termination_global_xyz_mm": [
+      669.5,
+      205,
+      194
+    ],
+    "distance_from_termination_to_guide10_front_Y_face_mm": 3,
+    "bend_radius_hypothesis_mm": 15,
+    "bend_chord_count": 32,
+    "maximum_bend_sagitta_mm": 0.0045177,
+    "square_AABB_outer_envelope_continuously_swept_over_each_polyline_segment": true,
+    "front_baffle_mode": "both MDF front panels replaced with nominal Ø355.8 centred speaker hole; driver removed",
+    "cable_flexibility_or_bend_manufacturer_verified": false,
+    "real_connector_or_latch_implemented": false
+  },
+  "states": {
+    "100": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "120": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "150": [
+      4
+    ]
+  },
+  "outer_envelope_screen": [
+    {
+      "state": "100",
+      "outer_mm": 4,
+      "plate_present": false,
+      "z_mm": 194,
+      "checked_full_segment_sweeps": 34,
+      "entry_margin_mm": 119.865527,
+      "positive_overlap_segment_count": 0,
+      "first_hits": [],
+      "nominal_pass": true,
+      "gap_Y202_to208_mm": 6,
+      "residual_width_at_center_Y205_mm": 2
+    },
+    {
+      "state": "100",
+      "outer_mm": 5,
+      "plate_present": false,
+      "z_mm": 194,
+      "checked_full_segment_sweeps": 34,
+      "entry_margin_mm": 119.346606,
+      "positive_overlap_segment_count": 0,
+      "first_hits": [],
+      "nominal_pass": true,
+      "gap_Y202_to208_mm": 6,
+      "residual_width_at_center_Y205_mm": 1
+    },
+    {
+      "state": "100",
+      "outer_mm": 6,
+      "plate_present": false,
+      "z_mm": 194,
+      "checked_full_segment_sweeps": 34,
+      "entry_margin_mm": 118.823778,
+      "positive_overlap_segment_count": 0,
+      "first_hits": [],
+      "nominal_pass": true,
+      "gap_Y202_to208_mm": 6,
+      "residual_width_at_center_Y205_mm": 0
+    },
+    {
+      "state": "100",
+      "outer_mm": 7,
+      "plate_present": false,
+      "z_mm": 194,
+      "checked_full_segment_sweeps": 34,
+      "entry_margin_mm": 118.297148,
+      "positive_overlap_segment_count": 1,
+      "first_hits": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "G17_COLUMN_09",
+            "G17_COLUMN_10",
+            "BOX_18"
+          ]
+        }
+      ],
+      "nominal_pass": false,
+      "gap_Y202_to208_mm": 6,
+      "residual_width_at_center_Y205_mm": -1
+    },
+    {
+      "state": "100",
+      "outer_mm": 14,
+      "plate_present": false,
+      "z_mm": 194,
+      "checked_full_segment_sweeps": 34,
+      "entry_margin_mm": 114.512304,
+      "positive_overlap_segment_count": 1,
+      "first_hits": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "G17_COLUMN_09",
+            "G17_COLUMN_10",
+            "BOX_18"
+          ]
+        }
+      ],
+      "nominal_pass": false,
+      "gap_Y202_to208_mm": 6,
+      "residual_width_at_center_Y205_mm": -8
+    },
+    {
+      "state": "120",
+      "outer_mm": 4,
+      "plate_present": false,
+      "z_mm": 194,
+      "checked_full_segment_sweeps": 34,
+      "entry_margin_mm": 119.865527,
+      "positive_overlap_segment_count": 0,
+      "first_hits": [],
+      "nominal_pass": true,
+      "gap_Y202_to208_mm": 6,
+      "residual_width_at_center_Y205_mm": 2
+    },
+    {
+      "state": "120",
+      "outer_mm": 5,
+      "plate_present": false,
+      "z_mm": 194,
+      "checked_full_segment_sweeps": 34,
+      "entry_margin_mm": 119.346606,
+      "positive_overlap_segment_count": 0,
+      "first_hits": [],
+      "nominal_pass": true,
+      "gap_Y202_to208_mm": 6,
+      "residual_width_at_center_Y205_mm": 1
+    },
+    {
+      "state": "120",
+      "outer_mm": 6,
+      "plate_present": false,
+      "z_mm": 194,
+      "checked_full_segment_sweeps": 34,
+      "entry_margin_mm": 118.823778,
+      "positive_overlap_segment_count": 0,
+      "first_hits": [],
+      "nominal_pass": true,
+      "gap_Y202_to208_mm": 6,
+      "residual_width_at_center_Y205_mm": 0
+    },
+    {
+      "state": "120",
+      "outer_mm": 7,
+      "plate_present": false,
+      "z_mm": 194,
+      "checked_full_segment_sweeps": 34,
+      "entry_margin_mm": 118.297148,
+      "positive_overlap_segment_count": 1,
+      "first_hits": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "G17_COLUMN_09",
+            "G17_COLUMN_10"
+          ]
+        }
+      ],
+      "nominal_pass": false,
+      "gap_Y202_to208_mm": 6,
+      "residual_width_at_center_Y205_mm": -1
+    },
+    {
+      "state": "120",
+      "outer_mm": 14,
+      "plate_present": false,
+      "z_mm": 194,
+      "checked_full_segment_sweeps": 34,
+      "entry_margin_mm": 114.512304,
+      "positive_overlap_segment_count": 1,
+      "first_hits": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "G17_COLUMN_09",
+            "G17_COLUMN_10"
+          ]
+        }
+      ],
+      "nominal_pass": false,
+      "gap_Y202_to208_mm": 6,
+      "residual_width_at_center_Y205_mm": -8
+    },
+    {
+      "state": "150",
+      "outer_mm": 4,
+      "plate_present": false,
+      "z_mm": 194,
+      "checked_full_segment_sweeps": 34,
+      "entry_margin_mm": 119.865527,
+      "positive_overlap_segment_count": 0,
+      "first_hits": [],
+      "nominal_pass": true,
+      "gap_Y202_to208_mm": 6,
+      "residual_width_at_center_Y205_mm": 2
+    },
+    {
+      "state": "150",
+      "outer_mm": 5,
+      "plate_present": false,
+      "z_mm": 194,
+      "checked_full_segment_sweeps": 34,
+      "entry_margin_mm": 119.346606,
+      "positive_overlap_segment_count": 0,
+      "first_hits": [],
+      "nominal_pass": true,
+      "gap_Y202_to208_mm": 6,
+      "residual_width_at_center_Y205_mm": 1
+    },
+    {
+      "state": "150",
+      "outer_mm": 6,
+      "plate_present": false,
+      "z_mm": 194,
+      "checked_full_segment_sweeps": 34,
+      "entry_margin_mm": 118.823778,
+      "positive_overlap_segment_count": 0,
+      "first_hits": [],
+      "nominal_pass": true,
+      "gap_Y202_to208_mm": 6,
+      "residual_width_at_center_Y205_mm": 0
+    },
+    {
+      "state": "150",
+      "outer_mm": 7,
+      "plate_present": false,
+      "z_mm": 194,
+      "checked_full_segment_sweeps": 34,
+      "entry_margin_mm": 118.297148,
+      "positive_overlap_segment_count": 1,
+      "first_hits": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "G17_COLUMN_09",
+            "G17_COLUMN_10"
+          ]
+        }
+      ],
+      "nominal_pass": false,
+      "gap_Y202_to208_mm": 6,
+      "residual_width_at_center_Y205_mm": -1
+    },
+    {
+      "state": "150",
+      "outer_mm": 14,
+      "plate_present": false,
+      "z_mm": 194,
+      "checked_full_segment_sweeps": 34,
+      "entry_margin_mm": 114.512304,
+      "positive_overlap_segment_count": 1,
+      "first_hits": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "G17_COLUMN_09",
+            "G17_COLUMN_10"
+          ]
+        }
+      ],
+      "nominal_pass": false,
+      "gap_Y202_to208_mm": 6,
+      "residual_width_at_center_Y205_mm": -8
+    }
+  ],
+  "with_K25_trial_faceplate_screen": [
+    {
+      "state": "100",
+      "outer_mm": 4,
+      "plate_present": true,
+      "z_mm": 194,
+      "checked_full_segment_sweeps": 34,
+      "entry_margin_mm": 119.865527,
+      "positive_overlap_segment_count": 1,
+      "first_hits": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "G17_COLUMN_10_PLATE_FRONT_2MM_HOLD"
+          ]
+        }
+      ],
+      "nominal_pass": false,
+      "gap_Y202_to208_mm": 6,
+      "residual_width_at_center_Y205_mm": 2
+    },
+    {
+      "state": "120",
+      "outer_mm": 4,
+      "plate_present": true,
+      "z_mm": 194,
+      "checked_full_segment_sweeps": 34,
+      "entry_margin_mm": 119.865527,
+      "positive_overlap_segment_count": 1,
+      "first_hits": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "G17_COLUMN_10_PLATE_FRONT_2MM_HOLD"
+          ]
+        }
+      ],
+      "nominal_pass": false,
+      "gap_Y202_to208_mm": 6,
+      "residual_width_at_center_Y205_mm": 2
+    },
+    {
+      "state": "150",
+      "outer_mm": 4,
+      "plate_present": true,
+      "z_mm": 194,
+      "checked_full_segment_sweeps": 34,
+      "entry_margin_mm": 119.865527,
+      "positive_overlap_segment_count": 1,
+      "first_hits": [
+        {
+          "segment": 33,
+          "obstacles": [
+            "G17_COLUMN_10_PLATE_FRONT_2MM_HOLD"
+          ]
+        }
+      ],
+      "nominal_pass": false,
+      "gap_Y202_to208_mm": 6,
+      "residual_width_at_center_Y205_mm": 2
+    }
+  ],
+  "core120_width_comparison": [
+    {
+      "outer": 4,
+      "passes": true,
+      "first_hit": []
+    },
+    {
+      "outer": 5,
+      "passes": true,
+      "first_hit": []
+    },
+    {
+      "outer": 6,
+      "passes": true,
+      "first_hit": []
+    },
+    {
+      "outer": 7,
+      "passes": false,
+      "first_hit": [
+        "G17_COLUMN_09",
+        "G17_COLUMN_10"
+      ]
+    },
+    {
+      "outer": 14,
+      "passes": false,
+      "first_hit": [
+        "G17_COLUMN_09",
+        "G17_COLUMN_10"
+      ]
+    }
+  ],
+  "corridor": {
+    "front_large_box_back_global_Y_mm": 202,
+    "guide10_front_face_global_Y_mm": 208,
+    "gap_mm": 6,
+    "nominal_pass_envelope_mm": 4,
+    "example_hypothetical_cable_OD_mm": 2,
+    "example_clearance_each_side_mm": 1,
+    "nominal_free_margin_per_side_at_outer4_mm": 1,
+    "when_faces_each_encroach_hypothetical_0_5mm_gap_mm": 5,
+    "remaining_margin_each_side_for_outer4_mm": 0,
+    "when_faces_each_encroach_hypothetical_1mm_gap_mm": 4,
+    "K25_plate_projection_Y_global_mm": [
+      206,
+      208
+    ],
+    "plate_depth_mm": 2,
+    "gap_minus_plate_minus_outer4_mm": 0,
+    "measured_material_or_cable_tolerances": false
+  },
+  "bending_load_assumptions": {
+    "density_kg_m3": 730,
+    "extra_assumed_hardware_per_large_box_kg": 0.2,
+    "acceleration_g": 5,
+    "assumed_number_large_rear_boxes": 4,
+    "combined_assumed_mass_kg": 3.209632,
+    "combined_hypothetical_inertial_force_N": 157.43245,
+    "positive_temporary_support_mandatory": true,
+    "link_not_structural": true,
+    "measured_MDF_strength_or_fatigue_allowables_present": false
+  },
+  "design_decision": {
+    "candidate_4mm_square_remote_duct_clear_in_all_3_nominal_states": true,
+    "conventional_K25_front_faceplate_collides_with_centered_4mm_duct": true,
+    "direct_K25_14mm_driver_blocked": true,
+    "rigid_torque_driver_cannot_follow_bent_remote_cable_route": true,
+    "positive_mechanical_latch_and_connector_missing": true,
+    "true_cable_end_capture_and_bend_force_stroke_unverified": true,
+    "release_to_CNC": false
+  },
+  "next_engineering_goals": [
+    "Define separately load-rated positive internal guide10 latch with spring/captive fail-safe stop, and its cable-side coupling, avoiding six-millimetre slit intrusion.",
+    "Design temporary independent load-bearing supports for modules 12–15 while guide10 is removed; do not let actuator cable bear load.",
+    "Model true metal latch and cable sheath solids, connector reach, real supplier bend radii and force losses in K24/K26 100↔120↔150 chronological service.",
+    "Measure material and tool tolerances; verify fatigue, MDF pull-out, screw edge distances, acoustics and enclosure leakage; then regenerate production CNC with independent QA."
+  ]
+}

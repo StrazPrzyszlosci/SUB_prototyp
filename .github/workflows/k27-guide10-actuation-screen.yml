@@ -1,0 +1,37 @@
+name: K27 Guide10 remote cable route screen — CNC HOLD
+on:
+  push:
+    branches: [main]
+    paths: ["skrypty/k27_*", "wyniki/k27_*", "wyniki/k25_zlacza_prowadnic_i_dostep.json", ".github/workflows/k27-guide10-actuation-screen.yml"]
+  pull_request:
+    paths: ["skrypty/k27_*", "wyniki/k27_*", "wyniki/k25_zlacza_prowadnic_i_dostep.json", ".github/workflows/k27-guide10-actuation-screen.yml"]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  numerical-geometry:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Independent reproduction
+        run: |
+          set -euo pipefail
+          node --check skrypty/k27_zdalne_odblokowanie_prowadnicy10.js
+          node skrypty/k27_zdalne_odblokowanie_prowadnicy10.js
+          git diff --exit-code -- wyniki/k27_zdalne_sterowanie_przekroje.json
+      - name: Guard conditional claims and production hold
+        run: |
+          node - <<'NODE'
+          const fs=require('fs'),a=require('assert/strict');
+          const r=JSON.parse(fs.readFileSync('wyniki/k27_zdalne_sterowanie_przekroje.json','utf8'));
+          a.match(r.status,/CNC HOLD/);
+          a.deepEqual(r.core120_width_comparison.map(v=>v.outer),[4,5,6,7,14]);
+          a.deepEqual(r.core120_width_comparison.map(v=>v.passes),[true,true,true,false,false]);
+          a.equal(r.with_K25_trial_faceplate_screen.find(v=>v.state==='120').nominal_pass,false);
+          a.equal(r.design_decision.release_to_CNC,false);
+          a.equal(r.bending_load_assumptions.link_not_structural,true);
+          console.log('K27 PASS: narrow nominal cable route; K25 plate obstructs; CNC HOLD');
+          NODE
