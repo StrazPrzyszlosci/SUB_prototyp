@@ -20,6 +20,8 @@ Zachowano środek śruby na promieniu **184 mm**, początek klocka na **178,9 mm
 w_{\rm drewno}+w_{\rm stal}=184-178{,}9-2{,}5=\mathbf{2{,}6\ mm}.
 \]
 
+**Łączny budżet obu pasów to 2,6 mm.**
+
 Nawet przesunięcie wewnętrznej krawędzi klocka do krawędzi wycięcia kołnierza **177,9 mm** pozostawiłoby łącznie tylko **3,6 mm**. Dlatego **nie da się jednocześnie osiągnąć choćby hipotetycznych 2 mm dla obu pasów**. To ograniczenie geometryczne niezależne od stali S235JR, odmiany klejonki czy zastosowanego kleju.
 
 | Pas drewna przed kieszenią [mm] | Pas stali od zewnętrznego gwintu M5 do krawędzi [mm] | Komentarz |
