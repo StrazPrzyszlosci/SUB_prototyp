@@ -1,0 +1,137 @@
+{
+  "status": "NOMINAL_CAD_CHECKS_PASS_PRODUCTION_HOLD",
+  "checked_dxf": 102,
+  "paths": {
+    "box_paths": 8,
+    "keeper_paths": 5,
+    "separator_paths": 4,
+    "tool_paths": 8
+  },
+  "box_entry_margin_min_mm": 35.9859326916461,
+  "keeper_entry_margin_min_mm": 17.391113953152114,
+  "nominal_244_panel_fit_corners": [
+    {
+      "outer": 259.9,
+      "inner_panel": 243.9,
+      "left_stock": 7.5,
+      "right_stock": 7.5,
+      "clearance": 0.9999999999999716
+    },
+    {
+      "outer": 259.9,
+      "inner_panel": 243.9,
+      "left_stock": 7.5,
+      "right_stock": 8.5,
+      "clearance": -2.842170943040401e-14
+    },
+    {
+      "outer": 259.9,
+      "inner_panel": 243.9,
+      "left_stock": 8.5,
+      "right_stock": 7.5,
+      "clearance": -2.842170943040401e-14
+    },
+    {
+      "outer": 259.9,
+      "inner_panel": 243.9,
+      "left_stock": 8.5,
+      "right_stock": 8.5,
+      "clearance": -1.0000000000000284
+    },
+    {
+      "outer": 259.9,
+      "inner_panel": 244.1,
+      "left_stock": 7.5,
+      "right_stock": 7.5,
+      "clearance": 0.799999999999983
+    },
+    {
+      "outer": 259.9,
+      "inner_panel": 244.1,
+      "left_stock": 7.5,
+      "right_stock": 8.5,
+      "clearance": -0.20000000000001705
+    },
+    {
+      "outer": 259.9,
+      "inner_panel": 244.1,
+      "left_stock": 8.5,
+      "right_stock": 7.5,
+      "clearance": -0.20000000000001705
+    },
+    {
+      "outer": 259.9,
+      "inner_panel": 244.1,
+      "left_stock": 8.5,
+      "right_stock": 8.5,
+      "clearance": -1.200000000000017
+    },
+    {
+      "outer": 260.1,
+      "inner_panel": 243.9,
+      "left_stock": 7.5,
+      "right_stock": 7.5,
+      "clearance": 1.200000000000017
+    },
+    {
+      "outer": 260.1,
+      "inner_panel": 243.9,
+      "left_stock": 7.5,
+      "right_stock": 8.5,
+      "clearance": 0.20000000000001705
+    },
+    {
+      "outer": 260.1,
+      "inner_panel": 243.9,
+      "left_stock": 8.5,
+      "right_stock": 7.5,
+      "clearance": 0.20000000000001705
+    },
+    {
+      "outer": 260.1,
+      "inner_panel": 243.9,
+      "left_stock": 8.5,
+      "right_stock": 8.5,
+      "clearance": -0.799999999999983
+    },
+    {
+      "outer": 260.1,
+      "inner_panel": 244.1,
+      "left_stock": 7.5,
+      "right_stock": 7.5,
+      "clearance": 1.0000000000000284
+    },
+    {
+      "outer": 260.1,
+      "inner_panel": 244.1,
+      "left_stock": 7.5,
+      "right_stock": 8.5,
+      "clearance": 2.842170943040401e-14
+    },
+    {
+      "outer": 260.1,
+      "inner_panel": 244.1,
+      "left_stock": 8.5,
+      "right_stock": 7.5,
+      "clearance": 2.842170943040401e-14
+    },
+    {
+      "outer": 260.1,
+      "inner_panel": 244.1,
+      "left_stock": 8.5,
+      "right_stock": 8.5,
+      "clearance": -0.9999999999999716
+    }
+  ],
+  "nominal_244_panel_clearance_extrema_mm": [
+    -1.200000000000017,
+    1.200000000000017
+  ],
+  "vertical_clearance_min_assumed_jig_mm": 1.0,
+  "conclusions": [
+    "No machining approval: nominal 244mm box bottom can interfere by 1.2mm with permitted stock thickness.",
+    "Regenerate box panel widths from measured batch thickness and qualified glue gap.",
+    "The 1mm vertical reserve depends on +/-0.2mm assembly datums, not supplier CNC tolerance alone.",
+    "No material allowable, fastener torque, terminal cutout or real driver fit has been fabricated or tested."
+  ]
+}

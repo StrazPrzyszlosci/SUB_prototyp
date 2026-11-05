@@ -1,0 +1,103 @@
+ID,MDF_mm,U_mm,V_mm,qty,global_X,global_Y,global_Z,normal_axis,status,notes
+FR1,22,1080,500,1,0,0,0,Y,CNC_HOLD,REFERENCE bore only. Basket screw/retention not released.
+FR2,22,1080,500,1,0,22,0,Y,CNC_HOLD,REFERENCE bore only. Basket screw/retention not released.
+BACK,22,1080,500,1,0,410,0,Y,CNC_HOLD,Terminal opening unresolved; not a complete fabrication part
+SIDE_L,22,366,500,1,0,44,0,X,CNC_HOLD,
+SIDE_R,22,366,500,1,1058,44,0,X,CNC_HOLD,
+BOTTOM,22,1036,366,1,22,44,0,Z,CNC_HOLD,
+TOP,22,1036,366,1,22,44,478,Z,CNC_HOLD,
+PORTAL,22,366,456,1,448,44,22,X,CNC_HOLD,R4 windows; face-drilled 6mm stop-bolt clearance; no edge drilling
+MID_PORTAL,22,366,456,1,750,44,22,X,CNC_HOLD,"Intermediate load path, R4 window, contact with rail ends; glued full frame perimeter"
+CHANNEL_WEB_A_F,8,276,456,1,474,60,22,Y,CNC_HOLD,
+CHANNEL_WEB_A_R,8,276,456,1,474,332,22,Y,CNC_HOLD,
+CHANNEL_WEB_B_F,8,286,456,1,772,60,22,Y,CNC_HOLD,
+CHANNEL_WEB_B_R,8,286,456,1,772,332,22,Y,CNC_HOLD,
+RAIL_A_0_F,18,280,50,1,470,68,22,Z,CNC_HOLD,"Long-edge glue to side web, end support at portal; datum jig required"
+RAIL_A_0_R,18,280,50,1,470,282,22,Z,CNC_HOLD,"Long-edge glue to side web, end support at portal; datum jig required"
+RAIL_A_1_F,18,280,50,1,470,68,138,Z,CNC_HOLD,"Long-edge glue to side web, end support at portal; datum jig required"
+RAIL_A_1_R,18,280,50,1,470,282,138,Z,CNC_HOLD,"Long-edge glue to side web, end support at portal; datum jig required"
+RAIL_A_2_F,18,280,50,1,470,68,254,Z,CNC_HOLD,"Long-edge glue to side web, end support at portal; datum jig required"
+RAIL_A_2_R,18,280,50,1,470,282,254,Z,CNC_HOLD,"Long-edge glue to side web, end support at portal; datum jig required"
+RAIL_A_3_F,18,280,50,1,470,68,370,Z,CNC_HOLD,"Long-edge glue to side web, end support at portal; datum jig required"
+RAIL_A_3_R,18,280,50,1,470,282,370,Z,CNC_HOLD,"Long-edge glue to side web, end support at portal; datum jig required"
+TOP_KEEPER_A_F,12,280,50,1,470,68,466,Z,CNC_HOLD,
+TOP_KEEPER_A_R,12,280,50,1,470,282,466,Z,CNC_HOLD,
+RAIL_B_0_F,18,286,50,1,772,68,22,Z,CNC_HOLD,"Long-edge glue to side web, end support at portal; datum jig required"
+RAIL_B_0_R,18,286,50,1,772,282,22,Z,CNC_HOLD,"Long-edge glue to side web, end support at portal; datum jig required"
+RAIL_B_1_F,18,286,50,1,772,68,138,Z,CNC_HOLD,"Long-edge glue to side web, end support at portal; datum jig required"
+RAIL_B_1_R,18,286,50,1,772,282,138,Z,CNC_HOLD,"Long-edge glue to side web, end support at portal; datum jig required"
+RAIL_B_2_F,18,286,50,1,772,68,254,Z,CNC_HOLD,"Long-edge glue to side web, end support at portal; datum jig required"
+RAIL_B_2_R,18,286,50,1,772,282,254,Z,CNC_HOLD,"Long-edge glue to side web, end support at portal; datum jig required"
+RAIL_B_3_F,18,286,50,1,772,68,370,Z,CNC_HOLD,"Long-edge glue to side web, end support at portal; datum jig required"
+RAIL_B_3_R,18,286,50,1,772,282,370,Z,CNC_HOLD,"Long-edge glue to side web, end support at portal; datum jig required"
+TOP_KEEPER_B_F,12,286,50,1,772,68,466,Z,CNC_HOLD,
+TOP_KEEPER_B_R,12,286,50,1,772,282,466,Z,CNC_HOLD,
+M0N_XL,8,260,96,1,474,70,40,X,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M0N_XR,8,260,96,1,733.1,70,40,X,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M0N_YF,8,251.10000000000002,96,1,482,70,40,Y,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M0N_YR,8,251.10000000000002,96,1,482,322,40,Y,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M0N_ZB,8,251.10000000000002,244,1,482,78,40,Z,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M0N_ZT,8,251.10000000000002,244,1,482,78,128,Z,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M0F_XL,8,260,96,1,749.1,70,40,X,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M0F_XR,8,260,96,1,1008.2,70,40,X,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M0F_YF,8,251.10000000000002,96,1,757.1,70,40,Y,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M0F_YR,8,251.10000000000002,96,1,757.1,322,40,Y,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M0F_ZB,8,251.10000000000002,244,1,757.1,78,40,Z,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M0F_ZT,8,251.10000000000002,244,1,757.1,78,128,Z,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+SEP_0,8,260,96,1,741.1,70,40,X,CNC_HOLD,
+BACKSTOP_0,22,260,96,1,1018,70,40,X,CNC_HOLD,"Bond to right wall, whole end face; hardware qualification open"
+BACKSTOP_PACK_0,18,260,96,1,1040,70,40,X,CNC_HOLD,Second backstop laminate to right wall
+STOP_0,18,306,50,1,430,45,63.0,X,CNC_HOLD,M5 proposed through 6mm clearance; 2 captive metal nuts behind portal; not wood-edge screws
+NOSE_0,22,80,50,1,448,160,63.0,X,CNC_HOLD,22mm bearing nose plus adjustable 4mm nominal compliant contact to box at X474
+M1N_XL,8,260,96,1,474,70,156,X,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M1N_XR,8,260,96,1,733.1,70,156,X,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M1N_YF,8,251.10000000000002,96,1,482,70,156,Y,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M1N_YR,8,251.10000000000002,96,1,482,322,156,Y,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M1N_ZB,8,251.10000000000002,244,1,482,78,156,Z,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M1N_ZT,8,251.10000000000002,244,1,482,78,244,Z,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M1F_XL,8,260,96,1,749.1,70,156,X,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M1F_XR,8,260,96,1,1008.2,70,156,X,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M1F_YF,8,251.10000000000002,96,1,757.1,70,156,Y,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M1F_YR,8,251.10000000000002,96,1,757.1,322,156,Y,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M1F_ZB,8,251.10000000000002,244,1,757.1,78,156,Z,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M1F_ZT,8,251.10000000000002,244,1,757.1,78,244,Z,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+SEP_1,8,260,96,1,741.1,70,156,X,CNC_HOLD,
+BACKSTOP_1,22,260,96,1,1018,70,156,X,CNC_HOLD,"Bond to right wall, whole end face; hardware qualification open"
+BACKSTOP_PACK_1,18,260,96,1,1040,70,156,X,CNC_HOLD,Second backstop laminate to right wall
+STOP_1,18,306,50,1,430,45,179.0,X,CNC_HOLD,M5 proposed through 6mm clearance; 2 captive metal nuts behind portal; not wood-edge screws
+NOSE_1,22,80,50,1,448,160,179.0,X,CNC_HOLD,22mm bearing nose plus adjustable 4mm nominal compliant contact to box at X474
+M2N_XL,8,260,96,1,474,70,272,X,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M2N_XR,8,260,96,1,733.1,70,272,X,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M2N_YF,8,251.10000000000002,96,1,482,70,272,Y,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M2N_YR,8,251.10000000000002,96,1,482,322,272,Y,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M2N_ZB,8,251.10000000000002,244,1,482,78,272,Z,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M2N_ZT,8,251.10000000000002,244,1,482,78,360,Z,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M2F_XL,8,260,96,1,749.1,70,272,X,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M2F_XR,8,260,96,1,1008.2,70,272,X,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M2F_YF,8,251.10000000000002,96,1,757.1,70,272,Y,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M2F_YR,8,251.10000000000002,96,1,757.1,322,272,Y,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M2F_ZB,8,251.10000000000002,244,1,757.1,78,272,Z,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M2F_ZT,8,251.10000000000002,244,1,757.1,78,360,Z,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+SEP_2,8,260,96,1,741.1,70,272,X,CNC_HOLD,
+BACKSTOP_2,22,260,96,1,1018,70,272,X,CNC_HOLD,"Bond to right wall, whole end face; hardware qualification open"
+BACKSTOP_PACK_2,18,260,96,1,1040,70,272,X,CNC_HOLD,Second backstop laminate to right wall
+STOP_2,18,306,50,1,430,45,295.0,X,CNC_HOLD,M5 proposed through 6mm clearance; 2 captive metal nuts behind portal; not wood-edge screws
+NOSE_2,22,80,50,1,448,160,295.0,X,CNC_HOLD,22mm bearing nose plus adjustable 4mm nominal compliant contact to box at X474
+M3N_XL,8,260,76,1,474,70,388,X,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M3N_XR,8,260,76,1,719.0,70,388,X,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M3N_YF,8,237.0,76,1,482,70,388,Y,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M3N_YR,8,237.0,76,1,482,322,388,Y,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M3N_ZB,8,237.0,244,1,482,78,388,Z,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M3N_ZT,8,237.0,244,1,482,78,456,Z,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M3F_XL,8,260,76,1,735.0,70,388,X,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M3F_XR,8,260,76,1,980.0,70,388,X,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M3F_YF,8,237.0,76,1,743.0,70,388,Y,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M3F_YR,8,237.0,76,1,743.0,322,388,Y,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M3F_ZB,8,237.0,244,1,743.0,78,388,Z,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+M3F_ZT,8,237.0,244,1,743.0,78,456,Z,CNC_HOLD,Nominal butt glue joint; regenerate from measured sheet thickness before release
+SEP_3,8,260,76,1,727.0,70,388,X,CNC_HOLD,
+BACKSTOP_3,22,260,76,1,1018,70,388,X,CNC_HOLD,"Bond to right wall, whole end face; hardware qualification open"
+BACKSTOP_PACK_3,18,260,76,1,1040,70,388,X,CNC_HOLD,Second backstop laminate to right wall
+BACKSTOP_SMALL_EXTRA,25,260,76,1,993,70,388,X,CNC_HOLD,Additional end spacer for short boxes; compressible pad to be sized after measurement
+STOP_3,18,306,50,1,430,45,401.0,X,CNC_HOLD,M5 proposed through 6mm clearance; 2 captive metal nuts behind portal; not wood-edge screws
+NOSE_3,22,80,50,1,448,160,401.0,X,CNC_HOLD,22mm bearing nose plus adjustable 4mm nominal compliant contact to box at X474

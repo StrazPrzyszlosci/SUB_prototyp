@@ -1,0 +1,85 @@
+{
+  "revision": "K30-R1-2026-11-05",
+  "status": "CNC_HOLD_DESIGN_REVIEW",
+  "body_xyz_mm": [
+    1080,
+    432,
+    500
+  ],
+  "wall_mm": 22,
+  "front_mm": 44,
+  "module_wall_mm": 8,
+  "driver_axis_xz_mm": [
+    231,
+    250
+  ],
+  "driver_cutout_reference_mm": 355.8,
+  "row_base_z_mm": [
+    40,
+    156,
+    272,
+    388
+  ],
+  "row_box_height_mm": [
+    96,
+    96,
+    96,
+    76
+  ],
+  "box_y_mm": [
+    70,
+    330
+  ],
+  "box_volume_l": [
+    6.6666666667,
+    6.6666666667,
+    6.6666666667,
+    5
+  ],
+  "frame_x_mm": [
+    448,
+    470
+  ],
+  "channel_end_x_mm": 1058,
+  "near_box_x_mm": 474,
+  "separator_mm": 8,
+  "rear_stop_x_mm": 1018,
+  "driver_displacement_assumed_l": 5,
+  "other_hardware_assumed_l": 0.175,
+  "manufacturer": {
+    "urls": [
+      "https://diykraft.pl/kalkulatory-allegro-mdf-cnc/kalkulator-allegro-mdf-zabudowa-glosnika/",
+      "https://allegro.pl/oferta/elementy-obudowa-glosnika-mdf-na-zamowienie-subwoofer-cnc-na-wymiar-17586111495"
+    ],
+    "read_date": "2026-11-05",
+    "mdf_thickness_mm": [
+      8,
+      10,
+      12,
+      18,
+      22,
+      25
+    ],
+    "planar_tolerance_mm": 0.1,
+    "stock_thickness_tolerance_mm": 0.5,
+    "allegro_depth_tolerance_mm": 0.5,
+    "cutter_diameter_mm": 8,
+    "internal_radius_mm": 4,
+    "min_blank_side_mm": 50,
+    "normal_shipping_max_side_mm": 1400,
+    "normal_shipping_max_side_sum_mm": 2700,
+    "normal_shipping_max_mass_kg": 30,
+    "edge_drilling_available": false,
+    "depth_interpretation": "Website refers to stock thickness, Allegro to depth. Pocket-depth tolerance needs explicit confirmation; do not silently equate them."
+  },
+  "assumptions": {
+    "MDF_density_kg_m3": 730,
+    "MDF_E_MPa": 2700,
+    "acceleration_g": 5,
+    "assembly_datum_tolerance_mm": 0.2,
+    "geometric_path_clearance_y_mm": 2,
+    "geometric_path_clearance_z_mm": 1,
+    "physical_material_strength_known": false,
+    "real_driver_3D_known": false
+  }
+}

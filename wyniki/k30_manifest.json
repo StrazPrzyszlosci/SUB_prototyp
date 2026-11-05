@@ -1,0 +1,10 @@
+{
+  "inputs": {
+    "dane/k30_zalozenia.json": "215eb084026aab16f2a5b992e6f3777c070b9b5ddf511282098208bb290a4a9c",
+    "skrypty/k30_stale_kanaly_cnc.py": "fa7690413bd6d103b81e27f1483dde4f4a6dfea4f56ffcf52ac8614e14efd34b",
+    "brief_system_audio_DIY_v0.6.md": "ca4d499eb7f7314dd9f56efb146f14dc38ae569d0ac405f4f58cac246a7754e6"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "ezdxf": "1.4.4",
+  "matplotlib": "3.10.8"
+}

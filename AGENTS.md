@@ -1208,7 +1208,7 @@ Wykonano 29 przestrzennych rozwiązań FV dla geometrii z rzeczywistymi
 modelowymi wręgami i wkładami P20D oraz 348 odpowiedzi napędu
 C02/C11/C06, przy trzech rozdzielczościach (60/45/35 mm).
 Objętość modelu z 11 dużymi i 1 małym wkładem wyniosła
-119,937424 l, zgodnie z geometrią P21D przed odjęciem włókien.
+119,927424 l, zgodnie z geometrią P21D przed odjęciem włókien.
 Dwa porty uginających się ścian są wzajemnie połączone z ciśnieniem,
 ale ich funkcje kształtu pozostają założeniem, nie MES.
 
@@ -1956,3 +1956,12 @@ Odtworzono K04–K06. W czterech próbach K07 dla obu luzów kolejność 4–15,
 - Explicit invented geometry (NOT supplier MDF standard) in-plane transverse edge≥2 hole diameters and axial end≥3 hole diameters: Ø3.3 Y-drilled hole passes on paper (8mm transverse,12.5mm end), Ø3.3 X-drilled and Ø4.5 hole both axes fail; no measured MDF splitting/bearing/steel shear strength.
 - K25 5g +0.2kg/box load demand if all through single Ø3 pin: guide02 total65.65N, guide10 total157.43N; hypothetical steel sleeve double-wall bearing indicator5.47/13.12MPa, no material allowable/factor. Cable Y202 outer 4mm ends at Y204, 1.5mm short of sleeve front Y205.5; no mechanical fork, two-pin release, lock spring or 50mm follower movement. No support for modules12–15 during guide10 service. All DXF CNC HOLD.
 - Artifacts: K29 script/json/report/svg/CI. NEXT K30 compare two remotely retractable captive detents vs gasketed sealed service cassette, with full finite contact hardware, mechanical support, tolerances, FEA/coupons, service-state routing and revised air volume.
+
+
+## 2026-11-05 — K30: fixed-channel alternative and supplier-constrained nominal CNC
+
+- User explicitly requires driver-aperture-only service, no hatch. Read DIYkraft calculator and Allegro 17586111495, inspect description/gallery images. Stock 8/10/12/18/22/25; XY ±0.1, stock ±0.5; R4/Ø8; no edge drilling. Allegro depth vs website thickness tolerance remains distinct.
+- New alternative 1080×432×500, not approved replacement of P30E: eight sealed boxes in four fixed channels, midpoint frame, face-bolted removable stops. Do not silently transfer old FEM/acoustics. 102 nominal MDF DXFs, SCAD states, cutlist, Python generator and independent reload audit.
+- Continuous axis-aligned sweeps: 8 box paths, 4 separators, 5 finite keeper variants including extended stop, 8 hypothetical tool paths pass in specified nominal scenes. Actual hand/tool, fastener qualification, friction and orientation handling remain open. Positive nominal contacts are not strength proof.
+- Re-read DXF extents, units, closed/nonzero edges, R4, holes, stock and shipping envelopes. Stock-corner counterexample: nominal 244mm infill has -1.2..+1.2mm fit. Production cannot use nominal stock thickness blindly. Approximate volumes 99.57/119.92/150.33 L rely on assumed 5L driver and other hardware, not measurement.
+- All K30 files CNC HOLD. No terminal cut or final driver fixation, no qualified metal-to-MDF stop, no approved torque/glue, no physical prototype. Next: actual face-stop joint and stock-aware glue/fit model, then measured hardware paths and changed-cabinet mechanics. See K30 report and saved raw paths. Previous K18 files untouched.
