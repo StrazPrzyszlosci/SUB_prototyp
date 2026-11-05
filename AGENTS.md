@@ -1998,3 +1998,11 @@ Odtworzono K04–K06. W czterech próbach K07 dla obu luzów kolejność 4–15,
 - Nominal front/rear bond areas10032mm² each; four large-row load scenarios give432/427N and mean0.0431/0.0426MPa, not bond capacity. Counterfactual front strip with no edge bond or rib coupling deflects15.48mm in linear model, NOT actual portal prediction.
 - Holding outsideD432/H500 exactly, stock±0.5 and portal cut±0.1 yields total depth gap−1.6..1.6mm and height−1.1..1.1mm. No revised DXF without measured cavity/glue gap/global-axis reconciliation. Trial measured cavity sizing g0.2 has0.25..0.55 total gap under explicitly assumed errors, not adhesive qualification.
 - CNC HOLD. Next: unified measured-stock shell/frame geometry preserving mounting axes and specified front/rear bond interface; then qualify preload/contact/creep.
+
+
+## 2026-11-05 — K35: measured shell/frame geometry with invariant axes
+
+- Nine-part model keeps outside1080×432×500, portalX448/midX750, global windows and24 K32 hole axes. Actual thicknesses set local cut coordinates; assumed edge gaps0.2 and front laminate0.1 remain unqualified. Nominal synthetic portal365.5×455.6 atY44.3/Z22.2; no DXF release.
+-512 independent21.5/22.5mm corners pass shell extent/gap/window transformations; asymmetric case verifies24 global axes. Null measurement template and --require-measured refuses before writes, verified by hashes. Measured format never means qualified fabrication.
+- Old bank not automatically compatible: thicker portal shifts4mm plate beyondX474; thick midframe overlaps B rails; thinner frames leave end gaps; thick bottom/top/right wall collide with nominal bank. All512 corner sets require bank updates, not proof geometry impossible. Diagnostics incomplete for all bonds and paths.
+- Next: propagate measured datums through rail ends, channel webs, stops and retained plates while keeping box positions; recheck full service sweeps. CNC HOLD.
