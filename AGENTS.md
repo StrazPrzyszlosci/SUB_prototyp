@@ -1974,3 +1974,11 @@ Odtworzono K04–K06. W czterech próbach K07 dla obu luzów kolejność 4–15,
 - 21 motion checks and8 bolt-sensitivity checks pass.128 six-sheet/two-box corner fits; independent132 envelope/gap tests. Stock-aware panel sizing preserves external box dimensions; chosen0.2mm/side glue target remains unqualified. With assumed measured-local thickness error±0.05 and XY±0.1, total fit clearance0.1..0.7mm; WITHOUT measurement min−0.8mm remains possible.
 - Measurement template null; --require-measured rejects before writes. Never call synthetic preview measured or production-ready. No 48 panel DXFs published from missing measurements; CSV is preview only. Corrected five DXFs/SCAD compile/read back; see K31 report/test.
 - CNC HOLD: positive plate anti-rotation/anti-drop retention, nose/extended-stop load transfer, glue qualification, real stock, driver and terminal still open. NEXT: physically dimension captive threaded-plate retention and verify complete stop load path; do not promote mean bearing stress to qualification.
+
+
+## 2026-11-05 — K32: positive plate retention candidate and keeper flexibility
+
+- Eight plates enlarged18×30→18×80×4, each with central M5 and two M3 at Z±32;16 face-through Ø4 portal holes. Candidate M3×30/headØ6×3 retains plate independently of removable M5; preassemble before enclosure closure. No adhesive-only retention, but anti-loosening/material/thread qualification remains open.
+- Two new DXFs and detail-only SCAD. Nominal fixed-solid check and21 existing swept paths clear new plates/heads/shanks. Independent DXF24 bores/thread-symbol audit, equilibrium and virtual-work beam integration pass. No full tolerance or hand/tool qualification.
+- Assumed800kg/m³ MDF,0.2kg/box,5g gives165.943N for two large boxes+separator. Simply supported50×18 beam over292mm gives4.486MPa and1.771mm deflection at assumedE2000MPa; not a strength/torque approval. Full nose/tube/frame load path still unqualified.
+- CNC HOLD. Next: stiffen keeper and give nose/extended limiter a mechanically defined attachment, then repeat service routes and qualify actual joints. Report K32 and machine-readable outputs preserve assumptions.

@@ -1,0 +1,16 @@
+name: K32 plate retention geometry
+on:
+  workflow_dispatch:
+  pull_request:
+    paths: ['skrypty/k32*', 'skrypty/sprawdz_k32.py', 'wyniki/k30*', 'dokumentacja/cnc/K32_RETENCJA_HOLD/**']
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install ezdxf matplotlib
+      - run: python skrypty/k32_retencja_plytek.py
+      - run: python skrypty/sprawdz_k32.py
