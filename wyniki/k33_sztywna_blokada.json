@@ -1,0 +1,425 @@
+{
+  "status": "CNC_HOLD",
+  "assemblies": [
+    {
+      "row": 0,
+      "extended": false,
+      "parts": [
+        {
+          "id": "bar",
+          "o": [
+            430,
+            45,
+            63
+          ],
+          "s": [
+            18,
+            312,
+            50
+          ]
+        },
+        {
+          "id": "integral_nose",
+          "o": [
+            448,
+            160,
+            63
+          ],
+          "s": [
+            22,
+            80,
+            50
+          ]
+        },
+        {
+          "id": "root_F_envelope",
+          "o": [
+            448,
+            156,
+            63
+          ],
+          "s": [
+            4,
+            4,
+            50
+          ]
+        },
+        {
+          "id": "root_R_envelope",
+          "o": [
+            448,
+            240,
+            63
+          ],
+          "s": [
+            4,
+            4,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "row": 1,
+      "extended": false,
+      "parts": [
+        {
+          "id": "bar",
+          "o": [
+            430,
+            45,
+            179
+          ],
+          "s": [
+            18,
+            312,
+            50
+          ]
+        },
+        {
+          "id": "integral_nose",
+          "o": [
+            448,
+            160,
+            179
+          ],
+          "s": [
+            22,
+            80,
+            50
+          ]
+        },
+        {
+          "id": "root_F_envelope",
+          "o": [
+            448,
+            156,
+            179
+          ],
+          "s": [
+            4,
+            4,
+            50
+          ]
+        },
+        {
+          "id": "root_R_envelope",
+          "o": [
+            448,
+            240,
+            179
+          ],
+          "s": [
+            4,
+            4,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "row": 1,
+      "extended": true,
+      "parts": [
+        {
+          "id": "bar",
+          "o": [
+            430,
+            45,
+            179
+          ],
+          "s": [
+            18,
+            312,
+            50
+          ]
+        },
+        {
+          "id": "flange",
+          "o": [
+            448,
+            160,
+            179
+          ],
+          "s": [
+            4,
+            80,
+            50
+          ]
+        },
+        {
+          "id": "tube_envelope",
+          "o": [
+            452,
+            190,
+            194
+          ],
+          "s": [
+            295.1,
+            20,
+            20
+          ]
+        },
+        {
+          "id": "weld_envelope",
+          "o": [
+            452,
+            188,
+            192
+          ],
+          "s": [
+            2,
+            24,
+            24
+          ]
+        },
+        {
+          "id": "M4_head",
+          "o": [
+            452,
+            176,
+            185
+          ],
+          "s": [
+            4,
+            8,
+            8
+          ]
+        },
+        {
+          "id": "M4_head",
+          "o": [
+            452,
+            176,
+            215
+          ],
+          "s": [
+            4,
+            8,
+            8
+          ]
+        },
+        {
+          "id": "M4_head",
+          "o": [
+            452,
+            216,
+            185
+          ],
+          "s": [
+            4,
+            8,
+            8
+          ]
+        },
+        {
+          "id": "M4_head",
+          "o": [
+            452,
+            216,
+            215
+          ],
+          "s": [
+            4,
+            8,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "row": 2,
+      "extended": false,
+      "parts": [
+        {
+          "id": "bar",
+          "o": [
+            430,
+            45,
+            295
+          ],
+          "s": [
+            18,
+            312,
+            50
+          ]
+        },
+        {
+          "id": "integral_nose",
+          "o": [
+            448,
+            160,
+            295
+          ],
+          "s": [
+            22,
+            80,
+            50
+          ]
+        },
+        {
+          "id": "root_F_envelope",
+          "o": [
+            448,
+            156,
+            295
+          ],
+          "s": [
+            4,
+            4,
+            50
+          ]
+        },
+        {
+          "id": "root_R_envelope",
+          "o": [
+            448,
+            240,
+            295
+          ],
+          "s": [
+            4,
+            4,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "row": 3,
+      "extended": false,
+      "parts": [
+        {
+          "id": "bar",
+          "o": [
+            430,
+            45,
+            401
+          ],
+          "s": [
+            18,
+            312,
+            50
+          ]
+        },
+        {
+          "id": "integral_nose",
+          "o": [
+            448,
+            160,
+            401
+          ],
+          "s": [
+            22,
+            80,
+            50
+          ]
+        },
+        {
+          "id": "root_F_envelope",
+          "o": [
+            448,
+            156,
+            401
+          ],
+          "s": [
+            4,
+            4,
+            50
+          ]
+        },
+        {
+          "id": "root_R_envelope",
+          "o": [
+            448,
+            240,
+            401
+          ],
+          "s": [
+            4,
+            4,
+            50
+          ]
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "row": 0,
+      "extended": false,
+      "collisions": [],
+      "aperture_margin_mm": 145.88437881283576
+    },
+    {
+      "row": 1,
+      "extended": false,
+      "collisions": [],
+      "aperture_margin_mm": 145.88437881283576
+    },
+    {
+      "row": 1,
+      "extended": true,
+      "collisions": [],
+      "aperture_margin_mm": 17.39111395315217
+    },
+    {
+      "row": 2,
+      "extended": false,
+      "collisions": [],
+      "aperture_margin_mm": 145.88437881283576
+    },
+    {
+      "row": 3,
+      "extended": false,
+      "collisions": [],
+      "aperture_margin_mm": 145.88437881283576
+    }
+  ],
+  "beam": [
+    {
+      "label": "MDF_reference",
+      "E_MPa": 2000,
+      "density_kg_m3": 800,
+      "bar_mass_kg": 0.22464,
+      "nose_mass_kg": 0.07067469035085126,
+      "point_force_N": 169.40836314944582,
+      "uniform_N_mm": 0.03772201808219178,
+      "reactions_N": [
+        90.79176184194704,
+        89.63143058749877
+      ],
+      "deflection_mm": 1.8813304964278594,
+      "max_bending_MPa": 4.728979340661543
+    },
+    {
+      "label": "metal_candidate",
+      "E_MPa": 70000,
+      "density_kg_m3": 2700,
+      "bar_mass_kg": 0.75816,
+      "nose_mass_kg": 0.23852707993412303,
+      "point_force_N": 177.63871133097976,
+      "uniform_N_mm": 0.12731181102739725,
+      "reactions_N": [
+        108.01523182662338,
+        106.79852832435638
+      ],
+      "deflection_mm": 0.06124716034989547,
+      "max_bending_MPa": 5.305123794789747
+    }
+  ],
+  "extended": {
+    "axial_force_N": 165.94295338879994,
+    "area_mm2": 144,
+    "compression_MPa": 1.152381620755555,
+    "shortening_mm": 0.004858111661213776,
+    "euler_pinned_N": 62451.726891955004,
+    "assumed_weld_throat_mm": 2,
+    "weld_nominal_stress_MPa": 1.0371434586799997,
+    "reverse_force_per_M4_N": 41.485738347199984,
+    "thread_nominal_engagement_mm": 8,
+    "thread_blind_depth_mm": 10,
+    "note": "No strength allowables; Euler ideal not assembly rating; local buckling, weld HAZ and eccentricity open."
+  },
+  "assumptions": "E70000 and rho2700 are model inputs, not certified selected alloy properties."
+}

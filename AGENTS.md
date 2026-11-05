@@ -1982,3 +1982,11 @@ Odtworzono K04–K06. W czterech próbach K07 dla obu luzów kolejność 4–15,
 - Two new DXFs and detail-only SCAD. Nominal fixed-solid check and21 existing swept paths clear new plates/heads/shanks. Independent DXF24 bores/thread-symbol audit, equilibrium and virtual-work beam integration pass. No full tolerance or hand/tool qualification.
 - Assumed800kg/m³ MDF,0.2kg/box,5g gives165.943N for two large boxes+separator. Simply supported50×18 beam over292mm gives4.486MPa and1.771mm deflection at assumedE2000MPa; not a strength/torque approval. Full nose/tube/frame load path still unqualified.
 - CNC HOLD. Next: stiffen keeper and give nose/extended limiter a mechanically defined attachment, then repeat service routes and qualify actual joints. Report K32 and machine-readable outputs preserve assumptions.
+
+
+## 2026-11-05 — K33: monolithic keeper/nose and bolted extension flange
+
+- Candidate metal312×50×18 keeper with integral22×80×50 nose and R4 roots; no glued nose joint. Long row1 stop uses80×50×4 flange,4×M4x12 into nominal10mm useful threads,20×20×2 tube295.1, internal2mm cap and hypothetical2mm weld throat. No selected/certified alloy or weld procedure.
+- Assumed E70000/rho2700 vs MDF E2000/rho800, own bar/nose5g inertia included: deflection0.06125 vs1.88133mm; heavier metal raises bolt reactions. Not a strength/torque rating. Four short metal keepers gross3.987kg.
+- All5 stored full assembly translations including flange/heads/weld and R4 bounding volumes clear fixed structure, state-specific inserts, K32 retention. Extended aperture margin17.39mm nominal, not hand/tolerance proof.4 DXF independently reread; closed-form vs numerical beam deflection, force equilibrium pass; service-envelope SCAD compiles.
+- CNC HOLD; SCAD is envelopes, not production solids. Next: plate/M5/MDF contact and frame-to-shell load path under preload and heavier keepers; qualify actual material, threads, welds and stock.
