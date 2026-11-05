@@ -1,0 +1,16 @@
+name: K37 bank stock and machining operations
+on:
+  workflow_dispatch:
+  pull_request:
+    paths: ['skrypty/k37*', 'skrypty/sprawdz_k37.py', 'dane/k37*', 'skrypty/k36*']
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install ezdxf matplotlib
+      - run: python skrypty/k37_material_i_operacje.py
+      - run: python skrypty/sprawdz_k37.py

@@ -2014,3 +2014,11 @@ Odtworzono K04–K06. W czterech próbach K07 dla obu luzów kolejność 4–15,
 -512 shell/frame corners and their conservative obstacle unions: plate/fixed collisions absent;8 box,4 separator,5 keeper paths clear modified fixed scene. Explicit max45.1mm front exposed old barY45 collision; new barY47..357 width310 preserves M5 axes55/347 and nose.3 paired metal DXF added, no production release.
 - Old20mm tool fails4 front approaches;18mm centred envelope clears8 approaches with nominal0.9mm front reserve. Test expects those4 old failures. No selected physical tool or hand clearance. Independent512 interface checks,3 DXF/R4/axes and old-bar counterexample pass.
 - Next: add all bank stock/tolerance dimensions, qualify face-machining/lamination operations and narrowed metal bolt edge; real tool, adhesive, joints and driver remain open. CNC HOLD.
+
+
+## 2026-11-05 — K37: per-part bank stock,16 operations and residual tolerance veto
+
+-25 independent bank measurements:4 webs,12 intermediate rails,8 metal plates,1 small spacer. Preserve inner web faces and rail support levels; face-machine4 separators from10 to proposed7.8, assumed0.1..0.3 clearance only for exact8 gap. Rail/web bond gaps0.2 introduced. No full combined motion requalification.
+-16 explicit operations with positive nominal allowances:4 bottom rails,4 top keepers,4 laminated stops,4 separators.50 one-parameter perturbations and4 plate/frame cases checked; not full25-dimensional corners. Null template/--require-measured no-write rejection; shell in K37 remains synthetic22 even if bank measured.
+- End-gap0.2 minus residual cut0.1+position0.1+measurement0.05 can yield−0.05 interference. Tighter0.05 each would give0.05..0.35 but is NOT confirmed capability. Front metal ligament4.75 and tool reserve0.55 are assumed geometry budgets, not strength/tool qualification.
+- Next: unified shell/bank/insert measurement input and combined tolerance swept paths; qualify actual process capability/adhesive and load joints. CNC HOLD.

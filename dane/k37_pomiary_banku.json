@@ -1,0 +1,32 @@
+{
+  "status": "not_measured",
+  "measurement_record": null,
+  "thickness_mm": {
+    "CHANNEL_WEB_A_F": null,
+    "CHANNEL_WEB_A_R": null,
+    "CHANNEL_WEB_B_F": null,
+    "CHANNEL_WEB_B_R": null,
+    "RAIL_A_1_F": null,
+    "RAIL_A_1_R": null,
+    "RAIL_A_2_F": null,
+    "RAIL_A_2_R": null,
+    "RAIL_A_3_F": null,
+    "RAIL_A_3_R": null,
+    "RAIL_B_1_F": null,
+    "RAIL_B_1_R": null,
+    "RAIL_B_2_F": null,
+    "RAIL_B_2_R": null,
+    "RAIL_B_3_F": null,
+    "RAIL_B_3_R": null,
+    "BACKSTOP_SMALL_EXTRA": null,
+    "P0_55": null,
+    "P0_347": null,
+    "P1_55": null,
+    "P1_347": null,
+    "P2_55": null,
+    "P2_347": null,
+    "P3_55": null,
+    "P3_347": null
+  },
+  "note": "Per-part measurements, no fabricated data. Raw blanks and finished thicknesses additionally require operation records."
+}
