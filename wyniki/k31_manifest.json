@@ -1,0 +1,10 @@
+{
+  "inputs": {
+    "wyniki/k30_czesci.json": "2c711dbda277e24206cefc561e963444d966bb49c22250c1b64022401a6c7e26",
+    "wyniki/k30_stale_kanaly_audyt.json": "45391af12e7a8c729f44711a2dac477521430a9e1471a66a621d0542b704a49d",
+    "skrypty/k31_zlacze_i_pasowania.py": "5ffbcca3cdc1f86ba7f7174250a7f14f79495c0918ae5e926f23106c06dc8b0e",
+    "dane/k31_pomiary_szablon.json": "358a42183ce86c54312cbf1c956e64273ea0eae78cbdf13a15d6d5c3c241a6d3"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "ezdxf": "1.4.4"
+}

@@ -1,0 +1,2147 @@
+{
+  "study": "K31",
+  "status": "CNC_HOLD",
+  "changed_parts": [
+    "PORTAL",
+    "STOP_0",
+    "STOP_1",
+    "STOP_2",
+    "STOP_3"
+  ],
+  "bolt_protrusion": [
+    {
+      "row": 0,
+      "y": 55,
+      "collisions": []
+    },
+    {
+      "row": 0,
+      "y": 341,
+      "collisions": [
+        "CHANNEL_WEB_A_R"
+      ]
+    },
+    {
+      "row": 0,
+      "y": 347,
+      "collisions": []
+    },
+    {
+      "row": 1,
+      "y": 55,
+      "collisions": []
+    },
+    {
+      "row": 1,
+      "y": 341,
+      "collisions": [
+        "CHANNEL_WEB_A_R"
+      ]
+    },
+    {
+      "row": 1,
+      "y": 347,
+      "collisions": []
+    },
+    {
+      "row": 2,
+      "y": 55,
+      "collisions": []
+    },
+    {
+      "row": 2,
+      "y": 341,
+      "collisions": [
+        "CHANNEL_WEB_A_R"
+      ]
+    },
+    {
+      "row": 2,
+      "y": 347,
+      "collisions": []
+    },
+    {
+      "row": 3,
+      "y": 55,
+      "collisions": []
+    },
+    {
+      "row": 3,
+      "y": 341,
+      "collisions": [
+        "CHANNEL_WEB_A_R"
+      ]
+    },
+    {
+      "row": 3,
+      "y": 347,
+      "collisions": []
+    }
+  ],
+  "motions": [
+    {
+      "kind": "tool",
+      "row": 0,
+      "y": 55,
+      "collisions": []
+    },
+    {
+      "kind": "tool",
+      "row": 0,
+      "y": 347,
+      "collisions": []
+    },
+    {
+      "kind": "tool",
+      "row": 1,
+      "y": 55,
+      "collisions": []
+    },
+    {
+      "kind": "tool",
+      "row": 1,
+      "y": 347,
+      "collisions": []
+    },
+    {
+      "kind": "tool",
+      "row": 2,
+      "y": 55,
+      "collisions": []
+    },
+    {
+      "kind": "tool",
+      "row": 2,
+      "y": 347,
+      "collisions": []
+    },
+    {
+      "kind": "tool",
+      "row": 3,
+      "y": 55,
+      "collisions": []
+    },
+    {
+      "kind": "tool",
+      "row": 3,
+      "y": 347,
+      "collisions": []
+    },
+    {
+      "kind": "keeper",
+      "row": 0,
+      "extended": false,
+      "collisions": []
+    },
+    {
+      "kind": "keeper",
+      "row": 1,
+      "extended": false,
+      "collisions": []
+    },
+    {
+      "kind": "keeper",
+      "row": 1,
+      "extended": true,
+      "collisions": []
+    },
+    {
+      "kind": "keeper",
+      "row": 2,
+      "extended": false,
+      "collisions": []
+    },
+    {
+      "kind": "keeper",
+      "row": 3,
+      "extended": false,
+      "collisions": []
+    },
+    {
+      "kind": "insert_vs_new_plates",
+      "id": "M0F",
+      "collisions": []
+    },
+    {
+      "kind": "insert_vs_new_plates",
+      "id": "M0N",
+      "collisions": []
+    },
+    {
+      "kind": "insert_vs_new_plates",
+      "id": "M1F",
+      "collisions": []
+    },
+    {
+      "kind": "insert_vs_new_plates",
+      "id": "M1N",
+      "collisions": []
+    },
+    {
+      "kind": "insert_vs_new_plates",
+      "id": "M2F",
+      "collisions": []
+    },
+    {
+      "kind": "insert_vs_new_plates",
+      "id": "M2N",
+      "collisions": []
+    },
+    {
+      "kind": "insert_vs_new_plates",
+      "id": "M3F",
+      "collisions": []
+    },
+    {
+      "kind": "insert_vs_new_plates",
+      "id": "M3N",
+      "collisions": []
+    }
+  ],
+  "robust_bolts": [
+    {
+      "row": 0,
+      "y": 55,
+      "collisions": []
+    },
+    {
+      "row": 0,
+      "y": 347,
+      "collisions": []
+    },
+    {
+      "row": 1,
+      "y": 55,
+      "collisions": []
+    },
+    {
+      "row": 1,
+      "y": 347,
+      "collisions": []
+    },
+    {
+      "row": 2,
+      "y": 55,
+      "collisions": []
+    },
+    {
+      "row": 2,
+      "y": 347,
+      "collisions": []
+    },
+    {
+      "row": 3,
+      "y": 55,
+      "collisions": []
+    },
+    {
+      "row": 3,
+      "y": 347,
+      "collisions": []
+    }
+  ],
+  "thread_stack": [
+    {
+      "length": 45,
+      "full_thread_cases": 16,
+      "total": 32,
+      "travel_range": [
+        2.65,
+        5.35
+      ],
+      "projection_range": [
+        -1.5500000000000003,
+        1.5499999999999998
+      ]
+    },
+    {
+      "length": 50,
+      "full_thread_cases": 32,
+      "total": 32,
+      "travel_range": [
+        7.65,
+        10.35
+      ],
+      "projection_range": [
+        3.45,
+        6.55
+      ]
+    }
+  ],
+  "bearing": [
+    {
+      "location": "front",
+      "contact_width": 18,
+      "area_mm2": 511.72566611769184,
+      "ligament_mm": 6,
+      "pressure_MPa": [
+        {
+          "assumed_total_axial_force_N": 100,
+          "mean_pressure": 0.19541720617351444
+        },
+        {
+          "assumed_total_axial_force_N": 300,
+          "mean_pressure": 0.5862516185205433
+        },
+        {
+          "assumed_total_axial_force_N": 500,
+          "mean_pressure": 0.9770860308675722
+        }
+      ]
+    },
+    {
+      "location": "old_rear",
+      "contact_width": 14,
+      "area_mm2": 391.72566611769184,
+      "ligament_mm": 2,
+      "pressure_MPa": [
+        {
+          "assumed_total_axial_force_N": 100,
+          "mean_pressure": 0.2552806942447206
+        },
+        {
+          "assumed_total_axial_force_N": 300,
+          "mean_pressure": 0.7658420827341618
+        },
+        {
+          "assumed_total_axial_force_N": 500,
+          "mean_pressure": 1.276403471223603
+        }
+      ]
+    },
+    {
+      "location": "new_rear",
+      "contact_width": 18,
+      "area_mm2": 511.72566611769184,
+      "ligament_mm": 8,
+      "pressure_MPa": [
+        {
+          "assumed_total_axial_force_N": 100,
+          "mean_pressure": 0.19541720617351444
+        },
+        {
+          "assumed_total_axial_force_N": 300,
+          "mean_pressure": 0.5862516185205433
+        },
+        {
+          "assumed_total_axial_force_N": 500,
+          "mean_pressure": 0.9770860308675722
+        }
+      ]
+    }
+  ],
+  "stock_corner_cases": 128,
+  "stock_corners": [
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 7.5,
+        "YF": 7.5,
+        "YR": 7.5,
+        "ZB": 7.5,
+        "ZT": 7.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 251.70000000000002,
+      "panel_y": 244.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 7.5,
+        "YF": 7.5,
+        "YR": 7.5,
+        "ZB": 7.5,
+        "ZT": 7.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 237.6,
+      "panel_y": 244.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 7.5,
+        "YF": 7.5,
+        "YR": 7.5,
+        "ZB": 7.5,
+        "ZT": 8.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 251.70000000000002,
+      "panel_y": 244.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 7.5,
+        "YF": 7.5,
+        "YR": 7.5,
+        "ZB": 7.5,
+        "ZT": 8.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 237.6,
+      "panel_y": 244.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 7.5,
+        "YF": 7.5,
+        "YR": 7.5,
+        "ZB": 8.5,
+        "ZT": 7.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 251.70000000000002,
+      "panel_y": 244.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 7.5,
+        "YF": 7.5,
+        "YR": 7.5,
+        "ZB": 8.5,
+        "ZT": 7.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 237.6,
+      "panel_y": 244.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 7.5,
+        "YF": 7.5,
+        "YR": 7.5,
+        "ZB": 8.5,
+        "ZT": 8.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 251.70000000000002,
+      "panel_y": 244.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 7.5,
+        "YF": 7.5,
+        "YR": 7.5,
+        "ZB": 8.5,
+        "ZT": 8.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 237.6,
+      "panel_y": 244.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 7.5,
+        "YF": 7.5,
+        "YR": 8.5,
+        "ZB": 7.5,
+        "ZT": 7.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 251.70000000000002,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 7.5,
+        "YF": 7.5,
+        "YR": 8.5,
+        "ZB": 7.5,
+        "ZT": 7.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 237.6,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 7.5,
+        "YF": 7.5,
+        "YR": 8.5,
+        "ZB": 7.5,
+        "ZT": 8.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 251.70000000000002,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 7.5,
+        "YF": 7.5,
+        "YR": 8.5,
+        "ZB": 7.5,
+        "ZT": 8.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 237.6,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 7.5,
+        "YF": 7.5,
+        "YR": 8.5,
+        "ZB": 8.5,
+        "ZT": 7.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 251.70000000000002,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 7.5,
+        "YF": 7.5,
+        "YR": 8.5,
+        "ZB": 8.5,
+        "ZT": 7.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 237.6,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 7.5,
+        "YF": 7.5,
+        "YR": 8.5,
+        "ZB": 8.5,
+        "ZT": 8.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 251.70000000000002,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 7.5,
+        "YF": 7.5,
+        "YR": 8.5,
+        "ZB": 8.5,
+        "ZT": 8.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 237.6,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 7.5,
+        "YF": 8.5,
+        "YR": 7.5,
+        "ZB": 7.5,
+        "ZT": 7.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 251.70000000000002,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 7.5,
+        "YF": 8.5,
+        "YR": 7.5,
+        "ZB": 7.5,
+        "ZT": 7.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 237.6,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 7.5,
+        "YF": 8.5,
+        "YR": 7.5,
+        "ZB": 7.5,
+        "ZT": 8.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 251.70000000000002,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 7.5,
+        "YF": 8.5,
+        "YR": 7.5,
+        "ZB": 7.5,
+        "ZT": 8.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 237.6,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 7.5,
+        "YF": 8.5,
+        "YR": 7.5,
+        "ZB": 8.5,
+        "ZT": 7.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 251.70000000000002,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 7.5,
+        "YF": 8.5,
+        "YR": 7.5,
+        "ZB": 8.5,
+        "ZT": 7.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 237.6,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 7.5,
+        "YF": 8.5,
+        "YR": 7.5,
+        "ZB": 8.5,
+        "ZT": 8.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 251.70000000000002,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 7.5,
+        "YF": 8.5,
+        "YR": 7.5,
+        "ZB": 8.5,
+        "ZT": 8.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 237.6,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 7.5,
+        "YF": 8.5,
+        "YR": 8.5,
+        "ZB": 7.5,
+        "ZT": 7.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 251.70000000000002,
+      "panel_y": 242.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 7.5,
+        "YF": 8.5,
+        "YR": 8.5,
+        "ZB": 7.5,
+        "ZT": 7.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 237.6,
+      "panel_y": 242.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 7.5,
+        "YF": 8.5,
+        "YR": 8.5,
+        "ZB": 7.5,
+        "ZT": 8.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 251.70000000000002,
+      "panel_y": 242.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 7.5,
+        "YF": 8.5,
+        "YR": 8.5,
+        "ZB": 7.5,
+        "ZT": 8.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 237.6,
+      "panel_y": 242.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 7.5,
+        "YF": 8.5,
+        "YR": 8.5,
+        "ZB": 8.5,
+        "ZT": 7.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 251.70000000000002,
+      "panel_y": 242.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 7.5,
+        "YF": 8.5,
+        "YR": 8.5,
+        "ZB": 8.5,
+        "ZT": 7.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 237.6,
+      "panel_y": 242.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 7.5,
+        "YF": 8.5,
+        "YR": 8.5,
+        "ZB": 8.5,
+        "ZT": 8.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 251.70000000000002,
+      "panel_y": 242.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 7.5,
+        "YF": 8.5,
+        "YR": 8.5,
+        "ZB": 8.5,
+        "ZT": 8.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 237.6,
+      "panel_y": 242.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 8.5,
+        "YF": 7.5,
+        "YR": 7.5,
+        "ZB": 7.5,
+        "ZT": 7.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 250.70000000000002,
+      "panel_y": 244.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 8.5,
+        "YF": 7.5,
+        "YR": 7.5,
+        "ZB": 7.5,
+        "ZT": 7.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 236.6,
+      "panel_y": 244.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 8.5,
+        "YF": 7.5,
+        "YR": 7.5,
+        "ZB": 7.5,
+        "ZT": 8.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 250.70000000000002,
+      "panel_y": 244.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 8.5,
+        "YF": 7.5,
+        "YR": 7.5,
+        "ZB": 7.5,
+        "ZT": 8.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 236.6,
+      "panel_y": 244.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 8.5,
+        "YF": 7.5,
+        "YR": 7.5,
+        "ZB": 8.5,
+        "ZT": 7.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 250.70000000000002,
+      "panel_y": 244.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 8.5,
+        "YF": 7.5,
+        "YR": 7.5,
+        "ZB": 8.5,
+        "ZT": 7.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 236.6,
+      "panel_y": 244.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 8.5,
+        "YF": 7.5,
+        "YR": 7.5,
+        "ZB": 8.5,
+        "ZT": 8.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 250.70000000000002,
+      "panel_y": 244.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 8.5,
+        "YF": 7.5,
+        "YR": 7.5,
+        "ZB": 8.5,
+        "ZT": 8.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 236.6,
+      "panel_y": 244.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 8.5,
+        "YF": 7.5,
+        "YR": 8.5,
+        "ZB": 7.5,
+        "ZT": 7.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 250.70000000000002,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 8.5,
+        "YF": 7.5,
+        "YR": 8.5,
+        "ZB": 7.5,
+        "ZT": 7.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 236.6,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 8.5,
+        "YF": 7.5,
+        "YR": 8.5,
+        "ZB": 7.5,
+        "ZT": 8.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 250.70000000000002,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 8.5,
+        "YF": 7.5,
+        "YR": 8.5,
+        "ZB": 7.5,
+        "ZT": 8.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 236.6,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 8.5,
+        "YF": 7.5,
+        "YR": 8.5,
+        "ZB": 8.5,
+        "ZT": 7.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 250.70000000000002,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 8.5,
+        "YF": 7.5,
+        "YR": 8.5,
+        "ZB": 8.5,
+        "ZT": 7.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 236.6,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 8.5,
+        "YF": 7.5,
+        "YR": 8.5,
+        "ZB": 8.5,
+        "ZT": 8.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 250.70000000000002,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 8.5,
+        "YF": 7.5,
+        "YR": 8.5,
+        "ZB": 8.5,
+        "ZT": 8.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 236.6,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 8.5,
+        "YF": 8.5,
+        "YR": 7.5,
+        "ZB": 7.5,
+        "ZT": 7.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 250.70000000000002,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 8.5,
+        "YF": 8.5,
+        "YR": 7.5,
+        "ZB": 7.5,
+        "ZT": 7.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 236.6,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 8.5,
+        "YF": 8.5,
+        "YR": 7.5,
+        "ZB": 7.5,
+        "ZT": 8.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 250.70000000000002,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 8.5,
+        "YF": 8.5,
+        "YR": 7.5,
+        "ZB": 7.5,
+        "ZT": 8.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 236.6,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 8.5,
+        "YF": 8.5,
+        "YR": 7.5,
+        "ZB": 8.5,
+        "ZT": 7.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 250.70000000000002,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 8.5,
+        "YF": 8.5,
+        "YR": 7.5,
+        "ZB": 8.5,
+        "ZT": 7.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 236.6,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 8.5,
+        "YF": 8.5,
+        "YR": 7.5,
+        "ZB": 8.5,
+        "ZT": 8.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 250.70000000000002,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 8.5,
+        "YF": 8.5,
+        "YR": 7.5,
+        "ZB": 8.5,
+        "ZT": 8.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 236.6,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 8.5,
+        "YF": 8.5,
+        "YR": 8.5,
+        "ZB": 7.5,
+        "ZT": 7.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 250.70000000000002,
+      "panel_y": 242.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 8.5,
+        "YF": 8.5,
+        "YR": 8.5,
+        "ZB": 7.5,
+        "ZT": 7.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 236.6,
+      "panel_y": 242.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 8.5,
+        "YF": 8.5,
+        "YR": 8.5,
+        "ZB": 7.5,
+        "ZT": 8.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 250.70000000000002,
+      "panel_y": 242.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 8.5,
+        "YF": 8.5,
+        "YR": 8.5,
+        "ZB": 7.5,
+        "ZT": 8.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 236.6,
+      "panel_y": 242.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 8.5,
+        "YF": 8.5,
+        "YR": 8.5,
+        "ZB": 8.5,
+        "ZT": 7.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 250.70000000000002,
+      "panel_y": 242.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 8.5,
+        "YF": 8.5,
+        "YR": 8.5,
+        "ZB": 8.5,
+        "ZT": 7.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 236.6,
+      "panel_y": 242.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 8.5,
+        "YF": 8.5,
+        "YR": 8.5,
+        "ZB": 8.5,
+        "ZT": 8.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 250.70000000000002,
+      "panel_y": 242.6
+    },
+    {
+      "thickness": {
+        "XL": 7.5,
+        "XR": 8.5,
+        "YF": 8.5,
+        "YR": 8.5,
+        "ZB": 8.5,
+        "ZT": 8.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 236.6,
+      "panel_y": 242.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 7.5,
+        "YF": 7.5,
+        "YR": 7.5,
+        "ZB": 7.5,
+        "ZT": 7.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 250.70000000000002,
+      "panel_y": 244.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 7.5,
+        "YF": 7.5,
+        "YR": 7.5,
+        "ZB": 7.5,
+        "ZT": 7.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 236.6,
+      "panel_y": 244.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 7.5,
+        "YF": 7.5,
+        "YR": 7.5,
+        "ZB": 7.5,
+        "ZT": 8.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 250.70000000000002,
+      "panel_y": 244.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 7.5,
+        "YF": 7.5,
+        "YR": 7.5,
+        "ZB": 7.5,
+        "ZT": 8.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 236.6,
+      "panel_y": 244.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 7.5,
+        "YF": 7.5,
+        "YR": 7.5,
+        "ZB": 8.5,
+        "ZT": 7.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 250.70000000000002,
+      "panel_y": 244.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 7.5,
+        "YF": 7.5,
+        "YR": 7.5,
+        "ZB": 8.5,
+        "ZT": 7.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 236.6,
+      "panel_y": 244.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 7.5,
+        "YF": 7.5,
+        "YR": 7.5,
+        "ZB": 8.5,
+        "ZT": 8.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 250.70000000000002,
+      "panel_y": 244.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 7.5,
+        "YF": 7.5,
+        "YR": 7.5,
+        "ZB": 8.5,
+        "ZT": 8.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 236.6,
+      "panel_y": 244.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 7.5,
+        "YF": 7.5,
+        "YR": 8.5,
+        "ZB": 7.5,
+        "ZT": 7.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 250.70000000000002,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 7.5,
+        "YF": 7.5,
+        "YR": 8.5,
+        "ZB": 7.5,
+        "ZT": 7.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 236.6,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 7.5,
+        "YF": 7.5,
+        "YR": 8.5,
+        "ZB": 7.5,
+        "ZT": 8.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 250.70000000000002,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 7.5,
+        "YF": 7.5,
+        "YR": 8.5,
+        "ZB": 7.5,
+        "ZT": 8.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 236.6,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 7.5,
+        "YF": 7.5,
+        "YR": 8.5,
+        "ZB": 8.5,
+        "ZT": 7.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 250.70000000000002,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 7.5,
+        "YF": 7.5,
+        "YR": 8.5,
+        "ZB": 8.5,
+        "ZT": 7.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 236.6,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 7.5,
+        "YF": 7.5,
+        "YR": 8.5,
+        "ZB": 8.5,
+        "ZT": 8.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 250.70000000000002,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 7.5,
+        "YF": 7.5,
+        "YR": 8.5,
+        "ZB": 8.5,
+        "ZT": 8.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 236.6,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 7.5,
+        "YF": 8.5,
+        "YR": 7.5,
+        "ZB": 7.5,
+        "ZT": 7.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 250.70000000000002,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 7.5,
+        "YF": 8.5,
+        "YR": 7.5,
+        "ZB": 7.5,
+        "ZT": 7.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 236.6,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 7.5,
+        "YF": 8.5,
+        "YR": 7.5,
+        "ZB": 7.5,
+        "ZT": 8.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 250.70000000000002,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 7.5,
+        "YF": 8.5,
+        "YR": 7.5,
+        "ZB": 7.5,
+        "ZT": 8.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 236.6,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 7.5,
+        "YF": 8.5,
+        "YR": 7.5,
+        "ZB": 8.5,
+        "ZT": 7.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 250.70000000000002,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 7.5,
+        "YF": 8.5,
+        "YR": 7.5,
+        "ZB": 8.5,
+        "ZT": 7.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 236.6,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 7.5,
+        "YF": 8.5,
+        "YR": 7.5,
+        "ZB": 8.5,
+        "ZT": 8.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 250.70000000000002,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 7.5,
+        "YF": 8.5,
+        "YR": 7.5,
+        "ZB": 8.5,
+        "ZT": 8.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 236.6,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 7.5,
+        "YF": 8.5,
+        "YR": 8.5,
+        "ZB": 7.5,
+        "ZT": 7.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 250.70000000000002,
+      "panel_y": 242.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 7.5,
+        "YF": 8.5,
+        "YR": 8.5,
+        "ZB": 7.5,
+        "ZT": 7.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 236.6,
+      "panel_y": 242.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 7.5,
+        "YF": 8.5,
+        "YR": 8.5,
+        "ZB": 7.5,
+        "ZT": 8.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 250.70000000000002,
+      "panel_y": 242.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 7.5,
+        "YF": 8.5,
+        "YR": 8.5,
+        "ZB": 7.5,
+        "ZT": 8.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 236.6,
+      "panel_y": 242.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 7.5,
+        "YF": 8.5,
+        "YR": 8.5,
+        "ZB": 8.5,
+        "ZT": 7.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 250.70000000000002,
+      "panel_y": 242.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 7.5,
+        "YF": 8.5,
+        "YR": 8.5,
+        "ZB": 8.5,
+        "ZT": 7.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 236.6,
+      "panel_y": 242.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 7.5,
+        "YF": 8.5,
+        "YR": 8.5,
+        "ZB": 8.5,
+        "ZT": 8.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 250.70000000000002,
+      "panel_y": 242.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 7.5,
+        "YF": 8.5,
+        "YR": 8.5,
+        "ZB": 8.5,
+        "ZT": 8.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 236.6,
+      "panel_y": 242.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 8.5,
+        "YF": 7.5,
+        "YR": 7.5,
+        "ZB": 7.5,
+        "ZT": 7.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 249.70000000000002,
+      "panel_y": 244.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 8.5,
+        "YF": 7.5,
+        "YR": 7.5,
+        "ZB": 7.5,
+        "ZT": 7.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 235.6,
+      "panel_y": 244.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 8.5,
+        "YF": 7.5,
+        "YR": 7.5,
+        "ZB": 7.5,
+        "ZT": 8.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 249.70000000000002,
+      "panel_y": 244.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 8.5,
+        "YF": 7.5,
+        "YR": 7.5,
+        "ZB": 7.5,
+        "ZT": 8.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 235.6,
+      "panel_y": 244.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 8.5,
+        "YF": 7.5,
+        "YR": 7.5,
+        "ZB": 8.5,
+        "ZT": 7.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 249.70000000000002,
+      "panel_y": 244.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 8.5,
+        "YF": 7.5,
+        "YR": 7.5,
+        "ZB": 8.5,
+        "ZT": 7.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 235.6,
+      "panel_y": 244.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 8.5,
+        "YF": 7.5,
+        "YR": 7.5,
+        "ZB": 8.5,
+        "ZT": 8.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 249.70000000000002,
+      "panel_y": 244.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 8.5,
+        "YF": 7.5,
+        "YR": 7.5,
+        "ZB": 8.5,
+        "ZT": 8.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 235.6,
+      "panel_y": 244.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 8.5,
+        "YF": 7.5,
+        "YR": 8.5,
+        "ZB": 7.5,
+        "ZT": 7.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 249.70000000000002,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 8.5,
+        "YF": 7.5,
+        "YR": 8.5,
+        "ZB": 7.5,
+        "ZT": 7.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 235.6,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 8.5,
+        "YF": 7.5,
+        "YR": 8.5,
+        "ZB": 7.5,
+        "ZT": 8.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 249.70000000000002,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 8.5,
+        "YF": 7.5,
+        "YR": 8.5,
+        "ZB": 7.5,
+        "ZT": 8.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 235.6,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 8.5,
+        "YF": 7.5,
+        "YR": 8.5,
+        "ZB": 8.5,
+        "ZT": 7.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 249.70000000000002,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 8.5,
+        "YF": 7.5,
+        "YR": 8.5,
+        "ZB": 8.5,
+        "ZT": 7.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 235.6,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 8.5,
+        "YF": 7.5,
+        "YR": 8.5,
+        "ZB": 8.5,
+        "ZT": 8.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 249.70000000000002,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 8.5,
+        "YF": 7.5,
+        "YR": 8.5,
+        "ZB": 8.5,
+        "ZT": 8.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 235.6,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 8.5,
+        "YF": 8.5,
+        "YR": 7.5,
+        "ZB": 7.5,
+        "ZT": 7.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 249.70000000000002,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 8.5,
+        "YF": 8.5,
+        "YR": 7.5,
+        "ZB": 7.5,
+        "ZT": 7.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 235.6,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 8.5,
+        "YF": 8.5,
+        "YR": 7.5,
+        "ZB": 7.5,
+        "ZT": 8.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 249.70000000000002,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 8.5,
+        "YF": 8.5,
+        "YR": 7.5,
+        "ZB": 7.5,
+        "ZT": 8.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 235.6,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 8.5,
+        "YF": 8.5,
+        "YR": 7.5,
+        "ZB": 8.5,
+        "ZT": 7.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 249.70000000000002,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 8.5,
+        "YF": 8.5,
+        "YR": 7.5,
+        "ZB": 8.5,
+        "ZT": 7.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 235.6,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 8.5,
+        "YF": 8.5,
+        "YR": 7.5,
+        "ZB": 8.5,
+        "ZT": 8.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 249.70000000000002,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 8.5,
+        "YF": 8.5,
+        "YR": 7.5,
+        "ZB": 8.5,
+        "ZT": 8.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 235.6,
+      "panel_y": 243.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 8.5,
+        "YF": 8.5,
+        "YR": 8.5,
+        "ZB": 7.5,
+        "ZT": 7.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 249.70000000000002,
+      "panel_y": 242.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 8.5,
+        "YF": 8.5,
+        "YR": 8.5,
+        "ZB": 7.5,
+        "ZT": 7.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 235.6,
+      "panel_y": 242.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 8.5,
+        "YF": 8.5,
+        "YR": 8.5,
+        "ZB": 7.5,
+        "ZT": 8.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 249.70000000000002,
+      "panel_y": 242.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 8.5,
+        "YF": 8.5,
+        "YR": 8.5,
+        "ZB": 7.5,
+        "ZT": 8.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 235.6,
+      "panel_y": 242.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 8.5,
+        "YF": 8.5,
+        "YR": 8.5,
+        "ZB": 8.5,
+        "ZT": 7.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 249.70000000000002,
+      "panel_y": 242.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 8.5,
+        "YF": 8.5,
+        "YR": 8.5,
+        "ZB": 8.5,
+        "ZT": 7.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 235.6,
+      "panel_y": 242.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 8.5,
+        "YF": 8.5,
+        "YR": 8.5,
+        "ZB": 8.5,
+        "ZT": 8.5
+      },
+      "L": 267.1,
+      "H": 96,
+      "panel_x": 249.70000000000002,
+      "panel_y": 242.6
+    },
+    {
+      "thickness": {
+        "XL": 8.5,
+        "XR": 8.5,
+        "YF": 8.5,
+        "YR": 8.5,
+        "ZB": 8.5,
+        "ZT": 8.5
+      },
+      "L": 253,
+      "H": 76,
+      "panel_x": 235.6,
+      "panel_y": 242.6
+    }
+  ],
+  "fit": {
+    "measurements_real": false,
+    "gap_per_side_mm": 0.2,
+    "total_clearance_after_measurement_range": [
+      0.10000000000000002,
+      0.7000000000000001
+    ],
+    "worst_total_clearance_without_measurement": -0.7999999999999999,
+    "measurement_local_uncertainty_assumed_mm": 0.05,
+    "note": "Total positive clearance does not guarantee equal gaps: centred assembly/jig required; glue-gap qualification OPEN."
+  },
+  "volume_delta_stop_bars_l": 0.0216,
+  "limits": [
+    "No plate retention mechanism qualified; bearing calculation is not material allowable.",
+    "M5x50 is dimensional candidate; bolt/head/washer/plate tolerances require source confirmation.",
+    "New rear axis and larger stop do not fix unqualified nose bond, extended keeper attachment or rattle.",
+    "Stock correction covers insert panels only, not shell/frame fit or final driver/terminal mounting.",
+    "Existing K30 assembly and DXFs remain historical; apply five changed parts only as reviewed K31 proposal."
+  ]
+}
