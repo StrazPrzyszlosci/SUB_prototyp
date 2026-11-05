@@ -1,0 +1,1127 @@
+{
+  "study": "K29",
+  "date": "2026-11-05",
+  "status": "CNC HOLD — 2-pin dual-half positive retention concept geometry only; NO qualified mechanical joint, guide10 remote retraction remains unsolved",
+  "sources": [
+    "K15 cabinet and K15 boxes",
+    "K17 rail geometry",
+    "K25 reference tool and hypothetical 5g load",
+    "K28 integrated sliding sleeve + revised Y202 remote line"
+  ],
+  "nominal_research_not_hardware": {
+    "split_pin_offset_below_and_above_mm": 12.5,
+    "guide_wood_cross_section_x_y_mm": [
+      16,
+      12
+    ],
+    "illustrative_sleeve_outer_cross_section_mm": [
+      21,
+      17
+    ],
+    "sleeve_length_mm": 50,
+    "guide10_y202_cable_square_outer_mm": 4,
+    "trial_pin_nominal_d_mm": 3,
+    "hole_size_screen_mm": [
+      3.3,
+      4.5
+    ],
+    "rear_head_protrusion_screens_mm": [
+      4,
+      5
+    ],
+    "hypothetical_geometry_rule_centre_to_transverse_edge_over_hole_d": 2,
+    "hypothetical_geometry_rule_centre_to_split_end_over_hole_d": 3,
+    "no_supplier_hardware_fastener_or_qualified_MDF_spec_selected": true
+  },
+  "five_state_pin_and_tool_screens": [
+    {
+      "rail": "G17_COLUMN_02",
+      "service_state": "full100",
+      "split_z_mm": 250,
+      "sleeve_unqualified_reference": {
+        "outer_x_mm": 21,
+        "outer_y_mm": 17,
+        "height_z_mm": 50,
+        "front_y_mm": 221.5,
+        "rear_y_mm": 238.5,
+        "front_sleeve_wall": {
+          "id": "FRONT sleeve wall",
+          "o": [
+            172.5,
+            221.5,
+            225
+          ],
+          "s": [
+            21,
+            2,
+            50
+          ]
+        },
+        "back_sleeve_wall": {
+          "id": "REAR sleeve wall",
+          "o": [
+            172.5,
+            236.5,
+            225
+          ],
+          "s": [
+            21,
+            2,
+            50
+          ]
+        }
+      },
+      "pin_centres_and_approach": [
+        {
+          "half": "lower",
+          "drilled_centre_global_xyz_mm": [
+            183,
+            230,
+            237.5
+          ],
+          "trial_pin_d_mm": 3,
+          "axis": "Y",
+          "pin_envelope": {
+            "id": "pin",
+            "o": [
+              181.5,
+              221.5,
+              236
+            ],
+            "s": [
+              3,
+              17,
+              3
+            ]
+          },
+          "scene_pin_body_collisions": [],
+          "rear_cap_4mm_scene_hits": [],
+          "rear_cap_5mm_scene_hits": [],
+          "front_cap_4mm_scene_hits": [],
+          "rear_cap_4mm_nominal_gap_to_box14_mm": null,
+          "direct_Y_tool": {
+            "hypothetical_diameter_mm": 14,
+            "reference_opening_radius_mm": 177.9,
+            "aperture_farthest_radius_mm": 56.600907,
+            "front_aperture_projection_clear": true,
+            "remaining_scene_collisions": [],
+            "available": true
+          },
+          "pin_placed_before_sleeve_axial_stroke_blocks_wall": true,
+          "pin_vs_sleeve_swept_wall_overlap_mm3": [
+            {
+              "wall": "FRONT sleeve wall swept",
+              "overlap_mm3": 18
+            },
+            {
+              "wall": "REAR sleeve wall swept",
+              "overlap_mm3": 18
+            }
+          ]
+        },
+        {
+          "half": "upper",
+          "drilled_centre_global_xyz_mm": [
+            183,
+            230,
+            262.5
+          ],
+          "trial_pin_d_mm": 3,
+          "axis": "Y",
+          "pin_envelope": {
+            "id": "pin",
+            "o": [
+              181.5,
+              221.5,
+              261
+            ],
+            "s": [
+              3,
+              17,
+              3
+            ]
+          },
+          "scene_pin_body_collisions": [],
+          "rear_cap_4mm_scene_hits": [],
+          "rear_cap_5mm_scene_hits": [],
+          "front_cap_4mm_scene_hits": [],
+          "rear_cap_4mm_nominal_gap_to_box14_mm": null,
+          "direct_Y_tool": {
+            "hypothetical_diameter_mm": 14,
+            "reference_opening_radius_mm": 177.9,
+            "aperture_farthest_radius_mm": 56.600907,
+            "front_aperture_projection_clear": true,
+            "remaining_scene_collisions": [],
+            "available": true
+          },
+          "pin_placed_before_sleeve_axial_stroke_blocks_wall": true,
+          "pin_vs_sleeve_swept_wall_overlap_mm3": [
+            {
+              "wall": "FRONT sleeve wall swept",
+              "overlap_mm3": 18
+            },
+            {
+              "wall": "REAR sleeve wall swept",
+              "overlap_mm3": 18
+            }
+          ]
+        }
+      ],
+      "nominal_hole_geometry_screens": [
+        {
+          "pin_d_mm": 3,
+          "hole_d_mm": 3.3,
+          "axis": "Y",
+          "transverse_centre_to_edge_mm": 8,
+          "axial_split_end_centre_distance_mm": 12.5,
+          "min_transverse_centre_edge_over_hole_d": 2.424242,
+          "min_axial_end_centre_distance_over_hole_d": 3.787879,
+          "assumed_geometry_threshold_transverse_d": 2,
+          "assumed_geometry_threshold_axial_d": 3,
+          "screening_pass": true,
+          "criterion_is_illustrative_not_an_MDF_material_standard": true
+        },
+        {
+          "pin_d_mm": 3,
+          "hole_d_mm": 3.3,
+          "axis": "X",
+          "transverse_centre_to_edge_mm": 6,
+          "axial_split_end_centre_distance_mm": 12.5,
+          "min_transverse_centre_edge_over_hole_d": 1.818182,
+          "min_axial_end_centre_distance_over_hole_d": 3.787879,
+          "assumed_geometry_threshold_transverse_d": 2,
+          "assumed_geometry_threshold_axial_d": 3,
+          "screening_pass": false,
+          "criterion_is_illustrative_not_an_MDF_material_standard": true
+        },
+        {
+          "pin_d_mm": 4,
+          "hole_d_mm": 4.5,
+          "axis": "Y",
+          "transverse_centre_to_edge_mm": 8,
+          "axial_split_end_centre_distance_mm": 12.5,
+          "min_transverse_centre_edge_over_hole_d": 1.777778,
+          "min_axial_end_centre_distance_over_hole_d": 2.777778,
+          "assumed_geometry_threshold_transverse_d": 2,
+          "assumed_geometry_threshold_axial_d": 3,
+          "screening_pass": false,
+          "criterion_is_illustrative_not_an_MDF_material_standard": true
+        },
+        {
+          "pin_d_mm": 4,
+          "hole_d_mm": 4.5,
+          "axis": "X",
+          "transverse_centre_to_edge_mm": 6,
+          "axial_split_end_centre_distance_mm": 12.5,
+          "min_transverse_centre_edge_over_hole_d": 1.333333,
+          "min_axial_end_centre_distance_over_hole_d": 2.777778,
+          "assumed_geometry_threshold_transverse_d": 2,
+          "assumed_geometry_threshold_axial_d": 3,
+          "screening_pass": false,
+          "criterion_is_illustrative_not_an_MDF_material_standard": true
+        }
+      ],
+      "hypothetical_full_5g_group_load_if_one_joint_transmits_all": {
+        "affected_modules": [
+          0,
+          1
+        ],
+        "total_hypothetical_if_all_5g_transmitted_N": 65.653982,
+        "double_shear_pin_area_mm2": 14.137167,
+        "hypothetical_nominal_pin_double_shear_stress_MPa": 4.644069,
+        "sleeve_two_wall_bearing_projected_area_mm2": 12,
+        "sleeve_hypothetical_bearing_indicator_MPa": 5.471165,
+        "rail_depth_bearing_projected_area_mm2": 36,
+        "rail_hypothetical_bearing_indicator_MPa": 1.823722,
+        "load_orientation_actual_force_partition_and_strength_allowables_unverified": true
+      },
+      "pins_installable_in_actual_working_cabinet_with_reachable_tool": false,
+      "first_and_second_pin_retraction_controlled_by_single_remote_actuator": false
+    },
+    {
+      "rail": "G17_COLUMN_02",
+      "service_state": "core120",
+      "split_z_mm": 250,
+      "sleeve_unqualified_reference": {
+        "outer_x_mm": 21,
+        "outer_y_mm": 17,
+        "height_z_mm": 50,
+        "front_y_mm": 221.5,
+        "rear_y_mm": 238.5,
+        "front_sleeve_wall": {
+          "id": "FRONT sleeve wall",
+          "o": [
+            172.5,
+            221.5,
+            225
+          ],
+          "s": [
+            21,
+            2,
+            50
+          ]
+        },
+        "back_sleeve_wall": {
+          "id": "REAR sleeve wall",
+          "o": [
+            172.5,
+            236.5,
+            225
+          ],
+          "s": [
+            21,
+            2,
+            50
+          ]
+        }
+      },
+      "pin_centres_and_approach": [
+        {
+          "half": "lower",
+          "drilled_centre_global_xyz_mm": [
+            183,
+            230,
+            237.5
+          ],
+          "trial_pin_d_mm": 3,
+          "axis": "Y",
+          "pin_envelope": {
+            "id": "pin",
+            "o": [
+              181.5,
+              221.5,
+              236
+            ],
+            "s": [
+              3,
+              17,
+              3
+            ]
+          },
+          "scene_pin_body_collisions": [],
+          "rear_cap_4mm_scene_hits": [],
+          "rear_cap_5mm_scene_hits": [],
+          "front_cap_4mm_scene_hits": [],
+          "rear_cap_4mm_nominal_gap_to_box14_mm": null,
+          "direct_Y_tool": {
+            "hypothetical_diameter_mm": 14,
+            "reference_opening_radius_mm": 177.9,
+            "aperture_farthest_radius_mm": 56.600907,
+            "front_aperture_projection_clear": true,
+            "remaining_scene_collisions": [],
+            "available": true
+          },
+          "pin_placed_before_sleeve_axial_stroke_blocks_wall": true,
+          "pin_vs_sleeve_swept_wall_overlap_mm3": [
+            {
+              "wall": "FRONT sleeve wall swept",
+              "overlap_mm3": 18
+            },
+            {
+              "wall": "REAR sleeve wall swept",
+              "overlap_mm3": 18
+            }
+          ]
+        },
+        {
+          "half": "upper",
+          "drilled_centre_global_xyz_mm": [
+            183,
+            230,
+            262.5
+          ],
+          "trial_pin_d_mm": 3,
+          "axis": "Y",
+          "pin_envelope": {
+            "id": "pin",
+            "o": [
+              181.5,
+              221.5,
+              261
+            ],
+            "s": [
+              3,
+              17,
+              3
+            ]
+          },
+          "scene_pin_body_collisions": [],
+          "rear_cap_4mm_scene_hits": [],
+          "rear_cap_5mm_scene_hits": [],
+          "front_cap_4mm_scene_hits": [],
+          "rear_cap_4mm_nominal_gap_to_box14_mm": null,
+          "direct_Y_tool": {
+            "hypothetical_diameter_mm": 14,
+            "reference_opening_radius_mm": 177.9,
+            "aperture_farthest_radius_mm": 56.600907,
+            "front_aperture_projection_clear": true,
+            "remaining_scene_collisions": [],
+            "available": true
+          },
+          "pin_placed_before_sleeve_axial_stroke_blocks_wall": true,
+          "pin_vs_sleeve_swept_wall_overlap_mm3": [
+            {
+              "wall": "FRONT sleeve wall swept",
+              "overlap_mm3": 18
+            },
+            {
+              "wall": "REAR sleeve wall swept",
+              "overlap_mm3": 18
+            }
+          ]
+        }
+      ],
+      "nominal_hole_geometry_screens": [
+        {
+          "pin_d_mm": 3,
+          "hole_d_mm": 3.3,
+          "axis": "Y",
+          "transverse_centre_to_edge_mm": 8,
+          "axial_split_end_centre_distance_mm": 12.5,
+          "min_transverse_centre_edge_over_hole_d": 2.424242,
+          "min_axial_end_centre_distance_over_hole_d": 3.787879,
+          "assumed_geometry_threshold_transverse_d": 2,
+          "assumed_geometry_threshold_axial_d": 3,
+          "screening_pass": true,
+          "criterion_is_illustrative_not_an_MDF_material_standard": true
+        },
+        {
+          "pin_d_mm": 3,
+          "hole_d_mm": 3.3,
+          "axis": "X",
+          "transverse_centre_to_edge_mm": 6,
+          "axial_split_end_centre_distance_mm": 12.5,
+          "min_transverse_centre_edge_over_hole_d": 1.818182,
+          "min_axial_end_centre_distance_over_hole_d": 3.787879,
+          "assumed_geometry_threshold_transverse_d": 2,
+          "assumed_geometry_threshold_axial_d": 3,
+          "screening_pass": false,
+          "criterion_is_illustrative_not_an_MDF_material_standard": true
+        },
+        {
+          "pin_d_mm": 4,
+          "hole_d_mm": 4.5,
+          "axis": "Y",
+          "transverse_centre_to_edge_mm": 8,
+          "axial_split_end_centre_distance_mm": 12.5,
+          "min_transverse_centre_edge_over_hole_d": 1.777778,
+          "min_axial_end_centre_distance_over_hole_d": 2.777778,
+          "assumed_geometry_threshold_transverse_d": 2,
+          "assumed_geometry_threshold_axial_d": 3,
+          "screening_pass": false,
+          "criterion_is_illustrative_not_an_MDF_material_standard": true
+        },
+        {
+          "pin_d_mm": 4,
+          "hole_d_mm": 4.5,
+          "axis": "X",
+          "transverse_centre_to_edge_mm": 6,
+          "axial_split_end_centre_distance_mm": 12.5,
+          "min_transverse_centre_edge_over_hole_d": 1.333333,
+          "min_axial_end_centre_distance_over_hole_d": 2.777778,
+          "assumed_geometry_threshold_transverse_d": 2,
+          "assumed_geometry_threshold_axial_d": 3,
+          "screening_pass": false,
+          "criterion_is_illustrative_not_an_MDF_material_standard": true
+        }
+      ],
+      "hypothetical_full_5g_group_load_if_one_joint_transmits_all": {
+        "affected_modules": [
+          0,
+          1
+        ],
+        "total_hypothetical_if_all_5g_transmitted_N": 65.653982,
+        "double_shear_pin_area_mm2": 14.137167,
+        "hypothetical_nominal_pin_double_shear_stress_MPa": 4.644069,
+        "sleeve_two_wall_bearing_projected_area_mm2": 12,
+        "sleeve_hypothetical_bearing_indicator_MPa": 5.471165,
+        "rail_depth_bearing_projected_area_mm2": 36,
+        "rail_hypothetical_bearing_indicator_MPa": 1.823722,
+        "load_orientation_actual_force_partition_and_strength_allowables_unverified": true
+      },
+      "pins_installable_in_actual_working_cabinet_with_reachable_tool": false,
+      "first_and_second_pin_retraction_controlled_by_single_remote_actuator": false
+    },
+    {
+      "rail": "G17_COLUMN_10",
+      "service_state": "core120",
+      "split_z_mm": 194,
+      "sleeve_unqualified_reference": {
+        "outer_x_mm": 21,
+        "outer_y_mm": 17,
+        "height_z_mm": 50,
+        "front_y_mm": 205.5,
+        "rear_y_mm": 222.5,
+        "front_sleeve_wall": {
+          "id": "FRONT sleeve wall",
+          "o": [
+            659,
+            205.5,
+            169
+          ],
+          "s": [
+            21,
+            2,
+            50
+          ]
+        },
+        "back_sleeve_wall": {
+          "id": "REAR sleeve wall",
+          "o": [
+            659,
+            220.5,
+            169
+          ],
+          "s": [
+            21,
+            2,
+            50
+          ]
+        }
+      },
+      "pin_centres_and_approach": [
+        {
+          "half": "lower",
+          "drilled_centre_global_xyz_mm": [
+            669.5,
+            214,
+            181.5
+          ],
+          "trial_pin_d_mm": 3,
+          "axis": "Y",
+          "pin_envelope": {
+            "id": "pin",
+            "o": [
+              668,
+              205.5,
+              180
+            ],
+            "s": [
+              3,
+              17,
+              3
+            ]
+          },
+          "scene_pin_body_collisions": [],
+          "rear_cap_4mm_scene_hits": [],
+          "rear_cap_5mm_scene_hits": [
+            "MODULE_14"
+          ],
+          "front_cap_4mm_scene_hits": [],
+          "rear_cap_4mm_nominal_gap_to_box14_mm": 0.5,
+          "direct_Y_tool": {
+            "hypothetical_diameter_mm": 14,
+            "reference_opening_radius_mm": 177.9,
+            "aperture_farthest_radius_mm": 450.818093,
+            "front_aperture_projection_clear": false,
+            "remaining_scene_collisions": [
+              "G17_COLUMN_12"
+            ],
+            "available": false
+          },
+          "pin_placed_before_sleeve_axial_stroke_blocks_wall": true,
+          "pin_vs_sleeve_swept_wall_overlap_mm3": [
+            {
+              "wall": "FRONT sleeve wall swept",
+              "overlap_mm3": 18
+            },
+            {
+              "wall": "REAR sleeve wall swept",
+              "overlap_mm3": 18
+            }
+          ]
+        },
+        {
+          "half": "upper",
+          "drilled_centre_global_xyz_mm": [
+            669.5,
+            214,
+            206.5
+          ],
+          "trial_pin_d_mm": 3,
+          "axis": "Y",
+          "pin_envelope": {
+            "id": "pin",
+            "o": [
+              668,
+              205.5,
+              205
+            ],
+            "s": [
+              3,
+              17,
+              3
+            ]
+          },
+          "scene_pin_body_collisions": [],
+          "rear_cap_4mm_scene_hits": [],
+          "rear_cap_5mm_scene_hits": [
+            "MODULE_14"
+          ],
+          "front_cap_4mm_scene_hits": [],
+          "rear_cap_4mm_nominal_gap_to_box14_mm": 0.5,
+          "direct_Y_tool": {
+            "hypothetical_diameter_mm": 14,
+            "reference_opening_radius_mm": 177.9,
+            "aperture_farthest_radius_mm": 447.652357,
+            "front_aperture_projection_clear": false,
+            "remaining_scene_collisions": [
+              "G17_COLUMN_12"
+            ],
+            "available": false
+          },
+          "pin_placed_before_sleeve_axial_stroke_blocks_wall": true,
+          "pin_vs_sleeve_swept_wall_overlap_mm3": [
+            {
+              "wall": "FRONT sleeve wall swept",
+              "overlap_mm3": 18
+            },
+            {
+              "wall": "REAR sleeve wall swept",
+              "overlap_mm3": 18
+            }
+          ]
+        }
+      ],
+      "nominal_hole_geometry_screens": [
+        {
+          "pin_d_mm": 3,
+          "hole_d_mm": 3.3,
+          "axis": "Y",
+          "transverse_centre_to_edge_mm": 8,
+          "axial_split_end_centre_distance_mm": 12.5,
+          "min_transverse_centre_edge_over_hole_d": 2.424242,
+          "min_axial_end_centre_distance_over_hole_d": 3.787879,
+          "assumed_geometry_threshold_transverse_d": 2,
+          "assumed_geometry_threshold_axial_d": 3,
+          "screening_pass": true,
+          "criterion_is_illustrative_not_an_MDF_material_standard": true
+        },
+        {
+          "pin_d_mm": 3,
+          "hole_d_mm": 3.3,
+          "axis": "X",
+          "transverse_centre_to_edge_mm": 6,
+          "axial_split_end_centre_distance_mm": 12.5,
+          "min_transverse_centre_edge_over_hole_d": 1.818182,
+          "min_axial_end_centre_distance_over_hole_d": 3.787879,
+          "assumed_geometry_threshold_transverse_d": 2,
+          "assumed_geometry_threshold_axial_d": 3,
+          "screening_pass": false,
+          "criterion_is_illustrative_not_an_MDF_material_standard": true
+        },
+        {
+          "pin_d_mm": 4,
+          "hole_d_mm": 4.5,
+          "axis": "Y",
+          "transverse_centre_to_edge_mm": 8,
+          "axial_split_end_centre_distance_mm": 12.5,
+          "min_transverse_centre_edge_over_hole_d": 1.777778,
+          "min_axial_end_centre_distance_over_hole_d": 2.777778,
+          "assumed_geometry_threshold_transverse_d": 2,
+          "assumed_geometry_threshold_axial_d": 3,
+          "screening_pass": false,
+          "criterion_is_illustrative_not_an_MDF_material_standard": true
+        },
+        {
+          "pin_d_mm": 4,
+          "hole_d_mm": 4.5,
+          "axis": "X",
+          "transverse_centre_to_edge_mm": 6,
+          "axial_split_end_centre_distance_mm": 12.5,
+          "min_transverse_centre_edge_over_hole_d": 1.333333,
+          "min_axial_end_centre_distance_over_hole_d": 2.777778,
+          "assumed_geometry_threshold_transverse_d": 2,
+          "assumed_geometry_threshold_axial_d": 3,
+          "screening_pass": false,
+          "criterion_is_illustrative_not_an_MDF_material_standard": true
+        }
+      ],
+      "hypothetical_full_5g_group_load_if_one_joint_transmits_all": {
+        "affected_modules": [
+          12,
+          13,
+          14,
+          15
+        ],
+        "total_hypothetical_if_all_5g_transmitted_N": 157.432388,
+        "double_shear_pin_area_mm2": 14.137167,
+        "hypothetical_nominal_pin_double_shear_stress_MPa": 11.136063,
+        "sleeve_two_wall_bearing_projected_area_mm2": 12,
+        "sleeve_hypothetical_bearing_indicator_MPa": 13.119366,
+        "rail_depth_bearing_projected_area_mm2": 36,
+        "rail_hypothetical_bearing_indicator_MPa": 4.373122,
+        "load_orientation_actual_force_partition_and_strength_allowables_unverified": true
+      },
+      "pins_installable_in_actual_working_cabinet_with_reachable_tool": false,
+      "first_and_second_pin_retraction_controlled_by_single_remote_actuator": false
+    },
+    {
+      "rail": "G17_COLUMN_10",
+      "service_state": "single150",
+      "split_z_mm": 194,
+      "sleeve_unqualified_reference": {
+        "outer_x_mm": 21,
+        "outer_y_mm": 17,
+        "height_z_mm": 50,
+        "front_y_mm": 205.5,
+        "rear_y_mm": 222.5,
+        "front_sleeve_wall": {
+          "id": "FRONT sleeve wall",
+          "o": [
+            659,
+            205.5,
+            169
+          ],
+          "s": [
+            21,
+            2,
+            50
+          ]
+        },
+        "back_sleeve_wall": {
+          "id": "REAR sleeve wall",
+          "o": [
+            659,
+            220.5,
+            169
+          ],
+          "s": [
+            21,
+            2,
+            50
+          ]
+        }
+      },
+      "pin_centres_and_approach": [
+        {
+          "half": "lower",
+          "drilled_centre_global_xyz_mm": [
+            669.5,
+            214,
+            181.5
+          ],
+          "trial_pin_d_mm": 3,
+          "axis": "Y",
+          "pin_envelope": {
+            "id": "pin",
+            "o": [
+              668,
+              205.5,
+              180
+            ],
+            "s": [
+              3,
+              17,
+              3
+            ]
+          },
+          "scene_pin_body_collisions": [],
+          "rear_cap_4mm_scene_hits": [],
+          "rear_cap_5mm_scene_hits": [],
+          "front_cap_4mm_scene_hits": [],
+          "rear_cap_4mm_nominal_gap_to_box14_mm": null,
+          "direct_Y_tool": {
+            "hypothetical_diameter_mm": 14,
+            "reference_opening_radius_mm": 177.9,
+            "aperture_farthest_radius_mm": 450.818093,
+            "front_aperture_projection_clear": false,
+            "remaining_scene_collisions": [
+              "G17_COLUMN_12"
+            ],
+            "available": false
+          },
+          "pin_placed_before_sleeve_axial_stroke_blocks_wall": true,
+          "pin_vs_sleeve_swept_wall_overlap_mm3": [
+            {
+              "wall": "FRONT sleeve wall swept",
+              "overlap_mm3": 18
+            },
+            {
+              "wall": "REAR sleeve wall swept",
+              "overlap_mm3": 18
+            }
+          ]
+        },
+        {
+          "half": "upper",
+          "drilled_centre_global_xyz_mm": [
+            669.5,
+            214,
+            206.5
+          ],
+          "trial_pin_d_mm": 3,
+          "axis": "Y",
+          "pin_envelope": {
+            "id": "pin",
+            "o": [
+              668,
+              205.5,
+              205
+            ],
+            "s": [
+              3,
+              17,
+              3
+            ]
+          },
+          "scene_pin_body_collisions": [],
+          "rear_cap_4mm_scene_hits": [],
+          "rear_cap_5mm_scene_hits": [],
+          "front_cap_4mm_scene_hits": [],
+          "rear_cap_4mm_nominal_gap_to_box14_mm": null,
+          "direct_Y_tool": {
+            "hypothetical_diameter_mm": 14,
+            "reference_opening_radius_mm": 177.9,
+            "aperture_farthest_radius_mm": 447.652357,
+            "front_aperture_projection_clear": false,
+            "remaining_scene_collisions": [
+              "G17_COLUMN_12"
+            ],
+            "available": false
+          },
+          "pin_placed_before_sleeve_axial_stroke_blocks_wall": true,
+          "pin_vs_sleeve_swept_wall_overlap_mm3": [
+            {
+              "wall": "FRONT sleeve wall swept",
+              "overlap_mm3": 18
+            },
+            {
+              "wall": "REAR sleeve wall swept",
+              "overlap_mm3": 18
+            }
+          ]
+        }
+      ],
+      "nominal_hole_geometry_screens": [
+        {
+          "pin_d_mm": 3,
+          "hole_d_mm": 3.3,
+          "axis": "Y",
+          "transverse_centre_to_edge_mm": 8,
+          "axial_split_end_centre_distance_mm": 12.5,
+          "min_transverse_centre_edge_over_hole_d": 2.424242,
+          "min_axial_end_centre_distance_over_hole_d": 3.787879,
+          "assumed_geometry_threshold_transverse_d": 2,
+          "assumed_geometry_threshold_axial_d": 3,
+          "screening_pass": true,
+          "criterion_is_illustrative_not_an_MDF_material_standard": true
+        },
+        {
+          "pin_d_mm": 3,
+          "hole_d_mm": 3.3,
+          "axis": "X",
+          "transverse_centre_to_edge_mm": 6,
+          "axial_split_end_centre_distance_mm": 12.5,
+          "min_transverse_centre_edge_over_hole_d": 1.818182,
+          "min_axial_end_centre_distance_over_hole_d": 3.787879,
+          "assumed_geometry_threshold_transverse_d": 2,
+          "assumed_geometry_threshold_axial_d": 3,
+          "screening_pass": false,
+          "criterion_is_illustrative_not_an_MDF_material_standard": true
+        },
+        {
+          "pin_d_mm": 4,
+          "hole_d_mm": 4.5,
+          "axis": "Y",
+          "transverse_centre_to_edge_mm": 8,
+          "axial_split_end_centre_distance_mm": 12.5,
+          "min_transverse_centre_edge_over_hole_d": 1.777778,
+          "min_axial_end_centre_distance_over_hole_d": 2.777778,
+          "assumed_geometry_threshold_transverse_d": 2,
+          "assumed_geometry_threshold_axial_d": 3,
+          "screening_pass": false,
+          "criterion_is_illustrative_not_an_MDF_material_standard": true
+        },
+        {
+          "pin_d_mm": 4,
+          "hole_d_mm": 4.5,
+          "axis": "X",
+          "transverse_centre_to_edge_mm": 6,
+          "axial_split_end_centre_distance_mm": 12.5,
+          "min_transverse_centre_edge_over_hole_d": 1.333333,
+          "min_axial_end_centre_distance_over_hole_d": 2.777778,
+          "assumed_geometry_threshold_transverse_d": 2,
+          "assumed_geometry_threshold_axial_d": 3,
+          "screening_pass": false,
+          "criterion_is_illustrative_not_an_MDF_material_standard": true
+        }
+      ],
+      "hypothetical_full_5g_group_load_if_one_joint_transmits_all": {
+        "affected_modules": [
+          12,
+          13,
+          14,
+          15
+        ],
+        "total_hypothetical_if_all_5g_transmitted_N": 157.432388,
+        "double_shear_pin_area_mm2": 14.137167,
+        "hypothetical_nominal_pin_double_shear_stress_MPa": 11.136063,
+        "sleeve_two_wall_bearing_projected_area_mm2": 12,
+        "sleeve_hypothetical_bearing_indicator_MPa": 13.119366,
+        "rail_depth_bearing_projected_area_mm2": 36,
+        "rail_hypothetical_bearing_indicator_MPa": 4.373122,
+        "load_orientation_actual_force_partition_and_strength_allowables_unverified": true
+      },
+      "pins_installable_in_actual_working_cabinet_with_reachable_tool": false,
+      "first_and_second_pin_retraction_controlled_by_single_remote_actuator": false
+    },
+    {
+      "rail": "G17_COLUMN_10",
+      "service_state": "full100",
+      "split_z_mm": 194,
+      "sleeve_unqualified_reference": {
+        "outer_x_mm": 21,
+        "outer_y_mm": 17,
+        "height_z_mm": 50,
+        "front_y_mm": 205.5,
+        "rear_y_mm": 222.5,
+        "front_sleeve_wall": {
+          "id": "FRONT sleeve wall",
+          "o": [
+            659,
+            205.5,
+            169
+          ],
+          "s": [
+            21,
+            2,
+            50
+          ]
+        },
+        "back_sleeve_wall": {
+          "id": "REAR sleeve wall",
+          "o": [
+            659,
+            220.5,
+            169
+          ],
+          "s": [
+            21,
+            2,
+            50
+          ]
+        }
+      },
+      "pin_centres_and_approach": [
+        {
+          "half": "lower",
+          "drilled_centre_global_xyz_mm": [
+            669.5,
+            214,
+            181.5
+          ],
+          "trial_pin_d_mm": 3,
+          "axis": "Y",
+          "pin_envelope": {
+            "id": "pin",
+            "o": [
+              668,
+              205.5,
+              180
+            ],
+            "s": [
+              3,
+              17,
+              3
+            ]
+          },
+          "scene_pin_body_collisions": [],
+          "rear_cap_4mm_scene_hits": [],
+          "rear_cap_5mm_scene_hits": [
+            "MODULE_14"
+          ],
+          "front_cap_4mm_scene_hits": [
+            "MODULE_18"
+          ],
+          "rear_cap_4mm_nominal_gap_to_box14_mm": 0.5,
+          "direct_Y_tool": {
+            "hypothetical_diameter_mm": 14,
+            "reference_opening_radius_mm": 177.9,
+            "aperture_farthest_radius_mm": 450.818093,
+            "front_aperture_projection_clear": false,
+            "remaining_scene_collisions": [
+              "G17_COLUMN_12",
+              "MODULE_18"
+            ],
+            "available": false
+          },
+          "pin_placed_before_sleeve_axial_stroke_blocks_wall": true,
+          "pin_vs_sleeve_swept_wall_overlap_mm3": [
+            {
+              "wall": "FRONT sleeve wall swept",
+              "overlap_mm3": 18
+            },
+            {
+              "wall": "REAR sleeve wall swept",
+              "overlap_mm3": 18
+            }
+          ]
+        },
+        {
+          "half": "upper",
+          "drilled_centre_global_xyz_mm": [
+            669.5,
+            214,
+            206.5
+          ],
+          "trial_pin_d_mm": 3,
+          "axis": "Y",
+          "pin_envelope": {
+            "id": "pin",
+            "o": [
+              668,
+              205.5,
+              205
+            ],
+            "s": [
+              3,
+              17,
+              3
+            ]
+          },
+          "scene_pin_body_collisions": [],
+          "rear_cap_4mm_scene_hits": [],
+          "rear_cap_5mm_scene_hits": [
+            "MODULE_14"
+          ],
+          "front_cap_4mm_scene_hits": [
+            "MODULE_18"
+          ],
+          "rear_cap_4mm_nominal_gap_to_box14_mm": 0.5,
+          "direct_Y_tool": {
+            "hypothetical_diameter_mm": 14,
+            "reference_opening_radius_mm": 177.9,
+            "aperture_farthest_radius_mm": 447.652357,
+            "front_aperture_projection_clear": false,
+            "remaining_scene_collisions": [
+              "G17_COLUMN_12",
+              "MODULE_18"
+            ],
+            "available": false
+          },
+          "pin_placed_before_sleeve_axial_stroke_blocks_wall": true,
+          "pin_vs_sleeve_swept_wall_overlap_mm3": [
+            {
+              "wall": "FRONT sleeve wall swept",
+              "overlap_mm3": 18
+            },
+            {
+              "wall": "REAR sleeve wall swept",
+              "overlap_mm3": 18
+            }
+          ]
+        }
+      ],
+      "nominal_hole_geometry_screens": [
+        {
+          "pin_d_mm": 3,
+          "hole_d_mm": 3.3,
+          "axis": "Y",
+          "transverse_centre_to_edge_mm": 8,
+          "axial_split_end_centre_distance_mm": 12.5,
+          "min_transverse_centre_edge_over_hole_d": 2.424242,
+          "min_axial_end_centre_distance_over_hole_d": 3.787879,
+          "assumed_geometry_threshold_transverse_d": 2,
+          "assumed_geometry_threshold_axial_d": 3,
+          "screening_pass": true,
+          "criterion_is_illustrative_not_an_MDF_material_standard": true
+        },
+        {
+          "pin_d_mm": 3,
+          "hole_d_mm": 3.3,
+          "axis": "X",
+          "transverse_centre_to_edge_mm": 6,
+          "axial_split_end_centre_distance_mm": 12.5,
+          "min_transverse_centre_edge_over_hole_d": 1.818182,
+          "min_axial_end_centre_distance_over_hole_d": 3.787879,
+          "assumed_geometry_threshold_transverse_d": 2,
+          "assumed_geometry_threshold_axial_d": 3,
+          "screening_pass": false,
+          "criterion_is_illustrative_not_an_MDF_material_standard": true
+        },
+        {
+          "pin_d_mm": 4,
+          "hole_d_mm": 4.5,
+          "axis": "Y",
+          "transverse_centre_to_edge_mm": 8,
+          "axial_split_end_centre_distance_mm": 12.5,
+          "min_transverse_centre_edge_over_hole_d": 1.777778,
+          "min_axial_end_centre_distance_over_hole_d": 2.777778,
+          "assumed_geometry_threshold_transverse_d": 2,
+          "assumed_geometry_threshold_axial_d": 3,
+          "screening_pass": false,
+          "criterion_is_illustrative_not_an_MDF_material_standard": true
+        },
+        {
+          "pin_d_mm": 4,
+          "hole_d_mm": 4.5,
+          "axis": "X",
+          "transverse_centre_to_edge_mm": 6,
+          "axial_split_end_centre_distance_mm": 12.5,
+          "min_transverse_centre_edge_over_hole_d": 1.333333,
+          "min_axial_end_centre_distance_over_hole_d": 2.777778,
+          "assumed_geometry_threshold_transverse_d": 2,
+          "assumed_geometry_threshold_axial_d": 3,
+          "screening_pass": false,
+          "criterion_is_illustrative_not_an_MDF_material_standard": true
+        }
+      ],
+      "hypothetical_full_5g_group_load_if_one_joint_transmits_all": {
+        "affected_modules": [
+          12,
+          13,
+          14,
+          15
+        ],
+        "total_hypothetical_if_all_5g_transmitted_N": 157.432388,
+        "double_shear_pin_area_mm2": 14.137167,
+        "hypothetical_nominal_pin_double_shear_stress_MPa": 11.136063,
+        "sleeve_two_wall_bearing_projected_area_mm2": 12,
+        "sleeve_hypothetical_bearing_indicator_MPa": 13.119366,
+        "rail_depth_bearing_projected_area_mm2": 36,
+        "rail_hypothetical_bearing_indicator_MPa": 4.373122,
+        "load_orientation_actual_force_partition_and_strength_allowables_unverified": true
+      },
+      "pins_installable_in_actual_working_cabinet_with_reachable_tool": false,
+      "first_and_second_pin_retraction_controlled_by_single_remote_actuator": false
+    }
+  ],
+  "guide10_remote_cable_endpoint": {
+    "cable_outer_y_span_mm": [
+      200,
+      204
+    ],
+    "sleeve_front_wall_y_start_mm": 205.5,
+    "nominal_unconnected_gap_y_mm": 1.5,
+    "sleeve_axial_stroke_z_mm": 50,
+    "guide10_two_separate_positive_pin_retaining_points_z_mm": [
+      181.5,
+      206.5
+    ],
+    "remote_cable_end_has_no_retracting_fork_cam_or_captive_head": true,
+    "no_50mm_follower_slack_or_bowden_design_verified": true
+  },
+  "failure_and_release_decision": {
+    "two_pins_could_prevent_sleeve_sliding_off_if_both_physically_engaged": true,
+    "each_pin_must_be_added_after_sleeve_reaches_final_bridge_position": true,
+    "guide02_straight_Y_reference_tool_both_points_nominally_accessible": true,
+    "guide10_straight_Y_reference_tool_both_points_inaccessible": true,
+    "guide10_5mm_rear_cap_intersects_box14_in_core120": true,
+    "guide10_4mm_rear_cap_leaves_only_0_5mm_gap_in_core120": true,
+    "guide10_full100_front_4mm_cap_intersects_box18": true,
+    "trial_3_3mm_Y_hole_passes_only_the_stated_illustrative_edge_rule": true,
+    "trial_4_5mm_hole_fails_that_edge_rule": true,
+    "guide10_two_postinstalled_releasable_pins_mechanically_approved": false,
+    "all_pin_material_bearing_shear_pullout_fatigue_creep_tolerances_unqualified": true,
+    "independent_support_for_four_large_modules_during_guide10_release_missing": true,
+    "complete_operational_volume_switch_with_real_joints_proven": false,
+    "release_CNC": false
+  },
+  "next_actions": [
+    "Create a fully finite two-detent spring latch and mechanical release fork design OR abandon rail10 front pin retrofit in favor of a reinforced sealed service cassette.",
+    "Prove two positive locks can retract without ever relying on the thin cable for module support; model 50mm sleeve translation and a controlled flexible endpoint.",
+    "Specify/measure actual metal rail connector, MDF anchoring, backup supports, exact tool access, gasket and load paths; coupons must cover 5g sensitivity, bearing and vibration.",
+    "Recheck all K24/K26 routes at positive realistic clearances before creating a replacement CNC DXF with tabs, kerf, inside radii and declared hole sizes."
+  ]
+}

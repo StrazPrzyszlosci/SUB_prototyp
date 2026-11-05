@@ -1,0 +1,51 @@
+name: K29 positive cross-pin access and bearing research — CNC HOLD
+on:
+  push:
+    branches: [main]
+    paths:
+      - "skrypty/k29_*"
+      - "wyniki/k29_*"
+      - ".github/workflows/k29-positive-pin-research.yml"
+      - "wyniki/k15_p30e_przed_CNC_zestawienie.json"
+      - "wyniki/k17_prowadnice_boczne_wkladow.json"
+      - "wyniki/k25_zlacza_prowadnic_i_dostep.json"
+      - "wyniki/k28_integracja_tulei_linki.json"
+  pull_request:
+    paths:
+      - "skrypty/k29_*"
+      - "wyniki/k29_*"
+      - ".github/workflows/k29-positive-pin-research.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Independently recompute finite hole/head/tool collision screens
+        run: |
+          set -euo pipefail
+          node --check skrypty/k29_dwa_trzpienie_rygla.js
+          node skrypty/k29_dwa_trzpienie_rygla.js
+          git diff --exit-code -- wyniki/k29_rygle_poprzeczne_dostep.json
+      - name: Require positive-lock research caveat and reject guide10 straight-tool
+        run: |
+          node - <<'NODE'
+          const fs=require("node:fs"),a=require("node:assert/strict");
+          const o=JSON.parse(fs.readFileSync("wyniki/k29_rygle_poprzeczne_dostep.json","utf8"));
+          a.match(o.status,/CNC HOLD/);
+          a.equal(o.five_state_pin_and_tool_screens.length,5);
+          a.equal(o.failure_and_release_decision.guide10_straight_Y_reference_tool_both_points_inaccessible,true);
+          a.equal(o.failure_and_release_decision.guide10_5mm_rear_cap_intersects_box14_in_core120,true);
+          a.equal(o.failure_and_release_decision.guide10_4mm_rear_cap_leaves_only_0_5mm_gap_in_core120,true);
+          a.equal(o.failure_and_release_decision.guide10_full100_front_4mm_cap_intersects_box18,true);
+          a.equal(o.failure_and_release_decision.guide10_two_postinstalled_releasable_pins_mechanically_approved,false);
+          a.equal(o.failure_and_release_decision.all_pin_material_bearing_shear_pullout_fatigue_creep_tolerances_unqualified,true);
+          a.equal(o.failure_and_release_decision.release_CNC,false);
+          a.deepEqual(o.five_state_pin_and_tool_screens[2].nominal_hole_geometry_screens.map(x=>x.screening_pass),[true,false,false,false]);
+          console.log("PASS K29 research: guide02 tool access only, rear head collision guide10, no real fastener approval, CNC HOLD");
+          NODE

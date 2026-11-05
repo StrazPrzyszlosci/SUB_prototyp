@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="460" viewBox="0 0 1120 460">
+<rect width="1120" height="460" fill="#f8fafc"/>
+<text x="24" y="31" font-size="23" fill="#263e4b" font-family="sans-serif" font-weight="bold">K29 – two transverse locking pins: unqualified research, CNC HOLD</text>
+<text x="24" y="55" font-size="14" fill="#526c77" font-family="sans-serif">Guide10 at Z194. Sleeve must lock to BOTH rail halves. Pins can only engage AFTER sleeve's 50mm stroke.</text>
+<rect x="160" y="106" width="97" height="304" fill="#d6e2e6" stroke="#688496" stroke-width="3"/>
+<rect x="160" y="106" width="97" height="139" fill="#c4ded1" stroke="#688496"/>
+<rect x="160" y="245" width="97" height="165" fill="#d6e2e6" stroke="#688496"/>
+<rect x="143" y="184" width="131" height="121" fill="#89a1b6" fill-opacity=".4" stroke="#4e738e" stroke-width="3"/>
+<line x1="127" y1="245" x2="285" y2="245" stroke="#bf564e" stroke-width="3" stroke-dasharray="7 5"/>
+<circle cx="208" cy="214" r="8" fill="#e7ad4c" stroke="#6e5f48" stroke-width="3"/>
+<circle cx="208" cy="276" r="8" fill="#e7ad4c" stroke="#6e5f48" stroke-width="3"/>
+<text x="300" y="218" font-size="15" fill="#364e5e">Upper pin Z206.5, centre 12.5mm above split</text>
+<text x="300" y="279" font-size="15" fill="#364e5e">Lower pin Z181.5, centre 12.5mm below split</text>
+<text x="300" y="250" font-size="15" fill="#a0423d">Split plane Z194</text>
+<rect x="672" y="115" width="420" height="175" rx="10" fill="#edf2f5" stroke="#9eb3be"/>
+<text x="691" y="147" font-size="18" fill="#263e4b" font-weight="bold">Guide10 accessibility veto</text>
+<text x="691" y="178" font-size="14" fill="#364e5e">Direct front tool X669.5: outside Ø355.8 bore</text>
+<text x="691" y="205" font-size="14" fill="#364e5e">Rear sleeve end Y222.5, box14 begins Y227</text>
+<text x="691" y="231" font-size="14" fill="#a0423d">5mm rear protrusion: overlaps box by 0.5mm</text>
+<text x="691" y="260" font-size="14" fill="#364e5e">4mm rear protrusion: only 0.5mm clearance</text>
+<text x="24" y="430" font-size="18" font-weight="bold" fill="#a0423d">A working dual-pin remote release and temporary module support have NOT been engineered. NO CNC.</text>
+</svg>
