@@ -2006,3 +2006,11 @@ Odtworzono K04–K06. W czterech próbach K07 dla obu luzów kolejność 4–15,
 -512 independent21.5/22.5mm corners pass shell extent/gap/window transformations; asymmetric case verifies24 global axes. Null measurement template and --require-measured refuses before writes, verified by hashes. Measured format never means qualified fabrication.
 - Old bank not automatically compatible: thicker portal shifts4mm plate beyondX474; thick midframe overlaps B rails; thinner frames leave end gaps; thick bottom/top/right wall collide with nominal bank. All512 corner sets require bank updates, not proof geometry impossible. Diagnostics incomplete for all bonds and paths.
 - Next: propagate measured datums through rail ends, channel webs, stops and retained plates while keeping box positions; recheck full service sweeps. CNC HOLD.
+
+
+## 2026-11-05 — K36: propagate shell datums into bank; front-access correction
+
+- Rail ends follow measured rear frame faces+g and side wall−g; web heights follow bottom/top; front web starts after4mm plate+g. Plate itself follows portal rear. First rail topZ40 fixed requires17.3..18.3 finished thickness, top keeper bottomZ466 requires11.3..12.3; face-machining from thicker stock proposed. Backstop laminate finished39.3..40.3, old PACK removed. Other bank stock remains nominal, not fully measured.
+-512 shell/frame corners and their conservative obstacle unions: plate/fixed collisions absent;8 box,4 separator,5 keeper paths clear modified fixed scene. Explicit max45.1mm front exposed old barY45 collision; new barY47..357 width310 preserves M5 axes55/347 and nose.3 paired metal DXF added, no production release.
+- Old20mm tool fails4 front approaches;18mm centred envelope clears8 approaches with nominal0.9mm front reserve. Test expects those4 old failures. No selected physical tool or hand clearance. Independent512 interface checks,3 DXF/R4/axes and old-bar counterexample pass.
+- Next: add all bank stock/tolerance dimensions, qualify face-machining/lamination operations and narrowed metal bolt edge; real tool, adhesive, joints and driver remain open. CNC HOLD.
