@@ -1,0 +1,16 @@
+name: K34 plate contact and frame support
+on:
+  workflow_dispatch:
+  pull_request:
+    paths: ['skrypty/k34*', 'skrypty/sprawdz_k34.py', 'wyniki/k33*']
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install numpy scipy
+      - run: OPENBLAS_NUM_THREADS=1 python skrypty/k34_docisk_i_wrega.py
+      - run: OPENBLAS_NUM_THREADS=1 python skrypty/sprawdz_k34.py

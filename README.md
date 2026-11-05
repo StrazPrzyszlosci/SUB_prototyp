@@ -127,6 +127,8 @@ Dla badanych przetworników sprawdzamy kolejno typ obudowy, potrzebny litraż, p
 
 **Sztywniejsza blokada:** wariant K33 łączy metalową poprzeczkę z noskiem w jedną część; długi ogranicznik ma kołnierz na czterech śrubach. Model z własną masą wskazuje spadek ugięcia z1,88 do0,061 mm, kosztem większej masy. Pięć torów montażu pozostaje drożnych nominalnie. Dobór metalu, połączenie z MDF i próby nadal wymagane — **CNC HOLD**. [Wyniki i części K33](raporty/K33_sztywna_blokada_i_polaczenie_ogranicznika.md).
 
+**Połączenie blokady z korpusem:** K34 wykazało, że nacisk pod płytką nie jest równomierny, a nominalna wręga może mieć wcisk lub zbyt dużą szczelinę wskutek rozrzutu grubości MDF. Potrzebne jest wymiarowanie z pomiarów komory i kwalifikacja połączeń wręgi z frontem/tyłem. Nie wydano nowego DXF ani momentu dokręcania. [Obliczenia i warunki K34](raporty/K34_docisk_plytek_i_polaczenie_wregi.md).
+
 **K18 — rzeczywisty krok do CNC:** przygotowano [162 kontury kontrolne](dokumentacja/cnc/README.md), pełne zestawienie płyt i 24 referencyjne gniazda prowadnic. Modele wykazują, że sztywne górne języki K17 nadal nie zapewniają sprawdzonej drogi montażu. [Obliczenia i rekomendacje K18](raporty/K18_projekt_CNC_mocowania_wkladow.md). **DXF to przegląd geometrii, nie zlecenie frezowania (CNC HOLD).**
 
 **K19 — korekta mechaniki przed CNC:** niezależny audyt obliczył rzeczywiste maksymalne wysięgi języków prowadnic w modelu K17: **12 / 19 / 23 mm**. Wcześniejszy test K18 zakładał wszędzie 12 mm, przez co mógł zaniżać obciążenia zginające tylnych podpór. Odtworzono niezależnie 162 kontury DXF i 24 gniazda oraz udokumentowano niezakończone testy montażu i tolerancji. [K19 — raport i wyniki](raporty/K19_audyt_CNC_i_korekta_wysiegu_wspornikow.md). **CNC HOLD.**

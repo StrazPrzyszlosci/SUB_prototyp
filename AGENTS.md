@@ -1990,3 +1990,11 @@ Odtworzono K04–K06. W czterech próbach K07 dla obu luzów kolejność 4–15,
 - Assumed E70000/rho2700 vs MDF E2000/rho800, own bar/nose5g inertia included: deflection0.06125 vs1.88133mm; heavier metal raises bolt reactions. Not a strength/torque rating. Four short metal keepers gross3.987kg.
 - All5 stored full assembly translations including flange/heads/weld and R4 bounding volumes clear fixed structure, state-specific inserts, K32 retention. Extended aperture margin17.39mm nominal, not hand/tolerance proof.4 DXF independently reread; closed-form vs numerical beam deflection, force equilibrium pass; service-envelope SCAD compiles.
 - CNC HOLD; SCAD is envelopes, not production solids. Next: plate/M5/MDF contact and frame-to-shell load path under preload and heavier keepers; qualify actual material, threads, welds and stock.
+
+
+## 2026-11-05 — K34: local preload versus net frame force; frame stock fit
+
+-12 hypothetical Fi/C preload states preserve Fb−Fc=P, with separation. Do not add internal bolt preload to global adhesive-edge external demand. Gross-strip18×80×4 compression-only Winkler model at600+2×30N gives0.548–1.100MPa peaks vs0.458 mean for assumed material grid. No holes/orthotropy/creep or strength approval.81/161/321 mesh convergence, equilibrium, scaling, rigid limit and symmetry checked.
+- Nominal front/rear bond areas10032mm² each; four large-row load scenarios give432/427N and mean0.0431/0.0426MPa, not bond capacity. Counterfactual front strip with no edge bond or rib coupling deflects15.48mm in linear model, NOT actual portal prediction.
+- Holding outsideD432/H500 exactly, stock±0.5 and portal cut±0.1 yields total depth gap−1.6..1.6mm and height−1.1..1.1mm. No revised DXF without measured cavity/glue gap/global-axis reconciliation. Trial measured cavity sizing g0.2 has0.25..0.55 total gap under explicitly assumed errors, not adhesive qualification.
+- CNC HOLD. Next: unified measured-stock shell/frame geometry preserving mounting axes and specified front/rear bond interface; then qualify preload/contact/creep.
