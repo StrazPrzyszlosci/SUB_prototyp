@@ -29,13 +29,23 @@ def draw(path, part):
     width, height = part['flat']
     doc = ezdxf.new('R2010')
     doc.units = 4
-    for layer in ('OBRYS','OKNO','OTWOR_PRZELOT','REFERENCJA'):
+    for layer in ('OBRYS','OKNO','OTWOR_PRZELOT','REFERENCJA','KOSZ_REF','PCD_REF'):
         doc.layers.new(layer)
     space = doc.modelspace()
     rectangle(space,'OBRYS',0,0,width,height)
     for x,y,r in part['holes']:
         layer = 'REFERENCJA' if part['kind']=='front' else 'OTWOR_PRZELOT'
         space.add_circle((x,y),r,dxfattribs={'layer':layer})
+    if part['kind']=='front':
+        cx, cy, bore = part['holes'][0]
+        if not math.isclose(2*bore,355.8):
+            raise ValueError('Rozbieżność z kartą RSS390HF-4')
+        space.add_circle((cx,cy),194.2,dxfattribs={'layer':'KOSZ_REF'})
+        space.add_circle((cx,cy),184,dxfattribs={'layer':'PCD_REF'})
+        for i in range(8):
+            angle = math.radians(45*i)
+            center = (cx+184*math.cos(angle),cy+184*math.sin(angle))
+            space.add_circle(center,3.25,dxfattribs={'layer':'KOSZ_REF'})
     for x,y,u,v,r in part['windows']:
         rectangle(space,'OKNO',x,y,u-x,v-y,r)
     doc.saveas(path)
@@ -44,7 +54,7 @@ def draw(path, part):
     if audit.errors or audit.fixes or check.units != 4:
         raise ValueError(path)
     entities = list(check.modelspace())
-    if len(entities) != 1+len(part['holes'])+len(part['windows']):
+    if len(entities) != 1+len(part['holes'])+len(part['windows'])+10*(part['kind']=='front'):
         raise ValueError(path)
     for e in entities:
         bounds = bbox.extents([e])

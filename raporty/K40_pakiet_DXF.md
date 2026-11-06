@@ -10,7 +10,7 @@ MDF ma wspólną bazę lokalną w lewym dolnym rogu obrysu, skala 1:1. OBRYS ozn
 
 ## Warunki wydania do produkcji
 
-- Przód FR1/FR2 ma referencyjny otwór Ø355,8. Potrzebne są pomiar kołnierza i kosza konkretnego RSS390HF-4, decyzja o osadzeniu, układ ośmiu mocowań, średnice pod wybrane łączniki, sprawdzenie uszczelki i pozostałego materiału przy otworach.
+- Przód FR1/FR2, korekta K41. [Karta Dayton RSS390HF-4](https://www.daytonaudio.com/images/resources/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf) podaje Ø388,4 kołnierza, Ø355,8 wycięcia, grubość kołnierza 10,5 i wysokość całkowitą 178 mm. Osiem otworów w kołnierzu ma Ø6,5 na okręgu Ø368 mm. W obu rzutach DXF wspólny środek to X231/Z250. Przyjęto ustawienie pierwszej osi w stronę +X i kolejnych co 45 stopni. Warstwy KOSZ_REF, PCD_REF i REFERENCJA wyłączyć z automatycznego CAM. Osadzenie, uszczelka i końcowe wiercenie w MDF zależą od wybranego mocowania. Przykład M5 z otworem Ø5,5 zostawia nominalnie 3,35 mm MDF do krawędzi wycięcia.
 - BACK wymaga wyboru terminala lub przepustu, jego położenia i rysunku otworu. Sprawdzić głębokość całego zestawu z osprzętem i przewodami względem limitu 500 mm.
 - Na podstawie grubości partii MDF oraz prób klejenia uzupełnić kartę K38. Wykonać próbę rzędu K39 i dobrać dystanse. Przekładki 6,9 mm dotyczą przykładowego odstępu 8 mm.
 - Potwierdzić gwinty, spoiny, materiał i nośność blokad oraz połączeń z MDF. Zweryfikować bilans netto dla zainstalowanego osprzętu. Po zmianach przeliczyć tory i ponownie wygenerować komplet.
