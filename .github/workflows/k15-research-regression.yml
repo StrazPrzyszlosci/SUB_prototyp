@@ -76,7 +76,7 @@ jobs:
           from PIL import Image
           import subprocess
           readme=Path('README.md').read_text(encoding='utf-8')
-          base=subprocess.check_output(['git','show','origin/main:README.md'],text=True)
+          base=subprocess.check_output(['git','show','f89b7f91f416a9150491baf91cf97a36b54f51b8:README.md'],text=True)
           # Authorized 2026-11-04 editorial reorder: selection of Dayton before cabinet,
           # supplementary two-STX comparison after it. All technical archives stay unchanged.
           tail='## Krótki słownik do wykresów'

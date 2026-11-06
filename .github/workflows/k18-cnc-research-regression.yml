@@ -36,7 +36,7 @@ jobs:
           set -euo pipefail
           node --check skrypty/k18_cnc_kontury.js
           node skrypty/k18_cnc_kontury.js
-          git diff --exit-code -- dokumentacja/cnc/K18_korpus_i_wregi_MDF22_NIE_CNC.dxf dokumentacja/cnc/K18_skrzynki_regulacji_MDF8_NIE_CNC.dxf dokumentacja/cnc/K18_prowadnice_laminat_MDF8_NIE_CNC.dxf dokumentacja/cnc/README.md raporty/K18_projekt_CNC_mocowania_wkladow.md wyniki/k18_lista_162_konturow_CNC_HOLD.csv wyniki/k18_mocowania_i_CNC_podsumowanie.json
+          git diff --exit-code -- dokumentacja/cnc/K18_korpus_i_wregi_MDF22_NIE_CNC.dxf dokumentacja/cnc/K18_skrzynki_regulacji_MDF8_NIE_CNC.dxf dokumentacja/cnc/K18_prowadnice_laminat_MDF8_NIE_CNC.dxf dokumentacja/cnc/K18_README.md raporty/K18_projekt_CNC_mocowania_wkladow.md wyniki/k18_lista_162_konturow_CNC_HOLD.csv wyniki/k18_mocowania_i_CNC_podsumowanie.json
       - name: Independent invariants; HOLD must survive
         shell: bash
         run: |
