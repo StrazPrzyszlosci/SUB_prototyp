@@ -1,0 +1,9 @@
+# K46. Poprawki po audycie metody
+
+Uruchomienie: python skrypty/k40_pakiet_dxf.py wynik.zip --karta-fit karta.json. Przy kolizji w proponowanej geometrii program kończy pracę kodem 2. Archiwum zawiera KONTROLA.json i dane wejściowe, bez DXF. W raporcie każda kolizja wskazuje operację, część ruchomą, przeszkodę, segment toru i margines w mm. Przy poprawnych trasach powstają rysunki do przeglądu. Kontrola dotyczy ruchu osiowego sztywnych części według K38. Status produkcyjny każdego wyniku to CNC HOLD.
+
+Dla każdego wkładu raport pokazuje przejście podczas wkładania w stanie wejściowym i proponowanym, rozrzut wysokości podparć wyliczony z pomiarów oraz rozrzut po proponowanej obróbce. W przykładzie nominalnym pole pomiarowe jest puste. Osobno można podać wynik próby zamkniętego rzędu w konfiguracji 100 l, powtarzając opcję --proba-k39 karta_rzedu.json. W karcie K39 ustawić rzad_i_konfiguracja na przykład na 0/100L i dopisać protokol_montazu_K38 zgodny z records.dry_fit karty K38. Odbiór dotyczy całego przebadanego rzędu w stanie pomiarowym, a po zmianie geometrii wymaga powtórzenia. Puste pole oznacza brak próby. Nie przypisuje się wyniku tej konfiguracji do stanów 120 lub 150 l.
+
+W karcie frontu K43 wymagane jest nowe pole wymagany_luz_promieniowy_mm. Dla starszej karty dopisać dodatnią wartość wynikającą z uzgodnionego pasowania. Nie wpisywać domyślnego zera. Kalkulator porównuje dziesiętny luz promieniowy z wymaganą rezerwą dla każdego otworu i każdej osi. Odchyłki wejściowe powinny już uwzględniać niepewność pomiarową. Próbny próg 0,05 mm służy jedynie regresji oprogramowania.
+
+Wcześniejszy ZIP K41 jest zapisem historycznej rewizji. Aktualną diagnostykę obudowy generuje skrypt K40 z niniejszej rewizji. Pakiet warsztatowy K45 w tej rewizji zawiera zaktualizowany kalkulator, kartę i testy. Odbiór nośności, szczelności oraz docisku wymaga rzeczywistych prób.

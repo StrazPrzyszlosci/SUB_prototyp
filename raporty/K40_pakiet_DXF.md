@@ -21,3 +21,5 @@ MDF ma wspólną bazę lokalną w lewym dolnym rogu obrysu, skala 1:1. OBRYS ozn
 Dla sztywnego stosu między dwiema liniowymi podporami osiowymi o sztywnościach k1 i k2 przemieszczenie pod siłą F ma wartość F/(k1+k2). Większa zmiana reakcji wynosi F razy max(k1,k2)/(k1+k2). Przy obu kierunkach obciążenia docisk wstępny musi przekraczać tę wartość, aby zachować kontakt. W scenariuszu K32, F = 165,943 N, granica wynosi 82,97 N dla równych sztywności lub 124,46 N dla stosunku 3:1. Szczytowa reakcja po przeciwnej stronie rośnie o odpowiednią zmianę. To przesiew quasi-statyczny przy założeniu sztywnego korpusu, bez tarcia, rezonansu i pełzania. Do wpisania limitów K39 potrzebne są rzeczywiste sztywności, założenie obciążenia użytkowego i dopuszczalna reakcja całego mocowania.
 
 Odtwarzanie z katalogu repozytorium poleceniem `python skrypty/k40_pakiet_dxf.py pakiet.zip`. Opcja `--karta-fit karta.json` stosuje pomiary przy wyznaczaniu proponowanych wymiarów. Ten tryb również wymaga oceny technologicznej.
+
+Aktualny eksport sprawdza tory montażu i dołącza KONTROLA.json. Przy kolizjach wydaje wyłącznie diagnostykę. [Zasady eksportu K46](K46_poprawki_po_audycie.md).

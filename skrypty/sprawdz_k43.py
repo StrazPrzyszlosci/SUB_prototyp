@@ -10,7 +10,7 @@ except ValueError:
     pass
 else:
     raise AssertionError('Pusta karta')
-card.update(protokol='TEST', wymagane_pelne_zazebienie_mm=4, wymagany_luz_dna_mm=1,
+card.update(protokol='TEST', wymagany_luz_promieniowy_mm=.05, wymagane_pelne_zazebienie_mm=4, wymagany_luz_dna_mm=1,
             sruba_srednica_max_mm=5, dlugosc_od_konca_do_poczatku_pelnego_gwintu_przy_lbie_min_mm=20,
             niepelny_gwint_na_koncu_max_mm=1, sruba_dlugosc_min_mm=39.8, sruba_dlugosc_max_mm=40.2)
 for row in card['osie'].values():
@@ -47,3 +47,16 @@ assert evaluate(card)[field] is None and evaluate(card)['osie_bez_rozwiazania']=
 card['osie']['7']['FR1']['odchylka_osi_max_mm']=.4
 assert evaluate(card)['osie_bez_rozwiazania']==['7']
 print('K44 OK')
+
+# Exact decimal boundaries on a single limiting bore. All other axes fit.
+card.update(sruba_dlugosc_min_mm=39.8,sruba_dlugosc_max_mm=40.2)
+for row in card['osie'].values():
+    row.update(glebokosc_pierwszego_pelnego_zwoju_max_mm=34,
+               glebokosc_ostatniego_pelnego_zwoju_min_mm=39.5,glebokosc_dna_min_mm=43.7)
+    row['FR1'].update(srednica_min_mm=5.6,odchylka_osi_max_mm=.1)
+for diameter,expected in [(5.18,False),(5.20,False),(5.28,False),(5.30,True),(5.32,True)]:
+    card['osie']['8']['FR1']['srednica_min_mm']=diameter
+    result=evaluate(card)
+    assert result['pasuje_geometrycznie']==expected
+    assert (result[field] is not None)==expected
+print('K46 granice luzu OK')

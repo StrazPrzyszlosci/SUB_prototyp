@@ -10,6 +10,8 @@ from zipfile import ZipFile, ZIP_DEFLATED
 
 import ezdxf
 from ezdxf import bbox
+from k39_proba_rzedu import evaluate as evaluate_clamp
+from k38_tory import audit
 from k38_zlozenie import ROOT, geometry, panel_list, preview_record, validate
 
 
@@ -67,8 +69,37 @@ def draw(path, part):
         raise ValueError(path)
 
 
-def build(directory, data):
-    parts = geometry(data, revised=True, dry=True, proposal=True)['parts']
+def build(directory, data, *, measured=False, clamp_cards=()):
+    scene = geometry(data, revised=True, dry=True, proposal=True)
+    motion = audit(scene, robust=True)
+    recorded = geometry(data, revised=data['reference_design']=='K38', dry=True, proposal=False)
+    recorded_motion = audit(recorded, robust=True)
+    clamps = {}
+    for card in clamp_cards:
+        row = card['rzad_i_konfiguracja']
+        if (not measured or row not in {f'{i}/100L' for i in range(4)} or row in clamps
+                or card.get('protokol_montazu_K38') != data['records']['dry_fit']):
+            raise ValueError('Próba K39 wymaga zgodnej karty K38, rzędu 0/100L do 3/100L i jednego wyniku na rząd')
+        clamps[row] = {'wynik': evaluate_clamp(card)['wynik_rzedu'], 'protokol': card['protokol']}
+    def insertion_clear(result, name):
+        return next(e['clear'] for e in result['events'] if e['object']==name and e['action']=='insert')
+    supports = {}
+    for name, box in scene['boxes'].items():
+        supports[name] = {
+            'ruch_po_korekcie': insertion_clear(motion, name),
+            'ruch_stanu_wejsciowego': insertion_clear(recorded_motion, name),
+            'rozrzut_podpor_z_pomiarow_mm': recorded['boxes'][name]['support_spread_mm'] if measured else None,
+            'rozrzut_podpor_proponowany_mm': box['support_spread_mm'],
+            'proba_rzedu_po_zamknieciu_100L': clamps.get(name[1]+'/100L')}
+    clear = motion['clear']==motion['count']
+    report = {'wydanie': 'CNC HOLD', 'zrodlo': 'karta fit' if measured else 'przyklad syntetyczny',
+              'protokoly_K38':data['records'], 'rysunki_dopuszczone_do_przegladu':clear,
+              'ruch_proponowanej_geometrii':motion, 'ruch_stanu_wejsciowego':recorded_motion,
+              'podparcie_wkladow':supports}
+    (directory/'KONTROLA.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
+    if not clear:
+        return False
+    parts = dict(scene['parts'])
     for panel in panel_list(data):
         axis = panel['normal_axis']
         size = panel['size_xyz_mm']
@@ -91,15 +122,18 @@ def build(directory, data):
             shutil.copyfile(file,metal/file.name)
     if len(list(metal.iterdir()))!=5 or len(parts)!=90:
         raise ValueError('Błędna liczba części lub widoków')
-    for file in [ROOT/'raporty/K40_pakiet_DXF.md',ROOT/'raporty/K39_proba_rzedu.md',
+    for file in [ROOT/'raporty/K40_pakiet_DXF.md',ROOT/'raporty/K39_proba_rzedu.md',ROOT/'raporty/K46_poprawki_po_audycie.md',
                  ROOT/'dane/k38_karta_pomiarow.json',ROOT/'dane/k39_proba_rzedu.json']:
         shutil.copy(file,directory/file.name)
+    return True
 
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('archive',type=Path)
     parser.add_argument('--karta-fit',type=Path)
+    parser.add_argument('--proba-k39',action='append',type=Path,default=[],
+                        help='Karta próby danego rzędu w stanie 100 l, opcja powtarzalna')
     args=parser.parse_args()
     data=preview_record()
     if args.karta_fit:
@@ -107,9 +141,12 @@ if __name__=='__main__':
         validate(data,'fit')
     with TemporaryDirectory() as tmp:
         base=Path(tmp)
-        build(base,data)
+        cards=[json.loads(p.read_text()) for p in args.proba_k39]
+        clear=build(base,data,measured=bool(args.karta_fit),clamp_cards=cards)
         (base/'zrodlo.json').write_text(json.dumps({'tryb':'fit' if args.karta_fit else 'przyklad nominalny','dane':data},indent=2))
         with ZipFile(args.archive,'x',ZIP_DEFLATED) as archive:
             for path in sorted(base.rglob('*')):
                 if path.is_file():
                     archive.write(path,path.relative_to(base))
+        if not clear:
+            parser.exit(2,'Kolizje w proponowanej geometrii. ZIP zawiera diagnostykę bez rysunków DXF.\n')

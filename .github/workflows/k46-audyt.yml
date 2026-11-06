@@ -1,0 +1,14 @@
+name: K46 audit counterexamples
+on:
+  pull_request:
+    paths: ['skrypty/k3*.py', 'skrypty/k40*.py', 'skrypty/*k43*.py', 'skrypty/sprawdz_k46.py', 'dokumentacja/cnc/K45_PROBA_FRONTU/**', 'dane/k43*', '.github/workflows/k46-audyt.yml']
+jobs:
+  audit-export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install ezdxf matplotlib
+      - run: python skrypty/sprawdz_k46.py

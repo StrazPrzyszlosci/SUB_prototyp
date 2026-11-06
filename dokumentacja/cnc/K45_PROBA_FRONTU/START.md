@@ -26,3 +26,5 @@ python3 skrypty/k43_front_pomiar.py karta_proby.json
 ```
 
 W archiwum START.md leży w katalogu głównym. Katalog dokumentacja/cnc/K42_PROBA_HOLD zawiera trzy DXF. W katalogu raporty znajdują się obliczenia i procedura K42 do K44. Polecenie python3 skrypty/sprawdz_k43.py uruchamia sprawdzenie na danych syntetycznych.
+
+Aktualizacja K46: do karty wpisać dodatni wymagany luz promieniowy w mm dla technologii montażu. Starsze karty wymagają uzupełnienia tego pola. Kalkulator odrzuca luz zerowy i zapas poniżej zadanej wartości.
