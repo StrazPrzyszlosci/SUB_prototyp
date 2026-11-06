@@ -90,7 +90,7 @@ jobs:
           python - <<'PY'
           from pathlib import Path
           import subprocess
-          original=subprocess.check_output(['git','show','origin/main:README.md'],text=True)
+          original=subprocess.check_output(['git','show','f89b7f91f416a9150491baf91cf97a36b54f51b8:README.md'],text=True)
           current=Path('README.md').read_text(encoding='utf-8')
           # Explicit user-authorized guide restructuring; preserve the technical appendix and its data exactly.
           tail='## Krótki słownik do wykresów'

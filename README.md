@@ -1654,6 +1654,12 @@ odporności modelu, a nie zmierzoną statystyką produkcji.
 
 </details>
 
+## K39. Próba docisku wkładów
+
+[Procedura, karta pomiarowa i ocena dystansu dla jednego rzędu](raporty/K39_proba_rzedu.md). Pierwszy pomiar fizyczny pozostaje do wykonania. CNC HOLD.
+
+[Próbny pierścień mocujący K42](raporty/K42_pierscien.md).
+
 ## Krótki słownik do wykresów
 
 | Skrót lub termin | Co oznacza tutaj |
@@ -2405,7 +2411,3 @@ W K16 zbadaliśmy modelowy wariant **2 dolnych podpór + 2 górnych zabezpiecze�
 [**Otwórz model K17 w OpenSCAD**](dokumentacja/K17_p30e_prowadnice_i_zabezpieczenia_NIE_CNC.scad) · [dane geometryczne i obliczenia](wyniki/k17_prowadnice_boczne_wkladow.json) · [generator](skrypty/k17_prowadnice_wkladow.js).
 
 Prowadnice i wszystkie punkty podparcia **pozostają w skrzyni także po wyjęciu modułów**; zmieniają więc rzeczywistą objętość o modelowo około **1,02 l**, czego nie uwzględniało pierwotne P30E. Aby je wykonać, trzeba jeszcze zaprojektować rzeczywiste **połączenia z MDF, demontowalne blokady, luzy montażowe, uszczelki antydrganiowe i dostęp narzędzi**, a następnie ponowić badania K02/K07. To **kierunek dalszej konstrukcji, nie potwierdzony system mocowania. CNC HOLD.**
-
-## K39. Próba docisku wkładów
-
-[Procedura, karta pomiarowa i ocena dystansu dla jednego rzędu](raporty/K39_proba_rzedu.md). Pierwszy pomiar fizyczny pozostaje do wykonania. CNC HOLD.
