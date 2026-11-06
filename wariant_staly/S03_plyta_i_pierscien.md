@@ -41,6 +41,6 @@ Są to scenariusze bez kalibracji. Model 1D uśrednia nacisk przez szerokość 2
 
 ## Następna decyzja przed CNC
 
-Przygotować kartę próby pełnego obwodu FR1/FR2 z docelowym MDF i uszczelką. Zmierzyć rzeczywiste grubości oraz luz osiowy pierścienia. Przy stopniowanym, mierzonym docisku sprawdzić obwodowy ślad kontaktu, osiowe przemieszczenie pierścienia, rozrzut między ośmioma osiami i trwały odcisk po odciążeniu. Po relaksacji oraz ponownym montażu sprawdzić docisk i szczelność. Te dane pozwolą dobrać połączenie i skalibrować kontakt, zanim będzie można określić tolerancję kieszeni i wydać front do frezowania.
+Wykonać próbę pełnego obwodu FR1/FR2 z docelowym MDF i uszczelką według [karty próby](S03_karta_proby_frontu.md). Zmierzyć rzeczywiste grubości oraz luz osiowy pierścienia. Przy stopniowanym, mierzonym docisku sprawdzić obwodowy ślad kontaktu, osiowe przemieszczenie pierścienia, rozrzut między ośmioma osiami i trwały odcisk po odciążeniu. Po relaksacji oraz ponownym montażu sprawdzić docisk i szczelność. Te dane pozwolą dobrać połączenie i skalibrować kontakt, zanim będzie można określić tolerancję kieszeni i wydać front do frezowania.
 
 [Model](s03.py) · [pełne wyniki](s03_wyniki.json) · [wcześniejszy model korpusu](S02_korpus.md). Odtworzenie z katalogu projektu: `OPENBLAS_NUM_THREADS=1 python wariant_staly/s03.py`.
