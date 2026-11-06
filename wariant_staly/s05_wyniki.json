@@ -1,0 +1,30 @@
+{
+  "routes": {
+    "straight_S04": {
+      "extension_mm": 186.4,
+      "horizontal_width_mm": 1003.2210648921131,
+      "upright_height_nominal_mm": 1023.2210648921132,
+      "upright_depth_with_gap_at_half_degree_mm": 447.92137609081374
+    },
+    "NL4FRX": {
+      "extension_mm": 72,
+      "horizontal_width_mm": 888.8210648921131,
+      "upright_height_nominal_mm": 908.8210648921131,
+      "upright_depth_with_gap_at_half_degree_mm": 446.92306042979976
+    },
+    "external_bracket": {
+      "extension_mm": 70,
+      "horizontal_width_mm": 886.8210648921131,
+      "upright_height_nominal_mm": 906.8210648921131,
+      "upright_depth_with_gap_at_half_degree_mm": 446.905607358803
+    }
+  },
+  "bracket_y_mm": [
+    270,
+    350
+  ],
+  "installed_straight_end_y_mm": 167.5,
+  "withdrawal_limit_y_mm": 132.5,
+  "flange_edge_mm": 9.600000000000001,
+  "saved_side_mm": 116.4
+}
