@@ -24,3 +24,8 @@ jobs:
           cp wariant_staly/s02_wyniki.json "$RUNNER_TEMP/s02.json"
           python wariant_staly/s02.py
           python wariant_staly/sprawdz_s02.py "$RUNNER_TEMP/s02.json"
+      - name: Regresja płyty i pierścienia S03
+        run: |
+          cp wariant_staly/s03_wyniki.json "$RUNNER_TEMP/s03.json"
+          python wariant_staly/s03.py
+          PYTHONPATH=wariant_staly python -c "import json, os; from sprawdz_s02 import compare; compare(json.load(open('wariant_staly/s03_wyniki.json')), json.load(open(os.path.join(os.environ['RUNNER_TEMP'], 's03.json'))))"

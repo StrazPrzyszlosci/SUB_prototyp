@@ -37,7 +37,7 @@ def grid(breaks,h):
                            for a,b in zip(breaks,breaks[1:])]+[[breaks[-1]]])
 
 
-def solve(shape,h,vertical=False,bond=2e11):
+def solve(shape,h,vertical=False,bond=2e11,ring_modulus=200e9):
     W,H=np.array([shape['W'],shape['H']])*.001
     D=.394
     xs=grid([0,.022,.052,W-.052,W-.022,W],h)
@@ -77,7 +77,7 @@ def solve(shape,h,vertical=False,bond=2e11):
         nodes_by_part.setdefault(part,set()).update(nn)
         cells[key]=(part,nn,frac)
         dofs=(3*nn[:,None]+np.arange(3)).ravel()
-        add(dofs,hex8(tuple(np.round(size,12)))*((frac-steel)*2e9+steel*200e9))
+        add(dofs,hex8(tuple(np.round(size,12)))*((frac-steel)*2e9+steel*ring_modulus))
         mass=size.prod()*((frac-steel)*800+steel*7850)
         for n in nn:masses[n]+=mass/8
     for key,(part,nn,frac) in cells.items():
