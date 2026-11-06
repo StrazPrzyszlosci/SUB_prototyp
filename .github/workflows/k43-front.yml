@@ -1,0 +1,20 @@
+name: K43 front fit
+on:
+  push:
+    paths:
+      - 'skrypty/*k43*.py'
+      - 'dane/k43_karta_frontu.json'
+      - '.github/workflows/k43-front.yml'
+  pull_request:
+    paths:
+      - 'skrypty/*k43*.py'
+      - 'dane/k43_karta_frontu.json'
+      - '.github/workflows/k43-front.yml'
+permissions:
+  contents: read
+jobs:
+  front-fit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 skrypty/sprawdz_k43.py

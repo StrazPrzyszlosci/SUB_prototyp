@@ -1,0 +1,148 @@
+{
+  "protokol": null,
+  "wymagane_pelne_zazebienie_mm": null,
+  "wymagany_luz_dna_mm": null,
+  "sruba_srednica_max_mm": null,
+  "dlugosc_od_konca_do_poczatku_pelnego_gwintu_przy_lbie_min_mm": null,
+  "niepelny_gwint_na_koncu_max_mm": null,
+  "sruba_dlugosc_min_mm": null,
+  "sruba_dlugosc_max_mm": null,
+  "osie": {
+    "1": {
+      "glebokosc_pierwszego_pelnego_zwoju_max_mm": null,
+      "glebokosc_ostatniego_pelnego_zwoju_min_mm": null,
+      "glebokosc_dna_min_mm": null,
+      "FR1": {
+        "srednica_min_mm": null,
+        "odchylka_osi_max_mm": null
+      },
+      "kosz": {
+        "srednica_min_mm": null,
+        "odchylka_osi_max_mm": null
+      },
+      "ulga_FR2": {
+        "srednica_min_mm": null,
+        "odchylka_osi_max_mm": null
+      }
+    },
+    "2": {
+      "glebokosc_pierwszego_pelnego_zwoju_max_mm": null,
+      "glebokosc_ostatniego_pelnego_zwoju_min_mm": null,
+      "glebokosc_dna_min_mm": null,
+      "FR1": {
+        "srednica_min_mm": null,
+        "odchylka_osi_max_mm": null
+      },
+      "kosz": {
+        "srednica_min_mm": null,
+        "odchylka_osi_max_mm": null
+      },
+      "ulga_FR2": {
+        "srednica_min_mm": null,
+        "odchylka_osi_max_mm": null
+      }
+    },
+    "3": {
+      "glebokosc_pierwszego_pelnego_zwoju_max_mm": null,
+      "glebokosc_ostatniego_pelnego_zwoju_min_mm": null,
+      "glebokosc_dna_min_mm": null,
+      "FR1": {
+        "srednica_min_mm": null,
+        "odchylka_osi_max_mm": null
+      },
+      "kosz": {
+        "srednica_min_mm": null,
+        "odchylka_osi_max_mm": null
+      },
+      "ulga_FR2": {
+        "srednica_min_mm": null,
+        "odchylka_osi_max_mm": null
+      }
+    },
+    "4": {
+      "glebokosc_pierwszego_pelnego_zwoju_max_mm": null,
+      "glebokosc_ostatniego_pelnego_zwoju_min_mm": null,
+      "glebokosc_dna_min_mm": null,
+      "FR1": {
+        "srednica_min_mm": null,
+        "odchylka_osi_max_mm": null
+      },
+      "kosz": {
+        "srednica_min_mm": null,
+        "odchylka_osi_max_mm": null
+      },
+      "ulga_FR2": {
+        "srednica_min_mm": null,
+        "odchylka_osi_max_mm": null
+      }
+    },
+    "5": {
+      "glebokosc_pierwszego_pelnego_zwoju_max_mm": null,
+      "glebokosc_ostatniego_pelnego_zwoju_min_mm": null,
+      "glebokosc_dna_min_mm": null,
+      "FR1": {
+        "srednica_min_mm": null,
+        "odchylka_osi_max_mm": null
+      },
+      "kosz": {
+        "srednica_min_mm": null,
+        "odchylka_osi_max_mm": null
+      },
+      "ulga_FR2": {
+        "srednica_min_mm": null,
+        "odchylka_osi_max_mm": null
+      }
+    },
+    "6": {
+      "glebokosc_pierwszego_pelnego_zwoju_max_mm": null,
+      "glebokosc_ostatniego_pelnego_zwoju_min_mm": null,
+      "glebokosc_dna_min_mm": null,
+      "FR1": {
+        "srednica_min_mm": null,
+        "odchylka_osi_max_mm": null
+      },
+      "kosz": {
+        "srednica_min_mm": null,
+        "odchylka_osi_max_mm": null
+      },
+      "ulga_FR2": {
+        "srednica_min_mm": null,
+        "odchylka_osi_max_mm": null
+      }
+    },
+    "7": {
+      "glebokosc_pierwszego_pelnego_zwoju_max_mm": null,
+      "glebokosc_ostatniego_pelnego_zwoju_min_mm": null,
+      "glebokosc_dna_min_mm": null,
+      "FR1": {
+        "srednica_min_mm": null,
+        "odchylka_osi_max_mm": null
+      },
+      "kosz": {
+        "srednica_min_mm": null,
+        "odchylka_osi_max_mm": null
+      },
+      "ulga_FR2": {
+        "srednica_min_mm": null,
+        "odchylka_osi_max_mm": null
+      }
+    },
+    "8": {
+      "glebokosc_pierwszego_pelnego_zwoju_max_mm": null,
+      "glebokosc_ostatniego_pelnego_zwoju_min_mm": null,
+      "glebokosc_dna_min_mm": null,
+      "FR1": {
+        "srednica_min_mm": null,
+        "odchylka_osi_max_mm": null
+      },
+      "kosz": {
+        "srednica_min_mm": null,
+        "odchylka_osi_max_mm": null
+      },
+      "ulga_FR2": {
+        "srednica_min_mm": null,
+        "odchylka_osi_max_mm": null
+      }
+    }
+  }
+}
