@@ -1,0 +1,21 @@
+name: Stala obudowa S01
+on:
+  push:
+    branches: ['badania/stala-obudowa-2-2']
+    paths: ['wariant_staly/**', '.github/workflows/stala-s01.yml']
+permissions:
+  contents: read
+jobs:
+  porownanie:
+    runs-on: ubuntu-latest
+    env:
+      OPENBLAS_NUM_THREADS: 1
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install numpy scipy matplotlib
+      - run: python wariant_staly/sprawdz_s01.py
+      - run: python wariant_staly/s01.py
+      - run: python wariant_staly/sprawdz_s01.py
