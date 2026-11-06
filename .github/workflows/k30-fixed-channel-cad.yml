@@ -1,0 +1,24 @@
+name: K30 nominal fixed-channel CAD audit
+on:
+  workflow_dispatch:
+  push:
+    paths: ['skrypty/k30_stale_kanaly_cnc.py', 'skrypty/sprawdz_k30_cnc.py', 'dane/k30_zalozenia.json']
+  pull_request:
+    paths: ['skrypty/k30_stale_kanaly_cnc.py', 'skrypty/sprawdz_k30_cnc.py', 'dane/k30_zalozenia.json']
+jobs:
+  nominal-geometry:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install ezdxf matplotlib
+      - run: python skrypty/k30_stale_kanaly_cnc.py
+      - run: python skrypty/sprawdz_k30_cnc.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: K30-CNC-HOLD-nominal-audit
+          path: |
+            dokumentacja/cnc/K30_STALE_KANALY_HOLD
+            wyniki/k30_*.json

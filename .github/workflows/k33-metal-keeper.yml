@@ -1,0 +1,16 @@
+name: K33 metal keeper candidate
+on:
+  workflow_dispatch:
+  pull_request:
+    paths: ['skrypty/k33*', 'skrypty/sprawdz_k33.py', 'wyniki/k30*', 'wyniki/k32*', 'dokumentacja/cnc/K33_BLOKADA_METAL_HOLD/**']
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install ezdxf matplotlib
+      - run: python skrypty/k33_sztywna_blokada.py
+      - run: python skrypty/sprawdz_k33.py

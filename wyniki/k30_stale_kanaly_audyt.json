@@ -1,0 +1,1014 @@
+{
+  "revision": "K30-R1-2026-11-05",
+  "status": "CNC_HOLD",
+  "parts": 102,
+  "fixed_box_collisions": [],
+  "box_paths": [
+    {
+      "id": "M0F",
+      "waypoints_origin_mm": [
+        [
+          97.44999999999999,
+          -270,
+          202.0
+        ],
+        [
+          97.44999999999999,
+          70,
+          202.0
+        ],
+        [
+          97.44999999999999,
+          70,
+          40.6
+        ],
+        [
+          749.1,
+          70,
+          40.6
+        ],
+        [
+          749.1,
+          70,
+          40
+        ]
+      ],
+      "entry_corner_radius_mm": 141.9140673083539,
+      "entry_margin_mm": 35.9859326916461,
+      "swept_collisions": [],
+      "portal_R4_square_corner_clear": true,
+      "pass_nominal": true
+    },
+    {
+      "id": "M0N",
+      "waypoints_origin_mm": [
+        [
+          97.44999999999999,
+          -270,
+          202.0
+        ],
+        [
+          97.44999999999999,
+          70,
+          202.0
+        ],
+        [
+          97.44999999999999,
+          70,
+          40.6
+        ],
+        [
+          474,
+          70,
+          40.6
+        ],
+        [
+          474,
+          70,
+          40
+        ]
+      ],
+      "entry_corner_radius_mm": 141.9140673083539,
+      "entry_margin_mm": 35.9859326916461,
+      "swept_collisions": [],
+      "portal_R4_square_corner_clear": true,
+      "pass_nominal": true
+    },
+    {
+      "id": "M1F",
+      "waypoints_origin_mm": [
+        [
+          97.44999999999999,
+          -270,
+          202.0
+        ],
+        [
+          97.44999999999999,
+          70,
+          202.0
+        ],
+        [
+          97.44999999999999,
+          70,
+          156.6
+        ],
+        [
+          749.1,
+          70,
+          156.6
+        ],
+        [
+          749.1,
+          70,
+          156
+        ]
+      ],
+      "entry_corner_radius_mm": 141.9140673083539,
+      "entry_margin_mm": 35.9859326916461,
+      "swept_collisions": [],
+      "portal_R4_square_corner_clear": true,
+      "pass_nominal": true
+    },
+    {
+      "id": "M1N",
+      "waypoints_origin_mm": [
+        [
+          97.44999999999999,
+          -270,
+          202.0
+        ],
+        [
+          97.44999999999999,
+          70,
+          202.0
+        ],
+        [
+          97.44999999999999,
+          70,
+          156.6
+        ],
+        [
+          474,
+          70,
+          156.6
+        ],
+        [
+          474,
+          70,
+          156
+        ]
+      ],
+      "entry_corner_radius_mm": 141.9140673083539,
+      "entry_margin_mm": 35.9859326916461,
+      "swept_collisions": [],
+      "portal_R4_square_corner_clear": true,
+      "pass_nominal": true
+    },
+    {
+      "id": "M2F",
+      "waypoints_origin_mm": [
+        [
+          97.44999999999999,
+          -270,
+          202.0
+        ],
+        [
+          97.44999999999999,
+          70,
+          202.0
+        ],
+        [
+          97.44999999999999,
+          70,
+          272.6
+        ],
+        [
+          749.1,
+          70,
+          272.6
+        ],
+        [
+          749.1,
+          70,
+          272
+        ]
+      ],
+      "entry_corner_radius_mm": 141.9140673083539,
+      "entry_margin_mm": 35.9859326916461,
+      "swept_collisions": [],
+      "portal_R4_square_corner_clear": true,
+      "pass_nominal": true
+    },
+    {
+      "id": "M2N",
+      "waypoints_origin_mm": [
+        [
+          97.44999999999999,
+          -270,
+          202.0
+        ],
+        [
+          97.44999999999999,
+          70,
+          202.0
+        ],
+        [
+          97.44999999999999,
+          70,
+          272.6
+        ],
+        [
+          474,
+          70,
+          272.6
+        ],
+        [
+          474,
+          70,
+          272
+        ]
+      ],
+      "entry_corner_radius_mm": 141.9140673083539,
+      "entry_margin_mm": 35.9859326916461,
+      "swept_collisions": [],
+      "portal_R4_square_corner_clear": true,
+      "pass_nominal": true
+    },
+    {
+      "id": "M3F",
+      "waypoints_origin_mm": [
+        [
+          104.5,
+          -270,
+          212.0
+        ],
+        [
+          104.5,
+          70,
+          212.0
+        ],
+        [
+          104.5,
+          70,
+          388.6
+        ],
+        [
+          735.0,
+          70,
+          388.6
+        ],
+        [
+          735.0,
+          70,
+          388
+        ]
+      ],
+      "entry_corner_radius_mm": 132.0842534142507,
+      "entry_margin_mm": 45.81574658574931,
+      "swept_collisions": [],
+      "portal_R4_square_corner_clear": true,
+      "pass_nominal": true
+    },
+    {
+      "id": "M3N",
+      "waypoints_origin_mm": [
+        [
+          104.5,
+          -270,
+          212.0
+        ],
+        [
+          104.5,
+          70,
+          212.0
+        ],
+        [
+          104.5,
+          70,
+          388.6
+        ],
+        [
+          474,
+          70,
+          388.6
+        ],
+        [
+          474,
+          70,
+          388
+        ]
+      ],
+      "entry_corner_radius_mm": 132.0842534142507,
+      "entry_margin_mm": 45.81574658574931,
+      "swept_collisions": [],
+      "portal_R4_square_corner_clear": true,
+      "pass_nominal": true
+    }
+  ],
+  "keeper_paths": [
+    {
+      "row": 0,
+      "extended": false,
+      "shifts": [
+        [
+          -219.0,
+          -400,
+          162.0
+        ],
+        [
+          -219.0,
+          0,
+          162.0
+        ],
+        [
+          -219.0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "pieces": [
+        {
+          "id": "bar",
+          "o": [
+            430,
+            45,
+            63.0
+          ],
+          "s": [
+            18,
+            306,
+            50
+          ],
+          "kind": "fixed"
+        },
+        {
+          "id": "nose",
+          "o": [
+            448,
+            160,
+            63.0
+          ],
+          "s": [
+            22,
+            80,
+            50
+          ],
+          "kind": "fixed"
+        }
+      ],
+      "entry_margin_mm": 145.88437881283576,
+      "collisions": [],
+      "pass_nominal": true
+    },
+    {
+      "row": 1,
+      "extended": false,
+      "shifts": [
+        [
+          -219.0,
+          -400,
+          46.0
+        ],
+        [
+          -219.0,
+          0,
+          46.0
+        ],
+        [
+          -219.0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "pieces": [
+        {
+          "id": "bar",
+          "o": [
+            430,
+            45,
+            179.0
+          ],
+          "s": [
+            18,
+            306,
+            50
+          ],
+          "kind": "fixed"
+        },
+        {
+          "id": "nose",
+          "o": [
+            448,
+            160,
+            179.0
+          ],
+          "s": [
+            22,
+            80,
+            50
+          ],
+          "kind": "fixed"
+        }
+      ],
+      "entry_margin_mm": 145.88437881283576,
+      "collisions": [],
+      "pass_nominal": true
+    },
+    {
+      "row": 1,
+      "extended": true,
+      "shifts": [
+        [
+          -357.54999999999995,
+          -400,
+          46.0
+        ],
+        [
+          -357.54999999999995,
+          0,
+          46.0
+        ],
+        [
+          -357.54999999999995,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "pieces": [
+        {
+          "id": "bar",
+          "o": [
+            430,
+            45,
+            179.0
+          ],
+          "s": [
+            18,
+            306,
+            50
+          ],
+          "kind": "fixed"
+        },
+        {
+          "id": "reach",
+          "o": [
+            448,
+            190,
+            194.0
+          ],
+          "s": [
+            299.1,
+            20,
+            20
+          ],
+          "kind": "fixed"
+        },
+        {
+          "id": "base",
+          "o": [
+            448,
+            160,
+            179.0
+          ],
+          "s": [
+            4,
+            80,
+            50
+          ],
+          "kind": "fixed"
+        }
+      ],
+      "entry_margin_mm": 17.391113953152114,
+      "collisions": [],
+      "pass_nominal": true
+    },
+    {
+      "row": 2,
+      "extended": false,
+      "shifts": [
+        [
+          -219.0,
+          -400,
+          -70.0
+        ],
+        [
+          -219.0,
+          0,
+          -70.0
+        ],
+        [
+          -219.0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "pieces": [
+        {
+          "id": "bar",
+          "o": [
+            430,
+            45,
+            295.0
+          ],
+          "s": [
+            18,
+            306,
+            50
+          ],
+          "kind": "fixed"
+        },
+        {
+          "id": "nose",
+          "o": [
+            448,
+            160,
+            295.0
+          ],
+          "s": [
+            22,
+            80,
+            50
+          ],
+          "kind": "fixed"
+        }
+      ],
+      "entry_margin_mm": 145.88437881283576,
+      "collisions": [],
+      "pass_nominal": true
+    },
+    {
+      "row": 3,
+      "extended": false,
+      "shifts": [
+        [
+          -219.0,
+          -400,
+          -176.0
+        ],
+        [
+          -219.0,
+          0,
+          -176.0
+        ],
+        [
+          -219.0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "pieces": [
+        {
+          "id": "bar",
+          "o": [
+            430,
+            45,
+            401.0
+          ],
+          "s": [
+            18,
+            306,
+            50
+          ],
+          "kind": "fixed"
+        },
+        {
+          "id": "nose",
+          "o": [
+            448,
+            160,
+            401.0
+          ],
+          "s": [
+            22,
+            80,
+            50
+          ],
+          "kind": "fixed"
+        }
+      ],
+      "entry_margin_mm": 145.88437881283576,
+      "collisions": [],
+      "pass_nominal": true
+    }
+  ],
+  "separator_paths": [
+    {
+      "row": 0,
+      "waypoints": [
+        [
+          227,
+          -270,
+          202.0
+        ],
+        [
+          227,
+          70,
+          202.0
+        ],
+        [
+          227,
+          70,
+          40.6
+        ],
+        [
+          741.1,
+          70,
+          40.6
+        ],
+        [
+          741.1,
+          70,
+          40
+        ]
+      ],
+      "collisions": [],
+      "pass_nominal": true
+    },
+    {
+      "row": 1,
+      "waypoints": [
+        [
+          227,
+          -270,
+          202.0
+        ],
+        [
+          227,
+          70,
+          202.0
+        ],
+        [
+          227,
+          70,
+          156.6
+        ],
+        [
+          741.1,
+          70,
+          156.6
+        ],
+        [
+          741.1,
+          70,
+          156
+        ]
+      ],
+      "collisions": [],
+      "pass_nominal": true
+    },
+    {
+      "row": 2,
+      "waypoints": [
+        [
+          227,
+          -270,
+          202.0
+        ],
+        [
+          227,
+          70,
+          202.0
+        ],
+        [
+          227,
+          70,
+          272.6
+        ],
+        [
+          741.1,
+          70,
+          272.6
+        ],
+        [
+          741.1,
+          70,
+          272
+        ]
+      ],
+      "collisions": [],
+      "pass_nominal": true
+    },
+    {
+      "row": 3,
+      "waypoints": [
+        [
+          227,
+          -270,
+          212.0
+        ],
+        [
+          227,
+          70,
+          212.0
+        ],
+        [
+          227,
+          70,
+          388.6
+        ],
+        [
+          727.0,
+          70,
+          388.6
+        ],
+        [
+          727.0,
+          70,
+          388
+        ]
+      ],
+      "collisions": [],
+      "pass_nominal": true
+    }
+  ],
+  "reverse_paths": "Reverse exact segments valid if reverse order and all row stops removed; unsupported handling is not certified",
+  "keeper_mat_collisions": [],
+  "tool_paths": [
+    {
+      "row": 0,
+      "y": 55,
+      "waypoints": [
+        [
+          201,
+          -30,
+          240
+        ],
+        [
+          201,
+          45,
+          240
+        ],
+        [
+          201,
+          45,
+          78.0
+        ],
+        [
+          364,
+          45,
+          78.0
+        ]
+      ],
+      "collisions": [],
+      "pass_nominal": true
+    },
+    {
+      "row": 0,
+      "y": 341,
+      "waypoints": [
+        [
+          201,
+          -30,
+          240
+        ],
+        [
+          201,
+          331,
+          240
+        ],
+        [
+          201,
+          331,
+          78.0
+        ],
+        [
+          364,
+          331,
+          78.0
+        ]
+      ],
+      "collisions": [],
+      "pass_nominal": true
+    },
+    {
+      "row": 1,
+      "y": 55,
+      "waypoints": [
+        [
+          201,
+          -30,
+          240
+        ],
+        [
+          201,
+          45,
+          240
+        ],
+        [
+          201,
+          45,
+          194.0
+        ],
+        [
+          364,
+          45,
+          194.0
+        ]
+      ],
+      "collisions": [],
+      "pass_nominal": true
+    },
+    {
+      "row": 1,
+      "y": 341,
+      "waypoints": [
+        [
+          201,
+          -30,
+          240
+        ],
+        [
+          201,
+          331,
+          240
+        ],
+        [
+          201,
+          331,
+          194.0
+        ],
+        [
+          364,
+          331,
+          194.0
+        ]
+      ],
+      "collisions": [],
+      "pass_nominal": true
+    },
+    {
+      "row": 2,
+      "y": 55,
+      "waypoints": [
+        [
+          201,
+          -30,
+          240
+        ],
+        [
+          201,
+          45,
+          240
+        ],
+        [
+          201,
+          45,
+          310.0
+        ],
+        [
+          364,
+          45,
+          310.0
+        ]
+      ],
+      "collisions": [],
+      "pass_nominal": true
+    },
+    {
+      "row": 2,
+      "y": 341,
+      "waypoints": [
+        [
+          201,
+          -30,
+          240
+        ],
+        [
+          201,
+          331,
+          240
+        ],
+        [
+          201,
+          331,
+          310.0
+        ],
+        [
+          364,
+          331,
+          310.0
+        ]
+      ],
+      "collisions": [],
+      "pass_nominal": true
+    },
+    {
+      "row": 3,
+      "y": 55,
+      "waypoints": [
+        [
+          201,
+          -30,
+          240
+        ],
+        [
+          201,
+          45,
+          240
+        ],
+        [
+          201,
+          45,
+          416.0
+        ],
+        [
+          364,
+          45,
+          416.0
+        ]
+      ],
+      "collisions": [],
+      "pass_nominal": true
+    },
+    {
+      "row": 3,
+      "y": 341,
+      "waypoints": [
+        [
+          201,
+          -30,
+          240
+        ],
+        [
+          201,
+          331,
+          240
+        ],
+        [
+          201,
+          331,
+          416.0
+        ],
+        [
+          364,
+          331,
+          416.0
+        ]
+      ],
+      "collisions": [],
+      "pass_nominal": true
+    }
+  ],
+  "inner_gross_l": 172.904256,
+  "fixed_wood_displacement_l": 15.927376992324207,
+  "stop_displacement_l": 1.4536,
+  "volume_states": {
+    "max_150_target": {
+      "insert_ids": [],
+      "closed_box_displacement_l": 0,
+      "separator_displacement_l": 0,
+      "provisional_free_air_l": 150.3269990076758,
+      "unresolved": "Provisional metal envelope accounting; real basket, glue, sealing, pads and fastener union remain unmeasured."
+    },
+    "middle_120_target": {
+      "insert_ids": [
+        "M0N",
+        "M0F",
+        "M1F",
+        "M3N",
+        "M3F"
+      ],
+      "closed_box_displacement_l": 29.999008,
+      "separator_displacement_l": 0.35775999999999997,
+      "provisional_free_air_l": 119.92419100767579,
+      "unresolved": "Provisional metal envelope accounting; real basket, glue, sealing, pads and fastener union remain unmeasured."
+    },
+    "min_100_target": {
+      "insert_ids": [
+        "M0F",
+        "M0N",
+        "M1F",
+        "M1N",
+        "M2F",
+        "M2N",
+        "M3F",
+        "M3N"
+      ],
+      "closed_box_displacement_l": 49.999455999999995,
+      "separator_displacement_l": 0.75712,
+      "provisional_free_air_l": 99.5704230076758,
+      "unresolved": "Provisional metal envelope accounting; real basket, glue, sealing, pads and fastener union remain unmeasured."
+    }
+  },
+  "rail_end_only_screen": {
+    "load_per_rail_N": 63.21078993599997,
+    "stress_MPa": 1.6739153631199992,
+    "deflection_mm": 0.4695458883462395,
+    "allowable": null
+  },
+  "dxf_readback_errors": [],
+  "below_supplier_minimum_blanks": [],
+  "manufacturing_blocks": [
+    "Real driver / mounting / terminal geometry absent",
+    "Nominal box assembly ignores glue-line and real stock thickness: regenerate after metrology",
+    "Measured hand / tool envelope and stop removal assembly must be validated",
+    "Extended keeper geometry provided; its metal/MDF attachment and bending require qualification",
+    "MDF bond, captive metal plates, stop loading and rail deflection unqualified",
+    "Full cabinet bending and acoustic models must be recomputed after redesign"
+  ]
+}

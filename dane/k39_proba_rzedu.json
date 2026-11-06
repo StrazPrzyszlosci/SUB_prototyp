@@ -1,0 +1,29 @@
+{
+  "rzad_i_konfiguracja": null,
+  "partia_i_wymiary_podkladek": null,
+  "protokol": null,
+  "podstawa_limitow_sily": null,
+  "luz_min_mm": null,
+  "luz_max_mm": null,
+  "dystans_mm": null,
+  "blad_dystansu_mm": null,
+  "blad_wysokosci_mm": null,
+  "blad_sily_N": null,
+  "min_docisk_N": null,
+  "max_docisk_N": null,
+  "proby": [
+    {
+      "wysokosc_mala_mm": null,
+      "wysokosc_duza_mm": null,
+      "maks_sila_mala_N": null,
+      "min_sila_duza_N": null,
+      "czas_mala_h": null,
+      "czas_duza_h": null,
+      "monotoniczna_charakterystyka": null,
+      "pelne_podparcie": null,
+      "blokada_doszla_do_oporu": null,
+      "wyjeto_i_zalozono": null,
+      "brak_uszkodzen": null
+    }
+  ]
+}

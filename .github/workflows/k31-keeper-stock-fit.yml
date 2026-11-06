@@ -1,0 +1,18 @@
+name: K31 keeper and measured-stock fit
+on:
+  workflow_dispatch:
+  push:
+    paths: ['skrypty/k31_zlacze_i_pasowania.py', 'skrypty/sprawdz_k31.py', 'dane/k31_pomiary_szablon.json']
+  pull_request:
+    paths: ['skrypty/k31_zlacze_i_pasowania.py', 'skrypty/sprawdz_k31.py', 'dane/k31_pomiary_szablon.json']
+jobs:
+  geometry:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install ezdxf matplotlib
+      - run: python skrypty/k31_zlacze_i_pasowania.py
+      - run: python skrypty/sprawdz_k31.py

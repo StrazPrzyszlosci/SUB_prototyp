@@ -1,0 +1,6 @@
+{
+  "status": "not_measured",
+  "measurement_record": null,
+  "thickness_mm": {"XL": null, "XR": null, "YF": null, "YR": null, "ZB": null, "ZT": null},
+  "note": "Template for one measured material set, not a real measurement. Apply to all eight boxes only if this bound covers every sheet and mating edge. Otherwise use distinct sets in separate runs. No production release."
+}

@@ -1208,7 +1208,7 @@ Wykonano 29 przestrzennych rozwiązań FV dla geometrii z rzeczywistymi
 modelowymi wręgami i wkładami P20D oraz 348 odpowiedzi napędu
 C02/C11/C06, przy trzech rozdzielczościach (60/45/35 mm).
 Objętość modelu z 11 dużymi i 1 małym wkładem wyniosła
-119,937424 l, zgodnie z geometrią P21D przed odjęciem włókien.
+119,927424 l, zgodnie z geometrią P21D przed odjęciem włókien.
 Dwa porty uginających się ścian są wzajemnie połączone z ciśnieniem,
 ale ich funkcje kształtu pozostają założeniem, nie MES.
 
@@ -1956,3 +1956,78 @@ Odtworzono K04–K06. W czterech próbach K07 dla obu luzów kolejność 4–15,
 - Explicit invented geometry (NOT supplier MDF standard) in-plane transverse edge≥2 hole diameters and axial end≥3 hole diameters: Ø3.3 Y-drilled hole passes on paper (8mm transverse,12.5mm end), Ø3.3 X-drilled and Ø4.5 hole both axes fail; no measured MDF splitting/bearing/steel shear strength.
 - K25 5g +0.2kg/box load demand if all through single Ø3 pin: guide02 total65.65N, guide10 total157.43N; hypothetical steel sleeve double-wall bearing indicator5.47/13.12MPa, no material allowable/factor. Cable Y202 outer 4mm ends at Y204, 1.5mm short of sleeve front Y205.5; no mechanical fork, two-pin release, lock spring or 50mm follower movement. No support for modules12–15 during guide10 service. All DXF CNC HOLD.
 - Artifacts: K29 script/json/report/svg/CI. NEXT K30 compare two remotely retractable captive detents vs gasketed sealed service cassette, with full finite contact hardware, mechanical support, tolerances, FEA/coupons, service-state routing and revised air volume.
+
+
+## 2026-11-05 — K30: fixed-channel alternative and supplier-constrained nominal CNC
+
+- User explicitly requires driver-aperture-only service, no hatch. Read DIYkraft calculator and Allegro 17586111495, inspect description/gallery images. Stock 8/10/12/18/22/25; XY ±0.1, stock ±0.5; R4/Ø8; no edge drilling. Allegro depth vs website thickness tolerance remains distinct.
+- New alternative 1080×432×500, not approved replacement of P30E: eight sealed boxes in four fixed channels, midpoint frame, face-bolted removable stops. Do not silently transfer old FEM/acoustics. 102 nominal MDF DXFs, SCAD states, cutlist, Python generator and independent reload audit.
+- Continuous axis-aligned sweeps: 8 box paths, 4 separators, 5 finite keeper variants including extended stop, 8 hypothetical tool paths pass in specified nominal scenes. Actual hand/tool, fastener qualification, friction and orientation handling remain open. Positive nominal contacts are not strength proof.
+- Re-read DXF extents, units, closed/nonzero edges, R4, holes, stock and shipping envelopes. Stock-corner counterexample: nominal 244mm infill has -1.2..+1.2mm fit. Production cannot use nominal stock thickness blindly. Approximate volumes 99.57/119.92/150.33 L rely on assumed 5L driver and other hardware, not measurement.
+- All K30 files CNC HOLD. No terminal cut or final driver fixation, no qualified metal-to-MDF stop, no approved torque/glue, no physical prototype. Next: actual face-stop joint and stock-aware glue/fit model, then measured hardware paths and changed-cabinet mechanics. See K30 report and saved raw paths. Previous K18 files untouched.
+
+
+## 2026-11-05 — K31: rear keeper axis, screw projection and measured-stock fit
+
+- Additive correction on K30 draft PR82: rear bolt Y341→347, STOP widths306→312, PORTAL matching holes. Five replacement DXFs and corrected assembly; K30 history retained. Old rear projection hits channel web; new position clears nominal and conservatively inflated scenes.
+- Rear bearing rectangle contact improves14→18mm width, nominal ligament2→8mm. Mean bearing indicators are not allowables. Model M5x45 has full plate traversal16/32 assumed tolerance corners; M5x50 has32/32,3.45..6.55mm projection. Hardware tolerances are assumptions, not a selected product spec.
+- 21 motion checks and8 bolt-sensitivity checks pass.128 six-sheet/two-box corner fits; independent132 envelope/gap tests. Stock-aware panel sizing preserves external box dimensions; chosen0.2mm/side glue target remains unqualified. With assumed measured-local thickness error±0.05 and XY±0.1, total fit clearance0.1..0.7mm; WITHOUT measurement min−0.8mm remains possible.
+- Measurement template null; --require-measured rejects before writes. Never call synthetic preview measured or production-ready. No 48 panel DXFs published from missing measurements; CSV is preview only. Corrected five DXFs/SCAD compile/read back; see K31 report/test.
+- CNC HOLD: positive plate anti-rotation/anti-drop retention, nose/extended-stop load transfer, glue qualification, real stock, driver and terminal still open. NEXT: physically dimension captive threaded-plate retention and verify complete stop load path; do not promote mean bearing stress to qualification.
+
+
+## 2026-11-05 — K32: positive plate retention candidate and keeper flexibility
+
+- Eight plates enlarged18×30→18×80×4, each with central M5 and two M3 at Z±32;16 face-through Ø4 portal holes. Candidate M3×30/headØ6×3 retains plate independently of removable M5; preassemble before enclosure closure. No adhesive-only retention, but anti-loosening/material/thread qualification remains open.
+- Two new DXFs and detail-only SCAD. Nominal fixed-solid check and21 existing swept paths clear new plates/heads/shanks. Independent DXF24 bores/thread-symbol audit, equilibrium and virtual-work beam integration pass. No full tolerance or hand/tool qualification.
+- Assumed800kg/m³ MDF,0.2kg/box,5g gives165.943N for two large boxes+separator. Simply supported50×18 beam over292mm gives4.486MPa and1.771mm deflection at assumedE2000MPa; not a strength/torque approval. Full nose/tube/frame load path still unqualified.
+- CNC HOLD. Next: stiffen keeper and give nose/extended limiter a mechanically defined attachment, then repeat service routes and qualify actual joints. Report K32 and machine-readable outputs preserve assumptions.
+
+
+## 2026-11-05 — K33: monolithic keeper/nose and bolted extension flange
+
+- Candidate metal312×50×18 keeper with integral22×80×50 nose and R4 roots; no glued nose joint. Long row1 stop uses80×50×4 flange,4×M4x12 into nominal10mm useful threads,20×20×2 tube295.1, internal2mm cap and hypothetical2mm weld throat. No selected/certified alloy or weld procedure.
+- Assumed E70000/rho2700 vs MDF E2000/rho800, own bar/nose5g inertia included: deflection0.06125 vs1.88133mm; heavier metal raises bolt reactions. Not a strength/torque rating. Four short metal keepers gross3.987kg.
+- All5 stored full assembly translations including flange/heads/weld and R4 bounding volumes clear fixed structure, state-specific inserts, K32 retention. Extended aperture margin17.39mm nominal, not hand/tolerance proof.4 DXF independently reread; closed-form vs numerical beam deflection, force equilibrium pass; service-envelope SCAD compiles.
+- CNC HOLD; SCAD is envelopes, not production solids. Next: plate/M5/MDF contact and frame-to-shell load path under preload and heavier keepers; qualify actual material, threads, welds and stock.
+
+
+## 2026-11-05 — K34: local preload versus net frame force; frame stock fit
+
+-12 hypothetical Fi/C preload states preserve Fb−Fc=P, with separation. Do not add internal bolt preload to global adhesive-edge external demand. Gross-strip18×80×4 compression-only Winkler model at600+2×30N gives0.548–1.100MPa peaks vs0.458 mean for assumed material grid. No holes/orthotropy/creep or strength approval.81/161/321 mesh convergence, equilibrium, scaling, rigid limit and symmetry checked.
+- Nominal front/rear bond areas10032mm² each; four large-row load scenarios give432/427N and mean0.0431/0.0426MPa, not bond capacity. Counterfactual front strip with no edge bond or rib coupling deflects15.48mm in linear model, NOT actual portal prediction.
+- Holding outsideD432/H500 exactly, stock±0.5 and portal cut±0.1 yields total depth gap−1.6..1.6mm and height−1.1..1.1mm. No revised DXF without measured cavity/glue gap/global-axis reconciliation. Trial measured cavity sizing g0.2 has0.25..0.55 total gap under explicitly assumed errors, not adhesive qualification.
+- CNC HOLD. Next: unified measured-stock shell/frame geometry preserving mounting axes and specified front/rear bond interface; then qualify preload/contact/creep.
+
+
+## 2026-11-05 — K35: measured shell/frame geometry with invariant axes
+
+- Nine-part model keeps outside1080×432×500, portalX448/midX750, global windows and24 K32 hole axes. Actual thicknesses set local cut coordinates; assumed edge gaps0.2 and front laminate0.1 remain unqualified. Nominal synthetic portal365.5×455.6 atY44.3/Z22.2; no DXF release.
+-512 independent21.5/22.5mm corners pass shell extent/gap/window transformations; asymmetric case verifies24 global axes. Null measurement template and --require-measured refuses before writes, verified by hashes. Measured format never means qualified fabrication.
+- Old bank not automatically compatible: thicker portal shifts4mm plate beyondX474; thick midframe overlaps B rails; thinner frames leave end gaps; thick bottom/top/right wall collide with nominal bank. All512 corner sets require bank updates, not proof geometry impossible. Diagnostics incomplete for all bonds and paths.
+- Next: propagate measured datums through rail ends, channel webs, stops and retained plates while keeping box positions; recheck full service sweeps. CNC HOLD.
+
+
+## 2026-11-05 — K36: propagate shell datums into bank; front-access correction
+
+- Rail ends follow measured rear frame faces+g and side wall−g; web heights follow bottom/top; front web starts after4mm plate+g. Plate itself follows portal rear. First rail topZ40 fixed requires17.3..18.3 finished thickness, top keeper bottomZ466 requires11.3..12.3; face-machining from thicker stock proposed. Backstop laminate finished39.3..40.3, old PACK removed. Other bank stock remains nominal, not fully measured.
+-512 shell/frame corners and their conservative obstacle unions: plate/fixed collisions absent;8 box,4 separator,5 keeper paths clear modified fixed scene. Explicit max45.1mm front exposed old barY45 collision; new barY47..357 width310 preserves M5 axes55/347 and nose.3 paired metal DXF added, no production release.
+- Old20mm tool fails4 front approaches;18mm centred envelope clears8 approaches with nominal0.9mm front reserve. Test expects those4 old failures. No selected physical tool or hand clearance. Independent512 interface checks,3 DXF/R4/axes and old-bar counterexample pass.
+- Next: add all bank stock/tolerance dimensions, qualify face-machining/lamination operations and narrowed metal bolt edge; real tool, adhesive, joints and driver remain open. CNC HOLD.
+
+
+## 2026-11-05 — K37: per-part bank stock,16 operations and residual tolerance veto
+
+-25 independent bank measurements:4 webs,12 intermediate rails,8 metal plates,1 small spacer. Preserve inner web faces and rail support levels; face-machine4 separators from10 to proposed7.8, assumed0.1..0.3 clearance only for exact8 gap. Rail/web bond gaps0.2 introduced. No full combined motion requalification.
+-16 explicit operations with positive nominal allowances:4 bottom rails,4 top keepers,4 laminated stops,4 separators.50 one-parameter perturbations and4 plate/frame cases checked; not full25-dimensional corners. Null template/--require-measured no-write rejection; shell in K37 remains synthetic22 even if bank measured.
+- End-gap0.2 minus residual cut0.1+position0.1+measurement0.05 can yield−0.05 interference. Tighter0.05 each would give0.05..0.35 but is NOT confirmed capability. Front metal ligament4.75 and tool reserve0.55 are assumed geometry budgets, not strength/tool qualification.
+- Next: unified shell/bank/insert measurement input and combined tolerance swept paths; qualify actual process capability/adhesive and load joints. CNC HOLD.
+
+
+## 2026-11-06 K38
+
+Wspólna karta, 48 paneli, 42 czynności montażu. Przy skumulowanych błędach K37 daje 34/42, propozycja K38 42/42. Szczelina klejowa do 0,60 mm oraz siła podkładek wymagają kwalifikacji. Następna próba: charakterystyka siła-ugięcie i indywidualne dystanse. Raport K38. CNC HOLD.
+
+## K39. Próba docisku wkładów
+
+[Procedura, karta pomiarowa i ocena dystansu dla jednego rzędu](raporty/K39_proba_rzedu.md). Pierwszy pomiar fizyczny pozostaje do wykonania. CNC HOLD.

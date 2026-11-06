@@ -1,0 +1,16 @@
+{
+  "status": "not_measured",
+  "measurement_record": null,
+  "thickness_mm": {
+    "FR1": null,
+    "FR2": null,
+    "BACK": null,
+    "SIDE_L": null,
+    "SIDE_R": null,
+    "BOTTOM": null,
+    "TOP": null,
+    "PORTAL": null,
+    "MID_PORTAL": null
+  },
+  "note": "Actual local thicknesses required; assumed gaps0.2/lamination0.1 are unqualified. Geometry only, no CNC release."
+}
