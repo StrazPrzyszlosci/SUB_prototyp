@@ -2027,3 +2027,7 @@ Odtworzono K04–K06. W czterech próbach K07 dla obu luzów kolejność 4–15,
 ## 2026-11-06 K38
 
 Wspólna karta, 48 paneli, 42 czynności montażu. Przy skumulowanych błędach K37 daje 34/42, propozycja K38 42/42. Szczelina klejowa do 0,60 mm oraz siła podkładek wymagają kwalifikacji. Następna próba: charakterystyka siła-ugięcie i indywidualne dystanse. Raport K38. CNC HOLD.
+
+## K39. Próba docisku wkładów
+
+[Procedura, karta pomiarowa i ocena dystansu dla jednego rzędu](raporty/K39_proba_rzedu.md). Pierwszy pomiar fizyczny pozostaje do wykonania. CNC HOLD.
