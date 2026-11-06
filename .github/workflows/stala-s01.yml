@@ -44,3 +44,5 @@ jobs:
           cp wariant_staly/s06_wyniki.json "$RUNNER_TEMP/s06.json"
           python wariant_staly/s06.py
           PYTHONPATH=wariant_staly python -c "import json, os; from sprawdz_s02 import compare; compare(json.load(open('wariant_staly/s06_wyniki.json')), json.load(open(os.path.join(os.environ['RUNNER_TEMP'], 's06.json'))))"
+      - name: Regresja przejścia kosza S07
+        run: python wariant_staly/sprawdz_s07.py
