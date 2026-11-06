@@ -37,6 +37,8 @@ def compare(actual, expected):
         assert len(actual) == len(expected)
         for a, b in zip(actual, expected):
             compare(a, b)
+    elif isinstance(expected, str):
+        assert actual == expected
     else:
         np.testing.assert_allclose(actual, expected, rtol=2e-5, atol=1e-7)
 
