@@ -1,0 +1,4307 @@
+{
+  "schema": "K38-results-1",
+  "units": "mm",
+  "release": "CNC_HOLD",
+  "mode": "preview",
+  "records": {
+    "stock": null,
+    "dry_fit": null
+  },
+  "panels": [
+    {
+      "id": "M0F_XL",
+      "local_origin_mm": [
+        0,
+        0,
+        0
+      ],
+      "size_xyz_mm": [
+        8.0,
+        260.0,
+        96.0
+      ],
+      "normal_axis": 0
+    },
+    {
+      "id": "M0F_XR",
+      "local_origin_mm": [
+        259.1,
+        0,
+        0
+      ],
+      "size_xyz_mm": [
+        8.0,
+        260.0,
+        96.0
+      ],
+      "normal_axis": 0
+    },
+    {
+      "id": "M0F_YF",
+      "local_origin_mm": [
+        8.2,
+        0,
+        0
+      ],
+      "size_xyz_mm": [
+        250.70000000000002,
+        8.0,
+        96.0
+      ],
+      "normal_axis": 1
+    },
+    {
+      "id": "M0F_YR",
+      "local_origin_mm": [
+        8.2,
+        252.0,
+        0
+      ],
+      "size_xyz_mm": [
+        250.70000000000002,
+        8.0,
+        96.0
+      ],
+      "normal_axis": 1
+    },
+    {
+      "id": "M0F_ZB",
+      "local_origin_mm": [
+        8.2,
+        8.2,
+        0
+      ],
+      "size_xyz_mm": [
+        250.70000000000002,
+        243.6,
+        8.0
+      ],
+      "normal_axis": 2
+    },
+    {
+      "id": "M0F_ZT",
+      "local_origin_mm": [
+        8.2,
+        8.2,
+        88.0
+      ],
+      "size_xyz_mm": [
+        250.70000000000002,
+        243.6,
+        8.0
+      ],
+      "normal_axis": 2
+    },
+    {
+      "id": "M0N_XL",
+      "local_origin_mm": [
+        0,
+        0,
+        0
+      ],
+      "size_xyz_mm": [
+        8.0,
+        260.0,
+        96.0
+      ],
+      "normal_axis": 0
+    },
+    {
+      "id": "M0N_XR",
+      "local_origin_mm": [
+        259.1,
+        0,
+        0
+      ],
+      "size_xyz_mm": [
+        8.0,
+        260.0,
+        96.0
+      ],
+      "normal_axis": 0
+    },
+    {
+      "id": "M0N_YF",
+      "local_origin_mm": [
+        8.2,
+        0,
+        0
+      ],
+      "size_xyz_mm": [
+        250.70000000000002,
+        8.0,
+        96.0
+      ],
+      "normal_axis": 1
+    },
+    {
+      "id": "M0N_YR",
+      "local_origin_mm": [
+        8.2,
+        252.0,
+        0
+      ],
+      "size_xyz_mm": [
+        250.70000000000002,
+        8.0,
+        96.0
+      ],
+      "normal_axis": 1
+    },
+    {
+      "id": "M0N_ZB",
+      "local_origin_mm": [
+        8.2,
+        8.2,
+        0
+      ],
+      "size_xyz_mm": [
+        250.70000000000002,
+        243.6,
+        8.0
+      ],
+      "normal_axis": 2
+    },
+    {
+      "id": "M0N_ZT",
+      "local_origin_mm": [
+        8.2,
+        8.2,
+        88.0
+      ],
+      "size_xyz_mm": [
+        250.70000000000002,
+        243.6,
+        8.0
+      ],
+      "normal_axis": 2
+    },
+    {
+      "id": "M1F_XL",
+      "local_origin_mm": [
+        0,
+        0,
+        0
+      ],
+      "size_xyz_mm": [
+        8.0,
+        260.0,
+        96.0
+      ],
+      "normal_axis": 0
+    },
+    {
+      "id": "M1F_XR",
+      "local_origin_mm": [
+        259.1,
+        0,
+        0
+      ],
+      "size_xyz_mm": [
+        8.0,
+        260.0,
+        96.0
+      ],
+      "normal_axis": 0
+    },
+    {
+      "id": "M1F_YF",
+      "local_origin_mm": [
+        8.2,
+        0,
+        0
+      ],
+      "size_xyz_mm": [
+        250.70000000000002,
+        8.0,
+        96.0
+      ],
+      "normal_axis": 1
+    },
+    {
+      "id": "M1F_YR",
+      "local_origin_mm": [
+        8.2,
+        252.0,
+        0
+      ],
+      "size_xyz_mm": [
+        250.70000000000002,
+        8.0,
+        96.0
+      ],
+      "normal_axis": 1
+    },
+    {
+      "id": "M1F_ZB",
+      "local_origin_mm": [
+        8.2,
+        8.2,
+        0
+      ],
+      "size_xyz_mm": [
+        250.70000000000002,
+        243.6,
+        8.0
+      ],
+      "normal_axis": 2
+    },
+    {
+      "id": "M1F_ZT",
+      "local_origin_mm": [
+        8.2,
+        8.2,
+        88.0
+      ],
+      "size_xyz_mm": [
+        250.70000000000002,
+        243.6,
+        8.0
+      ],
+      "normal_axis": 2
+    },
+    {
+      "id": "M1N_XL",
+      "local_origin_mm": [
+        0,
+        0,
+        0
+      ],
+      "size_xyz_mm": [
+        8.0,
+        260.0,
+        96.0
+      ],
+      "normal_axis": 0
+    },
+    {
+      "id": "M1N_XR",
+      "local_origin_mm": [
+        259.1,
+        0,
+        0
+      ],
+      "size_xyz_mm": [
+        8.0,
+        260.0,
+        96.0
+      ],
+      "normal_axis": 0
+    },
+    {
+      "id": "M1N_YF",
+      "local_origin_mm": [
+        8.2,
+        0,
+        0
+      ],
+      "size_xyz_mm": [
+        250.70000000000002,
+        8.0,
+        96.0
+      ],
+      "normal_axis": 1
+    },
+    {
+      "id": "M1N_YR",
+      "local_origin_mm": [
+        8.2,
+        252.0,
+        0
+      ],
+      "size_xyz_mm": [
+        250.70000000000002,
+        8.0,
+        96.0
+      ],
+      "normal_axis": 1
+    },
+    {
+      "id": "M1N_ZB",
+      "local_origin_mm": [
+        8.2,
+        8.2,
+        0
+      ],
+      "size_xyz_mm": [
+        250.70000000000002,
+        243.6,
+        8.0
+      ],
+      "normal_axis": 2
+    },
+    {
+      "id": "M1N_ZT",
+      "local_origin_mm": [
+        8.2,
+        8.2,
+        88.0
+      ],
+      "size_xyz_mm": [
+        250.70000000000002,
+        243.6,
+        8.0
+      ],
+      "normal_axis": 2
+    },
+    {
+      "id": "M2F_XL",
+      "local_origin_mm": [
+        0,
+        0,
+        0
+      ],
+      "size_xyz_mm": [
+        8.0,
+        260.0,
+        96.0
+      ],
+      "normal_axis": 0
+    },
+    {
+      "id": "M2F_XR",
+      "local_origin_mm": [
+        259.1,
+        0,
+        0
+      ],
+      "size_xyz_mm": [
+        8.0,
+        260.0,
+        96.0
+      ],
+      "normal_axis": 0
+    },
+    {
+      "id": "M2F_YF",
+      "local_origin_mm": [
+        8.2,
+        0,
+        0
+      ],
+      "size_xyz_mm": [
+        250.70000000000002,
+        8.0,
+        96.0
+      ],
+      "normal_axis": 1
+    },
+    {
+      "id": "M2F_YR",
+      "local_origin_mm": [
+        8.2,
+        252.0,
+        0
+      ],
+      "size_xyz_mm": [
+        250.70000000000002,
+        8.0,
+        96.0
+      ],
+      "normal_axis": 1
+    },
+    {
+      "id": "M2F_ZB",
+      "local_origin_mm": [
+        8.2,
+        8.2,
+        0
+      ],
+      "size_xyz_mm": [
+        250.70000000000002,
+        243.6,
+        8.0
+      ],
+      "normal_axis": 2
+    },
+    {
+      "id": "M2F_ZT",
+      "local_origin_mm": [
+        8.2,
+        8.2,
+        88.0
+      ],
+      "size_xyz_mm": [
+        250.70000000000002,
+        243.6,
+        8.0
+      ],
+      "normal_axis": 2
+    },
+    {
+      "id": "M2N_XL",
+      "local_origin_mm": [
+        0,
+        0,
+        0
+      ],
+      "size_xyz_mm": [
+        8.0,
+        260.0,
+        96.0
+      ],
+      "normal_axis": 0
+    },
+    {
+      "id": "M2N_XR",
+      "local_origin_mm": [
+        259.1,
+        0,
+        0
+      ],
+      "size_xyz_mm": [
+        8.0,
+        260.0,
+        96.0
+      ],
+      "normal_axis": 0
+    },
+    {
+      "id": "M2N_YF",
+      "local_origin_mm": [
+        8.2,
+        0,
+        0
+      ],
+      "size_xyz_mm": [
+        250.70000000000002,
+        8.0,
+        96.0
+      ],
+      "normal_axis": 1
+    },
+    {
+      "id": "M2N_YR",
+      "local_origin_mm": [
+        8.2,
+        252.0,
+        0
+      ],
+      "size_xyz_mm": [
+        250.70000000000002,
+        8.0,
+        96.0
+      ],
+      "normal_axis": 1
+    },
+    {
+      "id": "M2N_ZB",
+      "local_origin_mm": [
+        8.2,
+        8.2,
+        0
+      ],
+      "size_xyz_mm": [
+        250.70000000000002,
+        243.6,
+        8.0
+      ],
+      "normal_axis": 2
+    },
+    {
+      "id": "M2N_ZT",
+      "local_origin_mm": [
+        8.2,
+        8.2,
+        88.0
+      ],
+      "size_xyz_mm": [
+        250.70000000000002,
+        243.6,
+        8.0
+      ],
+      "normal_axis": 2
+    },
+    {
+      "id": "M3F_XL",
+      "local_origin_mm": [
+        0,
+        0,
+        0
+      ],
+      "size_xyz_mm": [
+        8.0,
+        260.0,
+        76.0
+      ],
+      "normal_axis": 0
+    },
+    {
+      "id": "M3F_XR",
+      "local_origin_mm": [
+        245.0,
+        0,
+        0
+      ],
+      "size_xyz_mm": [
+        8.0,
+        260.0,
+        76.0
+      ],
+      "normal_axis": 0
+    },
+    {
+      "id": "M3F_YF",
+      "local_origin_mm": [
+        8.2,
+        0,
+        0
+      ],
+      "size_xyz_mm": [
+        236.6,
+        8.0,
+        76.0
+      ],
+      "normal_axis": 1
+    },
+    {
+      "id": "M3F_YR",
+      "local_origin_mm": [
+        8.2,
+        252.0,
+        0
+      ],
+      "size_xyz_mm": [
+        236.6,
+        8.0,
+        76.0
+      ],
+      "normal_axis": 1
+    },
+    {
+      "id": "M3F_ZB",
+      "local_origin_mm": [
+        8.2,
+        8.2,
+        0
+      ],
+      "size_xyz_mm": [
+        236.6,
+        243.6,
+        8.0
+      ],
+      "normal_axis": 2
+    },
+    {
+      "id": "M3F_ZT",
+      "local_origin_mm": [
+        8.2,
+        8.2,
+        68.0
+      ],
+      "size_xyz_mm": [
+        236.6,
+        243.6,
+        8.0
+      ],
+      "normal_axis": 2
+    },
+    {
+      "id": "M3N_XL",
+      "local_origin_mm": [
+        0,
+        0,
+        0
+      ],
+      "size_xyz_mm": [
+        8.0,
+        260.0,
+        76.0
+      ],
+      "normal_axis": 0
+    },
+    {
+      "id": "M3N_XR",
+      "local_origin_mm": [
+        245.0,
+        0,
+        0
+      ],
+      "size_xyz_mm": [
+        8.0,
+        260.0,
+        76.0
+      ],
+      "normal_axis": 0
+    },
+    {
+      "id": "M3N_YF",
+      "local_origin_mm": [
+        8.2,
+        0,
+        0
+      ],
+      "size_xyz_mm": [
+        236.6,
+        8.0,
+        76.0
+      ],
+      "normal_axis": 1
+    },
+    {
+      "id": "M3N_YR",
+      "local_origin_mm": [
+        8.2,
+        252.0,
+        0
+      ],
+      "size_xyz_mm": [
+        236.6,
+        8.0,
+        76.0
+      ],
+      "normal_axis": 1
+    },
+    {
+      "id": "M3N_ZB",
+      "local_origin_mm": [
+        8.2,
+        8.2,
+        0
+      ],
+      "size_xyz_mm": [
+        236.6,
+        243.6,
+        8.0
+      ],
+      "normal_axis": 2
+    },
+    {
+      "id": "M3N_ZT",
+      "local_origin_mm": [
+        8.2,
+        8.2,
+        68.0
+      ],
+      "size_xyz_mm": [
+        236.6,
+        243.6,
+        8.0
+      ],
+      "normal_axis": 2
+    }
+  ],
+  "inputs_sha256": "36c3e2b1a2097b642c49042e5dd8cb1a26d7335b945bb811ebcc25ff6d779cd6",
+  "as_recorded": {
+    "joint_target_mm": 0.2,
+    "operation_dimensions_mm": {
+      "RAIL_A_0_F": 17.8,
+      "RAIL_A_0_R": 17.8,
+      "TOP_KEEPER_A_F": 11.800000000000011,
+      "TOP_KEEPER_A_R": 11.800000000000011,
+      "RAIL_B_0_F": 17.8,
+      "RAIL_B_0_R": 17.8,
+      "TOP_KEEPER_B_F": 11.800000000000011,
+      "TOP_KEEPER_B_R": 11.800000000000011,
+      "SEP_0": 7.8,
+      "BACKSTOP_0": 39.799999999999955,
+      "SEP_1": 7.8,
+      "BACKSTOP_1": 39.799999999999955,
+      "SEP_2": 7.8,
+      "BACKSTOP_2": 39.799999999999955,
+      "SEP_3": 7.8,
+      "BACKSTOP_3": 39.799999999999955
+    },
+    "panel_blank_dimensions_xyz_mm": {
+      "FR1": [
+        1080.0,
+        22.0,
+        500.0
+      ],
+      "FR2": [
+        1080.0,
+        22.0,
+        500.0
+      ],
+      "BACK": [
+        1080.0,
+        22.0,
+        500.0
+      ],
+      "SIDE_L": [
+        22.0,
+        365.5,
+        500.0
+      ],
+      "SIDE_R": [
+        22.0,
+        365.5,
+        500.0
+      ],
+      "BOTTOM": [
+        1035.6,
+        365.5,
+        22.0
+      ],
+      "TOP": [
+        1035.6,
+        365.5,
+        22.0
+      ],
+      "PORTAL": [
+        22.0,
+        365.5,
+        455.6
+      ],
+      "MID_PORTAL": [
+        22.0,
+        365.5,
+        455.6
+      ],
+      "CHANNEL_WEB_A_F": [
+        275.59999999999997,
+        8.0,
+        455.6
+      ],
+      "CHANNEL_WEB_A_R": [
+        275.59999999999997,
+        8.0,
+        455.6
+      ],
+      "CHANNEL_WEB_B_F": [
+        285.5999999999999,
+        8.0,
+        455.6
+      ],
+      "CHANNEL_WEB_B_R": [
+        285.5999999999999,
+        8.0,
+        455.6
+      ],
+      "RAIL_A_0_F": [
+        279.59999999999997,
+        50,
+        17.8
+      ],
+      "RAIL_A_0_R": [
+        279.59999999999997,
+        50,
+        17.8
+      ],
+      "RAIL_A_1_F": [
+        279.59999999999997,
+        50,
+        18.0
+      ],
+      "RAIL_A_1_R": [
+        279.59999999999997,
+        50,
+        18.0
+      ],
+      "RAIL_A_2_F": [
+        279.59999999999997,
+        50,
+        18.0
+      ],
+      "RAIL_A_2_R": [
+        279.59999999999997,
+        50,
+        18.0
+      ],
+      "RAIL_A_3_F": [
+        279.59999999999997,
+        50,
+        18.0
+      ],
+      "RAIL_A_3_R": [
+        279.59999999999997,
+        50,
+        18.0
+      ],
+      "TOP_KEEPER_A_F": [
+        279.59999999999997,
+        50,
+        11.800000000000011
+      ],
+      "TOP_KEEPER_A_R": [
+        279.59999999999997,
+        50,
+        11.800000000000011
+      ],
+      "RAIL_B_0_F": [
+        285.5999999999999,
+        50,
+        17.8
+      ],
+      "RAIL_B_0_R": [
+        285.5999999999999,
+        50,
+        17.8
+      ],
+      "RAIL_B_1_F": [
+        285.5999999999999,
+        50,
+        18.0
+      ],
+      "RAIL_B_1_R": [
+        285.5999999999999,
+        50,
+        18.0
+      ],
+      "RAIL_B_2_F": [
+        285.5999999999999,
+        50,
+        18.0
+      ],
+      "RAIL_B_2_R": [
+        285.5999999999999,
+        50,
+        18.0
+      ],
+      "RAIL_B_3_F": [
+        285.5999999999999,
+        50,
+        18.0
+      ],
+      "RAIL_B_3_R": [
+        285.5999999999999,
+        50,
+        18.0
+      ],
+      "TOP_KEEPER_B_F": [
+        285.5999999999999,
+        50,
+        11.800000000000011
+      ],
+      "TOP_KEEPER_B_R": [
+        285.5999999999999,
+        50,
+        11.800000000000011
+      ],
+      "SEP_0": [
+        7.8,
+        260,
+        96
+      ],
+      "BACKSTOP_0": [
+        39.799999999999955,
+        260,
+        96
+      ],
+      "SEP_1": [
+        7.8,
+        260,
+        96
+      ],
+      "BACKSTOP_1": [
+        39.799999999999955,
+        260,
+        96
+      ],
+      "SEP_2": [
+        7.8,
+        260,
+        96
+      ],
+      "BACKSTOP_2": [
+        39.799999999999955,
+        260,
+        96
+      ],
+      "SEP_3": [
+        7.8,
+        260,
+        76
+      ],
+      "BACKSTOP_3": [
+        39.799999999999955,
+        260,
+        76
+      ],
+      "BACKSTOP_SMALL_EXTRA": [
+        25.0,
+        260,
+        76
+      ]
+    },
+    "stock_values_supplied": false,
+    "finished_sizes_source": "dry_fit",
+    "contact": {
+      "end_bond_mm": [
+        -0.04999999999999999,
+        0.45
+      ],
+      "rows": [
+        {
+          "row": 0,
+          "between_reference_faces_mm": 8.0,
+          "separator_mm": 7.8,
+          "near_gap_lower_mm": -0.3499999999999999,
+          "far_gap_lower_mm": -0.2499999999999999,
+          "total_lower_with_centre_free_mm": -0.2999999999999998,
+          "hard_stack_gap_locked_mm": 5.999999999999943,
+          "hard_stack_gap_interval_mm": [
+            5.199999999999943,
+            6.799999999999943
+          ],
+          "support_spread_mm": {
+            "M0N": 0.0,
+            "M0F": 0.0
+          },
+          "support_spread_upper_mm": 0.5,
+          "extended_hard_stack_gap_mm": null
+        },
+        {
+          "row": 1,
+          "between_reference_faces_mm": 8.0,
+          "separator_mm": 7.8,
+          "near_gap_lower_mm": -0.3499999999999999,
+          "far_gap_lower_mm": -0.2499999999999999,
+          "total_lower_with_centre_free_mm": -0.2999999999999998,
+          "hard_stack_gap_locked_mm": 5.999999999999943,
+          "hard_stack_gap_interval_mm": [
+            5.199999999999943,
+            6.799999999999943
+          ],
+          "support_spread_mm": {
+            "M1N": 0.0,
+            "M1F": 0.0
+          },
+          "support_spread_upper_mm": 0.5,
+          "extended_hard_stack_gap_mm": 3.7999999999999545
+        },
+        {
+          "row": 2,
+          "between_reference_faces_mm": 8.0,
+          "separator_mm": 7.8,
+          "near_gap_lower_mm": -0.3499999999999999,
+          "far_gap_lower_mm": -0.2499999999999999,
+          "total_lower_with_centre_free_mm": -0.2999999999999998,
+          "hard_stack_gap_locked_mm": 5.999999999999943,
+          "hard_stack_gap_interval_mm": [
+            5.199999999999943,
+            6.799999999999943
+          ],
+          "support_spread_mm": {
+            "M2N": 0.0,
+            "M2F": 0.0
+          },
+          "support_spread_upper_mm": 0.5,
+          "extended_hard_stack_gap_mm": null
+        },
+        {
+          "row": 3,
+          "between_reference_faces_mm": 8.0,
+          "separator_mm": 7.8,
+          "near_gap_lower_mm": -0.3499999999999999,
+          "far_gap_lower_mm": -0.2499999999999999,
+          "total_lower_with_centre_free_mm": -0.2999999999999998,
+          "hard_stack_gap_locked_mm": 9.199999999999989,
+          "hard_stack_gap_interval_mm": [
+            8.399999999999988,
+            9.99999999999999
+          ],
+          "support_spread_mm": {
+            "M3N": 0.0,
+            "M3F": 0.0
+          },
+          "support_spread_upper_mm": 0.5,
+          "extended_hard_stack_gap_mm": null
+        }
+      ]
+    },
+    "motions": {
+      "events": [
+        {
+          "transition": "150→120",
+          "action": "undo_M5",
+          "object": "tool_0_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked0/M5_head_0_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.55
+        },
+        {
+          "transition": "150→120",
+          "action": "undo_M5",
+          "object": "tool_0_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked0/M5_head_0_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 3.55
+        },
+        {
+          "transition": "150→120",
+          "action": "remove",
+          "object": "keeper_0_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 2.5
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "M0F",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "MID_PORTAL/sill",
+            "RAIL_A_0_F",
+            "RAIL_A_0_R",
+            "RAIL_B_0_F",
+            "RAIL_B_0_R"
+          ],
+          "critical_noncontact_obstacle": "RAIL_A_0_F",
+          "minimum_test_margin_mm": 0.2
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "SEP_0",
+          "kind": "separator",
+          "clear": false,
+          "errors": [
+            {
+              "segment": 2,
+              "obstacle": "M0F",
+              "margin_mm": -0.25
+            },
+            {
+              "segment": 3,
+              "obstacle": "M0F",
+              "margin_mm": -0.25
+            }
+          ],
+          "terminal_contacts": [
+            "RAIL_A_0_F",
+            "RAIL_A_0_R"
+          ],
+          "critical_noncontact_obstacle": "M0F",
+          "minimum_test_margin_mm": -0.25
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "M0N",
+          "kind": "box",
+          "clear": false,
+          "errors": [
+            {
+              "segment": 2,
+              "obstacle": "SEP_0",
+              "margin_mm": -0.35
+            },
+            {
+              "segment": 3,
+              "obstacle": "SEP_0",
+              "margin_mm": -0.35
+            }
+          ],
+          "terminal_contacts": [
+            "RAIL_A_0_F",
+            "RAIL_A_0_R"
+          ],
+          "critical_noncontact_obstacle": "SEP_0",
+          "minimum_test_margin_mm": -0.35
+        },
+        {
+          "transition": "150→120",
+          "action": "install",
+          "object": "keeper_0_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 2.5
+        },
+        {
+          "transition": "150→120",
+          "action": "fasten_M5",
+          "object": "tool_0_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked0/M5_head_0_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.55
+        },
+        {
+          "transition": "150→120",
+          "action": "fasten_M5",
+          "object": "tool_0_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked0/M5_head_0_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 3.55
+        },
+        {
+          "transition": "150→120",
+          "action": "undo_M5",
+          "object": "tool_1_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.55
+        },
+        {
+          "transition": "150→120",
+          "action": "undo_M5",
+          "object": "tool_1_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 3.55
+        },
+        {
+          "transition": "150→120",
+          "action": "remove",
+          "object": "keeper_1_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 2.5
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "M1F",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "MID_PORTAL/sill",
+            "RAIL_A_1_F",
+            "RAIL_A_1_R",
+            "RAIL_B_1_F",
+            "RAIL_B_1_R"
+          ],
+          "critical_noncontact_obstacle": "RAIL_A_1_F",
+          "minimum_test_margin_mm": 0.2
+        },
+        {
+          "transition": "150→120",
+          "action": "install",
+          "object": "keeper_1_long",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "M1F",
+          "minimum_test_margin_mm": 1.6
+        },
+        {
+          "transition": "150→120",
+          "action": "fasten_M5",
+          "object": "tool_1_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.55
+        },
+        {
+          "transition": "150→120",
+          "action": "fasten_M5",
+          "object": "tool_1_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 3.55
+        },
+        {
+          "transition": "150→120",
+          "action": "undo_M5",
+          "object": "tool_3_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked3/M5_head_3_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.55
+        },
+        {
+          "transition": "150→120",
+          "action": "undo_M5",
+          "object": "tool_3_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked3/M5_head_3_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 3.55
+        },
+        {
+          "transition": "150→120",
+          "action": "remove",
+          "object": "keeper_3_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 2.5
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "M3F",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "MID_PORTAL/sill",
+            "RAIL_A_3_F",
+            "RAIL_A_3_R",
+            "RAIL_B_3_F",
+            "RAIL_B_3_R"
+          ],
+          "critical_noncontact_obstacle": "RAIL_A_3_F",
+          "minimum_test_margin_mm": 0.2
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "SEP_3",
+          "kind": "separator",
+          "clear": false,
+          "errors": [
+            {
+              "segment": 2,
+              "obstacle": "M3F",
+              "margin_mm": -0.25
+            },
+            {
+              "segment": 3,
+              "obstacle": "M3F",
+              "margin_mm": -0.25
+            }
+          ],
+          "terminal_contacts": [
+            "RAIL_A_3_F",
+            "RAIL_A_3_R"
+          ],
+          "critical_noncontact_obstacle": "M3F",
+          "minimum_test_margin_mm": -0.25
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "M3N",
+          "kind": "box",
+          "clear": false,
+          "errors": [
+            {
+              "segment": 2,
+              "obstacle": "SEP_3",
+              "margin_mm": -0.35
+            },
+            {
+              "segment": 3,
+              "obstacle": "SEP_3",
+              "margin_mm": -0.35
+            }
+          ],
+          "terminal_contacts": [
+            "RAIL_A_3_F",
+            "RAIL_A_3_R"
+          ],
+          "critical_noncontact_obstacle": "SEP_3",
+          "minimum_test_margin_mm": -0.35
+        },
+        {
+          "transition": "150→120",
+          "action": "install",
+          "object": "keeper_3_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 2.5
+        },
+        {
+          "transition": "150→120",
+          "action": "fasten_M5",
+          "object": "tool_3_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked3/M5_head_3_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.55
+        },
+        {
+          "transition": "150→120",
+          "action": "fasten_M5",
+          "object": "tool_3_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked3/M5_head_3_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 3.55
+        },
+        {
+          "transition": "120→100",
+          "action": "undo_M5",
+          "object": "tool_1_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.55
+        },
+        {
+          "transition": "120→100",
+          "action": "undo_M5",
+          "object": "tool_1_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 3.55
+        },
+        {
+          "transition": "120→100",
+          "action": "remove",
+          "object": "keeper_1_long",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "M1F",
+          "minimum_test_margin_mm": 1.6
+        },
+        {
+          "transition": "120→100",
+          "action": "insert",
+          "object": "SEP_1",
+          "kind": "separator",
+          "clear": false,
+          "errors": [
+            {
+              "segment": 2,
+              "obstacle": "M1F",
+              "margin_mm": -0.25
+            },
+            {
+              "segment": 3,
+              "obstacle": "M1F",
+              "margin_mm": -0.25
+            }
+          ],
+          "terminal_contacts": [
+            "RAIL_A_1_F",
+            "RAIL_A_1_R"
+          ],
+          "critical_noncontact_obstacle": "M1F",
+          "minimum_test_margin_mm": -0.25
+        },
+        {
+          "transition": "120→100",
+          "action": "insert",
+          "object": "M1N",
+          "kind": "box",
+          "clear": false,
+          "errors": [
+            {
+              "segment": 2,
+              "obstacle": "SEP_1",
+              "margin_mm": -0.35
+            },
+            {
+              "segment": 3,
+              "obstacle": "SEP_1",
+              "margin_mm": -0.35
+            }
+          ],
+          "terminal_contacts": [
+            "RAIL_A_1_F",
+            "RAIL_A_1_R"
+          ],
+          "critical_noncontact_obstacle": "SEP_1",
+          "minimum_test_margin_mm": -0.35
+        },
+        {
+          "transition": "120→100",
+          "action": "install",
+          "object": "keeper_1_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 2.5
+        },
+        {
+          "transition": "120→100",
+          "action": "fasten_M5",
+          "object": "tool_1_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.55
+        },
+        {
+          "transition": "120→100",
+          "action": "fasten_M5",
+          "object": "tool_1_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 3.55
+        },
+        {
+          "transition": "120→100",
+          "action": "undo_M5",
+          "object": "tool_2_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked2/M5_head_2_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.55
+        },
+        {
+          "transition": "120→100",
+          "action": "undo_M5",
+          "object": "tool_2_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked2/M5_head_2_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 3.55
+        },
+        {
+          "transition": "120→100",
+          "action": "remove",
+          "object": "keeper_2_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 2.5
+        },
+        {
+          "transition": "120→100",
+          "action": "insert",
+          "object": "M2F",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "MID_PORTAL/sill",
+            "RAIL_A_2_F",
+            "RAIL_A_2_R",
+            "RAIL_B_2_F",
+            "RAIL_B_2_R"
+          ],
+          "critical_noncontact_obstacle": "RAIL_A_2_F",
+          "minimum_test_margin_mm": 0.2
+        },
+        {
+          "transition": "120→100",
+          "action": "insert",
+          "object": "SEP_2",
+          "kind": "separator",
+          "clear": false,
+          "errors": [
+            {
+              "segment": 2,
+              "obstacle": "M2F",
+              "margin_mm": -0.25
+            },
+            {
+              "segment": 3,
+              "obstacle": "M2F",
+              "margin_mm": -0.25
+            }
+          ],
+          "terminal_contacts": [
+            "RAIL_A_2_F",
+            "RAIL_A_2_R"
+          ],
+          "critical_noncontact_obstacle": "M2F",
+          "minimum_test_margin_mm": -0.25
+        },
+        {
+          "transition": "120→100",
+          "action": "insert",
+          "object": "M2N",
+          "kind": "box",
+          "clear": false,
+          "errors": [
+            {
+              "segment": 2,
+              "obstacle": "SEP_2",
+              "margin_mm": -0.35
+            },
+            {
+              "segment": 3,
+              "obstacle": "SEP_2",
+              "margin_mm": -0.35
+            }
+          ],
+          "terminal_contacts": [
+            "RAIL_A_2_F",
+            "RAIL_A_2_R"
+          ],
+          "critical_noncontact_obstacle": "SEP_2",
+          "minimum_test_margin_mm": -0.35
+        },
+        {
+          "transition": "120→100",
+          "action": "install",
+          "object": "keeper_2_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 2.5
+        },
+        {
+          "transition": "120→100",
+          "action": "fasten_M5",
+          "object": "tool_2_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked2/M5_head_2_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.55
+        },
+        {
+          "transition": "120→100",
+          "action": "fasten_M5",
+          "object": "tool_2_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked2/M5_head_2_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 3.55
+        }
+      ],
+      "count": 42,
+      "clear": 34,
+      "reverse_sequence": "100→120→150 retraces the forward events in exact reverse occupancy",
+      "error_model": "axis-aligned hard parts; terminal contact stops on first face; no pads, hand, rotation or deformation"
+    },
+    "nominal_motions": {
+      "events": [
+        {
+          "transition": "150→120",
+          "action": "undo_M5",
+          "object": "tool_0_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked0/M5_head_0_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.9
+        },
+        {
+          "transition": "150→120",
+          "action": "undo_M5",
+          "object": "tool_0_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked0/M5_head_0_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 4.0
+        },
+        {
+          "transition": "150→120",
+          "action": "remove",
+          "object": "keeper_0_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 2.9
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "M0F",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "MID_PORTAL/sill",
+            "RAIL_A_0_F",
+            "RAIL_A_0_R",
+            "RAIL_B_0_F",
+            "RAIL_B_0_R"
+          ],
+          "critical_noncontact_obstacle": "RAIL_A_0_F",
+          "minimum_test_margin_mm": 0.6
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "SEP_0",
+          "kind": "separator",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "RAIL_A_0_F",
+            "RAIL_A_0_R"
+          ],
+          "critical_noncontact_obstacle": "M0F",
+          "minimum_test_margin_mm": 0.1
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "M0N",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "RAIL_A_0_F",
+            "RAIL_A_0_R"
+          ],
+          "critical_noncontact_obstacle": "SEP_0",
+          "minimum_test_margin_mm": 0.1
+        },
+        {
+          "transition": "150→120",
+          "action": "install",
+          "object": "keeper_0_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 2.9
+        },
+        {
+          "transition": "150→120",
+          "action": "fasten_M5",
+          "object": "tool_0_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked0/M5_head_0_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.9
+        },
+        {
+          "transition": "150→120",
+          "action": "fasten_M5",
+          "object": "tool_0_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked0/M5_head_0_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 4.0
+        },
+        {
+          "transition": "150→120",
+          "action": "undo_M5",
+          "object": "tool_1_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.9
+        },
+        {
+          "transition": "150→120",
+          "action": "undo_M5",
+          "object": "tool_1_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 4.0
+        },
+        {
+          "transition": "150→120",
+          "action": "remove",
+          "object": "keeper_1_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 2.9
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "M1F",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "MID_PORTAL/sill",
+            "RAIL_A_1_F",
+            "RAIL_A_1_R",
+            "RAIL_B_1_F",
+            "RAIL_B_1_R"
+          ],
+          "critical_noncontact_obstacle": "RAIL_A_1_F",
+          "minimum_test_margin_mm": 0.6
+        },
+        {
+          "transition": "150→120",
+          "action": "install",
+          "object": "keeper_1_long",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "M1F",
+          "minimum_test_margin_mm": 2.0
+        },
+        {
+          "transition": "150→120",
+          "action": "fasten_M5",
+          "object": "tool_1_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.9
+        },
+        {
+          "transition": "150→120",
+          "action": "fasten_M5",
+          "object": "tool_1_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 4.0
+        },
+        {
+          "transition": "150→120",
+          "action": "undo_M5",
+          "object": "tool_3_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked3/M5_head_3_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.9
+        },
+        {
+          "transition": "150→120",
+          "action": "undo_M5",
+          "object": "tool_3_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked3/M5_head_3_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 4.0
+        },
+        {
+          "transition": "150→120",
+          "action": "remove",
+          "object": "keeper_3_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 2.9
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "M3F",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "MID_PORTAL/sill",
+            "RAIL_A_3_F",
+            "RAIL_A_3_R",
+            "RAIL_B_3_F",
+            "RAIL_B_3_R"
+          ],
+          "critical_noncontact_obstacle": "RAIL_A_3_F",
+          "minimum_test_margin_mm": 0.6
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "SEP_3",
+          "kind": "separator",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "RAIL_A_3_F",
+            "RAIL_A_3_R"
+          ],
+          "critical_noncontact_obstacle": "M3F",
+          "minimum_test_margin_mm": 0.1
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "M3N",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "RAIL_A_3_F",
+            "RAIL_A_3_R"
+          ],
+          "critical_noncontact_obstacle": "SEP_3",
+          "minimum_test_margin_mm": 0.1
+        },
+        {
+          "transition": "150→120",
+          "action": "install",
+          "object": "keeper_3_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 2.9
+        },
+        {
+          "transition": "150→120",
+          "action": "fasten_M5",
+          "object": "tool_3_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked3/M5_head_3_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.9
+        },
+        {
+          "transition": "150→120",
+          "action": "fasten_M5",
+          "object": "tool_3_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked3/M5_head_3_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 4.0
+        },
+        {
+          "transition": "120→100",
+          "action": "undo_M5",
+          "object": "tool_1_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.9
+        },
+        {
+          "transition": "120→100",
+          "action": "undo_M5",
+          "object": "tool_1_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 4.0
+        },
+        {
+          "transition": "120→100",
+          "action": "remove",
+          "object": "keeper_1_long",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "M1F",
+          "minimum_test_margin_mm": 2.0
+        },
+        {
+          "transition": "120→100",
+          "action": "insert",
+          "object": "SEP_1",
+          "kind": "separator",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "RAIL_A_1_F",
+            "RAIL_A_1_R"
+          ],
+          "critical_noncontact_obstacle": "M1F",
+          "minimum_test_margin_mm": 0.1
+        },
+        {
+          "transition": "120→100",
+          "action": "insert",
+          "object": "M1N",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "RAIL_A_1_F",
+            "RAIL_A_1_R"
+          ],
+          "critical_noncontact_obstacle": "SEP_1",
+          "minimum_test_margin_mm": 0.1
+        },
+        {
+          "transition": "120→100",
+          "action": "install",
+          "object": "keeper_1_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 2.9
+        },
+        {
+          "transition": "120→100",
+          "action": "fasten_M5",
+          "object": "tool_1_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.9
+        },
+        {
+          "transition": "120→100",
+          "action": "fasten_M5",
+          "object": "tool_1_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 4.0
+        },
+        {
+          "transition": "120→100",
+          "action": "undo_M5",
+          "object": "tool_2_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked2/M5_head_2_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.9
+        },
+        {
+          "transition": "120→100",
+          "action": "undo_M5",
+          "object": "tool_2_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked2/M5_head_2_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 4.0
+        },
+        {
+          "transition": "120→100",
+          "action": "remove",
+          "object": "keeper_2_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 2.9
+        },
+        {
+          "transition": "120→100",
+          "action": "insert",
+          "object": "M2F",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "MID_PORTAL/sill",
+            "RAIL_A_2_F",
+            "RAIL_A_2_R",
+            "RAIL_B_2_F",
+            "RAIL_B_2_R"
+          ],
+          "critical_noncontact_obstacle": "RAIL_A_2_F",
+          "minimum_test_margin_mm": 0.6
+        },
+        {
+          "transition": "120→100",
+          "action": "insert",
+          "object": "SEP_2",
+          "kind": "separator",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "RAIL_A_2_F",
+            "RAIL_A_2_R"
+          ],
+          "critical_noncontact_obstacle": "M2F",
+          "minimum_test_margin_mm": 0.1
+        },
+        {
+          "transition": "120→100",
+          "action": "insert",
+          "object": "M2N",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "RAIL_A_2_F",
+            "RAIL_A_2_R"
+          ],
+          "critical_noncontact_obstacle": "SEP_2",
+          "minimum_test_margin_mm": 0.1
+        },
+        {
+          "transition": "120→100",
+          "action": "install",
+          "object": "keeper_2_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 2.9
+        },
+        {
+          "transition": "120→100",
+          "action": "fasten_M5",
+          "object": "tool_2_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked2/M5_head_2_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.9
+        },
+        {
+          "transition": "120→100",
+          "action": "fasten_M5",
+          "object": "tool_2_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked2/M5_head_2_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 4.0
+        }
+      ],
+      "count": 42,
+      "clear": 42,
+      "reverse_sequence": "100→120→150 retraces the forward events in exact reverse occupancy",
+      "error_model": "axis-aligned hard parts; terminal contact stops on first face; no pads, hand, rotation or deformation"
+    }
+  },
+  "K38_trial": {
+    "joint_target_mm": 0.35,
+    "operation_dimensions_mm": {
+      "RAIL_A_0_F": 17.65,
+      "RAIL_A_0_R": 17.65,
+      "TOP_KEEPER_A_F": 11.649999999999977,
+      "TOP_KEEPER_A_R": 11.649999999999977,
+      "RAIL_B_0_F": 17.65,
+      "RAIL_B_0_R": 17.65,
+      "TOP_KEEPER_B_F": 11.649999999999977,
+      "TOP_KEEPER_B_R": 11.649999999999977,
+      "SEP_0": 6.9,
+      "BACKSTOP_0": 39.65000000000009,
+      "SEP_1": 6.9,
+      "BACKSTOP_1": 39.65000000000009,
+      "SEP_2": 6.9,
+      "BACKSTOP_2": 39.65000000000009,
+      "SEP_3": 6.9,
+      "BACKSTOP_3": 39.65000000000009
+    },
+    "panel_blank_dimensions_xyz_mm": {
+      "FR1": [
+        1080.0,
+        22.0,
+        500.0
+      ],
+      "FR2": [
+        1080.0,
+        22.0,
+        500.0
+      ],
+      "BACK": [
+        1080.0,
+        22.0,
+        500.0
+      ],
+      "SIDE_L": [
+        22.0,
+        365.2,
+        500.0
+      ],
+      "SIDE_R": [
+        22.0,
+        365.2,
+        500.0
+      ],
+      "BOTTOM": [
+        1035.3,
+        365.2,
+        22.0
+      ],
+      "TOP": [
+        1035.3,
+        365.2,
+        22.0
+      ],
+      "PORTAL": [
+        22.0,
+        365.2,
+        455.3
+      ],
+      "MID_PORTAL": [
+        22.0,
+        365.2,
+        455.3
+      ],
+      "CHANNEL_WEB_A_F": [
+        275.29999999999995,
+        8.0,
+        455.3
+      ],
+      "CHANNEL_WEB_A_R": [
+        275.29999999999995,
+        8.0,
+        455.3
+      ],
+      "CHANNEL_WEB_B_F": [
+        285.30000000000007,
+        8.0,
+        455.3
+      ],
+      "CHANNEL_WEB_B_R": [
+        285.30000000000007,
+        8.0,
+        455.3
+      ],
+      "RAIL_A_0_F": [
+        279.29999999999995,
+        50,
+        17.65
+      ],
+      "RAIL_A_0_R": [
+        279.29999999999995,
+        50,
+        17.65
+      ],
+      "RAIL_A_1_F": [
+        279.29999999999995,
+        50,
+        18.0
+      ],
+      "RAIL_A_1_R": [
+        279.29999999999995,
+        50,
+        18.0
+      ],
+      "RAIL_A_2_F": [
+        279.29999999999995,
+        50,
+        18.0
+      ],
+      "RAIL_A_2_R": [
+        279.29999999999995,
+        50,
+        18.0
+      ],
+      "RAIL_A_3_F": [
+        279.29999999999995,
+        50,
+        18.0
+      ],
+      "RAIL_A_3_R": [
+        279.29999999999995,
+        50,
+        18.0
+      ],
+      "TOP_KEEPER_A_F": [
+        279.29999999999995,
+        50,
+        11.649999999999977
+      ],
+      "TOP_KEEPER_A_R": [
+        279.29999999999995,
+        50,
+        11.649999999999977
+      ],
+      "RAIL_B_0_F": [
+        285.30000000000007,
+        50,
+        17.65
+      ],
+      "RAIL_B_0_R": [
+        285.30000000000007,
+        50,
+        17.65
+      ],
+      "RAIL_B_1_F": [
+        285.30000000000007,
+        50,
+        18.0
+      ],
+      "RAIL_B_1_R": [
+        285.30000000000007,
+        50,
+        18.0
+      ],
+      "RAIL_B_2_F": [
+        285.30000000000007,
+        50,
+        18.0
+      ],
+      "RAIL_B_2_R": [
+        285.30000000000007,
+        50,
+        18.0
+      ],
+      "RAIL_B_3_F": [
+        285.30000000000007,
+        50,
+        18.0
+      ],
+      "RAIL_B_3_R": [
+        285.30000000000007,
+        50,
+        18.0
+      ],
+      "TOP_KEEPER_B_F": [
+        285.30000000000007,
+        50,
+        11.649999999999977
+      ],
+      "TOP_KEEPER_B_R": [
+        285.30000000000007,
+        50,
+        11.649999999999977
+      ],
+      "SEP_0": [
+        6.9,
+        260,
+        96
+      ],
+      "BACKSTOP_0": [
+        39.65000000000009,
+        260,
+        96
+      ],
+      "SEP_1": [
+        6.9,
+        260,
+        96
+      ],
+      "BACKSTOP_1": [
+        39.65000000000009,
+        260,
+        96
+      ],
+      "SEP_2": [
+        6.9,
+        260,
+        96
+      ],
+      "BACKSTOP_2": [
+        39.65000000000009,
+        260,
+        96
+      ],
+      "SEP_3": [
+        6.9,
+        260,
+        76
+      ],
+      "BACKSTOP_3": [
+        39.65000000000009,
+        260,
+        76
+      ],
+      "BACKSTOP_SMALL_EXTRA": [
+        25.0,
+        260,
+        76
+      ]
+    },
+    "stock_values_supplied": false,
+    "finished_sizes_source": "design",
+    "contact": {
+      "end_bond_mm": [
+        0.09999999999999998,
+        0.6
+      ],
+      "rows": [
+        {
+          "row": 0,
+          "between_reference_faces_mm": 8.0,
+          "separator_mm": 6.9,
+          "near_gap_lower_mm": 0.09999999999999983,
+          "far_gap_lower_mm": 0.1999999999999998,
+          "total_lower_with_centre_free_mm": 0.5999999999999996,
+          "hard_stack_gap_locked_mm": 6.899999999999977,
+          "hard_stack_gap_interval_mm": [
+            6.099999999999977,
+            7.699999999999977
+          ],
+          "support_spread_mm": {
+            "M0N": 0.0,
+            "M0F": 0.0
+          },
+          "support_spread_upper_mm": 0.5,
+          "extended_hard_stack_gap_mm": null
+        },
+        {
+          "row": 1,
+          "between_reference_faces_mm": 8.0,
+          "separator_mm": 6.9,
+          "near_gap_lower_mm": 0.09999999999999983,
+          "far_gap_lower_mm": 0.1999999999999998,
+          "total_lower_with_centre_free_mm": 0.5999999999999996,
+          "hard_stack_gap_locked_mm": 6.899999999999977,
+          "hard_stack_gap_interval_mm": [
+            6.099999999999977,
+            7.699999999999977
+          ],
+          "support_spread_mm": {
+            "M1N": 0.0,
+            "M1F": 0.0
+          },
+          "support_spread_upper_mm": 0.5,
+          "extended_hard_stack_gap_mm": 3.7999999999999545
+        },
+        {
+          "row": 2,
+          "between_reference_faces_mm": 8.0,
+          "separator_mm": 6.9,
+          "near_gap_lower_mm": 0.09999999999999983,
+          "far_gap_lower_mm": 0.1999999999999998,
+          "total_lower_with_centre_free_mm": 0.5999999999999996,
+          "hard_stack_gap_locked_mm": 6.899999999999977,
+          "hard_stack_gap_interval_mm": [
+            6.099999999999977,
+            7.699999999999977
+          ],
+          "support_spread_mm": {
+            "M2N": 0.0,
+            "M2F": 0.0
+          },
+          "support_spread_upper_mm": 0.5,
+          "extended_hard_stack_gap_mm": null
+        },
+        {
+          "row": 3,
+          "between_reference_faces_mm": 8.0,
+          "separator_mm": 6.9,
+          "near_gap_lower_mm": 0.09999999999999983,
+          "far_gap_lower_mm": 0.1999999999999998,
+          "total_lower_with_centre_free_mm": 0.5999999999999996,
+          "hard_stack_gap_locked_mm": 10.100000000000023,
+          "hard_stack_gap_interval_mm": [
+            9.300000000000022,
+            10.900000000000023
+          ],
+          "support_spread_mm": {
+            "M3N": 0.0,
+            "M3F": 0.0
+          },
+          "support_spread_upper_mm": 0.5,
+          "extended_hard_stack_gap_mm": null
+        }
+      ]
+    },
+    "motions": {
+      "events": [
+        {
+          "transition": "150→120",
+          "action": "undo_M5",
+          "object": "tool_0_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked0/M5_head_0_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.55
+        },
+        {
+          "transition": "150→120",
+          "action": "undo_M5",
+          "object": "tool_0_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked0/M5_head_0_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 3.55
+        },
+        {
+          "transition": "150→120",
+          "action": "remove",
+          "object": "keeper_0_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 2.5
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "M0F",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "MID_PORTAL/sill",
+            "RAIL_A_0_F",
+            "RAIL_A_0_R",
+            "RAIL_B_0_F",
+            "RAIL_B_0_R"
+          ],
+          "critical_noncontact_obstacle": "RAIL_A_0_F",
+          "minimum_test_margin_mm": 0.2
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "SEP_0",
+          "kind": "separator",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "RAIL_A_0_F",
+            "RAIL_A_0_R"
+          ],
+          "critical_noncontact_obstacle": "RAIL_A_0_F",
+          "minimum_test_margin_mm": 0.2
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "M0N",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "RAIL_A_0_F",
+            "RAIL_A_0_R"
+          ],
+          "critical_noncontact_obstacle": "SEP_0",
+          "minimum_test_margin_mm": 0.1
+        },
+        {
+          "transition": "150→120",
+          "action": "install",
+          "object": "keeper_0_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 2.5
+        },
+        {
+          "transition": "150→120",
+          "action": "fasten_M5",
+          "object": "tool_0_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked0/M5_head_0_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.55
+        },
+        {
+          "transition": "150→120",
+          "action": "fasten_M5",
+          "object": "tool_0_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked0/M5_head_0_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 3.55
+        },
+        {
+          "transition": "150→120",
+          "action": "undo_M5",
+          "object": "tool_1_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.55
+        },
+        {
+          "transition": "150→120",
+          "action": "undo_M5",
+          "object": "tool_1_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 3.55
+        },
+        {
+          "transition": "150→120",
+          "action": "remove",
+          "object": "keeper_1_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 2.5
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "M1F",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "MID_PORTAL/sill",
+            "RAIL_A_1_F",
+            "RAIL_A_1_R",
+            "RAIL_B_1_F",
+            "RAIL_B_1_R"
+          ],
+          "critical_noncontact_obstacle": "RAIL_A_1_F",
+          "minimum_test_margin_mm": 0.2
+        },
+        {
+          "transition": "150→120",
+          "action": "install",
+          "object": "keeper_1_long",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "M1F",
+          "minimum_test_margin_mm": 1.6
+        },
+        {
+          "transition": "150→120",
+          "action": "fasten_M5",
+          "object": "tool_1_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.55
+        },
+        {
+          "transition": "150→120",
+          "action": "fasten_M5",
+          "object": "tool_1_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 3.55
+        },
+        {
+          "transition": "150→120",
+          "action": "undo_M5",
+          "object": "tool_3_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked3/M5_head_3_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.55
+        },
+        {
+          "transition": "150→120",
+          "action": "undo_M5",
+          "object": "tool_3_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked3/M5_head_3_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 3.55
+        },
+        {
+          "transition": "150→120",
+          "action": "remove",
+          "object": "keeper_3_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 2.5
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "M3F",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "MID_PORTAL/sill",
+            "RAIL_A_3_F",
+            "RAIL_A_3_R",
+            "RAIL_B_3_F",
+            "RAIL_B_3_R"
+          ],
+          "critical_noncontact_obstacle": "RAIL_A_3_F",
+          "minimum_test_margin_mm": 0.2
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "SEP_3",
+          "kind": "separator",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "RAIL_A_3_F",
+            "RAIL_A_3_R"
+          ],
+          "critical_noncontact_obstacle": "RAIL_A_3_F",
+          "minimum_test_margin_mm": 0.2
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "M3N",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "RAIL_A_3_F",
+            "RAIL_A_3_R"
+          ],
+          "critical_noncontact_obstacle": "SEP_3",
+          "minimum_test_margin_mm": 0.1
+        },
+        {
+          "transition": "150→120",
+          "action": "install",
+          "object": "keeper_3_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 2.5
+        },
+        {
+          "transition": "150→120",
+          "action": "fasten_M5",
+          "object": "tool_3_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked3/M5_head_3_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.55
+        },
+        {
+          "transition": "150→120",
+          "action": "fasten_M5",
+          "object": "tool_3_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked3/M5_head_3_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 3.55
+        },
+        {
+          "transition": "120→100",
+          "action": "undo_M5",
+          "object": "tool_1_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.55
+        },
+        {
+          "transition": "120→100",
+          "action": "undo_M5",
+          "object": "tool_1_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 3.55
+        },
+        {
+          "transition": "120→100",
+          "action": "remove",
+          "object": "keeper_1_long",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "M1F",
+          "minimum_test_margin_mm": 1.6
+        },
+        {
+          "transition": "120→100",
+          "action": "insert",
+          "object": "SEP_1",
+          "kind": "separator",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "RAIL_A_1_F",
+            "RAIL_A_1_R"
+          ],
+          "critical_noncontact_obstacle": "RAIL_A_1_F",
+          "minimum_test_margin_mm": 0.2
+        },
+        {
+          "transition": "120→100",
+          "action": "insert",
+          "object": "M1N",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "RAIL_A_1_F",
+            "RAIL_A_1_R"
+          ],
+          "critical_noncontact_obstacle": "SEP_1",
+          "minimum_test_margin_mm": 0.1
+        },
+        {
+          "transition": "120→100",
+          "action": "install",
+          "object": "keeper_1_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 2.5
+        },
+        {
+          "transition": "120→100",
+          "action": "fasten_M5",
+          "object": "tool_1_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.55
+        },
+        {
+          "transition": "120→100",
+          "action": "fasten_M5",
+          "object": "tool_1_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 3.55
+        },
+        {
+          "transition": "120→100",
+          "action": "undo_M5",
+          "object": "tool_2_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked2/M5_head_2_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.55
+        },
+        {
+          "transition": "120→100",
+          "action": "undo_M5",
+          "object": "tool_2_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked2/M5_head_2_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 3.55
+        },
+        {
+          "transition": "120→100",
+          "action": "remove",
+          "object": "keeper_2_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 2.5
+        },
+        {
+          "transition": "120→100",
+          "action": "insert",
+          "object": "M2F",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "MID_PORTAL/sill",
+            "RAIL_A_2_F",
+            "RAIL_A_2_R",
+            "RAIL_B_2_F",
+            "RAIL_B_2_R"
+          ],
+          "critical_noncontact_obstacle": "RAIL_A_2_F",
+          "minimum_test_margin_mm": 0.2
+        },
+        {
+          "transition": "120→100",
+          "action": "insert",
+          "object": "SEP_2",
+          "kind": "separator",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "RAIL_A_2_F",
+            "RAIL_A_2_R"
+          ],
+          "critical_noncontact_obstacle": "RAIL_A_2_F",
+          "minimum_test_margin_mm": 0.2
+        },
+        {
+          "transition": "120→100",
+          "action": "insert",
+          "object": "M2N",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "RAIL_A_2_F",
+            "RAIL_A_2_R"
+          ],
+          "critical_noncontact_obstacle": "SEP_2",
+          "minimum_test_margin_mm": 0.1
+        },
+        {
+          "transition": "120→100",
+          "action": "install",
+          "object": "keeper_2_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 2.5
+        },
+        {
+          "transition": "120→100",
+          "action": "fasten_M5",
+          "object": "tool_2_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked2/M5_head_2_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.55
+        },
+        {
+          "transition": "120→100",
+          "action": "fasten_M5",
+          "object": "tool_2_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked2/M5_head_2_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 3.55
+        }
+      ],
+      "count": 42,
+      "clear": 42,
+      "reverse_sequence": "100→120→150 retraces the forward events in exact reverse occupancy",
+      "error_model": "axis-aligned hard parts; terminal contact stops on first face; no pads, hand, rotation or deformation"
+    },
+    "nominal_motions": {
+      "events": [
+        {
+          "transition": "150→120",
+          "action": "undo_M5",
+          "object": "tool_0_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked0/M5_head_0_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.9
+        },
+        {
+          "transition": "150→120",
+          "action": "undo_M5",
+          "object": "tool_0_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked0/M5_head_0_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 4.0
+        },
+        {
+          "transition": "150→120",
+          "action": "remove",
+          "object": "keeper_0_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 2.9
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "M0F",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "MID_PORTAL/sill",
+            "RAIL_A_0_F",
+            "RAIL_A_0_R",
+            "RAIL_B_0_F",
+            "RAIL_B_0_R"
+          ],
+          "critical_noncontact_obstacle": "RAIL_A_0_F",
+          "minimum_test_margin_mm": 0.6
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "SEP_0",
+          "kind": "separator",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "RAIL_A_0_F",
+            "RAIL_A_0_R"
+          ],
+          "critical_noncontact_obstacle": "M0F",
+          "minimum_test_margin_mm": 0.55
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "M0N",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "RAIL_A_0_F",
+            "RAIL_A_0_R"
+          ],
+          "critical_noncontact_obstacle": "SEP_0",
+          "minimum_test_margin_mm": 0.55
+        },
+        {
+          "transition": "150→120",
+          "action": "install",
+          "object": "keeper_0_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 2.9
+        },
+        {
+          "transition": "150→120",
+          "action": "fasten_M5",
+          "object": "tool_0_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked0/M5_head_0_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.9
+        },
+        {
+          "transition": "150→120",
+          "action": "fasten_M5",
+          "object": "tool_0_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked0/M5_head_0_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 4.0
+        },
+        {
+          "transition": "150→120",
+          "action": "undo_M5",
+          "object": "tool_1_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.9
+        },
+        {
+          "transition": "150→120",
+          "action": "undo_M5",
+          "object": "tool_1_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 4.0
+        },
+        {
+          "transition": "150→120",
+          "action": "remove",
+          "object": "keeper_1_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 2.9
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "M1F",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "MID_PORTAL/sill",
+            "RAIL_A_1_F",
+            "RAIL_A_1_R",
+            "RAIL_B_1_F",
+            "RAIL_B_1_R"
+          ],
+          "critical_noncontact_obstacle": "RAIL_A_1_F",
+          "minimum_test_margin_mm": 0.6
+        },
+        {
+          "transition": "150→120",
+          "action": "install",
+          "object": "keeper_1_long",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "M1F",
+          "minimum_test_margin_mm": 2.0
+        },
+        {
+          "transition": "150→120",
+          "action": "fasten_M5",
+          "object": "tool_1_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.9
+        },
+        {
+          "transition": "150→120",
+          "action": "fasten_M5",
+          "object": "tool_1_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 4.0
+        },
+        {
+          "transition": "150→120",
+          "action": "undo_M5",
+          "object": "tool_3_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked3/M5_head_3_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.9
+        },
+        {
+          "transition": "150→120",
+          "action": "undo_M5",
+          "object": "tool_3_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked3/M5_head_3_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 4.0
+        },
+        {
+          "transition": "150→120",
+          "action": "remove",
+          "object": "keeper_3_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 2.9
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "M3F",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "MID_PORTAL/sill",
+            "RAIL_A_3_F",
+            "RAIL_A_3_R",
+            "RAIL_B_3_F",
+            "RAIL_B_3_R"
+          ],
+          "critical_noncontact_obstacle": "RAIL_A_3_F",
+          "minimum_test_margin_mm": 0.6
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "SEP_3",
+          "kind": "separator",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "RAIL_A_3_F",
+            "RAIL_A_3_R"
+          ],
+          "critical_noncontact_obstacle": "M3F",
+          "minimum_test_margin_mm": 0.55
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "M3N",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "RAIL_A_3_F",
+            "RAIL_A_3_R"
+          ],
+          "critical_noncontact_obstacle": "SEP_3",
+          "minimum_test_margin_mm": 0.55
+        },
+        {
+          "transition": "150→120",
+          "action": "install",
+          "object": "keeper_3_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 2.9
+        },
+        {
+          "transition": "150→120",
+          "action": "fasten_M5",
+          "object": "tool_3_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked3/M5_head_3_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.9
+        },
+        {
+          "transition": "150→120",
+          "action": "fasten_M5",
+          "object": "tool_3_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked3/M5_head_3_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 4.0
+        },
+        {
+          "transition": "120→100",
+          "action": "undo_M5",
+          "object": "tool_1_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.9
+        },
+        {
+          "transition": "120→100",
+          "action": "undo_M5",
+          "object": "tool_1_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 4.0
+        },
+        {
+          "transition": "120→100",
+          "action": "remove",
+          "object": "keeper_1_long",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "M1F",
+          "minimum_test_margin_mm": 2.0
+        },
+        {
+          "transition": "120→100",
+          "action": "insert",
+          "object": "SEP_1",
+          "kind": "separator",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "RAIL_A_1_F",
+            "RAIL_A_1_R"
+          ],
+          "critical_noncontact_obstacle": "M1F",
+          "minimum_test_margin_mm": 0.55
+        },
+        {
+          "transition": "120→100",
+          "action": "insert",
+          "object": "M1N",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "RAIL_A_1_F",
+            "RAIL_A_1_R"
+          ],
+          "critical_noncontact_obstacle": "SEP_1",
+          "minimum_test_margin_mm": 0.55
+        },
+        {
+          "transition": "120→100",
+          "action": "install",
+          "object": "keeper_1_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 2.9
+        },
+        {
+          "transition": "120→100",
+          "action": "fasten_M5",
+          "object": "tool_1_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.9
+        },
+        {
+          "transition": "120→100",
+          "action": "fasten_M5",
+          "object": "tool_1_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 4.0
+        },
+        {
+          "transition": "120→100",
+          "action": "undo_M5",
+          "object": "tool_2_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked2/M5_head_2_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.9
+        },
+        {
+          "transition": "120→100",
+          "action": "undo_M5",
+          "object": "tool_2_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked2/M5_head_2_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 4.0
+        },
+        {
+          "transition": "120→100",
+          "action": "remove",
+          "object": "keeper_2_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 2.9
+        },
+        {
+          "transition": "120→100",
+          "action": "insert",
+          "object": "M2F",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "MID_PORTAL/sill",
+            "RAIL_A_2_F",
+            "RAIL_A_2_R",
+            "RAIL_B_2_F",
+            "RAIL_B_2_R"
+          ],
+          "critical_noncontact_obstacle": "RAIL_A_2_F",
+          "minimum_test_margin_mm": 0.6
+        },
+        {
+          "transition": "120→100",
+          "action": "insert",
+          "object": "SEP_2",
+          "kind": "separator",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "RAIL_A_2_F",
+            "RAIL_A_2_R"
+          ],
+          "critical_noncontact_obstacle": "M2F",
+          "minimum_test_margin_mm": 0.55
+        },
+        {
+          "transition": "120→100",
+          "action": "insert",
+          "object": "M2N",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "RAIL_A_2_F",
+            "RAIL_A_2_R"
+          ],
+          "critical_noncontact_obstacle": "SEP_2",
+          "minimum_test_margin_mm": 0.55
+        },
+        {
+          "transition": "120→100",
+          "action": "install",
+          "object": "keeper_2_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 2.9
+        },
+        {
+          "transition": "120→100",
+          "action": "fasten_M5",
+          "object": "tool_2_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked2/M5_head_2_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.9
+        },
+        {
+          "transition": "120→100",
+          "action": "fasten_M5",
+          "object": "tool_2_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked2/M5_head_2_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 4.0
+        }
+      ],
+      "count": 42,
+      "clear": 42,
+      "reverse_sequence": "100→120→150 retraces the forward events in exact reverse occupancy",
+      "error_model": "axis-aligned hard parts; terminal contact stops on first face; no pads, hand, rotation or deformation"
+    }
+  },
+  "stock_family": {
+    "stock_endpoint_scenes": 1024,
+    "policy": "K38_trial",
+    "fixed_part_envelopes": 46,
+    "motions": {
+      "events": [
+        {
+          "transition": "150→120",
+          "action": "undo_M5",
+          "object": "tool_0_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked0/M5_head_0_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 0.55
+        },
+        {
+          "transition": "150→120",
+          "action": "undo_M5",
+          "object": "tool_0_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked0/M5_head_0_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 3.55
+        },
+        {
+          "transition": "150→120",
+          "action": "remove",
+          "object": "keeper_0_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.5
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "M0F",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "MID_PORTAL/sill",
+            "RAIL_A_0_F",
+            "RAIL_A_0_R",
+            "RAIL_B_0_F",
+            "RAIL_B_0_R"
+          ],
+          "critical_noncontact_obstacle": "RAIL_A_0_F",
+          "minimum_test_margin_mm": 0.2
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "SEP_0",
+          "kind": "separator",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "RAIL_A_0_F",
+            "RAIL_A_0_R"
+          ],
+          "critical_noncontact_obstacle": "RAIL_A_0_F",
+          "minimum_test_margin_mm": 0.2
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "M0N",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "RAIL_A_0_F",
+            "RAIL_A_0_R"
+          ],
+          "critical_noncontact_obstacle": "SEP_0",
+          "minimum_test_margin_mm": 0.1
+        },
+        {
+          "transition": "150→120",
+          "action": "install",
+          "object": "keeper_0_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.5
+        },
+        {
+          "transition": "150→120",
+          "action": "fasten_M5",
+          "object": "tool_0_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked0/M5_head_0_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 0.55
+        },
+        {
+          "transition": "150→120",
+          "action": "fasten_M5",
+          "object": "tool_0_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked0/M5_head_0_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 3.55
+        },
+        {
+          "transition": "150→120",
+          "action": "undo_M5",
+          "object": "tool_1_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 0.55
+        },
+        {
+          "transition": "150→120",
+          "action": "undo_M5",
+          "object": "tool_1_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 3.55
+        },
+        {
+          "transition": "150→120",
+          "action": "remove",
+          "object": "keeper_1_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.5
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "M1F",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "MID_PORTAL/sill",
+            "RAIL_A_1_F",
+            "RAIL_A_1_R",
+            "RAIL_B_1_F",
+            "RAIL_B_1_R"
+          ],
+          "critical_noncontact_obstacle": "RAIL_A_1_F",
+          "minimum_test_margin_mm": 0.2
+        },
+        {
+          "transition": "150→120",
+          "action": "install",
+          "object": "keeper_1_long",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.5
+        },
+        {
+          "transition": "150→120",
+          "action": "fasten_M5",
+          "object": "tool_1_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 0.55
+        },
+        {
+          "transition": "150→120",
+          "action": "fasten_M5",
+          "object": "tool_1_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 3.55
+        },
+        {
+          "transition": "150→120",
+          "action": "undo_M5",
+          "object": "tool_3_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked3/M5_head_3_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 0.55
+        },
+        {
+          "transition": "150→120",
+          "action": "undo_M5",
+          "object": "tool_3_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked3/M5_head_3_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 3.55
+        },
+        {
+          "transition": "150→120",
+          "action": "remove",
+          "object": "keeper_3_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.5
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "M3F",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "MID_PORTAL/sill",
+            "RAIL_A_3_F",
+            "RAIL_A_3_R",
+            "RAIL_B_3_F",
+            "RAIL_B_3_R"
+          ],
+          "critical_noncontact_obstacle": "RAIL_A_3_F",
+          "minimum_test_margin_mm": 0.2
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "SEP_3",
+          "kind": "separator",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "RAIL_A_3_F",
+            "RAIL_A_3_R"
+          ],
+          "critical_noncontact_obstacle": "RAIL_A_3_F",
+          "minimum_test_margin_mm": 0.2
+        },
+        {
+          "transition": "150→120",
+          "action": "insert",
+          "object": "M3N",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "RAIL_A_3_F",
+            "RAIL_A_3_R"
+          ],
+          "critical_noncontact_obstacle": "SEP_3",
+          "minimum_test_margin_mm": 0.1
+        },
+        {
+          "transition": "150→120",
+          "action": "install",
+          "object": "keeper_3_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.5
+        },
+        {
+          "transition": "150→120",
+          "action": "fasten_M5",
+          "object": "tool_3_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked3/M5_head_3_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 0.55
+        },
+        {
+          "transition": "150→120",
+          "action": "fasten_M5",
+          "object": "tool_3_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked3/M5_head_3_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 3.55
+        },
+        {
+          "transition": "120→100",
+          "action": "undo_M5",
+          "object": "tool_1_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 0.55
+        },
+        {
+          "transition": "120→100",
+          "action": "undo_M5",
+          "object": "tool_1_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 3.55
+        },
+        {
+          "transition": "120→100",
+          "action": "remove",
+          "object": "keeper_1_long",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.5
+        },
+        {
+          "transition": "120→100",
+          "action": "insert",
+          "object": "SEP_1",
+          "kind": "separator",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "RAIL_A_1_F",
+            "RAIL_A_1_R"
+          ],
+          "critical_noncontact_obstacle": "RAIL_A_1_F",
+          "minimum_test_margin_mm": 0.2
+        },
+        {
+          "transition": "120→100",
+          "action": "insert",
+          "object": "M1N",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "RAIL_A_1_F",
+            "RAIL_A_1_R"
+          ],
+          "critical_noncontact_obstacle": "SEP_1",
+          "minimum_test_margin_mm": 0.1
+        },
+        {
+          "transition": "120→100",
+          "action": "install",
+          "object": "keeper_1_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.5
+        },
+        {
+          "transition": "120→100",
+          "action": "fasten_M5",
+          "object": "tool_1_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 0.55
+        },
+        {
+          "transition": "120→100",
+          "action": "fasten_M5",
+          "object": "tool_1_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked1/M5_head_1_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 3.55
+        },
+        {
+          "transition": "120→100",
+          "action": "undo_M5",
+          "object": "tool_2_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked2/M5_head_2_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 0.55
+        },
+        {
+          "transition": "120→100",
+          "action": "undo_M5",
+          "object": "tool_2_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked2/M5_head_2_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 3.55
+        },
+        {
+          "transition": "120→100",
+          "action": "remove",
+          "object": "keeper_2_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.5
+        },
+        {
+          "transition": "120→100",
+          "action": "insert",
+          "object": "M2F",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "MID_PORTAL/sill",
+            "RAIL_A_2_F",
+            "RAIL_A_2_R",
+            "RAIL_B_2_F",
+            "RAIL_B_2_R"
+          ],
+          "critical_noncontact_obstacle": "RAIL_A_2_F",
+          "minimum_test_margin_mm": 0.2
+        },
+        {
+          "transition": "120→100",
+          "action": "insert",
+          "object": "SEP_2",
+          "kind": "separator",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "RAIL_A_2_F",
+            "RAIL_A_2_R"
+          ],
+          "critical_noncontact_obstacle": "RAIL_A_2_F",
+          "minimum_test_margin_mm": 0.2
+        },
+        {
+          "transition": "120→100",
+          "action": "insert",
+          "object": "M2N",
+          "kind": "box",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "RAIL_A_2_F",
+            "RAIL_A_2_R"
+          ],
+          "critical_noncontact_obstacle": "SEP_2",
+          "minimum_test_margin_mm": 0.1
+        },
+        {
+          "transition": "120→100",
+          "action": "install",
+          "object": "keeper_2_short",
+          "kind": "keeper",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "PORTAL/seat_X"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 1.5
+        },
+        {
+          "transition": "120→100",
+          "action": "fasten_M5",
+          "object": "tool_2_55",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked2/M5_head_2_55"
+          ],
+          "critical_noncontact_obstacle": "front/bore",
+          "minimum_test_margin_mm": 0.55
+        },
+        {
+          "transition": "120→100",
+          "action": "fasten_M5",
+          "object": "tool_2_347",
+          "kind": "tool",
+          "clear": true,
+          "errors": [],
+          "terminal_contacts": [
+            "locked2/M5_head_2_347"
+          ],
+          "critical_noncontact_obstacle": "MAT",
+          "minimum_test_margin_mm": 3.55
+        }
+      ],
+      "count": 42,
+      "clear": 42,
+      "reverse_sequence": "100→120→150 retraces the forward events in exact reverse occupancy",
+      "error_model": "axis-aligned hard parts; terminal contact stops on first face; no pads, hand, rotation or deformation"
+    },
+    "scope": "reference locations and finished box sizes, face error budgets plus admissible raw stock"
+  }
+}

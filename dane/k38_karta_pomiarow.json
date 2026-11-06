@@ -1,0 +1,207 @@
+{
+  "schema": "SUB-K38-1",
+  "units": "mm",
+  "reference_design": "K37",
+  "records": {
+    "stock": null,
+    "dry_fit": null
+  },
+  "shell_mm": {
+    "FR1": null,
+    "FR2": null,
+    "BACK": null,
+    "SIDE_L": null,
+    "SIDE_R": null,
+    "BOTTOM": null,
+    "TOP": null,
+    "PORTAL": null,
+    "MID_PORTAL": null
+  },
+  "guide_mm": {
+    "CHANNEL_WEB_A_F": null,
+    "CHANNEL_WEB_A_R": null,
+    "CHANNEL_WEB_B_F": null,
+    "CHANNEL_WEB_B_R": null,
+    "RAIL_A_1_F": null,
+    "RAIL_A_1_R": null,
+    "RAIL_A_2_F": null,
+    "RAIL_A_2_R": null,
+    "RAIL_A_3_F": null,
+    "RAIL_A_3_R": null,
+    "RAIL_B_1_F": null,
+    "RAIL_B_1_R": null,
+    "RAIL_B_2_F": null,
+    "RAIL_B_2_R": null,
+    "RAIL_B_3_F": null,
+    "RAIL_B_3_R": null,
+    "BACKSTOP_SMALL_EXTRA": null,
+    "P0_55": null,
+    "P0_347": null,
+    "P1_55": null,
+    "P1_347": null,
+    "P2_55": null,
+    "P2_347": null,
+    "P3_55": null,
+    "P3_347": null
+  },
+  "insert_panels_mm": {
+    "M0F": {
+      "XL": null,
+      "XR": null,
+      "YF": null,
+      "YR": null,
+      "ZB": null,
+      "ZT": null
+    },
+    "M0N": {
+      "XL": null,
+      "XR": null,
+      "YF": null,
+      "YR": null,
+      "ZB": null,
+      "ZT": null
+    },
+    "M1F": {
+      "XL": null,
+      "XR": null,
+      "YF": null,
+      "YR": null,
+      "ZB": null,
+      "ZT": null
+    },
+    "M1N": {
+      "XL": null,
+      "XR": null,
+      "YF": null,
+      "YR": null,
+      "ZB": null,
+      "ZT": null
+    },
+    "M2F": {
+      "XL": null,
+      "XR": null,
+      "YF": null,
+      "YR": null,
+      "ZB": null,
+      "ZT": null
+    },
+    "M2N": {
+      "XL": null,
+      "XR": null,
+      "YF": null,
+      "YR": null,
+      "ZB": null,
+      "ZT": null
+    },
+    "M3F": {
+      "XL": null,
+      "XR": null,
+      "YF": null,
+      "YR": null,
+      "ZB": null,
+      "ZT": null
+    },
+    "M3N": {
+      "XL": null,
+      "XR": null,
+      "YF": null,
+      "YR": null,
+      "ZB": null,
+      "ZT": null
+    }
+  },
+  "dry_fit": {
+    "insert_xyz_mm": {
+      "M0F": {
+        "X": null,
+        "Y": null,
+        "Z": null
+      },
+      "M0N": {
+        "X": null,
+        "Y": null,
+        "Z": null
+      },
+      "M1F": {
+        "X": null,
+        "Y": null,
+        "Z": null
+      },
+      "M1N": {
+        "X": null,
+        "Y": null,
+        "Z": null
+      },
+      "M2F": {
+        "X": null,
+        "Y": null,
+        "Z": null
+      },
+      "M2N": {
+        "X": null,
+        "Y": null,
+        "Z": null
+      },
+      "M3F": {
+        "X": null,
+        "Y": null,
+        "Z": null
+      },
+      "M3N": {
+        "X": null,
+        "Y": null,
+        "Z": null
+      }
+    },
+    "insert_left_x_mm": {
+      "M0F": null,
+      "M0N": null,
+      "M1F": null,
+      "M1N": null,
+      "M2F": null,
+      "M2N": null,
+      "M3F": null,
+      "M3N": null
+    },
+    "finished_thickness_mm": {
+      "RAIL_A_0_F": null,
+      "RAIL_A_0_R": null,
+      "TOP_KEEPER_A_F": null,
+      "TOP_KEEPER_A_R": null,
+      "RAIL_B_0_F": null,
+      "RAIL_B_0_R": null,
+      "TOP_KEEPER_B_F": null,
+      "TOP_KEEPER_B_R": null,
+      "SEP_0": null,
+      "BACKSTOP_0": null,
+      "SEP_1": null,
+      "BACKSTOP_1": null,
+      "SEP_2": null,
+      "BACKSTOP_2": null,
+      "SEP_3": null,
+      "BACKSTOP_3": null
+    },
+    "support_top_z_mm": {
+      "RAIL_A_0_F": null,
+      "RAIL_A_0_R": null,
+      "RAIL_B_0_F": null,
+      "RAIL_B_0_R": null,
+      "RAIL_A_1_F": null,
+      "RAIL_A_1_R": null,
+      "RAIL_B_1_F": null,
+      "RAIL_B_1_R": null,
+      "RAIL_A_2_F": null,
+      "RAIL_A_2_R": null,
+      "RAIL_B_2_F": null,
+      "RAIL_B_2_R": null,
+      "RAIL_A_3_F": null,
+      "RAIL_A_3_R": null,
+      "RAIL_B_3_F": null,
+      "RAIL_B_3_R": null,
+      "MID_SILL_0": null,
+      "MID_SILL_1": null,
+      "MID_SILL_2": null,
+      "MID_SILL_3": null
+    }
+  }
+}

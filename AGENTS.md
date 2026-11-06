@@ -2022,3 +2022,8 @@ Odtworzono K04–K06. W czterech próbach K07 dla obu luzów kolejność 4–15,
 -16 explicit operations with positive nominal allowances:4 bottom rails,4 top keepers,4 laminated stops,4 separators.50 one-parameter perturbations and4 plate/frame cases checked; not full25-dimensional corners. Null template/--require-measured no-write rejection; shell in K37 remains synthetic22 even if bank measured.
 - End-gap0.2 minus residual cut0.1+position0.1+measurement0.05 can yield−0.05 interference. Tighter0.05 each would give0.05..0.35 but is NOT confirmed capability. Front metal ligament4.75 and tool reserve0.55 are assumed geometry budgets, not strength/tool qualification.
 - Next: unified shell/bank/insert measurement input and combined tolerance swept paths; qualify actual process capability/adhesive and load joints. CNC HOLD.
+
+
+## 2026-11-06 K38
+
+Wspólna karta, 48 paneli, 42 czynności montażu. Przy skumulowanych błędach K37 daje 34/42, propozycja K38 42/42. Szczelina klejowa do 0,60 mm oraz siła podkładek wymagają kwalifikacji. Następna próba: charakterystyka siła-ugięcie i indywidualne dystanse. Raport K38. CNC HOLD.
