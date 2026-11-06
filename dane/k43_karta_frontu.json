@@ -2,6 +2,7 @@
   "protokol": null,
   "wymagane_pelne_zazebienie_mm": null,
   "wymagany_luz_dna_mm": null,
+  "wymagany_luz_promieniowy_mm": null,
   "sruba_srednica_max_mm": null,
   "dlugosc_od_konca_do_poczatku_pelnego_gwintu_przy_lbie_min_mm": null,
   "niepelny_gwint_na_koncu_max_mm": null,

@@ -1,4 +1,5 @@
 """Geometry gate for a measured, clamped K42 front. All input dimensions in mm."""
+from decimal import Decimal
 import json
 import math
 import sys
@@ -21,6 +22,10 @@ def evaluate(card):
         raise ValueError('Wymagane osie 1 do 8')
     target = positive(card['wymagane_pelne_zazebienie_mm'])
     tip_gap = positive(card['wymagany_luz_dna_mm'])
+    reserve_key = 'wymagany_luz_promieniowy_mm'
+    if card.get(reserve_key) is None:
+        raise ValueError('Uzupełnij dodatni wymagany luz promieniowy w karcie')
+    required_radial = Decimal(str(positive(card[reserve_key])))
     diam = positive(card['sruba_srednica_max_mm'])
     thread = positive(card['dlugosc_od_konca_do_poczatku_pelnego_gwintu_przy_lbie_min_mm'])
     tip = positive(card['niepelny_gwint_na_koncu_max_mm'], True)
@@ -40,25 +45,28 @@ def evaluate(card):
         if not a < b <= bottom:
             raise ValueError('Niespójna głębokość na osi ' + key)
         margins = {}
+        radial_ok = True
         for name in BORES:
             bore = row[name]
             d = positive(bore['srednica_min_mm'])
             offset = positive(bore['odchylka_osi_max_mm'], True)
-            margins[name] = (d-diam)/2-offset
+            margin = (Decimal(str(d))-Decimal(str(diam)))/2-Decimal(str(offset))
+            margins[name] = float(margin)
+            radial_ok = radial_ok and margin >= required_radial
         # Full internal thread [a,b] and full external thread [L-thread,L-tip].
         # At least target must fit in each interval and across both facing ends.
         axis_lower = max(thread, a+target+tip)
         axis_upper = min(b+thread-target, bottom-tip_gap)
         lower = max(lower, axis_lower)
         upper = min(upper, axis_upper)
-        if min(margins.values()) <= 0 or min(b-a,thread-tip) < target or axis_lower > axis_upper:
+        if not radial_ok or min(b-a,thread-tip) < target or axis_lower > axis_upper:
             blocked.append(key)
         # Minimum positive overlap or zero over the supplied lot length range.
         engagement = min(max(0, min(b,L-tip)-max(a,L-thread)) for L in (lmin,lmax))
         reserve = bottom-lmax
         results[key] = {'luz_promieniowy_mm': margins, 'pelny_gwint_min_mm':engagement,
                         'luz_dna_min_mm':reserve,
-                        'geometria': min(margins.values())>0 and engagement>=target and reserve>=tip_gap}
+                        'geometria': radial_ok and engagement>=target and reserve>=tip_gap}
     return {'osie':results, 'pasuje_geometrycznie':all(r['geometria'] for r in results.values()),
             'wspolny_zakres_dlugosci_rzeczywistej_mm': (
                 [lower,upper] if not blocked and lower<=upper else None),
