@@ -29,6 +29,9 @@ def evaluate(card):
     if lmax < lmin or thread <= tip or thread > lmin:
         raise ValueError('Niespójne wymiary śruby')
     results = {}
+    lower = thread
+    upper = math.inf
+    blocked = []
     for key, row in sorted(axes.items()):
         # Depth from the washer-bearing underside of the bolt head in the compressed stack.
         a = positive(row['glebokosc_pierwszego_pelnego_zwoju_max_mm'])
@@ -42,13 +45,24 @@ def evaluate(card):
             d = positive(bore['srednica_min_mm'])
             offset = positive(bore['odchylka_osi_max_mm'], True)
             margins[name] = (d-diam)/2-offset
-        # Overlap of two intervals is concave in L. Its minimum occurs at an endpoint.
+        # Full internal thread [a,b] and full external thread [L-thread,L-tip].
+        # At least target must fit in each interval and across both facing ends.
+        axis_lower = max(thread, a+target+tip)
+        axis_upper = min(b+thread-target, bottom-tip_gap)
+        lower = max(lower, axis_lower)
+        upper = min(upper, axis_upper)
+        if min(margins.values()) <= 0 or min(b-a,thread-tip) < target or axis_lower > axis_upper:
+            blocked.append(key)
+        # Minimum positive overlap or zero over the supplied lot length range.
         engagement = min(max(0, min(b,L-tip)-max(a,L-thread)) for L in (lmin,lmax))
         reserve = bottom-lmax
         results[key] = {'luz_promieniowy_mm': margins, 'pelny_gwint_min_mm':engagement,
                         'luz_dna_min_mm':reserve,
                         'geometria': min(margins.values())>0 and engagement>=target and reserve>=tip_gap}
     return {'osie':results, 'pasuje_geometrycznie':all(r['geometria'] for r in results.values()),
+            'wspolny_zakres_dlugosci_rzeczywistej_mm': (
+                [lower,upper] if not blocked and lower<=upper else None),
+            'osie_bez_rozwiazania':blocked,
             'status_cnc':'HOLD'}
 
 
