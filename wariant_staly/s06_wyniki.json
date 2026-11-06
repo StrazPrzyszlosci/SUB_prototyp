@@ -1,0 +1,95 @@
+{
+  "outer_mm": [
+    816.8,
+    473.3,
+    394
+  ],
+  "nominal_t_mm": 22,
+  "layout": {
+    "panels": [
+      {
+        "id": "FR1",
+        "per_unit": 1,
+        "per_pair": 2,
+        "length_mm": 816.8,
+        "width_mm": 473.3
+      },
+      {
+        "id": "FR2",
+        "per_unit": 1,
+        "per_pair": 2,
+        "length_mm": 816.8,
+        "width_mm": 473.3
+      },
+      {
+        "id": "TYL",
+        "per_unit": 1,
+        "per_pair": 2,
+        "length_mm": 816.8,
+        "width_mm": 473.3
+      },
+      {
+        "id": "BOK",
+        "per_unit": 2,
+        "per_pair": 4,
+        "length_mm": 328,
+        "width_mm": 473.3
+      },
+      {
+        "id": "DNO_GORA",
+        "per_unit": 2,
+        "per_pair": 4,
+        "length_mm": 772.8,
+        "width_mm": 328
+      },
+      {
+        "id": "WREGA",
+        "per_unit": 1,
+        "per_pair": 2,
+        "length_mm": 772.5999999999999,
+        "width_mm": 429.1
+      }
+    ],
+    "clear_mm": [
+      772.8,
+      429.3,
+      328
+    ],
+    "opening_mm": [
+      712.5999999999999,
+      369.1
+    ],
+    "brace_start_y_mm": 197.0,
+    "gross_L": 108.81827711999999,
+    "brace_L": 1.507213964654589,
+    "pair_blank_m2": 4.61747716
+  },
+  "assumed_other_displacement_L": 5.325,
+  "net_L": 101.9860631553454,
+  "fit_range_mm": [
+    -0.2,
+    0.6000000000000001
+  ],
+  "dimensional_net_range_L": [
+    101.28841372025876,
+    102.68617172904527
+  ],
+  "fixed_cuts": {
+    "21.7": {
+      "body_width_mm": 816.1999999999999,
+      "body_depth_mm": 393.1,
+      "vertical_brace_clearance_mm": 0.8000000000000114
+    },
+    "22": {
+      "body_width_mm": 816.8,
+      "body_depth_mm": 394,
+      "vertical_brace_clearance_mm": 0.19999999999998863
+    },
+    "22.3": {
+      "body_width_mm": 817.4,
+      "body_depth_mm": 394.9,
+      "vertical_brace_clearance_mm": -0.4000000000000341
+    }
+  },
+  "radius_3_to_4_added_solid_mL": 0.13219473134717186
+}
