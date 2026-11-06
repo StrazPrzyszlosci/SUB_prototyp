@@ -29,3 +29,8 @@ jobs:
           cp wariant_staly/s03_wyniki.json "$RUNNER_TEMP/s03.json"
           python wariant_staly/s03.py
           PYTHONPATH=wariant_staly python -c "import json, os; from sprawdz_s02 import compare; compare(json.load(open('wariant_staly/s03_wyniki.json')), json.load(open(os.path.join(os.environ['RUNNER_TEMP'], 's03.json'))))"
+      - name: Regresja głębokości zabudowy S04
+        run: |
+          cp wariant_staly/s04_wyniki.json "$RUNNER_TEMP/s04.json"
+          python wariant_staly/s04.py
+          PYTHONPATH=wariant_staly python -c "import json, os; from sprawdz_s02 import compare; compare(json.load(open('wariant_staly/s04_wyniki.json')), json.load(open(os.path.join(os.environ['RUNNER_TEMP'], 's04.json'))))"

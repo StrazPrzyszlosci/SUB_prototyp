@@ -1,0 +1,55 @@
+{
+  "reference_net_L": 102.00000000000003,
+  "side_space_mm": 186.4,
+  "bend_depth_span_mm": [
+    211.1,
+    320.4
+  ],
+  "front_rest_limit_mm": 14,
+  "rear_route_nominal_mm": 450,
+  "rear_route_upper_mm": 452,
+  "cases": [
+    {
+      "orientation": "dolna",
+      "pitch_deg": 0,
+      "device_depth_mm": 434.0,
+      "depth_with_gap_mm": 439.0,
+      "reserve_mm": 11.0
+    },
+    {
+      "orientation": "dolna",
+      "pitch_deg": 0.5,
+      "device_depth_mm": 438.2973941153959,
+      "depth_with_gap_mm": 443.2973941153959,
+      "reserve_mm": 6.702605884604111
+    },
+    {
+      "orientation": "dolna",
+      "pitch_deg": 1,
+      "device_depth_mm": 442.5614101872925,
+      "depth_with_gap_mm": 447.5614101872925,
+      "reserve_mm": 2.438589812707505
+    },
+    {
+      "orientation": "boczna",
+      "pitch_deg": 0,
+      "device_depth_mm": 434.0,
+      "depth_with_gap_mm": 439.0,
+      "reserve_mm": 11.0
+    },
+    {
+      "orientation": "boczna",
+      "pitch_deg": 0.5,
+      "device_depth_mm": 442.92137609081374,
+      "depth_with_gap_mm": 447.92137609081374,
+      "reserve_mm": 2.0786239091862626
+    },
+    {
+      "orientation": "boczna",
+      "pitch_deg": 1,
+      "device_depth_mm": 451.8090220039983,
+      "depth_with_gap_mm": 456.8090220039983,
+      "reserve_mm": -6.80902200399828
+    }
+  ]
+}
