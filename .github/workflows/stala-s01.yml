@@ -19,3 +19,8 @@ jobs:
       - run: python wariant_staly/sprawdz_s01.py
       - run: python wariant_staly/s01.py
       - run: python wariant_staly/sprawdz_s01.py
+      - name: Regresja korpusu S02
+        run: |
+          cp wariant_staly/s02_wyniki.json "$RUNNER_TEMP/s02.json"
+          python wariant_staly/s02.py
+          python wariant_staly/sprawdz_s02.py "$RUNNER_TEMP/s02.json"
