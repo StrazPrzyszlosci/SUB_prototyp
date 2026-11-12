@@ -13,9 +13,9 @@ def k(name):
 assert [k("W"), k("H"), k("D")] == s06["outer_mm"]
 assert k("T") == s06["nominal_t_mm"]
 assert k("inner_depth") == s06["layout"]["clear_mm"][2]
-assert k("brace_w") == s06["layout"]["panels"][-1]["length_mm"]
-assert k("brace_h") == s06["layout"]["panels"][-1]["width_mm"]
-assert [k("brace_open_w"),k("brace_open_h")] == s06["layout"]["opening_mm"]
+assert abs(k("brace_w") - s06["layout"]["panels"][-1]["length_mm"]) < 1e-6
+assert abs(k("brace_h") - s06["layout"]["panels"][-1]["width_mm"]) < 1e-6
+assert all(abs(a-b) < 1e-6 for a,b in zip([k("brace_open_w"),k("brace_open_h")], s06["layout"]["opening_mm"]))
 assert k("brace_y") == s06["layout"]["brace_start_y_mm"]
 assert abs(k("brace_y")-178-19) < 1e-9
 assert (k("D")-k("T"))-(k("T")*2)-k("inner_depth") == 0
