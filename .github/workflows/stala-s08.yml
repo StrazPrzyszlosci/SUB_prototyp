@@ -1,0 +1,31 @@
+name: Stala obudowa S08 - dokumentacja i tolerancje
+on:
+  push:
+    branches: ['badania/stala-obudowa-2-2']
+    paths:
+      - 'wariant_staly/**'
+      - '.github/workflows/stala-s08.yml'
+permissions:
+  contents: read
+jobs:
+  s08:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Pilnuj, aby historyczny README pozostawal nietkniety
+        run: |
+          git fetch origin main
+          BASE=$(git merge-base HEAD origin/main)
+          if git diff --name-only "$BASE" HEAD -- README.md | grep -q '^README.md$'; then
+            echo "Niedozwolona zmiana README na froncie wariantu stalego"
+            exit 1
+          fi
+      - name: Sprawdz S08 i brak pomiarow
+        run: |
+          python wariant_staly/sprawdz_s08.py
+          python wariant_staly/s08.py --karta wariant_staly/s08_karta.json
