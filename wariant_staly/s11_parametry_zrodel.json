@@ -1,0 +1,103 @@
+{
+  "data": "2026-11-12",
+  "status": "KATALOGOWE_NIE_POMIAR",
+  "driver": {
+    "model": "Dayton Audio RSS390HF-4",
+    "outer_d_mm": 388.4,
+    "cutout_d_mm": 355.8,
+    "depth_mm": 178,
+    "flange_t_mm": 10.5,
+    "pcd_mm": 368,
+    "basket_hole_d_mm": 6.5,
+    "holes": 8,
+    "xmax_one_way_mm": 14,
+    "fs_hz": 19.5,
+    "qts": 0.43,
+    "vas_l": 212,
+    "sd_cm2": 829.6,
+    "re_ohm": 3,
+    "le_mH": 0.92,
+    "bl_Tm": 15,
+    "weight_lbs": 30,
+    "source": "https://www.daytonaudio.com/images/resources/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf",
+    "not_provided": [
+      "kosz_pelna_obwiednia_3D",
+      "objetosc_wyparta_przez_kosz",
+      "BL(x)",
+      "Cms(x)",
+      "Re(T)",
+      "THD_IMD_20_40_Hz"
+    ]
+  },
+  "mdf_reference": {
+    "model": "EGGER Raw MDF ST E1 TSCA ELS Rec. 521; zakres >19-30 mm",
+    "nominal_t_mm": 22,
+    "bending_E_mean_MPa": 2100,
+    "bending_strength_mean_MPa": 18,
+    "internal_bond_mean_MPa": 0.55,
+    "stock_thickness_tolerance_mm": 0.3,
+    "density_kg_m3": null,
+    "source": "https://www.egger.com/get_download/ddc06952-07b2-4139-9292-d51a6087f1a9/Technical_datasheet_ST_E1_TSCA_Pine_TD-521_English.pdf",
+    "notes": "Zindeksowana karta producenta: bezposredni plik byl chwilowo niedostepny (404). Dane wartosci srednich, nie kwantyle bezpieczenstwa ani pomiar konkretnego MDF. Zamowienie 22mm i rewizja karty wymagaja potwierdzenia."
+  },
+  "connector": {
+    "model": "Neutrik NL4MPRXX",
+    "flange_d_mm": 50.8,
+    "holes_distance_mm": 29.2,
+    "hole_d_min_mm": 3.2,
+    "cutout_d_min_mm": 24,
+    "continuous_current_A": 25,
+    "source_drawing": "https://www.neutrik.com/media/14274/download/st-nl4mprxx.PDF?v=1",
+    "source_page": "https://www.neutrik.com/en/product/nl4mprxx",
+    "notes": "Brak gwarancji szczelnosci zlozonego przepustu. Wtyk nie jest zlaczem sieciowym."
+  },
+  "plug": {
+    "model": "Neutrik NL4FXX-W-S",
+    "cable_od_min_mm": 6,
+    "cable_od_max_mm": 12,
+    "conductor_min_mm2": 1.5,
+    "conductor_max_mm2": 4,
+    "source": "https://www.neutrik.com/en/product/nl4fxx-w-s"
+  },
+  "glue": {
+    "model": "KLEIBERIT 303.0 PVAc",
+    "surface_spread_min_g_m2": 100,
+    "surface_spread_max_g_m2": 130,
+    "wood_spread_min_g_m2": 150,
+    "wood_spread_max_g_m2": 200,
+    "open_time_min_min": 6,
+    "open_time_max_min": 10,
+    "preferred_work_temp_C": 20,
+    "minimum_work_temp_C": 10,
+    "press_time_joint_20C_min": 15,
+    "press_pressure_lamella_min_MPa": 0.7,
+    "press_pressure_lamella_max_MPa": 1,
+    "full_class_properties_days": 7,
+    "source": "https://kleiberit.com/fileadmin/Content_new/Infoblaetter/englisch/303_D3_Leim_GBUS.pdf",
+    "notes": "Docisk 0,7-1 N/mm2 podany do klejenia lameli; nie jest dopuszczeniem docisku pelnego laminatu FR1/FR2. D3/D4 nie oznacza wytrzymalosci spoiny MDF."
+  },
+  "dsp": {
+    "model": "miniDSP Flex Eight (wersja analogowa, bez Dante)",
+    "outputs_analog": 8,
+    "output_type": "RCA unbalanced",
+    "output_max_vrms": 2,
+    "inputs_digital": 2,
+    "sample_hz": 96000,
+    "source": "https://www.minidsp.com/products/minidsp-in-a-box/minidsp-flex-eight",
+    "source_manual": "https://docs.minidsp.com/product-manuals/flex-eight/signal-flow/index.html"
+  },
+  "amplifier_candidate": {
+    "model": "ICEpower 300AS1",
+    "output_vpeak_typ": 50,
+    "output_ipeak_typ": 20,
+    "nominal_gain_db": 28.15,
+    "gain_min_db": 28,
+    "gain_max_db": 28.3,
+    "power_w_4ohm_1percent_thdn": 300,
+    "load_min_ohm": 2.5,
+    "input_type": "balanced",
+    "output_type": "bridged differential OUT+ OUT-",
+    "source": "https://shop.icepoweraudio.com/wp-content/uploads/2023/02/ICEpower300AS1_Datasheet_2_2.pdf",
+    "notes": "Kandydat porownawczy; nie zatwierdzony. Typowe granice szczytu, nie gwarantowane ograniczniki. Zasilanie sieciowe wymaga wykwalifikowanego montazu poza komora."
+  }
+}
