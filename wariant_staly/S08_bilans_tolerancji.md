@@ -14,12 +14,12 @@ Narzędzie s08.py oblicza objętość z wymiarów ZMONTOWANEGO korpusu i rzeczyw
 Poniższe zakresy są ZALOZENIAMI DO BADANIA, nie zmierzonymi tolerancjami CNC ani kartą producenta. W przykladowej karcie:
 - obrys zewnętrzny i każda wielkość wręgi +/-0,2 mm;
 - każda grubość MDF i wręgi +/-0,3 mm, promień naroża wręgi +/-1 mm;
-- wyporność kosza 5,0 +/-1,0 l, terminala 0,175 +/-0,2 l, przewodów/kleju 0,150 +/-0,15 l.
+- wyporność kosza 5,0 +/-1,0 l, terminala 0,175 +/-0,15 l, przewodów/kleju 0,150 +/-0,15 l.
 
 | Wynik w przykładowym modelu | Wartość |
 |---|---:|
 | Netto nominalne | 101,9861 l |
-| Netto przy niezależnych skrajnościach | 99,9261 do 104,0483 l |
+| Netto przy niezależnych skrajnościach | 99,9761 do 103,9983 l |
 | Modelowy warunek S01 102 +/-3 l | Spełniony przy założeniach |
 | Nominalny łączny luz wręgi na szerokości i wysokości | 0,2 / 0,2 mm |
 | Najgorszy łączny luz wręgi z niezależnych odchyłek | -0,8 / -0,8 mm |

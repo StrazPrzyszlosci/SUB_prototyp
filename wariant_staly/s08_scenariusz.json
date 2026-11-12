@@ -39,7 +39,7 @@
     "brace_t": 0.3,
     "brace_r": 1,
     "driver_L": 1,
-    "terminal_L": 0.2,
+    "terminal_L": 0.15,
     "wire_glue_L": 0.15
   }
 }

@@ -12,8 +12,8 @@ assert r["CNC"] == "HOLD"
 assert r["status"] == "HOLD_DO_POMIAROW_I_KWALIFIKACJI"
 assert abs(r["netto_nominal_l"]-reference["net_L"]) < 0.0001
 assert abs(net(example["wartosci"])-101.9860631553454) < 1e-9
-assert abs(r["netto_najgorszy_przedzial_l"][0]-99.926089) < 1e-5
-assert abs(r["netto_najgorszy_przedzial_l"][1]-104.048258) < 1e-5
+assert abs(r["netto_najgorszy_przedzial_l"][0]-99.976089) < 1e-5
+assert abs(r["netto_najgorszy_przedzial_l"][1]-103.998258) < 1e-5
 assert r["czy_modelowy_litraz_w_zakresie"] is True
 assert r["czy_wrega_pasuje_w_calej_obwiedni"] is False
 assert r["wrega_luz_minimum_mm"] == [-0.8, -0.8]
