@@ -30,4 +30,5 @@ jobs:
           python wariant_staly/sprawdz_s08.py
           python wariant_staly/sprawdz_s10.py
           python wariant_staly/sprawdz_s11_s14.py
+          python wariant_staly/sprawdz_s15_s16.py
           python wariant_staly/s08.py --karta wariant_staly/s08_karta.json
