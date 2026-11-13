@@ -23,3 +23,13 @@ Zakres tego katalogu: osobny front B+R dwoch identycznych, zamknietych subwoofer
 - Obecne rysunki i pliki nie stanowia autoryzacji CNC. Zwolnienie wymaga rzeczywistych wymiarow, kwalifikacji mocowania i spoin, szczelnosci, przejscia kosza, terminala i maskownicy, sprawdzenia tolerancji oraz przegladu wykonawcy.
 - Nie podawac symulowanego SPL jako zmierzonego czystego SPL i nie zatwierdzac limiterow bez weryfikacji elektrycznej oraz termicznej.
 - Przed kazdym kolejnym etapem uwzgledniac ostatni raport Sxx i unikac powtarzania rozstrzygnietych badan.
+
+
+## Rewizja priorytetu z 13.11.2026 - CNC FIRST
+- Najpierw do końca opracować cyfrowy projekt CNC dwoch identycznych korpusow ze STALA pojemnoscia 102 l i ich mechanicznego osprzetu.
+- Wszystkie obliczenia opierac na wiarygodnych kartach, rysunkach i modelach producentow dostepnych online. Zapisywac URL, wersje, daty i odroznic zalozenia od wymiarow zrodla.
+- NIE wzywac do badan materialow, spoin, prototypowych pomiarow przetwornika ani fizycznej weryfikacji polaczen mechanicznych jako etapow PRZED ukonczeniem projektu CNC. Sa to etapy nastepne, po pelnym wydaniu cyfrowej dokumentacji.
+- Kolejne kroki: konstrukcja CAD, formatki, rysunki DXF, miejsca osprzetu, polaczenia, tolerancje cyfrowe, wewnetrzne kolizje, kasety i terminal, BOM, DFM i dokumentacja CAM.
+- Zwrot CNC HOLD oznacza NIEKOMPLETNY PROJEKT cyfrowy, a nie decyzje o przerywaniu projektowania do czasu wykonania fizycznych badan.
+- Nie twierdzic, ze projekt jest gotowy do produkcji, zanim cala dokumentacja i kontrole cyfrowe nie beda kompletne. Nie tworzyc nieistniejacych danych katalogowych.
+- Ani ten priorytet, ani nowa konstrukcja nie trafiaja do glownego README. Prace prowadzone w wariant_staly/.

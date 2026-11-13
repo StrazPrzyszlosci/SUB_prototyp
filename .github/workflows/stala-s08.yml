@@ -31,4 +31,14 @@ jobs:
           python wariant_staly/sprawdz_s10.py
           python wariant_staly/sprawdz_s11_s14.py
           python wariant_staly/sprawdz_s15_s16.py
+          python wariant_staly/cnc_stala_revA/sprawdz_s17.py
           python wariant_staly/s08.py --karta wariant_staly/s08_karta.json
+
+      - name: Wygeneruj czesci CNC DXF do przegladu cyfrowego
+        run: |
+          python wariant_staly/cnc_stala_revA/generator.py --t 22.0 --out wariant_staly/cnc_stala_revA/generated
+      - uses: actions/upload-artifact@v4
+        with:
+          name: SUB-stala-102L-revA0-DXF-digital
+          path: wariant_staly/cnc_stala_revA/generated/
+          if-no-files-found: error

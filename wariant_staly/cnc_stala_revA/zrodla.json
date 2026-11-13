@@ -1,0 +1,68 @@
+{
+  "status": "PROJEKT_CAD_W_TRAKCIE",
+  "date": "2026-11-13",
+  "units": "mm",
+  "sources": [
+    {
+      "element": "RSS390HF-4",
+      "model": "Dayton Audio RSS390HF-4",
+      "url": "https://www.daytonaudio.com/images/resources/295-468-dayton-audio-rss390hf-4-specifications-46176.pdf",
+      "drawing": {
+        "outer_d": 388.4,
+        "bore_d": 355.8,
+        "pcd": 368,
+        "basket_drill": 6.5,
+        "depth": 178
+      },
+      "confidence": "producent"
+    },
+    {
+      "element": "MDF22",
+      "model": "EGGER raw MDF ST E1 TSCA rec501",
+      "url": "https://www.egger.com/get_download/1850d441-43b8-4bb6-bc27-54822733e626/Technical_datasheet_E1_TSCA_ST_CE_TD-501_English.pdf?country=AZ",
+      "thickness_tolerance": 0.3,
+      "confidence": "karta indeksowana, obecnie PDF nieosiagalny"
+    },
+    {
+      "element": "Neutrik terminal",
+      "model": "NL4MPRXX",
+      "url": "https://www.neutrik.com/media/14274/download/st-nl4mprxx.PDF?v=1",
+      "flange_d": 50.8,
+      "bolt_spacing": 29.2,
+      "min_through": 24,
+      "min_holes": 3.2
+    },
+    {
+      "element": "gland",
+      "model": "LAPP ST-M16x1.5 RAL9005 item53111210",
+      "url": "https://www.lapp.com/en_US/us/skintop-st-m/skintop-str-m/p/53111210",
+      "thread_length": 8,
+      "clamp_d": [
+        4,
+        10
+      ]
+    },
+    {
+      "element": "front frame inserts",
+      "model": "RAMPA SKD330 M6x18 article420618001 MDF22",
+      "url": "https://www.rampa.com/media/e2/ed/d4/1699524202/RAMPA_Produktdatenblatt_MDF-EN.pdf",
+      "outer_d": 12,
+      "pilot": 10,
+      "length": 18
+    },
+    {
+      "element": "PVA adhesive",
+      "model": "KLEIBERIT303.0",
+      "url": "https://www.kleiberit.com/fileadmin/Content_new/Produktinformationen/303.0/dbe3030_KSE.pdf"
+    }
+  ],
+  "assumptions": [
+    "driver net displacement 5.000 L - not manufacturer measured",
+    "external port displacement 0.175 L and wiring/glue 0.150 L from S01",
+    "MDF t selectable 21.7..22.3 mm; true material type is pending commercial selection",
+    "ring steel Ø400/358x6 and pin geometry is own K42 design",
+    "grille frame MDF12, gap24, finishing≤2mm, M6x50 screw and 16x24 standoff are own design",
+    "Neutrik faceplate AL3 and side gland boreØ16.5 from metric design are engineering parameters, not an exact delivered manufacturer drawing",
+    "the outlet box is unfinished - do not run CAM for protective assembly"
+  ]
+}
