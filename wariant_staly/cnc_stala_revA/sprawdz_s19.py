@@ -18,7 +18,7 @@ assert math.isclose(get("ring_pocket_d"),400.4)
 assert math.isclose(get("driver_d"),355.8)
 assert math.isclose(get("driver_flange_d"),388.4)
 assert get("pcd")==368
-for pattern in ("cube([70,","cube([64,","cube([784,12,436])","cylinder_x(W-T-eps,330,Cz,30"):
+for pattern in ("cube([3,80,72])","cube([64,3,66])","cube([784,12,436])","cylinder_x(W-T-eps,330,Cz,30"):
     assert pattern in txt,pattern
 assert m["term_hardware_position"].startswith("EXTERNAL")
 assert m["side_port_void_L"]>0.01

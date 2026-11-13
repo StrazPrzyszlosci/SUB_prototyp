@@ -107,7 +107,7 @@ module cassette() {
           }
     color([.32,.31,.30])difference() {
         translate([(W-784)/2,-36,(H-436)/2])cube([784,12,436]);
-        translate([Cx,-36-eps,Cz])cube([744,12+2*eps,396],center=true);
+        translate([Cx,-30,Cz])cube([744,12+2*eps,396],center=true);
         for(x=[26.4,W-26.4],z=[28.65,H-28.65])
             cylinder_y(x,-36-eps,z,6.6,12+2*eps);
     }
