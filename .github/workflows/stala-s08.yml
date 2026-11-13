@@ -32,6 +32,7 @@ jobs:
           python wariant_staly/sprawdz_s11_s14.py
           python wariant_staly/sprawdz_s15_s16.py
           python wariant_staly/cnc_stala_revA/sprawdz_s17.py
+          python wariant_staly/cnc_stala_revA/sprawdz_s19.py
           python wariant_staly/s08.py --karta wariant_staly/s08_karta.json
 
       - name: Wygeneruj czesci CNC DXF do przegladu cyfrowego

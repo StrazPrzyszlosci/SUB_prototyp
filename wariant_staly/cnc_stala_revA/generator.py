@@ -68,11 +68,12 @@ def build(t):
     opening_w=brace_w-60;opening_h=brace_h-60
     brace_y=2*t+(side_depth-t)/2
     driver_displacement=5.000 # DESIGN ASSUMPTION, not a producer quote
-    terminal_displacement=.175
+    terminal_displacement=.0  # S18 external hardware, no terminal inside air volume
     wiring_glue=.150
     brace_vol=(brace_w*brace_h-(opening_w*opening_h-(4-math.pi)*3**2))*t/1e6
     gross=clear_w*clear_h*side_depth/1e6
-    net=gross-brace_vol-driver_displacement-terminal_displacement-wiring_glue
+    cable_window_added=math.pi*(30/2)**2*t/1e6  # S18 sealed external plate, small MDF side void
+    net=gross-brace_vol-driver_displacement-terminal_displacement-wiring_glue+cable_window_added
 
     parts={}
     def add(name, material, thk, qty, size, operations, drawing):
@@ -214,7 +215,9 @@ def build(t):
         "brace_start_Y_global":round(brace_y,4),
         "volume_geometry_L":round(gross,6),
         "brace_solid_L":round(brace_vol,6),
+        "side_port_void_L":round(cable_window_added,6),
         "assumed_other_displacements_L":[driver_displacement,terminal_displacement,wiring_glue],
+        "term_hardware_position":"EXTERNAL_BASE_AL3 (no 0.175 L internal terminal)",
         "net_estimated_L":round(net,6),
         "part_types":len(parts),
         "quantities_for_pair":{k:v["qty_for_two"] for k,v in parts.items()},

@@ -76,3 +76,6 @@ Poprzednia koncepcja S17 dławnicy w pocienionej ściance MDF zostaje WYCOFANA: 
 Bezpieczeństwo: metalowa kaseta musi wykluczyć zwarcie styków speakON i zapewnić serwis bez dotykania niezabezpieczonych części. Nie wyciągać gniazda pod obciążeniem. Potwierdzić wybrany przewód 4-10mm średnicy na podstawie karty przewodu, nie tylko oznaczenia 2x2,5 mm².
 
 Zmieniono tylko cyfrowy projekt obudowy stałej. Nie zakładano żadnych prób fizycznych przed ukończeniem CNC.
+
+
+S19: [Wspólne złożenie 3D](S19_zlozenie_revA0.scad), [obliczenia i kolejny zakres cyfrowych prac](S19_zlozenie_i_objetosc.md). Po umieszczeniu złącza i dławnicy poza komorą bilans nominalny zmieniono z około 101,99l na około 102,18l. Zachowano docelową 102l, bez regulacji, a test sprawdza zgodność modelu 3D z DXF.
