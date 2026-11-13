@@ -27,7 +27,10 @@ for t in (21.7,22.0,22.3):
         data=p["dxf"].serialise()
         assert data.startswith("0\nSECTION")
         assert data.endswith("EOF\n")
-        assert "OUTER_CUT_THRU" in data
+        if key == "DYSTANS_METAL_L24":
+            assert "LATHE_OUTER_D16" in data
+        else:
+            assert "OUTER_CUT_THRU" in data
         assert not any(v in data for v in ("nan","inf"))
 with tempfile.TemporaryDirectory() as temp:
     p=Path(temp)
