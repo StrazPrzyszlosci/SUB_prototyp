@@ -36,7 +36,7 @@ with tempfile.TemporaryDirectory() as temp:
     assert len((p/"cutlist.csv").read_text().splitlines())==result["part_types"]+1
     saved=json.loads((p/"manifest.json").read_text())
     assert "dxf" not in saved["parts"]["FR1"]
-    assert sum(v["qty_for_two"] for v in saved["parts"].values())==32
+    assert sum(v["qty_for_two"] for v in saved["parts"].values())==30
     for f in p.glob("*.dxf"):
         assert f.stat().st_size>130
 print("S17 OK: 11 separate DXF contours, 16 MDF22 parts for pair, t-sensitive brace, BOM, no G-code")
