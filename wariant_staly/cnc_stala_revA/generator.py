@@ -112,14 +112,17 @@ def build(t):
     panel("BOK_L",side_depth,H,2,[],["local X = depth Y, local Y = assembly Z"])
     def side_r_add(d):
         # Local x is Y_global - front stack 2*t; local y is Z_global.
+        # Cable gland mounted only to 3mm external baseplate, NOT 22mm MDF.
         x=330.0-2*t;y=FRONT_CY
-        d.circle(x,y,16.5/2,"THRU_D16_5_GLAND_M16")
-        d.circle(x,y,36/2,"POCKET_INNER_D36_DEPTH17")
+        d.circle(x,y,30/2,"THRU_D30_CABLE_TO_BRACKET")
+        for global_y in (282.0,338.0):
+            for z in (FRONT_CY-24,FRONT_CY+24):
+                d.circle(global_y-2*t,z,10/2,"BLIND_D10_DEPTH18_OUTSIDE")
     panel("BOK_R",side_depth,H,2,[side_r_add],
-          ["right-side gland LAPP ST-M16 on side (manufacturer thread length 8mm)",
-           "Ø16.5 through; from inside Ø36 recess depth17 leaving ~5mm outer skin",
-           "source coordinate Y_global330, Z_global236.65",
-           "external NL4 bracket is separate mechanical subassembly"])
+          ["Ø30 cable window through MDF (no gland installed in 22mm MDF)",
+           "4x Ø10 depth18 from outside for RAMPA M6x18, source Y282/338 Zcenter±24",
+           "sealed external plate AL3 80x72, compressed 1mm gasket",
+           "external bracket nominal Y270..350, width70, height72"])
     panel("DNO_GORA",clear_w,side_depth,4,[],["fits between sides"])
     def brace_add(d):
         d.round_rect(30,30,opening_w,opening_h,3,"INNER_WINDOW_THRU_R3")
@@ -150,17 +153,49 @@ def build(t):
         ["one of two finishing options, cloth or separate metal grille",
          "no crossbars across driver", "4x Ø6.6 for M6 screw/standoff",
          "24mm stand-offs + 12mm frame + finish ≤2mm = total ≤38mm"],grille)
-    # Neutrik faceplate, SIDE terminal. Other protective pieces remain unfinished.
-    term=DXF()
-    term.rect(70,72,"OUTER_CUT_THRU")
-    term.circle(35,36,12,"NEUTRIK_REAR_CUT_D24")
-    for x in (35-14.6,35+14.6):
-        for y in (36-14.6,36+14.6):
-            term.circle(x,y,3.4/2,"NEUTRIK_4x_D3_4")
-    add("GNIAZDO_PANEL_AL3","ALUMINIUM_3_DESIGN_CHOICE",3,2,(70,72),
-        ["Neutrik NL4MPRXX 4x Ø3.4 on 29.2 square",
-         "centre through Ø24: manufacturer minimum cutout; may require more after CAD STEP",
-         "need external housing and insulated strain relief"],term)
+    # S18: enclosed SIDE terminal, external dimensions (outward,depth,height)
+    # X = 70, Y = 80, Z = 72; all six plate surfaces as nominal flat outlines.
+    # Seal between MDF and base plate is a separately specified 1mm gasket.
+    base=DXF()
+    base.rect(80,72,"OUTER_CUT_THRU")
+    base.circle(60,36,16.5/2,"GLAND_M16_D16_5_THRU")
+    for xx in (12,68):
+        for yy in (12,60):
+            base.circle(xx,yy,6.6/2,"M6_CLEARANCE_D6_6")
+    add("OBUDOWA_BAZA_AL3","ALUMINIUM_3_DESIGN_CHOICE",3,2,(80,72),
+        ["fixed to MDF right side with 4x M6x16 into RAMPA SKD330 M6x18",
+         "1mm closed-cell gasket 80x72 between metal plate and MDF",
+         "LAPP M16x1.5 passes ONLY through 3mm aluminium with locking nut",
+         "Ø16.5 central gland at Yglobal330 Zglobal236.65, hole in MDF Ø30"],base)
+
+    # Removable FRONT, held by four M3 screws into four metal corner blocks.
+    front=DXF()
+    front.rect(64,66,"OUTER_CUT_THRU")
+    front.circle(32,33,12,"NEUTRIK_REAR_CUT_D24")
+    for xx in (32-14.6,32+14.6):
+        for yy in (33-14.6,33+14.6):
+            front.circle(xx,yy,3.4/2,"NEUTRIK_4x_D3_4")
+    for xx in (7,57):
+        for yy in (7,59):
+            front.circle(xx,yy,3.4/2,"FACE_M3_SERVICE_D3_4")
+    add("GNIAZDO_PANEL_AL3","ALUMINIUM_3_DESIGN_CHOICE",3,2,(64,66),
+        ["connector centre (32,33), face opening Ø24 and Neutrik square29.2",
+         "4x Ø3.4 M3 for removable service face; corner-block geometry still needs CAD",
+         "panel fits between 3mm base/outer and top/bottom walls"],front)
+
+    back=DXF()
+    back.rect(64,66,"OUTER_CUT_THRU")
+    add("OBUDOWA_TYL_AL3","ALUMINIUM_3_DESIGN_CHOICE",3,2,(64,66),
+        ["box rear panel; proposed welded or bonded to adjoining plates"],back)
+    outer=DXF()
+    outer.rect(80,72,"OUTER_CUT_THRU")
+    add("OBUDOWA_ZEW_AL3","ALUMINIUM_3_DESIGN_CHOICE",3,2,(80,72),
+        ["box outside wall Xglobal W+67..W+70"],outer)
+    caps=DXF()
+    caps.rect(64,74,"OUTER_CUT_THRU")
+    add("OBUDOWA_GORA_DOL_AL3","ALUMINIUM_3_DESIGN_CHOICE",3,4,(64,74),
+        ["top and bottom panel, each inside 3mm base/outer, face/rear",
+         "process/edge joining not production released"],caps)
     # Four cylindrical spacers per enclosure, from metal stock 24mm, lathe processing.
     spacer=DXF()
     spacer.circle(10,10,8,"LATHE_OUTER_D16")
@@ -185,8 +220,8 @@ def build(t):
         "quantities_for_pair":{k:v["qty_for_two"] for k,v in parts.items()},
         "drawing_basis":"CAD part contours; no kerf, tool compensation, nesting, CAM feeds",
         "unresolved_digital_design":[
-          "Bracket housing/walls, protective contacts and attachment to cabinet",
-          "Final driver gasket cross-section and front relief/terminal harness routing",
+          "Joint design of welded terminal-box plates and M3 threaded service corner blocks",
+          "Final driver gasket cross-section and cable harness routing + MDF/AL3 sealing gasket",
           "Face finish grille-perforated insert and fabric fixture detail",
           "Material supplier confirmation, e.g. 22mm MDF EGGER batch grade and actual t",
           "Equipment-specific CAM: cutter diameters/dogbones, tabs, feeds and fixtures",

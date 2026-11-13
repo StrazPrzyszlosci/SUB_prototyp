@@ -63,6 +63,7 @@
     "ring steel Ø400/358x6 and pin geometry is own K42 design",
     "grille frame MDF12, gap24, finishing≤2mm, M6x50 screw and 16x24 standoff are own design",
     "Neutrik faceplate AL3 and side gland boreØ16.5 from metric design are engineering parameters, not an exact delivered manufacturer drawing",
-    "the outlet box is unfinished - do not run CAM for protective assembly"
+    "Six-panel AL3 terminal-box geometry drafted in S18; weld/insulation/corner attachment and gasket not fully detailed",
+    "S18 gland installed in 3mm AL baseplate; Ø30 MDF pass-through sealed by 1mm separately specified gasket; no direct gland mounting in MDF"
   ]
 }
